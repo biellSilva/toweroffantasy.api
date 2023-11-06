@@ -10,4 +10,9 @@ app.include_router(simulacra.router)
 
 
 if __name__ == '__main__':
-    run(app='main:app', access_log=False, reload=True, reload_delay=5, workers=1)
+    run(app=app, 
+        access_log=False, 
+        # reload=True,      # dev function
+        # reload_delay=5,   # dev function
+        # workers=1         # dev function
+        )
