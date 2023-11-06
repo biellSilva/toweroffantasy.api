@@ -1,0 +1,142 @@
+{
+    "id": "sickle_fire",
+    "name": "Scythe of the Crow",
+    "description": "A powerful scythe, great for both offense and defense. Able to instantly kill its target within a certain distance.",
+    "icon": "item_Weapon_SSR_Sickle_Fire01",
+    "rarity": "SSR",
+    "type": "DPS",
+    "element": "Flame",
+    "weaponType": "Sickle",
+    "mats": {
+        "Item_Mine_fire": 39,
+        "Item_Mine_fire_02": 65,
+        "Item_breakthrough_B2": 65,
+        "Item_breakthrough_D2": 65,
+        "Item_Mine_fire_03": 32,
+        "Item_breakthrough_B3": 32,
+        "Item_breakthrough_D3": 32,
+        "Item_breakthrough_B1": 35,
+        "Item_breakthrough_D1": 32
+    },
+    "weaponEffects": null,
+    "skills": {
+        "normals": [
+            {
+                "name": "Normal Attack",
+                "description": "While on the ground, swing the scythe to launch **5** consecutive attacks.\r\nFirst Attack: Deal damage equal to **57.1%** of ATK plus **343** and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to **49.1%** of ATK plus **295** and knock the target back a short distance.\r\nThird Attack: Deal damage equal to **106.8%** of ATK plus **641** and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to **109.5%** of ATK plus **657** and knock the target back a short distance.\r\nFifth Attack: Deal damage equal to **104.2%** of ATK plus **625**, **strongly suspend** the target, and cause the Wanderer to go airborne.",
+                "icon": "pugong_sickle",
+                "id": "GA_FPlayerSickleMelee_MeleeFire_SSR"
+            },
+            {
+                "name": "Rising Scythe",
+                "description": "While airborne or after jumping once, attack **5** times in a row.\r\nFirst Attack: Deal damage equal to **63.4%** of ATK plus **380**.\r\nSecond Attack: Deal damage equal to **68.8%** of ATK plus **413**.\r\nThird Attack: Deal damage equal to **190.5%** of ATK plus **1143**.\r\nFourth Attack: Deal damage equal to **213.6%** of ATK plus **1281**.\r\nFifth Attack: Deal damage equal to **173.9%** of ATK plus **1043** and knock the target down. The higher the location is when triggered, the more damage is dealt, up to **600%** damage.",
+                "icon": "skill_sickle_air",
+                "id": "GA_FPlayerSickleMelee_AirAttackFire_SSR"
+            },
+            {
+                "name": "Asunder",
+                "description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Asunder.\r\nWhile falling, deal damage equal to **12.5%** of ATK plus **75** each hit. Upon landing, deal damage equal to **71.9%** of ATK plus **431** and deliver a **knockdown**.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to **600%** damage.",
+                "icon": "skill_sickle_jump",
+                "id": "GA_FPlayerSickleMelee_JumpAttackFire_SSR"
+            },
+            {
+                "name": "Returning Chainblade",
+                "description": "After the fourth normal attack, hold the normal attack button to trigger Returning Chainblade.\r\nTransform into a chainblade, dealing damage equal to **137.4%** of ATK plus **824** to nearby targets and pulling them in.",
+                "icon": "skill_sickle_branch",
+                "id": "GA_FPlayerSickleMelee_BranchFire_SSR"
+            },
+            {
+                "name": "Sneak Attack",
+                "description": "Approach the enemy from behind while crouching, then use normal attack to use Sneak Attack, dealing damage equal to **570%** of ATK plus **3420**.",
+                "icon": "common_sneak",
+                "id": "GA_FPlayerSickleMelee_SneakFire_SSR"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Returning Chainblade",
+                "description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Rapid Lunge.\r\nDeal up to **126.9%** of ATK plus **761** damage and pull in nearby enemies.",
+                "icon": "skill_sickle_branch",
+                "id": "GA_FPlayerSickleEvade_FrontAttackFire_SSR"
+            },
+            {
+                "name": "Domain of the Bat",
+                "description": "When dodging, summon a domain of the bat that pulls the target into the center. Tap normal attack during the short period after dodging to swing the scythe, dealing up to **114.3%** of ATK plus **686** damage to the target.",
+                "icon": "skill_sickle_backattck",
+                "id": "GA_FPlayerSickleEvade_BackAttackFire_SSR"
+            },
+            {
+                "name": "Dodge",
+                "description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of enemies within the area. Become immune to hitstun while dodging for **0.5** seconds.",
+                "icon": "common_evade",
+                "id": "GA_FPlayerSickleEvade_EvadeFire_SSR"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Mortal Coil",
+                "description": "Swing the scythe, dealing damage equal to **499.9%** of ATK plus **2999**. Cooldown: **45** seconds.",
+                "icon": "sickle_skill1",
+                "id": "GA_FPlayerSickleSkillFire_SSR"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Flaming Scythe",
+                "description": "When **weapon charge** is full or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and create a Flaming Scythe, dealing damage equal to **398.3%** of ATK plus **2390**. Lasts for **10** seconds. Additionally, spawn a Flaming Scythes Domain every **2** seconds. The scythes summon volcanic eruptions from the ground, which deal damage equal to **95%** of ATK plus **396** to targets and suspending them.",
+                "icon": "skill_sickle_changeskill",
+                "id": "GA_FPlayerSickleChangeSkill_SuccessFire_SSR"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "Increase shatter by **15%**. After shattering the target's shield, deal burn damage equal to **120%** of ATK to the target every second for **15** seconds.",
+            "stats": {
+                "shatter": 14.3,
+                "charge": 5
+            },
+            "need": "sickle_fire_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base HP growth by **16%**.",
+            "stats": {
+                "shatter": 14.3,
+                "charge": 5
+            },
+            "need": "sickle_fire_plasm"
+        },
+        {
+            "description": "Increase damage dealt by **15%** for each enemy target within **6** meters, up to **30%**.",
+            "stats": {
+                "shatter": 14.3,
+                "charge": 5
+            },
+            "need": "sickle_fire_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **32%**.",
+            "stats": {
+                "shatter": 14.3,
+                "charge": 5
+            },
+            "need": "sickle_fire_plasm"
+        },
+        {
+            "description": "Increase damage dealt against HP shields or shielded enemies by **100%**.",
+            "stats": {
+                "shatter": 14.3,
+                "charge": 5
+            },
+            "need": "sickle_fire_plasm"
+        },
+        {
+            "description": "Increase damage dealt by **10%** for each enemy slain for **30** seconds. Stack up to **3** times.",
+            "stats": {
+                "shatter": 14.3,
+                "charge": 5
+            },
+            "need": "sickle_fire_plasm"
+        }
+    ]
+}

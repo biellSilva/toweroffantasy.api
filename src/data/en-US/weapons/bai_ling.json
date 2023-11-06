@@ -1,0 +1,130 @@
+{
+    "id": "bow_physic",
+    "name": "Nightingale's Feather",
+    "description": "Blends perfectly into the gloomy night.",
+    "icon": "item_Weapon_R_Bow_Phy01",
+    "rarity": "SR",
+    "type": "DPS",
+    "element": "Physics",
+    "weaponType": "Bow",
+    "mats": {
+        "Item_Mine_physic": 28,
+        "Item_Mine_physic_02": 42,
+        "Item_breakthrough_B2": 42,
+        "Item_breakthrough_D2": 42,
+        "Item_Mine_physic_03": 22,
+        "Item_breakthrough_B3": 22,
+        "Item_breakthrough_D3": 22,
+        "Item_breakthrough_B1": 25,
+        "Item_breakthrough_D1": 23
+    },
+    "weaponEffects": null,
+    "skills": {
+        "normals": [
+            {
+                "name": "Quickdraw",
+                "description": "While on the ground, draw the bow repeatedly to attack **5** times.\r\nFirst Attack: Deal damage equal to **45.5%** of ATK plus **273**.\r\nSecond Attack: Deal damage equal to **40.7%** of ATK plus **244**.\r\nThird Attack: Deal damage equal to **73%** of ATK plus **438**.\r\nFourth Attack: Deal damage equal to **113%** of ATK plus **678**.\r\nFifth Attack: Deal damage equal to **104.8%** of ATK plus **629** and knock the target back a short distance.",
+                "icon": "bow_skill",
+                "id": "GA_FPlayerBowMeleeNew_Melee_R"
+            },
+            {
+                "name": "Charged Arrow",
+                "description": "Tap and hold normal attack to charge an attack. Deal base damage equal to **81.8%** of ATK plus **491**, and **50%** more for each **1** second spent charging, up to **3** seconds. Deal double damage when scoring a headshot or when hitting an enemy's weak point, and knock the target down (headshots are ineffective against Wanderers).",
+                "icon": "skill_bow_power",
+                "id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
+            },
+            {
+                "name": "Arrow Rain",
+                "description": "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to **266.7%** of ATK plus **1600** area damage to targets.",
+                "icon": "skill_bow_changeskill",
+                "id": "GA_FPlayerBowMeleeNew_Branch_R"
+            },
+            {
+                "name": "Air Volley",
+                "description": "While airborne, use normal attack to attack **4** times in a row in the air.\r\nFirst Attack: Deal damage equal to **52.5%** of ATK plus **315**.\r\nSecond Attack: Deal damage equal to **69%** of ATK plus **414**.\r\nThird Attack: Deal damage equal to **105%** of ATK plus **630**.\r\nFourth Attack: Deal damage equal to **158%** of ATK plus **948**.",
+                "icon": "skill_bow_power",
+                "id": "GA_FPlayerBowMeleeNew_AirAttack_R"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Dodge",
+                "description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: **15** seconds. Become immune to hitstun while dodging for **0.5** seconds.",
+                "icon": "common_evade",
+                "id": "GA_FPlayerBowEvadeNew_Evade_R"
+            },
+            {
+                "name": "Loaded Arrow",
+                "description": "Tap attack after dodging to trigger Loaded Arrow, knocking the target back by a short distance and dealing damage equal to **115.5%** of ATK plus **693**.",
+                "icon": "skill_bow_power",
+                "id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Piercing Shot",
+                "description": "Backflips and fires **1** piercing shot forward, dealing damage equal to **209%** of ATK plus **1254** and knocking the target back. **12**-second cooldown.",
+                "icon": "bow_skill",
+                "id": "GA_FPlayerBowSkill_R"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Explosive Barrage",
+                "description": "When **weapon charge** is full or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and unleash Explosive Barrage on the target, dealing damage equal to **660%** of ATK plus **3960**.",
+                "icon": "skill_artifact11_1",
+                "id": "GA_FPlayerBowChangeSkill_Success_R"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "Restore **1** dodge attempt every fifth normal attack or after using **Piercing Shot**.",
+            "stats": {
+                "shatter": 6,
+                "charge": 10
+            },
+            "need": "bow_physic_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **10%**.",
+            "stats": {
+                "shatter": 6,
+                "charge": 10
+            },
+            "need": "bow_physic_plasm"
+        },
+        {
+            "description": "Increase headshot damage by **30%**.",
+            "stats": {
+                "shatter": 6,
+                "charge": 10
+            },
+            "need": "bow_physic_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **20%**.",
+            "stats": {
+                "shatter": 6,
+                "charge": 10
+            },
+            "need": "bow_physic_plasm"
+        },
+        {
+            "description": "Dodge skills inflict a grievous effect on targets for **7** seconds.",
+            "stats": {
+                "shatter": 6,
+                "charge": 10
+            },
+            "need": "bow_physic_plasm"
+        },
+        {
+            "description": "Increase crit rate to grievous targets by **30%** and crit damage by **50%**.",
+            "stats": {
+                "shatter": 6,
+                "charge": 10
+            },
+            "need": "bow_physic_plasm"
+        }
+    ]
+}

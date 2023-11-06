@@ -1,0 +1,157 @@
+{
+    "id": "fenrir_thunder",
+    "name": "Gleipnir",
+    "description": "A special device that converts sound waves into attack. When the shackles are shattered, the currents of death become sharp claws that tear everything apart.",
+    "icon": "item_Weapon_SSR_Fenrir_Thunder01",
+    "rarity": "SSR",
+    "type": "DPS",
+    "element": "Thunder",
+    "weaponType": "Fenrir",
+    "mats": {
+        "Item_Mine_thunder": 39,
+        "Item_Mine_thunder_02": 65,
+        "Item_breakthrough_B2": 65,
+        "Item_breakthrough_D2": 65,
+        "Item_Mine_thunder_03": 32,
+        "Item_breakthrough_B3": 32,
+        "Item_breakthrough_D3": 32,
+        "Item_breakthrough_B1": 35,
+        "Item_breakthrough_D1": 32
+    },
+    "weaponEffects": [
+        {
+            "title": "Volt Resonance",
+            "description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+        },
+        {
+            "title": "Elemental Balancing",
+            "description": "Increase all ATK by **15%**. Activate by equipping **3** weapons of different elements. This set effect works in the off-hand slot."
+        }
+    ],
+    "skills": {
+        "normals": [
+            {
+                "name": "Woof",
+                "description": "While on the ground, attack **7** times.\r\nFirst Attack: Deal damage equal to **48.6%** of ATK plus **482**.\r\nSecond Attack: Deal damage equal to **54.1%** of ATK plus **537**.\r\nThird Attack: Deal damage equal to **54.1%** of ATK plus **537**.\r\nFourth Attack: Deal damage equal to **85.4%** of ATK plus **847**.\r\nFifth Attack: Deal damage equal to **54.1%** of ATK plus **537**.\r\nSixth Attack: Deal damage equal to **152.9%** of ATK plus **1516**.\r\nSeventh Attack: Deal damage equal to **169%** of ATK plus **1676**.",
+                "icon": "skill_fenrir_melee",
+                "id": "GA_FPlayerFenrirMelee_Melee"
+            },
+            {
+                "name": "Unshackle",
+                "description": "While airborne or after jumping once, use normal attack to attack **7** times in a row in mid-air.\r\nFirst Attack: Deal damage equal to **52.9%** of ATK plus **524**.\r\nSecond Attack: Deal damage equal to **60.8%** of ATK plus **603**.\r\nThird Attack: Deal damage equal to **60.8%** of ATK plus **603**.\r\nFourth Attack: Deal damage equal to **105.8%** of ATK plus **1049**.\r\nFifth Attack: Deal damage equal to **79.3%** of ATK plus **787**.\r\nSixth Attack: Deal damage equal to **183.4%** of ATK plus **1819**.\r\nSeventh Attack: Deal damage equal to **202.8%** of ATK plus **2011**.",
+                "icon": "skill_fenrir_airattack",
+                "id": "GA_FPlayerFenrirMelee_AirAttack"
+            },
+            {
+                "name": "Wolfbite",
+                "description": "While on the ground, tap and hold normal attack during the second to the fourth normal attack to trigger Wolfbite.\r\nCharge forward quickly, dealing damage equal to **69%** of ATK plus **684** and knocking the target back.\r\nAfter triggering Wolfbite, tap and hold normal attack to trigger Upswipe.\r\nSwipe upward, dealing damage equal to **93.1%** of ATK plus **923** and suspending the target.",
+                "icon": "skill_fenrir_branch1",
+                "id": "GA_FPlayerFenrirMelee_MeleeBranch"
+            },
+            {
+                "name": "Menacing Hunt",
+                "description": "While on the ground, tap and hold normal attack during the fifth or the sixth normal attack to trigger Menacing Hunt.\r\nDescend from above, gaining temporary invincibility and dealing damage equal to **254.3%** of ATK plus **2522** and suspending the target.",
+                "icon": "skill_fenrir_branch3",
+                "id": "GA_FPlayerFenrirMelee_MeleeBranch3"
+            },
+            {
+                "name": "Thick and Fast",
+                "description": "Tap and hold normal attack while airborne (tap when a target is available), or tap normal attack while climbing, jumping backward, or using a jetpack to trigger Thick and Fast.\r\nDescend from above, dealing damage equal to **200%** of ATK plus **1983** upon landing and suspending surrounding targets.\r\nAfter triggering Thick and Fast, tap and hold normal attack again to trigger Roar.\r\nLet out a terrifying Roar in all directions and gain temporary invincibility, dealing damage equal to **200%** of ATK plus **1983** to nearby targets and knocking them back.",
+                "icon": "skill_fenrir_jumpattack",
+                "id": "GA_FPlayerFenrirMelee_JumpAttack"
+            },
+            {
+                "name": "Trailing Note",
+                "description": "While airborne, tap and hold normal attack when using the second to the seventh Unshackle to trigger Trailing Note.\r\nRoam through the air multiple times and deal damage equal to **277.3%** of ATK plus **2750** to surrounding targets.",
+                "icon": "skill_fenrir_airattackbranch",
+                "id": "GA_FPlayerFenrirMelee_AirAttackBranch"
+            },
+            {
+                "name": "Reverberation",
+                "description": "Each time a target is hit by a normal attack, there is a **50%** chance to place **1** musical note on the target that lasts for **15** seconds, stacking up to **5** notes.\r\n**Wolfbite**, **Menacing Hunt**, and **Thick and Fast** have a **100%** chance to place **1** musical note on the target on hit.\r\nMusical notes can only be placed once every **1** second.\r\n**Passive**: **Trailing Note** and **Melody** will detonate all the musical notes on the target on hit, dealing damage equal to **20%** of ATK times the number of musical notes detonated. Damage is doubled if **3** or more notes are detonated.\r\n**Passive**: After detonating **2** or more musical notes, cause the target to become intoxicated, dealing damage equal to **1%** of Wanderer's Max HP every second for **16** seconds.\r\nDamage from musical note detonation and intoxication is considered as dodge attack damage.",
+                "icon": "skill_fenrir_beidong",
+                "id": "GA_FPlayerFenrirMelee_Beidong"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Melody",
+                "description": "Attack with claws, dealing damage equal to **210.8%** of ATK plus **1265** to surrounding targets and knocking them down.",
+                "icon": "skill_fenrir_evadeattack",
+                "id": "GA_FPlayerFenrirEvade_EvadeAttack"
+            },
+            {
+                "name": "Dodge",
+                "description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of targets within the area. Become immune to hitstun while dodging.\r\n**Passive**: Place a musical note on the target.",
+                "icon": "skill_dgun_evade",
+                "id": "GA_FPlayerFenrirEvade_Evade"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Su-Paw-Star",
+                "description": "Summon a consciousness that is separate from the target, dealing damage equal to **124.1%** of ATK plus **745** on hit. Create a Songworld at the Wanderer's current location that lasts **30** seconds, in which damage taken by the Wanderer is reduced by **8%** while ignoring **20%** of the target's defense.\r\nThe consciousness has HP equal to **30** times the Wanderer's Max HP. It can only receive non-passive damage from **Gleipnir**, and **100%** of the damage is transferred to the target's main body (**1%** for enemy Wanderers), while restoring HP equal to **50%** of ATK to the Wanderer. While the consciousness is active, the Wanderer takes **12%** less damage from the target's main body. The consciousness will exist for up to **15** seconds.\r\nAfter the consciousness returns to the target's main body, deal area damage equal to **705.4%** of ATK plus **4232**.\r\nRecalling the consciousness: The consciousness returns to its main body when it's defeated, when its duration runs out, when a new consciousness is summoned, or when it strays too far from the body.\r\nSu-Paw-Star cooldown: **30** seconds.",
+                "icon": "fenrir_skill",
+                "id": "GA_FPlayerFenrirSkill_Skill"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Awoooo!",
+                "description": "When **weapon charge is full** or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer**, then rush to the target and attack, dealing damage up to **661.8%** of ATK plus **3971** to targets in the area and placing **3** musical notes on them. Briefly become invincible while the skill is active (unavailable in The Critical Abyss and Apex League).",
+                "icon": "skill_fenrir_changeskill",
+                "id": "GA_FPlayerFenrirChangeSkill"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "When **Su-Paw-Star** summons a consciousness and is on cooldown, gain the **Aural Fever** skill. Rush to the target and attack multiple times, dealing damage up to **720%** of ATK. Each hit landed slows the enemy for a brief period and restores HP equal to **100%** of ATK. The last hit places **2** musical notes on the target. Aural Fever cooldown: **15** seconds.\r\nWhen **3** or more notes are detonated and the cooldown of Aural Fever is greater than **5** seconds, clear the cooldown of Aural Fever. This effect can only trigger **1** time every **15** seconds.",
+            "stats": {
+                "shatter": 13.5,
+                "charge": 10.5
+            },
+            "need": "fenrir_thunder_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **16%**.",
+            "stats": {
+                "shatter": 13.5,
+                "charge": 10.5
+            },
+            "need": "fenrir_thunder_plasm"
+        },
+        {
+            "description": "While Songworld is active:\r\nFor every **45%** of Max HP lost or when using the skill **Aural Fever**, trigger a **Songworld Quake** which deals damage equal to **650%** of ATK to targets in the Songworld.\r\nFor every **99%** of Max HP lost, gain **1** escape death for **45** seconds (block a lethal effect and become immune to damage for a short time), stacking up to **1** time.",
+            "stats": {
+                "shatter": 13.5,
+                "charge": 10.5
+            },
+            "need": "fenrir_thunder_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **32%**.",
+            "stats": {
+                "shatter": 13.5,
+                "charge": 10.5
+            },
+            "need": "fenrir_thunder_plasm"
+        },
+        {
+            "description": "Increase the damage multiplier of musical notes' detonation to **40%**, and the DoT caused by intoxication to **1.5%** of Max HP every second.\r\nWhile Songworld is active, **Songworld Quake** is triggered automatically if it doesn't trigger for **12** seconds while in combat.",
+            "stats": {
+                "shatter": 13.5,
+                "charge": 10.5
+            },
+            "need": "fenrir_thunder_plasm"
+        },
+        {
+            "description": "Increase crit rate by **18%** while wielding **Gleipnir**. The crit rate increase lasts another **5** seconds after switching to other weapons.",
+            "stats": {
+                "shatter": 13.5,
+                "charge": 10.5
+            },
+            "need": "fenrir_thunder_plasm"
+        }
+    ]
+}

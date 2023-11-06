@@ -1,0 +1,130 @@
+{
+    "id": "bow_ice",
+    "name": "Icewind Arrow",
+    "description": "The arrows from this bow carry the power of frost.",
+    "icon": "item_Weapon_SSR_Bow_Ice01",
+    "rarity": "SSR",
+    "type": "DPS",
+    "element": "Ice",
+    "weaponType": "Bow",
+    "mats": {
+        "Item_Mine_ice": 39,
+        "Item_Mine_ice_02": 65,
+        "Item_breakthrough_A2": 65,
+        "Item_breakthrough_D2": 65,
+        "Item_Mine_ice_03": 32,
+        "Item_breakthrough_A3": 32,
+        "Item_breakthrough_D3": 32,
+        "Item_breakthrough_A1": 35,
+        "Item_breakthrough_D1": 32
+    },
+    "weaponEffects": null,
+    "skills": {
+        "normals": [
+            {
+                "name": "Quickdraw",
+                "description": "While on the ground, draw the bow repeatedly to attack **5** times.\r\nFirst Attack: Deal damage equal to **53.7%** of ATK plus **322**.\r\nSecond Attack: Deal damage equal to **48.1%** of ATK plus **288**.\r\nThird Attack: Deal damage equal to **86.5%** of ATK plus **519**.\r\nFourth Attack: Deal damage equal to **133.3%** of ATK plus **800**.\r\nFifth Attack: Deal damage equal to **123.8%** of ATK plus **743** and knock the target back a short distance.",
+                "icon": "bow_skill",
+                "id": "GA_FPlayerBowMeleeNew_MeleeIce_SSR"
+            },
+            {
+                "name": "Charged Arrow",
+                "description": "Tap and hold normal attack to charge an attack. Deal base damage equal to **96.6%** of ATK plus **580**, and **50%** more for each **1** second spent charging, up to **3** seconds. Deal double damage when scoring a headshot or when hitting an enemy's weak point, and knock the target down (headshots are ineffective against Wanderers).",
+                "icon": "skill_bow_power",
+                "id": "GA_FPlayerBowMeleeNew_PowerAttackIce_SSR"
+            },
+            {
+                "name": "Arrow Rain",
+                "description": "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to **315.9%** of ATK plus **1895** area damage to targets.",
+                "icon": "skill_bow_changeskill",
+                "id": "GA_FPlayerBowMeleeNew_BranchIce_SSR"
+            },
+            {
+                "name": "Air Volley",
+                "description": "While airborne, use normal attack to attack **4** times in a row in the air.\r\nFirst Attack: Deal damage equal to **61.9%** of ATK plus **372**.\r\nSecond Attack: Deal damage equal to **81.4%** of ATK plus **488**.\r\nThird Attack: Deal damage equal to **124%** of ATK plus **744**.\r\nFourth Attack: Deal damage equal to **186.8%** of ATK plus **1121**.",
+                "icon": "skill_bow_power",
+                "id": "GA_FPlayerBowMeleeNew_AirAttackIce_SSR"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Dodge",
+                "description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: **15** seconds. Become immune to hitstun while dodging for **0.5** seconds.",
+                "icon": "common_evade",
+                "id": "GA_FPlayerBowEvadeNew_EvadeIce_SSR"
+            },
+            {
+                "name": "Loaded Arrow",
+                "description": "Tap attack after dodging to trigger a Loaded Arrow, which **knocks the target back** and deals damage equal to **136.4%** of ATK plus **818**.",
+                "icon": "skill_bow_power",
+                "id": "GA_FPlayerBowEvadeNew_FrontAttackIce_SSR"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Piercing Shot",
+                "description": "Perform a backflip and fire **3** piercing shots, with the main shot dealing damage equal to **284.1%** of ATK plus **1705**, and the other two shots deal **60%** damage. In addition, **knock targets back** and stun them for **5** seconds if they collide with an obstacle. Cooldown: **12** seconds.",
+                "icon": "bow_skill",
+                "id": "GA_FPlayerBowSkillIce_SSR"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Explosive Barrage",
+                "description": "When **weapon charge** is full or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer**, and create a hailstorm at the target location, dealing damage equal to **655.5%** of ATK plus **3933**. The storm has a **10%** chance to **strongly freeze** the target for **2** seconds. Gain cold front, and increase speed by **45%** for **7** seconds.",
+                "icon": "skill_artifact11_1",
+                "id": "GA_FPlayerBowChangeSkill_SuccessIce_SSR"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **5%** for **15** seconds. Stack up to **3** times.",
+            "stats": {
+                "shatter": 4,
+                "charge": 11.5
+            },
+            "need": "bow_ice_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **16%**.",
+            "stats": {
+                "shatter": 4,
+                "charge": 11.5
+            },
+            "need": "bow_ice_plasm"
+        },
+        {
+            "description": "Launching a Dodge attack fires **3** Charged Arrows.",
+            "stats": {
+                "shatter": 4,
+                "charge": 11.5
+            },
+            "need": "bow_ice_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **32%**.",
+            "stats": {
+                "shatter": 4,
+                "charge": 11.5
+            },
+            "need": "bow_ice_plasm"
+        },
+        {
+            "description": "Double duration of Arrow Rain and slow targets by **25%**.",
+            "stats": {
+                "shatter": 4,
+                "charge": 11.5
+            },
+            "need": "bow_ice_plasm"
+        },
+        {
+            "description": "Sharp Arrow stacks up to **5** times. Hitting a target with a Charged Arrow immediately grants **3** stacks. Headshots grant **5** stacks.",
+            "stats": {
+                "shatter": 4,
+                "charge": 11.5
+            },
+            "need": "bow_ice_plasm"
+        }
+    ]
+}

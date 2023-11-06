@@ -1,0 +1,142 @@
+{
+    "id": "hammer_ice",
+    "name": "Pummeler",
+    "description": "No one wants to be on the receiving end of this maul.",
+    "icon": "item_Weapon_SR_Hammer_Ice01",
+    "rarity": "SR",
+    "type": "Tank",
+    "element": "Ice",
+    "weaponType": "Hammer",
+    "mats": {
+        "Item_Mine_ice": 28,
+        "Item_Mine_ice_02": 42,
+        "Item_breakthrough_B2": 42,
+        "Item_breakthrough_C2": 42,
+        "Item_Mine_ice_03": 22,
+        "Item_breakthrough_B3": 22,
+        "Item_breakthrough_C3": 22,
+        "Item_breakthrough_B1": 25,
+        "Item_breakthrough_C1": 23
+    },
+    "weaponEffects": null,
+    "skills": {
+        "normals": [
+            {
+                "name": "Normal Attack",
+                "description": "While on the ground, swing the maul to attack **4** times in a row.\r\nFirst Attack: Deal damage equal to **103%** of ATK plus **618** and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to **83.9%** of ATK plus **503** and knock the target back a short distance.\r\nThird Attack: Deal damage equal to **212.4%** of ATK plus **1274** and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to **356.2%** of ATK plus **2137** and launch the target.\r\nWhile Outburst is active, swing the maul to attack **4** times in a row.\r\nFirst Attack: Deal damage equal to **102%** of ATK plus **612** and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to **87.8%** of ATK plus **527** and knock the target back a short distance.\r\nThird Attack: Deal damage equal to **231.3%** of ATK plus **1388** and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to **425.7%** of ATK plus **2554** and **strongly suspend** the target.",
+                "icon": "pugong_hammer",
+                "id": "GA_FPlayerHammerMelee_Melee"
+            },
+            {
+                "name": "Pummel",
+                "description": "While airborne or after jumping once, use normal attack to trigger Jumping Blast. Deal damage equal to **164.3%** of ATK plus **986**and suspend the target.\r\nWhile Outburst is active, deal damage equal to **180.7%** of ATK plus **1084** and **strongly suspend** the target.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to **600%** damage.",
+                "icon": "skill_hammer_air",
+                "id": "GA_FPlayerHammerMelee_AirAttack"
+            },
+            {
+                "name": "Shockwave",
+                "description": "Tapping and holding while airborne, double-jumping, short tapping in the air when there are targets nearby, climbing, jumping backward, or attacking while using the Jetpack will trigger a Shockwave. **Strongly suspend** the target **4** times, dealing damage equal to **47%** of ATK+ **282** each time. Cost **250** endurance.\r\nWhile Outburst is active, Shockwave **strongly suspends** the target **5** times, dealing damage equal to **51.7%** of *ATK plus **310** each time.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to **600%** damage.",
+                "icon": "skill_hammer_jump",
+                "id": "GA_FPlayerHammerMelee_JumpAttack"
+            },
+            {
+                "name": "Sneak Attack",
+                "description": "Approach the enemy from behind while crouching, then use normal attack to use Sneak Attack, dealing damage equal to **427.5%** of ATK plus **2565**.",
+                "icon": "common_sneak",
+                "id": "GA_FPlayerHammerMelee_Sneak"
+            },
+            {
+                "name": "Focus Smash",
+                "description": "Tap and hold normal attack to trigger Focus Smash (can be charged up to **3** stacks). Grant immunity to all control effects and hyperbody while charging.\r\nFirst Stack: Deal damage equal to **207.6%** of ATK plus **1245** and suspend the target.\r\nSecond Stack: Deal damage equal to **519.1%** of ATK plus **3114** and **strongly suspend** the target.\r\nThird Stack: Deal damage equal to **973.2%** of ATK plus **5839** and **strongly suspend** the target.\r\nWhile Outburst is active, tap and hold normal attack to trigger Furious Strikes, dealing damage equal to **676.7%** of ATK plus **4060** and **strongly suspend** the target.",
+                "icon": "skill_hammer_jump-05",
+                "id": "GA_FPlayerHammerMelee_PowerAttack_OS"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Jumping Smash",
+                "description": "Use the arrow buttons and the dodge button to trigger Jumping Smash, unleashing a Shockwave that suspends the enemy **4** times, dealing damage equal to **218%** of ATK plus **1308**.",
+                "icon": "skill_hammer_frontattack",
+                "id": "GA_FPlayerHammerEvade_FrontAttack"
+            },
+            {
+                "name": "Worldsplitter",
+                "description": "Tap normal attack during the short period of time after a dodge to trigger Worldsplitter, unleashing **3** shockwaves forward, each dealing damage equal to **70.8%** of ATK plus **425**, and suspending the targets.\r\nWhile in Outburst mode, fire **5** shockwaves forward, each dealing damage equal to **70.8%** of ATK plus **425** and suspending the target.",
+                "icon": "skill_hammer_backattck",
+                "id": "GA_FPlayerHammerEvade_BackAttack"
+            },
+            {
+                "name": "Dodge",
+                "description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: **15** seconds. Become immune to hitstun while dodging for **0.5** seconds.",
+                "icon": "common_evade",
+                "id": "GA_FPlayerHammerEvade_Evade"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Outburst",
+                "description": "Switch to activate Outburst, increasing damage dealt for **25** seconds.\r\nWhile Outburst is active, skills trigger Windfury, dealing damage equal to **295.2%** of ATK plus **1771**, **strongly suspending** the target and creating an air current on the ground. While standing in the current, dodging has no cost. Cooldown: **45** seconds (Windfury's cooldown: **10** seconds).",
+                "icon": "hammer_skill2",
+                "id": "GA_FPlayerHammerBigSkill"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Overwhelming Maul",
+                "description": "When **weapon charge** is full or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and **strongly suspend** nearby targets, dealing damage equal to **206.9%** of ATK plus **1241**. Also summon a maul to fall on nearby targets, dealing damage equal to **206.9%** of ATK plus **1241**.",
+                "icon": "skill_hammer_changeskill",
+                "id": "GA_FPlayerHammerChangeSkill_Success"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "Taunt nearby targets after switching to this weapon, preventing **1** instance of damage in the next **8** seconds and granting hyperbody for the next **8** seconds. Cooldown: **15** seconds.",
+            "stats": {
+                "shatter": 10,
+                "charge": 6
+            },
+            "need": "hammer_ice_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base HP growth by **10%**.",
+            "stats": {
+                "shatter": 10,
+                "charge": 6
+            },
+            "need": "hammer_ice_plasm"
+        },
+        {
+            "description": "After taking damage, reduce all damage received by **50%** for the next **6** seconds. Cooldown: **20** seconds.",
+            "stats": {
+                "shatter": 10,
+                "charge": 6
+            },
+            "need": "hammer_ice_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base HP growth by **20%**.",
+            "stats": {
+                "shatter": 10,
+                "charge": 6
+            },
+            "need": "hammer_ice_plasm"
+        },
+        {
+            "description": "Normal attacks **stun** targets for **2.5** seconds. Cooldown: **20** seconds.",
+            "stats": {
+                "shatter": 10,
+                "charge": 6
+            },
+            "need": "hammer_ice_plasm"
+        },
+        {
+            "description": "Discharge skills deal an additional **10%** damage to targets and increase frost damage by an additional **10%** for **25** seconds.",
+            "stats": {
+                "shatter": 10,
+                "charge": 6
+            },
+            "need": "hammer_ice_plasm"
+        }
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "id": "cube_fire",
+    "name": "Negating Cube",
+    "description": "Users of the Strange Cube tend to think of many ways to negate unnecessary requirements.",
+    "icon": "item_Weapon_SSR_Cube_Fire01",
+    "rarity": "SSR",
+    "type": "SUP",
+    "element": "Flame",
+    "weaponType": "Cube",
+    "mats": {
+        "Item_Mine_fire": 39,
+        "Item_Mine_fire_02": 65,
+        "Item_breakthrough_B2": 65,
+        "Item_breakthrough_D2": 65,
+        "Item_Mine_fire_03": 32,
+        "Item_breakthrough_B3": 32,
+        "Item_breakthrough_D3": 32,
+        "Item_breakthrough_B1": 35,
+        "Item_breakthrough_D1": 32
+    },
+    "weaponEffects": [
+        {
+            "title": "Flame Reaction",
+            "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence."
+        },
+        {
+            "title": "Flame Benediction",
+            "description": "Increase entire team's flame ATK by **5%** when Benediction Resonance is activated."
+        }
+    ],
+    "skills": {
+        "normals": [
+            {
+                "name": "Normal Attack",
+                "description": "While on the ground, manipulate the cube to attack **5** times in a row.\r\nFirst Attack: Deal damage equal to **56%** of ATK plus **336**.\r\nSecond Attack: Deal damage equal to **45.8%** of ATK plus **275**.\r\nThird Attack: Deal damage equal to **142.2%** of ATK plus **854**.\r\nFourth Attack: Deal damage equal to **95.5%** of ATK plus **574**.\r\nFifth Attack: Deal damage equal to **97.1%** of ATK plus **582** up to **3** times and **launch** the target.\r\n**Passive: If normal attacks hit targets **6** times, gain **1** cube. Up to **5** cubes can be stored.**",
+                "icon": "pugong_cube",
+                "id": "GA_FPlayerCubeMelee_Melee"
+            },
+            {
+                "name": "Omnium Missile",
+                "description": "While airborne, use normal attack to activate the energy within the cube, firing up to **5** missiles and dealing total damage equal to **71.2%** of ATK plus **427**. Consume up to **250** endurance.\r\n**Passive: If the Wanderer has any stored cubes, consume all cubes to fire Omnium Missiles at targets to deal damage.**",
+                "icon": "skill_cube_airattack",
+                "id": "GA_FPlayerCubeMelee_AirAttack"
+            },
+            {
+                "name": "Energy Overflow",
+                "description": "While airborne or after jumping once, use normal attack to trigger Energy Overflow.\r\nUpon landing, fire a shockwave that travels forward, dealing up to **28.1%** of ATK plus **168** damage to targets in its path.",
+                "icon": "skill_cube_jumpattack",
+                "id": "GA_FPlayerCubeMelee_JumpAttack"
+            },
+            {
+                "name": "Omnium Shock",
+                "description": "On the third normal attack, hold the normal attack button to trigger Omnium Shock.\r\nA pillar of energy launches nearby targets into the air, dealing damage equal to **82.1%** of ATK plus **492**. The pillar lasts **5** seconds and deals damage equal to **34.2%** of ATK plus **205** to nearby targets every second.",
+                "icon": "skill_cube_branch",
+                "id": "GA_FPlayerCubeMelee_Branch"
+            },
+            {
+                "name": "Energy Sentinel",
+                "description": "Cubes orbiting the Wanderer deal damage equal to **11.6%** of ATK plus **70** to enemies.",
+                "icon": "skill_cube_melee",
+                "id": "SsrCubecubebattle"
+            },
+            {
+                "name": "Energy Missile",
+                "description": "When the Wanderer casts Omnium Missiles and Energy Overflow, their orbiting cubes are fired as well, dealing damage equal to **48.5%** of ATK plus **291** to the target.",
+                "icon": "skill_cube_pas",
+                "id": "SsrCubecube"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Soul Surge",
+                "description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Become immune to hitstun while dodging for **0.5** seconds.\r\nIf the Wanderer has less than **5** cubes, each successful dodge has a **40%** chance to restore **1** dodge attempt.\r\nSuccessful dodges do not interrupt normal attack combos.\r\n**Passive: Gain a cube for every successful aerial dodge.**",
+                "icon": "common_evade",
+                "id": "GA_FPlayerCubeEvade_Evade"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Omnium Shield",
+                "description": "Create shielding for self and nearby allies to block up to **800%** of ATK in damage for **10** seconds, deal **142.9%** of ATK plus **857** damage to nearby targets and **strongly launch** them. Each cube in possession when this skill is used adds **160%** of ATK to max shielding and exhaust the cube. Cooldown: **60** seconds.",
+                "icon": "cube_skill",
+                "id": "GA_FPlayerCubeSkill"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Omnium Wave",
+                "description": "When **weapon charge** is full or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and gain **5** cubes, then unleash the **5** cubes along with a Shockwave. This Shockwave deals damage equal to **171%** of ATK plus **1026** to nearby targets, and **strongly launches** them into the air. Each cube also deals damage equal to **48.5%** of ATK plus **291**. If allies are in the vicinity, the allies and the wielder gain damage immunity for **3** seconds.",
+                "icon": "skill_cube_changeskill",
+                "id": "GA_FPlayerCubeChangeSkill_Success"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "Deal damage and produce a healing orb which lasts for **20** seconds and restores the HP of any teammate who picks it up. The HP restored is equal to **60%** of ATK. **2**-second cooldown.",
+            "stats": {
+                "shatter": 5,
+                "charge": 13
+            },
+            "need": "cube_fire_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **16%**.",
+            "stats": {
+                "shatter": 5,
+                "charge": 13
+            },
+            "need": "cube_fire_plasm"
+        },
+        {
+            "description": "Reduce skill cooldown from **60** seconds to **30** seconds. Restore HP equal to **30%** of ATK every second while the shield is active.",
+            "stats": {
+                "shatter": 5,
+                "charge": 13
+            },
+            "need": "cube_fire_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base HP growth by **32%**.",
+            "stats": {
+                "shatter": 5,
+                "charge": 13
+            },
+            "need": "cube_fire_plasm"
+        },
+        {
+            "description": "Damaging a target also produces a damage orb, which lasts for **20** seconds and increases all damage and healing of any teammate who picks it up by **2%** for **30** seconds. Stack up to **10** times. Skill cooldown is **2.5** seconds.",
+            "stats": {
+                "shatter": 5,
+                "charge": 13
+            },
+            "need": "cube_fire_plasm"
+        },
+        {
+            "description": "Using a Skill grants allies healing orbs and damage orbs equal to the number of Omnium Cubes.",
+            "stats": {
+                "shatter": 5,
+                "charge": 13
+            },
+            "need": "cube_fire_plasm"
+        }
+    ]
+}

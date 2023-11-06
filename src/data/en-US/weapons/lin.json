@@ -1,0 +1,145 @@
+{
+    "id": "fan_superpower",
+    "name": "Shadoweave",
+    "description": "The initial design shows it to be a lightweight and covert concealed weapon, but it's changed to a heavy blade by the user's own request. It's heavy and not like a concealed weapon at all.",
+    "icon": "item_Weapon_SSR_fan_superpower01",
+    "rarity": "SSR",
+    "type": "DPS",
+    "element": "Superpower",
+    "weaponType": "Fan",
+    "mats": {
+        "Item_breakthrough_A1": 28,
+        "Item_breakthrough_B1": 28,
+        "": null,
+        "Item_breakthrough_C1": 26,
+        "Item_breakthrough_D1": 26,
+        "Item_breakthrough_A2": 50,
+        "Item_breakthrough_B2": 50,
+        "Item_breakthrough_C2": 50,
+        "Item_breakthrough_D2": 50,
+        "Item_breakthrough_A3": 26,
+        "Item_breakthrough_B3": 26,
+        "Item_breakthrough_C3": 26,
+        "Item_breakthrough_D3": 26
+    },
+    "weaponEffects": [
+        {
+            "title": "Altered Damage",
+            "description": "When pairing Shadoweave with other weapons, the **Weapons Master** effect can be created. Epiphyllum will appear around the target randomly and explode within **1–3** seconds, dealing **37.5%** area damage."
+        }
+    ],
+    "skills": {
+        "normals": [
+            {
+                "name": "Normal Attack",
+                "description": "While on the ground, use Shadoweave to launch **5** consecutive attacks.\r\nFirst Attack: Deal damage equal to **59.9%** of ATK plus **359**.\r\nSecond Attack: Deal damage equal to **57.1%** of ATK plus **343**.\r\nThird Attack: Deal damage equal to **49.5%** of ATK plus **297**. \r\nFourth Attack: Deal damage equal to **114.2%** of ATK plus **685** and suspend the target.\r\nFifth Attack: Deal damage equal to **152.2%** of ATK plus **913**.",
+                "icon": "skill_Fan_melee",
+                "id": "GA_FPlayerFanMelee_Melee"
+            },
+            {
+                "name": "Aerial Discharge",
+                "description": "While airborne, use normal attack to attack **5** times in a row in mid-air.\r\nFirst Attack: Deal damage equal to **30.6%** of ATK plus **184**.\r\nSecond Attack: Deal damage equal to **55.6%** of ATK plus **334**.\r\nThird Attack: Deal damage equal to **48.2%** of ATK plus **289**.\r\nFourth Attack: Deal damage equal to **111.2%** of ATK plus **667**.\r\nFifth Attack: Deal damage equal to **148.3%** of ATK plus **890**.",
+                "icon": "skill_Fan_air",
+                "id": "GA_FPlayerFanMelee_AirAttack"
+            },
+            {
+                "name": "Scattered Soil",
+                "description": "After the second normal attack on the ground or in mid-air, hold normal attack to trigger Scattered Soil.\r\nAttack the target position, dealing damage equal to **83.2%** of ATK plus **499** and knocking the target down.\r\nPassive: After unleashing Scattered Soil on the ground, rapidly tapping normal attack will immediately unleash Brief Bloom (the **3**rd stack).",
+                "icon": "skill_Fan_branch",
+                "id": "GA_FPlayerFanMelee_Branch"
+            },
+            {
+                "name": "Brief Bloom",
+                "description": "Hold normal attack to unleash Brief Bloom. Can be charged for up to **3** stacks, gaining hyperbody and control immunity during charging.\r\nFirst stack: Deal damage equal to **73.9%** of ATK plus **443**.\r\nSecond stack: Deal damage equal to **146.2%** of ATK plus **877**.\r\nThird stack: Deal damage equal to **246.4%** of ATK plus **1478**.",
+                "icon": "skill_Fan_powerattack",
+                "id": "GA_FPlayerFanMelee_PowerAttack"
+            },
+            {
+                "name": "Falling Shadow",
+                "description": "Hold normal attack in mid-air to trigger Falling Shadow.\r\nPlummet from the skies, dealing damage equal to **160%** of ATK plus **960** and knocking the target down.",
+                "icon": "skill_Fan_jumpattack",
+                "id": "GA_FPlayerFanMelee_JumpAttack"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Dodge",
+                "description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of enemies within the area. Become immune to hitstun while dodging for **0.5** seconds.",
+                "icon": "common_evade",
+                "id": "GA_FPlayerFanEvade_Evade"
+            },
+            {
+                "name": "Leafy Green",
+                "description": "Unleash Leafy Green at the target while performing a backflip, dealing damage equal to **70%** of ATK plus **420**, generating **1–3** epiphyllums upon hit, and forming a Green Field that lasts for **5** seconds. When enemies in the Green Field lock onto the Wanderer, their movement speed is reduced by **50%**.\r\nPassive: Can be unleashed on the ground or mid-air.\r\nPassive: Immediately break the control if under control effect and automatically release Leafy Green without using any dodge attempts. Skill cooldown lasts for **20** seconds.",
+                "icon": "skill_Fan_rollattack",
+                "id": "GA_FPlayerFanEvade_RollAttack"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Moonlight Realm",
+                "description": "Create a Moonlight Realm around yourself for **15** seconds. Your attack in the realm is increased by **15%**, jumping ability increased by **20%**, and endurance consumption reduced by **50%**. Cooldown: **30** seconds.\r\nEnter the special state Airbloom when using Shadoweave in the realm. Your fall speed is greatly reduced and you can perform multiple double-jumps. In this state, using the directional controls and jump button while mid-air will perform a Roam and launch an attack on the target. Upon hit, deal damage equal to **66%** of ATK plus **396** and randomly generate **1–3** epiphyllums.\r\n\r\nPassive: In the Moonlight Realm, **1** epiphyllum will be generated near **1** target every **0.8** seconds. \r\nPassive: When you use Shadoweave in Moonlight Realm, an extra **50%** of damage is dealt to enemies with less than **20%** HP.\r\nPassive: When you use Shadoweave in Moonlight Realm, you will blink away from the target when incoming damage is detected. Cooldown: **10** seconds.\r\n\r\nPassive: Weapons Master\r\nFlame: When Shadoweave is paired with **2** flame weapons, Moonlight Realm is converted to Flame: Moonlight Realm. When a target is burned while in Flame: Moonlight Realm, they are burned for an extra **4** seconds. Targets with shield take an extra **15%** flame damage. \r\n\r\nVolt: When Shadoweave is paired with **2** volt weapons, Moonlight Realm is converted to Volt: Moonlight Realm. While in Volt: Moonlight Realm, dodging has a **65%** chance of not consuming a dodge attempt, dodge attacks deal **5%** additional damage, and volt damage is increased by **10%**.\r\n\r\nFrost: When Shadoweave is paired with **2** frost weapons, Moonlight Realm is converted to Frost: Moonlight Realm. While in Frost: Moonlight Realm, frost ATK is increased by **10%**.\r\n\r\nPhysical: When Shadoweave is paired with **2** physical weapons, Moonlight Realm is converted to Physical: Moonlight Realm. While in Physical: Moonlight Realm, deal damage equal to **50%** of ATK plus **300** to targets within attack range every second.\r\n\r\nBalance: When Shadoweave is paired with any two different elemental weapons (among flame, volt, frost, and physical weapons), the Wanderer's ATK is increased by **15%** in the realm, and counted as activating flame, volt, frost, and physical resonance without resonance effects.",
+                "icon": "skill_Fan_skill",
+                "id": "GA_FPlayerFanSkill_Skill"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Gravity Weave",
+                "description": "When **weapon charge is full** or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and unleash Gravity Weave with a stronger absorption force, dealing damage equal to **368.5%** of ATK plus **2211**. Then explode and create a ranged diffusion wave after **5** seconds, dealing damage equal to **184.3%** + **1106**. Damage immunity lasts **1.5** seconds while the skill is active (unavailable in Apex League).",
+                "icon": "skill_Fan_changeskill",
+                "id": "GA_FPlayerFanChangeSkill_Success"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "Normal attacks now deal area damage upon hit.\r\nWhen there is another epiphyllum within the epiphyllum explosion area, increase the damage of each of the subsequent epiphyllum explosions by **0%**, up to a maximum of **1%**.\r\nThe epiphyllum generation interval from **Moonlight Realm** is now reduced to **0.5** seconds.",
+            "stats": {
+                "shatter": 11.5,
+                "charge": 11.5
+            },
+            "need": "fan_superpower_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **16%**.",
+            "stats": {
+                "shatter": 11.5,
+                "charge": 11.5
+            },
+            "need": "fan_superpower_plasm"
+        },
+        {
+            "description": "The epiphyllum generation interval from **Moonlight Realm** is now reduced to **0.3** seconds.\r\nEpiphyllums will attach to the enemy.\r\nThe duration of **Moonlight Realm** is now increased to **20** seconds.",
+            "stats": {
+                "shatter": 11.5,
+                "charge": 11.5
+            },
+            "need": "fan_superpower_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **32%**.",
+            "stats": {
+                "shatter": 11.5,
+                "charge": 11.5
+            },
+            "need": "fan_superpower_plasm"
+        },
+        {
+            "description": "When under the effect of **Moonlight Realm**, gain **30** weapon charge every second and increase the damage of discharge skill by **0%**.",
+            "stats": {
+                "shatter": 11.5,
+                "charge": 11.5
+            },
+            "need": "fan_superpower_plasm"
+        },
+        {
+            "description": "Switch modes on **Moonlight Realm** up to **2** times. Gain **1** attempt after skill cooldown and another **1** attempt by charging discharge.\r\nUse any weapon discharge **3** times to gain **+**1**** on the **Moonlight Realm** count. Effective even when Shadoweave is in the off-hand slot.\r\nWhen under the effect of **Moonlight Realm**, increase attack by **0%**.",
+            "stats": {
+                "shatter": 11.5,
+                "charge": 11.5
+            },
+            "need": "fan_superpower_plasm"
+        }
+    ]
+}

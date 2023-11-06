@@ -9,4 +9,5 @@ app = FastAPI()
 app.include_router(simulacra.router)
 
 
-run(app=app, access_log=False)
+if __name__ == '__main__':
+    run(app='main:app', access_log=False, reload=True, reload_delay=5, workers=1)

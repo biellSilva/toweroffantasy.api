@@ -6,20 +6,22 @@ from os import listdir
 from json import loads, dump
 from fastapi import APIRouter, HTTPException, Depends, UploadFile
 from fastapi.responses import JSONResponse
-from typing import Optional
+from typing import Optional, Literal
 
 from api import verify_auth
-from api.entitys import Language, Simulacra
+from api.entitys import Simulacra
+from api.enums import Lang
+
 
 router = APIRouter(prefix='/simulacra', tags=['simulacra'])
 
 
 @router.get('/{name}')
-async def get_simulacra(name: str, lang: Language = Language()):
+async def get_simulacra(name: str, lang: Lang = Lang.en):
     ''' Get simulacra based on name '''
     
-    if lang.lang in listdir('src/data'):
-        path = Path(Path().cwd(), f'src/data/{lang}/simulacra/{name.replace(" ", "").lower()}.json')
+    if lang.value in listdir('src/data'):
+        path = Path(Path().cwd(), f'src/data/{lang.value}/simulacra/{name.replace(" ", "").lower()}.json')
 
     else:
         path = Path(Path().cwd(), f'src/data/en-US/simulacra/{name.replace(" ", "").lower()}.json')
@@ -33,12 +35,12 @@ async def get_simulacra(name: str, lang: Language = Language()):
 
 
 @router.post('', dependencies=[Depends(verify_auth)])
-async def create_simulacra(simulacra: Simulacra, file_A0: UploadFile, lang: Language = Language(), file_A3: Optional[UploadFile] = None):
+async def create_simulacra(simulacra: Simulacra, file_A0: UploadFile, lang: Literal['en-US', 'pt-BR'] = 'en-US', file_A3: Optional[UploadFile] = None):
 
-    if Path(Path().cwd(), f'src/data/{lang.lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json').exists():
-        raise HTTPException(403, f'/simulacra/{lang.lang}/{simulacra.name.replace(" ", "_").lower()} already exists')
+    if Path(Path().cwd(), f'src/data/{lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json').exists():
+        raise HTTPException(403, f'/simulacra/{lang}/{simulacra.name.replace(" ", "_").lower()} already exists')
     
-    Path(Path().cwd(), f'src/data/{lang.lang}/simulacra').mkdir(parents=True, exist_ok=True)
+    Path(Path().cwd(), f'src/data/{lang}/simulacra').mkdir(parents=True, exist_ok=True)
     Path(Path().cwd(), f'src/images/simulacra').mkdir(parents=True, exist_ok=True)
 
     with open(f'src/data/{lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json', 'w') as f:
@@ -57,9 +59,9 @@ async def create_simulacra(simulacra: Simulacra, file_A0: UploadFile, lang: Lang
 
 
 @router.put('', dependencies=[Depends(verify_auth)])
-async def update_simulacra(simulacra: Simulacra, lang: Language = Language(), file_A0: Optional[UploadFile] = None, file_A3: Optional[UploadFile] = None):
+async def update_simulacra(simulacra: Simulacra, lang: Literal['en-US', 'pt-BR'] = 'en-US', file_A0: Optional[UploadFile] = None, file_A3: Optional[UploadFile] = None):
     
-    if not Path(Path().cwd(), f'src/data/{lang.lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json').exists():
+    if not Path(Path().cwd(), f'src/data/{lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json').exists():
         raise HTTPException(404, f'/simulacra/{simulacra.name.replace(" ", "_").lower()} not found')
 
     with open(f'src/data/{lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json', 'w') as f:
@@ -79,11 +81,11 @@ async def update_simulacra(simulacra: Simulacra, lang: Language = Language(), fi
 
 
 @router.delete('', dependencies=[Depends(verify_auth)])
-async def delete_simulacra(simulacra: Simulacra, lang: Language):
+async def delete_simulacra(simulacra: Simulacra, lang: Literal['en-US', 'pt-BR'] = 'en-US'):
      
-        if not Path(Path().cwd(), f'src/data/{lang.lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json').exists():
+        if not Path(Path().cwd(), f'src/data/{lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json').exists():
             raise HTTPException(404, f'/simulacra/{simulacra.name.replace(" ", "_").lower()} not found')
 
-        Path(Path().cwd(), f'src/data/{lang.lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json').unlink(missing_ok=True)
+        Path(Path().cwd(), f'src/data/{lang}/simulacra/{simulacra.name.replace(" ", "_").lower()}.json').unlink(missing_ok=True)
         
         return f'/simulacras/{simulacra.name.replace(" ", "_").lower()} deleted'

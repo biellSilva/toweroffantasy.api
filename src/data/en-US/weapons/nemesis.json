@@ -1,0 +1,145 @@
+{
+    "id": "Suspension_thunder",
+    "name": "Venus",
+    "description": "Its designer is unknown. The special hovering EM Blaster's prototype's blueprint has been lost. It contains a unique electrical saving process in its interior. It's extremely troublesome to repair when it gets worn out, but Cobalt-B of Banges Tech seems to be able to do it. ",
+    "icon": "item_Weapon_SSR_naimxs_Thunder01",
+    "rarity": "SSR",
+    "type": "SUP",
+    "element": "Thunder",
+    "weaponType": "Suspension",
+    "mats": {
+        "Item_Mine_thunder": 39,
+        "Item_Mine_thunder_02": 65,
+        "Item_breakthrough_B2": 65,
+        "Item_breakthrough_D2": 65,
+        "Item_Mine_thunder_03": 32,
+        "Item_breakthrough_B3": 32,
+        "Item_breakthrough_D3": 32,
+        "Item_breakthrough_B1": 35,
+        "Item_breakthrough_D1": 32
+    },
+    "weaponEffects": [
+        {
+            "title": "Volt Resonance",
+            "description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+        },
+        {
+            "title": "Volt Benediction",
+            "description": "Increase the entire team's volt ATK by **5%** when Benediction Resonance is active."
+        }
+    ],
+    "skills": {
+        "normals": [
+            {
+                "name": "Normal Attack",
+                "description": "While on the ground, use Venus to attack **5** times in a row.\r\nThe first attack deals damage equal to **50.8%** of ATK plus **305**.\r\nThe second attack deals damage equal to **36.3%** of ATK plus **218**.\r\nThe third attack deals damage equal to **98.3%** of ATK plus **590**.\r\nThe fourth attack deals damage equal to **67.3%** of ATK plus **404**.\r\nThe fifth attack deals damage equal to **148.3%** of ATK plus **890**.",
+                "icon": "skill_suspension_melee",
+                "id": "GA_PlayerSuspensionMelee_Melee"
+            },
+            {
+                "name": "Aerial Discharge",
+                "description": "While airborne, use normal attack to attack **5** times in a row in mid-air.\r\nFirst Attack: Deal damage equal to **62.5%** of ATK plus **375**.\r\nSecond Attack: Deal damage equal to **62.5%** of ATK plus **375**.\r\nThird Attack: Deal damage equal to **120%** of ATK plus **720**.\r\nFourth Attack: Deal damage equal to **71.2%** of ATK plus **427**.\r\nFifth Attack: Deal damage equal to **126%** of ATK plus **756**.",
+                "icon": "skill_suspension_air",
+                "id": "GA_PlayerSuspensionMelee_AirAttack"
+            },
+            {
+                "name": "Quick Pursuit",
+                "description": "After the second normal attack, hold normal attack to trigger Quick Pursuit.\r\nShoot a laser-guided missile at the target, dealing damage up to **107.5%** of ATK plus **645**.",
+                "icon": "skill_suspension_branch",
+                "id": "GA_PlayerSuspensionMelee_Branch"
+            },
+            {
+                "name": "Dual Focus",
+                "description": "Tap and hold normal attack to charge an attack and release an electrified ball that explodes on hit, dealing damage equal to **118.4%** of ATK plus **710** to nearby enemies.",
+                "icon": "skill_suspension_powerattack",
+                "id": "GA_PlayerSuspensionMelee_PowerAttack"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Dodge",
+                "description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of enemies within the area. Become immune to hitstun while dodging for **0.5** seconds.",
+                "icon": "common_evade",
+                "id": "GA_FPlayerSuspensionEvade_Evade"
+            },
+            {
+                "name": "Twin Spinning Focus",
+                "description": "Tap normal attack during the short perfect dodge window to trigger a slowing magnetic field.\r\nVenus fires a charged orb that explodes after traveling forward a set distance or coming in contact with targets. Deal damage equal to **171.6%** of ATK plus **1030**, and generate a slowing magnetic field for **3** seconds, which reduces the movement speed and attack speed of all enemies caught within by **35%**.\r\nDodging will trigger a Healing Chain that heals nearby allies by **67.7%** of the Wanderer's ATK; for the next **10** seconds, a small Healing Chain will trigger every **2** seconds, which heals nearby allies by **22.5%** of the Wanderer's ATK. Dodging grants **1** stack of Healing Chain enhance, which increases the effects of Healing Chains by **25%**. Stacks up to **5** times and lasts for **30** seconds. Switching weapons doesn't cancel this effect.",
+                "icon": "skill_suspension_backattack",
+                "id": "GA_FPlayerSuspensionEvade_BackAttack"
+            },
+            {
+                "name": "Parallel Beams",
+                "description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Parallel Beams.\r\nVenus fires a pair of parallel energy beams, dealing piercing damage equal to **171.6%** of ATK plus **1030**.\r\nDodging will trigger a Healing Chain that heals nearby allies by **67.7%** of the Wanderer's ATK; for the next **10** seconds, a small Healing Chain will trigger every **2** seconds, which heals nearby allies by **22.5%** of the Wanderer's ATK. Dodging grants **1** stack of Healing Chain enhance, which increases the effects of Healing Chains by **25%** (stack up to **5** times) and lasts for **30** seconds. Switching weapons doesn't cancel this effect.",
+                "icon": "skill_suspension_rollattack",
+                "id": "GA_FPlayerSuspensionEvade_RollAttack"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Pulse Lock",
+                "description": "Venus fires a guided missile that explodes on contact with enemy targets, dealing damage equal to **233.2%** of ATK plus **1399** and knocking down targets. Cooldown: **25** seconds.",
+                "icon": "skill_suspension_skill",
+                "id": "GA_FPlayerSuspensionSkill_Skill"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Particle Beam Burst",
+                "description": "When **weapon charge is full** or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and command Venus to fire a cross-shaped ray at the ground, creating an unstable area and slowing targets' movement speed by **70%** for **5** seconds. After a brief delay, unleash an electromagnetic burst that deals damage equal to **393.9%** of ATK plus **2363**.\r\nUsing a discharge attack will spawn **1** Electrode at the target's position that attacks once every **1.5** seconds, dealing damage equal to **44%** of ATK plus **264**.\r\nThe Electrode gains **100%** of the Wanderer's stats, can be attacked or healed, and loses **3%** of its Max HP every second.\r\nOnly **1** Electrode can exist at any given time, and summoning a new Electrode will replace the previous one.",
+                "icon": "skill_suspension_changeskill",
+                "id": "GA_FPlayerSuspensionChangeSkill_Success"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "After using **Pulse Lock** or **Particle Beam Burst**, creates **1** Electrode that immediately grants the user **5** stacks of Healing Chain Enhance. In addition, unleash a Healing Chain that heals nearby allies by **135%** of the Wanderer's ATK.",
+            "stats": {
+                "shatter": 6,
+                "charge": 8
+            },
+            "need": "Suspension_thunder_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **16%**.",
+            "stats": {
+                "shatter": 6,
+                "charge": 8
+            },
+            "need": "Suspension_thunder_plasm"
+        },
+        {
+            "description": "Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals area damage equal to a maximum of **230%** of ATK.",
+            "stats": {
+                "shatter": 6,
+                "charge": 8
+            },
+            "need": "Suspension_thunder_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **32%**.",
+            "stats": {
+                "shatter": 6,
+                "charge": 8
+            },
+            "need": "Suspension_thunder_plasm"
+        },
+        {
+            "description": "After using **Pulse Lock**, increase the Wanderer's ATK by (**5** + (Number of Electrodes ×**5**))% for **25** seconds.",
+            "stats": {
+                "shatter": 6,
+                "charge": 8
+            },
+            "need": "Suspension_thunder_plasm"
+        },
+        {
+            "description": "Up to **2** Electrodes can be active at the same time. Summoning more Electrodes will replace the ones furthest from the user.",
+            "stats": {
+                "shatter": 6,
+                "charge": 11
+            },
+            "need": "Suspension_thunder_plasm"
+        }
+    ]
+}

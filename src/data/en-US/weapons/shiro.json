@@ -1,0 +1,136 @@
+{
+    "id": "darts_physic",
+    "name": "Chakram of the Seas",
+    "description": "A round and sharp weapon that traveled the seas with its owner.",
+    "icon": "item_Weapon_SSR_Darts_Phy01",
+    "rarity": "SSR",
+    "type": "DPS",
+    "element": "Physics",
+    "weaponType": "Darts",
+    "mats": {
+        "Item_Mine_physic": 39,
+        "Item_Mine_physic_02": 65,
+        "Item_breakthrough_B2": 65,
+        "Item_breakthrough_C2": 65,
+        "Item_Mine_physic_03": 32,
+        "Item_breakthrough_B3": 32,
+        "Item_breakthrough_C3": 32,
+        "Item_breakthrough_B1": 35,
+        "Item_breakthrough_C1": 32
+    },
+    "weaponEffects": null,
+    "skills": {
+        "normals": [
+            {
+                "name": "Rapid Throw",
+                "description": "While on the ground, brandish the chakram to unleash **5** spinning attacks.\r\nFirst Attack: Deal damage equal to **35.3%** of ATK plus **212**.\r\nSecond Attack: Deal damage equal to **27.4%** of ATK plus **164**.\r\nThird Attack: Deal damage equal to **39.1%** of ATK plus **235**.\r\nFourth Attack: Deal damage equal to **35.3%** of ATK plus **212**.\r\nFifth Attack: Deal damage equal to **61.9%** of ATK plus **371** and knock the target back a short distance.",
+                "icon": "skill_darts_melee",
+                "id": "GA_FPlayerDartsMelee_Melee"
+            },
+            {
+                "name": "Aerial Discharge",
+                "description": "While airborne or after jumping once, use normal attack to unleash **3** spinning attacks in a row.\r\nFirst Attack: Deal damage equal to **30.1%** of ATK plus **181**.\r\nSecond Attack: Deal damage equal to **33.6%** of ATK plus **201**.\r\nThird Attack: Deal damage equal to **42.8%** of ATK plus **256**.",
+                "icon": "skill_darts_air",
+                "id": "GA_FPlayerDartsMelee_AirAttack"
+            },
+            {
+                "name": "Scatter",
+                "description": "After the second normal attack, hold attack button to activate Scatter.\r\nFire five penetrating chakrams forward, each hit dealing **50%** of ATK plus **300** damage, with minor knockback.",
+                "icon": "skill_darts_branch",
+                "id": "GA_FPlayerDartsMelee_Branch"
+            },
+            {
+                "name": "Air Spin",
+                "description": "Tap and hold normal attack while airborne to trigger Air Spin.\r\nUnleash a powerful strike, dealing damage equal to **220.2%** of ATK plus **1321** to the target and nearby enemies, and suspend them.",
+                "icon": "skill_darts_jump",
+                "id": "GA_FPlayerDartsMelee_JumpAttack"
+            },
+            {
+                "name": "Sneak Attack",
+                "description": "Approach the enemy from behind while crouching, then use normal attack to use Sneak Attack, dealing damage equal to **491.6%** of ATK plus **2950**.",
+                "icon": "common_sneak",
+                "id": "GA_FPlayerDartsMelee_Sneak"
+            }
+        ],
+        "dodge": [
+            {
+                "name": "Waning Moon",
+                "description": "Use normal attack during the short period after dodging to trigger Waning Moon.\r\nToss a spinning chakram forward, dealing damage equal to **152.8%** of ATK plus **917** to the target and inflicting a **stun** effect for **0.5** seconds. The chakram then splits into **3** and keeps traveling, dealing damage equal to **27.8%** of ATK plus **167** to targets along their path. **Split chakrams will bounce during Full Bloom**.",
+                "icon": "skill_darts_backattack",
+                "id": "GA_FPlayerDartsEvade_BackAttack"
+            },
+            {
+                "name": "Dodge",
+                "description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of enemies within the area. Become immune to hitstun while dodging for **0.5** seconds.",
+                "icon": "common_evade",
+                "id": "GA_FPlayerDartsEvade_Evade"
+            }
+        ],
+        "skill": [
+            {
+                "name": "Full Bloom",
+                "description": "Create a Chakram Domain with the Wanderer at the center for **8** seconds. At the same time, enemies are pulled in, and their speed is reduced by **30%** for **8** seconds. Fire **5** chakrams that bounce between enemies, dealing damage equal to **27.8%** of ATK plus **167** to targets along their paths, bouncing up to **5** times. **The split chakrams triggered by Waning Moon will also bounce up to **5** times.** Cooldown: **45** seconds.",
+                "icon": "darts_skill",
+                "id": "GA_FPlayerDartsSkill"
+            }
+        ],
+        "discharge": [
+            {
+                "name": "Spirit of the Air",
+                "description": "When **weapon charge** is full or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and unleash Chakram of the Seas at a target. Struck target causes AoE **stun** for **1** second, plus **1** attack each against up to **3** units every second (each attack has **10%** chance of **stunning** the target for **1.5** seconds), dealing **49.7%** x ATK plus **298** damage for **10** seconds.",
+                "icon": "skill_darts_changeskill",
+                "id": "GA_FPlayerDartsChangeSkill_Success"
+            }
+        ]
+    },
+    "advancements": [
+        {
+            "description": "Increase damage dealt to and all elemental shattering effects on targets within **Full Bloom**'s range by **30%**.",
+            "stats": {
+                "shatter": 11.4,
+                "charge": 6
+            },
+            "need": "darts_physic_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base ATK growth by **16%**.",
+            "stats": {
+                "shatter": 11.4,
+                "charge": 6
+            },
+            "need": "darts_physic_plasm"
+        },
+        {
+            "description": "Increase shatter by **15%** and reset all weapon skill cooldowns upon shattering the target's shield. Can only be triggered once every **30** seconds.",
+            "stats": {
+                "shatter": 13,
+                "charge": 6
+            },
+            "need": "darts_physic_plasm"
+        },
+        {
+            "description": "Increase the current weapon's base HP growth by **32%**.",
+            "stats": {
+                "shatter": 13,
+                "charge": 6
+            },
+            "need": "darts_physic_plasm"
+        },
+        {
+            "description": "Attacking a grievous target extends the duration of grievous by an additional **7** seconds (only takes effect once for the same effect).",
+            "stats": {
+                "shatter": 13,
+                "charge": 6
+            },
+            "need": "darts_physic_plasm"
+        },
+        {
+            "description": "After using **Full Bloom**, grant a **100%** crit chance for the next **8** seconds.",
+            "stats": {
+                "shatter": 13,
+                "charge": 6
+            },
+            "need": "darts_physic_plasm"
+        }
+    ]
+}

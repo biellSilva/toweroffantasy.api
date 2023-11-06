@@ -1,0 +1,169 @@
+{
+    "id": "imitation_6",
+    "name": "Huma",
+    "icon": "imitation_6",
+    "cnName": "xiuma",
+    "age": "January 12",
+    "height": "167 cm",
+    "gender": "Female",
+    "state": "Hykros",
+    "city": "Unknown",
+    "rating": "wuwei_imitation_6",
+    "gift_types": [
+        "everydayObjects",
+        "game",
+        "decorate"
+    ],
+    "voice_actors": {
+        "chinese": "唐雅菁",
+        "japanese": "高橋 李依",
+        "english": "Colleen O Shaughnessey",
+        "korean": "김보나",
+        "portuguese": "Marli Bortoletto"
+    },
+    "weapon": {
+        "id": "ShieldAxe_Fire",
+        "name": "Molten Shield V2",
+        "description": "A shield axe that belongs to the V2 weapon series, a collection of weapons forged with special techniques.",
+        "icon": "item_Weapon_SSR_ShieldAxe_Fire01",
+        "rarity": "SSR",
+        "type": "Tank",
+        "element": "Flame",
+        "weaponType": "ShieldAxe",
+        "mats": {
+            "Item_Mine_fire": 39,
+            "Item_Mine_fire_02": 65,
+            "Item_breakthrough_B2": 65,
+            "Item_breakthrough_D2": 65,
+            "Item_Mine_fire_03": 32,
+            "Item_breakthrough_B3": 32,
+            "Item_breakthrough_D3": 32,
+            "Item_breakthrough_B1": 35,
+            "Item_breakthrough_D1": 32
+        },
+        "weaponEffects": null,
+        "skills": {
+            "normals": [
+                {
+                    "name": "Normal Attack",
+                    "description": "While on the ground, swing the shield axe to attack **4** times in a row.\r\nFirst Attack in Shield Form: Deal damage equal to **77.7%** of ATK plus **466** and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to **56.9%** of ATK plus **341** and knock the target back a short distance.\r\nThird Attack: Deal damage equal to **62.8%** of ATK plus **377** and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to **184%** of ATK plus **1104** and **launch the target into the air**.\r\nFirst Attack in Axe Form: Deal damage equal to **135.2%** of ATK plus **811** and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to **79.4%** of ATK plus **476** and knock the target back a short distance.\r\nThird Attack: Deal damage equal to **119.9%** of ATK plus **719** and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to **221.3%** of ATK plus **1328** and knock the target back.",
+                    "icon": "pugong_Shield",
+                    "id": "GA_FPlayerShieldMelee_Melee"
+                },
+                {
+                    "name": "Aerial Strike",
+                    "description": "While airborne or after jumping once, attack **3** times in a row.\r\nFirst Attack in Shield Form: Deal damage equal to **75.9%** of ATK plus **455**.\r\nSecond Attack: Deal damage equal to **80.2%** of ATK plus **481**.\r\nThird Attack: Deal damage equal to **103%** of ATK plus **618**.\r\nFirst Attack in Axe Form: Deal damage equal to **118.6%** of ATK plus **712**.\r\nSecond Attack: Deal damage equal to **91.1%** of ATK plus **547**.\r\nThird Attack: Deal damage equal to **277.9%** of ATK plus **1667**.",
+                    "icon": "skill_shield_airattack",
+                    "id": "GA_FPlayerShieldMelee_AirAttack"
+                },
+                {
+                    "name": "Anticipation",
+                    "description": "Shield Form: While on the ground, tap and hold normal attack to enter shield form (release to exit) for **3** seconds, during which the Wanderer is unable to move, and all damage taken is reduced by **50%**. While in shield form, releasing the normal attack button after taking damage or after holding the button for **3** seconds unleashes fire crash, dealing damage equal to **167.3%** of ATK plus **1004** and inflicting a **1**-second **stun** effect on the target.\r\nAxe Form: Smash the target, dealing damage equal to **122.2%** of ATK plus **733** and suspending the target.",
+                    "icon": "skill_shieldpowerattack",
+                    "id": "GA_FPlayerShieldMelee_PowerAttack"
+                },
+                {
+                    "name": "Valor",
+                    "description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger aerial branch attacks.\r\nShield Form: While falling, deal damage equal to **12.5%** of ATK plus **75** each hit. Upon landing, deal damage equal to **89.2%** of ATK plus **535** and suspend the target.\r\nAxe Form: While falling, deal damage equal to **12.5%** of ATK plus **75** each hit. Upon landing, deal damage equal to **128.3%** of ATK plus **770** and suspend the target.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to **600%** damage.",
+                    "icon": "skill_shield_airbranch",
+                    "id": "GA_FPlayerShieldMelee_JumpAttack"
+                }
+            ],
+            "dodge": [
+                {
+                    "name": "Erupt",
+                    "description": "Use normal attack during the short period after dodging to trigger Dodge Attack.\r\nShield Form: Unleash a flaming shield, dealing damage equal to **55.8%** of ATK plus **335** and knocking back targets. In addition, trigger an explosion that deals damage equal to **55.8%** of ATK plus **335**, **stun** targets for **0.5** seconds, and reduce incoming healing effects on targets by **30%** for **10** seconds.\r\nAxe Form: Swing an axe to deal damage equal to **226.3%** of ATK plus **1358**, and reduce incoming healing effects on targets by **30%** for **10** seconds.",
+                    "icon": "skill_shieldevade",
+                    "id": "GA_FPlayerShieldEvade_EvadeAttack"
+                },
+                {
+                    "name": "Dodge",
+                    "description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: **15** seconds. Become immune to hitstun while dodging for **0.5** seconds.",
+                    "icon": "common_evade",
+                    "id": "GA_FPlayerShieldEvade_Evade"
+                }
+            ],
+            "skill": [
+                {
+                    "name": "Fission",
+                    "description": "Shield Conversion: Switch from shield form to axe form and smash the ground, dealing damage equal to **373.8%** of ATK plus **2243**, plus additional damage equal to **4%** of the Wanderer's Max HP, and **strongly suspending** the target. Leave a large flame zone for **5** seconds that burns the target, dealing continuous damage equal to **233.6%** of ATK plus **1401**.\r\nAxe Conversion: Switch from axe form to shield form and slam it to the ground, dealing damage equal to **309.5%** of ATK plus **1857** to the target, plus additional damage equal to **4%** of the Wanderer's Max HP, and knocking them back. Prevent the target from switching weapons for **5** seconds upon being hit.\r\nCooldown: **25** seconds. Shield Conversion and Axe Conversion share a cooldown.",
+                    "icon": "skill_shield",
+                    "id": "GA_FPlayerShieldSkill"
+                }
+            ],
+            "discharge": [
+                {
+                    "name": "Seething Rage",
+                    "description": "When **weapon charge is full** or when **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer** and unleash a flame shockwave, dealing damage equal to **352%** of ATK plus **2112**, plus additional damage equal to **5%** of the Wanderer's Max HP. Taunt enemies for **5** seconds, during which gain **15%** damage reduction. Scatter shield-shaped objects based on the number of targets taunted, which last within the area for **20** seconds. Upon pickup, objects provide **10** seconds of **5%** damage reduction (stackable) and immediately restore **1** dodge attempt.",
+                    "icon": "skill_shield_changeskill",
+                    "id": "GA_FPlayerShieldChangeSkill_Success"
+                }
+            ]
+        },
+        "advancements": [
+            {
+                "description": "Gain a stack of Strong Shield upon using discharge: Seething Rage. Using a dodge skill or branch skill while in shield form grants a stack of Strong Shield, which grants **10%** damage reduction for **15** seconds and stacks up to **3** times. Switching to axe form converts all Strong Shield stacks to Sharp Axe stacks, each of which increases damage by **15%** for **15** seconds. Switching to a different weapon cancels this effect.",
+                "stats": {
+                    "shatter": 10,
+                    "charge": 10
+                },
+                "need": "ShieldAxe_Fire_plasm"
+            },
+            {
+                "description": "Increase the current weapon's base HP growth by **16%**.",
+                "stats": {
+                    "shatter": 10,
+                    "charge": 10
+                },
+                "need": "ShieldAxe_Fire_plasm"
+            },
+            {
+                "description": "While in shield form, branch/dodge attacks deal additional damage to targets equal to **4%** of the user's current HP.",
+                "stats": {
+                    "shatter": 10,
+                    "charge": 10
+                },
+                "need": "ShieldAxe_Fire_plasm"
+            },
+            {
+                "description": "Increase the current weapon's base ATK growth by **32%**.",
+                "stats": {
+                    "shatter": 10,
+                    "charge": 10
+                },
+                "need": "ShieldAxe_Fire_plasm"
+            },
+            {
+                "description": "After switching to a shield axe, immediately grant **30%** damage reduction that diminishes by **10%** every **3** seconds, down to a minimum of **10%**. Switching weapons cancels this effect. Cooldown: **30** seconds.",
+                "stats": {
+                    "shatter": 10,
+                    "charge": 10
+                },
+                "need": "ShieldAxe_Fire_plasm"
+            },
+            {
+                "description": "Enhance conversion skills.\r\nShield Conversion Enhancement: Increases skill damage dealt by **60%** and expands the radius of the flame zone by **30%**.\r\nAxe Conversion Enhancement: Does not share cooldown with Shield Conversion. For the next **5** seconds after using this skill, turns all damage received into HP (up to a maximum of **15%** of the user's Max HP).",
+                "stats": {
+                    "shatter": 10,
+                    "charge": 10
+                },
+                "need": "ShieldAxe_Fire_plasm"
+            }
+        ]
+    },
+    "matrice": {
+        "name": "Huma",
+        "type": "ITEM_TYPE_MATRIX",
+        "description": "It was the instinct to see the light that led the baby birds out of their shells.",
+        "icon": "icon_matrix_SSR10_512",
+        "gachaIcon": "icon_matrix_SSR10_512",
+        "rarity": "SSR",
+        "set": [
+            {
+                "set_2": "Hitting targets with dodge skills inflicts bleed, dealing damage equal to **15%**/**19%**/**22.5%**/**26%** of ATK every second for **5** seconds.",
+                "set_4": "Reduce ATK of all targets within **8** meters that are taking damage over time by **10%**/**12%**/**13%**/**15%**. Only the highest level's effect is applied when obtained repeatedly."
+            }
+        ],
+        "id": "matrix_SSR10_1"
+    }
+}

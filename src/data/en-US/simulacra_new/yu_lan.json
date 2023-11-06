@@ -1,0 +1,220 @@
+{
+    "id": "imitation_38",
+    "name": "Yu Lan",
+    "icon": "imitation_38",
+    "cnName": "yulan",
+    "age": "February 9",
+    "height": "175 cm",
+    "gender": "Female",
+    "state": "Sundial Guard",
+    "city": "Domain 9",
+    "rating": "wuwei_imitation_38",
+    "gift_types": [
+        "everydayObjects",
+        "collection",
+        "Jiuyu"
+    ],
+    "voice_actors": {
+        "chinese": "秦文静",
+        "japanese": "柚木 涼香",
+        "english": "Brianna Knickerbocker",
+        "korean": "김윤채",
+        "portuguese": "LUIZA PORTO"
+    },
+    "weapon": {
+        "id": "yulan_ice",
+        "name": "Unity",
+        "description": "Unity, in other words, consolidation. It's the weapon Ji Yu handpicked for Yu Lan, which possesses the latest tech from Domain 9. Please don't be surprised if you witness some miraculous sights after using it with the timestamp.",
+        "icon": "item_Weapon_SSR_yulan_Ice01",
+        "rarity": "SSR",
+        "type": "DPS",
+        "element": "Ice",
+        "weaponType": "yulan",
+        "mats": {
+            "Item_Mine_ice": 39,
+            "Item_Mine_ice_02": 65,
+            "Item_breakthrough_B2": 65,
+            "Item_breakthrough_D2": 65,
+            "Item_Mine_ice_03": 32,
+            "Item_breakthrough_B3": 32,
+            "Item_breakthrough_D3": 32,
+            "Item_breakthrough_B1": 35,
+            "Item_breakthrough_D1": 32
+        },
+        "weaponEffects": [
+            {
+                "title": "Frost Resonance",
+                "description": "Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+            },
+            {
+                "title": "Icecrush: Swift Cut",
+                "description": "When **Unity** is equipped, upon landing a hit with any weapon's discharge skill, deal initial damage to nearby targets equal to **30%** of frost ATK plus **0.4%** of the Wanderer's Max HP plus **15%** of the sum of all the Wanderer's resistance types plus **55%** of crit. While in combat state, after every **0.5** seconds, the next Swift Cut damage will be increased by an additional **1** time, up to a maximum of **30** times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is **1** volt/physical/flame weapon of any kind equipped, Icecrush damage is increased **130** times. In addition, Icecrush damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+            }
+        ],
+        "skills": {
+            "normals": [
+                {
+                    "name": "Battering Fist",
+                    "description": "While on the ground, use normal attack to launch **6** consecutive attacks.\r\nFirst Attack: Deal damage equal to **64.8%** of ATK plus **389** and knock the target back.\r\nSecond Attack: Deal damage equal to **50.4%** of ATK plus **302** and knock the target back.\r\nThird Attack: Deal damage equal to **52.8%** of ATK plus **317** and knock the target back.\r\nFourth Attack: Deal damage equal to **143.9%** of ATK plus **863** and knock the target back.\r\nFifth Attack: Deal damage equal to **279.2%** of ATK plus **1675** and continuously knock the target back.\r\nSixth Attack: Deal damage equal to **227.4%** of ATK plus **1364** and launch the target.\r\n\r\nBattering Fist can be used in either the **Martial Artist** or **Sweeping Force** form.\r\nAfter using any dodge attack while in the **Martial Artist** form, use normal attack to quickly trigger the Fourth Attack.\r\nAfter the Fifth Attack lands a hit while in the **Martial Artist** form, **strongly freeze** the target for **2** seconds (unavailable in Apex League and against bosses) and additionally inflict **Chilblain**, dealing damage equal to **280%** of ATK plus **1680** every second for **8** seconds. This effect can only be triggered on the same target **1** time every **8** seconds.",
+                    "icon": "yulan_melee",
+                    "id": "GA_FPlayerYulanMelee_Melee"
+                },
+                {
+                    "name": "Floating Fist",
+                    "description": "While airborne, use normal attack to launch **6** consecutive attacks in mid-air, consuming endurance.\r\nFirst Attack: Deal damage equal to **68.4%** of ATK plus **410**.\r\nSecond Attack: Deal damage equal to **59.9%** of ATK plus **359**.\r\nThird Attack: Deal damage equal to **62.7%** of ATK plus **376**.\r\nFourth Attack: Deal damage equal to **136.4%** of ATK plus **818**.\r\nFifth Attack: Deal damage equal to **249%** of ATK plus **1494**.\r\nSixth Attack: Deal damage equal to **222.3%** of ATK plus **1334**.\r\n\r\nFloating Fist can be used in either the **Martial Artist** or **Sweeping Force** form.",
+                    "icon": "yulan_airattack",
+                    "id": "GA_FPlayerYulanMelee_AirAttack"
+                },
+                {
+                    "name": "Forest-Piercing Swallow",
+                    "description": "Forest-Piercing Swallow can only be used while in the **Martial Artist** form.\r\nWhile on the ground, tap and hold normal attack when using the first to third normal attacks to trigger Forest-Piercing Swallow.\r\nDeal damage equal to **62.8%** of ATK plus **377** and draw in nearby targets. Then, deal damage equal to **146.6%** of ATK plus **880** and knock the targets back.\r\n\r\nAfter using **Cloud-Soaring Kite**, using normal attack can also trigger Forest-Piercing Swallow.",
+                    "icon": "yulan_branch1",
+                    "id": "GA_FPlayerYulanMelee_MeleeBranch1"
+                },
+                {
+                    "name": "Sky-Dancing Snake",
+                    "description": "Sky-Dancing Snake can only be used while in the **Martial Artist** form.\r\nWhile on the ground, tap and hold normal attack when using the fourth to fifth normal attacks to trigger Sky-Dancing Snake.\r\nDeal damage equal to **75.4%** of ATK plus **452** to nearby targets and suspend them.\r\n\r\nAfter using **Forest-Piercing Swallow**, tapping and holding normal attack can also trigger Sky-Dancing Snake.",
+                    "icon": "yulan_branch2",
+                    "id": "GA_FPlayerYulanMelee_MeleeBranch2"
+                },
+                {
+                    "name": "Frost High & Low",
+                    "description": "While airborne, tap and hold normal attack when using the first to sixth normal attacks to trigger Frost High & Low.\r\nToss your weapon in the air, dealing damage equal to **329%** of ATK plus **1974** to nearby targets.\r\n\r\nFrost High & Low can be used in either the **Martial Artist** or **Sweeping Force** form.",
+                    "icon": "yulan_branch4",
+                    "id": "GA_FPlayerYulanMelee_AirAttackBranch"
+                },
+                {
+                    "name": "Cloud-Soaring Kite",
+                    "description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Cloud-Soaring Kite.\r\nFall from above, dealing damage equal to **148.6%** of ATK plus **892** to nearby targets upon reaching the ground and knock them down.\r\n\r\nCloud-Soaring Kite can be used in either the **Martial Artist** or **Sweeping Force** form.",
+                    "icon": "yulan_jumpattack",
+                    "id": "GA_FPlayerYulanMelee_JumpAttack"
+                },
+                {
+                    "name": "Total Rewind",
+                    "description": "When on the ground, tap and hold normal attack to trigger Total Rewind.\r\nContinuously draw in nearby targets while consuming endurance, during which the Wanderer gains hyperbody.\r\n\r\nTotal Rewind can be used in either the **Martial Artist** or **Sweeping Force** form.",
+                    "icon": "yulan_branch3",
+                    "id": "GA_FPlayerYulanMelee_MeleeBranch3"
+                }
+            ],
+            "dodge": [
+                {
+                    "name": "Dodge",
+                    "description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.\r\n\r\nCan be used in either the **Martial Artist** or **Sweeping Force** form.\r\nAfter dodging while in the **Martial Artist** form, gain hyperbody for **5** seconds.",
+                    "icon": "skill_dgun_evade",
+                    "id": "GA_FPlayerYulanEvade_Evade"
+                },
+                {
+                    "name": "Impossible Feat",
+                    "description": "Use normal attack during the short period after dodging to trigger Impossible Feat, dealing damage equal to **177.6%** of ATK plus **1066** to nearby targets.\r\n\r\nImpossible Feat can be used in either the **Martial Artist** or **Sweeping Force** form.",
+                    "icon": "yulan_evadeattackback",
+                    "id": "GA_FPlayerYulanEvade_EvadeAttackBack"
+                },
+                {
+                    "name": "Sweeping Clouds",
+                    "description": "Use normal attack during the short perfect dodge window (tap an arrow button before dodging) to trigger Sweeping Clouds, dealing damage equal to **167.6%** of ATK plus **1006** to nearby targets.\r\n\r\nSweeping Clouds can be used in either the **Martial Artist** or **Sweeping Force** form.",
+                    "icon": "yulan_evadeattackfront",
+                    "id": "GA_FPlayerYulanEvade_EvadeAttackFront"
+                }
+            ],
+            "skill": [
+                {
+                    "name": "Offense & Defense",
+                    "description": "**Unity** has **2** forms: **Martial Artist** and **Sweeping Force**. Activate up to **1** of them via the Skills - Settings page. They cannot be switched while in the combat state.\r\n\r\n**Martial Artist** form: While in the combat state, **Unity's** dodge attack / normal attack multiplier is additionally increased by **40%**. After using any weapon's dodge attack or normal attack **3** times, receive **1** **Internal Strength** (up to **10**). Only **1** **Internal Strength** can be obtained every **2** seconds. While not in the combat state, all **Internal Strength** will be cleared.\r\n**Sweeping Force** form: After **Observe & React** lands a hit, enter the **Anticipate** state and receive **1** **Fighting Spirit** every **0.8** seconds (up to **15**) for **60** seconds. While not in the combat state, all **Fighting Spirit** will be cleared.\r\n**Passive: Chill**\r\nWhen **Unity** is equipped, ignore **15%** of targets' Frost Resistance. This effect also works in the off-hand slot.",
+                    "icon": "yulan_passiveskill",
+                    "id": "GA_FPlayerYulanSkill_PassiveSkill"
+                },
+                {
+                    "name": "Fire in the Hole",
+                    "description": "Deal damage equal to **982.8%** of ATK plus **5896** to the target. Cooldown: **15** seconds.\r\nWhen using Fire in the Hole, **Unity** will consume up to **5** **Internal Strength**. When it consumes **1**/**2**/**3**/**4**/**5** **Internal Strength**, Fire in the Hole will deal **1.1**/**1.4**/**1.8**/**2.3**/**3** times of its original damage respectively.\r\nAfter using Fire in the Hole, increase frost damage by **12%** for **30** seconds.\r\nAfter using Fire in the Hole, restore **2** dodge attempts.\r\n\r\nFire in the Hole can only be used while in the **Martial Artist** form.\r\nWhen **Internal Strength** reaches **5**, reset Fire in the Hole's cooldown.",
+                    "icon": "yulan_skill",
+                    "id": "GA_FPlayerYulanSkill_Skill1"
+                },
+                {
+                    "name": "Clashing of Arms",
+                    "description": "Deal damage equal to **982.8%** of ATK plus **5896** to the target. Cooldown: **15** seconds.\r\nWhile in the **Anticipate** state, when using any weapon skill, **Unity** will consume up to **5** **Fighting Spirit**. When it consumes **1**/**2**/**3**/**4**/**5** **Fighting Spirit**, deal additional damage to nearby targets equal to **169%**/**368%**/**619%**/**938%**/**1,350%** of ATK, and deal damage equal to **260%** of ATK plus **1560** every second for **5** seconds.\r\nAfter using any frost weapon skill, gain **2** seconds of hyperbody.\r\n\r\nClashing of Arms can only be used while in the **Sweeping Force** form.",
+                    "icon": "yulan_skill",
+                    "id": "GA_FPlayerYulanSkill_Skill2"
+                }
+            ],
+            "discharge": [
+                {
+                    "name": "Snow-Treading Tiger",
+                    "description": "When **weapon charge is full** or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer**, dealing damage up to **1173.1%** of ATK plus **7038** to nearby targets and **strongly launching** them. During this period, gain damage immunity for **1.5** seconds (unavailable in Apex League).\r\n\r\nSnow-Treading Tiger can only be used while in the **Martial Artist** form.",
+                    "icon": "yulan_changeskill",
+                    "id": "GA_FPlayerYulanChangeSkill_ChangeSkill"
+                },
+                {
+                    "name": "Observe & React",
+                    "description": "When **weapon charge is full** or **Phantasia** is triggered, upon switching to this weapon, **remove all debuffs from the Wanderer**, dealing damage up to **1173.1%** of ATK plus **7038** to nearby targets and **strongly launching** them. During this period, gain damage immunity for **1.5** seconds (unavailable in Apex League).\r\nAfter Observe & React lands a hit, increase frost damage by **12%** for **30** seconds.\r\nAfter Observe & React lands a hit, enter the **Anticipate** state for **60** seconds.\r\nAfter using **Unity** to use a discharge skill, receive **1,000** weapon charge. This effect can only be triggered **1** time every **10** seconds.\r\n\r\nObserve & React can only be used while in the **Sweeping Force** form.",
+                    "icon": "yulan_changeskill",
+                    "id": "GA_FPlayerYulanChangeSkill_ChangeSkill1"
+                }
+            ]
+        },
+        "advancements": [
+            {
+                "description": "While in the **Martial Artist** form, after consuming **3** or more **Internal Strength**, **Unity** restores **100** **Internal Strength**. Subsequently, the Wanderer's final damage is increased by **5%**, and **Unity's** dodge attack/normal attack damage is increased by **50%** for **3000** seconds.\r\nWhile in the **Sweeping Force** form, after consuming **3** or more **Fighting Spirit**, **Unity** restores **100** **Fighting Spirit**. Subsequently, the Wanderer's final damage is increased by **5%** for **1500** seconds.",
+                "stats": {
+                    "shatter": 13,
+                    "charge": 11
+                },
+                "need": "yulan_ice_plasm"
+            },
+            {
+                "description": "Increase the current weapon's base ATK growth by **16%**.",
+                "stats": {
+                    "shatter": 13,
+                    "charge": 11
+                },
+                "need": "yulan_ice_plasm"
+            },
+            {
+                "description": "In the **Martial Artist** form, if **Internal Strength** is not obtained within **500** seconds, the next acquisition of **Internal Strength** will grant **2** counts.\r\nIn any form, when **Unity** consumes **3** or more **Internal Strength** or **Fighting Spirit**, restore **10%** of the Wanderer's Max HP. In solo play, the HP recovery is increased to **20%**. This effect can only trigger **1** time every **8** seconds in **Sweeping Force** form. In **Martial Artist** form, there are no limitations.",
+                "stats": {
+                    "shatter": 13,
+                    "charge": 11
+                },
+                "need": "yulan_ice_plasm"
+            },
+            {
+                "description": "Increase the current weapon's base ATK growth by **32%**.",
+                "stats": {
+                    "shatter": 13,
+                    "charge": 11
+                },
+                "need": "yulan_ice_plasm"
+            },
+            {
+                "description": "After **Unity** consumes **Internal Strength** or **Fighting Spirit**, when receiving lethal damage, prevent lethal damage **1** time and recover **20%** of the Wanderer's Max HP (Unavailable in Apex League). In solo play, the HP recovery is increased to **40%**. Both effects can only trigger **1** time every **6000** seconds.",
+                "stats": {
+                    "shatter": 13,
+                    "charge": 11
+                },
+                "need": "yulan_ice_plasm"
+            },
+            {
+                "description": "While in the **Martial Artist** form, **Unity's** dodge attack / normal attack damage is further increased by **70%**. After consuming **Internal Strength**, the Wanderer's final damage is increased by **10%** for **3000** seconds.\r\nWhile in the **Sweeping Force** form, after **Unity** consumes **Fighting Spirit**, the Wanderer's final damage is increased by **15%** for **3000** seconds.",
+                "stats": {
+                    "shatter": 13,
+                    "charge": 11
+                },
+                "need": "yulan_ice_plasm"
+            }
+        ]
+    },
+    "matrice": {
+        "name": "Yu Lan",
+        "type": "ITEM_TYPE_MATRIX",
+        "description": "Stay true and sincere, pure and natural.",
+        "icon": "icon_matrix_SSR33_512",
+        "gachaIcon": "icon_matrix_SSR33_512",
+        "rarity": "SSR",
+        "set": [
+            {
+                "set_2": "When equipped with at least **1** frost weapon, while in the combat state, deal damage equal to **85%** of ATK to nearby targets every second. After using any frost weapon skill or discharge skill, increase final damage by **7%**/**8%**/**9%**/**10%** for **3000** seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+                "set_4": "After **Unity** consumes **Internal Strength** or **Fighting Spirit**, increase final damage by **6%** for **1500** seconds. After dealing frost damage, increase all elemental damage by **12%**/**15%**/**19%**/**23%** for **3000** seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect."
+            }
+        ],
+        "id": "matrix_SSR33_1"
+    }
+}
