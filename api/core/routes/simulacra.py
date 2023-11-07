@@ -24,7 +24,7 @@ async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en')):
     '''
     
     if simulacra := await SIMU_REPO.get(EntityBase(id=id), lang):
-        return PrettyJsonResponse(simulacra.model_dump(exclude_none=True))
+        return PrettyJsonResponse(simulacra.model_dump())
     
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
@@ -37,7 +37,7 @@ async def get_all_simulacra(lang: LANGS = LANGS('en')):
     '''
     
     if simulacras := await SIMU_REPO.get_all(lang):
-        return PrettyJsonResponse({simulacra.id: simulacra.model_dump(exclude_none=True) 
+        return PrettyJsonResponse({simulacra.id: simulacra.model_dump() 
                                    for simulacra in simulacras})
     
     else:

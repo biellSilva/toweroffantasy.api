@@ -23,7 +23,7 @@ async def get_relic(id: RELICS, lang: LANGS = LANGS('en')):
     '''
 
     if relic := await RELIC_REPO.get(EntityBase(id=id), lang):
-        return PrettyJsonResponse(relic.model_dump(exclude_none=True))
+        return PrettyJsonResponse(relic.model_dump())
     
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
@@ -36,7 +36,7 @@ async def get_all_relics(lang: LANGS = LANGS('en')):
     '''
 
     if relics := await RELIC_REPO.get_all(lang):
-        return PrettyJsonResponse({relic.id: relic.model_dump(exclude_none=True) 
+        return PrettyJsonResponse({relic.id: relic.model_dump() 
                                    for relic in relics})
     
     else:

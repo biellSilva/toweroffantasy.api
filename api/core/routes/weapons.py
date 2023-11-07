@@ -23,7 +23,7 @@ async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en')):
     '''
 
     if weapon := await WEAPON_REPO.get(EntityBase(id=id), lang):
-        return PrettyJsonResponse(weapon.model_dump(exclude_none=True))
+        return PrettyJsonResponse(weapon.model_dump())
 
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
@@ -37,7 +37,7 @@ async def get_all_weapons(lang: LANGS = LANGS('en')):
     '''
 
     if weapons := await WEAPON_REPO.get_all(lang):
-        return PrettyJsonResponse({weapon.id: weapon.model_dump(exclude_none=True) 
+        return PrettyJsonResponse({weapon.id: weapon.model_dump() 
                                    for weapon in weapons})
 
     else:
