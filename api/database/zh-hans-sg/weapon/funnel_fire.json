@@ -1,0 +1,181 @@
+{
+	"name": "斯帕克",
+	"avatar": {
+		"name": "蕾贝",
+		"advanceId": "imitation_21L1",
+		"weapon": "funnel_fire",
+		"icon": "imitation_21",
+		"avatarID": "leibei",
+		"age": "7月15日",
+		"height": "140cm",
+		"gender": "女",
+		"state": "无记录",
+		"city": "无记录",
+		"rating": "wuwei_imitation_21",
+		"gp": [
+			"game",
+			"toy",
+			"Vera"
+		],
+		"va": [
+			{
+				"Chinese": "CV : 赵爽"
+			},
+			{
+				"Japanese": "CV : 小倉 唯"
+			},
+			{
+				"English": "CV : Lizzie Freeman"
+			},
+			{
+				"Korean": "CV : 이다은"
+			},
+			{
+				"Portuguese": "CV : Letícia Celini"
+			}
+		],
+		"id": "imitation_21"
+	},
+	"description": "凛夜拜托镜都研发部门为蕾贝特制的武器，主要功能有：过家家时管家担当、早上叫蕾贝起床、为蕾贝带路……噢噢，最重要的当然是，保护蕾贝。",
+	"icon": "item_Weapon_SSR_funnel_Fire01",
+	"gachaIcon": "SSR_lh_leibei",
+	"rarity": "SSR",
+	"element": "Flame",
+	"weaponType": "Funnel",
+	"wc": "DPS",
+	"mats": {
+		"Item_Mine_fire": 39,
+		"Item_Mine_fire_02": 65,
+		"Item_breakthrough_B2": 65,
+		"Item_breakthrough_D2": 65,
+		"Item_Mine_fire_03": 32,
+		"Item_breakthrough_B3": 32,
+		"Item_breakthrough_D3": 32,
+		"Item_breakthrough_B1": 35,
+		"Item_breakthrough_D1": 32
+	},
+	"advanceID": "funnel_fire_ssr_star",
+	"skills": {
+		"normals": [
+			{
+				"name": "斯帕克普攻",
+				"description": "在地面时点击普攻，操控斯帕克可连续进行5次攻击。\r\n第一次攻击对每个目标总计造成**84.6%***攻击力+**508**点伤害。\r\n第二次攻击对每个目标总计造成**93%***攻击力+**558**点伤害。\r\n第三次攻击对每个目标总计造成**101.5%***攻击力+**609**点伤害。\r\n第四次攻击对每个目标总计造成**109.9%***攻击力+**659**点伤害。\r\n第五次攻击对每个目标总计造成**253.7%***攻击力+**1522**点伤害，并造成**击飞**效果。",
+				"icon": "skill_funnel_melee",
+				"id": "GA_FPlayerFunnelMeleeFire_Melee"
+			},
+			{
+				"name": "空中攻击",
+				"description": "滞空时点击普攻，操控斯帕克可连续进行4次攻击。\r\n第一次攻击对每个目标总计造成**97.1%***攻击力+**583**点伤害。\r\n第二次攻击对每个目标总计造成**106.8%***攻击力+**641**点伤害。\r\n第三次攻击对每个目标总计造成**121.3%***攻击力+**728**点伤害。\r\n第四次攻击对每个目标总计造成**145.6%***攻击力+**874**点伤害。",
+				"icon": "skill_funnel_airattack",
+				"id": "GA_FPlayerFunnelMeleeFire_AirAttack"
+			},
+			{
+				"name": "抓到你了！",
+				"description": "长按普攻或者在触发“禁锢领域”后长按普攻，持续射出火焰光束对瞄准方向的目标造成**40%***攻击力+**240**点伤害并消耗耐力。",
+				"icon": "skill_funnel_power",
+				"id": "GA_FPlayerFunnelMeleeFire_AimAttack"
+			},
+			{
+				"name": "火焰坠落",
+				"description": "滞空时长按普攻，触发火焰坠落。\r\n被能量体包裹，快速坠落至地面，对周围的目标造成**172.1%***攻击力+**1033**点伤害。",
+				"icon": "skill_funnel_jumpattack",
+				"id": "GA_FPlayerFunnelMeleeFire_JumpAttack"
+			},
+			{
+				"name": "禁锢领域",
+				"description": "普攻第二段后任意段长按，对目标造成**40%***攻击力+**240**点伤害，并将锁定目标禁锢（非强控）并灼烧**3**秒，每秒造成**26.2%***攻击力+**157**点伤害（对boss不生效）。",
+				"icon": "skill_funnel_branch",
+				"id": "GA_FPlayerFunnelMeleeFire_Branch"
+			}
+		],
+		"dodge": [
+			{
+				"name": "多莉出动！",
+				"description": "闪避后，将多莉抛出并存在**10**秒，吸附附近敌人造成**84.6%***攻击力+**508**点伤害并嘲讽敌人**1.5**秒（嘲讽在组队状态下不生效），使其转向攻击多莉。",
+				"icon": "skill_funnel_evadeattack",
+				"id": "GA_FPlayerFunnelEvadeFire_BackAttack"
+			},
+			{
+				"name": "闪避",
+				"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+				"icon": "skill_dgun_evade",
+				"id": "GA_FPlayeFunnelEvadeFire_Evade"
+			}
+		],
+		"skill": [
+			{
+				"name": "火花撞撞",
+				"description": "斯帕克向前方射出【火花】存在15秒，在目标和玩家之间反弹并首次命中使目标动作速率减缓（非强控）持续**4**秒冷却**15**秒，距离越远伤害越高，命中敌人最多可造成**380%***攻击力+**4200**点伤害并施加【炙热】标记持续**25**秒，同时释放4颗子弹，每颗子弹对目标造成**50%***攻击力+**300**点伤害；斯帕克对【炙热】标记的目标普攻伤害提高**30%**。若目标存在自己施加的灼烧，则在【火花】命中时触发一次灼烧或点燃剩余总伤害**45%**的额外伤害（多个灼烧或点燃合并计算）且后续会自动结算一次，,结算冷却**6**秒,技能冷却**30**秒。\r\n**被动**：【火花】存在期间，斯帕克普攻/火花每造成1次伤害，玩家累积**1**点【热能】冷却**0.9**秒，至多积累**8**点，当【热能】达到上限时，玩家获得【极限热能】效果，火攻增加**10%**持续**25**秒。",
+				"icon": "funnel_skill",
+				"id": "GA_FPlayerFunnelSkillFire"
+			}
+		],
+		"discharge": [
+			{
+				"name": "超新星爆发",
+				"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，斯帕克开启蓄力形态，持续向前方射出大范围火焰光束，并在结束时爆炸，造成**750%***攻击力+**4500**点伤害；若目标存在自己施加的灼烧，命中时触发一次灼烧或点燃剩余总伤害**45%**的额外伤害（多个灼烧或点燃合并计算）,结算冷却**6**秒，技能期间免疫伤害持续**1.5**秒（巅峰联赛不生效）。",
+				"icon": "skill_funnel_changeskill",
+				"id": "GA_FPlayerFunnelChangeSkillFire_Success"
+			}
+		]
+	},
+	"stars": [
+		{
+			"description": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。",
+			"stats": {
+				"shatter": 11.5,
+				"charge": 8
+			},
+			"need": "None"
+		},
+		{
+			"description": "【炙热】使斯帕克普攻增伤提高至**0%**；技能冷却缩减至**24**秒",
+			"stats": {
+				"shatter": 11.5,
+				"charge": 8
+			},
+			"need": "funnel_fire_plasm"
+		},
+		{
+			"description": "当前武器的基础攻击成长+**16%**",
+			"stats": {
+				"shatter": 11.5,
+				"charge": 8
+			},
+			"need": "funnel_fire_plasm"
+		},
+		{
+			"description": "【炙热】附带受到火伤增加**0%**；灼烧结算倍率提升至**75%**",
+			"stats": {
+				"shatter": 11.5,
+				"charge": 8
+			},
+			"need": "funnel_fire_plasm"
+		},
+		{
+			"description": "当前武器的基础攻击成长+**32%**",
+			"stats": {
+				"shatter": 11.5,
+				"charge": 8
+			},
+			"need": "funnel_fire_plasm"
+		},
+		{
+			"description": "斯帕克普攻每次命中敌方单位，额外回复**75**点武器充能值，冷却0.9秒；【极限热能】期间，破防效率提升**25%**",
+			"stats": {
+				"shatter": 11.5,
+				"charge": 8
+			},
+			"need": "funnel_fire_plasm"
+		},
+		{
+			"description": "【炙热】使斯帕克普攻增伤提高至**0%**，且【热能】获得效率翻倍；技能冷却缩减至**16**秒",
+			"stats": {
+				"shatter": 11.5,
+				"charge": 8
+			},
+			"need": "funnel_fire_plasm"
+		}
+	],
+	"id": "funnel_fire"
+}

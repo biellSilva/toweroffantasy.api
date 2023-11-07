@@ -1,0 +1,149 @@
+{
+	"name": "ปืนทำลายล้าง",
+	"avatar": {
+		"name": "ฮิลดา",
+		"weapon": "cannon_ice",
+		"icon": "imitation_15",
+		"avatarID": "hida",
+		"age": "11 เมษายน",
+		"height": "165 ซม.",
+		"gender": "เพศหญิง",
+		"state": "เบนเจส",
+		"city": "พื้นที่ปริศนา",
+		"rating": "wuwei_imitation_15",
+		"gp": [
+			"restrictedGoods",
+			"garageKit",
+			"toy"
+		],
+		"va": [
+			{
+				"Chinese": "CV : 裴致莹"
+			},
+			{
+				"Japanese": "CV : 花澤 香菜"
+			},
+			{
+				"English": "CV : Kira Buckland"
+			},
+			{
+				"Korean": "CV : 윤아영"
+			},
+			{
+				"Portuguese": "CV : Bruna Matta"
+			}
+		],
+		"id": "imitation_15"
+	},
+	"description": "ปืนที่ดีที่สุดที่เคยสร้างขึ้นมา มีฉายาว่าป้อมปืนเคลื่อนที่",
+	"icon": "item_Weapon_SR_Cannon_Ice01",
+	"gachaIcon": "SR_lh_zjz",
+	"rarity": "SR",
+	"element": "Ice",
+	"weaponType": "Cannon",
+	"wc": "DPS",
+	"mats": {
+		"Item_Mine_ice": 28,
+		"Item_Mine_ice_02": 42,
+		"Item_breakthrough_A2": 42,
+		"Item_breakthrough_D2": 42,
+		"Item_Mine_ice_03": 22,
+		"Item_breakthrough_A3": 22,
+		"Item_breakthrough_D3": 22,
+		"Item_breakthrough_A1": 25,
+		"Item_breakthrough_D1": 23
+	},
+	"advanceID": "cannon_ice_sr_star",
+	"skills": {
+		"normals": [
+			{
+				"name": "โจมตีปกติ",
+				"description": "แตะปุ่มโจมตีปกติเพื่อเข้าสู่โหมดเล็ง กดปุ่มโจมตีปกติค้างไว้เพื่อยิงต่อเนื่อง สูงสุด **40** นัด การยิงแต่ละนัดจะสร้างดาเมจเท่ากับ **15.4%** ของ ATK + **92** และจะสร้างดาเมจสองเท่าเมื่อเฮดช็อต หรือโจมตีจุดอ่อนของศัตรู และจะทำให้ศัตรูล้มลง (เฮดช็อตไม่มีผลต่อนักพเนจร)",
+				"icon": "pugong_cannon",
+				"id": "GA_FPlayerCannonMelee_Melee"
+			}
+		],
+		"dodge": [
+			{
+				"name": "หลบหลีก",
+				"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้แฟนตาเซียซึ่งลดความเร็วของศัตรูภายในพื้นที่ คูลดาวน์: 15 วินาที ขณะหลบคุณจะไม่โดนติดสตัน เป็นเวลา **0.5** วินาที",
+				"icon": "common_evade",
+				"id": "GA_FPlayerCannonEvade_Evade"
+			}
+		],
+		"skill": [
+			{
+				"name": "ป้อมปืน",
+				"description": "เปิดโหมดป้อมปืนและยิงคริสตัลพลังงานขนาดใหญ่ แต่ละลูกสร้างดาเมจ **287.9%** ของ ATK + **1727** และโจมตีเป้าหมายกระเด็นขึ้นไปในอากาศ ไม่โดนสตันหลังโดนโจมตีและไม่โดนเอฟเฟกต์ควบคุมขณะกำลังตั้งป้อมปืน คูลดาวน์ **3.5** วินาที",
+				"icon": "skill_cannon",
+				"id": "GA_FPlayerCannonSkillNew"
+			}
+		],
+		"discharge": [
+			{
+				"name": "ลำแสงอาร์กติก",
+				"description": "เมื่อ**ชาร์จอาวุธ**เต็มแล้วหรือเรียกใช้งาน **แฟนตาเซีย** จะ **ลบดีบัฟทั้งหมดจากผู้ถือ** และยิงลำแสงอาร์กติกเมื่อสลับเป็นอาวุธนี้ สร้างดาเมจ **444.5%** ของ ATK + **2667** และสร้างเอฟเฟกต์บังคับแช่แข็ง **3**-วินาที **** และลดความต้านทานน้ำแข็งของเป้าหมาย **50%** เป็นเวลา **10** วินาที",
+				"icon": "skill_cannon_skill3",
+				"id": "GA_FPlayerCannonChangeSkill_Success"
+			}
+		]
+	},
+	"stars": [
+		{
+			"stats": {
+				"shatter": 10,
+				"charge": 10
+			},
+			"need": "None"
+		},
+		{
+			"description": "ทุก ๆ การโจมตีปกติที่สำเร็จจะเพิ่มดาเมจ **1%** เป็นเวลา **2** วินาที ซ้อนทับได้สูงสุด **15** ครั้ง เพิ่มจำนวนกระสุนเป็น **60** นัด",
+			"stats": {
+				"shatter": 10,
+				"charge": 10
+			},
+			"need": "cannon_ice_plasm"
+		},
+		{
+			"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **10%**",
+			"stats": {
+				"shatter": 10,
+				"charge": 10
+			},
+			"need": "cannon_ice_plasm"
+		},
+		{
+			"description": "ภายใน **10** วินาทีหลังจากเปลี่ยนเป็นอาวุธ เพิ่มดาเมจของการโจมตีปกติและทำลายโล่ **30%** คูลดาวน์: **25** วินาที เพิ่มกระสุนเป็น **80**",
+			"stats": {
+				"shatter": 13,
+				"charge": 10
+			},
+			"need": "cannon_ice_plasm"
+		},
+		{
+			"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **20%**",
+			"stats": {
+				"shatter": 13,
+				"charge": 10
+			},
+			"need": "cannon_ice_plasm"
+		},
+		{
+			"description": "ลดคูลดาวน์ของการโจมตีปกติขณะอยู่ในโหมดป้อมปืน **2** วินาที",
+			"stats": {
+				"shatter": 13,
+				"charge": 10
+			},
+			"need": "cannon_ice_plasm"
+		},
+		{
+			"description": "ภายใน **10** วินาทีเมื่อเปลี่ยนเป็นอาวุธนี้ เพิ่มดาเมจของการโจมตีปกติและทำลายโล่ **60%** คูลดาวน์: **25** วินาที",
+			"stats": {
+				"shatter": 16,
+				"charge": 10
+			},
+			"need": "cannon_ice_plasm"
+		}
+	],
+	"id": "cannon_ice"
+}

@@ -1,0 +1,90 @@
+{
+	"name": "复合弓",
+	"description": "雪原上的猎人常用的武器，能够轻松命中猎物。经过推广后，现已在平价民用市场占据半壁江山。",
+	"icon": "item_Weapon_SR_Bow_Fire01",
+	"gachaIcon": "Weapon_R_Bow_Phy01",
+	"rarity": "R",
+	"element": "Flame",
+	"weaponType": "Bow",
+	"wc": "DPS",
+	"mats": {
+		"Item_Mine_fire": 15,
+		"Item_Mine_fire_02": 25,
+		"Item_breakthrough_A2": 25,
+		"Item_breakthrough_C2": 25,
+		"Item_Mine_fire_03": 14,
+		"Item_breakthrough_A3": 14,
+		"Item_breakthrough_C3": 14,
+		"Item_breakthrough_A1": 13,
+		"Item_breakthrough_C1": 12
+	},
+	"advanceID": "bow_fire_r_star",
+	"skills": {
+		"normals": [
+			{
+				"name": "普通攻击",
+				"description": "在地面时，连续拉弓进行五次攻击。\r\n第一次攻击对目标造成**27.3%***攻击力+**164**点伤害。\r\n第二次攻击对目标造成**24.4%***攻击力+**146**点伤害。\r\n第三次攻击对目标造成**43.8%***攻击力+**263**点伤害。\r\n第四次攻击对目标造成**67.8%***攻击力+**407**点伤害。\r\n第五次攻击对目标造成**62.9%***攻击力+**377**点伤害，并小幅击退目标。",
+				"icon": "bow_skill",
+				"id": "GA_FPlayerBowMeleeNew_Melee"
+			},
+			{
+				"name": "蓄力箭",
+				"description": "长按普攻，进入蓄力攻击状态，对目标造成**49.1%***攻击力+**295**点基础伤害，蓄力每增加**1**秒，伤害增加**0.5**倍，蓄力**3**秒后达到伤害最大值，若命中怪物头部或者弱点，触发爆头效果（爆头效果对拓荒者无效），造成双倍伤害，并击倒目标。",
+				"icon": "skill_bow_power",
+				"id": "GA_FPlayerBowMeleeNew_PowerAttack"
+			},
+			{
+				"name": "箭雨",
+				"description": "任意一段普攻后长按普攻，释放箭雨造成范围伤害，对目标最多造成**160%***攻击力+**960**点伤害。",
+				"icon": "skill_bow_changeskill",
+				"id": "GA_FPlayerBowMeleeNew_Branch"
+			},
+			{
+				"name": "空中连击",
+				"description": "当拓荒者滞空时，点击普攻可在空中连续进行四次攻击。\r\n第一次攻击对目标造成**31.5%***攻击力+**189**点伤害。\r\n第二次攻击对目标造成**41.4%***攻击力+**248**点伤害。\r\n第三次攻击对目标造成**63%***攻击力+**378**点伤害。\r\n第四次攻击对目标造成**94.8%***攻击力+**569**点伤害。",
+				"icon": "skill_bow_power",
+				"id": "GA_FPlayerBowMeleeNew_AirAttack"
+			}
+		],
+		"dodge": [
+			{
+				"name": "闪避",
+				"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+				"icon": "common_evade",
+				"id": "GA_FPlayerBowEvadeNew_Evade"
+			},
+			{
+				"name": "蓄力一击",
+				"description": "闪避后，点击攻击，可触发蓄力一击效果，小幅击退目标，并对目标造成**69.3%***攻击力+**416**点伤害。",
+				"icon": "skill_bow_power",
+				"id": "GA_FPlayerBowEvadeNew_FrontAttack"
+			}
+		],
+		"skill": [
+			{
+				"name": "穿透箭",
+				"description": "后空翻并向前方射出**1**支穿透箭，对目标造成**125.4%***攻击力+**752**点伤害，并击退目标，冷却**12**秒。",
+				"icon": "bow_skill",
+				"id": "GA_FPlayerBowSkill"
+			}
+		],
+		"discharge": [
+			{
+				"name": "爆裂箭雨",
+				"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，向目标射出爆裂箭雨，对单个目标最多造成**396%***攻击力+**2376**点伤害。",
+				"icon": "skill_artifact11_1",
+				"id": "GA_FPlayerBowChangeSkill_Success"
+			}
+		]
+	},
+	"stars": [
+		{
+			"stats": {
+				"shatter": 4.8,
+				"charge": 8
+			},
+			"need": "None"
+		}
+	],
+	"id": "bow_fire"
+}

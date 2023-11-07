@@ -1,0 +1,90 @@
+{
+	"name": "电磁刃",
+	"description": "最早被立项的电能原能武具项目，上手简单，受到许多不擅长战斗的拓荒者的欢迎。",
+	"icon": "item_Weapon_R_Sword_Thunder01",
+	"gachaIcon": "Weapon_R_Sword_Thunder01",
+	"rarity": "R",
+	"element": "Thunder",
+	"weaponType": "Sword",
+	"wc": "DPS",
+	"mats": {
+		"Item_Mine_thunder": 15,
+		"Item_Mine_thunder_02": 25,
+		"Item_breakthrough_B2": 25,
+		"Item_breakthrough_D2": 25,
+		"Item_Mine_thunder_03": 14,
+		"Item_breakthrough_B3": 14,
+		"Item_breakthrough_D3": 14,
+		"Item_breakthrough_B1": 13,
+		"Item_breakthrough_D1": 12
+	},
+	"advanceID": "sword_thunder_r_star",
+	"skills": {
+		"normals": [
+			{
+				"name": "短剑普攻",
+				"description": "在地面时，挥舞短剑可连续进行五次攻击。\r\n第一次攻击对目标造成**34.6%***攻击力+**208**点伤害，并小幅击退目标。\r\n第二次攻击对目标造成**30.1%***攻击力+**181**点伤害，并小幅击退目标。\r\n第三次攻击对目标造成**27.4%***攻击力+**164**点伤害，并小幅击退目标。\r\n第四次攻击对目标造成**47.9%***攻击力+**287**点伤害，并小幅击退目标。\r\n第五次攻击对目标造成**72.2%***攻击力+**433**点伤害，造成**击飞**效果。",
+				"icon": "skill_sword_melee",
+				"id": "GA_FPlayerSwordMelee_Melee_R"
+			},
+			{
+				"name": "飞击",
+				"description": "当拓荒者滞空后，点击普攻可在空中连续进行四次攻击。\r\n第一次攻击对目标造成**15.7%***攻击力+**94**点伤害。\r\n第二次攻击对目标造成**25.3%***攻击力+**152**点伤害。\r\n第三次攻击对目标造成**45.1%***攻击力+**271**点伤害。\r\n第四次攻击对目标造成**67.4%***攻击力+**404**点伤害，并造成**强控击倒**效果。",
+				"icon": "skill_sword_air",
+				"id": "GA_FPlayerSwordMelee_AirAttack_R"
+			},
+			{
+				"name": "气旋",
+				"description": "普攻后长按可触发气旋。\r\n命中目标会浮空目标，气旋可对单个目标造成**22.3%***攻击力+**134**点伤害。",
+				"icon": "skill_sword_branch",
+				"id": "GA_FPlayerSwordMelee_Branch_R"
+			},
+			{
+				"name": "落斩",
+				"description": "滞空时长按普攻，攀爬，反向跳攻击或使用喷气背包普攻，会触发落斩。\r\n下落过程中，每次命中目标对目标造成**6.4%***攻击力+**38**点伤害；落地时对周围目标造成**35.6%***攻击力+**214**点伤害，并击退目标。\r\n触发时离地距离越高，伤害越高，最高可达**600%**伤害。",
+				"icon": "skill_sword_jump",
+				"id": "GA_FPlayerSwordMelee_JumpAttack_R"
+			},
+			{
+				"name": "偷袭",
+				"description": "处于下蹲状态时靠近敌人身后，点击普攻可触发偷袭，刺出短剑，对目标造成**256.5%***攻击力+**1539**点伤害。",
+				"icon": "common_sneak",
+				"id": "GA_FPlayerSwordMelee_Sneak_R"
+			}
+		],
+		"dodge": [
+			{
+				"name": "闪避",
+				"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+				"icon": "common_evade",
+				"id": "GA_FPlayerSwordEvade_Evade_R"
+			}
+		],
+		"skill": [
+			{
+				"name": "穿梭",
+				"description": "挥舞短剑穿梭于目标之间，最多可对**5**个目标总计造成**227.1%***攻击力+**1362**点伤害，最后一击浮空目标，技能期间免疫硬直效果，对同一目标造成的伤害依次递减**40%**，冷却**10**秒。",
+				"icon": "sword_skill1",
+				"id": "GA_FPlayerSwordSkill_R"
+			}
+		],
+		"discharge": [
+			{
+				"name": "剑气纵横",
+				"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，冲向目标并将目标**强控浮空**，对目标造成**266.6%***攻击力+**1599**点伤害。",
+				"icon": "skill_sword_changeskill",
+				"id": "GA_FPlayerSwordChangeSkill_Success_R"
+			}
+		]
+	},
+	"stars": [
+		{
+			"stats": {
+				"shatter": 3.6,
+				"charge": 8.8
+			},
+			"need": "None"
+		}
+	],
+	"id": "sword_thunder"
+}
