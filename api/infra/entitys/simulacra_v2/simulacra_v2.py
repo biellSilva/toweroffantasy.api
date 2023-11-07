@@ -1,6 +1,7 @@
 
-from api.infra.entitys.base import EntityBase
+from pydantic import Field
 
+from api.infra.entitys.base import EntityBase
 from api.infra.entitys.simulacra_v2.extra import VoiceActors
 from api.infra.entitys.weapons import Weapon
 from api.infra.entitys.matrices import Matrice
@@ -9,7 +10,7 @@ from api.infra.entitys.matrices import Matrice
 class Simulacra_v2(EntityBase):
     name: str
     icon: str
-    cnName: str
+    advanceID: str | None = Field(alias='advanceId', default=None)
     age: str
     height: str
     gender: str

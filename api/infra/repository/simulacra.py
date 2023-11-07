@@ -18,7 +18,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                          repo_name='simulacra')
     
     async def get_all(self, lang: str) -> list[Simulacra]:
-        if self.__load_all_data__:
+        if lang in self.cache:
             return list(self.cache[lang].values())
         
         else:

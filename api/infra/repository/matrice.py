@@ -38,3 +38,8 @@ class MatriceRepo(ModelRepository[EntityBase, Matrice]):
 
             self.__load_all_data__ = True
             return list(self.cache[lang].values())
+    
+    async def get_by_name(self, name: str, lang: str):
+        for i in await self.get_all(lang):
+            if i.name == name:
+                return i
