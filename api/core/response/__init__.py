@@ -1,5 +1,5 @@
 
-from .json_response import JsonIndentResponse
+from .json_response import PrettyJsonResponse
 
 
-__import__ = [JsonIndentResponse]
+__import__ = [PrettyJsonResponse]

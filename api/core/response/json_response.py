@@ -5,7 +5,7 @@ from fastapi.responses import Response
 from starlette.background import BackgroundTask
 
 
-class JsonIndentResponse(Response):
+class PrettyJsonResponse(Response):
     media_type = 'application/json'
 
     def __init__(self, content: dict[str, typing.Any], status_code: int = 200, 

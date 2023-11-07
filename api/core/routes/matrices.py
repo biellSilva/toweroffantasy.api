@@ -6,6 +6,7 @@ from api.core.exceptions import ItemNotFound
 from api.enums import MATRICES, LANGS
 from api.infra.repository import MatriceRepo
 from api.infra.entitys import EntityBase
+from api.core.response import PrettyJsonResponse
 
 
 router = APIRouter(prefix='/matrices', tags=['matrices'])
@@ -17,7 +18,7 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en')):
     ''' Get matrice based on ID '''
     
     if matrice := await MATRICE_REPO.get(EntityBase(id=id), lang):
-        return matrice
+        return PrettyJsonResponse(matrice.model_dump())
 
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
