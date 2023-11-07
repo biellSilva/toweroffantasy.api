@@ -1,29 +1,44 @@
 
-from pathlib import Path
-from os import listdir
-from json import loads
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 
-from api.enums import SIMULACRAS, Lang
-from api.entitys import Simulacra
+from api.enums import SIMULACRAS, LANGS
+
+from api.core.exceptions import ItemNotFound
+from api.core.response import PrettyJsonResponse
+
+from api.infra.entitys import Simulacra, EntityBase
+from api.infra.repository import SimulacraRepo
 
 
 router = APIRouter(prefix='/simulacra', tags=['simulacra'])
 
 
-@router.get('/{name}', response_model_exclude_none=True)
-async def get_simulacra(name: SIMULACRAS, lang: Lang = Lang.en):
-    ''' Get simulacra based on name '''
-    
-    if lang.value in listdir('src/data'):
-        path = Path(Path().cwd(), f'src/data/{lang}/simulacra/{name.replace(" ", "_").lower()}.json')
+SIMU_REPO = SimulacraRepo()
 
-    else:
-        path = Path(Path().cwd(), f'src/data/en-US/simulacra/{name.replace(" ", "_").lower()}.json')
 
-    if not path.is_file():
-        raise HTTPException(404, f'/simulacra/{name.replace(" ", "_").lower()} not found')
+@router.get('/{id}', response_model=Simulacra)
+async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en')):
+    '''
+    return \n
+        Simulacra
+    '''
+    
+    if simulacra := await SIMU_REPO.get(EntityBase(id=id), lang):
+        return PrettyJsonResponse(simulacra.model_dump(exclude_none=True))
     
     else:
-        with open(path, 'rb') as f:
-            return Simulacra(**loads(f.read()))
+        raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
+
+@router.get('', response_model=dict[str, Simulacra])
+async def get_all_simulacra(lang: LANGS = LANGS('en')):
+    '''
+    return \n
+        Simulacra
+    '''
+    
+    if simulacras := await SIMU_REPO.get_all(lang):
+        return PrettyJsonResponse({simulacra.id: simulacra.model_dump(exclude_none=True) 
+                                   for simulacra in simulacras})
+    
+    else:
+        raise ItemNotFound(headers={'error': f'{lang} not found'})

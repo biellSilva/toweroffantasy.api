@@ -18,7 +18,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                          repo_name='weapon')
     
     async def get_all(self, lang: str) -> list[Weapon]:
-        if self.__load_all_data__:
+        if lang in self.cache:
             return list(self.cache[lang].values())
         
         else:
@@ -31,11 +31,30 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             else:
                 self.cache.update({lang: {}})
 
-            for Weapon_id, Weapon_dict in DATA.items():
-                
-                set: list[dict[str, str]] = Weapon_dict.pop('set')
-                Weapon_dict['set'] = {key.lower(): value for i in set for key, value in i.items()}
-                self.cache[lang].update({Weapon_id.lower(): Weapon(**Weapon_dict)})
+            for weapon_id, weapon_dict in DATA.items():
+                stars = weapon_dict.get('stars', [])
+                weaponEffects: list[dict[str, str]] = []
+                if stars: 
+                    if 'description' in stars[0]:
+                        if description := stars[0]['description']:
+                            if '*:' in description:
+                                weaponEffect = description.split('\r', 1)
 
-            self.__load_all_data__ = True
+                                for i in weaponEffect:
+                                    key, value_ = i.split('*:', 1)
+                                    key = key.replace('*', '').replace('\n', '').replace('\r', '')
+                                    value_ = value_.replace('\n', '').replace('\r', '').replace(' ', '', 1)
+                                    weaponEffects.append({'title': key, 'description': value_})
+                            else:
+                                if weapon_dict['name'].lower() == 'shadoweave':
+                                    weaponEffects = [{'title': 'Altered Damage', 'description': description.replace('\n', ' ').replace('\r', '')}]
+                                else:
+                                    weaponEffects = [{'title': 'Unknown', 'description': description.replace('\n', ' ').replace('\r', '')}]
+
+                    weapon_dict['stars'].pop(0)
+                    
+                weapon_dict.update({'weaponEffects': weaponEffects})
+
+                self.cache[lang].update({weapon_id.lower(): Weapon(**weapon_dict)})
+
             return list(self.cache[lang].values())

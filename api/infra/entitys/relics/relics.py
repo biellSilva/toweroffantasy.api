@@ -1,5 +1,5 @@
 
-from pydantic import BeforeValidator
+from pydantic import BeforeValidator, Field
 from typing import Annotated
 
 from api.utils import bold_numbers
@@ -14,5 +14,7 @@ class Relic(EntityBase):
     source: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     type: str
     icon: str
+    shortIcon: str
+    attributeID: str = Field(alias='AttributeID')
     advancement: list[Advancement]
 
