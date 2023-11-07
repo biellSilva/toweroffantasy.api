@@ -2,6 +2,8 @@
 from pydantic import BaseModel, BeforeValidator
 from typing import Annotated
 
+from api.entitys.weapons import Weapon
+from api.entitys.matrices import Matrice
 from api.utils import replace_cv
 
 
@@ -14,7 +16,7 @@ class VoiceActors(BaseModel):
     portuguese: Annotated[str, BeforeValidator(replace_cv)] | None = None
 
 
-class Simulacra(BaseModel):
+class Simulacra_v2(BaseModel):
     id: str
     name: str
     icon: str
@@ -28,4 +30,6 @@ class Simulacra(BaseModel):
     rating: str
     gift_types: list[str]
     voice_actors: VoiceActors
+    weapon: Weapon | None = None
+    matrice: Matrice | None = None
 

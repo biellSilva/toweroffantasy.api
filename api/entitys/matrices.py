@@ -18,6 +18,6 @@ class Matrice(BaseModel):
     icon: str
     gachaIcon: str
     rarity: str
-    set: MatriceSet
+    set: list[MatriceSet]
     id: str
 

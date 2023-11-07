@@ -1,12 +1,24 @@
 
-from fastapi import Header
-from fastapi.exceptions import HTTPException
+from fastapi import FastAPI
 
-from api.config import API_KEY
+from api.routes import (
+    simulacra, 
+    simulacra_v2, 
+    names,
+    weapons,
+    matrices,
+    relics,
+    home
+)
 
 
-def verify_auth(auth: str = Header(...)):
-    if auth == API_KEY:
-        return True
-    else:
-        raise HTTPException(status_code=401, detail='Wrong API TOKEN')
+app = FastAPI()
+
+app.include_router(home.router)
+app.include_router(simulacra.router)
+app.include_router(simulacra_v2.router)
+app.include_router(weapons.router)
+app.include_router(matrices.router)
+app.include_router(relics.router)
+app.include_router(names.router)
+
