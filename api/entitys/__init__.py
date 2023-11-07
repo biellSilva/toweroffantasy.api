@@ -1,5 +1,6 @@
 
-from .langs import Language
 from .simulacra import Simulacra
+from .matrices import Matrice
+from .relics import Relic
 
-__import__ = [Language, Simulacra]
+__import__ = [Simulacra, Matrice, Relic]
