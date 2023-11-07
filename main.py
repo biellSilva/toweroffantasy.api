@@ -11,7 +11,7 @@ app.include_router(simulacra.router)
 
 if __name__ == '__main__':
     run(app=app, 
-        access_log=False, 
+        # access_log=True, 
         host='0.0.0.0',
         port=8080,
         # reload=True,      # dev function
