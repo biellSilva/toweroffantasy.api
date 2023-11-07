@@ -1,4 +1,10 @@
 
+from .simulacra import SimulacraRepo
+from .matrice import MatriceRepo
+from .weapon import WeaponRepo
 
-from api.infra.interface import IRepository
-from api.infra.entitys import 
+__import__ = [
+    SimulacraRepo, 
+    MatriceRepo, 
+    WeaponRepo
+]

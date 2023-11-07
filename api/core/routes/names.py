@@ -3,15 +3,15 @@ from pathlib import Path
 from os import listdir
 from fastapi import APIRouter
 
-from api.enums import Lang
-from api.response import JsonIndentResponse
+from api.enums import LANGS
+from api.core.response import JsonIndentResponse
 
 
 router = APIRouter(prefix='/names', tags=['names'])
 
 
 @router.get('/simulacra')
-async def get_simulacra_names(lang: Lang = Lang.en):
+async def get_simulacra_names(lang: LANGS = LANGS('en')):
     ''' Returns a list of simulacra's name '''
     
     if lang.value in listdir('src/data'):

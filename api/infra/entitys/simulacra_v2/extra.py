@@ -12,19 +12,3 @@ class VoiceActors(BaseModel):
     english: Annotated[str, BeforeValidator(replace_cv)] | None = None
     korean: Annotated[str, BeforeValidator(replace_cv)] | None = None
     portuguese: Annotated[str, BeforeValidator(replace_cv)] | None = None
-
-
-class Simulacra(BaseModel):
-    id: str
-    name: str
-    icon: str
-    cnName: str
-    age: str
-    height: str
-    gender: str
-    state: str
-    city: str
-    rating: str
-    gift_types: list[str]
-    voice_actors: VoiceActors
-

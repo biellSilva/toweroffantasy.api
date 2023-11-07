@@ -29,17 +29,3 @@ class Advancements(BaseModel):
 class WeaponEffect(BaseModel):
     title: str
     description: str
-
-class Weapon(BaseModel):
-    id: str
-    name: str
-    description: str
-    icon: str
-    rarity: str
-    type: str
-    element: str
-    mats: dict[str, int | None]
-    weaponEffects: list[WeaponEffect]
-    skills: Skills
-    advancements: list[Advancements]
-
