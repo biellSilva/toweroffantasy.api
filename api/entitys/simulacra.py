@@ -19,7 +19,6 @@ class Simulacra(BaseModel):
     name: str
     icon: str
     cnName: str
-    cnOnly: bool = False
     age: str
     height: str
     gender: str
