@@ -26,3 +26,4 @@ class ModelRepository(IRepository[B, T]):
             if lang in self.class_base.cache:
                 if model.id in self.class_base.cache[lang]:
                     return self.class_base.cache[lang][model.id]
+    

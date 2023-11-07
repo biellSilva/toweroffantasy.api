@@ -18,12 +18,12 @@ MATRICE_REPO = MatriceRepo()
 @router.get('/{id}', response_model=Matrice)
 async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en')):
     '''
-    RETURNS \n
+    return \n
         Matrice
     '''
     
     if matrice := await MATRICE_REPO.get(EntityBase(id=id), lang):
-        return PrettyJsonResponse(matrice.model_dump(exclude_none=True))
+        return PrettyJsonResponse(matrice.model_dump())
 
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
@@ -31,12 +31,12 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en')):
 @router.get('', response_model=dict[str, Matrice])
 async def get_all_matrices(lang: LANGS = LANGS('en')):
     '''
-    RETURNS \n
+    return \n
         Dict[Matrice.id: Matrice] 
     '''
     
     if matrices := await MATRICE_REPO.get_all(lang):
-        return PrettyJsonResponse({matrice.id: matrice.model_dump(exclude_none=True) 
+        return PrettyJsonResponse({matrice.id: matrice.model_dump() 
                                    for matrice in matrices})
     
     else:

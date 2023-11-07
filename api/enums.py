@@ -7,14 +7,17 @@ from json import loads
 __langs: list[str] = [file.name for file in Path('api/database').iterdir() if file.is_dir()]
 LANGS = StrEnum('LANGS', __langs)
 
-__simulacras_names: list[str] = [file.name.removesuffix('.json') for file in Path('api/database/en').iterdir() if file.is_file()]
+__simulacras_names: list[str] = [file for file in loads(Path('api/database/en/imitations.json').read_bytes()) if 'L1' not in file]
 SIMULACRAS = StrEnum('SIMULACRAS', __simulacras_names)
 
 __matrices_names: list[str] = [file for file in loads(Path('api/database/en/matrices.json').read_bytes())]
 MATRICES = StrEnum('MATRICES', __matrices_names)
 
-__weapons_names: list[str] = [file.name.removesuffix('.json') for file in Path('api/database/en').iterdir() if file.is_file()]
+__weapons_names: list[str] = [file for file in loads(Path('api/database/en/weapons.json').read_bytes())]
 WEAPONS = StrEnum('WEAPONS', __weapons_names)
 
-__relics_names: list[str] = [file.name.removesuffix('.json') for file in Path('api/database/en').iterdir() if file.is_file()]
+__relics_names: list[str] = [file for file in loads(Path('api/database/en/relics.json').read_bytes())]
 RELICS = StrEnum('RELICS', __relics_names)
+
+__foods_names: list[str] = [file for file in loads(Path('api/database/en/food.json').read_bytes())]
+FOOD = StrEnum('FOOD', __foods_names)

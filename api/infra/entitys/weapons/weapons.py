@@ -16,4 +16,4 @@ class Weapon(EntityBase):
     mats: dict[str, int | None]
     weaponEffects: list[WeaponEffect]
     skills: Skills
-    advancements: list[Advancements] = Field(alias='stars')
+    advancements: list[Advancements] = Field(alias='stars') 

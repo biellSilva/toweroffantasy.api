@@ -1,29 +1,44 @@
 
-from pathlib import Path
-from os import listdir
-from json import loads
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 
-from api.enums import WEAPONS, Lang
-from api.entitys import Weapon
+from api.enums import WEAPONS, LANGS
+
+from api.core.response import PrettyJsonResponse
+from api.core.exceptions import ItemNotFound
+
+from api.infra.entitys import Weapon, EntityBase
+from api.infra.repository import WeaponRepo
 
 
 router = APIRouter(prefix='/weapons', tags=['weapons'])
 
+WEAPON_REPO = WeaponRepo()
 
-@router.get('/{name}', response_model_exclude_none=True)
-async def get_weapon(name: WEAPONS, lang: Lang = Lang.en):
-    ''' Get weapon based on name '''
-    
-    if lang.value in listdir('src/data'):
-        path = Path(Path().cwd(), f'src/data/{lang}/weapons/{name.replace(" ", "_").lower()}.json')
+
+@router.get('/{id}', response_model=Weapon)
+async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en')):
+    '''
+    returns \n
+        Weapon
+    '''
+
+    if weapon := await WEAPON_REPO.get(EntityBase(id=id), lang):
+        return PrettyJsonResponse(weapon.model_dump())
 
     else:
-        path = Path(Path().cwd(), f'src/data/en-US/weapons/{name.replace(" ", "_").lower()}.json')
+        raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
 
-    if not path.is_file():
-        raise HTTPException(404, f'/{lang}/weapons/{name.replace(" ", "_").lower()} not found')
-    
+
+@router.get('', response_model=Weapon)
+async def get_all_weapons(lang: LANGS = LANGS('en')):
+    '''
+    returns \n
+        Dict[Weapon.id: Weapon]
+    '''
+
+    if weapons := await WEAPON_REPO.get_all(lang):
+        return PrettyJsonResponse({weapon.id: weapon.model_dump() 
+                                   for weapon in weapons})
+
     else:
-        with open(path, 'rb') as f:
-            return Weapon(**loads(f.read()))
+        raise ItemNotFound(headers={'error': f'{lang} not found'})

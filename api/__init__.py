@@ -2,12 +2,12 @@
 from fastapi import FastAPI
 
 from api.core.routes import (
-    # simulacra, 
-    # simulacra_v2, 
+    simulacra, 
+    simulacra_v2, 
     # names,
-    # weapons,
+    weapons,
     matrices,
-    # relics,
+    relics,
     home
 )
 
@@ -15,10 +15,10 @@ from api.core.routes import (
 app = FastAPI()
 
 app.include_router(home.router)
-# app.include_router(simulacra.router)
-# app.include_router(simulacra_v2.router)
-# app.include_router(weapons.router)
+app.include_router(simulacra.router)
+app.include_router(simulacra_v2.router)
+app.include_router(weapons.router)
 app.include_router(matrices.router)
-# app.include_router(relics.router)
+app.include_router(relics.router)
 # app.include_router(names.router)
 

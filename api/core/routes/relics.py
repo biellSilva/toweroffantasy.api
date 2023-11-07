@@ -1,30 +1,43 @@
 
-from pathlib import Path
-from os import listdir
-from json import loads
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 
-from api.enums import RELICS, Lang
-from api.entitys import Relic
+from api.enums import RELICS, LANGS
+
+from api.core.response import PrettyJsonResponse
+from api.core.exceptions import ItemNotFound
+
+from api.infra.repository import RelicRepo
+from api.infra.entitys import Relic, EntityBase
 
 
 router = APIRouter(prefix='/relics', tags=['relics'])
 
+RELIC_REPO = RelicRepo()
 
-@router.get('/{name}', response_model_exclude_none=True)
-async def get_relic(name: RELICS, lang: Lang = Lang.en):
-    ''' Get relic based on name '''
+
+@router.get('/{id}', response_model=Relic)
+async def get_relic(id: RELICS, lang: LANGS = LANGS('en')):
+    '''
+    return \n
+        Relic
+    '''
+
+    if relic := await RELIC_REPO.get(EntityBase(id=id), lang):
+        return PrettyJsonResponse(relic.model_dump())
     
-    if lang.value in listdir('src/data'):
-        path = Path(Path().cwd(), f'src/data/{lang}/relics/{name.replace(" ", "_").lower()}.json')
-
     else:
-        path = Path(Path().cwd(), f'src/data/en-US/relics/{name.replace(" ", "_").lower()}.json')
+        raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
 
-    if not path.is_file():
-        raise HTTPException(404, f'/{lang}/relics/{name.replace(" ", "_").lower()} not found')
+@router.get('', response_model=dict[str, Relic])
+async def get_all_relics(lang: LANGS = LANGS('en')):
+    '''
+    return \n
+        Dict[Relic.id: Relic]
+    '''
+
+    if relics := await RELIC_REPO.get_all(lang):
+        return PrettyJsonResponse({relic.id: relic.model_dump() 
+                                   for relic in relics})
     
     else:
-        with open(path, 'rb') as f:
-            return Relic(**loads(f.read()))
-
+        raise ItemNotFound(headers={'error': f'{lang} not found'})
