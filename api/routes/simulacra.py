@@ -3,10 +3,7 @@ import aiofiles
 
 from pathlib import Path
 from os import listdir
-from json import loads, dump
-from fastapi import APIRouter, HTTPException, Depends, UploadFile
-from fastapi.responses import JSONResponse
-from typing import Optional, Literal
+from json import dump, loads
 
 from api import verify_auth
 from api.entitys import Simulacra
