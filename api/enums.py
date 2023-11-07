@@ -8,7 +8,7 @@ class Lang(StrEnum):
     pt = 'pt-BR'
 
 
-__simulacras_new_names: list[str] = [file.removesuffix('.json') for file in listdir('src/data/en-US/simulacra_new')]
+__simulacras_new_names: list[str] = [file.removesuffix('.json') for file in listdir('src/data/en-US/simulacra_v2')]
 SIMULACRAS_V2 = StrEnum('SIMULACRAS_NEW', __simulacras_new_names)
 
 __simulacras_names: list[str] = [file.removesuffix('.json') for file in listdir('src/data/en-US/simulacra')]
