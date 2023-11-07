@@ -1,4 +1,6 @@
 
+from pydantic import BaseModel
+
 from .simulacra import Simulacra
 from .matrices import Matrice
 from .weapons import Weapon
@@ -7,3 +9,8 @@ from .relics import Relic
 
 
 __import__ = [Simulacra, Matrice, Weapon, Simulacra_v2, Relic]
+
+
+
+class EntityBase(BaseModel):
+    name: str
