@@ -10,7 +10,7 @@ from typing import Optional, Literal
 
 from api import verify_auth
 from api.entitys import Simulacra
-from api.enums import Lang
+from api.response import JsonIndentResponse
 
 
 router = APIRouter(prefix='/simulacra', tags=['simulacra'])
@@ -31,7 +31,7 @@ async def get_simulacra(name: str, lang: Lang = Lang.en):
     
     else:
         with open(path, 'rb') as f:
-            return JSONResponse(content=loads(f.read()), status_code=200, headers={"Content-Disposition": "inline"})
+            return JsonIndentResponse(content=loads(f.read()), status_code=200, headers={"Content-Disposition": "inline"})
 
 
 @router.post('', dependencies=[Depends(verify_auth)])
