@@ -15,14 +15,14 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
         super().__init__(model_base=EntityBase, 
                          model=Simulacra, 
                          class_base=SimulacraRepo,
-                         repo_name='simulacra')
+                         repo_name='imitations')
     
     async def get_all(self, lang: str) -> list[Simulacra]:
         if lang in self.cache:
             return list(self.cache[lang].values())
         
         else:
-            PATH_IMIT = Path(f'api/database/{lang}/imitations.json')
+            PATH_IMIT = Path(f'api/database/{lang}/{self.repo_name}.json')
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
 
             if lang in self.cache:

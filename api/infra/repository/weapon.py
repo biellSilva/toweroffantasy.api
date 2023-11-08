@@ -6,6 +6,8 @@ from typing import Any
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Weapon, EntityBase
 
+from api.utils import classifier
+
 
 class WeaponRepo(ModelRepository[EntityBase, Weapon]):
     cache = {}
@@ -15,14 +17,14 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
         super().__init__(model_base=EntityBase, 
                          model=Weapon, 
                          class_base=WeaponRepo,
-                         repo_name='weapon')
+                         repo_name='weapons')
     
     async def get_all(self, lang: str) -> list[Weapon]:
         if lang in self.cache:
             return list(self.cache[lang].values())
         
         else:
-            PATH_IMIT = Path(f'api/database/{lang}/weapons.json')
+            PATH_IMIT = Path(f'api/database/{lang}/{self.repo_name}.json')
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
 
             if lang in self.cache:
@@ -51,9 +53,23 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                                 else:
                                     weaponEffects = [{'title': 'Unknown', 'description': description.replace('\n', ' ').replace('\r', '')}]
 
-                    weapon_dict['stars'].pop(0)
-                    
-                weapon_dict.update({'weaponEffects': weaponEffects})
+                    if len(weapon_dict['stars']) == 7:
+                        weapon_dict['stars'].pop(0)
+
+                shatter = weapon_dict['stars'][-1]['stats']['shatter']
+                charge = weapon_dict['stars'][-1]['stats']['charge']
+
+                weapon_dict.update({
+                    'weaponEffects': weaponEffects, 
+                    'shatter': {
+                        'tier': classifier(shatter),
+                        'value': shatter
+                    },
+                    'charge': {
+                        'tier': classifier(charge),
+                        'value': charge
+                    }
+                })
 
                 self.cache[lang].update({weapon_id.lower(): Weapon(**weapon_dict)})
 
