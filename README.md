@@ -26,11 +26,11 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 * **`/relics`**
 * **`/food`**
 * `/item`
-* `/image`
+* `/assets`
 
 ### Example of use
 
-Let's say we made a request for one of the routes (except `/image`), if we don't specify an ID using just `/route`, the return will be a dictionary containing all the information for that route
+Let's say we made a request for one of the routes (except `/assets`), if we don't specify an ID using just `/route`, the return will be a dictionary containing all the information for that route
 
 *status code: 200*
 

@@ -8,7 +8,7 @@ from typing import Literal
 from api.core.exceptions import ItemNotFound
 
 
-router = APIRouter(prefix='/image', tags=['image'])
+router = APIRouter(prefix='/assets', tags=['assets'])
 
 
 @router.get('/{path:path}')
