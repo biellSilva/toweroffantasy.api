@@ -12,7 +12,7 @@ router = APIRouter(prefix='/assets', tags=['assets'])
 
 
 @router.get('/{path:path}')
-async def image(path: str, format: Literal['png', 'webp']='webp'):
+async def get_asset(path: str, format: Literal['png', 'webp']='webp'):
 
     async with aiohttp.ClientSession() as cs:
         path = path if '.png' in path else f'{path}.png'
@@ -21,4 +21,4 @@ async def image(path: str, format: Literal['png', 'webp']='webp'):
             if res.status == 200:
                 return Response(await res.read(), media_type=f'image/{format.upper()}')
             else:
-                raise ItemNotFound(headers={'error': f'Couldn\'t find {path} image'})
+                raise ItemNotFound(headers={'error': f'Couldn\'t find {path} asset'})
