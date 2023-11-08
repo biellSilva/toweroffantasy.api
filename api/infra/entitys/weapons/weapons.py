@@ -2,7 +2,7 @@
 from pydantic import Field
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.weapons.extra import WeaponEffect, Advancements, Skills
+from api.infra.entitys.weapons.extra import *
 
 
 class Weapon(EntityBase):
@@ -12,6 +12,8 @@ class Weapon(EntityBase):
     rarity: str
     type: str = Field(alias='wc')
     element: str
+    shatter: ShatterOrCharge
+    charge: ShatterOrCharge
     advanceID: str | None = None
     mats: dict[str, int | None]
     weaponEffects: list[WeaponEffect]

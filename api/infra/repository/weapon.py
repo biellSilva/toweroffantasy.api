@@ -6,6 +6,8 @@ from typing import Any
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Weapon, EntityBase
 
+from api.utils import classifier
+
 
 class WeaponRepo(ModelRepository[EntityBase, Weapon]):
     cache = {}
@@ -51,9 +53,23 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                                 else:
                                     weaponEffects = [{'title': 'Unknown', 'description': description.replace('\n', ' ').replace('\r', '')}]
 
-                    weapon_dict['stars'].pop(0)
-                    
-                weapon_dict.update({'weaponEffects': weaponEffects})
+                    if len(weapon_dict['stars']) == 7:
+                        weapon_dict['stars'].pop(0)
+
+                shatter = weapon_dict['stars'][-1]['stats']['shatter']
+                charge = weapon_dict['stars'][-1]['stats']['charge']
+
+                weapon_dict.update({
+                    'weaponEffects': weaponEffects, 
+                    'shatter': {
+                        'tier': classifier(shatter),
+                        'value': shatter
+                    },
+                    'charge': {
+                        'tier': classifier(charge),
+                        'value': charge
+                    }
+                })
 
                 self.cache[lang].update({weapon_id.lower(): Weapon(**weapon_dict)})
 

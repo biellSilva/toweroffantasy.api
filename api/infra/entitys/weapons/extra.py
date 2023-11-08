@@ -29,3 +29,7 @@ class Advancements(BaseModel):
 class WeaponEffect(BaseModel):
     title: str
     description: str
+
+class ShatterOrCharge(BaseModel):
+    value: float
+    tier: str
