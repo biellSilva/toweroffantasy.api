@@ -4,7 +4,6 @@
 
 Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [FortOfFans](https://github.com/FortOfFans) who constantly provides game data, [Emi](https://github.com/eminentglory) who helps with the API backend and others collaborators.
 
-
 ## Packages used
 
 * FastAPI
@@ -13,12 +12,9 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 * Python-DotEnv
 * Python-Multipart
 
-
 ## Achievements
 
 > **November 07, 2023** - API base goes live
-
-
 
 ## Routes
 
@@ -29,7 +25,7 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 * **`/relics`**
 * **`/food`**
 
-##### Example of use
+### Example of use
 
 Let's say we made a request for one of the routes, if we don't specify an ID using just `/route`, the return will be a dictionary containing all the information for that route
 
@@ -57,16 +53,15 @@ _status code: 200_
 }
 ```
 
-##### Language system
+### Language system
 
 All routes also have a system to define which language should be returned, for this query params were used, in the request url you must pass **`/route?lang=possible_languages`**, can also be used in a route for a specific object **`/route/id?lang=possible_language`**
 
 All possible languages are the folders name in **`/api/database`**
 
-##### Note
+### Note
 
 It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to check/learn on how to use, their returns and more
-
 
 ## Development checklist
 
