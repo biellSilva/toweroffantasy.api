@@ -11,8 +11,9 @@ from api.core.exceptions import ItemNotFound
 router = APIRouter(prefix='/image', tags=['image'])
 
 
-@router.get('')
+@router.get('/{path:path}')
 async def image(path: str, format: Literal['png', 'webp']='webp'):
+
     async with aiohttp.ClientSession() as cs:
         path = path if '.png' in path else f'{path}.png'
 
