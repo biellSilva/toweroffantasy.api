@@ -15,6 +15,11 @@ def bold_numbers(text: str):
 def replace_cv(text: str):
     return text.replace('CV : ', '')
 
+def replace_icon(text: str):
+    if '/Game/Resources/' in text:
+        return text.replace('/Game/Resources', '/assets')
+    else:
+        return text
 
 def verify_auth(auth: str = Header(...)):
     if auth == API_KEY:
