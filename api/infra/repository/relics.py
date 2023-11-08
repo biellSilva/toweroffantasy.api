@@ -16,14 +16,14 @@ class RelicRepo(ModelRepository[EntityBase, Relic]):
         super().__init__(model_base=EntityBase, 
                          model=Relic, 
                          class_base=RelicRepo,
-                         repo_name='relic')
+                         repo_name='relics')
     
     async def get_all(self, lang: str) -> list[Relic]:
         if lang in self.cache:
             return list(self.cache[lang].values())
         
         else:
-            PATH_IMIT = Path(f'api/database/{lang}/relics.json')
+            PATH_IMIT = Path(f'api/database/{lang}/{self.repo_name}.json')
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
 
             if lang in self.cache:
