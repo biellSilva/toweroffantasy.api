@@ -1,41 +1,40 @@
 {
 	"Task_Area2Cooking": {
 		"name": "Hierba canina",
-		"type": "ITEM_TYPE_QUEST",
 		"description": "La comida favorita de los sabuesos entrenados.",
-		"satiety": "Objeto para distraer sabuesos.",
 		"buff": "Bocadillo",
 		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_POOR"
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
 	},
 	"Item_Cooking_0901": {
 		"name": "Estofado horrible",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un conjunto de ingredientes desconocidos, mezclados en una olla grande, con varios nutrientes perdidos en el proceso.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_0902": {
 		"name": "Estofado de calidad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Parece un éxito, pero la selección de ingredientes es lo que llevará a este platillo a la ruina...",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_1001": {
 		"name": "Hongos Fritos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Más allá del sabor, al menos está bien cocido.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1001",
 		"stars": 1,
@@ -47,13 +46,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **10% 1500** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Permite recuperar inmediatamente (**10% + 1500**) PS del nómada."
 	},
 	"Item_Cooking_1002": {
 		"name": "Sopa de algas y huevo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Contiene alga marina fresca, es rico en proteína y sirve para llenar el estómago.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1002",
 		"stars": 1,
@@ -70,13 +74,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1003": {
 		"name": "Pescado crujiente a la parrilla",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Uno de los platos más populares de la ciudad portuaria de Banges. Barato y delicioso.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1003",
 		"stars": 1,
@@ -87,13 +96,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1004": {
 		"name": "Pan integral",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Elaborado con grano procesado, nutritivo y fácil de guardar. Todos los Nómadas deberían llevar un poco.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1004",
 		"stars": 1,
@@ -104,13 +114,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1005": {
 		"name": "Cereal para el desayuno",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Alguna vez fue una ración salvadora con la que se alimentaba a cinco o seis personas. Ahora la situación mejoró y se le suele agregar leche en vez de agua.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1005",
 		"stars": 1,
@@ -126,13 +137,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1006": {
 		"name": "Carne chisporroteante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Cómo te gustaría cocinarlo? La gente con agallas lo come después de asarlo al sol sobre las rocas por unos segundos.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1006",
 		"stars": 1,
@@ -143,13 +155,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1007": {
 		"name": "Caldo de mariscos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dicen que, a pesar de su sabor regular, un mordisco te despabila y dos te devuelven la salud.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1007",
 		"stars": 1,
@@ -170,13 +183,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Aumenta **Frost Attack +1%** por **Frost Attack +undefined%** segundos."
 	},
 	"Item_Cooking_1008": {
 		"name": "Hamburguesa de pollo crujiente",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Hamburguesas de pollo que se pueden encontrar en locales de comida rápida. Hay pocas cosas que superan la combinación de pollo crocante y lechuga fresca.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1008",
 		"stars": 1,
@@ -198,13 +218,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1009": {
 		"name": "Hamburguesa picante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "No importa cuánto tiempo haya pasado, nunca falla a la hora de estimular tu apetito.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1009",
 		"stars": 1,
@@ -225,13 +250,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Aumenta **Physical Attack +1%** por **Physical Attack +undefined%** segundos."
 	},
 	"Item_Cooking_1010": {
 		"name": "Arroz frito con huevo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Esto es lo que necesitas cuando te cansas de comer puro arroz blanco.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1010",
 		"stars": 1,
@@ -247,13 +279,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1011": {
 		"name": "Cangrejo al vapor",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Los frutos del mar se sirven mejor frescos. Pero ¿con qué empezamos?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1011",
 		"stars": 1,
@@ -270,13 +303,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"Item_Cooking_1012": {
 		"name": "Soda de fresa helada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mezcla fresas aplastadas con refresco y agrega hielo. Un clásico del verano.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1012",
 		"stars": 1,
@@ -297,23 +335,35 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Aumenta **Flame Resistance +10%** por **Flame Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_1013": {
 		"name": "Soda flameada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Hora del té de la tarde!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1013",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_RARE"
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"mods": [
+			900,
+			0.1,
+			65
+		],
+		"effect": "Aumenta **10** por **undefined** segundos."
 	},
 	"Item_Cooking_1014": {
 		"name": "Soda de arándanos tronanubes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El arándano es oscuro como una nube negra. Ten cuidado de no mancharte, porque es difícil de limpiar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1014",
 		"stars": 1,
@@ -334,13 +384,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Aumenta **Volt Resistance +10%** por **Volt Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_1015": {
 		"name": "Huevo dorado y tomate",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ay, no revolví los huevos por accidente...",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1015",
 		"stars": 1,
@@ -357,13 +414,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1016": {
 		"name": "Ensalada simple y poderosa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La ensalada más sencilla para alcanzar los requisitos nutricionales diarios. Ideal para una dieta baja en grasas.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1016",
 		"stars": 1,
@@ -394,13 +456,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Aumenta **Physical Resistance +10%** por **Physical Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_1017": {
 		"name": "Ensalada de lechuga",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una buena ensalada con diversos ingredientes y un aroma potente.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1017",
 		"stars": 1,
@@ -417,13 +486,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **10% 1500** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Permite recuperar inmediatamente (**10% + 1500**) PS del nómada."
 	},
 	"Item_Cooking_1018": {
 		"name": "Sopa de hongos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una perfecta combinación de hongos frescos y lechuga crujiente.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1018",
 		"stars": 1,
@@ -440,13 +514,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1019": {
 		"name": "Huevo frito",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Comienza un día genial con huevos fritos!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1019",
 		"stars": 1,
@@ -458,13 +537,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **10% 1500** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Permite recuperar inmediatamente (**10% + 1500**) PS del nómada."
 	},
 	"Item_Cooking_1020": {
 		"name": "Caracola al vapor",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Mantiene todo su sabor original! Aunque un poquito de cebolla de verdeo cortada lo mejorará.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1020",
 		"stars": 1,
@@ -481,13 +565,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1021": {
 		"name": "Huevo al vapor con erizo de mar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El erizo de mar con huevo duro es un plato delicioso y reconfortante, muy popular en los campos de nieve.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1021",
 		"stars": 1,
@@ -504,13 +593,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"Item_Cooking_1022": {
 		"name": "Tostada con doble mermelada de bayas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La fusión de dos frutos del bosque para lograr una sinfonía dulce y ácida en tu boca.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1022",
 		"stars": 1,
@@ -531,13 +625,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Aumenta **Volt Attack +1%** por **Volt Attack +undefined%** segundos."
 	},
 	"Item_Cooking_1023": {
 		"name": "Pasta con tomate y huevo frito",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Perfectamente ácido y fácil de hacer. Una delicia de bajas calorías.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1023",
 		"stars": 1,
@@ -558,13 +659,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " - Aumenta **Flame Attack +1%** por **Flame Attack +undefined%** segundos."
 	},
 	"Item_Cooking_1024": {
 		"name": "Guiso de carne y papas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡La carne absorbió todos los nutrientes, así que es extremadamente saludable!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1024",
 		"stars": 1,
@@ -580,13 +688,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1025": {
 		"name": "Papas fritas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡No es comida chatarra sino un plato de felicidad pura!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1025",
 		"stars": 1,
@@ -602,13 +711,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1026": {
 		"name": "Ensalada de verduras",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ensalada especial, excelente para pícnics.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1026",
 		"stars": 1,
@@ -635,13 +745,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1027": {
 		"name": "Pollo frito",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una comida simple y rápida. La capa dorada de su gratinado hace babear a cualquiera.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1027",
 		"stars": 1,
@@ -658,13 +773,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1028": {
 		"name": "Jugo de frutas con miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Jugo fresco con una pizca de miel, levemente batido. Un toque dulce en el ácido.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1028",
 		"stars": 1,
@@ -686,13 +806,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1029": {
 		"name": "Tarta de frutas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "No hay estrés que una rebanada de rica tarta no pueda resolver. Y si lo hay, ¡come otra!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1029",
 		"stars": 1,
@@ -719,13 +845,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"Item_Cooking_1030": {
 		"name": "Sorpresa de orquídea helada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Clásico veraniego. ¡Siente la fiesta en la playa en tu paladar!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1030",
 		"stars": 1,
@@ -747,13 +878,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1031": {
 		"name": "Brócoli salteado",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una comida saludable y baja en grasas, aunque no es la favorita de muchos.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1031",
 		"stars": 1,
@@ -764,13 +901,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1032": {
 		"name": "Ostiones hervidos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plato simple y sabroso que no requiere condimentos.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1032",
 		"stars": 1,
@@ -787,13 +925,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"Item_Cooking_1033": {
 		"name": "Bollo de carne",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡El jugo que sale cuando lo muerdes es su esencia!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1033",
 		"stars": 1,
@@ -809,13 +952,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1034": {
 		"name": "Pescado rebanado con hongos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El complemento perfecto de unas rebanadas de pescado y hongos.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1034",
 		"stars": 1,
@@ -832,13 +976,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_1035": {
 		"name": "Asado de cuarto trasero",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Prepara la parrilla y toma una silla. Sí, ese es el aroma...",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1035",
 		"stars": 1,
@@ -850,13 +999,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"Item_Cooking_1036": {
 		"name": "Sopa de hongos y diente de león",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Has probado diente de león con hongos? Hará que te muevas ágilmente.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/1036",
 		"stars": 1,
@@ -873,13 +1028,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"Item_Cooking_2001": {
 		"name": "Mar y tierra",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Comida casera de Banges con ese sabor hogareño especial.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2001",
 		"stars": 2,
@@ -896,13 +1056,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **13% 10000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Permite recuperar inmediatamente (**13% + 10000**) PS del nómada."
 	},
 	"Item_Cooking_2002": {
 		"name": "Pan de trigo rojo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La comida más común entre la gente de Aida, que refleja la simplicidad de su vida.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2002",
 		"stars": 2,
@@ -913,13 +1078,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_2003": {
 		"name": "Tarta de helecho",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una galleta saludable rellena de brotes de helecho, aunque no muy popular entre los niños.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2003",
 		"stars": 2,
@@ -936,13 +1102,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"Item_Cooking_2004": {
 		"name": "Pan de chocolate",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Relleno de chocolate! Nada más tendrás que saltarte la dieta por un día.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2004",
 		"stars": 2,
@@ -959,13 +1130,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"Item_Cooking_2005": {
 		"name": "Sopa de hongos flameada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Qué es más reconfortante que una sopa de hongos flameada cuando escalas picos nevados?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2005",
 		"stars": 2,
@@ -982,13 +1158,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **13% 10000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Permite recuperar inmediatamente (**13% + 10000**) PS del nómada."
 	},
 	"Item_Cooking_2006": {
 		"name": "Sopa de fat choy",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Llena tu estómago ahora y come algo mejor más tarde.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2006",
 		"stars": 2,
@@ -1005,13 +1187,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **13% 10000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Permite recuperar inmediatamente (**13% + 10000**) PS del nómada."
 	},
 	"Item_Cooking_2007": {
 		"name": "Ensalada de fruta globo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una ensalada especialmente seleccionada. ¡Dulce y ácida, la favorita de los niños!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2007",
 		"stars": 2,
@@ -1033,13 +1220,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"Item_Cooking_2008": {
 		"name": "Sopa de helecho",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Parece que hoy tendremos otro día herbívoro...",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2008",
 		"stars": 2,
@@ -1056,13 +1248,18 @@
 				"max": " 4"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"Item_Cooking_2009": {
 		"name": "Anguila picante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿La anguila eléctrica está bien cocida? ¿Por qué me arde el estómago?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2009",
 		"stars": 2,
@@ -1073,13 +1270,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Aumenta **Volt Resistance +10%** por **Volt Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_2010": {
 		"name": "Sopa de hongos y anguila",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un picante desafío para los amantes del sabor. ¡Cómetelo de un bocado, si te atreves! ¡Y está prohibido tomar agua!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
 		"stars": 2,
@@ -1095,13 +1299,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Aumenta **Volt Attack +1%** por **Volt Attack +undefined%** segundos."
 	},
 	"Item_Cooking_2011": {
 		"name": "Sopa de cangrejo de mar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Todas las partes buenas de un cangrejo están en este estofado.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2011",
 		"stars": 2,
@@ -1117,13 +1328,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Aumenta **Flame Resistance +10%** por **Flame Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_2012": {
 		"name": "Jugo de granada dulce",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Sufro alucinaciones o este jugo de verdad está brillando?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2012",
 		"stars": 2,
@@ -1145,13 +1363,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"Item_Cooking_2013": {
 		"name": "Leche chocolatada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Toma una taza antes de acostarte y tendrás un sueño tranquilo!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2013",
 		"stars": 2,
@@ -1172,13 +1396,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Aumenta **Frost Resistance +10%** por **Frost Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_2014": {
 		"name": "Té de fruta del dragón",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Acompáñalo con una tarta para tener una tarde de té perfecta!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2014",
 		"stars": 2,
@@ -1194,13 +1425,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": " - Aumenta **Flame Attack +1%** por **Flame Attack +undefined%** segundos."
 	},
 	"Item_Cooking_2015": {
 		"name": "Guiso de percebes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Un sabor que disfrutarás!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2015",
 		"stars": 2,
@@ -1216,13 +1454,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Aumenta **Physical Resistance +10%** por **Physical Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_2016": {
 		"name": "Pizza de mariscos y percebes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Quiero una doble porción!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2016",
 		"stars": 2,
@@ -1244,13 +1489,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"Item_Cooking_2017": {
 		"name": "Té de azalea nevada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Por qué no comer un poco mientras descansas junto a la fogata durante el frío invierno?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2017",
 		"stars": 2,
@@ -1271,13 +1521,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Aumenta **Frost Attack +1%** por **Frost Attack +undefined%** segundos."
 	},
 	"Item_Cooking_2018": {
 		"name": "Cacao de pino",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Leche chocolatada con sabor a nueces. Los amantes de las nueces pueden agregarle más.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2018",
 		"stars": 2,
@@ -1299,13 +1556,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"Item_Cooking_2019": {
 		"name": "Té de nuez",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Huele qué frescas están las nueces...",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2019",
 		"stars": 2,
@@ -1327,13 +1589,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"Item_Cooking_2020": {
 		"name": "Tarta de ñame",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una tarta llenadora y portátil durante largas caminatas.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2020",
 		"stars": 2,
@@ -1349,13 +1616,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Aumenta **Volt Attack +2%** por **Volt Attack +undefined%** segundos."
 	},
 	"Item_Cooking_2021": {
 		"name": "Sopa de loto de nieve",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El loto de nieve es bastante insípido, pero se le agrega azúcar para crear un popular postre.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2021",
 		"stars": 2,
@@ -1372,13 +1646,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"Item_Cooking_2022": {
 		"name": "Arroz frito con trufa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Saltea las trufas y luego mézclalas con arroz frito.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2022",
 		"stars": 2,
@@ -1399,13 +1679,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Aumenta **Physical Attack +2%** por **Physical Attack +undefined%** segundos."
 	},
 	"Item_Cooking_2023": {
 		"name": "Fideos con hongos de oruga",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Ya estoy en edad de cuidar mi dieta?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2023",
 		"stars": 2,
@@ -1422,13 +1709,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"Item_Cooking_2024": {
 		"name": "Sushi de caviar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un rollo agradable a la vista puede ser un plato distinguido. Si no puedes prepararlo, quizás te convenga mezclar sus ingredientes en un cuenco.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2024",
 		"stars": 2,
@@ -1450,13 +1742,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"Item_Cooking_2025": {
 		"name": "Bolas de papa con caviar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Suaves bolas de papa cubiertas en caviar de calidad. Querrás una segunda porción.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2025",
 		"stars": 2,
@@ -1472,13 +1769,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Aumenta **Physical Attack +1%** por **Physical Attack +undefined%** segundos."
 	},
 	"Item_Cooking_2026": {
 		"name": "Filete a la parrilla",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Término medio, por favor!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2026",
 		"stars": 2,
@@ -1489,13 +1793,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Volt Resistance +15%** por **Volt Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_2027": {
 		"name": "Filete con salsa de hongos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Creo ver filetes volando por el cielo...",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2027",
 		"stars": 2,
@@ -1511,13 +1822,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " - Aumenta **Flame Attack +2%** por **Flame Attack +undefined%** segundos."
 	},
 	"Item_Cooking_2028": {
 		"name": "Carne a las brasas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un clásico tradicional.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2028",
 		"stars": 2,
@@ -1528,13 +1846,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Frost Resistance +15%** por **Frost Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_2029": {
 		"name": "Sándwich de carne jugosa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Tómate tu tiempo para prepararte un buen desayuno!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2029",
 		"stars": 2,
@@ -1555,13 +1880,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Flame Resistance +15%** por **Flame Resistance +undefined%** segundos."
 	},
 	"Item_Cooking_2030": {
 		"name": "Sashimi de salmón",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Así es como sabe la buena comida!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2030",
 		"stars": 2,
@@ -1572,13 +1904,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Aumenta **Frost Attack +2%** por **Frost Attack +undefined%** segundos."
 	},
 	"Item_Cooking_2031": {
 		"name": "Arroz con caracoles al horno",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Parece una fusión extraña, pero es mucho más sabrosa de lo que parece.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 2,
@@ -1594,13 +1933,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Physical Resistance +15%** por **Physical Resistance +undefined%** segundos."
 	},
 	"item_Cooking_3001": {
 		"name": "Pimientos salteados",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Qué sabroso!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3001",
 		"stars": 1,
@@ -1616,13 +1962,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Aumenta **Frost Resistance +10%** por **Frost Resistance +undefined%** segundos."
 	},
 	"item_Cooking_3002": {
 		"name": "Cebollas del desierto a la parrilla",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡El puesto delicioso de barbacoa del nómada, ahora abierto!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 1,
@@ -1633,13 +1986,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3003": {
 		"name": "Yogurt de aloe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿A quién no le gusta el yogurt dulce y ácido?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3003",
 		"stars": 2,
@@ -1661,13 +2015,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"item_Cooking_3004": {
 		"name": "Té de rosa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Con un poco de té rosa, incluso la mente más inquieta se calmará milagrosamente.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3004",
 		"stars": 2,
@@ -1684,24 +2043,36 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"item_Cooking_3005": {
 		"name": "Refresco de kiwano",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Este sencillo jugo de kiwano lleva una cantidad generosa de miel que le da un toque especial.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
 		"quality": "ITEM_QUALITY_RARE",
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3006": {
 		"name": "Sopa de betabel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sopa caliente de betabel. Puedes tomarte una olla entera sin problemas cuando hace frío.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3006",
 		"stars": 1,
@@ -1713,13 +2084,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"item_Cooking_3007": {
 		"name": "Ensalada de melón dulce",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sabe mejor cuando no está tan caliente, pero no seas insaciable.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3007",
 		"stars": 1,
@@ -1735,13 +2111,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Aumenta **Flame Resistance +10%** por **Flame Resistance +undefined%** segundos."
 	},
 	"item_Cooking_3008": {
 		"name": "Refresco de kiwano",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Este sencillo jugo de kiwano lleva una cantidad generosa de miel que le da un toque especial.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
@@ -1763,13 +2146,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3009": {
 		"name": "Avena de calabaza",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una comida básica que satisface mucho; probablemente no necesites comer nada más después de un tazón de esto.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3009",
 		"stars": 1,
@@ -1786,13 +2175,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3010": {
 		"name": "Tofu frito",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Frituras crocantes y doradas. ¡Procura no derramar la salsa en la ropa!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3010",
 		"stars": 1,
@@ -1803,13 +2197,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3011": {
 		"name": "Sopa de rábano",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sopa nutritiva y deliciosa. ¡Otro tazón, por favor!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3011",
 		"stars": 2,
@@ -1821,13 +2216,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"item_Cooking_3012": {
 		"name": "Maíz condimentado",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Refrigerios fáciles y sencillos, la primera opción para altas horas de la noche.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3012",
 		"stars": 1,
@@ -1838,13 +2239,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3013": {
 		"name": "Especial de cactus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Cactus especial refrescante, un básico para el verano.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3013",
 		"stars": 1,
@@ -1856,13 +2258,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **10% 1500** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Permite recuperar inmediatamente (**10% + 1500**) PS del nómada."
 	},
 	"item_Cooking_3014": {
 		"name": "Cola de lagarto a las brasas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sazona con picante, comino y pimienta y espera tranquilamente antes de empezar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3014",
 		"stars": 1,
@@ -1874,13 +2281,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"item_Cooking_3015": {
 		"name": "Especial de costillas a las brasas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡La mejor guarnición para el arroz! ¡La única, la indicada!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3015",
 		"stars": 1,
@@ -1897,13 +2309,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3016": {
 		"name": "Leche de soya chocolatada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Ya te cansó la leche de soya de siempre? Prueba esta.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3016",
 		"stars": 1,
@@ -1925,13 +2342,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3017": {
 		"name": "Betabel con helecho",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Cuando los ingredientes estén hervidos, quítalos del sartén, agrega la salsa, mezcla bien y ya quedó.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3017",
 		"stars": 1,
@@ -1948,13 +2371,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3018": {
 		"name": "Ensalada del desierto",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Cactus bola y kiwano en cubos con algo de aderezo de ensalada. Se recomienda enfriarlo primero.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3018",
 		"stars": 1,
@@ -1976,13 +2404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3019": {
 		"name": "Pan de rosa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una buena tarde comienza con un pan cuadrado con olor a rosas.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3019",
 		"stars": 2,
@@ -1998,13 +2431,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Volt Resistance +15%** por **Volt Resistance +undefined%** segundos."
 	},
 	"item_Cooking_3020": {
 		"name": "Pan de melón verde",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Para el desayuno, una hogaza rellena de melón es suficiente.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3020",
 		"stars": 1,
@@ -2025,13 +2465,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Aumenta **Frost Attack +1%** por **Frost Attack +undefined%** segundos."
 	},
 	"item_Cooking_3021": {
 		"name": "Avena multicereal",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Este platillo de arroz se hace con varios granos. A veces simplemente se antoja algo suave.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3021",
 		"stars": 1,
@@ -2053,13 +2500,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3022": {
 		"name": "Galleta de maíz y frutos marinos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tacos de mariscos... ¡Quedarías en bancarrota si abres una tienda como esta!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3022",
 		"stars": 1,
@@ -2081,13 +2534,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3023": {
 		"name": "Calabaza al vapor",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La calabaza al vapor es suave y dulce. Es una buena opción para perder peso.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3023",
 		"stars": 1,
@@ -2104,13 +2562,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenera **15% 20000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_Cooking_3024": {
 		"name": "Sopa de pollo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fideos suaves con caldo de pollo calientito. Solo haz de cuenta que son fideos de cumpleaños y ven a pedir un deseo.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3024",
 		"stars": 2,
@@ -2131,13 +2594,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Aumenta **Physical Attack +2%** por **Physical Attack +undefined%** segundos."
 	},
 	"item_Cooking_3025": {
 		"name": "Fideos picantes a la barbacoa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Claro que estoy a la altura de los fideos Kun Ji!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3025",
 		"stars": 2,
@@ -2158,13 +2628,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " - Aumenta **Flame Attack +2%** por **Flame Attack +undefined%** segundos."
 	},
 	"item_Cooking_3026": {
 		"name": "Arroz frito picante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Cuanto más picoso, mejor!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3026",
 		"stars": 1,
@@ -2190,13 +2667,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " - Aumenta **Flame Attack +1%** por **Flame Attack +undefined%** segundos."
 	},
 	"item_Cooking_3027": {
 		"name": "Surtido a las brasas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Este es el paraíso de los fanáticos de la carne, ¡¿no?!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3027",
 		"stars": 2,
@@ -2217,13 +2701,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Flame Resistance +15%** por **Flame Resistance +undefined%** segundos."
 	},
 	"item_Cooking_3028": {
 		"name": "Sopa de rábano y cerdo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sopa de rábano y cerdo guisados con amor todo el día. Los rábanos de hecho están más ricos que las costillas.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3028",
 		"stars": 2,
@@ -2239,13 +2730,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Physical Resistance +15%** por **Physical Resistance +undefined%** segundos."
 	},
 	"item_Cooking_3029": {
 		"name": "Sopa de crema de maíz",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una sopa cremosa, dulce y agria... ¡Hora de comerla con pan!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3029",
 		"stars": 1,
@@ -2267,13 +2765,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **12% 3300** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Permite recuperar inmediatamente (**12% + 3300**) PS del nómada."
 	},
 	"item_Cooking_3030": {
 		"name": "Calabaza de manteca crocante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Envuélvela con polvo para freír, ponla en el sartén durante dos minutos, ¡y listo!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3030",
 		"stars": 2,
@@ -2285,13 +2788,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"item_Cooking_3031": {
 		"name": "Ostra a la parrilla",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Es difícil decidir si comerlo crudo con algo de limón o asado a la parrilla.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3031",
 		"stars": 2,
@@ -2303,13 +2811,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_Cooking_3032": {
 		"name": "Hierba de pescado fría",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Desde la primera probada, me enamoré de la hierba de pescado!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3032",
 		"stars": 2,
@@ -2321,13 +2834,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_Cooking_3033": {
 		"name": "Tira de calabaza de manteca picante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El apetitoso platillo frío también parece ser bueno como comida principal.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3033",
 		"stars": 2,
@@ -2344,13 +2862,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"item_Cooking_3034": {
 		"name": "Sopa de ostras y tofu",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Escuché que a muchos niños no les gusta el pescado, así que les hice esta sopa especial.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3034",
 		"stars": 2,
@@ -2367,13 +2891,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_Cooking_3035": {
 		"name": "Huevos revueltos con hierba de pescado",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Todo se puede revolver con huevos! Mi favorito es...",
-		"satiety": "Regenera <ComLblGreen>{0}</> de Resistencia.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/3035",
 		"stars": 2,
@@ -2390,13 +2920,19 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_Cooking_4001": {
 		"name": "Dragones y estrellas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "En realidad es carne de tortuga cuello de dragón hervida con huevas de estrella de mar, pero el restaurante le dio un nombre elegante.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4001",
 		"stars": 2,
@@ -2417,13 +2953,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4002": {
 		"name": "Huevo al vapor sabor océano",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Los huevos de tortuga cuello de dragón proceden del océano, por lo que naturalmente tienen sabor a marisco.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4002",
 		"stars": 2,
@@ -2440,13 +2977,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenera **20% 60000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Permite recuperar inmediatamente (**20% + 60000**) PS del nómada."
 	},
 	"item_Cooking_4003": {
 		"name": "Ensalada de pez globo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una deliciosa ensalada de pez globo. ¡Vale la pena probarla!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4003",
 		"stars": 2,
@@ -2462,13 +3004,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4004": {
 		"name": "Pez globo fresco",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un platillo de pez globo que aprovecha al máximo las distintas partes de este costoso pescado.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4004",
 		"stars": 2,
@@ -2489,13 +3032,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Aumenta **Frost Attack +4%** por **Frost Attack +undefined%** segundos."
 	},
 	"item_Cooking_4005": {
 		"name": "Pez globo a la plancha",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Este jugoso pez globo se hará agua en tu boca... Al menos, eso dice el menú.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4005",
 		"stars": 2,
@@ -2512,13 +3062,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_Cooking_4006": {
 		"name": "Loto blanco",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Los trozos de pez globo crudo finamente cortados y apilados parecen una flor de loto.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4006",
 		"stars": 2,
@@ -2534,13 +3089,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Aumenta **Frost Attack +2%** por **Frost Attack +undefined%** segundos."
 	},
 	"item_Cooking_4007": {
 		"name": "Pulpo cocido",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fresco y masticable, un platillo recomendado para todos.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4007",
 		"stars": 2,
@@ -2561,13 +3123,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4008": {
 		"name": "Bolitas de pulpo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un delicioso platillo tradicional. Su sabor depende en gran medida del tamaño de los trozos de pulpo.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4008",
 		"stars": 2,
@@ -2593,13 +3156,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Volt Resistance +15%** por **Volt Resistance +undefined%** segundos."
 	},
 	"item_Cooking_4009": {
 		"name": "Delicias a la parrilla",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un platillo popular entre los niños, pero demasiado caro para que lo compren con su mesada.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4009",
 		"stars": 2,
@@ -2616,13 +3186,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **13% 10000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Permite recuperar inmediatamente (**13% + 10000**) PS del nómada."
 	},
 	"item_Cooking_4010": {
 		"name": "Pescado al vapor salado y sabroso",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El propio pescado de agua salada es salado, y al cocerlo al vapor conserva su sabor umami.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4010",
 		"stars": 2,
@@ -2639,13 +3214,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **13% 10000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Permite recuperar inmediatamente (**13% + 10000**) PS del nómada."
 	},
 	"item_Cooking_4011": {
 		"name": "Pescado salteado",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Este platillo requiere mucho trabajo, pero el esfuerzo lo hará aún más sabroso.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4011",
 		"stars": 2,
@@ -2667,13 +3247,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_Cooking_4012": {
 		"name": "Sashimi premium",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un platillo que pone a prueba las habilidades con el cuchillo del chef. Eso sí, no le pongas demasiado wasabi.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4012",
 		"stars": 2,
@@ -2699,13 +3284,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Frost Resistance +15%** por **Frost Resistance +undefined%** segundos."
 	},
 	"item_Cooking_4013": {
 		"name": "Tarta de miraestrellas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Un pez mira a las estrellas cuando está vivo?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4013",
 		"stars": 2,
@@ -2726,13 +3318,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4014": {
 		"name": "Guiso de mariscos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Suele cocinarse con carne de cacería para reducir la cantidad de ingredientes raros que se utilizan.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4014",
 		"stars": 2,
@@ -2753,13 +3346,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"CleanBuff"
 		]
 	},
 	"item_Cooking_4015": {
 		"name": "Anémona asada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El sabor puede ser abrumante si le ponen mucha pimienta.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4015",
 		"stars": 2,
@@ -2780,13 +3374,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": " - Aumenta **Flame Attack +2%** por **Flame Attack +undefined%** segundos."
 	},
 	"item_Cooking_4016": {
 		"name": "Anémona decorada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Añade anémona al huevo al vapor para obtener una textura más rica.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4016",
 		"stars": 2,
@@ -2803,13 +3404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **13% 10000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Permite recuperar inmediatamente (**13% + 10000**) PS del nómada."
 	},
 	"item_Cooking_4017": {
 		"name": "Longevidad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La tortuga cuello de dragón es una criatura auspiciosa, por lo que a los restaurantes les gusta darle nombres diferentes.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4017",
 		"stars": 2,
@@ -2825,13 +3431,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			600,
+			0.4
+		],
+		"effect": "Aumenta **40** por **undefined** segundos."
 	},
 	"item_Cooking_4018": {
 		"name": "Huevo feliz",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Solo es un huevo de tortuga cuello de dragón cocido, pero se vende mejor después de teñirlo.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4018",
 		"stars": 2,
@@ -2852,13 +3464,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Aumenta **Physical Attack +4%** por **Physical Attack +undefined%** segundos."
 	},
 	"item_Cooking_4019": {
 		"name": "Huevo feliz (rosa)",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Solo es un huevo de tortuga cuello de dragón cocido, pero se vende mejor después de teñirlo.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4019",
 		"stars": 2,
@@ -2879,13 +3498,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4020": {
 		"name": "Huevo feliz (rojo)",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Solo es un huevo de tortuga cuello de dragón cocido, pero se vende mejor después de teñirlo.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4020",
 		"stars": 2,
@@ -2906,13 +3526,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			900,
+			0.5
+		],
+		"effect": "Aumenta **50** por **undefined** segundos."
 	},
 	"item_Cooking_4021": {
 		"name": "Medusa deliciosa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Crujiente y refrescante. Una vez que empiezas, ¡no puedes parar!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4021",
 		"stars": 2,
@@ -2929,13 +3555,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **13% 10000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Permite recuperar inmediatamente (**13% + 10000**) PS del nómada."
 	},
 	"item_Cooking_4022": {
 		"name": "Medusa salteada con hongos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Esta mezcla de hongos y medusas es celestial, y sabe mejor con arroz. Te comerás todo el plato antes de darte cuenta.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4022",
 		"stars": 2,
@@ -2951,13 +3582,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4023": {
 		"name": "Calamar jugoso",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "No comas este platillo jugoso en público si no sabes cómo hacerlo correctamente.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4023",
 		"stars": 2,
@@ -2978,13 +3610,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4024": {
 		"name": "Mezcla de calamares",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un platillo delicioso que podría ser más popular si los colores parecieran más apetitosos.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4024",
 		"stars": 2,
@@ -3005,13 +3638,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Aumenta **Volt Attack +2%** por **Volt Attack +undefined%** segundos."
 	},
 	"item_Cooking_4025": {
 		"name": "Crema de pescado hervido",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una crema sana para los que no tienen mucho apetito.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4025",
 		"stars": 2,
@@ -3027,13 +3667,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4026": {
 		"name": "Pescado en escabeche",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "No es para humanos, ¡es para gatos!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4026",
 		"stars": 2,
@@ -3059,13 +3700,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Flame Resistance +15%** por **Flame Resistance +undefined%** segundos."
 	},
 	"item_Cooking_4027": {
 		"name": "Platillote de langosta",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Langosta, langosta y más langosta! Un platillo que solo se puede degustar a la orilla del mar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4027",
 		"stars": 2,
@@ -3086,13 +3734,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Aumenta **Physical Attack +2%** por **Physical Attack +undefined%** segundos."
 	},
 	"item_Cooking_4028": {
 		"name": "Langosta picante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Sabe igual de bien en trozos más pequeños!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4028",
 		"stars": 2,
@@ -3108,13 +3763,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4029": {
 		"name": "Huevo al vapor con cangrejo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sabe bien... ¿Pero es cangrejo? ¿O es imitación de cangrejo?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4029",
 		"stars": 2,
@@ -3135,13 +3791,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4030": {
 		"name": "Arroz frito con cangrejo lujoso",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Este platillo es tan lujoso en todos los sentidos de la palabra que nadie puede rechazarlo.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4030",
 		"stars": 2,
@@ -3162,13 +3819,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4031": {
 		"name": "Cangrejo real",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ni siquiera los reyes pueden evitar ser devorados.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4031",
 		"stars": 2,
@@ -3185,13 +3843,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_Cooking_4032": {
 		"name": "Tarta de arroz con cangrejo frito",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El cangrejo fresco y las tartas de arroz chiclosas constituyen un platillo increíblemente delicioso.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4032",
 		"stars": 2,
@@ -3212,13 +3875,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Aumenta **Physical Resistance +15%** por **Physical Resistance +undefined%** segundos."
 	},
 	"item_Cooking_4033": {
 		"name": "Fideos de cangrejo dorados",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Con cada ingrediente y proceso añadido, su precio sube más y más.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4033",
 		"stars": 2,
@@ -3234,13 +3904,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4034": {
 		"name": "Mariscos al vapor con ajo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un platillo clásico donde el marisco fresco se une al ajo picante.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4034",
 		"stars": 2,
@@ -3261,13 +3932,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": " - Aumenta **Flame Attack +4%** por **Flame Attack +undefined%** segundos."
 	},
 	"item_Cooking_4035": {
 		"name": "Vermicelli de mariscos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un platillo sabroso que siempre es rico y no es grasiento.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4035",
 		"stars": 2,
@@ -3293,13 +3971,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Aumenta **Volt Attack +4%** por **Volt Attack +undefined%** segundos."
 	},
 	"item_Cooking_4036": {
 		"name": "Langosta al horno con queso",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Quesoso y chicloso.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4036",
 		"stars": 2,
@@ -3316,13 +4001,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenera **16% 34000** de salud."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_Cooking_4037": {
 		"name": "Langosta con fideos en tinta",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un platillo creativo teñido con tinta natural de calamar; delicioso y con estilo.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4037",
 		"stars": 2,
@@ -3343,13 +4033,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4038": {
 		"name": "Carne de caracola salteada",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Esta rica comida, picante y con mucho umami, es un bocadillo indispensable si tienes hambre de noche.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/4038",
 		"stars": 2,
@@ -3365,13 +4056,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_5001": {
 		"name": "Estofado de Brotes de Bambú",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una mezcla de carne grasa y magra guisada con brotes de bambú durante unas horas y un poco de condimento picante para rematar. Te comerás tres platos de arroz antes de darte cuenta.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/5001",
 		"stars": 2,
@@ -3392,13 +4084,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "Aumenta **Volt Attack +4% Volt Resistance +1800** por **Volt Attack +undefined%Volt Resistance +%** segundos."
 	},
 	"item_Cooking_5007": {
 		"name": "Begonia Jade Blanca",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un platillo frío de begonia y jade verde.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/5007",
 		"stars": 2,
@@ -3414,13 +4114,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "Aumenta **Flame Attack +4% Flame Resistance +1800** por **Flame Attack +undefined%Flame Resistance +%** segundos."
 	},
 	"item_activity_cooking_001": {
 		"name": "Cerdo rostizado",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un cerdo rostizado preparado por un excelente chef que satisface a los paladares más exigentes.\r\n\r\nTras derrotar a Apophis y a la Reina Rosa, se obtiene de un cofre con contraseña durante el evento Café de Aida. También se obtiene al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
 		"stars": 1,
@@ -3446,13 +4154,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_002": {
 		"name": "Estofado de pavo con manzanas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una especialidad de Astra. Gracias a la promoción de vendedores y viajeros, se volvió muy famoso en todo el continente.\r\n\r\nTras derrotar a Apophis y a la Reina Rosa, se obtiene de un cofre con contraseña durante el evento Café de Aida. También se obtiene al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
 		"stars": 1,
@@ -3478,13 +4185,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_003": {
 		"name": "Pollo asado con verduras",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Satisface primero tus papilas con un bocado de pollo rostizado. Luego, prueba la refrescante lechuga. ¡Ñam, ñam!\r\n\r\nTras derrotar a Apophis y a la Reina Rosa, obtendrás un cofre con contraseña durante el evento Café de Aida. También lo puedes obtener al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
 		"stars": 1,
@@ -3505,13 +4211,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_004": {
 		"name": "Salmón frito en sartén",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un delicado salmón servido con miel. Deja un sabor placentero en tu boca.\r\n\r\nTras derrotar a Robarg y a Sobek, se obtiene de un cofre con contraseña durante el evento Café de Aida. También se obtiene al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
 		"stars": 1,
@@ -3532,13 +4237,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_005": {
 		"name": "Dumplings con arroz",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una especialidad tradicional del Puerto de Banges que disfrutan jóvenes y mayores.\r\n\r\nTras derrotar a Robarg y a Sobek, se obtiene de un cofre con contraseña durante el evento Café de Aida. También se obtiene al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
 		"stars": 1,
@@ -3559,13 +4263,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_006": {
 		"name": "Sopa con betabel y pavo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un tazón de sopa caliente capaz de quitar la fatiga diaria.\r\nTras derrotar a Robarg y a Sobek, se obtiene de un cofre con contraseña durante el evento Café de Aida. También se obtiene al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
 		"stars": 1,
@@ -3586,13 +4289,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_007": {
 		"name": "Pan de jengibre",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un popular postre de festival dulce como el azúcar y la miel con una placentera fragancia a granos de trigo.\r\n\r\nTras derrotar a Robarg, Apophis, Robohielo, Sobek, Reina Rosa y Barbarossa, se obtiene de un cofre con contraseña durante el evento Café de Aida. También se obtiene al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
 		"stars": 1,
@@ -3613,13 +4315,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_008": {
 		"name": "Tarta de manzana",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una tarta de frutas esponjosa. Te encantará desde el primer bocado. \r\n\r\nTras derrotar a Robohielo y Barbarossa, se obtiene del cofre con contraseña durante el evento Café de Aida. También se puede obtener recogiendo ingredientes y cocinando.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
 		"stars": 1,
@@ -3645,13 +4346,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_009": {
 		"name": "Ponche de frutas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una bebida de aroma frutal y una suave nota de alcohol.\r\n\r\nTras derrotar a Robohielo y Barbarossa, se obtiene de un cofre con contraseña durante el evento Café de Aida. También se obtiene al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
 		"stars": 1,
@@ -3677,13 +4377,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_010": {
 		"name": "Jugo de manzana",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Suave y agrio. Adecuado para jóvenes y mayores. La bebida veraniega favorita de muchos.\r\n\r\nTras derrotar a Robohielo y Barbarossa, se obtiene de un cofre con contraseña durante el evento Café de Aida. También se obtiene al recolectar ingredientes y al cocinar.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
 		"stars": 1,
@@ -3704,13 +4403,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity2_cooking_101": {
 		"name": "Mezcla flotante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Viaja en el globo de fruta hacia el mundo del chocolate!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
 		"stars": 1,
@@ -3731,13 +4429,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_102": {
 		"name": "Mezcla de nueces de pino",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un chocolate recubierto de nueces de pino es el regalo perfecto.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
 		"stars": 1,
@@ -3758,13 +4460,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_103": {
 		"name": "Mezcla de fresas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La mezcla de las fresas ligeramente dulces y del chocolate suave tiene el gusto dulce del primer amor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
 		"stars": 1,
@@ -3785,13 +4491,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_104": {
 		"name": "Mezcla de avellanas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Recubiertas de chocolate son como el corazón anticipándose al amor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
 		"stars": 1,
@@ -3812,13 +4522,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_105": {
 		"name": "Mezcla de trufas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Puedes sentir la ternura en la selección de los ingredientes.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
 		"stars": 1,
@@ -3839,13 +4553,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_106": {
 		"name": "Mezcla de arándanos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dale un mordisco y deja que la mermelada de arándanos fluya en la punta de tu lengua.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
 		"stars": 1,
@@ -3866,13 +4584,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_107": {
 		"name": "Mezcla de miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una sinfonía majestuosa de chocolate y miel.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
 		"stars": 1,
@@ -3893,13 +4615,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_108": {
 		"name": "Mezcla de fruta caída",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Para darte lo que más aprecio.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
 		"stars": 1,
@@ -3920,13 +4646,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_109": {
 		"name": "Mezcla de cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate oscuro delicado y suave, decorado con un sueño levemente amargo y apacible.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
 		"stars": 1,
@@ -3942,13 +4672,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_110": {
 		"name": "Mezcla de leche",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡La leche y el chocolate son la pareja perfecta!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
 		"stars": 1,
@@ -3969,13 +4703,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_201": {
 		"name": "Planeta flotante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Viaja en el globo de fruta hacia el mundo del chocolate!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
 		"stars": 1,
@@ -3996,13 +4734,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_202": {
 		"name": "Planeta de nueces de pino",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un chocolate recubierto de nueces de pino es el regalo perfecto.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
 		"stars": 1,
@@ -4023,13 +4765,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_203": {
 		"name": "Planeta de fresas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La mezcla de las fresas ligeramente dulces y del chocolate suave tiene el gusto dulce del primer amor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
 		"stars": 1,
@@ -4050,13 +4796,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_204": {
 		"name": "Planeta de avellanas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Recubiertas de chocolate son como el corazón anticipándose al amor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
 		"stars": 1,
@@ -4077,13 +4827,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_205": {
 		"name": "Planeta de trufas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Puedes sentir la ternura en la selección de los ingredientes.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
 		"stars": 1,
@@ -4104,13 +4858,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_206": {
 		"name": "Planeta de arándanos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dale un mordisco y deja que la mermelada de arándanos fluya en la punta de tu lengua.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
 		"stars": 1,
@@ -4131,13 +4889,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_207": {
 		"name": "Planeta de miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una sinfonía majestuosa de chocolate y miel.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
 		"stars": 1,
@@ -4158,13 +4920,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_208": {
 		"name": "Planeta de fruta caída",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Para darte lo que más aprecio.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
 		"stars": 1,
@@ -4185,13 +4951,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_209": {
 		"name": "Planeta de cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate oscuro delicado y suave, decorado con un sueño levemente amargo y apacible.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
 		"stars": 1,
@@ -4207,13 +4977,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_210": {
 		"name": "Planeta de leche",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡La leche y el chocolate son la pareja perfecta!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
 		"stars": 1,
@@ -4234,13 +5008,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_301": {
 		"name": "Cubo flotante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Viaja en el globo de fruta hacia el mundo del chocolate!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
 		"stars": 1,
@@ -4261,13 +5039,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_302": {
 		"name": "Cubo de nueces de pino",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un chocolate recubierto de nueces de pino es el regalo perfecto.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
 		"stars": 1,
@@ -4288,13 +5070,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_303": {
 		"name": "Cubo de fresa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La mezcla de las fresas ligeramente dulces y del chocolate suave tiene el gusto dulce del primer amor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
 		"stars": 1,
@@ -4315,13 +5101,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_304": {
 		"name": "Cubo de avellana",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Recubiertas de chocolate son como el corazón anticipándose al amor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
 		"stars": 1,
@@ -4342,13 +5132,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_305": {
 		"name": "Cubo de trufa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Puedes sentir la ternura en la selección de los ingredientes.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
 		"stars": 1,
@@ -4369,13 +5163,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_306": {
 		"name": "Cubo de arándano",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dale un mordisco y deja que la mermelada de arándanos fluya en la punta de tu lengua.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
 		"stars": 1,
@@ -4396,13 +5194,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_307": {
 		"name": "Cubo de miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una sinfonía majestuosa de chocolate y miel.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
 		"stars": 1,
@@ -4423,13 +5225,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_308": {
 		"name": "Cubo de fruta caída",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Para darte lo que más aprecio.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
 		"stars": 1,
@@ -4450,13 +5256,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_309": {
 		"name": "Cubo de cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate oscuro delicado y suave, decorado con un sueño levemente amargo y apacible.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
 		"stars": 1,
@@ -4472,13 +5282,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_310": {
 		"name": "Cubo de leche",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡La leche y el chocolate son la pareja perfecta!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
 		"stars": 1,
@@ -4499,93 +5313,119 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_001": {
 		"name": "Recuerdo de Cetus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Caja de regalo de chocolate con temática de Electromancia, el orgullo de Hanna.\r\n¡La doctora dice que lo delicioso se comparte con personas importantes!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_002": {
 		"name": "Recuerdo de Cetus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Regalo de chocolate con temática de elemento físico, el orgullo de Hanna. ¡La doctora dice que lo delicioso se comparte con personas importantes!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_003": {
 		"name": "Recuerdo de Cetus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Regalo de chocolate con temática de piromancia, el orgullo de Hanna. ¡La doctora dice que lo delicioso se comparte con personas importantes!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_004": {
 		"name": "Recuerdo de Cetus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Regalo de chocolate con temática de criomancia, el orgullo de Hanna. ¡La doctora dice que lo delicioso se comparte con personas importantes!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity2_cooking_005": {
 		"name": "Pastel de arroz crujiente",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Uno de los bocadillos más populares del planeta Aida. Se dice que los integrantes de las Hienas y los Saqueadores pelearon por una rebanada de la tarta.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity2_cooking_006": {
 		"name": "Regalo de Chocolate",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Lo delicioso se comparte con personas importantes!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"HealPotion_01": {
 		"name": "Panqueque de Primavera",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El bocadillo más popular en el Mercado de Primavera.\r\nEs imposible saber el sabor por su aspecto...",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.22,
+			75000
+		],
+		"effect": "Permite recuperar inmediatamente (**22% + 75000**) PS del nómada."
 	},
 	"BuffPotion_01": {
 		"name": "Brisa de Pinos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Bebida a la venta en el Mercado de Primavera.\r\nSe dice que un sorbo de la bebida te hará sentir como si estuvieras en medio de un bosque de pinos, con la brisa primaveral soplando suavemente en tus mejillas.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity3_cooking_101": {
 		"name": "Cuadrado Clásico",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Quién podría resistirse al rico aroma del chocolate?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
 		"stars": 1,
@@ -4611,13 +5451,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_102": {
 		"name": "Cuadrado de Nuez",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡El chocolate con mezcla de nueces es increíblemente delicioso!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
 		"stars": 1,
@@ -4638,13 +5482,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_103": {
 		"name": "Cuadrado de Avellana",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Además de la sensación sedosa y suave en la boca, un maravilloso aroma a avellana se combina con el chocolate para añadir una nueva capa de sabor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
 		"stars": 1,
@@ -4665,13 +5513,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_104": {
 		"name": "Cuadrado Flamegon",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿A quién le importa lo que tiene semillas o no cuando hay chocolate para disfrutar?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
 		"stars": 1,
@@ -4692,13 +5544,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_105": {
 		"name": "Cubo de cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate oscuro delicado y suave, decorado con un sueño levemente amargo y apacible.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
 		"stars": 1,
@@ -4719,13 +5575,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_106": {
 		"name": "Cuadrado de Cola",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Lo último en chocolates de sabores extravagantes. ¿Te atreves a probarlo?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
 		"stars": 1,
@@ -4746,13 +5606,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_107": {
 		"name": "Cuadrado de Rousong",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Rousong con sabor a chocolate, otra delicia del oscuro mundo de la cocina clandestina.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
 		"stars": 1,
@@ -4773,13 +5637,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_108": {
 		"name": "Cuadrado de Hongos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Los pralinés de chocolate siempre son una maravillosa sorpresa.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
 		"stars": 1,
@@ -4800,13 +5668,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_109": {
 		"name": "Cuadrado de Huevo Salado",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La yema es granulosa y húmeda, con un sabor característico.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
 		"stars": 1,
@@ -4827,13 +5699,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_110": {
 		"name": "Cuadrado de Cangrejo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Los intensos aromas a marisco le dan un toque especial a este chocolate.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
 		"stars": 1,
@@ -4854,13 +5730,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_201": {
 		"name": "Planeta Café",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Quiero saborear contigo todos los momentos amargos y dulces del viaje.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
 		"stars": 1,
@@ -4886,13 +5766,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_202": {
 		"name": "Planeta de Relleno de Licor",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Los suaves aromas del vino y el chocolate se unen para crear una relajante melodía.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
 		"stars": 1,
@@ -4913,13 +5797,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_203": {
 		"name": "Planeta de Flor",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Muerde para desatar un impresionante aroma floral que te recordará a las rosas del día de San Valentín.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
 		"stars": 1,
@@ -4940,13 +5828,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_204": {
 		"name": "Planeta de fresas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La mezcla de las fresas ligeramente dulces y del chocolate suave tiene el gusto dulce del primer amor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
 		"stars": 1,
@@ -4967,13 +5859,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_205": {
 		"name": "Planeta de cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate oscuro delicado y suave, decorado con un sueño levemente amargo y apacible.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
 		"stars": 1,
@@ -4994,13 +5890,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_206": {
 		"name": "Planeta flotante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Viaja en el globo de fruta hacia el mundo del chocolate!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
 		"stars": 1,
@@ -5021,13 +5921,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_207": {
 		"name": "Planeta de Rousong",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "El suave chocolate y el esponjoso relleno se combinan para ofrecer un sabor totalmente nuevo.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
 		"stars": 1,
@@ -5048,13 +5952,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_208": {
 		"name": "Planeta de Sal de Mar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¿Ya te cansó el dulce? ¡Pruébalo salado!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
 		"stars": 1,
@@ -5075,13 +5983,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_209": {
 		"name": "Planeta de trufas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Puedes sentir la ternura en la selección de los ingredientes.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
 		"stars": 1,
@@ -5102,13 +6014,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_210": {
 		"name": "Planeta de Cangrejo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Hay más de una forma de preparar un buen cangrejo nadador.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
 		"stars": 1,
@@ -5129,13 +6045,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_301": {
 		"name": "Crush de Menta",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un sabor frío que te refresca al instante.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
 		"stars": 1,
@@ -5156,13 +6076,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_302": {
 		"name": "Crush de Nata",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Cuando se trata de dulces, ¿hay algo que pueda competir con la nata?",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
 		"stars": 1,
@@ -5183,13 +6107,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_303": {
 		"name": "Mezcla de fruta caída",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Para darte lo que más aprecio.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
 		"stars": 1,
@@ -5210,13 +6138,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_304": {
 		"name": "Mezcla de arándanos",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dale un mordisco y deja que la mermelada de arándanos fluya en la punta de tu lengua.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
 		"stars": 1,
@@ -5237,13 +6169,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_305": {
 		"name": "Mezcla de cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate oscuro delicado y suave, decorado con un sueño levemente amargo y apacible.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
 		"stars": 1,
@@ -5264,13 +6200,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_306": {
 		"name": "Crush de Aceite de Pescado",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate cargado de nutrientes, la primera elección de cualquier persona sana.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
 		"stars": 1,
@@ -5291,13 +6231,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_307": {
 		"name": "Crush Picante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una nuez con mucho sabor.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
 		"stars": 1,
@@ -5318,13 +6262,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_308": {
 		"name": "Crush de Rousong",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Una capa de frío helado con un suave relleno.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
 		"stars": 1,
@@ -5345,13 +6293,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_309": {
 		"name": "Crush de Huevas",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "¡Los ingredientes demuestran lo cara que es!",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
 		"stars": 1,
@@ -5372,13 +6324,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	},
 	"item_activity3_cooking_310": {
 		"name": "Crush de Palito de Cangrejo",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Las críticas de este chocolate han resultado ser bastante polarizantes.",
-		"satiety": "Regenera <ComLblGreen>{0}</> de saciedad.",
 		"buff": "Entrada",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
 		"stars": 1,
@@ -5399,6 +6355,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Permite recuperar inmediatamente (**15% + 20000**) PS del nómada."
 	}
 }

@@ -1,41 +1,40 @@
 {
 	"Task_Area2Cooking": {
 		"name": "Dognip",
-		"type": "ITEM_TYPE_QUEST",
 		"description": "The favorite food of trained hounds.",
-		"satiety": "Item for distracting hounds.",
 		"buff": "Snack",
 		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_POOR"
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
 	},
 	"Item_Cooking_0901": {
 		"name": "Awful stew",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A bunch of unknown ingredients roughly stewed in a big pot, with a bulk of nutrients lost in the process.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_0902": {
 		"name": "Fine stew",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "It looks like a success, but the choice of ingredients ultimately contributes to the dish's downfall...",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_1001": {
 		"name": "Fried mushrooms",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Taste aside, at least it's cooked and not raw.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1001",
 		"stars": 1,
@@ -47,13 +46,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **10% 1500** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Use to immediately restore (**10% + 1500**) HP to the Wanderer."
 	},
 	"Item_Cooking_1002": {
 		"name": "Seaweed and egg soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Got fresh laver and rich in protein, good for filling up the tummy.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1002",
 		"stars": 1,
@@ -70,13 +74,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1003": {
 		"name": "Crispy grilled fish",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "One of the popular eats in the port city of Banges. Cheap and delicious.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1003",
 		"stars": 1,
@@ -87,13 +96,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1004": {
 		"name": "Wholegrain bread",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Made from processed grain, nutritious and easily kept. Every Wanderer should carry some.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1004",
 		"stars": 1,
@@ -104,13 +114,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1005": {
 		"name": "Breakfast cereal",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Once a life-saving ration enough to feed five to six people. Given the improved condition, people add milk to it now instead of water.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1005",
 		"stars": 1,
@@ -126,13 +137,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1006": {
 		"name": "Sizzling meat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "How would you like it cooked? Real men just eat it after a few seconds of grilling on rocks under a hot sun.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1006",
 		"stars": 1,
@@ -143,13 +155,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1007": {
 		"name": "Seafood soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "They said one bite will pep you up, two will make you healthy, despite the average taste.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1007",
 		"stars": 1,
@@ -170,13 +183,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Increase **Frost Attack +1%** for **900 seconds**."
 	},
 	"Item_Cooking_1008": {
 		"name": "Crispy chicken burger",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chicken burgers seen in fast food joints. Few things top the combo of hot, crunchy chicken and crispy lettuce.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1008",
 		"stars": 1,
@@ -198,13 +218,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1009": {
 		"name": "Spicy burger",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "No matter how long it's been, it never fails to stir your appetite.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1009",
 		"stars": 1,
@@ -225,13 +250,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Increase **Physical Attack +1%** for **900 seconds**."
 	},
 	"Item_Cooking_1010": {
 		"name": "Egg fried rice",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "This is the twist you need when you get tired of eating plain white rice.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1010",
 		"stars": 1,
@@ -247,13 +279,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1011": {
 		"name": "Steamed crab",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Seafood is best when served fresh. The problem is, where to start?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1011",
 		"stars": 1,
@@ -270,13 +303,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"Item_Cooking_1012": {
 		"name": "Iced strawberry soda",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mix pureed strawberries into soda, then add ice. A summer essential.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1012",
 		"stars": 1,
@@ -297,23 +335,35 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Increase **Flame Resistance +10%** for **900 seconds**."
 	},
 	"Item_Cooking_1013": {
 		"name": "Flamekissed soda",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Time for afternoon tea!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1013",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_RARE"
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"mods": [
+			900,
+			0.1,
+			65
+		],
+		"effect": "Increase **10** for **900 seconds**."
 	},
 	"Item_Cooking_1014": {
 		"name": "Thundercloud blueberry soda",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The blueberry is as dark as a rain cloud. Be careful not to spill it on you, since it's hard to wash off.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1014",
 		"stars": 1,
@@ -334,13 +384,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Increase **Volt Resistance +10%** for **900 seconds**."
 	},
 	"Item_Cooking_1015": {
 		"name": "Golden egg and tomato",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "No, I didn't scramble the eggs by accident...",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1015",
 		"stars": 1,
@@ -357,13 +414,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1016": {
 		"name": "Simple power salad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The most basic salad for meeting the daily nutrient requirement. The choice for a low-fat diet.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1016",
 		"stars": 1,
@@ -394,13 +456,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Increase **Physical Resistance +10%** for **900 seconds**."
 	},
 	"Item_Cooking_1017": {
 		"name": "Lettuce salad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A nice salad with simple ingredients and a robust flavor.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1017",
 		"stars": 1,
@@ -417,13 +486,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **10% 1500** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Use to immediately restore (**10% + 1500**) HP to the Wanderer."
 	},
 	"Item_Cooking_1018": {
 		"name": "Mushroom soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A perfect combination of fresh mushrooms and crispy lettuce.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1018",
 		"stars": 1,
@@ -440,13 +514,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1019": {
 		"name": "Fried egg",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Start a wonderful day off with fried eggs!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1019",
 		"stars": 1,
@@ -458,13 +537,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **10% 1500** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Use to immediately restore (**10% + 1500**) HP to the Wanderer."
 	},
 	"Item_Cooking_1020": {
 		"name": "Steamed conch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "It retains all of its original taste! A sprinkle of chopped green onion would improve it, though.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1020",
 		"stars": 1,
@@ -481,13 +565,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1021": {
 		"name": "Steamed egg with sea urchin",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sea urchin with smooth steamed egg is delicious and comforting, particularly popular in the snowfield.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1021",
 		"stars": 1,
@@ -504,13 +593,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"Item_Cooking_1022": {
 		"name": "Double Berry Jam Toast",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fusion of two berries for a sweet-sour symphony in your mouth.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1022",
 		"stars": 1,
@@ -531,13 +625,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Increase **Volt Attack +1%** for **900 seconds**."
 	},
 	"Item_Cooking_1023": {
 		"name": "Tomato and fried egg pasta",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Perfectly sour and easy to make. A tasty low-calorie treat.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1023",
 		"stars": 1,
@@ -558,13 +659,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " - Increase **Flame Attack +1%** for **900 seconds**."
 	},
 	"Item_Cooking_1024": {
 		"name": "Meat and potato stew",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The meat absorbed all the nutrients, so it's extremely healthy!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1024",
 		"stars": 1,
@@ -580,13 +688,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1025": {
 		"name": "Fries",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "It's not junk food but pure happiness!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1025",
 		"stars": 1,
@@ -602,13 +711,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1026": {
 		"name": "Vegetable salad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Selected salad, great for picnics.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1026",
 		"stars": 1,
@@ -635,13 +745,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1027": {
 		"name": "Fried chicken",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Simple and quick meal. The crispy golden coating will make passersby drool.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1027",
 		"stars": 1,
@@ -658,13 +773,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1028": {
 		"name": "Honeyed fruit juice",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fresh juice with dabs of honey, slightly shaken. A tinge of sweetness amid the sour.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1028",
 		"stars": 1,
@@ -686,13 +806,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1029": {
 		"name": "Fruit cake",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "There's no stress a piece of delicious cake can't solve. If there is, have a second!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1029",
 		"stars": 1,
@@ -719,13 +845,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"Item_Cooking_1030": {
 		"name": "Iced orchid surprise",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Summer special. Feel the surf party in your mouth!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1030",
 		"stars": 1,
@@ -747,13 +878,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1031": {
 		"name": "Stir-fried broccoli",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Healthy low-fat food, though not a favorite for most.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1031",
 		"stars": 1,
@@ -764,13 +901,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1032": {
 		"name": "Boiled scallops",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A simple tasty dish without any seasoning needed.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1032",
 		"stars": 1,
@@ -787,13 +925,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"Item_Cooking_1033": {
 		"name": "Meat bun",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The juice that bursts out when you bite into one is the essence!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1033",
 		"stars": 1,
@@ -809,13 +952,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1034": {
 		"name": "Sliced fish with mushroom",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A perfect complement of sliced fish and mushroom.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1034",
 		"stars": 1,
@@ -832,13 +976,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_1035": {
 		"name": "Roast rump",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Set up the grill and grab a chair. Yeah, that's the smell...",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1035",
 		"stars": 1,
@@ -850,13 +999,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"Item_Cooking_1036": {
 		"name": "Dandelion mushroom soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ever tried dandelion with mushroom? It will make you light on your feet.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1036",
 		"stars": 1,
@@ -873,13 +1028,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"Item_Cooking_2001": {
 		"name": "Surf and Turf",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Banges's home cooking for that hometown taste.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2001",
 		"stars": 2,
@@ -896,13 +1056,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **13% 10000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Use to immediately restore (**13% + 10000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2002": {
 		"name": "Red wheat bread",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Most common food among the people of Aida that reflects their simple life.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2002",
 		"stars": 2,
@@ -913,13 +1078,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_2003": {
 		"name": "Fiddlehead pie",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Healthy biscuit with fiddlehead filling, not too popular among kids, though.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2003",
 		"stars": 2,
@@ -936,13 +1102,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2004": {
 		"name": "Chocolate bread",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Stuffed with chocolate! Just hold off your diet for a day.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2004",
 		"stars": 2,
@@ -959,13 +1130,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2005": {
 		"name": "Firecap mushroom soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "What's more comforting than a piping hot firecap mushroom soup when you're scaling snowy peaks?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2005",
 		"stars": 2,
@@ -982,13 +1158,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **13% 10000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Use to immediately restore (**13% + 10000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2006": {
 		"name": "Black moss soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fill up the stomach now and grab something better later.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2006",
 		"stars": 2,
@@ -1005,13 +1187,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **13% 10000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Use to immediately restore (**13% + 10000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2007": {
 		"name": "Balloon fruit salad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Specially selected salad. Sweet and sour, kids' favorite!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2007",
 		"stars": 2,
@@ -1033,13 +1220,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2008": {
 		"name": "Fiddlehead soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Guess it's another herbivore day...",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2008",
 		"stars": 2,
@@ -1056,13 +1248,18 @@
 				"max": " 4"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2009": {
 		"name": "Spicy eel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Is the electric eel fully cooked? How come my tongue feels tingly?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2009",
 		"stars": 2,
@@ -1073,13 +1270,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Increase **Volt Resistance +10%** for **900 seconds**."
 	},
 	"Item_Cooking_2010": {
 		"name": "Eel and mushroom soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A spicy challenge for the taste buds. Down it in one gulp if you dare! And no water allowed!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
 		"stars": 2,
@@ -1095,13 +1299,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Increase **Volt Attack +1%** for **900 seconds**."
 	},
 	"Item_Cooking_2011": {
 		"name": "Sea crab soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "All good things of a crab are in the stew.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2011",
 		"stars": 2,
@@ -1117,13 +1328,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Increase **Flame Resistance +10%** for **900 seconds**."
 	},
 	"Item_Cooking_2012": {
 		"name": "Sweet pomegranate juice",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Am I seeing things, or is the juice actually glowing?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2012",
 		"stars": 2,
@@ -1145,13 +1363,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2013": {
 		"name": "Cocoa milk",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Drink a cup before bedtime and have a sweet dream!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2013",
 		"stars": 2,
@@ -1172,13 +1396,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Increase **Frost Resistance +10%** for **900 seconds**."
 	},
 	"Item_Cooking_2014": {
 		"name": "Firedragon fruit tea",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Couple this with a cake for a perfect afternoon tea!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2014",
 		"stars": 2,
@@ -1194,13 +1425,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": " - Increase **Flame Attack +1%** for **900 seconds**."
 	},
 	"Item_Cooking_2015": {
 		"name": "Barnacle stew",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A taste that you will enjoy!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2015",
 		"stars": 2,
@@ -1216,13 +1454,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Increase **Physical Resistance +10%** for **900 seconds**."
 	},
 	"Item_Cooking_2016": {
 		"name": "Barnacle seafood pizza",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Give me a double portion!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2016",
 		"stars": 2,
@@ -1244,13 +1489,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2017": {
 		"name": "Snow azalea tea",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Why don't you have some while vegging by the campfire in cold winter?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2017",
 		"stars": 2,
@@ -1271,13 +1521,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Increase **Frost Attack +1%** for **900 seconds**."
 	},
 	"Item_Cooking_2018": {
 		"name": "Pine cocoa",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nut-flavored cocoa milk. Nut lovers can add more nuts to it.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2018",
 		"stars": 2,
@@ -1299,13 +1556,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2019": {
 		"name": "Nut tea",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Smell how fresh the nuts are...",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2019",
 		"stars": 2,
@@ -1327,13 +1589,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2020": {
 		"name": "Purple yam pie",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Filling pie and portable enough for long hikes.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2020",
 		"stars": 2,
@@ -1349,13 +1616,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Increase **Volt Attack +2%** for **1200 seconds**."
 	},
 	"Item_Cooking_2021": {
 		"name": "Snow lotus soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Snow lotus tastes rather bland, so sugar is added to make it a popular dessert.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2021",
 		"stars": 2,
@@ -1372,13 +1646,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2022": {
 		"name": "Truffle fried rice",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Stir-fry the truffle, then mix it with fried rice.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2022",
 		"stars": 2,
@@ -1399,13 +1679,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Increase **Physical Attack +2%** for **1200 seconds**."
 	},
 	"Item_Cooking_2023": {
 		"name": "Caterpillar fungus noodles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Am I at the age when I have to watch my diet?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2023",
 		"stars": 2,
@@ -1422,13 +1709,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2024": {
 		"name": "Caviar sushi",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A visually pleasant roll makes it a classy dish. If you can't make it, you're better off mixing them in a bowl.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2024",
 		"stars": 2,
@@ -1450,13 +1742,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"Item_Cooking_2025": {
 		"name": "Caviar potato balls",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Soft potato balls drenched in premium caviar. You'll want seconds.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2025",
 		"stars": 2,
@@ -1472,13 +1769,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Increase **Physical Attack +1%** for **900 seconds**."
 	},
 	"Item_Cooking_2026": {
 		"name": "Grilled steak",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Medium, please!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2026",
 		"stars": 2,
@@ -1489,13 +1793,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Increase **Volt Resistance +15%** for **1200 seconds**."
 	},
 	"Item_Cooking_2027": {
 		"name": "Steak with mushroom sauce",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "I think I'm seeing steaks flying across the sky...",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2027",
 		"stars": 2,
@@ -1511,13 +1822,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " - Increase **Flame Attack +2%** for **1200 seconds**."
 	},
 	"Item_Cooking_2028": {
 		"name": "Braised meat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A traditional classic.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2028",
 		"stars": 2,
@@ -1528,13 +1846,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Increase **Frost Resistance +15%** for **1200 seconds**."
 	},
 	"Item_Cooking_2029": {
 		"name": "Juicy meat sandwich",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Take your time and make yourself a good breakfast!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2029",
 		"stars": 2,
@@ -1555,13 +1880,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Increase **Flame Resistance +15%** for **1200 seconds**."
 	},
 	"Item_Cooking_2030": {
 		"name": "Salmon sashimi",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "This is what food should taste like!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2030",
 		"stars": 2,
@@ -1572,13 +1904,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Increase **Frost Attack +2%** for **1200 seconds**."
 	},
 	"Item_Cooking_2031": {
 		"name": "Snail baked rice",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Looks like a weird fusion, but much tastier than it looks.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 2,
@@ -1594,13 +1933,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Increase **Physical Resistance +15%** for **1200 seconds**."
 	},
 	"item_Cooking_3001": {
 		"name": "Stir-Fried Chilies",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "So spicy!!!!!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3001",
 		"stars": 1,
@@ -1616,13 +1962,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Increase **Frost Resistance +10%** for **900 seconds**."
 	},
 	"item_Cooking_3002": {
 		"name": "Charcoal Grilled Sand Onion",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wanderer's mouth-watering BBQ Stand, now open!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 1,
@@ -1633,13 +1986,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3003": {
 		"name": "Aloe Yogurt",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Who doesn't like sweet and sour yogurt?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3003",
 		"stars": 2,
@@ -1661,13 +2015,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"item_Cooking_3004": {
 		"name": "Rose Tea",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "When brewing rose tea, even the most restless mind will calm down miraculously.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3004",
 		"stars": 2,
@@ -1684,24 +2043,36 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"item_Cooking_3005": {
 		"name": "Thornfruit Soda",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A generous amount of honey is added to give a taste to this plain thornfruit juice.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
 		"quality": "ITEM_QUALITY_RARE",
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3006": {
 		"name": "Beet Soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Warm beetroot soup. You can easily drink up a whole pot in cold weather.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3006",
 		"stars": 1,
@@ -1713,13 +2084,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"item_Cooking_3007": {
 		"name": "Sweetmelon Salad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "It tastes better when it's chilled, but don't be greedy.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3007",
 		"stars": 1,
@@ -1735,13 +2111,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Increase **Flame Resistance +10%** for **900 seconds**."
 	},
 	"item_Cooking_3008": {
 		"name": "Thornfruit Soda",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A generous amount of honey is added to give a taste to this plain thornfruit juice.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
@@ -1763,13 +2146,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3009": {
 		"name": "Pumpkin Porridge",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Quite a staple food that can be filling, and you probably won't need to eat anything else after a bowl.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3009",
 		"stars": 1,
@@ -1786,13 +2175,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3010": {
 		"name": "Fried Tofu",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Crispy, golden fried snacks. Be careful not to drip the sauce on your clothes!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3010",
 		"stars": 1,
@@ -1803,13 +2197,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3011": {
 		"name": "Radish Soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nourishing and delicious soup. Another bowl please!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3011",
 		"stars": 2,
@@ -1821,13 +2216,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"item_Cooking_3012": {
 		"name": "Salt-and-Pepper Corn",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Simple and easy snacks, the first choice for late nights.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3012",
 		"stars": 1,
@@ -1838,13 +2239,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3013": {
 		"name": "Cactus Special",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Refreshing Cactus Special, essential for summer.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3013",
 		"stars": 1,
@@ -1856,13 +2258,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **10% 1500** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Use to immediately restore (**10% + 1500**) HP to the Wanderer."
 	},
 	"item_Cooking_3014": {
 		"name": "Grilled Lizard Tail",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sprinkle it with chilis, cumin, and pepper, and wait quietly for a while before you start.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3014",
 		"stars": 1,
@@ -1874,13 +2281,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"item_Cooking_3015": {
 		"name": "Special Grilled Rib",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The best companion with rice! The one and only!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3015",
 		"stars": 1,
@@ -1897,13 +2309,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3016": {
 		"name": "Chocolate Soy Milk",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "If you are tired of drinking ordinary soy milk, why not try this one?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3016",
 		"stars": 1,
@@ -1925,13 +2342,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3017": {
 		"name": "Beet with Fiddlehead",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Once the ingredients are boiled, remove them from the pan, add the sauce, mix well and you're good to go.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3017",
 		"stars": 1,
@@ -1948,13 +2371,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3018": {
 		"name": "Desert Salad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Diced ball cactus and thornfruits with some salad dressing. Recommended to chill it first.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3018",
 		"stars": 1,
@@ -1976,13 +2404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3019": {
 		"name": "Rose Bread",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A pleasant afternoon starts with a rose-scented square bread.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3019",
 		"stars": 2,
@@ -1998,13 +2431,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Increase **Volt Resistance +15%** for **1200 seconds**."
 	},
 	"item_Cooking_3020": {
 		"name": "Honeymelon Bread",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Just one round bread stuffed with sweet melon filling is enough for breakfast.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3020",
 		"stars": 1,
@@ -2025,13 +2465,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Increase **Frost Attack +1%** for **900 seconds**."
 	},
 	"item_Cooking_3021": {
 		"name": "Multigrain Porridge",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The rice porridge is made of a variety of mixed grains. Sometimes, I just want to eat something mild.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3021",
 		"stars": 1,
@@ -2053,13 +2500,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3022": {
 		"name": "Corn and Seafood Biscuit",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "All-seafood tacos... You'll go broke opening a store like this!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3022",
 		"stars": 1,
@@ -2081,13 +2534,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3023": {
 		"name": "Steamed Pumpkin",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The steamed pumpkin is soft and sweet. It's a good choice for weight loss meals.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3023",
 		"stars": 1,
@@ -2104,13 +2562,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenerate **15% 20000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_Cooking_3024": {
 		"name": "Chicken Soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Smooth noodles topped with warm chicken broth. Just pretend this is a bowl of birthday noodles and come make a wish.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3024",
 		"stars": 2,
@@ -2131,13 +2594,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Increase **Physical Attack +2%** for **1200 seconds**."
 	},
 	"item_Cooking_3025": {
 		"name": "Spicy BBQ Noodles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "I can certainly rival Kun Ji Noodles!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3025",
 		"stars": 2,
@@ -2158,13 +2628,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " - Increase **Flame Attack +2%** for **1200 seconds**."
 	},
 	"item_Cooking_3026": {
 		"name": "Spicy Fried Rice",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The spicier the merrier!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3026",
 		"stars": 1,
@@ -2190,13 +2667,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " - Increase **Flame Attack +1%** for **900 seconds**."
 	},
 	"item_Cooking_3027": {
 		"name": "Grilled Combo Plate",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "This must be the meat lover's paradise, right!?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3027",
 		"stars": 2,
@@ -2217,13 +2701,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Increase **Flame Resistance +15%** for **1200 seconds**."
 	},
 	"item_Cooking_3028": {
 		"name": "Radish and Pork Chop Soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Radish and pork chop soup, which has been carefully stewed for a whole day. The radishes are actually more delicious than the spareribs.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3028",
 		"stars": 2,
@@ -2239,13 +2730,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Increase **Physical Resistance +15%** for **1200 seconds**."
 	},
 	"item_Cooking_3029": {
 		"name": "Creamy Corn Soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A creamy, sweet, and tangy soup, isn't this the time to eat it with bread?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3029",
 		"stars": 1,
@@ -2267,13 +2765,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **12% 3300** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Use to immediately restore (**12% + 3300**) HP to the Wanderer."
 	},
 	"item_Cooking_3030": {
 		"name": "Crispy Lard Gourd",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wrap it in the frying powder and deep fry for two minutes, and you're done!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3030",
 		"stars": 2,
@@ -2285,13 +2788,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"item_Cooking_3031": {
 		"name": "Grilled Oyster",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "It's hard to decide whether to eat it raw with some lemon juice or grill it.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3031",
 		"stars": 2,
@@ -2303,13 +2811,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"item_Cooking_3032": {
 		"name": "Cold Fish Mint",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "After the first try, I've fallen in love with the taste of fish mint!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3032",
 		"stars": 2,
@@ -2321,13 +2834,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"item_Cooking_3033": {
 		"name": "Spicy Lard Gourd Strip",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The appetizing cold dish seems to be fine as a main meal also.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3033",
 		"stars": 2,
@@ -2344,13 +2862,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"item_Cooking_3034": {
 		"name": "Oyster Tofu Soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "I heard that many children don't like to eat fish, so this soup is specially made.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3034",
 		"stars": 2,
@@ -2367,13 +2891,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"item_Cooking_3035": {
 		"name": "Scramble Egg with Fish Mint",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Everything can be scrambled with eggs! My favorite is...",
-		"satiety": "Regenerate <ComLblGreen>{0}</> endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3035",
 		"stars": 2,
@@ -2390,13 +2920,19 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"item_Cooking_4001": {
 		"name": "Dragons and Stars",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "It's really just boiled dragon-necked turtle meat with starfish roe, but the restaurant gave it a fancy name.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4001",
 		"stars": 2,
@@ -2417,13 +2953,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4002": {
 		"name": "Ocean Flavor Steamed Egg",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dragon-necked turtle eggs come from the ocean, so they naturally have a seafood flavor.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4002",
 		"stars": 2,
@@ -2440,13 +2977,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Regenerate **20% 60000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Use to immediately restore (**20% + 60000**) HP to the Wanderer."
 	},
 	"item_Cooking_4003": {
 		"name": "Pufferfish Salad",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A delicious pufferfish salad. Worth a try!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4003",
 		"stars": 2,
@@ -2462,13 +3004,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4004": {
 		"name": "Fresh Pufferfish",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A pufferfish dish that makes full use of the different parts of the expensive fish.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4004",
 		"stars": 2,
@@ -2489,13 +3032,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Increase **Frost Attack +4%** for **900 seconds**."
 	},
 	"item_Cooking_4005": {
 		"name": "Grilled Pufferfish",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "This juicy pufferfish will melt in your mouth... At least that's what the menu says.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4005",
 		"stars": 2,
@@ -2512,13 +3062,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"item_Cooking_4006": {
 		"name": "White Lotus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The finely sliced and stacked raw pufferfish pieces look like a lotus flower.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4006",
 		"stars": 2,
@@ -2534,13 +3089,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Increase **Frost Attack +2%** for **600 seconds**."
 	},
 	"item_Cooking_4007": {
 		"name": "Boiled Octopus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fresh and chewy, a recommended dish for everyone.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4007",
 		"stars": 2,
@@ -2561,13 +3123,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4008": {
 		"name": "Octopus Balls",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A delicious traditional dish. Its flavor largely depends on the size of the octopus chunks.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4008",
 		"stars": 2,
@@ -2593,13 +3156,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Increase **Volt Resistance +15%** for **600 seconds**."
 	},
 	"item_Cooking_4009": {
 		"name": "Grilled Goodies",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A dish popular among the children, but too expensive for them to buy with their allowance.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4009",
 		"stars": 2,
@@ -2616,13 +3186,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **13% 10000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Use to immediately restore (**13% + 10000**) HP to the Wanderer."
 	},
 	"item_Cooking_4010": {
 		"name": "Salty & Savory Steamed Fish",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Saltwater fish itself is salty, and steaming retains its umami flavor.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4010",
 		"stars": 2,
@@ -2639,13 +3214,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **13% 10000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Use to immediately restore (**13% + 10000**) HP to the Wanderer."
 	},
 	"item_Cooking_4011": {
 		"name": "Sautéed Saltwater Fish",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "This dish takes a lot of work, but the effort should make it even tastier.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4011",
 		"stars": 2,
@@ -2667,13 +3247,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"item_Cooking_4012": {
 		"name": "Premium Sashimi",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A dish that tests the chef's knife skills. Don't put too much wasabi on it, though.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4012",
 		"stars": 2,
@@ -2699,13 +3284,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Increase **Frost Resistance +15%** for **600 seconds**."
 	},
 	"item_Cooking_4013": {
 		"name": "Stargazy Pie",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Does a fish look up to the stars when it's alive?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4013",
 		"stars": 2,
@@ -2726,13 +3318,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4014": {
 		"name": "Seafood Stew",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Usually cooked with game meat to reduce the amount of rare ingredients used.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4014",
 		"stars": 2,
@@ -2753,13 +3346,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"CleanBuff"
 		]
 	},
 	"item_Cooking_4015": {
 		"name": "Grilled Anemone",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Can be overpowering if there's too much chili.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4015",
 		"stars": 2,
@@ -2780,13 +3374,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": " - Increase **Flame Attack +2%** for **600 seconds**."
 	},
 	"item_Cooking_4016": {
 		"name": "Anemone Bloom",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Add anemone to the steamed egg for a richer texture.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4016",
 		"stars": 2,
@@ -2803,13 +3404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **13% 10000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Use to immediately restore (**13% + 10000**) HP to the Wanderer."
 	},
 	"item_Cooking_4017": {
 		"name": "Longevity",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The dragon-necked turtle is an auspicious creature, so restaurants like to give it different names.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4017",
 		"stars": 2,
@@ -2825,13 +3431,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			600,
+			0.4
+		],
+		"effect": "Increase **40** for **600 seconds**."
 	},
 	"item_Cooking_4018": {
 		"name": "Happy Egg",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Just a boiled dragon-necked turtle egg, but it sells better after dyeing.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4018",
 		"stars": 2,
@@ -2852,13 +3464,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Increase **Physical Attack +4%** for **900 seconds**."
 	},
 	"item_Cooking_4019": {
 		"name": "Happy Egg (pink)",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Just a boiled dragon-necked turtle egg, but it sells better after dyeing.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4019",
 		"stars": 2,
@@ -2879,13 +3498,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4020": {
 		"name": "Happy Egg (red)",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Just a boiled dragon-necked turtle egg, but it sells better after dyeing.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4020",
 		"stars": 2,
@@ -2906,13 +3526,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			900,
+			0.5
+		],
+		"effect": "Increase **50** for **900 seconds**."
 	},
 	"item_Cooking_4021": {
 		"name": "Cool Jellyfish",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Crunchy and refreshing. Once you start, you can't stop!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4021",
 		"stars": 2,
@@ -2929,13 +3555,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **13% 10000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Use to immediately restore (**13% + 10000**) HP to the Wanderer."
 	},
 	"item_Cooking_4022": {
 		"name": "Stir-fried Jellyfish with Mushrooms",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "This mix of mushrooms and jellyfish is heavenly, and it tastes the best with rice. You will down a plate before you even notice.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4022",
 		"stars": 2,
@@ -2951,13 +3582,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4023": {
 		"name": "Juicy Squid",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Don't eat these juicy and puffy things in public if you don't know how to eat them properly.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4023",
 		"stars": 2,
@@ -2978,13 +3610,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4024": {
 		"name": "Squid Mix",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A delicious dish that could be more popular if the colors looked more appetizing.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4024",
 		"stars": 2,
@@ -3005,13 +3638,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Increase **Volt Attack +2%** for **600 seconds**."
 	},
 	"item_Cooking_4025": {
 		"name": "Boiled Fish Porridge",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A healthy porridge for those who don't have an appetite.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4025",
 		"stars": 2,
@@ -3027,13 +3667,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4026": {
 		"name": "Pickled Fish",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Not for humans, but definitely for cats!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4026",
 		"stars": 2,
@@ -3059,13 +3700,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Increase **Flame Resistance +15%** for **600 seconds**."
 	},
 	"item_Cooking_4027": {
 		"name": "Great Lobster Don",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Lobster, lobster, and more lobster! A dish that can only be enjoyed at the seaside.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4027",
 		"stars": 2,
@@ -3086,13 +3734,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Increase **Physical Attack +2%** for **600 seconds**."
 	},
 	"item_Cooking_4028": {
 		"name": "Spicy Crawfish",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tastes just as good in smaller chunks!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4028",
 		"stars": 2,
@@ -3108,13 +3763,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4029": {
 		"name": "Steamed Egg with Crab",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "It tastes good... But is it crab? Or is it imitation crab?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4029",
 		"stars": 2,
@@ -3135,13 +3791,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4030": {
 		"name": "Luxurious Crab Fried Rice",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "This dish is so luxurious in every single sense of the word that no one can refuse.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4030",
 		"stars": 2,
@@ -3162,13 +3819,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4031": {
 		"name": "King Crab",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Even kings cannot avoid being eaten.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4031",
 		"stars": 2,
@@ -3185,13 +3843,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"item_Cooking_4032": {
 		"name": "Fried Crab Rice Cake",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fresh and tasty crab and chewy rice cakes make an incredibly delicious dish.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4032",
 		"stars": 2,
@@ -3212,13 +3875,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Increase **Physical Resistance +15%** for **600 seconds**."
 	},
 	"item_Cooking_4033": {
 		"name": "Golden Crab Noodles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "With every ingredient and process added, its price goes higher and higher.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4033",
 		"stars": 2,
@@ -3234,13 +3904,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4034": {
 		"name": "Garlic Steamed Seafood",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A classic dish where fresh seafood meets pungent garlic.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4034",
 		"stars": 2,
@@ -3261,13 +3932,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": " - Increase **Flame Attack +4%** for **900 seconds**."
 	},
 	"item_Cooking_4035": {
 		"name": "Seafood Vermicelli",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A flavorful dish that never gets too rich or greasy.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4035",
 		"stars": 2,
@@ -3293,13 +3971,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Increase **Volt Attack +4%** for **900 seconds**."
 	},
 	"item_Cooking_4036": {
 		"name": "Cheese-Baked Lobster",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Cheesy and chewy.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4036",
 		"stars": 2,
@@ -3316,13 +4001,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Regenerate **16% 34000** Health."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Use to immediately restore (**16% + 34000**) HP to the Wanderer."
 	},
 	"item_Cooking_4037": {
 		"name": "Lobster with Squid Ink Noodles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A creative dish dyed with natural squid ink, delicious and stylish.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4037",
 		"stars": 2,
@@ -3343,13 +4033,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4038": {
 		"name": "Stir-Fried Conch Meat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Spicy and high in umami, this tasty food is a must for late-night snacking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4038",
 		"stars": 2,
@@ -3365,13 +4056,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_5001": {
 		"name": "Bamboo Shoot Stew",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A mix of fatty and lean meat stewed with bamboo shoots for a few hours and some spicy seasoning to top it all off. You'll down three bowls of rice before you even notice it.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/5001",
 		"stars": 2,
@@ -3392,13 +4084,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "Increase **Volt Attack +4% Volt Resistance +1800** for **900 seconds**."
 	},
 	"item_Cooking_5007": {
 		"name": "White Jade Begonia",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A cold dish of begonia and green jade.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/5007",
 		"stars": 2,
@@ -3414,13 +4114,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "Increase **Flame Attack +4% Flame Resistance +1800** for **900 seconds**."
 	},
 	"item_activity_cooking_001": {
 		"name": "Roast Suckling Pig",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A roast suckling pig cooked by an excellent chef can satisfy the most discerning of diners.\r\n\r\nAfter defeating Apophis and Rose Queen, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
 		"stars": 1,
@@ -3446,13 +4154,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_002": {
 		"name": "Braised Turkey with Apples",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "An Astra specialty. Thanks to the promotions of vendors and travelers, it has become popular across the entire continent.\r\n\r\nAfter defeating Apophis and Rose Queen, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
 		"stars": 1,
@@ -3478,13 +4185,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_003": {
 		"name": "Roasted Drumstick with Veggies",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "First satisfy your taste buds with a bite of the roasted chicken drumstick. Then have a mouthful of refreshing lettuce. Yum yum!\r\n\r\nAfter defeating Apophis and Rose Queen, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
 		"stars": 1,
@@ -3505,13 +4211,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_004": {
 		"name": "Pan-fried Salmon",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tender salmon is served with sweet honey, leaving a pleasant aftertaste in your mouth.\r\n\r\nAfter defeating Robarg and Sobek, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
 		"stars": 1,
@@ -3532,13 +4237,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_005": {
 		"name": "Small Sesame Rice Dumplings",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A traditional Banges Port specialty that is greatly loved by young and old.\r\n\r\nAfter defeating Robarg and Sobek, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
 		"stars": 1,
@@ -3559,13 +4263,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_006": {
 		"name": "Turkey Beetroot Soup",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A bowl of warm soup that can chase away all the fatigue of the day.\r\nAfter defeating Robarg and Sobek, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
 		"stars": 1,
@@ -3586,13 +4289,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_007": {
 		"name": "Gingerbread",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A popular festival dessert that has the sweetness of sugar and honey and the pleasant fragrance of wheat grains.\r\n\r\nAfter defeating Robarg, Apophis, Frost Bot, Sobek, Rose Queen and Barbarossa, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
 		"stars": 1,
@@ -3613,13 +4315,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_008": {
 		"name": "Apple Cake",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A fluffy fruit cake. One bite, and you'll be satisfied. \r\n\r\nAfter defeating Frost Bot and Barbarossa, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
 		"stars": 1,
@@ -3645,13 +4346,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_009": {
 		"name": "Fruit Punch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A drink with a fruitful aroma and the slightest smell of booze.\r\n\r\nAfter defeating Frost Bot and Barbarossa, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
 		"stars": 1,
@@ -3677,13 +4377,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_010": {
 		"name": "Apple Juice",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sweet and sour. Suitable for both young and old. A favorite summer drink for many people.\r\n\r\nAfter defeating Frost Bot and Barbarossa, drops from password chest during the Aida Cafe event. Alternatively obtained by collecting ingredients and cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
 		"stars": 1,
@@ -3704,13 +4403,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity2_cooking_101": {
 		"name": "Floating Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ride in the balloon fruit, to the world of chocolate!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
 		"stars": 1,
@@ -3731,13 +4429,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_102": {
 		"name": "Pine Nut Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate covered with pine nuts is the perfect gift.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
 		"stars": 1,
@@ -3758,13 +4460,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_103": {
 		"name": "Strawberry Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The blend of lightly sweet strawberries and mellow chocolate is the sweet taste of first love.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
 		"stars": 1,
@@ -3785,13 +4491,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_104": {
 		"name": "Hazelnut Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wrapped in chocolate is a heart of anticipation for love.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
 		"stars": 1,
@@ -3812,13 +4522,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_105": {
 		"name": "Truffle Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "You can feel the affection from the selection of ingredients.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
 		"stars": 1,
@@ -3839,13 +4553,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_106": {
 		"name": "Blueberry Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Take a bite, and let the sweet and sour blueberry jam flow on the tip of your tongue.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
 		"stars": 1,
@@ -3866,13 +4584,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_107": {
 		"name": "Honey Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A majestic symphony of chocolate and honey.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
 		"stars": 1,
@@ -3893,13 +4615,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_108": {
 		"name": "Fallen Fruit Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "To give you the thing I hold most dear.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
 		"stars": 1,
@@ -3920,13 +4646,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_109": {
 		"name": "Cocoa Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Delicate and soft dark chocolate, crocheted with a slightly bitter and mellow dream.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
 		"stars": 1,
@@ -3942,13 +4672,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_110": {
 		"name": "Milk Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Milk and chocolate are a match made in heaven!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
 		"stars": 1,
@@ -3969,13 +4703,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_201": {
 		"name": "Floating Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ride in the balloon fruit, to the world of chocolate!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
 		"stars": 1,
@@ -3996,13 +4734,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_202": {
 		"name": "Pine Nut Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate covered with pine nuts is the perfect gift.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
 		"stars": 1,
@@ -4023,13 +4765,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_203": {
 		"name": "Strawberry Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The blend of lightly sweet strawberries and mellow chocolate is the sweet taste of first love.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
 		"stars": 1,
@@ -4050,13 +4796,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_204": {
 		"name": "Hazelnut Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wrapped in chocolate is a heart of anticipation for love.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
 		"stars": 1,
@@ -4077,13 +4827,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_205": {
 		"name": "Truffle Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "You can feel the affection from the selection of ingredients.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
 		"stars": 1,
@@ -4104,13 +4858,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_206": {
 		"name": "Blueberry Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Take a bite, and let the sweet and sour blueberry jam flow on the tip of your tongue.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
 		"stars": 1,
@@ -4131,13 +4889,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_207": {
 		"name": "Honey Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A majestic symphony of chocolate and honey.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
 		"stars": 1,
@@ -4158,13 +4920,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_208": {
 		"name": "Fallen Fruit Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "To give you the thing I hold most dear.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
 		"stars": 1,
@@ -4185,13 +4951,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_209": {
 		"name": "Cocoa Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Delicate and soft dark chocolate, crocheted with a slightly bitter and mellow dream.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
 		"stars": 1,
@@ -4207,13 +4977,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_210": {
 		"name": "Milk Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Milk and chocolate are a match made in heaven!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
 		"stars": 1,
@@ -4234,13 +5008,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_301": {
 		"name": "Floating Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ride in the balloon fruit, to the world of chocolate!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
 		"stars": 1,
@@ -4261,13 +5039,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_302": {
 		"name": "Pine Nut Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate covered with pine nuts is the perfect gift.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
 		"stars": 1,
@@ -4288,13 +5070,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_303": {
 		"name": "Strawberry Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The blend of lightly sweet strawberries and mellow chocolate is the sweet taste of first love.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
 		"stars": 1,
@@ -4315,13 +5101,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_304": {
 		"name": "Hazelnut Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wrapped in chocolate is a heart of anticipation for love.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
 		"stars": 1,
@@ -4342,13 +5132,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_305": {
 		"name": "Truffle Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "You can feel the affection from the selection of ingredients.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
 		"stars": 1,
@@ -4369,13 +5163,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_306": {
 		"name": "Blueberry Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Take a bite, and let the sweet and sour blueberry jam flow on the tip of your tongue.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
 		"stars": 1,
@@ -4396,13 +5194,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_307": {
 		"name": "Honey Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A majestic symphony of chocolate and honey.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
 		"stars": 1,
@@ -4423,13 +5225,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_308": {
 		"name": "Fallen Fruit Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "To give you the thing I hold most dear.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
 		"stars": 1,
@@ -4450,13 +5256,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_309": {
 		"name": "Cocoa Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Delicate and soft dark chocolate, crocheted with a slightly bitter and mellow dream.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
 		"stars": 1,
@@ -4472,13 +5282,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_310": {
 		"name": "Milk Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Milk and chocolate are a match made in heaven!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
 		"stars": 1,
@@ -4499,93 +5313,119 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_001": {
 		"name": "Cetus Souvenir",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Electromancy themed chocolate giftbox, Hanna's proud work.\r\nThe Doctor says that delicious things must be shared with important people!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_002": {
 		"name": "Cetus Souvenir",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Physical element themed chocolate giftbox, Hanna's proud work.\nThe Doctor says that delicious things must be shared with important people!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_003": {
 		"name": "Cetus Souvenir",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Pyromancy themed chocolate giftbox, Hanna's proud work.\nThe Doctor says that delicious things must be shared with important people!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_004": {
 		"name": "Cetus Souvenir",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Cryomancy themed chocolate giftbox, Hanna's proud work.\nThe Doctor says that delicious things must be shared with important people!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity2_cooking_005": {
 		"name": "Crispy Rice Cake",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "One of Planet Aida's most popular snacks. Members of the Hyenas and the Ravagers are said to have fought over one piece of the cake.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity2_cooking_006": {
 		"name": "Chocolate Giftbox",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Delicious things must be shared with important people!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"HealPotion_01": {
 		"name": "Spring Pancake",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The most popular snack at the Spring Market.\r\nIt's impossible to tell its flavor from the look of it...",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.22,
+			75000
+		],
+		"effect": "Use to immediately restore (**22% + 75000**) HP to the Wanderer."
 	},
 	"BuffPotion_01": {
 		"name": "Pinebreeze",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Beverage featured in the Spring Market,\r\nOne sip of the drink is said to make you feel like being in the middle of a pine forest, with the spring breeze gently blowing on your cheeks.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity3_cooking_101": {
 		"name": "Classic Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Who could resist the rich aroma of chocolate?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
 		"stars": 1,
@@ -4611,13 +5451,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_102": {
 		"name": "Nut Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate with mixed nuts is surprisingly delicious!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
 		"stars": 1,
@@ -4638,13 +5482,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_103": {
 		"name": "Hazelnut Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Adding to the silky-smooth mouthfeel, a marvelous hazelnut aroma is combined with chocolate to add a whole new layer of flavor.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
 		"stars": 1,
@@ -4665,13 +5513,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_104": {
 		"name": "Flamegon Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Who cares about what has seeds or not when there's chocolate to be enjoyed?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
 		"stars": 1,
@@ -4692,13 +5544,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_105": {
 		"name": "Cocoa Cube",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Delicate and soft dark chocolate, crocheted with a slightly bitter and mellow dream.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
 		"stars": 1,
@@ -4719,13 +5575,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_106": {
 		"name": "Tail Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The latest in wacky-flavored chocolates. Do you dare give it a shot?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
 		"stars": 1,
@@ -4746,13 +5606,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_107": {
 		"name": "Meat Floss Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate-flavored meat floss, another fine addition to the dark world of underground cooking.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
 		"stars": 1,
@@ -4773,13 +5637,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_108": {
 		"name": "Mushroom Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate pralines are always a wonderful surprise.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
 		"stars": 1,
@@ -4800,13 +5668,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_109": {
 		"name": "Salted Egg Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The egg yolk is grainy and moist, with a distinctive flavor.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
 		"stars": 1,
@@ -4827,13 +5699,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_110": {
 		"name": "Crab Stick Square",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Intense seafood aromas set the tone for this chocolate.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
 		"stars": 1,
@@ -4854,13 +5730,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_201": {
 		"name": "Coffee Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "I want to taste all the bitters and sweets of the journey with you.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
 		"stars": 1,
@@ -4886,13 +5766,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_202": {
 		"name": "Liqueur Filling Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The soft aromas of wine and chocolate come together to create a soothing melody.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
 		"stars": 1,
@@ -4913,13 +5797,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_203": {
 		"name": "Flower Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Bite in to unleash a breathtaking floral aroma, reminiscent of roses on Valentine's Day.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
 		"stars": 1,
@@ -4940,13 +5828,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_204": {
 		"name": "Strawberry Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "The blend of lightly sweet strawberries and mellow chocolate is the sweet taste of first love.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
 		"stars": 1,
@@ -4967,13 +5859,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_205": {
 		"name": "Cocoa Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Delicate and soft dark chocolate, crocheted with a slightly bitter and mellow dream.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
 		"stars": 1,
@@ -4994,13 +5890,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_206": {
 		"name": "Floating Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ride in the balloon fruit, to the world of chocolate!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
 		"stars": 1,
@@ -5021,13 +5921,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_207": {
 		"name": "Meat Floss Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Smooth chocolate and fluffy filling work together to deliver a whole new taste.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
 		"stars": 1,
@@ -5048,13 +5952,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_208": {
 		"name": "Sea Salt Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tired of sweet? Come give salty a try!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
 		"stars": 1,
@@ -5075,13 +5983,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_209": {
 		"name": "Truffle Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "You can feel the affection from the selection of ingredients.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
 		"stars": 1,
@@ -5102,13 +6014,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_210": {
 		"name": "Crab Stick Planet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "There's more than one way to prepare some good portunid leg.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
 		"stars": 1,
@@ -5129,13 +6045,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_301": {
 		"name": "Mint Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A cold taste that is infinitely refreshing.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
 		"stars": 1,
@@ -5156,13 +6076,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_302": {
 		"name": "Cream Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "When it comes to sweets, is there anything that can compete with cream?",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
 		"stars": 1,
@@ -5183,13 +6107,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_303": {
 		"name": "Fallen Fruit Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "To give you the thing I hold most dear.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
 		"stars": 1,
@@ -5210,13 +6138,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_304": {
 		"name": "Blueberry Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Take a bite, and let the sweet and sour blueberry jam flow on the tip of your tongue.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
 		"stars": 1,
@@ -5237,13 +6169,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_305": {
 		"name": "Cocoa Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Delicate and soft dark chocolate, crocheted with a slightly bitter and mellow dream.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
 		"stars": 1,
@@ -5264,13 +6200,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_306": {
 		"name": "Fish Oil Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolate loaded with nutrients, every health nut's first choice.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
 		"stars": 1,
@@ -5291,13 +6231,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_307": {
 		"name": "Spicy Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "A nut that has quite some kick to it.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
 		"stars": 1,
@@ -5318,13 +6262,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_308": {
 		"name": "Meat Floss Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "An icy cold shell with a smooth filling.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
 		"stars": 1,
@@ -5345,13 +6293,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_309": {
 		"name": "Roe Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Just the ingredients alone show how expensive it is!",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
 		"stars": 1,
@@ -5372,13 +6324,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	},
 	"item_activity3_cooking_310": {
 		"name": "Crab Stick Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Reviews of this chocolate have proven to be quite polarizing.",
-		"satiety": "Regenerate <ComLblGreen>{0}</> satiety.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
 		"stars": 1,
@@ -5399,6 +6355,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Use to immediately restore (**15% + 20000**) HP to the Wanderer."
 	}
 }

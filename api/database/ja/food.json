@@ -1,41 +1,40 @@
 {
 	"Task_Area2Cooking": {
 		"name": "麻酔入りドッグフード",
-		"type": "ITEM_TYPE_QUEST",
 		"description": "    飼いならされた猟犬の大好物",
-		"satiety": " - クエストアイテム。凶暴な犬を引き離すために使える",
 		"buff": "軽食",
 		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_POOR"
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
 	},
 	"Item_Cooking_0901": {
 		"name": "ごった煮シチュー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "よく分からない食べ物を大鍋でぐちゃぐちゃに煮たシチュー。火が通ると同時に栄養の大部分が失われた",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_0902": {
 		"name": "そこそこシチュー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "調理面では成功に見えるが、食材の選択がまずかったようだ…",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_1001": {
 		"name": "キノコ炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "火はしっかり通っているが、味は改善の余地あり",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1001",
 		"stars": 1,
@@ -47,13 +46,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**10% 1500**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "使用するとただちに探索者のHPを(**10%+1500**)Pt回復する"
 	},
 	"Item_Cooking_1002": {
 		"name": "海苔玉子スープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "おいしい海苔とタンパク質の栄養でお腹を満たせる便利な料理",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1002",
 		"stars": 1,
@@ -70,13 +74,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1003": {
 		"name": "焼き魚",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "港町ベンジスで大人気の安くておいしい軽食",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1003",
 		"stars": 1,
@@ -87,13 +96,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1004": {
 		"name": "雑穀パン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "麦の加工食品。栄養たっぷりで保存もきく探索者の必需品",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1004",
 		"stars": 1,
@@ -104,13 +114,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1005": {
 		"name": "オートミール",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "昔は水で5、6人分にふやかして食べる救命食だったが、豊かになった今では牛乳をかけて食べている",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1005",
 		"stars": 1,
@@ -126,13 +137,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1006": {
 		"name": "ステーキ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "焼き加減はどうする？真の猛者なら、太陽の照り付ける石の上で焼いてかぶりつくのが正解",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1006",
 		"stars": 1,
@@ -143,13 +155,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1007": {
 		"name": "海鮮スープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "一口で脳が活性化し、二口で不老長寿になると言われている。ただし味はごく普通",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1007",
 		"stars": 1,
@@ -170,13 +183,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "**Frost Attack +1%**アップ、**Frost Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_1008": {
 		"name": "クリスピーチキンバーガー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ファストフード店の定番メニュー。熱々のクリスピーチキンにしゃっきり野菜を合わせた食感の楽しめる一品",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1008",
 		"stars": 1,
@@ -198,13 +218,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1009": {
 		"name": "スパイシーバーガー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "どれだけ大人になっても、もっと食べたいと思える味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1009",
 		"stars": 1,
@@ -225,13 +250,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "**Physical Attack +1%**アップ、**Physical Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_1010": {
 		"name": "玉子チャーハン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "白ご飯を食べ飽きたのなら、卵を加えてみてはいかが？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1010",
 		"stars": 1,
@@ -247,13 +279,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1011": {
 		"name": "カニの姿蒸し",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "海鮮はそのまま味わうのが一番。さて、どこから箸をつけよう？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1011",
 		"stars": 1,
@@ -270,13 +303,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"Item_Cooking_1012": {
 		"name": "氷イチゴソーダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "つぶしたイチゴをソーダに混ぜて、冷たい氷を入れた夏の定番品",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1012",
 		"stars": 1,
@@ -297,23 +335,35 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "**Flame Resistance +10%**アップ、**Flame Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_1013": {
 		"name": "炎フレーバーソーダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "アフタヌーンティーの時間！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1013",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_RARE"
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"mods": [
+			900,
+			0.1,
+			65
+		],
+		"effect": "**10**アップ、**undefined**秒間持続"
 	},
 	"Item_Cooking_1014": {
 		"name": "雷雲ブルーベリーソーダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "このブルーベリーは、雷雨の時の黒雲のように黒みがかった紫色。服につくと洗っても中々とれないので、ご注意を",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1014",
 		"stars": 1,
@@ -334,13 +384,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "**Volt Resistance +10%**アップ、**Volt Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_1015": {
 		"name": "トマトタマゴ炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "べ、べつに卵をぐちゃぐちゃにしすぎて変になったわけじゃない！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1015",
 		"stars": 1,
@@ -357,13 +414,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1016": {
 		"name": "簡単パワーサラダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "人体に必要な栄養を考慮して作ったベーシックなサラダ。脂質を減らしたい人におすすめ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1016",
 		"stars": 1,
@@ -394,13 +456,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "**Physical Resistance +10%**アップ、**Physical Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_1017": {
 		"name": "フレッシュサラダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "特選サラダその1。シンプルな食材で満足いく味が楽しめる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1017",
 		"stars": 1,
@@ -417,13 +486,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**10% 1500**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "使用するとただちに探索者のHPを(**10%+1500**)Pt回復する"
 	},
 	"Item_Cooking_1018": {
 		"name": "キノコスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "長時間煮込んだ料理。キノコのおいしさと野菜の爽やかさが完全に融合している",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1018",
 		"stars": 1,
@@ -440,13 +514,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1019": {
 		"name": "目玉焼き",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "目玉焼きで素晴らしい一日を始めよう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1019",
 		"stars": 1,
@@ -458,13 +537,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**10% 1500**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "使用するとただちに探索者のHPを(**10%+1500**)Pt回復する"
 	},
 	"Item_Cooking_1020": {
 		"name": "蒸し巻貝",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "素材本来の味が生かされている。ネギのみじん切りを散らすと更においしくなる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1020",
 		"stars": 1,
@@ -481,13 +565,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1021": {
 		"name": "ウニの茶碗蒸し",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ウニの粒感につるりとした卵を合わせた、おいしくて心温まる料理。雪原地帯で大人気の一品",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1021",
 		"stars": 1,
@@ -504,13 +593,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"Item_Cooking_1022": {
 		"name": "ダブルベリージャムトースト",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "2種類のベリーが甘酸っぱいハーモニーを奏でている",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1022",
 		"stars": 1,
@@ -531,13 +625,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "**Volt Attack +1%**アップ、**Volt Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_1023": {
 		"name": "トマトと玉子のパスタ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ほどよい酸味と塩気のきいた簡単料理。おいしい上に低脂肪低カロリー",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1023",
 		"stars": 1,
@@ -558,13 +659,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " - **Flame Attack +1%**アップ、**Flame Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_1024": {
 		"name": "肉じゃが",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "栄養をたっぷり吸収した肉は、人参と同じくらい美味！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1024",
 		"stars": 1,
@@ -580,13 +688,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1025": {
 		"name": "フライドポテト",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ジャンクフードと呼ぶのは許さない！快楽の源と呼ぶべき！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1025",
 		"stars": 1,
@@ -602,13 +711,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1026": {
 		"name": "野菜サラダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "特選サラダその3。一緒にピクニックに行こう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1026",
 		"stars": 1,
@@ -635,13 +745,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1027": {
 		"name": "フライドチキン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "手軽な軽食。黄金色にカラリと揚がった衣が、食欲をそそる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1027",
 		"stars": 1,
@@ -658,13 +773,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1028": {
 		"name": "ハニーフルーツドリンク",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "しぼりたての落果ジュースに少量のハチミツを入れて軽くシェイクした飲み物。青臭さの中にほのかな甘みを感じる",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1028",
 		"stars": 1,
@@ -686,13 +806,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1029": {
 		"name": "フルーツケーキ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "甘いケーキに解決できない悩みはない。1つ食べてダメなら、もう1つ頼もう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1029",
 		"stars": 1,
@@ -719,13 +845,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"Item_Cooking_1030": {
 		"name": "オラムジュース",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "夏のスペシャルメニュー。波乗り気分が味わえる",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1030",
 		"stars": 1,
@@ -747,13 +878,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1031": {
 		"name": "ブロッコリー炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "脂肪分の少ないヘルシーな食べ物。でも大人にはあまり好まれない",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1031",
 		"stars": 1,
@@ -764,13 +901,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1032": {
 		"name": "ホダ貝の水煮",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "余計な調味料を足さなくても、シンプルなおいしさを味わえる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1032",
 		"stars": 1,
@@ -787,13 +925,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"Item_Cooking_1033": {
 		"name": "肉まん",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "かむとじゅわっと溢れる肉汁、それが肉まんのだいご味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1033",
 		"stars": 1,
@@ -809,13 +952,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1034": {
 		"name": "魚のキノコ炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "丁寧に調理された魚とキノコが完璧に調和した一品",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1034",
 		"stars": 1,
@@ -832,13 +976,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_1035": {
 		"name": "グリルチキン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "BBQグリルとスツールを準備すれば、どこからかお肉の焼ける匂いが漂ってくる気がしない？",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1035",
 		"stars": 1,
@@ -850,13 +999,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"Item_Cooking_1036": {
 		"name": "タンポポキノコスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "タンポポとキノコの組み合わせを試してみたことは？飲み終えると、足取りが軽くなる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/1036",
 		"stars": 1,
@@ -873,13 +1028,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"Item_Cooking_2001": {
 		"name": "魚とゆで卵の煮物",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ベンジスの家庭料理。ん～我が家の味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2001",
 		"stars": 2,
@@ -896,13 +1056,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**13% 10000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
 	},
 	"Item_Cooking_2002": {
 		"name": "赤麦パン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "アイダ星人の主食。暮らしの本質は、平凡なものにこそ現れるもの",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2002",
 		"stars": 2,
@@ -913,13 +1078,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_2003": {
 		"name": "わらび餅",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ワラビ入りのヘルシーな麦餅。子どもには不人気",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2003",
 		"stars": 2,
@@ -936,13 +1102,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"Item_Cooking_2004": {
 		"name": "チョコパン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "中には濃厚なチョコレートクリームがぎっしり！ダイエットの話はまた明日にしよう",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2004",
 		"stars": 2,
@@ -959,13 +1130,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"Item_Cooking_2005": {
 		"name": "ヒクラゲキノコスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "雪山に登るときは、熱々のヒクラゲキノコスープで心身を癒すのが一番だと思わない？",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2005",
 		"stars": 2,
@@ -982,13 +1158,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**13% 10000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
 	},
 	"Item_Cooking_2006": {
 		"name": "クロズゴケスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "今日はとりあえずこれで済ませて、明日またおいしいものを食べよう",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2006",
 		"stars": 2,
@@ -1005,13 +1187,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**13% 10000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
 	},
 	"Item_Cooking_2007": {
 		"name": "バルーンフルーツサラダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "特選サラダその2。甘酸っぱくて子どもが好きな味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2007",
 		"stars": 2,
@@ -1033,13 +1220,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"Item_Cooking_2008": {
 		"name": "ワラビスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ああ、今日も野菜だらけの1日だった",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2008",
 		"stars": 2,
@@ -1056,13 +1248,18 @@
 				"max": " 4"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"Item_Cooking_2009": {
 		"name": "ピリ辛ウナギ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "この電気ウナギ、ちゃんと火が通ってる？舌がしびれるんだけど？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2009",
 		"stars": 2,
@@ -1073,13 +1270,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "**Volt Resistance +10%**アップ、**Volt Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_2010": {
 		"name": "ウナギとキノコのスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "舌先の辛さ我慢比べ大会。刺激が欲しいなら、一気飲みをおすすめ！こっそり水を飲むのは禁止",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
 		"stars": 2,
@@ -1095,13 +1299,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "**Volt Attack +1%**アップ、**Volt Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_2011": {
 		"name": "海ガニのスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "カニのエキスがスープにたっぷり溶け込んでいる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2011",
 		"stars": 2,
@@ -1117,13 +1328,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "**Flame Resistance +10%**アップ、**Flame Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_2012": {
 		"name": "ザクロジュース",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "目の錯覚？ジュースが光って見える",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2012",
 		"stars": 2,
@@ -1145,13 +1363,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"Item_Cooking_2013": {
 		"name": "ココア牛乳",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "寝る前に飲むと、ココア味の素敵な夢が見られる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2013",
 		"stars": 2,
@@ -1172,13 +1396,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "**Frost Resistance +10%**アップ、**Frost Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_2014": {
 		"name": "ドラゴンフルーツ茶",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ケーキセットにすれば、完璧なアフタヌーンティーの完成",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2014",
 		"stars": 2,
@@ -1194,13 +1425,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": " - **Flame Attack +1%**アップ、**Flame Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_2015": {
 		"name": "フジツボ煮込み",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "煮込み料理って最高！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2015",
 		"stars": 2,
@@ -1216,13 +1454,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "**Physical Resistance +10%**アップ、**Physical Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_2016": {
 		"name": "フジツボのシーフードピザ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "シーフード倍量で！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2016",
 		"stars": 2,
@@ -1244,13 +1489,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"Item_Cooking_2017": {
 		"name": "ユキホトトギス茶",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "寒い季節、のんびり火にあたっている時に飲みたい",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2017",
 		"stars": 2,
@@ -1271,13 +1521,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "**Frost Attack +1%**アップ、**Frost Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_2018": {
 		"name": "松の実ココア",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ナッツの風味を加えたココア牛乳。お好きな方はもっとナッツを足すといい",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2018",
 		"stars": 2,
@@ -1299,13 +1556,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"Item_Cooking_2019": {
 		"name": "ナッツ茶",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "濃厚なナッツのいい香りがする",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2019",
 		"stars": 2,
@@ -1327,13 +1589,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"Item_Cooking_2020": {
 		"name": "ハッシュドポテト",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "腹持ちのいい食べ物。長旅にぴったりの携帯食",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2020",
 		"stars": 2,
@@ -1349,13 +1616,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "**Volt Attack +2%**アップ、**Volt Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_2021": {
 		"name": "スノーロータススープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "スノーロータスにはこれといった味がないため、砂糖を足して万人受けするスイーツにする",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2021",
 		"stars": 2,
@@ -1372,13 +1646,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"Item_Cooking_2022": {
 		"name": "トリュフチャーハン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "トリュフを炒めてご飯を投入し、きれいに混ぜ合わせれば出来上がり",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2022",
 		"stars": 2,
@@ -1399,13 +1679,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "**Physical Attack +2%**アップ、**Physical Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_2023": {
 		"name": "冬虫夏草麺",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ふう、養生が必要な年になった…",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2023",
 		"stars": 2,
@@ -1422,13 +1709,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"Item_Cooking_2024": {
 		"name": "キャビア寿司",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "きれいに巻けると超高級料理に見えるが、巻き方が悪いと…キャビアの混ぜご飯を食べた方がマシ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2024",
 		"stars": 2,
@@ -1450,13 +1742,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"Item_Cooking_2025": {
 		"name": "キャビアポテトボール",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ふわふわのポテトボールと高級キャビアソースの組み合わせ。おいしすぎてついつい手が伸びる逸品",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2025",
 		"stars": 2,
@@ -1472,13 +1769,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "**Physical Attack +1%**アップ、**Physical Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_2026": {
 		"name": "ステーキ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ミディアムで！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2026",
 		"stars": 2,
@@ -1489,13 +1793,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "**Volt Resistance +15%**アップ、**Volt Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_2027": {
 		"name": "キノコソースステーキ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ステーキがいっぱい空を飛んでる夢を見たような…",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2027",
 		"stars": 2,
@@ -1511,13 +1822,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " - **Flame Attack +2%**アップ、**Flame Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_2028": {
 		"name": "豚バラの煮込み",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "古くから愛される定番グルメ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2028",
 		"stars": 2,
@@ -1528,13 +1846,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "**Frost Resistance +15%**アップ、**Frost Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_2029": {
 		"name": "獣肉サンドイッチ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "少し時間をかけて、自分のためにおいしい朝食を作ってみない？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2029",
 		"stars": 2,
@@ -1555,13 +1880,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "**Flame Resistance +15%**アップ、**Flame Resistance +undefined%**秒間持続"
 	},
 	"Item_Cooking_2030": {
 		"name": "サーモンの刺身",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "素材本来のうまさが楽しめる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2030",
 		"stars": 2,
@@ -1572,13 +1904,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "**Frost Attack +2%**アップ、**Frost Attack +undefined%**秒間持続"
 	},
 	"Item_Cooking_2031": {
 		"name": "カタツムリドリア",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ゲテモノ料理っぽく見えるが、超美味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 2,
@@ -1594,13 +1933,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "**Physical Resistance +15%**アップ、**Physical Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_3001": {
 		"name": "トウガラシ炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "からーーい辛い辛い辛いっ！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3001",
 		"stars": 1,
@@ -1616,13 +1962,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "**Frost Resistance +10%**アップ、**Frost Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_3002": {
 		"name": "スナネギの炭火焼き",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "探索者のおいしいバーベキュー店、オープン！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 1,
@@ -1633,13 +1986,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3003": {
 		"name": "アロエヨーグルト",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "甘酸っぱいヨーグルトは誰だって好きだよね？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3003",
 		"stars": 2,
@@ -1661,13 +2015,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"item_Cooking_3004": {
 		"name": "ローズティー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ローズティーを淹れると、乱れた心も不思議と落ち着いてくる",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3004",
 		"stars": 2,
@@ -1684,24 +2043,36 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"item_Cooking_3005": {
 		"name": "サンシーベリーサイダー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ハチミツをたっぷり入れて、ありきたりなシーベリージュースに風味を添えている",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
 		"quality": "ITEM_QUALITY_RARE",
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3006": {
 		"name": "ビーツスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "温かいビーツのスープ。寒い日なら鍋一杯でも飲み干したい",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3006",
 		"stars": 1,
@@ -1713,13 +2084,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"item_Cooking_3007": {
 		"name": "メロンサラダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "冷やすともっとおいしいが、冷やしすぎには注意",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3007",
 		"stars": 1,
@@ -1735,13 +2111,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "**Flame Resistance +10%**アップ、**Flame Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_3008": {
 		"name": "サンシーベリーサイダー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ハチミツをたっぷり入れて、ありきたりなシーベリージュースに風味を添えている",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
@@ -1763,13 +2146,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3009": {
 		"name": "カボチャ粥",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "お腹が一杯になる主食。一杯飲めば他に何もいらないだろう",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3009",
 		"stars": 1,
@@ -1786,13 +2175,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3010": {
 		"name": "クリスピー豆腐",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "こんがりサクサクに揚がった軽食。ソースが服に付かないように注意！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3010",
 		"stars": 1,
@@ -1803,13 +2197,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3011": {
 		"name": "大根スープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "栄養たっぷりのスープ。おいしい、おかわり！",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3011",
 		"stars": 2,
@@ -1821,13 +2216,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"item_Cooking_3012": {
 		"name": "塩胡椒コーン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "簡単に作れる軽食。夜食にぴったり",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3012",
 		"stars": 1,
@@ -1838,13 +2239,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3013": {
 		"name": "サボテンSPドリンク",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "爽やかなサボテンSPドリンク、暑気払いに必須",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3013",
 		"stars": 1,
@@ -1856,13 +2258,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**10% 1500**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "使用するとただちに探索者のHPを(**10%+1500**)Pt回復する"
 	},
 	"item_Cooking_3014": {
 		"name": "尻尾の炭火焼き",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "トウガラシ、クミン、コショウたっぷり、食べるのは少し待ってから",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3014",
 		"stars": 1,
@@ -1874,13 +2281,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"item_Cooking_3015": {
 		"name": "BBQスペアリブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "超ご飯が進む一品！右に出るものなし！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3015",
 		"stars": 1,
@@ -1897,13 +2309,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3016": {
 		"name": "豆乳ココア",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "普通の豆乳に飽きたなら、別の味はどう？",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3016",
 		"stars": 1,
@@ -1925,13 +2342,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3017": {
 		"name": "ビーツとワラビの和え物",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "煮た食材を掬い上げ、ソースを入れて混ぜれば完成だ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3017",
 		"stars": 1,
@@ -1948,13 +2371,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3018": {
 		"name": "砂漠サラダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "玉サボテンとシーベリーを小さく切ってドレッシングと和えるだけ。冷やせばもっとおいしくなるよ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3018",
 		"stars": 1,
@@ -1976,13 +2404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3019": {
 		"name": "ローズパン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "優しい薔薇の香りがするパンを食べて、心地よい午後を過ごそう",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3019",
 		"stars": 2,
@@ -1998,13 +2431,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "**Volt Resistance +15%**アップ、**Volt Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_3020": {
 		"name": "メロンパン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "メロン餡がぎっしり詰まった丸いパン。朝ごはんはこれ1個で十分",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3020",
 		"stars": 1,
@@ -2025,13 +2465,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "**Frost Attack +1%**アップ、**Frost Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_3021": {
 		"name": "雑穀粥",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "様々な雑穀を入れて炊いたお粥。たまにはあっさりしたものを",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3021",
 		"stars": 1,
@@ -2053,13 +2500,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3022": {
 		"name": "シーフードコーンパイ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "海鮮てんこ盛りのトルティーヤ。これじゃ元が取れないよ！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3022",
 		"stars": 1,
@@ -2081,13 +2534,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3023": {
 		"name": "蒸しカボチャ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "やわらかくて甘い蒸しカボチャ。ダイエット食に最適。",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3023",
 		"stars": 1,
@@ -2104,13 +2562,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "HPが**15% 20000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_Cooking_3024": {
 		"name": "ほっこりラーメン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ツルツルの麺に温かい鶏ガラスープを、誕生日の長寿麺だと思ってお願いしよう",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3024",
 		"stars": 2,
@@ -2131,13 +2594,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "**Physical Attack +2%**アップ、**Physical Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_3025": {
 		"name": "ピリ辛叉焼麺",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "私の腕は来々亭にも負けないよ～",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3025",
 		"stars": 2,
@@ -2158,13 +2628,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " - **Flame Attack +2%**アップ、**Flame Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_3026": {
 		"name": "激辛黄金炒飯",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "水を飲んで、ご飯をかき込もう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3026",
 		"stars": 1,
@@ -2190,13 +2667,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " - **Flame Attack +1%**アップ、**Flame Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_3027": {
 		"name": "肉グリル盛合わせ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ここは肉愛好家の天国なの！？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3027",
 		"stars": 2,
@@ -2217,13 +2701,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "**Flame Resistance +15%**アップ、**Flame Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_3028": {
 		"name": "スペアリブと大根のスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "一日かけてじっくり煮込んだスペアリブと大根のスープ。実はね、大根の方がスペアリブよりうまいんだよ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3028",
 		"stars": 2,
@@ -2239,13 +2730,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "**Physical Resistance +15%**アップ、**Physical Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_3029": {
 		"name": "コーンポタージュ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ミルクの香り漂う濃厚な甘いスープ。パンと一緒にいかがでしょう？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3029",
 		"stars": 1,
@@ -2267,13 +2765,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**12% 3300**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
 	},
 	"item_Cooking_3030": {
 		"name": "クリスピーアブラウリ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "唐揚げ粉をまぶして2分揚げれば完成！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3030",
 		"stars": 2,
@@ -2285,13 +2788,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"item_Cooking_3031": {
 		"name": "焼きガキ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "レモン汁をかけて生で食べるか、それとも焼くか、迷う",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3031",
 		"stars": 2,
@@ -2303,13 +2811,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"item_Cooking_3032": {
 		"name": "ドクダミの和え物",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "一度食べたら、ドクダミの味にやみつき！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3032",
 		"stars": 2,
@@ -2321,13 +2834,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"item_Cooking_3033": {
 		"name": "ピリ辛アブラウリ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "食欲を増進させる冷たい前菜。主食として食べてもおいしい",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3033",
 		"stars": 2,
@@ -2344,13 +2862,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"item_Cooking_3034": {
 		"name": "カキと豆腐のスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "魚嫌いな子どもが多いと聞き、特別にこのスープを作ってみました",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3034",
 		"stars": 2,
@@ -2367,13 +2891,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"item_Cooking_3035": {
 		"name": "ドクダミの卵炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "卵炒めは何にでも合う！その中で一番好きなのが…",
-		"satiety": "スタミナが<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/3035",
 		"stars": 2,
@@ -2390,13 +2920,19 @@
 				"max": " 3"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"item_Cooking_4001": {
 		"name": "竜の星めぐり",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "竜亀の肉とヒトデの卵を煮ただけなのだが、売れるように名前を変えている",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4001",
 		"stars": 2,
@@ -2417,13 +2953,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4002": {
 		"name": "海の茶碗蒸し",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "海で採れる竜亀の卵は海の味がする",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4002",
 		"stars": 2,
@@ -2440,13 +2977,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "HPが**20% 60000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
 	},
 	"item_Cooking_4003": {
 		"name": "フグのサラダ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "フグのサラダ。おいしいのでお試しあれ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4003",
 		"stars": 2,
@@ -2462,13 +3004,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4004": {
 		"name": "新鮮なフグ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "フグ料理の一種。高価なフグを店では食材として全身無駄なく利用している",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4004",
 		"stars": 2,
@@ -2489,13 +3032,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "**Frost Attack +4%**アップ、**Frost Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_4005": {
 		"name": "フグのあぶり焼き",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "柔らかくてジューシー、とろけるような口当たり…と店にはこう書いてある",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4005",
 		"stars": 2,
@@ -2512,13 +3062,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"item_Cooking_4006": {
 		"name": "白ハス刺し",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "幾重にも重なるハスの花びらのように美しいフグの刺身",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4006",
 		"stars": 2,
@@ -2534,13 +3089,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "**Frost Attack +2%**アップ、**Frost Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_4007": {
 		"name": "タコの刺身",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "プリプリと歯ごたえがあるのに軟らかい。おすすめの一品",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4007",
 		"stars": 2,
@@ -2561,13 +3123,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4008": {
 		"name": "たこ焼き",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "昔ながらのおいしいたこ焼き。タコの大きさがおいしさの決め手",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4008",
 		"stars": 2,
@@ -2593,13 +3156,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "**Volt Resistance +15%**アップ、**Volt Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_4009": {
 		"name": "鉄板焼き",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "子どもたちに大人気の料理。しかし、子どものお小遣いでは到底買えない",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4009",
 		"stars": 2,
@@ -2616,13 +3186,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**13% 10000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
 	},
 	"item_Cooking_4010": {
 		"name": "魚の塩蒸し",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "海水魚には塩気があるので、そのまま蒸すだけでおいしい",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4010",
 		"stars": 2,
@@ -2639,13 +3214,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**13% 10000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
 	},
 	"item_Cooking_4011": {
 		"name": "海魚のソテー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "手の込んだ料理なので、味もおいしいはず",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4011",
 		"stars": 2,
@@ -2667,13 +3247,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"item_Cooking_4012": {
 		"name": "特上刺身",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "料理人の腕が試される料理。食べる時はワサビのつけすぎに注意",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4012",
 		"stars": 2,
@@ -2699,13 +3284,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "**Frost Resistance +15%**アップ、**Frost Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_4013": {
 		"name": "スターゲイザー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "魚は生きていた時、星空を見上げただろうか？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4013",
 		"stars": 2,
@@ -2726,13 +3318,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4014": {
 		"name": "シーフードシチュー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "獣肉と一緒に煮込めば、貴重な食材も少量で済む",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4014",
 		"stars": 2,
@@ -2753,13 +3346,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"CleanBuff"
 		]
 	},
 	"item_Cooking_4015": {
 		"name": "イソギンチャクのグリル",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "トウガラシを入れすぎるとむせちゃうよ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4015",
 		"stars": 2,
@@ -2780,13 +3374,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": " - **Flame Attack +2%**アップ、**Flame Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_4016": {
 		"name": "イソギンチャクフラワー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "茶碗蒸しにイソギンチャクをいれたら、食感がよくなる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4016",
 		"stars": 2,
@@ -2803,13 +3404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**13% 10000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
 	},
 	"item_Cooking_4017": {
 		"name": "Panjang Umur",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "竜亀は縁起がいいので、店は凝った名前を付けたがる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4017",
 		"stars": 2,
@@ -2825,13 +3431,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			600,
+			0.4
+		],
+		"effect": "+**40**、**undefined**秒間持続"
 	},
 	"item_Cooking_4018": {
 		"name": "ハッピーエッグ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ゆでた竜亀の卵。しかし、人工着色料が使われている。よく売れる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4018",
 		"stars": 2,
@@ -2852,13 +3464,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "**Physical Attack +4%**アップ、**Physical Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_4019": {
 		"name": "ピンクエッグ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ゆでた竜亀の卵。しかし、人工着色料が使われている。よく売れる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4019",
 		"stars": 2,
@@ -2879,13 +3498,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4020": {
 		"name": "レッドエッグ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ゆでた竜亀の卵。しかし、人工着色料が使われている。よく売れる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4020",
 		"stars": 2,
@@ -2906,13 +3526,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			900,
+			0.5
+		],
+		"effect": "+**50**、**undefined**秒間持続"
 	},
 	"item_Cooking_4021": {
 		"name": "クラゲ和え",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "コリコリしておいしい。食べ始めたら止まらない",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4021",
 		"stars": 2,
@@ -2929,13 +3555,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**13% 10000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
 	},
 	"item_Cooking_4022": {
 		"name": "キノコクラゲ炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "フクロタケとクラゲの香ばしさでご飯が進む。あっという間に完食しちゃいそうだ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4022",
 		"stars": 2,
@@ -2951,13 +3582,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4023": {
 		"name": "トロトロイカ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "とてもジューシーでプリプリのイカの子ども。正しい食べ方を知らない人は、人前で食べない方がいいだろう",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4023",
 		"stars": 2,
@@ -2978,13 +3610,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4024": {
 		"name": "イカスミ和え",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "香り豊かでおいしい料理。ほかの色にすれば人気が出るはず",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4024",
 		"stars": 2,
@@ -3005,13 +3638,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "**Volt Attack +2%**アップ、**Volt Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_4025": {
 		"name": "魚の塩がゆ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "体に優しい魚のおかゆ。食欲がない人におすすめ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4025",
 		"stars": 2,
@@ -3027,13 +3667,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4026": {
 		"name": "魚の干物",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "人間の口には合わないかもしれないが、猫たちには大好評",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4026",
 		"stars": 2,
@@ -3059,13 +3700,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "**Flame Resistance +15%**アップ、**Flame Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_4027": {
 		"name": "豪快ロブスター丼",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ロブスターをたっぷり使った豪快な料理。海辺でしか味わえないぜいたくな味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4027",
 		"stars": 2,
@@ -3086,13 +3734,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "**Physical Attack +2%**アップ、**Physical Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_4028": {
 		"name": "スパイシーザリガニ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "大きなロブスターを小さく切ったらザリガニになる…よね？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4028",
 		"stars": 2,
@@ -3108,13 +3763,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4029": {
 		"name": "カニ入り茶碗蒸し",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "おいしいカニ肉入り茶碗蒸し。中に入っているのは本物のカニか、それともカニカマか？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4029",
 		"stars": 2,
@@ -3135,13 +3791,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4030": {
 		"name": "豪華カニチャーハン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "みんなが大好きなカニ入りチャーハン。カニをぜいたくに使用しただけではなく…",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4030",
 		"stars": 2,
@@ -3162,13 +3819,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4031": {
 		"name": "タラバガニ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "カニはどんなに大きくても食べられてしまう運命",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4031",
 		"stars": 2,
@@ -3185,13 +3843,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"item_Cooking_4032": {
 		"name": "もちとカニの炒めもの",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "香り豊かなカニにしっとりもちもちの餅を加えたもの。不思議な味のハーモニー",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4032",
 		"stars": 2,
@@ -3212,13 +3875,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "**Physical Resistance +15%**アップ、**Physical Resistance +undefined%**秒間持続"
 	},
 	"item_Cooking_4033": {
 		"name": "カニ入り黄金麺",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "複雑な手順をいくつも重ねて作られた黄金の麺料理。価格も超ド級",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4033",
 		"stars": 2,
@@ -3234,13 +3904,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4034": {
 		"name": "シーフードのニンニク蒸し",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ガーリックの強い香りがエビやカニとマッチ。定番のおいしさの料理",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4034",
 		"stars": 2,
@@ -3261,13 +3932,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": " - **Flame Attack +4%**アップ、**Flame Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_4035": {
 		"name": "シーフード春雨炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "香り豊かでさっぱりした味わいの料理",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4035",
 		"stars": 2,
@@ -3293,13 +3971,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "**Volt Attack +4%**アップ、**Volt Attack +undefined%**秒間持続"
 	},
 	"item_Cooking_4036": {
 		"name": "ロブスターのグラタン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "身に歯ごたえがあり、チーズの香りも豊か",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4036",
 		"stars": 2,
@@ -3316,13 +4001,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "HPが**16% 34000**Pt回復"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
 	},
 	"item_Cooking_4037": {
 		"name": "ロブスターとイカスミのパスタ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "天然のイカスミで和えた創作料理。おしゃれで美味しい",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4037",
 		"stars": 2,
@@ -3343,13 +4033,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4038": {
 		"name": "マキガイ炒め",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ピリ辛で香ばしい、味わい豊かな夜のグルメ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/4038",
 		"stars": 2,
@@ -3365,13 +4056,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_5001": {
 		"name": "肉と筍のコトコト煮",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "赤身と脂身がほどよく混じった肉と竹の子を数時間コトコト煮た後、唐辛子で味付け。ご飯が進む一品",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/5001",
 		"stars": 2,
@@ -3392,13 +4084,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "**Volt Attack +4% Volt Resistance +1800**アップ、**Volt Attack +undefined%Volt Resistance +%**秒間持続"
 	},
 	"item_Cooking_5007": {
 		"name": "Salad Lobak",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "青火珠と秋海棠の和え物",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/5007",
 		"stars": 2,
@@ -3414,13 +4114,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "**Flame Attack +4% Flame Resistance +1800**アップ、**Flame Attack +undefined%Flame Resistance +%**秒間持続"
 	},
 	"item_activity_cooking_001": {
 		"name": "子豚のロースト",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "優れたシェフの手にかかれば、子豚のローストでも舌の肥えた美食家を満足させられる\r\n\r\nアイダカフェイベント期間中、【アポフィス】【ローズクイーン】を撃破すると暗号ボックスで獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
 		"stars": 1,
@@ -3446,13 +4154,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_002": {
 		"name": "七面鳥のリンゴあんかけ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "アストラ島の郷土料理。後に旅商人たちが各地に広め、大陸全土で大人気となった。\r\n\r\nアイダカフェイベント期間中、【アポフィス】【ローズクイーン】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる。",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
 		"stars": 1,
@@ -3478,13 +4185,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_003": {
 		"name": "グリル野菜とローストチキン",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "香ばしいローストチキンの脂っこさがさっぱりした野菜で中和される。これ1皿で大満足\r\n\r\nアイダカフェイベント期間中、【アポフィス】【ローズクイーン】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
 		"stars": 1,
@@ -3505,13 +4211,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_004": {
 		"name": "サーモンのソテー",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "サーモンの柔らかさにハチミツの甘さが加わり、口の中で美味しさが無限に広がる\r\n\r\nアイダカフェイベント期間中、【ロべラグ】【セベク】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
 		"stars": 1,
@@ -3532,13 +4237,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_005": {
 		"name": "ゴマ団子",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ベンジス港の伝統グルメ。老人や子どもから愛されている\r\n\r\nアイダカフェイベント期間中、【ロべラグ】【セベク】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
 		"stars": 1,
@@ -3559,13 +4263,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_006": {
 		"name": "七面鳥とビーツのスープ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "香りが良くて温かいターキーのスープ。1日の疲れやストレスが吹き飛ぶ\r\n\r\nアイダカフェイベント期間中、【ロべラグ】【セベク】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
 		"stars": 1,
@@ -3586,13 +4289,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_007": {
 		"name": "ジンジャーパイ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "お祝い事の時に人気の美味しいお菓子。砂糖とハチミツの甘さに麦の香りがベストマッチ\r\n\r\nアイダカフェイベント期間中、【ロべラグ】【アポフィス】【急凍メカ】【セベク】【ローズクイーン】【バルバロッサ】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
 		"stars": 1,
@@ -3613,13 +4315,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_008": {
 		"name": "アップルケーキ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "しっとりふわふわフルーツケーキ。ひと口食べれば大満足\r\n\r\nアイダカフェイベント期間中、【急凍メカ】【バルバロッサ】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
 		"stars": 1,
@@ -3645,13 +4346,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_009": {
 		"name": "フルーツポンチ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "豊かなフルーツの香りに、うっとりするような彩りを添えて\r\n\r\nアイダカフェイベント期間中、【急凍メカ】【バルバロッサ】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
 		"stars": 1,
@@ -3677,13 +4377,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_010": {
 		"name": "アップルジュース",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "甘酸っぱさがどんな年代の方にも人気。みんな大好きな夏のドリンク\r\n\r\nアイダカフェイベント期間中、【急凍メカ】【バルバロッサ】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
 		"stars": 1,
@@ -3704,13 +4403,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity2_cooking_101": {
 		"name": "ウキウキハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "バルーンフルーツに乗って、チョコレートの世界に旅立とう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
 		"stars": 1,
@@ -3731,13 +4429,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_102": {
 		"name": "松の実ハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "松の実をたっぷりトッピングしたチョコレートは贈り物にぴったり",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
 		"stars": 1,
@@ -3758,13 +4460,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_103": {
 		"name": "イチゴハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "イチゴの甘さとチョコレートの香ばしさが融合する、これぞ初恋の甘い味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
 		"stars": 1,
@@ -3785,13 +4491,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_104": {
 		"name": "ヘーゼルハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "チョコレートに包まれているのは、期待に満ちた恋心",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
 		"stars": 1,
@@ -3812,13 +4522,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_105": {
 		"name": "トリュフハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "素材選びから気持ちが込められている",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
 		"stars": 1,
@@ -3839,13 +4553,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_106": {
 		"name": "ブルーベリーハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "一口噛めば、甘酸っぱいブルーベリージャムが口の中に広がる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
 		"stars": 1,
@@ -3866,13 +4584,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_107": {
 		"name": "ハチミツハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "チョコレートとハチミツの大合奏",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
 		"stars": 1,
@@ -3893,13 +4615,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_108": {
 		"name": "落果ハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "私の一番大切なものをあげる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
 		"stars": 1,
@@ -3920,13 +4646,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_109": {
 		"name": "カカオハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
 		"stars": 1,
@@ -3942,13 +4672,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_110": {
 		"name": "ミルクハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ミルクとチョコレートは運命の組み合わせだ！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
 		"stars": 1,
@@ -3969,13 +4703,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_201": {
 		"name": "ウキウキトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "バルーンフルーツに乗って、チョコレートの世界に旅立とう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
 		"stars": 1,
@@ -3996,13 +4734,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_202": {
 		"name": "松の実トリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "松の実をたっぷりトッピングしたチョコレートは贈り物にぴったり",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
 		"stars": 1,
@@ -4023,13 +4765,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_203": {
 		"name": "イチゴトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "イチゴの甘さとチョコレートの香ばしさが融合する、これぞ初恋の甘い味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
 		"stars": 1,
@@ -4050,13 +4796,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_204": {
 		"name": "ヘーゼルトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "チョコレートに包まれているのは、期待に満ちた恋心",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
 		"stars": 1,
@@ -4077,13 +4827,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_205": {
 		"name": "トリュフ&トリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "素材選びから気持ちが込められている",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
 		"stars": 1,
@@ -4104,13 +4858,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_206": {
 		"name": "ブルーベリートリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "一口噛めば、甘酸っぱいブルーベリージャムが口の中に広がる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
 		"stars": 1,
@@ -4131,13 +4889,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_207": {
 		"name": "ハチミツトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "チョコレートとハチミツの大合奏",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
 		"stars": 1,
@@ -4158,13 +4920,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_208": {
 		"name": "落果トリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "私の一番大切なものをあげる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
 		"stars": 1,
@@ -4185,13 +4951,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_209": {
 		"name": "カカオトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
 		"stars": 1,
@@ -4207,13 +4977,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_210": {
 		"name": "ミルクトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ミルクとチョコレートは運命の組み合わせだ！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
 		"stars": 1,
@@ -4234,13 +5008,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_301": {
 		"name": "ウキウキキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "バルーンフルーツに乗って、チョコレートの世界に旅立とう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
 		"stars": 1,
@@ -4261,13 +5039,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_302": {
 		"name": "松の実キューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "松の実をたっぷりトッピングしたチョコレートは贈り物にぴったり",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
 		"stars": 1,
@@ -4288,13 +5070,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_303": {
 		"name": "イチゴキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "イチゴの甘さとチョコレートの香ばしさが融合する、これぞ初恋の甘い味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
 		"stars": 1,
@@ -4315,13 +5101,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_304": {
 		"name": "ヘーゼルキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "チョコレートに包まれているのは、期待に満ちた恋心",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
 		"stars": 1,
@@ -4342,13 +5132,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_305": {
 		"name": "トリュフキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "素材選びから気持ちが込められている",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
 		"stars": 1,
@@ -4369,13 +5163,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_306": {
 		"name": "ブルーベリーキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "一口噛めば、甘酸っぱいブルーベリージャムが口の中に広がる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
 		"stars": 1,
@@ -4396,13 +5194,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_307": {
 		"name": "ハチミツキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "チョコレートとハチミツの大合奏",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
 		"stars": 1,
@@ -4423,13 +5225,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_308": {
 		"name": "落果キューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "私の一番大切なものをあげる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
 		"stars": 1,
@@ -4450,13 +5256,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_309": {
 		"name": "カカオキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
 		"stars": 1,
@@ -4472,13 +5282,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_310": {
 		"name": "ミルクキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ミルクとチョコレートは運命の組み合わせだ！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
 		"stars": 1,
@@ -4499,93 +5313,119 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_001": {
 		"name": "ケートス土産",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "雷元素がテーマのチョコレートギフトボックス。ハンナの自信作\r\n博士いわく、おいしいものは大事な人と分け合おう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_002": {
 		"name": "ケートス土産",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "物理元素がテーマのチョコレートギフトボックス。ハンナの自信作\n博士いわく、おいしいものは大事な人と分け合おう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_003": {
 		"name": "ケートス土産",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "炎元素がテーマのチョコレートギフトボックス。ハンナの自信作\n博士いわく、おいしいものは大事な人と分け合おう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_004": {
 		"name": "ケートス土産",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "氷元素がテーマのチョコレートギフトボックス。ハンナの自信作\n博士いわく、おいしいものは大事な人と分け合おう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity2_cooking_005": {
 		"name": "パリパリ餅",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "アイダ星で大人気の軽食の一つ。かつてハイエナとラヴェンジャーの構成員がこの餅を巡って大激突したらしい",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity2_cooking_006": {
 		"name": "チョコレートギフトボックス",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "おいしいものは大事な人と分け合おう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"HealPotion_01": {
 		"name": "春餅",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "新春市場で一番人気の軽食\r\nしかし、見た目からはどんな味か想像もつかない…",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.22,
+			75000
+		],
+		"effect": "使用するとただちに探索者のHPを(**22%+75000**)Pt回復する"
 	},
 	"BuffPotion_01": {
 		"name": "松風",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "新春市場のおすすめ飲み物\r\n一口飲めば、松林の中で春風が頬を柔らかく撫でるような気分になるという",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity3_cooking_101": {
 		"name": "定番のキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "濃厚なチョコレートの香り、我慢できる？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
 		"stars": 1,
@@ -4611,13 +5451,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_102": {
 		"name": "ナッツキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "様々なナッツを使ったチョコ、予想外のおいしさ！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
 		"stars": 1,
@@ -4638,13 +5482,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_103": {
 		"name": "ヘーゼルキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "濃厚で口溶けのよいチョコレート。ヘーゼルナッツの香りが味に奥行きを足している",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
 		"stars": 1,
@@ -4665,13 +5513,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_104": {
 		"name": "ドラゴンキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "食べる時、種を気にしなくてもいい",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
 		"stars": 1,
@@ -4692,13 +5544,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_105": {
 		"name": "カカオキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
 		"stars": 1,
@@ -4719,13 +5575,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_106": {
 		"name": "テールキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "最先端のチョコレートにチャレンジしてみない？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
 		"stars": 1,
@@ -4746,13 +5606,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_107": {
 		"name": "でんぶキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "チョコレートと肉でんぶの組み合わせは暗黒料理界の大物ルーキーだ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
 		"stars": 1,
@@ -4773,13 +5637,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_108": {
 		"name": "きのこキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "チョコのフィリングはいつも美味しくて驚き",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
 		"stars": 1,
@@ -4800,13 +5668,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_109": {
 		"name": "塩漬け卵キューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "濃厚な卵の黄身の味は格別",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
 		"stars": 1,
@@ -4827,13 +5699,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_110": {
 		"name": "かにキューブ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "濃厚な海鮮の香りがベースのチョコ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
 		"stars": 1,
@@ -4854,13 +5730,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_201": {
 		"name": "コーヒートリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "あなたと甘苦を共にしたい",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
 		"stars": 1,
@@ -4886,13 +5766,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_202": {
 		"name": "大人のトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "やさしいリキュールの香りがまろやかな旋律を奏でる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
 		"stars": 1,
@@ -4913,13 +5797,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_203": {
 		"name": "花のトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "バレンタインと言えば薔薇、一口噛むと花の香りがふわっと広がる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
 		"stars": 1,
@@ -4940,13 +5828,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_204": {
 		"name": "イチゴトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "イチゴの甘さとチョコレートの香ばしさが融合する、これぞ初恋の甘い味",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
 		"stars": 1,
@@ -4967,13 +5859,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_205": {
 		"name": "ダークトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
 		"stars": 1,
@@ -4994,13 +5890,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_206": {
 		"name": "ウキウキトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "バルーンフルーツに乗って、チョコレートの世界に旅立とう！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
 		"stars": 1,
@@ -5021,13 +5921,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_207": {
 		"name": "でんぶトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "滑らかなチョコレートとふわふわのフィリング、2種類の食感が楽しめる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
 		"stars": 1,
@@ -5048,13 +5952,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_208": {
 		"name": "海塩トリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "甘いチョコはもう飽きた？それなら塩味はどう？",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
 		"stars": 1,
@@ -5075,13 +5983,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_209": {
 		"name": "トリュフ&トリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "素材選びから気持ちが込められている",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
 		"stars": 1,
@@ -5102,13 +6014,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_210": {
 		"name": "かにトリュフ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ワタリガニはこんな作り方もできる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
 		"stars": 1,
@@ -5129,13 +6045,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_301": {
 		"name": "ミントハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ひんやりすっきり、爽やかさ無限",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
 		"stars": 1,
@@ -5156,13 +6076,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_302": {
 		"name": "クリームハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "甘さで言えばこれが一番！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
 		"stars": 1,
@@ -5183,13 +6107,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_303": {
 		"name": "落果ハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "私の一番大切なものをあげる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
 		"stars": 1,
@@ -5210,13 +6138,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_304": {
 		"name": "ブルーベリーハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "一口噛めば、甘酸っぱいブルーベリージャムが口の中に広がる",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
 		"stars": 1,
@@ -5237,13 +6169,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_305": {
 		"name": "カカオハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
 		"stars": 1,
@@ -5264,13 +6200,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_306": {
 		"name": "魚油ハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "EPAとDHAが豊富、ヘルシー志向の人におすすめ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
 		"stars": 1,
@@ -5291,13 +6231,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_307": {
 		"name": "激辛ハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "スパイシーなナッツが入っている",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
 		"stars": 1,
@@ -5318,13 +6262,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_308": {
 		"name": "でんぶハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ひんやりしたコーティングとふわふわのフィリング",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
 		"stars": 1,
@@ -5345,13 +6293,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_309": {
 		"name": "イクラハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "素材からして旨くないはずがない！",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
 		"stars": 1,
@@ -5372,13 +6324,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	},
 	"item_activity3_cooking_310": {
 		"name": "かにハート",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "好き嫌いの評価が真っ二つに割れているチョコ",
-		"satiety": "満腹度が<ComLblGreen>{0}</>Pt回復",
 		"buff": "料理",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
 		"stars": 1,
@@ -5399,6 +6355,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
 	}
 }

@@ -1,41 +1,40 @@
 {
 	"Task_Area2Cooking": {
 		"name": "อาหารสุนัข",
-		"type": "ITEM_TYPE_QUEST",
 		"description": "อาหารโปรดของหมาล่าเนื้อที่ผ่านการฝึก",
-		"satiety": "ไอเทมสำหรับล่อความสนใจหมาล่าเนื้อ",
 		"buff": "ขนมทานเล่น",
 		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_POOR"
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
 	},
 	"Item_Cooking_0901": {
 		"name": "สตูว์รสแย่",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มีส่วนผสมที่ไม่รู้จักผสมกันในหม้อใหญ่ ระหว่างปรุงสารอาหารก็หายไปด้วย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_0902": {
 		"name": "สตูว์ชั้นดี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มันดูเหมือนจะอร่อย แต่สุดท้ายตัวเลือกส่วนผสมก็ทำให้อาหารจานนี้หมดอร่อย...",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_1001": {
 		"name": "เห็ดทอด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นอกจากรสชาติแล้ว อย่างน้อยมันก็ปรุงสุกและไม่ดิบ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1001",
 		"stars": 1,
@@ -47,13 +46,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **10% 1500** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**10% + 1500**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1002": {
 		"name": "ซุปไข่ใส่สาหร่าย",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มีสาหร่ายแดงสดและโปรตีนสูง กินแล้วอิ่มท้องดี",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1002",
 		"stars": 1,
@@ -70,13 +74,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1003": {
 		"name": "ปลาทอดกรอบ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "หนึ่งในอาหารที่เป็นที่นิยมในเมืองท่าของเบนเจส ถูกและอร่อย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1003",
 		"stars": 1,
@@ -87,13 +96,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1004": {
 		"name": "ขนมปังธัญพืช",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ทำจากเมล็ดแปรรูป มีคุณค่าทางโภชนาการและเก็บรักษาง่าย นักพเนจรทุกคนควรพกติดตัว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1004",
 		"stars": 1,
@@ -104,13 +114,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1005": {
 		"name": "ซีเรียลมื้อเช้า",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ครั้งหนึ่งเคยเป็นอาหารช่วยชีวิตที่ช่วยให้\r\nคนห้าถึงหกคนอิ่มท้อง เนื่องด้วยสภาพการณ์\r\nที่ดีขึ้น ผู้คนจึงใส่นมแทนน้ำ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1005",
 		"stars": 1,
@@ -126,13 +137,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1006": {
 		"name": "เนื้อทอด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "คุณอยากให้มันสุกแค่ไหน? ลูกผู้ชายตัวจริงจะกินหลังจากย่างบนหินไม่กี่วินาทีภายใต้แดดแรงๆ ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1006",
 		"stars": 1,
@@ -143,13 +155,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1007": {
 		"name": "ซุปซีฟู้ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ว่ากันว่ากินเพียงหนึ่งคำก็ทำให้คุณกระชุ่มกระชวย สองคำจะทำให้คุณสุขภาพดี แต่รสชาติก็งั้นๆ ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1007",
 		"stars": 1,
@@ -170,13 +183,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "เพิ่ม **Frost Attack +1%** เป็นเวลา **Frost Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_1008": {
 		"name": "เบอร์เกอร์ไก่กรอบ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เบอร์เกอร์ไก่ที่เห็นได้ตามร้านฟาสต์ฟูด คงไม่มีอะไรดีไปกว่าคอมโบไก่กรอบร้อนๆ และผักกาดหอมกรอบ ๆ ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1008",
 		"stars": 1,
@@ -198,13 +218,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1009": {
 		"name": "เบอร์เกอร์สไปซี่",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไม่ว่าจะนานเท่าไหร่ มันก็ทำให้คุณหิวอยู่เสมอ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1009",
 		"stars": 1,
@@ -225,13 +250,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "เพิ่ม **Physical Attack +1%** เป็นเวลา **Physical Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_1010": {
 		"name": "ข้าวผัดไข่",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นี่คือสูตรดัดแปลงที่คุณต้องการ เมื่อคุณเบื่อกับการกินข้าวขาว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1010",
 		"stars": 1,
@@ -247,13 +279,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1011": {
 		"name": "ปูนึ่ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารทะเลจะอร่อยที่สุดถ้าเสิร์ฟแบบสดๆ ปัญหาคือ จะเริ่มกินตรงไหนก่อนดี?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1011",
 		"stars": 1,
@@ -270,13 +303,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1012": {
 		"name": "สตรอว์เบอร์รีโซดาเย็น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ผสมสตรอว์เบอร์รีเพียวเร่ลงในน้ำอัดลม จากนั้นเติมน้ำแข็ง นี่แหละของที่ขาดไม่ได้ในหน้าร้อน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1012",
 		"stars": 1,
@@ -297,23 +335,35 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "เพิ่ม **Flame Resistance +10%** เป็นเวลา **Flame Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_1013": {
 		"name": "จุมพิตไฟโซดา",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ได้เวลาจิบชากลางวัน!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1013",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_RARE"
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"mods": [
+			900,
+			0.1,
+			65
+		],
+		"effect": "เพิ่ม **10** เป็นเวลา **undefined** วินาที"
 	},
 	"Item_Cooking_1014": {
 		"name": "เมฆาอัสนีบลูเบอร์รีโซดา",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "บลูเบอร์รีนั้นดำเหมือนเมฆฝน ระวังอย่าให้มันหกใส่คุณ เพราะมันซักออกยาก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1014",
 		"stars": 1,
@@ -334,13 +384,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "เพิ่ม **Volt Resistance +10%** เป็นเวลา **Volt Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_1015": {
 		"name": "ไข่ทองคำกับมะเขือเทศ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไม่ ฉันไม่ได้เผลอคนไข่...",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1015",
 		"stars": 1,
@@ -357,13 +414,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1016": {
 		"name": "สลัดเติมพลังงานธรรมดา",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สลัดที่เป็นเมนูพื้นฐานที่สุดสำหรับการรับประทานอาหารตามหลักโภชนาการ เป็นตัวเลือกสำหรับอาหารที่มีไขมันต่ำ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1016",
 		"stars": 1,
@@ -394,13 +456,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "เพิ่ม **Physical Resistance +10%** เป็นเวลา **Physical Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_1017": {
 		"name": "สลัดผักกาดหอม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สลัดที่อร่อย มีส่วนผสมง่ายๆ และรสชาติเข้มข้น",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1017",
 		"stars": 1,
@@ -417,13 +486,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **10% 1500** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**10% + 1500**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1018": {
 		"name": "ซุปเห็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ส่วนผสมที่สมบูรณ์แบบของเห็ดสดและผักกาดหอมกรอบ ๆ ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1018",
 		"stars": 1,
@@ -440,13 +514,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1019": {
 		"name": "ไข่ดาว",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เริ่มวันที่สดใสด้วยไข่ดาว!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1019",
 		"stars": 1,
@@ -458,13 +537,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **10% 1500** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**10% + 1500**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1020": {
 		"name": "หอยสังข์นึ่ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มันยังคงรสชาติรสชาติดั้งเดิมไว้! แต่ถ้าโรยต้นหอมซอยสักหน่อยละก็ จะต้องอร่อยขึ้นแน่ ๆ ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1020",
 		"stars": 1,
@@ -481,13 +565,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1021": {
 		"name": "ไข่ตุ๋นกับหอยเม่นทะเล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "หอยเม่นทะเลกับไข่ตุ๋นเนียนๆ นั้นอร่อยและชื่นใจ เป็นที่นิยมเป็นพิเศษในทุ่งหิมะ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1021",
 		"stars": 1,
@@ -504,13 +593,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1022": {
 		"name": "ขนมปังปิ้งดับเบิลเบอรี่แยม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "การผสมผสานระหว่างเบอร์รีสองชนิดเพื่อ\r\nให้บรรเลงรสเปรี้ยวหวานในปากคุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1022",
 		"stars": 1,
@@ -531,13 +625,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "เพิ่ม **Volt Attack +1%** เป็นเวลา **Volt Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_1023": {
 		"name": "พาสตามะเขือเทศไข่ดาว",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เปรี้ยวอย่างสมบูรณ์แบบและทำง่าย อร่อยแบบแคลอรี่ต่ำ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1023",
 		"stars": 1,
@@ -558,13 +659,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "-เพิ่ม **Flame Attack +1%** เป็นเวลา **Flame Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_1024": {
 		"name": "สตูว์เนื้อกับมันฝรั่ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เนื้อดูดซับสารอาหารทั้งหมด มันเลยดีต่อสุขภาพสุดๆ !",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1024",
 		"stars": 1,
@@ -580,13 +688,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1025": {
 		"name": "เฟรนช์ฟรายส์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มันไม่ใช่อาหารขยะแต่คือความสุขล้วนๆ !",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1025",
 		"stars": 1,
@@ -602,13 +711,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1026": {
 		"name": "สลัดผัก",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สลัดที่ถูกคัดสรรมาอย่างดี เหมาะสำหรับการปิกนิกอย่างยิ่ง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1026",
 		"stars": 1,
@@ -635,13 +745,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1027": {
 		"name": "ไก่ทอด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารที่ทำได้ง่ายและรวดเร็ว ผิวสีเหลืองกรอบจะทำให้คนที่ผ่านไปผ่านมาท้องร้อง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1027",
 		"stars": 1,
@@ -658,13 +773,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1028": {
 		"name": "น้ำผลไม้ใส่น้ำผึ้ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "น้ำผลไม้สดเหยาะน้ำผึ้ง เขย่านิดหน่อย เปรี้ยวแต่ก็ติดรสหวาน",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1028",
 		"stars": 1,
@@ -686,13 +806,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1029": {
 		"name": "เค้กผลไม้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไม่ว่าจะเครียดแค่ไหนเค้กก็ช่วยได้ ถ้ามีเค้ก ก็หยุดกินสักเดี๋ยวนึง!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1029",
 		"stars": 1,
@@ -719,13 +845,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1030": {
 		"name": "น้ำกล้วยไม้เย็น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารพิเศษของฤดูร้อน สัมผัสปาร์ตี้โต้คลื่นในปากคุณ!",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1030",
 		"stars": 1,
@@ -747,13 +878,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1031": {
 		"name": "ผัดบรอคโคลี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารไขมันต่ำที่ดีต่อสุขภาพ แต่คนส่วนมากไม่ค่อยชอบ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1031",
 		"stars": 1,
@@ -764,13 +901,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1032": {
 		"name": "หอยเชลล์ต้ม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารแสนอร่อยที่ทำง่าย ไม่จำเป็นต้องปรุงเลย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1032",
 		"stars": 1,
@@ -787,13 +925,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1033": {
 		"name": "ซาลาเปาเนื้อ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "น้ำฉ่ำๆ ที่แตกออกเมื่อคุณกัดเข้าไป นั่นแหละของดี!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1033",
 		"stars": 1,
@@ -809,13 +952,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1034": {
 		"name": "ปลาหั่นใส่เห็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ส่วนผสมแสนลงตัวของปลาหั่นกับเห็ด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1034",
 		"stars": 1,
@@ -832,13 +976,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1035": {
 		"name": "เนื้อสะโพกย่าง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ตั้งตะแกรงและหาที่นั่ง ใช่แล้ว หอมมาก...",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1035",
 		"stars": 1,
@@ -850,13 +999,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_1036": {
 		"name": "ซุปเห็ดแดนดิไลออน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เคยลองกินแดนดิไลออนกับเห็ดหรือยัง มันจะทำให้คุณขาอ่อนเลยล่ะ?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/1036",
 		"stars": 1,
@@ -873,13 +1028,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2001": {
 		"name": "เซิร์ฟแอนด์เทิร์ฟ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารทำเองที่บ้านของเบนเจส มีรสชาติเหมือนบ้านเกิด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2001",
 		"stars": 2,
@@ -896,13 +1056,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **13% 10000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**13% + 10000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2002": {
 		"name": "ขนมปังธัญพืชสีแดง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารที่ผู้คนในไอดาิยมรับประทานมากที่สุด สะท้อนถึงวิถีชีวิตเรียบง่าย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2002",
 		"stars": 2,
@@ -913,13 +1078,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_2003": {
 		"name": "พายฟิดเดิลเฮด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "บิสกิตดีต่อสุขภาพ ผสมเฟิร์นฟิดเดิลเฮด แต่เด็กๆ ไม่ค่อยชอบเท่าไหร่",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2003",
 		"stars": 2,
@@ -936,13 +1102,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2004": {
 		"name": "ขนมปังช็อกโกแลต",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เต็มไปด้วยช็อกโกแลต! กินแล้วอดอาหารไปเลยหนึ่งวัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2004",
 		"stars": 2,
@@ -959,13 +1130,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2005": {
 		"name": "ซุปเห็ดไฟร์แค็ป",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อะไรจะชื่นใจไปกว่าซุปเห็ดไฟร์แค็ปร้อนๆ เมื่อคุณกำลังปีนเขาหิมะ",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2005",
 		"stars": 2,
@@ -982,13 +1158,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **13% 10000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**13% + 10000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2006": {
 		"name": "ซุปมอสดำ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เติมท้องว่างๆ ของคุณตอนนี้ และหยิบสิ่งที่ดีกว่าในภายหลัง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2006",
 		"stars": 2,
@@ -1005,13 +1187,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **13% 10000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**13% + 10000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2007": {
 		"name": "สลัดผลหงส์เหิร",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สลัดที่คัดเลือกมาโดยเฉพาะ\r\nมีรสเปรี้ยวหวาน เด็กๆ ชอบ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2007",
 		"stars": 2,
@@ -1033,13 +1220,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2008": {
 		"name": "ซุปฟิดเดิลเฮด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เดาว่าวันนี้ก็คงกินผักอีกแล้วสินะ...",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2008",
 		"stars": 2,
@@ -1056,13 +1248,18 @@
 				"max": " 4"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2009": {
 		"name": "ปลาไหลผัดเผ็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ปลาไหลไฟฟ้านี่ปรุงสุกรึเปล่า? ทำไมลิ้นฉันชา?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2009",
 		"stars": 2,
@@ -1073,13 +1270,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "เพิ่ม **Volt Resistance +10%** เป็นเวลา **Volt Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_2010": {
 		"name": "ซุปเห็ดกับปลาไหล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารเผ็ดท้าทายสำหรับเพื่อนร่วมโต๊ะ ถ้ากล้าก็กลืนให้หมดในอึกเดียว! และอย่าดื่มน้ำตาม!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
 		"stars": 2,
@@ -1095,13 +1299,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "เพิ่ม **Volt Attack +1%** เป็นเวลา **Volt Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_2011": {
 		"name": "ซุปปูทะเล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ทุกสิ่งที่ดีของปูอยู่ในสตูว์",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2011",
 		"stars": 2,
@@ -1117,13 +1328,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "เพิ่ม **Flame Resistance +10%** เป็นเวลา **Flame Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_2012": {
 		"name": "น้ำทับทิมหวาน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ตาฉันฝาดเหรอ หรือว่าน้ำผลไม้ส่องแสงจริง ๆ ?",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2012",
 		"stars": 2,
@@ -1145,13 +1363,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2013": {
 		"name": "นมโกโก้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ดื่มสักถ้วยก่อนนอน และฝันดี!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2013",
 		"stars": 2,
@@ -1172,13 +1396,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "เพิ่ม **Frost Resistance +10%** เป็นเวลา **Frost Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_2014": {
 		"name": "ชาผลไม้แก้วมังกรไฟ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กินกับเค้กเพื่อให้การจิบชากลางวัน\r\nสมบูรณ์แบบ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2014",
 		"stars": 2,
@@ -1194,13 +1425,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "-เพิ่ม **Flame Attack +1%** เป็นเวลา **Flame Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_2015": {
 		"name": "สตูว์เพรียง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "รสที่คุณจะชอบ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2015",
 		"stars": 2,
@@ -1216,13 +1454,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "เพิ่ม **Physical Resistance +10%** เป็นเวลา **Physical Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_2016": {
 		"name": "พิซซ่าซีฟู้ดเพรียง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ฉันขอเบิ้ลสอง!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2016",
 		"stars": 2,
@@ -1244,13 +1489,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2017": {
 		"name": "ชากุหลาบหิมะพันปี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "คุณไม่กินสักหน่อยเหรอ ตอนกำลังกินผักใกล้กองไฟในฤดูหนาว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2017",
 		"stars": 2,
@@ -1271,13 +1521,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "เพิ่ม **Frost Attack +1%** เป็นเวลา **Frost Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_2018": {
 		"name": "โกโก้ไพน์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นมโกโก้กลิ่นถั่ว คนรักถั่วสามารถเติมถั่วเพิ่มได้",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2018",
 		"stars": 2,
@@ -1299,13 +1556,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2019": {
 		"name": "ชาถั่ว",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ดมดูสิว่าถั่วสดแค่ไหน...",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2019",
 		"stars": 2,
@@ -1327,13 +1589,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2020": {
 		"name": "พายมันม่วง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "พายสอดไส้ พกไปกินตอนเดินเขาระยะไกลได้",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2020",
 		"stars": 2,
@@ -1349,13 +1616,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "เพิ่ม **Volt Attack +2%** เป็นเวลา **Volt Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_2021": {
 		"name": "ซุปบัวหิมะ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "บัวหิมะรสชาติค่อนข้างจาง\r\nเลยเติมน้ำตาลเพื่อให้เป็นของหวาน\r\nที่เป็นที่นิยม",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2021",
 		"stars": 2,
@@ -1372,13 +1646,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2022": {
 		"name": "ข้าวผัดเห็ดทรัฟเฟิล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ผัดเห็ดทรัฟเฟิล จากนั้นผสมกับข้าวผัด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2022",
 		"stars": 2,
@@ -1399,13 +1679,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "เพิ่ม **Physical Attack +2%** เป็นเวลา **Physical Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_2023": {
 		"name": "บะหมี่เห็ดถั่งเช่า",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ฉันอยู่ในวัยที่ต้องระวังเรื่องการกินแล้วเหรอ?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2023",
 		"stars": 2,
@@ -1422,13 +1709,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2024": {
 		"name": "ซูชิคาเวียร์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "โรลที่ดูน่ากินทำให้มันเป็นอาหารหรู ถ้าคุณทำไม่เป็น ก็ผสมมันในถ้วยได้",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2024",
 		"stars": 2,
@@ -1450,13 +1742,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"Item_Cooking_2025": {
 		"name": "มันฝรั่งคาเวียร์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "บอลมันฝรั่งนุ่มๆ เต็มไปด้วยไข่ปลาคาเวียร์ คุณต้องอยากกินแน่ ๆ ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2025",
 		"stars": 2,
@@ -1472,13 +1769,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "เพิ่ม **Physical Attack +1%** เป็นเวลา **Physical Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_2026": {
 		"name": "สเต็กย่าง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขอแบบกึ่งสุก!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2026",
 		"stars": 2,
@@ -1489,13 +1793,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Volt Resistance +15%** เป็นเวลา **Volt Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_2027": {
 		"name": "สเต็กราดซอสเห็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ฉันว่าฉันเห็นสเต็กลอยผ่านท้องฟ้า...",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2027",
 		"stars": 2,
@@ -1511,13 +1822,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "-เพิ่ม **Flame Attack +2%** เป็นเวลา **Flame Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_2028": {
 		"name": "เนื้อตุ๋น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารคลาสสิกตามประเพณี",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2028",
 		"stars": 2,
@@ -1528,13 +1846,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Frost Resistance +15%** เป็นเวลา **Frost Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_2029": {
 		"name": "แซนด์วิชเนื้อฉ่ำ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไม่ต้องรีบ ทำอาหารมื้อเช้าอร่อยๆ ให้ตัวเอง!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2029",
 		"stars": 2,
@@ -1555,13 +1880,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Flame Resistance +15%** เป็นเวลา **Flame Resistance +undefined%** วินาที"
 	},
 	"Item_Cooking_2030": {
 		"name": "ซาชิมิแซลมอน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารมันต้องรสชาติอย่างนี้!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2030",
 		"stars": 2,
@@ -1572,13 +1904,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "เพิ่ม **Frost Attack +2%** เป็นเวลา **Frost Attack +undefined%** วินาที"
 	},
 	"Item_Cooking_2031": {
 		"name": "ข้าวอบหอยทาก",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ดูเหมือนจะเป็นการผสมผสานที่ประหลาด แต่รสชาติอร่อยกว่าที่เห็น",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 2,
@@ -1594,13 +1933,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Physical Resistance +15%** เป็นเวลา **Physical Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_3001": {
 		"name": "พริกผัด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เผ็ดเหลือเกิน!!!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3001",
 		"stars": 1,
@@ -1616,13 +1962,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "เพิ่ม **Frost Resistance +10%** เป็นเวลา **Frost Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_3002": {
 		"name": "หัวหอมทรายย่างชาร์โคล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "แผงขายบาร์บีคิวชวนน้ำลายไหลสำหรับนักพเนจร เปิดให้บริการแล้วตอนนี้!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 1,
@@ -1633,13 +1986,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3003": {
 		"name": "โยเกิร์ตว่านหางจระเข้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "จะมีใครบ้างล่ะ ที่ไม่ชอบโยเกิร์ตรสหวานอมเปรี้ยว?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3003",
 		"stars": 2,
@@ -1661,13 +2015,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3004": {
 		"name": "ชากุหลาบ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ในยามที่ชงชากุหลาบ แม้แต่ผู้ที่มีใจว้าวุ่นอย่างที่สุด ก็สามารถสงบลงได้ราวปาฏิหาริย์",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3004",
 		"stars": 2,
@@ -1684,24 +2043,36 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3005": {
 		"name": "โซดาผลไม้หนาม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "น้ำผึ้งปริมาณมากถูกเพิ่มเข้าไปให้น้ำผลไม้หนามทั่วไปมีรสชาติมากขึ้น",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
 		"quality": "ITEM_QUALITY_RARE",
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3006": {
 		"name": "ซุปหัวบีทรูท",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ซุปบีทรูทอุ่นๆ ในช่วงเวลาอากาศหนาว คุณสามารถซดซุปนี้ได้หมดหม้อเลยทีเดียว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3006",
 		"stars": 1,
@@ -1713,13 +2084,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3007": {
 		"name": "สลัดเมล่อนหวาน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มันจะรสชาติดีกว่าเดิมเมื่อถูกทิ้งไว้ให้เย็นลง แต่อย่าทำตัวตะกละเชียวนะ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3007",
 		"stars": 1,
@@ -1735,13 +2111,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "เพิ่ม **Flame Resistance +10%** เป็นเวลา **Flame Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_3008": {
 		"name": "โซดาผลไม้หนาม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "น้ำผึ้งปริมาณมากถูกเพิ่มเข้าไปให้น้ำผลไม้หนามทั่วไปมีรสชาติมากขึ้น",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
@@ -1763,13 +2146,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3009": {
 		"name": "โจ๊กฟักทอง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นับเป็นอาหารหลักที่ทานแล้วอิ่มท้อง หลังจากทานไปแล้วหนึ่งชาม บางทีคุณอาจไม่จำเป็นต้องกินอะไรต่ออีกแล้ว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3009",
 		"stars": 1,
@@ -1786,13 +2175,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3010": {
 		"name": "เต้าหู้ทอด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ของทอดกินเล่นที่กรุบกรอบและทอดจนเป็นสีทอง ระวังอย่าให้ซอสหยดเลอะเสื้อด้วยนะ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3010",
 		"stars": 1,
@@ -1803,13 +2197,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3011": {
 		"name": "ซุปหัวเรดิช",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ซุปที่เต็มไปด้วยสรรพคุณบำรุงกำลัง อีกทั้งมีรสชาติอร่อย ขออีกชามหนึ่งหน่อยสิ!",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3011",
 		"stars": 2,
@@ -1821,13 +2216,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3012": {
 		"name": "ข้าวโพดคลุกเกลือพริกไทย",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ของกินเล่นที่ทำง่ายและทานง่าย เป็นตัวเลือกอันดับต้นๆ สำหรับวันนอนดึก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3012",
 		"stars": 1,
@@ -1838,13 +2239,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3013": {
 		"name": "กระบองเพชรสูตรพิเศษ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เครื่องดื่มพิเศษชวนให้สดชื่น ทำจากต้นกระบองเพชร นับเป็นสิ่งที่ขาดไม่ได้ในช่วงหน้าร้อน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3013",
 		"stars": 1,
@@ -1856,13 +2258,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **10% 1500** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**10% + 1500**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3014": {
 		"name": "หางจิ้งจกย่าง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "โรยพริก, ขมิ้นและพริกไทยลงไป จากนั้นให้ปล่อยทิ้งเฉยๆ สักพักหนึ่งก่อนลงมือทาน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3014",
 		"stars": 1,
@@ -1874,13 +2281,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3015": {
 		"name": "ซี่โครงย่างสูตรพิเศษ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เหมาะแก่การกินกับข้าวเป็นที่สุด! มีสิ่งนี้เพียงอย่างเดียวเท่านั้น!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3015",
 		"stars": 1,
@@ -1897,13 +2309,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3016": {
 		"name": "นมถั่วเหลืองช็อกโกแลต",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "หากดื่มนมถั่วเหลืองธรรมดาๆ จนเบื่อแล้ว ไม่ลองดื่มนี่แทนเหรอ?",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3016",
 		"stars": 1,
@@ -1925,13 +2342,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3017": {
 		"name": "บีทรูทใส่ฟิดเดิลเฮด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เมื่อส่วนผสมทั้งหมดถูกต้มแล้ว ให้เอาลงจากกระทะ จากนั้นจึงเติมซอสลงไปแล้วผสมให้เข้ากัน เท่านี้ก็เสร็จเรียบร้อยแล้ว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3017",
 		"stars": 1,
@@ -1948,13 +2371,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3018": {
 		"name": "สลัดทะเลทราย",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กระบองเพชรกลมทรงลูกเต๋าและผลไม้หนามพร้อมน้ำสลัด แนะนำให้แช่เย็นมันก่อน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3018",
 		"stars": 1,
@@ -1976,13 +2404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3019": {
 		"name": "ขนมปังกุหลาบ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ยามบ่ายอันรื่นรมย์เริ่มต้นด้วยการทานขนมปังสี่เหลี่ยมกลิ่นกุหลาบ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3019",
 		"stars": 2,
@@ -1998,13 +2431,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Volt Resistance +15%** เป็นเวลา **Volt Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_3020": {
 		"name": "ขนมปังเมล่อนน้ำผึ้ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "แค่ขนมปังกลมหนึ่งก้อน ยัดด้วยเมล่อนหวานฉ่ำไว้ เท่านี้ก็เพียงพอสำหรับมื้อเช้าแล้ว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3020",
 		"stars": 1,
@@ -2025,13 +2465,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "เพิ่ม **Frost Attack +1%** เป็นเวลา **Frost Attack +undefined%** วินาที"
 	},
 	"item_Cooking_3021": {
 		"name": "โจ๊กธัญพืชรวม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "โจ๊กข้าวที่ทำมาจากธัญพืชหลากหลายชนิด บางที ฉันก็อยากกินอะไรสักอย่างที่รสอ่อนๆ เท่านั้นเอง",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3021",
 		"stars": 1,
@@ -2053,13 +2500,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3022": {
 		"name": "บิสกิตข้าวโพดซีฟู้ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ทาโก้รวมมิตรทะเล... หากเปิดร้านขายของแบบนี้ เดี๋ยวก็ถังแตกหรอก!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3022",
 		"stars": 1,
@@ -2081,13 +2534,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3023": {
 		"name": "ฟักทองนึ่ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ฟักทองนึ่งจะนุ่มและหวาน เป็นทางเลือกที่ดีสำหรับอาหารลดน้ำหนัก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3023",
 		"stars": 1,
@@ -2104,13 +2562,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "ฟื้นฟู **15% 20000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3024": {
 		"name": "ซุปไก่",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "บะหมี่เส้นนุ่มราดหน้าด้วยซุปไก่อุ่นๆ คุณสามารถอธิษฐานสิ่งที่ต้องการได้โดยให้ถือว่านี่เป็นบะหมี่สำหรับอวยพรวันเกิด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3024",
 		"stars": 2,
@@ -2131,13 +2594,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "เพิ่ม **Physical Attack +2%** เป็นเวลา **Physical Attack +undefined%** วินาที"
 	},
 	"item_Cooking_3025": {
 		"name": "บะหมี่บาร์บีคิวรสเผ็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ฉันสามารถไปแข่งกับบะหมี่ร้านคุนจี้ได้แน่นอน!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3025",
 		"stars": 2,
@@ -2158,13 +2628,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "-เพิ่ม **Flame Attack +2%** เป็นเวลา **Flame Attack +undefined%** วินาที"
 	},
 	"item_Cooking_3026": {
 		"name": "ข้าวผัดรสเผ็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ยิ่งเผ็ด ก็ยิ่งมีความสุข!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3026",
 		"stars": 1,
@@ -2190,13 +2667,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "-เพิ่ม **Flame Attack +1%** เป็นเวลา **Flame Attack +undefined%** วินาที"
 	},
 	"item_Cooking_3027": {
 		"name": "จานของย่างคอมโบ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นี่ต้องเป็นของคนชอบทานเนื้อแน่ ๆ เลย จริงมั้ย!?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3027",
 		"stars": 2,
@@ -2217,13 +2701,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Flame Resistance +15%** เป็นเวลา **Flame Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_3028": {
 		"name": "ซุปหัวเรดิชและพอร์คชอป",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ซุปหัวเรดิชและพอร์กชอป ซึ่งผ่านการเคี่ยวอย่างพิถีพิถันมาเป็นเวลาหนึ่งวันเต็ม ที่จริงแล้วรสชาติของหัวเรดิชอร่อยโดดเด่นยิ่งกว่าพอร์กชอปด้วยซ้ำ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3028",
 		"stars": 2,
@@ -2239,13 +2730,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Physical Resistance +15%** เป็นเวลา **Physical Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_3029": {
 		"name": "ซุปข้าวโพดครีมข้น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ซุปข้นรสหวานปนเปรี้ยว ถึงเวลาแล้วที่จะทานมันกับขนมปัง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3029",
 		"stars": 1,
@@ -2267,13 +2765,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **12% 3300** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**12% + 3300**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3030": {
 		"name": "น้ำเต้าผัดน้ำมันหมูกรุบกรอบ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ให้นำไปคลุกกับแป้งทอด แล้วนำไปทอดในน้ำมันเป็นเวลาสองนาที เท่านี้ก็เรียบร้อยแล้ว!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3030",
 		"stars": 2,
@@ -2285,13 +2788,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3031": {
 		"name": "หอยนางรมย่าง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ตัดสินใจยากอยู่นะ ว่าจะราดน้ำเลม่อนนิดหน่อยแล้วกินดิบๆ หรือว่าจะเอาไปย่างดี",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3031",
 		"stars": 2,
@@ -2303,13 +2811,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3032": {
 		"name": "คาวทองเย็น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "หลังจากลองทานเป็นครั้งแรก ฉันก็ตกหลุมรักในรสชาติของผักคาวทอง!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3032",
 		"stars": 2,
@@ -2321,13 +2834,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3033": {
 		"name": "น้ำเต้าฉีกเส้นผัดน้ำมันหมูรสเผ็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารเรียกน้ำย่อยที่รับประทานได้โดยไม่ต้องอุ่น ดูเหมือนว่า มันยอดเยี่ยมไม่แพ้อาหารจานหลักเลย",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3033",
 		"stars": 2,
@@ -2344,13 +2862,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3034": {
 		"name": "ซุปเต้าหู้หอยนางรม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ฉันได้ยินมาว่ามีเด็กจำนวนมากไม่ชอบกินปลา ซุปนี้จึงถูกทำขึ้นมาเป็นพิเศษ",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3034",
 		"stars": 2,
@@ -2367,13 +2891,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_3035": {
 		"name": "ไข่คนใส่ต้นคาวทอง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไข่คนน่ะ จะใส่อะไรลงไปก็ได้! ส่วนผสมที่ฉันชอบใส่ลงไปก็คือ...",
-		"satiety": "ฟื้นฟูพลังกาย <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/3035",
 		"stars": 2,
@@ -2390,13 +2920,19 @@
 				"max": " 3"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4001": {
 		"name": "มังกรล่องดาว",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ที่จริงก็คือเนื้อเต่าเศียรมังกรต้มกับไข่ปลาดาว แต่ร้านแต่งชื่อให้มันดูน่าสนใจขึ้นเพื่อจะได้ขายดีขึ้นน่ะ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4001",
 		"stars": 2,
@@ -2417,13 +2953,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4002": {
 		"name": "ไข่ตุ๋นกลิ่นทะเล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไข่เต่าเศียรมังกรมาจากทะเล มันก็เลยมีรสชาติของอาหารทะเล",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4002",
 		"stars": 2,
@@ -2440,13 +2977,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "ฟื้นฟู **20% 60000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**20% + 60000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4003": {
 		"name": "สลัดปลาปักเป้า",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สลัดปลาปักเป้าอร่อยจัง ลองชิมดูสิ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4003",
 		"stars": 2,
@@ -2462,13 +3004,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4004": {
 		"name": "ปลาปักเป้าสด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารที่ใช้วัตถุดิบจากปลาปักเป้า เพราะมันมีราคาแพง จึงต้องใช้ประโยชน์จากส่วนต่าง ๆ ของมันให้เกิดประโยชน์มากที่สุด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4004",
 		"stars": 2,
@@ -2489,13 +3032,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "เพิ่ม **Frost Attack +4%** เป็นเวลา **Frost Attack +undefined%** วินาที"
 	},
 	"item_Cooking_4005": {
 		"name": "ปลาปักเป้าย่าง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นุ่มและชุ่มฉ่ำ กินแล้วละลายในปาก... ร้านเขียนบรรยายไว้แบบนั้นน่ะ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4005",
 		"stars": 2,
@@ -2512,13 +3062,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4006": {
 		"name": "ดอกบัวขาว",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เนื้อปลาปักเป้าดิบที่ซ้อนกันเป็นชั้น ๆ อย่างสวยงาม เหมือนกับดอกบัวที่กำลังเบ่งบาน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4006",
 		"stars": 2,
@@ -2534,13 +3089,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "เพิ่ม **Frost Attack +2%** เป็นเวลา **Frost Attack +undefined%** วินาที"
 	},
 	"item_Cooking_4007": {
 		"name": "หมึกยักษ์ต้ม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ให้สัมผัสที่หนึบหนับ นุ่มและยืดหยุ่น แนะนำให้ทุกคนมาลิ้มลอง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4007",
 		"stars": 2,
@@ -2561,13 +3123,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4008": {
 		"name": "ลูกชิ้นหมึกยักษ์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารดั้งเดิมแสนอร่อย ระดับความอร่อยขึ้นอยู่กับขนาดของชิ้นปลาหมึกที่หั่น",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4008",
 		"stars": 2,
@@ -2593,13 +3156,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Volt Resistance +15%** เป็นเวลา **Volt Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_4009": {
 		"name": "ของย่าง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารที่ได้รับความนิยมจากเด็ก ๆ แต่เงินค่าขนมของเด็ก ๆ จ่ายไม่ไหว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4009",
 		"stars": 2,
@@ -2616,13 +3186,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **13% 10000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**13% + 10000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4010": {
 		"name": "ปลานึ่งเค็ม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เนื่องจากปลาทะเลมีรสเค็มมาก การนึ่งปลาจะรักษารสชาติอูมามิเอาไว้",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4010",
 		"stars": 2,
@@ -2639,13 +3214,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **13% 10000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**13% + 10000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4011": {
 		"name": "ปลาทะเลผัดซอส",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "วิธีการปรุงอาหารจานนี้ค่อนข้างซับซ้อน เพราะงั้นรสชาติมันควรมีความอร่อยขึ้น",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4011",
 		"stars": 2,
@@ -2667,13 +3247,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4012": {
 		"name": "ซาชิมิพรีเมี่ยม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เป็นอาหารที่วัดระดับทักษะการใช้มีด แต่อย่าจิ้มวาซาบิมากเกินไปนะ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4012",
 		"stars": 2,
@@ -2699,13 +3284,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Frost Resistance +15%** เป็นเวลา **Frost Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_4013": {
 		"name": "พายสตาร์เกซี่",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ตอนมันมีชีวิต ปลามันเงยหน้ามองดาวจริง ๆ เหรอ?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4013",
 		"stars": 2,
@@ -2726,13 +3318,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4014": {
 		"name": "สตูว์ซีฟู้ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มักจะปรุงด้วยเนื้อสัตว์ป่า เพื่อลดปริมาณของวัตถุดิบที่หายากที่ใช้ลง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4014",
 		"stars": 2,
@@ -2753,13 +3346,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"CleanBuff"
 		]
 	},
 	"item_Cooking_4015": {
 		"name": "ดอกไม้ทะเลย่าง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ใส่พริกเยอะไป เดี๋ยวจะสำลักเอานะ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4015",
 		"stars": 2,
@@ -2780,13 +3374,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "-เพิ่ม **Flame Attack +2%** เป็นเวลา **Flame Attack +undefined%** วินาที"
 	},
 	"item_Cooking_4016": {
 		"name": "ไข่ตุ๋นดอกไม้ทะเล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ใส่ดอกไม้ทะเลลงไปในไข่ตุ๋น แล้วรสชาติจะเข้มข้นขึ้น",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4016",
 		"stars": 2,
@@ -2803,13 +3404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **13% 10000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**13% + 10000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4017": {
 		"name": "อายุยืนยาว",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เพราะเต่าเศียรมังกรมีความหมายดีมาก ทางร้านเลยตั้งชื่อให้มันเป็นพิเศษ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4017",
 		"stars": 2,
@@ -2825,13 +3431,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			600,
+			0.4
+		],
+		"effect": "เพิ่ม **40** เป็นเวลา **undefined** วินาที"
 	},
 	"item_Cooking_4018": {
 		"name": "ไข่แห่งความสุข",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เป็นแค่ไข่เต่าเศียรมังกรต้มแหละ แต่ใส่สีเพิ่มเข้าไปให้มันขายดี",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4018",
 		"stars": 2,
@@ -2852,13 +3464,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "เพิ่ม **Physical Attack +4%** เป็นเวลา **Physical Attack +undefined%** วินาที"
 	},
 	"item_Cooking_4019": {
 		"name": "ไข่แห่งความสุข (ชมพู)",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เป็นแค่ไข่เต่าเศียรมังกรต้มแหละ แต่ใส่สีเพิ่มเข้าไปให้มันขายดี",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4019",
 		"stars": 2,
@@ -2879,13 +3498,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4020": {
 		"name": "ไข่แห่งความสุข (แดง)",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เป็นแค่ไข่เต่าเศียรมังกรต้มแหละ แต่ใส่สีเพิ่มเข้าไปให้มันขายดี",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4020",
 		"stars": 2,
@@ -2906,13 +3526,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			900,
+			0.5
+		],
+		"effect": "เพิ่ม **50** เป็นเวลา **undefined** วินาที"
 	},
 	"item_Cooking_4021": {
 		"name": "แมงกะพรุนเย็น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กรุบกรอบอร่อย จนหยุดกินไม่ได้",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4021",
 		"stars": 2,
@@ -2929,13 +3555,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **13% 10000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**13% + 10000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4022": {
 		"name": "แมงกะพรุนผัดเห็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "การผสมผสานที่เข้ากันของเห็ดและแมงกะพรุนนี้ มันกลายเป็นอาหารที่ยอดเยี่ยม มันจะทำให้คุณเผลอกินจนหมดจนไม่ทันตั้งตัวเลย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4022",
 		"stars": 2,
@@ -2951,13 +3582,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4023": {
 		"name": "ปลาหมึกระเบิดซอส",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไม่ควรกินปลาหมึกที่มันชุ่มฉ่ำไปด้วยน้ำแน่น ๆ ในที่สาธารณะดีกว่า ถ้าคุณไม่รู้วิธีการกินที่ถูกต้อง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4023",
 		"stars": 2,
@@ -2978,13 +3610,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4024": {
 		"name": "ยำปลาหมึก",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารจะดูอร่อยขึ้นกว่านี้มาก ถ้าเปลี่ยนสีให้มันดูน่ากินกว่านี้หน่อย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4024",
 		"stars": 2,
@@ -3005,13 +3638,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "เพิ่ม **Volt Attack +2%** เป็นเวลา **Volt Attack +undefined%** วินาที"
 	},
 	"item_Cooking_4025": {
 		"name": "ข้าวต้มปลา",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ข้าวต้มปลาเพื่อสุขภาพ เหมาะสำหรับผู้ไม่อยากอาหาร",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4025",
 		"stars": 2,
@@ -3027,13 +3667,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4026": {
 		"name": "ปลาดอง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาจจะไม่ได้รับความนิยมจากมนุษย์ แต่เป็นที่นิยมมากในหมู่แมว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4026",
 		"stars": 2,
@@ -3059,13 +3700,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Flame Resistance +15%** เป็นเวลา **Flame Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_4027": {
 		"name": "ข้าวหน้าล็อบสเตอร์รสเลิศ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารจานเด่นที่มีล็อบสเตอร์จำนวนมาก อาหารอันโอชะสุดหรูที่สามารถหาทานได้เฉพาะริมทะเลเท่านั้น",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4027",
 		"stars": 2,
@@ -3086,13 +3734,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "เพิ่ม **Physical Attack +2%** เป็นเวลา **Physical Attack +undefined%** วินาที"
 	},
 	"item_Cooking_4028": {
 		"name": "กุ้งผัดหมาล่า",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เอาล็อบสเตอร์ตัวใหญ่มาหั่นให้เหมือนล็อบสเตอร์ตัวเล็ก...มั้ยนะ?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4028",
 		"stars": 2,
@@ -3108,13 +3763,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4029": {
 		"name": "ไข่นึ่งปู",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไข่นึ่งปูแสนอร่อย ต้องคอยดูด้วยนะว่าที่ใส่เข้าไปน่ะเป็นเนื้อปูแท้หรือว่าปูอัด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4029",
 		"stars": 2,
@@ -3135,13 +3791,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4030": {
 		"name": "ข้าวผัดปูสุดหรู",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไม่มีใครที่สามารถปฏิเสธข้าวผัดปูได้ ความหรูหราไม่ได้อยู่แค่ปริมาณของเนื้อปู",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4030",
 		"stars": 2,
@@ -3162,13 +3819,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4031": {
 		"name": "คิงแครบ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ความจริงพิสูจน์แล้วว่าไม่ว่าจะเป็นปูแบบไหน ก็จะถูกจัดเสิร์ฟบนโต๊ะอาหารอยู่ดี",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4031",
 		"stars": 2,
@@ -3185,13 +3843,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4032": {
 		"name": "เค้กข้าวผัดเนื้อปู",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ปูที่สดอร่อยรวมกับเค้กข้าวเหนียวนุ่ม~ เป็นการฟิวชั่นที่อร่อยอย่างไม่น่าเชื่อ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4032",
 		"stars": 2,
@@ -3212,13 +3875,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "เพิ่ม **Physical Resistance +15%** เป็นเวลา **Physical Resistance +undefined%** วินาที"
 	},
 	"item_Cooking_4033": {
 		"name": "บะหมี่ปูทอง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "บะหมี่ปูทองที่ผ่านกรรมวิธีมาซับซ้อนหลายขั้นตอน ราคาก็ซับซ้อนด้วยเช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4033",
 		"stars": 2,
@@ -3234,13 +3904,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4034": {
 		"name": "ทะเลนึ่งกระเทียม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กระเทียมรสเข้มข้นกับกุ้งและปูแสนอร่อย เป็นอาหารอันโอชะสุดคลาสสิก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4034",
 		"stars": 2,
@@ -3261,13 +3932,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "-เพิ่ม **Flame Attack +4%** เป็นเวลา **Flame Attack +undefined%** วินาที"
 	},
 	"item_Cooking_4035": {
 		"name": "วุ้นเส้นทะเล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "อาหารจานพิเศษที่อบอวลไปด้วยกลิ่นหอม ไม่เข้มข้นหรือเลี่ยนจนเกินไป",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4035",
 		"stars": 2,
@@ -3293,13 +3971,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "เพิ่ม **Volt Attack +4%** เป็นเวลา **Volt Attack +undefined%** วินาที"
 	},
 	"item_Cooking_4036": {
 		"name": "ล็อบสเตอร์อบชีส",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เนื้อเด้งดึ๋ง กลิ่นหอมงารอบทิศ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4036",
 		"stars": 2,
@@ -3316,13 +4001,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "ฟื้นฟู **16% 34000** พลังชีวิต"
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**16% + 34000**) ให้นักพเนจรทันที"
 	},
 	"item_Cooking_4037": {
 		"name": "บะหมี่หมึกล็อบสเตอร์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สร้างสรรค์เมนูอาหารที่ย้อมด้วยหมึกธรรมชาติ ทั้งอร่อยและมีสไตล์",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4037",
 		"stars": 2,
@@ -3343,13 +4033,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4038": {
 		"name": "เนื้อหอยผัดฉ่า",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มีรสเผ็ดร้อนและมีรสที่อูมามิ อาหารรสเลิศนี้เป็นสิ่งที่จำเป็นสำหรับมื้อดึก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/4038",
 		"stars": 2,
@@ -3365,13 +4056,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_5001": {
 		"name": "เนื้อตุ๋นหน่อไม้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เนื้อไม่ติดมันและหน่อไม้ตุ๋นเป็นเวลาหลายชั่วโมง พร้อมปรุงด้วยรสจัดจ้าน เอาไปกินกับข้าวได้สามชามติด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/5001",
 		"stars": 2,
@@ -3392,13 +4084,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "เพิ่ม **Volt Attack +4% Volt Resistance +1800** เป็นเวลา **Volt Attack +undefined%Volt Resistance +%** วินาที"
 	},
 	"item_Cooking_5007": {
 		"name": "บีโกเนียหยกขาว",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ออเดิร์ฟเย็นที่ทำจากหยกมรกตและบีโกเนีย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/5007",
 		"stars": 2,
@@ -3414,13 +4114,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "เพิ่ม **Flame Attack +4% Flame Resistance +1800** เป็นเวลา **Flame Attack +undefined%Flame Resistance +%** วินาที"
 	},
 	"item_activity_cooking_001": {
 		"name": "หมูหัน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "หมูหันที่ปรุงโดยสุดยอดเชฟซึ่งเป็นที่ถูกอกถูกใจ\nแม้จะเป็นนักชิมลิ้นเทพแค่ไหนก็ตาม\r\n\r\n\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดา\nหลังจากเอาชนะอะโพฟิสและราชินีกุหลาบ\nหรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
 		"stars": 1,
@@ -3446,13 +4154,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_002": {
 		"name": "ไก่งวงตุ๋นแอปเปิล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เมนูพิเศษของชาวแอสตรา ด้วยความเป็นที่นิยมในหมู่พ่อค้าและนักเดินทาง ทำให้เมนูนี้แพร่หลายไปทั่วทั้งทวีป\r\n\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะอะโพฟิสและราชินีกุหลาบ หรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
 		"stars": 1,
@@ -3478,13 +4185,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_003": {
 		"name": "น่องไก่ย่างพร้อมผัก",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ตอนแรกคุณจะดื่มด่ำได้ถึงรสสัมผัสของน่องไก่ย่าง จากนั้นจึงตัดเลี่ยนด้วยผักกาดหอมให้รู้สึกสดชื่น\r\n\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะอะโพฟิสและราชินีกุหลาบ หรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
 		"stars": 1,
@@ -3505,13 +4211,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_004": {
 		"name": "แซลมอนย่างกระทะ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "แซลมอนเนื้อนุ่มเสิร์ฟพร้อมซอสน้ำผึ้งหวานๆ ให้รสชาติหอมอบอวลติดปากติดใจ\r\n\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะโรบาร์กและโซเบก และยังหาได้จากการเก็บส่วนผสมและทำอาหารด้วย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
 		"stars": 1,
@@ -3532,13 +4237,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_005": {
 		"name": "บ๊ะจ่างโรยงาลูกเล็ก",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เมนูพิเศษสูตรดั้งเดิมในย่านท่าเรือเบนเจสที่ถูกอกถูกใจทั้งเด็กและผู้ใหญ่\r\n\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะโรบาร์กและโซเบก หรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
 		"stars": 1,
@@ -3559,13 +4263,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_006": {
 		"name": "ซุปไก่งวงบีทรูท",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ซุปอุ่นๆ สักชามที่จะช่วยคลายความเหนื่อยล้าที่สะสมมาตลอดทั้งวัน\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะโรบาร์กและโซเบก หรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
 		"stars": 1,
@@ -3586,13 +4289,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_007": {
 		"name": "ขนมปังขิง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขนมหวานประจำเทศกาลยอดนิยมที่ได้ทั้งความหวานจากน้ำตาลกับน้ำผึ้ง พร้อมกลิ่นหอมจากธัญพืชข้าวสาลี\r\n\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะโรบาร์ก, อะโพฟิส, ฟรอสต์บอท, โซเบก, ราชินีกุหลาบ และบาร์บารอสซา หรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
 		"stars": 1,
@@ -3613,13 +4315,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_008": {
 		"name": "เค้กแอปเปิล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เค้กผลไม้เนื้อนุ่มฟู ฟินตั้งแต่คำแรกที่ได้ทาน\r\n\r\n\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะฟรอสต์บอทและบาร์บารอสซา หรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
 		"stars": 1,
@@ -3645,13 +4346,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_009": {
 		"name": "ฟรุตพันช์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เครื่องดื่มที่ได้ทั้งกลิ่นหอมหวานจากผลไม้ และกลิ่นเหล้าคลุ้งจางๆ \r\n\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะฟรอสต์บอทและบาร์บารอสซา หรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
 		"stars": 1,
@@ -3677,13 +4377,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_010": {
 		"name": "น้ำแอปเปิล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เปรี้ยวหวานลงตัวกำลังดี ทานได้ทุกเพศทุกวัย นับเป็นเครื่องดื่มหน้าร้อนแก้วโปรดของใครหลายๆ คน\r\n\r\nดรอปจากหีบรหัสผ่านในช่วงกิจกรรมคาเฟ่ไอดาหลังจากเอาชนะฟรอสต์บอทและบาร์บารอสซา หรือนำส่วนผสมมาใช้ทำอาหารก็ได้เช่นกัน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
 		"stars": 1,
@@ -3704,13 +4403,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity2_cooking_101": {
 		"name": "ช็อกโกฮาร์ทหงส์เหิร",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขึ้นขี่บอลลูนผลไม้ แล้วบินไปสู่โลกแห่งช็อกโกแลต!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
 		"stars": 1,
@@ -3731,13 +4429,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_102": {
 		"name": "ช็อกโกฮาร์ทรสลูกสน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตโรยลูกสนนับเป็นของขวัญที่สมบูรณ์แบบ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
 		"stars": 1,
@@ -3758,13 +4460,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_103": {
 		"name": "ช็อกโกฮาร์ทรสสตรอว์เบอร์รี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เมื่อรสหวานอ่อนๆ ของสตรอว์เบอร์รีกับรสชาตินุ่มนวลของช็อกโกแลตมาผสมผสานกัน สิ่งที่ได้ก็คือรสหวานของรักครั้งแรก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
 		"stars": 1,
@@ -3785,13 +4491,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_104": {
 		"name": "ช็อกโก้ฮาร์ทรสเฮเซลนัท",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สิ่งที่ช็อกโกแลตห่อหุ้มอยู่ก็คือหัวใจที่รอคอยความรัก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
 		"stars": 1,
@@ -3812,13 +4522,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_105": {
 		"name": "ช็อกโก้ฮาร์ทรสทรัฟเฟิล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "คุณสามารถรู้สึกได้ถึงความรักความใส่ใจจากส่วนผสมที่ได้รับการคัดสรรมา",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
 		"stars": 1,
@@ -3839,13 +4553,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_106": {
 		"name": "ช็อกโก้ฮาร์ทบลูเบอร์รี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ลองกัดดูสักคำ แล้วให้รสหวานซ่อนเปรี้ยวของแนวบลูเบอร์รีแผ่ซ่านไปทั่วปลายลิ้นของคุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
 		"stars": 1,
@@ -3866,13 +4584,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_107": {
 		"name": "ช็อกโก้ฮาร์ทรสน้ำผึ้ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ท่วงทำนองสอดประสานอันยิ่งใหญ่ระหว่างช็อกโกแลตและน้ำผึ้ง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
 		"stars": 1,
@@ -3893,13 +4615,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_108": {
 		"name": "ช็อกโก้ฮาร์ทผลไม้ตกพื้น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขอมอบสิ่งที่ฉันรักที่สุดให้แก่คุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
 		"stars": 1,
@@ -3920,13 +4646,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_109": {
 		"name": "ช็อกโก้ฮาร์ทโกโก้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตดำรสละมุนนุ่มนวล ที่ถักทอเข้ากับความฝันที่ขมเล็กน้อยและกลมกล่อม",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
 		"stars": 1,
@@ -3942,13 +4672,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_110": {
 		"name": "ช็อกโก้ฮาร์ทรสนม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นมและช็อกโกแลตคือคู่กิ่งทองใบหยก!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
 		"stars": 1,
@@ -3969,13 +4703,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_201": {
 		"name": "ช็อกบอลหงส์เหิร",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขึ้นขี่บอลลูนผลไม้ แล้วบินไปสู่โลกแห่งช็อกโกแลต!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
 		"stars": 1,
@@ -3996,13 +4734,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_202": {
 		"name": "ช็อกบอลรสลูกสน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตโรยลูกสนนับเป็นของขวัญที่สมบูรณ์แบบ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
 		"stars": 1,
@@ -4023,13 +4765,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_203": {
 		"name": "ช็อกบอลรสสตรอว์เบอร์รี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เมื่อรสหวานอ่อนๆ ของสตรอว์เบอร์รีกับรสชาตินุ่มนวลของช็อกโกแลตมาผสมผสานกัน สิ่งที่ได้ก็คือรสหวานของรักครั้งแรก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
 		"stars": 1,
@@ -4050,13 +4796,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_204": {
 		"name": "ช็อกบอลรสเฮเซลนัท",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สิ่งที่ช็อกโกแลตห่อหุ้มอยู่ก็คือหัวใจที่รอคอยความรัก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
 		"stars": 1,
@@ -4077,13 +4827,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_205": {
 		"name": "ช็อกบอลรสทรัฟเฟิล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "คุณสามารถรู้สึกได้ถึงความรักความใส่ใจจากส่วนผสมที่ได้รับการคัดสรรมา",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
 		"stars": 1,
@@ -4104,13 +4858,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_206": {
 		"name": "ช็อกบอลบลูเบอร์รี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ลองกัดดูสักคำ แล้วให้รสหวานซ่อนเปรี้ยวของแนวบลูเบอร์รีแผ่ซ่านไปทั่วปลายลิ้นของคุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
 		"stars": 1,
@@ -4131,13 +4889,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_207": {
 		"name": "ช็อกบอลรสน้ำผึ้ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ท่วงทำนองสอดประสานอันยิ่งใหญ่ระหว่างช็อกโกแลตและน้ำผึ้ง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
 		"stars": 1,
@@ -4158,13 +4920,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_208": {
 		"name": "ช็อกบอลผลไม้ตกพื้น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขอมอบสิ่งที่ฉันรักที่สุดให้แก่คุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
 		"stars": 1,
@@ -4185,13 +4951,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_209": {
 		"name": "ช็อกบอลรสโกโก้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตดำรสละมุนนุ่มนวล ที่ถักทอเข้ากับความฝันที่ขมเล็กน้อยและกลมกล่อม",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
 		"stars": 1,
@@ -4207,13 +4977,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_210": {
 		"name": "ช็อกบอลรสนม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นมและช็อกโกแลตคือคู่กิ่งทองใบหยก!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
 		"stars": 1,
@@ -4234,13 +5008,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_301": {
 		"name": "ช็อกก้อนหงส์เหิร",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขึ้นขี่บอลลูนผลไม้ แล้วบินไปสู่โลกแห่งช็อกโกแลต!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
 		"stars": 1,
@@ -4261,13 +5039,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_302": {
 		"name": "ลูกบาศก์ช็อกโกแลตรสลูกสน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตโรยลูกสนนับเป็นของขวัญที่สมบูรณ์แบบ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
 		"stars": 1,
@@ -4288,13 +5070,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_303": {
 		"name": "สตรอว์เบอร์รีคิวบ์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เมื่อรสหวานอ่อนๆ ของสตรอว์เบอร์รีกับรสชาตินุ่มนวลของช็อกโกแลตมาผสมผสานกัน สิ่งที่ได้ก็คือรสหวานของรักครั้งแรก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
 		"stars": 1,
@@ -4315,13 +5101,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_304": {
 		"name": "ลูกบาศก์ช็อกโกแลตรสเฮเซลนัท",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "สิ่งที่ช็อกโกแลตห่อหุ้มอยู่ก็คือหัวใจที่รอคอยความรัก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
 		"stars": 1,
@@ -4342,13 +5132,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_305": {
 		"name": "ลูกบาศก์ช็อกโกแลตรสทรัฟเฟิล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "คุณสามารถรู้สึกได้ถึงความรักความใส่ใจจากส่วนผสมที่ได้รับการคัดสรรมา",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
 		"stars": 1,
@@ -4369,13 +5163,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_306": {
 		"name": "บลูเบอร์รีคิวบ์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ลองกัดดูสักคำ แล้วให้รสหวานซ่อนเปรี้ยวของแนวบลูเบอร์รีแผ่ซ่านไปทั่วปลายลิ้นของคุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
 		"stars": 1,
@@ -4396,13 +5194,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_307": {
 		"name": "ลูกบาศก์ช็อกโกแลตรสน้ำผึ้ง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ท่วงทำนองสอดประสานอันยิ่งใหญ่ระหว่างช็อกโกแลตและน้ำผึ้ง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
 		"stars": 1,
@@ -4423,13 +5225,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_308": {
 		"name": "คิวบ์ผลไม้ตกพื้น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขอมอบสิ่งที่ฉันรักที่สุดให้แก่คุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
 		"stars": 1,
@@ -4450,13 +5256,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_309": {
 		"name": "โกโก้คิวบ์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตดำรสละมุนนุ่มนวล ที่ถักทอเข้ากับความฝันที่ขมเล็กน้อยและกลมกล่อม",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
 		"stars": 1,
@@ -4472,13 +5282,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_310": {
 		"name": "ลูกบาศก์ช็อกโกแลตรสนม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นมและช็อกโกแลตคือคู่กิ่งทองใบหยก!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
 		"stars": 1,
@@ -4499,93 +5313,119 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_001": {
 		"name": "ของที่ระลึกเกาะซีตัส",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กล่องของขวัญช็อกโกแลตอันเป็นผลงานที่ฮันนาภูมิใจ มันถูกออกแบบมาในธีมของวิชาไฟฟ้า\r\nดอกเตอร์บอกว่า มีของอร่อย ๆ ก็ต้องแบ่งปันให้คนสำคัญนะ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_002": {
 		"name": "ของที่ระลึกเกาะซีตัส",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กล่องของขวัญช็อกโกแลตอันเป็นผลงานที่ฮันนาภูมิใจ มันถูกออกแบบมาในธีมของธาตุทางกายภาพ\nดอกเตอร์บอกว่า มีของอร่อยๆ ก็ต้องแบ่งปันให้คนสำคัญนะ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_003": {
 		"name": "ของที่ระลึกเกาะซีตัส",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กล่องของขวัญช็อกโกแลตสไตล์เวทมนตร์คุมไฟอันเป็นผลงานที่ฮันนาภูมิใจ \nดอกเตอร์บอกว่า มีของอร่อยๆ ก็ต้องแบ่งปันให้คนสำคัญนะ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_004": {
 		"name": "ของที่ระลึกเกาะซีตัส",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กล่องของขวัญช็อกโกแลตอันเป็นผลงานที่ฮันนาภูมิใจ มันถูกออกแบบมาในธีมของวิชาควบคุมน้ำแข็ง\nดอกเตอร์บอกว่า มีของอร่อยๆ ก็ต้องแบ่งปันให้คนสำคัญนะ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity2_cooking_005": {
 		"name": "เค้กข้าวกรุบกรอบ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "หนึ่งในของกินเล่นยอดนิยมของดาวเคราะห์ไอดา ว่ากันว่าสมาชิกของกลุ่มไฮยีน่าและราเวเจอร์ต่อสู้กันเพื่อเค้กชิ้นนี้เพียงชิ้นเดียว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity2_cooking_006": {
 		"name": "กล่องของขวัญช็อกโกแลต",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ของอร่อยต้องเก็บไว้แบ่งให้คนสำคัญ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"HealPotion_01": {
 		"name": "แพนเค้กใบไม้ผลิ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ของทานเล่นที่ได้รับความนิยมที่สุดในตลาดฤดูใบไม้ผลิ\r\nบอกไม่ได้ว่ารสชาติของมันเป็นยังไง",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.22,
+			75000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**22% + 75000**) ให้นักพเนจรทันที"
 	},
 	"BuffPotion_01": {
 		"name": "สายลมต้นสน",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เครื่องดื่มเด่นของตลาดฤดูใบไม้ผลิ\r\nกล่าวกันว่าหากจิบเครื่องดื่มนี้ไปเพียงครั้งเดียว คุณก็จะรู้สึกราวกับว่าตัวเองกำลังอยู่ท่ามกลางป่าต้นสน โดยมีสายลมแห่งฤดูใบไม้ผลิพัดเอื่อยๆ กระทบแก้มทั้งสองข้างของคุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity3_cooking_101": {
 		"name": "ช็อกก้อนคลาสสิก",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ใครจะต้านทานกลิ่นหอมเข้มข้นของช็อกโกแลตได้กันล่ะ?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
 		"stars": 1,
@@ -4611,13 +5451,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_102": {
 		"name": "ช็อกก้อนผสมถั่ว",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตที่ผสมถั่วอร่อยอย่างน่าประหลาดใจ!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
 		"stars": 1,
@@ -4638,13 +5482,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_103": {
 		"name": "ช็อกก้อนเฮเซลนัท",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กลิ่นหอมของเฮเซลนัทที่น่าอัศจรรย์ผสมกับช็อกโกแลตเพื่อเพิ่มมิติใหม่ให้กับรสชาติที่ลงตัว",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
 		"stars": 1,
@@ -4665,13 +5513,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_104": {
 		"name": "ช็อกก้อนแก้วมังกร",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ใครจะสนว่าอะไรมีเมล็ดหรือไม่มี ในเมื่อมีช็อกโกแลตให้เพลิดเพลินอยู่แล้ว?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
 		"stars": 1,
@@ -4692,13 +5544,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_105": {
 		"name": "โกโก้คิวบ์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตดำรสละมุนนุ่มนวล ที่ถักทอเข้ากับความฝันที่ขมเล็กน้อยและกลมกล่อม",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
 		"stars": 1,
@@ -4719,13 +5575,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_106": {
 		"name": "ช็อกก้อนผสมหาง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "นี่ช็อกโกแลตรสชาติแปลก ๆ อันใหม่ล่าสุด คุณกล้าลองป่ะล่ะ?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
 		"stars": 1,
@@ -4746,13 +5606,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_107": {
 		"name": "ช็อกก้อนเนื้อหยอง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เนื้อหยองรสช็อกโกแลต อีกหนึ่งส่วนเสริมของโลกแห่งความมืดของการทำอาหารใต้ดิน",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
 		"stars": 1,
@@ -4773,13 +5637,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_108": {
 		"name": "ช็อกก้อนเห็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตสอดไส้เป็นอะไรที่น่าประหลาดใจเสมอ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
 		"stars": 1,
@@ -4800,13 +5668,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_109": {
 		"name": "ช็อกก้อนไข่เค็ม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ไข่แดงลูกเล็กและชุ่มน้ำ มีรสชาติที่โดดเด่น",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
 		"stars": 1,
@@ -4827,13 +5699,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_110": {
 		"name": "ช็อกก้อนปูอัด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กลิ่นหอมของอาหารทะเลที่เข้มข้นสร้างบรรยากาศให้กับช็อกโกแลตนี้",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
 		"stars": 1,
@@ -4854,13 +5730,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_201": {
 		"name": "ช็อกบอลรสกาแฟ",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ฉันอยากสัมผัสถึงรสชาติอันหวานอมขมกลืนในระหว่างการเดินทางไปพร้อมกับคุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
 		"stars": 1,
@@ -4886,13 +5766,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_202": {
 		"name": "ช็อกบอลสอดไส้เหล้า",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กลิ่นหอมละมุนของไวน์และช็อกโกแลตประสานกันเพื่อสร้างท่วงทำนองสุดผ่อนคลาย",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
 		"stars": 1,
@@ -4913,13 +5797,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_203": {
 		"name": "ช็อกบอลรสดอกไม้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "กัดสักคำเพื่อปลดปล่อยกลิ่นหอมอันน่าทึ่งของดอกไม้ ชวนให้นึกถึงดอกกุหลาบในวันวาเลนไทน์",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
 		"stars": 1,
@@ -4940,13 +5828,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_204": {
 		"name": "ช็อกบอลรสสตรอว์เบอร์รี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เมื่อรสหวานอ่อนๆ ของสตรอว์เบอร์รีกับรสชาตินุ่มนวลของช็อกโกแลตมาผสมผสานกัน สิ่งที่ได้ก็คือรสหวานของรักครั้งแรก",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
 		"stars": 1,
@@ -4967,13 +5859,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_205": {
 		"name": "ช็อกบอลรสโกโก้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตดำรสละมุนนุ่มนวล ที่ถักทอเข้ากับความฝันที่ขมเล็กน้อยและกลมกล่อม",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
 		"stars": 1,
@@ -4994,13 +5890,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_206": {
 		"name": "ช็อกบอลหงส์เหิร",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขึ้นขี่บอลลูนผลไม้ แล้วบินไปสู่โลกแห่งช็อกโกแลต!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
 		"stars": 1,
@@ -5021,13 +5921,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_207": {
 		"name": "ช็อกบอลรสเนื้อหยอง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตเนื้อเนียนและไส้ที่นุ่มฟูที่ผสานกันเพื่อมอบรสชาติใหม่",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
 		"stars": 1,
@@ -5048,13 +5952,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_208": {
 		"name": "ช็อกบอลรสเกลือทะเล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เบื่อรสหวานรึยัง? มาลองของเค็มกัน!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
 		"stars": 1,
@@ -5075,13 +5983,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_209": {
 		"name": "ช็อกบอลรสทรัฟเฟิล",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "คุณสามารถรู้สึกได้ถึงความรักความใส่ใจจากส่วนผสมที่ได้รับการคัดสรรมา",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
 		"stars": 1,
@@ -5102,13 +6014,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_210": {
 		"name": "ช็อกบอลรสปูอัด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มีหลายวิธีการเลยล่ะในการที่จะปรุงขาปู",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
 		"stars": 1,
@@ -5129,13 +6045,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_301": {
 		"name": "ช็อกโกฮาร์ทมินต์",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "รสเย็นที่สดชื่นไม่สิ้นสุด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
 		"stars": 1,
@@ -5156,13 +6076,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_302": {
 		"name": "ช็อกโกฮาร์ทครีม",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "มีอะไรที่สู้ความหวานของครีมได้ด้วยเหรอ?",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
 		"stars": 1,
@@ -5183,13 +6107,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_303": {
 		"name": "ช็อกโก้ฮาร์ทผลไม้ตกพื้น",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ขอมอบสิ่งที่ฉันรักที่สุดให้แก่คุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
 		"stars": 1,
@@ -5210,13 +6138,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_304": {
 		"name": "ช็อกโก้ฮาร์ทบลูเบอร์รี",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ลองกัดดูสักคำ แล้วให้รสหวานซ่อนเปรี้ยวของแนวบลูเบอร์รีแผ่ซ่านไปทั่วปลายลิ้นของคุณ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
 		"stars": 1,
@@ -5237,13 +6169,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_305": {
 		"name": "ช็อกโก้ฮาร์ทโกโก้",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตดำรสละมุนนุ่มนวล ที่ถักทอเข้ากับความฝันที่ขมเล็กน้อยและกลมกล่อม",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
 		"stars": 1,
@@ -5264,13 +6200,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_306": {
 		"name": "ช็อกโกฮาร์ทน้ำมันปลา",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ช็อกโกแลตที่เต็มไปด้วยสารอาหาร ทางเลือกเพื่อคนรักสุขภาพ",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
 		"stars": 1,
@@ -5291,13 +6231,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_307": {
 		"name": "ช็อกโกฮาร์ทเผ็ด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "ถั่วที่มีรสเผ็ด",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
 		"stars": 1,
@@ -5318,13 +6262,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_308": {
 		"name": "ช็อกโกฮาร์ทเนื้อหยอง",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "เปลือกขนมเย็นเฉียบผสานกับไส้ในรสนุ่มนวล",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
 		"stars": 1,
@@ -5345,13 +6293,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_309": {
 		"name": "ช็อกโกฮาร์ทไข่ปลา",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "แค่เห็นวัตถุดิบก็รู้แล้วว่าแพงขนาดไหน!",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
 		"stars": 1,
@@ -5372,13 +6324,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	},
 	"item_activity3_cooking_310": {
 		"name": "ช็อกโกฮาร์ทปูอัด",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "รีวิวของช็อกโกแลตชิ้นนี้มันดูแตกต่างกันสุดขั้วเกินไป บ้างก็ว่าดี บ้างก็ว่าไม่ดี",
-		"satiety": "ฟื้นฟูความอิ่ม <ComLblGreen>{0}</>",
 		"buff": "อาหารเรียกน้ำย่อย",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
 		"stars": 1,
@@ -5399,6 +6355,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "ใช้เพื่อฟื้นฟู HP (**15% + 20000**) ให้นักพเนจรทันที"
 	}
 }

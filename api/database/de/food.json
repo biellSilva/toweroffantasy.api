@@ -1,41 +1,40 @@
 {
 	"Task_Area2Cooking": {
 		"name": "Hundeleckerli",
-		"type": "ITEM_TYPE_QUEST",
 		"description": "Das Lieblingsessen trainierter Hunde.",
-		"satiety": "Gegenstand zur Ablenkung von Hunden.",
 		"buff": "Snack",
 		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_POOR"
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
 	},
 	"Item_Cooking_0901": {
 		"name": "Furchtbarer Eintopf",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein Haufen unbekannter Zutaten, die in einem großen Topf gegart wurden, wobei ein Großteil der Nährstoffe verloren ging.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_0902": {
 		"name": "Feiner Eintopf",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sieht zwar nach einem guten Eintopf aus, aber die Auswahl der Zutaten sorgt letztlich für das Misslingen dieses Gerichts …",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_1001": {
 		"name": "Gebratene Pilze",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Geschmack beiseite, zumindest sind sie gekocht und nicht roh.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1001",
 		"stars": 1,
@@ -47,13 +46,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **10% 1500** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Verwenden, um sofort (**10% + 1500**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1002": {
 		"name": "Seetang-Eiersuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mit frischem Seetang und viel Protein. Macht den Bauch schön voll.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1002",
 		"stars": 1,
@@ -70,13 +74,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1003": {
 		"name": "Knusprig gegrillter Fisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eines der beliebtesten Essen in der Hafenstadt von Banges. Günstig und lecker.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1003",
 		"stars": 1,
@@ -87,13 +96,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1004": {
 		"name": "Vollkornbrot",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zubereitet aus verarbeitetem Getreide, nahrhaft und lange haltbar. Jeder Wanderer sollte welches dabeihaben.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1004",
 		"stars": 1,
@@ -104,13 +114,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1005": {
 		"name": "Frühstücksflocken",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Früher reichte eine Ration, um fünf bis sechs Menschen zu ernähren. Dank der verbesserten Bedingungen geben Menschen jetzt Milch dazu anstatt Wasser.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1005",
 		"stars": 1,
@@ -126,13 +137,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1006": {
 		"name": "Brutzelndes Fleisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wie hättest du es gerne zubereitet? Echte Männer essen es schon, nachdem es nur ein paar Sekunden lang auf Steinen unter der heißen Sonne gegrillt wurde.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1006",
 		"stars": 1,
@@ -143,13 +155,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1007": {
 		"name": "Meeresfrüchte-Suppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Trotz des mäßigen Geschmacks sagt man, ein Bissen hätte eine belebende und zwei hätten eine heilende Wirkung.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1007",
 		"stars": 1,
@@ -170,13 +183,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Erhöht **Frost Attack +1%** für **Frost Attack +undefined%** Sek."
 	},
 	"Item_Cooking_1008": {
 		"name": "Knuspriger Hähnchen-Burger",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Hähnchen-Burger, wie man ihn in Fast-Food-Lokalen findet. Es gibt kaum etwas Besseres als die Kombination von heißem, knusprigem Hähnchen und knackigem Kopfsalat.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1008",
 		"stars": 1,
@@ -198,13 +218,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1009": {
 		"name": "Pikanter Burger",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dabei läuft einem einfach jedes Mal das Wasser im Mund zusammen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1009",
 		"stars": 1,
@@ -225,13 +250,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Erhöht **Physical Attack +1%** für **Physical Attack +undefined%** Sek."
 	},
 	"Item_Cooking_1010": {
 		"name": "Gebratener Reis mit Ei",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wenn man einfachen, weißen Reis satthat und mal wieder Lust auf etwas Besonderes hat.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1010",
 		"stars": 1,
@@ -247,13 +279,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1011": {
 		"name": "Gedünstete Krabbe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Meeresfrüchte schmecken am besten, wenn sie ganz frisch serviert werden. Das Problem ist: Wo anfangen?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1011",
 		"stars": 1,
@@ -270,13 +303,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1012": {
 		"name": "Geeiste Erdbeerlimonade",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mische pürierte Erdbeeren in die Limonade und gib dann Eis hinzu. Ein Muss für jeden Sommer.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1012",
 		"stars": 1,
@@ -297,23 +335,35 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Erhöht **Flame Resistance +10%** für **Flame Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_1013": {
 		"name": "Flammengeküsste Limonade",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zeit für den Nachmittagstee!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1013",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_RARE"
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"mods": [
+			900,
+			0.1,
+			65
+		],
+		"effect": "Erhöht **10** für **undefined** Sek."
 	},
 	"Item_Cooking_1014": {
 		"name": "Donnerwolke-Heidelbeerlimonade",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Die Blaubeere ist so dunkel wie eine Regenwolke. Pass auf, dass du nicht kleckerst. Die Flecken gehen nur ganz schwer raus.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1014",
 		"stars": 1,
@@ -334,13 +384,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Erhöht **Volt Resistance +10%** für **Volt Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_1015": {
 		"name": "Goldenes Ei mit Tomate",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Doch, es war meine Absicht, die Eier zu verrühren …",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1015",
 		"stars": 1,
@@ -357,13 +414,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1016": {
 		"name": "Einfacher Kraftsalat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Der einfachste Salat, um den täglichen Nährstoffbedarf zu decken. Die ideale Wahl bei fettarmer Ernährung.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1016",
 		"stars": 1,
@@ -394,13 +456,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Erhöht **Physical Resistance +10%** für **Physical Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_1017": {
 		"name": "Blattsalat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein leckerer Salat mit einfachen Zutaten und kräftigem Geschmack.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1017",
 		"stars": 1,
@@ -417,13 +486,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **10% 1500** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Verwenden, um sofort (**10% + 1500**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1018": {
 		"name": "Pilzsuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine perfekte Kombination aus frischen Pilzen und knackigem Kopfsalat.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1018",
 		"stars": 1,
@@ -440,13 +514,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1019": {
 		"name": "Spiegelei",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mit leckeren Spiegeleiern fängt der Tag gut an!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1019",
 		"stars": 1,
@@ -458,13 +537,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **10% 1500** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Verwenden, um sofort (**10% + 1500**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1020": {
 		"name": "Gedünstete Meeresschnecke",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Der Originalgeschmack bleibt komplett erhalten! Ein paar gehackte grüne Zwiebeln würden sie allerdings noch besser machen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1020",
 		"stars": 1,
@@ -481,13 +565,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1021": {
 		"name": "Gedünstetes Ei mit Seeigel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein Seeigel mit zart gedämpftem Ei ist lecker und gut für die Seele. Besonders beliebt ist das Gericht im Schneefeld.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1021",
 		"stars": 1,
@@ -504,13 +593,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1022": {
 		"name": "Toast mit Zwei-Beeren-Marmelade.",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Diese Kombination aus zwei Beerensorten sorgt für eine süßsaure Symphonie in deinem Mund.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1022",
 		"stars": 1,
@@ -531,13 +625,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Erhöht **Volt Attack +1%** für **Volt Attack +undefined%** Sek."
 	},
 	"Item_Cooking_1023": {
 		"name": "Nudeln mit Tomate und Spiegelei",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schön sauer und leicht zuzubereiten. Eine köstliche Leckerei mit ganz wenig Kalorien.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1023",
 		"stars": 1,
@@ -558,13 +659,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " – Erhöht **Flame Attack +1%** für **Flame Attack +undefined%** Sek."
 	},
 	"Item_Cooking_1024": {
 		"name": "Fleisch-Kartoffel-Eintopf",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Das Fleisch hat alle Nährstoffe aufgenommen, weshalb es extrem gesund ist!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1024",
 		"stars": 1,
@@ -580,13 +688,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1025": {
 		"name": "Pommes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Das ist kein Junkfood, sondern reine Glückseligkeit!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1025",
 		"stars": 1,
@@ -602,13 +711,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1026": {
 		"name": "Gemüsesalat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ausgewählter Salat, der sich super für Picknicks eignet.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1026",
 		"stars": 1,
@@ -635,13 +745,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1027": {
 		"name": "Brathähnchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine einfache und schnell zubereitete Mahlzeit. Bei dieser knusprig-goldenen Kruste läuft wirklich jedem das Wasser im Mund zusammen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1027",
 		"stars": 1,
@@ -658,13 +773,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1028": {
 		"name": "Fruchtsaft mit Honig",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Frischer, leicht geschüttelter Saft mit ein wenig Honig. Ein Hauch von Süße inmitten der Säure.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1028",
 		"stars": 1,
@@ -686,13 +806,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1029": {
 		"name": "Früchtebrot",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Es gibt keinen Stress, den ein Stück leckerer Kuchen nicht beseitigen könnte. Wenn doch, dann nimm dir noch ein Stück!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1029",
 		"stars": 1,
@@ -719,13 +845,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1030": {
 		"name": "Geeiste Orchideen-Überraschung",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sommer-Spezial. Führt zu einer wahren Geschmacksexplosion in deinem Mund!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1030",
 		"stars": 1,
@@ -747,13 +878,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1031": {
 		"name": "Gebratener Brokkoli",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Gesundes und fettarmes Essen, das jedoch nicht bei allen beliebt ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1031",
 		"stars": 1,
@@ -764,13 +901,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1032": {
 		"name": "Gekochte Jakobsmuscheln",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein einfaches und köstliches Essen, für das man keine Gewürze braucht.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1032",
 		"stars": 1,
@@ -787,13 +925,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1033": {
 		"name": "Fleischbrötchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Der Saft, der beim Reinbeißen austritt, ist das Beste daran!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1033",
 		"stars": 1,
@@ -809,13 +952,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1034": {
 		"name": "Fischscheiben mit Pilzen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine perfekte Ergänzung zu aufgeschnittenem Fisch und Pilzen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1034",
 		"stars": 1,
@@ -832,13 +976,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1035": {
 		"name": "Gebratenes Rumpsteak",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mach den Grill an und schnapp dir einen Stuhl. Ja, so muss das duften …",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1035",
 		"stars": 1,
@@ -850,13 +999,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_1036": {
 		"name": "Löwenzahn-Pilz-Suppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schon mal Löwenzahn mit Pilzen probiert? Danach fühlst du dich ganz leicht.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/1036",
 		"stars": 1,
@@ -873,13 +1028,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2001": {
 		"name": "Surf and Turf",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Hausmannskost aus Banges, die wunderbar nach Heimat schmeckt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2001",
 		"stars": 2,
@@ -896,13 +1056,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **13% 10000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2002": {
 		"name": "Rotes Weizenbrot",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Das meist zubereitete Essen der Menschen von Aida spiegelt auch ihr einfaches Leben wider.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2002",
 		"stars": 2,
@@ -913,13 +1078,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_2003": {
 		"name": "Farnsprossen-Pastete",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein gesundes Gebäck mit einer Füllung aus Farnsprossen. Ist allerdings nicht sonderlich beliebt bei Kindern.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2003",
 		"stars": 2,
@@ -936,13 +1102,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2004": {
 		"name": "Schokoladenbrot",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Gefüllt mit Schokolade! Verschieb deine Diät einfach auf morgen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2004",
 		"stars": 2,
@@ -959,13 +1130,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2005": {
 		"name": "Feuerkappe-Pilzsuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Was hebt die Stimmung beim Besteigen verschneiter Gipfel mehr als eine dampfend heiße Schüssel Feuerkappe-Pilzsuppe?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2005",
 		"stars": 2,
@@ -982,13 +1158,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **13% 10000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2006": {
 		"name": "Schwarzmoos-Suppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schlage dir jetzt einfach den Bauch voll und besorge dir später was Besseres.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2006",
 		"stars": 2,
@@ -1005,13 +1187,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **13% 10000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2007": {
 		"name": "Ballonblumensalat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ausgewählter Salat. Süß und sauer, das haben Kinder am liebsten!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2007",
 		"stars": 2,
@@ -1033,13 +1220,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2008": {
 		"name": "Farnsprossen-Suppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Scheint wieder ein Pflanzenfressertag zu sein …",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2008",
 		"stars": 2,
@@ -1056,13 +1248,18 @@
 				"max": " 4"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2009": {
 		"name": "Pikanter Aal",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ist der Zitteraal durch? Wieso kribbelt meine Zunge so?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2009",
 		"stars": 2,
@@ -1073,13 +1270,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Erhöht **Volt Resistance +10%** für **Volt Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_2010": {
 		"name": "Aal und Pilzsuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine scharfe Herausforderung für die Geschmacksnerven. Auf ex, wenn du dich traust! Und Wasser ist nicht erlaubt!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
 		"stars": 2,
@@ -1095,13 +1299,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Erhöht **Volt Attack +1%** für **Volt Attack +undefined%** Sek."
 	},
 	"Item_Cooking_2011": {
 		"name": "Seekrabbensuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dieser Eintopf enthält alle guten Teile der Krabbe.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2011",
 		"stars": 2,
@@ -1117,13 +1328,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Erhöht **Flame Resistance +10%** für **Flame Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_2012": {
 		"name": "Süßer Granatapfelsaft",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Bilde ich mir das bloß ein oder leuchtet der Saft tatsächlich?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2012",
 		"stars": 2,
@@ -1145,13 +1363,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2013": {
 		"name": "Kakao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Trinke eine Tasse, bevor du ins Bett gehst, dann sind dir süße Träume garantiert!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2013",
 		"stars": 2,
@@ -1172,13 +1396,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Erhöht **Frost Resistance +10%** für **Frost Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_2014": {
 		"name": "Feuerdrachenfruchttee",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Genieße diesen Tee zusammen mit einem Stück Kuchen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2014",
 		"stars": 2,
@@ -1194,13 +1425,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": " – Erhöht **Flame Attack +1%** für **Flame Attack +undefined%** Sek."
 	},
 	"Item_Cooking_2015": {
 		"name": "Seepocken-Eintopf",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dieser Geschmack wird dir gefallen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2015",
 		"stars": 2,
@@ -1216,13 +1454,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Erhöht **Physical Resistance +10%** für **Physical Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_2016": {
 		"name": "Seepocken-Meeresfrüchte-Pizza",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Gib mir eine doppelte Portion!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2016",
 		"stars": 2,
@@ -1244,13 +1489,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2017": {
 		"name": "Azalee-Schneeperlen-Tee",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Warum trinkst du nicht einen, während du im kalten Winter am Lagerfeuer rumhängst?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2017",
 		"stars": 2,
@@ -1271,13 +1521,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Erhöht **Frost Attack +1%** für **Frost Attack +undefined%** Sek."
 	},
 	"Item_Cooking_2018": {
 		"name": "Pinienkakao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Kakao mit Nussgeschmack. Nussliebhaber können gern noch mehr Nüsse dazugeben.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2018",
 		"stars": 2,
@@ -1299,13 +1556,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2019": {
 		"name": "Nusstee",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Riech mal, wie frisch die Nüsse sind …",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2019",
 		"stars": 2,
@@ -1327,13 +1589,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2020": {
 		"name": "Violette Yamswurzel-Pastete",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine Pastete, die satt macht und sich gut auf lange Wanderungen mitnehmen lässt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2020",
 		"stars": 2,
@@ -1349,13 +1616,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Erhöht **Volt Attack +2%** für **Volt Attack +undefined%** Sek."
 	},
 	"Item_Cooking_2021": {
 		"name": "Schneelotus-Suppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schneelotus schmeckt eher fade, aber mit Zucker dazu ist er ein beliebtes Dessert.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2021",
 		"stars": 2,
@@ -1372,13 +1646,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2022": {
 		"name": "Gebratener Reis mit Trüffel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Brate die Trüffel an und vermische sie dann mit gebratenem Reis.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2022",
 		"stars": 2,
@@ -1399,13 +1679,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Erhöht **Physical Attack +2%** für **Physical Attack +undefined%** Sek."
 	},
 	"Item_Cooking_2023": {
 		"name": "Raupenpilz-Nudeln",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Bin ich etwa schon so alt, dass ich auf meine Ernährung achten muss?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2023",
 		"stars": 2,
@@ -1422,13 +1709,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2024": {
 		"name": "Kaviar-Sushi",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wenn sie toll aussieht, ist eine Sushi-Rolle ein erstklassiges Gericht. Wenn du das nicht schaffst, solltest du die Zutaten besser in einer Schüssel mischen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2024",
 		"stars": 2,
@@ -1450,13 +1742,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"Item_Cooking_2025": {
 		"name": "Kartoffelbällchen mit Kaviar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Weiche Kartoffelbällchen in einem Bad aus hochwertigem Kaviar. Du wirst bestimmt nicht nur eine Portion essen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2025",
 		"stars": 2,
@@ -1472,13 +1769,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Erhöht **Physical Attack +1%** für **Physical Attack +undefined%** Sek."
 	},
 	"Item_Cooking_2026": {
 		"name": "Gegrilltes Steak",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Medium, bitte!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2026",
 		"stars": 2,
@@ -1489,13 +1793,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Volt Resistance +15%** für **Volt Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_2027": {
 		"name": "Steak mit Pilzsoße",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ich glaube, ich sehe Steaks am Himmel fliegen …",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2027",
 		"stars": 2,
@@ -1511,13 +1822,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " – Erhöht **Flame Attack +2%** für **Flame Attack +undefined%** Sek."
 	},
 	"Item_Cooking_2028": {
 		"name": "Schmorfleisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein traditioneller Klassiker.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2028",
 		"stars": 2,
@@ -1528,13 +1846,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Frost Resistance +15%** für **Frost Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_2029": {
 		"name": "Saftiges Fleischsandwich",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nimm dir die Zeit und bereite dir ein gutes Frühstück zu!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2029",
 		"stars": 2,
@@ -1555,13 +1880,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Flame Resistance +15%** für **Flame Resistance +undefined%** Sek."
 	},
 	"Item_Cooking_2030": {
 		"name": "Lachs-Sashimi",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Genauso sollte Essen schmecken!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2030",
 		"stars": 2,
@@ -1572,13 +1904,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Erhöht **Frost Attack +2%** für **Frost Attack +undefined%** Sek."
 	},
 	"Item_Cooking_2031": {
 		"name": "Gebratener Reis mit Schnecken",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Scheint eine schräge Kombination zu sein, schmeckt aber viel besser, als es aussieht.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 2,
@@ -1594,13 +1933,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Physical Resistance +15%** für **Physical Resistance +undefined%** Sek."
 	},
 	"item_Cooking_3001": {
 		"name": "Gebratene Chilis",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sehr scharf!!!!!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3001",
 		"stars": 1,
@@ -1616,13 +1962,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Erhöht **Frost Resistance +10%** für **Frost Resistance +undefined%** Sek."
 	},
 	"item_Cooking_3002": {
 		"name": "Auf Holzkohle gegrillte Sandzwiebeln",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Der köstliche Wanderer-BBQ-Stand, jetzt geöffnet!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 1,
@@ -1633,13 +1986,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3003": {
 		"name": "Aloejoghurt",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wer mag nicht den süßsäuerlichen Geschmack von Joghurt?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3003",
 		"stars": 2,
@@ -1661,13 +2015,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3004": {
 		"name": "Rosentee",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Beim Aufbrühen von Rosentee kommt selbst der rastloseste Geist auf wundersame Weise zur Ruhe.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3004",
 		"stars": 2,
@@ -1684,24 +2043,36 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3005": {
 		"name": "Dornenfrucht-Limonade",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mit einer großzügigen Menge Honig wird diesem schlichten Dornenfruchtsaft Geschmack verleihen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
 		"quality": "ITEM_QUALITY_RARE",
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3006": {
 		"name": "Rübensuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Warme Rote-Bete-Suppe. Wenn es kalt ist, kann man leicht einen ganzen Topf davon essen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3006",
 		"stars": 1,
@@ -1713,13 +2084,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3007": {
 		"name": "Zuckermelonensalat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schmeckt gekühlt besser, aber sei nicht zu gierig!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3007",
 		"stars": 1,
@@ -1735,13 +2111,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Erhöht **Flame Resistance +10%** für **Flame Resistance +undefined%** Sek."
 	},
 	"item_Cooking_3008": {
 		"name": "Dornenfrucht-Limonade",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mit einer großzügigen Menge Honig wird diesem schlichten Dornenfruchtsaft Geschmack verleihen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
@@ -1763,13 +2146,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3009": {
 		"name": "Kürbisbrei",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein sättigendes Grundnahrungsmittel. Nach einer Schüssel davon musst du wahrscheinlich nichts anderes mehr essen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3009",
 		"stars": 1,
@@ -1786,13 +2175,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3010": {
 		"name": "Frittierter Tofu",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Knusprige, goldbraun frittierte Snacks. Pass auf, dass du die Soße nicht auf deine Kleidung kleckerst.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3010",
 		"stars": 1,
@@ -1803,13 +2197,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3011": {
 		"name": "Radieschensuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sättigende und leckere Suppe. Noch eine Schüssel, bitte!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3011",
 		"stars": 2,
@@ -1821,13 +2216,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3012": {
 		"name": "Salz- und Pfeffermais",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Einfache Snacks. Die erste Wahl, wenn es nachts mal später wird.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3012",
 		"stars": 1,
@@ -1838,13 +2239,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3013": {
 		"name": "Kaktusspezialität",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Erfrischende Kaktusspezialität, unverzichtbar im Sommer.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3013",
 		"stars": 1,
@@ -1856,13 +2258,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **10% 1500** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "Verwenden, um sofort (**10% + 1500**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3014": {
 		"name": "Gegrillter Eidechsenschwanz",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Streue erst ein bisschen Chili, Kreuzkümmel und Pfeffer darauf und warte dann geduldig einen Moment, bevor du anfängst.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3014",
 		"stars": 1,
@@ -1874,13 +2281,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3015": {
 		"name": "Gegrillte Spezialrippchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Passt perfekt zu Reis! Das einzig Wahre!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3015",
 		"stars": 1,
@@ -1897,13 +2309,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3016": {
 		"name": "Schokoladen-Sojadrink",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wenn du genug von normaler Sojamilch hast, warum probierst du dann die hier nicht mal aus?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3016",
 		"stars": 1,
@@ -1925,13 +2342,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3017": {
 		"name": "Rüben mit Farnsprossen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nimm die Zutaten aus der Pfanne, sobald sie gegart sind, füge die Soße hinzu, mische alles gut durch und schon ist es fertig.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3017",
 		"stars": 1,
@@ -1948,13 +2371,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3018": {
 		"name": "Wüstensalat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Gewürfelter Kugelkaktus und Dornenfrüchte mit etwas Salatdressing. Es wird empfohlen, sie zuerst zu kühlen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3018",
 		"stars": 1,
@@ -1976,13 +2404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3019": {
 		"name": "Rosenbrot",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zu einem schönen Nachmittag gehört ein Rosenduft-Kastenbrot.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3019",
 		"stars": 2,
@@ -1998,13 +2431,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Volt Resistance +15%** für **Volt Resistance +undefined%** Sek."
 	},
 	"item_Cooking_3020": {
 		"name": "Zuckermelonenbrot",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein rundes, mit süßer Melone gefülltes Brot ist alles, was man zum Frühstück braucht.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3020",
 		"stars": 1,
@@ -2025,13 +2465,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Erhöht **Frost Attack +1%** für **Frost Attack +undefined%** Sek."
 	},
 	"item_Cooking_3021": {
 		"name": "Mehrkornbrei",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Der Reisbrei besteht aus vielen verschiedenen Getreidesorten. Manchmal möchte ich einfach etwas Mildes essen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3021",
 		"stars": 1,
@@ -2053,13 +2500,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3022": {
 		"name": "Mais- und Meeresfrüchtekeks",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tacos mit Meeresfrüchten … Wenn du damit einen Laden eröffnest, gehst du pleite!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3022",
 		"stars": 1,
@@ -2081,13 +2534,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3023": {
 		"name": "Gedünsteter Kürbis",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Der gedünstete Kürbis ist weich und süß. Er ist die ideale Zutat für alle, die auf Diät sind.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3023",
 		"stars": 1,
@@ -2104,13 +2562,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Stellt **15% 20000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3024": {
 		"name": "Hühnersuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Seidige Nudeln mit warmer Hühnerbrühe. Stell dir vor, es wäre eine Geburtstagssuppe, und wünsch dir was.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3024",
 		"stars": 2,
@@ -2131,13 +2594,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Erhöht **Physical Attack +2%** für **Physical Attack +undefined%** Sek."
 	},
 	"item_Cooking_3025": {
 		"name": "Pikante BBQ-Nudeln",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ich kann es absolut mit Kun-Ji-Nudeln aufnehmen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3025",
 		"stars": 2,
@@ -2158,13 +2628,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " – Erhöht **Flame Attack +2%** für **Flame Attack +undefined%** Sek."
 	},
 	"item_Cooking_3026": {
 		"name": "Pikanter gebratener Reis",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Je schärfer, desto besser!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3026",
 		"stars": 1,
@@ -2190,13 +2667,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " – Erhöht **Flame Attack +1%** für **Flame Attack +undefined%** Sek."
 	},
 	"item_Cooking_3027": {
 		"name": "Kombo-Grillplatte",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Das muss das Paradies für Fleischesser sein, oder?!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3027",
 		"stars": 2,
@@ -2217,13 +2701,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Flame Resistance +15%** für **Flame Resistance +undefined%** Sek."
 	},
 	"item_Cooking_3028": {
 		"name": "Radieschensuppe mit Schwein",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Radieschensuppe mit Schwein, die behutsam einen ganzen Tag lang vor sich hin geköchelt hat. Der Rettich ist tatsächlich noch leckerer als die Spareribs.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3028",
 		"stars": 2,
@@ -2239,13 +2730,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Physical Resistance +15%** für **Physical Resistance +undefined%** Sek."
 	},
 	"item_Cooking_3029": {
 		"name": "Maiscremesuppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine cremige, süße und würzige Suppe. Ist es nicht Zeit, sie endlich mit etwas Brot zu genießen?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3029",
 		"stars": 1,
@@ -2267,13 +2765,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **12% 3300** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3030": {
 		"name": "Knuspriger Schmalzkürbis",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Erst in der Panade wälzen und dann zwei Minuten lang frittieren – fertig!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3030",
 		"stars": 2,
@@ -2285,13 +2788,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3031": {
 		"name": "Gegrillte Auster",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Es ist schwierig zu entscheiden, ob man es einfach roh mit etwas Zitrone isst oder grillt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3031",
 		"stars": 2,
@@ -2303,13 +2811,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3032": {
 		"name": "Kalter Molchschwanz",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nach dem ersten Bissen habe ich mich in den Geschmack von Molchschwanz verliebt!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3032",
 		"stars": 2,
@@ -2321,13 +2834,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3033": {
 		"name": "Pikanter Schmalzkürbisstreifen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dieses appetitanregende Gericht, das kalt serviert wird, würde sich auch gut als Hauptgang eignen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3033",
 		"stars": 2,
@@ -2344,13 +2862,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3034": {
 		"name": "Austernsuppe mit Tofu",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Es heißt, dass viele Kinder nicht gerne Fisch essen, und genau dafür wurde diese Suppe gemacht.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3034",
 		"stars": 2,
@@ -2367,13 +2891,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_3035": {
 		"name": "Rührei mit Molchschwanz",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Man kann alles mit Eiern verquirlen! Mein Lieblingsgericht damit ist …",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Ausdauer wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/3035",
 		"stars": 2,
@@ -2390,13 +2920,19 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4001": {
 		"name": "Drachen und Sterne",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Es ist eigentlich nur gekochtes Drachenhals-Schildkrötenfleisch mit Seesternrogen, aber das Restaurant hat sich einen schicken Namen dafür einfallen lassen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4001",
 		"stars": 2,
@@ -2417,13 +2953,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4002": {
 		"name": "Gedämpftes Ei mit Meeresaroma",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Drachenhals-Schildkröteneier kommen aus dem Meer, deshalb haben sie ein natürliches Meeresfrüchtearoma.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4002",
 		"stars": 2,
@@ -2440,13 +2977,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Stellt **20% 60000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4003": {
 		"name": "Kugelfischsalat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein köstlicher Kugelfischsalat. Den sollte man probiert haben!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4003",
 		"stars": 2,
@@ -2462,13 +3004,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4004": {
 		"name": "Frischer Kugelfisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein Kugelfischgericht, das die verschiedenen Teile des teuren Fischs voll zur Geltung bringt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4004",
 		"stars": 2,
@@ -2489,13 +3032,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Erhöht **Frost Attack +4%** für **Frost Attack +undefined%** Sek."
 	},
 	"item_Cooking_4005": {
 		"name": "Gegrillter Kugelfisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dieser saftige Kugelfisch wird dir auf der Zunge zergehen … So steht es zumindest in der Speisekarte.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4005",
 		"stars": 2,
@@ -2512,13 +3062,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4006": {
 		"name": "Weißer Lotus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Die dünn geschnittenen, aufgeschichteten rohen Kugelfischstücke sehen aus wie eine Lotusblüte.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4006",
 		"stars": 2,
@@ -2534,13 +3089,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Erhöht **Frost Attack +2%** für **Frost Attack +undefined%** Sek."
 	},
 	"item_Cooking_4007": {
 		"name": "Gekochter Tintenfisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Frisch und bissfest, ein empfehlenswertes Gericht für jedermann.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4007",
 		"stars": 2,
@@ -2561,13 +3123,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4008": {
 		"name": "Tintenfischbälle",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein köstliches traditionelles Gericht. Sein Geschmack hängt stark von der Größe der Tintenfischstücke ab.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4008",
 		"stars": 2,
@@ -2593,13 +3156,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Volt Resistance +15%** für **Volt Resistance +undefined%** Sek."
 	},
 	"item_Cooking_4009": {
 		"name": "Gegrillte Leckereien",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein bei Kindern beliebtes Gericht, das allerdings zu teuer ist, als dass sie es mit ihrem Taschengeld kaufen könnten.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4009",
 		"stars": 2,
@@ -2616,13 +3186,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **13% 10000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4010": {
 		"name": "Salziger & pikanter gedämpfter Fisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Salzwasserfisch ist von Natur aus salzig, und durch das Dämpfen bleibt sein Umami-Geschmack erhalten.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4010",
 		"stars": 2,
@@ -2639,13 +3214,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **13% 10000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4011": {
 		"name": "Gebratener Salzwasserfisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dieses Gericht ist viel Arbeit, aber die Mühe sollte dazu beitragen, es noch schmackhafter zu machen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4011",
 		"stars": 2,
@@ -2667,13 +3247,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4012": {
 		"name": "Premium-Sashimi",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein Gericht, das die Messerkünste des Kochs auf die Probe stellt. Achte aber darauf, nicht zu viel Wasabi drauf zu tun.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4012",
 		"stars": 2,
@@ -2699,13 +3284,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Frost Resistance +15%** für **Frost Resistance +undefined%** Sek."
 	},
 	"item_Cooking_4013": {
 		"name": "Himmelgucker-Kuchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Sieht ein Fisch hinauf zum Himmel, wenn er am Leben ist?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4013",
 		"stars": 2,
@@ -2726,13 +3318,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4014": {
 		"name": "Meeresfrüchteeintopf",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wird normalerweise mit Wildfleisch zubereitet, um die Menge der verwendeten seltenen Zutaten zu reduzieren.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4014",
 		"stars": 2,
@@ -2753,13 +3346,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"CleanBuff"
 		]
 	},
 	"item_Cooking_4015": {
 		"name": "Gegrillte Anemone",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Kann überwältigend sein, wenn zu viel Chili enthalten ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4015",
 		"stars": 2,
@@ -2780,13 +3374,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": " – Erhöht **Flame Attack +2%** für **Flame Attack +undefined%** Sek."
 	},
 	"item_Cooking_4016": {
 		"name": "Anemonenblüte",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Füge dem gedämpften Ei Anemone hinzu, um eine reichhaltigere Textur zu erhalten.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4016",
 		"stars": 2,
@@ -2803,13 +3404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **13% 10000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4017": {
 		"name": "Langlebigkeit",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Die Drachenhals-Schildkröte ist eine verheißungsvolle Kreatur, deshalb geben Restaurants ihr gerne verschiedene Namen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4017",
 		"stars": 2,
@@ -2825,13 +3431,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			600,
+			0.4
+		],
+		"effect": "Erhöht **40** für **undefined** Sek."
 	},
 	"item_Cooking_4018": {
 		"name": "Glücksei",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nichts weiter als ein Drachenhals-Schildkrötenei, aber es verkauft sich besser, wenn es gefärbt ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4018",
 		"stars": 2,
@@ -2852,13 +3464,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Erhöht **Physical Attack +4%** für **Physical Attack +undefined%** Sek."
 	},
 	"item_Cooking_4019": {
 		"name": "Glücksei (pink)",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nichts weiter als ein Drachenhals-Schildkrötenei, aber es verkauft sich besser, wenn es gefärbt ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4019",
 		"stars": 2,
@@ -2879,13 +3498,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4020": {
 		"name": "Glücksei (rot)",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nichts weiter als ein Drachenhals-Schildkrötenei, aber es verkauft sich besser, wenn es gefärbt ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4020",
 		"stars": 2,
@@ -2906,13 +3526,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			900,
+			0.5
+		],
+		"effect": "Erhöht **50** für **undefined** Sek."
 	},
 	"item_Cooking_4021": {
 		"name": "Kalte Qualle",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Knusprig und erfrischend. Wenn man einmal angefangen hat, kann man nicht mehr aufhören!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4021",
 		"stars": 2,
@@ -2929,13 +3555,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **13% 10000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4022": {
 		"name": "Gebratene Qualle mit Pilzen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Diese Mischung aus Pilzen und Qualle ist himmlisch, aber am besten schmeckt sie mit Reis. Ehe du es überhaupt bemerkst, hast du bereits einen ganzen Teller verputzt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4022",
 		"stars": 2,
@@ -2951,13 +3582,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4023": {
 		"name": "Saftiger Kalmar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Iss diese saftigen, prallen Dinger nicht in der Öffentlichkeit, wenn du nicht weißt, wie man sie richtig zu essen hat.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4023",
 		"stars": 2,
@@ -2978,13 +3610,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4024": {
 		"name": "Kalmar-Mischung",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein köstliches Gericht, das noch beliebter sein würde, wenn es appetitlichere Farben hätte.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4024",
 		"stars": 2,
@@ -3005,13 +3638,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Erhöht **Volt Attack +2%** für **Volt Attack +undefined%** Sek."
 	},
 	"item_Cooking_4025": {
 		"name": "Gekochter Fischbrei",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein gesunder Brei für alle, die keinen Appetit haben.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4025",
 		"stars": 2,
@@ -3027,13 +3667,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4026": {
 		"name": "Eingelegter Fisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nichts für Menschen, aber definitiv was für Katzen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4026",
 		"stars": 2,
@@ -3059,13 +3700,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Flame Resistance +15%** für **Flame Resistance +undefined%** Sek."
 	},
 	"item_Cooking_4027": {
 		"name": "Großer Hummer auf Reis",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Hummer, Hummer und noch mehr Hummer! Ein Gericht, das man nur am Meer genießen kann.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4027",
 		"stars": 2,
@@ -3086,13 +3734,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Erhöht **Physical Attack +2%** für **Physical Attack +undefined%** Sek."
 	},
 	"item_Cooking_4028": {
 		"name": "Scharfe Languste",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schmeckt in kleineren Stücken genauso gut!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4028",
 		"stars": 2,
@@ -3108,13 +3763,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4029": {
 		"name": "Gedünstetes Ei mit Krabbe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schmeckt gut … aber ist es Krabbe? Oder ist es ein Krabbenimitat?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4029",
 		"stars": 2,
@@ -3135,13 +3791,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4030": {
 		"name": "Luxuriöser gebratener Reis mit Krabben",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dieses Gericht ist im wahrsten Sinne des Wortes so luxuriös, dass niemand es ablehnen kann.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4030",
 		"stars": 2,
@@ -3162,13 +3819,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4031": {
 		"name": "Königskrabbe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Selbst Könige kommen nicht umhin, gegessen zu werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4031",
 		"stars": 2,
@@ -3185,13 +3843,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4032": {
 		"name": "Gebratener Krabbenreiskuchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Frische, schmackhafte Krabbe in Kombination mit knusprigen Reiswaffeln ergibt ein unglaublich köstliches Gericht.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4032",
 		"stars": 2,
@@ -3212,13 +3875,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Erhöht **Physical Resistance +15%** für **Physical Resistance +undefined%** Sek."
 	},
 	"item_Cooking_4033": {
 		"name": "Goldene Krabbennudeln",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mit jeder Zutat und jedem zusätzlichen Arbeitsschritt steigt der Preis immer weiter an.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4033",
 		"stars": 2,
@@ -3234,13 +3904,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4034": {
 		"name": "Mit Knoblauch gedämpfte Meeresfrüchte",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein klassisches Gericht, bei dem frische Meeresfrüchte auf kräftigen Knoblauch treffen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4034",
 		"stars": 2,
@@ -3261,13 +3932,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": " – Erhöht **Flame Attack +4%** für **Flame Attack +undefined%** Sek."
 	},
 	"item_Cooking_4035": {
 		"name": "Meeresfrüchte-Vermicelli",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein schmackhaftes Gericht, das nie zu reichhaltig oder zu fettig wird.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4035",
 		"stars": 2,
@@ -3293,13 +3971,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Erhöht **Volt Attack +4%** für **Volt Attack +undefined%** Sek."
 	},
 	"item_Cooking_4036": {
 		"name": "Mit Käse überbackener Hummer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Käsig und bissfest.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4036",
 		"stars": 2,
@@ -3316,13 +4001,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Stellt **16% 34000** LP wieder her."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_Cooking_4037": {
 		"name": "Hummer mit Kalmartinte-Nudeln",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein kreatives Gericht, das mit natürlicher Kalmartinte gefärbt ist. Köstlich und stilvoll.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4037",
 		"stars": 2,
@@ -3343,13 +4033,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4038": {
 		"name": "Gebratenes Meeresschneckenfleisch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Dieses würzige und sehr umami schmeckende Essen ist ein Muss bei jedem nächtlichen Snack.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/4038",
 		"stars": 2,
@@ -3365,13 +4056,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_5001": {
 		"name": "Bambussprossen-Eintopf",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine Mischung aus fettigem und magerem Fleisch, das ein paar Stunden lang mit Bambussprossen geschmort wird, und pikante Gewürze, die das Ganze abrunden. Bevor du es bemerkst, hast du bereits drei Schüsseln Reis verschlungen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/5001",
 		"stars": 2,
@@ -3392,13 +4084,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "Erhöht **Volt Attack +4% Volt Resistance +1800** für **Volt Attack +undefined%Volt Resistance +%** Sek."
 	},
 	"item_Cooking_5007": {
 		"name": "Weiße Jade-Begonien",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein kaltes Gericht aus Begonien und Jadegrün.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/5007",
 		"stars": 2,
@@ -3414,13 +4114,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "Erhöht **Flame Attack +4% Flame Resistance +1800** für **Flame Attack +undefined%Flame Resistance +%** Sek."
 	},
 	"item_activity_cooking_001": {
 		"name": "Spanferkel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein Spanferkel von einem fähigen Koch kann selbst den anspruchsvollsten Gaumen befriedigen.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Apophis und die Rosenkönigin besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
 		"stars": 1,
@@ -3446,13 +4154,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_002": {
 		"name": "Geschmorter Truthahn mit Apfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine Astra-Spezialität. Dank der Bewerbung durch Verkäufer und Reisende ist es auf dem ganzen Kontinent sehr beliebt geworden.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Apophis und die Rosenkönigin besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
 		"stars": 1,
@@ -3478,13 +4185,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_003": {
 		"name": "Brathähnchen mit Gemüse",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Verwöhne deine Geschmacksknospen mit einem Biss von einem saftigen Hähnchenschenkel und genieße dazu frischen Kopfsalat. Lecker!\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Apophis und die Rosenkönigin besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
 		"stars": 1,
@@ -3505,13 +4211,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_004": {
 		"name": "Lachs aus der Pfanne",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zarter Lachs mit süßem Honig. Hinterlässt einen wohligen Nachgeschmack im Mund.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Robarg und Sobek besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
 		"stars": 1,
@@ -3532,13 +4237,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_005": {
 		"name": "Kleine Sesamreis-Klößchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine traditionelle Spezialität am Hafen von Banges, nach der Jung und Alt verrückt sind.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Robarg und Sobek besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
 		"stars": 1,
@@ -3559,13 +4263,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_006": {
 		"name": "Rote-Bete-Truthahn-Suppe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine Schale mit warmer Suppe, die ganz schnell alle Erschöpfung aus den Knochen vertreibt.\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Robarg und Sobek besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
 		"stars": 1,
@@ -3586,13 +4289,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_007": {
 		"name": "Lebkuchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine beliebte Leckerei auf Feierlichkeiten, die die Süße von Zucker und Honig mit dem angenehmen Aroma von Weizen verbindet.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Robarg, Apophis, der Frost-Bot, Sobek, die Rosenkönigin und Barbarossa besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
 		"stars": 1,
@@ -3613,13 +4315,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_008": {
 		"name": "Apfelkuchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein saftiges Früchtebrot. Schon allein der Gedanke lässt dir das Wasser im Mund zusammenlaufen.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem der Frost-Bot und Barbarossa besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
 		"stars": 1,
@@ -3645,13 +4346,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_009": {
 		"name": "Früchtepunsch",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein Getränk mit herrlich fruchtigem Aroma und einem kleinen Schuss Schnaps.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem der Frost-Bot und Barbarossa besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
 		"stars": 1,
@@ -3677,13 +4377,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_010": {
 		"name": "Apfelsaft",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Süß und sauer zugleich. Eine im Sommer bei Jung und Alt beliebte Erfrischung.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem der Frost-Bot und Barbarossa besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
 		"stars": 1,
@@ -3704,13 +4403,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity2_cooking_101": {
 		"name": "Ballonfrucht-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Begib dich mit der Ballonblume in die Welt der Schokolade!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
 		"stars": 1,
@@ -3731,13 +4429,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_102": {
 		"name": "Pinienkern-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mit Schokolade überzogene Pinienkerne sind das perfekte Geschenk.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
 		"stars": 1,
@@ -3758,13 +4460,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_103": {
 		"name": "Erdbeer-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Süße Erdbeeren und zarte Schokolade – so schmeckt die erste Liebe.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
 		"stars": 1,
@@ -3785,13 +4491,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_104": {
 		"name": "Haselnuss-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein mit Schokolade umhülltes Herz, das für die Liebe schlägt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
 		"stars": 1,
@@ -3812,13 +4522,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_105": {
 		"name": "Trüffel-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Man merkt, dass die Zutaten mit Liebe ausgewählt wurden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
 		"stars": 1,
@@ -3839,13 +4553,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_106": {
 		"name": "Blaubeer-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Beiß ab und lass süßsaure Blaubeermarmelade über deine Zunge fließen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
 		"stars": 1,
@@ -3866,13 +4584,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_107": {
 		"name": "Honig-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine majestätische Symphonie aus Schokolade und Honig.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
 		"stars": 1,
@@ -3893,13 +4615,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_108": {
 		"name": "Gefallene Früchte-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ich geb dir das, was mir am liebsten ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
 		"stars": 1,
@@ -3920,13 +4646,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_109": {
 		"name": "Kakao-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
 		"stars": 1,
@@ -3942,13 +4672,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_110": {
 		"name": "Milch-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Milch und Schokolade sind einfach füreinander geschaffen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
 		"stars": 1,
@@ -3969,13 +4703,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_201": {
 		"name": "Ballonfruchtkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Begib dich mit der Ballonblume in die Welt der Schokolade!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
 		"stars": 1,
@@ -3996,13 +4734,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_202": {
 		"name": "Pinienkernkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mit Schokolade überzogene Pinienkerne sind das perfekte Geschenk.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
 		"stars": 1,
@@ -4023,13 +4765,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_203": {
 		"name": "Erdbeerkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Süße Erdbeeren und zarte Schokolade – so schmeckt die erste Liebe.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
 		"stars": 1,
@@ -4050,13 +4796,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_204": {
 		"name": "Haselnusskugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein mit Schokolade umhülltes Herz, das für die Liebe schlägt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
 		"stars": 1,
@@ -4077,13 +4827,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_205": {
 		"name": "Trüffelkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Man merkt, dass die Zutaten mit Liebe ausgewählt wurden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
 		"stars": 1,
@@ -4104,13 +4858,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_206": {
 		"name": "Blaubeerkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Beiß ab und lass süßsaure Blaubeermarmelade über deine Zunge fließen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
 		"stars": 1,
@@ -4131,13 +4889,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_207": {
 		"name": "Honigkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine majestätische Symphonie aus Schokolade und Honig.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
 		"stars": 1,
@@ -4158,13 +4920,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_208": {
 		"name": "Gefallene Früchte-Kugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ich geb dir das, was mir am liebsten ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
 		"stars": 1,
@@ -4185,13 +4951,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_209": {
 		"name": "Kakaokugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
 		"stars": 1,
@@ -4207,13 +4977,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_210": {
 		"name": "Milchkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Milch und Schokolade sind einfach füreinander geschaffen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
 		"stars": 1,
@@ -4234,13 +5008,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_301": {
 		"name": "Ballonfruchtwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Begib dich mit der Ballonblume in die Welt der Schokolade!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
 		"stars": 1,
@@ -4261,13 +5039,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_302": {
 		"name": "Pinienkernwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mit Schokolade überzogene Pinienkerne sind das perfekte Geschenk.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
 		"stars": 1,
@@ -4288,13 +5070,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_303": {
 		"name": "Erdbeerwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Süße Erdbeeren und zarte Schokolade – so schmeckt die erste Liebe.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
 		"stars": 1,
@@ -4315,13 +5101,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_304": {
 		"name": "Haselnusswürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein mit Schokolade umhülltes Herz, das für die Liebe schlägt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
 		"stars": 1,
@@ -4342,13 +5132,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_305": {
 		"name": "Trüffelwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Man merkt, dass die Zutaten mit Liebe ausgewählt wurden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
 		"stars": 1,
@@ -4369,13 +5163,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_306": {
 		"name": "Blaubeerwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Beiß ab und lass süßsaure Blaubeermarmelade über deine Zunge fließen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
 		"stars": 1,
@@ -4396,13 +5194,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_307": {
 		"name": "Honigwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine majestätische Symphonie aus Schokolade und Honig.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
 		"stars": 1,
@@ -4423,13 +5225,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_308": {
 		"name": "Gefallene Früchte-Würfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ich geb dir das, was mir am liebsten ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
 		"stars": 1,
@@ -4450,13 +5256,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_309": {
 		"name": "Kakaowürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
 		"stars": 1,
@@ -4472,13 +5282,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_310": {
 		"name": "Milchwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Milch und Schokolade sind einfach füreinander geschaffen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
 		"stars": 1,
@@ -4499,93 +5313,119 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_001": {
 		"name": "Cetus-Souvenir",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Geschenktruhe „Schokolade“ im Elektromantie-Stil, Hannas stolzes Werk.\r\nDie Doktorin sagt, Köstlichkeiten muss man mit wichtigen Personen teilen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_002": {
 		"name": "Cetus-Souvenir",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Geschenktruhe „Schokolade“ im „Physisches Element“-Stil, Hannas stolzes Werk.\nDie Doktorin sagt, Köstlichkeiten muss man mit wichtigen Personen teilen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_003": {
 		"name": "Cetus-Souvenir",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Geschenktruhe „Schokolade“ im Pyromantie-Stil, Hannas stolzes Werk.\nDie Doktorin sagt, Köstlichkeiten muss man mit wichtigen Personen teilen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_004": {
 		"name": "Cetus-Souvenir",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Geschenktruhe „Schokolade“ im Kryomantie-Stil, Hannas stolzes Werk.\nDie Doktorin sagt, Köstlichkeiten muss man mit wichtigen Personen teilen!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity2_cooking_005": {
 		"name": "Knuspriger Reiskuchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Einer der beliebtesten Snacks von Planet Aida. Mitglieder der Hyänen und Ravager haben um ein einziges Stück von diesem Kuchen gekämpft.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity2_cooking_006": {
 		"name": "Geschenktruhe „Schokolade“",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Köstlichkeiten müssen mit wichtigen Personen geteilt werden!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"HealPotion_01": {
 		"name": "Frühlingspfannkuchen",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Der beliebteste Snack auf dem Frühlingsmarkt,\r\nallerdings ist es unmöglich, den Geschmack am Aussehen zu erkennen …",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.22,
+			75000
+		],
+		"effect": "Verwenden, um sofort (**22% + 75000**) LP des Wanderers wiederherzustellen."
 	},
 	"BuffPotion_01": {
 		"name": "Pinienbrise",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Auf dem Frühlingsmarkt erhältliches Getränk.\r\nEin Schluck von diesem Getränk gibt dir das Gefühl, mitten in einem Pinienwald zu stehen, während die sanfte Frühlingsbrise deine Wangen streichelt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity3_cooking_101": {
 		"name": "Originale Tafel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wer könnte schon dem herrlichen Duft von Schokolade widerstehen?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
 		"stars": 1,
@@ -4611,13 +5451,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_102": {
 		"name": "Nusswürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schokolade mit Nüssen ist äußerst lecker!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
 		"stars": 1,
@@ -4638,13 +5482,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_103": {
 		"name": "Haselnusswürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zum seidig-weichen Mundgefühl gesellt sich ein wunderbares Haselnussaroma, das zusammen mit der Schokolade eine ganz neue Geschmackswelt erzeugt.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
 		"stars": 1,
@@ -4665,13 +5513,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_104": {
 		"name": "Drachenfeuerwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Wen kümmert es schon, ob es Kerne hat oder nicht, wenn es doch Schokolade zu genießen gibt?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
 		"stars": 1,
@@ -4692,13 +5544,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_105": {
 		"name": "Kakaowürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
 		"stars": 1,
@@ -4719,13 +5575,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_106": {
 		"name": "Schwanzwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Der letzte Schrei unter den Schokoladensorten mit ausgefallenem Geschmack. Traust du dich, sie zu probieren?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
 		"stars": 1,
@@ -4746,13 +5606,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_107": {
 		"name": "Fleischwollwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fleisch-Wolle mit Schokoladengeschmack, eine weitere Bereicherung für die dunkle Welt der Untergrundküche.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
 		"stars": 1,
@@ -4773,13 +5637,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_108": {
 		"name": "Pilzwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Schokoladenpralinen sind immer eine herrliche Überraschung.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
 		"stars": 1,
@@ -4800,13 +5668,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_109": {
 		"name": "Gesalzener Eierwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Das Eigelb ist körnig und feucht und hat einen unverkennbaren Geschmack.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
 		"stars": 1,
@@ -4827,13 +5699,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_110": {
 		"name": "Surimiwürfel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Diese Schokolade zeichnet sich durch intensive Aromen von Meeresfrüchten aus.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
 		"stars": 1,
@@ -4854,13 +5730,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_201": {
 		"name": "Kaffeekugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ich möchte mit dir das Bittere und das Süße der Reise genießen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
 		"stars": 1,
@@ -4886,13 +5766,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_202": {
 		"name": "Schnapskugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Die sanften Aromen von Wein und Schokolade vereinen sich zu einer zarten Melodie.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
 		"stars": 1,
@@ -4913,13 +5797,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_203": {
 		"name": "Blumenkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Beim Reinbeißen entfaltet sich ein atemberaubendes blumiges Aroma, das an Rosen zum Valentinstag erinnert.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
 		"stars": 1,
@@ -4940,13 +5828,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_204": {
 		"name": "Erdbeerkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Süße Erdbeeren und zarte Schokolade – so schmeckt die erste Liebe.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
 		"stars": 1,
@@ -4967,13 +5859,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_205": {
 		"name": "Kakaokugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
 		"stars": 1,
@@ -4994,13 +5890,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_206": {
 		"name": "Ballonfruchtkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Begib dich mit der Ballonblume in die Welt der Schokolade!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
 		"stars": 1,
@@ -5021,13 +5921,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_207": {
 		"name": "Fleischwollkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zarte Schokolade und fluffige Füllung sorgen für einen ganz neuen Geschmack.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
 		"stars": 1,
@@ -5048,13 +5952,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_208": {
 		"name": "Meersalzkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Keine Lust mehr auf süß? Probier's doch mal mit salzig!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
 		"stars": 1,
@@ -5075,13 +5983,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_209": {
 		"name": "Trüffelkugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Man merkt, dass die Zutaten mit Liebe ausgewählt wurden.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
 		"stars": 1,
@@ -5102,13 +6014,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_210": {
 		"name": "Surimikugel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Es gibt mehr als eine Weise, eine gute Krabbenkeule zuzubereiten.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
 		"stars": 1,
@@ -5129,13 +6045,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_301": {
 		"name": "Minze-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ein kalter Geschmack, der unermesslich erfrischend ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
 		"stars": 1,
@@ -5156,13 +6076,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_302": {
 		"name": "Sahne-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Gibt es etwas, das mit Sahne konkurrieren kann, wenn es um Süßes geht?",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
 		"stars": 1,
@@ -5183,13 +6107,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_303": {
 		"name": "Gefallene Früchte-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ich geb dir das, was mir am liebsten ist.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
 		"stars": 1,
@@ -5210,13 +6138,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_304": {
 		"name": "Blaubeer-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Beiß ab und lass süßsaure Blaubeermarmelade über deine Zunge fließen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
 		"stars": 1,
@@ -5237,13 +6169,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_305": {
 		"name": "Kakao-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
 		"stars": 1,
@@ -5264,13 +6200,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_306": {
 		"name": "Fischtran-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Diese nährstoffreiche Schokolade ist die erste Wahl für jeden Gesundheitsfanatiker.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
 		"stars": 1,
@@ -5291,13 +6231,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_307": {
 		"name": "Scharfes Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine Nuss, die es in sich hat.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
 		"stars": 1,
@@ -5318,13 +6262,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_308": {
 		"name": "Fleischwoll-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Eine eiskalte Schale mit einer sanften Füllung.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
 		"stars": 1,
@@ -5345,13 +6293,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_309": {
 		"name": "Rogen-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Allein die Zutaten zeigen, wie teuer er ist!",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
 		"stars": 1,
@@ -5372,13 +6324,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	},
 	"item_activity3_cooking_310": {
 		"name": "Surimi-Crush",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Diese Schokolade hat sich in den Augen der Kritiker als ziemlich polarisierend erwiesen.",
-		"satiety": "Stellt <ComLblGreen>{0}</> der Sättigung wieder her.",
 		"buff": "Hauptgericht",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
 		"stars": 1,
@@ -5399,6 +6355,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
 	}
 }

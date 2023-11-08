@@ -1,41 +1,40 @@
 {
 	"Task_Area2Cooking": {
 		"name": "Friandise pour chien",
-		"type": "ITEM_TYPE_QUEST",
 		"description": "La nourriture préférée des molosses entraînés.",
-		"satiety": "Objet pour distraire les molosses.",
 		"buff": "En-cas",
 		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_POOR"
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
 	},
 	"Item_Cooking_0901": {
 		"name": "Ragoût infect",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un tas d'ingrédients inconnus mijotés grossièrement dans une grande marmite, avec plein de nutriments perdus dans le processus.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_0902": {
 		"name": "Ragoût raffiné",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "On pourrait dire que c'est une réussite, mais le choix des ingrédients ne rend finalement pas justice au plat…",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
 		"stars": 0,
 		"quality": "ITEM_QUALITY_POOR",
-		"ingredients": []
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
 	},
 	"Item_Cooking_1001": {
 		"name": "Champignons grillés",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Abstraction faite du goût, au moins c'est cuit correctement.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1001",
 		"stars": 1,
@@ -47,13 +46,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **10% 1500** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**10% + 1500**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1002": {
 		"name": "Soupe d'algues aux œufs",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Contient des algues fraiches et riches en protéines, parfaites pour remplir l'estomac.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1002",
 		"stars": 1,
@@ -70,13 +74,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1003": {
 		"name": "Poisson grillé croustillant",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un des plats populaires de la ville portuaire de Banges. Bon marché et délicieux.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1003",
 		"stars": 1,
@@ -87,13 +96,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1004": {
 		"name": "Pain complet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fabriqué à partir de céréales transformées, il est nourrissant et se conserve bien. Tous les Explorateurs devraient en avoir sur eux.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1004",
 		"stars": 1,
@@ -104,13 +114,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1005": {
 		"name": "Céréales de petit déjeuner",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une ration vitale qui suffisait autrefois à nourrir cinq à six personnes. Aujourd'hui, étant plus à l'aise, les gens y ajoutent du lait à la place de l'eau.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1005",
 		"stars": 1,
@@ -126,13 +137,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1006": {
 		"name": "Viande grillée",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Vous la voulez comment ? Les hommes la mangent généralement tout juste saisie sur des pierres qui ont chauffé au soleil.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1006",
 		"stars": 1,
@@ -143,13 +155,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1007": {
 		"name": "Soupe de fruits de mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "On dit qu'une bouchée remonte le moral, et que deux améliorent la santé, malgré le goût moyen.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1007",
 		"stars": 1,
@@ -170,13 +183,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Accroît **Frost Attack +1%** pendant **Frost Attack +undefined%**secondes."
 	},
 	"Item_Cooking_1008": {
 		"name": "Burger de poulet croustillant",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Les burgers au poulet que l'on voit dans les fast-food. Il n'y a rien de meilleur que l'association du poulet chaud et croustillant avec la laitue croquante.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1008",
 		"stars": 1,
@@ -198,13 +218,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1009": {
 		"name": "Burger épicé",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ça met en appétit à toute heure du jour ou de la nuit.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1009",
 		"stars": 1,
@@ -225,13 +250,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Accroît **Physical Attack +1%** pendant **Physical Attack +undefined%**secondes."
 	},
 	"Item_Cooking_1010": {
 		"name": "Riz frit aux œufs",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La petite nouveauté qu'il vous faut lorsque vous en avez ras la casquette de manger du riz blanc ordinaire.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1010",
 		"stars": 1,
@@ -247,13 +279,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1011": {
 		"name": "Crabe à la vapeur",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Les fruits de mer sont meilleurs servis frais. Le problème est de savoir par où commencer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1011",
 		"stars": 1,
@@ -270,13 +303,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1012": {
 		"name": "Soda glacé à la fraise",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mélangez des fraises en purée dans le soda, puis ajoutez des glaçons. Un incontournable de l'été.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1012",
 		"stars": 1,
@@ -297,23 +335,35 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Accroît **Flame Resistance +10%** pendant **Flame Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_1013": {
 		"name": "Soda flamboyant",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "C'est l'heure du thé !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1013",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_RARE"
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"mods": [
+			900,
+			0.1,
+			65
+		],
+		"effect": "Accroît **10** pendant **undefined**secondes."
 	},
 	"Item_Cooking_1014": {
 		"name": "Soda à la myrtille noire",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La myrtille est aussi sombre qu'un nuage de pluie. Faites attention à ne pas en renverser sur vous, c'est difficile à laver.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1014",
 		"stars": 1,
@@ -334,13 +384,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Accroît **Volt Resistance +10%** pendant **Volt Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_1015": {
 		"name": "Tomate aux œufs d'or",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Non, les œufs n'ont pas été brouillés par accident…",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1015",
 		"stars": 1,
@@ -357,13 +414,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1016": {
 		"name": "Salade énergétique simple",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La salade la plus basique pour couvrir les besoins nutritionnels quotidiens. Le plat idéal pour un régime pauvre en graisses.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1016",
 		"stars": 1,
@@ -394,13 +456,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Accroît **Physical Resistance +10%** pendant **Physical Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_1017": {
 		"name": "Salade de laitue",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une belle salade avec des ingrédients simples, et pleine de saveurs.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1017",
 		"stars": 1,
@@ -417,13 +486,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **10% 1500** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**10% + 1500**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1018": {
 		"name": "Soupe aux champignons",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un mélange parfait de champignons frais et de laitue croquante.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1018",
 		"stars": 1,
@@ -440,13 +514,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1019": {
 		"name": "Œuf au plat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Commencez la journée du bon pied avec des œufs au plat !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1019",
 		"stars": 1,
@@ -458,13 +537,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **10% 1500** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**10% + 1500**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1020": {
 		"name": "Conque à la vapeur",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tout le goût est préservé ! Une pincée d'oignon vert émincé pourrait encore l'améliorer, cela dit.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1020",
 		"stars": 1,
@@ -481,13 +565,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1021": {
 		"name": "Œuf vapeur aux oursins",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "L'oursin avec un bel œuf bien lisse à la vapeur est délicieux et réconfortant, particulièrement populaire dans les champs de neige.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1021",
 		"stars": 1,
@@ -504,13 +593,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1022": {
 		"name": "Tartine de confiture aux deux baies",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Fusion de deux baies pour une symphonie aigre-douce en bouche.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1022",
 		"stars": 1,
@@ -531,13 +625,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Accroît **Volt Attack +1%** pendant **Volt Attack +undefined%**secondes."
 	},
 	"Item_Cooking_1023": {
 		"name": "Pâtes à la tomate et aux œufs",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "D'une acidité parfaite, et facile à préparer. Un plat à la fois goûteux et pauvre en calories.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1023",
 		"stars": 1,
@@ -558,13 +659,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " - Accroît **Flame Attack +1%** pendant **Flame Attack +undefined%**secondes."
 	},
 	"Item_Cooking_1024": {
 		"name": "Ragoût de pommes de terre à la viande",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La viande a absorbé tous les nutriments, ça ne peut donc être que sain !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1024",
 		"stars": 1,
@@ -580,13 +688,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1025": {
 		"name": "Frites",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "De la malbouffe ? Non, du pur bonheur !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1025",
 		"stars": 1,
@@ -602,13 +711,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1026": {
 		"name": "Salade de légumes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une salade idéale pour les pique-niques.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1026",
 		"stars": 1,
@@ -635,13 +745,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1027": {
 		"name": "Poulet frit",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un repas simple et rapide. L'aspect doré et croustillant en fera saliver plus d'un.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1027",
 		"stars": 1,
@@ -658,13 +773,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1028": {
 		"name": "Jus de fruits au miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Jus frais avec quelques touches de miel, légèrement secoué. Une touche de douceur au milieu de l'acidité.",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1028",
 		"stars": 1,
@@ -686,13 +806,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1029": {
 		"name": "Gâteau aux fruits",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Il n'y a aucun problème qu'un bon gâteau ne puisse résoudre. Si le problème persiste, reprenez une part !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1029",
 		"stars": 1,
@@ -719,13 +845,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1030": {
 		"name": "Orchidée glacée surprise",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Spécialité estivale. Sentez l'exotisme dans votre bouche !",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1030",
 		"stars": 1,
@@ -747,13 +878,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1031": {
 		"name": "Brocoli sauté",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une nourriture saine et pauvre en graisses, mais qui est loin de faire l'unanimité.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1031",
 		"stars": 1,
@@ -764,13 +901,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1032": {
 		"name": "Pétoncles bouillis",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat simple et savoureux qui ne nécessite aucun assaisonnement.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1032",
 		"stars": 1,
@@ -787,13 +925,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1033": {
 		"name": "Brioche à la viande",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le jus qui s'échappe quand vous mordez dedans, c'est ce qui en fait tout le charme !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1033",
 		"stars": 1,
@@ -809,13 +952,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_1034": {
 		"name": "Émincé de poisson aux champignons",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un accompagnement parfait de poisson émincé aux champignons.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1034",
 		"stars": 1,
@@ -832,13 +976,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1035": {
 		"name": "Rumsteck rôti",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Allumez le barbecue et prenez une chaise. Aah ! cette odeur…",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1035",
 		"stars": 1,
@@ -850,13 +999,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_1036": {
 		"name": "Soupe aux pissenlits et aux champignons",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Vous avez déjà essayé le pissenlit avec les champignons ? Ça donne une légèreté incroyable.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/1036",
 		"stars": 1,
@@ -873,13 +1028,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2001": {
 		"name": "Terre-mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat typique de Banges, pour un goût de nostalgie.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2001",
 		"stars": 2,
@@ -896,13 +1056,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **13% 10000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**13% + 10000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2002": {
 		"name": "Pain de blé rouge",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "L'aliment le plus répandu chez les Aidiens, à l'image de leur vie on ne peut plus modeste.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2002",
 		"stars": 2,
@@ -913,13 +1078,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"Item_Cooking_2003": {
 		"name": "Tarte aux crosses de fougère",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un gâteau sain, fourré aux crosses de fougère, mais pas très apprécié par les enfants.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2003",
 		"stars": 2,
@@ -936,13 +1102,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2004": {
 		"name": "Pain au chocolat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un pain très généreusement garni ! Le régime attendra un peu.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2004",
 		"stars": 2,
@@ -959,13 +1130,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2005": {
 		"name": "Soupe aux champignons tête-de-feu",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Quoi de plus réconfortant qu'une soupe bien chaude aux champignons tête-de-feu quand vous escaladez les sommets enneigés ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2005",
 		"stars": 2,
@@ -982,13 +1158,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **13% 10000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**13% + 10000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2006": {
 		"name": "Soupe à la mousse noire",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Elle aura le mérite de vous remplir l'estomac en attendant de trouver quelque chose de meilleur.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2006",
 		"stars": 2,
@@ -1005,13 +1187,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **13% 10000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**13% + 10000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2007": {
 		"name": "Salade de fruits ballon",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une salade qui vaut le détour. Aigre-doux, le goût préféré des enfants !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2007",
 		"stars": 2,
@@ -1033,13 +1220,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2008": {
 		"name": "Soupe aux crosses de fougère",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le rêve de tous les herbivores…",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2008",
 		"stars": 2,
@@ -1056,13 +1248,18 @@
 				"max": " 4"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2009": {
 		"name": "Anguille épicée",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "L'anguille électrique a bien été cuite ? Pourquoi j'ai des picotements sur la langue ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2009",
 		"stars": 2,
@@ -1073,13 +1270,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Accroît **Volt Resistance +10%** pendant **Volt Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_2010": {
 		"name": "Soupe d'anguille et champignons",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un défi épicé pour les papilles gustatives. Avalez ça tout rond si vous l'osez ! Et interdit de boire de l'eau !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
 		"stars": 2,
@@ -1095,13 +1299,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Accroît **Volt Attack +1%** pendant **Volt Attack +undefined%**secondes."
 	},
 	"Item_Cooking_2011": {
 		"name": "Soupe au crabe de mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tous les bons nutriments du crabe concentrés dans un ragoût.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2011",
 		"stars": 2,
@@ -1117,13 +1328,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Accroît **Flame Resistance +10%** pendant **Flame Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_2012": {
 		"name": "Jus de grenade sucré",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "J'hallucine ou le jus brille vraiment ?!",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2012",
 		"stars": 2,
@@ -1145,13 +1363,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2013": {
 		"name": "Lait de cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Prenez-en une tasse avant de vous coucher et faites de beaux rêves !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2013",
 		"stars": 2,
@@ -1172,13 +1396,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Accroît **Frost Resistance +10%** pendant **Frost Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_2014": {
 		"name": "Thé au fruit du pyrodragon",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Idéal pour le goûter, surtout lorsque accompagné d'un petit gâteau !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2014",
 		"stars": 2,
@@ -1194,13 +1425,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": " - Accroît **Flame Attack +1%** pendant **Flame Attack +undefined%**secondes."
 	},
 	"Item_Cooking_2015": {
 		"name": "Ragoût de bernacle",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un ragoût dont on n'oublie pas le goût !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2015",
 		"stars": 2,
@@ -1216,13 +1454,20 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			290
+		],
+		"effect": "Accroît **Physical Resistance +10%** pendant **Physical Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_2016": {
 		"name": "Pizza aux bernacles et fruits de mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Alors double ration pour moi, et sans complexes !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2016",
 		"stars": 2,
@@ -1244,13 +1489,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2017": {
 		"name": "Thé à la verglazalée",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "À consommer de préférence au coin d'un bon feu de camp en hiver.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2017",
 		"stars": 2,
@@ -1271,13 +1521,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Accroît **Frost Attack +1%** pendant **Frost Attack +undefined%**secondes."
 	},
 	"Item_Cooking_2018": {
 		"name": "Pignons au lait",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat au lait aromatisé aux pignons. Les amateurs y rajouteront des pignons ou des noix concassées.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2018",
 		"stars": 2,
@@ -1299,13 +1556,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2019": {
 		"name": "Thé aux noix",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ça sent bon les noix fraîches…",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2019",
 		"stars": 2,
@@ -1327,13 +1589,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2020": {
 		"name": "Tarte aux ignames ailées",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une tarte bien nourrissante, et qui s'emporte facilement pour les longues randonnées.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2020",
 		"stars": 2,
@@ -1349,13 +1616,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Accroît **Volt Attack +2%** pendant **Volt Attack +undefined%**secondes."
 	},
 	"Item_Cooking_2021": {
 		"name": "Soupe au lotus des neiges",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Comme le lotus des neiges a un goût plutôt fade, on lui ajoute un peu de sucre pour le faire passer plus facilement.",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2021",
 		"stars": 2,
@@ -1372,13 +1646,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2022": {
 		"name": "Riz frit à la truffe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Faites revenir la truffe, puis ajoutez-la au riz frit.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2022",
 		"stars": 2,
@@ -1399,13 +1679,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Accroît **Physical Attack +2%** pendant **Physical Attack +undefined%**secondes."
 	},
 	"Item_Cooking_2023": {
 		"name": "Nouilles aux champichenilles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "J'ai déjà atteint l'âge de faire attention à ce que je mange ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2023",
 		"stars": 2,
@@ -1422,13 +1709,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2024": {
 		"name": "Sushi au caviar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Il faut que le visuel soit au rendez-vous pour en faire un plat distingué. Sinon, mieux vaut mélanger tout ça dans un bol.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2024",
 		"stars": 2,
@@ -1450,13 +1742,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"Item_Cooking_2025": {
 		"name": "Boulettes de pommes de terre au caviar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Des boulettes de pommes de terre imbibées de caviar de première qualité. Vous risquez de vous resservir.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2025",
 		"stars": 2,
@@ -1472,13 +1769,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			80
+		],
+		"effect": "Accroît **Physical Attack +1%** pendant **Physical Attack +undefined%**secondes."
 	},
 	"Item_Cooking_2026": {
 		"name": "Steak grillé",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "À point, s'il vous plaît !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2026",
 		"stars": 2,
@@ -1489,13 +1793,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Volt Resistance +15%** pendant **Volt Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_2027": {
 		"name": "Steak avec sauce aux champignons",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Je crois que je vois des steaks voler dans le ciel…",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2027",
 		"stars": 2,
@@ -1511,13 +1822,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " - Accroît **Flame Attack +2%** pendant **Flame Attack +undefined%**secondes."
 	},
 	"Item_Cooking_2028": {
 		"name": "Viande braisée",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un classique intemporel.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2028",
 		"stars": 2,
@@ -1528,13 +1846,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Frost Resistance +15%** pendant **Frost Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_2029": {
 		"name": "Sandwich à la viande juteuse",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Prenez le temps de vous préparer un bon petit déjeuner !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2029",
 		"stars": 2,
@@ -1555,13 +1880,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Flame Resistance +15%** pendant **Flame Resistance +undefined%**secondes."
 	},
 	"Item_Cooking_2030": {
 		"name": "Sashimi de saumon",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le saumon dans sa forme la plus pure !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2030",
 		"stars": 2,
@@ -1572,13 +1904,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Accroît **Frost Attack +2%** pendant **Frost Attack +undefined%**secondes."
 	},
 	"Item_Cooking_2031": {
 		"name": "Riz cuit aux escargots",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un mélange bien plus savoureux qu'il n'en a l'air.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 2,
@@ -1594,13 +1933,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Physical Resistance +15%** pendant **Physical Resistance +undefined%**secondes."
 	},
 	"item_Cooking_3001": {
 		"name": "Piments sautés",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "C'est si pimenté !!!!!",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3001",
 		"stars": 1,
@@ -1616,13 +1962,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Accroît **Frost Resistance +10%** pendant **Frost Resistance +undefined%**secondes."
 	},
 	"item_Cooking_3002": {
 		"name": "Oignons des sables braisés",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "L'étal de barbecue de l'Explorateur qui vous mettra l'eau à la bouche est désormais ouvert !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/2031",
 		"stars": 1,
@@ -1633,13 +1986,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3003": {
 		"name": "Yaourts à l'aloès",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Qui n'aime pas le goût aigre-doux du yaourt ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3003",
 		"stars": 2,
@@ -1661,13 +2015,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3004": {
 		"name": "Thé de rose",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Lorsque le thé de rose infuse, même l'esprit le plus agité se tranquillise miraculeusement.",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3004",
 		"stars": 2,
@@ -1684,24 +2043,36 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3005": {
 		"name": "Limonade de fruit d'épine",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une quantité généreuse de miel a été ajoutée pour donner plus de goût à ce jus de fruit d'épine ordinaire.",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
 		"quality": "ITEM_QUALITY_RARE",
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3006": {
 		"name": "Soupe de betterave",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "De la soupe de betterave chaude. Par temps froid, on en avale facilement une marmite entière.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3006",
 		"stars": 1,
@@ -1713,13 +2084,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"item_Cooking_3007": {
 		"name": "Salade au melon doux",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ça a meilleur goût quand c'est froid, mais il ne faut pas être gourmand.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3007",
 		"stars": 1,
@@ -1735,13 +2111,20 @@
 				"min": " 3",
 				"max": " 3"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.1,
+			170
+		],
+		"effect": "Accroît **Flame Resistance +10%** pendant **Flame Resistance +undefined%**secondes."
 	},
 	"item_Cooking_3008": {
 		"name": "Limonade de fruit d'épine",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une quantité généreuse de miel a été ajoutée pour donner plus de goût à ce jus de fruit d'épine ordinaire.",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3008",
 		"stars": 1,
@@ -1763,13 +2146,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3009": {
 		"name": "Gruau à la citrouille",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un aliment souvent très rassasiant ; après en avoir mangé un bol, on n'a généralement pas besoin de quoi que ce soit d'autre.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3009",
 		"stars": 1,
@@ -1786,13 +2175,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3010": {
 		"name": "Tofu frit",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Des en-cas frits dorés et croustillants. Attention à ne pas verser la sauce sur vos vêtements !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3010",
 		"stars": 1,
@@ -1803,13 +2197,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3011": {
 		"name": "Soupe de radis",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une soupe nourrissante et savoureuse. Un autre bol, s'il vous plaît !",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3011",
 		"stars": 2,
@@ -1821,13 +2216,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3012": {
 		"name": "Maïs au sel et poivre",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Des en-cas simples et faciles. Le premier choix pour les soirées tardives.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3012",
 		"stars": 1,
@@ -1838,13 +2239,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"AddSatiety"
 		]
 	},
 	"item_Cooking_3013": {
 		"name": "Spécialité au cactus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une spécialité rafraîchissante au cactus, essentielle pour l'été.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3013",
 		"stars": 1,
@@ -1856,13 +2258,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **10% 1500** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.1,
+			1500
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**10% + 1500**) PV à l'Explorateur."
 	},
 	"item_Cooking_3014": {
 		"name": "Queues de lézard grillées",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Saupoudrez-le de piment, cumin et poivre, et attendez quelque temps avant de démarrer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3014",
 		"stars": 1,
@@ -1874,13 +2281,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"item_Cooking_3015": {
 		"name": "Côtes grillées spéciales",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le meilleur compagnon du riz ! Le seul et unique !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3015",
 		"stars": 1,
@@ -1897,13 +2309,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3016": {
 		"name": "Lait de soja au chocolat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Si vous en avez marre de lait de soja ordinaire, pourquoi ne pas essayer celui-ci ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3016",
 		"stars": 1,
@@ -1925,13 +2342,19 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3017": {
 		"name": "Betterave à crosse de fougère",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une fois les ingrédients bouillis, ôtez-les de la casserole, ajoutez la sauce, mélangez bien, et c'est prêt !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3017",
 		"stars": 1,
@@ -1948,13 +2371,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3018": {
 		"name": "Salade du désert",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Du cactus boule en dés et des fruits d'épine accompagnés d'une vinaigrette. Meilleur quand c'est frais.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3018",
 		"stars": 1,
@@ -1976,13 +2404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3019": {
 		"name": "Pain de rose",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un après-midi agréable commence par un pain carré au parfum de rose.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3019",
 		"stars": 2,
@@ -1998,13 +2431,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Volt Resistance +15%** pendant **Volt Resistance +undefined%**secondes."
 	},
 	"item_Cooking_3020": {
 		"name": "Pain au melon de miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un simple pain rond fourré de melon sucré, c'est tout ce qu'il faut pour le petit-déjeuner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3020",
 		"stars": 1,
@@ -2025,13 +2465,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": "Accroît **Frost Attack +1%** pendant **Frost Attack +undefined%**secondes."
 	},
 	"item_Cooking_3021": {
 		"name": "Gruau multicéréales",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce gruau de riz est composé d'une variété de céréales mixtes. Parfois, j'ai juste envie de manger quelque chose de léger.",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3021",
 		"stars": 1,
@@ -2053,13 +2500,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3022": {
 		"name": "Biscuit au maïs et fruits de mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tacos aux fruits de mer complets… Je me demande bien comment ils font pour ne pas faire faillite ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3022",
 		"stars": 1,
@@ -2081,13 +2534,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3023": {
 		"name": "Citrouille à la vapeur",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La citrouille à la vapeur est tendre et douce. C'est un bon moyen pour perdre du poids.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3023",
 		"stars": 1,
@@ -2104,13 +2562,18 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Régénère **15% 20000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3024": {
 		"name": "Soupe au poulet",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Des nouilles lisses surmontées d'un bouillon de poulet chaud. Faites comme si c'était un bol de nouilles d'anniversaire et faites un vœu.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3024",
 		"stars": 2,
@@ -2131,13 +2594,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": "Accroît **Physical Attack +2%** pendant **Physical Attack +undefined%**secondes."
 	},
 	"item_Cooking_3025": {
 		"name": "Nouilles de barbecue épicé",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Je peux certainement rivaliser avec les nouilles de Kun Ji !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3025",
 		"stars": 2,
@@ -2158,13 +2628,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			1200,
+			0.02,
+			150
+		],
+		"effect": " - Accroît **Flame Attack +2%** pendant **Flame Attack +undefined%**secondes."
 	},
 	"item_Cooking_3026": {
 		"name": "Riz frit épicé",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Plus c'est pimenté, plus on rit !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3026",
 		"stars": 1,
@@ -2190,13 +2667,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.01,
+			45
+		],
+		"effect": " - Accroît **Flame Attack +1%** pendant **Flame Attack +undefined%**secondes."
 	},
 	"item_Cooking_3027": {
 		"name": "Assiette combo grillées",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce doit être le paradis des amoureux de la viande, n'est-ce pas ?!",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3027",
 		"stars": 2,
@@ -2217,13 +2701,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Flame Resistance +15%** pendant **Flame Resistance +undefined%**secondes."
 	},
 	"item_Cooking_3028": {
 		"name": "Soupe de radis et côtelettes de porc",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une soupe de radis et côtelettes de porc qui a été mijotée avec soin pendant une journée entière. Les radis sont en fait plus savoureux que les travers de porc.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3028",
 		"stars": 2,
@@ -2239,13 +2730,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			1200,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Physical Resistance +15%** pendant **Physical Resistance +undefined%**secondes."
 	},
 	"item_Cooking_3029": {
 		"name": "Soupe de maïs crémeuse",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une soupe crémeuse, sucrée et acidulée, certainement à manger avec du pain.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3029",
 		"stars": 1,
@@ -2267,13 +2765,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **12% 3300** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.12,
+			3300
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**12% + 3300**) PV à l'Explorateur."
 	},
 	"item_Cooking_3030": {
 		"name": "Calebasse au lard croustillant",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Emballez-le dans la poudre à frire et faites-le frire pendant deux minutes, c'est prêt !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3030",
 		"stars": 2,
@@ -2285,13 +2788,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3031": {
 		"name": "Huîtres grillées",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "C'est difficile de décider s'il vaut mieux la manger grillée, ou crue avec du jus de citron.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3031",
 		"stars": 2,
@@ -2303,13 +2811,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3032": {
 		"name": "Herbe à poivre froide",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Après le premier essai, je suis devenu accro au goût de l'herbe à poivre !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3032",
 		"stars": 2,
@@ -2321,13 +2834,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3033": {
 		"name": "Calebasse au lard croustillant",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce plat froid souvent servi comme entrée peut également servir de plat principal.",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3033",
 		"stars": 2,
@@ -2344,13 +2862,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3034": {
 		"name": "Soupe de tofu aux huîtres",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Comme de nombreux enfants n'aiment pas manger du poisson, cette soupe a été concoctée spécialement pour eux.",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3034",
 		"stars": 2,
@@ -2367,13 +2891,19 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"item_Cooking_3035": {
 		"name": "Œuf brouillé à l'herbe à poivre",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tout peut être brouillé avec des œufs ! Mon préféré est…",
-		"satiety": "Régénère <ComLblGreen>{0}</> d'endurance.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/3035",
 		"stars": 2,
@@ -2390,13 +2920,19 @@
 				"max": " 3"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4001": {
 		"name": "Dragons aux étoiles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce n'est jamais que de la viande de tortue à cou de dragon bouillie avec des œufs d'étoile de mer, mais le restaurant a donné un nom très chic au plat.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4001",
 		"stars": 2,
@@ -2417,13 +2953,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4002": {
 		"name": "Œuf vapeur de la mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Les œufs de tortue à cou de dragon viennent de la mer. C'est ce qui explique leur goût de crustacés.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4002",
 		"stars": 2,
@@ -2440,13 +2977,18 @@
 				"max": " 2"
 			}
 		],
-		"effect": "Régénère **20% 60000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.2,
+			60000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**20% + 60000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4003": {
 		"name": "Salade de poisson-globe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une délicieuse salade de poisson-globe. Ça vaut le coup d'y goûter !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4003",
 		"stars": 2,
@@ -2462,13 +3004,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"DiveSpeed"
 		]
 	},
 	"item_Cooking_4004": {
 		"name": "Poisson-globe frais",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce plat fait bon usage des différents morceaux de ce poisson de luxe.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4004",
 		"stars": 2,
@@ -2489,13 +3032,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Accroît **Frost Attack +4%** pendant **Frost Attack +undefined%**secondes."
 	},
 	"item_Cooking_4005": {
 		"name": "Poisson-globe grillé",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce poisson-globe juteux fond dans la bouche… Enfin, c'est ce que dit la carte.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4005",
 		"stars": 2,
@@ -2512,13 +3062,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4006": {
 		"name": "Lotus blanc",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "De fines tranches de poisson-globe cru, disposées en forme de fleur de lotus.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4006",
 		"stars": 2,
@@ -2534,13 +3089,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Accroît **Frost Attack +2%** pendant **Frost Attack +undefined%**secondes."
 	},
 	"item_Cooking_4007": {
 		"name": "Poulpe bouilli",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Frais et caoutchouteux, ce plat fait le bonheur de tous.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4007",
 		"stars": 2,
@@ -2561,13 +3123,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4008": {
 		"name": "Boulettes de poulpe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un délicieux plat traditionnel. Sa saveur dépend principalement de la taille des morceaux utilisés.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4008",
 		"stars": 2,
@@ -2593,13 +3156,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Volt Resistance +15%** pendant **Volt Resistance +undefined%**secondes."
 	},
 	"item_Cooking_4009": {
 		"name": "Délicieuses grillades",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat dont les enfants raffolent, mais qui est bien trop cher pour eux.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4009",
 		"stars": 2,
@@ -2616,13 +3186,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **13% 10000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**13% + 10000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4010": {
 		"name": "Délicieux poisson vapeur salé",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La cuisson à la vapeur souligne la saveur umami de ce poisson marin naturellement salé.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4010",
 		"stars": 2,
@@ -2639,13 +3214,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **13% 10000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**13% + 10000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4011": {
 		"name": "Poisson marin sauté",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce plat demande beaucoup de travail, mais il n'en est que plus savoureux.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4011",
 		"stars": 2,
@@ -2667,13 +3247,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4012": {
 		"name": "Sashimi de luxe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat qui nécessite un très bon coup de couteau. Allez-y doucement sur le wasabi.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4012",
 		"stars": 2,
@@ -2699,13 +3284,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"IceDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Frost Resistance +15%** pendant **Frost Resistance +undefined%**secondes."
 	},
 	"item_Cooking_4013": {
 		"name": "Tarte d'astronome",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Les poissons lèvent-ils les yeux vers les étoiles de leur vivant ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4013",
 		"stars": 2,
@@ -2726,13 +3318,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4014": {
 		"name": "Ragoût de fruits de mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "On le cuisine souvent avec du gibier pour réduire la quantité d'ingrédients rares.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4014",
 		"stars": 2,
@@ -2753,13 +3346,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"CleanBuff"
 		]
 	},
 	"item_Cooking_4015": {
 		"name": "Anémone grillée",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Arrache un peu la bouche quand il y a trop de piment.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4015",
 		"stars": 2,
@@ -2780,13 +3374,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": " - Accroît **Flame Attack +2%** pendant **Flame Attack +undefined%**secondes."
 	},
 	"item_Cooking_4016": {
 		"name": "Floraison d'anémone",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ajoutez-y de l'anémone pour enrichir la texture de cet œuf cuit à la vapeur.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4016",
 		"stars": 2,
@@ -2803,13 +3404,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **13% 10000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**13% + 10000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4017": {
 		"name": "Longévité",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La tortue à cou de dragon est une créature de bon augure. Les restaurateurs aiment lui donner différents noms.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4017",
 		"stars": 2,
@@ -2825,13 +3431,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			600,
+			0.4
+		],
+		"effect": "Accroît **40** pendant **undefined**secondes."
 	},
 	"item_Cooking_4018": {
 		"name": "Œuf heureux",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un simple œuf bouilli de tortue à cou de dragon. Il se vend mieux une fois teinté.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4018",
 		"stars": 2,
@@ -2852,13 +3464,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Accroît **Physical Attack +4%** pendant **Physical Attack +undefined%**secondes."
 	},
 	"item_Cooking_4019": {
 		"name": "Œuf heureux rose",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un simple œuf bouilli de tortue à cou de dragon. Il se vend mieux une fois teinté.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4019",
 		"stars": 2,
@@ -2879,13 +3498,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4020": {
 		"name": "Œuf heureux rouge",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un simple œuf bouilli de tortue à cou de dragon. Il se vend mieux une fois teinté.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4020",
 		"stars": 2,
@@ -2906,13 +3526,19 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"mods": [
+			900,
+			0.5
+		],
+		"effect": "Accroît **50** pendant **undefined**secondes."
 	},
 	"item_Cooking_4021": {
 		"name": "Méduse croquante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Croquante et rafraîchissante. Essayez, vous ne pourrez plus vous en passer !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4021",
 		"stars": 2,
@@ -2929,13 +3555,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **13% 10000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.13,
+			10000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**13% + 10000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4022": {
 		"name": "Méduse sautée aux champignons",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce mélange de champignons et de méduse est à se damner, et c'est encore meilleur avec du riz. Vous finirez votre assiette sans même vous en rendre compte.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4022",
 		"stars": 2,
@@ -2951,13 +3582,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4023": {
 		"name": "Calmar juteux",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Évitez d'en manger en public si vous ne savez pas vous y prendre. Vous risqueriez de tout salir.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4023",
 		"stars": 2,
@@ -2978,13 +3610,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4024": {
 		"name": "Mix de calmar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat délicieux qui se vendrait certainement mieux si ses couleurs étaient appétissantes.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4024",
 		"stars": 2,
@@ -3005,13 +3638,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Accroît **Volt Attack +2%** pendant **Volt Attack +undefined%**secondes."
 	},
 	"item_Cooking_4025": {
 		"name": "Gruau de poisson bouilli",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat sain et idéal pour ceux qui n'ont pas d'appétit.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4025",
 		"stars": 2,
@@ -3027,13 +3667,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4026": {
 		"name": "Poisson mariné",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce plat n'est pas pour les humains, mais les chats, eux, ne s'en privent pas !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4026",
 		"stars": 2,
@@ -3059,13 +3700,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"FireDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Flame Resistance +15%** pendant **Flame Resistance +undefined%**secondes."
 	},
 	"item_Cooking_4027": {
 		"name": "Glorieux homard",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Du homard, du homard et encore du homard ! Un plat que l'on ne trouve qu'en bord de mer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4027",
 		"stars": 2,
@@ -3086,13 +3734,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"mods": [
+			600,
+			0.02,
+			150
+		],
+		"effect": "Accroît **Physical Attack +2%** pendant **Physical Attack +undefined%**secondes."
 	},
 	"item_Cooking_4028": {
 		"name": "Écrevisses épicées",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La taille des morceaux n'affecte pas son goût !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4028",
 		"stars": 2,
@@ -3108,13 +3763,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4029": {
 		"name": "Œuf vapeur au crabe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce n'est pas mauvais… mais est-ce vraiment du crabe ? Ou du faux crabe ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4029",
 		"stars": 2,
@@ -3135,13 +3791,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4030": {
 		"name": "Riz frit au crabe premier choix",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat si somptueux dans tous les sens du terme que personne ne peut lui résister.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4030",
 		"stars": 2,
@@ -3162,13 +3819,14 @@
 				"min": " 1",
 				"max": " 1"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4031": {
 		"name": "Crabe-roi",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Les rois n'échappent pas non plus à la chaîne alimentaire.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4031",
 		"stars": 2,
@@ -3185,13 +3843,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4032": {
 		"name": "Gâteau de riz au crabe frit",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un bon crabe frais et des gâteaux de riz gluants… Quoi de plus délicieux ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4032",
 		"stars": 2,
@@ -3212,13 +3875,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"mods": [
+			600,
+			0.15,
+			675
+		],
+		"effect": "Accroît **Physical Resistance +15%** pendant **Physical Resistance +undefined%**secondes."
 	},
 	"item_Cooking_4033": {
 		"name": "Nouilles au crabe de luxe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La complexité de leur préparation et la quantité d'ingrédients utilisés en font flamber le prix.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4033",
 		"stars": 2,
@@ -3234,13 +3904,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_4034": {
 		"name": "Fruits de mer aillés à la vapeur",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat classique qui marie les fruits de mer fraîchement pêchés au goût âcre de l'ail.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4034",
 		"stars": 2,
@@ -3261,13 +3932,20 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": " - Accroît **Flame Attack +4%** pendant **Flame Attack +undefined%**secondes."
 	},
 	"item_Cooking_4035": {
 		"name": "Vermicelle aux fruits de mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat savoureux qui n'est jamais ni trop lourd ni trop gras.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4035",
 		"stars": 2,
@@ -3293,13 +3971,20 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"mods": [
+			900,
+			0.04,
+			300
+		],
+		"effect": "Accroît **Volt Attack +4%** pendant **Volt Attack +undefined%**secondes."
 	},
 	"item_Cooking_4036": {
 		"name": "Homard au fromage",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un bon goût de fromage et une texture moelleuse.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4036",
 		"stars": 2,
@@ -3316,13 +4001,18 @@
 				"max": " 1"
 			}
 		],
-		"effect": "Régénère **16% 34000** de santé."
+		"categories": [
+			"AddHealth"
+		],
+		"mods": [
+			0.16,
+			34000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**16% + 34000**) PV à l'Explorateur."
 	},
 	"item_Cooking_4037": {
 		"name": "Homard et nouilles à l'encre de calmar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat original, délicieux et chic coloré à l'encre de calmar naturelle.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4037",
 		"stars": 2,
@@ -3343,13 +4033,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
 		]
 	},
 	"item_Cooking_4038": {
 		"name": "Viande de conque sautée",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Épicé et riche en umami, ce plat délicieux est un casse-croûte nocturne classique.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/4038",
 		"stars": 2,
@@ -3365,13 +4056,14 @@
 				"min": " 2",
 				"max": " 2"
 			}
+		],
+		"categories": [
+			"RecoverHp"
 		]
 	},
 	"item_Cooking_5001": {
 		"name": "Ragoût de pousses de bambou",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un mélange de viande grasse et maigre cuit à l'étouffée avec des pousses de bambou pendant quelques heures et un assaisonnement épicé pour couronner le tout. Vous en avalerez trois bols avant même de vous en apercevoir.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/5001",
 		"stars": 2,
@@ -3392,13 +4084,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "Accroît **Volt Attack +4% Volt Resistance +1800** pendant **Volt Attack +undefined%Volt Resistance +%**secondes."
 	},
 	"item_Cooking_5007": {
 		"name": "Bégonia blanc de jade",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un plat froid à base de bégonia et de jade vert.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/5007",
 		"stars": 2,
@@ -3414,13 +4114,21 @@
 				"min": " 4",
 				"max": " 4"
 			}
-		]
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"mods": [
+			900,
+			0.04,
+			1800
+		],
+		"effect": "Accroît **Flame Attack +4% Flame Resistance +1800** pendant **Flame Attack +undefined%Flame Resistance +%**secondes."
 	},
 	"item_activity_cooking_001": {
 		"name": "Cochon de lait rôti",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un cochon de lait rôti cuisiné par un grand chef peut combler les convives les plus exigeants.\r\n\r\nAprès avoir vaincu Apophis et la Reine Rose, il apparaît du coffre à mots de passe lors de l’événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour le cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
 		"stars": 1,
@@ -3446,13 +4154,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_002": {
 		"name": "Dinde braisée aux pommes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une spécialité d'Astra. Grâce au bouche-à-oreille des vendeurs et des voyageurs, elle est désormais populaire sur tout le continent.\r\n\r\nAprès avoir vaincu Apophis et la Reine Rose, elle apparaît du coffre à mots de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour la cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
 		"stars": 1,
@@ -3478,13 +4185,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_003": {
 		"name": "Pilon de poulet rôti aux petits légumes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Commencez par satisfaire vos papilles gustatives avec une bouchée de cuisse de poulet rôti. Puis régalez-vous de laitue rafraîchissante. Miam, miam !\r\n\r\nAprès avoir vaincu Apophis et la Reine Rose, il apparaît du coffre à mot de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour le cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
 		"stars": 1,
@@ -3505,13 +4211,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_004": {
 		"name": "Saumon poêlé",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Du saumon bien tendre servi avec du miel, pour un arrière-goût en bouche pas piqué des hannetons.\r\n\r\nAprès avoir vaincu Robarg et Sobek, peut s'obtenir dans un coffre à mot de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour le cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
 		"stars": 1,
@@ -3532,13 +4237,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_005": {
 		"name": "Boulettes de riz au sésame",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une spécialité traditionnelle du port des Banges très appréciée des petits comme des grands.\r\n\r\nAprès avoir vaincu Robarg et Sobek, elle apparaît du coffre à mots de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour la cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
 		"stars": 1,
@@ -3559,13 +4263,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_006": {
 		"name": "Soupe aux betteraves et à la dinde",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un bol de soupe chaude pour oublier toute la fatigue de la journée.\r\nAprès avoir vaincu Robarg et Sobek, il apparaît du coffre à mot de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour le cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
 		"stars": 1,
@@ -3586,13 +4289,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_007": {
 		"name": "Pain d'épices",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un dessert de fête populaire qui allie la douceur du sucre et du miel à l'agréable parfum des grains de blé.\r\n\r\nAprès avoir vaincu Robarg, Apophis, Cryobot, Sobek, la Reine Rose et Barberousse, il apparaît du coffre à mots de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour le cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
 		"stars": 1,
@@ -3613,13 +4315,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_008": {
 		"name": "Gâteau aux pommes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un gâteau aux fruits moelleux qui saura vous satisfaire dès la première bouchée.\r\n\r\n\r\nAprès avoir vaincu Cryobot et Barberousse, il apparaît du coffre à mot de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour le cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
 		"stars": 1,
@@ -3645,13 +4346,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_009": {
 		"name": "Punch aux fruits",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une boisson à l'arôme fruité qui dégage une très légère odeur d'alcool.\r\n\r\nAprès avoir vaincu Cryobot et Barberousse, elle apparaît du coffre à mots de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour la cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
 		"stars": 1,
@@ -3677,13 +4377,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity_cooking_010": {
 		"name": "Jus de pomme",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Cette boisson d'été aigre-douce est très prisée des jeunes et des moins jeunes. \r\n\r\nAprès avoir vaincu Cryobot et Barberousse, elle apparaît du coffre à mots de passe lors de l'événement Café d'Aida. Vous pouvez également l'obtenir en rassemblant les ingrédients pour la cuisiner.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
 		"stars": 1,
@@ -3704,13 +4403,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": []
 	},
 	"item_activity2_cooking_101": {
 		"name": "Coup de cœur flottant",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Montez dans le fruit ballon, cap sur le monde du chocolat !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
 		"stars": 1,
@@ -3731,13 +4429,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_102": {
 		"name": "Coup de cœur aux pignons de pin",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat couvert de pignons de pin : le cadeau idéal !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
 		"stars": 1,
@@ -3758,13 +4460,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_103": {
 		"name": "Coup de cœur aux fraises",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce mélange de fraises légèrement sucrées et de chocolat moelleux a le goût du premier amour.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
 		"stars": 1,
@@ -3785,13 +4491,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_104": {
 		"name": "Coup de cœur aux noisettes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Enrobé de chocolat, un cœur qui attend l'amour avec impatience.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
 		"stars": 1,
@@ -3812,13 +4522,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_105": {
 		"name": "Coup de cœur aux truffes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "On ressent l'amour qui a présidé à la sélection des ingrédients.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
 		"stars": 1,
@@ -3839,13 +4553,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_106": {
 		"name": "Coup de cœur aux myrtilles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Il suffit d'une bouchée pour sentir la confiture de myrtilles aigre-douce vous titiller le bout de la langue.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
 		"stars": 1,
@@ -3866,13 +4584,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_107": {
 		"name": "Coup de cœur au miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une symphonie majestueuse au chocolat et au miel.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
 		"stars": 1,
@@ -3893,13 +4615,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_108": {
 		"name": "Coup de cœur aux fruits tombés",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Pour vous donner ce qui me tient le plus à cœur.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
 		"stars": 1,
@@ -3920,13 +4646,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_109": {
 		"name": "Coup de cœur au cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat noir doux et délicat, brodé avec un rêve moelleux et légèrement amer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
 		"stars": 1,
@@ -3942,13 +4672,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_110": {
 		"name": "Coupe de cœur au lait",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le lait et le chocolat forment un couple véritablement céleste !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
 		"stars": 1,
@@ -3969,13 +4703,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_201": {
 		"name": "Planète flottante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Montez dans le fruit ballon, cap sur le monde du chocolat !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
 		"stars": 1,
@@ -3996,13 +4734,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_202": {
 		"name": "Planète aux pignons de pin",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat couvert de pignons de pin : le cadeau idéal !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
 		"stars": 1,
@@ -4023,13 +4765,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_203": {
 		"name": "Planète aux fraises",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce mélange de fraises légèrement sucrées et de chocolat moelleux a le goût du premier amour.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
 		"stars": 1,
@@ -4050,13 +4796,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_204": {
 		"name": "Planète aux noisettes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Enrobé de chocolat, un cœur qui attend l'amour avec impatience.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
 		"stars": 1,
@@ -4077,13 +4827,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_205": {
 		"name": "Planète aux truffes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "On ressent l'amour qui a présidé à la sélection des ingrédients.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
 		"stars": 1,
@@ -4104,13 +4858,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_206": {
 		"name": "Planète aux myrtilles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Il suffit d'une bouchée pour sentir la confiture de myrtilles aigre-douce vous titiller le bout de la langue.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
 		"stars": 1,
@@ -4131,13 +4889,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_207": {
 		"name": "Planète au miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une symphonie majestueuse au chocolat et au miel.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
 		"stars": 1,
@@ -4158,13 +4920,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_208": {
 		"name": "Planète aux fruits tombés",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Pour vous donner ce qui me tient le plus à cœur.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
 		"stars": 1,
@@ -4185,13 +4951,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_209": {
 		"name": "Planète au cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat noir doux et délicat, brodé avec un rêve moelleux et légèrement amer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
 		"stars": 1,
@@ -4207,13 +4977,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_210": {
 		"name": "Planète au lait",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le lait et le chocolat forment un couple véritablement céleste !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
 		"stars": 1,
@@ -4234,13 +5008,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_301": {
 		"name": "Cube flottant",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Montez dans le fruit ballon, cap sur le monde du chocolat !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
 		"stars": 1,
@@ -4261,13 +5039,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_302": {
 		"name": "Cube aux pignons de pin",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat couvert de pignons de pin : le cadeau idéal !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
 		"stars": 1,
@@ -4288,13 +5070,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_303": {
 		"name": "Cube aux fraises",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce mélange de fraises légèrement sucrées et de chocolat moelleux a le goût du premier amour.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
 		"stars": 1,
@@ -4315,13 +5101,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_304": {
 		"name": "Cube aux noisettes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Enrobé de chocolat, un cœur qui attend l'amour avec impatience.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
 		"stars": 1,
@@ -4342,13 +5132,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_305": {
 		"name": "Cube aux truffes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "On ressent l'amour qui a présidé à la sélection des ingrédients.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
 		"stars": 1,
@@ -4369,13 +5163,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_306": {
 		"name": "Cube aux myrtilles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Il suffit d'une bouchée pour sentir la confiture de myrtilles aigre-douce vous titiller le bout de la langue.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
 		"stars": 1,
@@ -4396,13 +5194,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_307": {
 		"name": "Cube au miel",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une symphonie majestueuse au chocolat et au miel.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
 		"stars": 1,
@@ -4423,13 +5225,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_308": {
 		"name": "Cube aux fruits tombés",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Pour vous donner ce qui me tient le plus à cœur.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
 		"stars": 1,
@@ -4450,13 +5256,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_309": {
 		"name": "Cube au cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat noir doux et délicat, brodé avec un rêve moelleux et légèrement amer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
 		"stars": 1,
@@ -4472,13 +5282,17 @@
 				"min": " 2",
 				"max": " 2"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_310": {
 		"name": "Cube au lait",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le lait et le chocolat forment un couple véritablement céleste !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
 		"stars": 1,
@@ -4499,93 +5313,119 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_001": {
 		"name": "Souvenir de Cetus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un coffret-cadeau chocolaté sur le thème de l'électromancie, la fierté d'Hanna.\r\nLa docteur dit que les choses délicieuses doivent être partagées avec les personnes importantes !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_002": {
 		"name": "Souvenir de Cetus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le coffret-cadeau en chocolat sur le thème des éléments physiques, la fierté de Hanna.\nLe docteur dit qu'on doit partager tout ce qui est délicieux avec ses proches !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_003": {
 		"name": "Souvenir de Cetus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le coffret-cadeau en chocolat sur le thème de la pyromancie, la fierté de Hanna.\nLe docteur dit qu'on doit partager tout ce qui est délicieux avec ses proches !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_004": {
 		"name": "Souvenir de Cetus",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Le coffret-cadeau en chocolat sur le thème de la cryomancie, la fierté de Hanna.\nLe docteur dit qu'on doit partager tout ce qui est délicieux avec ses proches !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity2_cooking_005": {
 		"name": "Gâteau de riz croustillant",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un des en-cas les plus appréciés sur la planète Aida. On dit que les membres des Hyènes et des Ravageurs se sont déjà battus pour un morceau de ce gâteau.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity2_cooking_006": {
 		"name": "Coffret-cadeau Chocolat",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Tout ce qui est délicieux se partage avec des gens importants !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"HealPotion_01": {
 		"name": "Crêpe printanière",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "L'encas le plus populaire du marché de printemps.\r\nIl est impossible de deviner son goût à son apparence…",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"mods": [
+			0.22,
+			75000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**22% + 75000**) PV à l'Explorateur."
 	},
 	"BuffPotion_01": {
 		"name": "Brise de pins",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Boisson vendue au marché de printemps.\r\nOn dit qu'une seule gorgée suffit à transporter vos sens au milieu d'une forêt de sapins où une légère brise caresse vos joues.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
 		"stars": 1,
-		"quality": "ITEM_QUALITY_EPIC"
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
 	},
 	"item_activity3_cooking_101": {
 		"name": "Carré classique",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Nul ne résiste aux riches arômes du chocolat.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
 		"stars": 1,
@@ -4611,13 +5451,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_102": {
 		"name": "Carré aux noix",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Qui eût cru que le chocolat aux noix pouvait être aussi bon !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
 		"stars": 1,
@@ -4638,13 +5482,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_103": {
 		"name": "Carré aux noisettes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un chocolat fondant en bouche sublimé par l'arôme fabuleux de la noisette.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
 		"stars": 1,
@@ -4665,13 +5513,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_104": {
 		"name": "Carré de pyrodragon",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Pépins ou non, dans le chocolat, tout est bon !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
 		"stars": 1,
@@ -4692,13 +5544,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_105": {
 		"name": "Cube au cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat noir doux et délicat, brodé avec un rêve moelleux et légèrement amer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
 		"stars": 1,
@@ -4719,13 +5575,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_106": {
 		"name": "Carré de queue",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "La dernière création d'un chocolatier excentrique. Oserez-vous y goûter ?",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
 		"stars": 1,
@@ -4746,13 +5606,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_107": {
 		"name": "Carré au rousong",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Du rousong parfumé au chocolat. Un nouveau mets de choix pour les amateurs de cuisine insolite.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
 		"stars": 1,
@@ -4773,13 +5637,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_108": {
 		"name": "Carré aux champignons",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Des chocolats pralinés, ça fait toujours plaisir.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
 		"stars": 1,
@@ -4800,13 +5668,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_109": {
 		"name": "Carré salé aux œufs",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Mousseux et granuleux, le jaune d'œuf a un goût bien à lui.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
 		"stars": 1,
@@ -4827,13 +5699,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_110": {
 		"name": "Carré au bâtonnet de crabe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un chocolat dominé par l'arôme intense des fruits de mer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
 		"stars": 1,
@@ -4854,13 +5730,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_201": {
 		"name": "Planète au café",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Je veux goûter à la douceur et l'amertume de la vie avec toi.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
 		"stars": 1,
@@ -4886,13 +5766,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_202": {
 		"name": "Planète fourrée à la liqueur",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une mélodie apaisante qui marie les doux arômes de la liqueur à ceux du chocolat.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
 		"stars": 1,
@@ -4913,13 +5797,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_203": {
 		"name": "Planète aux fleurs",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Croquez-la pour une explosion de saveurs florales qui vous rappelleront les roses de la Saint-Valentin.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
 		"stars": 1,
@@ -4940,13 +5828,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_204": {
 		"name": "Planète aux fraises",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ce mélange de fraises légèrement sucrées et de chocolat moelleux a le goût du premier amour.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
 		"stars": 1,
@@ -4967,13 +5859,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_205": {
 		"name": "Planète au cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat noir doux et délicat, brodé avec un rêve moelleux et légèrement amer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
 		"stars": 1,
@@ -4994,13 +5890,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_206": {
 		"name": "Planète flottante",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Montez dans le fruit ballon, cap sur le monde du chocolat !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
 		"stars": 1,
@@ -5021,13 +5921,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_207": {
 		"name": "Planète au rousong",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un chocolat onctueux et un fourrage moelleux pour une saveur totalement inédite.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
 		"stars": 1,
@@ -5048,13 +5952,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_208": {
 		"name": "Planète au sel de mer",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ras le bol des sucreries ? Essayez donc ces friandises salées !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
 		"stars": 1,
@@ -5075,13 +5983,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_209": {
 		"name": "Planète aux truffes",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "On ressent l'amour qui a présidé à la sélection des ingrédients.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
 		"stars": 1,
@@ -5102,13 +6014,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_210": {
 		"name": "Planète au bâtonnet de crabe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Il existe de nombreuses façons de cuisiner les pattes de crabe.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
 		"stars": 1,
@@ -5129,13 +6045,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_301": {
 		"name": "Coup de cœur à la menthe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un goût glacial pour une sensation de fraîcheur infinie.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
 		"stars": 1,
@@ -5156,13 +6076,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_302": {
 		"name": "Coup de cœur à la crème",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "En matière de douceurs, la crème est sans égale !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
 		"stars": 1,
@@ -5183,13 +6107,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_303": {
 		"name": "Coup de cœur aux fruits tombés",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Pour vous donner ce qui me tient le plus à cœur.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
 		"stars": 1,
@@ -5210,13 +6138,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_304": {
 		"name": "Coup de cœur aux myrtilles",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Il suffit d'une bouchée pour sentir la confiture de myrtilles aigre-douce vous titiller le bout de la langue.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
 		"stars": 1,
@@ -5237,13 +6169,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_305": {
 		"name": "Coup de cœur au cacao",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Chocolat noir doux et délicat, brodé avec un rêve moelleux et légèrement amer.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
 		"stars": 1,
@@ -5264,13 +6200,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_306": {
 		"name": "Coup de cœur à l'huile de poisson",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un chocolat nutritif prisé de ceux qui surveillent leur alimentation de près.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
 		"stars": 1,
@@ -5291,13 +6231,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_307": {
 		"name": "Coup de cœur épicé",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Une noix au goût percutant.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
 		"stars": 1,
@@ -5318,13 +6262,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_308": {
 		"name": "Coup de cœur au rousong",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Glacé à l'extérieur, fondant à l'intérieur.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
 		"stars": 1,
@@ -5345,13 +6293,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_309": {
 		"name": "Coup de cœur au caviar",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Ses ingrédients suffisent à comprendre pourquoi il est si cher !",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
 		"stars": 1,
@@ -5372,13 +6324,17 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	},
 	"item_activity3_cooking_310": {
 		"name": "Coup de cœur au bâtonnet de crabe",
-		"type": "ITEM_TYPE_COOKING",
 		"description": "Un chocolat qu'on aime ou qu'on déteste.",
-		"satiety": "Régénère <ComLblGreen>{0}</> points de satiété.",
 		"buff": "Entrée",
 		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
 		"stars": 1,
@@ -5399,6 +6355,12 @@
 				"min": " 1",
 				"max": " 1"
 			}
-		]
+		],
+		"categories": [],
+		"mods": [
+			0.15,
+			20000
+		],
+		"effect": "À utiliser pour régénérer immédiatement (**15% + 20000**) PV à l'Explorateur."
 	}
 }
