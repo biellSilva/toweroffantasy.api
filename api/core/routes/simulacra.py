@@ -33,7 +33,7 @@ async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en')):
 async def get_all_simulacra(lang: LANGS = LANGS('en')):
     '''
     return \n
-        Simulacra
+        Dict[Simulacra.id, Simulacra]
     '''
     
     if simulacras := await SIMU_REPO.get_all(lang):
