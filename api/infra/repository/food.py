@@ -5,6 +5,7 @@ from typing import Any
 
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Food, EntityBase
+from api.infra.repository.item import ItemRepo
 
 
 class FoodRepo(ModelRepository[EntityBase, Food]):
@@ -16,6 +17,7 @@ class FoodRepo(ModelRepository[EntityBase, Food]):
                          model=Food, 
                          class_base=FoodRepo,
                          repo_name='food')
+        self.item_repo = ItemRepo()
     
     async def get_all(self, lang: str) -> list[Food]:
         if lang in self.cache:
@@ -40,6 +42,9 @@ class FoodRepo(ModelRepository[EntityBase, Food]):
 
                         if isinstance(i['max'], str):
                             i['max'] = int(i['max'])
+                        
+                        if item := await self.item_repo.get(EntityBase(id=i['matID'].lower()), lang):
+                            i['item'] = item.model_dump()
 
                 self.cache[lang].update({food_id.lower(): Food(**food_dict, id=food_id)})
 
