@@ -1,2 +1,81 @@
-# toweroffantasy.api
- tower of fantasy API
+# api.toweroffantasy.info
+
+**This [API](https://api.toweroffantasy.info/docs) was built with the intention of serving data from [Tower of Fantasy](https://www.toweroffantasy-global.com), an online Multiplayer MMORPG natively available in China and in development Globally.**
+
+Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [FortOfFans](https://github.com/FortOfFans) who constantly provides game data, [Emi](https://github.com/eminentglory) who helps with the API backend and others collaborators.
+
+
+## Packages used
+
+* FastAPI
+* Uvicorn
+* Pydantic
+* Python-DotEnv
+* Python-Multipart
+
+
+## Achievements
+
+> **November 07, 2023** - API base goes live
+
+
+
+## Routes
+
+* **`/simulacra`**
+* **`/matrices`**
+* **`/weapons`**
+* **`/simulacra-v2`**
+* **`/relics`**
+* **`/food`**
+
+##### Example of use
+
+Let's say we made a request for one of the routes, if we don't specify an ID using just `/route`, the return will be a dictionary containing all the information for that route
+
+*status code: 200*
+
+```json
+{
+   "object_id": {
+	"keys": "values"
+   },
+   "object_id": {
+	"keys": "values"
+    }
+}
+```
+
+But in case we only want a specific object, then we use **`/route/id`** but this route has a validation system, if the id does not exist it returns error **404** (not found) or **423** (error validation on ID)
+
+_status code: 200_
+
+```json
+{
+   "key_1": "value_1",
+   "key_2": "value_2"
+}
+```
+
+##### Language system
+
+All routes also have a system to define which language should be returned, for this query params were used, in the request url you must pass **`/route?lang=possible_languages`**, can also be used in a route for a specific object **`/route/id?lang=possible_language`**
+
+All possible languages are the folders name in **`/api/database`**
+
+##### Note
+
+It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to check/learn on how to use, their returns and more
+
+
+## Development checklist
+
+* [X] simulacras
+* [X] matrices
+* [X] weapons
+* [X] relics
+* [X] foods
+* [ ] items
+* [ ] achievements
+* [ ] currency
+* [ ] outfits
