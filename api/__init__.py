@@ -8,7 +8,8 @@ from api.core.routes import (
     matrices,
     relics,
     home,
-    food
+    food,
+    item
 )
 
 
@@ -21,4 +22,5 @@ app.include_router(weapons.router)
 app.include_router(matrices.router)
 app.include_router(relics.router)
 app.include_router(food.router)
+app.include_router(item.router)
 

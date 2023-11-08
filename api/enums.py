@@ -21,3 +21,6 @@ RELICS = StrEnum('RELICS', __relics_names)
 
 __foods_names: list[str] = [file for file in loads(Path('api/database/en/food.json').read_bytes())]
 FOOD = StrEnum('FOOD', __foods_names)
+
+__items_names: list[str] = [file for file in loads(Path('api/database/en/items.json').read_bytes())]
+ITEMS = StrEnum('ITEMS', __items_names)
