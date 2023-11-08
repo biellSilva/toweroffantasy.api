@@ -9,7 +9,8 @@ from api.core.routes import (
     relics,
     home,
     food,
-    item
+    item,
+    image
 )
 
 
@@ -23,4 +24,5 @@ app.include_router(matrices.router)
 app.include_router(relics.router)
 app.include_router(food.router)
 app.include_router(item.router)
+app.include_router(image.router)
 
