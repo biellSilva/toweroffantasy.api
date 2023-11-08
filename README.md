@@ -2,15 +2,16 @@
 
 **This [API](https://api.toweroffantasy.info/docs) was built with the intention of serving data from [Tower of Fantasy](https://www.toweroffantasy-global.com), an online Multiplayer MMORPG natively available in China and in development Globally.**
 
-Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [FortOfFans](https://github.com/FortOfFans) who constantly provides game data, [Emi](https://github.com/eminentglory) who helps with the API backend and others collaborators.
+Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [FortOfFans](https://github.com/FortOfFans) who constantly provides game data, [Emi](https://github.com/eminentglory) who helps with the API backend, [Sova](https://github.com/Silyky) who gave permission to use his repository as an image database and others collaborators.
 
 ## Packages used
 
 * FastAPI
 * Uvicorn
 * Pydantic
-* Python-DotEnv
+* Python-Dotenv
 * Python-Multipart
+* Aiohttp
 
 ## Achievements
 
@@ -24,10 +25,12 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 * **`/simulacra-v2`**
 * **`/relics`**
 * **`/food`**
+* `/item`
+* `/image`
 
 ### Example of use
 
-Let's say we made a request for one of the routes, if we don't specify an ID using just `/route`, the return will be a dictionary containing all the information for that route
+Let's say we made a request for one of the routes (except `/image`), if we don't specify an ID using just `/route`, the return will be a dictionary containing all the information for that route
 
 *status code: 200*
 
@@ -42,7 +45,7 @@ Let's say we made a request for one of the routes, if we don't specify an ID usi
 }
 ```
 
-But in case we only want a specific object, then we use **`/route/id`** but this route has a validation system, if the id does not exist it returns error **404** (not found) or **423** (error validation on ID)
+But in case we only want a specific object, then we use **`/route/id`** but this route has a validation system, if the ID doesn't exist it returns error **404** (not found) or **423** (error validation on ID)
 
 _status code: 200_
 
@@ -70,7 +73,8 @@ It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to che
 * [X] weapons
 * [X] relics
 * [X] foods
-* [ ] items
+* [X] items
+* [X] images
 * [ ] achievements
 * [ ] currency
 * [ ] outfits
