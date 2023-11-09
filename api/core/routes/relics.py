@@ -10,16 +10,22 @@ from api.infra.repository import RelicRepo
 from api.infra.entitys import Relic, EntityBase
 
 
-router = APIRouter(prefix='/relics', tags=['relics'])
+router = APIRouter(prefix='/relic', tags=['relic'])
 
 RELIC_REPO = RelicRepo()
 
 
-@router.get('/{id}', response_model=Relic)
+@router.get('/{id}', name='Get relic', response_model=Relic)
 async def get_relic(id: RELICS, lang: LANGS = LANGS('en')):
     '''
-    return \n
-        Relic
+    **Query Params** \n
+        lang:
+            type: string
+            default: en
+            desc: possible languages to use
+            
+    **Return** \n
+        List[Relic]
     '''
 
     if relic := await RELIC_REPO.get(EntityBase(id=id), lang):
@@ -28,16 +34,22 @@ async def get_relic(id: RELICS, lang: LANGS = LANGS('en')):
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
 
-@router.get('', response_model=dict[str, Relic])
+
+@router.get('', name='All relics', response_model=list[Relic])
 async def get_all_relics(lang: LANGS = LANGS('en')):
     '''
-    return \n
-        Dict[Relic.id: Relic]
+    **Query Params** \n
+        lang:
+            type: string
+            default: en
+            desc: possible languages to use
+            
+    **Return** \n
+        List[Relic]
     '''
 
     if relics := await RELIC_REPO.get_all(lang):
-        return PrettyJsonResponse({relic.id: relic.model_dump() 
-                                   for relic in relics})
+        return PrettyJsonResponse([relic.model_dump() for relic in relics])
     
     else:
         raise ItemNotFound(headers={'error': f'{lang} not found'})

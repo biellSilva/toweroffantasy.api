@@ -10,7 +10,7 @@ LANGS = StrEnum('LANGS', __langs)
 __simulacras_names: list[str] = [file for file in loads(Path('api/database/en/imitations.json').read_bytes()) if 'L1' not in file]
 SIMULACRAS = StrEnum('SIMULACRAS', __simulacras_names)
 
-__matrices_names: list[str] = [file for file in loads(Path('api/database/en/matrices.json').read_bytes())]
+__matrices_names: list[str] = [file.replace('_1', '') for file in loads(Path('api/database/en/matrices.json').read_bytes())]
 MATRICES = StrEnum('MATRICES', __matrices_names)
 
 __weapons_names: list[str] = [file for file in loads(Path('api/database/en/weapons.json').read_bytes())]

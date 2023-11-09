@@ -16,10 +16,22 @@ router = APIRouter(prefix='/simulacra', tags=['simulacra'])
 SIMU_REPO = SimulacraRepo()
 
 
-@router.get('/{id}', response_model=Simulacra)
+@router.get('/{id}', name='Get simulacra', response_model=Simulacra)
 async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en')):
     '''
-    return \n
+    **Path Param** \n
+        id: 
+            type: string
+            required: True
+            desc: imitation_id
+
+    **Query Params** \n
+        lang:
+            type: string
+            default: en
+            desc: possible languages to use
+            
+    **Return** \n
         Simulacra
     '''
     
@@ -27,18 +39,24 @@ async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en')):
         return PrettyJsonResponse(simulacra.model_dump())
     
     else:
-        raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
+        raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
 
-@router.get('', response_model=dict[str, Simulacra])
+@router.get('', name='All simulacras', response_model=list[Simulacra])
 async def get_all_simulacra(lang: LANGS = LANGS('en')):
     '''
-    return \n
-        Dict[Simulacra.id, Simulacra]
+    **Query Params** \n
+        lang:
+            type: string
+            default: en
+            desc: possible languages to use
+            
+    **Return** \n
+        List[Simulacra]
     '''
     
     if simulacras := await SIMU_REPO.get_all(lang):
-        return PrettyJsonResponse({simulacra.id: simulacra.model_dump() 
-                                   for simulacra in simulacras})
+        return PrettyJsonResponse([simulacra.model_dump() 
+                                   for simulacra in simulacras])
     
     else:
-        raise ItemNotFound(headers={'error': f'{lang} not found'})
+        raise ItemNotFound(detail={'error': f'{lang} not found'})

@@ -12,3 +12,7 @@ class VoiceActors(BaseModel):
     korean: Annotated[str, BeforeValidator(replace_cv)] | None = None
     portuguese: Annotated[str, BeforeValidator(replace_cv)] | None = None
 
+
+class Awakening(BaseModel):
+    name: str
+    description: str

@@ -15,30 +15,66 @@ router = APIRouter(prefix='/weapons', tags=['weapons'])
 WEAPON_REPO = WeaponRepo()
 
 
-@router.get('/{id}', response_model=Weapon)
-async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en')):
+@router.get('/{id}', name='Get weapon', response_model=Weapon)
+async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en'), exclude: bool = True):
     '''
-    returns \n
-        Weapon
+    **Query Params** \n
+        lang:
+            type: string
+            default: en
+            desc: possible languages to use
+            
+        exclude: 
+            type: bool
+            default: True
+            desc: removes some keys
+
+    **Return** \n
+        List[Weapon]
     '''
 
     if weapon := await WEAPON_REPO.get(EntityBase(id=id), lang):
-        return PrettyJsonResponse(weapon.model_dump())
+        if exclude:
+            return PrettyJsonResponse(weapon.model_dump(exclude={'skills', 'mats', 
+                                                                 'advancements', 'advanceID',
+                                                                 'shatter', 'charge'}))
+
+        else:
+            return PrettyJsonResponse(weapon.model_dump())
 
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
 
 
-@router.get('', response_model=Weapon)
-async def get_all_weapons(lang: LANGS = LANGS('en')):
+@router.get(path='', name='All Weapons', response_model=list[Weapon])
+async def get_all_weapons(lang: LANGS = LANGS('en'), exclude: bool = True):
     '''
-    returns \n
-        Dict[Weapon.id: Weapon]
+    **Query Params** \n
+        lang:
+            type: string
+            default: en
+            desc: possible languages to use
+            
+        exclude: 
+            type: bool
+            default: True
+            desc: removes some keys
+    
+    **Return** \n
+        List[Weapon]
     '''
 
+
     if weapons := await WEAPON_REPO.get_all(lang):
-        return PrettyJsonResponse({weapon.id: weapon.model_dump() 
-                                   for weapon in weapons})
+        if exclude:
+            return PrettyJsonResponse([weapon.model_dump(exclude={'skills', 'mats', 
+                                                                  'advancements', 'advanceID',
+                                                                  'shatter', 'charge', 'weaponEffects'}) 
+                                        for weapon in weapons])
+
+        else:
+            return PrettyJsonResponse([weapon.model_dump() 
+                                        for weapon in weapons])
 
     else:
         raise ItemNotFound(headers={'error': f'{lang} not found'})

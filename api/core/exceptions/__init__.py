@@ -4,5 +4,5 @@ from typing import Any, Dict, Optional
 
 
 class ItemNotFound(HTTPException):
-    def __init__(self, status_code: int = 404, detail: Optional[Any] = None, headers: Optional[Dict[str, str]] = None) -> None:
+    def __init__(self, status_code: int = 500, detail: Optional[Any] = None, headers: Optional[Dict[str, str]] = None) -> None:
         super().__init__(status_code, detail, headers)

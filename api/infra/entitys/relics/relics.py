@@ -15,6 +15,6 @@ class Relic(EntityBase):
     type: str
     icon: str
     shortIcon: str
-    attributeID: str = Field(alias='AttributeID')
+    attributeID: str = Field(alias='AttributeID', serialization_alias='attributeID')
     advancement: list[Advancement]
 

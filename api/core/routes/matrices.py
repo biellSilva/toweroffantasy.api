@@ -11,14 +11,26 @@ from api.infra.entitys import EntityBase, Matrice
 
 
 
-router = APIRouter(prefix='/matrices', tags=['matrices'])
+router = APIRouter(prefix='/matrice', tags=['matrice'])
 
 MATRICE_REPO = MatriceRepo()
 
-@router.get('/{id}', response_model=Matrice)
+@router.get('/{id}', name='Get matrice', response_model=Matrice)
 async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en')):
     '''
-    return \n
+    **Path Param** \n
+        id: 
+            type: str
+            required: True
+            desc: matrice_id
+
+    **Query Params** \n
+        lang:
+            type: string
+            default: en
+            desc: possible languages to use
+            
+    **Return** \n
         Matrice
     '''
     
@@ -26,18 +38,23 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en')):
         return PrettyJsonResponse(matrice.model_dump())
 
     else:
-        raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
+        raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
 
-@router.get('', response_model=dict[str, Matrice])
+@router.get('', name='All matrices', response_model=list[Matrice])
 async def get_all_matrices(lang: LANGS = LANGS('en')):
     '''
-    return \n
-        Dict[Matrice.id: Matrice] 
+    **Query Params** \n
+        lang:
+            type: string
+            default: en
+            desc: possible languages to use
+            
+    **Return** \n
+        List[Matrice]
     '''
     
     if matrices := await MATRICE_REPO.get_all(lang):
-        return PrettyJsonResponse({matrice.id: matrice.model_dump() 
-                                   for matrice in matrices})
+        return PrettyJsonResponse([matrice.model_dump() for matrice in matrices])
     
     else:
-        raise ItemNotFound(headers={'error': f'{lang} not found'})
+        raise ItemNotFound(detail={'error': f'{lang} not found'})

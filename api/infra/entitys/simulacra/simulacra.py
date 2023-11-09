@@ -2,13 +2,13 @@
 from pydantic import Field
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.simulacra.extra import VoiceActors
+from api.infra.entitys.simulacra.extra import VoiceActors, Awakening
 
 
 class Simulacra(EntityBase):
     name: str
-    avatarID: str
-    advanceID: str | None = Field(alias='advanceId', default=None)
+    avatarID: str = Field(alias='avatarID', serialization_alias='avatar_id')
+    advance_id: str | None = Field(alias='advanceId', default=None, serialization_alias='advance_id')
     weapon: str
     icon: str
     age: str
@@ -17,6 +17,7 @@ class Simulacra(EntityBase):
     state: str
     city: str
     rating: str
-    gift_types: list[str] = Field(alias='gp')
-    voice_actors: VoiceActors = Field(alias='va')
+    gift_types: list[str] = Field(alias='gp', serialization_alias='gift_types')
+    voice_actors: VoiceActors = Field(alias='va', serialization_alias='voice_actors')
+    awakenings: list[Awakening] = Field(alias='trait', default=[], serialization_alias='awakenings')
 
