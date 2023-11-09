@@ -37,7 +37,7 @@ async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en'), exclude: bool = Tru
         if exclude:
             return PrettyJsonResponse(weapon.model_dump(exclude={'skills', 'mats', 
                                                                  'advancements', 'advanceID',
-                                                                 'shatter', 'charge'}))
+                                                                 'shatter', 'charge', 'weaponEffects'}))
 
         else:
             return PrettyJsonResponse(weapon.model_dump())
