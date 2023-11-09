@@ -7,7 +7,7 @@ from api.infra.entitys.simulacra.extra import VoiceActors, Awakening
 
 class Simulacra(EntityBase):
     name: str
-    avatarID: str = Field(alias='avatarID', serialization_alias='avatar_id')
+    avatar_id: str = Field(alias='avatarID', serialization_alias='avatar_id')
     advance_id: str | None = Field(alias='advanceId', default=None, serialization_alias='advance_id')
     weapon: str
     icon: str

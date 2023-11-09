@@ -2,7 +2,7 @@
 from pydantic import Field
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.simulacra_v2.extra import VoiceActors, Awakening
+from api.infra.entitys.simulacra.extra import VoiceActors, Awakening
 from api.infra.entitys.weapons import Weapon
 from api.infra.entitys.matrices import Matrice
 
@@ -20,7 +20,7 @@ class Simulacra_v2(EntityBase):
     rating: str
     gift_types: list[str]
     voice_actors: VoiceActors
-    awakenings: list[Awakening] = Field(alias='trait', default=[])
+    awakenings: list[Awakening] = Field(alias='trait', default=[], serialization_alias='awakenings')
     weapon: Weapon | None = None
     matrice: Matrice | None = None
 
