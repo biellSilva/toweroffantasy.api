@@ -1,5 +1,8 @@
 
-from pydantic import Field
+from pydantic import Field, BeforeValidator
+from typing import Annotated
+
+from api.utils import place_simulacra_icon
 
 from api.infra.entitys.base import EntityBase
 from api.infra.entitys.simulacra.extra import VoiceActors, Awakening
@@ -7,10 +10,10 @@ from api.infra.entitys.simulacra.extra import VoiceActors, Awakening
 
 class Simulacra(EntityBase):
     name: str
-    avatar_id: str = Field(alias='avatarID', serialization_alias='avatar_id')
+    # icon: Annotated[str, BeforeValidator(place_simulacra_icon)]
+    icon: Annotated[str, BeforeValidator(place_simulacra_icon)] = Field(alias='avatarID', serialization_alias='icon')
     advance_id: str | None = Field(alias='advanceId', default=None, serialization_alias='advance_id')
     weapon: str
-    icon: str
     age: str
     height: str
     gender: str

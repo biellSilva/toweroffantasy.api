@@ -28,6 +28,11 @@ def replace_icon(text: str):
 def place_simulacra_icon(text: str):
     return f'/assets/UI/huanxing/lihui/{text}'
 
+def place_weapon_icon(text: str):
+    return f'/assets/Icon/weapon/Icon/{text}'
+
+def place_weapon_skill_icon(text: str):
+    return f'/assets/Icon/skill/WeaponSkill/{text}'
 
 def verify_auth(auth: str = Header(...)):
     if auth == API_KEY:

@@ -6,8 +6,6 @@ from typing import Any
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Simulacra, EntityBase
 
-from api.utils import place_simulacra_icon
-
 
 class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
     cache = {}
@@ -34,7 +32,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
 
             for imit_id, imit_dict in DATA.items():
                 if 'L1' not in imit_id:
-                    imit_dict['icon'] = place_simulacra_icon(imit_dict['avatarID'])
+                    # imit_dict['icon'] = place_simulacra_icon(imit_dict['avatarID'])
 
                     va: list[dict[str, str]] = imit_dict.pop('va')
                     imit_dict['va'] = {key.lower(): value for i in va for key, value in i.items()}

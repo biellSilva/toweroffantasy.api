@@ -2,12 +2,12 @@
 from pydantic import BaseModel, BeforeValidator
 from typing import Annotated
 
-from api.utils import bold_numbers
+from api.utils import bold_numbers, place_weapon_skill_icon
 
 
 class Skill(BaseModel):
     id: str
-    icon: str
+    icon: Annotated[str, BeforeValidator(place_weapon_skill_icon)]
     name: str
     description: Annotated[str, BeforeValidator(bold_numbers)]
 
