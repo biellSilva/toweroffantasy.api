@@ -19,14 +19,15 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 
 ## Routes
 
+* **`/docs`**
 * **`/simulacra`**
-* **`/matrices`**
-* **`/weapons`**
+* **`/matrice`**
+* **`/weapon`**
 * **`/simulacra-v2`**
-* **`/relics`**
+* **`/relic`**
 * **`/food`**
-* `/item`
-* `/assets`
+* **`/item`**
+* **`/assets`**
 
 ### Example of use
 
@@ -57,13 +58,18 @@ _status code: 200_
 ```
 
 ### Language system
-
 All routes also have a system to define which language should be returned, for this query params were used, in the request url you must pass **`/route?lang=possible_languages`**, can also be used in a route for a specific object **`/route/id?lang=possible_language`**
 
 All possible languages are the folders name in **`/api/database`**
 
-### Note
+### /assets
+All objects that have icons/assets are modified to facilitate their access
+for example Ling Han object, the key "icon" has the value of **"/assets/UI/huanxing/lihui/linghan"** this is its path in the API, to facilitate "access" we are talking about you just needing to add the icon string in the API URI **"https://api.toweroffantasy.info/assets/UI/huanxing/lihui/linghan"**
 
+<a href="url"><img src="https://api.toweroffantasy.info/assets/UI/huanxing/lihui/linghan" align="center" width="350"></a>
+
+
+### Note
 It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to check/learn on how to use, their returns and more
 
 ## Development checklist
@@ -74,7 +80,7 @@ It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to che
 * [X] relics
 * [X] foods
 * [X] items
-* [X] images
+* [X] assets
 * [ ] achievements
 * [ ] currency
 * [ ] outfits
