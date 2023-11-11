@@ -18,6 +18,12 @@ WEAPON_REPO = WeaponRepo()
 @router.get('/{id}', name='Get weapon', response_model=Weapon)
 async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en'), exclude: bool = True):
     '''
+    **Path Param** \n
+        id: 
+            type: str
+            required: True
+            desc: weapon_id
+
     **Query Params** \n
         lang:
             type: string
