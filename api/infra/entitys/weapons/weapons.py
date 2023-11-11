@@ -1,20 +1,23 @@
 
-from pydantic import Field, BeforeValidator
-from typing import Annotated
+from pydantic import Field
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.weapons.extra import *
-
-from api.utils import replace_icon
+from api.infra.entitys.weapons.extra import (
+    ShatterOrCharge, 
+    WeaponEffect, 
+    Advancements, 
+    Skills,
+    Assets
+)
 
 
 class Weapon(EntityBase):
     name: str
     description: str
-    icon: Annotated[str, BeforeValidator(replace_icon)]
     rarity: str
     type: str = Field(alias='wc', serialization_alias='type')
     element: str
+    assets: Assets
     shatter: ShatterOrCharge
     charge: ShatterOrCharge
     advanceID: str | None = None

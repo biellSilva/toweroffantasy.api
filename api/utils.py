@@ -1,11 +1,9 @@
 
 import re
 
-from fastapi import Header
-from fastapi.exceptions import HTTPException
 from typing import Any
 
-from api.config import API_KEY
+from api.enums import LANGS
 
 
 def bold_numbers(text: str):
@@ -17,29 +15,19 @@ def bold_numbers(text: str):
 def replace_cv(text: str):
     return text.replace('CV : ', '')
 
-
 def replace_icon(text: str):
     if '/Game/Resources/' in text:
         return text.replace('/Game/Resources', '/assets')
     else:
         return text
 
+def replace_rating(text: str, lang: LANGS):
+    return f'/assets/L10N/{lang}/{text.replace("/Game/Resources/", "")}'
 
-def place_simulacra_icon(text: str):
+
+def put_imitation_icon(text: str):
     return f'/assets/UI/huanxing/lihui/{text}'
 
-def place_weapon_icon(text: str):
-    return f'/assets/Icon/weapon/Icon/{text}'
-
-def place_weapon_skill_icon(text: str):
-    return f'/assets/Icon/skill/WeaponSkill/{text}'
-
-def verify_auth(auth: str = Header(...)):
-    if auth == API_KEY:
-        return True
-    else:
-        raise HTTPException(status_code=401, detail='Wrong API TOKEN')
-    
 
 def classifier(number: float):
     if number >= 15:
@@ -53,6 +41,7 @@ def classifier(number: float):
     else:
         return 'C'
     
+
 def filter_func(model: dict[str, Any], filter: dict[str, Any]):
     for filter_key, filter_value in filter.items():
         for key, value in model.items():

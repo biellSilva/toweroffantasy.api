@@ -1,8 +1,8 @@
 
-from pydantic import BaseModel, BeforeValidator
+from pydantic import BaseModel, BeforeValidator, Field
 from typing import Annotated
 
-from api.utils import replace_cv
+from api.utils import replace_cv, replace_icon, put_imitation_icon
 
 
 class VoiceActors(BaseModel):
@@ -16,3 +16,9 @@ class VoiceActors(BaseModel):
 class Awakening(BaseModel):
     name: str
     description: str
+
+
+class Assets(BaseModel):
+    icon: Annotated[str, BeforeValidator(put_imitation_icon)] | None = None
+    lotteryCard: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='LotteryCardImage', serialization_alias='lotteryCard')
+    lotteryDrawing: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='LotteryDrawing', serialization_alias='lotteryDrawing')

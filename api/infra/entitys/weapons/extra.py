@@ -1,5 +1,5 @@
 
-from pydantic import BaseModel, BeforeValidator
+from pydantic import BaseModel, BeforeValidator, Field
 from typing import Annotated
 
 from api.utils import bold_numbers, replace_icon
@@ -33,3 +33,7 @@ class WeaponEffect(BaseModel):
 class ShatterOrCharge(BaseModel):
     value: float
     tier: str
+
+class Assets(BaseModel):
+    icon: Annotated[str, BeforeValidator(replace_icon)] | None = None
+    weaponMatrixIcon: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='WeaponIconForMatrix', serialization_alias='weaponMatrixIcon')
