@@ -18,6 +18,12 @@ RELIC_REPO = RelicRepo()
 @router.get('/{id}', name='Get relic', response_model=Relic)
 async def get_relic(id: RELICS, lang: LANGS = LANGS('en')):
     '''
+    **Path Param** \n
+        id: 
+            type: str
+            required: True
+            desc: relic_id
+            
     **Query Params** \n
         lang:
             type: string
