@@ -55,8 +55,7 @@ async def get_all_simulacra(lang: LANGS = LANGS('en')):
     '''
     
     if simulacras := await SIMU_REPO.get_all(lang):
-        return PrettyJsonResponse([simulacra.model_dump() 
-                                   for simulacra in simulacras])
+        return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
     
     else:
         raise ItemNotFound(detail={'error': f'{lang} not found'})
