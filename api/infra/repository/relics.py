@@ -33,6 +33,9 @@ class RelicRepo(ModelRepository[EntityBase, Relic]):
                 self.cache.update({lang: {}})
 
             for relic_id, relic_dict in DATA.items():
+                
+                relic_dict['advancement'] = [value['description'] for value in relic_dict['advancement']]
+
                 self.cache[lang].update({relic_id.lower(): Relic(**relic_dict)})
 
             return list(self.cache[lang].values())
