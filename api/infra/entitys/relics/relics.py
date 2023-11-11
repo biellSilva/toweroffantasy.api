@@ -2,7 +2,7 @@
 from pydantic import BeforeValidator, Field
 from typing import Annotated
 
-from api.utils import bold_numbers
+from api.utils import bold_numbers, replace_icon
 from api.infra.entitys.relics.extra import Advancement
 from api.infra.entitys.base import EntityBase
 
@@ -13,7 +13,7 @@ class Relic(EntityBase):
     description: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     source: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     type: str
-    icon: str
+    icon: Annotated[str, BeforeValidator(replace_icon)]
     shortIcon: str
     attributeID: str = Field(alias='AttributeID', serialization_alias='attributeID')
     advancement: list[Advancement]
