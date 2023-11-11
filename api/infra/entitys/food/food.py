@@ -10,9 +10,7 @@ from .extra import Ingredient
 
 class Food(EntityBase):
     name: str
-    # type: str
     description: str
-    # satiety: str
     buff: str
     icon: Annotated[str, BeforeValidator(replace_icon)]
     stars: int

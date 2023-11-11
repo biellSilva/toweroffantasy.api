@@ -17,7 +17,7 @@ async def get_asset(path: str, format: Literal['png', 'webp']='webp'):
     async with aiohttp.ClientSession() as cs:
         path = path if '.png' in path else f'{path}.png'
 
-        async with cs.get(f'https://raw.githubusercontent.com/Silyky/Icon_CN/main/{path}') as res:
+        async with cs.get(f'https://raw.githubusercontent.com/FortOfFans/ToF.github.io/main/{path}') as res:
             if res.status == 200:
                 return Response(await res.read(), media_type=f'image/{format.upper()}')
             else:
