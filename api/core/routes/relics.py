@@ -31,7 +31,7 @@ async def get_relic(id: RELICS, lang: LANGS = LANGS('en')):
             desc: possible languages to use
             
     **Return** \n
-        List[Relic]
+        Relic
     '''
 
     if relic := await RELIC_REPO.get(EntityBase(id=id), lang):
