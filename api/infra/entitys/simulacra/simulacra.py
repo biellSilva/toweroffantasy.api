@@ -19,7 +19,7 @@ class Simulacra(EntityBase):
     gender: str
     state: str
     city: str
-    rating: str
+    rating: Annotated[str, BeforeValidator(replace_icon)]
     gift_types: list[str] = Field(alias='gp', serialization_alias='gift_types')
     voice_actors: VoiceActors = Field(alias='va', serialization_alias='voice_actors')
     awakenings: list[Awakening] = Field(alias='trait', default=[], serialization_alias='awakenings')
