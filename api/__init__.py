@@ -12,6 +12,7 @@ from api.core.routes import (
     home,
     food,
     item,
+    achievements,
     image
 )
 
@@ -26,7 +27,9 @@ app.include_router(matrices.router)
 app.include_router(relics.router)
 app.include_router(food.router)
 app.include_router(item.router)
+app.include_router(achievements.router)
 app.include_router(image.router)
+
 
 @app.middleware("http")
 @app.middleware("https")
