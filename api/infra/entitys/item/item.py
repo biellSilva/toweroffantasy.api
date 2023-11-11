@@ -11,6 +11,6 @@ class Item(EntityBase):
     name: str | None = None
     type: str
     description: str | None = None
-    icon: Annotated[str, BeforeValidator(replace_icon)]
+    icon: Annotated[str, BeforeValidator(replace_icon)] | None = None
     rarity: str
     
