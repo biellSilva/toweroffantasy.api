@@ -3,7 +3,7 @@ from uvicorn import run # type: ignore
 
 from api import app
 
-DEBUG = False
+DEBUG = True
 
 if __name__ == '__main__':
     if DEBUG:
