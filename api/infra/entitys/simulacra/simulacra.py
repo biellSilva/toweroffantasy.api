@@ -10,7 +10,7 @@ class Simulacra(EntityBase):
     avatarID: str
     advanceId: str | None = None
     assets: Assets
-    weapon: str
+    weapon_id: str = Field(alias='weapon', serialization_alias='weapon_id')
     age: str
     height: str
     gender: str

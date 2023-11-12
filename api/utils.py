@@ -26,6 +26,8 @@ def replace_rating(text: str, lang: LANGS):
 
 
 def put_imitation_icon(text: str):
+    if '/assets' in text:
+        return text
     return f'/assets/UI/huanxing/lihui/{text}'
 
 

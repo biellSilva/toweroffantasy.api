@@ -1,11 +1,26 @@
 
 
-from api.infra.entitys.simulacra import Simulacra
+from api.infra.entitys.base import EntityBase
 from api.infra.entitys.weapons import Weapon
 from api.infra.entitys.matrices import Matrice
+from api.infra.entitys.simulacra.extra import Assets, Awakening, VoiceActors
 
 
-class Simulacra_v2(Simulacra):
-    weapon: Weapon | str | None = None    # type: ignore
+class Simulacra_v2(EntityBase):
+    name: str
+    avatarID: str
+    advanceId: str | None = None
+    assets: Assets
+    weapon_id: str 
+    age: str
+    height: str
+    gender: str
+    state: str
+    city: str
+    rating: str
+    gift_types: list[str]
+    voice_actors: VoiceActors
+    awakenings: list[Awakening]
+    weapon: Weapon | None = None
     matrice: Matrice | None = None
 
