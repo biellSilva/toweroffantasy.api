@@ -1,6 +1,5 @@
 
 from pydantic import Field, BeforeValidator
-
 from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
