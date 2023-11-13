@@ -27,3 +27,6 @@ ITEMS = StrEnum('ITEMS', __items_names)
 
 __achievs_names: list[str] = [file for file in loads(Path('api/database/en/achievements.json').read_bytes())]
 ACHIEVS = StrEnum('ACHIEVS', __achievs_names)
+
+__outfits_names: list[str] = [file for file in loads(Path('api/database/en/outfits.json').read_bytes())]
+OUTFITS = StrEnum('OUTFITS', __outfits_names)

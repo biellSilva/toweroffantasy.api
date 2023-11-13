@@ -13,6 +13,7 @@ from api.core.routes import (
     food,
     item,
     achievements,
+    outfits,
     image
 )
 
@@ -28,6 +29,7 @@ app.include_router(relics.router)
 app.include_router(food.router)
 app.include_router(item.router)
 app.include_router(achievements.router)
+app.include_router(outfits.router)
 app.include_router(image.router)
 
 

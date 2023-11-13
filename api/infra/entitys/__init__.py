@@ -7,6 +7,7 @@ from .relics import Relic
 from .food import Food
 from .item import Item
 from .achievements import Achievement
+from .outfits import Outfit
 
 from .base import EntityBase
 
@@ -20,5 +21,6 @@ __import__ = [
     Relic,
     Food,
     Item,
-    Achievement
+    Achievement,
+    Outfit
 ]

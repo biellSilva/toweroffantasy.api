@@ -6,6 +6,7 @@ from .relics import RelicRepo
 from .food import FoodRepo
 from .item import ItemRepo
 from .achievements import AchievementRepo
+from .outfit import OutfitRepo
 
 
 __import__ = [
@@ -15,5 +16,6 @@ __import__ = [
     RelicRepo,
     FoodRepo,
     ItemRepo,
-    AchievementRepo
+    AchievementRepo,
+    OutfitRepo
 ]
