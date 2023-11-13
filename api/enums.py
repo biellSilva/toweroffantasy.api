@@ -26,4 +26,4 @@ __items_names: list[str] = [file for file in loads(Path('api/database/en/items.j
 ITEMS = StrEnum('ITEMS', __items_names)
 
 __achievs_names: list[str] = [file for file in loads(Path('api/database/en/achievements.json').read_bytes())]
-ACHIEVS = StrEnum('ITEMS', __achievs_names)
+ACHIEVS = StrEnum('ACHIEVS', __achievs_names)
