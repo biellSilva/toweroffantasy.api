@@ -30,6 +30,11 @@ def put_imitation_icon(text: str):
         return text
     return f'/assets/UI/huanxing/lihui/{text}'
 
+def check_string(text: str):
+    if text.lower() == 'none':
+        return None
+    return text
+
 
 def classifier(number: float):
     if number >= 15:

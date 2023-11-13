@@ -1,8 +1,12 @@
 
-from pydantic import Field
+from pydantic import Field, BeforeValidator
+
+from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
 from api.infra.entitys.simulacra.extra import VoiceActors, Awakening, Assets
+
+from api.utils import check_string
 
 
 class Simulacra(EntityBase):
@@ -10,7 +14,7 @@ class Simulacra(EntityBase):
     avatarID: str
     advanceId: str | None = None
     assets: Assets
-    weapon_id: str = Field(alias='weapon', serialization_alias='weapon_id')
+    weapon_id: Annotated[str | None, BeforeValidator(check_string)] = Field(alias='weapon', serialization_alias='weapon_id')
     age: str
     height: str
     gender: str
