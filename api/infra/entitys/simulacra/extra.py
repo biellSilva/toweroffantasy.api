@@ -19,6 +19,7 @@ class Awakening(BaseModel):
 
 
 class Assets(BaseModel):
+    avatar: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None)
     artwork: Annotated[str, BeforeValidator(put_imitation_icon)] | None = Field(default=None, alias='icon', serialization_alias='artwork')
     lotteryCard: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='LotteryCardImage', serialization_alias='lotteryCard')
     lotteryDrawing: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='LotteryDrawing', serialization_alias='lotteryDrawing')

@@ -35,11 +35,18 @@ async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en')):
     '''
     
     if simulacra := await SIMULACRA_REPO.get(EntityBase(id=id), lang):
-        weapon = await WEAPON_REPO.get(EntityBase(id=simulacra.weapon_id), lang)
+        if simulacra.weapon_id:
+            weapon = await WEAPON_REPO.get(EntityBase(id=simulacra.weapon_id), lang)
+        else:
+            weapon = None
+
         matrice = await MATRICE_REPO.get_by_name(simulacra.name, lang)
+
         data = simulacra.model_dump()
         data.update({'weapon': weapon, 'matrice': matrice})
+
         return PrettyJsonResponse(Simulacra_v2(**data).model_dump())
+    
 
 @router.get('', response_model=list[Simulacra_v2])
 async def get_all_simulacra(lang: LANGS = LANGS('en')):
@@ -61,9 +68,12 @@ async def get_all_simulacra(lang: LANGS = LANGS('en')):
             weapon = await WEAPON_REPO.get(EntityBase(id=simulacra.weapon_id), lang)
         else:
             weapon = None
+
         matrice = await MATRICE_REPO.get_by_name(simulacra.name, lang)
+
         data = simulacra.model_dump()
         data.update({'weapon': weapon, 'matrice': matrice})
+        
         simu_lista.append(Simulacra_v2(**data).model_dump())
     
     return PrettyJsonResponse(simu_lista)
