@@ -13,7 +13,7 @@ class Simulacra_v2(EntityBase):
     avatarID: str
     advanceId: str | None = None
     assets: Assets
-    weapon_id: str 
+    weapon_id: str | None
     age: str
     height: str
     gender: str
