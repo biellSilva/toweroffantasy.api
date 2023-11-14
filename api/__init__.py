@@ -39,6 +39,7 @@ app.include_router(graphql.graphql, tags=['GraphQL']) # type: ignore
 
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=['*'],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
