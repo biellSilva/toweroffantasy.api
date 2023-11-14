@@ -9,7 +9,7 @@ from api.core.routes import (
     weapons,
     matrices,
     relics,
-    home,
+    # home,
     food,
     item,
     achievements,
@@ -21,7 +21,7 @@ from api.core.routes import (
 
 app = FastAPI()
 
-app.include_router(home.router)
+# app.include_router(home.router)
 app.include_router(simulacra.router)
 app.include_router(simulacra_v2.router)
 app.include_router(weapons.router)
@@ -33,7 +33,7 @@ app.include_router(achievements.router)
 app.include_router(outfits.router)
 app.include_router(image.router)
 
-app.include_router(graphql.graphql) # type: ignore
+app.include_router(graphql.graphql, tags=['GraphQL']) # type: ignore
 
 
 @app.middleware("http")

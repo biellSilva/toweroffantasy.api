@@ -32,4 +32,4 @@ class Query:
 
 schema = strawberry.Schema(query=Query)
 
-graphql = GraphQLRouter(schema=schema, path='/graphql')  # type: ignore
+graphql = GraphQLRouter(schema=schema, path='/')  # type: ignore
