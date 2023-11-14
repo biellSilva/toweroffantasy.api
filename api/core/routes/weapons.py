@@ -16,7 +16,7 @@ WEAPON_REPO = WeaponRepo()
 
 
 @router.get('/{id}', name='Get weapon', response_model=Weapon)
-async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en'), exclude: bool = True):
+async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
         id: 
@@ -30,30 +30,28 @@ async def get_weapon(id: WEAPONS, lang: LANGS = LANGS('en'), exclude: bool = Tru
             default: en
             desc: possible languages to use
             
-        exclude: 
+        include: 
             type: bool
             default: True
-            desc: removes some keys
+            desc: Include all data keys
 
     **Return** \n
-        List[Weapon]
+        Weapon
     '''
 
     if weapon := await WEAPON_REPO.get(EntityBase(id=id), lang):
-        if exclude:
-            return PrettyJsonResponse(weapon.model_dump(exclude={'skills', 'mats', 
-                                                                 'advancements', 'advanceID',
-                                                                 'shatter', 'charge', 'weaponEffects'}))
+        if include:
+            return PrettyJsonResponse(weapon.model_dump())
 
         else:
-            return PrettyJsonResponse(weapon.model_dump())
+            return PrettyJsonResponse(weapon.model_dump(include={'name', 'id', 'assets', 'type', 'rarity', 'element'}))
 
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
 
 
 @router.get(path='', name='All Weapons', response_model=list[Weapon])
-async def get_all_weapons(lang: LANGS = LANGS('en'), exclude: bool = True):
+async def get_all_weapons(lang: LANGS = LANGS('en'), include: bool = False):
     '''
     **Query Params** \n
         lang:
@@ -61,10 +59,10 @@ async def get_all_weapons(lang: LANGS = LANGS('en'), exclude: bool = True):
             default: en
             desc: possible languages to use
             
-        exclude: 
+        include: 
             type: bool
-            default: True
-            desc: removes some keys
+            default: False
+            desc: Include all data keys
     
     **Return** \n
         List[Weapon]
@@ -72,15 +70,11 @@ async def get_all_weapons(lang: LANGS = LANGS('en'), exclude: bool = True):
 
 
     if weapons := await WEAPON_REPO.get_all(lang):
-        if exclude:
-            return PrettyJsonResponse([weapon.model_dump(exclude={'skills', 'mats', 
-                                                                  'advancements', 'advanceID',
-                                                                  'shatter', 'charge', 'weaponEffects'}) 
-                                        for weapon in weapons])
+        if include:
+            return PrettyJsonResponse([weapon.model_dump() for weapon in weapons])
 
         else:
-            return PrettyJsonResponse([weapon.model_dump() 
-                                        for weapon in weapons])
+            return PrettyJsonResponse([weapon.model_dump(include={'name', 'id', 'assets', 'type', 'rarity', 'element'}) for weapon in weapons])
 
     else:
         raise ItemNotFound(headers={'error': f'{lang} not found'})
