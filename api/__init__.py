@@ -3,6 +3,8 @@ from fastapi import FastAPI, Request, Response
 from typing import Callable, Any
 from time import time as timer
 
+from fastapi.middleware.cors import CORSMiddleware
+
 from api.core.routes import (
     simulacra, 
     simulacra_v2, 
@@ -35,6 +37,12 @@ app.include_router(image.router)
 
 app.include_router(graphql.graphql, tags=['GraphQL']) # type: ignore
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.middleware("http")
 @app.middleware("https")
