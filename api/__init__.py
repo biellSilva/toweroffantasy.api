@@ -1,9 +1,16 @@
 
-from fastapi import FastAPI, Request, Response
+
 from typing import Callable, Any
 from time import time as timer
 
+from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
+
+from slowapi import Limiter, _rate_limit_exceeded_handler # type: ignore
+from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
+from slowapi.middleware import SlowAPIMiddleware
+
 
 from api.core.routes import (
     simulacra, 
@@ -23,6 +30,29 @@ from api.core.routes import (
 
 app = FastAPI()
 
+limiter = Limiter(key_func=get_remote_address, application_limits=['1/10seconds'], enabled=False)
+app.state.limiter = limiter
+
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler) # type: ignore
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'],
+    allow_credentials=True,
+    allow_methods=['POST', 'GET'],
+    allow_headers=['X-Custom-Header', 'content-type'],
+)
+
+app.add_middleware(SlowAPIMiddleware)
+
+@app.middleware("http")
+@app.middleware("https")
+async def add_process_time_header(request: Request, call_next: Callable[[Request], Any]):
+    start_time = timer()
+    response: Response = await call_next(request)
+    response.headers["X-Process-Time"] = str(timer() - start_time)
+    return response
+
 # app.include_router(home.router)
 app.include_router(simulacra.router)
 app.include_router(simulacra_v2.router)
@@ -36,20 +66,3 @@ app.include_router(outfits.router)
 app.include_router(image.router)
 
 app.include_router(graphql.graphql, tags=['GraphQL']) # type: ignore
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=['*'],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-@app.middleware("http")
-@app.middleware("https")
-async def add_process_time_header(request: Request, call_next: Callable[[Request], Any]):
-    start_time = timer()
-    response: Response = await call_next(request)
-    response.headers["X-Process-Time"] = str(timer() - start_time)
-    return response
-
