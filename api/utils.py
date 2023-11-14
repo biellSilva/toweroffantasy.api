@@ -22,7 +22,7 @@ def replace_icon(text: str):
         return text
 
 def replace_rating(text: str, lang: LANGS):
-    return f'/assets/L10N/{lang}/{text.replace("/Game/Resources/", "")}'
+    return f'/assets/L10N/{lang}/Resources/{text.replace("/Game/Resources/", "")}'
 
 
 def put_imitation_icon(text: str):
