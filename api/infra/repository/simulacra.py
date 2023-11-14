@@ -26,7 +26,10 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
         
         else:
             PATH_IMIT = Path(f'api/database/{lang}/{self.repo_name}.json')
+            BANNERS_PATH = Path(f'api/database/banners_global.json')
+
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
+            BANNERS_DATA: list[dict[str, str | int | bool]] = loads(BANNERS_PATH.read_bytes())
 
             if lang in self.cache:
                 pass
@@ -35,6 +38,9 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
 
             for imit_id, imit_dict in DATA.items():
                 if 'L1' not in imit_id:
+                    
+                    imit_dict['banners'] = [banner for banner in BANNERS_DATA if banner['imitation_id'] == imit_id]
+                    
                     imit_dict['assets']['icon'] = imit_dict['avatarID']
 
                     va: list[dict[str, str]] = imit_dict.pop('va')

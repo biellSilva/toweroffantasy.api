@@ -29,7 +29,7 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
         else:
             # PATH_IMIT = Path(f'api/database/{lang}/{self.repo_name}.json')
             DATA: dict[str, dict[str, Any]] = {simulacra.id: simulacra.model_dump() for simulacra in await self.simu_repo.get_all(lang=lang)}
-
+        
             if lang in self.cache:
                 pass
             else:
@@ -45,5 +45,4 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
 
                 self.cache[lang].update({imit_id.lower(): Simulacra_v2(**imit_dict)})
 
-            self.__load_all_data__ = True
             return list(self.cache[lang].values())

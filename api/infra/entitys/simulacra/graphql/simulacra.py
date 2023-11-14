@@ -1,7 +1,7 @@
 
 import strawberry
 
-from .extra import Assets, VoiceActors, Awakening
+from .extra import Assets, VoiceActors, Awakening, Banner
 
 
 @strawberry.type()
@@ -11,7 +11,7 @@ class SimulacraType:
     avatarID: str
     advanceId: str | None
     assets: Assets
-    weapon_id: str
+    weapon_id: str | None
     age: str
     height: str
     gender: str
@@ -21,4 +21,4 @@ class SimulacraType:
     gift_types: list[str] 
     voice_actors: VoiceActors
     awakenings: list[Awakening]
-
+    banners: list[Banner]

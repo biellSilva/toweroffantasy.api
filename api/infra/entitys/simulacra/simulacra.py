@@ -3,7 +3,7 @@ from pydantic import Field, BeforeValidator
 from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.simulacra.extra import VoiceActors, Awakening, Assets
+from api.infra.entitys.simulacra.extra import VoiceActors, Awakening, Assets, Banner
 
 from api.utils import check_string
 
@@ -23,4 +23,5 @@ class Simulacra(EntityBase):
     gift_types: list[str] = Field(alias='gp', serialization_alias='gift_types')
     voice_actors: VoiceActors = Field(alias='va', serialization_alias='voice_actors')
     awakenings: list[Awakening] = Field(alias='trait', default=[], serialization_alias='awakenings')
+    banners: list[Banner] = []
 
