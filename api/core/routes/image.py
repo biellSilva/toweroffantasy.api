@@ -14,7 +14,7 @@ router = APIRouter(prefix='/assets', tags=['assets'])
 
 
 @router.get('/{path:path}')
-async def get_asset(path: str, format: Literal['png', 'webp']='webp'):
+async def get_asset(path: str, format: Literal['png', 'webp']='png'):
 
     async with aiohttp.ClientSession() as cs:
         path = path if '.png' in path else f'{path}.png'
@@ -25,7 +25,7 @@ async def get_asset(path: str, format: Literal['png', 'webp']='webp'):
                     image = Image.open(BytesIO(await res.read()))
                     buffer = BytesIO()
 
-                    image.save(buffer, format='webp')
+                    image.save(buffer, format='webp', quality=100)
                     buffer.seek(0)
 
                     return StreamingResponse(buffer, media_type=f'image/{format.upper()}')
