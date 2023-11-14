@@ -29,6 +29,11 @@ async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en')):
             type: string
             default: en
             desc: possible languages to use
+        
+        include:
+            type: bool
+            default: True
+            desc: Include all data keys
             
     **Return** \n
         Outfit
@@ -41,20 +46,28 @@ async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en')):
         raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
 
 @router.get('', name='All outfits', response_model=list[Outfit])
-async def get_all_outfits(lang: LANGS = LANGS('en')):
+async def get_all_outfits(lang: LANGS = LANGS('en'), include: bool = False):
     '''
     **Query Params** \n
         lang:
             type: string
             default: en
             desc: possible languages to use
+
+        include:
+            type: bool
+            default: False
+            desc: Include all data keys
             
     **Return** \n
         List[Outfit]
     '''
     
     if outfits := await OUTFIT_REPO.get_all(lang):
-        return PrettyJsonResponse([outfit.model_dump() for outfit in outfits])
+        if include:
+            return PrettyJsonResponse([outfit.model_dump() for outfit in outfits])
+        else:
+            return PrettyJsonResponse([outfit.model_dump(include={'name', 'icon'}) for outfit in outfits])
     
     else:
         raise ItemNotFound(detail={'error': f'{lang} not found'})
