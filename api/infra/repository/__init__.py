@@ -7,6 +7,7 @@ from .food import FoodRepo
 from .item import ItemRepo
 from .achievements import AchievementRepo
 from .outfit import OutfitRepo
+from .simulacra_v2 import SimulacraV2Repo
 
 
 __import__ = [
@@ -17,5 +18,6 @@ __import__ = [
     FoodRepo,
     ItemRepo,
     AchievementRepo,
-    OutfitRepo
+    OutfitRepo,
+    SimulacraV2Repo
 ]
