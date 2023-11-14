@@ -4,8 +4,8 @@ from pathlib import Path
 from json import loads
 
 
-__langs: list[str] = [file.name for file in Path('api/database').iterdir() if file.is_dir()]
-LANGS = StrEnum('LANGS', __langs)
+langs: list[str] = [file.name for file in Path('api/database').iterdir() if file.is_dir()]
+LANGS = StrEnum('LANGS', langs)
 
 __simulacras_names: list[str] = [file for file in loads(Path('api/database/en/imitations.json').read_bytes()) if 'L1' not in file]
 SIMULACRAS = StrEnum('SIMULACRAS', __simulacras_names)
