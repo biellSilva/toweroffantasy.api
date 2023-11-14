@@ -25,7 +25,7 @@ async def get_asset(path: str, format: Literal['png', 'webp']='png'):
                     image = Image.open(BytesIO(await res.read()))
                     buffer = BytesIO()
 
-                    image.save(buffer, format='webp', quality=100)
+                    image.save(buffer, format='webp', quality=100, optimize=True)
                     buffer.seek(0)
 
                     return StreamingResponse(buffer, media_type=f'image/{format.upper()}')
