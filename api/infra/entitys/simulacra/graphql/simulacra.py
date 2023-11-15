@@ -9,9 +9,9 @@ class SimulacraType:
     id: str
     name: str
     avatarID: str
-    advanceId: str | None
+    advanceID: str | None
     assets: Assets
-    weapon_id: str | None
+    weaponID: str | None
     age: str
     height: str
     gender: str

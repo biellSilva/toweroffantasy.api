@@ -44,7 +44,7 @@ async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en'), include: bool
         if include:
             return PrettyJsonResponse(simulacra.model_dump())
         else:
-            return PrettyJsonResponse(simulacra.model_dump(include={'id', 'name', 'assets', 'weapon_id'}))
+            return PrettyJsonResponse(simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID'}))
     
     else:
         raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
@@ -71,7 +71,7 @@ async def get_all_simulacra(lang: LANGS = LANGS('en'), include: bool = False):
         if include:
             return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
         else:
-            return PrettyJsonResponse([simulacra.model_dump(include={'id', 'name', 'assets', 'weapon_id'}) for simulacra in simulacras])
+            return PrettyJsonResponse([simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID'}) for simulacra in simulacras])
     
     else:
         raise ItemNotFound(detail={'error': f'{lang} not found'})

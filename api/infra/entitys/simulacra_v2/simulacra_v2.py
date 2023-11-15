@@ -11,9 +11,9 @@ from .extra import Assets
 class Simulacra_v2(EntityBase):
     name: str
     avatarID: str
-    advanceId: str | None = None
+    advanceID: str | None = None
     assets: Assets
-    weapon_id: str | None
+    weaponID: str | None
     age: str
     height: str
     gender: str

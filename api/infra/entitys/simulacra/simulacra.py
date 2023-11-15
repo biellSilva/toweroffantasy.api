@@ -11,9 +11,9 @@ from api.utils import check_string
 class Simulacra(EntityBase):
     name: str
     avatarID: str
-    advanceId: str | None = None
+    advanceID: str | None = Field(default=None, alias='advanceId', serialization_alias='advanceID')
     assets: Assets
-    weapon_id: Annotated[str | None, BeforeValidator(check_string)] = Field(alias='weapon', serialization_alias='weapon_id')
+    weaponID: Annotated[str | None, BeforeValidator(check_string)] = Field(default=None, alias='weapon', serialization_alias='weaponID')
     age: str
     height: str
     gender: str

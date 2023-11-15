@@ -36,7 +36,7 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
                 self.cache.update({lang: {}})
 
             for imit_id, imit_dict in DATA.items():
-                if weapon_id := imit_dict.get('weapon_id', None):
+                if weapon_id := imit_dict.get('weaponID', None):
                     if weapon := await self.weapon_repo.get(EntityBase(id=weapon_id), lang=lang):
                         imit_dict['weapon'] = weapon
                 
