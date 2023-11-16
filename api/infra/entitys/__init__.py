@@ -1,6 +1,6 @@
 
 from .simulacra import Simulacra
-from .matrices import Matrice
+from .matrices import Matrix
 from .weapons import Weapon
 from .simulacra_v2 import Simulacra_v2
 from .relics import Relic
@@ -15,7 +15,7 @@ from .base import EntityBase
 __import__ = [
     EntityBase,
     Simulacra, 
-    Matrice, 
+    Matrix, 
     Weapon, 
     Simulacra_v2, 
     Relic,

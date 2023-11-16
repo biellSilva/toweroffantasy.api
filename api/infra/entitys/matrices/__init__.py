@@ -1,4 +1,4 @@
 
-from .matrice import Matrice
+from .matrice import Matrix
 
-__import__ = [Matrice]
+__import__ = [Matrix]

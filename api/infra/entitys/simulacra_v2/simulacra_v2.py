@@ -2,7 +2,7 @@
 
 from api.infra.entitys.base import EntityBase
 from api.infra.entitys.weapons import Weapon
-from api.infra.entitys.matrices import Matrice
+from api.infra.entitys.matrices import Matrix
 from api.infra.entitys.simulacra.extra import Awakening, VoiceActors, Banner
 
 from .extra import Assets
@@ -25,5 +25,5 @@ class Simulacra_v2(EntityBase):
     awakenings: list[Awakening]
     banners: list[Banner]
     weapon: Weapon | None = None
-    matrice: Matrice | None = None
+    matrix: Matrix | None = None
 

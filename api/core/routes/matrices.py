@@ -6,16 +6,16 @@ from api.enums import MATRICES, LANGS
 from api.core.exceptions import ItemNotFound
 from api.core.response import PrettyJsonResponse
 
-from api.infra.repository import MatriceRepo
-from api.infra.entitys import EntityBase, Matrice
+from api.infra.repository import MatricesRepo
+from api.infra.entitys import EntityBase, Matrix
 
 
 
 router = APIRouter(prefix='/matrix', tags=['Matrices'])
 
-MATRICE_REPO = MatriceRepo()
+MATRICE_REPO = MatricesRepo()
 
-@router.get('/{id}', name='Get matrix', response_model=Matrice)
+@router.get('/{id}', name='Get matrix', response_model=Matrix)
 async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
@@ -36,7 +36,7 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = T
             desc: Include all data keys
             
     **Return** \n
-        Matrice
+        Matrix
     '''
     
     if matrice := await MATRICE_REPO.get(EntityBase(id=id), lang):
@@ -48,7 +48,7 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = T
     else:
         raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
 
-@router.get('', name='All matrices', response_model=list[Matrice])
+@router.get('', name='All matrices', response_model=list[Matrix])
 async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False):
     '''
     **Query Params** \n

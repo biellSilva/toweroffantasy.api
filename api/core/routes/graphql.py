@@ -15,7 +15,7 @@ from api.infra.entitys.simulacra_v2.graphql.simulacra_v2 import SimulacraTypeV2
 
 
 SIMU_REPO = SimulacraRepo()
-MATRICE_REPO = MatriceRepo()
+MATRICE_REPO = MatricesRepo()
 WEAPON_REPO = WeaponRepo()
 SIMU_V2_REPO = SimulacraV2Repo()
 ACHIEV_REPO = AchievementRepo()
