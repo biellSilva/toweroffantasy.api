@@ -1,0 +1,5599 @@
+{
+	"Task_Area2Cooking": {
+		"name": "Ração para cachorro",
+		"description": "A comida predileta de cães de caça treinados.",
+		"buff": "Lanche",
+		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
+	},
+	"Item_Cooking_0901": {
+		"name": "Guisado horroroso",
+		"description": "Um monte de ingredientes desconhecidos cozidos de qualquer jeito em um panelão, e ainda desperdiçou os nutrientes.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_0902": {
+		"name": "Guisado mediano",
+		"description": "Quem vê acha que deu certo, mas a escolha dos ingredientes acaba causando o fracasso do prato...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1001": {
+		"name": "Cogumelos fritos",
+		"description": "Tirando o sabor, pelo menos está cozido, não cru.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**10% + 1500**) de vida para si."
+	},
+	"Item_Cooking_1002": {
+		"name": "Sopa de algas com ovo",
+		"description": "Leva alga fresca e é rico em proteínas, bom para encher a pança.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1003": {
+		"name": "Peixe grelhado crocante",
+		"description": "Um dos pratos populares na cidade portuária de Banges. Barato e delicioso.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1004": {
+		"name": "Pão integral",
+		"description": "Feito de grãos processados, é nutritivo e fácil de armazenar. Todo Errante deveria andar com alguns.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1005": {
+		"name": "Cereal matinal",
+		"description": "Já foi uma comida que salvou vidas, capaz de alimentar cinco ou seis pessoas. Agora que as condições de vida melhoraram, as pessoas colocam leite em vez de água.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1006": {
+		"name": "Carne crepitante",
+		"description": "Em que ponto você quer? A galera monstra de verdade come depois de alguns segundos grelhando em pedras ao sol quente.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1007": {
+		"name": "Sopa de frutos do mar",
+		"description": "Dizem que uma colherada dá ânimo e duas dão saúde, apesar do sabor mediano.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Aumenta **Frost Attack +1%** durante **Frost Attack +undefined%** segundos."
+	},
+	"Item_Cooking_1008": {
+		"name": "Hambúrguer de frango crocante",
+		"description": "Hambúrgueres de frango encontrados em restaurantes de fast-food. Poucas coisas superam a combinação de frango crocante quentinho e alface fresca.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1009": {
+		"name": "Hambúrguer picante",
+		"description": "O tempo passa e ele nunca falha em dar água na boca.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Aumenta **Physical Attack +1%** durante **Physical Attack +undefined%** segundos."
+	},
+	"Item_Cooking_1010": {
+		"name": "Mexido de arroz com ovo",
+		"description": "Este é o incremento de que você precisa quando enjoa de comer arroz puro.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1011": {
+		"name": "Caranguejo no vapor",
+		"description": "Fruto do mar fica melhor se estiver fresco. A questão é: por onde começar?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1011",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"Item_Cooking_1012": {
+		"name": "Refrigerante gelado de morango",
+		"description": "Misture morangos amassados com refrigerante e depois coloque gelo. Indispensável no verão.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Aumenta **Flame Resistance +10%** durante **Flame Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_1013": {
+		"name": "Refrigerante beijo-das-chamas",
+		"description": "Hora do chá da tarde!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"effect": "Aumenta **10** durante **undefined** segundos."
+	},
+	"Item_Cooking_1014": {
+		"name": "Refrigerante de mirtilo trovejante",
+		"description": "A cor do mirtilo parece até a de uma nuvem de chuva. Cuidado para não derramar na roupa, porque é difícil de tirar a mancha.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Aumenta **Volt Resistance +10%** durante **Volt Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_1015": {
+		"name": "Ovo dourado com tomate",
+		"description": "Não, não mexi os ovos sem querer...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1016": {
+		"name": "Salada nutritiva simples",
+		"description": "A salada mais básica para ingerir os nutrientes necessários do dia. Ótima escolha para uma dieta de pouca gordura.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Aumenta **Physical Resistance +10%** durante **Physical Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_1017": {
+		"name": "Salada de alface",
+		"description": "Uma salada agradável com ingredientes simples e sabor marcante.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**10% + 1500**) de vida para si."
+	},
+	"Item_Cooking_1018": {
+		"name": "Sopa de cogumelo",
+		"description": "A combinação perfeita de cogumelos frescos e alface-crespa.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1019": {
+		"name": "Ovo frito",
+		"description": "Inicie um dia fantástico com ovos fritos!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1019",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**10% + 1500**) de vida para si."
+	},
+	"Item_Cooking_1020": {
+		"name": "Concha no vapor",
+		"description": "Todo o sabor original é conservado! Mas um pouquinho de cebolinha não cairia mal.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1021": {
+		"name": "Ovo no vapor com ouriço-do-mar",
+		"description": "Ouriço-do-mar com ovo no vapor é delicioso e reconfortante. Um prato consumido principalmente no campo nevado.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"Item_Cooking_1022": {
+		"name": "Torrada com duas geleias",
+		"description": "A fusão de duas frutinhas para uma sinfonia agridoce na boca.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Aumenta **Volt Attack +1%** durante **Volt Attack +undefined%** segundos."
+	},
+	"Item_Cooking_1023": {
+		"name": "Macarrão com tomate e ovo frito",
+		"description": "Bem temperadinho e fácil de fazer. Um prato saboroso e de baixa caloria.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 4",
+				"max": " 4"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": "Aumenta **Flame Attack +1%** por **Flame Attack +undefined%** segundos."
+	},
+	"Item_Cooking_1024": {
+		"name": "Guisado de carne com batata",
+		"description": "A carne absorveu todos os ingredientes, então é muito saudável!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1024",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1025": {
+		"name": "Batata frita",
+		"description": "Porcaria, não: felicidade pura!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1025",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1026": {
+		"name": "Salada de vegetais",
+		"description": "Uma salada elaborada, ótima para piqueniques.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1027": {
+		"name": "Frango frito",
+		"description": "Um prato simples e rápido. A casca douradinha faz qualquer um babar.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1027",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1028": {
+		"name": "Suco de fruta com mel",
+		"description": "Suco fresco com um pouco de mel. Um toque de doçura em meio ao azedinho.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1028",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1029": {
+		"name": "Bolo de fruta",
+		"description": "Não existe estresse que um pedaço delicioso de bolo não possa resolver. Se existir, coma um segundo!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"Item_Cooking_1030": {
+		"name": "Surpresa gelada",
+		"description": "Especial de verão. Sinta a festa do surfe na sua boca!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1030",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1031": {
+		"name": "Brócolis salteados",
+		"description": "Comida saudável e sem gordura, mas não é tão apreciada assim.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1032": {
+		"name": "Vieira cozida",
+		"description": "Um prato simples e saboroso, nem precisa de tempero.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1032",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"Item_Cooking_1033": {
+		"name": "Trouxinha de carne",
+		"description": "A melhor parte é quando se morde a carne suculenta!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1033",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1034": {
+		"name": "Postas de peixe com cogumelo",
+		"description": "Uma porção perfeita de postas de peixe com cogumelo.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1034",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_1035": {
+		"name": "Alcatra assada",
+		"description": "Monte a grelha e puxe uma cadeira. Pois é, sinta esse cheiro...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1035",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"Item_Cooking_1036": {
+		"name": "Sopa de cogumelo e dente-de-leão",
+		"description": "Já provou dente-de-leão com cogumelo? Vai deixar você leve como uma pluma.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/1036",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Dandelion_zhongzi",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"Item_Cooking_2001": {
+		"name": "Surf and turf",
+		"description": "Comida caseira de Banges para sentir aquele gostinho de lar.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**13% + 10000**) de vida para si."
+	},
+	"Item_Cooking_2002": {
+		"name": "Pão de trigo-vermelho",
+		"description": "O alimento mais consumido pelo povo de Aida, que reflete seu estilo de vida simples.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_2003": {
+		"name": "Torta de broto de samambaia",
+		"description": "Uma massa saudável com recheio de broto de samambaia, mas a molecada não é muito chegada.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"Item_Cooking_2004": {
+		"name": "Pão de chocolate",
+		"description": "Recheado de chocolate! Esqueça a dieta por um diazinho só.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"Item_Cooking_2005": {
+		"name": "Sopa de cogumelo chapéu-de-fogo",
+		"description": "Tem coisa melhor do que uma sopa de cogumelo chapéu-de-fogo pelando quando se está escalando picos nevados?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**13% + 10000**) de vida para si."
+	},
+	"Item_Cooking_2006": {
+		"name": "Sopa de líquen preto",
+		"description": "O importante agora é encher a barriga; depois você pensa em algo melhor para comer.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**13% + 10000**) de vida para si."
+	},
+	"Item_Cooking_2007": {
+		"name": "Salada de balãozinho",
+		"description": "Uma salada especialmente selecionada. Agridoce, as crianças adoram!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"Item_Cooking_2008": {
+		"name": "Sopa de broto de samambaia",
+		"description": "Mais um dia herbívoro...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"Item_Cooking_2009": {
+		"name": "Enguia picante",
+		"description": "A enguia elétrica está cozida direito? Minha língua está formigando...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Aumenta **Volt Resistance +10%** durante **Volt Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_2010": {
+		"name": "Sopa de cogumelo com enguia",
+		"description": "Um desafio apimentado para as papilas gustativas. Tome tudo numa golada só se tiver coragem! E sem tomar água, hein!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Aumenta **Volt Attack +1%** durante **Volt Attack +undefined%** segundos."
+	},
+	"Item_Cooking_2011": {
+		"name": "Sopa de siri",
+		"description": "Todas as partes boas do siri estão no guisado.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Aumenta **Flame Resistance +10%** durante **Flame Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_2012": {
+		"name": "Suco de romã",
+		"description": "É coisa da minha cabeça ou o suco está brilhando?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"Item_Cooking_2013": {
+		"name": "Achocolatado",
+		"description": "Tome uma xícara antes de ir dormir para ter um doce sonho!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Aumenta **Frost Resistance +10%** durante **Frost Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_2014": {
+		"name": "Chá de pitaia de fogo",
+		"description": "Tome isto enquanto come um bolo para ter o chá da tarde perfeito!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": "Aumenta **Flame Attack +1%** por **Flame Attack +undefined%** segundos."
+	},
+	"Item_Cooking_2015": {
+		"name": "Guisado de craca",
+		"description": "Um sabor que você vai gostar!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Aumenta **Physical Resistance +10%** durante **Physical Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_2016": {
+		"name": "Pizza de frutos do mar e craca",
+		"description": "Quero duas!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"Item_Cooking_2017": {
+		"name": "Chá de azaleia-da-neve",
+		"description": "Por que não toma um pouco enquanto relaxa perto da fogueira durante o inverno frio?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Follows002",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Aumenta **Frost Attack +1%** durante **Frost Attack +undefined%** segundos."
+	},
+	"Item_Cooking_2018": {
+		"name": "Achocolatado com pinhão",
+		"description": "Achocolatado saborizado com pinhões. Os fãs de pinhão podem acrescentar mais.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"Item_Cooking_2019": {
+		"name": "Chá de castanhas",
+		"description": "Sinta o cheirinho fresco das castanhas...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"Item_Cooking_2020": {
+		"name": "Torta de inhame roxo",
+		"description": "Uma tortinha que dá sustância e serve de lanche em caminhadas longas.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Aumenta **Volt Attack +2%** durante **Volt Attack +undefined%** segundos."
+	},
+	"Item_Cooking_2021": {
+		"name": "Sopa de lótus-da-neve",
+		"description": "Lótus-da-neve é bem insosso, por isso, adiciona-se açúcar para virar uma sobremesa popular.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Follows001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"Item_Cooking_2022": {
+		"name": "Risoto de trufas",
+		"description": "Salteie a trufa, depois misture-a com arroz.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Aumenta **Physical Attack +2%** durante **Physical Attack +undefined%** segundos."
+	},
+	"Item_Cooking_2023": {
+		"name": "Macarrão com yakasumba",
+		"description": "Já cheguei na idade de ter que tomar cuidado com o que como?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Greens012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"Item_Cooking_2024": {
+		"name": "Temaki de caviar",
+		"description": "Um cone visualmente agradável o torna um prato elegante. Se você não conseguir fazer nesse formato, é melhor só misturar tudo em uma tigela mesmo.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"Item_Cooking_2025": {
+		"name": "Bolinhos de batata com caviar",
+		"description": "Bolinhos macios de batata com caviar de alta qualidade. Você vai querer repetir.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Aumenta **Physical Attack +1%** durante **Physical Attack +undefined%** segundos."
+	},
+	"Item_Cooking_2026": {
+		"name": "Bife grelhado",
+		"description": "Ao ponto, por favor!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Aumenta **Volt Resistance +15%** durante **Volt Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_2027": {
+		"name": "Bife ao molho de cogumelo",
+		"description": "Acho que estou vendo bifes voando no céu...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": "Aumenta **Flame Attack +2%** por **Flame Attack +undefined%** segundos."
+	},
+	"Item_Cooking_2028": {
+		"name": "Carne refogada",
+		"description": "Um clássico tradicional.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Aumenta **Frost Resistance +15%** durante **Frost Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_2029": {
+		"name": "Sanduíche de carne suculenta",
+		"description": "Relaxe e faça um bom café da manhã!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Aumenta **Flame Resistance +15%** durante **Flame Resistance +undefined%** segundos."
+	},
+	"Item_Cooking_2030": {
+		"name": "Sashimi de salmão",
+		"description": "Esse, sim, é o gosto que comida tem que ter!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Aumenta **Frost Attack +2%** durante **Frost Attack +undefined%** segundos."
+	},
+	"Item_Cooking_2031": {
+		"name": "Arroz assado com caramujo",
+		"description": "Parece uma combinação esquisita, mas é muito mais gostoso do que aparenta.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Aumenta **Physical Resistance +15%** durante **Physical Resistance +undefined%** segundos."
+	},
+	"item_Cooking_3001": {
+		"name": "Chili Salteado",
+		"description": "Que ardência!!!!!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Aumenta **Frost Resistance +10%** durante **Frost Resistance +undefined%** segundos."
+	},
+	"item_Cooking_3002": {
+		"name": "Cebola da Areia na Brasa",
+		"description": "A barraquinha de churrasco de dar água na boca está aberta!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3003": {
+		"name": "Iogurte de Babosa",
+		"description": "Quem é que não gosta de iogurte doce e azedinho?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"item_Cooking_3004": {
+		"name": "Chá de Rosas",
+		"description": "Ao fazer chá de rosas, até a mente mais inquieta se acalma, como se fosse milagre.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"item_Cooking_3005": {
+		"name": "Refrigerante de figo espinhoso",
+		"description": "Uma quantidade generosa de mel é acrescentada para dar sabor a este suco de figo espinhoso insípido.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3006": {
+		"name": "Sopa de beterraba",
+		"description": "Sopa quentinha de beterraba. Quando está frio, dá para tomar uma panela cheia fácil.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"item_Cooking_3007": {
+		"name": "Salada de Melão Doce",
+		"description": "É mais gostoso frio, mas não vá com muita sede ao pote.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Aumenta **Flame Resistance +10%** durante **Flame Resistance +undefined%** segundos."
+	},
+	"item_Cooking_3008": {
+		"name": "Refrigerante de figo espinhoso",
+		"description": "Uma quantidade generosa de mel é acrescentada para dar sabor a este suco de figo espinhoso insípido.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3009": {
+		"name": "Mingau de Abóbora",
+		"description": "Um alimento básico capaz de deixar satisfeito. Depois de uma tigela disso, você não deve precisar comer mais nada.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3010": {
+		"name": "Tofu Frito",
+		"description": "Petiscos fritos douradinhos e crocantes. Cuidado para não cair molho na roupa!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3011": {
+		"name": "Sopa de Rabanete",
+		"description": "Uma sopa nutritiva e deliciosa. Mais uma tigela, por favor!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"item_Cooking_3012": {
+		"name": "Milho com Sal e Pimenta",
+		"description": "Petiscos simples e fáceis, a primeira coisa que vem à mente nas caladas da noite.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3013": {
+		"name": "Especial de Cacto",
+		"description": "Especial de cacto refrescante, indispensável no verão.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**10% + 1500**) de vida para si."
+	},
+	"item_Cooking_3014": {
+		"name": "Rabo de Lagarto Grelhado",
+		"description": "Salpique chili, cominho e pimenta e aguarde um pouco antes de começar.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"item_Cooking_3015": {
+		"name": "Costela Grelhada Especial",
+		"description": "Casa perfeitamente com arroz! Inigualável!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3016": {
+		"name": "Leite de Soja com Chocolate",
+		"description": "Se você já enjoou de tomar leite de soja comum, por que não experimenta este?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3017": {
+		"name": "Beterraba com Broto de Samambaia",
+		"description": "Quando os ingredientes chegarem no ponto, retire-os da frigideira, acrescente o molho, misture bem e pronto.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3018": {
+		"name": "Salada do deserto",
+		"description": "Cactos-bola e figos espinhosos picados em cubinhos com molho de salada. Recomenda-se esfriar primeiro.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3019": {
+		"name": "Pão de Rosas",
+		"description": "Uma tarde agradável começa com um pão de forma com aroma de rosas.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Aumenta **Volt Resistance +15%** durante **Volt Resistance +undefined%** segundos."
+	},
+	"item_Cooking_3020": {
+		"name": "Pão de Melão com Mel",
+		"description": "Um simples pão redondo com recheio de melão doce já basta para o café da manhã.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Aumenta **Frost Attack +1%** durante **Frost Attack +undefined%** segundos."
+	},
+	"item_Cooking_3021": {
+		"name": "Mingau de Cereais",
+		"description": "O mingau de arroz é feito com uma variedade de grãos misturados. Às vezes, só tenho vontade de comer algo neutro.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3022": {
+		"name": "Biscoito de Milho com Frutos do Mar",
+		"description": "Tacos só de frutos do mar... Você vai falir se abrir uma loja disso!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3023": {
+		"name": "Abóbora cozida no vapor",
+		"description": "A abóbora cozida no vapor é macia e doce. É uma boa opção para refeições dietéticas.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_Cooking_3024": {
+		"name": "Frango Ensopado com Macarrão",
+		"description": "Macarrão macio com caldo de frango quentinho. Finja que é uma tigela de macarrão de aniversário e faça um pedido.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Aumenta **Physical Attack +2%** durante **Physical Attack +undefined%** segundos."
+	},
+	"item_Cooking_3025": {
+		"name": "Macarrão de Churrasco Picante",
+		"description": "Uma grande ameaça ao Macarrão Kun Ji!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": "Aumenta **Flame Attack +2%** por **Flame Attack +undefined%** segundos."
+	},
+	"item_Cooking_3026": {
+		"name": "Arroz Frito Picante",
+		"description": "Quanto mais picante, melhor!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": "Aumenta **Flame Attack +1%** por **Flame Attack +undefined%** segundos."
+	},
+	"item_Cooking_3027": {
+		"name": "Prato de Grelhados",
+		"description": "Isto deve ser o paraíso dos amantes de carne, certo?!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Aumenta **Flame Resistance +15%** durante **Flame Resistance +undefined%** segundos."
+	},
+	"item_Cooking_3028": {
+		"name": "Sopa de Rabanete com Carne de Porco",
+		"description": "Sopa de rabanete com carne de porco que passou um dia inteiro no fogo. Os rabanetes chegam a estar mais gostosos do que a costela.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Aumenta **Physical Resistance +15%** durante **Physical Resistance +undefined%** segundos."
+	},
+	"item_Cooking_3029": {
+		"name": "Sopa de Creme de Milho",
+		"description": "Uma sopa cremosa, doce e forte. Não é o momento de comê-la com pão?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**12% + 3300**) de vida para si."
+	},
+	"item_Cooking_3030": {
+		"name": "Porongo Engordurado Crocante",
+		"description": "Passe na farinha de rosca, frite em imersão durante dois minutos e prontinho!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"item_Cooking_3031": {
+		"name": "Ostras Grelhadas",
+		"description": "É difícil decidir entre comer cru com um pouco de limão ou grelhado.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"item_Cooking_3032": {
+		"name": "Erva de Peixe Fria",
+		"description": "Assim que senti o sabor já me apaixonei pela erva de peixe!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"item_Cooking_3033": {
+		"name": "Tiras de Porongo Picante",
+		"description": "O prato frio apetitoso também parece ir bem como prato principal.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"item_Cooking_3034": {
+		"name": "Sopa de Tofu com Ostra",
+		"description": "Parece que muitas crianças não gostam de comer peixe, então esta sopa é feita de um jeito especial.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"item_Cooking_3035": {
+		"name": "Ovos Mexidos com Erva de Peixe",
+		"description": "Dá para misturar qualquer coisa com ovos mexidos! Meu preferido é...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/3035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"item_Cooking_4001": {
+		"name": "Dragões e estrelas",
+		"description": "É só carne de tartaruga-pescoço-de-dragão cozida com ovas de estrela-do-mar, mas o restaurante inventou um nome chique.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4002": {
+		"name": "Ovo no vapor de sabor marinho",
+		"description": "Ovos de tartaruga-pescoço-de-dragão vêm do oceano, então, naturalmente, têm sabor de frutos do mar.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**20% + 60000**) de vida para si."
+	},
+	"item_Cooking_4003": {
+		"name": "Salada de baiacu",
+		"description": "Uma deliciosa salada de baiacu. Vale a pena experimentar!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4004": {
+		"name": "Baiacu fresco",
+		"description": "Um prato de baiacu que aproveita todas as partes desse peixe caro.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Aumenta **Frost Attack +4%** durante **Frost Attack +undefined%** segundos."
+	},
+	"item_Cooking_4005": {
+		"name": "Baiacu grelhado",
+		"description": "Este baiacu suculento derrete na boca... Ou, pelo menos, é o que diz no cardápio.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"item_Cooking_4006": {
+		"name": "Lótus branca",
+		"description": "Os pedaços crus de baiacu sofisticadamente fatiados e empilhados lembram uma flor de lótus.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Aumenta **Frost Attack +2%** durante **Frost Attack +undefined%** segundos."
+	},
+	"item_Cooking_4007": {
+		"name": "Polvo cozido",
+		"description": "Fresco e consistente, um prato recomendado para todo mundo.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4008": {
+		"name": "Bolinhos de polvo",
+		"description": "Um prato tradicional delicioso. Seu sabor depende muito do tamanho dos pedaços de polvo.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Aumenta **Volt Resistance +15%** durante **Volt Resistance +undefined%** segundos."
+	},
+	"item_Cooking_4009": {
+		"name": "Petiscos grelhados",
+		"description": "Um prato popular com as crianças, mas caro demais para elas comprarem com a mesada que recebem.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**13% + 10000**) de vida para si."
+	},
+	"item_Cooking_4010": {
+		"name": "Peixe salgado no vapor",
+		"description": "Peixe de água salgada é naturalmente salgado, e cozinhá-lo no vapor preserva o umami.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4010",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**13% + 10000**) de vida para si."
+	},
+	"item_Cooking_4011": {
+		"name": "Peixe marinho salteado",
+		"description": "Este prato é muito trabalhoso, mas o esforço deve torná-lo ainda mais saboroso.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"item_Cooking_4012": {
+		"name": "Sashimi premium",
+		"description": "Um prato que testa as habilidades do chef com a faca. Só não coloque muito wasabi.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Aumenta **Frost Resistance +15%** durante **Frost Resistance +undefined%** segundos."
+	},
+	"item_Cooking_4013": {
+		"name": "Torta estrelada",
+		"description": "Peixes olham para o céu quando estão vivos?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4014": {
+		"name": "Guisado de frutos do mar",
+		"description": "Normalmente, cozinha-se com carne de caça para reduzir a quantia de ingredientes raros utilizados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"CleanBuff"
+		]
+	},
+	"item_Cooking_4015": {
+		"name": "Anêmona grelhada",
+		"description": "Pode ficar picante demais se tiver muito chili.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": "Aumenta **Flame Attack +2%** por **Flame Attack +undefined%** segundos."
+	},
+	"item_Cooking_4016": {
+		"name": "Flor de anêmona",
+		"description": "Acrescente anêmona ao ovo no vapor para obter uma textura mais rica.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**13% + 10000**) de vida para si."
+	},
+	"item_Cooking_4017": {
+		"name": "Longevidade",
+		"description": "A tartaruga-pescoço-de-dragão é uma criatura auspiciosa, por isso, os restaurantes gostam de dar vários nomes.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "Aumenta **40** durante **undefined** segundos."
+	},
+	"item_Cooking_4018": {
+		"name": "Ovo da felicidade",
+		"description": "Um mero ovo de tartaruga-pescoço-de-dragão cozido, mas vende mais após tingir.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Aumenta **Physical Attack +4%** durante **Physical Attack +undefined%** segundos."
+	},
+	"item_Cooking_4019": {
+		"name": "Ovo da felicidade (rosa)",
+		"description": "Um mero ovo de tartaruga-pescoço-de-dragão cozido, mas vende mais após tingir.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_016",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4020": {
+		"name": "Ovo da felicidade (vermelho)",
+		"description": "Um mero ovo de tartaruga-pescoço-de-dragão cozido, mas vende mais após tingir.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_015",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "Aumenta **50** durante **undefined** segundos."
+	},
+	"item_Cooking_4021": {
+		"name": "Água-viva fresca",
+		"description": "Crocante e refrescante. Depois que você começa a comer, não consegue parar!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**13% + 10000**) de vida para si."
+	},
+	"item_Cooking_4022": {
+		"name": "Água-viva com cogumelos fritos",
+		"description": "Esta mistura de cogumelos e águas-vivas é divina, e fica ainda mais gostosa com arroz. Você vai limpar o prato num piscar de olhos.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4023": {
+		"name": "Lula suculenta",
+		"description": "Se não souber comer estas coisas estufadas e suculentas corretamente, é melhor não comer em público.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4024": {
+		"name": "Mix de lula",
+		"description": "Um prato delicioso que poderia fazer mais sucesso se as cores fossem mais apetitosas.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Aumenta **Volt Attack +2%** durante **Volt Attack +undefined%** segundos."
+	},
+	"item_Cooking_4025": {
+		"name": "Mingau de peixe cozido",
+		"description": "Um mingau saudável para quem está sem apetite.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4026": {
+		"name": "Peixe em conserva",
+		"description": "Não é para humanos, mas os gatos adoram!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Aumenta **Flame Resistance +15%** durante **Flame Resistance +undefined%** segundos."
+	},
+	"item_Cooking_4027": {
+		"name": "Lagosta gloriosa",
+		"description": "Lagosta, lagosta e mais lagosta! Um prato que só pode ser apreciado à beira-mar.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Aumenta **Physical Attack +2%** durante **Physical Attack +undefined%** segundos."
+	},
+	"item_Cooking_4028": {
+		"name": "Lagostim apimentado",
+		"description": "Em pedacinhos, é tão gostosa quanto!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4029": {
+		"name": "Ovo no vapor com caranguejo",
+		"description": "É gostoso... Mas é caranguejo? Ou uma imitação de caranguejo?",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4030": {
+		"name": "Arroz com caranguejo frito luxuoso",
+		"description": "Este prato é tão luxuoso em todos os sentidos da palavra que ninguém consegue recusar.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4031": {
+		"name": "Caranguejo real",
+		"description": "Nem reis têm como evitar serem devorados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"item_Cooking_4032": {
+		"name": "Bolinho de arroz com caranguejo frito",
+		"description": "Caranguejo saboroso e fresco com bolinhos de arroz consistentes formam um prato de cair o queixo.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Aumenta **Physical Resistance +15%** durante **Physical Resistance +undefined%** segundos."
+	},
+	"item_Cooking_4033": {
+		"name": "Macarrão com caranguejo dourado",
+		"description": "O preço aumenta a cada ingrediente e processo acrescentados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4034": {
+		"name": "Frutos do mar no vapor com alho",
+		"description": "Um prato clássico onde frutos do mar frescos encontram o alho pungente.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": "Aumenta **Flame Attack +4%** por **Flame Attack +undefined%** segundos."
+	},
+	"item_Cooking_4035": {
+		"name": "Vermicelli com frutos do mar",
+		"description": "Um prato saboroso que nunca fica rico ou gorduroso demais.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Aumenta **Volt Attack +4%** durante **Volt Attack +undefined%** segundos."
+	},
+	"item_Cooking_4036": {
+		"name": "Lagosta assada com queijo",
+		"description": "Muito queijo e muita consistência.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4036",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Use para restaurar imediatamente (**16% + 34000**) de vida para si."
+	},
+	"item_Cooking_4037": {
+		"name": "Lagosta com macarrão de tinta de lula",
+		"description": "Um prato criativo tingido com tinta natural de lula, delicioso e cheio de estilo.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4037",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4038": {
+		"name": "Carne de concha frita",
+		"description": "Picante e com muito umami, esta comida saborosa não pode faltar no lanche da noite.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/4038",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_038",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_5001": {
+		"name": "Cozido de brotos de bambu",
+		"description": "Uma mistura de carne gorda e carne magra cozida com brotos de bambu durante algumas horas e temperada com especiarias picantes. Você vai comer três tigelas de arroz sem nem perceber.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/5001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"effect": "Aumenta **Volt Attack +4% Volt Resistance +1800** durante **Volt Attack +undefined%Volt Resistance +%** segundos."
+	},
+	"item_Cooking_5007": {
+		"name": "Begônia de jade branco",
+		"description": "Um prato frio de begônia e jade verde.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/5007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Jiuyu_Harvest_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"effect": "Aumenta **Flame Attack +4% Flame Resistance +1800** durante **Flame Attack +undefined%Flame Resistance +%** segundos."
+	},
+	"item_activity_cooking_001": {
+		"name": "Leitão assado",
+		"description": "Um leitão assado preparado por um excelente chef de cozinha pode satisfazer até mesmo os comensais mais exigentes.\r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Apophis e a Rainha das Rosas. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_002": {
+		"name": "Peru refogado com maçãs",
+		"description": "Uma especialidade de Astra. Se tornou popular em todo o continente graças à propaganda de vendedores e viajantes.\r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Apófis e a Rainha das Rosas. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_003": {
+		"name": "Coxas assadas e vegetais",
+		"description": "Primeiro satisfaça as suas papilas gustativas com uma mordida na coxa do frango assado. E então experimente os vegetais refrescantes. Nham, nham!\r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Apófis e a Rainha das Rosas. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_004": {
+		"name": "Salmão grelhado",
+		"description": "Salmão macio servido com mel bem doce, o que deixa um retrogosto agradável na boca.\r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Robarg e Sobek. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_005": {
+		"name": "Bolinhos de arroz e gergelim",
+		"description": "Uma especialidade tradicional do Porto de Banges, adorada por pessoas de todas as idades.\r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Robarg e Sobek. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_006": {
+		"name": "Sopa de peru e beterrabas",
+		"description": "Uma tigela de sopa quente que pode afastar toda a fadiga do dia.\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Robarg e Sobek. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_007": {
+		"name": "Biscoito de gengibre",
+		"description": "Uma sobremesa festiva popular que traz a doçura do açúcar e do mel, além da fragrância agradável dos grãos de trigo.\r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Robarg, Apófis, Gelorrobô, Sobek, Rainha das Rosas e Barbarossa. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_008": {
+		"name": "Bolo de maçã",
+		"description": "Um bolo de fruta macio. Capaz de satisfazer você com uma mordida. \r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Gelorrobô e Barbarossa. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_009": {
+		"name": "Ponche de fruta",
+		"description": "Uma bebida com um aroma frutado e um cheirinho de álcool.\r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Gelorrobô e Barbarossa. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_010": {
+		"name": "Suco de maçã",
+		"description": "Agridoce. Adequado para todas as idades. A bebida favorita de muitas pessoas no verão.\r\n\r\nÉ encontrado em um baú codificado durante o evento Cafeteria de Aida após vencer Gelorrobô e Barbarossa. Também pode ser preparado utilizando ingredientes coletados.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity2_cooking_101": {
+		"name": "Paixão flutuante",
+		"description": "Suba no balãozinho rumo ao mundo do chocolate!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_102": {
+		"name": "Paixão de pinhão",
+		"description": "Chocolate com cobertura de pinhões é o presente perfeito.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_103": {
+		"name": "Paixão de morango",
+		"description": "A mistura de morangos ligeiramente doces e chocolate bem açucarado é o sabor doce do primeiro amor.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_104": {
+		"name": "Paixão de avelã",
+		"description": "Um coração ansioso para amar está embrulhado no chocolate.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_105": {
+		"name": "Paixão de trufa",
+		"description": "Dá para sentir o afeto através da seleção de ingredientes.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_106": {
+		"name": "Paixão de mirtilo",
+		"description": "Dê uma mordida e deixe a geleia de mirtilo agridoce se espalhar pela boca.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_107": {
+		"name": "Paixão de mel",
+		"description": "Uma sinfonia majestosa de chocolate e mel.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_108": {
+		"name": "Paixão de fruta caída",
+		"description": "Esta é a coisa mais querida para mim.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_109": {
+		"name": "Paixão de cacau",
+		"description": "Chocolate amargo delicado e suave, enriquecido com um sonho azedinho e açucarado.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_110": {
+		"name": "Paixão de leite",
+		"description": "Leite e chocolate foram feitos um para o outro!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_201": {
+		"name": "Esfera flutuante",
+		"description": "Suba no balãozinho rumo ao mundo do chocolate!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_202": {
+		"name": "Esfera de pinhão",
+		"description": "Chocolate com cobertura de pinhões é o presente perfeito.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_203": {
+		"name": "Esfera de morango",
+		"description": "A mistura de morangos ligeiramente doces e chocolate bem açucarado é o sabor doce do primeiro amor.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_204": {
+		"name": "Esfera de avelã",
+		"description": "Um coração ansioso para amar está embrulhado no chocolate.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_205": {
+		"name": "Esfera de trufa",
+		"description": "Dá para sentir o afeto através da seleção de ingredientes.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_206": {
+		"name": "Esfera de mirtilo",
+		"description": "Dê uma mordida e deixe a geleia de mirtilo agridoce se espalhar pela boca.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_207": {
+		"name": "Esfera de mel",
+		"description": "Uma sinfonia majestosa de chocolate e mel.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_208": {
+		"name": "Esfera de fruta caída",
+		"description": "Esta é a coisa mais querida para mim.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_209": {
+		"name": "Esfera de cacau",
+		"description": "Chocolate amargo delicado e suave, enriquecido com um sonho azedinho e açucarado.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_210": {
+		"name": "Esfera de leite",
+		"description": "Leite e chocolate foram feitos um para o outro!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_301": {
+		"name": "Cubo flutuante",
+		"description": "Suba no balãozinho rumo ao mundo do chocolate!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_302": {
+		"name": "Cubo de pinhão",
+		"description": "Chocolate com cobertura de pinhões é o presente perfeito.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_303": {
+		"name": "Cubo de morango",
+		"description": "A mistura de morangos ligeiramente doces e chocolate bem açucarado é o sabor doce do primeiro amor.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_304": {
+		"name": "Cubo de avelã",
+		"description": "Um coração ansioso para amar está embrulhado no chocolate.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_305": {
+		"name": "Cubo de trufa",
+		"description": "Dá para sentir o afeto através da seleção de ingredientes.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_306": {
+		"name": "Cubo de mirtilo",
+		"description": "Dê uma mordida e deixe a geleia de mirtilo agridoce se espalhar pela boca.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_307": {
+		"name": "Cubo de mel",
+		"description": "Uma sinfonia majestosa de chocolate e mel.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_308": {
+		"name": "Cubo de fruta caída",
+		"description": "Esta é a coisa mais querida para mim.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_309": {
+		"name": "Cubo de cacau",
+		"description": "Chocolate amargo delicado e suave, enriquecido com um sonho azedinho e açucarado.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_310": {
+		"name": "Cubo de leite",
+		"description": "Leite e chocolate foram feitos um para o outro!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_001": {
+		"name": "Souvenir de Cetus",
+		"description": "Caixa de chocolates com tema de eletromancia, feita com muito orgulho por Hanna.\r\nA doutora diz que devem-se compartilhar coisas gostosas com pessoas importantes!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_002": {
+		"name": "Souvenir de Cetus",
+		"description": "Caixa de chocolates com tema de elemento físico, feita com muito orgulho por Hanna.\nA doutora diz que devem-se compartilhar coisas gostosas com pessoas importantes!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_003": {
+		"name": "Souvenir de Cetus",
+		"description": "Caixa de chocolates com tema de piromancia, feita com muito orgulho por Hanna.\nA doutora diz que devem-se compartilhar coisas gostosas com pessoas importantes!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_004": {
+		"name": "Souvenir de Cetus",
+		"description": "Caixa de chocolates com tema de criomancia, feita com muito orgulho por Hanna.\nA doutora diz que devem-se compartilhar coisas gostosas com pessoas importantes!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity2_cooking_005": {
+		"name": "Bolinho de arroz crocante",
+		"description": "Um dos lanches mais consumidos no planeta de Aida. Integrantes dos hienas e dos devastadores teriam brigado por um pedaço do bolinho.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity2_cooking_006": {
+		"name": "Caixa de chocolates",
+		"description": "Devem-se compartilhar coisas gostosas com pessoas importantes!",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"HealPotion_01": {
+		"name": "Panqueca primaveril",
+		"description": "O lanche mais popular no Mercado Primaveril.\r\nÉ impossível saber qual é o sabor só de olhar...",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**22% + 75000**) de vida para si."
+	},
+	"BuffPotion_01": {
+		"name": "Sopro pinheiral",
+		"description": "Bebida do Mercado Primaveril.\r\nUm gole da bebida é o suficiente para causar sensação de se estar no meio de um pinheiral, com a brisa da primavera soprando no rosto delicadamente.",
+		"buff": "Prato",
+		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity3_cooking_101": {
+		"name": "Quadrado tradicional",
+		"description": "Quem seria capaz de resistir ao rico aroma de chocolate?",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_102": {
+		"name": "Quadrado de castanhas",
+		"description": "Chocolate com mix de castanhas é uma loucura de bom!",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_103": {
+		"name": "Quadrado de avelãs",
+		"description": "Além da textura sedosa na boca, um aroma fenomenal de avelãs se combina com o chocolate para trazer uma nova camada de sabor.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_104": {
+		"name": "Quadrado de dracogo",
+		"description": "Que diferença faz ter ou não ter sementes quando tem chocolate para apreciar?",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_105": {
+		"name": "Cubo de cacau",
+		"description": "Chocolate amargo delicado e suave, enriquecido com um sonho azedinho e açucarado.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_106": {
+		"name": "Quadrado de cauda",
+		"description": "A última novidade em chocolates de sabor excêntrico. Tem coragem de provar?",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_107": {
+		"name": "Quadrado de carne desfiada",
+		"description": "Carne desfiada de sabor chocolate, outra bela adição ao submundo culinário.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_108": {
+		"name": "Quadrado de cogumelos",
+		"description": "Pralinês de chocolate são sempre uma surpresa maravilhosa.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_109": {
+		"name": "Quadrado de ovo curado",
+		"description": "A gema de ovo é granulosa e úmida e tem um sabor distinto.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_110": {
+		"name": "Quadrado de pata de siri",
+		"description": "Um aroma intenso de frutos do mar dá o tom deste chocolate.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_201": {
+		"name": "Esfera de café",
+		"description": "Quero provar todos os agridoces da jornada com você.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_202": {
+		"name": "Esfera recheada de licor",
+		"description": "Os aromas sutis de vinho e chocolate unem-se para criar uma melodia aprazível.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_203": {
+		"name": "Esfera de flores",
+		"description": "Morda para liberar um aroma floral de tirar o fôlego, que lembra rosas de Dia dos Namorados.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_204": {
+		"name": "Esfera de morango",
+		"description": "A mistura de morangos ligeiramente doces e chocolate bem açucarado é o sabor doce do primeiro amor.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_205": {
+		"name": "Esfera de cacau",
+		"description": "Chocolate amargo delicado e suave, enriquecido com um sonho azedinho e açucarado.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_206": {
+		"name": "Esfera flutuante",
+		"description": "Suba no balãozinho rumo ao mundo do chocolate!",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_207": {
+		"name": "Esfera de carne desfiada",
+		"description": "Chocolate suave e um recheio macio trabalham juntos para criar um sabor totalmente novo.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_208": {
+		"name": "Esfera de sal marinho",
+		"description": "Enjoou de doce? Venha provar o salgado!",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_209": {
+		"name": "Esfera de trufa",
+		"description": "Dá para sentir o afeto através da seleção de ingredientes.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_210": {
+		"name": "Esfera de pata de siri",
+		"description": "Existe mais de um jeito de cozinhar pata de siri.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_301": {
+		"name": "Paixão de hortelã",
+		"description": "Um sabor frio e infinitamente refrescante.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_302": {
+		"name": "Paixão de creme",
+		"description": "Quando o assunto são doces, existe alguma coisa que pode competir contra creme?",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_303": {
+		"name": "Paixão de fruta caída",
+		"description": "Esta é a coisa mais querida para mim.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_304": {
+		"name": "Paixão de mirtilo",
+		"description": "Dê uma mordida e deixe a geleia de mirtilo agridoce se espalhar pela boca.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_305": {
+		"name": "Paixão de cacau",
+		"description": "Chocolate amargo delicado e suave, enriquecido com um sonho azedinho e açucarado.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_306": {
+		"name": "Paixão de óleo de peixe",
+		"description": "Chocolate repleto de nutrientes, a primeira opção de todo louco por saúde.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_307": {
+		"name": "Paixão picante",
+		"description": "Uma castanha de potência.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_308": {
+		"name": "Paixão de carne desfiada",
+		"description": "Uma cobertura gelada com um recheio suave.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_309": {
+		"name": "Paixão de ovas",
+		"description": "Os ingredientes já falam por si só o custo desta receita!",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	},
+	"item_activity3_cooking_310": {
+		"name": "Paixão de pata de siri",
+		"description": "As opiniões sobre este chocolate são muito polarizadas.",
+		"buff": "Prato",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Use para restaurar imediatamente (**15% + 20000**) de vida para si."
+	}
+}

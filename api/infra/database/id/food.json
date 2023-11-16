@@ -1,0 +1,5599 @@
+{
+	"Task_Area2Cooking": {
+		"name": "Dognip",
+		"description": "Makanan kesukaan anjing terlatih.",
+		"buff": "Snack",
+		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
+	},
+	"Item_Cooking_0901": {
+		"name": "Rebusan Gagal",
+		"description": "Bahan-bahan yang tidak diketahui direbus asal-asalan dalam panci besar, dan sebagian besar nutrisi hilang dalam prosesnya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_0902": {
+		"name": "Soto",
+		"description": "Kelihatannya lezat, tapi pilihan bahan pada akhirnya berkontribusi pada kegagalan hidangan...",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1001": {
+		"name": "Jamur Krispi",
+		"description": "Terlepas dari rasanya, setidaknya ini dimasak dan tidak mentah.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**10% + 1500**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1002": {
+		"name": "Sup Rumput Laut",
+		"description": "Laver segar dan kaya protein, cocok untuk mengenyangkan perut.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1003": {
+		"name": "Ikan Bakar",
+		"description": "Salah satu makanan populer di kota dermaga Banges. Murah dan lezat.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1004": {
+		"name": "Roti Gandum Utuh",
+		"description": "Dibuat dari gandum olahan, bernutrisi, dan mudah disimpan. Setiap Wanderer sebaiknya membawa beberapa.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1005": {
+		"name": "Sereal",
+		"description": "Pernah jadi ransum penyelamat nyawa yang cukup untuk memberi makan lima sampai enam orang. Mengingat kondisi sekarang sudah membaik, kini orang menambahkan susu, alih-alih air, ke dalamnya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1006": {
+		"name": "Daging Panggang",
+		"description": "Bagaimana kamu ingin memasaknya? Pria sejati memakannya begitu saja setelah beberapa detik dipanggang di atas batu di bawah terik matahari.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1007": {
+		"name": "Sup Seafood",
+		"description": "Konon, meskipun rasanya biasa-biasa saja, satu gigitan akan membuat kita bersemangat, dua membuat kita sehat.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Meningkatkan **Frost Attack +1%** selama **Frost Attack +undefined%** detik."
+	},
+	"Item_Cooking_1008": {
+		"name": "Burger Ayam Krispi",
+		"description": "Burger ayam yang dijual di tempat makan cepat saji. Tak banyak yang bisa mengalahkan perpaduan ayam panas yang garing dan selada renyah.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1009": {
+		"name": "Burger Mercon",
+		"description": "Tak peduli sudah berapa lama, makanan ini tak pernah gagal membangkitkan nafsu makan kita.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Meningkatkan **Physical Attack +1%** selama **Physical Attack +undefined%** detik."
+	},
+	"Item_Cooking_1010": {
+		"name": "Nasi Goreng Telur",
+		"description": "Ini yang kita butuhkan saat sudah bosan makan nasi putih biasa.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1011": {
+		"name": "Kepiting Rebus",
+		"description": "Boga laut terasa paling lezat saat disajikan dalam keadaan segar. Masalahnya, harus mulai dari mana?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1011",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1012": {
+		"name": "Es Soda Stroberi",
+		"description": "Campurkan stroberi yang sudah dihaluskan ke dalam soda, lalu tambahkan es. Cocok untuk musim panas.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Meningkatkan **Flame Resistance +10%** selama **Flame Resistance +undefined%** detik."
+	},
+	"Item_Cooking_1013": {
+		"name": "Flamekissed Soda",
+		"description": "Saatnya minum teh sore hari!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"effect": "Meningkatkan **10** selama **undefined** detik."
+	},
+	"Item_Cooking_1014": {
+		"name": "Es Soda Bluberi",
+		"description": "Bluberi ini segelap awan hujan. Hati-hati, jangan sampai menumpahkannya ke baju. Ini sulit dibersihkan.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Meningkatkan **Volt Resistance +10%** selama **Volt Resistance +undefined%** detik."
+	},
+	"Item_Cooking_1015": {
+		"name": "Telur Dan Tomat",
+		"description": "Tidak, aku tak sengaja mengaduk telurnya...",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1016": {
+		"name": "Salad Spesial",
+		"description": "Salad paling sederhana untuk memenuhi kebutuhan nutrisi harian. Pilihan yang tepat untuk diet rendah lemak.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Meningkatkan **Physical Resistance +10%** selama **Physical Resistance +undefined%** detik."
+	},
+	"Item_Cooking_1017": {
+		"name": "Lalapan Selada",
+		"description": "Lalapan lezat dengan bahan-bahan sederhana dan tekstur yang renyah.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**10% + 1500**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1018": {
+		"name": "Sup Jamur",
+		"description": "Kombinasi yang tepat antara jamur segar dan selada renyah.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1019": {
+		"name": "Telur Ceplok",
+		"description": "Mulai hari yang indah dengan telur goreng.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1019",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**10% + 1500**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1020": {
+		"name": "Sup Keong",
+		"description": "Rasa aslinya tetap terjaga! Tapi, taburan daun bawang cincang akan menambah kelezatannya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1021": {
+		"name": "Chawanmushi Uni",
+		"description": "Uni dengan telur kukus halus rasanya lezat dan menenangkan, sangat populer di padang salju",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1022": {
+		"name": "Roti Bakar Selai Beri",
+		"description": "Perpaduan dua buah beri untuk rasa asam manis di mulut.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Meningkatkan **Volt Attack +1%** selama **Volt Attack +undefined%** detik."
+	},
+	"Item_Cooking_1023": {
+		"name": "Pasta Tomat dan Telur",
+		"description": "Sangat asam dan mudah dibuat. Camilan rendah kalori yang enak.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 4",
+				"max": " 4"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - Meningkatkan **Flame Attack +1%** selama **Flame Attack +undefined%** detik."
+	},
+	"Item_Cooking_1024": {
+		"name": "Semur Daging Kentang",
+		"description": "Dagingnya menyerap semua nutrisi. Ini sangat menyehatkan!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1024",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1025": {
+		"name": "Kentang Goreng",
+		"description": "Ini bukan makanan cepat saja, tapi kebahagiaan sejati!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1025",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1026": {
+		"name": "Salad Sayur",
+		"description": "Salad pilihan, cocok untuk piknik.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1027": {
+		"name": "Ayam Goreng",
+		"description": "Makanan sederhana dan cepat. Lapisan keemasannya yang renyah akan membuat orang yang lewat meneteskan liur.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1027",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1028": {
+		"name": "Jus Buah Madu",
+		"description": "Jus segar dengan madu, sedikit dikocok. Ada rasa manis di antara rasa masam.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1028",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1029": {
+		"name": "Kue Buah",
+		"description": "Tak ada masalah yang tak bisa dipecahkan sepotong keik lezat. Kalau ada, makan potongan kedua!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1030": {
+		"name": "Es Soda Gembira",
+		"description": "Spesial musim panas. Rasakan ledakan kesegaran dalam mulut!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1030",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1031": {
+		"name": "Tumis Brokoli",
+		"description": "Makanan rendah lemak yang lezat meskipun bukan kesukaan kebanyakan orang.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1032": {
+		"name": "Scallop Rebus",
+		"description": "Hidangan sederhana yang lezat tanpa bumbu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1032",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1033": {
+		"name": "Roti Daging",
+		"description": "Jus yang menyembur saat digigit adalah intinya!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1033",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1034": {
+		"name": "Baso Ikan dan Jamur",
+		"description": "Pelengkap sempurna irisan ikan dan jamur.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1034",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1035": {
+		"name": "Empal Bakar",
+		"description": "Pasang pemanggangnya dan ambil kursi. Benar, begitulah aromanya...",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1035",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_1036": {
+		"name": "Sup Jamur Dandelion",
+		"description": "Pernah mencicipi dandelion dan jamur? Gerakan kakimu akan jadi lincah.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/1036",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Dandelion_zhongzi",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2001": {
+		"name": "Seafood Telur Asin",
+		"description": "Masakan rumahan Banges dengan cita rasa kampung halaman.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**13% + 10000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2002": {
+		"name": "Roti Gandum Merah",
+		"description": "Makanan paling umum di tengah masyarakat Aida yang mencerminkan kehidupan sederhana mereka.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_2003": {
+		"name": "Pai Pakis Muda",
+		"description": "Biskuit sehat dengan isian Pakis Muda. Namun, tidak populer di kalangan anak-anak.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2004": {
+		"name": "Roti Cokelat",
+		"description": "Berisi cokelat! Tahan dulu dietmu sehari saja.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2005": {
+		"name": "Sup Jamur Firecap",
+		"description": "Apa yang lebih menyenangkan ketimbang Sup Jamur Firecap panas saat memanjat puncak-puncak bersalju?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**13% + 10000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2006": {
+		"name": "Gulai Pakis Hitam",
+		"description": "Kenyangkan perutmu sekarang dan makan sesuatu yang lebih lezat nanti.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**13% + 10000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2007": {
+		"name": "Rujak Buah Rambutan",
+		"description": "Rujak dengan buah rambutan pilihan. Manis dan asam, anak-anak pasti suka!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2008": {
+		"name": "Sup Pakis Muda",
+		"description": "Sepertinya lagi-lagi ini hari herbivora...",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2009": {
+		"name": "Belut Mercon",
+		"description": "Apa Belut Listrik itu sudah matang? Kenapa lidahku kesemutan?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Meningkatkan **Volt Resistance +10%** selama **Volt Resistance +undefined%** detik."
+	},
+	"Item_Cooking_2010": {
+		"name": "Sup Jamur dan Belut",
+		"description": "Tantangan pedas untuk indra pengecap. Kalau berani, habiskan dalam sekali suap! Tidak boleh minum!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Meningkatkan **Volt Attack +1%** selama **Volt Attack +undefined%** detik."
+	},
+	"Item_Cooking_2011": {
+		"name": "Sup Kepiting",
+		"description": "Segala hal baik dari seekor kepiting ada di dalam rebusan.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Meningkatkan **Flame Resistance +10%** selama **Flame Resistance +undefined%** detik."
+	},
+	"Item_Cooking_2012": {
+		"name": "Jus Buah Delima",
+		"description": "Ini hanya imajinasiku saja atau jusnya benar-benar berpendar?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2013": {
+		"name": "Susu Cokelat",
+		"description": "Minum secangkir sebelum tidur agar mimpimu indah!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Meningkatkan **Frost Resistance +10%** selama **Frost Resistance +undefined%** detik."
+	},
+	"Item_Cooking_2014": {
+		"name": "Teh Buah Naga",
+		"description": "Padukan dengan keik untuk teh sore hari yang nikmat!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - Meningkatkan **Flame Attack +1%** selama **Flame Attack +undefined%** detik."
+	},
+	"Item_Cooking_2015": {
+		"name": "Semur Kerang",
+		"description": "Rasa yang akan kamu nikmati!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Meningkatkan **Physical Resistance +10%** selama **Physical Resistance +undefined%** detik."
+	},
+	"Item_Cooking_2016": {
+		"name": "Pizza Seafood",
+		"description": "Aku mau dua porsi!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2017": {
+		"name": "Teh Azalea Salju",
+		"description": "Bagaimana kalau kamu menikmatinya sambil bersantai di dekat api unggun dalam dinginnya musim dingin?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Follows002",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Meningkatkan **Frost Attack +1%** selama **Frost Attack +undefined%** detik."
+	},
+	"Item_Cooking_2018": {
+		"name": "Susu Cokelat Kacang Pinus",
+		"description": "Susu kakao rasa kacang. Pencinta kacang boleh menambahkan lebih banyak kacang ke dalamnya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2019": {
+		"name": "Teh Kacang",
+		"description": "Cium betapa segar kacangnya...",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2020": {
+		"name": "Pai Ubi Ungu",
+		"description": "Pai yang mengenyangkan dan cukup portabel untuk pendakian panjang.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Meningkatkan **Volt Attack +2%** selama **Volt Attack +undefined%** detik."
+	},
+	"Item_Cooking_2021": {
+		"name": "Sup Teratai Salju",
+		"description": "Teratai Salju terasa agak hambar. Tambahkan gula agar jadi makanan pencuci mulut yang populer.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Follows001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2022": {
+		"name": "Nasi Goreng Truffle",
+		"description": "Tumis truffle, lalu campur dengan nasi goreng.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Meningkatkan **Physical Attack +2%** selama **Physical Attack +undefined%** detik."
+	},
+	"Item_Cooking_2023": {
+		"name": "Mi Jamur Himalaya",
+		"description": "Apa aku sudah di usia orang yang harus menjaga pola makan?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Greens012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2024": {
+		"name": "Sushi Kaviar",
+		"description": "Gulungan yang sedap dipandang menjadikannya hidangan berkelas. Jika tak bisa membuatnya, lebih baik mencampurnya dalam mangkuk.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"Item_Cooking_2025": {
+		"name": "Perkedel Kaviar",
+		"description": "Bola-bola kentang yang dicelupkan ke dalam kaviar premium. Kamu pasti akan minta tambah.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Meningkatkan **Physical Attack +1%** selama **Physical Attack +undefined%** detik."
+	},
+	"Item_Cooking_2026": {
+		"name": "Steak Panggang",
+		"description": "Medium saja, ya!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Meningkatkan **Volt Resistance +15%** selama **Volt Resistance +undefined%** detik."
+	},
+	"Item_Cooking_2027": {
+		"name": "Steak Saus Jamur",
+		"description": "Sepertinya aku berimajinasi melihat steak terbang di langit...",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - Meningkatkan **Flame Attack +2%** selama **Flame Attack +undefined%** detik."
+	},
+	"Item_Cooking_2028": {
+		"name": "Bistik Daging",
+		"description": "Hidangan klasik dan tradisional.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Meningkatkan **Frost Resistance +15%** selama **Frost Resistance +undefined%** detik."
+	},
+	"Item_Cooking_2029": {
+		"name": "Sandwich Daging",
+		"description": "Pelan-pelan saja dan buat sarapan yang lezat!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Meningkatkan **Flame Resistance +15%** selama **Flame Resistance +undefined%** detik."
+	},
+	"Item_Cooking_2030": {
+		"name": "Sashimi Salmon",
+		"description": "Beginilah seharusnya rasa makanan!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Meningkatkan **Frost Attack +2%** selama **Frost Attack +undefined%** detik."
+	},
+	"Item_Cooking_2031": {
+		"name": "Nasi Bakar Bekicot",
+		"description": "Terlihat seperti perpaduan yang aneh, tapi jauh lebih enak dari kelihatannya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Meningkatkan **Physical Resistance +15%** selama **Physical Resistance +undefined%** detik."
+	},
+	"item_Cooking_3001": {
+		"name": "Stir-Fried Chilies",
+		"description": "Pedas sekali!!!!!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Meningkatkan **Frost Resistance +10%** selama **Frost Resistance +undefined%** detik."
+	},
+	"item_Cooking_3002": {
+		"name": "Bawang Gurun Bakar",
+		"description": "Sudah dibuka: Stan BBQ lezat Wanderer!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3003": {
+		"name": "Yogurt Lidah Buaya",
+		"description": "Memangnya ada yang tak suka yogurt asam manis?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3004": {
+		"name": "Teh Mawar",
+		"description": "Saat menyeduh teh mawar, hati paling gundah sekalipun pasti akan kembali damai.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3005": {
+		"name": "Soda Ceri",
+		"description": "Madu ditambahkan banyak-banyak agar Jus Ceri yang hambar ini jadi lebih berasa.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3006": {
+		"name": "Sup Bit",
+		"description": "Sup bit hangat. Kamu bisa menghabiskan sepanci penuh dengan cepat saat cuaca dingin.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"item_Cooking_3007": {
+		"name": "Salad Melon",
+		"description": "Rasanya lebih enak jika dingin, tapi jangan kemaruk.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Meningkatkan **Flame Resistance +10%** selama **Flame Resistance +undefined%** detik."
+	},
+	"item_Cooking_3008": {
+		"name": "Soda Ceri",
+		"description": "Madu ditambahkan banyak-banyak agar Jus Ceri yang hambar ini jadi lebih berasa.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3009": {
+		"name": "Bubur Labu",
+		"description": "Semacam makanan pokok yang mengenyangkan, makan semangkuk saja sudah mengisi penuh perut.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3010": {
+		"name": "Tahu Krispi",
+		"description": "Camilan goreng renyah berwarna keemasan. Awas, jangan sampai sausnya menetes ke bajumu!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3011": {
+		"name": "Sup Lobak",
+		"description": "Sup bergizi dan lezat. Tolong tambah semangkuk lagi!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3012": {
+		"name": "Jagung Lada Garam",
+		"description": "Camilan ringan dan sederhana, pilihan utama untuk tengah malam.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3013": {
+		"name": "Jus Kaktus",
+		"description": "Jus Kaktus yang segar, cocok untuk musim panas.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**10% + 1500**) HP untuk Wanderer."
+	},
+	"item_Cooking_3014": {
+		"name": "Buntut Bakar",
+		"description": "Taburi dengan cabai, jintan, dan merica, lalu tunggu sejenak sebelum mulai menyantapnya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"item_Cooking_3015": {
+		"name": "Iga Bakar Spesial",
+		"description": "Lauk paling cocok untuk nasi! Tak ada tandingannya!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3016": {
+		"name": "Susu Kedelai Cokelat",
+		"description": "Kalau kamu bosan minum susu kedelai biasa, coba yang satu ini.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3017": {
+		"name": "Urap",
+		"description": "Setelah semua bahan direbus, tiriskan, tambahkan saus, lalu aduk rata dan hidangkan.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3018": {
+		"name": "Rujak Buah",
+		"description": "Kaktus Bulat dan Ceri yang sudah dipotong-potong berbentuk kotak, dengan tambahan saus salad. Lebih baik didinginkan dulu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3019": {
+		"name": "Roti Mawar",
+		"description": "Sore-sore, memang enak makan roti kotak beraroma mawar.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Meningkatkan **Volt Resistance +15%** selama **Volt Resistance +undefined%** detik."
+	},
+	"item_Cooking_3020": {
+		"name": "Roti Melon Madu",
+		"description": "Roti bulat isi melon manis sudah cukup untuk sarapan.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Meningkatkan **Frost Attack +1%** selama **Frost Attack +undefined%** detik."
+	},
+	"item_Cooking_3021": {
+		"name": "Bubur Ketan",
+		"description": "Bubur nasi ini terbuat dari beragam jenis biji-bijian. Kadang aku cuma ingin makan yang ringan-ringan saja.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3022": {
+		"name": "Roti Isi Jagung Seafood",
+		"description": "Taco seafood... Kamu bisa jatuh miskin kalau buka toko seperti ini!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3023": {
+		"name": "Labu Kukus",
+		"description": "Labu Kukus ini lembut dan manis. Pilihan yang cocok untuk mengurangi berat badan.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3024": {
+		"name": "Sup Ayam",
+		"description": "Mi lembut dengan siraman kaldu ayam hangat. Anggap saja ini semangkuk mi ulang tahun, dan ucapkan doamu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Meningkatkan **Physical Attack +2%** selama **Physical Attack +undefined%** detik."
+	},
+	"item_Cooking_3025": {
+		"name": "Mi BBQ Pedas",
+		"description": "Aku jelas bisa menandingi Mi Kun Ji!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - Meningkatkan **Flame Attack +2%** selama **Flame Attack +undefined%** detik."
+	},
+	"item_Cooking_3026": {
+		"name": "Nasi Goreng Pedas",
+		"description": "Makin pedas, makin enak!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - Meningkatkan **Flame Attack +1%** selama **Flame Attack +undefined%** detik."
+	},
+	"item_Cooking_3027": {
+		"name": "Paket Daging Bakar",
+		"description": "Ini pasti surganya penggemar daging, 'kan!?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Meningkatkan **Flame Resistance +15%** selama **Flame Resistance +undefined%** detik."
+	},
+	"item_Cooking_3028": {
+		"name": "Sup Daging Lobak",
+		"description": "Sup lobak dengan daging, yang sudah direbus dengan api kecil seharian penuh. Jujur, lobaknya lebih enak daripada iganya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Meningkatkan **Physical Resistance +15%** selama **Physical Resistance +undefined%** detik."
+	},
+	"item_Cooking_3029": {
+		"name": "Sup Krim Jagung",
+		"description": "Sup lembut yang manis dan wangi, pasti enak kalau dimakan dengan roti.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**12% + 3300**) HP untuk Wanderer."
+	},
+	"item_Cooking_3030": {
+		"name": "Keripik Labu Air",
+		"description": "Lumuri dengan tepung bumbu, goreng selama dua menit, dan makanan ini siap disantap!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3031": {
+		"name": "Tiram Panggang",
+		"description": "Dimakan mentah dengan perasan lemon atau dipanggang, sama enaknya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3032": {
+		"name": "Chameleon Segar",
+		"description": "Sekali coba saja, aku langsung suka chameleon!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3033": {
+		"name": "Tumis Labu Air Pedas",
+		"description": "Makanan dingin yang sedap ini tampaknya juga bisa jadi hidangan utama.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3034": {
+		"name": "Sup Tahu Tiram",
+		"description": "Dengar-dengar, banyak anak tak suka makan ikan, jadi sup ini dibuat secara khusus.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"item_Cooking_3035": {
+		"name": "Telur Orak-Arik Chameleon",
+		"description": "Semua bisa dijadikan orak-arik dengan telur! Favoritku adalah...",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/3035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4001": {
+		"name": "Naga dan Bintang",
+		"description": "Hidangan ini hanyalah daging Dragon-Necked Turtle rebus dan telur bintang laut, tapi restoran mengganti namanya agar terkesan mewah.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4002": {
+		"name": "Telur Kukus Seafood",
+		"description": "Karena diambil dari laut, telur Dragon-Necked Turtle mempunyai rasa khas makanan laut.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**20% + 60000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4003": {
+		"name": "Salad Ikan Buntal",
+		"description": "Salad ikan buntal yang memanjakan lidah. Harus dicoba!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4004": {
+		"name": "Ikan Buntal Segar",
+		"description": "Hidangan ikan buntal yang mahal ini menggunakan seluruh bagian ikan tanpa sisa.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Meningkatkan **Frost Attack +4%** selama **Frost Attack +undefined%** detik."
+	},
+	"item_Cooking_4005": {
+		"name": "Ikan Buntal Bakar",
+		"description": "Daging ikan buntal yang lembut akan meleleh di mulut... Itu yang tertulis di menunya, sih.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4006": {
+		"name": "Teratai Putih",
+		"description": "Ikan buntal yang diiris tipis dan disajikan mentah ini disusun menyerupai bunga teratai.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Meningkatkan **Frost Attack +2%** selama **Frost Attack +undefined%** detik."
+	},
+	"item_Cooking_4007": {
+		"name": "Gurita Rebus",
+		"description": "Segar dan kenyal, hidangan favorit semua orang.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4008": {
+		"name": "Takoyaki",
+		"description": "Hidangan tradisional yang lezat. Cita rasanya berubah-ubah tergantung ukuran potongan gurita.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Meningkatkan **Volt Resistance +15%** selama **Volt Resistance +undefined%** detik."
+	},
+	"item_Cooking_4009": {
+		"name": "Aneka Sate",
+		"description": "Makanan yang disukai anak-anak, tapi terlalu mahal untuk dibeli dengan uang jajannya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**13% + 10000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4010": {
+		"name": "Ikan Kukus Asin Gurih",
+		"description": "Ikan laut memiliki rasa asin yang natural. Cita rasa umaminya tetap terjaga dengan dikukus.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4010",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**13% + 10000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4011": {
+		"name": "Tumis Ikan Laut",
+		"description": "Langkah-langkah untuk memasak hidangan ini cukup rumit, tapi kelezatannya sepadan.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4012": {
+		"name": "Sashimi Premium",
+		"description": "Hidangan yang menguji kemampuan koki dalam menggunakan pisau. Jangan kebanyakan pakai wasabi, ya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Meningkatkan **Frost Resistance +15%** selama **Frost Resistance +undefined%** detik."
+	},
+	"item_Cooking_4013": {
+		"name": "Pai Bintang",
+		"description": "Apakah ikan melihat bintang di langit saat masih hidup?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4014": {
+		"name": "Laksa Seafood",
+		"description": "Biasa dicampur dengan daging hewan buruan agar bahan langka yang digunakan bisa dikurangi.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"CleanBuff"
+		]
+	},
+	"item_Cooking_4015": {
+		"name": "Anemon Bakar",
+		"description": "Bisa membuat siapa pun tersedak kalau cabainya terlalu banyak.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - Meningkatkan **Flame Attack +2%** selama **Flame Attack +undefined%** detik."
+	},
+	"item_Cooking_4016": {
+		"name": "Bunga Anemon",
+		"description": "Tambahkan anemon ke telur kukus agar teksturnya lebih kaya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**13% + 10000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4017": {
+		"name": "Panjang Umur",
+		"description": "Dragon-Necked Turtle adalah hewan yang mendatangkan keberuntungan, jadi restoran memberikan nama yang berbeda.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "Meningkatkan **40** selama **undefined** detik."
+	},
+	"item_Cooking_4018": {
+		"name": "Telur Girang",
+		"description": "Hanya telur Dragon-Necked Turtle rebus biasa, tapi penjualannya meningkat setelah cangkangnya diwarnai.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Meningkatkan **Physical Attack +4%** selama **Physical Attack +undefined%** detik."
+	},
+	"item_Cooking_4019": {
+		"name": "Telur Girang (pink)",
+		"description": "Hanya telur Dragon-Necked Turtle rebus biasa, tapi penjualannya meningkat setelah cangkangnya diwarnai.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_016",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4020": {
+		"name": "Telur Girang (merah)",
+		"description": "Hanya telur Dragon-Necked Turtle rebus biasa, tapi penjualannya meningkat setelah cangkangnya diwarnai.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_015",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "Meningkatkan **50** selama **undefined** detik."
+	},
+	"item_Cooking_4021": {
+		"name": "Ubur-Ubur Dingin",
+		"description": "Renyah dan menyegarkan. Sekali coba, kamu akan langsung ketagihan!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**13% + 10000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4022": {
+		"name": "Tumis Jamur Dan Ubur-Ubur",
+		"description": "Perpaduan jamur dan ubur-ubur ini sangat lezat, dan terasa lebih nikmat jika dimakan dengan nasi. Bahkan tanpa disadari, kamu pasti sudah menghabiskan satu piring.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4023": {
+		"name": "Cumi-Cumi Lumer",
+		"description": "Jangan makan cumi-cumi yang gemuk dan lumer ini di keramaian kalau kamu tak tahu cara memakannya yang benar.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4024": {
+		"name": "Cumi-Cumi Campur",
+		"description": "Hidangan lezat yang akan lebih populer kalau warnanya lebih menggugah selera.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Meningkatkan **Volt Attack +2%** selama **Volt Attack +undefined%** detik."
+	},
+	"item_Cooking_4025": {
+		"name": "Bubur Ikan",
+		"description": "Bubur sehat untuk orang yang tidak nafsu makan.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4026": {
+		"name": "Acar Ikan",
+		"description": "Makanan ini bukan untuk manusia, tapi kucing!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Meningkatkan **Flame Resistance +15%** selama **Flame Resistance +undefined%** detik."
+	},
+	"item_Cooking_4027": {
+		"name": "Nasi Lobster Jumbo",
+		"description": "Lobster, lobster, dan lobster lagi! Hidangan yang hanya bisa dinikmati di tepi pantai.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Meningkatkan **Physical Attack +2%** selama **Physical Attack +undefined%** detik."
+	},
+	"item_Cooking_4028": {
+		"name": "Lobster Pedas",
+		"description": "Dipotong kecil pun masih sama enaknya!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4029": {
+		"name": "Telur Kukus Isi Kepiting",
+		"description": "Rasanya enak... Tapi, kepiting ini asli atau imitasi?",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4030": {
+		"name": "Nasi Goreng Kepiting Spesial",
+		"description": "Tak ada seorang pun yang bisa menolak hidangan yang kemewahannya tak bisa dijelaskan dengan kata-kata ini.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4031": {
+		"name": "Kepiting Raja",
+		"description": "Bahkan sang raja pun juga ikut dimakan.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4032": {
+		"name": "Kupat Kepiting Goreng",
+		"description": "Kepiting yang segar dan lezat berpadu dengan ketupat dalam satu hidangan yang memanjakan lidah.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Meningkatkan **Physical Resistance +15%** selama **Physical Resistance +undefined%** detik."
+	},
+	"item_Cooking_4033": {
+		"name": "Mi Kepiting Emas",
+		"description": "Bahan dan proses memasaknya membuat harga makanan ini semakin mahal.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4034": {
+		"name": "Seafood Kukus Bawang Putih",
+		"description": "Hidangan klasik ini memadukan seafood segar dengan bawang putih yang harum.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - Meningkatkan **Flame Attack +4%** selama **Flame Attack +undefined%** detik."
+	},
+	"item_Cooking_4035": {
+		"name": "Bihun Seafood",
+		"description": "Hidangan lezat yang terasa ringan dan tak berlemak.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Meningkatkan **Volt Attack +4%** selama **Volt Attack +undefined%** detik."
+	},
+	"item_Cooking_4036": {
+		"name": "Lobster Bakar Keju",
+		"description": "Kenyal dan beraroma keju.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4036",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Gunakan untuk langsung memulihkan (**16% + 34000**) HP untuk Wanderer."
+	},
+	"item_Cooking_4037": {
+		"name": "Mi Hitam Lobster",
+		"description": "Hidangan kreatif yang menggunakan tinta cumi-cumi sebagai pewarna. Lezat dan enak dipandang.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4037",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4038": {
+		"name": "Tumis Daging Keong",
+		"description": "Pedas dan gurih, camilan lezat ini cocok untuk menemani malammu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/4038",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_038",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_5001": {
+		"name": "Gulai Rebung",
+		"description": "Paduan daging berlemak, daging tanpa lemak, dan rebung yang dimasak selama berjam-jam, dibumbui dengan rempah pedas. Saking lezatnya, kamu dijamin tambah nasi tiga kali sebelum kamu menyadarinya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/5001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"effect": "Meningkatkan **Volt Attack +4% Volt Resistance +1800** selama **Volt Attack +undefined%Volt Resistance +%** detik."
+	},
+	"item_Cooking_5007": {
+		"name": "Salad Lobak",
+		"description": "Hidangan dingin yang terbuat dari kombinasi Begonia dan Green Jade.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/5007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Jiuyu_Harvest_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"effect": "Meningkatkan **Flame Attack +4% Flame Resistance +1800** selama **Flame Attack +undefined%Flame Resistance +%** detik."
+	},
+	"item_activity_cooking_001": {
+		"name": "Kambing Guling",
+		"description": "Kambing Guling yang dimasak oleh chef istimewa ini dapat memuaskan tamu yang paling pemilih.\r\n\r\nSetelah mengalahkan Apophis dan Rose Queen, drop dari Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahannya dan memasaknya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_002": {
+		"name": "Kalkun Panggang Apel",
+		"description": "Ciri khas Astra. Berkat promosi para vendor dan pelancong, makanan ini jadi terkenal di seantero benua.\r\n\r\nSetelah mengalahkan Apophis dan Rose Queen, drop dari Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahannya dan memasaknya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_003": {
+		"name": "Ayam Bakar Lalapan",
+		"description": "Pertama, puaskan lidahmu dengan segigit paha ayam panggang ini. Lalu, santap sesuap Selada yang menyegarkan. Nyam nyam!\r\n\r\nSetelah mengalahkan Apophis dan Rose Queen, dijatuhkan dari Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahan dan memasak.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_004": {
+		"name": "Salmon Goreng",
+		"description": "Salmon empuk yang disajikan dengan madu manis dan meninggalkan kelezatan di lidahmu.\r\n\r\nDidapatkan dari Password Chest selama event Aida Cafe setelah mengalahkan Robarg dan Sobek. Juga bisa diperoleh dengan mengumpulkan bahannya dan memasaknya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_005": {
+		"name": "Choi Pan Wijen",
+		"description": "Ciri khas Pelabuhan Banges tradisional yang sangat digemari oleh yang tua dan muda.\r\n\r\nSetelah mengalahkan Robarg dan Sobek, drop dari Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahannya dan memasaknya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_006": {
+		"name": "Sup Kalkun",
+		"description": "Semangkuk sup hangat yang dapat mengusir rasa lelah.\r\nSetelah mengalahkan Robarg dan Sobek, dijatuhkan dari Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahan dan memasak.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_007": {
+		"name": "Kue Jahe",
+		"description": "Hidangan penutup dengan rasa manis gula dan madu serta aroma biji gandum yang sedap.\r\n\r\nSetelah mengalahkan Robarg, Apophis, Frost Bot, Sobek, Rose Queen dan Barbarossa, drop dari Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahannya dan memasaknya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_008": {
+		"name": "Kue Apel",
+		"description": "Kue Buah yang lembut. Sekali gigit, kamu langsung puas. \r\n\r\nSetelah mengalahkan Frost Bot dan Barbarossa, dijatuhkan dari Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahan dan memasak.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_009": {
+		"name": "Es Buah",
+		"description": "Minuman dengan wangi buah dan aroma tipis alkohol.\r\n\r\nSetelah mengalahkan Frost Bot dan Barbarossa, drop Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahannya dan membuatnya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_010": {
+		"name": "Jus Apel",
+		"description": "Manis dan kecut. Cocok buat yang tua dan muda.\r\n\r\nSetelah mengalahkan Frost Bot dan Barbarossa, drop dari Password Chest selama event Aida Cafe. Dapat juga diperoleh dengan mengumpulkan bahannya dan membuatnya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity2_cooking_101": {
+		"name": "Cokelat Rambutan",
+		"description": "Kendarai Buah Rambutan, menuju dunia cokelat!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_102": {
+		"name": "Cokelat Kacang Pinus",
+		"description": "Cokelat bertabur kacang pinus adalah hadiah yang sempurna.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_103": {
+		"name": "Cokelat Stroberi",
+		"description": "Perpaduan stroberi manis tipis dan cokelat lumer ibarat manisnya cinta pertama.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_104": {
+		"name": "Hazel Lover",
+		"description": "Salut cokelat ibarat hati yang menanti hadirnya cinta.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_105": {
+		"name": "Truffle Lover",
+		"description": "Rasakan cinta dari bahan-bahan pilihannya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_106": {
+		"name": "Chocoberry",
+		"description": "Coba gigit dan rasakan selai blueberry yang manis sekaligus asam meleleh di ujung lidahmu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_107": {
+		"name": "Cokelat Madu",
+		"description": "Perpaduan istimewa cokelat dan madu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_108": {
+		"name": "Cokelat Buah",
+		"description": "Yang paling kusuka, hanya untukmu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_109": {
+		"name": "Cokelat Hati",
+		"description": "Cokelat hitam yang halus nan lembut, dirangkai dengan mimpi yang agak sendu dan melankolis.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_110": {
+		"name": "Chocomilk",
+		"description": "Susu dan cokelat memang ditakdirkan untuk bersama!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_201": {
+		"name": "Bola-Bola Rambutan",
+		"description": "Kendarai Buah Rambutan, menuju dunia cokelat!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_202": {
+		"name": "Bola-Bola Kacang Pinus",
+		"description": "Cokelat bertabur kacang pinus adalah hadiah yang sempurna.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_203": {
+		"name": "Bola-Bola Stroberi",
+		"description": "Perpaduan stroberi manis tipis dan cokelat lumer ibarat manisnya cinta pertama.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_204": {
+		"name": "Bola-Bola Hazelnut",
+		"description": "Salut cokelat ibarat hati yang menanti hadirnya cinta.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_205": {
+		"name": "Bola-Bola Truffle",
+		"description": "Rasakan cinta dari bahan-bahan pilihannya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_206": {
+		"name": "Bola-Bola Bluberi",
+		"description": "Coba gigit dan rasakan selai blueberry yang manis sekaligus asam meleleh di ujung lidahmu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_207": {
+		"name": "Bola-Bola Madu",
+		"description": "Perpaduan istimewa cokelat dan madu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_208": {
+		"name": "Bola-Bola Buah",
+		"description": "Yang paling kusuka, hanya untukmu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_209": {
+		"name": "Bola-Bola Cokelat",
+		"description": "Cokelat hitam yang halus nan lembut, dirangkai dengan mimpi yang agak sendu dan melankolis.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_210": {
+		"name": "Bola-Bola Susu",
+		"description": "Susu dan cokelat memang ditakdirkan untuk bersama!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_301": {
+		"name": "Floating Cube",
+		"description": "Kendarai Buah Rambutan, menuju dunia cokelat!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_302": {
+		"name": "Pine Nut Cube",
+		"description": "Cokelat bertabur kacang pinus adalah hadiah yang sempurna.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_303": {
+		"name": "Strawberry Cube",
+		"description": "Perpaduan stroberi manis tipis dan cokelat lumer ibarat manisnya cinta pertama.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_304": {
+		"name": "Hazelnut Cube",
+		"description": "Salut cokelat ibarat hati yang menanti hadirnya cinta.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_305": {
+		"name": "Truffle Cube",
+		"description": "Rasakan cinta dari bahan-bahan pilihannya.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_306": {
+		"name": "Blueberry Cube",
+		"description": "Coba gigit dan rasakan selai blueberry yang manis sekaligus asam meleleh di ujung lidahmu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_307": {
+		"name": "Honey Cube",
+		"description": "Perpaduan istimewa cokelat dan madu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_308": {
+		"name": "Fallen Fruit Cube",
+		"description": "Yang paling kusuka, hanya untukmu.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_309": {
+		"name": "Cocoa Cube",
+		"description": "Cokelat hitam yang halus nan lembut, dirangkai dengan mimpi yang agak sendu dan melankolis.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_310": {
+		"name": "Milk Cube",
+		"description": "Susu dan cokelat memang ditakdirkan untuk bersama!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_001": {
+		"name": "Cetus Souvenir",
+		"description": "Giftbox cokelat bertema Electromancy, karya kebanggaan Hanna.\r\nDokter bilang, makanan enak harus dinikmati bersama orang-orang penting!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_002": {
+		"name": "Cetus Souvenir",
+		"description": "Giftbox cokelat bertema elemen Physical, karya kebanggaan Hanna.\nDokter bilang, makanan enak harus dinikmati bersama orang terkasih!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_003": {
+		"name": "Cetus Souvenir",
+		"description": "Giftbox cokelat bertema Pyromancy, karya kebanggaan Hanna.\nDokter bilang, makanan enak harus dinikmati bersama orang terkasih!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_004": {
+		"name": "Cetus Souvenir",
+		"description": "Giftbox cokelat bertema Cryomancy, karya kebanggaan Hanna.\nDokter bilang, makanan enak harus dinikmati bersama orang terkasih!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity2_cooking_005": {
+		"name": "Rengginang",
+		"description": "Salah satu camilan paling populer di Planet Aida. Kabarnya, anggota Hyena dan Ravager sampai berkelahi demi memperebutkan sepotong kue ini.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity2_cooking_006": {
+		"name": "Chocolate Giftbox",
+		"description": "Makanan lezat harus dinikmati bersama orang terkasih!",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"HealPotion_01": {
+		"name": "Spring Pancake",
+		"description": "Camilan terpopuler di Spring Market.\r\nMustahil menebak rasanya hanya dari tampilannya...",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**22% + 75000**) HP untuk Wanderer."
+	},
+	"BuffPotion_01": {
+		"name": "Pinebreeze",
+		"description": "Minuman yang ada di Spring Market,\r\nSekali seruput saja bakal membuatmu merasa bagai sedang di tengah hutan pinus dengan semilir angin musim semi berembus melintasi pipi.",
+		"buff": "Entrée",
+		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity3_cooking_101": {
+		"name": "Cokelat Klasik",
+		"description": "Mana ada yang tidak tergoda oleh aroma cokelat?",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_102": {
+		"name": "Cokelat Kacang",
+		"description": "Cokelat dengan kacang-kacangan ternyata enak banget!",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_103": {
+		"name": "Cokelat Hazelnut",
+		"description": "Selain tekstur yang lembut di mulut, aroma hazelnut yang harum berpadu dengan cokelat menciptakan cita rasa baru.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_104": {
+		"name": "Cokelat Flamegon",
+		"description": "Mau ada bijinya atau tidak, yang penting makan cokelat!",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_105": {
+		"name": "Cocoa Cube",
+		"description": "Cokelat hitam yang halus nan lembut, dirangkai dengan mimpi yang agak sendu dan melankolis.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_106": {
+		"name": "Choc Buntut",
+		"description": "Ini adalah cokelat aneh terbaru, berani coba?",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_107": {
+		"name": "Cokelat Abon",
+		"description": "Abon rasa cokelat, tambahan spesial untuk sisi gelap dunia masak-memasak.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_108": {
+		"name": "Cokelat Jamur",
+		"description": "Cokelat praline selalu menjadi kejutan yang wow banget.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_109": {
+		"name": "Cokelat Salted Egg",
+		"description": "Kuning telurnya berbutir dan basah, rasanya sangat khas.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_110": {
+		"name": "Cokelat Crab Stick",
+		"description": "Aroma seafood yang kental menjadi ciri khas cokelat ini.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_201": {
+		"name": "Bola-Bola Tiramisu",
+		"description": "Aku ingin merasakan pahit dan manisnya perjalanan ini bersamamu.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_202": {
+		"name": "Bola-Bola Isi Anggur",
+		"description": "Aroma anggur dan cokelat yang lembut bersatu membentuk perpaduan yang nikmat.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_203": {
+		"name": "Bola-Bola Harum",
+		"description": "Begitu digigit, wangi bunga langsung semerbak, mirip wangi bunga mawar di Hari Valentine.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_204": {
+		"name": "Bola-Bola Stroberi",
+		"description": "Perpaduan stroberi manis tipis dan cokelat lumer ibarat manisnya cinta pertama.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_205": {
+		"name": "Bola-Bola Cokelat",
+		"description": "Cokelat hitam yang halus nan lembut, dirangkai dengan mimpi yang agak sendu dan melankolis.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_206": {
+		"name": "Bola-Bola Rambutan",
+		"description": "Kendarai Buah Rambutan, menuju dunia cokelat!",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_207": {
+		"name": "Bola-Bola Abon",
+		"description": "Paduan cokelat yang lembut dan isian yang kenyal menghadirkan cita rasa baru.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_208": {
+		"name": "Bola-Bola Sea Salt",
+		"description": "Bosan makan makanan manis? Coba versi asinnya!",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_209": {
+		"name": "Bola-Bola Truffle",
+		"description": "Rasakan cinta dari bahan-bahan pilihannya.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_210": {
+		"name": "Bola-Bola Crab Stick",
+		"description": "Kaki Kepiting Portunid yang lezat bisa diolah dengan berbagai cara.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_301": {
+		"name": "Chocomint",
+		"description": "Memberikan sensasi rasa dingin yang menyegarkan.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_302": {
+		"name": "Krim Cinta",
+		"description": "Ngomong-ngomong soal camilan manis, bahan makanan apa yang bisa menandingi kelezatan krim susu?",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_303": {
+		"name": "Cokelat Buah",
+		"description": "Yang paling kusuka, hanya untukmu.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_304": {
+		"name": "Chocoberry",
+		"description": "Coba gigit dan rasakan selai blueberry yang manis sekaligus asam meleleh di ujung lidahmu.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_305": {
+		"name": "Cokelat Hati",
+		"description": "Cokelat hitam yang halus nan lembut, dirangkai dengan mimpi yang agak sendu dan melankolis.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_306": {
+		"name": "Cokelat Suplemen",
+		"description": "Cokelat yang kaya nutrisi ini adalah pilihan utama bagi orang yang sangat menjaga kesehatan.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_307": {
+		"name": "Cokelat Pedas",
+		"description": "Kacang dengan sensasi rasa pedas.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_308": {
+		"name": "Cokelat Hati Abon",
+		"description": "Kulit sedingin es dengan isian lembut.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_309": {
+		"name": "Choco Tobiko",
+		"description": "Bahannya saja sudah menunjukkan betapa mahalnya kue ini!",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	},
+	"item_activity3_cooking_310": {
+		"name": "Cokelat Hati Crab Stick",
+		"description": "Penilaian orang terhadap cokelat ini ternyata sangat kontras.",
+		"buff": "Entrée",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Gunakan untuk langsung memulihkan (**15% + 20000**) HP untuk Wanderer."
+	}
+}

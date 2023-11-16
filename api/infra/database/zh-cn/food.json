@@ -1,0 +1,5599 @@
+{
+	"Task_Area2Cooking": {
+		"name": "麻醉狗粮",
+		"description": "    驯养的猎狗喜爱的食物。",
+		"buff": "小吃",
+		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
+	},
+	"Item_Cooking_0901": {
+		"name": "劣质乱炖",
+		"description": "不知名的一堆食物以拙劣的方式放入大锅内炖烂，熟透了同时也丧失了大部分营养。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_0902": {
+		"name": "优质乱炖",
+		"description": "从操作上看起来似乎烹饪成功了，但是食材的选择似乎又导致最终菜肴搭配的失败...",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1001": {
+		"name": "炒蘑菇",
+		"description": "至少从生的变成了熟的，虽然味道还有待改进。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**10%+1500**）点拓荒者生命值"
+	},
+	"Item_Cooking_1002": {
+		"name": "紫菜蛋汤",
+		"description": "既有紫菜的鲜美，又有蛋白质的营养，能灌饱肚子的实惠料理。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1003": {
+		"name": "香脆烤鱼",
+		"description": "码头都市班吉斯最受欢迎的小吃之一，便宜又美味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1004": {
+		"name": "粗粮面包",
+		"description": "麦子经过加工后制成的食物，营养丰富且容易储存，每个拓荒者身上都该备一些。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1005": {
+		"name": "牛奶麦片",
+		"description": "曾经被用来加水泡喂饱五六个人的救命粮，现在生活好些，人们才开始加牛奶了。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1006": {
+		"name": "滋滋烤肉",
+		"description": "你吃几分熟？真的猛士把肉在太阳下的石头上烤烤就直接啃啦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1007": {
+		"name": "海鲜汤",
+		"description": "传说一口提神醒脑，两口长生不老，不过味道也就一般般啦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "增加**Frost Attack +1%**，持续**Frost Attack +undefined%**秒"
+	},
+	"Item_Cooking_1008": {
+		"name": "脆皮鸡腿汉堡",
+		"description": "快餐店常见的汉堡，热腾腾的脆皮鸡配上凉快清爽的生菜，口感丰富极了。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1009": {
+		"name": "香辣厚肉汉堡",
+		"description": "不论过多长时间，这一口味道总能唤醒你对食物的渴望。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "增加**Physical Attack +1%**，持续**Physical Attack +undefined%**秒"
+	},
+	"Item_Cooking_1010": {
+		"name": "蛋炒饭",
+		"description": "吃腻了白米饭，那就给你的主食加点蛋白质的味道吧。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1011": {
+		"name": "清蒸蟹",
+		"description": "海鲜果然还是原汁原味的好。那么该从哪开始吃呢？",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1011",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"Item_Cooking_1012": {
+		"name": "冰镇草莓汽水",
+		"description": "把草莓捣碎后拌入汽水，再加入凉爽的冰块，夏日必备。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "增加**Flame Resistance +10%**，持续**Flame Resistance +undefined%**秒"
+	},
+	"Item_Cooking_1013": {
+		"name": "火焰凝香汽水",
+		"description": "下午茶时间！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"effect": "增加**10**，持续**undefined**秒"
+	},
+	"Item_Cooking_1014": {
+		"name": "雷云蓝莓汽水",
+		"description": "这蓝莓紫得发黑，就像雷阵雨时的乌云一样。小心不要溅到衣服上，很难洗掉哦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "增加**Volt Resistance +10%**，持续**Volt Resistance +undefined%**秒"
+	},
+	"Item_Cooking_1015": {
+		"name": "番茄黄金碎",
+		"description": "才，才不是想做番茄炒蛋却不小心把蛋捣得太碎了呢！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1016": {
+		"name": "简易能量沙拉",
+		"description": "按照人体营养需求配置的最基础的沙拉，减脂修身首选。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "增加**Physical Resistance +10%**，持续**Physical Resistance +undefined%**秒"
+	},
+	"Item_Cooking_1017": {
+		"name": "生菜沙拉",
+		"description": "精选沙拉其一 简单的食材也有十足的风味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**10%+1500**）点拓荒者生命值"
+	},
+	"Item_Cooking_1018": {
+		"name": "蘑菇汤",
+		"description": "经过漫长的炖煮，菌菇的鲜美与生菜的清爽完美地融合在了一起。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1019": {
+		"name": "煎蛋",
+		"description": "用煎蛋开启美好的一天吧！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1019",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**10%+1500**）点拓荒者生命值"
+	},
+	"Item_Cooking_1020": {
+		"name": "清蒸螺",
+		"description": "保持食材最原始的风味！要是能撒点葱花就更好了。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1021": {
+		"name": "海胆蒸蛋",
+		"description": "海胆颗粒的口感配上柔滑的蒸蛋，真是一道美味又暖心的菜肴，在雪原地区颇受欢迎。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"Item_Cooking_1022": {
+		"name": "双莓酱吐司",
+		"description": "将两种莓果混合起来，制成酸甜口感的二重奏。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "增加**Volt Attack +1%**，持续**Volt Attack +undefined%**秒"
+	},
+	"Item_Cooking_1023": {
+		"name": "番茄煎蛋意面",
+		"description": "不但酸咸适口而且烹饪十分简单，是低卡低脂的美味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 4",
+				"max": " 4"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - 增加**Flame Attack +1%**，持续**Flame Attack +undefined%**秒"
+	},
+	"Item_Cooking_1024": {
+		"name": "土豆炖肉",
+		"description": "肉把营养都吸收进肉汁里，这一口堪比人参！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1024",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1025": {
+		"name": "薯条",
+		"description": "不准叫它垃圾食品！它应该叫快乐之源！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1025",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1026": {
+		"name": "蔬菜沙拉",
+		"description": "精选沙拉其三 一起去野餐吧！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1027": {
+		"name": "炸鸡",
+		"description": "方便又快捷的简餐，裹上面包糠炸至金黄，路人都馋哭了。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1027",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1028": {
+		"name": "蜜糖果子饮料",
+		"description": "鲜榨的落果汁水加入少量蜂蜜后轻微摇匀，喝起来青涩中透着一丝丝甜味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1028",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1029": {
+		"name": "水果蛋糕",
+		"description": "没有什么烦恼是一块香甜的蛋糕不能解决的，如果有，那就再来一块！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"Item_Cooking_1030": {
+		"name": "幽兰冰饮",
+		"description": "夏季特饮，喝一口就有冲浪的感觉！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1030",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1031": {
+		"name": "清炒西兰花",
+		"description": "健康的减脂食物，但很多大人都不喜欢吃。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1032": {
+		"name": "水煮惑达贝",
+		"description": "不用额外放调料即可享受的简单美味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1032",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"Item_Cooking_1033": {
+		"name": "肉包",
+		"description": "咬开时唇齿间充盈的肉汁正是肉包的精髓所在！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1033",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1034": {
+		"name": "蘑菇鱼片",
+		"description": "料理得当的鱼片与蘑菇的风味完美融合在了一起。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1034",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_1035": {
+		"name": "烤后腿肉",
+		"description": "支起烤架，端个小凳。嗯，仿佛已经闻到烤肉的香味了！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1035",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"Item_Cooking_1036": {
+		"name": "蒲公英蘑菇汤",
+		"description": "蒲公英和蘑菇的搭配你试过吗？喝完之后脚步都会轻盈不少哦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/1036",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Dandelion_zhongzi",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"Item_Cooking_2001": {
+		"name": "游鱼探珠",
+		"description": "班吉斯的家常菜，嗯～有家的味道。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**13%+10000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2002": {
+		"name": "红麦面包",
+		"description": "艾达星人最普通的主食。普普通通乃生活本色。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_2003": {
+		"name": "蕨菜饼",
+		"description": "加入了蕨菜的健康麦饼，在小孩子里不怎么受欢迎。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2004": {
+		"name": "巧克力面包",
+		"description": "内馅塞满浓浓巧克力酱！减肥的事明天再说。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2005": {
+		"name": "火耳蘑菇汤",
+		"description": "在征服雪山的时候，有什么比一碗热气腾腾的火耳蘑菇汤更能慰藉身心呢?",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**13%+10000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2006": {
+		"name": "黒藓汤",
+		"description": "凑合着吃吧，改天再吃点好的。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**13%+10000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2007": {
+		"name": "气球果沙拉",
+		"description": "精选沙拉其二 酸酸甜甜，孩子喜爱！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2008": {
+		"name": "蕨菜汤",
+		"description": "啊，今天也是吃草的一天。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2009": {
+		"name": "香辣鳗鱼",
+		"description": "这雷鳗真的烧熟了吗？我的舌头怎么麻了？",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "增加**Volt Resistance +10%**，持续**Volt Resistance +undefined%**秒"
+	},
+	"Item_Cooking_2010": {
+		"name": "鳗鱼蘑菇汤",
+		"description": "舌尖上的辛辣考验。想体验刺激就一口气喝完吧！不准偷偷喝水哦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "增加**Volt Attack +1%**，持续**Volt Attack +undefined%**秒"
+	},
+	"Item_Cooking_2011": {
+		"name": "海蟹汤",
+		"description": "将所有蟹肉精华煮进了汤里。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "增加**Flame Resistance +10%**，持续**Flame Resistance +undefined%**秒"
+	},
+	"Item_Cooking_2012": {
+		"name": "甜石榴果汁",
+		"description": "是我的错觉吗，这果汁是不是在发光？",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2013": {
+		"name": "可可牛奶",
+		"description": "睡前喝一杯，做个带有可可香味的好梦吧！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "增加**Frost Resistance +10%**，持续**Frost Resistance +undefined%**秒"
+	},
+	"Item_Cooking_2014": {
+		"name": "炎龙果茶",
+		"description": "和蛋糕搭配在一起便是完美的下午茶套餐！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - 增加**Flame Attack +1%**，持续**Flame Attack +undefined%**秒"
+	},
+	"Item_Cooking_2015": {
+		"name": "藤壶炖菜",
+		"description": "炖起来的美味！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "增加**Physical Resistance +10%**，持续**Physical Resistance +undefined%**秒"
+	},
+	"Item_Cooking_2016": {
+		"name": "藤壶海鲜披萨",
+		"description": "我要加双倍海鲜！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2017": {
+		"name": "雪鹃茶",
+		"description": "在寒冷的冬季懒洋洋地烤火的时候，不妨来一杯吧！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Follows002",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "增加**Frost Attack +1%**，持续**Frost Attack +undefined%**秒"
+	},
+	"Item_Cooking_2018": {
+		"name": "松籽可可",
+		"description": "增添坚果风味的可可牛奶，喜欢坚果的人可以多加一份果仁。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2019": {
+		"name": "坚果茶",
+		"description": "散发着浓浓的坚果芳香～",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2020": {
+		"name": "雀头薯饼",
+		"description": "耐饿的薯饼，适合远行的时候携带。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "增加**Volt Attack +2%**，持续**Volt Attack +undefined%**秒"
+	},
+	"Item_Cooking_2021": {
+		"name": "雪莲汤",
+		"description": "雪莲花没什么味道，因此通常要在汤里加糖将其作成老少咸宜的甜品。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Follows001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2022": {
+		"name": "松露炒饭",
+		"description": "将松露炒香后倒入米饭，将其混合均匀后便可出锅。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "增加**Physical Attack +2%**，持续**Physical Attack +undefined%**秒"
+	},
+	"Item_Cooking_2023": {
+		"name": "虫草养生面",
+		"description": "唔，我也到了要养生的年纪吗？",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Greens012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2024": {
+		"name": "鱼子酱寿司",
+		"description": "卷得好的话，会是看起来非常高级的料理。卷不好……那你还不如吃鱼子拌饭呢。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"Item_Cooking_2025": {
+		"name": "鱼子薯球",
+		"description": "松软的薯球浇上特级鱼子酱，好吃到还想再吃一份。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "增加**Physical Attack +1%**，持续**Physical Attack +undefined%**秒"
+	},
+	"Item_Cooking_2026": {
+		"name": "烤肉排",
+		"description": "我要五分熟！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "增加**Volt Resistance +15%**，持续**Volt Resistance +undefined%**秒"
+	},
+	"Item_Cooking_2027": {
+		"name": "酱菇肉排",
+		"description": "我好像……看到好多好多肉排在天上飞……",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - 增加**Flame Attack +2%**，持续**Flame Attack +undefined%**秒"
+	},
+	"Item_Cooking_2028": {
+		"name": "红烧肉",
+		"description": "传统而经典的美味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "增加**Frost Resistance +15%**，持续**Frost Resistance +undefined%**秒"
+	},
+	"Item_Cooking_2029": {
+		"name": "多汁肉三明治",
+		"description": "花点时间，为自己好好做一顿早餐吧～",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "增加**Flame Resistance +15%**，持续**Flame Resistance +undefined%**秒"
+	},
+	"Item_Cooking_2030": {
+		"name": "鲑鱼刺身",
+		"description": "食材的原滋原味！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "增加**Frost Attack +2%**，持续**Frost Attack +undefined%**秒"
+	},
+	"Item_Cooking_2031": {
+		"name": "蜗牛焗饭",
+		"description": "虽然看起来很像黑暗料理，但味道美味得出奇。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "增加**Physical Resistance +15%**，持续**Physical Resistance +undefined%**秒"
+	},
+	"item_Cooking_3001": {
+		"name": "爆炒辣椒",
+		"description": "好——辣辣辣辣辣辣辣辣！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "增加**Frost Resistance +10%**，持续**Frost Resistance +undefined%**秒"
+	},
+	"item_Cooking_3002": {
+		"name": "碳烤沙葱",
+		"description": "拓荒者的美味烧烤摊，开张！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3003": {
+		"name": "芦荟酸奶",
+		"description": "酸酸甜甜的酸奶谁不喜欢呢？",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"item_Cooking_3004": {
+		"name": "玫瑰茶",
+		"description": "泡制玫瑰茶的时候，再浮躁的心情都会不可思议地平静下来。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"item_Cooking_3005": {
+		"name": "阳光沙棘汽水",
+		"description": "加入大量蜂蜜，为平平无奇的沙棘果汁增添风味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3006": {
+		"name": "甜菜根汤",
+		"description": "暖暖的甜菜汤，在天气冷的时候能轻松把一锅都喝光。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"item_Cooking_3007": {
+		"name": "甜瓜沙拉",
+		"description": "冰镇后会更好吃呢，不过不可以贪凉哦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "增加**Flame Resistance +10%**，持续**Flame Resistance +undefined%**秒"
+	},
+	"item_Cooking_3008": {
+		"name": "阳光沙棘汽水",
+		"description": "加入大量蜂蜜，为平平无奇的沙棘果汁增添风味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3009": {
+		"name": "南瓜粥",
+		"description": "相当能填肚子的主食，大概喝完一碗后也不需要吃别的什么了。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3010": {
+		"name": "香炸油豆腐",
+		"description": "炸得金黄酥脆的小吃，小心别让酱料滴到衣服上了！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3011": {
+		"name": "清炖萝卜汤",
+		"description": "滋补美味的汤品，我还要再来一碗！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"item_Cooking_3012": {
+		"name": "椒盐玉米",
+		"description": "简单好做的小吃，宵夜首选。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3013": {
+		"name": "仙人掌特饮",
+		"description": "清爽的仙人掌特饮，消暑必备。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**10%+1500**）点拓荒者生命值"
+	},
+	"item_Cooking_3014": {
+		"name": "碳烤蜥尾",
+		"description": "撒满辣椒孜然胡椒，再静静等待一会儿就可以开动啦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"item_Cooking_3015": {
+		"name": "秘制烤肋排",
+		"description": "最下饭的一道菜！没有之一！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3016": {
+		"name": "巧克力豆浆",
+		"description": "普通的豆浆喝腻了的话，不如换个口味吧。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3017": {
+		"name": "甜菜根拌蕨菜",
+		"description": "将食材煮熟后捞出装盘，再加入酱汁拌匀就大功告成啦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3018": {
+		"name": "大漠沙拉",
+		"description": "将仙人掌球、沙棘果切成小块后拌入沙拉酱即可享用，冰镇后滋味更佳哦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3019": {
+		"name": "玫瑰面包",
+		"description": "散发着温柔玫瑰香味的方包，来度过一个惬意的下午吧。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "增加**Volt Resistance +15%**，持续**Volt Resistance +undefined%**秒"
+	},
+	"item_Cooking_3020": {
+		"name": "蜜瓜面包",
+		"description": "塞满甜甜蜜瓜馅的圆形面包，早餐吃一个就够啦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "增加**Frost Attack +1%**，持续**Frost Attack +undefined%**秒"
+	},
+	"item_Cooking_3021": {
+		"name": "杂粮粥",
+		"description": "加入多种杂粮熬制的米粥，难得想吃得清淡一些呢。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3022": {
+		"name": "玉米海鲜馅饼",
+		"description": "全是海鲜的玉米馅饼，这样开店一定会破产的！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3023": {
+		"name": "清蒸南瓜",
+		"description": "绵软甘甜的清蒸南瓜，减肥餐的不错选择。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_Cooking_3024": {
+		"name": "鸡汤暖心面",
+		"description": "爽滑的面条浇上温暖的鸡汤，假装这是碗生日面，来许个愿吧。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "增加**Physical Attack +2%**，持续**Physical Attack +undefined%**秒"
+	},
+	"item_Cooking_3025": {
+		"name": "辛辣叉烧面",
+		"description": "我的手艺完全不输坤记面馆嘛~",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - 增加**Flame Attack +2%**，持续**Flame Attack +undefined%**秒"
+	},
+	"item_Cooking_3026": {
+		"name": "热辣黄金炒饭",
+		"description": "够辣才够味！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - 增加**Flame Attack +1%**，持续**Flame Attack +undefined%**秒"
+	},
+	"item_Cooking_3027": {
+		"name": "烧烤拼盘",
+		"description": "这里一定是肉食爱好者的天堂吧？！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "增加**Flame Resistance +15%**，持续**Flame Resistance +undefined%**秒"
+	},
+	"item_Cooking_3028": {
+		"name": "萝卜排骨汤",
+		"description": "精心炖煮了整整一天的萝卜排骨汤，其实萝卜比排骨还要好吃哦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "增加**Physical Resistance +15%**，持续**Physical Resistance +undefined%**秒"
+	},
+	"item_Cooking_3029": {
+		"name": "奶油玉米浓汤",
+		"description": "奶味浓郁的甜香汤品，这个时候是不是要配着面包一起吃？",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**12%+3300**）点拓荒者生命值"
+	},
+	"item_Cooking_3030": {
+		"name": "脆皮油瓜",
+		"description": "裹好炸粉下锅两分钟就完成啦！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"item_Cooking_3031": {
+		"name": "烤牡蛎",
+		"description": "是加些柠檬汁生吃还是烧烤，真是难以做出选择呀。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"item_Cooking_3032": {
+		"name": "凉拌鱼腥草",
+		"description": "在第一次尝试后，我已经深深爱上了鱼腥草的味道！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"item_Cooking_3033": {
+		"name": "辣油瓜条",
+		"description": "开胃的凉拌小菜，当作正餐开吃似乎也没什么问题。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"item_Cooking_3034": {
+		"name": "海鲜牡蛎豆腐汤",
+		"description": "听说很多小朋友不喜欢吃鱼，因而特制了这道汤品。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"item_Cooking_3035": {
+		"name": "鱼腥草炒蛋",
+		"description": "万物皆可炒蛋！我最中意的是……",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/3035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"item_Cooking_4001": {
+		"name": "龙游星子",
+		"description": "其实就是水煮龙龟肉加海星籽，但商家为了好卖改了名。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4002": {
+		"name": "海味蒸蛋",
+		"description": "龙龟蛋来自海里，所以是海味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**20%+60000**）点拓荒者生命值"
+	},
+	"item_Cooking_4003": {
+		"name": "河豚鱼沙拉",
+		"description": "河豚鱼拌沙拉，好味，可以一试。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4004": {
+		"name": "极鲜河豚",
+		"description": "河豚料理的一种，因为河豚很贵，所以作为食材被商家反复利用。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "增加**Frost Attack +4%**，持续**Frost Attack +undefined%**秒"
+	},
+	"item_Cooking_4005": {
+		"name": "炙烤河豚",
+		"description": "鲜嫩多汁，入口即化，商家是这么写的。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"item_Cooking_4006": {
+		"name": "曳白莲",
+		"description": "层层叠叠的美丽外形，宛如绽开的莲花。其实就是生切河豚肉。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "增加**Frost Attack +2%**，持续**Frost Attack +undefined%**秒"
+	},
+	"item_Cooking_4007": {
+		"name": "白切章鱼",
+		"description": "口感筋道，软嫩弹牙，推荐大家都来吃。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4008": {
+		"name": "章鱼小丸子",
+		"description": "一道好味的传统料理，好味程度取决于商家到底切了多大的章鱼。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "增加**Volt Resistance +15%**，持续**Volt Resistance +undefined%**秒"
+	},
+	"item_Cooking_4009": {
+		"name": "风味铁板烧",
+		"description": "非常受小孩子欢迎的料理，但是凭小孩子的零用钱根本买不起。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**13%+10000**）点拓荒者生命值"
+	},
+	"item_Cooking_4010": {
+		"name": "咸鲜蒸鱼",
+		"description": "因为海水鱼本身就很咸，所以直接蒸就是咸鲜。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4010",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**13%+10000**）点拓荒者生命值"
+	},
+	"item_Cooking_4011": {
+		"name": "酱烧海鱼",
+		"description": "这道菜烹饪手法稍显复杂，所以从味道上应该更好吃。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"item_Cooking_4012": {
+		"name": "奢享刺身",
+		"description": "非常考验刀工的料理，但吃的时候记得不要蘸太多芥末。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "增加**Frost Resistance +15%**，持续**Frost Resistance +undefined%**秒"
+	},
+	"item_Cooking_4013": {
+		"name": "仰望星空",
+		"description": "鱼在活着的时候会仰望星空吗？",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4014": {
+		"name": "海鲜烩",
+		"description": "如果和兽肉一起煮，珍贵的食材就可以少放一点。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"CleanBuff"
+		]
+	},
+	"item_Cooking_4015": {
+		"name": "呛烧海葵",
+		"description": "辣椒放很多的话，会被呛到。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - 增加**Flame Attack +2%**，持续**Flame Attack +undefined%**秒"
+	},
+	"item_Cooking_4016": {
+		"name": "海葵花",
+		"description": "在炖蛋里加入海葵，口感会更加丰富。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**13%+10000**）点拓荒者生命值"
+	},
+	"item_Cooking_4017": {
+		"name": "仙寿恒昌",
+		"description": "因为龙龟的寓意很好，所以商家格外会给它起名。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "提升**40**，持续**undefined**秒"
+	},
+	"item_Cooking_4018": {
+		"name": "欢喜蛋",
+		"description": "白煮龙龟蛋，但是添加了染色剂，好卖",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "增加**Physical Attack +4%**，持续**Physical Attack +undefined%**秒"
+	},
+	"item_Cooking_4019": {
+		"name": "粉欢喜蛋",
+		"description": "白煮龙龟蛋，但是添加了染色剂，好卖",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_016",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4020": {
+		"name": "红欢喜蛋",
+		"description": "白煮龙龟蛋，但是添加了染色剂，好卖",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_015",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "提升**50**，持续**undefined**秒"
+	},
+	"item_Cooking_4021": {
+		"name": "凉拌海蜇",
+		"description": "爽脆可口，吃着停不下来。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**13%+10000**）点拓荒者生命值"
+	},
+	"item_Cooking_4022": {
+		"name": "菇炒海蜇丝",
+		"description": "草菇和海蜇的鲜味叠加，成为出色的下饭菜，一不留神就能吃掉一大盘。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4023": {
+		"name": "爆浆墨鱼仔",
+		"description": "内涵丰富汁水的圆鼓鼓墨鱼仔，掌握不了正确食用技巧的话还是请避免在公开场合食用。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4024": {
+		"name": "海鲜墨鱼拌",
+		"description": "美味鲜香的料理，如果改变下色泽应该会更受欢迎。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "增加**Volt Attack +2%**，持续**Volt Attack +undefined%**秒"
+	},
+	"item_Cooking_4025": {
+		"name": "清炖鱼片粥",
+		"description": "养生鱼片粥，适合没有胃口的人食用。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4026": {
+		"name": "腌制海鱼干",
+		"description": "可能不适合人类的口味，但非常受猫猫们的欢迎。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "增加**Flame Resistance +15%**，持续**Flame Resistance +undefined%**秒"
+	},
+	"item_Cooking_4027": {
+		"name": "霸气龙虾盖饭",
+		"description": "龙虾份量极多的超霸气料理，只有在海边才能尽享的豪华美味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "增加**Physical Attack +2%**，持续**Physical Attack +undefined%**秒"
+	},
+	"item_Cooking_4028": {
+		"name": "麻辣小龙虾",
+		"description": "把大龙虾切碎也算算是小龙虾……吧？",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4029": {
+		"name": "肉蟹蒸蛋",
+		"description": "鲜美的肉蟹蒸蛋，要小心蛋里混入的是真蟹腿还是蟹肉棒。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4030": {
+		"name": "豪华蟹肉炒饭",
+		"description": "没有人能拒绝的蟹肉炒饭，豪华的可不止是蟹肉的用量。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4031": {
+		"name": "帝王蟹",
+		"description": "事实证明螃蟹再王霸也会被端上餐桌的。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"item_Cooking_4032": {
+		"name": "年糕炒蟹肉",
+		"description": "鲜香美味的螃蟹加上晶莹软糯的年糕，是不可思议的美味的融合。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "增加**Physical Resistance +15%**，持续**Physical Resistance +undefined%**秒"
+	},
+	"item_Cooking_4033": {
+		"name": "蟹黄金捞面",
+		"description": "经过层层繁复的步骤打造出来的黄金捞面，价格也是层层叠加。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4034": {
+		"name": "蒜蓉蒸鲜",
+		"description": "味道浓郁的蒜蓉搭配可口入味的虾蟹，是经典好味料理。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - 增加**Flame Attack +4%**，持续**Flame Attack +undefined%**秒"
+	},
+	"item_Cooking_4035": {
+		"name": "海皇干捞粉丝",
+		"description": "香味十足，干爽而不腻的特色料理。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "增加**Volt Attack +4%**，持续**Volt Attack +undefined%**秒"
+	},
+	"item_Cooking_4036": {
+		"name": "芝士焗龙虾",
+		"description": "肉质弹牙，芝香四溢。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4036",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用立刻恢复（**16%+34000**）点拓荒者生命值"
+	},
+	"item_Cooking_4037": {
+		"name": "龙虾墨面",
+		"description": "用天然墨汁染色的创意料理，美味和风格兼备。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4037",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4038": {
+		"name": "爆炒螺肉",
+		"description": "麻辣鲜香、非常入味，是夜宵必点的美味",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/4038",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_038",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_5001": {
+		"name": "竹笋炖肉",
+		"description": "肥瘦相间的肉和竹笋炖了数小时，配合辛辣的调味，可以连吃三碗饭。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/5001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"effect": "增加**Volt Attack +4% Volt Resistance +1800**，持续**Volt Attack +undefined%Volt Resistance +%**秒"
+	},
+	"item_Cooking_5007": {
+		"name": "白玉海棠",
+		"description": "由青离瑜和秋海棠制成的凉菜。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/5007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Jiuyu_Harvest_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"effect": "增加**Flame Attack +4% Flame Resistance +1800**，持续**Flame Attack +undefined%Flame Resistance +%**秒"
+	},
+	"item_activity_cooking_001": {
+		"name": "烤乳猪",
+		"description": "在优秀的厨师手中，一道烤乳猪可以满足最挑剔的食客。\r\n\r\n艾达咖啡馆活动期间击败【阿波菲斯】【玫瑰女王】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_002": {
+		"name": "苹果烩火鸡",
+		"description": "星岛地区的特色美食，后经由行商旅客们的推广，已经风靡整片大陆。\r\n\r\n艾达咖啡馆活动期间击败【阿波菲斯】【玫瑰女王】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_003": {
+		"name": "香蔬烤鸡腿",
+		"description": "来一口香喷喷的烤鸡腿满足味蕾，再来一口清脆的生菜解去油腻，一本满足。\r\n\r\n艾达咖啡馆活动期间击败【阿波菲斯】【玫瑰女王】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_004": {
+		"name": "香煎三文鱼",
+		"description": "三文鱼的鲜嫩，辅以蜂蜜的香甜，入口回味无穷。\r\n\r\n艾达咖啡馆活动期间击败【罗贝拉格】【索贝克】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_005": {
+		"name": "芝麻小圆子",
+		"description": "班吉斯港的传统美食，深受老人和孩子的喜爱。\r\n\r\n艾达咖啡馆活动期间击败【罗贝拉格】【索贝克】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_006": {
+		"name": "火鸡甜菜汤",
+		"description": "一碗香浓温热的鸡汤，就能抚平一整天的疲劳和憔悴。\r\n\r\n艾达咖啡馆活动期间击败【罗贝拉格】【索贝克】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_007": {
+		"name": "姜饼",
+		"description": "节日庆典中备受欢迎的美味糕点，有糖和蜂蜜的甜美，也有麦粒的清香。\r\n\r\n艾达咖啡馆活动期间击败【罗贝拉格】【阿波菲斯】【急冻机甲】【索贝克】【玫瑰女王】【巴巴罗萨】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_008": {
+		"name": "苹果蛋糕",
+		"description": "松软可口的水果蛋糕，一口咬下，十分满足。\r\n\r\n艾达咖啡馆活动期间击败【急冻机甲】【巴巴罗萨】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_009": {
+		"name": "水果宾治",
+		"description": "缤纷果香之外，点缀一丝迷醉。\r\n\r\n艾达咖啡馆活动期间击败【急冻机甲】【巴巴罗萨】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_010": {
+		"name": "苹果汁",
+		"description": "酸甜可口，老少咸宜，许多人钟爱的夏日饮品。\r\n\r\n艾达咖啡馆活动期间击败【急冻机甲】【巴巴罗萨】后开启其密码箱可能获得，也可收集食材烹饪获得。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity2_cooking_101": {
+		"name": "漂浮心潮",
+		"description": "乘着气球果，一起前往巧克力的世界旅行吧！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_102": {
+		"name": "松籽心潮",
+		"description": "落满松籽的巧克力正是最完美的礼物。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_103": {
+		"name": "草莓心潮",
+		"description": "轻甜的草莓与香醇的巧克力交融，正是初恋的甜蜜滋味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_104": {
+		"name": "榛仁心潮",
+		"description": "被巧克力包裹着的，正是一颗满怀期待的爱恋之心。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_105": {
+		"name": "松露心潮",
+		"description": "从选材上即可感受到满满心意。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_106": {
+		"name": "蓝莓心潮",
+		"description": "轻咬一口，酸甜的蓝莓果酱在舌尖流淌。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_107": {
+		"name": "蜂蜜心潮",
+		"description": "奏响巧克力与蜂蜜的恢弘乐章。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_108": {
+		"name": "落果心潮",
+		"description": "赠予你我最珍视之物。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_109": {
+		"name": "可可心潮",
+		"description": "细腻柔和的黑巧克力，钩织微苦醇厚的绮梦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_110": {
+		"name": "牛奶心潮",
+		"description": "牛奶和巧克力正是天作之合！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_201": {
+		"name": "漂浮星球",
+		"description": "乘着气球果，一起前往巧克力的世界旅行吧！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_202": {
+		"name": "松籽星球",
+		"description": "落满松籽的巧克力正是最完美的礼物。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_203": {
+		"name": "草莓星球",
+		"description": "轻甜的草莓与香醇的巧克力交融，正是初恋的甜蜜滋味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_204": {
+		"name": "榛仁星球",
+		"description": "被巧克力包裹着的，正是一颗满怀期待的爱恋之心。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_205": {
+		"name": "松露星球",
+		"description": "从选材上即可感受到满满心意。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_206": {
+		"name": "蓝莓星球",
+		"description": "轻咬一口，酸甜的蓝莓果酱在舌尖流淌。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_207": {
+		"name": "蜂蜜星球",
+		"description": "奏响巧克力与蜂蜜的恢弘乐章。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_208": {
+		"name": "落果星球",
+		"description": "赠予你我最珍视之物。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_209": {
+		"name": "可可星球",
+		"description": "细腻柔和的黑巧克力，钩织微苦醇厚的绮梦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_210": {
+		"name": "牛奶星球",
+		"description": "牛奶和巧克力正是天作之合！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_301": {
+		"name": "漂浮魔方",
+		"description": "乘着气球果，一起前往巧克力的世界旅行吧！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_302": {
+		"name": "松籽魔方",
+		"description": "落满松籽的巧克力正是最完美的礼物。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_303": {
+		"name": "草莓魔方",
+		"description": "轻甜的草莓与香醇的巧克力交融，正是初恋的甜蜜滋味。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_304": {
+		"name": "榛仁魔方",
+		"description": "被巧克力包裹着的，正是一颗满怀期待的爱恋之心。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_305": {
+		"name": "松露魔方",
+		"description": "从选材上即可感受到满满心意。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_306": {
+		"name": "蓝莓魔方",
+		"description": "轻咬一口，酸甜的蓝莓果酱在舌尖流淌。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_307": {
+		"name": "蜂蜜魔方",
+		"description": "奏响巧克力与蜂蜜的恢弘乐章。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_308": {
+		"name": "落果魔方",
+		"description": "赠予你我最珍视之物。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_309": {
+		"name": "可可魔方",
+		"description": "细腻柔和的黑巧克力，钩织微苦醇厚的绮梦。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_310": {
+		"name": "牛奶魔方",
+		"description": "牛奶和巧克力正是天作之合！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_001": {
+		"name": "白鲸伴手礼",
+		"description": "以雷元素为主题的巧克力礼盒，哈娜的得意之作。\r\n博士说，美味一定要和重要的人分享哦！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_002": {
+		"name": "白鲸伴手礼",
+		"description": "以物理元素为主题的巧克力礼盒，哈娜的得意之作。\n博士说，美味一定要和重要的人分享哦！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_003": {
+		"name": "白鲸伴手礼",
+		"description": "以火元素为主题的巧克力礼盒，哈娜的得意之作。\n博士说，美味一定要和重要的人分享哦！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_004": {
+		"name": "白鲸伴手礼",
+		"description": "以冰元素为主题的巧克力礼盒，哈娜的得意之作。\n博士说，美味一定要和重要的人分享哦！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity2_cooking_005": {
+		"name": "脆皮年糕",
+		"description": "艾达星最受欢迎的小吃之一。据说鬣狗帮成员和掠夺者成员曾为了一块年糕大打出手。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity2_cooking_006": {
+		"name": "巧克力礼盒",
+		"description": "美味一定要和重要的人分享哦！",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"HealPotion_01": {
+		"name": "春饼",
+		"description": "初春市集上最受欢迎的小吃，\r\n不过光从外观上来看无法判断这是什么口味的……",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用立刻恢复（**22%+75000**）点拓荒者生命值"
+	},
+	"BuffPotion_01": {
+		"name": "松风",
+		"description": "初春市集主推的饮品，\r\n据说品尝时仿佛感到置身松林之中，春风轻柔吹拂脸颊。",
+		"buff": "菜肴",
+		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity3_cooking_101": {
+		"name": "经典魔方",
+		"description": "谁能拒绝浓浓的巧克力香气呢？",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_102": {
+		"name": "果仁魔方",
+		"description": "用混合的坚果做成的巧克力，真是意外的好吃！",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_103": {
+		"name": "榛子魔方",
+		"description": "入口绵密丝滑，榛子的香味为巧克力又增添了一层风味。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_104": {
+		"name": "炎龙魔方",
+		"description": "吃巧克力时，还在意什么带籽不带耔的。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_105": {
+		"name": "可可魔方",
+		"description": "细腻柔和的黑巧克力，钩织微苦醇厚的绮梦。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_106": {
+		"name": "尾巴魔方",
+		"description": "这可是最新的怪味巧克力，要不要挑战下？",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_107": {
+		"name": "肉松魔方",
+		"description": "巧克力味的肉松，黑暗料理界再添一员大将。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_108": {
+		"name": "菇菇魔方",
+		"description": "夹心巧克力总是这么有惊喜。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_109": {
+		"name": "咸蛋魔方",
+		"description": "蛋黄油润起沙，别有一番风味。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_110": {
+		"name": "蟹柳魔方",
+		"description": "浓郁的海鲜香气为这款巧克力奠定了主基调。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_201": {
+		"name": "咖啡星球",
+		"description": "想和你一起品尝路途中的苦与甜。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_202": {
+		"name": "酒心星球",
+		"description": "柔和的酒香与巧克力交织起香醇的旋律。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_203": {
+		"name": "鲜花星球",
+		"description": "轻咬一口，花香袭人，果然还是玫瑰和情人节最配。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_204": {
+		"name": "草莓星球",
+		"description": "轻甜的草莓与香醇的巧克力交融，正是初恋的甜蜜滋味。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_205": {
+		"name": "可可星球",
+		"description": "细腻柔和的黑巧克力，钩织微苦醇厚的绮梦。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_206": {
+		"name": "漂浮星球",
+		"description": "乘着气球果，一起前往巧克力的世界旅行吧！",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_207": {
+		"name": "肉松星球",
+		"description": "丝滑的巧克力与有蓬松的夹心带来截然不同的口感。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_208": {
+		"name": "海盐星球",
+		"description": "吃腻了甜甜的风味？来试试咸的吧！",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_209": {
+		"name": "松露星球",
+		"description": "从选材上即可感受到满满心意。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_210": {
+		"name": "蟹柳星球",
+		"description": "梭子蟹腿也是有很多种做法的。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_301": {
+		"name": "薄荷心潮",
+		"description": "一口冰凉，无限清新。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_302": {
+		"name": "奶油心潮",
+		"description": "论甜蜜，还有能超过奶油心潮的吗？",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_303": {
+		"name": "落果心潮",
+		"description": "赠予你我最珍视之物。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_304": {
+		"name": "蓝莓心潮",
+		"description": "轻咬一口，酸甜的蓝莓果酱在舌尖流淌。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_305": {
+		"name": "可可心潮",
+		"description": "细腻柔和的黑巧克力，钩织微苦醇厚的绮梦。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_306": {
+		"name": "鱼油心潮",
+		"description": "富含EPA和DHA的巧克力，健康人士的首选。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_307": {
+		"name": "激辣心潮",
+		"description": "这个坚果可是辣味的。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_308": {
+		"name": "肉松心潮",
+		"description": "冰凉的外壳与松软的内心。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_309": {
+		"name": "鱼子心潮",
+		"description": "从选材便可以看出来，价值不菲！",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	},
+	"item_activity3_cooking_310": {
+		"name": "蟹柳心潮",
+		"description": "这款巧克力的评价确实两极分化很严重。",
+		"buff": "菜肴",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用立刻恢复（**15%+20000**）点拓荒者生命值"
+	}
+}

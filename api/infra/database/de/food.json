@@ -1,0 +1,5599 @@
+{
+	"Task_Area2Cooking": {
+		"name": "Hundeleckerli",
+		"description": "Das Lieblingsessen trainierter Hunde.",
+		"buff": "Snack",
+		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
+	},
+	"Item_Cooking_0901": {
+		"name": "Furchtbarer Eintopf",
+		"description": "Ein Haufen unbekannter Zutaten, die in einem großen Topf gegart wurden, wobei ein Großteil der Nährstoffe verloren ging.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_0902": {
+		"name": "Feiner Eintopf",
+		"description": "Sieht zwar nach einem guten Eintopf aus, aber die Auswahl der Zutaten sorgt letztlich für das Misslingen dieses Gerichts …",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1001": {
+		"name": "Gebratene Pilze",
+		"description": "Geschmack beiseite, zumindest sind sie gekocht und nicht roh.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**10% + 1500**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1002": {
+		"name": "Seetang-Eiersuppe",
+		"description": "Mit frischem Seetang und viel Protein. Macht den Bauch schön voll.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1003": {
+		"name": "Knusprig gegrillter Fisch",
+		"description": "Eines der beliebtesten Essen in der Hafenstadt von Banges. Günstig und lecker.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1004": {
+		"name": "Vollkornbrot",
+		"description": "Zubereitet aus verarbeitetem Getreide, nahrhaft und lange haltbar. Jeder Wanderer sollte welches dabeihaben.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1005": {
+		"name": "Frühstücksflocken",
+		"description": "Früher reichte eine Ration, um fünf bis sechs Menschen zu ernähren. Dank der verbesserten Bedingungen geben Menschen jetzt Milch dazu anstatt Wasser.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1006": {
+		"name": "Brutzelndes Fleisch",
+		"description": "Wie hättest du es gerne zubereitet? Echte Männer essen es schon, nachdem es nur ein paar Sekunden lang auf Steinen unter der heißen Sonne gegrillt wurde.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1007": {
+		"name": "Meeresfrüchte-Suppe",
+		"description": "Trotz des mäßigen Geschmacks sagt man, ein Bissen hätte eine belebende und zwei hätten eine heilende Wirkung.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Erhöht **Frost Attack +1%** für **Frost Attack +undefined%** Sek."
+	},
+	"Item_Cooking_1008": {
+		"name": "Knuspriger Hähnchen-Burger",
+		"description": "Hähnchen-Burger, wie man ihn in Fast-Food-Lokalen findet. Es gibt kaum etwas Besseres als die Kombination von heißem, knusprigem Hähnchen und knackigem Kopfsalat.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1009": {
+		"name": "Pikanter Burger",
+		"description": "Dabei läuft einem einfach jedes Mal das Wasser im Mund zusammen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Erhöht **Physical Attack +1%** für **Physical Attack +undefined%** Sek."
+	},
+	"Item_Cooking_1010": {
+		"name": "Gebratener Reis mit Ei",
+		"description": "Wenn man einfachen, weißen Reis satthat und mal wieder Lust auf etwas Besonderes hat.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1011": {
+		"name": "Gedünstete Krabbe",
+		"description": "Meeresfrüchte schmecken am besten, wenn sie ganz frisch serviert werden. Das Problem ist: Wo anfangen?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1011",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1012": {
+		"name": "Geeiste Erdbeerlimonade",
+		"description": "Mische pürierte Erdbeeren in die Limonade und gib dann Eis hinzu. Ein Muss für jeden Sommer.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Erhöht **Flame Resistance +10%** für **Flame Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_1013": {
+		"name": "Flammengeküsste Limonade",
+		"description": "Zeit für den Nachmittagstee!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"effect": "Erhöht **10** für **undefined** Sek."
+	},
+	"Item_Cooking_1014": {
+		"name": "Donnerwolke-Heidelbeerlimonade",
+		"description": "Die Blaubeere ist so dunkel wie eine Regenwolke. Pass auf, dass du nicht kleckerst. Die Flecken gehen nur ganz schwer raus.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Erhöht **Volt Resistance +10%** für **Volt Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_1015": {
+		"name": "Goldenes Ei mit Tomate",
+		"description": "Doch, es war meine Absicht, die Eier zu verrühren …",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1016": {
+		"name": "Einfacher Kraftsalat",
+		"description": "Der einfachste Salat, um den täglichen Nährstoffbedarf zu decken. Die ideale Wahl bei fettarmer Ernährung.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Erhöht **Physical Resistance +10%** für **Physical Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_1017": {
+		"name": "Blattsalat",
+		"description": "Ein leckerer Salat mit einfachen Zutaten und kräftigem Geschmack.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**10% + 1500**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1018": {
+		"name": "Pilzsuppe",
+		"description": "Eine perfekte Kombination aus frischen Pilzen und knackigem Kopfsalat.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1019": {
+		"name": "Spiegelei",
+		"description": "Mit leckeren Spiegeleiern fängt der Tag gut an!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1019",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**10% + 1500**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1020": {
+		"name": "Gedünstete Meeresschnecke",
+		"description": "Der Originalgeschmack bleibt komplett erhalten! Ein paar gehackte grüne Zwiebeln würden sie allerdings noch besser machen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1021": {
+		"name": "Gedünstetes Ei mit Seeigel",
+		"description": "Ein Seeigel mit zart gedämpftem Ei ist lecker und gut für die Seele. Besonders beliebt ist das Gericht im Schneefeld.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1022": {
+		"name": "Toast mit Zwei-Beeren-Marmelade.",
+		"description": "Diese Kombination aus zwei Beerensorten sorgt für eine süßsaure Symphonie in deinem Mund.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Erhöht **Volt Attack +1%** für **Volt Attack +undefined%** Sek."
+	},
+	"Item_Cooking_1023": {
+		"name": "Nudeln mit Tomate und Spiegelei",
+		"description": "Schön sauer und leicht zuzubereiten. Eine köstliche Leckerei mit ganz wenig Kalorien.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 4",
+				"max": " 4"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " – Erhöht **Flame Attack +1%** für **Flame Attack +undefined%** Sek."
+	},
+	"Item_Cooking_1024": {
+		"name": "Fleisch-Kartoffel-Eintopf",
+		"description": "Das Fleisch hat alle Nährstoffe aufgenommen, weshalb es extrem gesund ist!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1024",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1025": {
+		"name": "Pommes",
+		"description": "Das ist kein Junkfood, sondern reine Glückseligkeit!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1025",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1026": {
+		"name": "Gemüsesalat",
+		"description": "Ausgewählter Salat, der sich super für Picknicks eignet.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1027": {
+		"name": "Brathähnchen",
+		"description": "Eine einfache und schnell zubereitete Mahlzeit. Bei dieser knusprig-goldenen Kruste läuft wirklich jedem das Wasser im Mund zusammen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1027",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1028": {
+		"name": "Fruchtsaft mit Honig",
+		"description": "Frischer, leicht geschüttelter Saft mit ein wenig Honig. Ein Hauch von Süße inmitten der Säure.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1028",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1029": {
+		"name": "Früchtebrot",
+		"description": "Es gibt keinen Stress, den ein Stück leckerer Kuchen nicht beseitigen könnte. Wenn doch, dann nimm dir noch ein Stück!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1030": {
+		"name": "Geeiste Orchideen-Überraschung",
+		"description": "Sommer-Spezial. Führt zu einer wahren Geschmacksexplosion in deinem Mund!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1030",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1031": {
+		"name": "Gebratener Brokkoli",
+		"description": "Gesundes und fettarmes Essen, das jedoch nicht bei allen beliebt ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1032": {
+		"name": "Gekochte Jakobsmuscheln",
+		"description": "Ein einfaches und köstliches Essen, für das man keine Gewürze braucht.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1032",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1033": {
+		"name": "Fleischbrötchen",
+		"description": "Der Saft, der beim Reinbeißen austritt, ist das Beste daran!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1033",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1034": {
+		"name": "Fischscheiben mit Pilzen",
+		"description": "Eine perfekte Ergänzung zu aufgeschnittenem Fisch und Pilzen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1034",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1035": {
+		"name": "Gebratenes Rumpsteak",
+		"description": "Mach den Grill an und schnapp dir einen Stuhl. Ja, so muss das duften …",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1035",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_1036": {
+		"name": "Löwenzahn-Pilz-Suppe",
+		"description": "Schon mal Löwenzahn mit Pilzen probiert? Danach fühlst du dich ganz leicht.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/1036",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Dandelion_zhongzi",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2001": {
+		"name": "Surf and Turf",
+		"description": "Hausmannskost aus Banges, die wunderbar nach Heimat schmeckt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2002": {
+		"name": "Rotes Weizenbrot",
+		"description": "Das meist zubereitete Essen der Menschen von Aida spiegelt auch ihr einfaches Leben wider.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_2003": {
+		"name": "Farnsprossen-Pastete",
+		"description": "Ein gesundes Gebäck mit einer Füllung aus Farnsprossen. Ist allerdings nicht sonderlich beliebt bei Kindern.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2004": {
+		"name": "Schokoladenbrot",
+		"description": "Gefüllt mit Schokolade! Verschieb deine Diät einfach auf morgen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2005": {
+		"name": "Feuerkappe-Pilzsuppe",
+		"description": "Was hebt die Stimmung beim Besteigen verschneiter Gipfel mehr als eine dampfend heiße Schüssel Feuerkappe-Pilzsuppe?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2006": {
+		"name": "Schwarzmoos-Suppe",
+		"description": "Schlage dir jetzt einfach den Bauch voll und besorge dir später was Besseres.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2007": {
+		"name": "Ballonblumensalat",
+		"description": "Ausgewählter Salat. Süß und sauer, das haben Kinder am liebsten!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2008": {
+		"name": "Farnsprossen-Suppe",
+		"description": "Scheint wieder ein Pflanzenfressertag zu sein …",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2009": {
+		"name": "Pikanter Aal",
+		"description": "Ist der Zitteraal durch? Wieso kribbelt meine Zunge so?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Erhöht **Volt Resistance +10%** für **Volt Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_2010": {
+		"name": "Aal und Pilzsuppe",
+		"description": "Eine scharfe Herausforderung für die Geschmacksnerven. Auf ex, wenn du dich traust! Und Wasser ist nicht erlaubt!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Erhöht **Volt Attack +1%** für **Volt Attack +undefined%** Sek."
+	},
+	"Item_Cooking_2011": {
+		"name": "Seekrabbensuppe",
+		"description": "Dieser Eintopf enthält alle guten Teile der Krabbe.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Erhöht **Flame Resistance +10%** für **Flame Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_2012": {
+		"name": "Süßer Granatapfelsaft",
+		"description": "Bilde ich mir das bloß ein oder leuchtet der Saft tatsächlich?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2013": {
+		"name": "Kakao",
+		"description": "Trinke eine Tasse, bevor du ins Bett gehst, dann sind dir süße Träume garantiert!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Erhöht **Frost Resistance +10%** für **Frost Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_2014": {
+		"name": "Feuerdrachenfruchttee",
+		"description": "Genieße diesen Tee zusammen mit einem Stück Kuchen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " – Erhöht **Flame Attack +1%** für **Flame Attack +undefined%** Sek."
+	},
+	"Item_Cooking_2015": {
+		"name": "Seepocken-Eintopf",
+		"description": "Dieser Geschmack wird dir gefallen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Erhöht **Physical Resistance +10%** für **Physical Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_2016": {
+		"name": "Seepocken-Meeresfrüchte-Pizza",
+		"description": "Gib mir eine doppelte Portion!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2017": {
+		"name": "Azalee-Schneeperlen-Tee",
+		"description": "Warum trinkst du nicht einen, während du im kalten Winter am Lagerfeuer rumhängst?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Follows002",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Erhöht **Frost Attack +1%** für **Frost Attack +undefined%** Sek."
+	},
+	"Item_Cooking_2018": {
+		"name": "Pinienkakao",
+		"description": "Kakao mit Nussgeschmack. Nussliebhaber können gern noch mehr Nüsse dazugeben.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2019": {
+		"name": "Nusstee",
+		"description": "Riech mal, wie frisch die Nüsse sind …",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2020": {
+		"name": "Violette Yamswurzel-Pastete",
+		"description": "Eine Pastete, die satt macht und sich gut auf lange Wanderungen mitnehmen lässt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Erhöht **Volt Attack +2%** für **Volt Attack +undefined%** Sek."
+	},
+	"Item_Cooking_2021": {
+		"name": "Schneelotus-Suppe",
+		"description": "Schneelotus schmeckt eher fade, aber mit Zucker dazu ist er ein beliebtes Dessert.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Follows001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2022": {
+		"name": "Gebratener Reis mit Trüffel",
+		"description": "Brate die Trüffel an und vermische sie dann mit gebratenem Reis.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Erhöht **Physical Attack +2%** für **Physical Attack +undefined%** Sek."
+	},
+	"Item_Cooking_2023": {
+		"name": "Raupenpilz-Nudeln",
+		"description": "Bin ich etwa schon so alt, dass ich auf meine Ernährung achten muss?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Greens012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2024": {
+		"name": "Kaviar-Sushi",
+		"description": "Wenn sie toll aussieht, ist eine Sushi-Rolle ein erstklassiges Gericht. Wenn du das nicht schaffst, solltest du die Zutaten besser in einer Schüssel mischen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"Item_Cooking_2025": {
+		"name": "Kartoffelbällchen mit Kaviar",
+		"description": "Weiche Kartoffelbällchen in einem Bad aus hochwertigem Kaviar. Du wirst bestimmt nicht nur eine Portion essen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Erhöht **Physical Attack +1%** für **Physical Attack +undefined%** Sek."
+	},
+	"Item_Cooking_2026": {
+		"name": "Gegrilltes Steak",
+		"description": "Medium, bitte!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Erhöht **Volt Resistance +15%** für **Volt Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_2027": {
+		"name": "Steak mit Pilzsoße",
+		"description": "Ich glaube, ich sehe Steaks am Himmel fliegen …",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " – Erhöht **Flame Attack +2%** für **Flame Attack +undefined%** Sek."
+	},
+	"Item_Cooking_2028": {
+		"name": "Schmorfleisch",
+		"description": "Ein traditioneller Klassiker.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Erhöht **Frost Resistance +15%** für **Frost Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_2029": {
+		"name": "Saftiges Fleischsandwich",
+		"description": "Nimm dir die Zeit und bereite dir ein gutes Frühstück zu!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Erhöht **Flame Resistance +15%** für **Flame Resistance +undefined%** Sek."
+	},
+	"Item_Cooking_2030": {
+		"name": "Lachs-Sashimi",
+		"description": "Genauso sollte Essen schmecken!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Erhöht **Frost Attack +2%** für **Frost Attack +undefined%** Sek."
+	},
+	"Item_Cooking_2031": {
+		"name": "Gebratener Reis mit Schnecken",
+		"description": "Scheint eine schräge Kombination zu sein, schmeckt aber viel besser, als es aussieht.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Erhöht **Physical Resistance +15%** für **Physical Resistance +undefined%** Sek."
+	},
+	"item_Cooking_3001": {
+		"name": "Gebratene Chilis",
+		"description": "Sehr scharf!!!!!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Erhöht **Frost Resistance +10%** für **Frost Resistance +undefined%** Sek."
+	},
+	"item_Cooking_3002": {
+		"name": "Auf Holzkohle gegrillte Sandzwiebeln",
+		"description": "Der köstliche Wanderer-BBQ-Stand, jetzt geöffnet!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3003": {
+		"name": "Aloejoghurt",
+		"description": "Wer mag nicht den süßsäuerlichen Geschmack von Joghurt?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3004": {
+		"name": "Rosentee",
+		"description": "Beim Aufbrühen von Rosentee kommt selbst der rastloseste Geist auf wundersame Weise zur Ruhe.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3005": {
+		"name": "Dornenfrucht-Limonade",
+		"description": "Mit einer großzügigen Menge Honig wird diesem schlichten Dornenfruchtsaft Geschmack verleihen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3006": {
+		"name": "Rübensuppe",
+		"description": "Warme Rote-Bete-Suppe. Wenn es kalt ist, kann man leicht einen ganzen Topf davon essen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3007": {
+		"name": "Zuckermelonensalat",
+		"description": "Schmeckt gekühlt besser, aber sei nicht zu gierig!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Erhöht **Flame Resistance +10%** für **Flame Resistance +undefined%** Sek."
+	},
+	"item_Cooking_3008": {
+		"name": "Dornenfrucht-Limonade",
+		"description": "Mit einer großzügigen Menge Honig wird diesem schlichten Dornenfruchtsaft Geschmack verleihen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3009": {
+		"name": "Kürbisbrei",
+		"description": "Ein sättigendes Grundnahrungsmittel. Nach einer Schüssel davon musst du wahrscheinlich nichts anderes mehr essen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3010": {
+		"name": "Frittierter Tofu",
+		"description": "Knusprige, goldbraun frittierte Snacks. Pass auf, dass du die Soße nicht auf deine Kleidung kleckerst.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3011": {
+		"name": "Radieschensuppe",
+		"description": "Sättigende und leckere Suppe. Noch eine Schüssel, bitte!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3012": {
+		"name": "Salz- und Pfeffermais",
+		"description": "Einfache Snacks. Die erste Wahl, wenn es nachts mal später wird.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3013": {
+		"name": "Kaktusspezialität",
+		"description": "Erfrischende Kaktusspezialität, unverzichtbar im Sommer.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**10% + 1500**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3014": {
+		"name": "Gegrillter Eidechsenschwanz",
+		"description": "Streue erst ein bisschen Chili, Kreuzkümmel und Pfeffer darauf und warte dann geduldig einen Moment, bevor du anfängst.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3015": {
+		"name": "Gegrillte Spezialrippchen",
+		"description": "Passt perfekt zu Reis! Das einzig Wahre!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3016": {
+		"name": "Schokoladen-Sojadrink",
+		"description": "Wenn du genug von normaler Sojamilch hast, warum probierst du dann die hier nicht mal aus?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3017": {
+		"name": "Rüben mit Farnsprossen",
+		"description": "Nimm die Zutaten aus der Pfanne, sobald sie gegart sind, füge die Soße hinzu, mische alles gut durch und schon ist es fertig.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3018": {
+		"name": "Wüstensalat",
+		"description": "Gewürfelter Kugelkaktus und Dornenfrüchte mit etwas Salatdressing. Es wird empfohlen, sie zuerst zu kühlen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3019": {
+		"name": "Rosenbrot",
+		"description": "Zu einem schönen Nachmittag gehört ein Rosenduft-Kastenbrot.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Erhöht **Volt Resistance +15%** für **Volt Resistance +undefined%** Sek."
+	},
+	"item_Cooking_3020": {
+		"name": "Zuckermelonenbrot",
+		"description": "Ein rundes, mit süßer Melone gefülltes Brot ist alles, was man zum Frühstück braucht.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Erhöht **Frost Attack +1%** für **Frost Attack +undefined%** Sek."
+	},
+	"item_Cooking_3021": {
+		"name": "Mehrkornbrei",
+		"description": "Der Reisbrei besteht aus vielen verschiedenen Getreidesorten. Manchmal möchte ich einfach etwas Mildes essen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3022": {
+		"name": "Mais- und Meeresfrüchtekeks",
+		"description": "Tacos mit Meeresfrüchten … Wenn du damit einen Laden eröffnest, gehst du pleite!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3023": {
+		"name": "Gedünsteter Kürbis",
+		"description": "Der gedünstete Kürbis ist weich und süß. Er ist die ideale Zutat für alle, die auf Diät sind.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3024": {
+		"name": "Hühnersuppe",
+		"description": "Seidige Nudeln mit warmer Hühnerbrühe. Stell dir vor, es wäre eine Geburtstagssuppe, und wünsch dir was.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Erhöht **Physical Attack +2%** für **Physical Attack +undefined%** Sek."
+	},
+	"item_Cooking_3025": {
+		"name": "Pikante BBQ-Nudeln",
+		"description": "Ich kann es absolut mit Kun-Ji-Nudeln aufnehmen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " – Erhöht **Flame Attack +2%** für **Flame Attack +undefined%** Sek."
+	},
+	"item_Cooking_3026": {
+		"name": "Pikanter gebratener Reis",
+		"description": "Je schärfer, desto besser!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " – Erhöht **Flame Attack +1%** für **Flame Attack +undefined%** Sek."
+	},
+	"item_Cooking_3027": {
+		"name": "Kombo-Grillplatte",
+		"description": "Das muss das Paradies für Fleischesser sein, oder?!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Erhöht **Flame Resistance +15%** für **Flame Resistance +undefined%** Sek."
+	},
+	"item_Cooking_3028": {
+		"name": "Radieschensuppe mit Schwein",
+		"description": "Radieschensuppe mit Schwein, die behutsam einen ganzen Tag lang vor sich hin geköchelt hat. Der Rettich ist tatsächlich noch leckerer als die Spareribs.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Erhöht **Physical Resistance +15%** für **Physical Resistance +undefined%** Sek."
+	},
+	"item_Cooking_3029": {
+		"name": "Maiscremesuppe",
+		"description": "Eine cremige, süße und würzige Suppe. Ist es nicht Zeit, sie endlich mit etwas Brot zu genießen?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**12% + 3300**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3030": {
+		"name": "Knuspriger Schmalzkürbis",
+		"description": "Erst in der Panade wälzen und dann zwei Minuten lang frittieren – fertig!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3031": {
+		"name": "Gegrillte Auster",
+		"description": "Es ist schwierig zu entscheiden, ob man es einfach roh mit etwas Zitrone isst oder grillt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3032": {
+		"name": "Kalter Molchschwanz",
+		"description": "Nach dem ersten Bissen habe ich mich in den Geschmack von Molchschwanz verliebt!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3033": {
+		"name": "Pikanter Schmalzkürbisstreifen",
+		"description": "Dieses appetitanregende Gericht, das kalt serviert wird, würde sich auch gut als Hauptgang eignen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3034": {
+		"name": "Austernsuppe mit Tofu",
+		"description": "Es heißt, dass viele Kinder nicht gerne Fisch essen, und genau dafür wurde diese Suppe gemacht.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_3035": {
+		"name": "Rührei mit Molchschwanz",
+		"description": "Man kann alles mit Eiern verquirlen! Mein Lieblingsgericht damit ist …",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/3035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4001": {
+		"name": "Drachen und Sterne",
+		"description": "Es ist eigentlich nur gekochtes Drachenhals-Schildkrötenfleisch mit Seesternrogen, aber das Restaurant hat sich einen schicken Namen dafür einfallen lassen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4002": {
+		"name": "Gedämpftes Ei mit Meeresaroma",
+		"description": "Drachenhals-Schildkröteneier kommen aus dem Meer, deshalb haben sie ein natürliches Meeresfrüchtearoma.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**20% + 60000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4003": {
+		"name": "Kugelfischsalat",
+		"description": "Ein köstlicher Kugelfischsalat. Den sollte man probiert haben!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4004": {
+		"name": "Frischer Kugelfisch",
+		"description": "Ein Kugelfischgericht, das die verschiedenen Teile des teuren Fischs voll zur Geltung bringt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Erhöht **Frost Attack +4%** für **Frost Attack +undefined%** Sek."
+	},
+	"item_Cooking_4005": {
+		"name": "Gegrillter Kugelfisch",
+		"description": "Dieser saftige Kugelfisch wird dir auf der Zunge zergehen … So steht es zumindest in der Speisekarte.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4006": {
+		"name": "Weißer Lotus",
+		"description": "Die dünn geschnittenen, aufgeschichteten rohen Kugelfischstücke sehen aus wie eine Lotusblüte.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "Erhöht **Frost Attack +2%** für **Frost Attack +undefined%** Sek."
+	},
+	"item_Cooking_4007": {
+		"name": "Gekochter Tintenfisch",
+		"description": "Frisch und bissfest, ein empfehlenswertes Gericht für jedermann.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4008": {
+		"name": "Tintenfischbälle",
+		"description": "Ein köstliches traditionelles Gericht. Sein Geschmack hängt stark von der Größe der Tintenfischstücke ab.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "Erhöht **Volt Resistance +15%** für **Volt Resistance +undefined%** Sek."
+	},
+	"item_Cooking_4009": {
+		"name": "Gegrillte Leckereien",
+		"description": "Ein bei Kindern beliebtes Gericht, das allerdings zu teuer ist, als dass sie es mit ihrem Taschengeld kaufen könnten.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4010": {
+		"name": "Salziger & pikanter gedämpfter Fisch",
+		"description": "Salzwasserfisch ist von Natur aus salzig, und durch das Dämpfen bleibt sein Umami-Geschmack erhalten.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4010",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4011": {
+		"name": "Gebratener Salzwasserfisch",
+		"description": "Dieses Gericht ist viel Arbeit, aber die Mühe sollte dazu beitragen, es noch schmackhafter zu machen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4012": {
+		"name": "Premium-Sashimi",
+		"description": "Ein Gericht, das die Messerkünste des Kochs auf die Probe stellt. Achte aber darauf, nicht zu viel Wasabi drauf zu tun.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "Erhöht **Frost Resistance +15%** für **Frost Resistance +undefined%** Sek."
+	},
+	"item_Cooking_4013": {
+		"name": "Himmelgucker-Kuchen",
+		"description": "Sieht ein Fisch hinauf zum Himmel, wenn er am Leben ist?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4014": {
+		"name": "Meeresfrüchteeintopf",
+		"description": "Wird normalerweise mit Wildfleisch zubereitet, um die Menge der verwendeten seltenen Zutaten zu reduzieren.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"CleanBuff"
+		]
+	},
+	"item_Cooking_4015": {
+		"name": "Gegrillte Anemone",
+		"description": "Kann überwältigend sein, wenn zu viel Chili enthalten ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " – Erhöht **Flame Attack +2%** für **Flame Attack +undefined%** Sek."
+	},
+	"item_Cooking_4016": {
+		"name": "Anemonenblüte",
+		"description": "Füge dem gedämpften Ei Anemone hinzu, um eine reichhaltigere Textur zu erhalten.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4017": {
+		"name": "Langlebigkeit",
+		"description": "Die Drachenhals-Schildkröte ist eine verheißungsvolle Kreatur, deshalb geben Restaurants ihr gerne verschiedene Namen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "Erhöht **40** für **undefined** Sek."
+	},
+	"item_Cooking_4018": {
+		"name": "Glücksei",
+		"description": "Nichts weiter als ein Drachenhals-Schildkrötenei, aber es verkauft sich besser, wenn es gefärbt ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Erhöht **Physical Attack +4%** für **Physical Attack +undefined%** Sek."
+	},
+	"item_Cooking_4019": {
+		"name": "Glücksei (pink)",
+		"description": "Nichts weiter als ein Drachenhals-Schildkrötenei, aber es verkauft sich besser, wenn es gefärbt ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_016",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4020": {
+		"name": "Glücksei (rot)",
+		"description": "Nichts weiter als ein Drachenhals-Schildkrötenei, aber es verkauft sich besser, wenn es gefärbt ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_015",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "Erhöht **50** für **undefined** Sek."
+	},
+	"item_Cooking_4021": {
+		"name": "Kalte Qualle",
+		"description": "Knusprig und erfrischend. Wenn man einmal angefangen hat, kann man nicht mehr aufhören!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**13% + 10000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4022": {
+		"name": "Gebratene Qualle mit Pilzen",
+		"description": "Diese Mischung aus Pilzen und Qualle ist himmlisch, aber am besten schmeckt sie mit Reis. Ehe du es überhaupt bemerkst, hast du bereits einen ganzen Teller verputzt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4023": {
+		"name": "Saftiger Kalmar",
+		"description": "Iss diese saftigen, prallen Dinger nicht in der Öffentlichkeit, wenn du nicht weißt, wie man sie richtig zu essen hat.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4024": {
+		"name": "Kalmar-Mischung",
+		"description": "Ein köstliches Gericht, das noch beliebter sein würde, wenn es appetitlichere Farben hätte.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Erhöht **Volt Attack +2%** für **Volt Attack +undefined%** Sek."
+	},
+	"item_Cooking_4025": {
+		"name": "Gekochter Fischbrei",
+		"description": "Ein gesunder Brei für alle, die keinen Appetit haben.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4026": {
+		"name": "Eingelegter Fisch",
+		"description": "Nichts für Menschen, aber definitiv was für Katzen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "Erhöht **Flame Resistance +15%** für **Flame Resistance +undefined%** Sek."
+	},
+	"item_Cooking_4027": {
+		"name": "Großer Hummer auf Reis",
+		"description": "Hummer, Hummer und noch mehr Hummer! Ein Gericht, das man nur am Meer genießen kann.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "Erhöht **Physical Attack +2%** für **Physical Attack +undefined%** Sek."
+	},
+	"item_Cooking_4028": {
+		"name": "Scharfe Languste",
+		"description": "Schmeckt in kleineren Stücken genauso gut!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4029": {
+		"name": "Gedünstetes Ei mit Krabbe",
+		"description": "Schmeckt gut … aber ist es Krabbe? Oder ist es ein Krabbenimitat?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4030": {
+		"name": "Luxuriöser gebratener Reis mit Krabben",
+		"description": "Dieses Gericht ist im wahrsten Sinne des Wortes so luxuriös, dass niemand es ablehnen kann.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4031": {
+		"name": "Königskrabbe",
+		"description": "Selbst Könige kommen nicht umhin, gegessen zu werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4032": {
+		"name": "Gebratener Krabbenreiskuchen",
+		"description": "Frische, schmackhafte Krabbe in Kombination mit knusprigen Reiswaffeln ergibt ein unglaublich köstliches Gericht.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "Erhöht **Physical Resistance +15%** für **Physical Resistance +undefined%** Sek."
+	},
+	"item_Cooking_4033": {
+		"name": "Goldene Krabbennudeln",
+		"description": "Mit jeder Zutat und jedem zusätzlichen Arbeitsschritt steigt der Preis immer weiter an.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4034": {
+		"name": "Mit Knoblauch gedämpfte Meeresfrüchte",
+		"description": "Ein klassisches Gericht, bei dem frische Meeresfrüchte auf kräftigen Knoblauch treffen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " – Erhöht **Flame Attack +4%** für **Flame Attack +undefined%** Sek."
+	},
+	"item_Cooking_4035": {
+		"name": "Meeresfrüchte-Vermicelli",
+		"description": "Ein schmackhaftes Gericht, das nie zu reichhaltig oder zu fettig wird.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "Erhöht **Volt Attack +4%** für **Volt Attack +undefined%** Sek."
+	},
+	"item_Cooking_4036": {
+		"name": "Mit Käse überbackener Hummer",
+		"description": "Käsig und bissfest.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4036",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "Verwenden, um sofort (**16% + 34000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_Cooking_4037": {
+		"name": "Hummer mit Kalmartinte-Nudeln",
+		"description": "Ein kreatives Gericht, das mit natürlicher Kalmartinte gefärbt ist. Köstlich und stilvoll.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4037",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4038": {
+		"name": "Gebratenes Meeresschneckenfleisch",
+		"description": "Dieses würzige und sehr umami schmeckende Essen ist ein Muss bei jedem nächtlichen Snack.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/4038",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_038",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_5001": {
+		"name": "Bambussprossen-Eintopf",
+		"description": "Eine Mischung aus fettigem und magerem Fleisch, das ein paar Stunden lang mit Bambussprossen geschmort wird, und pikante Gewürze, die das Ganze abrunden. Bevor du es bemerkst, hast du bereits drei Schüsseln Reis verschlungen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/5001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"effect": "Erhöht **Volt Attack +4% Volt Resistance +1800** für **Volt Attack +undefined%Volt Resistance +%** Sek."
+	},
+	"item_Cooking_5007": {
+		"name": "Weiße Jade-Begonien",
+		"description": "Ein kaltes Gericht aus Begonien und Jadegrün.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/5007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Jiuyu_Harvest_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"effect": "Erhöht **Flame Attack +4% Flame Resistance +1800** für **Flame Attack +undefined%Flame Resistance +%** Sek."
+	},
+	"item_activity_cooking_001": {
+		"name": "Spanferkel",
+		"description": "Ein Spanferkel von einem fähigen Koch kann selbst den anspruchsvollsten Gaumen befriedigen.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Apophis und die Rosenkönigin besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_002": {
+		"name": "Geschmorter Truthahn mit Apfel",
+		"description": "Eine Astra-Spezialität. Dank der Bewerbung durch Verkäufer und Reisende ist es auf dem ganzen Kontinent sehr beliebt geworden.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Apophis und die Rosenkönigin besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_003": {
+		"name": "Brathähnchen mit Gemüse",
+		"description": "Verwöhne deine Geschmacksknospen mit einem Biss von einem saftigen Hähnchenschenkel und genieße dazu frischen Kopfsalat. Lecker!\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Apophis und die Rosenkönigin besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_004": {
+		"name": "Lachs aus der Pfanne",
+		"description": "Zarter Lachs mit süßem Honig. Hinterlässt einen wohligen Nachgeschmack im Mund.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Robarg und Sobek besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_005": {
+		"name": "Kleine Sesamreis-Klößchen",
+		"description": "Eine traditionelle Spezialität am Hafen von Banges, nach der Jung und Alt verrückt sind.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Robarg und Sobek besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_006": {
+		"name": "Rote-Bete-Truthahn-Suppe",
+		"description": "Eine Schale mit warmer Suppe, die ganz schnell alle Erschöpfung aus den Knochen vertreibt.\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Robarg und Sobek besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_007": {
+		"name": "Lebkuchen",
+		"description": "Eine beliebte Leckerei auf Feierlichkeiten, die die Süße von Zucker und Honig mit dem angenehmen Aroma von Weizen verbindet.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem Robarg, Apophis, der Frost-Bot, Sobek, die Rosenkönigin und Barbarossa besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_008": {
+		"name": "Apfelkuchen",
+		"description": "Ein saftiges Früchtebrot. Schon allein der Gedanke lässt dir das Wasser im Mund zusammenlaufen.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem der Frost-Bot und Barbarossa besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_009": {
+		"name": "Früchtepunsch",
+		"description": "Ein Getränk mit herrlich fruchtigem Aroma und einem kleinen Schuss Schnaps.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem der Frost-Bot und Barbarossa besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_010": {
+		"name": "Apfelsaft",
+		"description": "Süß und sauer zugleich. Eine im Sommer bei Jung und Alt beliebte Erfrischung.\r\n\r\nAls Beute aus Passworttruhen während des Aida-Café-Events erhältlich, nachdem der Frost-Bot und Barbarossa besiegt wurden. Kann alternativ mit den richtigen Zutaten gekocht werden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity2_cooking_101": {
+		"name": "Ballonfrucht-Crush",
+		"description": "Begib dich mit der Ballonblume in die Welt der Schokolade!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_102": {
+		"name": "Pinienkern-Crush",
+		"description": "Mit Schokolade überzogene Pinienkerne sind das perfekte Geschenk.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_103": {
+		"name": "Erdbeer-Crush",
+		"description": "Süße Erdbeeren und zarte Schokolade – so schmeckt die erste Liebe.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_104": {
+		"name": "Haselnuss-Crush",
+		"description": "Ein mit Schokolade umhülltes Herz, das für die Liebe schlägt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_105": {
+		"name": "Trüffel-Crush",
+		"description": "Man merkt, dass die Zutaten mit Liebe ausgewählt wurden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_106": {
+		"name": "Blaubeer-Crush",
+		"description": "Beiß ab und lass süßsaure Blaubeermarmelade über deine Zunge fließen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_107": {
+		"name": "Honig-Crush",
+		"description": "Eine majestätische Symphonie aus Schokolade und Honig.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_108": {
+		"name": "Gefallene Früchte-Crush",
+		"description": "Ich geb dir das, was mir am liebsten ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_109": {
+		"name": "Kakao-Crush",
+		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_110": {
+		"name": "Milch-Crush",
+		"description": "Milch und Schokolade sind einfach füreinander geschaffen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_201": {
+		"name": "Ballonfruchtkugel",
+		"description": "Begib dich mit der Ballonblume in die Welt der Schokolade!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_202": {
+		"name": "Pinienkernkugel",
+		"description": "Mit Schokolade überzogene Pinienkerne sind das perfekte Geschenk.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_203": {
+		"name": "Erdbeerkugel",
+		"description": "Süße Erdbeeren und zarte Schokolade – so schmeckt die erste Liebe.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_204": {
+		"name": "Haselnusskugel",
+		"description": "Ein mit Schokolade umhülltes Herz, das für die Liebe schlägt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_205": {
+		"name": "Trüffelkugel",
+		"description": "Man merkt, dass die Zutaten mit Liebe ausgewählt wurden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_206": {
+		"name": "Blaubeerkugel",
+		"description": "Beiß ab und lass süßsaure Blaubeermarmelade über deine Zunge fließen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_207": {
+		"name": "Honigkugel",
+		"description": "Eine majestätische Symphonie aus Schokolade und Honig.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_208": {
+		"name": "Gefallene Früchte-Kugel",
+		"description": "Ich geb dir das, was mir am liebsten ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_209": {
+		"name": "Kakaokugel",
+		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_210": {
+		"name": "Milchkugel",
+		"description": "Milch und Schokolade sind einfach füreinander geschaffen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_301": {
+		"name": "Ballonfruchtwürfel",
+		"description": "Begib dich mit der Ballonblume in die Welt der Schokolade!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_302": {
+		"name": "Pinienkernwürfel",
+		"description": "Mit Schokolade überzogene Pinienkerne sind das perfekte Geschenk.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_303": {
+		"name": "Erdbeerwürfel",
+		"description": "Süße Erdbeeren und zarte Schokolade – so schmeckt die erste Liebe.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_304": {
+		"name": "Haselnusswürfel",
+		"description": "Ein mit Schokolade umhülltes Herz, das für die Liebe schlägt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_305": {
+		"name": "Trüffelwürfel",
+		"description": "Man merkt, dass die Zutaten mit Liebe ausgewählt wurden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_306": {
+		"name": "Blaubeerwürfel",
+		"description": "Beiß ab und lass süßsaure Blaubeermarmelade über deine Zunge fließen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_307": {
+		"name": "Honigwürfel",
+		"description": "Eine majestätische Symphonie aus Schokolade und Honig.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_308": {
+		"name": "Gefallene Früchte-Würfel",
+		"description": "Ich geb dir das, was mir am liebsten ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_309": {
+		"name": "Kakaowürfel",
+		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_310": {
+		"name": "Milchwürfel",
+		"description": "Milch und Schokolade sind einfach füreinander geschaffen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_001": {
+		"name": "Cetus-Souvenir",
+		"description": "Geschenktruhe „Schokolade“ im Elektromantie-Stil, Hannas stolzes Werk.\r\nDie Doktorin sagt, Köstlichkeiten muss man mit wichtigen Personen teilen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_002": {
+		"name": "Cetus-Souvenir",
+		"description": "Geschenktruhe „Schokolade“ im „Physisches Element“-Stil, Hannas stolzes Werk.\nDie Doktorin sagt, Köstlichkeiten muss man mit wichtigen Personen teilen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_003": {
+		"name": "Cetus-Souvenir",
+		"description": "Geschenktruhe „Schokolade“ im Pyromantie-Stil, Hannas stolzes Werk.\nDie Doktorin sagt, Köstlichkeiten muss man mit wichtigen Personen teilen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_004": {
+		"name": "Cetus-Souvenir",
+		"description": "Geschenktruhe „Schokolade“ im Kryomantie-Stil, Hannas stolzes Werk.\nDie Doktorin sagt, Köstlichkeiten muss man mit wichtigen Personen teilen!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity2_cooking_005": {
+		"name": "Knuspriger Reiskuchen",
+		"description": "Einer der beliebtesten Snacks von Planet Aida. Mitglieder der Hyänen und Ravager haben um ein einziges Stück von diesem Kuchen gekämpft.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity2_cooking_006": {
+		"name": "Geschenktruhe „Schokolade“",
+		"description": "Köstlichkeiten müssen mit wichtigen Personen geteilt werden!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"HealPotion_01": {
+		"name": "Frühlingspfannkuchen",
+		"description": "Der beliebteste Snack auf dem Frühlingsmarkt,\r\nallerdings ist es unmöglich, den Geschmack am Aussehen zu erkennen …",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "Verwenden, um sofort (**22% + 75000**) LP des Wanderers wiederherzustellen."
+	},
+	"BuffPotion_01": {
+		"name": "Pinienbrise",
+		"description": "Auf dem Frühlingsmarkt erhältliches Getränk.\r\nEin Schluck von diesem Getränk gibt dir das Gefühl, mitten in einem Pinienwald zu stehen, während die sanfte Frühlingsbrise deine Wangen streichelt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity3_cooking_101": {
+		"name": "Originale Tafel",
+		"description": "Wer könnte schon dem herrlichen Duft von Schokolade widerstehen?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_102": {
+		"name": "Nusswürfel",
+		"description": "Schokolade mit Nüssen ist äußerst lecker!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_103": {
+		"name": "Haselnusswürfel",
+		"description": "Zum seidig-weichen Mundgefühl gesellt sich ein wunderbares Haselnussaroma, das zusammen mit der Schokolade eine ganz neue Geschmackswelt erzeugt.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_104": {
+		"name": "Drachenfeuerwürfel",
+		"description": "Wen kümmert es schon, ob es Kerne hat oder nicht, wenn es doch Schokolade zu genießen gibt?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_105": {
+		"name": "Kakaowürfel",
+		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_106": {
+		"name": "Schwanzwürfel",
+		"description": "Der letzte Schrei unter den Schokoladensorten mit ausgefallenem Geschmack. Traust du dich, sie zu probieren?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_107": {
+		"name": "Fleischwollwürfel",
+		"description": "Fleisch-Wolle mit Schokoladengeschmack, eine weitere Bereicherung für die dunkle Welt der Untergrundküche.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_108": {
+		"name": "Pilzwürfel",
+		"description": "Schokoladenpralinen sind immer eine herrliche Überraschung.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_109": {
+		"name": "Gesalzener Eierwürfel",
+		"description": "Das Eigelb ist körnig und feucht und hat einen unverkennbaren Geschmack.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_110": {
+		"name": "Surimiwürfel",
+		"description": "Diese Schokolade zeichnet sich durch intensive Aromen von Meeresfrüchten aus.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_201": {
+		"name": "Kaffeekugel",
+		"description": "Ich möchte mit dir das Bittere und das Süße der Reise genießen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_202": {
+		"name": "Schnapskugel",
+		"description": "Die sanften Aromen von Wein und Schokolade vereinen sich zu einer zarten Melodie.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_203": {
+		"name": "Blumenkugel",
+		"description": "Beim Reinbeißen entfaltet sich ein atemberaubendes blumiges Aroma, das an Rosen zum Valentinstag erinnert.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_204": {
+		"name": "Erdbeerkugel",
+		"description": "Süße Erdbeeren und zarte Schokolade – so schmeckt die erste Liebe.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_205": {
+		"name": "Kakaokugel",
+		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_206": {
+		"name": "Ballonfruchtkugel",
+		"description": "Begib dich mit der Ballonblume in die Welt der Schokolade!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_207": {
+		"name": "Fleischwollkugel",
+		"description": "Zarte Schokolade und fluffige Füllung sorgen für einen ganz neuen Geschmack.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_208": {
+		"name": "Meersalzkugel",
+		"description": "Keine Lust mehr auf süß? Probier's doch mal mit salzig!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_209": {
+		"name": "Trüffelkugel",
+		"description": "Man merkt, dass die Zutaten mit Liebe ausgewählt wurden.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_210": {
+		"name": "Surimikugel",
+		"description": "Es gibt mehr als eine Weise, eine gute Krabbenkeule zuzubereiten.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_301": {
+		"name": "Minze-Crush",
+		"description": "Ein kalter Geschmack, der unermesslich erfrischend ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_302": {
+		"name": "Sahne-Crush",
+		"description": "Gibt es etwas, das mit Sahne konkurrieren kann, wenn es um Süßes geht?",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_303": {
+		"name": "Gefallene Früchte-Crush",
+		"description": "Ich geb dir das, was mir am liebsten ist.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_304": {
+		"name": "Blaubeer-Crush",
+		"description": "Beiß ab und lass süßsaure Blaubeermarmelade über deine Zunge fließen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_305": {
+		"name": "Kakao-Crush",
+		"description": "Zarte dunkle Schokolade, kombiniert mit einer leicht bitteren, weichen Creme.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_306": {
+		"name": "Fischtran-Crush",
+		"description": "Diese nährstoffreiche Schokolade ist die erste Wahl für jeden Gesundheitsfanatiker.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_307": {
+		"name": "Scharfes Crush",
+		"description": "Eine Nuss, die es in sich hat.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_308": {
+		"name": "Fleischwoll-Crush",
+		"description": "Eine eiskalte Schale mit einer sanften Füllung.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_309": {
+		"name": "Rogen-Crush",
+		"description": "Allein die Zutaten zeigen, wie teuer er ist!",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	},
+	"item_activity3_cooking_310": {
+		"name": "Surimi-Crush",
+		"description": "Diese Schokolade hat sich in den Augen der Kritiker als ziemlich polarisierend erwiesen.",
+		"buff": "Hauptgericht",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "Verwenden, um sofort (**15% + 20000**) LP des Wanderers wiederherzustellen."
+	}
+}

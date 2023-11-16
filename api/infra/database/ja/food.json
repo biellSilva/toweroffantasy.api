@@ -1,0 +1,5599 @@
+{
+	"Task_Area2Cooking": {
+		"name": "麻酔入りドッグフード",
+		"description": "    飼いならされた猟犬の大好物",
+		"buff": "軽食",
+		"icon": "/Game/Resources/Icon/caiyao/Task_Area2Cooking",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"categories": []
+	},
+	"Item_Cooking_0901": {
+		"name": "ごった煮シチュー",
+		"description": "よく分からない食べ物を大鍋でぐちゃぐちゃに煮たシチュー。火が通ると同時に栄養の大部分が失われた",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_901",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_0902": {
+		"name": "そこそこシチュー",
+		"description": "調理面では成功に見えるが、食材の選択がまずかったようだ…",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_902",
+		"stars": 0,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1001": {
+		"name": "キノコ炒め",
+		"description": "火はしっかり通っているが、味は改善の余地あり",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**10%+1500**)Pt回復する"
+	},
+	"Item_Cooking_1002": {
+		"name": "海苔玉子スープ",
+		"description": "おいしい海苔とタンパク質の栄養でお腹を満たせる便利な料理",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1003": {
+		"name": "焼き魚",
+		"description": "港町ベンジスで大人気の安くておいしい軽食",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1004": {
+		"name": "雑穀パン",
+		"description": "麦の加工食品。栄養たっぷりで保存もきく探索者の必需品",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1005": {
+		"name": "オートミール",
+		"description": "昔は水で5、6人分にふやかして食べる救命食だったが、豊かになった今では牛乳をかけて食べている",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1006": {
+		"name": "ステーキ",
+		"description": "焼き加減はどうする？真の猛者なら、太陽の照り付ける石の上で焼いてかぶりつくのが正解",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1007": {
+		"name": "海鮮スープ",
+		"description": "一口で脳が活性化し、二口で不老長寿になると言われている。ただし味はごく普通",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "**Frost Attack +1%**アップ、**Frost Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_1008": {
+		"name": "クリスピーチキンバーガー",
+		"description": "ファストフード店の定番メニュー。熱々のクリスピーチキンにしゃっきり野菜を合わせた食感の楽しめる一品",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1009": {
+		"name": "スパイシーバーガー",
+		"description": "どれだけ大人になっても、もっと食べたいと思える味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "**Physical Attack +1%**アップ、**Physical Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_1010": {
+		"name": "玉子チャーハン",
+		"description": "白ご飯を食べ飽きたのなら、卵を加えてみてはいかが？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1011": {
+		"name": "カニの姿蒸し",
+		"description": "海鮮はそのまま味わうのが一番。さて、どこから箸をつけよう？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1011",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"Item_Cooking_1012": {
+		"name": "氷イチゴソーダ",
+		"description": "つぶしたイチゴをソーダに混ぜて、冷たい氷を入れた夏の定番品",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "**Flame Resistance +10%**アップ、**Flame Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_1013": {
+		"name": "炎フレーバーソーダ",
+		"description": "アフタヌーンティーの時間！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [],
+		"effect": "**10**アップ、**undefined**秒間持続"
+	},
+	"Item_Cooking_1014": {
+		"name": "雷雲ブルーベリーソーダ",
+		"description": "このブルーベリーは、雷雨の時の黒雲のように黒みがかった紫色。服につくと洗っても中々とれないので、ご注意を",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "**Volt Resistance +10%**アップ、**Volt Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_1015": {
+		"name": "トマトタマゴ炒め",
+		"description": "べ、べつに卵をぐちゃぐちゃにしすぎて変になったわけじゃない！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1016": {
+		"name": "簡単パワーサラダ",
+		"description": "人体に必要な栄養を考慮して作ったベーシックなサラダ。脂質を減らしたい人におすすめ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "**Physical Resistance +10%**アップ、**Physical Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_1017": {
+		"name": "フレッシュサラダ",
+		"description": "特選サラダその1。シンプルな食材で満足いく味が楽しめる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**10%+1500**)Pt回復する"
+	},
+	"Item_Cooking_1018": {
+		"name": "キノコスープ",
+		"description": "長時間煮込んだ料理。キノコのおいしさと野菜の爽やかさが完全に融合している",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1019": {
+		"name": "目玉焼き",
+		"description": "目玉焼きで素晴らしい一日を始めよう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1019",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**10%+1500**)Pt回復する"
+	},
+	"Item_Cooking_1020": {
+		"name": "蒸し巻貝",
+		"description": "素材本来の味が生かされている。ネギのみじん切りを散らすと更においしくなる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1021": {
+		"name": "ウニの茶碗蒸し",
+		"description": "ウニの粒感につるりとした卵を合わせた、おいしくて心温まる料理。雪原地帯で大人気の一品",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"Item_Cooking_1022": {
+		"name": "ダブルベリージャムトースト",
+		"description": "2種類のベリーが甘酸っぱいハーモニーを奏でている",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "**Volt Attack +1%**アップ、**Volt Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_1023": {
+		"name": "トマトと玉子のパスタ",
+		"description": "ほどよい酸味と塩気のきいた簡単料理。おいしい上に低脂肪低カロリー",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits006",
+				"min": " 4",
+				"max": " 4"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - **Flame Attack +1%**アップ、**Flame Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_1024": {
+		"name": "肉じゃが",
+		"description": "栄養をたっぷり吸収した肉は、人参と同じくらい美味！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1024",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1025": {
+		"name": "フライドポテト",
+		"description": "ジャンクフードと呼ぶのは許さない！快楽の源と呼ぶべき！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1025",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1026": {
+		"name": "野菜サラダ",
+		"description": "特選サラダその3。一緒にピクニックに行こう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1027": {
+		"name": "フライドチキン",
+		"description": "手軽な軽食。黄金色にカラリと揚がった衣が、食欲をそそる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1027",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1028": {
+		"name": "ハニーフルーツドリンク",
+		"description": "しぼりたての落果ジュースに少量のハチミツを入れて軽くシェイクした飲み物。青臭さの中にほのかな甘みを感じる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1028",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1029": {
+		"name": "フルーツケーキ",
+		"description": "甘いケーキに解決できない悩みはない。1つ食べてダメなら、もう1つ頼もう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"Item_Cooking_1030": {
+		"name": "オラムジュース",
+		"description": "夏のスペシャルメニュー。波乗り気分が味わえる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1030",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1031": {
+		"name": "ブロッコリー炒め",
+		"description": "脂肪分の少ないヘルシーな食べ物。でも大人にはあまり好まれない",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1032": {
+		"name": "ホダ貝の水煮",
+		"description": "余計な調味料を足さなくても、シンプルなおいしさを味わえる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1032",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"Item_Cooking_1033": {
+		"name": "肉まん",
+		"description": "かむとじゅわっと溢れる肉汁、それが肉まんのだいご味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1033",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_1034": {
+		"name": "魚のキノコ炒め",
+		"description": "丁寧に調理された魚とキノコが完璧に調和した一品",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1034",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fishes_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_1035": {
+		"name": "グリルチキン",
+		"description": "BBQグリルとスツールを準備すれば、どこからかお肉の焼ける匂いが漂ってくる気がしない？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1035",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"Item_Cooking_1036": {
+		"name": "タンポポキノコスープ",
+		"description": "タンポポとキノコの組み合わせを試してみたことは？飲み終えると、足取りが軽くなる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/1036",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Dandelion_zhongzi",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"Item_Cooking_2001": {
+		"name": "魚とゆで卵の煮物",
+		"description": "ベンジスの家庭料理。ん～我が家の味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
+	},
+	"Item_Cooking_2002": {
+		"name": "赤麦パン",
+		"description": "アイダ星人の主食。暮らしの本質は、平凡なものにこそ現れるもの",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"Item_Cooking_2003": {
+		"name": "わらび餅",
+		"description": "ワラビ入りのヘルシーな麦餅。子どもには不人気",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"Item_Cooking_2004": {
+		"name": "チョコパン",
+		"description": "中には濃厚なチョコレートクリームがぎっしり！ダイエットの話はまた明日にしよう",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"Item_Cooking_2005": {
+		"name": "ヒクラゲキノコスープ",
+		"description": "雪山に登るときは、熱々のヒクラゲキノコスープで心身を癒すのが一番だと思わない？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
+	},
+	"Item_Cooking_2006": {
+		"name": "クロズゴケスープ",
+		"description": "今日はとりあえずこれで済ませて、明日またおいしいものを食べよう",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Greens011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
+	},
+	"Item_Cooking_2007": {
+		"name": "バルーンフルーツサラダ",
+		"description": "特選サラダその2。甘酸っぱくて子どもが好きな味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fruits006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"Item_Cooking_2008": {
+		"name": "ワラビスープ",
+		"description": "ああ、今日も野菜だらけの1日だった",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"Item_Cooking_2009": {
+		"name": "ピリ辛ウナギ",
+		"description": "この電気ウナギ、ちゃんと火が通ってる？舌がしびれるんだけど？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "**Volt Resistance +10%**アップ、**Volt Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_2010": {
+		"name": "ウナギとキノコのスープ",
+		"description": "舌先の辛さ我慢比べ大会。刺激が欲しいなら、一気飲みをおすすめ！こっそり水を飲むのは禁止",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/Item_Cooking_0221",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "**Volt Attack +1%**アップ、**Volt Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_2011": {
+		"name": "海ガニのスープ",
+		"description": "カニのエキスがスープにたっぷり溶け込んでいる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "**Flame Resistance +10%**アップ、**Flame Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_2012": {
+		"name": "ザクロジュース",
+		"description": "目の錯覚？ジュースが光って見える",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"Item_Cooking_2013": {
+		"name": "ココア牛乳",
+		"description": "寝る前に飲むと、ココア味の素敵な夢が見られる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "**Frost Resistance +10%**アップ、**Frost Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_2014": {
+		"name": "ドラゴンフルーツ茶",
+		"description": "ケーキセットにすれば、完璧なアフタヌーンティーの完成",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - **Flame Attack +1%**アップ、**Flame Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_2015": {
+		"name": "フジツボ煮込み",
+		"description": "煮込み料理って最高！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "**Physical Resistance +10%**アップ、**Physical Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_2016": {
+		"name": "フジツボのシーフードピザ",
+		"description": "シーフード倍量で！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells009",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"Item_Cooking_2017": {
+		"name": "ユキホトトギス茶",
+		"description": "寒い季節、のんびり火にあたっている時に飲みたい",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Follows002",
+				"min": " 2",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "**Frost Attack +1%**アップ、**Frost Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_2018": {
+		"name": "松の実ココア",
+		"description": "ナッツの風味を加えたココア牛乳。お好きな方はもっとナッツを足すといい",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"Item_Cooking_2019": {
+		"name": "ナッツ茶",
+		"description": "濃厚なナッツのいい香りがする",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"Item_Cooking_2020": {
+		"name": "ハッシュドポテト",
+		"description": "腹持ちのいい食べ物。長旅にぴったりの携帯食",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Staples_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "**Volt Attack +2%**アップ、**Volt Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_2021": {
+		"name": "スノーロータススープ",
+		"description": "スノーロータスにはこれといった味がないため、砂糖を足して万人受けするスイーツにする",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Follows001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"Item_Cooking_2022": {
+		"name": "トリュフチャーハン",
+		"description": "トリュフを炒めてご飯を投入し、きれいに混ぜ合わせれば出来上がり",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "**Physical Attack +2%**アップ、**Physical Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_2023": {
+		"name": "冬虫夏草麺",
+		"description": "ふう、養生が必要な年になった…",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Greens012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"Item_Cooking_2024": {
+		"name": "キャビア寿司",
+		"description": "きれいに巻けると超高級料理に見えるが、巻き方が悪いと…キャビアの混ぜご飯を食べた方がマシ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Greens007",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"Item_Cooking_2025": {
+		"name": "キャビアポテトボール",
+		"description": "ふわふわのポテトボールと高級キャビアソースの組み合わせ。おいしすぎてついつい手が伸びる逸品",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "**Physical Attack +1%**アップ、**Physical Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_2026": {
+		"name": "ステーキ",
+		"description": "ミディアムで！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "**Volt Resistance +15%**アップ、**Volt Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_2027": {
+		"name": "キノコソースステーキ",
+		"description": "ステーキがいっぱい空を飛んでる夢を見たような…",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_004",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - **Flame Attack +2%**アップ、**Flame Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_2028": {
+		"name": "豚バラの煮込み",
+		"description": "古くから愛される定番グルメ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "**Frost Resistance +15%**アップ、**Frost Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_2029": {
+		"name": "獣肉サンドイッチ",
+		"description": "少し時間をかけて、自分のためにおいしい朝食を作ってみない？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "**Flame Resistance +15%**アップ、**Flame Resistance +undefined%**秒間持続"
+	},
+	"Item_Cooking_2030": {
+		"name": "サーモンの刺身",
+		"description": "素材本来のうまさが楽しめる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "**Frost Attack +2%**アップ、**Frost Attack +undefined%**秒間持続"
+	},
+	"Item_Cooking_2031": {
+		"name": "カタツムリドリア",
+		"description": "ゲテモノ料理っぽく見えるが、超美味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "**Physical Resistance +15%**アップ、**Physical Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_3001": {
+		"name": "トウガラシ炒め",
+		"description": "からーーい辛い辛い辛いっ！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "**Frost Resistance +10%**アップ、**Frost Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_3002": {
+		"name": "スナネギの炭火焼き",
+		"description": "探索者のおいしいバーベキュー店、オープン！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/2031",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3003": {
+		"name": "アロエヨーグルト",
+		"description": "甘酸っぱいヨーグルトは誰だって好きだよね？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"item_Cooking_3004": {
+		"name": "ローズティー",
+		"description": "ローズティーを淹れると、乱れた心も不思議と落ち着いてくる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"item_Cooking_3005": {
+		"name": "サンシーベリーサイダー",
+		"description": "ハチミツをたっぷり入れて、ありきたりなシーベリージュースに風味を添えている",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3006": {
+		"name": "ビーツスープ",
+		"description": "温かいビーツのスープ。寒い日なら鍋一杯でも飲み干したい",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"item_Cooking_3007": {
+		"name": "メロンサラダ",
+		"description": "冷やすともっとおいしいが、冷やしすぎには注意",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "**Flame Resistance +10%**アップ、**Flame Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_3008": {
+		"name": "サンシーベリーサイダー",
+		"description": "ハチミツをたっぷり入れて、ありきたりなシーベリージュースに風味を添えている",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3009": {
+		"name": "カボチャ粥",
+		"description": "お腹が一杯になる主食。一杯飲めば他に何もいらないだろう",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3010": {
+		"name": "クリスピー豆腐",
+		"description": "こんがりサクサクに揚がった軽食。ソースが服に付かないように注意！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3011": {
+		"name": "大根スープ",
+		"description": "栄養たっぷりのスープ。おいしい、おかわり！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"item_Cooking_3012": {
+		"name": "塩胡椒コーン",
+		"description": "簡単に作れる軽食。夜食にぴったり",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3012",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddSatiety"
+		]
+	},
+	"item_Cooking_3013": {
+		"name": "サボテンSPドリンク",
+		"description": "爽やかなサボテンSPドリンク、暑気払いに必須",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3013",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_POOR",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**10%+1500**)Pt回復する"
+	},
+	"item_Cooking_3014": {
+		"name": "尻尾の炭火焼き",
+		"description": "トウガラシ、クミン、コショウたっぷり、食べるのは少し待ってから",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3014",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"item_Cooking_3015": {
+		"name": "BBQスペアリブ",
+		"description": "超ご飯が進む一品！右に出るものなし！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3015",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3016": {
+		"name": "豆乳ココア",
+		"description": "普通の豆乳に飽きたなら、別の味はどう？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3016",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3017": {
+		"name": "ビーツとワラビの和え物",
+		"description": "煮た食材を掬い上げ、ソースを入れて混ぜれば完成だ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3017",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3018": {
+		"name": "砂漠サラダ",
+		"description": "玉サボテンとシーベリーを小さく切ってドレッシングと和えるだけ。冷やせばもっとおいしくなるよ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3018",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3019": {
+		"name": "ローズパン",
+		"description": "優しい薔薇の香りがするパンを食べて、心地よい午後を過ごそう",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "**Volt Resistance +15%**アップ、**Volt Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_3020": {
+		"name": "メロンパン",
+		"description": "メロン餡がぎっしり詰まった丸いパン。朝ごはんはこれ1個で十分",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3020",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "**Frost Attack +1%**アップ、**Frost Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_3021": {
+		"name": "雑穀粥",
+		"description": "様々な雑穀を入れて炊いたお粥。たまにはあっさりしたものを",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3021",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3022": {
+		"name": "シーフードコーンパイ",
+		"description": "海鮮てんこ盛りのトルティーヤ。これじゃ元が取れないよ！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3022",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3023": {
+		"name": "蒸しカボチャ",
+		"description": "やわらかくて甘い蒸しカボチャ。ダイエット食に最適。",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3023",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_Cooking_3024": {
+		"name": "ほっこりラーメン",
+		"description": "ツルツルの麺に温かい鶏ガラスープを、誕生日の長寿麺だと思ってお願いしよう",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "**Physical Attack +2%**アップ、**Physical Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_3025": {
+		"name": "ピリ辛叉焼麺",
+		"description": "私の腕は来々亭にも負けないよ～",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - **Flame Attack +2%**アップ、**Flame Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_3026": {
+		"name": "激辛黄金炒飯",
+		"description": "水を飲んで、ご飯をかき込もう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3026",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - **Flame Attack +1%**アップ、**Flame Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_3027": {
+		"name": "肉グリル盛合わせ",
+		"description": "ここは肉愛好家の天国なの！？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "**Flame Resistance +15%**アップ、**Flame Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_3028": {
+		"name": "スペアリブと大根のスープ",
+		"description": "一日かけてじっくり煮込んだスペアリブと大根のスープ。実はね、大根の方がスペアリブよりうまいんだよ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_011",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "**Physical Resistance +15%**アップ、**Physical Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_3029": {
+		"name": "コーンポタージュ",
+		"description": "ミルクの香り漂う濃厚な甘いスープ。パンと一緒にいかがでしょう？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3029",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**12%+3300**)Pt回復する"
+	},
+	"item_Cooking_3030": {
+		"name": "クリスピーアブラウリ",
+		"description": "唐揚げ粉をまぶして2分揚げれば完成！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"item_Cooking_3031": {
+		"name": "焼きガキ",
+		"description": "レモン汁をかけて生で食べるか、それとも焼くか、迷う",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"item_Cooking_3032": {
+		"name": "ドクダミの和え物",
+		"description": "一度食べたら、ドクダミの味にやみつき！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"item_Cooking_3033": {
+		"name": "ピリ辛アブラウリ",
+		"description": "食欲を増進させる冷たい前菜。主食として食べてもおいしい",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruits008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"item_Cooking_3034": {
+		"name": "カキと豆腐のスープ",
+		"description": "魚嫌いな子どもが多いと聞き、特別にこのスープを作ってみました",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"item_Cooking_3035": {
+		"name": "ドクダミの卵炒め",
+		"description": "卵炒めは何にでも合う！その中で一番好きなのが…",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/3035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Greens009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 3",
+				"max": " 3"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"item_Cooking_4001": {
+		"name": "竜の星めぐり",
+		"description": "竜亀の肉とヒトデの卵を煮ただけなのだが、売れるように名前を変えている",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4002": {
+		"name": "海の茶碗蒸し",
+		"description": "海で採れる竜亀の卵は海の味がする",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4002",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**20%+60000**)Pt回復する"
+	},
+	"item_Cooking_4003": {
+		"name": "フグのサラダ",
+		"description": "フグのサラダ。おいしいのでお試しあれ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4003",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"DiveSpeed"
+		]
+	},
+	"item_Cooking_4004": {
+		"name": "新鮮なフグ",
+		"description": "フグ料理の一種。高価なフグを店では食材として全身無駄なく利用している",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4004",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 3",
+				"max": " 3"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "**Frost Attack +4%**アップ、**Frost Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_4005": {
+		"name": "フグのあぶり焼き",
+		"description": "柔らかくてジューシー、とろけるような口当たり…と店にはこう書いてある",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4005",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"item_Cooking_4006": {
+		"name": "白ハス刺し",
+		"description": "幾重にも重なるハスの花びらのように美しいフグの刺身",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4006",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceAtk"
+		],
+		"effect": "**Frost Attack +2%**アップ、**Frost Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_4007": {
+		"name": "タコの刺身",
+		"description": "プリプリと歯ごたえがあるのに軟らかい。おすすめの一品",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4008": {
+		"name": "たこ焼き",
+		"description": "昔ながらのおいしいたこ焼き。タコの大きさがおいしさの決め手",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4008",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_03",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderDef"
+		],
+		"effect": "**Volt Resistance +15%**アップ、**Volt Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_4009": {
+		"name": "鉄板焼き",
+		"description": "子どもたちに大人気の料理。しかし、子どものお小遣いでは到底買えない",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4009",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
+	},
+	"item_Cooking_4010": {
+		"name": "魚の塩蒸し",
+		"description": "海水魚には塩気があるので、そのまま蒸すだけでおいしい",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4010",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
+	},
+	"item_Cooking_4011": {
+		"name": "海魚のソテー",
+		"description": "手の込んだ料理なので、味もおいしいはず",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4011",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"item_Cooking_4012": {
+		"name": "特上刺身",
+		"description": "料理人の腕が試される料理。食べる時はワサビのつけすぎに注意",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4012",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"IceDef"
+		],
+		"effect": "**Frost Resistance +15%**アップ、**Frost Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_4013": {
+		"name": "スターゲイザー",
+		"description": "魚は生きていた時、星空を見上げただろうか？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4013",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4014": {
+		"name": "シーフードシチュー",
+		"description": "獣肉と一緒に煮込めば、貴重な食材も少量で済む",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4014",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_005",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"CleanBuff"
+		]
+	},
+	"item_Cooking_4015": {
+		"name": "イソギンチャクのグリル",
+		"description": "トウガラシを入れすぎるとむせちゃうよ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4015",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - **Flame Attack +2%**アップ、**Flame Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_4016": {
+		"name": "イソギンチャクフラワー",
+		"description": "茶碗蒸しにイソギンチャクをいれたら、食感がよくなる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4016",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_006",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
+	},
+	"item_Cooking_4017": {
+		"name": "Panjang Umur",
+		"description": "竜亀は縁起がいいので、店は凝った名前を付けたがる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4017",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "+**40**、**undefined**秒間持続"
+	},
+	"item_Cooking_4018": {
+		"name": "ハッピーエッグ",
+		"description": "ゆでた竜亀の卵。しかし、人工着色料が使われている。よく売れる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4018",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Shells007",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "**Physical Attack +4%**アップ、**Physical Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_4019": {
+		"name": "ピンクエッグ",
+		"description": "ゆでた竜亀の卵。しかし、人工着色料が使われている。よく売れる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4019",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_016",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4020": {
+		"name": "レッドエッグ",
+		"description": "ゆでた竜亀の卵。しかし、人工着色料が使われている。よく売れる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4020",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_008",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_015",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_04",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddEnergyRecover"
+		],
+		"effect": "+**50**、**undefined**秒間持続"
+	},
+	"item_Cooking_4021": {
+		"name": "クラゲ和え",
+		"description": "コリコリしておいしい。食べ始めたら止まらない",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4021",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_019",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**13%+10000**)Pt回復する"
+	},
+	"item_Cooking_4022": {
+		"name": "キノコクラゲ炒め",
+		"description": "フクロタケとクラゲの香ばしさでご飯が進む。あっという間に完食しちゃいそうだ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4022",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_009",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4023": {
+		"name": "トロトロイカ",
+		"description": "とてもジューシーでプリプリのイカの子ども。正しい食べ方を知らない人は、人前で食べない方がいいだろう",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4023",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4024": {
+		"name": "イカスミ和え",
+		"description": "香り豊かでおいしい料理。ほかの色にすれば人気が出るはず",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4024",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "**Volt Attack +2%**アップ、**Volt Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_4025": {
+		"name": "魚の塩がゆ",
+		"description": "体に優しい魚のおかゆ。食欲がない人におすすめ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4025",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4026": {
+		"name": "魚の干物",
+		"description": "人間の口には合わないかもしれないが、猫たちには大好評",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4026",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_011",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"FireDef"
+		],
+		"effect": "**Flame Resistance +15%**アップ、**Flame Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_4027": {
+		"name": "豪快ロブスター丼",
+		"description": "ロブスターをたっぷり使った豪快な料理。海辺でしか味わえないぜいたくな味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4027",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyAtk"
+		],
+		"effect": "**Physical Attack +2%**アップ、**Physical Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_4028": {
+		"name": "スパイシーザリガニ",
+		"description": "大きなロブスターを小さく切ったらザリガニになる…よね？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4028",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4029": {
+		"name": "カニ入り茶碗蒸し",
+		"description": "おいしいカニ肉入り茶碗蒸し。中に入っているのは本物のカニか、それともカニカマか？",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4029",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Shells008",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4030": {
+		"name": "豪華カニチャーハン",
+		"description": "みんなが大好きなカニ入りチャーハン。カニをぜいたくに使用しただけではなく…",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4030",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_06",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_05",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4031": {
+		"name": "タラバガニ",
+		"description": "カニはどんなに大きくても食べられてしまう運命",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4031",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_020",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"item_Cooking_4032": {
+		"name": "もちとカニの炒めもの",
+		"description": "香り豊かなカニにしっとりもちもちの餅を加えたもの。不思議な味のハーモニー",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4032",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"PhyDef"
+		],
+		"effect": "**Physical Resistance +15%**アップ、**Physical Resistance +undefined%**秒間持続"
+	},
+	"item_Cooking_4033": {
+		"name": "カニ入り黄金麺",
+		"description": "複雑な手順をいくつも重ねて作られた黄金の麺料理。価格も超ド級",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4033",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_4034": {
+		"name": "シーフードのニンニク蒸し",
+		"description": "ガーリックの強い香りがエビやカニとマッチ。定番のおいしさの料理",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4034",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_014",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Vera_Harvest_002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"FireAtk"
+		],
+		"effect": " - **Flame Attack +4%**アップ、**Flame Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_4035": {
+		"name": "シーフード春雨炒め",
+		"description": "香り豊かでさっぱりした味わいの料理",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4035",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_021",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"ThunderAtk"
+		],
+		"effect": "**Volt Attack +4%**アップ、**Volt Attack +undefined%**秒間持続"
+	},
+	"item_Cooking_4036": {
+		"name": "ロブスターのグラタン",
+		"description": "身に歯ごたえがあり、チーズの香りも豊か",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4036",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_RARE",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [
+			"AddHealth"
+		],
+		"effect": "使用するとただちに探索者のHPを(**16%+34000**)Pt回復する"
+	},
+	"item_Cooking_4037": {
+		"name": "ロブスターとイカスミのパスタ",
+		"description": "天然のイカスミで和えた創作料理。おしゃれで美味しい",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4037",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_013",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_010",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"EnergyConsumeDown"
+		]
+	},
+	"item_Cooking_4038": {
+		"name": "マキガイ炒め",
+		"description": "ピリ辛で香ばしい、味わい豊かな夜のグルメ",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/4038",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_COMMON",
+		"ingredients": [
+			{
+				"matID": "Item_Ocean_Harvest_038",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Ocean_Harvest_018",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"RecoverHp"
+		]
+	},
+	"item_Cooking_5001": {
+		"name": "肉と筍のコトコト煮",
+		"description": "赤身と脂身がほどよく混じった肉と竹の子を数時間コトコト煮た後、唐辛子で味付け。ご飯が進む一品",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/5001",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_004",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Meat_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"ThunderAtk",
+			"ThunderDef"
+		],
+		"effect": "**Volt Attack +4% Volt Resistance +1800**アップ、**Volt Attack +undefined%Volt Resistance +%**秒間持続"
+	},
+	"item_Cooking_5007": {
+		"name": "Salad Lobak",
+		"description": "青火珠と秋海棠の和え物",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/5007",
+		"stars": 2,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_012",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Jiuyu_Harvest_001",
+				"min": " 4",
+				"max": " 4"
+			}
+		],
+		"categories": [
+			"FireAtk",
+			"FireDef"
+		],
+		"effect": "**Flame Attack +4% Flame Resistance +1800**アップ、**Flame Attack +undefined%Flame Resistance +%**秒間持続"
+	},
+	"item_activity_cooking_001": {
+		"name": "子豚のロースト",
+		"description": "優れたシェフの手にかかれば、子豚のローストでも舌の肥えた美食家を満足させられる\r\n\r\nアイダカフェイベント期間中、【アポフィス】【ローズクイーン】を撃破すると暗号ボックスで獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_001",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_002": {
+		"name": "七面鳥のリンゴあんかけ",
+		"description": "アストラ島の郷土料理。後に旅商人たちが各地に広め、大陸全土で大人気となった。\r\n\r\nアイダカフェイベント期間中、【アポフィス】【ローズクイーン】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる。",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_002",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_003": {
+		"name": "グリル野菜とローストチキン",
+		"description": "香ばしいローストチキンの脂っこさがさっぱりした野菜で中和される。これ1皿で大満足\r\n\r\nアイダカフェイベント期間中、【アポフィス】【ローズクイーン】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_003",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_004": {
+		"name": "サーモンのソテー",
+		"description": "サーモンの柔らかさにハチミツの甘さが加わり、口の中で美味しさが無限に広がる\r\n\r\nアイダカフェイベント期間中、【ロべラグ】【セベク】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_004",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Greens_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_005": {
+		"name": "ゴマ団子",
+		"description": "ベンジス港の伝統グルメ。老人や子どもから愛されている\r\n\r\nアイダカフェイベント期間中、【ロべラグ】【セベク】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_005",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_006": {
+		"name": "七面鳥とビーツのスープ",
+		"description": "香りが良くて温かいターキーのスープ。1日の疲れやストレスが吹き飛ぶ\r\n\r\nアイダカフェイベント期間中、【ロべラグ】【セベク】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_006",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_007": {
+		"name": "ジンジャーパイ",
+		"description": "お祝い事の時に人気の美味しいお菓子。砂糖とハチミツの甘さに麦の香りがベストマッチ\r\n\r\nアイダカフェイベント期間中、【ロべラグ】【アポフィス】【急凍メカ】【セベク】【ローズクイーン】【バルバロッサ】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_007",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_008": {
+		"name": "アップルケーキ",
+		"description": "しっとりふわふわフルーツケーキ。ひと口食べれば大満足\r\n\r\nアイダカフェイベント期間中、【急凍メカ】【バルバロッサ】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_008",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_009": {
+		"name": "フルーツポンチ",
+		"description": "豊かなフルーツの香りに、うっとりするような彩りを添えて\r\n\r\nアイダカフェイベント期間中、【急凍メカ】【バルバロッサ】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_009",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity_cooking_010": {
+		"name": "アップルジュース",
+		"description": "甘酸っぱさがどんな年代の方にも人気。みんな大好きな夏のドリンク\r\n\r\nアイダカフェイベント期間中、【急凍メカ】【バルバロッサ】を撃破すると暗号ボックスから獲得可能。または食材を料理して獲得できる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/item_activity_cooking_010",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity_cooking_RM_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity_cooking_RM_5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_01",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": []
+	},
+	"item_activity2_cooking_101": {
+		"name": "ウキウキハート",
+		"description": "バルーンフルーツに乗って、チョコレートの世界に旅立とう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_101",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_102": {
+		"name": "松の実ハート",
+		"description": "松の実をたっぷりトッピングしたチョコレートは贈り物にぴったり",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_102",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_103": {
+		"name": "イチゴハート",
+		"description": "イチゴの甘さとチョコレートの香ばしさが融合する、これぞ初恋の甘い味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_103",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_104": {
+		"name": "ヘーゼルハート",
+		"description": "チョコレートに包まれているのは、期待に満ちた恋心",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_104",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_105": {
+		"name": "トリュフハート",
+		"description": "素材選びから気持ちが込められている",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_105",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_106": {
+		"name": "ブルーベリーハート",
+		"description": "一口噛めば、甘酸っぱいブルーベリージャムが口の中に広がる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_106",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_107": {
+		"name": "ハチミツハート",
+		"description": "チョコレートとハチミツの大合奏",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_107",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_108": {
+		"name": "落果ハート",
+		"description": "私の一番大切なものをあげる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_108",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_109": {
+		"name": "カカオハート",
+		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_109",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_110": {
+		"name": "ミルクハート",
+		"description": "ミルクとチョコレートは運命の組み合わせだ！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_110",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_201": {
+		"name": "ウキウキトリュフ",
+		"description": "バルーンフルーツに乗って、チョコレートの世界に旅立とう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_201",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_202": {
+		"name": "松の実トリュフ",
+		"description": "松の実をたっぷりトッピングしたチョコレートは贈り物にぴったり",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_202",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_203": {
+		"name": "イチゴトリュフ",
+		"description": "イチゴの甘さとチョコレートの香ばしさが融合する、これぞ初恋の甘い味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_203",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_204": {
+		"name": "ヘーゼルトリュフ",
+		"description": "チョコレートに包まれているのは、期待に満ちた恋心",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_204",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_205": {
+		"name": "トリュフ&トリュフ",
+		"description": "素材選びから気持ちが込められている",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_205",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_206": {
+		"name": "ブルーベリートリュフ",
+		"description": "一口噛めば、甘酸っぱいブルーベリージャムが口の中に広がる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_206",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_207": {
+		"name": "ハチミツトリュフ",
+		"description": "チョコレートとハチミツの大合奏",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_207",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_208": {
+		"name": "落果トリュフ",
+		"description": "私の一番大切なものをあげる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_208",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_209": {
+		"name": "カカオトリュフ",
+		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_209",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_210": {
+		"name": "ミルクトリュフ",
+		"description": "ミルクとチョコレートは運命の組み合わせだ！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_210",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_301": {
+		"name": "ウキウキキューブ",
+		"description": "バルーンフルーツに乗って、チョコレートの世界に旅立とう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_301",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruits009",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_302": {
+		"name": "松の実キューブ",
+		"description": "松の実をたっぷりトッピングしたチョコレートは贈り物にぴったり",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_302",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_303": {
+		"name": "イチゴキューブ",
+		"description": "イチゴの甘さとチョコレートの香ばしさが融合する、これぞ初恋の甘い味",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_303",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_304": {
+		"name": "ヘーゼルキューブ",
+		"description": "チョコレートに包まれているのは、期待に満ちた恋心",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_304",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_305": {
+		"name": "トリュフキューブ",
+		"description": "素材選びから気持ちが込められている",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_305",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_306": {
+		"name": "ブルーベリーキューブ",
+		"description": "一口噛めば、甘酸っぱいブルーベリージャムが口の中に広がる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_306",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_307": {
+		"name": "ハチミツキューブ",
+		"description": "チョコレートとハチミツの大合奏",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_307",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_308": {
+		"name": "落果キューブ",
+		"description": "私の一番大切なものをあげる",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_308",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_309": {
+		"name": "カカオキューブ",
+		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_309",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_310": {
+		"name": "ミルクキューブ",
+		"description": "ミルクとチョコレートは運命の組み合わせだ！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_310",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity2_mould_3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Condiment_07",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_001": {
+		"name": "ケートス土産",
+		"description": "雷元素がテーマのチョコレートギフトボックス。ハンナの自信作\r\n博士いわく、おいしいものは大事な人と分け合おう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_002": {
+		"name": "ケートス土産",
+		"description": "物理元素がテーマのチョコレートギフトボックス。ハンナの自信作\n博士いわく、おいしいものは大事な人と分け合おう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_physics",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_003": {
+		"name": "ケートス土産",
+		"description": "炎元素がテーマのチョコレートギフトボックス。ハンナの自信作\n博士いわく、おいしいものは大事な人と分け合おう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_fire",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_004": {
+		"name": "ケートス土産",
+		"description": "氷元素がテーマのチョコレートギフトボックス。ハンナの自信作\n博士いわく、おいしいものは大事な人と分け合おう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_ice",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity2_cooking_005": {
+		"name": "パリパリ餅",
+		"description": "アイダ星で大人気の軽食の一つ。かつてハイエナとラヴェンジャーの構成員がこの餅を巡って大激突したらしい",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_cooking_1",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity2_cooking_006": {
+		"name": "チョコレートギフトボックス",
+		"description": "おいしいものは大事な人と分け合おう！",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/Cafe/cafe_2/item_activity2_box_thunder",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"HealPotion_01": {
+		"name": "春餅",
+		"description": "新春市場で一番人気の軽食\r\nしかし、見た目からはどんな味か想像もつかない…",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/HealPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**22%+75000**)Pt回復する"
+	},
+	"BuffPotion_01": {
+		"name": "松風",
+		"description": "新春市場のおすすめ飲み物\r\n一口飲めば、松林の中で春風が頬を柔らかく撫でるような気分になるという",
+		"buff": "料理",
+		"icon": "/Game/Resources/Icon/caiyao/BuffPotion_01",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"categories": []
+	},
+	"item_activity3_cooking_101": {
+		"name": "定番のキューブ",
+		"description": "濃厚なチョコレートの香り、我慢できる？",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_311_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food2",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Honey_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_102": {
+		"name": "ナッツキューブ",
+		"description": "様々なナッツを使ったチョコ、予想外のおいしさ！",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_312_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food6",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_103": {
+		"name": "ヘーゼルキューブ",
+		"description": "濃厚で口溶けのよいチョコレート。ヘーゼルナッツの香りが味に奥行きを足している",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_313_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_104": {
+		"name": "ドラゴンキューブ",
+		"description": "食べる時、種を気にしなくてもいい",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_314_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_105": {
+		"name": "カカオキューブ",
+		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_320_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_106": {
+		"name": "テールキューブ",
+		"description": "最先端のチョコレートにチャレンジしてみない？",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_315_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_014",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_107": {
+		"name": "でんぶキューブ",
+		"description": "チョコレートと肉でんぶの組み合わせは暗黒料理界の大物ルーキーだ",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_316_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_108": {
+		"name": "きのこキューブ",
+		"description": "チョコのフィリングはいつも美味しくて驚き",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_317_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_109": {
+		"name": "塩漬け卵キューブ",
+		"description": "濃厚な卵の黄身の味は格別",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_318_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Egg_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_110": {
+		"name": "かにキューブ",
+		"description": "濃厚な海鮮の香りがベースのチョコ",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_319_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_1",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_201": {
+		"name": "コーヒートリュフ",
+		"description": "あなたと甘苦を共にしたい",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_211_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food3",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Meat_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_202": {
+		"name": "大人のトリュフ",
+		"description": "やさしいリキュールの香りがまろやかな旋律を奏でる",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_212_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food7",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_203": {
+		"name": "花のトリュフ",
+		"description": "バレンタインと言えば薔薇、一口噛むと花の香りがふわっと広がる",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_213_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_204": {
+		"name": "イチゴトリュフ",
+		"description": "イチゴの甘さとチョコレートの香ばしさが融合する、これぞ初恋の甘い味",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_217_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_205": {
+		"name": "ダークトリュフ",
+		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_218_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_206": {
+		"name": "ウキウキトリュフ",
+		"description": "バルーンフルーツに乗って、チョコレートの世界に旅立とう！",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_219_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Vera_Harvest_015",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_207": {
+		"name": "でんぶトリュフ",
+		"description": "滑らかなチョコレートとふわふわのフィリング、2種類の食感が楽しめる",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_214_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_208": {
+		"name": "海塩トリュフ",
+		"description": "甘いチョコはもう飽きた？それなら塩味はどう？",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_215_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shell_002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_209": {
+		"name": "トリュフ&トリュフ",
+		"description": "素材選びから気持ちが込められている",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_220_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Mushroom_006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_210": {
+		"name": "かにトリュフ",
+		"description": "ワタリガニはこんな作り方もできる",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_216_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "Item_Staples_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_2",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_301": {
+		"name": "ミントハート",
+		"description": "ひんやりすっきり、爽やかさ無限",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_111_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food4",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_302": {
+		"name": "クリームハート",
+		"description": "甘さで言えばこれが一番！",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_112_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "item_activity3_food5",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_303": {
+		"name": "落果ハート",
+		"description": "私の一番大切なものをあげる",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_118_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_304": {
+		"name": "ブルーベリーハート",
+		"description": "一口噛めば、甘酸っぱいブルーベリージャムが口の中に広がる",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_119_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_005",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_305": {
+		"name": "カカオハート",
+		"description": "滑らかなダークチョコレートが、ほろ苦くまろやかな夢を織りなす",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_120_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts002",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_306": {
+		"name": "魚油ハート",
+		"description": "EPAとDHAが豊富、ヘルシー志向の人におすすめ",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_113_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Fishes006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_307": {
+		"name": "激辛ハート",
+		"description": "スパイシーなナッツが入っている",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_114_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Nuts003",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_308": {
+		"name": "でんぶハート",
+		"description": "ひんやりしたコーティングとふわふわのフィリング",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_115_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Meat_004",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_309": {
+		"name": "イクラハート",
+		"description": "素材からして旨くないはずがない！",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_116_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Drugs_007",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	},
+	"item_activity3_cooking_310": {
+		"name": "かにハート",
+		"description": "好き嫌いの評価が真っ二つに割れているチョコ",
+		"buff": "料理",
+		"icon": "/Game/ResourcesOverSea/Icon/item/item_activity2_cooking_117_os",
+		"stars": 1,
+		"quality": "ITEM_QUALITY_EPIC",
+		"ingredients": [
+			{
+				"matID": "Item_Shells006",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_food1",
+				"min": " 1",
+				"max": " 1"
+			},
+			{
+				"matID": "item_activity3_mould_3",
+				"min": " 1",
+				"max": " 1"
+			}
+		],
+		"categories": [],
+		"effect": "使用するとただちに探索者のHPを(**15%+20000**)Pt回復する"
+	}
+}
