@@ -2,7 +2,6 @@
 from fastapi import APIRouter
 from pathlib import Path
 from json import loads
-from pprint import pprint
 
 from api.core.response import PrettyJsonResponse
 from api.infra.entitys import Raritys
