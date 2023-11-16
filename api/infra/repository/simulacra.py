@@ -51,6 +51,11 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                     imit_dict['trait'] = [i for i in traits.values() if isinstance(i, dict)]
 
                     imit_dict['rating'] = replace_rating(imit_dict['rating'], LANGS(lang))
+                    
+                    imit_dict['assets']['NamePicture'] = replace_rating(
+                        imit_dict['assets']['NamePicture'], 
+                        LANGS(lang)
+                    )
 
                     imit_dict['matrixID'] = self.MATRICE_LINK.get(imit_id.lower(), None)
 
