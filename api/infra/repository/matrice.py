@@ -44,5 +44,5 @@ class MatriceRepo(ModelRepository[EntityBase, Matrice]):
     
     async def get_by_name(self, name: str, lang: str):
         for i in await self.get_all(lang):
-            if i.name in name:
+            if i.name == name:
                 return i
