@@ -70,7 +70,7 @@ async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False):
         if include:
             return PrettyJsonResponse([matrice.model_dump() for matrice in matrices])
         else:
-            return PrettyJsonResponse([matrice.model_dump(include={'name', 'id', 'icon'}) for matrice in matrices])
+            return PrettyJsonResponse([matrice.model_dump(include={'name', 'id', 'icon', 'rarity'}) for matrice in matrices])
     
     else:
         raise ItemNotFound(detail={'error': f'{lang} not found'})
