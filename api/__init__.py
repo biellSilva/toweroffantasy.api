@@ -33,17 +33,17 @@ app = FastAPI()
 limiter = Limiter(key_func=get_remote_address, application_limits=['1/10seconds'], enabled=False)
 app.state.limiter = limiter
 
+app.add_middleware(SlowAPIMiddleware)
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler) # type: ignore
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=['*'],
     allow_credentials=True,
-    allow_methods=['POST', 'GET'],
-    allow_headers=['X-Custom-Header', 'content-type'],
+    allow_methods=['*'],
+    allow_headers=['*'],
 )
 
-app.add_middleware(SlowAPIMiddleware)
 
 @app.middleware("http")
 @app.middleware("https")
