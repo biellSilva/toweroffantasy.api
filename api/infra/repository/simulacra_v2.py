@@ -40,8 +40,9 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
                     if weapon := await self.weapon_repo.get(EntityBase(id=weapon_id), lang=lang):
                         imit_dict['weapon'] = weapon
                 
-                if matrice := await self.matrice_repo.get_by_name(name=imit_dict['name'], lang=lang):
-                    imit_dict['matrix'] = matrice
+                if matrice_id := imit_dict.get('matrixID', None):
+                    if matrice := await self.matrice_repo.get(EntityBase(id=matrice_id), lang=lang):
+                        imit_dict['matrix'] = matrice
 
                 self.cache[lang].update({imit_id.lower(): Simulacra_v2(**imit_dict)})
 

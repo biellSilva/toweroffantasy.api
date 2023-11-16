@@ -14,6 +14,7 @@ class Simulacra(EntityBase):
     advanceID: str | None = Field(default=None, alias='advanceId', serialization_alias='advanceID')
     assets: Assets
     weaponID: Annotated[str | None, BeforeValidator(check_string)] = Field(default=None, alias='weapon', serialization_alias='weaponID')
+    matrixID: str | None
     age: str
     height: str
     gender: str

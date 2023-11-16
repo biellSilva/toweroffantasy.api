@@ -19,6 +19,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                          model=Simulacra, 
                          class_base=SimulacraRepo,
                          repo_name='imitations')
+        self.MATRICE_LINK: dict[str, str] = loads(Path('api/database/matrice_links.json').read_bytes())
     
     async def get_all(self, lang: str) -> list[Simulacra]:
         if lang in self.cache:
@@ -50,6 +51,8 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                     imit_dict['trait'] = [i for i in traits.values() if isinstance(i, dict)]
 
                     imit_dict['rating'] = replace_rating(imit_dict['rating'], LANGS(lang))
+
+                    imit_dict['matrixID'] = self.MATRICE_LINK.get(imit_id.lower(), None)
 
                     self.cache[lang].update({imit_id.lower(): Simulacra(**imit_dict)})
 

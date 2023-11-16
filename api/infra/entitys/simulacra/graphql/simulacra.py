@@ -12,6 +12,7 @@ class SimulacraType:
     advanceID: str | None
     assets: Assets
     weaponID: str | None
+    matrixID: str | None
     age: str
     height: str
     gender: str
