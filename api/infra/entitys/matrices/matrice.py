@@ -1,5 +1,5 @@
 
-from pydantic import BeforeValidator, Field
+from pydantic import BeforeValidator
 from typing import Annotated
 
 from api.utils import bold_numbers, replace_icon
@@ -12,7 +12,7 @@ class Matrice(EntityBase):
     name: str
     type: str
     description: Annotated[str, BeforeValidator(bold_numbers)]
-    icon: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='gachaIcon', serialization_alias='icon')
+    icon: Annotated[str, BeforeValidator(replace_icon)]
     # gachaIcon: str
     rarity: str
     set: MatriceSet
