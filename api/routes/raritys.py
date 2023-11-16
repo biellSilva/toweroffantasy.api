@@ -10,7 +10,7 @@ from api.infra.entitys import Raritys
 
 router = APIRouter(prefix='/rarity', tags=['rarity'])
 
-RARITYS_DATA: dict[str, dict[str, dict[str, str]]] = loads(Path('api/database/rarity.json').read_bytes())
+RARITYS_DATA: dict[str, dict[str, dict[str, str]]] = loads(Path('api/infra/database/rarity.json').read_bytes())
 RARITY_DATA_RE = {rarity_key: value_asset
                 for rarity_key, rarity_value in RARITYS_DATA.items() 
                 for _, value_asset in rarity_value.items()}
