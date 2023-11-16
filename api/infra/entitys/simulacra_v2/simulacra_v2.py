@@ -3,9 +3,8 @@
 from api.infra.entitys.base import EntityBase
 from api.infra.entitys.weapons import Weapon
 from api.infra.entitys.matrices import Matrix
-from api.infra.entitys.simulacra.extra import Awakening, VoiceActors, Banner
+from api.infra.entitys.simulacra.extra import Awakening, VoiceActors, Banner, Assets
 
-from .extra import Assets
 
 
 class Simulacra_v2(EntityBase):

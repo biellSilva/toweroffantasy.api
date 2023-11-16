@@ -30,6 +30,11 @@ class Assets:
     weaponPicture: str | None 
     awakenEntrance: str | None 
     grayAwakenEntrance: str | None
+    advancePainting: str | None
+    grayAdvancePainting: str | None
+    backPhoto: str | None
+    rarityIcon: str | None
+
 
 
 @strawberry.type

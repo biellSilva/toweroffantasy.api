@@ -30,6 +30,10 @@ class Assets(BaseModel):
     weaponPicture: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='WeaponShowPicture', serialization_alias='weaponPicture')
     awakenEntrance: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='HasGotAwakenEntrance', serialization_alias='awakenEntrance')
     grayAwakenEntrance: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='NotGotAwakenEntrance', serialization_alias='grayAwakenEntrance')
+    advancePainting: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='AdvancePainting', serialization_alias='advancePainting')
+    grayAdvancePainting: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='AdvanceGrayPainting', serialization_alias='grayAdvancePainting')
+    backPhoto: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='BackPhoto', serialization_alias='backPhoto')
+    rarityIcon: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='RarityIcon', serialization_alias='rarityIcon')
 
 
 class Banner(BaseModel):
