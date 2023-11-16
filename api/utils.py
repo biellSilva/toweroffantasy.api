@@ -35,6 +35,14 @@ def check_string(text: str):
         return None
     return text
 
+def replace_rarity_asset(text: str):
+    if text.lower() == 'none':
+        return None
+    if '/Game/Resources/' in text:
+        return text.replace('/Game/Resources', '/assets')
+    else:
+        return text
+
 
 def classifier(number: float):
     if number >= 15:

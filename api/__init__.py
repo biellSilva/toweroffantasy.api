@@ -23,8 +23,9 @@ from api.core.routes import (
     item,
     achievements,
     outfits,
+    raritys,
     image,
-    graphql
+    graphql,
 )
 
 
@@ -63,6 +64,7 @@ app.include_router(food.router)
 app.include_router(item.router)
 app.include_router(achievements.router)
 app.include_router(outfits.router)
+app.include_router(raritys.router)
 app.include_router(image.router)
 
 app.include_router(graphql.graphql, tags=['GraphQL']) # type: ignore

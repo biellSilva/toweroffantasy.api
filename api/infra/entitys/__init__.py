@@ -8,6 +8,7 @@ from .food import Food
 from .item import Item
 from .achievements import Achievement
 from .outfits import Outfit
+from .raritys import Raritys
 
 from .base import EntityBase
 
@@ -22,5 +23,6 @@ __import__ = [
     Food,
     Item,
     Achievement,
-    Outfit
+    Outfit,
+    Raritys
 ]
