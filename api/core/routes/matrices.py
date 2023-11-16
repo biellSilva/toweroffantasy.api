@@ -11,11 +11,11 @@ from api.infra.entitys import EntityBase, Matrice
 
 
 
-router = APIRouter(prefix='/matrice', tags=['matrice'])
+router = APIRouter(prefix='/matrix', tags=['Matrices'])
 
 MATRICE_REPO = MatriceRepo()
 
-@router.get('/{id}', name='Get matrice', response_model=Matrice)
+@router.get('/{id}', name='Get matrix', response_model=Matrice)
 async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
