@@ -15,7 +15,7 @@ router = APIRouter(prefix="/food", tags=["food"])
 FOOD_REPO = FoodRepo()
 
 @router.get('/{id}', name='Get food', response_model=Food)
-async def get_food(id: FOOD, lang: LANGS = LANGS('en')):
+async def get_food(id: FOOD, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
         id: 
@@ -28,32 +28,50 @@ async def get_food(id: FOOD, lang: LANGS = LANGS('en')):
             type: string
             default: en
             desc: possible languages to use
+        
+        include:
+            type: bool
+            default: True
+            desc: Include all data keys
             
     return \n
         Food
     '''
 
     if food := await FOOD_REPO.get(EntityBase(id=id), lang):
-        return PrettyJsonResponse(food.model_dump())
+        if include:
+            return PrettyJsonResponse(food.model_dump())
+        else:
+            return PrettyJsonResponse(food.model_dump(include={'id', 'name', 'icon', 'quality', 'stars'}))
     
     else:
         raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
 
+
 @router.get('', name='All foods', response_model=list[Food])
-async def get_all_foods(lang: LANGS = LANGS('en')):
+async def get_all_foods(lang: LANGS = LANGS('en'), include: bool = False):
     '''
     **Query Params** \n
         lang:
             type: string
             default: en
             desc: possible languages to use
+        
+        include:
+            type: bool
+            default: False
+            desc: Include all data keys
+
             
     return \n
         List[Food]
     '''
 
     if foods := await FOOD_REPO.get_all(lang):
-        return PrettyJsonResponse([food.model_dump() for food in foods])
+        if include:
+            return PrettyJsonResponse([food.model_dump() for food in foods])
+        else:
+            return PrettyJsonResponse([food.model_dump(include={'id', 'name', 'icon', 'quality', 'stars'}) for food in foods])
     
     else:
         raise ItemNotFound(headers={'error': f'{lang} not found'})

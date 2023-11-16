@@ -17,7 +17,7 @@ SIMU_REPO = SimulacraRepo()
 
 
 @router.get('/{id}', name='Get simulacra', response_model=Simulacra)
-async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en')):
+async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
         id: 
@@ -30,19 +30,27 @@ async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en')):
             type: string
             default: en
             desc: possible languages to use
+
+        include:
+            type: bool
+            default: True
+            desc: Include all data keys
             
     **Return** \n
         Simulacra
     '''
     
     if simulacra := await SIMU_REPO.get(EntityBase(id=id), lang):
-        return PrettyJsonResponse(simulacra.model_dump())
+        if include:
+            return PrettyJsonResponse(simulacra.model_dump())
+        else:
+            return PrettyJsonResponse(simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID'}))
     
     else:
         raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
 
 @router.get('', name='All simulacras', response_model=list[Simulacra])
-async def get_all_simulacra(lang: LANGS = LANGS('en')):
+async def get_all_simulacra(lang: LANGS = LANGS('en'), include: bool = False):
     '''
     **Query Params** \n
         lang:
@@ -50,12 +58,20 @@ async def get_all_simulacra(lang: LANGS = LANGS('en')):
             default: en
             desc: possible languages to use
             
+        include:
+            type: bool
+            default: False
+            desc: Include all data keys
+            
     **Return** \n
         List[Simulacra]
     '''
     
     if simulacras := await SIMU_REPO.get_all(lang):
-        return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
+        if include:
+            return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
+        else:
+            return PrettyJsonResponse([simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID'}) for simulacra in simulacras])
     
     else:
         raise ItemNotFound(detail={'error': f'{lang} not found'})

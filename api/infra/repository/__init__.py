@@ -1,6 +1,6 @@
 
 from .simulacra import SimulacraRepo
-from .matrice import MatriceRepo
+from .matrice import MatricesRepo
 from .weapon import WeaponRepo
 from .relics import RelicRepo
 from .food import FoodRepo
@@ -12,7 +12,7 @@ from .simulacra_v2 import SimulacraV2Repo
 
 __import__ = [
     SimulacraRepo, 
-    MatriceRepo, 
+    MatricesRepo, 
     WeaponRepo,
     RelicRepo,
     FoodRepo,

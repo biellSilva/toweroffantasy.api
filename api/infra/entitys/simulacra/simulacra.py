@@ -3,7 +3,7 @@ from pydantic import Field, BeforeValidator
 from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.simulacra.extra import VoiceActors, Awakening, Assets
+from api.infra.entitys.simulacra.extra import VoiceActors, Awakening, Assets, Banner
 
 from api.utils import check_string
 
@@ -11,9 +11,10 @@ from api.utils import check_string
 class Simulacra(EntityBase):
     name: str
     avatarID: str
-    advanceId: str | None = None
+    advanceID: str | None = Field(default=None, alias='advanceId', serialization_alias='advanceID')
     assets: Assets
-    weapon_id: Annotated[str | None, BeforeValidator(check_string)] = Field(alias='weapon', serialization_alias='weapon_id')
+    weaponID: Annotated[str | None, BeforeValidator(check_string)] = Field(default=None, alias='weapon', serialization_alias='weaponID')
+    matrixID: str | None
     age: str
     height: str
     gender: str
@@ -23,4 +24,5 @@ class Simulacra(EntityBase):
     gift_types: list[str] = Field(alias='gp', serialization_alias='gift_types')
     voice_actors: VoiceActors = Field(alias='va', serialization_alias='voice_actors')
     awakenings: list[Awakening] = Field(alias='trait', default=[], serialization_alias='awakenings')
+    banners: list[Banner] = []
 

@@ -29,7 +29,7 @@ async def get_simulacrum(id: SIMULACRAS, lang: LANGS = LANGS('en')):
             desc: possible languages to use
             
     **Return** \n
-        Simulacra
+        Simulacra_v2
     '''
     
     if simulacrum := await SIMULACRA_REPO.get(EntityBase(id=id), lang):

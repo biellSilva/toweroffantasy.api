@@ -4,20 +4,22 @@ from json import loads
 from typing import Any
 
 from api.infra.repository.base_repo import ModelRepository
-from api.infra.entitys import Matrice, EntityBase
+from api.infra.entitys import Matrix, EntityBase
+
+from api.utils import matrice_set_rework
 
 
-class MatriceRepo(ModelRepository[EntityBase, Matrice]):
+class MatricesRepo(ModelRepository[EntityBase, Matrix]):
     cache = {}
     __load_all_data__: bool = False
 
     def __init__(self) -> None:
         super().__init__(model_base=EntityBase, 
-                         model=Matrice, 
-                         class_base=MatriceRepo,
+                         model=Matrix, 
+                         class_base=MatricesRepo,
                          repo_name='matrices')
     
-    async def get_all(self, lang: str) -> list[Matrice]:
+    async def get_all(self, lang: str) -> list[Matrix]:
         if lang in self.cache:
             return list(self.cache[lang].values())
         
@@ -33,19 +35,17 @@ class MatriceRepo(ModelRepository[EntityBase, Matrice]):
 
             for matrice_id, matrice_dict in DATA.items():
                 matrice_id = matrice_id.removesuffix('_1').lower()
-                matrice_dict['id'] = matrice_id.lower()
+                matrice_dict['id'] = matrice_id
 
-                matrice_dict['icon'] = f'assets/Icon/yizhi/512/{matrice_dict["gachaIcon"]}'
+                matrice_dict['sets'] = matrice_set_rework(rarity=matrice_dict.get('rarity', ''),
+                                                         sets=matrice_dict.pop('set'))
 
-                set: list[dict[str, str]] = matrice_dict.pop('set')
-                matrice_dict['set'] = {key.lower(): value for i in set for key, value in i.items()}
-
-                self.cache[lang].update({matrice_id: Matrice(**matrice_dict)})
+                self.cache[lang].update({matrice_id: Matrix(**matrice_dict)})
 
             self.__load_all_data__ = True
             return list(self.cache[lang].values())
     
     async def get_by_name(self, name: str, lang: str):
         for i in await self.get_all(lang):
-            if i.name in name:
+            if i.name == name:
                 return i

@@ -19,6 +19,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                          model=Simulacra, 
                          class_base=SimulacraRepo,
                          repo_name='imitations')
+        self.MATRICE_LINK: dict[str, str] = loads(Path('api/database/matrice_links.json').read_bytes())
     
     async def get_all(self, lang: str) -> list[Simulacra]:
         if lang in self.cache:
@@ -26,7 +27,10 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
         
         else:
             PATH_IMIT = Path(f'api/database/{lang}/{self.repo_name}.json')
+            BANNERS_PATH = Path(f'api/database/banners_global.json')
+
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
+            BANNERS_DATA: list[dict[str, str | int | bool]] = loads(BANNERS_PATH.read_bytes())
 
             if lang in self.cache:
                 pass
@@ -35,6 +39,9 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
 
             for imit_id, imit_dict in DATA.items():
                 if 'L1' not in imit_id:
+                    
+                    imit_dict['banners'] = [banner for banner in BANNERS_DATA if banner['imitation_id'] == imit_id]
+                    
                     imit_dict['assets']['icon'] = imit_dict['avatarID']
 
                     va: list[dict[str, str]] = imit_dict.pop('va')
@@ -44,6 +51,8 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                     imit_dict['trait'] = [i for i in traits.values() if isinstance(i, dict)]
 
                     imit_dict['rating'] = replace_rating(imit_dict['rating'], LANGS(lang))
+
+                    imit_dict['matrixID'] = self.MATRICE_LINK.get(imit_id.lower(), None)
 
                     self.cache[lang].update({imit_id.lower(): Simulacra(**imit_dict)})
 
