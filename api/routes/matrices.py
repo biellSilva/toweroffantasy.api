@@ -11,7 +11,7 @@ from api.infra.entitys import EntityBase, Matrix
 
 
 
-router = APIRouter(prefix='/matrix', tags=['Matrices'])
+router = APIRouter(prefix='/matrices', tags=['Matrices'])
 
 MATRICE_REPO = MatricesRepo()
 
@@ -63,7 +63,7 @@ async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False):
             desc: Include all data keys
             
     **Return** \n
-        List[Matrice]
+        List[Matrix]
     '''
     
     if matrices := await MATRICE_REPO.get_all(lang):
