@@ -32,7 +32,8 @@ class MatriceRepo(ModelRepository[EntityBase, Matrice]):
                 self.cache.update({lang: {}})
 
             for matrice_id, matrice_dict in DATA.items():
-                matrice_dict['id'] =  matrice_id.removesuffix('_1').lower()
+                matrice_id = matrice_id.removesuffix('_1').lower()
+                matrice_dict['id'] = matrice_id
 
                 set: list[dict[str, str]] = matrice_dict.pop('set')
                 matrice_dict['set'] = {key.lower(): value for i in set for key, value in i.items()}
