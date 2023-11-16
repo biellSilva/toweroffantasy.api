@@ -12,7 +12,7 @@ from slowapi.util import get_remote_address
 from slowapi.middleware import SlowAPIMiddleware
 
 
-from api.core.routes import (
+from api.routes import (
     simulacra, 
     simulacra_v2, 
     weapons,
@@ -67,4 +67,4 @@ app.include_router(outfits.router)
 app.include_router(raritys.router)
 app.include_router(image.router)
 
-app.include_router(graphql.graphql, tags=['GraphQL']) # type: ignore
+app.include_router(graphql.graphql, tags=['GraphQL']) 

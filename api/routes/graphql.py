@@ -2,7 +2,7 @@
 import strawberry
 
 from strawberry.fastapi import GraphQLRouter
-from typing import List
+from typing import List, Any
 
 from api.enums import langs as LANGS
 from api.infra.repository import *
@@ -41,7 +41,7 @@ class Query:
             return simulacra # type: ignore
         
         raise Exception(f'Can\'t find {id} in {lang}')
- 
+
 
     @strawberry.field(name='simulacra')
     async def get_simulacra(self, lang: str = 'en') -> List[SimulacraType]:
@@ -114,4 +114,4 @@ class Query:
 
 
 
-graphql = GraphQLRouter(schema=strawberry.Schema(query=Query), path='/')  # type: ignore
+graphql = GraphQLRouter[Any, Any](schema=strawberry.Schema(query=Query), path='/') 
