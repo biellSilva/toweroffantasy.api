@@ -2,18 +2,17 @@
 from pydantic import BeforeValidator
 from typing import Annotated
 
-from api.utils import bold_numbers, replace_icon
+from api.utils import bold_numbers
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.matrices.extra import MatrixSet
+from api.infra.entitys.matrices.extra import MatrixSet, MatrixAssets
 
 
 class Matrix(EntityBase):
     name: str
     type: str
     description: Annotated[str, BeforeValidator(bold_numbers)]
-    icon: Annotated[str, BeforeValidator(replace_icon)]
-    # gachaIcon: str
+    assets: MatrixAssets
     rarity: str
     sets: list[MatrixSet]
 

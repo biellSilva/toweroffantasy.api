@@ -23,6 +23,13 @@ class Assets:
     artwork: str | None 
     lotteryCard: str | None 
     lotteryDrawing: str | None 
+    painting: str | None 
+    grayPainting: str | None 
+    namePicture: str | None
+    thumbPainting: str | None 
+    weaponPicture: str | None 
+    awakenEntrance: str | None 
+    grayAwakenEntrance: str | None
 
 
 @strawberry.type

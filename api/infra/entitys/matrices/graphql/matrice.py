@@ -1,7 +1,7 @@
 
 import strawberry
 
-from api.infra.entitys.matrices.graphql.extra import MatriceSet
+from api.infra.entitys.matrices.graphql.extra import MatriceSet, MatrixAssets
 
 
 @strawberry.type
@@ -10,8 +10,7 @@ class MatriceType:
     name: str
     type: str
     description: str
-    icon: str
-    # gachaIcon: str
+    assets: MatrixAssets
     rarity: str
     sets: list[MatriceSet]
 
