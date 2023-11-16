@@ -6,3 +6,9 @@ import strawberry
 class MatriceSet:
     need: int | None
     description:str | None
+
+@strawberry.type
+class MatrixAssets:
+    icon: str
+    lotteryDrawing: str
+    lotteryCard: str
