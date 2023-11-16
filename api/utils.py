@@ -67,3 +67,15 @@ def filter_func(model: dict[str, Any], filter: dict[str, Any]):
                         yield False
 
 
+def matrice_set_rework(rarity: str, sets: list[dict[str, str]]):
+    if rarity == 'N':
+        return [{'need': 4, 'description': sets[0].get('2', '')}]
+    elif rarity == 'R':
+        return [{'need': 3, 'description': sets[0].get('2', '')}]
+    elif rarity == 'SR':
+        return [{'need': 3, 'description': sets[0].get('2', '')}]
+    elif rarity == 'SSR':
+        return [{'need': 2, 'description': sets[0].get('2', '')}, 
+                {'need': 4, 'description': sets[0].get('4', '')}]
+    else:
+        return None

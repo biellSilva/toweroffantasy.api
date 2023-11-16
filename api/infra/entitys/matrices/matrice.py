@@ -15,5 +15,5 @@ class Matrix(EntityBase):
     icon: Annotated[str, BeforeValidator(replace_icon)]
     # gachaIcon: str
     rarity: str
-    set: MatrixSet
+    sets: list[MatrixSet]
 

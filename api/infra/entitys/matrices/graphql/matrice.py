@@ -13,5 +13,5 @@ class MatriceType:
     icon: str
     # gachaIcon: str
     rarity: str
-    set: MatriceSet
+    sets: list[MatriceSet]
 

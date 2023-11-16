@@ -6,6 +6,8 @@ from typing import Any
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Matrix, EntityBase
 
+from api.utils import matrice_set_rework
+
 
 class MatricesRepo(ModelRepository[EntityBase, Matrix]):
     cache = {}
@@ -35,8 +37,8 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                 matrice_id = matrice_id.removesuffix('_1').lower()
                 matrice_dict['id'] = matrice_id
 
-                set: list[dict[str, str]] = matrice_dict.pop('set')
-                matrice_dict['set'] = {key.lower(): value for i in set for key, value in i.items()}
+                matrice_dict['sets'] = matrice_set_rework(rarity=matrice_dict.get('rarity', ''),
+                                                         sets=matrice_dict.pop('set'))
 
                 self.cache[lang].update({matrice_id: Matrix(**matrice_dict)})
 
