@@ -8,6 +8,7 @@ from .item import ItemRepo
 from .achievements import AchievementRepo
 from .outfit import OutfitRepo
 from .simulacra_v2 import SimulacraV2Repo
+from .mounts import MountsRepo
 
 
 __import__ = [
@@ -19,5 +20,6 @@ __import__ = [
     ItemRepo,
     AchievementRepo,
     OutfitRepo,
-    SimulacraV2Repo
+    SimulacraV2Repo,
+    MountsRepo
 ]
