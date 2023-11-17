@@ -16,7 +16,7 @@ OUTFIT_REPO = OutfitRepo()
 
 
 @router.get('/{id}', name='Get outfit', response_model=Outfit)
-async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en')):
+async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
         id: 
@@ -40,7 +40,10 @@ async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en')):
     '''
     
     if outfit := await OUTFIT_REPO.get(EntityBase(id=id), lang):
-        return PrettyJsonResponse(outfit.model_dump())
+        if include:
+            return PrettyJsonResponse(outfit.model_dump())
+        else:
+            return PrettyJsonResponse(outfit.model_dump(include={'name', 'icon'}))
 
     else:
         raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
