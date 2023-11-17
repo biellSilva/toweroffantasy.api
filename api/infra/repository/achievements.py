@@ -22,7 +22,7 @@ class AchievementRepo(ModelRepository[EntityBase, Achievement]):
             return list(self.cache[lang].values())
         
         else:
-            PATH_IMIT = Path(f'api/infra/database/{lang}/{self.repo_name}.json')
+            PATH_IMIT = Path(f'api/infra/database/global/{lang}/{self.repo_name}.json')
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
 
             if lang in self.cache:

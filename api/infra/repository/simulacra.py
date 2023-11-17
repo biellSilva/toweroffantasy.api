@@ -19,15 +19,15 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                          model=Simulacra, 
                          class_base=SimulacraRepo,
                          repo_name='imitations')
-        self.IMIT_LINK: dict[str, dict[str, str | None]] = loads(Path('api/infra/database/imitation_links.json').read_bytes())
+        self.IMIT_LINK: dict[str, dict[str, str | None]] = loads(Path('api/infra/database/global/imitation_links.json').read_bytes())
     
     async def get_all(self, lang: str) -> list[Simulacra]:
         if lang in self.cache:
             return list(self.cache[lang].values())
         
         else:
-            PATH_IMIT = Path(f'api/infra/database/{lang}/{self.repo_name}.json')
-            BANNERS_PATH = Path(f'api/infra/database/banners_global.json')
+            PATH_IMIT = Path(f'api/infra/database/global/{lang}/{self.repo_name}.json')
+            BANNERS_PATH = Path(f'api/infra/database/global/banners_global.json')
 
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
             BANNERS_DATA: list[dict[str, str | int | bool]] = loads(BANNERS_PATH.read_bytes())
