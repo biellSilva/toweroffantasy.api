@@ -9,6 +9,7 @@ from .achievements import AchievementRepo
 from .outfit import OutfitRepo
 from .simulacra_v2 import SimulacraV2Repo
 from .mounts import MountsRepo
+from .servants import ServantsRepo
 
 
 __import__ = [
@@ -21,5 +22,6 @@ __import__ = [
     AchievementRepo,
     OutfitRepo,
     SimulacraV2Repo,
-    MountsRepo
+    MountsRepo,
+    ServantsRepo
 ]

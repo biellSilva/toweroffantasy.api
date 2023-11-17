@@ -33,3 +33,6 @@ OUTFITS = StrEnum('OUTFITS', __outfits_names)
 
 __mounts_names: list[str] = [file.lower() for file in loads(Path('api/infra/database/global/en/mount.json').read_bytes())]
 MOUNTS = StrEnum('MOUNTS', __mounts_names)
+
+__servants_names: list[str] = [file.lower() for file in loads(Path('api/infra/database/global/en/pet.json').read_bytes())]
+SERVANTS = StrEnum('MOUNTS', __servants_names)

@@ -26,7 +26,8 @@ from api.routes import (
     raritys,
     image,
     graphql,
-    mounts
+    mounts,
+    servants
 )
 
 
@@ -66,6 +67,7 @@ app.include_router(item.router)
 app.include_router(achievements.router)
 app.include_router(outfits.router)
 app.include_router(mounts.router)
+app.include_router(servants.router)
 app.include_router(raritys.router)
 app.include_router(image.router)
 
