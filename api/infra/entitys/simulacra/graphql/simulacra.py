@@ -8,6 +8,7 @@ from .extra import Assets, VoiceActors, Awakening, Banner
 class SimulacraType:
     id: str
     name: str
+    rarity: str | None
     avatarID: str
     advanceID: str | None
     assets: Assets

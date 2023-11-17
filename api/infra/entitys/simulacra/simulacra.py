@@ -10,6 +10,7 @@ from api.utils import check_string
 
 class Simulacra(EntityBase):
     name: str
+    rarity: str | None
     avatarID: str
     advanceID: str | None = Field(default=None, alias='advanceId', serialization_alias='advanceID')
     assets: Assets

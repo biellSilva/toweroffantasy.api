@@ -19,7 +19,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                          model=Simulacra, 
                          class_base=SimulacraRepo,
                          repo_name='imitations')
-        self.MATRICE_LINK: dict[str, str] = loads(Path('api/infra/database/matrice_links.json').read_bytes())
+        self.IMIT_LINK: dict[str, dict[str, str | None]] = loads(Path('api/infra/database/imitation_links.json').read_bytes())
     
     async def get_all(self, lang: str) -> list[Simulacra]:
         if lang in self.cache:
@@ -57,9 +57,24 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                         LANGS(lang)
                     )
 
-                    imit_dict['matrixID'] = self.MATRICE_LINK.get(imit_id.lower(), None)
+                    if LINK := self.IMIT_LINK.get(imit_id.lower(), None):
+                        imit_dict['matrixID'] = LINK.get('matrice', None)
+                        imit_dict['rarity'] = LINK.get('rarity', None)
+                    else:
+                        imit_dict['matrixID'] = None
+                        imit_dict['rarity'] = None
 
                     self.cache[lang].update({imit_id.lower(): Simulacra(**imit_dict)})
+
+            self.cache[lang] = {i.id: i for i in list(
+                sorted(
+                    list(self.cache[lang].values()), 
+                    key=lambda x: 
+                        (-x.banners[-1].bannerNo, (-1 if x.rarity and x.rarity == 'SSR' else 1), x.name) 
+                        if x.banners else 
+                        (0, (-1 if x.rarity and x.rarity == 'SSR' else 1), x.name)
+                    )
+                )}
 
             self.__load_all_data__ = True
             return list(self.cache[lang].values())
