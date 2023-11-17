@@ -34,6 +34,7 @@ class Assets(BaseModel):
     grayAdvancePainting: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='AdvanceGrayPainting', serialization_alias='grayAdvancePainting')
     backPhoto: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='BackPhoto', serialization_alias='backPhoto')
     rarityIcon: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='RarityIcon', serialization_alias='rarityIcon')
+    bannerIcon: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='SoloLeagueBanPickBanner', serialization_alias='bannerIcon')
 
 
 class Banner(BaseModel):
