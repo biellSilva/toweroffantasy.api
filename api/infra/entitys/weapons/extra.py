@@ -37,3 +37,14 @@ class ShatterOrCharge(BaseModel):
 class Assets(BaseModel):
     icon: Annotated[str, BeforeValidator(replace_icon)] | None = None
     weaponMatrixIcon: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='WeaponIconForMatrix', serialization_alias='weaponMatrixIcon')
+
+
+class RecoMatrix(BaseModel):
+    id: str
+    pieces: int
+
+
+class Meta(BaseModel):
+    recommendedPairings: list[str] = []
+    recommendedMatrices: list[RecoMatrix] = []
+    rating: list[int] = []

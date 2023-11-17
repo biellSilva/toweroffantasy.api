@@ -7,7 +7,8 @@ from api.infra.entitys.weapons.extra import (
     WeaponEffect, 
     Advancements, 
     Skills,
-    Assets
+    Assets,
+    Meta
 )
 
 
@@ -25,3 +26,4 @@ class Weapon(EntityBase):
     weaponEffects: list[WeaponEffect]
     skills: Skills
     advancements: list[Advancements] = Field(alias='stars', serialization_alias='advancements') 
+    meta: Meta | None

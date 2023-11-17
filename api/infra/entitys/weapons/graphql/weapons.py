@@ -7,6 +7,7 @@ from api.infra.entitys.weapons.graphql.extra import (
     Advancements, 
     Skills,
     WeaponAssets,
+    Meta
 )
 
 
@@ -25,3 +26,4 @@ class WeaponType:
     weaponEffects: list[WeaponEffect]
     skills: Skills
     advancements: list[Advancements]
+    meta: Meta

@@ -18,6 +18,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                          model=Weapon, 
                          class_base=WeaponRepo,
                          repo_name='weapons')
+        self.META_DATA: dict[str, dict[str, list[Any]]] = loads(Path('api/infra/database/meta.json').read_bytes())
     
     async def get_all(self, lang: str) -> list[Weapon]:
         if lang in self.cache:
@@ -70,6 +71,8 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                         'value': charge
                     }
                 })
+
+                weapon_dict['meta'] = self.META_DATA.get(weapon_id.lower(), None)
 
                 self.cache[lang].update({weapon_id.lower(): Weapon(**weapon_dict)})
 

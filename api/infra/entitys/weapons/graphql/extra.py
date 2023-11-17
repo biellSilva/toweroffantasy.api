@@ -47,3 +47,16 @@ class ShatterOrCharge:
 class WeaponAssets:
     icon: str | None 
     weaponMatrixIcon: str | None
+
+
+@strawberry.type
+class RecoMatrix:
+    id: str
+    pieces: int
+
+
+@strawberry.type
+class Meta:
+    recommendedPairings: list[str]
+    recommendedMatrices: list[RecoMatrix]
+    rating: list[int]
