@@ -47,6 +47,7 @@ class ShatterOrCharge:
 class WeaponAssets:
     icon: str | None 
     weaponMatrixIcon: str | None
+    bannerIcon: str | None
 
 
 @strawberry.type
