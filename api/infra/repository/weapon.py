@@ -18,14 +18,14 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                          model=Weapon, 
                          class_base=WeaponRepo,
                          repo_name='weapons')
-        self.META_DATA: dict[str, dict[str, list[Any]]] = loads(Path('api/infra/database/meta.json').read_bytes())
+        self.META_DATA: dict[str, dict[str, list[Any]]] = loads(Path('api/infra/database/global/meta.json').read_bytes())
     
     async def get_all(self, lang: str) -> list[Weapon]:
         if lang in self.cache:
             return list(self.cache[lang].values())
         
         else:
-            PATH_IMIT = Path(f'api/infra/database/{lang}/{self.repo_name}.json')
+            PATH_IMIT = Path(f'api/infra/database/global/{lang}/{self.repo_name}.json')
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
 
             if lang in self.cache:

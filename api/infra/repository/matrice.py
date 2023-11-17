@@ -35,7 +35,7 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
             return list(self.cache[lang].values())
         
         else:
-            PATH_IMIT = Path(f'api/infra/database/{lang}/{self.repo_name}.json')
+            PATH_IMIT = Path(f'api/infra/database/global/{lang}/{self.repo_name}.json')
             DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
 
             if lang in self.cache:
@@ -45,6 +45,9 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                 self.cache.update({lang: {}})
 
             for matrice_id, matrice_dict in DATA.items():
+                if matrice_id in ('matrix_SSR12_1', 'matrix_SSR13_1'):
+                    continue
+                
                 matrice_id = matrice_id.removesuffix('_1').lower()
                 matrice_dict['id'] = matrice_id
 
