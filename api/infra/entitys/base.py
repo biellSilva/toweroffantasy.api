@@ -1,6 +1,7 @@
 
-from pydantic import BaseModel
+from pydantic import BaseModel, BeforeValidator
+from typing import Annotated
 
 
 class EntityBase(BaseModel):
-    id: str
+    id: Annotated[str, BeforeValidator(lambda x: x.lower())]

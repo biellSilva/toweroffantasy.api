@@ -32,7 +32,7 @@ class MountsRepo(ModelRepository[EntityBase, Mount]):
                 self.cache.update({lang: {}})
 
             for mount_id, mount_dict in DATA.items():
-                self.cache[lang].update({mount_id: Mount(**mount_dict)})
+                self.cache[lang].update({mount_id.lower(): Mount(**mount_dict)})
 
             self.__load_all_data__ = True
             return list(self.cache[lang].values())
