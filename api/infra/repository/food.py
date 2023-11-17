@@ -42,9 +42,6 @@ class FoodRepo(ModelRepository[EntityBase, Food]):
 
                         if isinstance(i['max'], str):
                             i['max'] = int(i['max'])
-                        
-                        if item := await self.item_repo.get(EntityBase(id=i['matID'].lower()), lang):
-                            i['item'] = item.model_dump()
 
                 self.cache[lang].update({food_id.lower(): Food(**food_dict, id=food_id)})
 
