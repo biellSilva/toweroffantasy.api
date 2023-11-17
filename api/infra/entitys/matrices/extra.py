@@ -10,6 +10,7 @@ class MatrixSet(BaseModel):
     description: Annotated[str, BeforeValidator(bold_numbers)] | None
 
 class MatrixAssets(BaseModel):
-    icon: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='ItemLargeIcon')
+    icon: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='ItemIcon')
+    iconLarge: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='ItemLargeIcon')
     lotteryDrawing: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='LotteryDrawing')
     lotteryCard: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='LotteryCardImage')

@@ -10,5 +10,6 @@ class MatriceSet:
 @strawberry.type
 class MatrixAssets:
     icon: str
+    iconLarge: str
     lotteryDrawing: str
     lotteryCard: str
