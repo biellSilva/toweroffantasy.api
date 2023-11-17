@@ -1,28 +1,28 @@
 
 from fastapi import APIRouter
 
-from api.enums import MOUNTS, LANGS
+from api.enums import SERVANTS, LANGS
 
 from api.core.exceptions import ItemNotFound
 from api.core.response import PrettyJsonResponse
 
-from api.infra.repository import MountsRepo
-from api.infra.entitys import EntityBase, Mount
+from api.infra.repository import ServantsRepo
+from api.infra.entitys import EntityBase, SmartServant
 
 
-router = APIRouter(prefix='/mounts', tags=['Mounts'])
+router = APIRouter(prefix='/servants', tags=['Smart Servants'])
 
-MOUNTS_REPO = MountsRepo()
+SERVANTS_REPO = ServantsRepo()
 
 
-@router.get('/{id}', name='Get mount', response_model=Mount)
-async def get_mount(id: MOUNTS, lang: LANGS = LANGS('en'), include: bool = True):
+@router.get('/{id}', name='Get Smart Servant', response_model=SmartServant)
+async def get_servant(id: SERVANTS, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
         id: 
             type: str
             required: True
-            desc: mount_id
+            desc: servant_id
 
     **Query Params** \n
         lang:
@@ -36,18 +36,18 @@ async def get_mount(id: MOUNTS, lang: LANGS = LANGS('en'), include: bool = True)
             desc: Include all data keys
             
     **Return** \n
-        Mount
+        SmartServant
     '''
     
-    if mount := await MOUNTS_REPO.get(EntityBase(id=id), lang):
+    if mount := await SERVANTS_REPO.get(EntityBase(id=id), lang):
         if include:
             return PrettyJsonResponse(mount.model_dump())
         else:
-            return PrettyJsonResponse(mount.model_dump(include={'id', 'name', 'assets'}))
+            return PrettyJsonResponse(mount.model_dump(include={'id', 'name', 'assets', 'element', 'type'}))
     else:
         raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
 
-@router.get('', name='All mounts', response_model=list[Mount])
+@router.get('', name='All Smart Servant', response_model=list[SmartServant])
 async def get_all_mounts(lang: LANGS = LANGS('en'), include: bool = False):
     '''
     **Query Params** \n
@@ -62,14 +62,14 @@ async def get_all_mounts(lang: LANGS = LANGS('en'), include: bool = False):
             desc: Include all data keys
             
     **Return** \n
-        List[Mount]
+        List[SmartServant]
     '''
     
-    if mounts := await MOUNTS_REPO.get_all(lang):
+    if servants := await SERVANTS_REPO.get_all(lang):
         if include:
-            return PrettyJsonResponse([mount.model_dump() for mount in mounts])
+            return PrettyJsonResponse([servant.model_dump() for servant in servants])
         else:
-            return PrettyJsonResponse([mount.model_dump(include={'name', 'assets'}) for mount in mounts])
+            return PrettyJsonResponse([servant.model_dump(include={'id', 'name', 'assets', 'element', 'type'}) for servant in servants])
     
     else:
         raise ItemNotFound(detail={'error': f'{lang} not found'})

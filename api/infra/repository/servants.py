@@ -4,20 +4,20 @@ from json import loads
 from typing import Any
 
 from api.infra.repository.base_repo import ModelRepository
-from api.infra.entitys import Mount, EntityBase
+from api.infra.entitys import SmartServant, EntityBase
 
 
-class MountsRepo(ModelRepository[EntityBase, Mount]):
+class ServantsRepo(ModelRepository[EntityBase, SmartServant]):
     cache = {}
     __load_all_data__: bool = False
 
     def __init__(self) -> None:
         super().__init__(model_base=EntityBase, 
-                         model=Mount, 
-                         class_base=MountsRepo,
-                         repo_name='mount')
+                         model=SmartServant, 
+                         class_base=ServantsRepo,
+                         repo_name='pet')
     
-    async def get_all(self, lang: str) -> list[Mount]:
+    async def get_all(self, lang: str) -> list[SmartServant]:
         if lang in self.cache:
             return list(self.cache[lang].values())
         
@@ -31,8 +31,10 @@ class MountsRepo(ModelRepository[EntityBase, Mount]):
             else:
                 self.cache.update({lang: {}})
 
-            for mount_id, mount_dict in DATA.items():
-                self.cache[lang].update({mount_id.lower(): Mount(**mount_dict)})
+            for servant_id, servant_dict in DATA.items():
+                servant_dict['id'] = servant_id.lower()
+                servant_dict['upgradeItems'] = [{'id': key.lower(), 'xpGain': value} for key, value in servant_dict['PetUpgradeItemMap'].items()]
+                self.cache[lang].update({servant_id.lower(): SmartServant(**servant_dict)})
 
             self.__load_all_data__ = True
             return list(self.cache[lang].values())

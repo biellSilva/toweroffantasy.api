@@ -1,11 +1,9 @@
 
-from pydantic import BaseModel
-
-from api.infra.entitys.item import Item
+from pydantic import BaseModel, BeforeValidator
+from typing import Annotated
 
 
 class Ingredient(BaseModel):
-    matID: str
+    matID: Annotated[str, BeforeValidator(lambda x: x.lower())]
     min: int | str
     max: int | str
-    item: Item | None = None

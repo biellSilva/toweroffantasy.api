@@ -10,6 +10,7 @@ from .achievements import Achievement
 from .outfits import Outfit
 from .raritys import Raritys
 from .mounts import Mount
+from .servants import SmartServant
 
 from .base import EntityBase
 
@@ -26,5 +27,6 @@ __import__ = [
     Achievement,
     Outfit,
     Raritys,
-    Mount
+    Mount,
+    SmartServant
 ]

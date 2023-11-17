@@ -60,6 +60,8 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 shatter = weapon_dict['stars'][0]['stats']['shatter']
                 charge = weapon_dict['stars'][0]['stats']['charge']
 
+                weapon_dict['baseStats'] = [value for i in weapon_dict['stats'] for key, value in i.items() if key == 'stats']
+
                 weapon_dict.update({
                     'weaponEffects': weaponEffects, 
                     'shatter': {
