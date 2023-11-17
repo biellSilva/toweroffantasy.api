@@ -8,7 +8,8 @@ from api.infra.entitys.weapons.extra import (
     Advancements, 
     Skills,
     Assets,
-    Meta
+    Meta,
+    BaseStats
 )
 
 
@@ -18,6 +19,7 @@ class Weapon(EntityBase):
     rarity: str
     type: str = Field(alias='wc', serialization_alias='type')
     element: str
+    baseStats: list[BaseStats]
     assets: Assets
     shatter: ShatterOrCharge
     charge: ShatterOrCharge

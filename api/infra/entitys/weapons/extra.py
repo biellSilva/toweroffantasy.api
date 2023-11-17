@@ -49,3 +49,10 @@ class Meta(BaseModel):
     recommendedMatrices: list[RecoMatrix] = []
     rating: list[int] = []
     analyticVideoId: str | None = None
+
+
+class BaseStats(BaseModel):
+    id: str
+    name: str
+    icon: Annotated[str, BeforeValidator(replace_icon)]
+    
