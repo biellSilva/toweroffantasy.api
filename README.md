@@ -32,6 +32,7 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 * **`/achievements`**
 * **`/outfits`**
 * **`/rarities`**
+* **`/servants`**
 * **`/assets`**
 * **`/graphql`**
 
@@ -99,4 +100,4 @@ It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to che
 * [ ] currency
 * [X] outfits
 * [X] mounts
-* [ ] smart-servants
+* [X] smart-servants
