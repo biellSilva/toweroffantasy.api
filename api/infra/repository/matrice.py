@@ -45,6 +45,9 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                 self.cache.update({lang: {}})
 
             for matrice_id, matrice_dict in DATA.items():
+                if matrice_id in ('matrix_SSR12_1', 'matrix_SSR13_1'):
+                    continue
+                
                 matrice_id = matrice_id.removesuffix('_1').lower()
                 matrice_dict['id'] = matrice_id
 
