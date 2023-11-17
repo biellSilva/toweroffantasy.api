@@ -30,3 +30,6 @@ ACHIEVS = StrEnum('ACHIEVS', __achievs_names)
 
 __outfits_names: list[str] = [file for file in loads(Path('api/infra/database/global/en/outfits.json').read_bytes())]
 OUTFITS = StrEnum('OUTFITS', __outfits_names)
+
+__mounts_names: list[str] = [file for file in loads(Path('api/infra/database/global/en/mount.json').read_bytes())]
+MOUNTS = StrEnum('MOUNTS', __mounts_names)

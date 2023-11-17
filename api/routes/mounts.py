@@ -1,7 +1,7 @@
 
 from fastapi import APIRouter
 
-from api.enums import OUTFITS, LANGS
+from api.enums import MOUNTS, LANGS
 
 from api.core.exceptions import ItemNotFound
 from api.core.response import PrettyJsonResponse
@@ -16,7 +16,7 @@ MOUNTS_REPO = MountsRepo()
 
 
 @router.get('/{id}', name='Get mount', response_model=Mount)
-async def get_mount(id: OUTFITS, lang: LANGS = LANGS('en'), include: bool = True):
+async def get_mount(id: MOUNTS, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
         id: 
