@@ -48,3 +48,4 @@ class Meta(BaseModel):
     recommendedPairings: list[str] = []
     recommendedMatrices: list[RecoMatrix] = []
     rating: list[int] = []
+    analyticVideoId: str | None = None
