@@ -10,7 +10,7 @@ from api.core.response import PrettyJsonResponse
 from api.core.exceptions import ItemNotFound
 
 
-router = APIRouter(prefix="/achievement", tags=["achievement"])
+router = APIRouter(prefix="/achievements", tags=["Achievements"])
 
 ACHIEV_REPO = AchievementRepo()
 

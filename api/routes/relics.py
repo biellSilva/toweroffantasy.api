@@ -10,7 +10,7 @@ from api.infra.repository import RelicRepo
 from api.infra.entitys import Relic, EntityBase
 
 
-router = APIRouter(prefix='/relic', tags=['relic'])
+router = APIRouter(prefix='/relics', tags=['Relics'])
 
 RELIC_REPO = RelicRepo()
 

@@ -10,7 +10,7 @@ from api.infra.repository import OutfitRepo
 from api.infra.entitys import EntityBase, Outfit
 
 
-router = APIRouter(prefix='/outfit', tags=['outfit'])
+router = APIRouter(prefix='/outfits', tags=['Outfits'])
 
 OUTFIT_REPO = OutfitRepo()
 
