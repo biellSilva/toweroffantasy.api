@@ -21,13 +21,13 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
     
     def __sort_matrice(self, item: Matrix):
         if item.rarity == 'SSR':
-            return (1, int(item.id.rsplit('ssr', 1)[1]))
+            return (1, -int(item.id.rsplit('ssr', 1)[1]))
         elif item.rarity == 'SR':
-            return (2, int(item.id.rsplit('sr', 1)[1]))
+            return (2, -int(item.id.rsplit('sr', 1)[1]))
         elif item.rarity == 'R':
-            return (3, int(item.id.rsplit('r', 1)[1]))
+            return (3, -int(item.id.rsplit('r', 1)[1]))
         else:
-            return (4, int(item.id.rsplit('n', 1)[1]))
+            return (4, -int(item.id.rsplit('n', 1)[1]))
 
     
     async def get_all(self, lang: str) -> list[Matrix]:
