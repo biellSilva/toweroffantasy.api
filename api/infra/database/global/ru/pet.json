@@ -1,0 +1,380 @@
+{
+	"FightPet_1": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Pet_Preview_018",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_FightPet_1",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_020_L10N"
+		},
+		"skills": [
+			{
+				"name": "Удар Калки",
+				"description": "Калка бросается вперед, нанося целям перед собой урон в размере **1147%** от АТК, и увеличивает собственную АТК на **10%** на 8 секунд.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_018_act01"
+			},
+			{
+				"name": "Лазер Калки",
+				"description": "Калка начинает заряжаться, затем выстреливает концентрированным лазерным разрядом, наносит целям перед собой урон в размере **1147%** от АТК и восстанавливает хозяину здоровье в размере **1613%** от его АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_018_act02"
+			},
+			{
+				"name": "Кулак Калки",
+				"description": "Калка последовательно бьет вперед левым и правым кулаками, нанося 2 удара по врагам впереди. Каждый удар наносит урон в размере **1147%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_018_act03"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "damage_pet_018_skill01",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "damage_pet_018_skill02",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "damage_pet_018_skill03",
+				"value": 1
+			}
+		],
+		"id": "FightPet_1"
+	},
+	"FightPet_2": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Pet_Preview_025",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_FightPet_2",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_025_L10N"
+		},
+		"skills": [
+			{
+				"name": "Огненный снаряд",
+				"description": "Ангел Пустоты поднимает правую руку и запускает в противников 4 огненных снаряда. Каждый огненный снаряд наносит урон в размере **413%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_025_act01"
+			},
+			{
+				"name": "Струя пламени",
+				"description": "Подняв обе руки, Ангел Пустоты извергает струи пламени и 4 раза атакует врагов перед собой. Каждый удар наносит урон в размере **413%** от АТК и дополнительно поджигает врагов, нанося урон в размере **118%** от АТК в течение 5 секунд. Когда цель горит, эффективность исходящего исцеления у нее снижается на 50%.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_025_act02"
+			},
+			{
+				"name": "Ангельский гнев",
+				"description": "Ангел Пустоты поднимает обе руки, создавая над головой огненный шар, а затем запускает его во врагов впереди. Шар наносит пораженным врагам урон в размере **413%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_025_act03"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_pet_025_skill01_C",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_pet_025_skill02_C",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_pet_025_skill03_C",
+				"value": 1
+			}
+		],
+		"id": "FightPet_2"
+	},
+	"FightPet_3": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Pet_Preview_027",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_FightPet_3",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_027_L10N"
+		},
+		"skills": [
+			{
+				"name": "Морозный взрыв",
+				"description": "Анджела поднимает обе руки, создавая морозный взрыв в месте нахождения врагов. Взрыв наносит пораженным врагам урон в размере **1481%** от АТК и накладывает обморожение на 6 секунд.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_027_act01"
+			},
+			{
+				"name": "Анджела любит вас!",
+				"description": "Анджела поднимает обе руки, создавая над головой ледяной шар, а затем запускает его во врагов впереди. Шар наносит пораженным врагам урон в размере **1481%** от АТК и накладывает обморожение на 6 секунд.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_027_act02"
+			},
+			{
+				"name": "Пинок от Анджелы",
+				"description": "Анджела взлетает на некоторую высоту, а затем пикирует и бьет пинком в полете, нанося противникам на пути урон в размере **1481%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_027_act03"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_pet_027_skill01",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_pet_027_skill02",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_pet_027_skill03",
+				"value": 1
+			}
+		],
+		"id": "FightPet_3"
+	},
+	"FightPet_4": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Pet_Preview_015",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_FightPet_4",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_015_L10N"
+		},
+		"skills": [
+			{
+				"name": "Заячий шквал",
+				"description": "Лунный Заяц начинает вращаться и бросается вперед. Своими наэлектризованными лапами он 6 раз атакует ближайших врагов электричеством, и каждый удар наносит урон в размере **244%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_015_act01"
+			},
+			{
+				"name": "Заячий выстрел",
+				"description": "Лунный Заяц выпускает из лап мощные электрические снаряды и 3 раза атакует электричеством врагов перед собой. Каждое попадание наносит урон в размере **244%** от АТК и дает хозяину щит в размере **573%** от его АТК на 5 секунд.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_015_act02"
+			},
+			{
+				"name": "Бешеная ярость",
+				"description": "Лунный Заяц обрушивает вокруг себя гром и молнии, 6 раз атакуя электричеством окружающих врагов. Каждое попадание наносит урон в размере **244%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_015_act03"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "pet_015_damage_skill01",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "pet_015_damage_skill02",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "pet_015_damage_skill03",
+				"value": 1
+			}
+		],
+		"id": "FightPet_4"
+	},
+	"FightPet_5": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Preview_BattleRobot_001",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_BattleRobot_001",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_BattleRobot_001"
+		},
+		"skills": [
+			{
+				"name": "Огненный выдох",
+				"description": "Огненный воробей изрыгает огонь в противника 3 раза, каждый раз нанося урон в размере **733%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_001_act01"
+			},
+			{
+				"name": "Огненная бомба",
+				"description": "Огненный воробей некоторое время летает, а затем выпускает из когтей огненную бомбу, нанося врагу урон в размере **733%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_001_act02"
+			},
+			{
+				"name": "Огненное пике",
+				"description": "Огненный воробей подлетает на некоторое расстояние, затем превращается в феникса и пикирует, нанося врагу урон в размере **733%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_001_act03"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_001_Skill01",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_001_Skill02",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_001_Skill03",
+				"value": 1
+			}
+		],
+		"id": "FightPet_5"
+	},
+	"FightPet_6": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Pet_Preview_mia",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_FightPet_6",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_mia_L10N"
+		},
+		"skills": [
+			{
+				"name": "Газированная пушка",
+				"description": "Напитки, которые разносит Ми-я, не только очень вкусные, но и могут использоваться для зарядки энергетических пуль. При попадании во врага энергетическая пуля наносит урон в размере **1225%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_004_act01"
+			},
+			{
+				"name": "Ракетница Ми-и",
+				"description": "Ми-я выпускает энергетический луч, при попадании нанося урон в размере **1225%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_004_act02"
+			},
+			{
+				"name": "Разделочная доска",
+				"description": "Благодаря своей привычке ежедневно готовить еду Ми-я научилась создавать энергетическую разделочную доску, которой при случае можно хорошенько треснуть врага. При попадании доска наносит врагу урон в размере **1225%** АТК и снижает его скорость на 20% на 2 сек.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/SkillIcon_pet_004_act03"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_BattleRobot_004_skill01",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_BattleRobot_004_skill02",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "GE_damage_BattleRobot_004_skill03",
+				"value": 1
+			}
+		],
+		"id": "FightPet_6"
+	},
+	"FightPet_7": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Pet_Preview_003",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_FightPet_003",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_003_L10N"
+		},
+		"skills": [
+			{
+				"name": "Шар дракона",
+				"description": "Цзунъюнь собирает всю силу молнии в шар и атакует врагов. Ударив по цели, шар взрывается молниями, нанося урон в размере **2491%** от АТК всем врагам в области.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_003_act01"
+			},
+			{
+				"name": "Заклинатель грома",
+				"description": "Цзунъюнь поражает врагов перед собой громом, нанося урон в размере **2491%** от АТК 5 раз.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_003_act02"
+			},
+			{
+				"name": "Громовые кольца",
+				"description": "Цзунъюнь создает два громовых кольца на своем хвосте и бросает их во врагов. Каждое кольцо наносит урон в размере **2491%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_003_act03"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_003_skill1",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_003_skill2",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_003_skill3",
+				"value": 1
+			}
+		],
+		"id": "FightPet_7"
+	},
+	"FightPet_8": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Pet_Preview_002",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_FightPet_002",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_002_L10N"
+		},
+		"skills": [
+			{
+				"name": "Морозный коготь",
+				"description": "Лея выпускает морозные когти и атакует врага 2раза. Каждый удар наносит урон в размере **852%** от АТК. После этого она продолжает полосовать цель когтями, нанося урон в размере **852%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_002_skill1"
+			},
+			{
+				"name": "Мерзлые крылья",
+				"description": "Лея бьет врагов крыльями, сотканными из холода, и наносит урон в размере **852%** от АТК 2 раза.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_002_skill2"
+			},
+			{
+				"name": "Ледяной циклон",
+				"description": "Лея призывает на позицию врага ледяной циклон, который действует 5сек. и наносит урон в размере **852%** от АТК каждые 0,5 сек.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_002_skill3"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_002_skill1",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_002_skill2",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_002_skill3",
+				"value": 1
+			}
+		],
+		"id": "FightPet_8"
+	},
+	"FightPet_10": {
+		"assets": {
+			"PetIcon": "/Game/Resources/UI/PetFight/icon/BP_Preview_BattleRobot_008",
+			"PetActivatedIcon": "/Game/Resources/UI/PetFight/icon/LH_FightPet_008",
+			"PetNameIcon": "/Game/Resources/UI/PetFight/icon/TextName_008_L10N"
+		},
+		"skills": [
+			{
+				"name": "Ледяные шипы",
+				"description": "Снежка хлопает в ладоши и создает вокруг себя шесть ледяных шипов, а затем разводит руками и метает шипы в два захода. Каждый шип наносит пораженному врагу урон в размере **363%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_008_act01"
+			},
+			{
+				"name": "Невыносимый холод",
+				"description": "Снежка взлетает в воздух и создает ледяной конус в местоположении врага, нанося урон в размере **363%** от АТК. Затем конус разбивается, нанося урон в размере **995%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_008_act02"
+			},
+			{
+				"name": "Снежка-недотрога",
+				"description": "Снежка вскидывает руки и выпускает огромный ледяной шар, который врезается во врагов, нанося урон в размере **363%** от АТК.",
+				"icon": "/Game/Resources/Icon/skill/BattleRobotSkill/BattleRobot_008_act03"
+			}
+		],
+		"numberst": [
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_008_Skill01",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_008_Skill02_1",
+				"value": 1
+			},
+			{
+				"file": "Pet_Skill_Mult.json",
+				"key": "Damage_BattleRobot_008_Skill03",
+				"value": 1
+			}
+		],
+		"id": "FightPet_10"
+	}
+}
