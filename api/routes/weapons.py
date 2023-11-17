@@ -10,7 +10,7 @@ from api.infra.entitys import Weapon, EntityBase
 from api.infra.repository import WeaponRepo
 
 
-router = APIRouter(prefix='/weapons', tags=['weapons'])
+router = APIRouter(prefix='/weapons', tags=['Weapons'])
 
 WEAPON_REPO = WeaponRepo()
 

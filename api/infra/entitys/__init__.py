@@ -9,6 +9,7 @@ from .item import Item
 from .achievements import Achievement
 from .outfits import Outfit
 from .raritys import Raritys
+from .mounts import Mount
 
 from .base import EntityBase
 
@@ -24,5 +25,6 @@ __import__ = [
     Item,
     Achievement,
     Outfit,
-    Raritys
+    Raritys,
+    Mount
 ]

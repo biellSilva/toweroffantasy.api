@@ -57,8 +57,8 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                     if len(weapon_dict['stars']) == 7:
                         weapon_dict['stars'].pop(0)
 
-                shatter = weapon_dict['stars'][-1]['stats']['shatter']
-                charge = weapon_dict['stars'][-1]['stats']['charge']
+                shatter = weapon_dict['stars'][0]['stats']['shatter']
+                charge = weapon_dict['stars'][0]['stats']['charge']
 
                 weapon_dict.update({
                     'weaponEffects': weaponEffects, 

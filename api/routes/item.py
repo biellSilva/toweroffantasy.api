@@ -10,7 +10,7 @@ from api.core.response import PrettyJsonResponse
 from api.core.exceptions import ItemNotFound
 
 
-router = APIRouter(prefix="/item", tags=["item"])
+router = APIRouter(prefix="/items", tags=["Items"])
 
 ITEM_REPO = ItemRepo()
 

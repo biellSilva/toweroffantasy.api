@@ -6,23 +6,23 @@ from api.enums import OUTFITS, LANGS
 from api.core.exceptions import ItemNotFound
 from api.core.response import PrettyJsonResponse
 
-from api.infra.repository import OutfitRepo
-from api.infra.entitys import EntityBase, Outfit
+from api.infra.repository import MountsRepo
+from api.infra.entitys import EntityBase, Mount
 
 
-router = APIRouter(prefix='/outfits', tags=['Outfits'])
+router = APIRouter(prefix='/mounts', tags=['Mounts'])
 
-OUTFIT_REPO = OutfitRepo()
+MOUNTS_REPO = MountsRepo()
 
 
-@router.get('/{id}', name='Get outfit', response_model=Outfit)
-async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en'), include: bool = True):
+@router.get('/{id}', name='Get mount', response_model=Mount)
+async def get_mount(id: OUTFITS, lang: LANGS = LANGS('en'), include: bool = True):
     '''
     **Path Param** \n
         id: 
             type: str
             required: True
-            desc: outfit_id
+            desc: mount_id
 
     **Query Params** \n
         lang:
@@ -36,20 +36,19 @@ async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en'), include: bool = Tru
             desc: Include all data keys
             
     **Return** \n
-        Outfit
+        Mount
     '''
     
-    if outfit := await OUTFIT_REPO.get(EntityBase(id=id), lang):
+    if mount := await MOUNTS_REPO.get(EntityBase(id=id), lang):
         if include:
-            return PrettyJsonResponse(outfit.model_dump())
+            return PrettyJsonResponse(mount.model_dump())
         else:
-            return PrettyJsonResponse(outfit.model_dump(include={'name', 'icon'}))
-
+            return PrettyJsonResponse(mount.model_dump(include={'id', 'name', 'assets'}))
     else:
         raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
 
-@router.get('', name='All outfits', response_model=list[Outfit])
-async def get_all_outfits(lang: LANGS = LANGS('en'), include: bool = False):
+@router.get('', name='All mounts', response_model=list[Mount])
+async def get_all_mounts(lang: LANGS = LANGS('en'), include: bool = False):
     '''
     **Query Params** \n
         lang:
@@ -63,14 +62,14 @@ async def get_all_outfits(lang: LANGS = LANGS('en'), include: bool = False):
             desc: Include all data keys
             
     **Return** \n
-        List[Outfit]
+        List[Mount]
     '''
     
-    if outfits := await OUTFIT_REPO.get_all(lang):
+    if mounts := await MOUNTS_REPO.get_all(lang):
         if include:
-            return PrettyJsonResponse([outfit.model_dump() for outfit in outfits])
+            return PrettyJsonResponse([mount.model_dump() for mount in mounts])
         else:
-            return PrettyJsonResponse([outfit.model_dump(include={'name', 'icon'}) for outfit in outfits])
+            return PrettyJsonResponse([mount.model_dump(include={'name', 'assets'}) for mount in mounts])
     
     else:
         raise ItemNotFound(detail={'error': f'{lang} not found'})
