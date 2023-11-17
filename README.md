@@ -12,6 +12,7 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 * Python-Dotenv
 * Python-Multipart
 * Aiohttp
+* Pillow
 
 ## Achievements
 
@@ -21,29 +22,36 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 
 * **`/docs`**
 * **`/simulacra`**
-* **`/matrice`**
-* **`/weapon`**
-* **`/simulacra-v2`**
-* **`/relic`**
+* `/simulacra-v2`
+* **`/matrices`**
+* **`/weapons`**
+* **`/relics`**
 * **`/food`**
-* **`/item`**
+* **`/items`**
+* **`/mounts`**
+* **`/achievements`**
+* **`/outfits`**
+* **`/rarities`**
 * **`/assets`**
+* **`/graphql`**
 
 ### Example of use
 
-Let's say we made a request for one of the routes (except `/assets`), if we don't specify an ID using just `/route`, the return will be a dictionary containing all the information for that route
+Let's say we made a request for one of the routes (except `/assets`), if we don't specify an ID using just `/route`, the return will be a list of dictionarys containing all the information for that route
 
 *status code: 200*
 
 ```json
-{
-   "object_id": {
+[
+   {
+	"id": "value_id",
 	"keys": "values"
    },
-   "object_id": {
+   {
+	"id": "value_id",
 	"keys": "values"
-    }
-}
+   }
+]
 ```
 
 But in case we only want a specific object, then we use **`/route/id`** but this route has a validation system, if the ID doesn't exist it returns error **404** (not found) or **423** (error validation on ID)
@@ -58,18 +66,24 @@ _status code: 200_
 ```
 
 ### Language system
+
 All routes also have a system to define which language should be returned, for this query params were used, in the request url you must pass **`/route?lang=possible_languages`**, can also be used in a route for a specific object **`/route/id?lang=possible_language`**
 
-All possible languages are the folders name in **`/api/database`**
+All possible languages are the folders name in **`/api/infra/database/global`**
+
+### Include system
+
+system to define if all keys should be returned, in the request url you must pass **`/route?include=True`** or `/route?include=False`, possible to be used in a route for a specific object **`/route/id?include=True`**
 
 ### /assets
+
 All objects that have icons/assets are modified to facilitate their access
 for example Ling Han object, the key "icon" has the value of **"/assets/UI/huanxing/lihui/linghan"** this is its path in the API, to facilitate "access" we are talking about you just needing to add the icon string in the API URI **"https://api.toweroffantasy.info/assets/UI/huanxing/lihui/linghan"**
 
-<a href="url"><img src="https://api.toweroffantasy.info/assets/UI/huanxing/lihui/linghan" align="center" width="350"></a>
-
+`<a href="url"><img src="https://api.toweroffantasy.info/assets/UI/huanxing/lihui/linghan" align="center" width="350">``</a>`
 
 ### Note
+
 It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to check/learn on how to use, their returns and more
 
 ## Development checklist
@@ -81,6 +95,8 @@ It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to che
 * [X] foods
 * [X] items
 * [X] assets
-* [ ] achievements
+* [X] achievements
 * [ ] currency
-* [ ] outfits
+* [X] outfits
+* [X] mounts
+* [ ] smart-servants
