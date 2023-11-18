@@ -34,6 +34,7 @@ class Assets:
     grayAdvancePainting: str | None
     backPhoto: str | None
     rarityIcon: str | None
+    bannerIcon: str | None
 
 
 

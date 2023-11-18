@@ -13,4 +13,4 @@ if __name__ == '__main__':
     if DEBUG:
         run(app='main:app', reload=True, workers=1)
     else:
-        run(app='main:app', host='0.0.0.0', port=8080, workers=10)
+        run(app='main:app', host='0.0.0.0', port=8080, workers=1)

@@ -21,3 +21,4 @@ class Assets(BaseModel):
     grayAdvancePainting: Annotated[str, BeforeValidator(replace_icon)] | None
     backPhoto: Annotated[str, BeforeValidator(replace_icon)] | None
     rarityIcon: Annotated[str, BeforeValidator(replace_icon)] | None
+    bannerIcon: Annotated[str, BeforeValidator(replace_icon)] | None 

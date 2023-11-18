@@ -47,7 +47,6 @@ class ShatterOrCharge:
 class WeaponAssets:
     icon: str | None 
     weaponMatrixIcon: str | None
-    bannerIcon: str | None
 
 
 @strawberry.type
@@ -62,3 +61,10 @@ class Meta:
     recommendedMatrices: list[RecoMatrix]
     rating: list[int]
     analyticVideoId: str | None
+
+
+@strawberry.type
+class BaseStats:
+    id: str
+    name: str
+    icon: str
