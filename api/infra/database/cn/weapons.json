@@ -82,6 +82,14 @@
 					"icon": "/Game/Resources/Icon/skill/spear_skill1",
 					"id": "GA_FPlayerSpearSkill_R"
 				}
+			],
+			"discharge": [
+				{
+					"name": "长击飞挑",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，抓取目标，并将目标多次甩动，造成**205.4%***攻击力+**1232**点伤害，最后一击附带**强控浮空**效果，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_spear_changeskill",
+					"id": "GA_FPlayerSpearChangeSkill_Success_R"
+				}
 			]
 		},
 		"stars": [
@@ -1763,7 +1771,64 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "ShieldAxe_Fire_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "普通攻击",
+					"description": "在地面时，挥舞盾斧可连续进行四次攻击。\r\n盾形态：第一次攻击对目标造成**108.8%***攻击力+**653**点伤害，并小幅击退目标。\r\n第二次攻击对目标造成**79.7%***攻击力+**478**点伤害，并小幅击退目标。\r\n第三次攻击对目标造成**88%***攻击力+**528**点伤害，并小幅击退目标。\r\n第四次攻击对目标造成**257.6%***攻击力+**1545**点伤害，并造成**击飞**效果。\r\n斧形态：第一次攻击对目标造成**189.2%***攻击力+**1135**点伤害，并小幅击退目标。\r\n第二次攻击对目标造成**111.2%***攻击力+**667**点伤害，并小幅击退目标。\r\n第三次攻击对目标造成**167.8%***攻击力+**1007**点伤害，并小幅击退目标。\r\n第四次攻击对目标造成**309.8%***攻击力+**1859**点伤害，并击退目标。",
+					"icon": "/Game/Resources/Icon/skill/Melee/pugong_Shield",
+					"id": "GA_FPlayerShieldMelee_Melee"
+				},
+				{
+					"name": "空击",
+					"description": "当拓荒者滞空时或使用一段跳之后，在空中连续进行三次攻击。\r\n盾形态：第一次攻击对目标造成**106.2%***攻击力+**637**点伤害。\r\n第二次攻击对目标造成**112.2%***攻击力+**673**点伤害。\r\n第三次攻击对目标造成**144.2%***攻击力+**865**点伤害。\r\n斧形态：第一次攻击对目标造成**166%***攻击力+**996**点伤害。\r\n第二次攻击对目标造成**127.5%***攻击力+**765**点伤害。\r\n第三次攻击对目标造成**389.1%***攻击力+**2334**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_shield_airattack",
+					"id": "GA_FPlayerShieldMelee_AirAttack"
+				},
+				{
+					"name": "蓄势",
+					"description": "盾形态：地面长按普攻，自身不可移动（松开普攻解除），持续**3**秒，此状态下自身受到伤害减少**50%**，在此期间受到任何伤害后松开普攻或者长按时间达到**3**秒后，向四周发出火焰冲击，对目标造成**234.2%***攻击力+**1405**点伤害，附带**1**秒**强控眩晕**效果。\r\n斧形态：用力前砸，对目标造成**171.1%***攻击力+**1027**点伤害，并浮空目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_shieldpowerattack",
+					"id": "GA_FPlayerShieldMelee_PowerAttack"
+				},
+				{
+					"name": "勇气",
+					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，触发空中分支攻击。\r\n盾形态：下落过程中，每次命中目标对目标造成**17.5%***攻击力+**105**点伤害；落地时对周围目标造成**124.9%***攻击力+**749**点伤害，并浮空目标。\r\n斧形态：下落过程中，每次命中目标对目标造成**17.5%***攻击力+**105**点伤害；落地时对周围目标造成**179.6%***攻击力+**1078**点伤害，并浮空目标。\r\n触发时离地距离越高，伤害越高，最高可达**600%**伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_shield_airbranch",
+					"id": "GA_FPlayerShieldMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "爆裂",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发闪避攻击。\r\n盾形态：向前发出一道火焰盾，对目标造成**78.1%***攻击力+**469**点伤害，击退目标，并产生范围爆炸，对目标造成**78.1%***攻击力+**469**点伤害，爆炸附带**1**秒**强控眩晕**效果，同时使目标在**10**秒内被治疗效果降低**30%**。\r\n斧形态：旋转大斧，对目标造成**316.9%***攻击力+**1901**点伤害，同时使目标在**10**秒内被治疗效果降低**30%**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_shieldevade",
+					"id": "GA_FPlayerShieldEvade_EvadeAttack"
+				},
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerShieldEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "裂变",
+					"description": "盾之变：盾形态切换至斧形态，砸地对目标造成**523.4%***攻击力+**3140**点伤害，并附带玩家自身**10%**最大生命值的额外伤害，附带**强控浮空**效果，同时在地面形成持续**5**秒的大范围火焰地带，使目标持续灼烧，造成**327.1%***攻击力+**1962**点伤害。\r\n斧之变：斧形态切换至盾形态，盾插地，对目标造成**433.4%***攻击力+**2600**点伤害，并附带玩家自身**10%**最大生命值的额外伤害，附带击退效果，同时命中的目标在**5**秒内无法切换武器。\r\n冷却**25**秒，盾之变与斧之变共用冷却。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_shield",
+					"id": "GA_FPlayerShieldSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "磅礴怒意",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，发出火焰冲击波，对目标造成**492.7%***攻击力+**2956**点伤害，并附带玩家自身**10%**最大生命值的额外伤害，嘲讽敌人，持续**5**秒，期间自身获得**15%**伤害减免，根据嘲讽到的目标数量，在一定范围内散落盾形态凝聚物，存在**20**秒，自身拾取后获得**10**秒**5%**伤害减免（可叠加）且立即恢复一次闪避次数，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_shield_changeskill",
+					"id": "GA_FPlayerShieldChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"stats": {
@@ -2856,7 +2921,50 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "dgun_thunder_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "双枪普攻",
+					"description": "在地面时点击普攻，挥舞双枪可连续进行五次攻击。\r\n第一次攻击对目标总计造成**72.6%***攻击力+**436**点伤害。\r\n第二次攻击对目标总计造成**55.2%***攻击力+**331**点伤害。\r\n第三次攻击对目标总计造成**184.3%***攻击力+**1106**点伤害。\r\n第四次攻击对目标总计造成**174.2%***攻击力+**1045**点伤害。\r\n第五次攻击对目标总计造成**237.2%***攻击力+**1423**点伤害，并造成**击飞**效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_melee",
+					"id": "GA_FPlayerDgunMeleeThu_Melee"
+				},
+				{
+					"name": "爆裂枪雨",
+					"description": "滞空时，点击普攻可对地面目标持续射击，每次命中造成**77.8%***攻击力+**467**点伤害，消耗**150**点耐力。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_airattack",
+					"id": "GA_FPlayerDgunMeleeThu_AirAttack"
+				},
+				{
+					"name": "能量轰击",
+					"description": "长按普攻或普攻过程中长按，可对目标持续射击，命中造成**35.4%***攻击力+**212**点基础伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_changeskill",
+					"id": "GA_FPlayerDgunMeleeThu_PowerAttack"
+				},
+				{
+					"name": "幻影飞踢",
+					"description": "滞空时长按普攻，可触发幻影飞踢，击落目标造成**108.5%***攻击力+**651**点伤害，落地时对周围目标再次造成**151.9%***攻击力+**911**点伤害，并造成**强控击飞**效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evadeattack",
+					"id": "GA_FPlayerDgunMeleeThu_JumpAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "电能光束",
+					"description": "向锁定目标位置发射能量光盾，在能量范围内持续反射光束能量，对目标造成**415.5%***攻击力+**2493**点伤害，最后一击造成**强控浮空**效果，冷却**45**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun",
+					"id": "GA_FPlayerDgunSkillThu"
+				}
+			],
+			"discharge": [
+				{
+					"name": "雷电领域",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，锁定目标位置，制造雷电领域，**强控浮空**范围内的目标造成三次总计**367%***攻击力+**2202**点伤害并清除目标增益效果，雷电领域存在**3.5**秒，每**0.5**秒锁定对范围内目标并造成**65.2%***攻击力+**391**点伤害，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_changeskill2",
+					"id": "GA_FPlayerDgunChangeSkillThu_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"stats": {
@@ -2956,7 +3064,88 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "Mark_physic_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "猎荒者攻击",
+					"description": "在地面时，使用匕首和手枪连续进行四次攻击。\r\n第一次攻击总计造成**56.4%***攻击力+**338**点伤害。\r\n第二次攻击总计造成**30.2%***攻击力+**181**点伤害。\r\n第三次攻击总计造成**120.7%***攻击力+**724**点伤害。\r\n第四次攻击总计造成**139.8%***攻击力+**839**点伤害和击退效果。",
+					"icon": "/Game/Resources/Icon/skill/Melee/Melee_MarkPhy_SSR",
+					"id": "GA_PlayerMarkMelee_Melee"
+				},
+				{
+					"name": "猎荒者重拳",
+					"description": "滞空时使用普通攻击，可触发重击。\r\n落地时，对周围命中的目标造成**108.4%***攻击力+**650**点伤害，并击退目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mark_jumpattack",
+					"id": "GA_PlayerMarkJumpAttack"
+				},
+				{
+					"name": "重立体普攻",
+					"description": "重立体形态时，挥舞大剑可连续进行五次攻击，大剑形态命中同一目标**4**次添加**虚弱**效果，持续**20**秒，不可叠加。\r\n第一次攻击对目标可造成**70.7%***攻击力+**424**点伤害，并小幅击退目标。\r\n第二次攻击对目标可造成**38.7%***攻击力+**232**点伤害，并小幅击退目标。\r\n第三次攻击对目标可造成**109.4%***攻击力+**656**点伤害，并小幅击退目标。\r\n第四次攻击对目标可造成**129.6%***攻击力+**778**点伤害，并小幅击退目标。\r\n第五次攻击对目标可造成**188.5%***攻击力+**1131**点伤害，并击飞目标。\r\n形态切换后，挥舞双斩可连续进行五次攻击，切换为双斩时，获得对**虚弱**状态目标造成的伤害提升**10%**的效果持续**20**秒。\r\n第一次攻击对目标可造成**87.6%***攻击力+**526**点伤害，并小幅击退目标。\r\n第二次攻击对目标可造成**48.2%***攻击力+**289**点伤害，并小幅击退目标。\r\n第三次攻击对目标可造成**185.5%***攻击力+**1113**点伤害，并小幅击退目标。\r\n第四次攻击对目标可造成**151.9%***攻击力+**911**点伤害，并小幅击退目标。\r\n第五次攻击对目标可造成**365.3%***攻击力+**2192**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/Melee/Melee1_MarkRobPhy_SSR",
+					"id": "GA_PlayerMarkRobMelee_Melee"
+				},
+				{
+					"name": "双斩砸击",
+					"description": "一段跳跃或滞空时长按攻击，可触发机甲重击。\r\n落地时，对周围命中的目标最多造成**135.4%***攻击力+**812**点伤害，并**强控浮空**目标。\r\n触发时离地距离越高，伤害越高，最高可达**600%**伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_markrob_jumpattack",
+					"id": "GA_PlayerMarkRobJumpAttack"
+				},
+				{
+					"name": "肩炮发射",
+					"description": "长按普攻，重力体发射**3**枚飞弹，命中造成**17.8%***攻击力+**107**点伤害，爆炸再次造成**26.7%***攻击力+**160**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_markrob_aim",
+					"id": "GA_FPlayerMarkRobotMeleePhy_AirAttack"
+				},
+				{
+					"name": "冲击斩",
+					"description": "普攻过程中长按普攻可触发分支攻击：\r\n大剑形态时，跃起砸地，对附近目标造成**250.3%***攻击力+**1502**点伤害并**强控浮空**目标；\r\n双刃形态时，向前冲刺，对沿途目标造成**254.5%***攻击力+**1527**点伤害并**强控击飞**目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_markrob_branch2",
+					"id": "GA_PlayerMarkRobBranch"
+				},
+				{
+					"name": "猎荒者射击",
+					"description": "使用手枪瞄准目标进行射击，对命中目标造成**23.9%***攻击力+**143**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mark_aim",
+					"id": "GA_PlayerMark_AimAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/UI/main/shanbi",
+					"id": "GA_FPlayerMarkEvadePhy_Evade"
+				},
+				{
+					"name": "重立体冲撞",
+					"description": "对沿途的目标造成**149.1%***攻击力+**895**点伤害，并小幅击退目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_shieldmelee",
+					"id": "GA_FPlayerMarkRobEvadeAttackPhy_EvadeAtack"
+				}
+			],
+			"skill": [
+				{
+					"name": "重立体登场",
+					"description": "重立体一跃而下，对周围目标造成**395.3%***攻击力+**2372**点伤害，并**强控击飞**目标，冷却**20**秒。 \r\n被动：重立体状态下，免疫硬直效果，不可使用解控源器外的其他源器。",
+					"icon": "/Game/Resources/Icon/skill/mark_skill",
+					"id": "GA_PlayerMarkSkill"
+				},
+				{
+					"name": "形态切换",
+					"description": "重立体一跃而下，对周围目标造成**395.3%***攻击力+**2372**点伤害并切换武器形态，且**强控击飞**目标，冷却**20**秒。",
+					"icon": "/Game/Resources/Icon/skill/MarkRobSkill1",
+					"id": "GA_PlayerMarkRobSkill_1"
+				}
+			],
+			"discharge": [
+				{
+					"name": "全弹发射",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，并释放大量飞弹，对命中的目标造成**513.3%***攻击力+**3080**点伤害，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n被动：重立体状态下，免疫硬直效果，不可使用解控源器外的其他源器。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_markrob_changeskillsucess",
+					"id": "GA_PlayerMarkRobChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**组队状态下【守护】**：释放\"重立体登场\"、“形态切换”或“全弹发射”时，给生命值最低的友方玩家承伤**40%**持续**10**秒，承伤结束后恢复**10%**已损失血量，仅在自身有**坚毅共鸣**时触发，有承伤效果持续至时间结束前不会被清除也无法再次触发承伤\r\n**非组队状态下【增幅】**：重立体形态获得**50%**物理减伤\r\n**重立体护盾**：\"重立体普攻/双斩砸击/冲击斩\"命中目标获得**1**点重立体能量，积攒到**20**点时将自己**20%**的当前生命值转化为**1.5**倍的【重立体护盾】（不超过最大生命值1.5倍，期间治疗降低50%），护盾持续**15**秒，生命值低于**10%**时不能获得【重立体护盾】。护盾结束后剩余护盾值的**66.7%**转化为生命，命中虚弱目标时获得**2**点重立体能量。【重立体护盾】获得时可将其它生命护盾值转化为【重立体护盾】并免疫生命护盾的添加",
@@ -3058,7 +3247,70 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "Immortal_thunder_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "普通攻击",
+					"description": "在地面时，进行五次攻击。\r\n第一次攻击对目标可造成**44.8%***攻击力+**269**点伤害，并小幅击退目标。\r\n第二次攻击对目标可造成**63.4%***攻击力+**380**点伤害，并击退目标。\r\n第三次攻击对目标可造成**118%***攻击力+**708**点伤害，并小幅击退目标。\r\n第四次攻击对目标可造成**39%***攻击力+**234**点伤害，并浮空目标。\r\n第五次攻击对目标可造成**133.3%***攻击力+**800**点伤害，并**强控击飞**目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Immortal_melee",
+					"id": "GA_PlayerImmortalMelee_Melee"
+				},
+				{
+					"name": "空中攻击",
+					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行五次攻击。\r\n第一次攻击对目标造成**65.7%***攻击力+**394**点伤害。\r\n第二次攻击对目标造成**65.7%***攻击力+**394**点伤害。\r\n第三次攻击对目标造成**56.1%***攻击力+**337**点伤害。\r\n第四次攻击对目标造成**136.6%***攻击力+**820**点伤害。\r\n第五次攻击对目标造成**197.9%***攻击力+**1187**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Immortal_air",
+					"id": "GA_PlayerImmortalMelee_AirAttack"
+				},
+				{
+					"name": "鞭腿",
+					"description": "普攻第二下后，长按普攻可触发鞭腿。\r\n高踢腿将目标浮空，短暂蓄力后使用鞭腿将目标击飞，总计造成**281.9%***攻击力+**1691**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Immortal_Branch",
+					"id": "GA_PlayerImmortalMelee_Branch"
+				},
+				{
+					"name": "憾地",
+					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，触发憾地。\r\n快速位移至目标上空，向下插刀，落地时对周围目标造成**112.2%***攻击力+**673**点伤害，附带浮空效果。\r\n触发时离地距离越高，伤害越高，最高可达**600%**伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Immortal_Jump",
+					"id": "GA_PlayerImmortalMelee_JumpAttack"
+				},
+				{
+					"name": "偷袭",
+					"description": "处于下蹲状态时靠近敌人身后，点击普攻可触发偷袭，横扫鞭腿，对目标造成**570%***攻击力+**3420**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_sneak",
+					"id": "GA_PlayerImmortalSneak"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerImmortalEvade_Evade"
+				},
+				{
+					"name": "拔刀斩",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发拔刀斩。\r\n释放拔刀斩，造成**219.1%***攻击力+**1314**点伤害，附带击倒效果。\r\n**被动：拔刀斩命中目标可立即引爆其身上的拔刺罐。**",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Immortal_backattack",
+					"id": "GA_PlayerImmortalEvade_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "制龙",
+					"description": "向前快速位移，对目标擒拿，冷却**25**秒。\r\n**目标可抓取：**抓取目标（**强控**），将目标砸向地面，最多造成**544.5%***攻击力+**3267**点伤害，附带浮空效果，同时给范围内所有目标添加**拔刺罐**效果。\r\n**目标不可抓取：**使用点穴禁锢目标（仅不可移动），最多造成**544.5%***攻击力+**3267**点伤害，附带击退效果，同时给范围内所有目标添加**拔刺罐**效果。\r\n快速位移期间霸体且免疫控制，擒拿期间自身不会受到任何伤害及负面效果。\r\n**拔刺罐：****5**秒后爆炸，造成**361.5%***攻击力+**2169**点伤害，附带**强控击倒**效果，同时目标在**5**秒内受到伤害增加**10%**。\r\n**被动：使用技能但未命中目标后，5秒内可以再使用一次，之后进入更长冷却（30秒冷却）。**",
+					"icon": "/Game/Resources/Icon/skill/Immortal_skill",
+					"id": "GA_PlayerImmortalMelee_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "力场",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，阿赖耶识出鞘，在目标位置形成大范围力场，造成**406.6%***攻击力+**2439**点伤害，将范围内的目标禁锢在原地**5**秒（仅不可移动），最多造成**454.4%***攻击力+**2726**点伤害，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Immortal_changeskill",
+					"id": "GA_PlayerImmortalChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "进入战斗后，开启“战意”，自身最终伤害提高**15%**，同时加速细胞衰老（每**5**秒减少自身**1%**当前生命值），脱离战斗清除【切换武器效果消失】。\r\n自身生命低于**50%**时，停止细胞衰老，战意增伤效果依然存在【切换武器效果消失】。",
@@ -3160,7 +3412,70 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "Suspension_thunder_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "普通攻击",
+					"description": "在地面时，操控启明星进行五次攻击。\r\n第一次攻击对目标造成**92.4%***攻击力+**554**点伤害。\r\n第二次攻击对目标造成**66%***攻击力+**396**点伤害。\r\n第三次攻击对目标造成**179%***攻击力+**1074**点伤害。\r\n第四次攻击对目标造成**122.5%***攻击力+**735**点伤害。\r\n第五次攻击对目标造成**270%***攻击力+**1620**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_suspension_melee",
+					"id": "GA_PlayerSuspensionMelee_Melee"
+				},
+				{
+					"name": "空中攻击",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击。\r\n第一次攻击对目标造成**113.8%***攻击力+**683**点伤害。\r\n第二次攻击对目标造成**113.8%***攻击力+**683**点伤害。\r\n第三次攻击对目标造成**218.3%***攻击力+**1310**点伤害。\r\n第四次攻击对目标造成**129.6%***攻击力+**778**点伤害。\r\n第五次攻击对目标造成**229.5%***攻击力+**1377**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_suspension_air",
+					"id": "GA_PlayerSuspensionMelee_AirAttack"
+				},
+				{
+					"name": "正向追击",
+					"description": "普攻第二段后，长按普攻可触发正向追击。\r\n向目标发射激光导弹，对目标最多造成**195.7%***攻击力+**1174**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_suspension_branch",
+					"id": "GA_PlayerSuspensionMelee_Branch"
+				},
+				{
+					"name": "双点调焦",
+					"description": "长按普攻，进入蓄力攻击状态，发射电荷球，命中产生范围爆炸，对目标造成**215.4%***攻击力+**1292**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_suspension_powerattack",
+					"id": "GA_PlayerSuspensionMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerSuspensionEvade_Evade"
+				},
+				{
+					"name": "双旋对焦",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发缓速磁场。\r\n启明星发射电荷球，向前飞行一段距离/命中目标后爆炸，造成**312.3%***攻击力+**1874**点伤害，同时形成缓速磁场，持续**3**秒【缓速磁场---范围内的敌方目标移动和攻击速度减少**35%**】。\r\n使用闪避的同时释放治疗链治疗附近友方单位（=拓荒者**67.7%***攻击力），后续**10**秒内每隔**2**秒释放小幅治疗链治疗附近友方单位（=拓荒者**22.5%***攻击力），每次释放闪避获得**1**层治疗链强化，提高**25%**治疗链的治疗效果，最多叠加**5**层，治疗链强化效果持续**30**秒。【切换武器不消失】",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_suspension_backattack",
+					"id": "GA_FPlayerSuspensionEvade_BackAttack"
+				},
+				{
+					"name": "平行光管",
+					"description": "使用方向键加闪避按钮触发前闪避的短暂时间内，点击普攻，可触发平行光管。\r\n启明星发射平行光管，造成**312.3%***攻击力+**1874**点穿透伤害。\r\n使用闪避的同时释放治疗链治疗附近友方单位（=拓荒者**67.7%***攻击力），后续**10**秒内每隔**2**秒释放小幅治疗链治疗附近友方单位（=拓荒者**22.5%***攻击力），每次释放闪避获得**1**层治疗链强化，提高**25%**治疗链的治疗效果，最多叠加**5**层，治疗链强化效果持续**30**秒。【切换武器不消失】",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_suspension_rollattack",
+					"id": "GA_FPlayerSuspensionEvade_RollAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "脉冲锁定",
+					"description": "启明星发动导弹攻击，命中目标后产生爆炸，造成**424.5%***攻击力+**2547**点伤害，附带击倒效果，冷却**25**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_suspension_skill",
+					"id": "GA_FPlayerSuspensionSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "粒子束喷发",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，操控启明星，向地面发出交叉射线，地面立即形成一个不稳定的区域，敌方目标在**5**秒内减速**70%**，短暂时间后电磁喷发，造成**717%***攻击力+**4302**伤害，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n连携释放后会在目标位置生成**1**个“电极”，电极每**1.5**秒进行一次攻击，造成**55.9%***攻击力+**335**点伤害。\r\n电极继承玩家**100%**属性，可被攻击，可被治疗，电极每秒扣除**3%**最大生命值。\r\n最多存在**1**个电极。新的电极出现时，会替换之前的电极。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_suspension_changeskill",
+					"id": "GA_FPlayerSuspensionChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**20%**雷攻和**40%**雷抗，装备后后台也生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）\r\n**雷电恩赐**：自身激活恩赐共鸣时，提升全队**5%**雷攻",
@@ -3262,7 +3577,64 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "Frigg_ice_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "普通攻击",
+					"description": "在地面时，使用巴尔蒙克进行五次攻击。\r\n第一次攻击对目标可造成**108.8%***攻击力+**653**点伤害，并小幅击退目标。\r\n第二次攻击对目标可造成**80.9%***攻击力+**485**点伤害，并小幅击退目标。\r\n第三次攻击对目标可造成**159.5%***攻击力+**957**点伤害，并小幅击退目标。\r\n第四次攻击对目标可造成**97.6%***攻击力+**586**点伤害，并小幅击退目标。\r\n第五次攻击对目标可造成**382.1%***攻击力+**2292**点伤害，并击倒目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_frigg_melee",
+					"id": "GA_PlayerFriggMelee_Melee"
+				},
+				{
+					"name": "空中攻击",
+					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行五次攻击。\r\n第一次攻击对目标造成**112.6%***攻击力+**676**点伤害。\r\n第二次攻击对目标造成**127.1%***攻击力+**763**点伤害。\r\n第三次攻击对目标造成**134.3%***攻击力+**806**点伤害。\r\n第四次攻击对目标造成**188.8%***攻击力+**1133**点伤害。\r\n第五次攻击对目标造成**294.5%***攻击力+**1767**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_frigg_air",
+					"id": "GA_PlayerFriggMelee_AirAttack"
+				},
+				{
+					"name": "凌空斩",
+					"description": "普通攻击中，长按普攻可触发凌空斩。\r\n前冲一段距离横劈后再将目标攻击至浮空，自身随之滞空，对目标最多造成**235%***攻击力+**1410**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_frigg_branch",
+					"id": "GA_PlayerFriggMelee_Branch"
+				},
+				{
+					"name": "螺旋切割",
+					"description": "滞空时长按普攻，攀爬，反向跳攻击或使用喷气背包普攻，会触发螺旋切割。\r\n下落过程中，每次命中目标对目标造成**34.8%***攻击力+**209**点伤害；落地时对周围目标造成**324.9%***攻击力+**1949**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_frigg_airbranch",
+					"id": "GA_PlayerFriggMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerFriggEvade_Evade"
+				},
+				{
+					"name": "多重斩切",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发多重斩切。\r\n在前方一定距离内产生多道斩切攻击，共造成**449.9%***攻击力+**2699**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_frigg_backattack",
+					"id": "GA_FPlayerFriggEvade_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "芬布尔之冬",
+					"description": "斩切自身周围的空间，共造成**1010.6%***攻击力+**6063**点伤害，附带浮空和击飞效果，技能释放期间不会受到伤害，冷却**30**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_frigg_skill",
+					"id": "GA_FPlayerFriggSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "零度撕裂",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，向前方冲刺攻击，短暂控制周围的敌人后发起一道大范围的斩击，击飞命中的目标，共造成**1081.9%***攻击力+**6491**伤害，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_frigg_changeskill",
+					"id": "GA_FPlayerFriggChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "释放技能**“芬布尔之冬”**后在自身周围形成大范围冰域，持续**25**秒。冰域内使用巴尔蒙克闪避不消耗闪避次数。\r\n自身处于冰域内获得“寒冰领域Ⅰ”：使用寒冰武器时冰攻提升**15%**，破盾效率提升**25%**。",
@@ -3364,7 +3736,70 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "funnel_fire_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "斯帕克普攻",
+					"description": "在地面时点击普攻，操控斯帕克可连续进行5次攻击。\r\n第一次攻击对每个目标总计造成**84.6%***攻击力+**508**点伤害。\r\n第二次攻击对每个目标总计造成**93%***攻击力+**558**点伤害。\r\n第三次攻击对每个目标总计造成**101.5%***攻击力+**609**点伤害。\r\n第四次攻击对每个目标总计造成**109.9%***攻击力+**659**点伤害。\r\n第五次攻击对每个目标总计造成**253.7%***攻击力+**1522**点伤害，并造成**击飞**效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_funnel_melee",
+					"id": "GA_FPlayerFunnelMeleeFire_Melee"
+				},
+				{
+					"name": "空中攻击",
+					"description": "滞空时点击普攻，操控斯帕克可连续进行4次攻击。\r\n第一次攻击对每个目标总计造成**97.1%***攻击力+**583**点伤害。\r\n第二次攻击对每个目标总计造成**106.8%***攻击力+**641**点伤害。\r\n第三次攻击对每个目标总计造成**121.3%***攻击力+**728**点伤害。\r\n第四次攻击对每个目标总计造成**145.6%***攻击力+**874**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_funnel_airattack",
+					"id": "GA_FPlayerFunnelMeleeFire_AirAttack"
+				},
+				{
+					"name": "抓到你了！",
+					"description": "长按普攻或者在触发“禁锢领域”后长按普攻，持续射出火焰光束对瞄准方向的目标造成**40%***攻击力+**240**点伤害并消耗耐力。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_funnel_power",
+					"id": "GA_FPlayerFunnelMeleeFire_AimAttack"
+				},
+				{
+					"name": "火焰坠落",
+					"description": "滞空时长按普攻，触发火焰坠落。\r\n被能量体包裹，快速坠落至地面，对周围的目标造成**172.1%***攻击力+**1033**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_funnel_jumpattack",
+					"id": "GA_FPlayerFunnelMeleeFire_JumpAttack"
+				},
+				{
+					"name": "禁锢领域",
+					"description": "普攻第二段后任意段长按，对目标造成**40%***攻击力+**240**点伤害，并将锁定目标禁锢（非强控）并灼烧**3**秒，每秒造成**26.2%***攻击力+**157**点伤害（对boss不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_funnel_branch",
+					"id": "GA_FPlayerFunnelMeleeFire_Branch"
+				}
+			],
+			"dodge": [
+				{
+					"name": "多莉出动！",
+					"description": "闪避后，将多莉抛出并存在**10**秒，吸附附近敌人造成**84.6%***攻击力+**508**点伤害并嘲讽敌人**1.5**秒（嘲讽在组队状态下不生效），使其转向攻击多莉。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_funnel_evadeattack",
+					"id": "GA_FPlayerFunnelEvadeFire_BackAttack"
+				},
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayeFunnelEvadeFire_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "火花撞撞",
+					"description": "斯帕克向前方射出【火花】存在15秒，在目标和玩家之间反弹并首次命中使目标动作速率减缓（非强控）持续**4**秒冷却**15**秒，距离越远伤害越高，命中敌人最多可造成**700%***攻击力+**4200**点伤害并施加【炙热】标记持续**25**秒，同时释放4颗子弹，每颗子弹对目标造成**50%***攻击力+**300**点伤害；斯帕克对【炙热】标记的目标普攻伤害提高**110%**。若目标存在自己施加的灼烧，则在【火花】命中时触发一次灼烧或点燃剩余总伤害**100%**的额外伤害（多个灼烧或点燃合并计算）且后续会自动结算一次，结算冷却**6**秒，技能冷却**30**秒。\r\n**被动**：【火花】存在期间，斯帕克普攻/火花每造成1次伤害，玩家累积**1**点【热能】冷却**0.9**秒，至多积累**8**点，当【热能】达到上限时，玩家获得【极限热能】效果，火攻增加**25%**持续**25**秒。",
+					"icon": "/Game/Resources/Icon/skill/funnel_skill",
+					"id": "GA_FPlayerFunnelSkillFire"
+				}
+			],
+			"discharge": [
+				{
+					"name": "超新星爆发",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，斯帕克开启蓄力形态，持续向前方射出大范围火焰光束，并在结束时爆炸，造成**750%***攻击力+**4500**点伤害；若目标存在自己施加的灼烧，命中时触发一次灼烧或点燃剩余总伤害**100%**的额外伤害（多个灼烧或点燃合并计算）,结算冷却**6**秒，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_funnel_changeskill",
+					"id": "GA_FPlayerFunnelChangeSkillFire_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**20%**火攻和**40%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）",
@@ -3466,7 +3901,76 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "dkatana_ice_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "流泉激浪",
+					"description": "在地面时，使用流泉彻心进行五次攻击。\r\n第一次攻击对目标可造成**48.9%***攻击力+**293**点伤害，并小幅击退目标。\r\n第二次攻击对目标可造成**33.9%***攻击力+**203**点伤害，并小幅击退目标。\r\n第三次攻击对目标可造成**51.8%***攻击力+**311**点伤害，并小幅击退目标。\r\n第四次攻击对目标可造成**81.2%***攻击力+**487**点伤害，并小幅击退目标。\r\n第五次攻击对目标可造成**118%***攻击力+**708**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_melee",
+					"id": "GA_PlayerDkatanaMelee_Melee"
+				},
+				{
+					"name": "飞瀑破空",
+					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行五次攻击。\r\n第一次攻击对目标造成**54.3%***攻击力+**326**点伤害。\r\n第二次攻击对目标造成**50.3%***攻击力+**302**点伤害。\r\n第三次攻击对目标造成**62.3%***攻击力+**374**点伤害。\r\n第四次攻击对目标造成**88.4%***攻击力+**530**点伤害。\r\n第五次攻击对目标造成**195.7%***攻击力+**1174**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_airattack",
+					"id": "GA_PlayerDkatanaMelee_AirAttack"
+				},
+				{
+					"name": "动心流**•** 漩涡",
+					"description": "动心流模式下，普通攻击中，长按普攻可触发。\r\n向前冲刺并旋转自身进行多段攻击，对目标最多造成**229.4%***攻击力+**1376**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_branch1",
+					"id": "GA_PlayerDkatanaMelee_Branch1"
+				},
+				{
+					"name": "静心流**•** 断泉",
+					"description": "静心流模式下，普通攻击中或立即长按普攻可触发。\r\n长按攻击键保持蓄势，松开攻击键对目标最多造成**146.4%***攻击力+**878**点伤害。攻击判定期间受到攻击，可格挡自身最大生命值**20%**的伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_branch2",
+					"id": "GA_PlayerDkatanaMelee_Branch2"
+				},
+				{
+					"name": "霜落",
+					"description": "滞空时长按普攻，攀爬，反向跳攻击或使用喷气背包普攻可触发。\r\n下落过程中，每次命中目标对目标造成**35%***攻击力+**210**点伤害；落地时对周围目标造成**87.4%***攻击力+**524**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_airjumpattack",
+					"id": "GA_PlayerDkatanaMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerDkatanaEvade_Evade"
+				},
+				{
+					"name": "寒潮",
+					"description": "向前闪避之后的短暂时间内，点击普攻。\r\n冲刺并转身攻击目标，共造成**318.6%***攻击力+**1911**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_forwardevadeattack",
+					"id": "GA_FPlayerDkatanaEvade_ForwardAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "动心流**•** 凝泉掠影",
+					"description": "向目标方向突进并短暂定身路径上的敌方，延迟对路径上的敌方造成至多**1066.9%***攻击力+**6401**点伤害，冷却**30**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_skill1",
+					"id": "GA_FPlayerDkatanaSkill_Skill1"
+				},
+				{
+					"name": "静心流**•** 聚凝泉涌",
+					"description": "释放静心流技能进入蓄力状态，持续嘲讽周围目标，最多蓄力**3**秒，蓄力期间吸收伤害，最多吸收**60%**最大生命值伤害，蓄力结束时根据吸收的伤害量对目标造成一次**850%***冰攻+**50%***吸收的伤害量的寒冰伤害，未被消耗的**20%**数值转化为生命回复，冷却**30**秒。\r\n\r\n激活坚毅共鸣时进入静心流状态，**动心流**•** 凝泉掠影**替换为**静心流**•** 聚凝泉涌**，非坚毅共鸣时为动心流状态\r\n释放不破咲技能获得跟随自身的剑影，释放不破咲分支技或者连携技时剑影会释放【涌动】，对目标造成**450%***冰攻范围伤害，【涌动】冷却**10**秒。\r\n动心流状态下：玩家使用任意武器造成伤害时剑影释放【流转】，对首个命中的目标造成**125%***冰攻伤害并回复伤害值**57%**的生命值，每次最大回复量不超过攻击的**100%**，冷却**0.8**秒。\r\n静心流状态下：剑影释放【涌动】后，玩家获得**3**次格挡能力，持续**10**秒，格挡量最大不超过自身最大生命值的**15%**，每次成功格挡对目标造成一次**450%***冰攻的【反击】伤害，【涌动】的破盾能力提高**100%**并附加嘲讽效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_skill2",
+					"id": "GA_FPlayerDkatanaSkill_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "彻心莲华",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，向目标冲刺并发动一套连击，共造成**994.2%***攻击力+**5965**伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dkatana_changeskill",
+					"id": "GA_FPlayerDkatanaChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**0%**冰攻和**1%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）",
@@ -3571,7 +4075,70 @@
 			"Item_breakthrough_D3": 26
 		},
 		"advanceID": "fan_superpower_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "普通攻击",
+					"description": "在地面时，使用影织进行五次攻击。\r\n第一次攻击对目标造成**59.9%***攻击力+**359**点伤害。\r\n第二次攻击对目标造成**57.1%***攻击力+**343**点伤害。\r\n第三次攻击对目标造成**49.5%***攻击力+**297**点伤害。\r\n第四次攻击对目标造成**114.2%***攻击力+**685**点伤害，并浮空目标。\r\n第五次攻击对目标造成**152.2%***攻击力+**913**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Fan_melee",
+					"id": "GA_FPlayerFanMelee_Melee"
+				},
+				{
+					"name": "空中攻击",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击。\r\n第一次攻击对目标造成**30.6%***攻击力+**184**点伤害。\r\n第二次攻击对目标造成**55.6%***攻击力+**334**点伤害。\r\n第三次攻击对目标造成**48.2%***攻击力+**289**点伤害。\r\n第四次攻击对目标造成**111.2%***攻击力+**667**点伤害。\r\n第五次攻击对目标造成**148.3%***攻击力+**890**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Fan_air",
+					"id": "GA_FPlayerFanMelee_AirAttack"
+				},
+				{
+					"name": "零落成泥",
+					"description": "地面或者空中普攻第二下后，长按普攻可触发零落成泥。\r\n在目标位置发动攻击，造成**83.2%***攻击力+**499**点伤害，并将目标击倒。\r\n被动：地面释放零落成泥后快速点击普攻，可立即释放（第三层）昙花一现。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Fan_branch",
+					"id": "GA_FPlayerFanMelee_Branch"
+				},
+				{
+					"name": "昙花一现",
+					"description": "长按普攻，可释放昙花一现，最多可蓄力三层，蓄力期间开启霸体和免控效果。\r\n第一层，对目标造成**73.9%***攻击力+**443**点伤害；\r\n第二层，对目标造成**146.2%***攻击力+**877**点伤害；\r\n第三层，对目标造成**246.4%***攻击力+**1478**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Fan_powerattack",
+					"id": "GA_FPlayerFanMelee_PowerAttack"
+				},
+				{
+					"name": "坠影",
+					"description": "空中长按普攻可触发坠影。\r\n从空中快速下落，落地后造成**160%***攻击力+**960**点伤害，并将目标击倒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Fan_jumpattack",
+					"id": "GA_FPlayerFanMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerFanEvade_Evade"
+				},
+				{
+					"name": "徒留翠意",
+					"description": "空翻位移的同时向目标发出翠意，造成**70%***攻击力+**420**点伤害，命中生成昙花(随机**1-3**个），同时形成持续**5**秒的翠绿场域，处于翠绿场域中的敌方单位锁定拓荒者时，移动速度减少**50%**。\r\n被动：地面和空中均可释放。\r\n被动：自身被控制时，立即解除控制，并自动释放徒留翠意（不消耗闪避次数），冷却**20**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Fan_rollattack",
+					"id": "GA_FPlayerFanEvade_RollAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "映月之镜",
+					"description": "在自身周围形成映月之镜，持续**15**秒，在映月之镜内，自身造成伤害提高**10%**，跳跃能力提高**20%**，耐力消耗减少**50%**，冷却**30**秒。\r\n处于映月之镜内使用影织时，获得特殊状态“凛空”，下落速度大幅减缓，可多次二段跳，空中同时使用摇杆和跳跃按钮，会进行一次穿梭，向目标发动一次攻击，命中造成**66%***攻击力+**396**点伤害并生成昙花(随机**1-3**个）。\r\n\r\n被动：拓荒者释放的映月之镜会间隔在一个目标附近生成昙花，每**0.8**秒生成**1**个。\r\n被动：自身处于映月之镜内使用影织时，对生命低于**20%**的目标造成伤害提高**50%**。\r\n被动：自身处于映月之镜内使用影织时，检测到即将受到伤害时自身会向远离目标位置闪烁，冷却**10**秒。\r\n\r\n被动：武器大师\r\n火焰：影织与两把火焰武器搭配时，映月之镜转化为焰**•** 映月之境，焰**•** 映月之镜中自身对目标添加灼烧时，持续时间额外增加**4**秒，并对有护盾目标造成的火焰伤害增加**15%**。\r\n\r\n雷电：影织与两把雷电武器搭配时，映月之镜转化为雷**•** 映月之境，雷**•** 映月之镜中使用闪避时有**65%**几率不消耗闪避次数，闪避攻击造成伤害提高**35%**，激活雷电共鸣时，额外提高**30%**雷电伤害。\r\n\r\n寒冰：影织与两把寒冰武器搭配时，映月之镜转化为冰**•** 映月之境，冰**•** 映月之镜中目标受到**10**次寒冰伤害时，进入“冻伤”状态，持续**15**秒，期间受到寒冰伤害增加**22%**，冻伤状态期间不累加次数。\r\n\r\n物理：影织与两把物理武器搭配时，映月之镜转化为物**•** 映月之境，物**•** 映月之镜中自身存在生命护盾时，每秒对范围目标造成**150%***攻击力+**900**点伤害。\r\n\r\n均衡：影织与火、雷、冰、物四种元素中任意两种不同元素武器搭配时，映月之镜中自身攻击增加**15%**，且视为激活火、雷、冰、物元素共鸣（无共鸣效果）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Fan_skill",
+					"id": "GA_FPlayerFanSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "重力编织",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，释放重力编织，带有较强吸附力，造成**542%***攻击力+**3252**点伤害，**5**秒后爆炸形成范围扩散波，造成**271%***攻击力+**1626**点伤害，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_Fan_changeskill",
+					"id": "GA_FPlayerFanChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "影织与其他武器搭配时，可构成**“武器大师”**效果。\r\n昙花会随机出现在目标周围，并在**1-3**秒内爆炸，造成**60%***攻击力的范围伤害。",
@@ -3673,7 +4240,88 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "arm_physic_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "晚祷普攻被动",
+					"description": "**悔悟**：非恩赐共鸣时晚祷普攻命中拥有**「悔悟」标记**的目标时附带额外伤害，伤害数值=自身附带的守护数量***6.4%***攻击（最多38.4%*攻击），该伤害不会触发额外的攻击效果且视为连携技伤害和武器技能伤害；\r\n\r\n恩赐共鸣时晚祷普攻命中拥有**「悔悟」标记**的目标时附带额外伤害，伤害数值=自身附带和为队友附带的守护数量***4.6%***攻击（最多36.8%*攻击），该伤害不会触发额外的攻击效果且视为连携技伤害和武器技能伤害。\r\n**辉光**：晚祷的所有普攻命中目标后回复**15%***攻击的生命。\r\n**圣击**：晚祷的空中攻击和蓄锐可以将充能能力的60%转化为破盾能力。\r\n**守护**：自身生命值每减少**15%**最大生命值或者获得**300**点武器充能值，自身获得「悔悟」守护最多**5**个（后台可以产生），「悔悟」守护持续**25**秒。如果自身「悔悟」守护已满，新生成的「悔悟」守护会攻击敌方目标，造成**120%**攻击物理伤害并消失，该伤害不会触发额外的攻击效果。\r\n\r\n注：晚祷在旧日幻象中不视为辅助武器",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_skill1",
+					"id": "None"
+				},
+				{
+					"name": "晚祷普攻",
+					"description": "在地面时，使用晚祷可连续进行五次攻击。\r\n第一次攻击对目标造成**139.8%***攻击力+**839**点伤害，并小幅击退目标。\r\n第二次攻击对目标造成**101.3%***攻击力+**608**点伤害，并大幅击退目标。\r\n第三次攻击对目标造成**212.5%***攻击力+**1275**点伤害，并小幅击退目标。\r\n第四次攻击对目标造成**296.5%***攻击力+**1779**点伤害，并浮空目标。\r\n第五次攻击对目标造成**336.7%***攻击力+**2020**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_melee",
+					"id": "GA_FPlayerArmMeleePhy_Melee"
+				},
+				{
+					"name": "破惘",
+					"description": "当玩家滞空时，点击普攻可释放破惘，每次挥拳对目标对目标造成**56.9%***攻击力+**341**点伤害，并消耗**10**点耐力，最后一击造成**213.4%***攻击力+**1280**点伤害并击飞目标。\r\n释放破惘期间，若目标可被抓取，则将目标抓取并抛掷到地上，总计造成**954.1%***攻击力+**5724**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_airattack",
+					"id": "GA_FPlayerArmMeleePhy_AirAttack"
+				},
+				{
+					"name": "蓄锐",
+					"description": "长按普攻按钮，进行最多**3**段蓄力；命中目标造成**强控浮空**效果，蓄锐攻击期间免疫伤害和控制效果，在被命中前释放，可触发幻时。\r\n一段蓄力命中造成**164.5%***攻击力+**987**点伤害。\r\n二段蓄力命中造成**382.3%***攻击力+**2294**点伤害。\r\n三段蓄力命中造成**618%***攻击力+**3708**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_powerattack",
+					"id": "GA_FPlayerArmMeleePhy_PowerAttack"
+				},
+				{
+					"name": "瞬光",
+					"description": "普攻过程中或闪避后长按普攻不放，可释放瞬光，每次挥拳对目标造成**34.2%***攻击力+**205**点伤害，并消耗**10**点耐力，松手后触发蓄锐。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_branch",
+					"id": "GA_FPlayerArmMeleePhy_Branch"
+				},
+				{
+					"name": "重击",
+					"description": "当玩家滞空时长按普攻，可触发空中3段蓄力，松手后重击地面并**强控浮空**目标，在被命中前进入蓄力，可触发幻时。\r\n一段蓄力攻击：对目标造成**285%***攻击力+**1710**点伤害；\r\n二段蓄力攻击：对目标造成**494%***攻击力+**2964**点伤害；\r\n三段蓄力攻击：对目标造成**779%***攻击力+**4674**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_jumpattack",
+					"id": "GA_FPlayerArmMeleePhy_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "意识捕获",
+					"description": "闪避后，点击普攻，将目标抓取到身边并持续吸附目标**2**秒，并标造成**313.7%***攻击力+**1882**点伤害；闪避后长按普攻可在释放**意识捕获**后触发**瞬光**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_evadeattack",
+					"id": "GA_FPlayerArmEvadePhy_BackAttack"
+				},
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒并恢复**250**点耐力。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayerArmEvadePhy_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "「宽恕」守护",
+					"description": "**「宽恕」守护**：治疗效果溢出时，生成不超过最大生命值**60%**的生命护盾；晚祷拥有「宽恕」守护，且在不同武器共鸣下激活不同守护效果\r\n**恩赐守护**：技能替换为**辉起**；自身不再获得「悔悟」守护，改为为队友添加「宽恕」守护，并且每治疗最大生命的**15%**也可获得一个「宽恕」守护，每个队友最多附带一个「宽恕」守护，如果场上没有未获得「宽恕」守护的队友，则「宽恕」守护对一个敌方单位造成**120**%攻击物理伤害并消失，该伤害不会触发额外的攻击效果；自身和队友生命值上限提升**12.5%**（多个不叠加）\r\n**强攻守护**：使用晚祷技能命中时，立刻获得**30%**最大生命值护盾，冷却**30**秒\r\n**坚毅守护**：使用晚祷技能命中时，立刻获得治疗，每秒恢复**2%**最大生命值持续**20**秒，冷却**30**秒\r\n**均衡守护**：生命高于**50%**时，破盾提升**20%**；生命低于**50%**时，最终伤害提升**10%**，破盾提升**10%**",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_skill1",
+					"id": "GA_FPlayerArmSkillPhyPas"
+				},
+				{
+					"name": "星落",
+					"description": "跃向目标，对目标造成**968.4%***攻击力+**5810**点伤害，**强控浮空**目标，并给目标添加「悔悟」标记持续**18**秒，冷却**20**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_airattack2",
+					"id": "GA_FPlayerArmPublishSkillPhy"
+				},
+				{
+					"name": "辉起",
+					"description": "重击地面，**强控击飞**面前的目标造成**968.4%***攻击力+**5810**点伤害，并召唤**锋芒**最多存在**3**个，持续**75**秒（锋芒附近2米范围内最多存在1个），该技能最多可累积使用**3**次，单次冷却时间**20**秒；当场上存在2个**锋芒**时，创建一个**清晖**，每次触碰**锋芒**，对移动距离半径内的目标进行一次治疗，恢复目标攻击力**25%**的生命；当场上存在3个**锋芒**时，创建一个**星云**，每次触碰**锋芒**，对移动距离半径内的目标造成（**300%***攻击力*移动距离/**5**米）点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_skill2",
+					"id": "GA_FPlayerArmLawSkillPhy"
+				}
+			],
+			"discharge": [
+				{
+					"name": "喟叹轻咏",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，释放喟叹轻咏，对目标造成**997.6%***攻击力+**5985**点伤害，并给目标添加「悔悟」标记持续**18**秒，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_changeskill",
+					"id": "GA_FPlayerArmChangeSkillPhy_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**0%**物攻和**1%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）\r\n**物理恩赐**：自身激活恩赐共鸣时，提升全队**5%**物攻",
@@ -3775,7 +4423,70 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "tianlang_thunder_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "普攻被动",
+					"description": "使用破钧普攻命中**4**次为破钧充电，最多累积**5**次充电点数，充电后后续使用任意雷元素武器闪避技会进行放电附加雷击，雷击伤害=**5%***自身已损失生命值（数值不低于**100%***雷攻，不超过**1000%***雷攻），并激发自身的感电体，感电体释放**2%***自身已损失生命值（数值不低于**40%***雷攻，不超过**400%***雷攻）的范围雷电伤害",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/pugong_tianlang",
+					"id": "None"
+				},
+				{
+					"name": "武曲",
+					"description": "在地面时，使用破钧进行6次攻击。\r\n第一次攻击对目标可造成**90.5%***攻击力+**543**点伤害，并击退目标。\r\n第二次攻击对目标可造成**67.9%***攻击力+**407**点伤害，并击退目标。\r\n第三次攻击对目标可造成**123%***攻击力+**738**点伤害，并击退目标。\r\n第四次攻击对目标可造成**217.9%***攻击力+**1307**点伤害，并击退目标。\r\n第五次攻击对目标可造成**222%***攻击力+**1332**点伤害，并击退目标。\r\n第六次攻击对目标可造成**291.8%***攻击力+**1751**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_tianlang_melee",
+					"id": "GA_PlayerTianLangMelee_Melee"
+				},
+				{
+					"name": "文曲",
+					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行五次攻击。\r\n第一次攻击对目标造成**87.4%***攻击力+**524**点伤害。\r\n第二次攻击对目标造成**83%***攻击力+**498**点伤害。\r\n第三次攻击对目标造成**126.7%***攻击力+**760**点伤害。\r\n第四次攻击对目标造成**229.4%***攻击力+**1376**点伤害。\r\n第五次攻击对目标造成**256.5%***攻击力+**1539**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_tianlang_airattack",
+					"id": "GA_PlayerTianLangMelee_AirAttack"
+				},
+				{
+					"name": "禄存",
+					"description": "在地面时，长按普攻可触发。\r\n对目标最多造成**342%***攻击力+**2052**点伤害并吸引怪物向自身聚集。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_tianlang_branch",
+					"id": "GA_PlayerTianLangMelee_Branch"
+				},
+				{
+					"name": "巨门",
+					"description": "滞空时长按普攻，攀爬，反向跳攻击或使用喷气背包普攻可触发。\r\n下落过程中，每次命中目标对目标造成**38%***攻击力+**228**点伤害；落地时对周围目标造成**285%***攻击力+**1710**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_tianlang_jumpattack",
+					"id": "GA_PlayerTianLangMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerTianLangEvade_Evade"
+				},
+				{
+					"name": "廉贞",
+					"description": "闪避之后的短暂时间内，点击普攻。\r\n冲刺攻击目标，共造成**172.6%***攻击力+**1036**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_tianlang_evadeattack",
+					"id": "GA_FPlayerTianLangEvade_ForwardAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "贪狼",
+					"description": "发动多段连续攻击，对范围内敌方造成至多**936.9%***攻击力+**5621**点伤害，并使一定范围内敌方单位或自己的召唤物成为感电体，最多存在3个感电体，冷却**30**秒。\r\n\r\n贪狼施放后自身获得雷电感应：释放技能时与装备的另外两把武器中的雷武器感应，每感应到1把其他雷武器获得**15%**雷电伤害提升，持续**25**秒。\r\n\r\n感电体：释放任意雷武器连携技时感电体释放**5%***自身已损失生命值（数值不低于**100%***雷攻，不超过**1000%***雷攻）的范围雷电伤害\r\n\r\n携带破钧时，释放任意雷武器技能或连携技时消耗当前**30%**生命值对目标额外造成消耗值**50%**的额外雷电伤害（数值不低于**480%***雷攻，不超过**3000%***雷攻），并获得短暂无敌（巅峰联赛不生效），**8**秒后或者生命低于**10%**时获得每秒回复已损失生命**5%**的生命持续**8**秒（不受治疗效果和被治疗效果影响），回复效果不叠加。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_tianlang_skill",
+					"id": "GA_FPlayerTianLangSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "破军",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，用破钧产生大范围雷电伤害，共造成**844.6%***攻击力+**5067**伤害，并使一定范围内敌方单位或自己的召唤物成为感电体，最多存在3个感电体。\r\n\r\n感电体：释放任意雷武器连携技时感电体释放**5%***自身已损失生命值（数值不低于**100%***雷攻，不超过**1000%***雷攻）的范围雷电伤害\r\n\r\n携带破钧时，释放任意雷武器技能或连携技时消耗当前**30%**生命值对目标额外造成消耗值**50%**的额外雷电伤害（数值不低于**480%***雷攻，不超过**3000%***雷攻），并获得短暂无敌（巅峰联赛不生效），**8**秒后或者生命低于**10%**时获得每秒回复已损失生命**5%**的生命持续**8**秒（不受治疗效果和被治疗效果影响），回复效果不叠加。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_tianlang_changeskill",
+					"id": "GA_FPlayerTianLangChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**雷电反应**：装备**2**把及以上雷电武器触发，提升**20%**雷攻和**40%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）",
@@ -3877,7 +4588,64 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "snipe_fire_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "普通攻击",
+					"description": "在地面时，使用狙击枪进行三次攻击。\r\n第一次攻击对目标造成**50.8%***攻击力+**305**点伤害，并击退目标。\r\n第二次攻击对目标造成**97.1%***攻击力+**583**点伤害，并击退目标。\r\n第三次攻击对目标造成**203.4%***攻击力+**1220**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/pugong_snipe",
+					"id": "GA_FPlayerSnipeMelee_Melee"
+				},
+				{
+					"name": "十字狙射",
+					"description": "长按普攻，进入蓄力攻击状态，对目标造成**66.7%***攻击力+**400**点基础伤害，蓄力后最多可造成**460.9%***攻击力+**2765**点伤害，若命中怪物头部或者弱点，触发爆头效果（爆头效果对拓荒者无效），造成双倍伤害，并击飞目标。\r\n**被动：**十字狙射命中灼烧的目标或者命中暴击后，回复自身**300**点武器充能值，冷却**15**秒。\r\n**被动：**使用十字狙射后，自身在**3**秒内移动速度提高**30%**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_snipe_power",
+					"id": "GA_FPlayerSnipeMelee_PowerAttack"
+				},
+				{
+					"name": "沸点杂讯",
+					"description": "任意一段普攻后长按普攻，发出镭射弹，命中后爆开，对范围内目标最多造成**172.5%***攻击力+**1035**点伤害，附带浮空效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_snipe_branch",
+					"id": "GA_FPlayerSnipeMelee_Branch"
+				},
+				{
+					"name": "空中攻击",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行三次攻击。\r\n第一次攻击对目标造成**54.8%***攻击力+**329**点伤害，并击退目标。\r\n第二次攻击对目标造成**104.5%***攻击力+**627**点伤害，并击退目标。\r\n第三次攻击对目标造成**219%***攻击力+**1314**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/pugong_snipe",
+					"id": "GA_FPlayerSnipeMelee_AirAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "暮光之弧",
+					"description": "自身向后跳跃，向前方扔出1枚爆破手雷，落地产生爆炸，对目标最多造成**42.6%***攻击力+**256**点伤害，附带浮空效果。\r\n**被动：**使用暮光之弧后，点击普攻可立即释放蓄满阶段的十字狙射。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_snipe_evadeattack",
+					"id": "GA_FPlayerSnipeEvade_EvadeAttack"
+				},
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayerSnipeEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "余烬弹仓",
+					"description": "切换模组，改变十字狙射和暮光之弧效果，最多可使用**8**次十字狙射，技能冷却**14**秒。\r\n**暴戾烈弹**：十字狙射效果变成范围火焰爆炸，命中造成**68%***攻击力+**408**点基础伤害，蓄力后最多可造成**471.5%***攻击力+**2829**点伤害，命中的目标若不处于灼烧，则给目标添加“十字灼烧”（每秒造成**120%**攻击力伤害，持续**13**秒），若目标已经处于灼烧，则给目标添加“十字灼烧”的同时，自身获得**20**秒“灼烧强化”状态，使目标的灼烧伤害提高**20%**；暮光之弧变成向前方扔出**3**枚爆破手雷。\r\n**谲诳魔弹**：十字狙射效果变成范围瓦斯，命中造成**93%***攻击力+**558**点基础伤害，蓄力后最多可造成**644.5%***攻击力+**3867**点伤害，目标处于瓦斯内会减速，减速效果随时间递增，瓦斯持续**7**秒；暮光之弧可引爆瓦斯（释放瓦斯时十字狙射的蓄力越久，瓦斯爆炸伤害越高），对范围内敌方目标最多造成**713%***攻击力+**4278**点爆炸伤害【视为触发一次十字狙射】，并使目标在**10**秒内火抗减少**10%**。\r\n\r\n**被动：**确认模组后，会获得对应使用次数的“光学强化”。光学强化：十字狙射蓄力时间缩短**30%**，蓄力期间免疫控制；每使用**2**次闪避，回复**1**次闪避次数（最多可回复**4**次）。\r\n**被动：**谲诳魔弹模组期间，十字狙射命中后减少其他火武器**0.7**秒技能冷却。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_snipe_skillstart",
+					"id": "GA_FPlayerSnipeSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "轰灭指令",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，扔出燃烧弹，开枪引爆，对范围内目标最多造成**1023.5%***攻击力+**6140**点伤害，附带**强制浮空**效果，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_snipe_changeskill",
+					"id": "GA_FPlayerSnipeChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**火焰反应**：装备**2**把及以上火元素武器触发，提升**20%**火攻和**40%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）\r\n**心静如水**：四叶十字使用连携/技能/蓄力攻击/闪避，会使四叶十字的最终暴击率提高**5%**，持续**15**秒，可叠加**3**层，暴击率超过**100%**后，超出部分的**50%**转化为暴击伤害（最多转化**7.5%**暴击伤害）。",
@@ -3979,7 +4747,76 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "iceblade_ice_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "天鹅弧",
+					"description": "在地面时，使用不灭之翼可连续进行五次攻击。\r\n第一次攻击对目标造成**101.3%***攻击力+**608**点伤害，并小幅击退目标。\r\n第二次攻击对目标造成**107.3%***攻击力+**644**点伤害，并大幅击退目标。\r\n第三次攻击对目标造成**116.4%***攻击力+**698**点伤害，并小幅击退目标。\r\n第四次攻击对目标造成**141.8%***攻击力+**851**点伤害，并浮空目标。\r\n第五次攻击对目标造成**241.5%***攻击力+**1449**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceblade_melee",
+					"id": "GA_FPlayerIceBladeMeleeIce_Melee"
+				},
+				{
+					"name": "掠翼连击",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行5次攻击，并消耗耐力。\r\n第一次攻击对目标造成**72.1%***攻击力+**433**点伤害。\r\n第二次攻击对目标造成**65.6%***攻击力+**394**点伤害。\r\n第三次攻击对目标造成**115.8%***攻击力+**695**点伤害。\r\n第四次攻击对目标造成**131.1%***攻击力+**787**点伤害。\r\n第五次攻击对目标造成**343.9%***攻击力+**2063**点伤害，并**强控击倒**目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceblade_airattack",
+					"id": "GA_FPlayerIceBladeMeleeIce_AirAttack"
+				},
+				{
+					"name": "舞意瞬闪",
+					"description": "使用天鹅弧时长按普攻按钮，将目标聚拢，并对范围内目标造成**506.5%***攻击力+**3039**点伤害，最后一击**强控浮空**目标并造成**95%***攻击力+**570**点伤害。\r\n**被动**：成功释放任意武器技能或进入潜态构形**4**秒后，下一次释放舞意瞬闪期间，免疫伤害",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceblade_branch",
+					"id": "GA_FPlayerIceBladeMeleeIce_Branch"
+				},
+				{
+					"name": "掠翼俯冲",
+					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，会触发重击。\r\n下落过程中，每次命中目标对目标造成**95%***攻击力+**570**点伤害，并持续消耗耐力。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceblade_jumpattack",
+					"id": "GA_FPlayerIceBladeMeleeIce_JumpAttack"
+				},
+				{
+					"name": "圆舞曲",
+					"description": "长按普攻按钮，每次命中对目标造成**167.2%***攻击力+**1003**点伤害，最后一击造成**190%***攻击力+**1140**点伤害，期间获得**霸体**效果，并持续消耗耐力",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceblade_powerattack",
+					"id": "GA_FPlayerIceBladeMeleeIce_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "舞者姿态",
+					"description": "向后方闪避之后，可连续点击3次普攻，对目标总计造成**958%***攻击力+**5747**点伤害，第一击**强控浮空**目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceblade_evadeattack",
+					"id": "GA_FPlayerIceBladeEvadeIce_BackAttack"
+				},
+				{
+					"name": "潜态构形",
+					"description": "长按前闪避可进入潜态构形并持续消耗耐力，移动速度提升**50%**，若处于滞寒场域内，则移动速度额外提升**50%**，离开该状态时对附近目标造成**492.1%***攻击力+**2952**点伤害并冰冻目标**2**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceblade_evadeon",
+					"id": "GA_FPlayerIceBladeEvadeIce_EvadeOn"
+				},
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayerIceBladeEvadeIce_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "滞寒场域",
+					"description": "吸附附近的目标，对目标造成**982.5%***攻击力+**5894**点伤害并**强控浮空**目标，玩家进入到滞寒场域持续**30**秒，冷却**25**秒，技能释放期间获得霸体效果。\r\n**被动**：滞寒场域内释放任意冰武器连携技能，造成一次**262.1%***攻击力+**1572**的“霜冻伤害”并使目标迟缓**2**秒（迟缓对boss无效）；处于场域内，不灭之翼每触发**12**次命中效果后会触发空间切割，每2秒对空间内的目标造成1次**270%***攻击力+**1620**伤害持续**25**秒（空间消失也会停止）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/iceblade_skill",
+					"id": "GA_FPlayerIceBladeSkillIce_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "白星贯夜",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，释放连携，对目标造成**727.9%***攻击力+**4367**点伤害并**强控击飞**目标，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceblade_changeskill",
+					"id": "GA_FPlayerIceBladeChangeSkillIce"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**寒冰反应**：装备**2**把及以上冰元素武器触发，提升**20%**冰攻和**40%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）",
@@ -4081,7 +4918,88 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "Whip_physic_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "基础手法",
+					"description": "在地面时，使用莫比乌斯可连续进行五次攻击。\r\n第一次攻击对目标造成**76.9%***攻击力+**461**点伤害，并击退目标。\r\n第二次攻击对目标造成**84.4%***攻击力+**506**点伤害，并击退目标。\r\n第三次攻击对目标造成**112.1%***攻击力+**673**点伤害，并击倒目标。\r\n第四次攻击对目标造成**105.5%***攻击力+**633**点伤害，并拖拽挑空目标。\r\n第五次攻击对目标造成**265.1%***攻击力+**1590**点伤害，并击飞目标。\r\n本技能破盾效率额外提高**50%**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_whip_melee",
+					"id": "GA_FPlayerWhipMelee_Melee"
+				},
+				{
+					"name": "意中连击",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行5次攻击，并消耗耐力。\r\n第一次攻击对目标造成**46%***攻击力+**276**点伤害。\r\n第二次攻击对目标造成**66.5%***攻击力+**399**点伤害。\r\n第三次攻击对目标造成**88.4%***攻击力+**530**点伤害。\r\n第四次攻击对目标造成**88.8%***攻击力+**533**点伤害。\r\n第五次攻击对目标造成**260.5%***攻击力+**1563**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_whip_airattack",
+					"id": "GA_FPlayerWhipMelee_AirAttack"
+				},
+				{
+					"name": "出其不意",
+					"description": "在地面使用基础手法时长按普攻，可直接根据当前锁定目标触发出其不意，当锁定目标为小体型时，对目标造成**105%***攻击力+**630**点伤害并吸附周围目标，当锁定目标为大体型时，对目标造成**85.5%***攻击力+**513**点伤害并吸附周围目标。本技能破盾效率额外提高**50%**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_whip_branch",
+					"id": "GA_FPlayerWhipMelee_MeleeBranch"
+				},
+				{
+					"name": "舞台切换 ",
+					"description": "滞空时长按普攻，攀爬，反向跳攻击或使用喷气背包普攻，会触发重击。\r\n从空中快速下落，落地后造成**121.5%***攻击力+**729**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_whip_jumpattack",
+					"id": "GA_FPlayerWhipMelee_JumpAttack"
+				},
+				{
+					"name": "近景魔术",
+					"description": "在地面长按普攻保持蓄势，松开攻击键时可根据当前锁定目标触发近景魔术，当锁定目标为小体型时，对目标造成**105%***攻击力+**630**点伤害并吸附周围目标，当锁定目标为大体型时，对目标造成**85.5%***攻击力+**513**点伤害并吸附周围目标。本技能破盾效率额外提高**50%**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_whip_powerattack",
+					"id": "GA_FPlayerWhipMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "偷天换日",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发偷天换日，对附近目标造成**187.2%***攻击力+**1123**点伤害。本技能破盾效率额外提高**50%**",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_whip_evadeattack",
+					"id": "GA_FPlayerWhipEvade_EvadeAttack"
+				},
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续**0.5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayerWhipEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "魔术时间",
+					"description": "使用任意武器在前台造成伤害时，会累积**【预热值】**，冷却**0.1**秒，其中物理武器每次可以累积**3**点，非物理武器每次可以累积**1.5**点。**【预热值】**会显示在**【魔术槽】**中，至多累积**100**点。进入战斗时，立刻获得**100**点**【预热值】**。\r\n当**【魔术槽】**累积到**100**点**【预热值】**时，可释放技能，聚集指定范围内怪物并对目标造成**950%***攻击力+**5700**点伤害，自身获得短暂无敌（巅峰联赛和临界之渊不生效）并使受击范围内目标的动作速率变缓（巅峰联赛和临界之渊不生效），同时自身进入**【魔术演出】**状态并持续消耗**【预热值】**，冷却**30**秒（该冷却不会受到除莫比乌斯自身外其他任何冷却时间清除、重置、变化效果的影响），持续**18**秒，期间技能按钮替换为切牌按钮。\r\n**【魔术演出】**期间，每2秒可自动获得**【黑桃】**和**【红桃】**两种**【扑克纸牌】**中的一种，即将获得的**【扑克纸牌】**种类可提前通过切牌按钮进行切换，当前**【扑克纸牌】**达到**2**张时，会自动释放对应**【纸牌魔术】**，冷却**3.8**秒。\r\n**【魔术演出】**期间霸体，视为拥有护盾，且不会继续补充**【魔术槽】**。且莫比乌斯攻击招式(普攻和闪避攻击)的物理伤害提升**60%**，破盾效率提高**20%**。\r\n不同**【扑克纸牌】**组合可激活不同的**【纸牌魔术】**。\r\n【红桃】+【黑桃】→**【意念傀儡】**\r\n【红桃】+【红桃】→**【矛盾侵蚀】**\r\n【黑桃】+【黑桃】→**【纸牌席卷】**\r\n以任何方式切换到其他武器，或自身阵亡时，退出**【魔术演出】**状态。\r\n【魔术演出】结束时，会获得**20**秒的霸体状态，若为自然结束，则会额外对自身附近目标造成**1200%***攻击力点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/whip_skill",
+					"id": "GA_FPlayerWhipSkill_Skill"
+				},
+				{
+					"name": "意念傀儡",
+					"description": "从礼帽中变出一群蝙蝠并守护强化自身。**【魔术演出】**期间，莫比乌斯造成的物理伤害增加**20%**，且只结算**40%**受到的伤害，剩余**60%**会在**【魔术演出】**结束后**10**秒内以生命流失缓慢结算（延迟结算效果仅非坚毅共鸣时生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/whip_skillAB",
+					"id": "GA_FPlayerWhipSkill_Skill_MagicAB"
+				},
+				{
+					"name": "矛盾侵蚀",
+					"description": "立刻回复**15%**最大生命值，并对一定范围内至多**7**个目标身上降下侵蚀之花，每秒对目标造成**360%***攻击力的伤害，持续**3**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/whip_skillAA",
+					"id": "GA_FPlayerWhipSkill_Skill_MagicAA"
+				},
+				{
+					"name": "纸牌席卷",
+					"description": "飞出大量纸牌，在目标位置产生纸牌飓风，对目标造成至多**12**段，总计**1450%***攻击力的伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/whip_skillBB",
+					"id": "GA_FPlayerWhipSkill_Skill_MagicBB"
+				}
+			],
+			"discharge": [
+				{
+					"name": "荼蘼馥郁",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，释放荼蘼馥郁并获得短暂无敌（巅峰联赛和临界之渊不生效），落地时对目标造成**316.2%***攻击力+**1897**点伤害，甩鞭后对目标造成**737.8%***攻击力+**4426**点伤害并**强控击飞**目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_whip_changeskill",
+					"id": "GA_FPlayerWhipChangeSkill"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "物理反应：装备**2**把及以上物理武器触发，提升**0%**物攻和**1%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）",
@@ -4183,7 +5101,82 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "fenrir_thunder_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "汪呜",
+					"description": "在地面时，进行七次攻击。\r\n第一次攻击对目标造成**80.4%***攻击力+**482**点伤害。\r\n第二次攻击对目标造成**89.5%***攻击力+**537**点伤害。\r\n第三次攻击对目标造成**89.5%***攻击力+**537**点伤害。\r\n第四次攻击对目标造成**141.2%***攻击力+**847**点伤害。\r\n第五次攻击对目标造成**89.5%***攻击力+**537**点伤害。\r\n第六次攻击对目标造成**252.7%***攻击力+**1516**点伤害。\r\n第七次攻击对目标造成**279.3%***攻击力+**1676**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_melee",
+					"id": "GA_FPlayerFenrirMelee_Melee"
+				},
+				{
+					"name": "破囚",
+					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行七次攻击。\r\n第一次攻击对目标造成**87.4%***攻击力+**524**点伤害。\r\n第二次攻击对目标造成**100.5%***攻击力+**603**点伤害。\r\n第三次攻击对目标造成**100.5%***攻击力+**603**点伤害。\r\n第四次攻击对目标造成**174.8%***攻击力+**1049**点伤害。\r\n第五次攻击对目标造成**131.1%***攻击力+**787**点伤害。\r\n第六次攻击对目标造成**303.2%***攻击力+**1819**点伤害。\r\n第七次攻击对目标造成**335.2%***攻击力+**2011**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_airattack",
+					"id": "GA_FPlayerFenrirMelee_AirAttack"
+				},
+				{
+					"name": "狼噬",
+					"description": "在地面时，使用普攻第二至第四下时，长按普攻可触发狼噬。\r\n向前快速冲锋，造成**114%***攻击力+**684**点伤害，并击退目标。\r\n触发狼噬后，长按普攻可触发上撩。\r\n向上撩爪，造成**153.9%***攻击力+**923**点伤害，并浮空目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_branch1",
+					"id": "GA_FPlayerFenrirMelee_MeleeBranch"
+				},
+				{
+					"name": "凶狩",
+					"description": "在地面时，使用普攻第五或第六下时，长按普攻可触发凶狩。\r\n从天而降，自身进入短暂无敌，造成**420.3%***攻击力+**2522**点伤害，并浮空目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_branch3",
+					"id": "GA_FPlayerFenrirMelee_MeleeBranch3"
+				},
+				{
+					"name": "纷至沓来",
+					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，触发纷至沓来。\r\n从天而降，落地时对周围目标造成**330.6%***攻击力+**1983**点伤害，附带浮空效果。\r\n触发纷至沓来后，长按普攻可触发怒吼。\r\n向四周发出怒吼，自身进入短暂无敌，对周围目标造成**330.6%***攻击力+**1983**点伤害，附带击退效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_jumpattack",
+					"id": "GA_FPlayerFenrirMelee_JumpAttack"
+				},
+				{
+					"name": "轨音",
+					"description": "在空中时，使用破囚第二至第七下时，长按普攻可触发轨音。\r\n在空中多段穿梭，对周围目标造成**458.3%***攻击力+**2750**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_airattackbranch",
+					"id": "GA_FPlayerFenrirMelee_AirAttackBranch"
+				},
+				{
+					"name": "余音绕梁",
+					"description": "每次普攻命中有**50%**几率给目标添加**1**枚音符，音符持续**15**秒，最多存在**5**枚音符；\r\n**狼噬**、**凶狩**、**纷至沓来**攻击命中**100%**几率给目标添加**1**枚音符；\r\n音符添加有**1**秒间隔；\r\n**被动**：**轨音**、**绮音**命中引爆目标所有音符，造成音符数量***35%**攻击力伤害【引爆**3**枚及以上音符，伤害翻倍】；\r\n**被动**：引爆**2**枚及以上音符，使目标进入沉醉状态，每秒造成**1%***自身最大生命值伤害，持续**16**秒；\r\n引爆音符、沉醉状态造成的伤害均视为闪避攻击伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_beidong",
+					"id": "GA_FPlayerFenrirMelee_Beidong"
+				}
+			],
+			"dodge": [
+				{
+					"name": "绮音",
+					"description": "发动一次交叉爪击，对周围目标造成**383.2%***攻击力+**2299**点伤害，附带击倒效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_evadeattack",
+					"id": "GA_FPlayerFenrirEvade_EvadeAttack"
+				},
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。\r\n**被动**：为目标添加一枚音符。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayerFenrirEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "汪汪当家",
+					"description": "唤出意识体分离目标本体，命中造成**225.7%***攻击力+**1354**点伤害，并在自身位置创造持续**30**秒的歌歌世界，歌歌世界内自身受到伤害降低**8%**、并获得**35%**无视目标防御效果；\r\n意识体拥有玩家自身**30**倍最大生命值，会受到来自**格莱普尼**武器造成的非被动类伤害，并将伤害**100%**反馈到本体（玩家为**1%**），且为自身回复**50%**攻击力生命值，意识体存在期间，玩家受到来自意识体本体伤害降低**12%**，意识体至多存在**15**秒；\r\n意识体回归目标本体后，造成**1282.5%***攻击力+**7694**点范围伤害；\r\n意识体回归条件：意识体被击败、超过存在时间、唤出新意识体、目标本体与意识体距离过远；\r\n汪汪当家冷却时间：**30**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/fenrir_skill",
+					"id": "GA_FPlayerFenrirSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "嗷呜——",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，冲向目标并发动攻击，对范围内目标最多造成**1203.3%***攻击力+**7219**点伤害，并添加**3**枚音符，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_fenrir_changeskill",
+					"id": "GA_FPlayerFenrirChangeSkill"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**20%**雷攻和**40%**雷抗，装备后后台也生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。\r\n**均衡元素**：装备**3**把不同属性武器触发，提升**15%**全攻，装备后后台也生效。",
@@ -4285,7 +5278,82 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "umbrella_fire_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "舞火激昂意",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成**94.8%***攻击力+**569**点伤害，并小幅击退目标。\r\n第二次攻击对目标造成**129.8%***攻击力+**779**点伤害，并大幅击退目标。\r\n第三次攻击对目标造成**221.3%***攻击力+**1328**点伤害，并浮空目标。\r\n第四次攻击对目标造成**241.3%***攻击力+**1448**点伤害，并击倒目标。\r\n第五次攻击对目标造成**304.1%***攻击力+**1824**点伤害，并击退目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_umbrella_melee",
+					"id": "GA_FPlayerUmbrellaMeleeFire_Melee"
+				},
+				{
+					"name": "茕羽腾云霄",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成**106.3%***攻击力+**638**点伤害。\r\n第二次攻击对目标造成**129.8%***攻击力+**779**点伤害。\r\n第三次攻击对目标造成**158.1%***攻击力+**949**点伤害。\r\n第四次攻击对目标造成**165.3%***攻击力+**992**点伤害。\r\n第五次攻击对目标造成**296.3%***攻击力+**1778**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_umbrella_airattack",
+					"id": "GA_FPlayerUmbrellaMeleeFire_AirAttack"
+				},
+				{
+					"name": "炽鸟窜天涯",
+					"description": "在地面时，使用第二次至第五次普攻时，长按普攻可触发炽鸟窜天涯。\r\n向前快速冲锋并浮空自身，对附近目标造成**125%***攻击力+**750**点伤害，并**强控浮空**目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_umbrella_branch",
+					"id": "GA_FPlayerUmbrellaMeleeFire_Branch"
+				},
+				{
+					"name": "熔心亦流情",
+					"description": "当拓荒者滞空时，长按普攻可触发熔心亦流情并持续消耗耐力，期间获得霸体。\r\n操控陵光对附近目标造成**25%***攻击力+**150**点伤害，并带动场上羽翎快速旋转。\r\n松开普攻后下落，下落过程中，每次命中目标对目标造成**50%***攻击力+**300**点伤害，并**强控击倒**目标。\r\n**被动**：羽翎快速旋转时，【焰漩】每秒消耗的【羽数】为**【聚羽力劲】**倍，同时【焰漩】伤害、充能、破盾提升至**【聚羽力劲】**倍。\r\n**【羽数】**：每秒自动获得**1**枚，每次造成伤害可获得**1**枚（冷却**0.5**秒），【羽数】储存上限为**30**枚。\r\n**【聚羽力劲】**=**1**+羽翎数量。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/icon_skill_umbrella_beidong2",
+					"id": "GA_FPlayerUmbrellaMeleeFire_PowerAttack"
+				},
+				{
+					"name": "掷翎行如影",
+					"description": "非战斗状态下，在地面长按普攻可在目标位置生成一柄羽翎，持续**15**秒或进入战斗状态消失。\r\n非战斗状态下，释放技能可移动至羽翎位置，使用二段跳可撑伞滑行，冷却**6**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_umbrella_skill_InPeace",
+					"id": "GA_FPlayerUmbrellaAimAttackFire"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayerUmbrellaEvadeFire_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "狂澜覆草芥",
+					"description": "根据羽翎生成顺序依次飞向场上的羽翎，并返回初始位置，飞行轨迹会暂留5秒，附近目标在轨迹范围内降低移速**50%**，期间自身免疫伤害（巅峰联赛中不生效），冷却**12**秒。\r\n飞行每经过一次羽翎时，造成**333.3%***攻击力+**2000**点范围伤害，并带动该羽翎快速旋转，持续**5**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_umbrella_skill",
+					"id": "GA_FPlayerUmbrellaSkillFire_Skill"
+				},
+				{
+					"name": "羽翎",
+					"description": "任意武器普攻命中或者闪避攻击命中时，会在目标附近生成**1**柄羽翎，持续**20**秒，冷却**1.5**秒，最多存在**3**个。\r\n**【崩炎】**：使用狂澜覆草芥每经过一次羽翎，额外造成【聚羽力劲】***180%**攻击力的伤害；\r\n**【侵蚀】**：羽翎附近目标受到火焰伤害提升**10%**，受蓄力攻击伤害提升**12%**；\r\n**【光焰】**：羽翎每秒向附近目标施加**195%***攻击力点伤害的灼烧，持续**4**秒；\r\n**【焰漩】**：场上羽翎每秒消耗**1**枚【羽数】，造成**91%***攻击力+**546**点范围伤害（多柄羽翎不累计伤害值与【羽数】消耗）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/icon_skill_umbrella_beidong2",
+					"id": "GA_FPlayerUmbrellaSkillFire_Pas1"
+				},
+				{
+					"name": "陵光御境",
+					"description": "释放狂澜覆草芥途中经过三次羽翎，返回初始位置后自身获得【陵光御境】，期间自身获得霸体效果和** 60%**减伤，持续**8**秒；\r\n当拓荒者潜海时，【陵光御境】每秒对范围内的目标造成**50%***攻击力+**300**点伤害，并提升自身移速**30%**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/icon_skill_umbrella_beidong3",
+					"id": "GA_FPlayerUmbrellaSkillFire_Pas2"
+				},
+				{
+					"name": "坚毅",
+					"description": "激活坚毅共鸣后：\r\n成功释放任意武器技能嘲讽附近的目标，持续**2.5**秒；\r\n释放狂澜覆草芥时，陵光御境扩大，附近队友获得霸体与**40%** 减伤效果；\r\n释放熔心亦流情期间，【陵光御境】不消耗持续时间。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/icon_skill_umbrella_beidong1",
+					"id": "GA_FPlayerUmbrellaSkillFire_Pas3"
+				}
+			],
+			"discharge": [
+				{
+					"name": "熠禽长叹嗟",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，对目标造成**1180%***攻击力+**7079**点伤害期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n**被动**：命中提升**【聚羽力劲】*3%**的火焰伤害，持续**20**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_umbrella_changeskill",
+					"id": "GA_FPlayerUmbrellaChangeSkillFire"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**20%**火攻和**40%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）",
@@ -4387,7 +5455,76 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "yoyo_ice_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "寒蚀",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成**185.3%***攻击力+**1112**点伤害，并击退目标。\r\n第二次攻击对目标造成**215.7%***攻击力+**1294**点伤害，并击退目标。\r\n第三次攻击对目标造成**352.3%***攻击力+**2114**点伤害，并浮空目标。\r\n第四次攻击对目标造成**543.4%***攻击力+**3260**点伤害，并击退目标。\r\n第五次攻击对目标造成**367.7%***攻击力+**2206**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_pugong",
+					"id": "GA_FPlayerYoyoMelee_Melee"
+				},
+				{
+					"name": "冰释",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成**218.5%***攻击力+**1311**点伤害。\r\n第二次攻击对目标造成**262.2%***攻击力+**1573**点伤害。\r\n第三次攻击对目标造成**410.8%***攻击力+**2465**点伤害。\r\n第四次攻击对目标造成**568.1%***攻击力+**3408**点伤害。\r\n第五次攻击对目标造成**552.9%***攻击力+**3317**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_airattack",
+					"id": "GA_FPlayerYoyoMelee_AirAttack"
+				},
+				{
+					"name": "凌刺",
+					"description": "在地面普攻时，长按普攻可触发凌刺，对目标造成**570%***攻击力+**3420**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_branch",
+					"id": "GA_FPlayerYoyoMelee_Branch"
+				},
+				{
+					"name": "料峭",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发料峭。\r\n下落过程中，每次命中对目标造成**95%***攻击力+**570**点伤害，落地后对目标造成**570%***攻击力+**3420**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_airbranch",
+					"id": "GA_FPlayerYoyoMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerYoyoEvade_Evade"
+				},
+				{
+					"name": "肆雪",
+					"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，可触发肆雪，对附近目标造成**269.2%***攻击力+**1615**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_frontattack",
+					"id": "GA_FPlayerYoyoEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "数九",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发数九，对附近目标造成**269.2%***攻击力+**1615**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_backattack",
+					"id": "GA_FPlayerYoyoEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "荒寒曳日",
+					"description": "对附近目标造成至多**1950%***攻击力+**11699**点伤害，并生成两个规律运动的超速悠悠球，冷却**60**秒，荒寒曳日范围内目标降低移速**50%**（对玩家、boss不生效）。\r\n每个超速悠悠球每个运动周期（初始4秒）约4次经过运动轨迹中心点，对途径目标造成**100%***攻击力+**600**点技能伤害，持续**70**秒，期间释放荒寒曳日将刷新超速悠悠球位置和持续时间（冷却**4**秒）。\r\n荒寒曳日释放期间自身减伤**50%**，并回复自身**5%**最大生命值（不受治疗及被治疗提升效果影响），该回复和减伤在巅峰联赛不生效。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_skill",
+					"id": "GA_FPlayerYoyoSkill_Skill"
+				},
+				{
+					"name": "归寂",
+					"description": "释放语冰可获得至多**2**次新技能归寂,该技能在荒寒曳日处于冷却状态时才可释放。对目标造成**1300%***攻击力+**7799**点技能伤害。期间自身减伤**50%**，并回复自身**5%**最大生命值（不受治疗及被治疗提升效果影响），该回复和减伤在巅峰联赛不生效。\r\n激活坚毅共鸣时：释放归寂嘲讽附近目标，并获得**1**层格挡盾，至多可获得**3**层，持续**20**秒。**格挡值**为自身**5种抗性之和**，格挡盾消耗、溢出时对主目标造成**格挡值*200%**点伤害。\r\n激活恩赐共鸣时：释放归寂对于生命值高于**95%**的目标造成其**8%**最大生命值伤害（对玩家无效），该伤害不被伤害提升及降低效果影响。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_skill1",
+					"id": "GA_FPlayerYoyoSkill_SkillSpec"
+				}
+			],
+			"discharge": [
+				{
+					"name": "语冰",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，对附近目标造成**1662.5%***攻击力+**9974**点伤害，并击飞目标，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_iceyoyo_changeskill",
+					"id": "GA_FPlayerYoyoChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**0%**冰攻和**1%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n**元素大师**：每装备**1**种元素的武器，最终伤害提升**2%**，装备后后台也生效。",
@@ -4492,7 +5629,118 @@
 			"Item_breakthrough_D3": 26
 		},
 		"advanceID": "queen_superpower_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "霜华掠",
+					"description": "在地面时，点击普攻可连续进行七次攻击。\r\n第一次攻击对目标造成**74.9%***攻击力+**449**点伤害。\r\n第二次攻击对目标造成**78.6%***攻击力+**472**点伤害。\r\n第三次攻击对目标造成**123.6%***攻击力+**742**点伤害。\r\n第四次攻击对目标造成**186.6%***攻击力+**1120**点伤害。\r\n第五次攻击对目标造成**209.7%***攻击力+**1258**点伤害。\r\n第六次攻击对目标造成**140.4%***攻击力+**842**点伤害。\r\n第七次攻击对目标造成**542.1%***攻击力+**3252**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_pugong",
+					"id": "GA_FPlayerQueenMelee_Melee"
+				},
+				{
+					"name": "舞露沉",
+					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行七次攻击，并消耗耐力。\r\n第一次攻击对目标造成**100.5%***攻击力+**603**点伤害。\r\n第二次攻击对目标造成**105.5%***攻击力+**633**点伤害。\r\n第三次攻击对目标造成**151.9%***攻击力+**911**点伤害。\r\n第四次攻击对目标造成**216.6%***攻击力+**1299**点伤害。\r\n第五次攻击对目标造成**210.9%***攻击力+**1265**点伤害。\r\n第六次攻击对目标造成**157%***攻击力+**942**点伤害。\r\n第七次攻击对目标造成**587.6%***攻击力+**3525**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_kongzhongpugong",
+					"id": "GA_FPlayerQueenMelee_AirAttack"
+				},
+				{
+					"name": "凝流漪",
+					"description": "在地面时，使用普攻第二至第六下时，长按普攻可触发凝流漪。\r\n自身浮空，向前方发射大量水波弹，期间持续消耗耐力，每次命中对附近目标造成**150%***攻击力+**900**点伤害【视为蓄力攻击伤害】，并击退目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_fenzhigongji",
+					"id": "GA_FPlayerQueenMelee_Branch"
+				},
+				{
+					"name": "水降月",
+					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，触发水降月。\r\n从天而降，落地时对目标造成**175%***攻击力+**1050**点伤害，并浮空目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_xialuogongji",
+					"id": "GA_FPlayerQueenMelee_JumpAttack"
+				},
+				{
+					"name": "聚泉落",
+					"description": "在空中时，使用空中普攻第二至第六下时，长按普攻可触发聚泉落。\r\n向前方发射大量水波弹，期间持续消耗耐力，每次命中对附近目标造成**150%***攻击力+**900**点伤害【视为蓄力攻击伤害】，并击退目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_fenzhigongji-05",
+					"id": "GA_FPlayerQueenMelee_AirAttackBranch"
+				},
+				{
+					"name": "共享",
+					"description": "自身激活**恩赐共鸣**后：\r\n在地面时，长按普攻可选择队友、松开后与其进入链接状态，处于链接/被链接中的目标无法再次链接/被链接，直至一方目标生命值归零/被链接目标链接其他目标/超出链接距离后、结束链接状态；\r\n被链接目标受到来自链接目标月星钏的治疗效果提升**50%**；\r\n被链接的友方激活**坚毅共鸣**时，会额外传递自身**50%**抗性给对方；\r\n被链接的友方激活**均衡共鸣**/**强攻共鸣**时，会额外传递自身**20%**攻击给对方（最多不超过**20000**）；\r\n被链接的友方激活**恩赐共鸣**时，会额外提高双方**30%**治疗效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_lianjie",
+					"id": "GA_FPlayerQueenMelee_Beidong"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。\r\n**被动**：自身及附近友方回复**200%***攻击力点生命值，并清除自身**8**点灰噬值；激活**恩赐共鸣**时，自身额外获得**50**点武器充能值。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerQueenEvade_Evade"
+				},
+				{
+					"name": "掣源荡",
+					"description": "向前方快速多次穿梭，对范围内目标最多造成**160%***攻击力+**960**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_qinshanbi",
+					"id": "GA_FPlayerQueenEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "激源荡",
+					"description": "释放激流喷发，对范围内目标最多造成**90%***攻击力+**540**点伤害，附带浮空效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_houshanbi",
+					"id": "GA_FPlayerQueenEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "瀑泷萦",
+					"description": "潮汐喷发，对范围内目标最多造成**680%***攻击力+**4080**点伤害，并**强控浮空**目标，冷却**30**秒。\r\n**被动：散流**\r\n装备**月星钏**后获得散流技，可在技能列表-＞设置界面于**6**个散流技中启用至多**2**个。\r\n操作：点击特殊技能键可释放散流技。\r\n当瀑泷萦携带散流技后，释放时会自动触发该散流技，且技能冷却替换为该散流技的冷却时间。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_jineng",
+					"id": "GA_FPlayerQueenSkill_Skill"
+				},
+				{
+					"name": "聚水",
+					"description": "浪潮奔涌，对附近目标最多造成**1500%***攻击力+**8999**点伤害，自身全元素伤害提升**10%**，持续**20**秒。\r\n冷却时间：**14**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_kuosan1",
+					"id": "GA_FPlayerQueenSkill_Skill1"
+				},
+				{
+					"name": "涌卷",
+					"description": "召唤多个水龙卷，吸附附近目标并造成至多**1800%***攻击力+**10799**点伤害，短暂时间后形成大龙卷，对附近目标造成**800%***攻击力+**4800**点伤害。\r\n**涌卷**造成的伤害视为技能、连携伤害。\r\n冷却时间：**12**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_kuosan2",
+					"id": "GA_FPlayerQueenSkill_Skill2"
+				},
+				{
+					"name": "涛压",
+					"description": "沐浴激流，自身每秒获得**60**点武器充能值，且技能伤害提高**20%**，连携伤害提高**20%**，持续**35**秒。\r\n释放**涛压**视为释放当前武器的连携技（无效果）。\r\n**水意烁华**命中刷新**涛压**冷却。\r\n冷却时间：**30**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_GuangZhu",
+					"id": "GA_FPlayerQueenSkill_Skill3"
+				},
+				{
+					"name": "涡漩",
+					"description": "水波环绕，自身最终伤害逐渐提升至**32%**（**10**秒后达到最大值），切换武器后失效，且重复释放**涡漩**不可叠加。\r\n冷却时间：**30**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_kuosan4",
+					"id": "GA_FPlayerQueenSkill_Skill4"
+				},
+				{
+					"name": "潏梏",
+					"description": "对目标释放水牢，持续**3**秒，期间目标无法移动、释放技能，并在**15**秒内降低目标**8%**抗性（对玩家不生效）。\r\n当拓荒者潜海时，**潏梏**抗性降低效果翻倍。\r\n冷却时间：**15**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_ShuiLao",
+					"id": "GA_FPlayerQueenSkill_Skill5"
+				},
+				{
+					"name": "滋泉",
+					"description": "生命奥义，自身全元素伤害提升(**生命上限**/**115000**)%，至多提升至**30%**，若自身生命上限高于**2600000**，则全元素伤害额外提升**25%**，持续**20**秒。\r\n冷却时间：**15**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_ShuiBoZD",
+					"id": "GA_FPlayerQueenSkill_Skill6"
+				}
+			],
+			"discharge": [
+				{
+					"name": "水意烁华",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，月星吐息，对附近目标最多造成**1500%***攻击力+**8999**点伤害，期间免疫伤害持续**2.6**秒（巅峰联赛不生效），回复自身**400%***攻击力点生命，清除自身**16**点灰噬值，移除时延效果且在**5**秒内免疫时延。\r\n\r\n**被动：月星**\r\n自身激活**强攻**/**均衡**共鸣时，**水意烁华**命中提高自身**20%**攻击力，持续**30**秒；\r\n自身激活**坚毅共鸣**时，每次释放**水意烁华**可提高自身**8%**抗性，持续**30**秒，最多可叠加**5**层，自身生命低于**30%**时，额外获得**5**秒**80%**减伤，减伤效果**60**秒内至多触发一次；\r\n自身激活**恩赐共鸣**时，**水意烁华**回复变为全体队友，并给添加**1**层可抵挡**1**次伤害的月星守护（层数不可叠加），持续**10**秒，且每次释放都会使下次**水意烁华**的治疗效果提高**20%**，至多可提高**40%**，持续**30**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_feiouna_lianxie",
+					"id": "GA_FPlayerQueenChangeSkill"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**异能共鸣**：装备**2**把及以上异能武器触发，提升**30%**攻击和**60%**异能抗，装备后后台也生效（多个异能共鸣/异能反应不叠加，优先生效异能共鸣）。",
@@ -4594,7 +5842,82 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "Chainsaw_physic_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "冲冲强袭",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成**184.6%***攻击力+**1108**点伤害，并击退目标。\r\n第二次攻击对目标造成**216.7%***攻击力+**1300**点伤害，并击退目标。\r\n第三次攻击对目标造成**179.6%***攻击力+**1078**点伤害，并击退目标。\r\n第四次攻击对目标造成**490.3%***攻击力+**2942**点伤害，并持续击退目标。\r\n第五次攻击对目标造成**528.5%***攻击力+**3171**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_melee",
+					"id": "GA_FPlayerChainsawMelee_Melee"
+				},
+				{
+					"name": "转转强袭",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成**220.6%***攻击力+**1323**点伤害。\r\n第二次攻击对目标造成**184.4%***攻击力+**1106**点伤害。\r\n第三次攻击对目标造成**169.4%***攻击力+**1016**点伤害。\r\n第四次攻击对目标造成**307.7%***攻击力+**1846**点伤害。\r\n第五次攻击对目标造成**412%***攻击力+**2472**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_airattack",
+					"id": "GA_FPlayerChainsawMelee_AirAttack"
+				},
+				{
+					"name": "狂气掘宝",
+					"description": "在地面时，使用第一次至第三次普攻时，长按普攻可触发狂气掘宝。\r\n原地持续攻击前方，并消耗耐力，期间自身获得霸体效果，每次命中对附近目标造成**90.1%***攻击力+**541**点伤害，并使目标进入**重伤**状态，持续**7**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_branch1",
+					"id": "GA_FPlayerChainsawMelee_MeleeBranch1"
+				},
+				{
+					"name": "章鱼丸沸锅",
+					"description": "狂气掘宝持续期间，保持长按普攻可触发章鱼丸沸锅。\r\n持续攻击前方，并消耗耐力，期间自身获得霸体效果，每次命中对附近目标造成**90.1%***攻击力+**541**点伤害，松开后对附近目标造成**135.1%***攻击力+**811**点伤害，并使目标进入**重伤**状态，持续**7**秒。\r\n使用方向键可在章鱼丸沸锅持续期间移动。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_branch2",
+					"id": "GA_FPlayerChainsawMelee_MeleeBranch2"
+				},
+				{
+					"name": "小皮开路",
+					"description": "在地面时，长按普攻或使用第四次普攻时长按，可触发小皮开路。\r\n前进持续攻击前方，并消耗耐力，期间自身获得霸体效果，每次命中对附近目标造成**90.1%***攻击力+**541**点伤害，并击退目标，同时使目标进入**重伤**状态，持续**7**秒。\r\n使用方向键可在小皮开路持续期间调整前进方向。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_branch4",
+					"id": "GA_FPlayerChainsawMelee_MeleeBranch4"
+				},
+				{
+					"name": "龙卷扣杀球",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发龙卷扣杀球。\r\n从天而降，落地后对附近目标造成**418%***攻击力+**2508**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_jumpattack",
+					"id": "GA_FPlayerChainsawMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "GA_FPlayerChainSawEvade_Evade_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayerChainsawEvade_Evade"
+				},
+				{
+					"name": "GA_FPlayerChainsawEvade_EvadeAttackBack_name",
+					"description": "GA_FPlayerChainsawEvade_EvadeAttackBack_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_evadeattack1",
+					"id": "GA_FPlayerChainsawEvade_EvadeAttackBack"
+				},
+				{
+					"name": "GA_FPlayerChainsawEvade_EvadeAttackFront_name",
+					"description": "GA_FPlayerChainsawEvade_EvadeAttackFront_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_evadeattack",
+					"id": "GA_FPlayerChainsawEvade_EvadeAttackFront"
+				}
+			],
+			"skill": [
+				{
+					"name": "探险队合击",
+					"description": "自身进入蓄力状态，获得短暂无敌（巅峰联赛不生效），吸附附近目标且每次命中造成**81.8%***攻击力+**491**点伤害，冷却**20**秒（蓄力状态下即可进入冷却）。\r\n松开后引爆附近目标全部层数的**宝藏标记**，并使**小皮分裂触腕**进入狂暴状态，提升**100%**协同攻击速度，持续**12**秒。\r\n\r\n根据蓄力期间自身头顶的**小章鱼**数量，可选择不同松开时机；\r\n**完全暴走**：当**小章鱼**数量为**2**时，松开后对附近目标造成**1200%***攻击力+**7199**点伤害；\r\n**不完全暴走**：当**小章鱼**数量为**1**或**3**时，松开后对附近目标造成**840%***攻击力+**5040**点伤害。\r\n\r\n**伏行之物**：进入战斗状态时，自身获得**15**条**小皮分裂触腕**，分裂触腕将协同攻击当前锁定目标，每次对附近目标造成**125%***攻击力点伤害，并消耗**1**条分裂触腕，自身至多可存储**30**条分裂触腕；\r\n**小皮分裂触腕**命中目标后，为目标添加**1**层**宝藏标记**，持续**20**秒，至多叠加**3**层；\r\n**小皮分裂触腕**以外的物理伤害每次命中将引爆目标**1**层**宝藏标记**，造成**70%***攻击力点伤害，该效果**0.1**秒内至多触发**1**次；\r\n任意武器连携伤害每次命中时，获得**1**条分裂触腕，该效果**0.1**秒内至多触发**1**次。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_skill",
+					"id": "GA_FPlayerChainsawSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "小皮大绝招",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，自身短暂潜入水面，跃出时对附近目标造成**480%***攻击力+**2880**点伤害，落地后对附近目标造成**1120%***攻击力+**6719**点伤害，并使**小皮分裂触腕**数量提升至上限，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_chainsaw_changeskill",
+					"id": "GA_FPlayerChainSawChangeSkill_ChangeSkill"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**0%**物攻和**1%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**万物共鸣**：装备**2**把除物理外的相同元素武器触发，最终伤害提升**2%**，装备后后台可生效。",
@@ -4696,7 +6019,82 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "Rubilia_thunder_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "翼展",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成**137.3%***攻击力+**824**点伤害，并击退目标。\r\n第二次攻击对目标造成**101.3%***攻击力+**608**点伤害，并击退目标。\r\n第三次攻击对目标造成**191.9%***攻击力+**1151**点伤害，并浮空目标。\r\n第四次攻击对目标造成**439.6%***攻击力+**2637**点伤害，并击退目标。\r\n第五次攻击对目标造成**276.5%***攻击力+**1659**点伤害，并击倒目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_melee",
+					"id": "GA_FPlayerRubiliaMelee_Melee"
+				},
+				{
+					"name": "压制",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成**165.5%***攻击力+**993**点伤害。\r\n第二次攻击对目标造成**130.3%***攻击力+**782**点伤害。\r\n第三次攻击对目标造成**254.8%***攻击力+**1529**点伤害。\r\n第四次攻击对目标造成**499.5%***攻击力+**2997**点伤害。\r\n第五次攻击对目标造成**248.2%***攻击力+**1489**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_airattack",
+					"id": "GA_FPlayerRubiliaMelee_AirAttack"
+				},
+				{
+					"name": "迫近",
+					"description": "在地面普攻时，长按普攻可触发迫近，对目标造成**294%***攻击力+**1764**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_branch",
+					"id": "GA_FPlayerRubiliaMelee_Branch"
+				},
+				{
+					"name": "降临",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发降临。\r\n从空中发起俯冲，并消耗耐力，落地后对目标造成**380%***攻击力+**2280**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_jumpattack",
+					"id": "GA_FPlayerRubiliaMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerRubiliaEvade_Evade"
+				},
+				{
+					"name": "掠袭",
+					"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，可触发掠袭，对附近目标造成**159.6%***攻击力+**958**点伤害，并浮空目标。\r\n释放掠袭可触发**回响**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_fevadeattack",
+					"id": "GA_FPlayerRubiliaEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "蜂群",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发蜂群，召唤两只阿比斯幻影对前方目标造成**252%***攻击力+**1512**点伤害。\r\n释放蜂群可触发**回响**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_bevadeattack",
+					"id": "GA_FPlayerRubiliaEvadeAttack_BackAttack"
+				},
+				{
+					"name": "如梭",
+					"description": "在地面时，长按任意闪避可触发如梭，向高空冲刺一段距离（在禁用喷气背包的场景不可用）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_fly",
+					"id": "GA_FPlayerRubiliaEvade_Move"
+				},
+				{
+					"name": "镇封",
+					"description": "闪避之后的短暂时间内，长按普攻，可触发镇封，向前方投射蜂巢意识，将命中的灰域体目标控制为友方（对boss不生效），持续**60**秒。\r\n再次对目标释放镇封、或持续时间结束时可解除控制状态，并对目标造成控制期间自身造成所有伤害的**45%**。\r\n蜂巢意识可被其他非灰域体目标阻挡，且控制效果不对该目标生效。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_control",
+					"id": "GA_FPlayerRubiliaEvade_Control"
+				}
+			],
+			"skill": [
+				{
+					"name": "领域",
+					"description": "进行**10**次高速穿梭，吸附附近目标并对附近目标造成至多**1115.2%***攻击力+**6691**点伤害，落地后对附近目标造成**594.8%***攻击力+**3568**点伤害，冷却**30**秒。\r\n每次穿梭将汲取场上所有晶极刺各**10%**最大生命值（巅峰联赛不生效），额外造成场上晶极刺数量***165%***攻击力点伤害，或场上晶极刺数量***2.3%***自身最大生命值点伤害（取最高值结算），直至晶极刺生命值清空。\r\n晶极刺最大生命值**损失比例**视为自身最大生命值**损失比例**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_skill",
+					"id": "GA_FPlayerRubiliaSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "海拉之拥",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，召唤海拉幻影释放**12**次雷暴，每次雷暴对附近目标造成**229.2%***攻击力+**1375**点伤害，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n成功释放海拉之拥后自身雷电伤害提升**25%**，持续**30**秒。并生成**3**枚晶极刺（场上至多可存在**5**枚），晶极刺初始拥有**100%**最大生命值，无法被攻击，仅受**回响**治疗效果影响，持续**150**秒；\r\n海拉之拥命中后自身获得**2**次**回响**（至多可累积**4**次），绝响任意闪避攻击每次消耗**1**次**回响**，对目标造成场上晶极刺数量***240%***攻击力点伤害，为场上所有晶极刺回复**25%**最大生命值，并重置晶极刺位置及其持续时间；\r\n海拉之拥命中后获得**1**次闪避不消耗闪避次数的机会。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_rubilia_changeskill",
+					"id": "GA_FPlayerRubiliaChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**20%**雷攻和**40%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。",
@@ -4798,7 +6196,94 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "brush_fire_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "挥毫",
+					"description": "在地面时，进行七次攻击。\r\n第一次攻击对目标造成**277%***攻击力+**1662**点伤害。\r\n第二次攻击对目标造成**232%***攻击力+**1392**点伤害。\r\n第三次攻击对目标造成**280%***攻击力+**1680**点伤害。\r\n第四次攻击对目标造成**277%***攻击力+**1662**点伤害。\r\n第五次攻击对目标造成**315%***攻击力+**1890**点伤害。\r\n第六次攻击对目标造成**718%***攻击力+**4308**点伤害。\r\n第七次攻击对目标造成**1199%***攻击力+**7193**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_melee",
+					"id": "GA_FPlayerBrushMelee_Melee"
+				},
+				{
+					"name": "飞文",
+					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行七次攻击。\r\n第一次攻击对目标造成**264%***攻击力+**1584**点伤害。\r\n第二次攻击对目标造成**264%***攻击力+**1584**点伤害。\r\n第三次攻击对目标造成**215%***攻击力+**1290**点伤害。\r\n第四次攻击对目标造成**264%***攻击力+**1584**点伤害。\r\n第五次攻击对目标造成**309%***攻击力+**1854**点伤害。\r\n第六次攻击对目标造成**718%***攻击力+**4308**点伤害。\r\n第七次攻击对目标造成**1199%***攻击力+**7193**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_airattack",
+					"id": "GA_FPlayerBrushMelee_AirAttack"
+				},
+				{
+					"name": "漫书",
+					"description": "在地面时，使用普攻第二至第四下时，长按普攻可触发漫书。\r\n回旋攻击，造成**1220.9%***攻击力+**7325**点伤害，并击退目标。\r\n触发漫书后，点按普攻可触发染翰。\r\n弧形位移，造成**143.6%***攻击力+**862**点伤害，并浮空目标。\r\n触发染翰后，点按普攻可触发落纸。\r\n踢飞目标，造成**287.3%***攻击力+**1724**点伤害，并浮空目标，随后释放朱雀攻击目标，造成造成**359.1%***攻击力+**2154**点伤害，之后快速下落至地面，造成**790%***攻击力+**4740**点伤害，并浮空目标。\r\n触发落纸后，长按普攻可触发染翰。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_branch1",
+					"id": "GA_FPlayerBrushMelee_MeleeBranch"
+				},
+				{
+					"name": "落纸",
+					"description": "在地面时，使用普攻第五至第七下时，长按普攻可触发落纸。\r\n踢飞目标，造成**287.3%***攻击力+**1724**点伤害，并浮空目标，随后释放朱雀攻击目标，造成造成**359.1%***攻击力+**2154**点伤害，之后快速下落至地面，造成**790%***攻击力+**4740**点伤害，并浮空目标。\r\n触发落纸后，长按普攻可触发染翰。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_branch2",
+					"id": "GA_FPlayerBrushMelee_MeleeBranch1"
+				},
+				{
+					"name": "点睛",
+					"description": "在空中时，使用空中攻击第二至第六下时，长按普攻可触发点睛。\r\n喷发火焰，对前方目标造成**754.1%***攻击力+**4524**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_airbranch",
+					"id": "GA_FPlayerBrushMelee_AirAttackBranch"
+				},
+				{
+					"name": "断简",
+					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，触发断简。\r\n从天而降，落地时对周围目标造成**395%***攻击力+**2370**点伤害，附带浮空效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_jumpattack",
+					"id": "GA_FPlayerBrushMelee_JumpAttack"
+				},
+				{
+					"name": "小篆",
+					"description": "普攻对目标造成伤害时，会概率凝聚书法字。\r\n**炎**：凝聚炎劲，对单体目标造成**200%***攻击力+**1200**点伤害，**50%**几率添加，触发冷却**12**秒；\r\n**破**：引爆火焰，造成范围**50%***攻击力+**300**点伤害，**50%**几率添加，触发冷却**7**秒；\r\n**引**：牵引烈焰，聚集范围内的目标，造成**200%***攻击力+**1200**点伤害，**50%**几率添加，触发冷却**15**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_beidong",
+					"id": "GA_FPlayerBrushMelee_Beidong"
+				},
+				{
+					"name": "雀羽",
+					"description": "拥有**雀羽**时，使用武器**松彗**攻击可向锁定目标发射一枚**雀羽**，造成**120%***攻击力范围伤害，**雀羽**攻击冷却**1**秒。\r\n武器**松彗**处于后台时，使用其他武器攻击也可触发**雀羽**，**雀羽**攻击冷却**2**秒。\r\n**雀羽**初始数量为**30**枚，上限为**60**枚。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_queyu",
+					"id": "GA_FPlayerBrushMelee_QueYu"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。\r\n**被动**：释放闪避时获得**15**枚**雀羽**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerBrushEvade_Evade"
+				},
+				{
+					"name": "砚滴",
+					"description": "泼洒笔墨，对周围目标造成**603.3%***攻击力+**3619**点伤害，使目标进入**2**秒**65%**迟缓（组队玩法中对boss无效），并形成火线，持续7秒，每秒造成**120%***攻击力+**720**点伤害（多个火线/火圈叠加时，单位时间内受到**1**次伤害），附带**50%**减速效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_evadeattack",
+					"id": "GA_FPlayerBrushEvade_EvadeAttack"
+				},
+				{
+					"name": "笔耕",
+					"description": "释放砚滴时长按普攻，可触发笔耕。\r\n泼洒笔墨，对周围目标造成**1285.2%***攻击力+**7711**点伤害，使目标进入**2**秒**65%**迟缓（组队玩法中对boss无效），并形成火圈，持续7秒，每秒造成**120%***攻击力+**720**点伤害（多个火线/火圈叠加时，单位时间内受到**1**次伤害），附带**50%**减速效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_evadeattack1",
+					"id": "GA_FPlayerBrushEvade_BD"
+				}
+			],
+			"skill": [
+				{
+					"name": "四方雀唳",
+					"description": "自身化为多个水墨分身并短暂无敌，对周围目标造成**480.8%***攻击力+**2885**点伤害，之后水墨汇聚到一起，聚集范围内敌方单位，释放范围水墨劲力，造成**1169.3%***攻击力+**7015**点伤害，汇聚已掉落的“**书法字**”，并释放朱雀化形，造成伤害（根据范围内召唤物以及掉落的书法字数量来计算伤害【=（召唤物数量+书法字数量）***531.6%**，召唤物和书法字数量总和不超过**8**个】），自身进入“**极致**”状态，获得无视目标**30%**火抗效果，持续**30**秒，根据汇聚的不同书法字，提供不同效果：\r\n汇聚**1**个“携”字时，连携伤害提高**16%**，汇聚**2**个“携”字时，破盾效率提高**20%**；\r\n汇聚**1**个“技”字时，技能伤害提高**16%**，汇聚**2**个“技”字时，松彗技能“四方雀唳”冷却减少**5**秒；\r\n汇聚**1**个“闪”字时，闪避攻击伤害提高**20%**，汇聚**2**个“闪”字时，立即获得**3**次闪避次数；\r\n汇聚**1**个“攻”字时，普攻伤害提高**20%**，汇聚**2**个“攻”字时，普攻期间受到伤害减少**5%**；\r\n每汇聚**1**个书法字，都会获得**2**秒的霸体效果，最多可获得**16**秒霸体。\r\n技能冷却：**25**秒。\r\n\r\n**被动：书法字**\r\n使用任意武器的连携/技能/闪避/普攻，根据使用次数会掉落对应的“书法字”。\r\n携：使用**1**次连携掉落**1**个“携”字，最多可掉落**2**个；\r\n技：使用**1**次技能掉落**1**个“技”字，最多可掉落**2**个；\r\n闪：使用**2**次闪避掉落**1**个“闪”字，最多可掉落**2**个；\r\n攻：使用**4**次普攻掉落**1**个“攻”字，最多可掉落**2**个。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_skill",
+					"id": "GA_FPlayerBrushSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "瑞光极意",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，向前方横扫，对范围内目标最多造成**2801%***攻击力+**16805**点伤害，附带击退效果，技能期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n\r\n**被动：雀燃**\r\n释放任意火武器连携时，对锁定目标添加**1**层“雀燃”状态，每秒造成**100%***攻击力伤害，持续**15**秒，最多可叠加**2**层。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_brush_changeskill",
+					"id": "GA_FPlayerBrushChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**20%**火攻和**40%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n**爆炎-驻场**：使用武器**松彗**攻击命中时，每**1.5**秒造成一次爆炎伤害（爆炎伤害=**0%***火攻+**1%***最大生命值+**2%***抗性之和+**3%***暴击值），爆炎伤害不受除泰坦装备稀有属性以外的增伤影响且不会触发额外的攻击效果，伤害类型为**普攻**，若装备的另外**2**把武器中存在雷电/寒冰/物理武器则爆炎伤害提升至**4**倍。",
@@ -4899,7 +6384,106 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "yulan_ice_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "冲拳连打",
+					"description": "在地面时，点击普攻可连续进行六次攻击。\r\n第一次攻击对目标造成**132.2%***攻击力+**793**点伤害，并击退目标。\r\n第二次攻击对目标造成**102.8%***攻击力+**617**点伤害，并击退目标。\r\n第三次攻击对目标造成**107.7%***攻击力+**646**点伤害，并击退目标。\r\n第四次攻击对目标造成**293.7%***攻击力+**1762**点伤害，并击退目标。\r\n第五次攻击对目标造成**569.8%***攻击力+**3419**点伤害，并持续击退目标。\r\n第六次攻击对目标造成**464%***攻击力+**2784**点伤害，并击飞目标。\r\n\r\n冲拳连打处于**武道家**/**掠阵**形态时均可释放；\r\n**武道家**形态任意闪避攻击后，点按普攻可快速触发第四次攻击。\r\n**武道家**形态第五次攻击命中后，对目标造成**2**秒**强控冻结**效果（巅峰联赛、对boss不生效），并为目标添加**冻瘃**状态，每秒造成**270%***攻击力+**1620**点伤害，持续**8**秒，该效果对同一目标**8**秒内至多触发一次。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_melee",
+					"id": "GA_FPlayerYulanMelee_Melee"
+				},
+				{
+					"name": "滞空冲拳",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行六次攻击，并消耗耐力。\r\n第一次攻击对目标造成**139.6%***攻击力+**838**点伤害。\r\n第二次攻击对目标造成**122.2%***攻击力+**733**点伤害。\r\n第三次攻击对目标造成**128%***攻击力+**768**点伤害。\r\n第四次攻击对目标造成**278.3%***攻击力+**1670**点伤害。\r\n第五次攻击对目标造成**508.2%***攻击力+**3049**点伤害。\r\n第六次攻击对目标造成**453.7%***攻击力+**2722**点伤害。\r\n\r\n滞空冲拳处于**武道家**/**掠阵**形态时均可释放。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_airattack",
+					"id": "GA_FPlayerYulanMelee_AirAttack"
+				},
+				{
+					"name": "燕子穿林",
+					"description": "在地面时，使用第一次至第三次普攻时，长按普攻可触发燕子穿林。\r\n造成**128.3%***攻击力+**770**点伤害并吸附附近目标，再对附近目标造成**299.3%***攻击力+**1796**点伤害并击退目标。\r\n\r\n燕子穿林处于**武道家**形态时方可释放；\r\n释放**飞鸢出云**后，点按普攻也可触发燕子穿林。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_branch1",
+					"id": "GA_FPlayerYulanMelee_MeleeBranch1"
+				},
+				{
+					"name": "腾蛇舞空",
+					"description": "在地面时，使用第四次至第五次普攻时，长按普攻可触发腾蛇舞空。\r\n对附近目标造成**153.9%***攻击力+**923**点伤害，并浮空目标。\r\n\r\n腾蛇舞空处于**武道家**形态时方可释放；\r\n释放**燕子穿林**后，长按普攻也可触发腾蛇舞空。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_branch2",
+					"id": "GA_FPlayerYulanMelee_MeleeBranch2"
+				},
+				{
+					"name": "霜天彻地",
+					"description": "当拓荒者滞空时，使用第一次至第六次普攻时，长按普攻可触发霜天彻地。\r\n在空中掷出武器，对附近目标造成**671.5%***攻击力+**4029**点伤害。\r\n\r\n霜天彻地处于**武道家**/**掠阵**形态时均可释放。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_branch4",
+					"id": "GA_FPlayerYulanMelee_AirAttackBranch"
+				},
+				{
+					"name": "飞鸢出云",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发飞鸢出云。\r\n从天而降，落地后对附近目标造成**303.2%***攻击力+**1819**点伤害，并击倒目标。\r\n\r\n飞鸢出云处于**武道家**/**掠阵**形态时均可释放。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_jumpattack",
+					"id": "GA_FPlayerYulanMelee_JumpAttack"
+				},
+				{
+					"name": "万物归元",
+					"description": "在地面时，长按普攻可触发万物归元。\r\n持续吸附附近目标并消耗耐力，期间自身获得霸体效果。\r\n\r\n万物归元处于**武道家**/**掠阵**形态时均可释放。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_branch3",
+					"id": "GA_FPlayerYulanMelee_MeleeBranch3"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。\r\n\r\n闪避处于**武道家**/**掠阵**形态时均可释放；\r\n**武道家**形态闪避后，自身获得**5**秒霸体效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_dgun_evade",
+					"id": "GA_FPlayerYulanEvade_Evade"
+				},
+				{
+					"name": "挟山超海",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发挟山超海，对附近目标造成**362.5%***攻击力+**2175**点伤害。\r\n\r\n挟山超海处于**武道家**/**掠阵**形态时均可释放；",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_evadeattackback",
+					"id": "GA_FPlayerYulanEvade_EvadeAttackBack"
+				},
+				{
+					"name": "风卷残云",
+					"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，可触发风卷残云，对附近目标造成**342%***攻击力+**2052**点伤害。\r\n\r\n风卷残云处于**武道家**/**掠阵**形态时均可释放；",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_evadeattackfront",
+					"id": "GA_FPlayerYulanEvade_EvadeAttackFront"
+				}
+			],
+			"skill": [
+				{
+					"name": "攻守兼备",
+					"description": "**骈臻**拥有**武道家**与**掠阵**两种形态，可在技能列表->设置界面中至多启用**1**种形态，且战斗状态下无法切换。\r\n \r\n**武道家**形态：战斗状态下，**骈臻**闪避攻击/普攻倍率额外提升**40%**，使用任意武器闪避攻击或普攻**3**次后，获得**1**点**内劲**（至多**10**点），**内劲**每**2**秒至多获得**1**点，非战斗状态下清除所有**内劲**点数。\r\n**掠阵**形态：**应势而动**命中后进入**蓄势**状态，每**0.8**秒获得**1**点**战意**（至多**15**点），持续**60**秒，非战斗状态下清除所有**战意**点数。\r\n**被动：寒气**\r\n装备**骈臻**时，自身获得无视目标**30%**冰抗效果，装备后后台可生效。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_passiveskill",
+					"id": "GA_FPlayerYulanSkill_PassiveSkill"
+				},
+				{
+					"name": "或跃在渊",
+					"description": "对目标造成**2730%***攻击力+**16379**点伤害，冷却**15**秒。\r\n释放或跃在渊时，**骈臻**至多消耗**5**点**内劲**，每消耗**1**/**2**/**3**/**4**/**5**点**内劲**，本次或跃在渊伤害值替换为原先的**1.2**/**1.5**/**2.1**/**2.8**/**3.7**倍。\r\n释放或跃在渊后，自身寒冰伤害提升**20%**，持续**30**秒。\r\n释放或跃在渊后，自身回复**2**次闪避次数。\r\n\r\n或跃在渊处于**武道家**形态时方可释放；\r\n**内劲**达到**5**点时，清除或跃在渊冷却时间。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_skill",
+					"id": "GA_FPlayerYulanSkill_Skill1"
+				},
+				{
+					"name": "兵戈铮鸣",
+					"description": "对目标造成**2730%***攻击力+**16379**点伤害，冷却**15**秒。\r\n**蓄势**状态下，自身释放任意武器技能时，**骈臻**至多消耗**5**点**战意**，每消耗**1**/**2**/**3**/**4**/**5**点**战意**，额外对附近目标造成**242%**/**503%**/**1049%**/**2351%**/**3930%***攻击力点伤害，并对目标每秒造成**270%***攻击力+**1620**点伤害，持续**5**秒。\r\n释放任意冰元素武器技能后，自身获得**2**秒霸体效果。\r\n\r\n兵戈铮鸣处于**掠阵**形态时方可释放。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_skill",
+					"id": "GA_FPlayerYulanSkill_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "狴虎履霜",
+					"description": "当**武器充能满**或触发**幻时**时从其他武器切换到该武器时**清除自身负面状态**，对附近目标造成至多**2394%***攻击力+**14363**点伤害，并**强控击飞**目标，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n\r\n狴虎履霜处于**武道家**形态时方可释放。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_changeskill",
+					"id": "GA_FPlayerYulanChangeSkill_ChangeSkill"
+				},
+				{
+					"name": "应势而动",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，对附近目标造成至多**2394%***攻击力+**14363**点伤害，并**强控击飞**目标，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n应势而动命中后，自身寒冰伤害提升**20%**，持续**30**秒。\r\n应势而动命中后，自身进入**蓄势**状态，持续**60**秒。\r\n使用**骈臻**期间释放连携技后，自身获得**1000**点武器充能值，该效果**10**秒内至多触发一次。\r\n\r\n应势而动处于**掠阵**形态时方可释放。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/yulan_changeskill",
+					"id": "GA_FPlayerYulanChangeSkill_ChangeSkill1"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**20%**冰攻和**40%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n**碎冰-速切**：装备**骈臻**时，任意武器连携技命中后，对附近目标初始造成**0%***冰攻+**1%***自身最大生命值+**2%***各元素抗性之和+**3%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意**1**把雷电/物理/火焰武器，则碎冰伤害提升至**4**倍。此外，碎冰伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
@@ -5000,7 +6584,82 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "Zeke_physic_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "御侮",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n**玄武图腾**持续期间，御侮第五次攻击最后一段命中后，对锁定目标添加一次蛇噬。\r\n第一次攻击对目标造成**376%***攻击力+**2256**点伤害，并击退目标。\r\n第二次攻击对目标造成**533.6%***攻击力+**3201**点伤害，并击退目标。\r\n第三次攻击对目标造成**576%***攻击力+**3456**点伤害，并吸引怪物向自身聚集。\r\n第四次攻击对目标造成**680%***攻击力+**4080**点伤害，并浮空目标。\r\n第五次攻击对目标造成**1080%***攻击力+**6479**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_fevadeattack",
+					"id": "GA_FPlayerZekeMelee_Melee"
+				},
+				{
+					"name": "飞石",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成**376%***攻击力+**2256**点伤害。\r\n第二次攻击对目标造成**560%***攻击力+**3360**点伤害。\r\n第三次攻击对目标造成**547.2%***攻击力+**3283**点伤害。\r\n第四次攻击对目标造成**467.2%***攻击力+**2803**点伤害。\r\n第五次攻击对目标造成**760%***攻击力+**4560**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_airattack",
+					"id": "GA_FPlayerZekeMelee_AirAttack"
+				},
+				{
+					"name": "彼岸一心",
+					"description": "在地面普攻时，使用第一次至第四次普攻时，长按普攻可触发彼岸一心。\r\n向前方掷出武器，对附近目标造成**708%***攻击力+**4248**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_branch",
+					"id": "GA_FPlayerZekeMelee_Branch"
+				},
+				{
+					"name": "崩山",
+					"description": "在地面时，长按普攻可触发崩山。\r\n前进持续攻击前方，并消耗耐力，对附近目标造成**800%***攻击力+**4800**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_branch1",
+					"id": "GA_FPlayerZekeMelee_Branch1"
+				},
+				{
+					"name": "连亘",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发连亘。\r\n从空中下落，落地后对附近目标造成**680%***攻击力+**4080**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_jumpattack",
+					"id": "GA_FPlayerZekeMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerZekeEvade_Evade"
+				},
+				{
+					"name": "GA_FPlayerZekeEvadeAttack_ForwardAttack_name",
+					"description": "GA_FPlayerZekeEvadeAttack_ForwardAttack_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_fevadeattack",
+					"id": "GA_FPlayerZekeEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "GA_FPlayerZekeEvadeAttack_BackAttack_name",
+					"description": "GA_FPlayerZekeEvadeAttack_BackAttack_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_bevadeattack",
+					"id": "GA_FPlayerZekeEvadeAttack_BackAttack"
+				},
+				{
+					"name": "GA_FPlayerZekeEvade_Spec_name",
+					"description": "GA_FPlayerZekeEvade_Spec_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_evadespec",
+					"id": "GA_FPlayerZekeEvade_Spec"
+				}
+			],
+			"skill": [
+				{
+					"name": "绝壑",
+					"description": "在前方地面斩出裂隙，获得短暂无敌（巅峰联赛不生效）并吸附附近目标，造成**2480%***攻击力+**14879**点伤害，冷却**20**秒，自身获得持续**30**秒的**30%**物理伤害提升，之后召唤玄武图腾，非战斗状态下玄武图腾解除。\r\n玄武图腾每**0.6**秒从四个阵眼处招来玄魄，每次可对沿途目标造成**100%***攻击力点伤害。绝壑处于冷却状态时，获得新技能**镜映**：击回自身附近玄魄并激活对应阵眼。任一阵眼激活后，玄武图腾落成，**无我之境**处于可进入状态。\r\n\r\n玄武图腾持续期间，使用**执明**获得霸体效果，并可通过以下方式添加蛇噬：\r\n**绝壑**命中后，对生命值最高的目标添加一次蛇噬；\r\n**御侮**第五次攻击最后一段命中后，对锁定目标添加一次蛇噬；\r\n**开云**命中后，对锁定目标添加一次蛇噬；\r\n**斩沙**命中后，对锁定目标添加一次蛇噬。\r\n蛇噬对目标造成**300%***攻击力点吞噬伤害，回复自身**12%**最大生命值，并使目标成为蛇链成员。\r\n\r\n蛇链可将锁定蛇链成员受到来自拓荒者前台武器的实际伤害**30%**及**重伤**状态传导至全部蛇链成员（包括目标本身），蛇链成员至多为**4**名。\r\n传导伤害元素类型跟随原伤害且无法再次传导，**30**秒内累计传导伤害不超过拓荒者最高攻击力的**14000**倍（组队玩法无限制），**冥斩**伤害无法传导。\r\n释放**绝壑**后还可触发**东风浩荡**：蛇链成员对附近目标（包括目标本身）造成吞噬伤害次数***35%**攻击力点伤害，并重置吞噬伤害计数。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_skill",
+					"id": "GA_FPlayerZekeSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "归途",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，召唤玄武释放范围伤害，对附近目标造成**2096%***攻击力+**12575**点伤害，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_zeke_changeskill",
+					"id": "GA_FPlayerZekeChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**20%**物攻和**40%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**破甲-脱手**：释放**绝壑**后，每秒对命中目标造成**1%***物攻+**2%***自身最大生命值+**3%***各元素抗性之和+**4%***暴击点伤害，持续**0**秒，多个脱手伤害不叠加，破甲伤害视为技能伤害，若装备任意**1**把雷电/火焰/寒冰武器，则破甲伤害提升至**5**倍。此外，破甲伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
@@ -5101,7 +6760,76 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "mimi_thunder_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "跳珠撼玉",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成**184%***攻击力+**1104**点伤害。\r\n第二次攻击对目标造成**278%***攻击力+**1668**点伤害。\r\n第三次攻击对目标造成**808%***攻击力+**4848**点伤害。\r\n第四次攻击对目标造成**670%***攻击力+**4020**点伤害。\r\n第五次攻击对目标造成**334%***攻击力+**2004**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_melee",
+					"id": "GA_FPlayerMiMiMelee_Melee"
+				},
+				{
+					"name": "登临",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成**187%***攻击力+**1122**点伤害。\r\n第二次攻击对目标造成**304%***攻击力+**1824**点伤害。\r\n第三次攻击对目标造成**835%***攻击力+**5010**点伤害。\r\n第四次攻击对目标造成**575%***攻击力+**3450**点伤害。\r\n第五次攻击对目标造成**373%***攻击力+**2238**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_airattack",
+					"id": "GA_FPlayerMiMiMelee_AirAttack"
+				},
+				{
+					"name": "孟章贯日",
+					"description": "在地面时，使用第一次至第四次普攻时，长按普攻可触发孟章贯日，并消耗耐力。\r\n向前方发动进攻，对附近目标造成**666%***攻击力+**3996**点伤害，并浮空目标。\r\n触发孟章贯日后，长按普攻可触发霆爆。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_meleebranch",
+					"id": "GA_FPlayerMiMiMelee_MeleeBranch"
+				},
+				{
+					"name": "霆爆",
+					"description": "在地面时，长按普攻可触发霆爆。\r\n向目标持续发射雷电，并消耗耐力，期间自身获得霸体效果，每次命中对附近目标造成**108%***攻击力+**648**点伤害，同时每**1.5**秒召唤**1**条小青龙孟章，协同向目标释放冲击波，对附近目标造成**200%***攻击力+**1200**点伤害。\r\n蓄力攻击以及冲击波每次命中都会使目标雷抗降低**3%**，至多降低至**15%**，持续**10**秒；同时自身每**1.5**秒获得**10%**最大生命值护盾，至多获得**30%**最大生命值护盾，持续**15**秒。\r\n激活坚毅共鸣后：\r\n霆爆冲击波每次命中嘲讽附近的目标，持续**2**秒；\r\n霆爆雷抗降低效果替换为全抗降低效果；\r\n霆爆每次产生护盾时，附近队友额外获得至多**10%**使用者自身最大生命值护盾。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_powerattack",
+					"id": "GA_FPlayerMiMiMelee_PowerAttack"
+				},
+				{
+					"name": "游龙",
+					"description": "当拓荒者滞空时，使用第一次至第四次普攻时，长按普攻可触发游龙，并消耗耐力。\r\n向前方发动进攻，对附近目标造成**666%***攻击力+**3996**点伤害，并浮空目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_airbranch",
+					"id": "GA_FPlayerMiMiMelee_AirAttackBranch"
+				},
+				{
+					"name": "青龙之力",
+					"description": "孟章每**3**次普攻命中后，获得**1**层青龙之力，至多获得**8**层，持续**30**秒。\r\n激活坚毅共鸣后：\r\n每层青龙之力使自身获得**1.5%**减伤效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_beidong",
+					"id": "GA_FPlayerMiMiMelee_Beidong"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。\r\n**被动：**向前方发出雷电绣球。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerMiMiEvade_Evade"
+				},
+				{
+					"name": "电掣",
+					"description": "任意闪避之后的短暂时间内，点击普攻，可触发电掣。\r\n瞬间出现在雷电绣球位置，对附近目标造成**215%***攻击力+**1290**点伤害，生成雷池并回到自身起始位置，雷池共计造成**302%***攻击力+**1812**点持续伤害并持续吸附附近目标。\r\n**被动：**电掣期间自身获得霸体效果，电掣命中后获得**1**层青龙之力。\r\n触发电掣后，长按普攻可触发霆爆。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_evadeattack",
+					"id": "GA_FPlayerMiMiEvade_EvadeAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "青云慑月",
+					"description": "青龙飞天，期间自身获得霸体效果并对附近目标造成**3591%***攻击力+**21544**点伤害，青龙盘旋持续**8**秒，期间持续消耗青龙之力并释放至多**8**道落雷，每道落雷命中对附近目标造成**1313%***攻击力+**7877**点伤害，青龙退场时再对附近目标造成**3000%***攻击力+**17998**点伤害，冷却**30**秒且无法低于**20**秒，青云慑月至多可积攒**2**层技能释放次数。\r\n**被动：**装备**3**把雷武器时，青云慑月命中后每**2**秒会对目标造成**600%***攻击力点技能伤害，持续**30**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_skill",
+					"id": "GA_FPlayerMiMiSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "飞龙在天",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，汇聚炁，砸向地面后引爆，对附近目标造成**3060%***攻击力+**18358**点伤害，并浮空目标，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n**被动：**触发幻时时，当前持有孟章或从其他武器切换到孟章，对附近目标造成**20000%***攻击力点伤害，该伤害不受除泰坦装备稀有属性以外的增伤效果影响，每个幻时期间至多触发一次。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_mimi_changeskill",
+					"id": "GA_FPlayerMiMiChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**20%**雷攻和**40%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。\r\n**雷霆-驻场**：**孟章**任意攻击命中时，对附近目标造成**0%***雷攻+**1%***自身最大生命值+**2%***各元素抗性之和+**3%***暴击值点伤害，每**1.5**秒至多触发一次，雷霆伤害视为普攻伤害，若装备任意**1**把火焰/寒冰/物理武器，则雷霆伤害提升至**4**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
@@ -5202,7 +6930,88 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "feise_fire_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "捭阖",
+					"description": "在地面时，点击普攻可连续进行六次攻击。\r\n第一次攻击对目标造成**136%***攻击力+**816**点伤害，并击退目标。\r\n第二次攻击对目标造成**204%***攻击力+**1224**点伤害，并击退目标。\r\n第三次攻击对目标造成**220%***攻击力+**1320**点伤害，并击倒目标。\r\n第四次攻击对目标造成**240%***攻击力+**1440**点伤害，并击浮空目标。\r\n第五次攻击对目标造成**244%***攻击力+**1464**点伤害，并击倒目标。\r\n第六次攻击对目标造成**192%***攻击力+**1152**点伤害，并牵引目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_melee",
+					"id": "GA_FPlayerFeiseMelee_Melee"
+				},
+				{
+					"name": "纤云弄巧",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行六次攻击，并消耗耐力。\r\n第一次攻击对目标造成**120%***攻击力+**720**点伤害。\r\n第二次攻击对目标造成**164%***攻击力+**984**点伤害。\r\n第三次攻击对目标造成**236%***攻击力+**1416**点伤害。\r\n第四次攻击对目标造成**236%***攻击力+**1416**点伤害。\r\n第五次攻击对目标造成**288%***攻击力+**1728**点伤害。\r\n第六次攻击对目标造成**240%***攻击力+**1440**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_airattack",
+					"id": "GA_FPlayerFeiseMelee_AirAttack"
+				},
+				{
+					"name": "金风玉露",
+					"description": "在地面时，使用第一次至第三次普攻时，长按普攻可触发金风玉露。\r\n吸附附近目标，造成**432%***攻击力+**2592**点伤害，并浮空目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_branch1",
+					"id": "GA_FPlayerFeiseMelee_Branch1"
+				},
+				{
+					"name": "环佩铿锵",
+					"description": "在地面时，使用第四次至第六次普攻时，长按普攻可触发环佩铿锵。\r\n造成**264%***攻击力+**1584**点伤害，并击退目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_branch3",
+					"id": "GA_FPlayerFeiseMelee_Bracnh3"
+				},
+				{
+					"name": "莲步飞天",
+					"description": "在地面或当拓荒者滞空时，长按普攻可触发莲步飞天。\r\n腾空持续向前飞行，并消耗耐力，使用方向键可在莲步飞天持续期间调整前进方向。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_branch2",
+					"id": "GA_FPlayerFeiseMelee_Branch2"
+				},
+				{
+					"name": "落花",
+					"description": "**纤云弄巧**持续期间，长按普攻可触发落花。\r\n从天而降，落地后对附近目标造成**124%***攻击力+**744**点伤害，并击飞目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_jumpattack",
+					"id": "GA_FPlayerFeiseMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerFeiseEvade_Evade"
+				},
+				{
+					"name": "散华",
+					"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，可触发散华，对附近目标造成**348%***攻击力+**2088**点伤害。\r\n\r\n**扶摇**生成的**蜃楼**幻境持续期间，任意武器的闪避攻击首次命中目标后，触发移花效果，生成妃色幻象与莲瓣。\r\n**妃色幻象**：生成时，妃色幻象复制目标**25%**最大攻击力转化为拓荒者自身**基础火攻**（不低于**6500**且不超**10000**，该火攻不显示在拓荒者人物属性中，巅峰联赛不生效）直至妃色幻象消失，每个妃色幻象独立计算，场上至多存在**1**个妃色幻象。\r\n**莲瓣**：生成时，莲瓣数量等同于当前场上除重蕊外其他自身武器生成的召唤物数量，生成后，莲瓣数量不随场上召唤物数量的变化而变化。莲瓣属于召唤物。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_evadefront",
+					"id": "GA_FPlayerFeiseEvade_ForwardAttack"
+				},
+				{
+					"name": "纷飞",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发纷飞，对附近目标造成**200%***攻击力+**1200**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_evadeback",
+					"id": "GA_FPlayerFeiseEvade_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "扶摇",
+					"description": "对附近目标造成**3360%***攻击力+**20158**点伤害，并生成蜃楼幻境，至多持续**25**秒。\r\n扶摇处于冷却状态时，获得新技能惊鸿，蜃楼持续**20**秒后可释放惊鸿。\r\n蜃楼消失后，立即刷新扶摇的冷却时间，且不受任何其它冷却时间清除、重置、变化效果的影响。\r\n\r\n蜃楼持续期间：\r\n每秒对其中目标造成**450%***攻击力点心蚀伤害,心蚀伤害视为普攻伤害；\r\n每**5**秒对其中目标添加心燚状态，每秒造成**50%***攻击力点灼烧伤害，持续**5**秒，蜃楼中每有**1**个自身生成的**妃色幻象**或**莲瓣**，心燚伤害额外提升**15%**。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_skill1",
+					"id": "GA_FPlayerFeiseSkill_Skill1"
+				},
+				{
+					"name": "惊鸿",
+					"description": "扶摇处于冷却状态时，获得新技能惊鸿，蜃楼持续**20**秒后可释放惊鸿。\r\n移除蜃楼中所有自身生成的**妃色幻象**与**莲瓣**，每移除**1**个**妃色幻象**或**莲瓣**对附近目标造成**1200%***攻击力+**7199**点伤害，之后击碎蜃楼幻境，对附近目标造成**1500%***攻击力+**8999**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_skill2",
+					"id": "GA_FPlayerFeiseSkill_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "瑶池无双",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，造成**3632%***攻击力+**21790**点伤害，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_changeskill",
+					"id": "GA_FPlayerFeiseChangeSkill_ChangeSkill"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**20%**火攻和**40%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n**爆炎-速切**：装备**重蕊**时，任意武器连携技命中后，对附近目标初始造成**500%***火攻+**8.4%***自身最大生命值+**300%***各元素抗性之和+**1000%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，爆炎-速切伤害为连携伤害，若装备任意**1**把寒冰/雷电/物理武器，则爆炎伤害提升至**2.5**倍。此外，爆炎伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
@@ -5303,7 +7112,76 @@
 			"Item_breakthrough_D1": 32
 		},
 		"advanceID": "Linghan_ice_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "剑诀**•** 剑斩月",
+					"description": "在地面时，点击普攻可连续进行六次攻击。\r\n第一次攻击对目标造成**376.2%***攻击力+**2257**点伤害，并击退目标。\r\n第二次攻击对目标造成**497.5%***攻击力+**2985**点伤害，并击退目标。\r\n第三次攻击对目标造成**797.1%***攻击力+**4782**点伤害，并击退目标。\r\n第四次攻击对目标造成**480.7%***攻击力+**2884**点伤害，并击退目标。\r\n第五次攻击对目标造成**869.5%***攻击力+**5217**点伤害，并吸引怪物向前方聚集。\r\n第六次攻击对目标造成**975.4%***攻击力+**5852**点伤害，并击飞目标。\r\n触发剑诀**•** 剑斩月后，长按普攻可触发**剑诀**•** 雪连天**。\r\n\r\n**监兵**任意普攻命中目标后，为目标添加**1**层**晶裂**状态，每秒造成**150%***攻击力普攻伤害，持续**15**秒，同一目标每**4**秒至多添加**1**层，至多可添加**3**层，持续时间结束后逐层衰减。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_melee",
+					"id": "GA_FPlayerLinghanMelee_Melee"
+				},
+				{
+					"name": "剑诀**•** 梅剑鸣",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行六次攻击，并消耗耐力。\r\n第一次攻击对目标造成**368.9%***攻击力+**2213**点伤害。\r\n第二次攻击对目标造成**387.3%***攻击力+**2324**点伤害。\r\n第三次攻击对目标造成**840.5%***攻击力+**5043**点伤害。\r\n第四次攻击对目标造成**500%***攻击力+**3000**点伤害。\r\n第五次攻击对目标造成**822.1%***攻击力+**4932**点伤害。\r\n第六次攻击对目标造成**988.1%***攻击力+**5928**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_airattack",
+					"id": "GA_FPlayerLinghanMelee_AirAttack"
+				},
+				{
+					"name": "剑诀**•** 雪连天",
+					"description": "在地面普攻时，长按普攻可触发剑诀**•** 雪连天。\r\n以念御剑，并消耗耐力，期间自身获得霸体效果，每次命中对附近目标造成**335.2%***攻击力+**2011**点伤害。\r\n剑诀 **•**  雪连天结束时释放一道强力剑气，命中对附近目标造成**1005.6%***攻击力+**6033**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_powerattack",
+					"id": "GA_FPlayerLinghanMelee_PowerAttack"
+				},
+				{
+					"name": "剑诀**•** 霜飘落",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发剑诀**•** 霜飘落。\r\n下落过程中，每次命中目标对目标造成**288.5%***攻击力+**1731**点伤害，落地后对附近目标造成**1410.4%***攻击力+**8462**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_jumpattack",
+					"id": "GA_FPlayerLinghanMelee_JumpAttack"
+				},
+				{
+					"name": "翩跹落",
+					"description": "当拓荒者处于二段跳后的滞空时，点击跳跃可触发翩跹落，向高空短暂冲刺后持续滑行，滞空时翩跹落至多可使用**2**次。\r\n在地面时，翩跹落每**10**秒回复**1**次使用次数（切换场景/装卸**监兵**后使用次数重置）。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_qinggong",
+					"id": "GA_FPlayerLinghanMelee_QingGong"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerLinghanEvade_Evade"
+				},
+				{
+					"name": "剑诀**•** 瀑流云",
+					"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，可触发剑诀**•** 瀑流云，对命中目标至多造成**1173.2%***攻击力+**7039**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_fevadeattack",
+					"id": "GA_FPlayerLinghanEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "剑诀**•** 魄千寻",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发剑诀**•** 魄千寻，发出一道白虎幻影对前方目标造成**670.4%***攻击力+**4022**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_bevadeattack",
+					"id": "GA_FPlayerLinghanEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "剑诀**•** 凌玄影",
+					"description": "对附近目标造成**1423.9%***攻击力+**8543**点伤害并吸附附近目标，之后结成剑阵唤来大量剑雨，并**强控冻结**目标（巅峰联赛、对boss不生效）持续**4**秒，冷却**30**秒；\r\n成功释放剑诀**•** 凌玄影后使自身散发**寒气**，每秒对附近目标造成**340%***攻击力伤害，并使目标移动速度降低**30%**（巅峰联赛、对boss不生效），同时自身寒冰伤害提升**15%**，持续**35**秒；\r\n释放剑诀**•** 凌玄影完成后自身生成最大数量**冰刃**，每**7.5**秒对当前锁定目标发射**1**柄，命中目标造成**2100%***攻击力伤害与**温度降低**效果，**冰刃**初始至多可生成**3**柄，非战斗状态下清除全部冰刃。\r\n**温度降低**：每**3**秒对附近目标造成**1400%***攻击力伤害，持续**12**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_skill",
+					"id": "GA_FPlayerLinghanSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "剑诀**•** 冰归啸",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，召唤剑阵使自身周围寒冷席卷，对附近目标最多造成**2111.8%***攻击力+**12670**点伤害，随后会召唤白虎造成**4927.4%***攻击力+**29562**点伤害，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n **被动**：剑诀**•** 冰归啸命中后获得**15%**最终伤害提升，持续**30**秒。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_changeskill",
+					"id": "GA_FPlayerLinghanChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**20%**冰攻和**40%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n**极寒-脱手**：释放**剑诀**•** 凌玄影**后，每秒对命中目标造成**0%***冰攻+**1%***自身最大生命值+**2%***各元素抗性之和+**3%***暴击点伤害，持续**4**秒，多个脱手伤害不叠加，极寒伤害视为技能伤害，若装备任意**1**把雷电/火焰/物理武器，则极寒伤害提升至**5**倍。此外，极寒伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
@@ -5407,7 +7285,88 @@
 			"Item_breakthrough_D3": 26
 		},
 		"advanceID": "Nanyin_superpower_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "音域共振",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成**120%***攻击力+**720**点伤害。\r\n第二次攻击对目标造成**168%***攻击力+**1008**点伤害。\r\n第三次攻击对目标造成**172%***攻击力+**1032**点伤害。\r\n第四次攻击对目标造成**286%***攻击力+**1716**点伤害。\r\n第五次攻击对目标造成**1640%***攻击力+**9839**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_melee",
+					"id": "GA_FPlayerNanYinMelee_Melee"
+				},
+				{
+					"name": "全域共振",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成**120%***攻击力+**720**点伤害。\r\n第二次攻击对目标造成**176%***攻击力+**1056**点伤害。\r\n第三次攻击对目标造成**172%***攻击力+**1032**点伤害。\r\n第四次攻击对目标造成**275%***攻击力+**1650**点伤害。\r\n第五次攻击对目标造成**1560%***攻击力+**9359**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattack",
+					"id": "GA_FPlayerNanYinMelee_AirAttack"
+				},
+				{
+					"name": "黯影爆破",
+					"description": "在地面时，使用第一/第二/第三至第四次普攻时，长按普攻可触发黯影爆破，并消耗耐力。\r\n向前方发动进攻，对附近目标造成**295%***攻击力+**1770**/**590%***攻击力+**3540**/**886%***攻击力+**5316**点伤害，并浮空目标。\r\n触发黯影爆破后，长按普攻可触发裂隙潮涌。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_meleebranch1",
+					"id": "GA_FPlayerNanYinMelee_MeleeBranch1"
+				},
+				{
+					"name": "裂隙潮涌",
+					"description": "触发黯影爆破后，长按普攻可触发裂隙潮涌，并消耗耐力。\r\n向前方发动进攻，对附近目标至多造成**1611%***攻击力+**9665**点伤害，并浮空目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_meleebranch2",
+					"id": "GA_FPlayerNanYinMelee_MeleeBranch2"
+				},
+				{
+					"name": "黯影空爆",
+					"description": "当拓荒者滞空时，使用第一/第二/第三至四次普攻时，长按普攻可触发黯影空爆，并消耗耐力。\r\n向前方发动进攻，对附近目标造成**310%***攻击力+**1860**/**620%***攻击力+**3720**/**930%***攻击力+**5580**点伤害，并浮空目标。\r\n触发黯影空爆后，长按普攻可触发裂隙喷涌。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattackbranch1",
+					"id": "GA_FPlayerNanYinMelee_AirAttackBranch1"
+				},
+				{
+					"name": "裂隙喷涌",
+					"description": "触发黯影空爆后，长按普攻可触发裂隙潮涌，并消耗耐力。\r\n向前方发动进攻，对附近目标至多造成**1742%***攻击力+**10451**点伤害，并浮空目标。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattackbranch2",
+					"id": "GA_FPlayerNanYinMelee_AirAttackBranch2"
+				},
+				{
+					"name": "虚空渊流",
+					"description": "在地面时，长按普攻可在当前位置生成一个渊流，点击地图上的标记点可传送至该点位，或对该标记点进行设置，渊流至多可生成**2**个。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_powerattack",
+					"id": "GA_FPlayerNanYinMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerNanYinEvade_Evade"
+				},
+				{
+					"name": "涡旋力场",
+					"description": "任意闪避之后的短暂时间内，点击普攻，可触发涡旋力场。\r\n在目标位置生成暗物质，对附近目标造成**360%***攻击力+**2160**点伤害，当附近目标经过暗物质时，会形成涡旋力场吸附目标。\r\n自身途经涡旋力场时，自身获得持续**15**秒的次元守护，可抵挡**1**次来自锁定目标的伤害（不高于自身**300%**最大生命值），次元守护每**15**秒至多获得**1**次。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_evadeattack",
+					"id": "GA_FPlayerNanYinEvade_EvadeAttack"
+				},
+				{
+					"name": "蝶舞",
+					"description": "**[组队玩法]**中，紫竹任意闪避后，召唤**1**只蝴蝶跟随自身，持续**60**秒。\r\n自身激活强攻共鸣/均衡共鸣时：蝴蝶环绕当前锁定目标，飞行轨迹形成线谱，并对经过线谱的目标造成**300%***攻击力伤害；\r\n自身激活坚毅共鸣时：对经过线谱的目标添加**2**秒**65%**迟缓效果，对经过线谱的自身及队友添加**10%**最大生命值护盾，每秒至多可添加**1**次且至多可叠加**2**层，持续**15**秒；\r\n自身激活恩赐共鸣时：当队友重伤倒地时，消耗蝴蝶立即扶起队友。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_evadebeidong",
+					"id": "GA_FPlayerNanYinEvade_Beidong"
+				}
+			],
+			"skill": [
+				{
+					"name": "超维领域",
+					"description": "激活超维领域，自身获得短暂无敌并对附近目标造成**2080%***攻击力+**12479**点伤害，并对目标添加**3**秒**65%**迟缓效果（组队玩法中对boss不生效），同时使场上**虚影**立刻释放一次技能，冷却**60**秒。\r\n自身升空释放领域，使附近目标进入高维空间，高维空间至多持续**60**秒，期间自身获得霸体效果，紫竹对高维空间内目标造成的伤害无视护盾。\r\n高维空间每秒汇聚**2**+空间内目标数***1**点能量，能量每汇聚满**45**点后触发维度坍缩，对高维空间内目标造成（**0.06%***空间内自身（不包含虚影）累计实际伤害+**2000%***攻击力）伤害（视为基础倍率，受增伤效果影响），伤害类型视为被动伤害，维度坍缩至多**4**次后高维空间消失。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_skill",
+					"id": "GA_FPlayerNanYinSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "调谐禁锢",
+					"description": "当**武器充能满**或触发**幻时**时，从其他武器切换到该武器时**清除自身负面状态**，从次元中生成锁链束缚目标，添加**3**秒**65%**迟缓效果（组队玩法中对boss不生效），并对附近目标造成**3970%***攻击力+**23818**点伤害，期间免疫伤害持续**2.6**秒（巅峰联赛不生效）。\r\n\r\n**被动：虚影**\r\n调谐禁锢可在场上生成**1**具虚影，协同攻击当前锁定目标，场上至多可存在**1**具虚影，非战斗状态下虚影持续**20**秒。\r\n每装备**1**把不同元素武器或异能武器，虚影伤害提升**10%**，此外，虚影伤害不受除寄宿效果、谐调禁锢效果、泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。\r\n**紫竹**闪避长按可触发降神效果（巅峰联赛不生效），自身附身于虚影之上，可操控虚影移动，同时虚影协同替换为虚影普攻与虚影技能。\r\n降神后虚影进入狂暴状态，移动速度、受到伤害降低、破防值、充能值提升**50%**，虚影普攻、虚影技能造成的伤害额外提升虚影当前已损失最大生命值百分比。\r\n**虚影协同**：间歇性的协同攻击，对附近目标造成**1760%~3200%***虚影攻击力伤害；\r\n**虚影光环**：每秒对附近目标造成**800%***虚影攻击力伤害；\r\n**虚影普攻**：点击普攻连续进行的四次攻击，每次攻击对附近目标造成**4800%~7700%***虚影攻击力伤害；\r\n**虚影技能**：消耗**25%**虚影最大生命值，对附近目标造成**14300%~15600%***虚影攻击力伤害，同时自身在**60**秒内暴击率提高**30%**；\r\n**虚影解除**：虚影受到致命伤害、玩家装卸紫竹、降神状态下长按任意闪避可触发虚影解除。\r\n\r\n**被动：暝伥**\r\n从其它武器切换至紫竹后，根据该武器的元素类型，调谐禁锢将额外提供不同效果。\r\n**寒冰**：召唤晦暝 **•**  白虎精英，造成**1000%***攻击力点范围伤害，自身获得**60%**最大生命值护盾，持续**30**秒（巅峰联赛不生效）。同时在锁定目标附近生成冰暴，每秒对附近目标造成**700%***攻击力伤害，伤害类型视为普攻伤害，持续**60**秒；\r\n**火焰**：召唤暝伥 **•**  玄鸦，造成**1000%***攻击力点范围伤害，对附近目标添加灼烧，每秒造成**320%***攻击力伤害，持续**10**秒，伤害类型视为被动伤害；\r\n**雷电**：召唤暝伥 **•**  龙骧，造成**1000%***攻击力点伤害，非降神期间每秒消耗**5%**虚影最大生命值，对附近目标造成等额伤害，伤害类型视为普攻伤害（巅峰联赛不生效）；\r\n**物理**：召唤晦暝 **•**  狰，造成**1000%***攻击力点范围伤害，自身获得**30**秒横扫效果，暴击时对附近目标额外造成**750%***攻击力伤害，伤害类型视为普攻伤害，每**0.85**秒至多触发**1**次；\r\n**异能**：召唤晦暝 **•**  饕餮，造成**1050%***攻击力点范围伤害，虚影额外继承玩家**100%**攻击力，虚影解除时会额外对附近目标造成**15000%***虚影攻击力伤害，伤害类型视为技能伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_changeskill",
+					"id": "GA_FPlayerNanYinChangeSkill_Success"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**终末的箫声**：装备**3**把异能武器触发，提升**0%**攻击，装备后后台也生效。\r\n**浸染**：从其它武器切换至紫竹后，根据该武器的元素类型，更改紫竹造成伤害的元素类型。\r\n**寄宿**：晦暝之力可以寄宿任意一把已解锁武器，当紫竹不上阵时，晦暝之力可寄宿任意其它武器，该武器造成伤害提升**2%**；当紫竹上阵时，晦暝之力仅可寄宿紫竹，玩家自身伤害提升**3%**。",
@@ -5508,7 +7467,66 @@
 			"Item_breakthrough_C1": 32
 		},
 		"advanceID": "Killknife_physics_ssr_star",
-		"skills": {},
+		"skills": {
+			"normals": [
+				{
+					"name": "流光掠墨痕",
+					"description": "在地面时，点击普攻可连续进行六次攻击。\r\n第一次攻击对目标造成**257%***攻击力+**1542**点伤害。\r\n第二次攻击对目标造成**816%***攻击力+**4896**点伤害。\r\n第三次攻击对目标造成**514%***攻击力+**3084**点伤害。\r\n第四次攻击对目标造成**1701%***攻击力+**10205**点伤害。\r\n第五次攻击对目标造成**928%***攻击力+**5568**点伤害。\r\n第六次攻击对目标造成**1550%***攻击力+**9299**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_melee",
+					"id": "GA_FPlayerKillknifeMelee_Melee"
+				},
+				{
+					"name": "清云画空际",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行六次攻击，并消耗耐力。\r\n第一次攻击对目标造成**129%***攻击力+**774**点伤害。\r\n第二次攻击对目标造成**490%***攻击力+**2940**点伤害。\r\n第三次攻击对目标造成**412%***攻击力+**2472**点伤害。\r\n第四次攻击对目标造成**1543%***攻击力+**9257**点伤害。\r\n第五次攻击对目标造成**932%***攻击力+**5592**点伤害。\r\n第六次攻击对目标造成**1550%***攻击力+**9299**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_airmelee",
+					"id": "GA_FPlayerKillknifeMelee_AirAttack"
+				},
+				{
+					"name": "蕴境一世界",
+					"description": "在地面时，使用第三次普攻时，长按普攻可触发蕴境一世界。\r\n向地面掷出规衡，组成双头旋刃，螺旋向外，造成**987%***攻击力+**5921**点伤害，并使目标浮空。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_meleebranch",
+					"id": "GA_FPlayerKillknifeMelee_Branch"
+				},
+				{
+					"name": "明月叶飞落",
+					"description": "当拓荒者滞空时，使用普攻时，长按普攻可触发明月叶飞落。\r\n从天而降，落地后对释放规衡附近目标造成**156%***攻击力+**936**点伤害，并击飞目标，规衡扩散与收束期间轻微拉扯附近目标造成**156%***攻击力+**936**点伤害。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_jumpattack",
+					"id": "GA_FPlayerKillknifeMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerKillknifeEvade_Evade"
+				},
+				{
+					"name": "ga_killknife_EvadeAttack_Front_name",
+					"description": "ga_killknife_EvadeAttack_Front_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_fevadeattack",
+					"id": "GA_FPlayerKillknifeEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "ga_killknife_EvadeAttack_Back_name",
+					"description": "ga_killknife_EvadeAttack_Back_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_bevadeattack",
+					"id": "GA_FPlayerKillknifeEvadeAttack_BackAttack"
+				},
+				{
+					"name": "ga_killknife_EvadeAttack_Hold_name",
+					"description": "ga_killknife_EvadeAttack_Hold_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_evadeattack_hold",
+					"id": "GA_FPlayerKillknifeEvade_EvadeAttackHold"
+				},
+				{
+					"name": "ga_killknife_EvadeHold_name",
+					"description": "ga_killknife_EvadeHold_des",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_evade_hold",
+					"id": "GA_FPlayerKillknifeEvade_EvadeHold"
+				}
+			]
+		},
 		"stars": [
 			{
 				"description": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。\r\n**物理共鸣**：装备**2**把及以上物理武器触发，提升**20%**物攻和**40%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**20%**火攻和**40%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n**飞刃-驻场**：**规衡**任意攻击命中时，对附近目标造成**0%***物攻+**1%***自身最大生命值+**2%***各元素抗性之和+**3%***暴击值点伤害，每**1.5**秒至多触发一次，飞刃伤害视为普攻伤害，若装备任意**1**把寒冰/雷电武器，则飞刃伤害提升至**4**倍。此外，飞刃伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
