@@ -16,7 +16,8 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 
 ## Achievements
 
-> **November 07, 2023** - API base goes live
+> **November 07, 2023** - API goes live
+>
 > **November 19, 2023** - CN data initialized
 
 ## Routes
@@ -33,8 +34,8 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 * **`/mounts`**
 * **`/achievements`**
 * **`/outfits`**
-* **`/rarities`**
 * **`/servants`**
+* `/rarities`
 * **`/assets`** *CN*
 * **`/graphql`** *CN*
 
