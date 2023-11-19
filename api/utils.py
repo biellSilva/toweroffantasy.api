@@ -4,7 +4,7 @@ import re
 from typing import TYPE_CHECKING
 
 from api.enums import LANGS
-from api.config import MATRIX_SORT_ORDER, SIMULACRA_SORT_ORDER, WEAPON_SORT_ORDER
+from api.config import SIMULACRA_SORT_ORDER
 
 
 if TYPE_CHECKING:
@@ -108,9 +108,6 @@ def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
     return 2, 1
 
 def sort_weapons(weapon: 'Weapon') -> int:
-    if not weapon.rarity:
-        return 0
-    
     if weapon.rarity == 'SSR':
         return -1
     
@@ -123,9 +120,6 @@ def sort_weapons(weapon: 'Weapon') -> int:
     return 3
     
 def sort_matrices(matrice: 'Matrix') -> tuple[int, int]:
-    if not matrice.rarity:
-        return 0, 0
-    
     if matrice.rarity == 'SSR':
         return -1, -int(matrice.id.rsplit('ssr', 1)[1])
     
@@ -138,4 +132,4 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, int]:
     elif matrice.rarity == 'N':
         return 3, -int(matrice.id.rsplit('n', 1)[1])
     
-    return 0, 0
+    return 4, 0
