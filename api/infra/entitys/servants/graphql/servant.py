@@ -19,7 +19,7 @@ class ServantUpgrade:
     xpGain: int
 
 @strawberry.type
-class SmartServantType:
+class SmartServant:
     id: str
     name: str
     description: str

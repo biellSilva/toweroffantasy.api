@@ -3,7 +3,7 @@ import strawberry
 
 
 @strawberry.type
-class RelicType:
+class Relic:
     id: str
     name: str
     rarity: str
