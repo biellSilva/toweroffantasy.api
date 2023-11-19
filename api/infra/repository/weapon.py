@@ -1,12 +1,17 @@
 
+import json
+
 from pathlib import Path
-from json import loads
 from typing import Any
 
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Weapon, EntityBase
 
-from api.utils import classifier
+from api.enums import LANGS, LANGS_CN, VERSIONS
+
+from api.core.exceptions import VersionNotFound, LanguageNotFound, FileNotFound
+
+from api.utils import sort_weapons
 
 
 class WeaponRepo(ModelRepository[EntityBase, Weapon]):
@@ -18,64 +23,75 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                          model=Weapon, 
                          class_base=WeaponRepo,
                          repo_name='weapons')
-        self.META_DATA: dict[str, dict[str, list[Any]]] = loads(Path('api/infra/database/global/meta.json').read_bytes())
+        self.META_GB: dict[str, dict[str, list[Any]]] = json.loads(Path('api/infra/database/global/meta.json').read_bytes())
     
-    async def get_all(self, lang: str) -> list[Weapon]:
-        if lang in self.cache:
-            return list(self.cache[lang].values())
+    async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[Weapon]:
+        if version in self.class_base.cache:
+            if lang in self.class_base.cache[version]:
+                return list(self.class_base.cache[version][lang].values())
+
+        VERSION_PATH = Path(f'api/infra/database/{version}')
+        if not VERSION_PATH.exists():
+            raise VersionNotFound(version)
         
-        else:
-            PATH_IMIT = Path(f'api/infra/database/global/{lang}/{self.repo_name}.json')
-            DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
+        LANG_PATH = Path(VERSION_PATH, lang)
+        if not LANG_PATH.exists():
+            raise LanguageNotFound(lang, version)
 
-            if lang in self.cache:
-                pass
+        FILEPATH = Path(LANG_PATH, f'{self.repo_name}.json')
+        if not FILEPATH.exists():
+            raise FileNotFound(self.repo_name, lang, version)
 
-            else:
-                self.cache.update({lang: {}})
+        DATA: dict[str, dict[str, Any]] = json.loads(FILEPATH.read_bytes())
 
-            for weapon_id, weapon_dict in DATA.items():
-                stars = weapon_dict.get('stars', [])
-                weaponEffects: list[dict[str, str]] = []
-                if stars: 
-                    if 'description' in stars[0]:
-                        if description := stars[0]['description']:
-                            if '*:' in description:
-                                weaponEffect = description.split('\r', 1)
+        if version not in self.cache:
+            self.cache.update({version: {}})
 
-                                for i in weaponEffect:
-                                    key, value_ = i.split('*:', 1)
-                                    key = key.replace('*', '').replace('\n', '').replace('\r', '')
-                                    value_ = value_.replace('\n', '').replace('\r', '').replace(' ', '', 1)
-                                    weaponEffects.append({'title': key, 'description': value_})
-                            else:
-                                if weapon_dict['name'].lower() == 'shadoweave':
-                                    weaponEffects = [{'title': 'Altered Damage', 'description': description.replace('\n', ' ').replace('\r', '')}]
-                                else:
-                                    weaponEffects = [{'title': 'Unknown', 'description': description.replace('\n', ' ').replace('\r', '')}]
+        if lang not in self.cache[version]:
+            self.cache[version].update({lang: {}})
 
-                    if len(weapon_dict['stars']) == 7:
-                        weapon_dict['stars'].pop(0)
+        for key_id, value_dict in DATA.items():
+            weaponEffects: list[dict[str, str]] = []
 
-                shatter = weapon_dict['stars'][0]['stats']['shatter']
-                charge = weapon_dict['stars'][0]['stats']['charge']
+            if not 'dodge' in value_dict['skills']:
+                print(key_id)
 
-                weapon_dict['baseStats'] = [value for i in weapon_dict['stats'] for key, value in i.items() if key == 'stats']
+            if stars := value_dict.get('stars', []):
+                if description := stars[0].get('description', None):
+                    if '*:' in description:
+                        weaponEffect = description.split('\r', 1)
 
-                weapon_dict.update({
+                        for i in weaponEffect:
+                            key, value_ = i.split('*:', 1)
+                            key = key.replace('*', '').replace('\n', '').replace('\r', '')
+                            value_ = value_.replace('\n', '').replace('\r', '').replace(' ', '', 1)
+                            weaponEffects.append({'title': key, 'description': value_})
+
+                    else:
+                        if value_dict['name'].lower() == 'shadoweave':
+                            weaponEffects.append({'title': 'Altered Damage', 'description': description.replace('\n', ' ').replace('\r', '')})
+
+                        else:
+                            weaponEffects.append({'title': 'Unknown', 'description': description.replace('\n', ' ').replace('\r', '')})
+
+            if len(value_dict['stars']) == 7:
+                value_dict['stars'].pop(0)
+            
+
+            value_dict.update({
                     'weaponEffects': weaponEffects, 
-                    'shatter': {
-                        'tier': classifier(shatter),
-                        'value': shatter
-                    },
-                    'charge': {
-                        'tier': classifier(charge),
-                        'value': charge
-                    }
+                    'shatter': value_dict['stars'][0]['stats']['shatter'],
+                    'charge': value_dict['stars'][0]['stats']['charge']
                 })
 
-                weapon_dict['meta'] = self.META_DATA.get(weapon_id.lower(), None)
+            if version == 'global':
+                value_dict['meta'] = self.META_GB.get(key_id.lower(), None)
 
-                self.cache[lang].update({weapon_id.lower(): Weapon(**weapon_dict)})
+            if value_dict.get('id', None):
+                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict)})
+            else:
+                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict, id=key_id)})
 
-            return list(self.cache[lang].values())
+        self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_weapons))}
+
+        return list(self.cache[version][lang].values())

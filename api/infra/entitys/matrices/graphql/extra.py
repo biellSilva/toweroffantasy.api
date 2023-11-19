@@ -11,5 +11,3 @@ class MatriceSet:
 class MatrixAssets:
     icon: str
     iconLarge: str
-    lotteryDrawing: str
-    lotteryCard: str

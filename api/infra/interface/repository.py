@@ -1,10 +1,11 @@
 from typing import (
     TypeVar,
-    Generic,
-    Optional
+    Generic
 )
 
 from pydantic import BaseModel
+
+from api.enums import LANGS, LANGS_CN , VERSIONS
 
 B = TypeVar('B', bound=BaseModel)
 T = TypeVar('T', bound=BaseModel)
@@ -12,22 +13,11 @@ T = TypeVar('T', bound=BaseModel)
 
 class IRepository(Generic[B, T]):
     __load_all_data__: bool = False
-    cache: dict[str, dict[str, T]]
+    cache: dict[str, dict[str, dict[str, T]]]
 
-    async def count(self, lang: str) -> int:
+    async def get(self, model: B, lang: LANGS | LANGS_CN, version: VERSIONS) -> T:
         ...
 
-    async def insert(self, model: T, lang: str) -> T:
-        ...
-
-    async def get(self, model: B, lang: str) -> Optional[T]:
-        ...
-
-    async def get_all(self, lang: str) -> list[T]:
+    async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[T]:
         ...
     
-    async def update(self, model: T, lang: str) -> T:
-        ...
-    
-    async def delete(self, model: T, lang: str):
-        ...

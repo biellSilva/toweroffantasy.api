@@ -7,30 +7,84 @@ from typing import Literal
 from PIL import Image
 from io import BytesIO
 
-from api.core.exceptions import ItemNotFound
+from api.core.exceptions import AssetNotFound, VersionNotFound
+
+from api.enums import VERSIONS
+from api.config import GLOBAL_ASSETS, CN_ASSETS
 
 
-router = APIRouter(prefix='/assets', tags=['assets'])
+router = APIRouter(prefix='/assets', tags=['Assets'])
+METADATA = {
+    'name': 'Assets',
+    'description': 'Route design to provide Assets/Images \n\n **CONTAINS CN DATA**',
+    }
 
 
 @router.get('/{path:path}')
-async def get_asset(path: str, format: Literal['png', 'webp']='png'):
+async def get_asset(path: str, format: Literal['png', 'webp'] = 'png', version: VERSIONS = VERSIONS('global')):
+    '''
+    **Path Param** \n
+        path: 
+            type: str
+            required: True
+            desc: Path to asset
+
+    **Query Params** \n
+        format:
+            type: string
+            default: png
+            desc: Choose file format between png or webp, webp is processed before returning
+        
+        version: 
+            type: string
+            default: global
+            desc: Game version to use
+            
+    **Return** \n
+        Image
+    '''
 
     async with aiohttp.ClientSession() as cs:
-        path = path if '.png' in path else f'{path}.png'
+        path = path if path.endswith('.png') else f'{path}.png'
 
-        async with cs.get(f'https://raw.githubusercontent.com/FortOfFans/ToF.github.io/main/{path}') as res:
-            if res.status == 200:
-                if format == 'webp':
-                    image = Image.open(BytesIO(await res.read()))
-                    buffer = BytesIO()
+        if version == 'global':
+            async with cs.get(f'{GLOBAL_ASSETS}/{path}') as res:
+                if res.status == 200:
+                    data = await res.read()
+                    if format == 'webp':
+                        image = Image.open(BytesIO(data))
+                        buffer = BytesIO()
 
-                    image.save(buffer, format='webp', quality=100, optimize=True)
-                    buffer.seek(0)
+                        image.save(buffer, format='webp', quality=100, optimize=True)
+                        buffer.seek(0)
 
-                    return StreamingResponse(buffer, media_type=f'image/{format.upper()}')
-                
+                        return StreamingResponse(buffer, media_type=f'image/{format.upper()}')
+                    
+                    else:
+                        return Response(data, media_type=f'image/{format.upper()}')
+                    
                 else:
-                    return Response(await res.read(), media_type=f'image/{format.upper()}')
-            else:
-                raise ItemNotFound(headers={'error': f'Couldn\'t find {path} asset'})
+                    raise AssetNotFound
+                
+
+        elif version == 'china':
+            async with cs.get(f'{CN_ASSETS}/{path}') as res:
+                if res.status == 200:
+                    data = await res.read()
+                    if format == 'webp':
+                        image = Image.open(BytesIO(data))
+                        buffer = BytesIO()
+
+                        image.save(buffer, format='webp', quality=100, optimize=True)
+                        buffer.seek(0)
+
+                        return StreamingResponse(buffer, media_type=f'image/{format.upper()}')
+                    
+                    else:
+                        return Response(data, media_type=f'image/{format.upper()}')
+                    
+                else:
+                    raise AssetNotFound
+        
+        else:
+            VersionNotFound(version)

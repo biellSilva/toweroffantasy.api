@@ -1,18 +1,22 @@
 
 from fastapi import APIRouter
 
-from api.enums import FOOD, LANGS
+from api.enums import FOOD, LANGS, VERSIONS
 
 from api.infra.entitys import Food, EntityBase
 from api.infra.repository import FoodRepo
 
 from api.core.response import PrettyJsonResponse
-from api.core.exceptions import ItemNotFound
 
-
-router = APIRouter(prefix="/food", tags=["Food"])
 
 FOOD_REPO = FoodRepo()
+
+router = APIRouter(prefix="/food", tags=["Food"])
+METADATA = {
+    'name': 'Food',
+    'description': 'Food can provide buffs and recover HP, satiety, and stamina \n\n **DOES NOT CONTAINS CN DATA**',
+    }
+
 
 @router.get('/{id}', name='Get food', response_model=Food)
 async def get_food(id: FOOD, lang: LANGS = LANGS('en'), include: bool = True):
@@ -38,14 +42,11 @@ async def get_food(id: FOOD, lang: LANGS = LANGS('en'), include: bool = True):
         Food
     '''
 
-    if food := await FOOD_REPO.get(EntityBase(id=id), lang):
-        if include:
-            return PrettyJsonResponse(food.model_dump())
-        else:
-            return PrettyJsonResponse(food.model_dump(include={'id', 'name', 'icon', 'quality', 'stars'}))
-    
+    food = await FOOD_REPO.get(EntityBase(id=id), lang, VERSIONS('global'))
+    if include:
+        return PrettyJsonResponse(food.model_dump())
     else:
-        raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
+        return PrettyJsonResponse(food.model_dump(include={'id', 'name', 'icon', 'quality', 'stars'}))
 
 
 @router.get('', name='All foods', response_model=list[Food])
@@ -67,11 +68,9 @@ async def get_all_foods(lang: LANGS = LANGS('en'), include: bool = False):
         List[Food]
     '''
 
-    if foods := await FOOD_REPO.get_all(lang):
-        if include:
-            return PrettyJsonResponse([food.model_dump() for food in foods])
-        else:
-            return PrettyJsonResponse([food.model_dump(include={'id', 'name', 'icon', 'quality', 'stars'}) for food in foods])
-    
+    foods = await FOOD_REPO.get_all(lang, VERSIONS('global'))
+    if include:
+        return PrettyJsonResponse([food.model_dump() for food in foods])
     else:
-        raise ItemNotFound(headers={'error': f'{lang} not found'})
+        return PrettyJsonResponse([food.model_dump(include={'id', 'name', 'icon', 'quality', 'stars'}) for food in foods])
+    

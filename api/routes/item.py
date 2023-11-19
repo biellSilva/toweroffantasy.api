@@ -1,18 +1,22 @@
 
 from fastapi import APIRouter
 
-from api.enums import ITEMS, LANGS
+from api.enums import ITEMS, LANGS, VERSIONS
 
 from api.infra.entitys import Item, EntityBase
 from api.infra.repository import ItemRepo
 
 from api.core.response import PrettyJsonResponse
-from api.core.exceptions import ItemNotFound
 
-
-router = APIRouter(prefix="/items", tags=["Items"])
 
 ITEM_REPO = ItemRepo()
+
+router = APIRouter(prefix="/items", tags=["Items"])
+METADATA = {
+    'name': 'Items',
+    'description': 'Contains most of the items in-game \n\n **DOES NOT CONTAINS CN DATA**'
+    }
+
 
 @router.get('/{id}', response_model=Item)
 async def get_item(id: ITEMS, lang: LANGS = LANGS('en'), include: bool = True):
@@ -38,14 +42,12 @@ async def get_item(id: ITEMS, lang: LANGS = LANGS('en'), include: bool = True):
         Item
     '''
 
-    if item := await ITEM_REPO.get(EntityBase(id=id), lang):
-        if include:
-            return PrettyJsonResponse(item.model_dump())
-        else:
-            return PrettyJsonResponse(item.model_dump(include={'id', 'name', 'rarity', 'icon'}))
-    
+    item = await ITEM_REPO.get(EntityBase(id=id), lang, VERSIONS('global'))
+    if include:
+        return PrettyJsonResponse(item.model_dump())
     else:
-        raise ItemNotFound(headers={'error': f'{id} not found in {lang}'})
+        return PrettyJsonResponse(item.model_dump(include={'id', 'name', 'rarity', 'icon'}))
+    
 
 
 @router.get('', response_model=list[Item])
@@ -66,11 +68,8 @@ async def get_all_items(lang: LANGS = LANGS('en'), include: bool = False):
         List[Item]
     '''
 
-    if items := await ITEM_REPO.get_all(lang):
-        if include:
-            return PrettyJsonResponse([item.model_dump() for item in items])
-        else:
-            return PrettyJsonResponse([item.model_dump(include={'id', 'name', 'rarity', 'icon'}) for item in items])
-    
+    items = await ITEM_REPO.get_all(lang, VERSIONS('global'))
+    if include:
+        return PrettyJsonResponse([item.model_dump() for item in items])
     else:
-        raise ItemNotFound(headers={'error': f'{lang} not found'})
+        return PrettyJsonResponse([item.model_dump(include={'id', 'name', 'rarity', 'icon'}) for item in items])

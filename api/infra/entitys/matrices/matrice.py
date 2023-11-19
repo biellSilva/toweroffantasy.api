@@ -5,7 +5,7 @@ from typing import Annotated
 from api.utils import bold_numbers
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.matrices.extra import MatrixSet, MatrixAssets
+from .extra import MatrixSet, MatrixAssets
 
 
 class Matrix(EntityBase):

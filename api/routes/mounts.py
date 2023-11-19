@@ -1,18 +1,21 @@
 
 from fastapi import APIRouter
 
-from api.enums import MOUNTS, LANGS
+from api.enums import MOUNTS, LANGS, VERSIONS
 
-from api.core.exceptions import ItemNotFound
 from api.core.response import PrettyJsonResponse
 
 from api.infra.repository import MountsRepo
 from api.infra.entitys import EntityBase, Mount
 
 
-router = APIRouter(prefix='/mounts', tags=['Mounts'])
-
 MOUNTS_REPO = MountsRepo()
+
+router = APIRouter(prefix='/mounts', tags=['Mounts'])
+METADATA = {
+    'name': 'Mounts',
+    'description': 'Mounts are "vehicles" so the player can move faster around the map \n\n **DOES NOT CONTAINS CN DATA**',
+    }
 
 
 @router.get('/{id}', name='Get mount', response_model=Mount)
@@ -39,13 +42,12 @@ async def get_mount(id: MOUNTS, lang: LANGS = LANGS('en'), include: bool = True)
         Mount
     '''
     
-    if mount := await MOUNTS_REPO.get(EntityBase(id=id), lang):
-        if include:
-            return PrettyJsonResponse(mount.model_dump())
-        else:
-            return PrettyJsonResponse(mount.model_dump(include={'id', 'name', 'assets'}))
+    mount = await MOUNTS_REPO.get(EntityBase(id=id), lang, VERSIONS('global'))
+    if include:
+        return PrettyJsonResponse(mount.model_dump())
     else:
-        raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
+        return PrettyJsonResponse(mount.model_dump(include={'id', 'name', 'assets'}))
+
 
 @router.get('', name='All mounts', response_model=list[Mount])
 async def get_all_mounts(lang: LANGS = LANGS('en'), include: bool = False):
@@ -65,11 +67,9 @@ async def get_all_mounts(lang: LANGS = LANGS('en'), include: bool = False):
         List[Mount]
     '''
     
-    if mounts := await MOUNTS_REPO.get_all(lang):
-        if include:
-            return PrettyJsonResponse([mount.model_dump() for mount in mounts])
-        else:
-            return PrettyJsonResponse([mount.model_dump(include={'name', 'assets'}) for mount in mounts])
-    
+    mounts = await MOUNTS_REPO.get_all(lang, VERSIONS('global'))
+    if include:
+        return PrettyJsonResponse([mount.model_dump() for mount in mounts])
     else:
-        raise ItemNotFound(detail={'error': f'{lang} not found'})
+        return PrettyJsonResponse([mount.model_dump(include={'name', 'assets'}) for mount in mounts])
+    

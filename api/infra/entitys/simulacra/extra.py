@@ -6,11 +6,11 @@ from api.utils import replace_cv, replace_icon, put_imitation_icon
 
 
 class VoiceActors(BaseModel):
-    chinese: Annotated[str, BeforeValidator(replace_cv)] | None = None
-    japanese: Annotated[str, BeforeValidator(replace_cv)] | None = None
-    english: Annotated[str, BeforeValidator(replace_cv)] | None = None
-    korean: Annotated[str, BeforeValidator(replace_cv)] | None = None
-    portuguese: Annotated[str, BeforeValidator(replace_cv)] | None = None
+    chinese: Annotated[str | None, BeforeValidator(replace_cv)]  = None
+    japanese: Annotated[str | None, BeforeValidator(replace_cv)] = None
+    english: Annotated[str | None, BeforeValidator(replace_cv)] = None
+    korean: Annotated[str | None, BeforeValidator(replace_cv)] = None
+    portuguese: Annotated[str | None, BeforeValidator(replace_cv)] = None
 
 
 class Awakening(BaseModel):

@@ -11,5 +11,5 @@ class Achievement(EntityBase):
     name: str
     description: str
     icon: Annotated[str, BeforeValidator(replace_icon)]
-    tags: list[str] = []
+    tags: Annotated[list[str], BeforeValidator(replace_icon)] = []
     awards: list[Award]

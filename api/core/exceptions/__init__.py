@@ -1,8 +1,23 @@
 
 from fastapi.exceptions import HTTPException
-from typing import Any, Dict, Optional
 
 
 class ItemNotFound(HTTPException):
-    def __init__(self, status_code: int = 404, detail: Optional[Any] = None, headers: Optional[Dict[str, str]] = None) -> None:
-        super().__init__(status_code, detail, headers)
+    def __init__(self, id: str, lang: str, version: str) -> None:
+        super().__init__(404, f'Unable to find id **{id}** in language **{lang}** in version **{version}**')
+
+class LanguageNotFound(HTTPException):
+    def __init__(self, lang: str, version: str) -> None:
+        super().__init__(404, f'Unable to find language **{lang}** in version **{version}**')
+
+class VersionNotFound(HTTPException):
+    def __init__(self, version: str) -> None:
+        super().__init__(404, f'Unable to find version **{version}**')
+
+class FileNotFound(HTTPException):
+    def __init__(self, file: str, lang: str, version: str) -> None:
+        super().__init__(500, f'Unable to find file **{file}** in **{version}/{lang}**')
+
+class AssetNotFound(HTTPException):
+    def __init__(self) -> None:
+        super().__init__(404, f'Unable to find asset')

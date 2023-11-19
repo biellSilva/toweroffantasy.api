@@ -68,3 +68,9 @@ class BaseStats:
     id: str
     name: str
     icon: str
+
+
+@strawberry.type
+class UpgradeMaterial:
+    id: str
+    need: int

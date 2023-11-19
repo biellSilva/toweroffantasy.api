@@ -1,12 +1,17 @@
 
+import json
+
 from pathlib import Path
-from json import loads
 from typing import Any
 
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Matrix, EntityBase
 
-from api.utils import matrice_set_rework
+from api.core.exceptions import FileNotFound, VersionNotFound, LanguageNotFound
+
+from api.enums import LANGS, LANGS_CN, VERSIONS
+
+from api.utils import matrice_set_rework, sort_matrices
 
 
 class MatricesRepo(ModelRepository[EntityBase, Matrix]):
@@ -19,48 +24,43 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                          class_base=MatricesRepo,
                          repo_name='matrices')
     
-    def __sort_matrice(self, item: Matrix):
-        if item.rarity == 'SSR':
-            return (1, -int(item.id.rsplit('ssr', 1)[1]))
-        elif item.rarity == 'SR':
-            return (2, -int(item.id.rsplit('sr', 1)[1]))
-        elif item.rarity == 'R':
-            return (3, -int(item.id.rsplit('r', 1)[1]))
-        else:
-            return (4, -int(item.id.rsplit('n', 1)[1]))
+    async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[Matrix]:
+        if version in self.cache:
+            if lang in self.cache[version]:
+                return list(self.cache[version][lang].values())
 
-    
-    async def get_all(self, lang: str) -> list[Matrix]:
-        if lang in self.cache:
-            return list(self.cache[lang].values())
+        VERSION_PATH = Path(f'api/infra/database/{version}')
+        if not VERSION_PATH.exists():
+            raise VersionNotFound(version)
         
-        else:
-            PATH_IMIT = Path(f'api/infra/database/global/{lang}/{self.repo_name}.json')
-            DATA: dict[str, dict[str, Any]] = loads(PATH_IMIT.read_bytes())
+        LANG_PATH = Path(VERSION_PATH, lang)
+        if not LANG_PATH.exists():
+            raise LanguageNotFound(lang, version)
 
-            if lang in self.cache:
-                pass
+        FILEPATH = Path(LANG_PATH, f'{self.repo_name}.json')
+        if not FILEPATH.exists():
+            raise FileNotFound(self.repo_name, lang, version)
 
-            else:
-                self.cache.update({lang: {}})
+        DATA: dict[str, dict[str, Any]] = json.loads(FILEPATH.read_bytes())
 
-            for matrice_id, matrice_dict in DATA.items():
-                if matrice_id in ('matrix_SSR12_1', 'matrix_SSR13_1'):
-                    continue
-                
-                matrice_id = matrice_id.removesuffix('_1').lower()
-                matrice_dict['id'] = matrice_id
+        if version not in self.cache:
+            self.cache.update({version: {}})
+        
+        if lang not in self.cache[version]:
+            self.cache[version].update({lang: {}})
 
-                matrice_dict['sets'] = matrice_set_rework(rarity=matrice_dict.get('rarity', ''),
-                                                         sets=matrice_dict.pop('set'))
-
-                self.cache[lang].update({matrice_id: Matrix(**matrice_dict)})
-
-            self.cache[lang] = {i.id: i for i in list(sorted(list(self.cache[lang].values()), key=self.__sort_matrice))}
+        for matrice_id, matrice_dict in DATA.items():
+            if version == 'global' and matrice_id in ('matrix_SSR12_1', 'matrix_SSR13_1'):
+                continue
             
-            return list(self.cache[lang].values())
-    
-    async def get_by_name(self, name: str, lang: str):
-        for i in await self.get_all(lang):
-            if i.name == name:
-                return i
+            matrice_id = matrice_id.removesuffix('_1').lower()
+            matrice_dict['id'] = matrice_id
+
+            matrice_dict['sets'] = matrice_set_rework(rarity=matrice_dict.get('rarity', ''),
+                                                    sets=matrice_dict.pop('set'))
+
+            self.cache[version][lang].update({matrice_id: Matrix(**matrice_dict)})
+
+        self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_matrices))}
+        
+        return list(self.cache[version][lang].values())

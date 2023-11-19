@@ -1,5 +1,3 @@
 
-
-from dotenv import find_dotenv, get_key
-
-API_KEY = get_key(find_dotenv(), key_to_get='API_KEY')
+GLOBAL_ASSETS = 'https://raw.githubusercontent.com/FortOfFans/ToF.github.io/main'
+CN_ASSETS = 'https://raw.githubusercontent.com/Silyky/Icon_CN/main'

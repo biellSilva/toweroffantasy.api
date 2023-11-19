@@ -12,10 +12,10 @@ class Skill(BaseModel):
     description: Annotated[str, BeforeValidator(bold_numbers)]
 
 class Skills(BaseModel):
-    normals: list[Skill]
-    dodge: list[Skill]
-    skill: list[Skill]
-    discharge: list[Skill]
+    normals: list[Skill] = []
+    dodge: list[Skill] = []
+    skill: list[Skill] = []
+    discharge: list[Skill] = []
 
 class Stats(BaseModel):
     shatter: int | float
@@ -55,4 +55,8 @@ class BaseStats(BaseModel):
     id: str
     name: str
     icon: Annotated[str, BeforeValidator(replace_icon)]
-    
+
+
+class UpgradeMaterial(BaseModel):
+    id: str
+    need: int

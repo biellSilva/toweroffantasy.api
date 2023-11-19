@@ -18,7 +18,6 @@ from api.routes import (
     weapons,
     matrices,
     relics,
-    # home,
     food,
     item,
     achievements,
@@ -31,7 +30,35 @@ from api.routes import (
 )
 
 
-app = FastAPI()
+TAGS_METADATA = [
+    simulacra.METADATA,
+    weapons.METADATA,
+    matrices.METADATA,
+    simulacra_v2.METADATA,
+    relics.METADATA,
+    outfits.METADATA,
+    mounts.METADATA,
+    servants.METADATA,
+    item.METADATA,
+    food.METADATA,
+    achievements.METADATA,
+
+    raritys.METADATA,
+    image.METADATA,
+    graphql.METADATA
+]
+
+DESC = ('[Interactive documentation](https://api.toweroffantasy.info/docs)\n\n'
+        '[Detailed documentation](https://api.toweroffantasy.info/redoc)\n\n'
+        '[Github](https://github.com/biellSilva/toweroffantasy.api)\n\n\n'
+        '**HIGHLY RECOMMENDED TO USE DETAILED DOCS TO LEARN HOW THE API WORKS**')
+
+
+app = FastAPI(title='Tower of Fantasy API',
+              openapi_tags=TAGS_METADATA,
+              description=DESC,
+              version='1.1.0',
+            )
 
 limiter = Limiter(key_func=get_remote_address, application_limits=['1/10seconds'], enabled=False)
 app.state.limiter = limiter
@@ -56,7 +83,7 @@ async def add_process_time_header(request: Request, call_next: Callable[[Request
     response.headers["X-Process-Time"] = str(timer() - start_time)
     return response
 
-# app.include_router(home.router)
+
 app.include_router(simulacra.router)
 app.include_router(simulacra_v2.router)
 app.include_router(weapons.router)

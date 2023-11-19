@@ -1,15 +1,19 @@
 
-from pydantic import Field
+from pydantic import Field, BeforeValidator
+from typing import Annotated
+
+from api.utils import classify_rework, material_rework
 
 from api.infra.entitys.base import EntityBase
-from api.infra.entitys.weapons.extra import (
+from .extra import (
     ShatterOrCharge, 
     WeaponEffect, 
     Advancements, 
     Skills,
     Assets,
     Meta,
-    BaseStats
+    BaseStats,
+    UpgradeMaterial
 )
 
 
@@ -19,13 +23,13 @@ class Weapon(EntityBase):
     rarity: str
     type: str = Field(alias='wc', serialization_alias='type')
     element: str
-    baseStats: list[BaseStats]
+    baseStats: list[BaseStats] = Field(alias='stats', serialization_alias='baseStats', default=[])
     assets: Assets
-    shatter: ShatterOrCharge
-    charge: ShatterOrCharge
+    shatter: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    charge: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
     advanceID: str | None = None
-    mats: dict[str, int | None]
+    upgradeMaterials: Annotated[list[UpgradeMaterial], BeforeValidator(material_rework)] = Field(alias='mats')
     weaponEffects: list[WeaponEffect]
     skills: Skills
     advancements: list[Advancements] = Field(alias='stars', serialization_alias='advancements') 
-    meta: Meta | None
+    meta: Meta | None = None

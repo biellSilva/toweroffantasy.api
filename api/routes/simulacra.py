@@ -1,35 +1,49 @@
 
 from fastapi import APIRouter
 
-from api.enums import SIMULACRAS, LANGS
+from api.enums import SIMULACRA, SIMULACRA_CN, LANGS, LANGS_CN, VERSIONS
 
-from api.core.exceptions import ItemNotFound
 from api.core.response import PrettyJsonResponse
 
 from api.infra.entitys import Simulacra, EntityBase
 from api.infra.repository import SimulacraRepo
 
 
-router = APIRouter(prefix='/simulacra', tags=['simulacra'])
-
-
 SIMU_REPO = SimulacraRepo()
 
+router = APIRouter(prefix='/simulacra', tags=['Simulacra'])
+METADATA = {
+    'name': 'Simulacra',
+    'description': 'Simulacra are the player\'s representation of the characters found in Tower of Fantasy \n\n **CONTAINS CN DATA**',
+    }
 
-@router.get('/{id}', name='Get simulacra', response_model=Simulacra)
-async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en'), include: bool = True):
+
+@router.get('/{id}', name='Get simulacrum', response_model=Simulacra)
+async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN, 
+                         version: VERSIONS = VERSIONS('global'),
+                         lang: LANGS | LANGS_CN = LANGS('en'), 
+                         include: bool = True):
     '''
     **Path Param** \n
         id: 
             type: string
             required: True
-            desc: imitation_id
+            desc: Imitation/Simulacrum ID
+            schema: SIMULACRA | SIMULACRA_CN
+
 
     **Query Params** \n
+        version:
+            type: string
+            default: global
+            desc: Game version
+            schema: VERSIONS
+
         lang:
             type: string
             default: en
-            desc: possible languages to use
+            desc: Possible languages
+            schema: LANGS | LANGS_CN
 
         include:
             type: bool
@@ -38,26 +52,36 @@ async def get_simulacra(id: SIMULACRAS, lang: LANGS = LANGS('en'), include: bool
             
     **Return** \n
         Simulacra
+
     '''
     
-    if simulacra := await SIMU_REPO.get(EntityBase(id=id), lang):
-        if include:
-            return PrettyJsonResponse(simulacra.model_dump())
-        else:
-            return PrettyJsonResponse(simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID', 'matrixID'}))
-    
-    else:
-        raise ItemNotFound(detail={'error': f'{id} not found in {lang}'})
+    simulacra = await SIMU_REPO.get(EntityBase(id=id), lang, version)
 
-@router.get('', name='All simulacras', response_model=list[Simulacra])
-async def get_all_simulacra(lang: LANGS = LANGS('en'), include: bool = False):
+    if include:
+        return PrettyJsonResponse(simulacra.model_dump())
+    else:
+        return PrettyJsonResponse(simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID', 'matrixID'}))
+    
+
+
+@router.get('', name='All simulacra', response_model=list[Simulacra])
+async def get_all_simulacra(version: VERSIONS = VERSIONS('global'), 
+                            lang: LANGS | LANGS_CN = LANGS('en'), 
+                            include: bool = False):
     '''
     **Query Params** \n
+        version:
+            type: str
+            default: global
+            desc: Game version
+            schema: VERSIONS
+        
         lang:
             type: string
             default: en
-            desc: possible languages to use
-            
+            desc: Possible languages
+            schema: LANGS | LANGS_CN
+    
         include:
             type: bool
             default: False
@@ -65,13 +89,13 @@ async def get_all_simulacra(lang: LANGS = LANGS('en'), include: bool = False):
             
     **Return** \n
         List[Simulacra]
+
     '''
     
-    if simulacras := await SIMU_REPO.get_all(lang):
-        if include:
-            return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
-        else:
-            return PrettyJsonResponse([simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID', 'matrixID'}) for simulacra in simulacras])
-    
+    simulacras = await SIMU_REPO.get_all(lang=lang, version=version)
+
+    if include:
+        return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
     else:
-        raise ItemNotFound(detail={'error': f'{lang} not found'})
+        return PrettyJsonResponse([simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID', 'matrixID'}) for simulacra in simulacras])
+    

@@ -8,7 +8,8 @@ from api.infra.entitys.weapons.graphql.extra import (
     Skills,
     WeaponAssets,
     Meta,
-    BaseStats
+    BaseStats,
+    UpgradeMaterial
 )
 
 
@@ -18,14 +19,15 @@ class WeaponType:
     name: str
     description: str
     rarity: str
-    type: str
+    type: str 
     element: str
+    baseStats: list[BaseStats] 
     assets: WeaponAssets
     shatter: ShatterOrCharge
     charge: ShatterOrCharge
-    advanceID: str | None
+    advanceID: str | None 
+    upgradeMaterials: list[UpgradeMaterial]
     weaponEffects: list[WeaponEffect]
     skills: Skills
     advancements: list[Advancements]
-    meta: Meta
-    baseStats: list[BaseStats]
+    meta: Meta | None = None
