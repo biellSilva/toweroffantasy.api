@@ -11,6 +11,7 @@ class Ingredient:
 
 @strawberry.type
 class Food:
+    id: str
     name: str
     description: str
     buff: str

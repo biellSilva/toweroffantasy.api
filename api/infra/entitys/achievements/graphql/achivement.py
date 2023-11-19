@@ -9,6 +9,7 @@ class Award:
 
 @strawberry.type
 class Achievement:
+    id: str
     name: str
     description: str
     icon: str
