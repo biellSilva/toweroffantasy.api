@@ -1,6 +1,6 @@
 # api.toweroffantasy.info
 
-**This [API](https://api.toweroffantasy.info/docs) was built with the intention of serving data from [Tower of Fantasy](https://www.toweroffantasy-global.com), an online Multiplayer MMORPG natively available in China and in development Globally.**
+**This [API](https://api.toweroffantasy.info/redoc) was built with the intention of serving data from [Tower of Fantasy](https://www.toweroffantasy-global.com), an online Multiplayer MMORPG natively available in China and in development Globally.**
 
 Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [FortOfFans](https://github.com/FortOfFans) who constantly provides game data, [Emi](https://github.com/eminentglory) who helps with the API backend, [Sova](https://github.com/Silyky) who gave permission to use his repository as an image database and others collaborators.
 
@@ -17,14 +17,16 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 ## Achievements
 
 > **November 07, 2023** - API base goes live
+> **November 19, 2023** - CN data initialized
 
 ## Routes
 
-* **`/docs`**
-* **`/simulacra`**
-* `/simulacra-v2`
+* **`/docs`** *(Interactive docs)*
+* **`/redoc`** *(Detailed docs)*
+* **`/simulacra`** *CN*
+* **`/simulacra-v2`**
 * **`/matrices`**
-* **`/weapons`**
+* **`/weapons`** *CN*
 * **`/relics`**
 * **`/food`**
 * **`/items`**
@@ -33,8 +35,8 @@ Thanks to [Zakum](https://github.com/whotookzakum) who provides a subdomain, [Fo
 * **`/outfits`**
 * **`/rarities`**
 * **`/servants`**
-* **`/assets`**
-* **`/graphql`**
+* **`/assets`** *CN*
+* **`/graphql`** *CN*
 
 ### Example of use
 
@@ -85,19 +87,8 @@ for example Ling Han object, the key "icon" has the value of **"/assets/UI/huanx
 
 ### Note
 
-It's possible to use the [API Docs](https://api.toweroffantasy.info/docs) to check/learn on how to use, their returns and more
+It's possible to use the [API Docs](https://api.toweroffantasy.info/redoc) to check/learn on how to use, their returns and more
 
-## Development checklist
+## Feedback
 
-* [X] simulacras
-* [X] matrices
-* [X] weapons
-* [X] relics
-* [X] foods
-* [X] items
-* [X] assets
-* [X] achievements
-* [ ] currency
-* [X] outfits
-* [X] mounts
-* [X] smart-servants
+If you have any feedback or want to discuss something, hop into [Github Discussions](https://github.com/biellSilva/toweroffantasy.api/discussions) and we can talk about it
