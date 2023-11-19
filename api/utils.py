@@ -95,37 +95,52 @@ def relic_advanc_rework(advanc: list[dict[str, str]]):
 def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
     if simulacrum.rarity == 'SSR':
         if simulacrum.banners:
-            return (-1, -simulacrum.banners[-1].bannerNo)
+            return -1, -simulacrum.banners[-1].bannerNo
         else:
-            return (-1, SIMULACRA_SORT_ORDER.index(simulacrum.id))
+            if simulacrum.id in SIMULACRA_SORT_ORDER:
+                return -1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
+            else:
+                return -1, 0
         
     elif simulacrum.rarity == 'SR':
         if simulacrum.banners:
-            return (1, -simulacrum.banners[-1].bannerNo)
+            return 1, -simulacrum.banners[-1].bannerNo
         else:
-            return (1, SIMULACRA_SORT_ORDER.index(simulacrum.id))
+            if simulacrum.id in SIMULACRA_SORT_ORDER:
+                return 1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
+            else:
+                return 1, 0
         
-    return 2, 1
+    return 2, 0
 
 def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
     if weapon.rarity == 'SSR':
         if weapon.banners:
             return -1, -weapon.banners[-1].bannerNo
         else:
-            return -1, WEAPON_SORT_ORDER.index(weapon.id)
+            if weapon.id in WEAPON_SORT_ORDER:
+                return -1, WEAPON_SORT_ORDER.index(weapon.id)
+            else:
+                return -1, 0
     
     elif weapon.rarity == 'SR':
         if weapon.banners:
             return 1, -weapon.banners[-1].bannerNo
         else:
-            return 1, WEAPON_SORT_ORDER.index(weapon.id)
+            if weapon.id in WEAPON_SORT_ORDER:
+                return 1, WEAPON_SORT_ORDER.index(weapon.id)
+            else:
+                return 1, 0
     
     elif weapon.rarity == 'R':
         if weapon.banners:
             return 2, -weapon.banners[-1].bannerNo
         else:
-            return 2, WEAPON_SORT_ORDER.index(weapon.id)
-    
+            if weapon.id in WEAPON_SORT_ORDER:
+                return 2, WEAPON_SORT_ORDER.index(weapon.id)
+            else:
+                return 2, 0
+            
     return 3, 0
     
 def sort_matrices(matrice: 'Matrix') -> tuple[int, int]:
@@ -133,24 +148,36 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, int]:
         if matrice.banners:
             return -1, -matrice.banners[-1].bannerNo
         else:
-            return -1, MATRIX_SORT_ORDER.index(matrice.id)
+            if matrice.id in MATRIX_SORT_ORDER:
+                return -1, MATRIX_SORT_ORDER.index(matrice.id)
+            else:
+                return -1, 0
     
     elif matrice.rarity == 'SR':
         if matrice.banners:
             return 1, -matrice.banners[-1].bannerNo
         else:
-            return 1, MATRIX_SORT_ORDER.index(matrice.id)
+            if matrice.id in MATRIX_SORT_ORDER:
+                return 1, MATRIX_SORT_ORDER.index(matrice.id)
+            else:
+                return 1, 0
     
     elif matrice.rarity == 'R':
         if matrice.banners:
             return 2, -matrice.banners[-1].bannerNo
         else:
-            return 2, MATRIX_SORT_ORDER.index(matrice.id)
+            if matrice.id in MATRIX_SORT_ORDER:
+                return 2, MATRIX_SORT_ORDER.index(matrice.id)
+            else:
+                return 2, 0
 
     elif matrice.rarity == 'N':
         if matrice.banners:
             return 3, -matrice.banners[-1].bannerNo
         else:
-            return 3, MATRIX_SORT_ORDER.index(matrice.id)
+            if matrice.id in MATRIX_SORT_ORDER:
+                return 3, MATRIX_SORT_ORDER.index(matrice.id)
+            else:
+                return 3, 0
     
     return 4, 0
