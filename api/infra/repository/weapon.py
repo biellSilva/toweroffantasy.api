@@ -7,11 +7,11 @@ from typing import Any
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Weapon, EntityBase
 
-from api.enums import LANGS, LANGS_CN, VERSIONS
-
 from api.core.exceptions import VersionNotFound, LanguageNotFound, FileNotFound
 
+from api.enums import LANGS, LANGS_CN, VERSIONS
 from api.utils import sort_weapons
+from api.config import GB_BANNERS
 
 
 class WeaponRepo(ModelRepository[EntityBase, Weapon]):
@@ -86,6 +86,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
 
             if version == 'global':
                 value_dict['meta'] = self.META_GB.get(key_id.lower(), None)
+                value_dict['banners'] = [banner for banner in GB_BANNERS if banner.weapon_id and banner.weapon_id == key_id.lower()]
 
             if value_dict.get('id', None):
                 self.cache[version][lang].update({key_id.lower(): self.model(**value_dict)})

@@ -5,6 +5,7 @@ from typing import Annotated
 from api.utils import classify_rework, material_rework
 
 from api.infra.entitys.base import EntityBase
+from api.infra.entitys.banners import Banner
 from .extra import (
     ShatterOrCharge, 
     WeaponEffect, 
@@ -32,4 +33,5 @@ class Weapon(EntityBase):
     weaponEffects: list[WeaponEffect]
     skills: Skills
     advancements: list[Advancements] = Field(alias='stars', serialization_alias='advancements') 
+    banners: list[Banner]
     meta: Meta | None = None
