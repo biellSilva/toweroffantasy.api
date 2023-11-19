@@ -50,14 +50,16 @@ TAGS_METADATA = [
 
 DESC = ('[Interactive documentation](https://api.toweroffantasy.info/docs)\n\n'
         '[Detailed documentation](https://api.toweroffantasy.info/redoc)\n\n'
-        '[Github](https://github.com/biellSilva/toweroffantasy.api)\n\n\n'
+        '[Github](https://github.com/biellSilva/toweroffantasy.api)\n\n'
+        '[GraphQL Docs](https://api.toweroffantasy.info/)\n\n\n'
+        'If you find bugs, issues or want to tell us something, use the Github features like Issues or Discussions\n\n'
         '**HIGHLY RECOMMENDED TO USE DETAILED DOCS TO LEARN HOW THE API WORKS**')
 
 
 app = FastAPI(title='Tower of Fantasy API',
               openapi_tags=TAGS_METADATA,
               description=DESC,
-              version='1.1.0',
+              version='1.1.3',
             )
 
 limiter = Limiter(key_func=get_remote_address, application_limits=['1/10seconds'], enabled=False)
