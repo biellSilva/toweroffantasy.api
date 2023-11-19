@@ -75,14 +75,3 @@ class UpgradeMaterial:
     id: str
     need: int
 
-
-@strawberry.type
-class Banner:
-    bannerNo: int
-    start: str
-    end: str
-    details_link: str
-    limited_banner_only: bool
-    is_rerun: bool
-    final_rerun: bool
-    is_collab: bool
