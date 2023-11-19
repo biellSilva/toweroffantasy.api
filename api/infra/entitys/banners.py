@@ -4,9 +4,9 @@ from typing import Annotated
 
 
 class Banner(BaseModel):
-    imitation_id: Annotated[str | None, BeforeValidator(lambda x: x.lower())] = Field(exclude=True, default=None)
-    weapon_id: Annotated[str | None, BeforeValidator(lambda x: x.lower())] = Field(exclude=True, default=None)
-    matrix_id: Annotated[str | None, BeforeValidator(lambda x: x.lower())] = Field(exclude=True, default=None)
+    imitation_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = Field(exclude=True, default=None)
+    weapon_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = Field(exclude=True, default=None)
+    matrix_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = Field(exclude=True, default=None)
     simulacrum: str = Field(exclude=True)
     bannerNo: int
     start: str
