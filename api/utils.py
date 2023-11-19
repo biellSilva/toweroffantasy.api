@@ -143,41 +143,41 @@ def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
             
     return 3, 0
     
-def sort_matrices(matrice: 'Matrix') -> tuple[int, int]:
+def sort_matrices(matrice: 'Matrix') -> tuple[int, int, str]:
     if matrice.rarity == 'SSR':
         if matrice.banners:
-            return -1, -matrice.banners[-1].bannerNo
+            return -1, -matrice.banners[-1].bannerNo, matrice.name
         else:
             if matrice.id in MATRIX_SORT_ORDER:
-                return -1, MATRIX_SORT_ORDER.index(matrice.id)
+                return -1, MATRIX_SORT_ORDER.index(matrice.id), matrice.name
             else:
-                return -1, 0
+                return -1, 0, matrice.name
     
     elif matrice.rarity == 'SR':
         if matrice.banners:
-            return 1, -matrice.banners[-1].bannerNo
+            return 1, -matrice.banners[-1].bannerNo, matrice.name
         else:
             if matrice.id in MATRIX_SORT_ORDER:
-                return 1, MATRIX_SORT_ORDER.index(matrice.id)
+                return 1, MATRIX_SORT_ORDER.index(matrice.id), matrice.name
             else:
-                return 1, 0
+                return 1, 0, matrice.name
     
     elif matrice.rarity == 'R':
         if matrice.banners:
-            return 2, -matrice.banners[-1].bannerNo
+            return 2, -matrice.banners[-1].bannerNo, matrice.name
         else:
             if matrice.id in MATRIX_SORT_ORDER:
-                return 2, MATRIX_SORT_ORDER.index(matrice.id)
+                return 2, MATRIX_SORT_ORDER.index(matrice.id), matrice.name
             else:
-                return 2, 0
+                return 2, 0, matrice.name
 
     elif matrice.rarity == 'N':
         if matrice.banners:
-            return 3, -matrice.banners[-1].bannerNo
+            return 3, -matrice.banners[-1].bannerNo, matrice.name
         else:
             if matrice.id in MATRIX_SORT_ORDER:
-                return 3, MATRIX_SORT_ORDER.index(matrice.id)
+                return 3, MATRIX_SORT_ORDER.index(matrice.id), matrice.name
             else:
-                return 3, 0
+                return 3, 0, matrice.name
     
-    return 4, 0
+    return 4, 0, matrice.name
