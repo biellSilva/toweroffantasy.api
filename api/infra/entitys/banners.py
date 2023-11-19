@@ -1,13 +1,13 @@
 
-from pydantic import BaseModel, Field, BeforeValidator
+from pydantic import BaseModel, BeforeValidator
 from typing import Annotated
 
 
 class Banner(BaseModel):
-    imitation_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = Field(exclude=True, default=None)
-    weapon_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = Field(exclude=True, default=None)
-    matrix_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = Field(exclude=True, default=None)
-    simulacrum: str = Field(exclude=True)
+    imitation_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = None
+    weapon_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = None
+    matrix_id: Annotated[str, BeforeValidator(lambda x: x.lower())] | None = None
+    simulacrum: str | None = None
     bannerNo: int
     start: str
     end: str
