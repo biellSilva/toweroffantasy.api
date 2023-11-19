@@ -2,6 +2,7 @@
 import strawberry
 
 
+@strawberry.type
 class MountAsset:
     icon: str
     showImage: str
