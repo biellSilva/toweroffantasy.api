@@ -9,12 +9,13 @@ from api.infra.entitys.weapons.graphql.extra import (
     WeaponAssets,
     Meta,
     BaseStats,
-    UpgradeMaterial
+    UpgradeMaterial,
+    Banner
 )
 
 
 @strawberry.type
-class WeaponType:
+class Weapon:
     id: str
     name: str
     description: str
@@ -30,4 +31,5 @@ class WeaponType:
     weaponEffects: list[WeaponEffect]
     skills: Skills
     advancements: list[Advancements]
-    meta: Meta | None = None
+    meta: Meta | None
+    banners: Banner

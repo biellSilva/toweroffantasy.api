@@ -5,7 +5,7 @@ from .extra import Assets, VoiceActors, Awakening, Banner
 
 
 @strawberry.type()
-class SimulacraType:
+class Simulacra:
     id: str
     name: str
     rarity: str | None

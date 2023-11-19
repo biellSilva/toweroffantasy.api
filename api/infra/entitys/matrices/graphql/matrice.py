@@ -5,7 +5,7 @@ from api.infra.entitys.matrices.graphql.extra import MatriceSet, MatrixAssets
 
 
 @strawberry.type
-class MatriceType:
+class Matrice:
     id: str
     name: str
     type: str
