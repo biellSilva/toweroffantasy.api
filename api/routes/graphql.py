@@ -169,8 +169,17 @@ class Query:
 
 
 
+    
+
+
+
+
 graphql = GraphQLRouter[Any, Any](schema=strawberry.Schema(query=Query), path='/') 
 METADATA = {
     'name': 'GraphQL',
     'description': 'GraphQL provides a complete and understandable description of the data \n\n **SOME FIELDS CONTAINS CN DATA**',
+    'externalDocs': {
+        'description': 'GraphQL docs',
+        'url': 'https://api.toweroffantasy.info/',
     }
+}
