@@ -2,12 +2,12 @@
 from pydantic import BaseModel, BeforeValidator
 from typing import Annotated
 
-from api.utils import put_imitation_icon, replace_icon
+from api.utils import replace_icon
 
 
 class Assets(BaseModel):
     avatar: Annotated[str, BeforeValidator(replace_icon)] | None 
-    artwork: Annotated[str, BeforeValidator(put_imitation_icon)] | None
+    artwork: Annotated[str, BeforeValidator(replace_icon)] | None
     lotteryCard: Annotated[str, BeforeValidator(replace_icon)] | None
     lotteryDrawing: Annotated[str, BeforeValidator(replace_icon)] | None
     painting: Annotated[str, BeforeValidator(replace_icon)] | None
