@@ -4,6 +4,8 @@ import re
 from typing import TYPE_CHECKING
 
 from api.enums import LANGS
+from api.config import MATRIX_SORT_ORDER, SIMULACRA_SORT_ORDER, WEAPON_SORT_ORDER
+
 
 if TYPE_CHECKING:
     from api.infra.entitys import Simulacra, Weapon, Matrix
@@ -90,23 +92,20 @@ def relic_advanc_rework(advanc: list[dict[str, str]]):
     return [value for i in advanc for key, value in i.items() if not key == 'id']
 
 
-def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int, str]:
-    if not simulacrum.rarity and not simulacrum.banners:
-        return 0, 0, simulacrum.name
-    
+def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
     if simulacrum.rarity == 'SSR':
         if simulacrum.banners:
-            return (-simulacrum.banners[-1].bannerNo, -1, simulacrum.name)
+            return (-1, -simulacrum.banners[-1].bannerNo)
         else:
-            return (1, -1, simulacrum.name)
+            return (-1, SIMULACRA_SORT_ORDER.index(simulacrum.id))
         
     elif simulacrum.rarity == 'SR':
         if simulacrum.banners:
-            return (-simulacrum.banners[-1].bannerNo, 1, simulacrum.name)
+            return (1, -simulacrum.banners[-1].bannerNo)
         else:
-            return (1, 1, simulacrum.name)
+            return (1, SIMULACRA_SORT_ORDER.index(simulacrum.id))
         
-    return 1, 2, simulacrum.name
+    return 2, 1
 
 def sort_weapons(weapon: 'Weapon') -> int:
     if not weapon.rarity:
