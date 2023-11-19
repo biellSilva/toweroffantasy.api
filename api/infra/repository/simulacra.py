@@ -66,10 +66,10 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                     value_dict['matrixID'] = LINK.get('matrice', None)
 
             if value_dict.get('id', None):
-                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict)})
+                self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict)})
 
             else:
-                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict, id=key_id)})
+                self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict, id=key_id)})
 
         self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_simulacra))}
 
