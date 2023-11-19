@@ -16,8 +16,8 @@ class VersionNotFound(HTTPException):
 
 class FileNotFound(HTTPException):
     def __init__(self, file: str, lang: str, version: str) -> None:
-        super().__init__(500, f'Unable to find file **{file}** in **{version}/{lang}**')
+        super().__init__(404, f'Unable to find file **{file}** in **{version}/{lang}**')
 
 class AssetNotFound(HTTPException):
     def __init__(self) -> None:
-        super().__init__(404, f'Unable to find asset')
+        super().__init__(404, 'Unable to find asset')
