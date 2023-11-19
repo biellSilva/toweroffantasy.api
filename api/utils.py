@@ -149,7 +149,7 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
         if matrice.banners:
             return -1, -matrice.banners[-1].bannerNo
         else:
-            if matrice.id in ('matrix_ssr25', 'matrix_ssr26'):
+            if matrice.id == 'matrix_ssr25' or matrice.id == 'matrix_ssr26':
                 return -1, 25.5
         
             if matrice.id in MATRIX_SORT_ORDER:
