@@ -2,7 +2,7 @@
 from pydantic import BaseModel, BeforeValidator, Field
 from typing import Annotated
 
-from api.utils import replace_cv, replace_icon, put_imitation_icon
+from api.utils import replace_cv, replace_icon
 
 
 class VoiceActors(BaseModel):
