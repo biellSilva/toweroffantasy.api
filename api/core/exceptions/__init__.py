@@ -21,3 +21,7 @@ class FileNotFound(HTTPException):
 class AssetNotFound(HTTPException):
     def __init__(self) -> None:
         super().__init__(404, 'Unable to find asset')
+
+class MissingArgument(HTTPException):
+    def __init__(self) -> None:
+        super().__init__(404, 'You need to inform at least 1 ID or NAME')

@@ -39,22 +39,28 @@ def check_params(lang: str, version: str):
     
     if lang not in LANGS_ and lang not in LANGS_CN_:
         raise LanguageNotFound(lang, version)
+    
 
 
 @strawberry.type
 class Query:
 
     @strawberry.field(name='simulacrum')
-    async def get_simulacrum(self, id: str, lang: str = 'en', version: str = 'global') -> Simulacra:
+    async def get_simulacrum(self, id: str | None = None, name: str | None = None, lang: str = 'en', version: str = 'global') -> Simulacra:
         check_params(lang=lang, version=version)
-
-        if version == 'global':
-            simulacrum = await SIMU_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
-            return simulacrum # type: ignore
         
-        elif version == 'china':
-            simulacrum = await SIMU_REPO.get(EntityBase(id=id), lang=LANGS_CN(lang), version=VERSIONS(version))
-            return simulacrum  # type: ignore
+        if id:
+            if version == 'global':
+                simulacrum = await SIMU_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+                return simulacrum # type: ignore
+            
+            elif version == 'china':
+                simulacrum = await SIMU_REPO.get(EntityBase(id=id), lang=LANGS_CN(lang), version=VERSIONS(version))
+                return simulacrum  # type: ignore
+        elif name:
+            if version == 'global':
+                simulacrum = await SIMU_REPO.get_by_name(name=name, lang=LANGS(lang), version=VERSIONS(version))
+                return simulacrum # type: ignore
         
         raise VersionNotFound(version)
 
