@@ -1,7 +1,7 @@
 
 import strawberry
 
-from api.infra.entitys.banners import BannerSchema
+from api.infra.entitys.graphql.banner import Banner
 from .extra import Assets, VoiceActors, Awakening
 
 
@@ -24,4 +24,4 @@ class Simulacra:
     gift_types: list[str] 
     voice_actors: VoiceActors
     awakenings: list[Awakening]
-    banners: list[BannerSchema]
+    banners: list[Banner]

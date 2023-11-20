@@ -1,7 +1,7 @@
 
 import strawberry
 
-from api.infra.entitys.banners import BannerSchema
+from api.infra.entitys.graphql.banner import Banner
 from .extra import MatriceSet, MatrixAssets
 
 
@@ -14,4 +14,4 @@ class Matrice:
     assets: MatrixAssets
     rarity: str
     sets: list[MatriceSet]
-    banners: list[BannerSchema]
+    banners: list[Banner]

@@ -1,7 +1,7 @@
 
 import strawberry
 
-from api.infra.entitys.banners import BannerSchema
+from api.infra.entitys.graphql.banner import Banner
 from api.infra.entitys.weapons.graphql.extra import (
     ShatterOrCharge, 
     WeaponEffect, 
@@ -32,4 +32,4 @@ class Weapon:
     skills: Skills
     advancements: list[Advancements]
     meta: Meta | None
-    banners: BannerSchema
+    banners: list[Banner]
