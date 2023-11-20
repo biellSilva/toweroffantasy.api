@@ -160,7 +160,7 @@ class Query:
         
         raise VersionNotFound(version)
     
-    @strawberry.field(name='achivement')
+    @strawberry.field(name='achievement')
     async def get_achivement(self, id: str, lang: str = 'en') -> Achievement:
         version = 'global'
         check_params(lang=lang, version=version)
@@ -175,7 +175,7 @@ class Query:
         
         raise VersionNotFound(version)
 
-    @strawberry.field(name='achivements')
+    @strawberry.field(name='achievements')
     async def get_achivements(self, lang: str = 'en') -> List[Achievement]:
         version = 'global'
         check_params(lang=lang, version=version)
