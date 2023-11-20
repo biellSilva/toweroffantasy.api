@@ -10,8 +10,8 @@ from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Simulacra, EntityBase
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
-
 from api.utils import localized_asset, sort_simulacra
+from api.config import GB_BANNERS
 
 
 class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
@@ -24,14 +24,11 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                          repo_name='imitations')
         
         self.GB_LINK: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/global/imitation_links.json').read_bytes())
-        self.GB_BANNERS: list[dict[str, str | int | bool]] = json.loads(Path(f'api/infra/database/global/banners_global.json').read_bytes())
-    
 
     async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[Simulacra]:
         if version in self.class_base.cache:
             if lang in self.class_base.cache[version]:
                 return list(self.class_base.cache[version][lang].values())
-
 
         VERSION_PATH = Path(f'api/infra/database/{version}')
         if not VERSION_PATH.exists():
@@ -60,16 +57,16 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
             if version == 'global':
                 value_dict['rating'] = localized_asset(value_dict['rating'], LANGS(lang))
                 value_dict['assets']['NamePicture'] = localized_asset(value_dict['assets']['NamePicture'], LANGS(lang))
-                value_dict['banners'] = [banner for banner in self.GB_BANNERS if banner['imitation_id'] == key_id.lower()]
+                value_dict['banners'] = [banner for banner in GB_BANNERS if banner.imitation_id and banner.imitation_id == key_id.lower()]
 
                 if LINK := self.GB_LINK.get(key_id.lower(), None):
                     value_dict['matrixID'] = LINK.get('matrice', None)
 
             if value_dict.get('id', None):
-                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict)})
+                self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict)})
 
             else:
-                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict, id=key_id)})
+                self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict, id=key_id)})
 
         self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_simulacra))}
 

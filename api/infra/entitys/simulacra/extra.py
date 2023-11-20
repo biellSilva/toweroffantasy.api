@@ -2,7 +2,7 @@
 from pydantic import BaseModel, BeforeValidator, Field
 from typing import Annotated
 
-from api.utils import replace_cv, replace_icon, put_imitation_icon
+from api.utils import replace_cv, replace_icon
 
 
 class VoiceActors(BaseModel):
@@ -20,7 +20,7 @@ class Awakening(BaseModel):
 
 class Assets(BaseModel):
     avatar: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None)
-    artwork: Annotated[str, BeforeValidator(put_imitation_icon)] | None = Field(default=None, alias='icon', serialization_alias='artwork')
+    artwork: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='icon', serialization_alias='artwork')
     lotteryCard: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='LotteryCardImage', serialization_alias='lotteryCard')
     lotteryDrawing: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='LotteryDrawing', serialization_alias='lotteryDrawing')
     painting: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='Painting', serialization_alias='painting')
@@ -37,12 +37,4 @@ class Assets(BaseModel):
     bannerIcon: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='SoloLeagueBanPickBanner', serialization_alias='bannerIcon')
 
 
-class Banner(BaseModel):
-    bannerNo: int
-    start: str
-    end: str
-    details_link: str
-    limited_banner_only: bool
-    is_rerun: bool
-    final_rerun: bool
-    is_collab: bool
+

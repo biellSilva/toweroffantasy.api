@@ -3,7 +3,9 @@ from pydantic import Field, BeforeValidator
 from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
-from .extra import VoiceActors, Awakening, Assets, Banner
+
+from .extra import VoiceActors, Awakening, Assets
+from ..banners import Banner
 
 from api.utils import check_string, voice_actors_rework, replace_icon, trait_rework
 

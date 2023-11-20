@@ -4,7 +4,7 @@ import re
 from typing import TYPE_CHECKING
 
 from api.enums import LANGS
-from api.config import MATRIX_SORT_ORDER, SIMULACRA_SORT_ORDER, WEAPON_SORT_ORDER
+from api.config import SIMULACRA_SORT_ORDER, WEAPON_SORT_ORDER, MATRIX_SORT_ORDER
 
 
 if TYPE_CHECKING:
@@ -95,47 +95,90 @@ def relic_advanc_rework(advanc: list[dict[str, str]]):
 def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
     if simulacrum.rarity == 'SSR':
         if simulacrum.banners:
-            return (-1, -simulacrum.banners[-1].bannerNo)
+            return -1, -simulacrum.banners[-1].bannerNo
         else:
-            return (-1, SIMULACRA_SORT_ORDER.index(simulacrum.id))
+            if simulacrum.id in SIMULACRA_SORT_ORDER:
+                return -1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
+            else:
+                return -1, 0
         
     elif simulacrum.rarity == 'SR':
         if simulacrum.banners:
-            return (1, -simulacrum.banners[-1].bannerNo)
+            return 1, -simulacrum.banners[-1].bannerNo
         else:
-            return (1, SIMULACRA_SORT_ORDER.index(simulacrum.id))
+            if simulacrum.id in SIMULACRA_SORT_ORDER:
+                return 1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
+            else:
+                return 1, 0
         
-    return 2, 1
+    return 2, 0
 
-def sort_weapons(weapon: 'Weapon') -> int:
-    if not weapon.rarity:
-        return 0
-    
+def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
     if weapon.rarity == 'SSR':
-        return -1
+        if weapon.banners:
+            return -1, -weapon.banners[-1].bannerNo
+        else:
+            if weapon.id in WEAPON_SORT_ORDER:
+                return -1, WEAPON_SORT_ORDER.index(weapon.id)
+            else:
+                return -1, 0
     
     elif weapon.rarity == 'SR':
-        return 1
+        if weapon.banners:
+            return 1, -weapon.banners[-1].bannerNo
+        else:
+            if weapon.id in WEAPON_SORT_ORDER:
+                return 1, WEAPON_SORT_ORDER.index(weapon.id)
+            else:
+                return 1, 0
     
     elif weapon.rarity == 'R':
-        return 2
-    
-    return 3
-    
+        if weapon.banners:
+            return 2, -weapon.banners[-1].bannerNo
+        else:
+            if weapon.id in WEAPON_SORT_ORDER:
+                return 2, WEAPON_SORT_ORDER.index(weapon.id)
+            else:
+                return 2, 0
+            
+    return 3, 0
+
+
 def sort_matrices(matrice: 'Matrix') -> tuple[int, int]:
-    if not matrice.rarity:
-        return 0, 0
-    
     if matrice.rarity == 'SSR':
-        return -1, -int(matrice.id.rsplit('ssr', 1)[1])
+        if matrice.banners:
+            return -1, -matrice.banners[-1].bannerNo
+        else:
+            if matrice.id in MATRIX_SORT_ORDER:
+                return -1, MATRIX_SORT_ORDER.index(matrice.id)
+            else:
+                return -1, 0
     
     elif matrice.rarity == 'SR':
-        return 1, -int(matrice.id.rsplit('sr', 1)[1])
+        if matrice.banners:
+            return 1, -matrice.banners[-1].bannerNo
+        else:
+            if matrice.id in MATRIX_SORT_ORDER:
+                return 1, MATRIX_SORT_ORDER.index(matrice.id)
+            else:
+                return 1, 0
     
     elif matrice.rarity == 'R':
-        return 2, -int(matrice.id.rsplit('r', 1)[1])
+        if matrice.banners:
+            return 2, -matrice.banners[-1].bannerNo
+        else:
+            if matrice.id in MATRIX_SORT_ORDER:
+                return 2, MATRIX_SORT_ORDER.index(matrice.id)
+            else:
+                return 2, 0
 
     elif matrice.rarity == 'N':
-        return 3, -int(matrice.id.rsplit('n', 1)[1])
+        if matrice.banners:
+            return 3, -matrice.banners[-1].bannerNo
+        else:
+            if matrice.id in MATRIX_SORT_ORDER:
+                return 3, MATRIX_SORT_ORDER.index(matrice.id)
+            else:
+                return 3, 0
     
-    return 0, 0
+    return 4, 0

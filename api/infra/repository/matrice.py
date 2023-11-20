@@ -10,8 +10,8 @@ from api.infra.entitys import Matrix, EntityBase
 from api.core.exceptions import FileNotFound, VersionNotFound, LanguageNotFound
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
-
 from api.utils import matrice_set_rework, sort_matrices
+from api.config import GB_BANNERS
 
 
 class MatricesRepo(ModelRepository[EntityBase, Matrix]):
@@ -58,6 +58,9 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
 
             matrice_dict['sets'] = matrice_set_rework(rarity=matrice_dict.get('rarity', ''),
                                                     sets=matrice_dict.pop('set'))
+            
+            if version == 'global':
+                matrice_dict['banners'] = [banner for banner in GB_BANNERS if banner.matrix_id and banner.matrix_id == matrice_id.lower()]
 
             self.cache[version][lang].update({matrice_id: Matrix(**matrice_dict)})
 

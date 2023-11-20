@@ -1,9 +1,11 @@
 
 
 from api.infra.entitys.base import EntityBase
+
+from ..banners import Banner
 from ..weapons import Weapon
 from ..matrices import Matrix
-from ..simulacra.extra import Awakening, VoiceActors, Banner
+from ..simulacra.extra import Awakening, VoiceActors
 
 from .extra import Assets
 
