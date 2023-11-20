@@ -59,11 +59,16 @@ MATRIX_SORT_ORDER = [
     "matrix_ssr7",
     "matrix_ssr2",
     "matrix_ssr8",
-    "matrix_sr9",
-    "matrix_sr12",
-    "matrix_sr8",
-    "matrix_sr7",
-    "matrix_sr6",
+    "matrix_sr2",       # Apophis
+    "matrix_sr9",       # Bai Ling
+    "matrix_sr5",       # Barbarossa
+    "matrix_sr12",      # Echo
+    "matrix_sr8",       # Ene
+    "matrix_sr3",       # Frost Bot
+    "matrix_sr7",       # Hilda
+    "matrix_sr6",       # Pepper
+    "matrix_sr4",       # Sobek
+    "matrix_sr1",       # Robarg
     "matrix_r6",        # Attack Analyzer
     "matrix_r1",        # Explosive Core
     "matrix_r2",        # Hauler
