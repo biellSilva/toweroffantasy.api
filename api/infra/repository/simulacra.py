@@ -32,7 +32,10 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
         if version in self.class_base.cache:
             if lang in self.class_base.cache[version]:
                 for model in self.cache[version][lang].values():
-                    if unidecode(model.name).lower() == name_unidecoded:
+                    model_name = unidecode(model.name).lower()
+                    if (model_name == name_unidecoded or 
+                        model_name.replace(' ', '-') == name_unidecoded or
+                        model_name.replace(' ', '_') == name_unidecoded):
                         return model
                 
                 raise ItemNotFound(name_unidecoded, lang, version)
