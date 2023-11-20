@@ -3,9 +3,8 @@ import json
 
 from pathlib import Path
 from typing import Any
-from unidecode import unidecode
 
-from api.core.exceptions import LanguageNotFound, VersionNotFound, FileNotFound, ItemNotFound
+from api.core.exceptions import LanguageNotFound, VersionNotFound, FileNotFound
 
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Simulacra, EntityBase
@@ -26,25 +25,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
         
         self.GB_LINK: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/global/imitation_links.json').read_bytes())
 
-
-    async def get_by_name(self, name: str, lang: LANGS, version: VERSIONS) -> Simulacra:
-        name_unidecoded = unidecode(name).lower()
-        if version in self.class_base.cache:
-            if lang in self.class_base.cache[version]:
-                for model in self.cache[version][lang].values():
-                    model_name = unidecode(model.name).lower()
-                    if (model_name == name_unidecoded or 
-                        model_name.replace(' ', '-') == name_unidecoded or
-                        model_name.replace(' ', '_') == name_unidecoded):
-                        return model
-                
-                raise ItemNotFound(name_unidecoded, lang, version)
-
-        await self.get_all(lang=lang, version=version)
-        return await self.get_by_name(name, lang, version)
-
-
-    async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[Simulacra]:
+    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Simulacra]:
         if version in self.class_base.cache:
             if lang in self.class_base.cache[version]:
                 return list(self.class_base.cache[version][lang].values())

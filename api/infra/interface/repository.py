@@ -18,6 +18,9 @@ class IRepository(Generic[B, T]):
     async def get(self, model: B, lang: LANGS | LANGS_CN, version: VERSIONS) -> T:
         ...
 
+    async def get_by_name(self, name: str, lang: LANGS | LANGS_CN, version: VERSIONS) -> T:
+        ...
+
     async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[T]:
         ...
     

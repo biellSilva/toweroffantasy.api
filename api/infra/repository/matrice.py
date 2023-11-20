@@ -24,7 +24,7 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                          class_base=MatricesRepo,
                          repo_name='matrices')
     
-    async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[Matrix]:
+    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Matrix]:
         if version in self.cache:
             if lang in self.cache[version]:
                 return list(self.cache[version][lang].values())

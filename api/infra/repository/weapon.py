@@ -25,7 +25,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                          repo_name='weapons')
         self.META_GB: dict[str, dict[str, list[Any]]] = json.loads(Path('api/infra/database/global/meta.json').read_bytes())
     
-    async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[Weapon]:
+    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Weapon]:
         if version in self.class_base.cache:
             if lang in self.class_base.cache[version]:
                 return list(self.class_base.cache[version][lang].values())

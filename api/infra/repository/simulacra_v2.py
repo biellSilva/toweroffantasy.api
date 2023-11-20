@@ -22,7 +22,7 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
         self.weapon_repo = WeaponRepo()
         self.matrice_repo = MatricesRepo()
 
-    async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[Simulacra_v2]:
+    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Simulacra_v2]:
         if version in self.cache:
             if lang in self.cache[version]:
                 return list(self.cache[version][lang].values())

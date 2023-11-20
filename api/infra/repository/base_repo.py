@@ -3,6 +3,7 @@ import json
 
 from typing import TypeVar, Type, Any
 from pathlib import Path
+from unidecode import unidecode
 
 from api.infra.interface import IRepository
 from api.infra.entitys import EntityBase
@@ -23,7 +24,7 @@ class ModelRepository(IRepository[B, T]):
         self.class_base = class_base
         self.repo_name = repo_name
         
-    async def get(self, model: B, lang: LANGS | LANGS_CN, version: VERSIONS) -> T:
+    async def get(self, model: B, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> T:
         if version in self.class_base.cache:
             if lang in self.class_base.cache[version]:
                 if model.id in self.class_base.cache[version][lang]:
@@ -35,7 +36,25 @@ class ModelRepository(IRepository[B, T]):
         return await self.get(model, lang, version)
     
 
-    async def get_all(self, lang: LANGS | LANGS_CN, version: VERSIONS) -> list[T]:
+    async def get_by_name(self, name: str, lang: str, version: VERSIONS) -> T:
+        name_unidecoded = unidecode(name).lower()
+        if version in self.class_base.cache:
+            if lang in self.class_base.cache[version]:
+                for model in self.cache[version][lang].values():
+                    model_name = unidecode(model.name).lower()
+                    if (model_name == name_unidecoded or 
+                        model_name.replace(' ', '-') == name_unidecoded or
+                        model_name.replace(' ', '_') == name_unidecoded or
+                        model_name.replace(' ', '') == name_unidecoded):
+                        return model
+                
+                raise ItemNotFound(name_unidecoded, lang, version)
+
+        await self.get_all(lang=lang, version=version)
+        return await self.get_by_name(name, lang, version)
+    
+
+    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[T]:
         if version in self.class_base.cache:
             if lang in self.class_base.cache[version]:
                 return list(self.class_base.cache[version][lang].values())
