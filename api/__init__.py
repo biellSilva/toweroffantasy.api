@@ -80,6 +80,12 @@ app.add_middleware(
 @app.middleware("https")
 async def add_process_time_header(request: Request, call_next: Callable[[Request], Any]):
     start_time = timer()
+    raw = request.scope["query_string"].decode('latin-1').lower()
+    request.scope["query_string"] = raw.encode('latin-1')
+
+    path = request.scope["path"].lower()
+    request.scope["path"] = path
+
     response: Response = await call_next(request)
     response.headers["X-Process-Time"] = str(timer() - start_time)
     return response
