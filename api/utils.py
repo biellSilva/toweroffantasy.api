@@ -93,18 +93,18 @@ def relic_advanc_rework(advanc: list[dict[str, str]]):
 
 
 def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
-    if simulacrum.rarity == 'SSR':
-        if simulacrum.banners:
-            return -1, -simulacrum.banners[-1].bannerNo
+    if simulacrum.Rarity == 'SSR':
+        if simulacrum.Banners:
+            return -1, -simulacrum.Banners[-1].bannerNo
         else:
             if simulacrum.id in SIMULACRA_SORT_ORDER:
                 return -1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
             else:
                 return -1, 0
         
-    elif simulacrum.rarity == 'SR':
-        if simulacrum.banners:
-            return 1, -simulacrum.banners[-1].bannerNo
+    elif simulacrum.Rarity == 'SR':
+        if simulacrum.Banners:
+            return 1, -simulacrum.Banners[-1].bannerNo
         else:
             if simulacrum.id in SIMULACRA_SORT_ORDER:
                 return 1, SIMULACRA_SORT_ORDER.index(simulacrum.id)

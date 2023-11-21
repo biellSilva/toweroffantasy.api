@@ -10,7 +10,7 @@ from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Simulacra, EntityBase
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
-from api.utils import localized_asset, sort_simulacra
+from api.utils import sort_simulacra
 from api.config import GB_BANNERS
 
 
@@ -21,7 +21,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
         super().__init__(model_base=EntityBase, 
                          model=Simulacra, 
                          class_base=SimulacraRepo,
-                         repo_name='imitations')
+                         repo_name='imitation')
         
         self.GB_LINK: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/global/imitation_links.json').read_bytes())
 
@@ -55,12 +55,10 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                 continue
 
             if version == 'global':
-                value_dict['rating'] = localized_asset(value_dict['rating'], LANGS(lang))
-                value_dict['assets']['NamePicture'] = localized_asset(value_dict['assets']['NamePicture'], LANGS(lang))
-                value_dict['banners'] = [banner for banner in GB_BANNERS if banner.imitation_id and banner.imitation_id == key_id.lower()]
+                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.imitation_id and banner.imitation_id == key_id.lower()]
 
                 if LINK := self.GB_LINK.get(key_id.lower(), None):
-                    value_dict['matrixID'] = LINK.get('matrice', None)
+                    value_dict['MatrixId'] = LINK.get('matrice', None)
 
             if value_dict.get('id', None):
                 self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict)})

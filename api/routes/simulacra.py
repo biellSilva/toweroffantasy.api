@@ -10,6 +10,7 @@ from api.infra.repository import SimulacraRepo
 
 
 SIMU_REPO = SimulacraRepo()
+INCLUDE = {'id', 'Name', 'AssetsA0', 'WeaponId', 'MatrixId', 'Rarity'}
 
 router = APIRouter(prefix='/simulacra', tags=['Simulacra'])
 METADATA = {
@@ -60,7 +61,7 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
     if include:
         return PrettyJsonResponse(simulacra.model_dump())
     else:
-        return PrettyJsonResponse(simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID', 'matrixID'}))
+        return PrettyJsonResponse(simulacra.model_dump(include=INCLUDE))
     
 
 
@@ -97,5 +98,5 @@ async def get_all_simulacra(version: VERSIONS = VERSIONS('global'),
     if include:
         return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
     else:
-        return PrettyJsonResponse([simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID', 'matrixID'}) for simulacra in simulacras])
+        return PrettyJsonResponse([simulacra.model_dump(include=INCLUDE) for simulacra in simulacras])
     
