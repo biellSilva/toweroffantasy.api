@@ -37,7 +37,6 @@ def check_params(lang: str, version: str):
         raise VersionNotFound(version)
     
     if lang not in LANGS_ and lang not in LANGS_CN_:
-        print('*'*50)
         raise LanguageNotFound(lang, version)
     
 
