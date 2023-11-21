@@ -3405,6 +3405,161 @@
 		],
 		"id": "mimi_thunder"
 	},
+	"nanyin_superpower": {
+		"assets": {
+			"icon": "/Game/Resources/Icon/weapon/Icon/item_Weapon_SSR_Nanyin",
+			"WeaponIconForMatrix": "/Game/Resources/Icon/weapon/icon_yizhi/yizhi_SSR_Nanyin"
+		},
+		"rarity": "SSR",
+		"element": "Superpower",
+		"weaponType": "Nanyin",
+		"wc": "DPS",
+		"avatar": "imitation_49",
+		"mats": {
+			"Item_breakthrough_A1": 28,
+			"Item_breakthrough_B1": 28,
+			"Item_breakthrough_C1": 26,
+			"Item_breakthrough_D1": 26,
+			"Item_breakthrough_A2": 50,
+			"Item_breakthrough_B2": 50,
+			"Item_breakthrough_C2": 50,
+			"Item_breakthrough_D2": 50,
+			"Item_breakthrough_A3": 26,
+			"Item_breakthrough_B3": 26,
+			"Item_breakthrough_C3": 26,
+			"Item_breakthrough_D3": 26
+		},
+		"advanceID": "Nanyin_superpower_ssr_star",
+		"skills": {
+			"normals": [
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_melee",
+					"id": "GA_FPlayerNanYinMelee_Melee"
+				},
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattack",
+					"id": "GA_FPlayerNanYinMelee_AirAttack"
+				},
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_meleebranch1",
+					"id": "GA_FPlayerNanYinMelee_MeleeBranch1"
+				},
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_meleebranch2",
+					"id": "GA_FPlayerNanYinMelee_MeleeBranch2"
+				},
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattackbranch1",
+					"id": "GA_FPlayerNanYinMelee_AirAttackBranch1"
+				},
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattackbranch2",
+					"id": "GA_FPlayerNanYinMelee_AirAttackBranch2"
+				},
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_powerattack",
+					"id": "GA_FPlayerNanYinMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerNanYinEvade_Evade"
+				},
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_evadeattack",
+					"id": "GA_FPlayerNanYinEvade_EvadeAttack"
+				},
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_evadebeidong",
+					"id": "GA_FPlayerNanYinEvade_Beidong"
+				}
+			],
+			"skill": [
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_skill",
+					"id": "GA_FPlayerNanYinSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_changeskill",
+					"id": "GA_FPlayerNanYinChangeSkill_Success"
+				}
+			]
+		},
+		"stars": [
+			{
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "None"
+			},
+			{
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			}
+		],
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_atk",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "LP",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_hp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Krit",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_baoji",
+				"id": "CritAdded"
+			}
+		],
+		"id": "nanyin_superpower"
+	},
 	"linghan_ice": {
 		"name": "Alabastertiger",
 		"description": "Mit einem Ärmelschwung und des Schwertes göttlichem Tanz, wer ergründet dieses Herzens Glanz?",
@@ -3509,7 +3664,7 @@
 				"need": "None"
 			},
 			{
-				"description": "Nach dem Abfeuern von **Frostklingen** wird der Frost-ANG des Wanderers um **10%** erhöht und Zielen in der Nähe wird für **30**Sek. jede Sekunde Schaden in Höhe von **80%** des ANG zugefügt.",
+				"description": "Nach dem Abfeuern von **Frostklingen** wird der Frost-ANG des Wanderers um **10%** erhöht und Zielen in der Nähe wird für **30**Sek. jede Sekunde Schaden in Höhe von **104%** des ANG zugefügt.",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -3525,7 +3680,7 @@
 				"need": "Linghan_ice_plasm"
 			},
 			{
-				"description": "Der Wanderer kann bis zu **4** **Frostklingen** erzeugen und der Basismultiplikator des Schadens von **Temperaturabfall** wird auf **360%** erhöht.\r\nWenn das Ziel das einzige ist, das innerhalb von **6**Sek. von **Temperaturabfall** betroffen ist, wird dem Ziel zusätzlich ein **Adersiegel** zugefügt, wodurch es um **30%** verlangsamt wird (nicht in der Apex-Liga oder gegen Bosse verfügbar). Wenn das Ziel während der Dauer von **Adersiegel** erneut Schaden durch **Frostklinge** erleidet, wird „Eisiger Ausbruch“ ausgelöst, was Fähigkeitsschaden in Höhe von **1700%** des ANG + **2%** der zu diesem Zeitpunkt bereits verlorenen LP des Ziels verursacht (der Schaden von „Eisiger Ausbruch“ ist nicht geringer als **2000%** und nicht höher als **2200%** des Frost-ANG des Wanderers). Anschließend werden die Effekte von **Adersiegel** und **Temperaturabfall** vom Ziel entfernt.",
+				"description": "Der Wanderer kann bis zu **4** **Frostklingen** erzeugen und der Basismultiplikator des Schadens von **Temperaturabfall** wird auf **468%** erhöht.\r\nWenn das Ziel das einzige ist, das innerhalb von **6**Sek. von **Temperaturabfall** betroffen ist, wird dem Ziel zusätzlich ein **Adersiegel** zugefügt, wodurch es um **30%** verlangsamt wird (nicht in der Apex-Liga oder gegen Bosse verfügbar). Wenn das Ziel während der Dauer von **Adersiegel** erneut Schaden durch **Frostklinge** erleidet, wird „Eisiger Ausbruch“ ausgelöst, was Fähigkeitsschaden in Höhe von **1700%** des ANG + **2%** der zu diesem Zeitpunkt verlorenen LP des Ziels verursacht (der Schaden von „Eisiger Ausbruch“ ist nicht geringer als **2000%** und nicht höher als **2200%** des Frost-ANG des Wanderers). Anschließend werden die Effekte von **Adersiegel** und **Temperaturabfall** vom Ziel entfernt.",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -3549,7 +3704,7 @@
 				"need": "Linghan_ice_plasm"
 			},
 			{
-				"description": "Nach dem Einsatz von **Frostklingen** wird der Effekt von **Temperaturabfall** auf ein Gebiet angewendet. Zudem fügt er Zielen in der Nähe zusätzlichen Schaden in Höhe von **990%** des ANG zu.",
+				"description": "Nach dem Einsatz von **Frostklingen** wird der Effekt von **Temperaturabfall** auf ein Gebiet angewendet. Zudem fügt er Zielen in der Nähe zusätzlichen Schaden in Höhe von **1170%** des ANG zu.",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -5739,7 +5894,7 @@
 		},
 		"stars": [
 			{
-				"description": "**Flammenresonanz**: Erhöht den Flammen-ANG um **20%** und den Flammenwiderstand um **40%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n**Flammenexplosion: Schneller Hieb**: Wenn **Endlose Blüte** ausgerüstet ist, fügen Treffer mit Entladungsfähigkeiten beliebiger Waffen Zielen in der Nähe anfänglichen Schaden in Höhe von **37.5%** des Flammen-ANG + **0.5%** der max. LP des Wanderers + **18.75%** der Summe aller Widerstandsarten des Wanderers + **68.75%** des krit. Schadens zu. Nach Kampfbeginn wird der Schaden des nächsten schnellen Hiebs alle **0,5** Sekunden zusätzlich um das **1**-fache erhöht, bis zu einem Maximum von **30**-mal. Falls „Schneller Hieb“ mehrmals Schaden verursacht, wird der höchste anfängliche Wert für die Berechnung verwendet. Der Schaden von „Flammenexplosion: Schneller Hieb“ zählt als Entladungsfähigkeitsschaden. Wenn **1** Frost-/Volt-/physische Waffe jeglicher Art ausgerüstet ist, wird der Schaden von „Flammenexplosion“ um das **1.3**-fache erhöht. Außerdem wird der Schaden von „Flammenexplosion“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+				"description": "**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden.\r\n**Flammenexplosion: Schneller Hieb**: Wenn **Endlose Blüte** ausgerüstet ist, fügen Treffer mit Entladungsfähigkeiten beliebiger Waffen Zielen in der Nähe anfänglichen Schaden in Höhe von **37.5%** des Flammen-ANG + **0.5%** der max. LP des Wanderers + **18.75%** der Summe aller Widerstandsarten des Wanderers + **68.75%** des krit. Schadens zu. Nach Kampfbeginn wird der Schaden des nächsten schnellen Hiebs alle **0,5** Sekunden zusätzlich um das **1**-fache erhöht, bis zu einem Maximum von **30**-mal. Falls „Schneller Hieb“ mehrmals Schaden verursacht, wird der höchste anfängliche Wert für die Berechnung verwendet. Der Schaden von „Flammenexplosion: Schneller Hieb“ zählt als Entladungsfähigkeitsschaden. Wenn **1** Frost-/Volt-/physische Waffe jeglicher Art ausgerüstet ist, wird der Schaden von „Flammenexplosion“ um das **1.3**-fache erhöht. Außerdem wird der Schaden von „Flammenexplosion“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5747,7 +5902,7 @@
 				"need": "None"
 			},
 			{
-				"description": "Der Basismultiplikator des Schadens von **Flammendes Herz** wird auf **120%** des ANG erhöht. Wenn der Wanderer im Kampfstatus mehrere „Verbrennen“-Effekte auslöst, wird der Basismultiplikator des Schadens von **Flammendes Herz** zusätzlich auf den höchsten Multiplikatoreffekt erhöht.",
+				"description": "Der Basismultiplikator des Schadens von **Flammendes Herz** wird auf **60%** des ANG erhöht. Wenn der Wanderer im Kampfstatus mehrere „Verbrennen“-Effekte auslöst, wird der Basismultiplikator des Schadens von **Flammendes Herz** zusätzlich auf den höchsten Multiplikatoreffekt erhöht.",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5779,7 +5934,7 @@
 				"need": "feise_fire_plasm"
 			},
 			{
-				"description": "Pro **1** **Fei Ses Trugbild** oder **Lotusblütenblatt** im **Wunderwerk** wird der Schaden von **Flammendes Herz** zusätzlich um **15%** erhöht.\r\nDer Ausdauerverbrauch von **Lotus-Apsara** wird um **75%** gesenkt.",
+				"description": "Pro **1** **Fei Ses Trugbild** oder **Lotusblütenblatt** im **Wunderwerk** wird der Schaden von **Flammendes Herz** zusätzlich um **12%** erhöht.\r\nDer Ausdauerverbrauch von **Lotus-Apsara** wird um **75%** gesenkt.",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5787,7 +5942,7 @@
 				"need": "feise_fire_plasm"
 			},
 			{
-				"description": "Der Basismultiplikator für den Schaden durch **Seelenschwere** wird auf **900%** des ANG erhöht, Zertrümmern wird verdoppelt und es besteht eine Chance von **15%**, nach einem Treffer für **2** Sek. eine Verzögerung von **65%** zuzufügen (gegen Bosse im Teamspiel unwirksam und nicht in der Apex-Liga verfügbar).",
+				"description": "Der Basismultiplikator für den Schaden durch **Seelenschwere** wird auf **270%** des ANG erhöht, Zertrümmern wird verdoppelt und es besteht eine Chance von **15%**, nach einem Treffer für **2** Sek. eine Verzögerung von **65%** zuzufügen (gegen Bosse im Teamspiel unwirksam und nicht in der Apex-Liga verfügbar).",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
