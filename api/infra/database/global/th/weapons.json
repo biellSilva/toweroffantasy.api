@@ -3405,6 +3405,192 @@
 		],
 		"id": "mimi_thunder"
 	},
+	"nanyin_superpower": {
+		"name": "Purple Bamboo",
+		"description": "Purple Bamboo uses music and rhythm to utilize field energy for combat. After the Hendeca County Calamity, when Nan Yin reappeared, her flute also carried terrifying Darkness energy. Whenever Nan Yin played it, countless lives would be turned into dark wretches and fall under its control.",
+		"assets": {
+			"icon": "/Game/Resources/Icon/weapon/Icon/item_Weapon_SSR_Nanyin",
+			"WeaponIconForMatrix": "/Game/Resources/Icon/weapon/icon_yizhi/yizhi_SSR_Nanyin"
+		},
+		"rarity": "SSR",
+		"element": "Superpower",
+		"weaponType": "Nanyin",
+		"wc": "DPS",
+		"avatar": "imitation_49",
+		"mats": {
+			"Item_breakthrough_A1": 28,
+			"Item_breakthrough_B1": 28,
+			"Item_breakthrough_C1": 26,
+			"Item_breakthrough_D1": 26,
+			"Item_breakthrough_A2": 50,
+			"Item_breakthrough_B2": 50,
+			"Item_breakthrough_C2": 50,
+			"Item_breakthrough_D2": 50,
+			"Item_breakthrough_A3": 26,
+			"Item_breakthrough_B3": 26,
+			"Item_breakthrough_C3": 26,
+			"Item_breakthrough_D3": 26
+		},
+		"advanceID": "Nanyin_superpower_ssr_star",
+		"skills": {
+			"normals": [
+				{
+					"name": "Range Resonance",
+					"description": "While on the ground, use normal attack to attack 5 times in a row.\r\nFirst Attack: Deal damage equal to **60%** of ATK plus **360**.\r\nSecond Attack: Deal damage equal to **84%** of ATK plus **504**.\r\nThird Attack: Deal damage equal to **86%** of ATK plus **516**.\r\nFourth Attack: Deal damage equal to **143%** of ATK plus **858**.\r\nFifth Attack: Deal damage equal to **820%** of ATK plus **4920**.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_melee",
+					"id": "GA_FPlayerNanYinMelee_Melee"
+				},
+				{
+					"name": "Omni Resonance",
+					"description": "While airborne, use normal attack to launch 5 attacks in a row in mid-air, consuming endurance.\r\nFirst Attack: Deal damage equal to **60%** of ATK plus **360**.\r\nSecond Attack: Deal damage equal to **88%** of ATK plus **528**.\r\nThird Attack: Deal damage equal to **86%** of ATK plus **516**.\r\nFourth Attack: Deal damage equal to **138%** of ATK plus **828**.\r\nFifth Attack: Deal damage equal to **780%** of ATK plus **4680**.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattack",
+					"id": "GA_FPlayerNanYinMelee_AirAttack"
+				},
+				{
+					"name": "Darkshadow Blast",
+					"description": "While on the ground, tap and hold normal attack when using the first/second/third/fourth normal attack to trigger Darkshadow Blast and consume endurance.\r\nLaunch an attack ahead, dealing damage equal to **148%** of ATK plus **888** / **295%** of ATK plus **1770** / **443%** of ATK plus **2658** to nearby targets and suspending them.\r\nAfter triggering Darkshadow Blast, tap and hold normal attack to trigger Rift Surge.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_meleebranch1",
+					"id": "GA_FPlayerNanYinMelee_MeleeBranch1"
+				},
+				{
+					"name": "Rift Surge",
+					"description": "After triggering Darkshadow Blast, tap and hold normal attack to trigger Rift Surge and consume endurance.\r\nLaunch an attack ahead, dealing damage up to **806%** of ATK plus **4836** to nearby targets and suspending them.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_meleebranch2",
+					"id": "GA_FPlayerNanYinMelee_MeleeBranch2"
+				},
+				{
+					"name": "Darkshadow Burst",
+					"description": "While airborne, tap and hold normal attack when using the first/second/third/fourth normal attack to trigger Darkshadow Burst and consume endurance.\r\nLaunch an attack ahead, dealing damage equal to **155%** of ATK plus **930** / **310%** of ATK plus **1860** / **465%** of ATK plus **2790** to nearby targets and suspending them.\r\nAfter triggering Darkshadow Burst, tap and hold normal attack to trigger Rift Eruption.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattackbranch1",
+					"id": "GA_FPlayerNanYinMelee_AirAttackBranch1"
+				},
+				{
+					"name": "Rift Eruption",
+					"description": "While on the ground, after triggering Darkshadow Burst, tap and hold normal attack to trigger Rift Eruption and consume endurance.\r\nLaunch an attack ahead, dealing damage equal to **871%** of ATK plus **5226** to nearby targets and suspending them.\r\nDamage varies based on the duration normal attack is held, up to a maximum of 1.5 times damage.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattackbranch2",
+					"id": "GA_FPlayerNanYinMelee_AirAttackBranch2"
+				},
+				{
+					"name": "Void Abyss Current",
+					"description": "While on the ground, tap and hold normal attack to create an abyss current at the current location. Tap the mark on the map to transmit to that location, or to change the settings for that abyss current. Up to **2** abyss currents may be created.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_powerattack",
+					"id": "GA_FPlayerNanYinMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerNanYinEvade_Evade"
+				},
+				{
+					"name": "Vortex Field",
+					"description": "Use normal attack during the short period after dodging to trigger Vortex Field.\r\nCreate Dark Matter at the target location, dealing damage equal to **180%** of ATK plus **1080** to nearby targets. When nearby targets come close to the Dark Matter, a Vortex Field will form and draw them in.\r\nWhen the Wanderer passes by the Vortex Field, gain Dimensional Guard for **15** seconds, blocking damage from the locked-on target **1** time (no more than **300%** of the Wanderer's Max HP). Dimensional Guard can only be triggered **1** time every **15** seconds.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_evadeattack",
+					"id": "GA_FPlayerNanYinEvade_EvadeAttack"
+				},
+				{
+					"name": "Butterfly Dance",
+					"description": "While in **team play**, after dodging with Purple Bamboo, summon **1** butterfly that follows the Wanderer for **60** seconds.\r\nAfter activating Attack Resonance or Balance Resonance, the butterfly flies around the locked-on target and creates a composition with its trails, dealing damage equal to **300%** of ATK to targets that pass through it.\r\nAfter activating Fortitude Resonance, place a **65%** delay on targets that pass through the composition for **2** seconds, and grant a shield equal to **10%** of the Wanderer's Max HP to the Wanderer and teammates for **15** seconds when they pass through the composition. This effect can occur up to **1** time per second, stacking up to **2** times.\r\nAfter activating Benediction Resonance, consume the butterfly to immediately help up a knocked-down teammate.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_evadebeidong",
+					"id": "GA_FPlayerNanYinEvade_Beidong"
+				}
+			],
+			"skill": [
+				{
+					"name": "Hyperdimensional Field",
+					"description": "Activate Hyperdimensional Field, gaining temporary invincibility, dealing damage equal to **650%** of ATK plus **3900** to nearby targets, and placing a **65%** delay for **3** seconds on the targets (ineffective against bosses in team play). At the same time, the **Void Trace** on the field immediately executes its skill. Cooldown: **60** seconds.\r\nAscend into the air and generate a field, placing nearby targets into a High-Dimensional Space that lasts up to **60** seconds, during which the Wanderer gains hyperbody, and Purple Bamboo's damage dealt to targets in the High-Dimensional Space ignores shields.\r\nThe High-Dimensional Space gains energy equal to **2** plus **number of targets within the Space** every second, and triggers Dimensional Collapse at **45** energy, dealing damage equal to (**0.1%** of the total damage dealt by the Wanderer (excluding Void Trace) in the Space plus **1200%** of ATK). This damage counts as passive damage and is the base multiplier. It is affected by damage boost. The High-Dimensional Space fades after **4** Dimensional Collapses.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_skill",
+					"id": "GA_FPlayerNanYinSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Confining Tune",
+					"description": "When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and create chains from another dimension to bind the target upon switching to this weapon, delaying them by **65%** for **3** seconds (ineffective against bosses in team play), dealing damage equal to **1660%** of ATK plus **9959** to nearby targets, and becoming immune to damage for **1.5** seconds (unavailable in Apex League).\r\n\r\n**Passive: Void Trace**\r\nConfining Tune creates **1** Void Trace that launches coordinated attacks at the current locked-on target. Only **1** Void Trace may be active, and it fades after **20** seconds when not in combat.\r\nFor every **1** weapon of a different element or altered weapon equipped, increase Void Trace's damage dealt by **10%**. Void Trace's damage is also not affected by damage boosts, except for Inhabit, Confining Tune, and rare stats on titan equipment, and won't trigger additional attack effects.\r\nHold dodge when wielding **Purple Bamboo** to trigger Possession (unavailable in Apex League) and Possess Void Trace, gaining the ability to control its movements. During Possession, Coordinated Void becomes Void Trace's normal attack and skills.\r\nWhile under Possession, Void Trace enters Rampage state, increasing speed, damage reduction, shatter, and weapon charge by **50%**. Its normal attack and its skill damage increase by the same percentage as its Max HP lost at the time.\r\n**Coordinated Void**: A periodic coordinated attack from Void Trace, dealing damage equal to **165% to 300%** of Void Trace's ATK.\r\n**Void Halo**: Deal damage equal to **100%** of Void Trace's ATK every second to nearby targets.\r\n**Void Attack**: Tap normal attack to launch 4 consecutive attacks, each dealing damage equal to **240% to 385%** of Void Trace's ATK.\r\n**Void Skill**: Consume **25%** of Void Trace's Max HP and deal damage equal to **1870% to 2040%** of Void Trace's ATK, increasing Void Trace's Crit Rate by **30%** for **60** seconds.\r\n**Void Relief**: Can be triggered when Void Trace takes lethal damage, when the Wanderer equips or unequips Purple Bamboo, or when holding dodge during Possession.\r\n\r\n**Passive: Dark Wretch**\r\nWhen switching to Purple Bamboo from other weapons, Confining Tune will grant additional effects based on the element of the weapon.\r\n**Frost**: Summon Darkness: Alabaster Elite and deal area damage equal to **500%** of ATK. Also, gain a shield equal to **60%** of Max HP for **30** seconds (unavailable in Apex League). Create a hail storm by the locked-on target, dealing damage equal to **420%** of ATK to nearby targets every second for **15** seconds. Counts as normal attack damage.\r\n**Flame**: Summon Black Crow Dark Wretch and deal area damage equal to **500%** of ATK. Burn nearby targets, dealing damage equal to **240%** of ATK. Counts as passive damage.\r\n**Volt**: Summon Longxiang Dark Wretch and deal damage equal to **500%** of ATK. When not under Possession, consume **5%** of Void Trace's Max HP every second and deal **50%** of the value as damage to nearby targets. Counts as normal attack damage (unavailable in Apex League).\r\n**Physical**: Summon Darkness: Hornmane and deal area damage equal to **500%** of ATK. Gain sweeping for **30** seconds, dealing additional damage equal to **80%** of ATK to nearby targets on a critical hit. Counts as normal attack damage. Can only be triggered **1** time every **0.85** seconds.\r\n**Altered**: Summon Darkness: Taotie and deal area damage equal to **525%** of ATK. Void Trace inherits an additional **100%** of the Wanderer's ATK. Deal additional damage equal to **2000%** of Void Trace's ATK to nearby targets during Void Relief. Counts as skill damage.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_changeskill",
+					"id": "GA_FPlayerNanYinChangeSkill_Success"
+				}
+			]
+		},
+		"stars": [
+			{
+				"description": "**The Final Tune**: Increase ATK by **30%**. Activate by equipping **3** altered weapons. This set effect works in the off-hand slot.\r\n**Imbue**: After switching to Purple Bamboo from another weapon, Purple Bamboo's damage element becomes that of the previous weapon.\r\n**Inhabit**: The power of the Darkness is able to Inhabit any unlocked weapon. When Purple Bamboo is not deployed, the power of the Darkness can Inhabit any other weapon, increasing its damage dealt by **1%**. When Purple Bamboo is deployed, the power of the Darkness Inhabits Purple Bamboo, increasing the Wanderer's damage dealt by **15%**.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "None"
+			},
+			{
+				"description": "For every **1** star gained by the Darkness-Inhabited weapon, increase Inhabit's damage boost by an additional **1%**.\r\nDimensional Collapse deals increased damage equal to (**0.1%** of total actual damage dealt in High-Dimensional Space by the Wanderer (excluding Void Trace) plus **2,400%** of ATK) (counts as base multiplier, affected by damage boost).",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **16%**",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "Void Trace inherits an additional **50%** of the Wanderer's ATK. When taking lethal damage while not under Possession, instead of being defeated, consume Void Trace and become immune to damage 1 time for a short period of time. This effect can only be triggered 1 time every **60** seconds, and has a lower priority when similar effects are present. This set effect works in the off-hand slot.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **32%**",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "While in High-Dimensional Space, ignore **20%** of the target's resistances.\r\nUp to **3** Void Abyss Currents can now be created.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "Dimensional Collapse now deals damage equal to (**0.4%** of total actual damage dealt in High-Dimensional Space by the Wanderer (excluding Void Trace) plus **2,400%** of ATK) (counts as base multiplier, affected by damage boost).",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			}
+		],
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_atk",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_hp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "คริติคอล",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_baoji",
+				"id": "CritAdded"
+			}
+		],
+		"id": "nanyin_superpower"
+	},
 	"linghan_ice": {
 		"name": "อลาบาสเตอร์ไทเกอร์",
 		"description": "ในยามที่กวัดแกว่งกระบี่ ใครเล่าจะรู้ถึงจิตใจที่แท้จริง",
@@ -3501,7 +3687,7 @@
 		},
 		"stars": [
 			{
-				"description": "**เรโซแนนซ์น้ำแข็ง**: เปิดใช้งานเมื่อติดตั้งอาวุธน้ำแข็ง **2** ชิ้นขึ้นไป จะเพิ่ม ATK น้ำแข็ง **15%** และค่าต้านทานน้ำแข็ง **25%** จะแสดงผลทันทีเมื่อติดตั้ง เอฟเฟกต์ประเภทเดียวกันจะไม่สามารถซ้อนทับกันได้\r\n**เยือกเย็น: ปล่อยมือ**: หลังจากปล่อย**ปราณกระบี่: เงาลับน้ำแข็ง** ทุกวินาทีจะสร้างดาเมจเท่ากับ **70%** ของ ATK น้ำแข็ง + **10%** ของ HP สูงสุดของตัวเอง + **36%** ของผลรวมของค่าต้านทานทุกธาตุ + **135%** ของค่าดาเมจคริติคอลต่อเป้าหมายที่โจมตีโดน เป็นเวลา **30** วินาที ดาเมจปล่อยมือหลายครั้งจะไม่ซ้อนทับกัน และดาเมจเยือกเย็นถือเป็นดาเมจสกิล หากติดตั้งอาวุธธาตุไฟฟ้า/ไฟ/กายภาพ **1** ชิ้น ดาเมจเยือกเย็นจะเพิ่มขึ้น **1.3** เท่า นอกจากนี้ ดาเมจเยือกเย็นจะไม่ได้รับผลกระทบเพิ่มเติมจากเอฟเฟกต์เพิ่มดาเมจของค่าสถานะหายากจากอุปกรณ์ไททัน และจะไม่ปล่อยเอฟเฟกต์โจมตีเพิ่มเติมด้วย",
+				"description": "**เรโซแนนซ์น้ำแข็ง**: เปิดใช้งานเมื่อติดตั้งอาวุธน้ำแข็ง **2** ชิ้นขึ้นไป จะเพิ่ม ATK น้ำแข็ง **15%** และค่าต้านทานน้ำแข็ง **25%** เอฟเฟกต์เซตนี้ยังมีผลในช่องมือรองด้วย (ไม่สามารถซ้อนทับกับเรโซแนนซ์น้ำแข็งหรือปฏิกิริยาน้ำแข็งอื่นได้ ซึ่งเรโซแนนซ์น้ำแข็งจะมีผลก่อน)\r\n**เยือกเย็น: ปล่อยมือ**: หลังจากปล่อย**ปราณกระบี่: เงาลับน้ำแข็ง** ทุกวินาทีจะสร้างดาเมจเท่ากับ **70%** ของ ATK น้ำแข็ง + **10%** ของ HP สูงสุดของตัวเอง + **36%** ของผลรวมของค่าต้านทานทุกธาตุ + **135%** ของค่าดาเมจคริติคอลต่อเป้าหมายที่โจมตีโดน เป็นเวลา **30** วินาที ดาเมจปล่อยมือหลายครั้งจะไม่ซ้อนทับกัน และดาเมจเยือกเย็นถือเป็นดาเมจสกิล หากติดตั้งอาวุธธาตุไฟฟ้า/ไฟ/กายภาพ **1** ชิ้น ดาเมจเยือกเย็นจะเพิ่มขึ้น **1.3** เท่า นอกจากนี้ ดาเมจเยือกเย็นจะไม่ได้รับผลกระทบเพิ่มเติมจากเอฟเฟกต์เพิ่มดาเมจของค่าสถานะหายากจากอุปกรณ์ไททัน และจะไม่ปล่อยเอฟเฟกต์โจมตีเพิ่มเติมด้วย",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -3509,7 +3695,7 @@
 				"need": "None"
 			},
 			{
-				"description": "หลังจากเรียกใช้**กระบี่เยือกเย็น** จะเพิ่ม ATK น้ำแข็ง **10%** ทุกวินาทีจะสร้างดาเมจ **80%** ของ ATK ใส่เป้าหมายใกล้เคียง เป็นเวลา**30** วินาที",
+				"description": "หลังจากเรียกใช้**กระบี่เยือกเย็น** จะเพิ่ม ATK น้ำแข็ง **10%** ทุกวินาทีจะสร้างดาเมจ **104%** ของ ATK ใส่เป้าหมายใกล้เคียง เป็นเวลา**30** วินาที",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -3525,7 +3711,7 @@
 				"need": "Linghan_ice_plasm"
 			},
 			{
-				"description": "จำนวนสูงสุดของ**กระบี่เยือกเย็น**ที่สร้างจะเพิ่มขึ้นถึง **4** ด้าม และตัวคูณพื้นฐานของดาเมจ**ลดอุณหภูมิ**จะเพิ่มขึ้น **360%** \r\nหากมีเพียงตัวเป้าหมายเองที่ได้รับผลกระทบจากเอฟเฟกต์**อุณหภูมิลดลง**ภายใน **6** วินาที จะเพิ่มเอฟเฟกต์**ผนึกชีพจร**ใส่เป้าหมายเพิ่มเติม ทำให้ความเร็วจะลดลง **30%** (ไม่มีผลในลีกแข่งยอดฝีมือและบอส) หากเป้าหมายได้รับดาเมจ**กระบี่เยือกเย็น**อีกครั้งในช่วง**ผนึกชีพจร** จะปล่อยระเบิดน้ำแข็ง เพื่อสร้างดาเมจสกิล **1700%** ของ ATK + **2%** ของค่า HP ที่เสียไปของเป้าหมาย (ดาเมจระเบิดน้ำแข็งจะไม่ต่ำกว่า **2000%** ของ ATK น้ำแข็งของผู้เล่น และจะไม่สูงกว่า **2200%** ของ ATK น้ำแข็งของผู้เล่น) พร้อมทั้งล้าง**ผนึกชีพจร**และเอฟเฟกต์**ลดอุณหภูมิ**จากตัวเป้าหมาย",
+				"description": "จำนวนสูงสุดของ**กระบี่เยือกเย็น**ที่สร้างจะเพิ่มขึ้นถึง **4** ด้าม และตัวคูณพื้นฐานของดาเมจ**ลดอุณหภูมิ**จะเพิ่มขึ้น **468%** \r\nหากมีเพียงตัวเป้าหมายเองที่ได้รับผลกระทบจากเอฟเฟกต์**อุณหภูมิลดลง**ภายใน **6** วินาที จะเพิ่มเอฟเฟกต์**ผนึกชีพจร**ใส่เป้าหมายเพิ่มเติม ทำให้ความเร็วจะลดลง **30%** (ไม่มีผลในลีกแข่งยอดฝีมือและบอส) หากเป้าหมายได้รับดาเมจ**กระบี่เยือกเย็น**อีกครั้งในช่วง**ผนึกชีพจร** จะปล่อยระเบิดน้ำแข็ง เพื่อสร้างดาเมจสกิล **1700%** ของ ATK + **2%** ของค่า HP ที่เสียไปของเป้าหมาย (ดาเมจระเบิดน้ำแข็งจะไม่ต่ำกว่า **2000%** ของ ATK น้ำแข็งของผู้เล่น และจะไม่สูงกว่า **2200%** ของ ATK น้ำแข็งของผู้เล่น) พร้อมทั้งล้าง**ผนึกชีพจร**และเอฟเฟกต์**ลดอุณหภูมิ**จากตัวเป้าหมาย",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -3549,7 +3735,7 @@
 				"need": "Linghan_ice_plasm"
 			},
 			{
-				"description": "เอฟเฟกต์**ลดอุณหภูมิ**ที่เพิ่มจากการปล่อย**กระบี่เยือกเย็น** จะเปลี่ยนเป็นการเพิ่มขอบเขต และสร้างดาเมจเพิ่มเติม **990%** ของ ATK ใส่เป้าหมายใกล้เคียง",
+				"description": "เอฟเฟกต์**ลดอุณหภูมิ**ที่เพิ่มจากการปล่อย**กระบี่เยือกเย็น** จะเปลี่ยนเป็นการเพิ่มขอบเขต และสร้างดาเมจเพิ่มเติม **1170%** ของ ATK ใส่เป้าหมายใกล้เคียง",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -5739,7 +5925,7 @@
 		},
 		"stars": [
 			{
-				"description": "**เรโซแนนซ์ไฟ**: ติดตั้งอาวุธธาตุไฟ **2** ชิ้นขึ้นไปเพื่อเปิดใช้งาน จะเพิ่ม ATK ไฟ **20%** และค่าต้านทานไฟ **40%** เอฟเฟกต์เซตนี้ยังมีผลในช่องมือรองด้วย (ไม่สามารถซ้อนทับกับเรโซแนนซ์ไฟหรือปฏิกิริยาไฟอื่นได้ ซึ่งเรโซแนนซ์ไฟจะมีผลก่อน)\r\n**เปลวไฟปะทุ: ตัดฉับพลัน**: เมื่อติดตั้ง**เอนเลสบลูม** หลังจากสกิลคอมโบอาวุธใดโดนเป้าหมาย จะสร้างดาเมจแรกใส่เป้าหมายใกล้เคียงเท่ากับ **37.5%** ของ ATK ไฟ + **0.5%** ของ HP สูงสุดของตัวเอง + **18.75%** ของผลรวมของค่าต้านทานทุกธาตุ + **68.75%** ของค่าดาเมจคริติคอล เมื่ออยู่ในสถานะต่อสู้ทุก **0.5** วินาที ดาเมจรวดเร็วครั้งต่อไปจะเพิ่มขึ้น **1** เท่า สูงสุด **30** ครั้ง เมื่อมีดาเมจตัดฉับพลันหลายครั้ง จะคำนวณด้วยค่าเริ่มต้นสูงสุด ดาเมจเปลวไฟปะทุ: ตัดฉับพลันถือเป็นดาเมจคอมโบ หากติดตั้งอาวุธธาตุน้ำแข็ง/ไฟฟ้า/กายภาพ **1** ชิ้น ดาเมจเปลวไฟปะทุจะเพิ่มขึ้น **1.3** เท่า นอกจากนี้ ดาเมจเปลวไฟปะทุจะไม่ได้รับผลกระทบเพิ่มเติมจากเอฟเฟกต์เพิ่มดาเมจของค่าสถานะหายากของอุปกรณ์ไททัน และจะไม่ปล่อยเอฟเฟกต์โจมตีเพิ่มเติมด้วย",
+				"description": "**เรโซแนนซ์ไฟ**: ติดตั้งอาวุธธาตุไฟ **2** ชิ้นขึ้นไปเพื่อเปิดใช้งาน จะเพิ่ม ATK ไฟ **15%** และค่าต้านทานไฟ **25%** เอฟเฟกต์เซตนี้ยังมีผลในช่องมือรองด้วย และเอฟเฟกต์ประเภทเดียวกันจะไม่สามารถซ้อนทับกันได้\r\n**เปลวไฟปะทุ: ตัดฉับพลัน**: เมื่อติดตั้ง**เอนเลสบลูม** หลังจากสกิลคอมโบอาวุธใดโดนเป้าหมาย จะสร้างดาเมจแรกใส่เป้าหมายใกล้เคียงเท่ากับ **37.5%** ของ ATK ไฟ + **0.5%** ของ HP สูงสุดของตัวเอง + **18.75%** ของผลรวมของค่าต้านทานทุกธาตุ + **68.75%** ของค่าดาเมจคริติคอล เมื่ออยู่ในสถานะต่อสู้ทุก **0.5** วินาทีในสถานะต่อสู้ ดาเมจรวดเร็วครั้งต่อไปจะเพิ่มขึ้น **1** เท่า สูงสุด **30** ครั้ง เมื่อมีดาเมจตัดฉับพลันหลายครั้ง จะคำนวณด้วยค่าเริ่มต้นสูงสุด ดาเมจเปลวไฟปะทุ: ตัดฉับพลันถือเป็นดาเมจคอมโบ หากติดตั้งอาวุธธาตุน้ำแข็ง/ไฟฟ้า/กายภาพ **1** ชิ้น ดาเมจเปลวไฟปะทุจะเพิ่มขึ้น **1.3** เท่า นอกจากนี้ ดาเมจเปลวไฟปะทุจะไม่ได้รับผลกระทบเพิ่มเติมจากเอฟเฟกต์เพิ่มดาเมจของค่าสถานะหายากของอุปกรณ์ไททัน และจะไม่ปล่อยเอฟเฟกต์โจมตีเพิ่มเติมด้วย",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5747,7 +5933,7 @@
 				"need": "None"
 			},
 			{
-				"description": "ตัวคูณพื้นฐานของดาเมจ**หัวใจอัคคี** จะเพิ่มขึ้นถึง **120%** ของ ATK เมื่ออยู่ในสถานะต่อสู้ ถ้าตนเองติดสถานะเผาไหม้หลายครั้ง ตัวคูณพื้นฐานของดาเมจ**หัวใจอัคคี** จะเพิ่มขึ้นเพิ่มเติมจนถึงตัวคูณพื้นฐานสูงสุด",
+				"description": "ตัวคูณพื้นฐานของดาเมจ**หัวใจอัคคี** จะเพิ่มขึ้นถึง **60%** ของ ATK เมื่ออยู่ในสถานะต่อสู้ ถ้าตนเองติดสถานะเผาไหม้หลายครั้ง ตัวคูณพื้นฐานของดาเมจ**หัวใจอัคคี** จะเพิ่มขึ้นเพิ่มเติมจนถึงตัวคูณพื้นฐานสูงสุด",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5779,7 +5965,7 @@
 				"need": "feise_fire_plasm"
 			},
 			{
-				"description": "เมื่อใน**มิราจ**มี**แฟนตาเซียเฟยเซ่อ**หรือ**กลีบบัว**ทุก **1** อัน ดาเมจ**หัวใจอัคคี**จะเพิ่มขึ้นเพิ่มเติม **15%**\r\nและพลังกายที่ใช้ในการปลดปล่อย**ก้าวย่างหอมฟุ้งโบยบิน**จะลดลง **75%**",
+				"description": "เมื่อใน**มิราจ**มี**แฟนตาเซียเฟยเซ่อ**หรือ**กลีบบัว**ทุก **1** อัน ดาเมจ**หัวใจอัคคี**จะเพิ่มขึ้นเพิ่มเติม **12%**\r\nและพลังกายที่ใช้ในการปลดปล่อย**ก้าวย่างหอมฟุ้งโบยบิน**จะลดลง **75%**",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5787,7 +5973,7 @@
 				"need": "feise_fire_plasm"
 			},
 			{
-				"description": "ตัวคูณพื้นฐานของดาเมจ**หัวใจสึกกร่อน** จะเพิ่มขึ้นถึง **900%** ของ ATK โดยประสิทธิภาพการทำลายโล่จะเพิ่มเป็นสองเท่า อีกทั้งเมื่อโจมตีโดนเป้าหมาย มีโอกาส **15%** ที่จะเพิ่มเอฟเฟกต์เชื่องช้า **65%** เป็นเวลา **2** วินาที (ไม่มีผลกับบอสในการเล่นเป็นทีม ไม่มีผลในลีกแข่งยอดฝีมือ)",
+				"description": "ตัวคูณพื้นฐานของดาเมจ**หัวใจสึกกร่อน** จะเพิ่มขึ้นถึง **270%** ของ ATK โดยประสิทธิภาพการทำลายโล่จะเพิ่มเป็นสองเท่า อีกทั้งเมื่อโจมตีโดนเป้าหมาย มีโอกาส **15%** ที่จะเพิ่มเอฟเฟกต์เชื่องช้า **65%** เป็นเวลา **2** วินาที (ไม่มีผลกับบอสในการเล่นเป็นทีม ไม่มีผลในลีกแข่งยอดฝีมือ)",
 				"stats": {
 					"shatter": 14,
 					"charge": 12

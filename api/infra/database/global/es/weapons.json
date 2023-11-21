@@ -3405,6 +3405,192 @@
 		],
 		"id": "mimi_thunder"
 	},
+	"nanyin_superpower": {
+		"name": "Purple Bamboo",
+		"description": "Purple Bamboo uses music and rhythm to utilize field energy for combat. After the Hendeca County Calamity, when Nan Yin reappeared, her flute also carried terrifying Darkness energy. Whenever Nan Yin played it, countless lives would be turned into dark wretches and fall under its control.",
+		"assets": {
+			"icon": "/Game/Resources/Icon/weapon/Icon/item_Weapon_SSR_Nanyin",
+			"WeaponIconForMatrix": "/Game/Resources/Icon/weapon/icon_yizhi/yizhi_SSR_Nanyin"
+		},
+		"rarity": "SSR",
+		"element": "Superpower",
+		"weaponType": "Nanyin",
+		"wc": "DPS",
+		"avatar": "imitation_49",
+		"mats": {
+			"Item_breakthrough_A1": 28,
+			"Item_breakthrough_B1": 28,
+			"Item_breakthrough_C1": 26,
+			"Item_breakthrough_D1": 26,
+			"Item_breakthrough_A2": 50,
+			"Item_breakthrough_B2": 50,
+			"Item_breakthrough_C2": 50,
+			"Item_breakthrough_D2": 50,
+			"Item_breakthrough_A3": 26,
+			"Item_breakthrough_B3": 26,
+			"Item_breakthrough_C3": 26,
+			"Item_breakthrough_D3": 26
+		},
+		"advanceID": "Nanyin_superpower_ssr_star",
+		"skills": {
+			"normals": [
+				{
+					"name": "Range Resonance",
+					"description": "While on the ground, use normal attack to attack 5 times in a row.\r\nFirst Attack: Deal damage equal to **60%** of ATK plus **360**.\r\nSecond Attack: Deal damage equal to **84%** of ATK plus **504**.\r\nThird Attack: Deal damage equal to **86%** of ATK plus **516**.\r\nFourth Attack: Deal damage equal to **143%** of ATK plus **858**.\r\nFifth Attack: Deal damage equal to **820%** of ATK plus **4920**.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_melee",
+					"id": "GA_FPlayerNanYinMelee_Melee"
+				},
+				{
+					"name": "Omni Resonance",
+					"description": "While airborne, use normal attack to launch 5 attacks in a row in mid-air, consuming endurance.\r\nFirst Attack: Deal damage equal to **60%** of ATK plus **360**.\r\nSecond Attack: Deal damage equal to **88%** of ATK plus **528**.\r\nThird Attack: Deal damage equal to **86%** of ATK plus **516**.\r\nFourth Attack: Deal damage equal to **138%** of ATK plus **828**.\r\nFifth Attack: Deal damage equal to **780%** of ATK plus **4680**.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattack",
+					"id": "GA_FPlayerNanYinMelee_AirAttack"
+				},
+				{
+					"name": "Darkshadow Blast",
+					"description": "While on the ground, tap and hold normal attack when using the first/second/third/fourth normal attack to trigger Darkshadow Blast and consume endurance.\r\nLaunch an attack ahead, dealing damage equal to **148%** of ATK plus **888** / **295%** of ATK plus **1770** / **443%** of ATK plus **2658** to nearby targets and suspending them.\r\nAfter triggering Darkshadow Blast, tap and hold normal attack to trigger Rift Surge.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_meleebranch1",
+					"id": "GA_FPlayerNanYinMelee_MeleeBranch1"
+				},
+				{
+					"name": "Rift Surge",
+					"description": "After triggering Darkshadow Blast, tap and hold normal attack to trigger Rift Surge and consume endurance.\r\nLaunch an attack ahead, dealing damage up to **806%** of ATK plus **4836** to nearby targets and suspending them.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_meleebranch2",
+					"id": "GA_FPlayerNanYinMelee_MeleeBranch2"
+				},
+				{
+					"name": "Darkshadow Burst",
+					"description": "While airborne, tap and hold normal attack when using the first/second/third/fourth normal attack to trigger Darkshadow Burst and consume endurance.\r\nLaunch an attack ahead, dealing damage equal to **155%** of ATK plus **930** / **310%** of ATK plus **1860** / **465%** of ATK plus **2790** to nearby targets and suspending them.\r\nAfter triggering Darkshadow Burst, tap and hold normal attack to trigger Rift Eruption.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattackbranch1",
+					"id": "GA_FPlayerNanYinMelee_AirAttackBranch1"
+				},
+				{
+					"name": "Rift Eruption",
+					"description": "While on the ground, after triggering Darkshadow Burst, tap and hold normal attack to trigger Rift Eruption and consume endurance.\r\nLaunch an attack ahead, dealing damage equal to **871%** of ATK plus **5226** to nearby targets and suspending them.\r\nDamage varies based on the duration normal attack is held, up to a maximum of 1.5 times damage.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_airattackbranch2",
+					"id": "GA_FPlayerNanYinMelee_AirAttackBranch2"
+				},
+				{
+					"name": "Void Abyss Current",
+					"description": "While on the ground, tap and hold normal attack to create an abyss current at the current location. Tap the mark on the map to transmit to that location, or to change the settings for that abyss current. Up to **2** abyss currents may be created.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_powerattack",
+					"id": "GA_FPlayerNanYinMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerNanYinEvade_Evade"
+				},
+				{
+					"name": "Vortex Field",
+					"description": "Use normal attack during the short period after dodging to trigger Vortex Field.\r\nCreate Dark Matter at the target location, dealing damage equal to **180%** of ATK plus **1080** to nearby targets. When nearby targets come close to the Dark Matter, a Vortex Field will form and draw them in.\r\nWhen the Wanderer passes by the Vortex Field, gain Dimensional Guard for **15** seconds, blocking damage from the locked-on target **1** time (no more than **300%** of the Wanderer's Max HP). Dimensional Guard can only be triggered **1** time every **15** seconds.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_evadeattack",
+					"id": "GA_FPlayerNanYinEvade_EvadeAttack"
+				},
+				{
+					"name": "Butterfly Dance",
+					"description": "While in **team play**, after dodging with Purple Bamboo, summon **1** butterfly that follows the Wanderer for **60** seconds.\r\nAfter activating Attack Resonance or Balance Resonance, the butterfly flies around the locked-on target and creates a composition with its trails, dealing damage equal to **300%** of ATK to targets that pass through it.\r\nAfter activating Fortitude Resonance, place a **65%** delay on targets that pass through the composition for **2** seconds, and grant a shield equal to **10%** of the Wanderer's Max HP to the Wanderer and teammates for **15** seconds when they pass through the composition. This effect can occur up to **1** time per second, stacking up to **2** times.\r\nAfter activating Benediction Resonance, consume the butterfly to immediately help up a knocked-down teammate.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_evadebeidong",
+					"id": "GA_FPlayerNanYinEvade_Beidong"
+				}
+			],
+			"skill": [
+				{
+					"name": "Hyperdimensional Field",
+					"description": "Activate Hyperdimensional Field, gaining temporary invincibility, dealing damage equal to **650%** of ATK plus **3900** to nearby targets, and placing a **65%** delay for **3** seconds on the targets (ineffective against bosses in team play). At the same time, the **Void Trace** on the field immediately executes its skill. Cooldown: **60** seconds.\r\nAscend into the air and generate a field, placing nearby targets into a High-Dimensional Space that lasts up to **60** seconds, during which the Wanderer gains hyperbody, and Purple Bamboo's damage dealt to targets in the High-Dimensional Space ignores shields.\r\nThe High-Dimensional Space gains energy equal to **2** plus **number of targets within the Space** every second, and triggers Dimensional Collapse at **45** energy, dealing damage equal to (**0.1%** of the total damage dealt by the Wanderer (excluding Void Trace) in the Space plus **1200%** of ATK). This damage counts as passive damage and is the base multiplier. It is affected by damage boost. The High-Dimensional Space fades after **4** Dimensional Collapses.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_skill",
+					"id": "GA_FPlayerNanYinSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Confining Tune",
+					"description": "When **weapon charge** is full or **Phantasia** is triggered, **remove all debuffs from the wielder** and create chains from another dimension to bind the target upon switching to this weapon, delaying them by **65%** for **3** seconds (ineffective against bosses in team play), dealing damage equal to **1660%** of ATK plus **9959** to nearby targets, and becoming immune to damage for **1.5** seconds (unavailable in Apex League).\r\n\r\n**Passive: Void Trace**\r\nConfining Tune creates **1** Void Trace that launches coordinated attacks at the current locked-on target. Only **1** Void Trace may be active, and it fades after **20** seconds when not in combat.\r\nFor every **1** weapon of a different element or altered weapon equipped, increase Void Trace's damage dealt by **10%**. Void Trace's damage is also not affected by damage boosts, except for Inhabit, Confining Tune, and rare stats on titan equipment, and won't trigger additional attack effects.\r\nHold dodge when wielding **Purple Bamboo** to trigger Possession (unavailable in Apex League) and Possess Void Trace, gaining the ability to control its movements. During Possession, Coordinated Void becomes Void Trace's normal attack and skills.\r\nWhile under Possession, Void Trace enters Rampage state, increasing speed, damage reduction, shatter, and weapon charge by **50%**. Its normal attack and its skill damage increase by the same percentage as its Max HP lost at the time.\r\n**Coordinated Void**: A periodic coordinated attack from Void Trace, dealing damage equal to **165% to 300%** of Void Trace's ATK.\r\n**Void Halo**: Deal damage equal to **100%** of Void Trace's ATK every second to nearby targets.\r\n**Void Attack**: Tap normal attack to launch 4 consecutive attacks, each dealing damage equal to **240% to 385%** of Void Trace's ATK.\r\n**Void Skill**: Consume **25%** of Void Trace's Max HP and deal damage equal to **1870% to 2040%** of Void Trace's ATK, increasing Void Trace's Crit Rate by **30%** for **60** seconds.\r\n**Void Relief**: Can be triggered when Void Trace takes lethal damage, when the Wanderer equips or unequips Purple Bamboo, or when holding dodge during Possession.\r\n\r\n**Passive: Dark Wretch**\r\nWhen switching to Purple Bamboo from other weapons, Confining Tune will grant additional effects based on the element of the weapon.\r\n**Frost**: Summon Darkness: Alabaster Elite and deal area damage equal to **500%** of ATK. Also, gain a shield equal to **60%** of Max HP for **30** seconds (unavailable in Apex League). Create a hail storm by the locked-on target, dealing damage equal to **420%** of ATK to nearby targets every second for **15** seconds. Counts as normal attack damage.\r\n**Flame**: Summon Black Crow Dark Wretch and deal area damage equal to **500%** of ATK. Burn nearby targets, dealing damage equal to **240%** of ATK. Counts as passive damage.\r\n**Volt**: Summon Longxiang Dark Wretch and deal damage equal to **500%** of ATK. When not under Possession, consume **5%** of Void Trace's Max HP every second and deal **50%** of the value as damage to nearby targets. Counts as normal attack damage (unavailable in Apex League).\r\n**Physical**: Summon Darkness: Hornmane and deal area damage equal to **500%** of ATK. Gain sweeping for **30** seconds, dealing additional damage equal to **80%** of ATK to nearby targets on a critical hit. Counts as normal attack damage. Can only be triggered **1** time every **0.85** seconds.\r\n**Altered**: Summon Darkness: Taotie and deal area damage equal to **525%** of ATK. Void Trace inherits an additional **100%** of the Wanderer's ATK. Deal additional damage equal to **2000%** of Void Trace's ATK to nearby targets during Void Relief. Counts as skill damage.",
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_nanyin_changeskill",
+					"id": "GA_FPlayerNanYinChangeSkill_Success"
+				}
+			]
+		},
+		"stars": [
+			{
+				"description": "**The Final Tune**: Increase ATK by **30%**. Activate by equipping **3** altered weapons. This set effect works in the off-hand slot.\r\n**Imbue**: After switching to Purple Bamboo from another weapon, Purple Bamboo's damage element becomes that of the previous weapon.\r\n**Inhabit**: The power of the Darkness is able to Inhabit any unlocked weapon. When Purple Bamboo is not deployed, the power of the Darkness can Inhabit any other weapon, increasing its damage dealt by **1%**. When Purple Bamboo is deployed, the power of the Darkness Inhabits Purple Bamboo, increasing the Wanderer's damage dealt by **15%**.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "None"
+			},
+			{
+				"description": "For every **1** star gained by the Darkness-Inhabited weapon, increase Inhabit's damage boost by an additional **1%**.\r\nDimensional Collapse deals increased damage equal to (**0.1%** of total actual damage dealt in High-Dimensional Space by the Wanderer (excluding Void Trace) plus **2,400%** of ATK) (counts as base multiplier, affected by damage boost).",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "Aumenta el crecimiento de ATQ base del arma actual un **16%**.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "Void Trace inherits an additional **50%** of the Wanderer's ATK. When taking lethal damage while not under Possession, instead of being defeated, consume Void Trace and become immune to damage 1 time for a short period of time. This effect can only be triggered 1 time every **60** seconds, and has a lower priority when similar effects are present. This set effect works in the off-hand slot.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "Aumenta el crecimiento de ATQ base del arma actual un **32%**.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "While in High-Dimensional Space, ignore **20%** of the target's resistances.\r\nUp to **3** Void Abyss Currents can now be created.",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			},
+			{
+				"description": "Dimensional Collapse now deals damage equal to (**0.4%** of total actual damage dealt in High-Dimensional Space by the Wanderer (excluding Void Trace) plus **2,400%** of ATK) (counts as base multiplier, affected by damage boost).",
+				"stats": {
+					"shatter": 12,
+					"charge": 12
+				},
+				"need": "Nanyin_superpower_plasm"
+			}
+		],
+		"stats": [
+			{
+				"name": "Ataque",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_atk",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "PS",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_hp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Crít",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_baoji",
+				"id": "CritAdded"
+			}
+		],
+		"id": "nanyin_superpower"
+	},
 	"linghan_ice": {
 		"name": "Tigre de Alabastro",
 		"description": "Con una floritura de prestidigitación y una danza divina de espadas, ¿quién podrá explorar las profundidades de este corazón mío?",
@@ -3451,13 +3637,13 @@
 				},
 				{
 					"name": "Arte de Espada: Caída de Escarcha",
-					"description": "Pulsa y mantén pulsado tu ataque normal en el aire (pulsa cuando haya un objetivo disponible), o utiliza tu ataque normal mientras escalas, saltas hacia atrás o utilizas tu propulsor para activar Arte de Espada: Caída de Escarcha.\r\nMientras caes, infliges daño igual a **75%** del ATQ más **450** cada vez que impactas al objetivo. Al aterrizar, infliges daño igual a **366.7%** del ATQ más **2200** a los objetivos cercanos.",
+					"description": "Pulsa y mantén pulsado tu ataque normal en el aire (pulsa cuando haya un objetivo disponible), o utiliza tu ataque normal mientras escalas, saltas hacia atrás o utilizas tu propulsor para activar Arte de Espada: Caída de Escarcha.\r\nMientras caes, infliges daño igual a **75%** del ATQ más **450** cada vez que impactas a un objetivo. Al aterrizar, infliges daño igual a **366.7%** del ATQ más **2200** a los objetivos cercanos.",
 					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_jumpattack",
 					"id": "GA_FPlayerLinghanMelee_JumpAttack"
 				},
 				{
 					"name": "Pasos Ligeros",
-					"description": "Mientras estás en el aire tras un salto doble, pulsa salto para activar Pasos Ligeros. Te desplazas brevemente hacia arriba antes de planear. Mientras estás en el aire, puedes usar Pasos Ligeros hasta **2** veces.\r\nMientras estás en tierra, Pasos Ligeros recupera **1** intento de uso cada **10**seg (al cambiar de área, cambiar arma o desequipar **Tigre de Alabastro**, se restablecerán los intentos de uso).",
+					"description": "Mientras estás en el aire tras un salto doble, pulsa salto para activar Pasos Ligeros. Te desplazas brevemente hacia arriba antes de planear hacia abajo. Mientras estás en el aire, puedes usar Pasos Ligeros hasta **2** veces.\r\nMientras estás en tierra, Pasos Ligeros recupera **1** intento de uso cada **10**seg (al cambiar de área o desequipar **Tigre de Alabastro**, se restablecerán los intentos de uso).",
 					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_qinggong",
 					"id": "GA_FPlayerLinghanMelee_QingGong"
 				}
@@ -3485,7 +3671,7 @@
 			"skill": [
 				{
 					"name": "Arte de Espada: Hielo Oscuro",
-					"description": "Infliges daño igual a **370.2%** del ATQ más **2221** a los objetivos cercanos y los atraes. Luego, formas un Conjunto de Espadas para invocar una fuerte lluvia de espadas y **congelar con fuerza** a los objetivos (no disponible en la Liga Ápex ni contra jefes) durante **4**seg. Enfriamiento: **30**seg.\r\nDespués de usar Arte de Espada: Hielo Oscuro, emites un **Aire frío** que inflige daño igual a **68%** del ATQ a los objetivos cercanos cada segundo y reduce la velocidad de los objetivos un **30%** (no disponible en la Liga Ápex ni contra jefes).\r\nDespués de ejecutar completamente Arte de Espada: Hielo Oscuro creas una gran cantidad de **Cuchillas de Hielo** que disparan **1** cuchilla cada **7.5**seg al objetivo actualmente fijado; esto inflige daño igual a **360%** de tu ATQ y le aplica **Reducción de Temperatura** al objetivo. Puede haber hasta **3** **Cuchillas de Hielo** creadas inicialmente, y todas las cuchillas se eliminarán si no estás en estado de combate.\r\n**Reducción de Temperatura**: Infliges daño igual a **240%** del ATQ cada **3**seg a los objetivos cercanos durante **12**seg.",
+					"description": "Infliges daño igual a **370.2%** del ATQ más **2221** a los objetivos cercanos y los atraes. A continuación, formas un Conjunto de Espadas para invocar un aluvión de acero, además de **congelar con fuerza** a los objetivos durante **4**seg (no disponible en la Liga Ápex ni contra jefes). Enfriamiento: **30**seg.\r\nDespués de usar Arte de Espada: Hielo Oscuro, emites un **Aire frío** que inflige daño igual a **68%** del ATQ a los objetivos cercanos cada segundo y reduce la velocidad de los objetivos un **30%** (no disponible en la Liga Ápex ni contra jefes). Al mismo tiempo, aumenta tu daño de escarcha un **8%** durante **35**seg.\r\nDespués de ejecutar completamente Arte de Espada: Hielo Oscuro, creas una gran cantidad de **Cuchillas de Hielo** que disparan **1** cuchilla cada **7.5**seg al objetivo actualmente fijado; esto inflige daño igual a **360%** de tu ATQ y le aplica **Reducción de Temperatura** al objetivo. Puede haber hasta **3** **Cuchillas de Hielo** creadas inicialmente, y todas las cuchillas se eliminarán si no estás en estado de combate.\r\n**Reducción de Temperatura**: Infliges daño igual a **240%** del ATQ cada **3**seg a los objetivos cercanos durante **12**seg.",
 					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_linghan_skill",
 					"id": "GA_FPlayerLinghanSkill_Skill"
 				}
@@ -3509,7 +3695,7 @@
 				"need": "None"
 			},
 			{
-				"description": "Tras lanzar **Cuchilla de Hielo**, aumenta tu ATQ de escarcha un **10%** y los objetivos cercanos recibirán daño igual a **80%** del ATQ cada segundo durante **30**seg.",
+				"description": "Tras lanzar **Cuchillas de Escarcha**, aumenta tu ATQ de escarcha un **10%** y los objetivos cercanos recibirán daño igual a **104%** del ATQ cada segundo durante **30**seg.",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -3525,7 +3711,7 @@
 				"need": "Linghan_ice_plasm"
 			},
 			{
-				"description": "Puedes producir hasta **4** **Cuchillas de Hielo**, y el multiplicador base del daño de **Reducción de Temperatura** aumenta a **360%**.\r\nSi tu objetivo es el único afectado por **Reducción de Temperatura**, dentro de **6**seg le aplicas adicionalmente **Sello de Vena**, lo que reduce su velocidad un **30%** (no disponible en la Liga Ápex ni contra jefes). Si el objetivo vuelve a recibir daño de **Cuchilla de Hielo** durante el **Sello de Vena**, desencadena Estallido Gélido, lo que inflige daño de habilidad igual a **1700%** del ATQ más **2%** de los PS ya perdidos del objetivo en ese momento (el daño de Estallido Gélido no será inferior a **2000%** del ATQ de escarcha del nómada ni superior a **2200%** del ATQ de escarcha del nómada). A continuación, elimina los efectos de **Sello de Vena** y **Reducción de Temperatura** en el objetivo.",
+				"description": "Puedes producir hasta **4** **Cuchillas de Hielo**, y el multiplicador base del daño de **Reducción de Temperatura** aumenta a **468%**.\r\nSi tu objetivo es el único afectado por **Reducción de Temperatura**, dentro de **6**seg le aplicas adicionalmente **Sello de Vena**, lo que reduce su velocidad un **30%** (no disponible en la Liga Ápex ni contra jefes). Si el objetivo vuelve a recibir daño de **Cuchilla de Hielo** durante **Sello de Vena**, desencadenas Estallido Gélido, lo que inflige daño de habilidad igual a **1700%** del ATQ más **2%** de los PS del objetivo perdidos en ese momento (el daño de Estallido Gélido no será inferior a **2000%** de tu ATQ de escarcha ni superior a **2200%** de tu ATQ de escarcha). A continuación, elimina los efectos de **Sello de Vena** y **Reducción de Temperatura** en el objetivo.",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -3549,7 +3735,7 @@
 				"need": "Linghan_ice_plasm"
 			},
 			{
-				"description": "El efecto de **Reducción de Temperatura** infligido después de disparar **Cuchillas de Hielo** ahora se aplica a un área y también inflige daño adicional igual a **990%** del ATQ a los objetivos cercanos.",
+				"description": "El efecto de **Reducción de Temperatura** infligido después de disparar **Cuchillas de Hielo** ahora se aplica a un área y también inflige daño adicional igual a **1170%** del ATQ a los objetivos cercanos.",
 				"stats": {
 					"shatter": 16,
 					"charge": 8
@@ -5703,7 +5889,7 @@
 				},
 				{
 					"name": "Dispersión",
-					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Dispersión Floral, lo que inflige daño igual a **209%** del ATQ más **1254** a los objetivos cercanos.\r\n\r\nDurante el **Espejismo Ilusorio** creado por **Remolino**, después de que el primer ataque de evasión con cualquier arma logre un impacto por primera vez, Injerto de Flores se activa, lo que crea una Phantasia de FeiSe y Pétalos de Loto.\r\n**Phantasia de FeiSe**: Al crearse, la Phantasia de FeiSe copia **25%** del ATQ máx. del objetivo y lo convierte en **ATQ de fuego base** para ti (no puede ser inferior a **3300** ni superior a **3450**; este ATQ de fuego no se reflejará en tus estadísticas y no está disponible en la Liga Ápex) hasta que la Phantasia de FeiSe desaparezca. Se calcula independientemente para cada Phantasia de FeiSe. Solo puede haber **1** Phantasia de FeiSe a la vez.\r\n**Pétalo de Loto**: Al crearse, el recuento de Pétalos de Loto es igual al número de invocaciones creadas por tus armas que no sean Floración Interminable. Tras la creación, el recuento de Pétalos de Loto no cambia con el número de invocaciones. Los Pétalos de Loto se consideran invocaciones.",
+					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Dispersión Floral, lo que inflige daño igual a **209%** del ATQ más **1254** a los objetivos cercanos.\r\n\r\nDurante el **Espejismo Ilusorio** creado por **Remolino**, después de que el primer ataque de evasión con cualquier arma logre un impacto, Injerto de Flores se activa, lo que crea una Phantasia de FeiSe y Pétalos de Loto.\r\n**Phantasia de FeiSe**: Al crearse, la Phantasia de FeiSe copia **25%** del ATQ máx. del objetivo y lo convierte en **ATQ de fuego base** para ti (no puede ser inferior a **3300** ni superior a **3450**; este ATQ de fuego no se reflejará en tus estadísticas y no está disponible en la Liga Ápex) hasta que la Phantasia de FeiSe desaparezca. Se calcula independientemente para cada Phantasia de FeiSe. Solo puede haber **1** Phantasia de FeiSe a la vez.\r\n**Pétalo de Loto**: Al crearse, el recuento de Pétalos de Loto es igual al número de invocaciones creadas por tus armas que no sean Floración Interminable. Tras la creación, el recuento de Pétalos de Loto no cambia con el número de invocaciones. Los Pétalos de Loto se consideran invocaciones.",
 					"icon": "/Game/Resources/Icon/skill/WeaponSkill/feise_evadefront",
 					"id": "GA_FPlayerFeiseEvade_ForwardAttack"
 				},
@@ -5739,7 +5925,7 @@
 		},
 		"stars": [
 			{
-				"description": "**Resonancia de Fuego**: Aumenta el ATQ de fuego un **20%** y la resistencia al fuego un **40%**. Se activa equipando **2** o más armas de fuego. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia de Fuego o Reacción al Fuego; Resonancia de Fuego tiene prioridad.\r\n**Explosión Ardiente: Corte Veloz**: Cuando **Floración Interminable** está equipada, al impactar con cualquier habilidad de descarga de arma, inflige un daño inicial a los objetivos cercanos igual a **37.5%** del ATQ de fuego, más **0.5%** de los PS Máx. del nómada, más **18.75%** de la suma de todos los tipos de resistencias del nómada, más **68.75%** del crítico. Mientras estés en combate y cada **0.5**seg, el daño del siguiente Corte Veloz aumentará **1** vez adicional, hasta un máximo de **30** veces. Cuando existen múltiples instancias de daño de Corte Veloz, se usará el valor inicial más alto para el cálculo. Explosión Ardiente: El daño de Corte Veloz cuenta como daño de habilidades de descarga. Si tienes **1** arma de escarcha/éléctrica/física de cualquier tipo equipada, multiplica el daño de Explosión Ardiente por **1.3**. Además, el daño de Explosión Ardiente no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales",
+				"description": "**Resonancia de Fuego**: Aumenta el ATQ de fuego un **15%** y la resistencia al fuego un **25%**. Se activa equipando **2** o más armas de fuego. Este efecto de set funciona en la ranura secundaria. No se puede acumular con efectos del mismo tipo.\r\n**Explosión Ardiente: Corte Veloz**: Cuando **Floración Interminable** está equipada, al impactar con cualquier habilidad de descarga de arma, infliges daño inicial contra los objetivos cercanos igual a la suma de: **37.5%** de tu ATQ de fuego, **0.5%** de tus PS Máx., **18.75%** de todas tus resistencias y **68.75%** de tu crítico. Mientras estés en combate y cada **0.5**seg, el daño del siguiente Corte Veloz aumentará **1** vez adicional, hasta un máximo de **30** veces. Cuando existen múltiples instancias de daño de Corte Veloz, se usará el valor inicial más alto para el cálculo. Explosión Ardiente: El daño de Corte Veloz cuenta como daño de habilidades de descarga. Si tienes **1** arma de escarcha/eléctrica/física de cualquier tipo equipada, aumentas el daño de Explosión Ardiente **1.3** veces. Además, el daño de Explosión Ardiente no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales.",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5747,7 +5933,7 @@
 				"need": "None"
 			},
 			{
-				"description": "Aumenta el multiplicador base del daño de **Corazón Resplandeciente** a **120%** del ATQ. En estado de combate, si el nómada inflige múltiples efectos de quemadura, el multiplicador base del daño de **Corazón Resplandeciente** se incrementa adicionalmente al del efecto multiplicador más alto.",
+				"description": "Aumenta el multiplicador base del daño de **Corazón Resplandeciente** a **60%** del ATQ. En estado de combate, si infliges múltiples efectos de quemadura, el multiplicador base del daño por quemadura de **Corazón Resplandeciente** aumenta al del efecto multiplicador más alto.",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5779,7 +5965,7 @@
 				"need": "feise_fire_plasm"
 			},
 			{
-				"description": "Por cada **1** de **Phantasia de FeiSe** o **Pétalo de Loto** en el **Espejismo**, aumenta el daño de **Corazón Resplandeciente** un **15%** adicional.\r\nReduce el consumo de resistencia de **Loto Apsará** un **75%**.",
+				"description": "Por **cada** **Phantasia de FeiSe** o **Pétalo de Loto** en el **Espejismo**, aumenta el daño de **Corazón Resplandeciente** un **12%** adicional.\r\nReduce el consumo de resistencia de **Loto Apsará** un **75%**.",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
@@ -5787,7 +5973,7 @@
 				"need": "feise_fire_plasm"
 			},
 			{
-				"description": "El multiplicador base del daño de **Espiritormento** aumenta a **900%** del ATQ, la destrucción se duplica, y hay un **15%** de probabilidad de infligir un retraso del **65%** durante **2**seg tras asestar un golpe (no es eficaz contra jefes en partidas en equipo; no está disponible en la Liga Ápex).",
+				"description": "Aumenta el multiplicador base del daño de **Espiritormento** a **270%** de tu ATQ; duplica la destrucción y, al lograr un impacto, tienes un **15%** de probabilidad de infligir un retraso del **65%** durante **2**seg (ineficaz contra jefes en partidas en equipo y no está disponible en la Liga Ápex).",
 				"stats": {
 					"shatter": 14,
 					"charge": 12
