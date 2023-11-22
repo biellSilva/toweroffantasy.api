@@ -33,5 +33,5 @@ class Weapon(EntityBase):
     weaponEffects: list[WeaponEffect]
     skills: Skills
     advancements: list[Advancements] = Field(alias='stars', serialization_alias='advancements') 
-    banners: list[Banner]
+    banners: list[Banner] = []
     meta: Meta | None = None
