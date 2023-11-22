@@ -53,6 +53,9 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
         Weapon
     '''
 
+    if version == 'china': # handling cn version
+        lang = LANGS_CN('cn')
+
     weapon = await WEAPON_REPO.get(EntityBase(id=id), lang, version)
 
     if include:
@@ -90,7 +93,11 @@ async def get_all_weapons(version: VERSIONS = VERSIONS('global'),
 
     '''
 
+    if version == 'china': # handling cn version
+        lang = LANGS_CN('cn')
+
     weapons = await WEAPON_REPO.get_all(lang, version)
+    
     if include:
         return PrettyJsonResponse([weapon.model_dump() for weapon in weapons])
 
