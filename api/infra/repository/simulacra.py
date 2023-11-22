@@ -59,8 +59,8 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                 value_dict['assets']['NamePicture'] = localized_asset(value_dict['assets']['NamePicture'], LANGS(lang))
                 value_dict['banners'] = [banner for banner in GB_BANNERS if banner.imitation_id and banner.imitation_id == key_id.lower()]
 
-                if LINK := self.GB_LINK.get(key_id.lower(), None):
-                    value_dict['matrixID'] = LINK.get('matrice', None)
+            if LINK := self.GB_LINK.get(key_id.lower(), None):
+                value_dict['matrixID'] = LINK.get('matrice', None)
 
             if value_dict.get('id', None):
                 self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict)})
