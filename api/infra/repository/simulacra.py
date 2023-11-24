@@ -23,7 +23,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                          class_base=SimulacraRepo,
                          repo_name='imitations')
         
-        self.GB_LINK: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/global/imitation_links.json').read_bytes())
+        self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
 
     async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Simulacra]:
         if version in self.class_base.cache:
@@ -59,8 +59,8 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                 value_dict['assets']['NamePicture'] = localized_asset(value_dict['assets']['NamePicture'], LANGS(lang))
                 value_dict['banners'] = [banner for banner in GB_BANNERS if banner.imitation_id and banner.imitation_id == key_id.lower()]
 
-                if LINK := self.GB_LINK.get(key_id.lower(), None):
-                    value_dict['matrixID'] = LINK.get('matrice', None)
+            if LINK := self.LINK_DATA.get(key_id.lower(), None):
+                value_dict['matrixID'] = LINK.get('matrice', None)
 
             if value_dict.get('id', None):
                 self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict)})

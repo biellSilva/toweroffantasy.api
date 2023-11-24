@@ -23,6 +23,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                          model=Weapon, 
                          class_base=WeaponRepo,
                          repo_name='weapons')
+        
         self.META_GB: dict[str, dict[str, list[Any]]] = json.loads(Path('api/infra/database/global/meta.json').read_bytes())
     
     async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Weapon]:
@@ -52,9 +53,6 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
 
         for key_id, value_dict in DATA.items():
             weaponEffects: list[dict[str, str]] = []
-
-            if not 'dodge' in value_dict['skills']:
-                print(key_id)
 
             if stars := value_dict.get('stars', []):
                 if description := stars[0].get('description', None):

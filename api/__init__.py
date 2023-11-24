@@ -78,8 +78,9 @@ app.add_middleware(
 
 @app.middleware("http")
 @app.middleware("https")
-async def add_process_time_header(request: Request, call_next: Callable[[Request], Any]):
+async def process_request(request: Request, call_next: Callable[[Request], Any]):
     start_time = timer()
+    
     if 'asset' not in request.url.path:
         raw = request.scope["query_string"].decode('latin-1').lower()
         request.scope["query_string"] = raw.encode('latin-1')

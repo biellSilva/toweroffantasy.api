@@ -59,4 +59,4 @@ class BaseStats(BaseModel):
 
 class UpgradeMaterial(BaseModel):
     id: str
-    need: int
+    need: int | None
