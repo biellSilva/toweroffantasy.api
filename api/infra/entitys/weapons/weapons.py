@@ -1,24 +1,27 @@
 
-from pydantic import Field, BeforeValidator
+from pydantic import BeforeValidator
 from typing import Annotated
-
-from api.utils import classify_rework, material_rework
 
 from api.infra.entitys.base import EntityBase
 from api.infra.entitys.banners import Banner
+
+from api.utils import classify_rework
+
 from .extra import (
     ShatterOrCharge, 
     WeaponEffect, 
-    Advancements, 
-    Skills,
     Assets,
-    Meta,
+    MetaData,
     BaseStats,
-    UpgradeMaterial
+    FashionWeaponInfo,
+    MatrixSuit,
+    WeaponAdvancement,
+    WeaponAttacks
 )
 
 
 class Weapon(EntityBase):
+<<<<<<< Updated upstream
     name: str
     description: str
     rarity: str
@@ -35,3 +38,30 @@ class Weapon(EntityBase):
     advancements: list[Advancements] = Field(alias='stars', serialization_alias='advancements') 
     banners: list[Banner]
     meta: Meta | None = None
+=======
+    SimulacrumID: str | None
+    IsUpPoolWeapon: bool
+
+    Name: str
+    Rarity: str
+    Assets: Assets
+
+    Brief: str
+    WeaponCategory: str
+    WeaponElement: str
+    Description: str
+
+    Shatter: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    Charge: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+
+    FashionWeaponInfos: list[FashionWeaponInfo]
+    RecommendedMatrices: list[MatrixSuit]
+
+    WeaponEffects: list[WeaponEffect]
+
+    WeaponAdvancements: list[WeaponAdvancement]
+    WeaponAttacks: WeaponAttacks
+
+    Meta: MetaData | None = None
+    Banners: list[Banner] = []
+>>>>>>> Stashed changes

@@ -53,11 +53,16 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
         for key_id, value_dict in DATA.items():
             weaponEffects: list[dict[str, str]] = []
 
+<<<<<<< Updated upstream
             if not 'dodge' in value_dict['skills']:
                 print(key_id)
 
             if stars := value_dict.get('stars', []):
                 if description := stars[0].get('description', None):
+=======
+            if advancements := value_dict.get('WeaponAdvancements', []):
+                if description := advancements[0].get('Description', None):
+>>>>>>> Stashed changes
                     if '*:' in description:
                         weaponEffect = description.split('\r', 1)
 
@@ -68,30 +73,31 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                             weaponEffects.append({'title': key, 'description': value_})
 
                     else:
-                        if value_dict['name'].lower() == 'shadoweave':
+                        if value_dict['id'].lower() == 'fan_superpower':
                             weaponEffects.append({'title': 'Altered Damage', 'description': description.replace('\n', ' ').replace('\r', '')})
 
                         else:
                             weaponEffects.append({'title': 'Unknown', 'description': description.replace('\n', ' ').replace('\r', '')})
 
-            if len(value_dict['stars']) == 7:
-                value_dict['stars'].pop(0)
+            value_dict.update({
+                    'WeaponEffects': weaponEffects, 
+                    'Shatter': value_dict['WeaponAdvancements'][0]['Shatter'],
+                    'Charge': value_dict['WeaponAdvancements'][0]['Charge']
+                })
             
 
-            value_dict.update({
-                    'weaponEffects': weaponEffects, 
-                    'shatter': value_dict['stars'][0]['stats']['shatter'],
-                    'charge': value_dict['stars'][0]['stats']['charge']
-                })
+            if len(value_dict['WeaponAdvancements']) == 7:
+                value_dict['WeaponAdvancements'].pop(0)
+            
 
             if version == 'global':
-                value_dict['meta'] = self.META_GB.get(key_id.lower(), None)
-                value_dict['banners'] = [banner for banner in GB_BANNERS if banner.weapon_id and banner.weapon_id == key_id.lower()]
+                value_dict['Meta'] = self.META_GB.get(key_id.lower(), None)
+                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.weapon_id and banner.weapon_id == key_id.lower()]
 
             if value_dict.get('id', None):
-                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict)})
+                self.cache[version][lang].update({key_id.lower(): Weapon(**value_dict)})
             else:
-                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict, id=key_id)})
+                self.cache[version][lang].update({key_id.lower(): Weapon(**value_dict, id=key_id)})
 
         self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_weapons))}
 

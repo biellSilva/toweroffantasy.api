@@ -18,6 +18,8 @@ METADATA = {
     'description': 'Simulacra are the player\'s representation of the characters found in Tower of Fantasy \n\n **CONTAINS CN DATA**',
     }
 
+INCLUDE = {'id', 'Name', 'AssetsA0', 'WeaponId', 'MatrixId'}
+
 
 @router.get('/{id}', name='Get simulacrum', response_model=Simulacra)
 async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN, 

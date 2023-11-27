@@ -57,8 +57,13 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
             if version == 'global':
                 value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.imitation_id and banner.imitation_id == key_id.lower()]
 
+<<<<<<< Updated upstream
                 if LINK := self.GB_LINK.get(key_id.lower(), None):
                     value_dict['MatrixId'] = LINK.get('matrice', None)
+=======
+            if LINK := self.LINK_DATA.get(key_id.lower(), None):
+                value_dict['MatrixId'] = LINK.get('matrice', None)
+>>>>>>> Stashed changes
 
             if value_dict.get('id', None):
                 self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict)})
