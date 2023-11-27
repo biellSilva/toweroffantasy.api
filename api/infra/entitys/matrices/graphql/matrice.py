@@ -8,6 +8,7 @@ from .extra import MatriceSet, MatrixAssets
 @strawberry.type
 class Matrice:
     id: str
+    SimulacrumID: str | None
     name: str
     type: str
     description: str
