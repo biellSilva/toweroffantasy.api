@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 
 class Assets(BaseModel):
+    Avatar: str
     NamePicture: str
     Name2Picture: str
     Name3Picture: str

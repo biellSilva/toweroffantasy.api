@@ -4,6 +4,7 @@ import strawberry
 
 @strawberry.type
 class Assets:
+    Avatar: str
     NamePicture: str
     Name2Picture: str
     Name3Picture: str
