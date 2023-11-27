@@ -21,7 +21,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
         super().__init__(model_base=EntityBase, 
                          model=Simulacra, 
                          class_base=SimulacraRepo,
-                         repo_name='imitation')
+                         repo_name='imitations')
         
         self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
 
