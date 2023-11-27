@@ -146,8 +146,8 @@ def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
 
 def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
     if matrice.rarity == 'SSR':
-        if matrice.banners:
-            return -1, -matrice.banners[-1].bannerNo
+        if matrice.Banners:
+            return -1, -matrice.Banners[-1].bannerNo
         else:
             if matrice.id == 'matrix_ssr25' or matrice.id == 'matrix_ssr26':
                 return -1, -25.5
@@ -158,8 +158,8 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
                 return -1, 0
     
     elif matrice.rarity == 'SR':
-        if matrice.banners:
-            return 1, -matrice.banners[-1].bannerNo
+        if matrice.Banners:
+            return 1, -matrice.Banners[-1].bannerNo
         else:
             if matrice.id in MATRIX_SORT_ORDER:
                 return 1, MATRIX_SORT_ORDER.index(matrice.id)
@@ -167,8 +167,8 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
                 return 1, 0
     
     elif matrice.rarity == 'R':
-        if matrice.banners:
-            return 2, -matrice.banners[-1].bannerNo
+        if matrice.Banners:
+            return 2, -matrice.Banners[-1].bannerNo
         else:
             if matrice.id in MATRIX_SORT_ORDER:
                 return 2, MATRIX_SORT_ORDER.index(matrice.id)
@@ -176,8 +176,8 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
                 return 2, 0
 
     elif matrice.rarity == 'N':
-        if matrice.banners:
-            return 3, -matrice.banners[-1].bannerNo
+        if matrice.Banners:
+            return 3, -matrice.Banners[-1].bannerNo
         else:
             if matrice.id in MATRIX_SORT_ORDER:
                 return 3, MATRIX_SORT_ORDER.index(matrice.id)
