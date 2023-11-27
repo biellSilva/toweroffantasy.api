@@ -56,6 +56,9 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
         Simulacra
 
     '''
+
+    if version == 'china': # handling cn version
+        lang = LANGS_CN('cn')
     
     simulacra = await SIMU_REPO.get(EntityBase(id=id), lang, version=VERSIONS('global'))
 
@@ -93,6 +96,9 @@ async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'),
         List[Simulacra]
 
     '''
+
+    if version == 'china': # handling cn version
+        lang = LANGS_CN('cn')
     
     simulacras = await SIMU_REPO.get_all(lang=lang, version=VERSIONS('global'))
 

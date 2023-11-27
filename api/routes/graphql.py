@@ -49,12 +49,15 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
+        if version == 'china':
+            lang = 'cn'
+
         if id:
-            simulacrum = await SIMU_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            simulacrum = await SIMU_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return simulacrum # type: ignore
 
         elif name:
-            simulacrum = await SIMU_REPO.get_by_name(name=name, lang=LANGS(lang), version=VERSIONS(version))
+            simulacrum = await SIMU_REPO.get_by_name(name=name, lang=lang, version=VERSIONS(version))
             return simulacrum # type: ignore
         
         raise MissingArgument
@@ -64,7 +67,10 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
         
-        simulacra = await SIMU_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        if version == 'china':
+            lang = 'cn'
+        
+        simulacra = await SIMU_REPO.get_all(lang=lang, version=VERSIONS(version))
         return simulacra # type: ignore
         
 
@@ -72,7 +78,7 @@ class Query:
     async def get_simulacrum_v2(self, id: str | None = None, name: str | None = None, lang: str = 'en') -> SimulacraV2:
         version = 'global'
         check_params(lang=lang, version=version)
-
+        
         if id:
             simulacrum = await SIMU_V2_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
             return simulacrum # type: ignore
@@ -87,7 +93,7 @@ class Query:
     async def get_simulacra_v2(self, lang: str = 'en') -> List[SimulacraV2]:
         version = 'global'
         check_params(lang=lang, version=version)
-        
+                
         simulacra = await SIMU_V2_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
         return simulacra # type: ignore
         
@@ -96,6 +102,9 @@ class Query:
     async def get_weapon(self, id: str | None = None, name: str | None = None, lang: str = 'en') -> Weapon:
         version = 'global'
         check_params(lang=lang, version=version)
+        
+        if version == 'china':
+            lang = 'cn'
 
         if id:
             weapon = await WEAPON_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
@@ -112,7 +121,10 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        weapons = await WEAPON_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        if version == 'china':
+            lang = 'cn'
+        
+        weapons = await WEAPON_REPO.get_all(lang=lang, version=VERSIONS(version))
         return weapons # type: ignore
 
     @strawberry.field(name='matrix')
@@ -121,7 +133,7 @@ class Query:
         check_params(lang=lang, version=version)
 
         if id:
-            matrix = await MATRICE_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            matrix = await MATRICE_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return matrix # type: ignore
         
         elif name:
@@ -135,7 +147,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        matrix = await MATRICE_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        matrix = await MATRICE_REPO.get_all(lang=lang, version=VERSIONS(version))
         return matrix # type: ignore
     
     @strawberry.field(name='achievement')
@@ -144,7 +156,7 @@ class Query:
         check_params(lang=lang, version=version)
 
         if id:
-            achivement = await ACHIEV_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            achivement = await ACHIEV_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return achivement # type: ignore
         
         elif name:
@@ -158,7 +170,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        achivements = await ACHIEV_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        achivements = await ACHIEV_REPO.get_all(lang=lang, version=VERSIONS(version))
         return achivements # type: ignore
         
 
@@ -168,7 +180,7 @@ class Query:
         check_params(lang=lang, version=version)
 
         if id:
-            relic = await RELIC_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            relic = await RELIC_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return relic # type: ignore
         
         elif name:
@@ -182,7 +194,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        relics = await RELIC_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        relics = await RELIC_REPO.get_all(lang=lang, version=VERSIONS(version))
         return relics # type: ignore
     
     @strawberry.field(name='outfit')
@@ -191,7 +203,7 @@ class Query:
         check_params(lang=lang, version=version)
 
         if id:
-            outfit = await OUTFIT_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            outfit = await OUTFIT_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return outfit # type: ignore
         
         elif name:
@@ -205,7 +217,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        outfits = await OUTFIT_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        outfits = await OUTFIT_REPO.get_all(lang=lang, version=VERSIONS(version))
         return outfits # type: ignore
 
     @strawberry.field(name='servant')
@@ -214,7 +226,7 @@ class Query:
         check_params(lang=lang, version=version)
 
         if id:
-            servant = await SERVAN_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            servant = await SERVAN_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return servant # type: ignore
         
         elif name:
@@ -228,7 +240,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        servants = await SERVAN_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        servants = await SERVAN_REPO.get_all(lang=lang, version=VERSIONS(version))
         return servants # type: ignore
 
     @strawberry.field(name='mount')
@@ -237,7 +249,7 @@ class Query:
         check_params(lang=lang, version=version)
 
         if id:
-            mount = await MOUNTS_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            mount = await MOUNTS_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return mount # type: ignore
         
         elif name:
@@ -251,7 +263,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        mounts = await MOUNTS_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        mounts = await MOUNTS_REPO.get_all(lang=lang, version=VERSIONS(version))
         return mounts # type: ignore
         
 
@@ -261,7 +273,7 @@ class Query:
         check_params(lang=lang, version=version)
 
         if id:
-            food = await FOOD_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            food = await FOOD_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return food # type: ignore
         
         elif name:
@@ -275,7 +287,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        foods = await FOOD_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        foods = await FOOD_REPO.get_all(lang=lang, version=VERSIONS(version))
         return foods # type: ignore
         
 
@@ -285,7 +297,7 @@ class Query:
         check_params(lang=lang, version=version)
 
         if id:
-            item = await ITEM_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            item = await ITEM_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
             return item # type: ignore
         
         elif name:
@@ -299,7 +311,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        items = await ITEM_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        items = await ITEM_REPO.get_all(lang=lang, version=VERSIONS(version))
         return items # type: ignore
         
     
