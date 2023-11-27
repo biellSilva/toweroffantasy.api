@@ -7,7 +7,7 @@ __import__ = [
     app
 ]
 
-DEBUG = True
+DEBUG = False
 
 if __name__ == '__main__':
     if DEBUG:
