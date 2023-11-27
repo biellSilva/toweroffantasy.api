@@ -3,39 +3,38 @@ import strawberry
 
 
 @strawberry.type
+class Assets:
+    NamePicture: str
+    Name2Picture: str
+    Name3Picture: str
+    Painting: str
+    GrayPainting: str
+    ThumbPainting: str
+    WeaponShowPicture: str
+    HasGotAwakenEntrance: str
+    NotGotAwakenEntrance: str
+    AdvancePainting: str
+    AdvanceGrayPainting: str
+    TitlePicture: str
+    AwakenPhoto: str
+    DescPainting: str
+
+
+@strawberry.type
 class VoiceActors:
-    chinese:str | None 
-    japanese: str | None 
-    english: str | None 
-    korean: str | None 
-    portuguese: str | None 
+    Chinese: str | None
+    Japanese: str | None
+    English: str | None
+    Korean: str | None
+    Portuguese: str | None
 
 
 @strawberry.type
 class Awakening:
-    name: str
-    description: str
-
-
-@strawberry.type
-class Assets:
-    avatar: str | None 
-    artwork: str | None 
-    lotteryCard: str | None 
-    lotteryDrawing: str | None 
-    painting: str | None 
-    grayPainting: str | None 
-    namePicture: str | None
-    thumbPainting: str | None 
-    weaponPicture: str | None 
-    awakenEntrance: str | None 
-    grayAwakenEntrance: str | None
-    advancePainting: str | None
-    grayAdvancePainting: str | None
-    backPhoto: str | None
-    rarityIcon: str | None
-    bannerIcon: str | None
-
+    Need: int
+    Name: str
+    Description: str
+    Icon: str
 
 
 @strawberry.type

@@ -5,10 +5,12 @@ from api.infra.entitys.graphql.banner import Banner
 from api.infra.entitys.weapons.graphql.extra import (
     ShatterOrCharge, 
     WeaponEffect, 
-    Advancements, 
-    Skills,
+    WeaponAdvancement, 
+    WeaponAttacks,
     WeaponAssets,
-    Meta,
+    MetaData,
+    FashionWeaponInfo,
+    MatrixSuit,
     BaseStats,
     UpgradeMaterial,
 )
@@ -17,19 +19,28 @@ from api.infra.entitys.weapons.graphql.extra import (
 @strawberry.type
 class Weapon:
     id: str
-    name: str
-    description: str
-    rarity: str
-    type: str 
-    element: str
-    baseStats: list[BaseStats] 
-    assets: WeaponAssets
-    shatter: ShatterOrCharge
-    charge: ShatterOrCharge
-    advanceID: str | None 
-    upgradeMaterials: list[UpgradeMaterial]
-    weaponEffects: list[WeaponEffect]
-    skills: Skills
-    advancements: list[Advancements]
-    meta: Meta | None
-    banners: list[Banner]
+    SimulacrumID: str | None
+    IsUpPoolWeapon: bool
+
+    Name: str
+    Rarity: str
+    Assets: WeaponAssets
+
+    Brief: str
+    WeaponCategory: str
+    WeaponElement: str
+    Description: str
+
+    Shatter: ShatterOrCharge
+    Charge: ShatterOrCharge
+
+    FashionWeaponInfos: list[FashionWeaponInfo]
+    RecommendedMatrices: list[MatrixSuit]
+
+    WeaponEffects: list[WeaponEffect]
+
+    WeaponAdvancements: list[WeaponAdvancement]
+    WeaponAttacks: WeaponAttacks
+
+    Meta: MetaData | None
+    Banners: list[Banner]
