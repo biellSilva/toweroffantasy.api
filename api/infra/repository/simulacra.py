@@ -23,7 +23,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                          class_base=SimulacraRepo,
                          repo_name='imitation')
         
-        self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/global/imitation_links.json').read_bytes())
+        self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
 
     async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Simulacra]:
         if version in self.class_base.cache:
