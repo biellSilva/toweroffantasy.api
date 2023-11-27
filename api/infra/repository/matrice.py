@@ -60,7 +60,7 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                                                     sets=matrice_dict.pop('set'))
             
             if version == 'global':
-                matrice_dict['banners'] = [banner for banner in GB_BANNERS if banner.matrix_id and banner.matrix_id == matrice_id.lower()]
+                matrice_dict['Banners'] = [banner for banner in GB_BANNERS if banner.matrix_id and banner.matrix_id == matrice_id.lower()]
 
             self.cache[version][lang].update({matrice_id: Matrix(**matrice_dict)})
 
