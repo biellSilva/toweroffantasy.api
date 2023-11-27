@@ -14,4 +14,4 @@ class Matrice:
     assets: MatrixAssets
     rarity: str
     sets: list[MatriceSet]
-    banners: list[Banner]
+    Banners: list[Banner]

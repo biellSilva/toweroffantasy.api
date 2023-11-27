@@ -16,5 +16,5 @@ class Matrix(EntityBase):
     assets: MatrixAssets
     rarity: str
     sets: list[MatrixSet]
-    banners: list[Banner]
+    Banners: list[Banner]
 
