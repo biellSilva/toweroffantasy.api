@@ -21,7 +21,7 @@ INCLUDE = {'id', 'Name', 'Assets', 'WeaponCategory', 'Rarity', 'WeaponElement'}
 
 @router.get('/{id}', name='Get weapon', response_model=Weapon)
 async def get_weapon(id: WEAPONS | WEAPONS_CN, 
-                     version: VERSIONS = VERSIONS('global'), 
+                    #  version: VERSIONS = VERSIONS('global'), 
                      lang: LANGS | LANGS_CN = LANGS('en'), 
                      include: bool = True):
     '''
@@ -33,7 +33,7 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
             schema: WEAPONS | WEAPONS_CN
 
     **Query Params** \n
-        version:
+        version (DISABLED):
             type: str
             default: global
             desc: Game version
@@ -54,7 +54,7 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
         Weapon
     '''
 
-    weapon = await WEAPON_REPO.get(EntityBase(id=id), lang, version)
+    weapon = await WEAPON_REPO.get(EntityBase(id=id), lang, VERSIONS('global'))
 
     if include:
         return PrettyJsonResponse(weapon.model_dump())
@@ -64,12 +64,12 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
 
 
 @router.get(path='', name='All Weapons', response_model=list[Weapon])
-async def get_all_weapons(version: VERSIONS = VERSIONS('global'), 
+async def get_all_weapons(# version: VERSIONS = VERSIONS('global'), 
                           lang: LANGS | LANGS_CN = LANGS('en'), 
                           include: bool = False):
     '''
     **Query Params** \n
-        version:
+        version (DISABLED):
             type: str
             default: global
             desc: Game version
@@ -91,7 +91,7 @@ async def get_all_weapons(version: VERSIONS = VERSIONS('global'),
 
     '''
 
-    weapons = await WEAPON_REPO.get_all(lang, version)
+    weapons = await WEAPON_REPO.get_all(lang, version=VERSIONS('global'))
     if include:
         return PrettyJsonResponse([weapon.model_dump() for weapon in weapons])
 
