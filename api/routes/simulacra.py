@@ -10,7 +10,6 @@ from api.infra.repository import SimulacraRepo
 
 
 SIMU_REPO = SimulacraRepo()
-INCLUDE = {'id', 'Name', 'AssetsA0', 'WeaponId', 'MatrixId', 'Rarity'}
 
 router = APIRouter(prefix='/simulacra', tags=['Simulacra'])
 METADATA = {

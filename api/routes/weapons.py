@@ -60,7 +60,7 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
         return PrettyJsonResponse(weapon.model_dump())
 
     else:
-        return PrettyJsonResponse(weapon.model_dump(include={'name', 'id', 'assets', 'type', 'rarity', 'element'}))
+        return PrettyJsonResponse(weapon.model_dump(include=INCLUDE))
 
 
 @router.get(path='', name='All Weapons', response_model=list[Weapon])
@@ -96,4 +96,4 @@ async def get_all_weapons(version: VERSIONS = VERSIONS('global'),
         return PrettyJsonResponse([weapon.model_dump() for weapon in weapons])
 
     else:
-        return PrettyJsonResponse([weapon.model_dump(include={'name', 'id', 'assets', 'type', 'rarity', 'element'}) for weapon in weapons])
+        return PrettyJsonResponse([weapon.model_dump(include=INCLUDE) for weapon in weapons])

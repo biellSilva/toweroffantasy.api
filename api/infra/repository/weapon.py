@@ -53,16 +53,8 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
         for key_id, value_dict in DATA.items():
             weaponEffects: list[dict[str, str]] = []
 
-<<<<<<< Updated upstream
-            if not 'dodge' in value_dict['skills']:
-                print(key_id)
-
-            if stars := value_dict.get('stars', []):
-                if description := stars[0].get('description', None):
-=======
             if advancements := value_dict.get('WeaponAdvancements', []):
                 if description := advancements[0].get('Description', None):
->>>>>>> Stashed changes
                     if '*:' in description:
                         weaponEffect = description.split('\r', 1)
 
