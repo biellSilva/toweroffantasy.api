@@ -1,42 +1,75 @@
 
-from pydantic import BaseModel, BeforeValidator, Field
+from pydantic import BaseModel, BeforeValidator
 from typing import Annotated
 
-from api.utils import bold_numbers, replace_icon
+from api.utils import replace_icon
+
+
+class ListKeys(BaseModel):
+    Time: float
+    Value: float
+
+
+class Assets(BaseModel):
+    ItemIcon: str | None
+    ItemLargeIcon: str | None
+    WeaponUPIcon: str | None
+    WeaponIconForMatrix: str | None
+    LotteryCardImage: str | None
+    SoloLeagueBanPickBanner: str | None
 
 
 class Skill(BaseModel):
-    id: str
-    icon: Annotated[str, BeforeValidator(replace_icon)]
-    name: str
-    description: Annotated[str, BeforeValidator(bold_numbers)]
+    Name: str | None
+    Description: str | None
+    Values: list[list[ListKeys]] = []
+    ShortDesc: str | None
+    Icon: str | None
+    Tags: list[str]
+    Operations: list[str]
 
-class Skills(BaseModel):
-    normals: list[Skill] = []
-    dodge: list[Skill] = []
-    skill: list[Skill] = []
-    discharge: list[Skill] = []
 
-class Stats(BaseModel):
-    shatter: int | float
-    charge: int | float
+class WeaponSkills(BaseModel):
+    Name: str | None
+    Description: str | None
+    Icon: str | None
+    Attacks: list[Skill]
 
-class Advancements(BaseModel):
-    description: Annotated[str, BeforeValidator(bold_numbers)] | None = None
-    stats: Stats
-    need: str
+
+class WeaponAttacks(BaseModel):
+    Melee: WeaponSkills
+    Evade: WeaponSkills
+    Skill: WeaponSkills
+    Discharge: WeaponSkills
+
+
+class WeaponAdvancement(BaseModel):
+    Description: str | None
+    GoldNeeded: int 
+    Shatter: float
+    Charge: float
+    NeedItem: str | None
+    WeaponFashionID: str | None
+
+
+class FashionWeaponInfo(BaseModel):
+    FashionName: str
+    FashionImitationId: str
+
+
+class MatrixSuit(BaseModel):
+    MatrixSuitName: str
+    MatrixSuitDes: str
+
 
 class WeaponEffect(BaseModel):
     title: str
     description: str
 
+
 class ShatterOrCharge(BaseModel):
     value: float
     tier: str
-
-class Assets(BaseModel):
-    icon: Annotated[str, BeforeValidator(replace_icon)] | None = None
-    weaponMatrixIcon: Annotated[str, BeforeValidator(replace_icon)] | None = Field(default=None, alias='WeaponIconForMatrix', serialization_alias='weaponMatrixIcon')
 
 
 class RecoMatrix(BaseModel):
@@ -44,7 +77,7 @@ class RecoMatrix(BaseModel):
     pieces: int
 
 
-class Meta(BaseModel):
+class MetaData(BaseModel):
     recommendedPairings: list[str] = []
     recommendedMatrices: list[RecoMatrix] = []
     rating: list[int] = []

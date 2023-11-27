@@ -9,6 +9,6 @@ from api.infra.entitys.simulacra.graphql.simulacra import Simulacra
 
 @strawberry.type
 class SimulacraV2(Simulacra):
-    weapon: Weapon | None
-    matrice: Matrice | None
+    Weapon: Weapon | None
+    Matrix: Matrice | None
 

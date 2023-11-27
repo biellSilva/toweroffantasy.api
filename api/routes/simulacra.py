@@ -17,10 +17,12 @@ METADATA = {
     'description': 'Simulacra are the player\'s representation of the characters found in Tower of Fantasy \n\n **CONTAINS CN DATA**',
     }
 
+INCLUDE = {'id', 'Name', 'AssetsA0', 'WeaponId', 'MatrixId'}
+
 
 @router.get('/{id}', name='Get simulacrum', response_model=Simulacra)
 async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN, 
-                         version: VERSIONS = VERSIONS('global'),
+                        #  version: VERSIONS = VERSIONS('global'),
                          lang: LANGS | LANGS_CN = LANGS('en'), 
                          include: bool = True):
     '''
@@ -33,7 +35,7 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
 
 
     **Query Params** \n
-        version:
+        version (DISABLED):
             type: string
             default: global
             desc: Game version
@@ -58,22 +60,22 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
     if version == 'china': # handling cn version
         lang = LANGS_CN('cn')
     
-    simulacra = await SIMU_REPO.get(EntityBase(id=id), lang, version)
+    simulacra = await SIMU_REPO.get(EntityBase(id=id), lang, version=VERSIONS('global'))
 
     if include:
         return PrettyJsonResponse(simulacra.model_dump())
     else:
-        return PrettyJsonResponse(simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID', 'matrixID'}))
+        return PrettyJsonResponse(simulacra.model_dump(include=INCLUDE))
     
 
 
 @router.get('', name='All simulacra', response_model=list[Simulacra])
-async def get_all_simulacra(version: VERSIONS = VERSIONS('global'), 
+async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'), 
                             lang: LANGS | LANGS_CN = LANGS('en'), 
                             include: bool = False):
     '''
     **Query Params** \n
-        version:
+        version (DISABLED):
             type: str
             default: global
             desc: Game version
@@ -98,10 +100,10 @@ async def get_all_simulacra(version: VERSIONS = VERSIONS('global'),
     if version == 'china': # handling cn version
         lang = LANGS_CN('cn')
     
-    simulacras = await SIMU_REPO.get_all(lang=lang, version=version)
+    simulacras = await SIMU_REPO.get_all(lang=lang, version=VERSIONS('global'))
 
     if include:
         return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
     else:
-        return PrettyJsonResponse([simulacra.model_dump(include={'id', 'name', 'assets', 'weaponID', 'matrixID'}) for simulacra in simulacras])
+        return PrettyJsonResponse([simulacra.model_dump(include=INCLUDE) for simulacra in simulacras])
     

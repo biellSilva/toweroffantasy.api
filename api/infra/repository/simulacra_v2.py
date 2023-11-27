@@ -36,13 +36,13 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
             self.cache[version].update({lang: {}})
 
         for imit_id, imit_dict in DATA.items():
-            if weapon_id := imit_dict.get('weaponID', None):
+            if weapon_id := imit_dict.get('WeaponId', None):
                 if weapon := await self.weapon_repo.get(EntityBase(id=weapon_id), lang=lang, version=version):
-                    imit_dict['weapon'] = weapon
+                    imit_dict['Weapon'] = weapon
             
-            if matrice_id := imit_dict.get('matrixID', None):
+            if matrice_id := imit_dict.get('MatrixId', None):
                 if matrice := await self.matrice_repo.get(EntityBase(id=matrice_id), lang=lang, version=version):
-                    imit_dict['matrix'] = matrice
+                    imit_dict['Matrix'] = matrice
 
             self.cache[version][lang].update({imit_id.lower(): Simulacra_v2(**imit_dict)})
 

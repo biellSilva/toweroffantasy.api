@@ -1,34 +1,10 @@
 
-
-from api.infra.entitys.base import EntityBase
-
-from ..banners import Banner
-from ..weapons import Weapon
-from ..matrices import Matrix
-from ..simulacra.extra import Awakening, VoiceActors
-
-from .extra import Assets
+from ..simulacra import Simulacra
+from ..weapons import Weapon as Weapon_model
+from ..matrices import Matrix as Matrix_model
 
 
-
-class Simulacra_v2(EntityBase):
-    name: str
-    rarity: str | None
-    avatarID: str
-    advanceID: str | None = None
-    assets: Assets
-    weaponID: str | None
-    matrixID: str | None
-    age: str
-    height: str
-    gender: str
-    state: str
-    city: str
-    rating: str
-    gift_types: list[str]
-    voice_actors: VoiceActors
-    awakenings: list[Awakening]
-    banners: list[Banner]
-    weapon: Weapon | None = None
-    matrix: Matrix | None = None
+class Simulacra_v2(Simulacra):
+    Weapon: Weapon_model | None = None
+    Matrix: Matrix_model | None = None
 

@@ -93,18 +93,18 @@ def relic_advanc_rework(advanc: list[dict[str, str]]):
 
 
 def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
-    if simulacrum.rarity == 'SSR':
-        if simulacrum.banners:
-            return -1, -simulacrum.banners[-1].bannerNo
+    if simulacrum.Rarity == 'SSR':
+        if simulacrum.Banners:
+            return -1, -simulacrum.Banners[-1].bannerNo
         else:
             if simulacrum.id in SIMULACRA_SORT_ORDER:
                 return -1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
             else:
                 return -1, 0
         
-    elif simulacrum.rarity == 'SR':
-        if simulacrum.banners:
-            return 1, -simulacrum.banners[-1].bannerNo
+    elif simulacrum.Rarity == 'SR':
+        if simulacrum.Banners:
+            return 1, -simulacrum.Banners[-1].bannerNo
         else:
             if simulacrum.id in SIMULACRA_SORT_ORDER:
                 return 1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
@@ -114,27 +114,27 @@ def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
     return 2, 0
 
 def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
-    if weapon.rarity == 'SSR':
-        if weapon.banners:
-            return -1, -weapon.banners[-1].bannerNo
+    if weapon.Rarity == 'SSR':
+        if weapon.Banners:
+            return -1, -weapon.Banners[-1].bannerNo
         else:
             if weapon.id in WEAPON_SORT_ORDER:
                 return -1, WEAPON_SORT_ORDER.index(weapon.id)
             else:
                 return -1, 0
     
-    elif weapon.rarity == 'SR':
-        if weapon.banners:
-            return 1, -weapon.banners[-1].bannerNo
+    elif weapon.Rarity == 'SR':
+        if weapon.Banners:
+            return 1, -weapon.Banners[-1].bannerNo
         else:
             if weapon.id in WEAPON_SORT_ORDER:
                 return 1, WEAPON_SORT_ORDER.index(weapon.id)
             else:
                 return 1, 0
     
-    elif weapon.rarity == 'R':
-        if weapon.banners:
-            return 2, -weapon.banners[-1].bannerNo
+    elif weapon.Rarity == 'R':
+        if weapon.Banners:
+            return 2, -weapon.Banners[-1].bannerNo
         else:
             if weapon.id in WEAPON_SORT_ORDER:
                 return 2, WEAPON_SORT_ORDER.index(weapon.id)

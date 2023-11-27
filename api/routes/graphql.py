@@ -45,7 +45,8 @@ def check_params(lang: str, version: str):
 class Query:
 
     @strawberry.field(name='simulacrum')
-    async def get_simulacrum(self, id: str | None = None, name: str | None = None, lang: str = 'en', version: str = 'global') -> Simulacra:
+    async def get_simulacrum(self, id: str | None = None, name: str | None = None, lang: str = 'en') -> Simulacra:
+        version = 'global'
         check_params(lang=lang, version=version)
 
         if version == 'china':
@@ -62,7 +63,8 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='simulacra')
-    async def get_simulacra(self, lang: str = 'en', version: str = 'global') -> List[Simulacra]:
+    async def get_simulacra(self, lang: str = 'en') -> List[Simulacra]:
+        version = 'global'
         check_params(lang=lang, version=version)
         
         if version == 'china':
@@ -97,7 +99,8 @@ class Query:
         
     
     @strawberry.field(name='weapon')
-    async def get_weapon(self, id: str | None = None, name: str | None = None, lang: str = 'en', version: str = 'global') -> Weapon:
+    async def get_weapon(self, id: str | None = None, name: str | None = None, lang: str = 'en') -> Weapon:
+        version = 'global'
         check_params(lang=lang, version=version)
         
         if version == 'china':
@@ -114,7 +117,8 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='weapons')
-    async def get_weapons(self, lang: str = 'en', version: str = 'global') -> List[Weapon]:
+    async def get_weapons(self, lang: str = 'en') -> List[Weapon]:
+        version = 'global'
         check_params(lang=lang, version=version)
 
         if version == 'china':
