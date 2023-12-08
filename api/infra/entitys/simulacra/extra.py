@@ -77,3 +77,24 @@ class Awakening(BaseModel):
     description: str
     icon: str
     need: int
+
+
+    @model_validator(mode='before')
+    def _replace_assets(cls, values: Any):
+
+        def _replace_string__(value: Any) -> Any:
+            if isinstance(value, dict):
+                _: dict[str, Any] = {}
+
+                for k, v in values.items():
+                    if isinstance(v, str):
+                        _.update({k: v.replace('/Game/Resources', '/assets')})
+
+                    else:
+                        _.update({k: v})
+
+                return _
+            
+            return value
+
+        return _replace_string__(values)
