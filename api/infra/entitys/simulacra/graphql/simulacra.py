@@ -2,32 +2,32 @@
 import strawberry
 
 from api.infra.entitys.graphql.banner import Banner
-from .extra import Assets, VoiceActors, Awakening
+from .extra import Assets, VoiceActors as VC, Awakening
 
 
 @strawberry.type()
 class Simulacra:
     id: str
-    Name: str
-    Rarity: str
-    CharacterSex: str
-    AvatarId: str
-    AdvanceImitations: str | None
-    UnlockInfo: str
-    WeaponId: str | None
-    MatrixId: str | None
-    Like: list[str]
-    Dislike: list[str]
-    Gender: str | None
-    Birthday: str | None
-    Age: str | None
-    Title: str | None
-    Job: str | None
-    Height: str | None
-    BelongTo: str | None
-    Hometown: str | None
-    AssetsA0: Assets
-    AssetsA3: Assets | None
-    CVMap: VoiceActors
-    Awakenings: list[Awakening]
-    Banners: list[Banner]
+    name: str
+    rarity: str
+    # sex: str
+    avatarId: str 
+    advanceId: str | None 
+    # UnlockInfo: str
+    weaponId: str | None 
+    matrixId: str | None 
+    likedGiftTypes: list[str] 
+    # dislikedGiftTypes: list[str] = Field(alias='dislike')
+    gender: str | None 
+    birthday: str | None
+    # Age: str | None = None
+    # Title: str | None = None
+    # Job: str | None = None
+    height: str | None 
+    affiliation: str | None
+    hometown: str | None
+    assetsA0: Assets
+    assetsA3: Assets | None
+    voicing: VC 
+    awakening: list[Awakening]
+    banners: list[Banner]
