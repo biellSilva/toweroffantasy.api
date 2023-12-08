@@ -4,24 +4,24 @@ import strawberry
 
 @strawberry.type
 class Assets:
-    avatar: str 
-    icon: str 
-    lotteryCardImage: str 
-    lotteryDrawing: str 
-    painting: str 
-    namePicture: str 
+    avatar: str
+    icon: str
+    painting: str
+    namePicture: str
     grayPainting: str
-    thumbPainting: str 
-    weaponShowPicture: str 
-    hasGotAwakenEntrance: str 
-    notGotAwakenEntrance: str 
-    advancePainting: str 
-    advanceGrayPainting: str 
-    backPhoto: str 
-    rarityIcon: str 
-    soloLeagueBanPickBanner: str 
+    thumbPainting: str
+    weaponShowPicture: str
+    activeImitation: str
+    inactiveImitation:str
+    advancePainting: str
+    advanceGrayPainting: str
+    backPhoto: str
+    rarityIcon: str
+    lotteryCardImage: str
+    lotteryDrawing: str
+    matrixPainting: str
     descPainting: str
-
+    
 
 @strawberry.type
 class VoiceActors:

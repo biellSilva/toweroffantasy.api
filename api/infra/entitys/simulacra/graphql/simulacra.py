@@ -25,7 +25,7 @@ class Simulacra:
     # Job: str | None = None
     height: str | None 
     affiliation: str | None
-    hometown: str | None
+    homeTown: str | None
     assetsA0: Assets
     assetsA3: Assets | None
     voicing: VC 
