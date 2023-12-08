@@ -5,7 +5,7 @@ import strawberry
 @strawberry.type
 class Assets:
     avatar: str
-    icon: str
+    titlePicture: str
     painting: str
     namePicture: str
     grayPainting: str
@@ -18,7 +18,7 @@ class Assets:
     backPhoto: str
     rarityIcon: str
     lotteryCardImage: str
-    lotteryDrawing: str
+    # lotteryDrawing: str
     matrixPainting: str
     descPainting: str
     
