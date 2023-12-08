@@ -1,5 +1,5 @@
 
-from pydantic import BeforeValidator
+from pydantic import BeforeValidator, Field
 from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
@@ -21,28 +21,30 @@ from .extra import (
 
 
 class Weapon(EntityBase):
-    SimulacrumID: str | None
-    IsUpPoolWeapon: bool
+    simulacrumId: str | None = Field(alias='avatar', default=None)
+    advanceId: str | None = None
+    # isUpPoolWeapon: bool = False
 
-    Name: str
-    Rarity: str
-    Assets: Assets
+    name: str
+    rarity: str
+    assets: Assets
 
-    Brief: str
-    WeaponCategory: str
-    WeaponElement: str
-    Description: str
+    # Brief: str
+    category: str = Field(alias='wc')
+    element: str
+    description: str
 
-    Shatter: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
-    Charge: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    shatter: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    charge: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
 
-    FashionWeaponInfos: list[FashionWeaponInfo]
-    RecommendedMatrices: list[MatrixSuit]
+    # FashionWeaponInfos: list[FashionWeaponInfo]
+    # RecommendedMatrices: list[MatrixSuit]
 
-    WeaponEffects: list[WeaponEffect]
+    weaponEffects: list[WeaponEffect]
 
-    WeaponAdvancements: list[WeaponAdvancement]
-    WeaponAttacks: WeaponAttacks
+    weaponAdvancements: list[WeaponAdvancement] = Field(alias='advancements')
+    weaponAttacks: WeaponAttacks = Field(alias='skills')
+    weaponStats: list[BaseStats] = Field(alias='stats')
 
-    Meta: MetaData | None = None
-    Banners: list[Banner] = []
+    meta: MetaData | None = None
+    banners: list[Banner] = []
