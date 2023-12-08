@@ -3,29 +3,31 @@ from pydantic import BaseModel
 
 
 class Assets(BaseModel):
-    Avatar: str
-    NamePicture: str
-    Name2Picture: str
-    Name3Picture: str
-    Painting: str
-    GrayPainting: str
-    ThumbPainting: str
-    WeaponShowPicture: str
-    HasGotAwakenEntrance: str
-    NotGotAwakenEntrance: str
-    AdvancePainting: str
-    AdvanceGrayPainting: str
-    TitlePicture: str
-    AwakenPhoto: str
-    DescPainting: str
+    avatar: str 
+    icon: str 
+    lotteryCardImage: str 
+    lotteryDrawing: str 
+    painting: str 
+    namePicture: str 
+    grayPainting: str
+    thumbPainting: str 
+    weaponShowPicture: str 
+    hasGotAwakenEntrance: str 
+    notGotAwakenEntrance: str 
+    advancePainting: str 
+    advanceGrayPainting: str 
+    backPhoto: str 
+    rarityIcon: str 
+    soloLeagueBanPickBanner: str 
+    descPainting: str
 
 
 class VoiceActors(BaseModel):
-    Chinese: str | None
-    Japanese: str | None
-    English: str | None
-    Korean: str | None
-    Portuguese: str | None
+    chinese: str | None
+    japanese: str | None
+    english: str | None
+    korean: str | None
+    portuguese: str | None
 
 
 class Awakening(BaseModel):

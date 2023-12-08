@@ -1,33 +1,33 @@
 
+from pydantic import Field
 
 from api.infra.entitys.base import EntityBase
 
-from .extra import VoiceActors, Awakening, Assets
+from .extra import VoiceActors as VC, Awakening, Assets
 from ..banners import Banner
 
 
 class Simulacra(EntityBase):
-    Name: str
-    Rarity: str
-    CharacterSex: str
-    AvatarId: str
-    AdvanceImitations: str | None = None
-    UnlockInfo: str
-    WeaponId: str | None = None
-    MatrixId: str | None = None
-    Like: list[str]
-    Dislike: list[str]
-    Gender: str | None = None
-    Birthday: str | None = None
-    Age: str | None = None
-    Title: str | None = None
-    Job: str | None = None
-    Height: str | None = None
-    BelongTo: str | None = None
-    Hometown: str | None = None
-    AssetsA0: Assets
-    AssetsA3: Assets | None = None
-    CVMap: VoiceActors
-    Awakenings: list[Awakening]
-    Banners: list[Banner]
-
+    name: str
+    rarity: str
+    # sex: str
+    avatarId: str 
+    advanceId: str | None = None
+    # UnlockInfo: str
+    weaponId: str | None = None
+    matrixId: str | None = None
+    likedGiftTypes: list[str] = Field(alias='like')
+    # dislikedGiftTypes: list[str] = Field(alias='dislike')
+    gender: str | None = None
+    birthday: str | None = Field(alias='age')
+    # Age: str | None = None
+    # Title: str | None = None
+    # Job: str | None = None
+    height: str | None = None
+    affiliation: str | None = Field(default=None, alias='state', serialization_alias='affiliation')
+    hometown: str | None = Field(default=None, serialization_alias='city')
+    assetsA0: Assets
+    assetsA3: Assets | None = None
+    voicing: VC
+    awakening: list[Awakening]
+    banners: list[Banner]

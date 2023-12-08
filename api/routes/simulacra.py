@@ -1,9 +1,8 @@
 
 from fastapi import APIRouter
+from fastapi.responses import ORJSONResponse
 
 from api.enums import SIMULACRA, SIMULACRA_CN, LANGS, LANGS_CN, VERSIONS
-
-from api.core.response import PrettyJsonResponse
 
 from api.infra.entitys import Simulacra, EntityBase
 from api.infra.repository import SimulacraRepo
@@ -17,7 +16,7 @@ METADATA = {
     'description': 'Simulacra are the player\'s representation of the characters found in Tower of Fantasy \n\n **CONTAINS CN DATA**',
     }
 
-INCLUDE = {'id', 'Name', 'AssetsA0', 'WeaponId', 'MatrixId'}
+INCLUDE = {'id', 'name', 'assetsA0', 'weaponId', 'matrixId'}
 
 
 @router.get('/{id}', name='Get simulacrum', response_model=Simulacra)
@@ -60,9 +59,9 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
     simulacra = await SIMU_REPO.get(EntityBase(id=id), lang, version=VERSIONS('global'))
 
     if include:
-        return PrettyJsonResponse(simulacra.model_dump())
+        return ORJSONResponse(simulacra.custom_model_dump())
     else:
-        return PrettyJsonResponse(simulacra.model_dump(include=INCLUDE))
+        return ORJSONResponse(simulacra.custom_model_dump(include=INCLUDE))
     
 
 
@@ -97,7 +96,7 @@ async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'),
     simulacras = await SIMU_REPO.get_all(lang=lang, version=VERSIONS('global'))
 
     if include:
-        return PrettyJsonResponse([simulacra.model_dump() for simulacra in simulacras])
+        return ORJSONResponse([simulacra.custom_model_dump() for simulacra in simulacras])
     else:
-        return PrettyJsonResponse([simulacra.model_dump(include=INCLUDE) for simulacra in simulacras])
+        return ORJSONResponse([simulacra.custom_model_dump(include=INCLUDE) for simulacra in simulacras])
     
