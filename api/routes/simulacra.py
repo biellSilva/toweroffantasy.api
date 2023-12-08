@@ -16,7 +16,7 @@ METADATA = {
     'description': 'Simulacra are the player\'s representation of the characters found in Tower of Fantasy \n\n **CONTAINS CN DATA**',
     }
 
-INCLUDE = {'id', 'name', 'assetsA0', 'weaponId', 'matrixId'}
+INCLUDE = {'id', 'name', 'assetsA0', 'weaponId', 'matrixId', 'rarity'}
 
 
 @router.get('/{id}', name='Get simulacrum', response_model=Simulacra)
