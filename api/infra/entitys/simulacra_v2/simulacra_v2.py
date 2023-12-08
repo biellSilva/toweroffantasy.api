@@ -5,6 +5,6 @@ from ..matrices import Matrix as Matrix_model
 
 
 class Simulacra_v2(Simulacra):
-    Weapon: Weapon_model | None = None
-    Matrix: Matrix_model | None = None
+    weapon: Weapon_model | None = None
+    matrix: Matrix_model | None = None
 

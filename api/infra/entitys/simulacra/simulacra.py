@@ -1,5 +1,6 @@
 
-from pydantic import Field
+from pydantic import Field, BeforeValidator
+from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
 
@@ -14,8 +15,16 @@ class Simulacra(EntityBase):
     avatarId: str 
     advanceId: str | None = None
     # UnlockInfo: str
-    weaponId: str | None = None
-    matrixId: str | None = None
+    weaponId: Annotated[str | None, BeforeValidator(lambda x: None 
+                                                    if isinstance(x, str) and 
+                                                    x.lower() == 'none' or 
+                                                    x.lower() == 'null' else 
+                                                    x)] = None 
+    matrixId: Annotated[str | None, BeforeValidator(lambda x: None 
+                                                    if isinstance(x, str) and 
+                                                    x.lower() == 'none' or 
+                                                    x.lower() == 'null' else 
+                                                    x)] = None
     likedGiftTypes: list[str] = Field(alias='like')
     # dislikedGiftTypes: list[str] = Field(alias='dislike')
     gender: str | None = None
