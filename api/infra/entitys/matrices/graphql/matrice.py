@@ -8,11 +8,11 @@ from .extra import MatriceSet, MatrixAssets
 @strawberry.type
 class Matrice:
     id: str
-    SimulacrumID: str | None
+    simulacrumId: str | None
     name: str
     type: str
     description: str
     assets: MatrixAssets
     rarity: str
     sets: list[MatriceSet]
-    Banners: list[Banner]
+    banners: list[Banner]

@@ -10,5 +10,5 @@ class MatrixSet(BaseModel):
     description: Annotated[str, BeforeValidator(bold_numbers)] | None
 
 class MatrixAssets(BaseModel):
-    icon: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='ItemIcon')
-    iconLarge: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='ItemLargeIcon')
+    icon: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='itemIcon')
+    iconLarge: Annotated[str, BeforeValidator(replace_icon)] = Field(alias='itemLargeIcon')

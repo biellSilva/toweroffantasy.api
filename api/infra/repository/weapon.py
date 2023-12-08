@@ -54,8 +54,8 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
         for key_id, value_dict in DATA.items():
             weaponEffects: list[dict[str, str]] = []
 
-            if advancements := value_dict.get('WeaponAdvancements', []):
-                if description := advancements[0].get('Description', None):
+            if advancements := value_dict.get('advancements', []):
+                if description := advancements[0].get('description', None):
                     if '*:' in description:
                         weaponEffect = description.split('\r', 1)
 
@@ -74,18 +74,18 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
 
             value_dict.update({
                     'WeaponEffects': weaponEffects, 
-                    'Shatter': value_dict['WeaponAdvancements'][0]['Shatter'],
-                    'Charge': value_dict['WeaponAdvancements'][0]['Charge']
+                    'Shatter': value_dict['advancements'][0]['shatter'],
+                    'Charge': value_dict['advancements'][0]['charge']
                 })
             
 
-            if len(value_dict['WeaponAdvancements']) == 7:
-                value_dict['WeaponAdvancements'].pop(0)
+            if len(value_dict['advancements']) == 7:
+                value_dict['advancements'].pop(0)
             
 
             if version == 'global':
                 value_dict['Meta'] = self.META_GB.get(key_id.lower(), None)
-                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.weapon_id and banner.weapon_id == key_id.lower()]
+                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.weaponId and banner.weaponId == key_id.lower()]
 
             if value_dict.get('id', None):
                 self.cache[version][lang].update({key_id.lower(): Weapon(**value_dict)})

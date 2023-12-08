@@ -11,11 +11,11 @@ from .extra import MatrixSet, MatrixAssets
 
 class Matrix(EntityBase):
     name: str
-    SimulacrumID: str | None = None
+    simulacrumId: str | None = None
     type: str
     description: Annotated[str, BeforeValidator(bold_numbers)]
     assets: MatrixAssets
     rarity: str
     sets: list[MatrixSet]
-    Banners: list[Banner]
+    banners: list[Banner] = []
 

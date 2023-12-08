@@ -1,8 +1,8 @@
 
-from pydantic import BaseModel, BeforeValidator
-from typing import Annotated
+from pydantic import BaseModel, BeforeValidator, model_validator
+from typing import Annotated, Any
 
-from api.utils import replace_icon
+from api.utils import replace_icon, classify_rework
 
 
 class ListKeys(BaseModel):
@@ -11,22 +11,60 @@ class ListKeys(BaseModel):
 
 
 class Assets(BaseModel):
-    ItemIcon: str | None
-    ItemLargeIcon: str | None
-    WeaponUPIcon: str | None
-    WeaponIconForMatrix: str | None
-    LotteryCardImage: str | None
-    SoloLeagueBanPickBanner: str | None
+    icon: str | None
+    # itemLargeIcon: str | None
+    # WeaponUPIcon: str | None
+    weaponIconForMatrix: str | None
+
+    @model_validator(mode='before')
+    def _replace_assets(cls, values: Any):
+
+        def _replace_string__(value: Any) -> Any:
+            if isinstance(value, dict):
+                _: dict[str, Any] = {}
+
+                for k, v in values.items():
+                    if isinstance(v, str):
+                        _.update({k: v.replace('/Game/Resources', '/assets')})
+
+                    else:
+                        _.update({k: v})
+
+                return _
+            
+            return value
+
+        return _replace_string__(values)
 
 
 class Skill(BaseModel):
-    Name: str | None
-    Description: str | None
-    Values: list[list[ListKeys]] = []
-    ShortDesc: str | None
-    Icon: str | None
-    Tags: list[str]
-    Operations: list[str]
+    name: str | None
+    description: str | None
+    # Values: list[list[ListKeys]] = []
+    icon: str | None
+    tags: list[str] = []
+    operations: list[str] = []
+
+
+    @model_validator(mode='before')
+    def _replace_assets(cls, values: Any):
+
+        def _replace_string__(value: Any) -> Any:
+            if isinstance(value, dict):
+                _: dict[str, Any] = {}
+
+                for k, v in values.items():
+                    if isinstance(v, str):
+                        _.update({k: v.replace('/Game/Resources', '/assets')})
+
+                    else:
+                        _.update({k: v})
+
+                return _
+            
+            return value
+
+        return _replace_string__(values)
 
 
 class WeaponSkills(BaseModel):
@@ -37,19 +75,23 @@ class WeaponSkills(BaseModel):
 
 
 class WeaponAttacks(BaseModel):
-    Melee: WeaponSkills
-    Evade: WeaponSkills
-    Skill: WeaponSkills
-    Discharge: WeaponSkills
+    normals: list[Skill]
+    dodge: list[Skill]
+    skill: list[Skill]
+    discharge: list[Skill]
 
+
+class ShatterOrCharge(BaseModel):
+    value: float
+    tier: str
 
 class WeaponAdvancement(BaseModel):
-    Description: str | None
-    GoldNeeded: int 
-    Shatter: float
-    Charge: float
-    NeedItem: str | None
-    WeaponFashionID: str | None
+    description: str | None = None
+    # GoldNeeded: int 
+    shatter: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    charge: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    need: str | None
+    # WeaponFashionID: str | None
 
 
 class FashionWeaponInfo(BaseModel):
@@ -65,11 +107,6 @@ class MatrixSuit(BaseModel):
 class WeaponEffect(BaseModel):
     title: str
     description: str
-
-
-class ShatterOrCharge(BaseModel):
-    value: float
-    tier: str
 
 
 class RecoMatrix(BaseModel):

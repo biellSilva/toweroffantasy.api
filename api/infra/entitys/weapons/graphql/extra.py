@@ -9,45 +9,47 @@ class ListKeys:
 
 @strawberry.type
 class WeaponAssets:
-    ItemIcon: str | None
-    ItemLargeIcon: str | None
-    WeaponUPIcon: str | None
-    WeaponIconForMatrix: str | None
-    LotteryCardImage: str | None
-    SoloLeagueBanPickBanner: str | None
+    icon: str | None
+    # itemLargeIcon: str | None
+    # WeaponUPIcon: str | None
+    weaponIconForMatrix: str | None
 
 @strawberry.type
 class Skill:
-    Name: str | None
-    Description: str | None
-    Values: list[list[ListKeys]]
-    ShortDesc: str | None
-    Icon: str | None
-    Tags: list[str]
-    Operations: list[str]
+    name: str | None
+    description: str | None
+    # Values: list[list[ListKeys]] = []
+    icon: str | None
+    tags: list[str] 
+    operations: list[str] 
 
-@strawberry.type
-class WeaponSkills:
-    Name: str | None
-    Description: str | None
-    Icon: str | None
-    Attacks: list[Skill]
+# @strawberry.type
+# class WeaponSkills:
+#     Name: str | None
+#     Description: str | None
+#     Icon: str | None
+#     Attacks: list[Skill]
 
 @strawberry.type
 class WeaponAttacks:
-    Melee: WeaponSkills
-    Evade: WeaponSkills
-    Skill: WeaponSkills
-    Discharge: WeaponSkills
+    normals: list[Skill]
+    dodge: list[Skill]
+    skill: list[Skill]
+    discharge: list[Skill]
+
+@strawberry.type
+class ShatterOrCharge:
+    value: float
+    tier: str
 
 @strawberry.type
 class WeaponAdvancement:
-    Description: str | None
-    GoldNeeded: int 
-    Shatter: float
-    Charge: float
-    NeedItem: str | None
-    WeaponFashionID: str | None
+    description: str | None
+    # GoldNeeded: int 
+    shatter: ShatterOrCharge
+    charge: ShatterOrCharge
+    need: str | None
+    # WeaponFashionID: str | None
 
 @strawberry.type
 class FashionWeaponInfo:
@@ -64,10 +66,6 @@ class WeaponEffect:
     title: str
     description: str
 
-@strawberry.type
-class ShatterOrCharge:
-    value: float
-    tier: str
 
 @strawberry.type
 class RecoMatrix:

@@ -16,7 +16,7 @@ METADATA = {
     'name': 'Weapons',
     'description': 'Weapons obtained from simulacra in Tower of Fantasy \n\n **CONTAINS CN DATA**',
     }
-INCLUDE = {'id', 'Name', 'Assets', 'WeaponCategory', 'Rarity', 'WeaponElement'}
+INCLUDE = {'id', 'name', 'assets', 'category', 'rarity', 'element'}
 
 
 @router.get('/{id}', name='Get weapon', response_model=Weapon)
