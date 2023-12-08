@@ -6,7 +6,7 @@ from typing import Annotated
 class Banner(BaseModel):
     simulacrumId: Annotated[str, BeforeValidator(lambda x: str(x).lower())] | None = Field(default=None, alias='imitation_id')
     weaponId: Annotated[str, BeforeValidator(lambda x: str(x).lower())] | None = Field(default=None, alias='weapon_id')
-    matrixId: Annotated[str, BeforeValidator(lambda x: str(x).lower())] | None = Field(default=None, alias='matrix)_id')
+    matrixId: Annotated[str, BeforeValidator(lambda x: str(x).lower())] | None = Field(default=None, alias='matrix_id')
     simulacrumName: str | None = Field(default=None, alias='simulacrum')
     bannerNumber: int = Field(alias='bannerNo')
     startDate: str = Field(alias='start')

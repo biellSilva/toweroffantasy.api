@@ -4,15 +4,15 @@ import strawberry
 
 @strawberry.type
 class Banner:
-    imitation_id: str | None
-    weapon_id: str | None
-    matrix_id: str | None
-    simulacrum: str | None
-    bannerNo: int
-    start: str
-    end: str
-    details_link: str
-    limited_banner_only: bool
-    is_rerun: bool
-    final_rerun: bool
-    is_collab: bool
+    simulacrumId: str
+    weaponId: str | None
+    matrixId: str | None
+    simulacrumName: str
+    bannerNumber: int
+    startDate: str
+    endDate: str
+    detailsLink: str
+    isLimitedBannerOnly: bool
+    isRerun: bool
+    isFinalBanner: bool
+    isCollab: bool
