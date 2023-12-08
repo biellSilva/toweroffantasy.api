@@ -16,3 +16,4 @@ class Banner(BaseModel):
     isRerun: bool = Field(alias='is_rerun')
     isFinalBanner: bool = Field(alias='final_rerun')
     isCollab: bool = Field(alias='is_collab')
+    noWeapon: bool = Field(alias='no_weapon')
