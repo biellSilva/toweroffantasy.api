@@ -1,5 +1,6 @@
 
-from pydantic import BaseModel
+from pydantic import BaseModel, model_validator
+from typing import Any
 
 
 class Assets(BaseModel):
@@ -21,17 +22,79 @@ class Assets(BaseModel):
     soloLeagueBanPickBanner: str 
     descPainting: str
 
+    @model_validator(mode='before')
+    def _replace_assets(cls, values: Any):
+
+        def _replace_string__(value: Any) -> Any:
+            if isinstance(value, dict):
+                _: dict[str, Any] = {}
+
+                for k, v in values.items():
+                    if isinstance(v, str):
+                        _.update({k: v.replace('/Game/Resources', '/assets')})
+
+                    else:
+                        _.update({k: v})
+
+                return _
+            
+            return value
+
+        return _replace_string__(values)
+
 
 class VoiceActors(BaseModel):
-    chinese: str | None
-    japanese: str | None
-    english: str | None
-    korean: str | None
-    portuguese: str | None
+    cn: str | None
+    jp: str | None
+    en: str | None
+    kr: str | None
+    pt: str | None
+
+    @model_validator(mode='before')
+    def _replace_strings(cls, values: Any):
+
+        def _replace_string__(value: Any) -> Any:
+            if isinstance(value, dict):
+                _: dict[str, Any] = {}
+
+                for k, v in values.items():
+                    if isinstance(v, str):
+                        if v.startswith(' '):
+                            _.update({k: v[1:]})
+
+                    else:
+                        _.update({k: v})
+
+                return _
+            
+            return value
+
+        return _replace_string__(values)
 
 
 class Awakening(BaseModel):
-    Need: int
-    Name: str
-    Description: str
-    Icon: str
+    name: str
+    description: str
+    icon: str
+    need: int
+
+
+    @model_validator(mode='before')
+    def _replace_assets(cls, values: Any):
+
+        def _replace_string__(value: Any) -> Any:
+            if isinstance(value, dict):
+                _: dict[str, Any] = {}
+
+                for k, v in values.items():
+                    if isinstance(v, str):
+                        _.update({k: v.replace('/Game/Resources', '/assets')})
+
+                    else:
+                        _.update({k: v})
+
+                return _
+            
+            return value
+
+        return _replace_string__(values)

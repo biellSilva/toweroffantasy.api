@@ -19,7 +19,7 @@ class Simulacra(EntityBase):
     likedGiftTypes: list[str] = Field(alias='like')
     # dislikedGiftTypes: list[str] = Field(alias='dislike')
     gender: str | None = None
-    birthday: str | None = Field(alias='age')
+    birthday: str | None = Field(default=None, alias='age')
     # Age: str | None = None
     # Title: str | None = None
     # Job: str | None = None
@@ -28,6 +28,6 @@ class Simulacra(EntityBase):
     hometown: str | None = Field(default=None, serialization_alias='city')
     assetsA0: Assets
     assetsA3: Assets | None = None
-    voicing: VC
+    voicing: VC = Field(alias='va')
     awakening: list[Awakening]
     banners: list[Banner]
