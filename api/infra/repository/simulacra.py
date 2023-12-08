@@ -55,7 +55,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                 continue
 
             if version == 'global':
-                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.imitation_id and banner.imitation_id == key_id.lower()]
+                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.simulacrumId and banner.simulacrumId == key_id.lower()]
 
             if LINK := self.LINK_DATA.get(key_id.lower(), None):
                 value_dict['MatrixId'] = LINK.get('matrice', None)
