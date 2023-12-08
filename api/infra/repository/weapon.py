@@ -55,7 +55,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             weaponEffects: list[dict[str, str]] = []
 
             if advancements := value_dict.get('advancements', []):
-                if description := advancements[0].get('Description', None):
+                if description := advancements[0].get('description', None):
                     if '*:' in description:
                         weaponEffect = description.split('\r', 1)
 

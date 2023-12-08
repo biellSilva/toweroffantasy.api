@@ -19,28 +19,31 @@ from api.infra.entitys.weapons.graphql.extra import (
 @strawberry.type
 class Weapon:
     id: str
-    SimulacrumID: str | None
-    IsUpPoolWeapon: bool
+    simulacrumId: str | None
+    advanceId: str | None
+    # isUpPoolWeapon: bool = False
 
-    Name: str
-    Rarity: str
-    Assets: WeaponAssets
+    name: str
+    rarity: str
+    assets: WeaponAssets
 
-    Brief: str
-    WeaponCategory: str
-    WeaponElement: str
-    Description: str
+    # Brief: str
+    category: str
+    element: str
+    description: str
 
-    Shatter: ShatterOrCharge
-    Charge: ShatterOrCharge
+    shatter: ShatterOrCharge
+    charge: ShatterOrCharge
 
-    FashionWeaponInfos: list[FashionWeaponInfo]
-    RecommendedMatrices: list[MatrixSuit]
+    # FashionWeaponInfos: list[FashionWeaponInfo]
+    # RecommendedMatrices: list[MatrixSuit]
 
-    WeaponEffects: list[WeaponEffect]
+    weaponEffects: list[WeaponEffect]
 
-    WeaponAdvancements: list[WeaponAdvancement]
-    WeaponAttacks: WeaponAttacks
+    weaponAdvancements: list[WeaponAdvancement] 
+    weaponAttacks: WeaponAttacks 
+    weaponStats: list[BaseStats]
 
-    Meta: MetaData | None
-    Banners: list[Banner]
+    meta: MetaData | None
+    banners: list[Banner]
+

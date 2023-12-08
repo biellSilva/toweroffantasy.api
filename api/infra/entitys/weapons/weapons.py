@@ -22,7 +22,7 @@ from .extra import (
 
 class Weapon(EntityBase):
     simulacrumId: str | None = Field(alias='avatar', default=None)
-    advanceId: str | None = None
+    advanceId: str | None = Field(alias='advanceID', default=None)
     # isUpPoolWeapon: bool = False
 
     name: str

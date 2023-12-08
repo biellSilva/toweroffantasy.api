@@ -1,8 +1,8 @@
 
-from pydantic import BaseModel, BeforeValidator
-from typing import Annotated
+from pydantic import BaseModel, BeforeValidator, model_validator
+from typing import Annotated, Any
 
-from api.utils import replace_icon
+from api.utils import replace_icon, classify_rework
 
 
 class ListKeys(BaseModel):
@@ -16,6 +16,26 @@ class Assets(BaseModel):
     # WeaponUPIcon: str | None
     weaponIconForMatrix: str | None
 
+    @model_validator(mode='before')
+    def _replace_assets(cls, values: Any):
+
+        def _replace_string__(value: Any) -> Any:
+            if isinstance(value, dict):
+                _: dict[str, Any] = {}
+
+                for k, v in values.items():
+                    if isinstance(v, str):
+                        _.update({k: v.replace('/Game/Resources', '/assets')})
+
+                    else:
+                        _.update({k: v})
+
+                return _
+            
+            return value
+
+        return _replace_string__(values)
+
 
 class Skill(BaseModel):
     name: str | None
@@ -24,6 +44,27 @@ class Skill(BaseModel):
     icon: str | None
     tags: list[str] = []
     operations: list[str] = []
+
+
+    @model_validator(mode='before')
+    def _replace_assets(cls, values: Any):
+
+        def _replace_string__(value: Any) -> Any:
+            if isinstance(value, dict):
+                _: dict[str, Any] = {}
+
+                for k, v in values.items():
+                    if isinstance(v, str):
+                        _.update({k: v.replace('/Game/Resources', '/assets')})
+
+                    else:
+                        _.update({k: v})
+
+                return _
+            
+            return value
+
+        return _replace_string__(values)
 
 
 class WeaponSkills(BaseModel):
@@ -40,11 +81,15 @@ class WeaponAttacks(BaseModel):
     discharge: list[Skill]
 
 
+class ShatterOrCharge(BaseModel):
+    value: float
+    tier: str
+
 class WeaponAdvancement(BaseModel):
     description: str | None = None
     # GoldNeeded: int 
-    shatter: float
-    charge: float
+    shatter: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    charge: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
     need: str | None
     # WeaponFashionID: str | None
 
@@ -62,11 +107,6 @@ class MatrixSuit(BaseModel):
 class WeaponEffect(BaseModel):
     title: str
     description: str
-
-
-class ShatterOrCharge(BaseModel):
-    value: float
-    tier: str
 
 
 class RecoMatrix(BaseModel):
