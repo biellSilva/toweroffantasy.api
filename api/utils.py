@@ -114,27 +114,27 @@ def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
     return 2, 0
 
 def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
-    if weapon.Rarity == 'SSR':
-        if weapon.Banners:
-            return -1, -weapon.Banners[-1].bannerNumber
+    if weapon.rarity == 'SSR':
+        if weapon.banners:
+            return -1, -weapon.banners[-1].bannerNumber
         else:
             if weapon.id in WEAPON_SORT_ORDER:
                 return -1, WEAPON_SORT_ORDER.index(weapon.id)
             else:
                 return -1, 0
     
-    elif weapon.Rarity == 'SR':
-        if weapon.Banners:
-            return 1, -weapon.Banners[-1].bannerNumber
+    elif weapon.rarity == 'SR':
+        if weapon.banners:
+            return 1, -weapon.banners[-1].bannerNumber
         else:
             if weapon.id in WEAPON_SORT_ORDER:
                 return 1, WEAPON_SORT_ORDER.index(weapon.id)
             else:
                 return 1, 0
     
-    elif weapon.Rarity == 'R':
-        if weapon.Banners:
-            return 2, -weapon.Banners[-1].bannerNumber
+    elif weapon.rarity == 'R':
+        if weapon.banners:
+            return 2, -weapon.banners[-1].bannerNumber
         else:
             if weapon.id in WEAPON_SORT_ORDER:
                 return 2, WEAPON_SORT_ORDER.index(weapon.id)
