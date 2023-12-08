@@ -49,8 +49,8 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        if version == 'china':
-            lang = 'cn'
+        # if version == 'china':
+        #     lang = 'cn'
 
         if id:
             simulacrum = await SIMU_REPO.get(EntityBase(id=id), lang=lang, version=VERSIONS(version))
@@ -67,8 +67,8 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
         
-        if version == 'china':
-            lang = 'cn'
+        # if version == 'china':
+        #     lang = 'cn'
         
         simulacra = await SIMU_REPO.get_all(lang=lang, version=VERSIONS(version))
         return simulacra # type: ignore
@@ -103,8 +103,8 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
         
-        if version == 'china':
-            lang = 'cn'
+        # if version == 'china':
+        #     lang = 'cn'
 
         if id:
             weapon = await WEAPON_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
@@ -121,8 +121,8 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
 
-        if version == 'china':
-            lang = 'cn'
+        # if version == 'china':
+        #     lang = 'cn'
         
         weapons = await WEAPON_REPO.get_all(lang=lang, version=VERSIONS(version))
         return weapons # type: ignore
