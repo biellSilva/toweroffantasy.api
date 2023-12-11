@@ -2,7 +2,7 @@
 from pydantic import BaseModel, BeforeValidator, model_validator
 from typing import Annotated, Any
 
-from api.utils import replace_icon, classify_rework
+from api.utils import replace_icon, classify_rework, bold_numbers
 
 
 class ListKeys(BaseModel):
@@ -39,11 +39,12 @@ class Assets(BaseModel):
 
 class Skill(BaseModel):
     name: str | None
-    description: str | None
-    # Values: list[list[ListKeys]] = []
+    description: Annotated[str, BeforeValidator(bold_numbers)] | None
+    values: list[list[float | int]] = []
     icon: str | None
     tags: list[str] = []
     operations: list[str] = []
+    id: str
 
 
     @model_validator(mode='before')
@@ -88,8 +89,8 @@ class ShatterOrCharge(BaseModel):
 class WeaponAdvancement(BaseModel):
     description: str | None = None
     # GoldNeeded: int 
-    shatter: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
-    charge: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    shatter: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]    # type: ignore
+    charge: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]     # type: ignore
     need: str | None
     # WeaponFashionID: str | None
 

@@ -31,7 +31,7 @@ class Weapon:
     category: str
     element: str
     description: str
-
+    
     shatter: ShatterOrCharge
     charge: ShatterOrCharge
 

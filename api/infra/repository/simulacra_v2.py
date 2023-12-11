@@ -11,7 +11,7 @@ from api.infra.entitys import Simulacra_v2, EntityBase
 from api.infra.repository import WeaponRepo, MatricesRepo
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
-from api.utils import sort_simulacra, localized_asset
+from api.utils import sort_simulacra, localized_asset, place_numbers_v2
 from api.config import GB_BANNERS
 
 
@@ -29,10 +29,13 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
         
         self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
 
-    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Simulacra_v2]:
+    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False) -> list[Simulacra_v2]:
         if version in self.class_base.cache:
             if lang in self.class_base.cache[version]:
-                return list(self.class_base.cache[version][lang].values())
+                if graphql:
+                    return list(self.class_base.cache[version][lang].values())
+                else:
+                    return [place_numbers_v2(Simulacra_v2(**value.model_dump(by_alias=True))) for value in self.class_base.cache[version][lang].values()]
 
         VERSION_PATH = Path(f'api/infra/database/{version}')
         if not VERSION_PATH.exists():
@@ -76,7 +79,7 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
             
             if WEAPON_ID := value_dict.get('weaponId', None):
                 if WEAPON_ID and WEAPON_ID not in ('none', 'null'):
-                    if WEAPON := await self.WEAPON_REPO.get(EntityBase(id=WEAPON_ID), lang=lang, version=VERSIONS('global')):
+                    if WEAPON := await self.WEAPON_REPO.get(EntityBase(id=WEAPON_ID), lang=lang, version=VERSIONS('global'), graphql=True):
                         value_dict['weapon'] = WEAPON
             
             if MATRIX_ID := value_dict.get('MatrixId', None):
@@ -92,5 +95,7 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
 
         self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_simulacra))}
 
-        return list(self.cache[version][lang].values())
-    
+        if graphql:
+            return list(self.class_base.cache[version][lang].values())
+        else:
+            return [place_numbers_v2(Simulacra_v2(**value.model_dump(by_alias=True))) for value in self.class_base.cache[version][lang].values()]

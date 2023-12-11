@@ -8,13 +8,21 @@ from api.config import SIMULACRA_SORT_ORDER, WEAPON_SORT_ORDER, MATRIX_SORT_ORDE
 
 
 if TYPE_CHECKING:
-    from api.infra.entitys import Simulacra, Weapon, Matrix
+    from api.infra.entitys import Simulacra, Weapon, Matrix, Simulacra_v2
 
 
 def bold_numbers(text: str):
-    return re.sub(r'\d+(.\d+)?%?', lambda x: f'**{x.group(0)}**' 
-                  if text[x.span(0)[0]-1] not in ('*', '+', '-') or text[x.span(0)[1]] not in ('*', '+', '-') else x.group(0), 
-                  text.replace('<shuzhi>', '').replace('</>', ''), flags=re.IGNORECASE)
+    text_a = re.sub(r'\<[a-zA-Z]+\>(\D)+\<\/\>', 
+                  lambda x: x.group(0).replace("<shuzhi>", "**").replace("<red>", "**").replace("<blue>", "**").replace("<green>", "**").replace("<ComLblGreen>", "**").replace("</>", "**")
+                            if text[x.span(0)[0]-1] != '*' else x.group(0), 
+                  text, flags=re.UNICODE)
+    
+    text_b = re.sub(r'\+?\{?\d+(\.?\,?\d+)?\}?%?', 
+                  lambda x: f'**{x.group(0)}**' if text_a[x.span(0)[0]-1] != '*' else x.group(0), 
+                  text_a.replace("<shuzhi>", "").replace("<red>", "").replace("<blue>", "").replace("<green>", "").replace("</>", ""), 
+                  flags=re.UNICODE)
+    
+    return text_b
 
 def replace_cv(text: str):
     if not text or text == '':
@@ -185,3 +193,83 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
                 return 3, 0
     
     return 4, 0
+
+
+def place_numbers(weapon: 'Weapon'):
+    for attack in weapon.weaponAttacks.normals:
+        if attack.description and r'{0}' in attack.description:
+            if not attack.values:
+                print(attack.id, [i[-1] for i in attack.values])
+                continue
+
+            new_desc = attack.description.format(*[i[-1] for i in attack.values])
+            attack.description = new_desc
+    
+    for attack in weapon.weaponAttacks.dodge:
+        if attack.description and r'{0}' in attack.description:
+            if not attack.values:
+                print(attack.id, [i[-1] for i in attack.values])
+                continue
+
+            new_desc = attack.description.format(*[i[-1] for i in attack.values])
+            attack.description = new_desc
+
+    for attack in weapon.weaponAttacks.skill:
+        if attack.description and r'{0}' in attack.description:
+            if not attack.values:
+                print(attack.id, [i[-1] for i in attack.values])
+                continue
+
+            new_desc = attack.description.format(*[i[-1] for i in attack.values])
+            attack.description = new_desc
+
+    for attack in weapon.weaponAttacks.discharge:
+        if attack.description and r'{0}' in attack.description:
+            if not attack.values:
+                print(attack.id, [i[-1] for i in attack.values])
+                continue
+
+            new_desc = attack.description.format(*[i[-1] for i in attack.values])
+            attack.description = new_desc
+
+    return weapon
+
+def place_numbers_v2(simulacra: 'Simulacra_v2'):
+    if simulacra.weapon:
+        for attack in simulacra.weapon.weaponAttacks.normals:
+            if attack.description and r'{0}' in attack.description:
+                if not attack.values:
+                    print(attack.id, [i[-1] for i in attack.values])
+                    continue
+
+                new_desc = attack.description.format(*[i[-1] for i in attack.values])
+                attack.description = new_desc
+        
+        for attack in simulacra.weapon.weaponAttacks.dodge:
+            if attack.description and r'{0}' in attack.description:
+                if not attack.values:
+                    print(attack.id, [i[-1] for i in attack.values])
+                    continue
+
+                new_desc = attack.description.format(*[i[-1] for i in attack.values])
+                attack.description = new_desc
+
+        for attack in simulacra.weapon.weaponAttacks.skill:
+            if attack.description and r'{0}' in attack.description:
+                if not attack.values:
+                    print(attack.id, [i[-1] for i in attack.values])
+                    continue
+
+                new_desc = attack.description.format(*[i[-1] for i in attack.values])
+                attack.description = new_desc
+
+        for attack in simulacra.weapon.weaponAttacks.discharge:
+            if attack.description and r'{0}' in attack.description:
+                if not attack.values:
+                    print(attack.id, [i[-1] for i in attack.values])
+                    continue
+
+                new_desc = attack.description.format(*[i[-1] for i in attack.values])
+                attack.description = new_desc
+    
+    return simulacra

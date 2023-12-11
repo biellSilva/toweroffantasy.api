@@ -7,10 +7,10 @@ from typing import Any
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Weapon, EntityBase
 
-from api.core.exceptions import VersionNotFound, LanguageNotFound, FileNotFound
+from api.core.exceptions import VersionNotFound, LanguageNotFound, FileNotFound, ItemNotFound
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
-from api.utils import sort_weapons
+from api.utils import sort_weapons, place_numbers
 from api.config import GB_BANNERS
 
 
@@ -25,11 +25,32 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                          repo_name='weapons')
         
         self.META_GB: dict[str, dict[str, list[Any]]] = json.loads(Path('api/infra/database/global/meta.json').read_bytes())
-    
-    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Weapon]:
+        self.DESC_VALUES: dict[str, list[float]] = json.loads(Path('api/infra/database/global/weaponskillnumbers.json').read_bytes())
+
+
+    async def get(self, model: EntityBase, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False) -> Weapon:
         if version in self.class_base.cache:
             if lang in self.class_base.cache[version]:
-                return list(self.class_base.cache[version][lang].values())
+                if model.id in self.class_base.cache[version][lang]:
+                    if graphql:
+                        return self.class_base.cache[version][lang][model.id]
+                    else:
+                        return place_numbers(Weapon(**self.class_base.cache[version][lang][model.id].model_dump(by_alias=True)))
+                else:
+                    raise ItemNotFound(model.id, lang, version)
+
+        await self.get_all(lang=lang, version=version)
+        return await self.get(model, lang, version)
+
+
+    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False) -> list[Weapon]:
+        
+        if version in self.class_base.cache:
+            if lang in self.class_base.cache[version]:
+                if graphql:
+                    return list(self.class_base.cache[version][lang].values())
+                else:
+                    return [place_numbers(Weapon(**value.model_dump(by_alias=True))) for value in self.class_base.cache[version][lang].values()]
 
         VERSION_PATH = Path(f'api/infra/database/{version}')
         if not VERSION_PATH.exists():
@@ -87,6 +108,18 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 value_dict['Meta'] = self.META_GB.get(key_id.lower(), None)
                 value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.weaponId and banner.weaponId == key_id.lower()]
 
+            for type_skill, skill_list in value_dict['skills'].items():
+                skill_list: list[dict[str, Any]]
+                for i, item in enumerate(skill_list):
+                    if skill_id := item.get('id', None):
+                        values: list[list[float]] = []
+                        for _id in self.DESC_VALUES:
+                            if str(skill_id + '_').lower() in _id.lower():
+                                values.append(self.DESC_VALUES[_id])
+                    
+                        value_dict['skills'][type_skill][i]['values'] = values
+
+
             if value_dict.get('id', None):
                 self.cache[version][lang].update({key_id.lower(): Weapon(**value_dict)})
             else:
@@ -94,4 +127,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
 
         self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_weapons))}
 
-        return list(self.cache[version][lang].values())
+        if graphql:
+            return list(self.class_base.cache[version][lang].values())
+        else:
+            return [place_numbers(Weapon(**value.model_dump(by_alias=True))) for value in self.class_base.cache[version][lang].values()]

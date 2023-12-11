@@ -44,11 +44,11 @@ class Assets(BaseModel):
 
 
 class VoiceActors(BaseModel):
-    cn: str | None
-    jp: str | None
-    en: str | None
-    kr: str | None
-    pt: str | None
+    cn: str | None = None
+    jp: str | None = None
+    en: str | None = None
+    kr: str | None = None
+    pt: str | None = None
 
     @model_validator(mode='before')
     def _replace_strings(cls, values: Any):

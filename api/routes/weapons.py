@@ -1,9 +1,8 @@
 
 from fastapi import APIRouter
+from fastapi.responses import ORJSONResponse
 
 from api.enums import WEAPONS, WEAPONS_CN, LANGS, LANGS_CN, VERSIONS
-
-from api.core.response import PrettyJsonResponse
 
 from api.infra.entitys import Weapon, EntityBase
 from api.infra.repository import WeaponRepo
@@ -16,7 +15,9 @@ METADATA = {
     'name': 'Weapons',
     'description': 'Weapons obtained from simulacra in Tower of Fantasy \n\n **CONTAINS CN DATA**',
     }
+
 INCLUDE = {'id', 'name', 'assets', 'category', 'rarity', 'element'}
+EXCLUDE = {'weaponAttacks': {'__all__': {'__all__': 'values'}}}
 
 
 @router.get('/{id}', name='Get weapon', response_model=Weapon)
@@ -57,10 +58,10 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
     weapon = await WEAPON_REPO.get(EntityBase(id=id), lang, VERSIONS('global'))
 
     if include:
-        return PrettyJsonResponse(weapon.model_dump())
+        return ORJSONResponse(weapon.model_dump(exclude=EXCLUDE))
 
     else:
-        return PrettyJsonResponse(weapon.model_dump(include=INCLUDE))
+        return ORJSONResponse(weapon.model_dump(include=INCLUDE, exclude=EXCLUDE))
 
 
 @router.get(path='', name='All Weapons', response_model=list[Weapon])
@@ -93,7 +94,7 @@ async def get_all_weapons(# version: VERSIONS = VERSIONS('global'),
 
     weapons = await WEAPON_REPO.get_all(lang, version=VERSIONS('global'))
     if include:
-        return PrettyJsonResponse([weapon.model_dump() for weapon in weapons])
+        return ORJSONResponse([weapon.model_dump(exclude=EXCLUDE) for weapon in weapons])
 
     else:
-        return PrettyJsonResponse([weapon.model_dump(include=INCLUDE) for weapon in weapons])
+        return ORJSONResponse([weapon.model_dump(include=INCLUDE, exclude=EXCLUDE) for weapon in weapons])

@@ -1,5 +1,5 @@
 
-from pydantic import Field, BeforeValidator
+from pydantic import Field, BeforeValidator, AliasChoices
 from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
@@ -15,16 +15,10 @@ class Simulacra(EntityBase):
     avatarId: str 
     advanceId: str | None = None
     # UnlockInfo: str
-    weaponId: Annotated[str | None, BeforeValidator(lambda x: None 
-                                                    if isinstance(x, str) and 
-                                                    x.lower() == 'none' or 
-                                                    x.lower() == 'null' else 
-                                                    x)] = None 
-    matrixId: Annotated[str | None, BeforeValidator(lambda x: None 
-                                                    if isinstance(x, str) and 
-                                                    x.lower() == 'none' or 
-                                                    x.lower() == 'null' else 
-                                                    x)] = None
+    
+    weaponId: Annotated[str | None, BeforeValidator(lambda x: None if not x or (isinstance(x, str) and (x.lower() == 'none' or x.lower() == 'null')) else x)] = None 
+    matrixId: Annotated[str | None, BeforeValidator(lambda x: None if not x or (isinstance(x, str) and (x.lower() == 'none' or x.lower() == 'null')) else x)] = None
+
     likedGiftTypes: list[str] = Field(alias='like')
     # dislikedGiftTypes: list[str] = Field(alias='dislike')
     gender: str | None = None
@@ -37,6 +31,6 @@ class Simulacra(EntityBase):
     homeTown: str | None = Field(default=None, alias='city')
     assetsA0: Assets
     assetsA3: Assets | None = None
-    voicing: VC = Field(alias='va')
+    voicing: VC = Field(validation_alias=AliasChoices('va', 'voicing'))
     awakening: list[Awakening]
     banners: list[Banner]
