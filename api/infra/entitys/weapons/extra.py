@@ -44,7 +44,7 @@ class Skill(BaseModel):
     icon: str | None
     tags: list[str] = []
     operations: list[str] = []
-    id: str
+    id: str | None
 
 
     @model_validator(mode='before')
