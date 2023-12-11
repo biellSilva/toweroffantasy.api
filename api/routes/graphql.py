@@ -16,6 +16,7 @@ from api.core.exceptions import VersionNotFound, LanguageNotFound, MissingArgume
 from api.infra.repository import *
 from api.infra.entitys import EntityBase
 
+
 from api.infra.entitys.graphql import *
 
 
@@ -81,7 +82,7 @@ class Query:
         
         if id:
             simulacrum = await SIMU_V2_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
-            return simulacrum # type: ignore
+            return simulacrum # type: ignore 
         
         elif name:
             simulacrum = await SIMU_V2_REPO.get_by_name(name=name, lang=lang, version=VERSIONS(version))
@@ -94,7 +95,7 @@ class Query:
         version = 'global'
         check_params(lang=lang, version=version)
                 
-        simulacra = await SIMU_V2_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version))
+        simulacra = await SIMU_V2_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version), graphql=True)
         return simulacra # type: ignore
         
     
@@ -107,7 +108,7 @@ class Query:
         #     lang = 'cn'
 
         if id:
-            weapon = await WEAPON_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version))
+            weapon = await WEAPON_REPO.get(EntityBase(id=id), lang=LANGS(lang), version=VERSIONS(version), graphql=True)
             return weapon # type: ignore
         
         elif name:
@@ -124,7 +125,7 @@ class Query:
         # if version == 'china':
         #     lang = 'cn'
         
-        weapons = await WEAPON_REPO.get_all(lang=lang, version=VERSIONS(version))
+        weapons = await WEAPON_REPO.get_all(lang=lang, version=VERSIONS(version), graphql=True)
         return weapons # type: ignore
 
     @strawberry.field(name='matrix')

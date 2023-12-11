@@ -12,17 +12,17 @@ class EntityBase(BaseModel):
         def _camel__(value: Any) -> Any:
 
             if isinstance(value, dict):
-                return {k[0].lower() + k[1:]: _camel__(v) for k, v in value.items()} # type: ignore
+                return {str(k)[0].lower() + k[1:]: _camel__(v) for k, v in value.items()} # type: ignore
             
             return value
 
         return _camel__(values)
 
 
-    def custom_model_dump(self, include: set[str] | None = None):
-        return self.__pascal_to_camel_dict(self.model_dump(include=include, by_alias=False))
+    def custom_model_dump(self, include: set[str] | None = None, exclude: set[str] | None = None):
+        return self.__pascal_to_camel_dict(self.model_dump(include=include))
 
-    
+
     def __pascal_to_camel_dict(self, d: dict[Any, Any]) -> dict[str, Any]:
         def pascal_to_camel(string: str) -> str:
             return string[0].lower() + string[1:]

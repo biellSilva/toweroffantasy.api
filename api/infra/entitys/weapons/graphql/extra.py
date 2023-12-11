@@ -18,7 +18,7 @@ class WeaponAssets:
 class Skill:
     name: str | None
     description: str | None
-    # Values: list[list[ListKeys]] = []
+    values: list[list[float]]
     icon: str | None
     tags: list[str] 
     operations: list[str] 

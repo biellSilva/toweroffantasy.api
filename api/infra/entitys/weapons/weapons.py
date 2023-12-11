@@ -13,8 +13,8 @@ from .extra import (
     Assets,
     MetaData,
     BaseStats,
-    FashionWeaponInfo,
-    MatrixSuit,
+    # FashionWeaponInfo,
+    # MatrixSuit,
     WeaponAdvancement,
     WeaponAttacks
 )
@@ -34,8 +34,8 @@ class Weapon(EntityBase):
     element: str
     description: str
 
-    shatter: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
-    charge: Annotated[ShatterOrCharge, BeforeValidator(classify_rework)]
+    shatter: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))] # type: ignore
+    charge: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))] # type: ignore
 
     # FashionWeaponInfos: list[FashionWeaponInfo]
     # RecommendedMatrices: list[MatrixSuit]

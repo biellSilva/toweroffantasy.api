@@ -7,40 +7,43 @@ from json import loads
 __versions: list[str] = [file.name for file in Path('api/infra/database').iterdir() if file.is_dir()]
 VERSIONS = StrEnum('VERSIONS', __versions)
 
+__levels: list[str] = [str(i) for i in range(1, 21)]
+LEVELS = StrEnum('LEVELS', __levels)
+
 
 ## GLOBAL ENUMS
 langs: list[str] = [file.name for file in Path('api/infra/database/global').iterdir() if file.is_dir()]
 LANGS = StrEnum('LANGS', langs)
 
-__simulacras_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/imitations.json').read_bytes()) if 'L1' not in file]
-SIMULACRA = StrEnum('SIMULACRA', __simulacras_names)
+__global_simulacra: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/imitations.json').read_bytes()) if 'L1' not in file]
+SIMULACRA = StrEnum('SIMULACRA', __global_simulacra)
 
-__matrices_names: list[str] = [str(file).replace('_1', '').lower() for file in loads(Path('api/infra/database/global/en/matrices.json').read_bytes())]
-MATRICES = StrEnum('MATRICES', __matrices_names)
+__global_matrices: list[str] = [str(file).replace('_1', '').lower() for file in loads(Path('api/infra/database/global/en/matrices.json').read_bytes())]
+MATRICES = StrEnum('MATRICES', __global_matrices)
 
-__weapons_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/weapons.json').read_bytes())]
-WEAPONS = StrEnum('WEAPONS', __weapons_names)
+__global_weapons: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/weapons.json').read_bytes())]
+WEAPONS = StrEnum('WEAPONS', __global_weapons)
 
-__relics_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/relics.json').read_bytes())]
-RELICS = StrEnum('RELICS', __relics_names)
+__global_relics: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/relics.json').read_bytes())]
+RELICS = StrEnum('RELICS', __global_relics)
 
-__foods_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/food.json').read_bytes())]
-FOOD = StrEnum('FOOD', __foods_names)
+__global_food: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/food.json').read_bytes())]
+FOOD = StrEnum('FOOD', __global_food)
 
-__items_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/items.json').read_bytes())]
-ITEMS = StrEnum('ITEMS', __items_names)
+__global_items: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/items.json').read_bytes())]
+ITEMS = StrEnum('ITEMS', __global_items)
 
-__achievs_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/achievements.json').read_bytes())]
-ACHIEVS = StrEnum('ACHIEVS', __achievs_names)
+__global_achievs: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/achievements.json').read_bytes())]
+ACHIEVS = StrEnum('ACHIEVS', __global_achievs)
 
-__outfits_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/outfits.json').read_bytes())]
-OUTFITS = StrEnum('OUTFITS', __outfits_names)
+__global_outfits: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/outfits.json').read_bytes())]
+OUTFITS = StrEnum('OUTFITS', __global_outfits)
 
-__mounts_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/mount.json').read_bytes())]
-MOUNTS = StrEnum('MOUNTS', __mounts_names)
+__global_mounts: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/mount.json').read_bytes())]
+MOUNTS = StrEnum('MOUNTS', __global_mounts)
 
-__servants_names: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/pet.json').read_bytes())]
-SERVANTS = StrEnum('SERVANTS', __servants_names)
+__global_servants: list[str] = [str(file).lower() for file in loads(Path('api/infra/database/global/en/pet.json').read_bytes())]
+SERVANTS = StrEnum('SERVANTS', __global_servants)
 
 
 ## CHINA ENUMS
