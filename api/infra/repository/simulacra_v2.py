@@ -81,7 +81,6 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
                 if WEAPON_ID and WEAPON_ID not in ('none', 'null'):
                     if WEAPON := await self.WEAPON_REPO.get(EntityBase(id=WEAPON_ID), lang=lang, version=VERSIONS('global'), graphql=True):
                         value_dict['weapon'] = WEAPON
-                        print(WEAPON.weaponAttacks.normals[0].description)
             
             if MATRIX_ID := value_dict.get('MatrixId', None):
                 if MATRIX_ID and MATRIX_ID not in ('none', 'null'):
@@ -97,7 +96,6 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
         self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_simulacra))}
 
         if graphql:
-            print('graphql')
             return list(self.class_base.cache[version][lang].values())
         else:
             return [place_numbers_v2(Simulacra_v2(**value.model_dump(by_alias=True))) for value in self.class_base.cache[version][lang].values()]
