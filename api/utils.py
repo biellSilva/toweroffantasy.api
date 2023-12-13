@@ -1,10 +1,13 @@
 
 import re
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, TypeVar
 
 from api.enums import LANGS
 from api.config import SIMULACRA_SORT_ORDER, WEAPON_SORT_ORDER, MATRIX_SORT_ORDER
+
+
+T = TypeVar('T')
 
 
 if TYPE_CHECKING:
@@ -273,3 +276,7 @@ def place_numbers_v2(simulacra: 'Simulacra_v2'):
                 attack.description = new_desc
     
     return simulacra
+
+
+def paginator(items: list[T], page: int = 0, chunk: int = 10) -> tuple[list[T], int]:
+    return items[page*chunk : page*chunk+chunk], len(items) // chunk if len(items) % chunk == 0 else len(items) // chunk + 1
