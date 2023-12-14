@@ -16,7 +16,21 @@ METADATA = {
     'name': 'Simulacra v2',
     'description': 'Simulacra v2 is the same as /simulacra, except it contains Weapons and Matrices if possible \n\n **DOES NOT CONTAINS CN DATA**',
 }
-EXCLUDE = {'weapon': {'weaponAttacks': {'__all__': {'__all__': 'values'}}}}
+
+EXCLUDE = {
+    'weapon': {
+        'banners': True,
+        'weaponAttacks': {
+            '__all__': {
+                '__all__': 'values'
+            }
+        }
+    },
+    'matrix': {
+        'banners': True
+    }
+}
+
 INCLUDE = {
     'id': True, 
     'name': True, 
