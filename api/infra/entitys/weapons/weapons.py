@@ -1,5 +1,5 @@
 
-from pydantic import BeforeValidator, Field
+from pydantic import BeforeValidator, Field, AliasChoices
 from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
@@ -21,8 +21,8 @@ from .extra import (
 
 
 class Weapon(EntityBase):
-    simulacrumId: str | None = Field(alias='avatar', default=None)
-    advanceId: str | None = Field(alias='advanceID', default=None)
+    simulacrumId: str | None = Field(validation_alias=AliasChoices('avatar', 'simulacrumId'), default=None)
+    advanceId: str | None = Field(validation_alias=AliasChoices('advanceID', 'advanceId'), default=None)
     # isUpPoolWeapon: bool = False
 
     name: str
@@ -30,7 +30,7 @@ class Weapon(EntityBase):
     assets: Assets
 
     # Brief: str
-    category: str = Field(alias='wc')
+    category: str = Field(validation_alias=AliasChoices('wc', 'category'))
     element: str
     description: str
 
@@ -42,9 +42,9 @@ class Weapon(EntityBase):
 
     weaponEffects: list[WeaponEffect]
 
-    weaponAdvancements: list[WeaponAdvancement] = Field(alias='advancements')
-    weaponAttacks: WeaponAttacks = Field(alias='skills')
-    weaponStats: list[BaseStats] = Field(alias='stats')
+    weaponAdvancements: list[WeaponAdvancement] = Field(validation_alias=AliasChoices('advancements', 'weaponAdvancements'))
+    weaponAttacks: WeaponAttacks = Field(validation_alias=AliasChoices('skills', 'weaponAttacks'))
+    weaponStats: list[BaseStats] = Field(validation_alias=AliasChoices('stats', 'weaponStats'))
 
     meta: MetaData | None = None
     banners: list[Banner] = []
