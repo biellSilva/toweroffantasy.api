@@ -165,6 +165,7 @@
 			{
 				"charge": 5.6,
 				"shatter": 6.9,
+				"multiplier": [],
 				"need": null
 			}
 		],
@@ -340,6 +341,7 @@
 			{
 				"charge": 9.6,
 				"shatter": 3.2,
+				"multiplier": [],
 				"need": null
 			}
 		],
@@ -499,6 +501,7 @@
 			{
 				"charge": 8.8,
 				"shatter": 3.6,
+				"multiplier": [],
 				"need": null
 			}
 		],
@@ -661,6 +664,7 @@
 			{
 				"charge": 8,
 				"shatter": 4.8,
+				"multiplier": [],
 				"need": null
 			}
 		],
@@ -838,42 +842,168 @@
 			{
 				"charge": 10,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После использования навыка уклонения лечит всех товарищей по команде в пределах **10** метров на **100%** от АТК.",
 				"charge": 10,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "stave_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **10%**.",
 				"charge": 10,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.433333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "stave_thunder_plasm"
 			},
 			{
 				"description": "Обычные атаки также выпускают две ракеты, каждая из которых наносит урон в размере **5%** от АТК цели и восстанавливает **5** очк. заряда оружия.",
 				"charge": 11.2,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.6
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "stave_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **20%**.",
 				"charge": 11.2,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.966667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "stave_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает скорость получения заряда оружия на **20%** (не применяется к ракетным атакам).",
 				"charge": 13.2,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.133333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "stave_thunder_plasm"
 			},
 			{
 				"description": "Когда любой навык снимает с цели эффекты контроля, все товарищи по команде в радиусе действия получают **60%** снижение урона.",
 				"charge": 13.2,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.3
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "stave_thunder_plasm"
 			}
 		],
@@ -974,42 +1104,168 @@
 			{
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Каждая успешная обычная атака увеличивает урон на **1%** на **2** сек. Накапливается до **15** раз. Увеличивает число боеприпасов до **60**.",
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "cannon_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **10%**.",
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.433333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "cannon_ice_plasm"
 			},
 			{
 				"description": "В течение **10** сек. после переключения на это оружие увеличивает урон от обычных атак и раскол на **30%**. Перезарядка: **25** сек. Повышает количество боеприпасов до **80**.",
 				"charge": 10,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.6
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "cannon_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **20%**.",
 				"charge": 10,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.966667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "cannon_ice_plasm"
 			},
 			{
 				"description": "Уменьшает перезарядку обычных атак в режиме турели на **2** сек.",
 				"charge": 10,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.133333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "cannon_ice_plasm"
 			},
 			{
 				"description": "В течение **10** сек. после переключения на это оружие увеличивает урон от обычных атак и раскол на **60%**. Перезарядка: **25** сек.",
 				"charge": 10,
 				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.3
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "cannon_ice_plasm"
 			}
 		],
@@ -1217,42 +1473,168 @@
 				"description": "**Физический резонанс**: увеличивает физическую АТК на **15%** и сопротивление физическому урону на **25%**. Для активации добавьте в экипировку минимум **2** предмета физического оружия. Эффект комплекта также работает с оружием в ячейке доп. оружия. Он не складывается с другими эффектами физического резонанса или физической реакции, при этом физический резонанс имеет приоритет.\r\n**Универсальный резонанс**: увеличивает конечный урон на **15%**. Для активации добавьте в экипировку **2** предмета оружия одной стихии, кроме физического. Эффект этого комплекта действует в ячейке дополнительного оружия.",
 				"charge": 14,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Увеличивает эффект раскола от навыков «Активные раскопки», «Дождь из осьминогов» и «Вперед, Пип!» на **80%**.\r\nЕсли эти навыки используются, когда показатель щита странника составляет менее **50%**, увеличивает показатель щита на **50%** на **8** секунд. Эффект может сработать не чаще **1** раза в **5** секунд (недоступно в Высшей лиге).",
 				"charge": 14,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Chainsaw_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 14,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Chainsaw_physic_plasm"
 			},
 			{
 				"description": "Лимит **Восьмихвосток Пип** увеличен до **45**.\r\nПосле использования Абсолютного навыка Пип повышает физический урон на **12%** на **30** секунд.",
 				"charge": 14,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Chainsaw_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 14,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Chainsaw_physic_plasm"
 			},
 			{
 				"description": "Детонация **маячков сокровищ** обновляет статус **тяжелого ранения** у целей.\r\nУсиливает физический урон на **10%**, когда урон наносится целям, у которых менее **80%** ОЗ. Эффект этого комплекта действует в ячейке дополнительного оружия.",
 				"charge": 14,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Chainsaw_physic_plasm"
 			},
 			{
 				"description": "Увеличивает урон, наносимый подрывом **маячков сокровищ**, до **90%** от АТК.",
 				"charge": 14,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Chainsaw_physic_plasm"
 			}
 		],
@@ -1436,42 +1818,168 @@
 			{
 				"charge": 6,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После переключения на это оружие провоцирует ближайшие цели и предотвращает **1** получение урона в течение следующих **8** сек. Дает гипертело на следующие **8** сек. Перезарядка: **15** сек.",
 				"charge": 6,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "hammer_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **10%**.",
 				"charge": 6,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.433333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "hammer_ice_plasm"
 			},
 			{
 				"description": "После получения урона снижает весь получаемый урон на **50%** в течение следующих **6** сек. Перезарядка: **20** сек.",
 				"charge": 6,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.6
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "hammer_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **20%**.",
 				"charge": 6,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.966667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "hammer_ice_plasm"
 			},
 			{
 				"description": "Обычные атаки **оглушают** цели на **2,5** сек. Перезарядка: **20** сек.",
 				"charge": 6,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.133333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "hammer_ice_plasm"
 			},
 			{
 				"description": "Навыки разрядки наносят дополнительно **10%** урона по целям, а урон от холода увеличивается еще на **10%** на **25** сек.",
 				"charge": 6,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.3
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "hammer_ice_plasm"
 			}
 		],
@@ -1634,42 +2142,168 @@
 			{
 				"charge": 10,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Восстанавливает 1 попытку уклонения с каждой пятой обычной атакой или после использования **Пробивающего выстрела**.",
 				"charge": 10,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "bow_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **10%**.",
 				"charge": 10,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.433333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "bow_physic_plasm"
 			},
 			{
 				"description": "Увеличивает урон от выстрела в голову на **30%**.",
 				"charge": 10,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.6
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "bow_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **20%**.",
 				"charge": 10,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.966667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "bow_physic_plasm"
 			},
 			{
 				"description": "Навыки уклонения наносят цели тяжелое ранение на **7** сек.",
 				"charge": 10,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.133333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "bow_physic_plasm"
 			},
 			{
 				"description": "Шанс крит. удара по тяжело раненым целям увеличивается на **30%**, а крит. урон на **50%**.",
 				"charge": 10,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.3
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "bow_physic_plasm"
 			}
 		],
@@ -1859,42 +2493,168 @@
 			{
 				"charge": 7,
 				"shatter": 11,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Увеличивает раскол на **15%**. После раскола щита у цели АТК всех товарищей по команде увеличивается на **15%** на **30** сек. Не накапливается.",
 				"charge": 7,
 				"shatter": 12.6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "spear_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **10%**.",
 				"charge": 7,
 				"shatter": 12.6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.433333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "spear_thunder_plasm"
 			},
 			{
 				"description": "После попадания по цели **Искатель Луны** уменьшает ее АТК на **5%** и увеличивает АТК персонажа на **5%** на **15**сек. Эффект накапливается до **3**раз, поражая несколько целей. Если у цели есть тяжелое ранение, эффект удваивается.",
 				"charge": 7,
 				"shatter": 12.6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.6
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "spear_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **20%**.",
 				"charge": 7,
 				"shatter": 12.6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.866667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.766667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "spear_thunder_plasm"
 			},
 			{
 				"description": "Удвоенная продолжительность оглушения от навыков уклонения.",
 				"charge": 7,
 				"shatter": 12.6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.033333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.933333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "spear_thunder_plasm"
 			},
 			{
 				"description": "Навык разрядки наносит тем больше урона, чем дальше он проходит, вплоть до **100%** к урону.",
 				"charge": 7,
 				"shatter": 12.6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.2
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "spear_thunder_plasm"
 			}
 		],
@@ -2072,42 +2832,168 @@
 			{
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Атака цели сзади увеличивает шанс крит. удара всех атак парными лезвиями на **40%**. Удар в спину по наэлектризованной цели увеличивает шанс крит. удара на **100%** и крит. урон на **30%**.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "digger_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "digger_thunder_plasm"
 			},
 			{
 				"description": "На **30%** увеличивает урон по целям с менее чем **60%** ОЗ.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "digger_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "digger_thunder_plasm"
 			},
 			{
 				"description": "Срабатывание Ответной атаки дает 100% шанс крит. удара на следующие **4** сек. и увеличивает крит. урон на **50%**. Перезарядка: **10** сек.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "digger_thunder_plasm"
 			},
 			{
 				"description": "После использования навыка увеличивает урон электричеством, наносимый цели, на **20%** на **20** сек.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "digger_thunder_plasm"
 			}
 		],
@@ -2310,42 +3196,168 @@
 			{
 				"charge": 4,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Увеличивает раскол на **15%** и восстанавливает **10%** ОЗ после раскола щита цели.",
 				"charge": 4,
 				"shatter": 13.8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "bigsword_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **16%**.",
 				"charge": 4,
 				"shatter": 13.8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "bigsword_ice_plasm"
 			},
 			{
 				"description": "При переключении на оружие дает ледяной щит в размере **10%** от макс. ОЗ. Перезарядка: **20** сек. Ледяной щит действует до **10** сек.",
 				"charge": 4,
 				"shatter": 13.8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "bigsword_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **32%**.",
 				"charge": 4,
 				"shatter": 13.8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "bigsword_ice_plasm"
 			},
 			{
 				"description": "Увеличивает урон и раскол на **50%** пока щит активен.",
 				"charge": 4,
 				"shatter": 16.1,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "bigsword_ice_plasm"
 			},
 			{
 				"description": "При переключении на оружие дает ледяной щит в размере **20%** от макс. ОЗ и невосприимчивость к контролю, когда щит активен. Перезарядка: **20** сек. Ледяной щит действует до **10** сек.",
 				"charge": 4,
 				"shatter": 16.1,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "bigsword_ice_plasm"
 			}
 		],
@@ -2506,42 +3518,168 @@
 			{
 				"charge": 11.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Дает экземпляр Острой стрелы каждый раз, когда выпущенная атакой с уклонением стрела попадает в цель. Каждый экземпляр увеличивает урон на **5%** на **15** сек. Накапливается до **3** раз.",
 				"charge": 11.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "bow_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 11.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "bow_ice_plasm"
 			},
 			{
 				"description": "При срабатывании атаки с уклонением выстреливается **3** заряженные стрелы.",
 				"charge": 11.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "bow_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 11.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "bow_ice_plasm"
 			},
 			{
 				"description": "Удваивает длительность Града стрел и замедляет цели на **25%**.",
 				"charge": 11.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "bow_ice_plasm"
 			},
 			{
 				"description": "Острая стрела накапливается до **5** раз. Попадание в цель заряженной стрелой немедленно дает **3** экз., выстрел в голову дает **5** экз.",
 				"charge": 11.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "bow_ice_plasm"
 			}
 		],
@@ -2720,42 +3858,168 @@
 				"description": "**Резонанс холода**: увеличивает АТК холодом на **15%** и сопротивление холоду на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n**Посвящение холода**: увеличивает АТК холодом всей команды на **5%**, когда активен резонанс посвящения.",
 				"charge": 12.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После уклонения призывает целебную пчелу, которая следует за персонажем и лечит союзника с наименьшим процентом ОЗ в пределах **15** метров. Каждый раз лечит на **25%** от АТК и восстанавливает **50** очков заряда оружия. Эффект длится **25** сек. Перезарядка: **25** сек.",
 				"charge": 12.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "stave_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **16%**.",
 				"charge": 12.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "stave_ice_plasm"
 			},
 			{
 				"description": "Используйте **Святилище** или навыки разрядки, чтобы снять с целей дебаффы. Можно использовать под воздействием эффектов контроля. Увеличивает на **20%** раскол и наносимый урон для всех членов команды в радиусе действия и дает им невосприимчивость к эффектам контроля и раскола.",
 				"charge": 12.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "stave_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **32%**.",
 				"charge": 12.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "stave_ice_plasm"
 			},
 			{
 				"description": "Увеличивает эффект лечения на **15%**, плюс еще **20%** при лечении целей с менее чем **60%** ОЗ.",
 				"charge": 12.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "stave_ice_plasm"
 			},
 			{
 				"description": "Каждый раз, когда целебная пчела призывается или пропадает из боя, лечит всех союзников на **100%** от АТК персонажа. Все союзники в пределах **10** метров от целебной пчелы также получают **15%** усиление лечения и урона. Этот эффект не накапливается.",
 				"charge": 12.5,
 				"shatter": 4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "stave_ice_plasm"
 			}
 		],
@@ -2947,42 +4211,168 @@
 			{
 				"charge": 5,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Усиливает раскол на **15%**. Если щит цели расколот, наносит цели урон от горения в размере **120%**от АТК каждую секунду в течение **15** сек.",
 				"charge": 5,
 				"shatter": 14.3,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "sickle_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **16%**.",
 				"charge": 5,
 				"shatter": 14.3,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "sickle_fire_plasm"
 			},
 			{
 				"description": "Увеличивает наносимый урон на **15%** за каждую вражескую цель в пределах **6** метров, максимум до **30%**.",
 				"charge": 5,
 				"shatter": 14.3,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "sickle_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 5,
 				"shatter": 14.3,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "sickle_fire_plasm"
 			},
 			{
 				"description": "Увеличивает наносимый по щитам ОЗ или врагам со щитами урон на **100%**.",
 				"charge": 5,
 				"shatter": 14.3,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "sickle_fire_plasm"
 			},
 			{
 				"description": "Увеличивает наносимый урон на **10%** за каждого убитого врага в течение **30** сек. Накапливается до **3** раз.",
 				"charge": 5,
 				"shatter": 14.3,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "sickle_fire_plasm"
 			}
 		],
@@ -3152,42 +4542,168 @@
 				"description": "**Резонанс огня**: увеличивает АТК огнем на **15%** и сопротивление огню на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 10,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Каждое применение Заграждения наносит дополнительный урон, равный **0%** текущих ОЗ цели (не может превышать **1%** от АТК).",
 				"charge": 10,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "gun_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 10,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "gun_fire_plasm"
 			},
 			{
 				"description": "Двунаправленный навык «Тяжелая бомбардировка» и атака с уклонением «Ближний бой» накладывают на уже горящие цели **«Ионную вспышку»**, наносящую урон огнем в размере **40%** от их текущей АТК каждую секунду в течение **10** сек.",
 				"charge": 10,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "gun_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 10,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "gun_fire_plasm"
 			},
 			{
 				"description": "Урон от **Ионной вспышки** увеличивается до **60%** от АТК. Успешные атаки при помощи навыка уклонения любого оружия продлевают действие **Ионной вспышки**.",
 				"charge": 10,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "gun_fire_plasm"
 			},
 			{
 				"description": "**Заграждение** имеет эффект горения длительностью **15** сек. Успешные атаки при помощи навыка уклонения любого оружия сокращают перезарядку **Заграждения** на **4** сек. Перезарядка эффекта: **1,5** сек. Постепенный урон от навыка уклонения также вызывает сокращение перезарядки.",
 				"charge": 10,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "gun_fire_plasm"
 			}
 		],
@@ -3363,42 +4879,168 @@
 				"description": "**Физический резонанс**: увеличивает физическую АТК на **15%** и сопротивление физическому урону на **25%**. Для активации добавьте в экипировку минимум **2** предмета физического оружия. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 12,
 				"shatter": 7.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После поражения цели навыком или навыком разрядки получает 1 экз. следующего баффа: увеличение получаемого урона на **8%** в течение **25** сек; эффект накапливается до **3** раз, но не более 1 экз. за каждое использование навыка.",
 				"charge": 12,
 				"shatter": 7.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "sword_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 12,
 				"shatter": 7.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "sword_physic_plasm"
 			},
 			{
 				"description": "Попадание по цели навыком или навыком разрядки накладывает на цель экземпляр Боевых ран, увеличивая получаемый целью физический урон и эффекты раскола от физического оружия на **0%** на **1 сек**. Накапливается **1** раз.",
 				"charge": 12,
 				"shatter": 8.2,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "sword_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **32%**.",
 				"charge": 12,
 				"shatter": 8.2,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "sword_physic_plasm"
 			},
 			{
 				"description": "Поражение целей навыками или навыками разрядки дает усиление урона от навыков, которое увеличивает урон от всех навыков оружия на **0%** на **1 сек.**. Этот эффект не накапливается.",
 				"charge": 12,
 				"shatter": 8.2,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "sword_physic_plasm"
 			},
 			{
 				"description": "Попадание навыком по одной и той же цели больше не снижает урон. После использования навыков Клинка Гурена или навыка разрядки все цели с Боевыми ранами в пределах 8 метров получают еще **1** экз. Боевых ран.",
 				"charge": 12,
 				"shatter": 8.2,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "sword_physic_plasm"
 			}
 		],
@@ -3573,42 +5215,168 @@
 			{
 				"charge": 6,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Увеличивает наносимый урон и все стихийные эффекты раскола по целям в радиусе действия **Полного цветения** на **30%**.",
 				"charge": 6,
 				"shatter": 11.4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "darts_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 6,
 				"shatter": 11.4,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "darts_physic_plasm"
 			},
 			{
 				"description": "Увеличивает раскол на **15%** и сбрасывает перезарядку всех навыков оружия при расколе щита цели. Срабатывает не чаще одного раза в **30** сек.",
 				"charge": 6,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "darts_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **32%**.",
 				"charge": 6,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "darts_physic_plasm"
 			},
 			{
 				"description": "Атака тяжело раненой цели увеличивает продолжительность тяжелого ранения еще на **7** сек. (эффект срабатывает только один раз).",
 				"charge": 6,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "darts_physic_plasm"
 			},
 			{
 				"description": "После использования **Полного цветения** дает 100% шанс крит. удара на следующие **8** сек.",
 				"charge": 6,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "darts_physic_plasm"
 			}
 		],
@@ -3775,42 +5543,168 @@
 				"description": "**Реакция огня**: увеличивает АТК огнем на **20%** и сопротивление огню на **40%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого набора действует в ячейке дополнительного оружия. Он не суммируется с другими эффектами резонанса огня или реакции огня, при этом резонанс огня имеет приоритет.\r\n**Посвящение огня**: когда активируется резонанс посвящения, увеличивает АТК огнем всей команды на **5%**.",
 				"charge": 13,
 				"shatter": 5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Наносит урон и создает сферу лечения, которая действует в течение **20** сек. и восстанавливает ОЗ подобравшему ее товарищу по команде. Размер восст. ОЗ: **60%** от АТК. Перезарядка: **2** сек.",
 				"charge": 13,
 				"shatter": 5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "cube_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 13,
 				"shatter": 5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "cube_fire_plasm"
 			},
 			{
 				"description": "Сокращает перезарядку навыка с **60** сек. до **30** сек. Каждую секунду, пока щит активен, восстанавливает ОЗ в размере **30%** от АТК.",
 				"charge": 13,
 				"shatter": 5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "cube_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **32%**.",
 				"charge": 13,
 				"shatter": 5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "cube_fire_plasm"
 			},
 			{
 				"description": "При нанесении урона цели также образуется сфера урона, которая действует в течение **20** сек. Она увеличивает весь урон и лечение для подобравшего ее товарища по команде на **2%** на **30** сек. Накапливается до **10** раз. Перезарядка навыка: **2,5** сек.",
 				"charge": 13,
 				"shatter": 5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "cube_fire_plasm"
 			},
 			{
 				"description": "Использование навыка дает союзникам сферы лечения и сферы урона, число которых равно количеству омниевых кубов.",
 				"charge": 13,
 				"shatter": 5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "cube_fire_plasm"
 			}
 		],
@@ -3973,42 +5867,168 @@
 			{
 				"charge": 10.7,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После критического удара по цели происходит электрический взрыв, наносящий цели и ближайшим противникам дополнительный урон в размере **30%** от АТК. Перезарядка: **0,2** сек.",
 				"charge": 10.7,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "dgun_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 10.7,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "dgun_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает шанс крит. удара по наэлектризованным целям на **40%**. Электрический взрыв продлевает эффект наэлектризованности на **0,5** сек, максимум на **5** сек.",
 				"charge": 10.7,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "dgun_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 10.7,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "dgun_thunder_plasm"
 			},
 			{
 				"description": "Удваивает длительность действия электрополя и втягивает цели в центр атаки.",
 				"charge": 10.7,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "dgun_thunder_plasm"
 			},
 			{
 				"description": "Электрический взрыв уменьшает перезарядку навыков на **1** сек.",
 				"charge": 10.7,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "dgun_thunder_plasm"
 			}
 		],
@@ -4171,42 +6191,168 @@
 			{
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "При использовании навыка разрядки «Бурлящая ярость» дает 1 экз. Сильного щита. Использование навыка уклонения или навыка двунаправленной атаки в форме щита дает 1 экз. Сильного щита. Сильный щит дает снижение урона на **10%** на **15** сек. и накапливается до **3** раз. Переключение на форму топора преобразует все экземпляры Сильного щита в экземпляр Острого топора, каждый из которых увеличивает урон на **15%** на **15** сек. Переключение на другое оружие отменяет этот эффект.",
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "ShieldAxe_Fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **16%**.",
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "ShieldAxe_Fire_plasm"
 			},
 			{
 				"description": "При использовании в форме щита двунаправленные атаки и атаки с уклонением наносят цели доп. урон в размере **4%** от текущих ОЗ персонажа.",
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "ShieldAxe_Fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "ShieldAxe_Fire_plasm"
 			},
 			{
 				"description": "После переключения на щитовой топор немедленно дает снижение урона на **30%**, которое уменьшается на **10%** каждые **3** сек. и снижается до минимума в **10%**. Переключение оружия отменяет этот эффект. Перезарядка: **30** сек.",
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "ShieldAxe_Fire_plasm"
 			},
 			{
 				"description": "Улучшение навыков преобразования\r\nУлучшение преобразования щита: увеличивает наносимый урон от навыков на **60%** и увеличивает радиус зоны огня на **30%**.\r\nУлучшение преобразования топора: отдельная перезарядка от преобразования щита. В течение **5** секунд после использования навыка превращает весь полученный урон в ОЗ (не более **15%** от макс. ОЗ персонажа).",
 				"charge": 10,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "ShieldAxe_Fire_plasm"
 			}
 		],
@@ -4397,42 +6543,168 @@
 				"description": "**Резонанс электричества**: увеличивает АТК электричеством на **15%** и сопротивление электричеству на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия электричества. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n\r\n**Раскат грома: постоянство**: каждый успешный удар **Лазурного дракона** наносит ближайшим целям урон, равный **131.3%** от АТК электричеством + **1.9%** от макс. ОЗ странника + **68.8%** от суммы показателей всех типов сопротивления странника + **250%** от крит. удара. Эффект может срабатывать до 1 раза каждые **1,5** сек. Урон от Раската грома считается уроном от обычной атаки. Когда в экипировке **1** предмет любого оружия огня, оружия холода или физического оружия, то урон от Раската грома умножается на **1.3**. Кроме того, на урон от Раската грома не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.",
 				"charge": 15,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После каждого полного заряда **Грозового взрыва** появляются **2** лазурных дракона. Каждый лазурный дракон восполняет другим призванным созданиям **20%** от макс. ОЗ.\r\nУрон от заряженной атаки и урон от ударной волны **Грозового взрыва** увеличиваются на **30%**.\r\nПосле использования **Лазурной луны** вы тут же получаете **3** эффекта «Мощь Цинлун». Применяя навыки других видов оружия электричества, вы получите только **1** эффект «Мощь Цинлун».",
 				"charge": 15,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "mimi_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 15,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "mimi_thunder_plasm"
 			},
 			{
 				"description": "Когда в экипировке **Лазурный дракон**, перезарядка базовых навыков всех видов оружия электричества ускоряется на **20%**. На это не влияют другие эффекты сброса, перезапуска или изменения перезарядки.\r\nКроме того, увеличивает наносимый странником урон от электричества на **15%**. Эффект действует в ячейке дополнительного оружия.",
 				"charge": 15,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "mimi_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 15,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "mimi_thunder_plasm"
 			},
 			{
 				"description": "При получении смертельного урона странник 1 раз избегает гибели и ненадолго получает невосприимчивость к урону. Этот эффект срабатывает 1 раз в **60** сек. и действует в ячейке дополнительного оружия.\r\nПосле активации резонанса силы духа:\r\nИспользование **Парящего дракона** притягивает ближайшие цели (кроме боссов), игнорируя гипертело.\r\nВ командной игре **Грозовой взрыв** во время зарядки дает **1** электрическую временную метку каждые **6** сек. Эти временные метки подключаются друг к другу, образуя энергосеть, которая может блокировать передвижение противников и урон от запущенных ими снарядов. Каждая электрическая временная метка действует до **20** сек.",
 				"charge": 15,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "mimi_thunder_plasm"
 			},
 			{
 				"description": "После использования **Лазурной луны** увеличивает наносимый странником урон от электричества на **10%**, конечный урон — на **10%** на **30** сек.",
 				"charge": 15,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "mimi_thunder_plasm"
 			}
 		],
@@ -4653,42 +6925,168 @@
 				"description": "**The Final Tune**: Increase ATK by **30%**. Activate by equipping **3** altered weapons. This set effect works in the off-hand slot.\r\n**Imbue**: After switching to Purple Bamboo from another weapon, Purple Bamboo's damage element becomes that of the previous weapon.\r\n**Inhabit**: The power of the Darkness is able to Inhabit any unlocked weapon. When Purple Bamboo is not deployed, the power of the Darkness can Inhabit any other weapon, increasing its damage dealt by **1%**. When Purple Bamboo is deployed, the power of the Darkness Inhabits Purple Bamboo, increasing the Wanderer's damage dealt by **15%**.",
 				"charge": 12,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "For every **1** star gained by the Darkness-Inhabited weapon, increase Inhabit's damage boost by an additional **1%**.\r\nDimensional Collapse deals increased damage equal to (**0.1%** of total actual damage dealt in High-Dimensional Space by the Wanderer (excluding Void Trace) plus **2,400%** of ATK) (counts as base multiplier, affected by damage boost).",
 				"charge": 12,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Nanyin_superpower_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 12,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Nanyin_superpower_plasm"
 			},
 			{
 				"description": "Void Trace inherits an additional **50%** of the Wanderer's ATK. When taking lethal damage while not under Possession, instead of being defeated, consume Void Trace and become immune to damage 1 time for a short period of time. This effect can only be triggered 1 time every **60** seconds, and has a lower priority when similar effects are present. This set effect works in the off-hand slot.",
 				"charge": 12,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Nanyin_superpower_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 12,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Nanyin_superpower_plasm"
 			},
 			{
 				"description": "While in High-Dimensional Space, ignore **20%** of the target's resistances.\r\nUp to **3** Void Abyss Currents can now be created.",
 				"charge": 12,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Nanyin_superpower_plasm"
 			},
 			{
 				"description": "Dimensional Collapse now deals damage equal to (**0.4%** of total actual damage dealt in High-Dimensional Space by the Wanderer (excluding Void Trace) plus **2,400%** of ATK) (counts as base multiplier, affected by damage boost).",
 				"charge": 12,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Nanyin_superpower_plasm"
 			}
 		],
@@ -4882,42 +7280,168 @@
 				"description": "**Резонанс холода**: увеличивает АТК холодом на **15%** и сопротивление холоду на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n**Невыносимый холод: Избавление**: после использования навыка **«Мастер меча: Теневой лед»** вы каждую секунду в течение **30** сек. будете наносить урон в размере **70%** от АТК холодом + **10%** от макс. ОЗ странника + **36%** от суммы показателей всех типов сопротивления + **135%** от крит. удара. Урон от нескольких Избавлений не складывается, а урон от Невыносимого холода считается уроном от навыка. Когда в экипировке **1** предмет оружия электричества, оружия огня или физического оружия, урон от Невыносимого холода умножается на **1.3**. Кроме того, на урон от Невыносимого холода не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.",
 				"charge": 8,
 				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После запуска **ледяных клинков** АТК холодом увеличивается на **10%**, а ближайшие цели получают урон в размере **104%** от АТК каждую секунду в течение **30** сек.",
 				"charge": 8,
 				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Linghan_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Linghan_ice_plasm"
 			},
 			{
 				"description": "Странник создает до **4** **ледяных клинков**, и базовый множитель урона от **Понижения температуры** увеличивается до **468%**.\r\nЕсли **Понижение температуры** действует только на одну цель в течение **6** сек., эта цель дополнительно получает эффект **Перекрытия вен**, который снижает ее скорость на **30%** (недоступно в Высшей лиге и против боссов). Если цель вновь получает урон от **ледяных клинков** во время действия **Перекрытия вен**, происходит Морозный взрыв, который наносит урон от навыков в размере **1700%** от АТК + **2%** от потерянных ОЗ цели (но не ниже **2000%** от АТК холодом и не выше **2200%** от АТК холодом). Затем эффекты **Перекрытия вен** и **Понижения температуры** снимаются с цели.",
 				"charge": 8,
 				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Linghan_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Linghan_ice_plasm"
 			},
 			{
 				"description": "Урон от **Снежного хруста** и **Холодного воздуха** дополнительно увеличивается на **50%**. Количество применений **Легкой поступи** увеличивается до **10**, и теперь **1** применение восстанавливается каждые **3** сек.",
 				"charge": 8,
 				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Linghan_ice_plasm"
 			},
 			{
 				"description": "Теперь **Понижение температуры**, срабатывающее после атаки **ледяными клинками**, применяется к области и наносит ближайшим целям дополнительный урон в размере **1170%** от АТК.",
 				"charge": 8,
 				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Linghan_ice_plasm"
 			}
 		],
@@ -5093,42 +7617,168 @@
 				"description": "**Резонанс электричества**: увеличивает АТК электричеством на **15%** и сопротивление электричеству на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия электричества. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n**Посвящение электричества**: увеличивает АТК электричеством всей команды на **5%**, когда активен резонанс посвящения.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После использования **Импульсного замыкания** или **Выброса пучка частиц** создает **1** электрод. Электрод немедленно дает персонажу **5** экз. усиления цепи лечения. Кроме того, использование цепи лечения лечит ближайших союзников на **135%** от АТК странника.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Suspension_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Suspension_thunder_plasm"
 			},
 			{
 				"description": "Каждые **6** сек. электрод испускает **кольцевую молнию**, наносящую урон по области в размере вплоть до **230%** от АТК.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Suspension_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Suspension_thunder_plasm"
 			},
 			{
 				"description": "После использования **Импульсного замыкания** увеличивает АТК странника на (**5** + (количество электродов ×**5**))% на **25** сек.",
 				"charge": 8,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Suspension_thunder_plasm"
 			},
 			{
 				"description": "Одновременно может быть активно до **2** электродов. При призыве новых электродов будут заменены находящиеся дальше от призывателя.",
 				"charge": 11,
 				"shatter": 6,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Suspension_thunder_plasm"
 			}
 		],
@@ -5293,42 +7943,168 @@
 				"description": "**Резонанс холода**: увеличивает АТК холодом на **15%** и сопротивление холоду на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 8,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Дает **1** ед. морозности за нанесенный на Холодной территории стихийный урон в размере **550%** × АТК холодом. Вы можете накопить до **10** очков морозности.\r\nКогда Холодная территория прекращает действовать, всем врагам на Холодной территории наносится взрывной урон в размере (очки морозности × АТК холодом × **95%**). После выхода из Холодной территории вы теряете **1** очко морозности каждые **3** сек.",
 				"charge": 8,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Frigg_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Frigg_ice_plasm"
 			},
 			{
 				"description": "Увеличивает лимит морозности до **15**. При использовании навыков разрядки оружия холода на Холодной территории наносит урон в размере **25%** от АТК холода × (текущая морозность +5) всем целям на Холодной территории.",
 				"charge": 8,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Frigg_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Frigg_ice_plasm"
 			},
 			{
 				"description": "При расколе щита оружием холода на Холодной территории замораживает цель на **2** сек. и наносит дополнительный урон в размере очков морозности × **35%** от АТК холодом. Если цель нельзя заморозить, дополнительный урон удваивается.",
 				"charge": 8,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Frigg_ice_plasm"
 			},
 			{
 				"description": "Если при достижении **15** очков морозности вы находитесь на Холодной территории, то получаете дополнительный эффект «Территория холода II», который увеличивает АТК холодом на **25%** при использовании оружия холода.",
 				"charge": 8,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Frigg_ice_plasm"
 			}
 		],
@@ -5505,42 +8281,168 @@
 				"description": "**Резонанс огня**: увеличивает АТК огнем на **15%** и сопротивление огню на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 8,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Яркое пламя увеличивает урон атак Искры до **0%**. Перезарядка навыка сокращается до **24** сек.",
 				"charge": 8,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "funnel_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "funnel_fire_plasm"
 			},
 			{
 				"description": "Яркое пламя повышает усиление огня на **0%**, а сумму эффектов горения— на **75%**.",
 				"charge": 8,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "funnel_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "funnel_fire_plasm"
 			},
 			{
 				"description": "Дополнительно восстанавливает **75** очков заряда оружия каждый раз, когда Искра поражает противника. Перезарядка: 0,9 сек. Когда активен «Абсолютный жар», раскол увеличивается на **25%**.",
 				"charge": 8,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "funnel_fire_plasm"
 			},
 			{
 				"description": "Яркое пламя увеличивает урон атак Искры до **0%** и удваивает эффективность набора жара. Перезарядка навыка снижается до **16** сек.",
 				"charge": 8,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "funnel_fire_plasm"
 			}
 		],
@@ -5724,42 +8626,168 @@
 				"description": "**Резонанс холода**: увеличивает АТК холодом на **15%** и сопротивление холоду на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 8,
 				"shatter": 13.9,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Когда активирован резонанс холода, время перезарядки всех навыков оружия сбрасывается после каждого **5** использования навыков оружия, а урон от потока и контратаки увеличивается на **1** раз на следующие **25** сек.",
 				"charge": 8,
 				"shatter": 13.9,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Dkatana_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 13.9,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Dkatana_ice_plasm"
 			},
 			{
 				"description": "Бурный поток: увеличивает урон от навыка «Тень меча: всплеск» на **350%** от атаки холодом.\r\nТихий поток: перезарядка навыка «Тень меча: всплеск» составляет **5** сек.",
 				"charge": 8,
 				"shatter": 13.9,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Dkatana_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 13.9,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Dkatana_ice_plasm"
 			},
 			{
 				"description": "Замораживает время и вызывает Фантазию при попадании Всплеска по цели. Имеет общую перезарядку с Фантазией, вызываемой уклонением.",
 				"charge": 8,
 				"shatter": 13.9,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Dkatana_ice_plasm"
 			},
 			{
 				"description": "При попадании по цели с помощью Всплеска урон холодом увеличивается на **11%** в течение **15** сек.\r\nКогда Тень меча активирует блок, урон от холода, который наносят ближайшие вражеские цели, снижается на **25%** в течение **12** сек.",
 				"charge": 8,
 				"shatter": 13.9,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Dkatana_ice_plasm"
 			}
 		],
@@ -5941,42 +8969,168 @@
 				"description": "При сочетании Плетения теней с другим оружием возможно возникновение эффекта **«Мастер по оружию»**.\r\nВозле цели случайным образом появится филлокактус, который взорвется в течение **1–3** секунд, нанося **37,5%** урона по области.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Обычные атаки теперь при попадании наносят урон по области.\r\nЕсли в зоне взрыва филлокактуса находится еще один филлокактус, урон от каждого из следующих взрывов филлокактуса увеличивается на **1000%**, вплоть до **5000%**.\r\nИнтервал генерации филлокактуса из **Лунного царства** теперь уменьшен до **0,5** секунды.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "fan_superpower_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "fan_superpower_plasm"
 			},
 			{
 				"description": "Интервал генерации филлокактуса из **Лунного царства** теперь уменьшен до **0,3** секунды.\r\nФиллокактусы прикрепляются к врагу.\r\nДлительность **Лунного царства** теперь увеличена до **20** секунд.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "fan_superpower_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "fan_superpower_plasm"
 			},
 			{
 				"description": "Во время действия эффекта **Лунного царства** каждую секунду дает **30** ед. заряда оружия и увеличивает урон от навыка разрядки на **15%**.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "fan_superpower_plasm"
 			},
 			{
 				"description": "Переключайте режимы в **Лунном царстве** до **2** раз. Получите **1** попытку после перезарядки навыка и еще **1** попытку, зарядив разрядку.\r\nИспользуйте любую разрядку оружия **3** раза, чтобы получить **+1** использование **Лунного царства**. Действует, даже когда Плетение теней находится в ячейке доп. оружия.\r\nПод действием **Лунного царства** атака увеличивается на **23%**.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "fan_superpower_plasm"
 			}
 		],
@@ -6031,7 +9185,7 @@
 					"operations": [],
 					"tags": [],
 					"icon": "/Game/Resources/Icon/skill/WeaponSkill/pugong_tianlang",
-					"id": null
+					"id": "None"
 				},
 				{
 					"name": "Мицар",
@@ -6150,42 +9304,168 @@
 				"description": "**Резонанс электричества**: увеличивает АТК электричеством на **15%** и сопротивление электричеству на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия электричества. Эффект этого комплекта действует в ячейке дополнительного оружия. Эффекты одного типа не накапливаются.",
 				"charge": 8,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Дает 1 экз. Сверхпроводимости за заряд: увеличивает макс. ОЗ на **0%** и получаемый урон на**1%** (за исключением случаев, когда тек. ОЗ ниже, чем {2 х АТК электричеством и не применяется щит ОЗ). Эффект накапливается до **8** раз. 1 экз. теряется, если Сверхпроводимость не обновляется в течение **3** сек.",
 				"charge": 8,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "tianlang_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "tianlang_thunder_plasm"
 			},
 			{
 				"description": "Используйте любой навык оружия электричества или навык разрядки, чтобы получить **2** заряда. Дает гипертело при достижении **8** зарядов сверхпроводимости.",
 				"charge": 8,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "tianlang_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "tianlang_thunder_plasm"
 			},
 			{
 				"description": "Каждый экз. Сверхпроводимости увеличивает конечный урон на **0%**.",
 				"charge": 8,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "tianlang_thunder_plasm"
 			},
 			{
 				"description": "Усиление Ощущения электричества Дубхе: за каждое новое обнаруженное оружие электричества дает усиление урона от электричества на **0%** на **1** сек.",
 				"charge": 8,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "tianlang_thunder_plasm"
 			}
 		],
@@ -6242,7 +9522,7 @@
 						"Support"
 					],
 					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_arm_skill1",
-					"id": null
+					"id": "None"
 				},
 				{
 					"name": "Обычная атака Веспера",
@@ -6392,42 +9672,168 @@
 				"description": "**Физический резонанс**: увеличивает физическую АТК на **15%** и сопротивление физическому урону на **25%**. Для активации добавьте в экипировку минимум **2** предмета физического оружия. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n**Физическое посвящение**: увеличивает физическую АТК всей команды на **5%**, когда активен резонанс посвящения.",
 				"charge": 10,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Если при использовании любого навыка оружия или разрядки у вас максимальное количество стражей, время действия стражей обновляется, а врагу наносится физический урон в размере **3000%** от физической АТК × число стражей. До 8 стражей, когда действует эффект посвящения, и до 6— без него.",
 				"charge": 10,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "arm_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 10,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "arm_physic_plasm"
 			},
 			{
 				"description": "Увеличивает весь наносимый стражами урон на **20%**, а также увеличивает конечный урон охраняемой цели на **15%** в течение **10 сек.** при использовании любого навыка оружия или разрядки во время действия резонанса посвящения.",
 				"charge": 10,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "arm_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 10,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "arm_physic_plasm"
 			},
 			{
 				"description": "Страж прощения: после 5-кратного срабатывания резонанса дает **1** шанс отменить смертельный урон для владельца и для охраняемой цели. Когда ваш товарищ по команде отменяет смертельный урон, он расходует стража прощения и восстанавливает **5%** макс. ОЗ. Недоступно в Высшей лиге.\r\nСтраж озарения: если действует страж озарения, после 5-кратного срабатывания резонанса дает владельцу **2** шанса отменить смертельный урон. Накапливается до **5** раз. Когда владелец отменяет смертельный урон, он расходует 1 экземпляр стража озарения и восстанавливает **5%** макс. ОЗ. Недоступно в Высшей лиге.",
 				"charge": 10,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "arm_physic_plasm"
 			},
 			{
 				"description": "При использовании любого навыка оружия или разрядки увеличение конечного урона и лечения зависит от числа стражей. Каждый страж увеличивает конечный урон и лечение на **1.6%**, вплоть до **8%**, в течение **25 сек**.",
 				"charge": 10,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "arm_physic_plasm"
 			}
 		],
@@ -6624,42 +10030,168 @@
 				"description": "**Резонанс электричества**: увеличивает АТК электричеством на **15%** и сопротивление электричеству на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия электричества. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса электричества или реакции электричества, при этом резонанс электричества берет верх.",
 				"charge": 12,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "После запуска **Обратной связи** каждый шип кристамакса наносит ближайшим целям урон в размере **66,7%** от АТК каждые **2** секунды в течение **NaN** сек.",
 				"charge": 12,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Rubilia_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 12,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Rubilia_thunder_plasm"
 			},
 			{
 				"description": "После использования навыка оружия или навыка разрядки любого другого оружия появляется **1** шип кристамакса.",
 				"charge": 12,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Rubilia_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 12,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Rubilia_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает макс. восстановление ОЗ у шипов кристамакса при использовании **Обратной связи** до **NaN%**.",
 				"charge": 12,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Rubilia_thunder_plasm"
 			},
 			{
 				"description": "После успешного использования Объятий Харры увеличивает урон от электричества еще на **NaN%** в течение **NaN** сек.",
 				"charge": 12,
 				"shatter": 10,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Rubilia_thunder_plasm"
 			}
 		],
@@ -6854,42 +10386,168 @@
 				"description": "**Резонанс холода**: увеличивает АТК холодом на **15%** и сопротивление холоду на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 12,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "При использовании навыка любого оружия холода в Охлаждающем поле вы получаете поддержку Алисс, которая применяет на поле навык разрядки, что эквивалентно применению навыка разрядки странником. После этого еще раз будет использован навык, который запускает навык разрядки. Вспомогательный навык разрядки Алисс и его урон соответствует **70%** от урона ее изначального навыка.",
 				"charge": 12,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "iceblade_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 12,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "iceblade_ice_plasm"
 			},
 			{
 				"description": "При каждом срабатывании Звездной ночи вы получаете поддержку Алисс. При этом урон Звездной ночи и Сильного мороза также увеличивается на **0%** в течение **1** сек. Эффект накапливается до **3** раз.",
 				"charge": 12,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "iceblade_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 12,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "iceblade_ice_plasm"
 			},
 			{
 				"description": "Увеличивает урон от обычной атаки Непоколебимого крыла и от Ломтика пространства на **0%**. После получения смертельного урона странник получает Оборону Алисс, которая 1 раз спасает его от смерти и ненадолго дает невосприимчивость к урону. Перезарядка: **1** сек.",
 				"charge": 12,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "iceblade_ice_plasm"
 			},
 			{
 				"description": "Увеличивает урон холодом на **0%**, когда накапливается 3 экз. поддержки Алисс.",
 				"charge": 12,
 				"shatter": 8,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "iceblade_ice_plasm"
 			}
 		],
@@ -7048,42 +10706,168 @@
 				"description": "**Резонанс огня**: увеличивает АТК огнем на **15%** и сопротивление огню на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 9,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "При **двукратном** поражении цели Перекрестным снайперством создает в указанной точке **оптическое пространство** на **12** секунд. Если враг в оптическом пространстве вызывает срабатывание суммы эффектов горения, то сумма эффектов горения дополнительно срабатывает **2** раза. Когда враг покидает оптическое пространство, его скорость снижается на **80%** на **2,5** секунды. Перезарядка: **12** секунд.\r\nЦели Перекрестного снайперства охватывает ужас (скорость снижается на **80%**) на **1,5** секунды. Перезарядка: **4** секунды.",
 				"charge": 9,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Snipe_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 9,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Snipe_fire_plasm"
 			},
 			{
 				"description": "При критическом ударе Перекрестного снайперства восстанавливает ОЗ в размере **50%** от нанесенного урона (но не более **15%** от собственных макс. ОЗ, при этом урон от взрыва газа не учитывается), а также **50** ед. заряда оружия.\r\nКаждый экземпляр Спокойного сердца увеличивает конечный шанс крит. удара на **9%** (всего до **27%**) и преобразует до **13.5%** критического урона.",
 				"charge": 9,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Snipe_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 9,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Snipe_fire_plasm"
 			},
 			{
 				"description": "Усиление **Безжалостной бомбы**: в состоянии усиления горения наносимый целям урон от горения увеличивается до **30%**.\r\nУсиление **Обманной бомбы**: позволяет игнорировать **30%** от сопротивления огню у цели при нанесении урона от взрыва газа.",
 				"charge": 9,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Snipe_fire_plasm"
 			},
 			{
 				"description": "Увеличивает наносимый Перекрестным снайперством урон еще на **20%**.",
 				"charge": 9,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Snipe_fire_plasm"
 			}
 		],
@@ -7321,42 +11105,168 @@
 				"description": "**Резонанс огня**: увеличивает АТК огнем на **15%** и сопротивление огню на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n**Огненный взрыв: Постоянство**: когда вы наносите любой удар **Сосновой кометой**, ближайшие цели получают урон, равный **105%** от АТК огнем + **1.5%** от макс. ОЗ странника + **55%** от суммы показателей всех типов сопротивления + **200%** от крит. удара. Этот эффект срабатывает каждые **1,5** сек. Урон от Огненного взрыва считается уроном от обычной атаки. Когда в экипировке **1** предмет оружия электричества, оружия холода или физического оружия любого вида, урон от Огненного взрыва умножается на **1.3**. Кроме того, на урон от Огненного взрыва не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.",
 				"charge": 15,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Когда **воробьиное перышко** попадает в цель, запускается эффект рассеивания, который наносит дополнительный урон по области в размере **50%** от общего урона от горения и воспламенения. Кроме того, эффект **Огненного воробья** распространяется с пораженной цели на другие ближайшие цели, а период его действия обновляется. Эффект рассеивания срабатывает 1 раз в **5** секунд.",
 				"charge": 15,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "brush_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 15,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "brush_fire_plasm"
 			},
 			{
 				"description": "Когда у странника остается меньше **50%** от макс. ОЗ, каждые **0,5** сек. расходуется **1** **воробьиное перышко** и восстанавливается **1.5%** от макс. ОЗ (**3%** от макс. ОЗ в одиночной игре), пока здоровье странника не восстановится полностью или пока не закончатся **воробьиные перышки**. Эффект действует в ячейке дополнительного оружия.",
 				"charge": 15,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "brush_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 15,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "brush_fire_plasm"
 			},
 			{
 				"description": "Получив смертельный урон, вы 1 раз избегаете гибели и на короткое время получаете невосприимчивость к урону. Кроме того, вы немедленно получаете **60** **воробьиных перышек** и **1000** ед. заряда оружия. Срабатывает 1 раз в **60** сек. Эффект этого комплекта действует в ячейке дополнительного оружия.",
 				"charge": 15,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "brush_fire_plasm"
 			},
 			{
 				"description": "Когда вы входите в состояние **Шедевра**, урон огнем дополнительно увеличивается на **14%**.",
 				"charge": 15,
 				"shatter": 12.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "brush_fire_plasm"
 			}
 		],
@@ -7562,42 +11472,168 @@
 				"description": "**Физический резонанс**: увеличивает физическую АТК на **15%** и сопротивление физическому урону на **25%**. Для активации добавьте в экипировку минимум **2** предмета физического оружия. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 9,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "При переключении на Мёбиуса немедленно дает **30** очк. разогрева. Перезарядка: **17** сек. При входе в Удивительный фокус наносит ближайшим целям урон в размере **840%** от АТК и снижает их сопротивление физическому урону на **1000%** на **20** сек.",
 				"charge": 9,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Whip_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 9,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Whip_physic_plasm"
 			},
 			{
 				"description": "При преждевременном завершении Удивительного фокуса наносит урон по большой области в течение **13** сек. Текущее время перезарядки Мёбиуса сокращается, а физический урон на некоторое время увеличивается на **25%** (этот эффект не распространяется на Мёбиуса). Если оставшееся время действия Удивительного фокуса превышает **13** секунд, дополнительно дает **200** ед. заряда оружия. Чем больше времени остается у Удивительного фокуса, тем выше урон в области поражения, тем быстрее перезарядка и тем дольше действует усиление физического урона. Максимальное значение урона в области поражения составляет **200%** от АТК — такой урон наносится, когда оставшееся время действия Удивительного фокуса превышает **13** сек. Максимальное сокращение времени перезарядки составляет **13** сек., а усиление физического урона может длиться до **20** сек.",
 				"charge": 9,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Whip_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 9,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Whip_physic_plasm"
 			},
 			{
 				"description": "Получите эффект «Марионетка спирита» при использовании Удивительного фокуса. Эффект усиливает физический урон Мёбиуса на **15%**. Пока действует Удивительный фокус, вы восстанавливаете **2%** от макс. ОЗ и **10** ед. заряда оружия в секунду.",
 				"charge": 9,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Whip_physic_plasm"
 			},
 			{
 				"description": "На время действия Удивительного фокуса Мёбиус получает дополнительный кнут. Взмах им происходит каждый раз, когда Странник использует Мёбиуса, чтобы проводить обычные атаки или атаки с уклонением. Кнут наносит урон в размере **100%** от АТК Мёбиуса (эта атака не считается обычной атакой).",
 				"charge": 9,
 				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Whip_physic_plasm"
 			}
 		],
@@ -7813,42 +11849,168 @@
 				"description": "**Резонанс огня**: увеличивает АТК огнем на **15%** и сопротивление огню на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n**Огненный взрыв: Быстрый разрез**: когда вы наносите удар навыком разрядки любого оружия, имея в экипировке **Бесконечное цветение**, ближайшие цели получают начальный урон, равный **37.5%** от АТК огнем + **0.5%** от макс. ОЗ странника + **18.75%** от суммы показателей всех типов сопротивления + **68.75%** от крит. удара. Пока вы находитесь в бою, каждые **0,5** сек. урон от Быстрого разреза увеличивается на **исходную величину** вплоть до **30** раз. При наличии нескольких экземпляров урона от Быстрого разреза для расчета берется самое высокое начальное значение. Урон от Огненного взрыва: Быстрого разреза считается уроном от навыка разрядки. Когда в экипировке **1** предмет оружия холода, оружия электричества или физического оружия любого вида, урон от Огненного взрыва умножается на **1.3**. Кроме того, на урон от Огненного взрыва не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Базовый множитель урона от **Пылающего сердца** увеличивается до **60%** от АТК. Если, находясь в бою, странник накладывает несколько эффектов горения, то базовый множитель урона от **Пылающего сердца** дополнительно увеличивается до самого сильного из этих эффектов.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "feise_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "feise_fire_plasm"
 			},
 			{
 				"description": "Максимальное число эффектов **Фантазии Фэй Сэ** увеличивается до **2**. Когда **Кружение** попадает по цели, срабатывает еще **1** эффект **Фантазии Фэй Сэ**.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "feise_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "feise_fire_plasm"
 			},
 			{
 				"description": "**Каждый** эффект **Фантазии Фэй Сэ** или **Лепестка лотоса**, сотворенный в **Мираже**, дополнительно увеличивает урон от **Пылающего сердца** на **12%**.\r\n**Лотос аспары** расходует на **75%** меньше выносливости.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "feise_fire_plasm"
 			},
 			{
 				"description": "Базовый множитель **пагубного** урона увеличивается до **270%** от АТК, сила раскола удваивается, а каждый успешный удар с вероятностью **15%** накладывает на цель задержку в **65%** на **2** сек. (не действует против боссов в командной игре и недоступно в Высшей лиге).",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "feise_fire_plasm"
 			}
 		],
@@ -8058,42 +12220,168 @@
 				"description": "**Резонанс электричества**: увеличивает АТК электричеством на **15%** и сопротивление электричеству на **25%**. Для активации добавьте в экипировку **2** или больше оружия электричества. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n**Баланс стихий**: увеличивает все АТК на **15%**. Для активации добавьте в экипировку **3** оружия разных стихий. Эффект этого комплекта действует в ячейке дополнительного оружия.",
 				"charge": 10.5,
 				"shatter": 13.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Когда **Звериная звезда** призывает сознание и перезаряжается, дает навык **Слуховая лихорадка**. Устремляется к цели и атакует несколько раз, нанося урон в размере до **720%** от АТК. Каждый попавший в цель удар ненадолго замедляет врага и восстанавливает ОЗ в размере **100%** от АТК. Последний удар помещает на цель **2** музыкальные ноты. Перезарядка Слуховой лихорадки составляет **15** секунд.\r\nКогда взрываются **3** или более нот, а у Слуховой лихорадки осталось больше **5** секунд перезарядки, перезарядка Слуховой лихорадки сбрасывается. Этот эффект может сработать только один раз в **15** секунд.",
 				"charge": 10.5,
 				"shatter": 13.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "fenrir_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 10.5,
 				"shatter": 13.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "fenrir_thunder_plasm"
 			},
 			{
 				"description": "Пока Мир песни активен:\r\nЗа каждые **45%** потерянных макс. ОЗ или при использовании навыка **«Слуховая лихорадка»** запускает **звуковое землетрясение**, нанося целям в Мире песни урон в размере **650%** от АТК.\r\nЗа каждые **99%** потерянных макс. ОЗ на **45** сек. дает **1** эффект «Избегание смерти» (блокирует летальный эффект и на короткое время дает невосприимчивость к урону). Накапливается **1** раз.",
 				"charge": 10.5,
 				"shatter": 13.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "fenrir_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 10.5,
 				"shatter": 13.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "fenrir_thunder_plasm"
 			},
 			{
 				"description": "Увеличивает множитель урона от взрыва музыкальных нот до **40%**, а постепенный урон, вызванный опьянением, до **1,5%** от макс. ОЗ каждую секунду.\r\nПока Мир песни активен, **Сотрясение мира песни** запускается автоматически, если не запустилось за **12** сек. в сражении.",
 				"charge": 10.5,
 				"shatter": 13.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "fenrir_thunder_plasm"
 			},
 			{
 				"description": "При использовании **Глейпнира** повышает шанс крит. удара на **18%**. После переключения на другое оружие повышение шанса крит. удара сохраняется еще **5** сек.",
 				"charge": 10.5,
 				"shatter": 13.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "fenrir_thunder_plasm"
 			}
 		],
@@ -8287,42 +12575,168 @@
 				"description": "**Резонанс огня**: увеличивает АТК огнем на **15%** и сопротивление огню на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
 				"charge": 8,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "**Алая сила**: с Алой птицей в экипировке **затраты боеприпасов**, урон, заряд и эффекты раскола другого оружия умножаются на **показатель Перьевого зонтика**.\r\n**Пылающий огонь**: когда на ближайших целях срабатывает сумма эффектов горения или они получают урон от Огненной вспышки, **30%** урона переносится на **3** соседних бойцов с наибольшим процентом ОЗ (включая саму цель).",
 				"charge": 8,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "umbrella_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовых ОЗ текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "umbrella_fire_plasm"
 			},
 			{
 				"description": "Пассивный 1: при использовании раскола или любой атаки оружием с разрядкой все зонтики поблизости вызывают срабатывание **1** Огненной вспышки с эффективностью **30%**. АТК противников рядом с зонтиками снижается на **15%**. Если вы в бою, то после первого нанесения урона рядом с целью появляются **3** зонтика.",
 				"charge": 8,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "umbrella_fire_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.986667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.826667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "umbrella_fire_plasm"
 			},
 			{
 				"description": "Огненная вспышка и перенесенный урон игнорируют **60%** сопротивления огню у цели.\r\nУрон от огня, наносимый коррозией, увеличивается на **10%**.",
 				"charge": 8,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.153333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.993333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "umbrella_fire_plasm"
 			},
 			{
 				"description": "Увеличивает урон, наносимый Танцующим пламенем и Парящим ударом, на **50%**.\r\nМножитель для стремительно крутящихся зонтиков, Пролета феникса и Огненной вспышки теперь равняется показателю Перьевого зонтика + **2**.",
 				"charge": 8,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.32
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2.16
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "umbrella_fire_plasm"
 			}
 		],
@@ -8509,42 +12923,168 @@
 				"description": "**Резонанс холода**: увеличивает АТК холодом на **15%** и сопротивление холоду— на **25%**. Для активации добавьте в экипировку не менее **2** предметов оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия и не складывается с эффектами такого же типа.\r\n**Повелитель стихий**: увеличивает конечный урон на **NaN%** за **каждую** стихию используемого оружия. Эффект комплекта также работает с оружием в ячейке доп. оружия.",
 				"charge": 8,
 				"shatter": 9.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "При использовании любого навыка оружия скоростное йо-йо активирует эффект **гармонии**, который наносит ближайшим целям урон в размере **NaN%** от потерянного здоровья странника. Нанесенный урон будет не ниже **NaN%** и не выше **NaN%** от макс. АТК странника. Тип наносимого стихийного урона будет совпадать с типом текущего оружия.\r\nПри любой разрядке оружия скоростное йо-йо активирует эффект **настройки**, который наносит ближайшим целям урон в размере **NaN%** от макс. ОЗ странника. Нанесенный урон не может быть выше, чем **NaN%** от макс. АТК странника. Тип наносимого стихийного урона будет совпадать с типом текущего оружия.",
 				"charge": 8,
 				"shatter": 9.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Yoyo_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 8,
 				"shatter": 9.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Yoyo_ice_plasm"
 			},
 			{
 				"description": "При использовании Безутешного дня скоростное йо-йо на **NaN** сек. активирует эффект **стремительности**: его скорость увеличивается на **NaN%**, урон— на **160%**, а урон, наносимый при прохождении сквозь противника, преобразуется в урон по небольшой области.",
 				"charge": 8,
 				"shatter": 9.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Yoyo_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 8,
 				"shatter": 9.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Yoyo_ice_plasm"
 			},
 			{
 				"description": "Увеличивает урон Скоростного йо-йо и Возвращения к одиночеству на **NaN%**.",
 				"charge": 8,
 				"shatter": 9.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Yoyo_ice_plasm"
 			},
 			{
 				"description": "Во время действия Скоростного йо-йо увеличивает конечный урон на **NaN%**.",
 				"charge": 8,
 				"shatter": 9.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Yoyo_ice_plasm"
 			}
 		],
@@ -8790,42 +13330,168 @@
 				"description": "**Резонанс холода**: увеличивает АТК холодом на **15%** и сопротивление холоду на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.\r\n**Раскол льда: Быстрый разрез**: когда вы наносите удар навыком разрядки любого оружия, имея в экипировке **Единство**, ближайшие цели получают урон, равный **30%** от АТК холодом + **0.4%** от макс. ОЗ странника + **15%** от суммы показателей всех типов сопротивления + **55%** от крит. удара. Пока вы находитесь в бою, каждые **0,5** сек. урон от Быстрого разреза увеличивается на **исходную величину** вплоть до **30** раз. При наличии нескольких экземпляров урона от Быстрого разреза для подсчета берется самое высокое начальное значение. Урон от Быстрого разреза считается уроном от навыка разрядки. Когда в экипировке **1** предмет оружия электричества, оружия огня или физического оружия любого вида, урон от Раскола льда умножается на **1.3**. Кроме того, на урон от Раскола льда не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.",
 				"charge": 11,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "**Боевая форма**: израсходовав **3** или более ед. **Внутренней силы**, **Единство** восстанавливает **1** ед. **Внутренней силы**. Затем конечный урон странника увеличивается на **5%**, а урон от атаки с уклонением и обычной атаки **Единства** увеличивается на **50%** на **30** сек.\r\nФорма **Сметающей силы**: израсходовав **3** или более ед. **Бойцовского духа**, **Единство** восстанавливает **1** ед. **Бойцовского духа**. Затем конечный урон странника увеличивается на **5%** на **15** сек.",
 				"charge": 11,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "yulan_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 11,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "yulan_ice_plasm"
 			},
 			{
 				"description": "**Боевая форма**: если в течение **5** сек. **Внутренняя сила** не набирается, то следующее получение **Внутренней силы** дает **2** единицы.\r\nЛюбая форма: когда **Единство** расходует **3** или более ед. **Внутренней силы** или **Бойцовского духа**, восстанавливается **10%** от макс. ОЗ странника. В одиночной игре восстановление ОЗ увеличивается до **20%**. В форме **Сметающей силы** этот эффект срабатывает только 1 раз в **8** секунд. В **боевой форме** ограничений нет.",
 				"charge": 11,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "yulan_ice_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 11,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "yulan_ice_plasm"
 			},
 			{
 				"description": "После того как **Единство** расходует **Внутреннюю силу** или **Бойцовский дух**, при получении смертельного урона 1 раз предотвращает гибель и восстанавливает **20%** от макс. ОЗ странника (недоступно в Высшей лиге). В одиночной игре восстановление ОЗ увеличивается до **40%**. Оба эффекта срабатывают только 1 раз в **60** сек.",
 				"charge": 11,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "yulan_ice_plasm"
 			},
 			{
 				"description": "**Боевая форма**: урон от атаки с уклонением и обычной атаки **Единства** увеличивается еще на **70%**. После расхода **Внутренней силы** конечный урон странника увеличивается на **10%** в течение **30** сек.\r\nФорма **Сметающей силы**: когда **Единство** расходует **Бойцовский дух**, конечный урон странника увеличивается на **15%** на **30** сек.",
 				"charge": 11,
 				"shatter": 13,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "yulan_ice_plasm"
 			}
 		],
@@ -9027,42 +13693,168 @@
 				"description": "**Физический резонанс**: увеличивает физическую АТК на **15%** и сопротивление физическому урону на **25%**. Для активации добавьте в экипировку минимум **2** предмета физического оружия. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами физического резонанса, при этом физический резонанс берет верх.\r\n**Резонанс огня**: увеличивает АТК огнем на **15%** и сопротивление огню на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса огня, при этом резонанс огня берет верх.\r\n\r\n**Пробивание щитов: Отделение**: после использования **Абсолютного разлома** вы каждую секунду в течение **30** сек. будете наносить пораженным целям урон в размере **70%** от физической АТК + **1%** от макс. ОЗ странника + **36%** от суммы показателей всех типов сопротивления + **135%** от крит. удара. Урон от нескольких Отделений не складывается, а урон пробивания щитов считается уроном от навыка. Когда в экипировке **1** предмет оружия электричества, огня или холода, то урон от пробивания щитов умножается на **1.3**. Кроме того, на урон от пробивания щитов не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "Каждый раз, когда накладывается **тяжелое ранение**, вы наносите цели **пожирающий** урон в размере **50%** от АТК. Этот эффект может срабатывать не чаще 1 раза в **0,5** сек.\r\nКаждый раз, когда эффект **воспламенения** от этого оружия накладывается на цель **без тяжелого ранения**, эта цель получает **тяжелое ранение** на **7** сек.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "Zeke_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "Zeke_physic_plasm"
 			},
 			{
 				"description": "После запуска **Могучего ветра** превращает пораженные цели в участников **Змеиной цепи**.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "Zeke_physic_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "Zeke_physic_plasm"
 			},
 			{
 				"description": "После использования **Абсолютного разлома** получаемый странником урон уменьшается на **10%** (**20%** в одиночной игре) на **30** сек.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "Zeke_physic_plasm"
 			},
 			{
 				"description": "Когда в **Змеиной цепи** **1** участник, показатель передачи **передаваемого** урона увеличивается до **50%**.",
 				"charge": 12,
 				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "Zeke_physic_plasm"
 			}
 		],
@@ -9331,42 +14123,168 @@
 				"description": "**Резонанс измененности**: увеличивает АТК на **20%** и сопротивление измененности на **30%**. Для активации добавьте в экипировку не менее **2** предметов оружия измененности. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса измененности или реакции измененности, при этом резонанс измененности имеет приоритет.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
 				"need": null
 			},
 			{
 				"description": "При применении навыка оружия или навыка разрядки дает **1** стихийный кристалл, но не более **5** кристаллов. Стихийные кристаллы расходуются со скоростью **1** кристалл за **6** секунд.\r\nСтихийные кристаллы дают усиление конечного урона в размере **4%** от [(**количество кристаллов** + **1**)/**2**] и бонус к лечению в размере **6%** от [(**количество кристаллов** + **1**)/**2**].",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
 				"need": "queen_superpower_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **16%**.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
 				"need": "queen_superpower_plasm"
 			},
 			{
 				"description": "Если резонанс посвящения не активен и ОЗ цели ниже (**количество кристаллов** + **2**)**%**, применение **Браслета луны и звезд** может мгновенно уничтожить цель (не работает против странников).\r\nЕсли резонанс посвящения активен и ОЗ цели ниже (**количество кристаллов** ×**2** + **2**)**%**, применение **Браслета луны и звезд** может мгновенно уничтожить цель (не работает против странников).",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
 				"need": "queen_superpower_plasm"
 			},
 			{
 				"description": "Увеличивает рост базовой АТК текущего оружия на **32%**.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
 				"need": "queen_superpower_plasm"
 			},
 			{
 				"description": "Получите **1** стихийный кристалл при каждом применении Техники россыпи. Стихийные кристаллы расходуются со скоростью **1** кристалл за **20** сек.\r\nПри получении смертельного урона потратьте **3** стихийных кристалла, чтобы 1 раз предотвратить смерть и на короткое время получить невосприимчивость к урону. Можно активировать **1** раз каждые **25** сек.",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
 				"need": "queen_superpower_plasm"
 			},
 			{
 				"description": "Увеличивает конечный урон на **7%** от [(**количество кристаллов** + **3**)/**2**].",
 				"charge": 11.5,
 				"shatter": 11.5,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
 				"need": "queen_superpower_plasm"
 			}
 		],
