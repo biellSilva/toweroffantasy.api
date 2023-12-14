@@ -4,10 +4,12 @@ import strawberry
 
 @strawberry.type
 class Banner:
-    simulacrumId: str
+    simulacrumId: str | None
     weaponId: str | None
     matrixId: str | None
-    simulacrumName: str
+    simulacrumName: str | None
+    element: str | None
+    category: str | None
     bannerNumber: int
     startDate: str
     endDate: str
@@ -16,3 +18,4 @@ class Banner:
     isRerun: bool
     isFinalBanner: bool
     isCollab: bool
+    noWeapon: bool

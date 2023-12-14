@@ -11,6 +11,7 @@ from ..servants.graphql.servant import SmartServant
 from ..simulacra.graphql.simulacra import Simulacra
 from ..simulacra_v2.graphql.simulacra_v2 import SimulacraV2
 from ..weapons.graphql.weapons import Weapon
+from ..graphql.banner import Banner
 
 
 __import__ = [
@@ -25,5 +26,6 @@ __import__ = [
     Simulacra,
     Matrice,
     Weapon,
-    SimulacraV2
+    SimulacraV2,
+    Banner
 ]

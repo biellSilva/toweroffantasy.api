@@ -11,13 +11,14 @@ from api.enums import (
     LANGS, 
 )
 
+from api.config import GB_BANNERS
+
 from api.core.exceptions import VersionNotFound, LanguageNotFound, MissingArgument
 
 from api.infra.repository import *
 from api.infra.entitys import EntityBase
-
-
 from api.infra.entitys.graphql import *
+
 
 
 SIMU_REPO = SimulacraRepo()
@@ -318,7 +319,11 @@ class Query:
 
         items = await ITEM_REPO.get_all(lang=lang, version=VERSIONS(version))
         return items # type: ignore
-        
+    
+
+    @strawberry.field(name='banners')
+    async def get_banners(self) -> List[Banner]:
+        return GB_BANNERS # type: ignore
     
 
 graphql = GraphQLRouter[Any, Any](schema=strawberry.Schema(query=Query), path='/') 
