@@ -326,7 +326,9 @@ class Query:
         return GB_BANNERS # type: ignore
     
 
-graphql = GraphQLRouter[Any, Any](schema=strawberry.Schema(query=Query), path='/') 
+graphql = GraphQLRouter[Any, Any](schema=strawberry.Schema(query=Query), 
+                                  path='/',
+                                  keep_alive=True) 
 METADATA = {
     'name': 'GraphQL',
     'description': 'GraphQL provides a complete and understandable description of the data \n\n **SOME FIELDS CONTAINS CN DATA**',
