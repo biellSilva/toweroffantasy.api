@@ -44,7 +44,7 @@ class Weapon(EntityBase):
 
     weaponAdvancements: list[WeaponAdvancement] = Field(validation_alias=AliasChoices('advancements', 'weaponAdvancements'))
     weaponAttacks: WeaponAttacks = Field(validation_alias=AliasChoices('skills', 'weaponAttacks'))
-    weaponStats: list[BaseStats] = Field(validation_alias=AliasChoices('baseStats', 'weaponStats'))
+    weaponStats: list[BaseStats] = Field(validation_alias=AliasChoices('stats', 'baseStats', 'weaponStats'))
 
     meta: MetaData | None = None
     banners: list[Banner] = []

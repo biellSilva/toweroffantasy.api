@@ -126,9 +126,9 @@ class BaseStats(BaseModel):
     id: str
     name: str
     icon: Annotated[str, BeforeValidator(replace_icon)]
-    value: float = Field(validation_alias=AliasChoices('PropValue', 'value'))
-    isTag: bool = Field(validation_alias=AliasChoices('IsTag', 'isTag'))
-    modifier: str = Field(validation_alias=AliasChoices('modifier', 'ModifierOp'))
+    value: float = Field(0, validation_alias=AliasChoices('PropValue', 'value'))
+    isTag: bool = Field(False, validation_alias=AliasChoices('IsTag', 'isTag'))
+    modifier: str = Field('', validation_alias=AliasChoices('modifier', 'ModifierOp'))
 
 
 class UpgradeMaterial(BaseModel):

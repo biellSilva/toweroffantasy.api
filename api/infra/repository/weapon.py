@@ -100,8 +100,8 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                     'Charge': value_dict['advancements'][0]['charge']
                 })
             
-            for i in value_dict['baseStats']:
-                if stats_data := STAT_VALUES.get(i['PropName'], None):
+            for i in value_dict.get('baseStats', []):
+                if stats_data := STAT_VALUES.get(i.get('PropName'), None):
                     i.update(stats_data)
 
             # if len(value_dict['advancements']) == 7:
