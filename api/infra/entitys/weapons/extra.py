@@ -1,5 +1,5 @@
 
-from pydantic import BaseModel, BeforeValidator, model_validator
+from pydantic import BaseModel, BeforeValidator, model_validator, Field, AliasChoices
 from typing import Annotated, Any
 
 from api.utils import replace_icon, classify_rework, bold_numbers
@@ -126,6 +126,9 @@ class BaseStats(BaseModel):
     id: str
     name: str
     icon: Annotated[str, BeforeValidator(replace_icon)]
+    value: float = Field(validation_alias=AliasChoices('PropValue', 'value'))
+    isTag: bool = Field(validation_alias=AliasChoices('IsTag', 'isTag'))
+    modifier: str = Field(validation_alias=AliasChoices('modifier', 'ModifierOp'))
 
 
 class UpgradeMaterial(BaseModel):
