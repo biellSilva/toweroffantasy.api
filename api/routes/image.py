@@ -2,7 +2,7 @@
 import aiohttp
 
 from fastapi import APIRouter
-from fastapi.responses import Response, StreamingResponse
+from fastapi.responses import Response
 from typing import Literal
 from PIL import Image
 from io import BytesIO
@@ -58,7 +58,7 @@ async def get_asset(path: str, format: Literal['png', 'webp'] = 'png', version: 
                         image.save(buffer, format='webp', quality=100, optimize=True)
                         buffer.seek(0)
 
-                        return StreamingResponse(buffer, media_type=f'image/{format.upper()}')
+                        return Response(buffer.getvalue(), media_type=f'image/{format.upper()}')
                     
                     else:
                         return Response(data, media_type=f'image/{format.upper()}')
@@ -78,7 +78,7 @@ async def get_asset(path: str, format: Literal['png', 'webp'] = 'png', version: 
                         image.save(buffer, format='webp', quality=100, optimize=True)
                         buffer.seek(0)
 
-                        return StreamingResponse(buffer, media_type=f'image/{format.upper()}')
+                        return Response(buffer.getvalue(), media_type=f'image/{format.upper()}')
                     
                     else:
                         return Response(data, media_type=f'image/{format.upper()}')
