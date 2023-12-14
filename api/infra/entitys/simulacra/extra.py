@@ -1,6 +1,8 @@
 
-from pydantic import BaseModel, model_validator
-from typing import Any
+from pydantic import BaseModel, model_validator, BeforeValidator
+from typing import Any, Annotated
+
+from api.utils import voice_actor_string_rework
 
 
 class Assets(BaseModel):
@@ -44,32 +46,11 @@ class Assets(BaseModel):
 
 
 class VoiceActors(BaseModel):
-    cn: str | None = None
-    jp: str | None = None
-    en: str | None = None
-    kr: str | None = None
-    pt: str | None = None
-
-    @model_validator(mode='before')
-    def _replace_strings(cls, values: Any):
-
-        def _replace_string__(value: Any) -> Any:
-            if isinstance(value, dict):
-                _: dict[str, Any] = {}
-
-                for k, v in values.items():
-                    if isinstance(v, str):
-                        if v.startswith(' '):
-                            _.update({k: v[1:]})
-
-                    else:
-                        _.update({k: v})
-
-                return _
-            
-            return value
-
-        return _replace_string__(values)
+    cn: Annotated[str, BeforeValidator(voice_actor_string_rework)] | None = None
+    jp: Annotated[str, BeforeValidator(voice_actor_string_rework)] | None = None
+    en: Annotated[str, BeforeValidator(voice_actor_string_rework)] | None = None
+    kr: Annotated[str, BeforeValidator(voice_actor_string_rework)] | None = None
+    pt: Annotated[str, BeforeValidator(voice_actor_string_rework)] | None = None
 
 
 class Awakening(BaseModel):

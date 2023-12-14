@@ -90,6 +90,9 @@ def trait_rework(trait: dict[str, dict[str, str]]):
 def voice_actors_rework(va: list[dict[str, str]]):
     return {key.lower(): value for i in va for key, value in i.items()}
 
+def voice_actor_string_rework(actor: str):
+    return actor.removeprefix(' ')
+
 def classify_rework(value: float):
     return {'tier': classifier(value), 'value': value}
 
