@@ -6,6 +6,7 @@ from typing import Any
 
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Weapon, EntityBase
+from api.infra.entitys.weapons.extra import MetaData
 
 from api.core.exceptions import VersionNotFound, LanguageNotFound, FileNotFound, ItemNotFound
 
@@ -108,7 +109,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             #     value_dict['advancements'].pop(0)
 
             if version == 'global':
-                value_dict['Meta'] = self.META_GB.get(key_id.lower(), None)
+                value_dict['Meta'] = self.META_GB.get(key_id.lower(), MetaData())
                 value_dict['banners'] = [banner for banner in GB_BANNERS if banner.weaponId and banner.weaponId == key_id.lower()]
 
             for type_skill, skill_list in value_dict['skills'].items():
