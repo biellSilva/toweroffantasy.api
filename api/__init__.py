@@ -108,3 +108,4 @@ app.include_router(extras.router)
 app.include_router(image.router)
 
 app.include_router(graphql.graphql, tags=['GraphQL']) 
+app.add_websocket_route('/', graphql.graphql) # type: ignore

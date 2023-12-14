@@ -328,7 +328,9 @@ class Query:
 
 graphql = GraphQLRouter[Any, Any](schema=strawberry.Schema(query=Query), 
                                   path='/',
-                                  keep_alive=True) 
+                                  keep_alive=True,
+                                  keep_alive_interval=0,
+                                  allow_queries_via_get=False) 
 METADATA = {
     'name': 'GraphQL',
     'description': 'GraphQL provides a complete and understandable description of the data \n\n **SOME FIELDS CONTAINS CN DATA**',
