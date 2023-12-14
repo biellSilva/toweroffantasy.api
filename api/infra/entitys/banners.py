@@ -5,6 +5,9 @@ from pathlib import Path
 from json import loads
 
 
+weapons_data: dict[str, Any] = loads(Path('api/infra/database/global/en/weapons.json').read_bytes())
+
+
 class Banner(BaseModel):
     simulacrumId: Annotated[str, BeforeValidator(lambda x: str(x).lower())] | None = Field(default=None, validation_alias=AliasChoices('imitation_id', 'simulacrumId'))
     weaponId: Annotated[str, BeforeValidator(lambda x: str(x).lower())] | None = Field(default=None, validation_alias=AliasChoices('weapon_id', 'weaponId'))
@@ -24,8 +27,6 @@ class Banner(BaseModel):
 
     @model_validator(mode='before')
     def add_element_and_category(cls, value: dict[str, Any]):
-        weapons_data: dict[str, Any] = loads(Path('api/infra/database/global/en/weapons.json').read_bytes())
-
         if weapon_data := weapons_data.get(value.get('weapon_id', ''), None):
             value['element'] = weapon_data['element']
             value['category'] = weapon_data['wc']
