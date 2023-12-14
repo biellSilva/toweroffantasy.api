@@ -17,11 +17,34 @@ METADATA = {
     'description': 'Simulacra v2 is the same as /simulacra, except it contains Weapons and Matrices if possible \n\n **DOES NOT CONTAINS CN DATA**',
 }
 EXCLUDE = {'weapon': {'weaponAttacks': {'__all__': {'__all__': 'values'}}}}
+INCLUDE = {
+    'id': True, 
+    'name': True, 
+    'assetsA0': True, 
+    'weaponId': True, 
+    'matrixId': True, 
+    'rarity': True, 
+    'weapon': {
+        'id': True, 
+        'name': True, 
+        'element': True, 
+        'category': True,
+        'assets': True
+    },
+    'matrix': {
+        'name': True, 
+        'id': True, 
+        'assets': True, 
+        'rarity': True,
+        'assets': True,
+    }
+}
 
 
 @router.get('/{id}', name='Get Simulacrum', response_model=Simulacra_v2)
 async def get_simulacrum(id: SIMULACRA = Path(description='Imitation/Simulacrum Id'), 
-                         lang: LANGS = Query(LANGS('en'), description='Possible languages')):
+                         lang: LANGS = Query(LANGS('en'), description='Possible languages'),
+                         include: bool = Query(True, description='Include all data keys')):
     '''
     **Path Param** \n
         id: 
@@ -34,17 +57,27 @@ async def get_simulacrum(id: SIMULACRA = Path(description='Imitation/Simulacrum 
             type: string
             default: en
             desc: Possible languages
+        
+        include:
+            type: bool
+            default: True
+            desc: Include all data keys
             
     **Return** \n
         Simulacra_v2
     '''
     
     simulacrum = await SIMULACRA_REPO.get(EntityBase(id=id), lang, version=VERSIONS('global'))
-    return ORJSONResponse(simulacrum.model_dump(exclude=EXCLUDE))
+    if include:
+        return ORJSONResponse(simulacrum.model_dump(exclude=EXCLUDE))
     
+    else:
+        return ORJSONResponse(simulacrum.model_dump(include=INCLUDE, exclude=EXCLUDE))
+
 
 @router.get('', name='All Simulacra', response_model=list[Simulacra_v2])
-async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible languages'), 
+async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible languages'),
+                        include: bool = Query(False, description='Include all data keys'), 
                         page: int | None = Query(None, description='Page to return'),
                         chunk: int | None = Query(None, description='How many items per page')):
     '''
@@ -76,7 +109,14 @@ async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible l
         else:
             items, pages = paginator(items=simulacra, page=page)
 
-        return ORJSONResponse([simulacrum.model_dump(exclude=EXCLUDE) for simulacrum in items],
-                              headers={'pages': str(pages)})
+        if include:
+            return ORJSONResponse([simulacrum.model_dump(exclude=EXCLUDE) for simulacrum in items],
+                                  headers={'pages': str(pages)})
+        else:
+            return ORJSONResponse([simulacrum.model_dump(include=INCLUDE, exclude=EXCLUDE) for simulacrum in items],
+                                  headers={'pages': str(pages)})
     else:
-        return ORJSONResponse([simulacrum.model_dump(exclude=EXCLUDE) for simulacrum in simulacra])
+        if include:
+            return ORJSONResponse([simulacrum.model_dump(exclude=EXCLUDE) for simulacrum in simulacra])
+        else:
+            return ORJSONResponse([simulacrum.model_dump(include=INCLUDE, exclude=EXCLUDE) for simulacrum in simulacra])
