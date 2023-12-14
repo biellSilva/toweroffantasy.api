@@ -76,7 +76,11 @@ class Query:
         
 
     @strawberry.field(name='simulacrum_v2')
-    async def get_simulacrum_v2(self, id: str | None = None, name: str | None = None, lang: str = 'en') -> SimulacraV2:
+    async def get_simulacrum_v2(self, 
+                                id: str | None = None, 
+                                name: str | None = None, 
+                                lang: str = 'en') -> SimulacraV2:
+        
         version = 'global'
         check_params(lang=lang, version=version)
         

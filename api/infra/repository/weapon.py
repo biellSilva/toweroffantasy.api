@@ -100,13 +100,13 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 })
             
 
-            if len(value_dict['advancements']) == 7:
-                value_dict['advancements'].pop(0)
+            # if len(value_dict['advancements']) == 7:
+            #     value_dict['advancements'].pop(0)
             
 
             if version == 'global':
                 value_dict['Meta'] = self.META_GB.get(key_id.lower(), None)
-                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.weaponId and banner.weaponId == key_id.lower()]
+                value_dict['banners'] = [banner for banner in GB_BANNERS if banner.weaponId and banner.weaponId == key_id.lower()]
 
             for type_skill, skill_list in value_dict['skills'].items():
                 skill_list: list[dict[str, Any]]
