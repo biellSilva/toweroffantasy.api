@@ -44,6 +44,6 @@ class Weapon:
     weaponAttacks: WeaponAttacks 
     weaponStats: list[BaseStats]
 
-    meta: MetaData | None
+    meta: MetaData
     banners: list[Banner]
 
