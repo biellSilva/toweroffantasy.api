@@ -84,6 +84,9 @@ class BaseStats:
     id: str
     name: str
     icon: str
+    value: float
+    isTag: bool
+    modifier: str
 
 @strawberry.type
 class UpgradeMaterial:
