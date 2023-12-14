@@ -87,6 +87,11 @@ async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible l
             default: en
             desc: Possible languages
         
+        include:
+            type: bool
+            default: False
+            desc: Include all data keys
+        
         page:
             type: int
             default: None
@@ -103,7 +108,7 @@ async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible l
     
     simulacra = await SIMULACRA_REPO.get_all(lang, version=VERSIONS('global'))
 
-    if page:
+    if page != None:
         if chunk:
             items, pages = paginator(items=simulacra, page=page, chunk=chunk)
         else:
