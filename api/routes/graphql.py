@@ -327,7 +327,7 @@ class Query:
     
 
 graphql = GraphQLRouter[Any, Any](schema=strawberry.Schema(query=Query), 
-                                  path='/',
+                                  path='/graphql',
                                   keep_alive=True,
                                   keep_alive_interval=0,
                                   allow_queries_via_get=False) 
