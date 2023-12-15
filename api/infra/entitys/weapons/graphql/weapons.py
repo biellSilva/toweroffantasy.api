@@ -38,6 +38,7 @@ class Weapon:
     # FashionWeaponInfos: list[FashionWeaponInfo]
     # RecommendedMatrices: list[MatrixSuit]
 
+    elementEffect: WeaponEffect | None
     weaponEffects: list[WeaponEffect]
 
     weaponAdvancements: list[WeaponAdvancement] 

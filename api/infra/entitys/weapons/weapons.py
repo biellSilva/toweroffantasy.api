@@ -40,7 +40,8 @@ class Weapon(EntityBase):
     # FashionWeaponInfos: list[FashionWeaponInfo]
     # RecommendedMatrices: list[MatrixSuit]
 
-    weaponEffects: list[WeaponEffect]
+    elementEffect: WeaponEffect | None = Field(None, validation_alias=AliasChoices('elementEffects'))
+    weaponEffects: list[WeaponEffect] = []
 
     weaponAdvancements: list[WeaponAdvancement] = Field(validation_alias=AliasChoices('advancements', 'weaponAdvancements'))
     weaponAttacks: WeaponAttacks = Field(validation_alias=AliasChoices('skills', 'weaponAttacks'))

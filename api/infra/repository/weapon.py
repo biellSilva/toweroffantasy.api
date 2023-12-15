@@ -80,9 +80,12 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             if advancements := value_dict.get('advancements', []):
                 if description := advancements[0].get('description', None):
                     if '*:' in description:
-                        weaponEffect = description.split('\r', 1)
+                        weaponEffect = description.split('\r\n')
+                        
 
                         for i in weaponEffect:
+                            if i == '':
+                                continue
                             key, value_ = i.split('*:', 1)
                             key = key.replace('*', '').replace('\n', '').replace('\r', '')
                             value_ = value_.replace('\n', '').replace('\r', '').replace(' ', '', 1)
@@ -90,7 +93,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
 
                     else:
                         if value_dict['id'].lower() == 'fan_superpower':
-                            weaponEffects.append({'title': 'Altered Damage', 'description': description.replace('\n', ' ').replace('\r', '')})
+                            weaponEffects.append({'title': 'Weapon\'s Master', 'description': description.replace('\n', ' ').replace('\r', '')})
 
                         else:
                             weaponEffects.append({'title': 'Unknown', 'description': description.replace('\n', ' ').replace('\r', '')})
@@ -105,8 +108,8 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 if stats_data := STAT_VALUES.get(i.get('PropName'), None):
                     i.update(stats_data)
 
-            # if len(value_dict['advancements']) == 7:
-            #     value_dict['advancements'].pop(0)
+            if len(value_dict['advancements']) == 7:
+                value_dict['advancements'].pop(0)
 
             if version == 'global':
                 value_dict['Meta'] = self.META_GB.get(key_id.lower(), MetaData())
