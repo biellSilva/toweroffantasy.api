@@ -3,7 +3,7 @@ import aiohttp
 
 from fastapi import APIRouter
 from fastapi.responses import Response
-from typing import Literal
+
 from PIL import Image
 from io import BytesIO
 
@@ -21,7 +21,7 @@ METADATA = {
 
 
 @router.get('/{path:path}')
-async def get_asset(path: str, format: Literal['png', 'webp'] = 'png', version: VERSIONS = VERSIONS('global')):
+async def get_asset(path: str, version: VERSIONS = VERSIONS('global')):
     '''
     **Path Param** \n
         path: 
@@ -30,11 +30,6 @@ async def get_asset(path: str, format: Literal['png', 'webp'] = 'png', version: 
             desc: Path to asset
 
     **Query Params** \n
-        format:
-            type: string
-            default: png
-            desc: Choose file format between png or webp, webp is processed before returning
-        
         version: 
             type: string
             default: global
@@ -51,38 +46,23 @@ async def get_asset(path: str, format: Literal['png', 'webp'] = 'png', version: 
             async with cs.get(f'{GLOBAL_ASSETS}/{path}') as res:
                 if res.status == 200:
                     data = await res.read()
-                    if format == 'webp':
-                        image = Image.open(BytesIO(data))
-                        buffer = BytesIO()
-
-                        image.save(buffer, format='webp', quality=100, optimize=True)
-                        buffer.seek(0)
-
-                        return Response(buffer.getvalue(), media_type=f'image/{format.upper()}')
-                    
-                    else:
-                        return Response(data, media_type=f'image/{format.upper()}')
-                    
+                    image = Image.open(BytesIO(data))
+                    buffer = BytesIO()
+                    image.save(buffer, format='webp', quality=100, optimize=True)
+                    buffer.seek(0)
+                    return Response(buffer.getvalue(), media_type=f'image/WEBP')
                 else:
                     raise AssetNotFound
-                
 
         elif version == 'china':
             async with cs.get(f'{CN_ASSETS}/{path}') as res:
                 if res.status == 200:
                     data = await res.read()
-                    if format == 'webp':
-                        image = Image.open(BytesIO(data))
-                        buffer = BytesIO()
-
-                        image.save(buffer, format='webp', quality=100, optimize=True)
-                        buffer.seek(0)
-
-                        return Response(buffer.getvalue(), media_type=f'image/{format.upper()}')
-                    
-                    else:
-                        return Response(data, media_type=f'image/{format.upper()}')
-                    
+                    image = Image.open(BytesIO(data))
+                    buffer = BytesIO()
+                    image.save(buffer, format='webp', quality=100, optimize=True)
+                    buffer.seek(0)
+                    return Response(buffer.getvalue(), media_type=f'image/WEBP')
                 else:
                     raise AssetNotFound
         
