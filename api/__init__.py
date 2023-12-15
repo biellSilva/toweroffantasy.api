@@ -1,4 +1,7 @@
 
+import fastapi
+import uvicorn
+
 from typing import Callable, Any
 from time import time as timer
 
@@ -27,6 +30,12 @@ from api.routes import (
     mounts,
     servants
 )
+
+
+print(f'''
+FastAPI: {fastapi.__version__}
+Uvicorn: {uvicorn.__version__}
+''')
 
 
 TAGS_METADATA = [
