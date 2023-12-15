@@ -106,7 +106,7 @@ class MatrixSuit(BaseModel):
 
 
 class WeaponEffect(BaseModel):
-    title: str
+    title: Annotated[str, BeforeValidator(lambda x: x.replace(':', '').replace('*', '') if x and str(x).endswith(':') else x)]
     description: str
 
 
