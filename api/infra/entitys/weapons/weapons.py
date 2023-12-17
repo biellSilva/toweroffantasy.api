@@ -4,6 +4,7 @@ from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
 from api.infra.entitys.banners import Banner
+from api.infra.entitys.weapon_mats import WeaponMats
 
 from api.utils import classify_rework
 
@@ -39,6 +40,8 @@ class Weapon(EntityBase):
 
     # FashionWeaponInfos: list[FashionWeaponInfo]
     # RecommendedMatrices: list[MatrixSuit]
+
+    upgradeMats: WeaponMats | None
 
     elementEffect: WeaponEffect | None = Field(None, validation_alias=AliasChoices('elementEffects'))
     weaponEffects: list[WeaponEffect] = []

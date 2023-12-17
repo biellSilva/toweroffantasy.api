@@ -12,7 +12,7 @@ from api.core.exceptions import VersionNotFound, LanguageNotFound, FileNotFound,
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
 from api.utils import sort_weapons, place_numbers
-from api.config import GB_BANNERS
+from api.config import GB_BANNERS, WEAPON_MATS
 
 
 class WeaponRepo(ModelRepository[EntityBase, Weapon]):
@@ -82,7 +82,6 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                     if '*:' in description:
                         weaponEffect = description.split('\r\n')
                         
-
                         for i in weaponEffect:
                             if i == '':
                                 continue
@@ -114,7 +113,8 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             if version == 'global':
                 value_dict['Meta'] = self.META_GB.get(key_id.lower(), MetaData())
                 value_dict['banners'] = [banner for banner in GB_BANNERS if banner.weaponId and banner.weaponId == key_id.lower()]
-
+                value_dict['upgradeMats'] = WEAPON_MATS.get(value_dict['weaponUpgradeId'], None)
+                
             for type_skill, skill_list in value_dict['skills'].items():
                 skill_list: list[dict[str, Any]]
                 for i, item in enumerate(skill_list):
