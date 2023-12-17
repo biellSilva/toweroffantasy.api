@@ -1,10 +1,12 @@
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Path as ApiPath
+from fastapi.responses import FileResponse, RedirectResponse
+from fastapi.exceptions import HTTPException
 
 from pathlib import Path
 from json import loads
 
-from api.config import GB_BANNERS
+from api.config import GB_BANNERS, EXTRA_ASSETS, CN_ASSETS
 
 from api.infra.entitys import Raritys
 from api.infra.entitys.banners import Banner
@@ -41,3 +43,24 @@ async def get_banners():
         list[Banner]
     '''
     return GB_BANNERS
+
+@router.get('/assets/{id}', name='Extra Assets')
+async def get_extra_asset(id: str = ApiPath(description='Asset ID')):
+
+    '''
+    **Route to serve assets from Weapon element, category and base stats** \n
+        ElementDef, CommonAtkAdded, CritAdded and MaxHealthAdded are in the white version of it
+    
+
+    **Return** \n
+        File
+    '''
+
+    if id in EXTRA_ASSETS:
+        return RedirectResponse(url=f'{CN_ASSETS}/UI/wuqi/{EXTRA_ASSETS[id]}.png')
+    
+    if id in EXTRA_ASSETS['white']:
+        return FileResponse(f'api/assets/white/{id}.webp', media_type='image/WEBP')
+    
+    raise HTTPException(status_code=404, detail='Asset not found')
+        
