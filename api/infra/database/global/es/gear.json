@@ -1,4 +1,59 @@
 {
+	"Item_Mine_Crystal": {
+		"name": "Cristal",
+		"type": "NONE",
+		"description": "Un mineral común, popular por su cristalina y deslumbrante belleza.",
+		"source": "Otorga **5** de EXP para avanzar equipo.",
+		"icon": "/Game/Resources/Icon/item/Item_Mine_Crystal",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Item_Mine_Crystal"
+	},
+	"core_exp_n": {
+		"name": "Partes de Combate Universales I",
+		"type": "NONE",
+		"description": "Partes de combate universales comunes. Tienen varios usos, pero no tienen nada de especial.",
+		"source": "Otorga **50** de EXP para el avance de algunos equipos",
+		"icon": "/Game/Resources/Icon/item/core_exp_n",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "core_exp_n"
+	},
+	"core_exp_r": {
+		"name": "Partes de Combate Universales II",
+		"type": "NONE",
+		"description": "Partes de combate universales que circulan en el mercado negro en secreto. Considerando su rendimiento y precio, se podría pensar que son plagios de los vendedores.",
+		"source": "Otorga **200** de EXP para el avance de algunos equipos",
+		"icon": "/Game/Resources/Icon/item/core_exp_r",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "core_exp_r"
+	},
+	"core_exp_sr": {
+		"name": "Partes de Combate Universales III",
+		"type": "NONE",
+		"description": "Partes de combate universales fabricadas por Tecnología Banges. Compatibles y útiles.",
+		"source": "Otorga **800** de EXP para el avance de algunos equipos",
+		"icon": "/Game/Resources/Icon/item/core_exp_sr",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "core_exp_sr"
+	},
+	"core_exp_ssr": {
+		"name": "Partes de Combate Universales IV",
+		"type": "NONE",
+		"description": "La más reciente creación del equipo de desarrollo de Hykros. Puede potenciar el rendimiento del equipo de apoyo de combate al máximo.",
+		"source": "Otorga **2400** de EXP para el avance de algunos equipos",
+		"icon": "/Game/Resources/Icon/item/core_exp_ssr",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "core_exp_ssr"
+	},
 	"armband_orange": {
 		"name": "Brazales acorazados",
 		"type": "NECKLACE",
@@ -8,6 +63,16 @@
 		"statPool": "armband_randompool_orange",
 		"baseStat": "armband_orange_base",
 		"id": "armband_orange"
+	},
+	"armband_orangeTupo": {
+		"name": "Brazales acorazados",
+		"type": "NECKLACE",
+		"description": "Diseñados para el equipo de operaciones especiales. Otorgan alta protección y movilidad.",
+		"icon": "/Game/Resources/Icon/weapon/armband_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "armband_randompool_orange",
+		"baseStat": "armband_red_base",
+		"id": "armband_orangeTupo"
 	},
 	"cloth_orange": {
 		"name": "Armadura Acorazada",
@@ -19,6 +84,16 @@
 		"baseStat": "cloth_orange_base",
 		"id": "cloth_orange"
 	},
+	"cloth_orangeTupo": {
+		"name": "Armadura Acorazada",
+		"type": "CLOTH",
+		"description": "Una armadura pesada impenetrable, desarrollada por Hykros tras años de investigación.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "cloth_randompool_orange",
+		"baseStat": "cloth_red_base",
+		"id": "cloth_orangeTupo"
+	},
 	"pants_orange": {
 		"name": "Musleras acorazadas",
 		"type": "PANTS",
@@ -28,6 +103,16 @@
 		"statPool": "pants_randompool_orange",
 		"baseStat": "pants_orange_base",
 		"id": "pants_orange"
+	},
+	"pants_orangeTupo": {
+		"name": "Musleras acorazadas",
+		"type": "PANTS",
+		"description": "Están potenciadas para brindar al usuario más movilidad al llevar una armadura acorazada pesada.",
+		"icon": "/Game/Resources/Icon/weapon/pants_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "pants_randompool_orange",
+		"baseStat": "pants_red_base",
+		"id": "pants_orangeTupo"
 	},
 	"shoes_orange": {
 		"name": "Escarpes acorazados",
@@ -39,6 +124,16 @@
 		"baseStat": "shoes_orange_base",
 		"id": "shoes_orange"
 	},
+	"shoes_orangeTupo": {
+		"name": "Escarpes acorazados",
+		"type": "SHOES",
+		"description": "El ruido de las pisadas de estas pesadas botas es el mejor disuasor.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "shoes_randompool_orange",
+		"baseStat": "shoes_red_base",
+		"id": "shoes_orangeTupo"
+	},
 	"helmet_orange": {
 		"name": "Casco Acorazado",
 		"type": "FIRST",
@@ -48,6 +143,16 @@
 		"statPool": "helmet_randompool_orange",
 		"baseStat": "helmet_orange_base",
 		"id": "helmet_orange"
+	},
+	"helmet_orangeTupo": {
+		"name": "Casco Acorazado",
+		"type": "FIRST",
+		"description": "Un casco completamente sellado que proporciona defensa, circulación e información.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "helmet_randompool_orange",
+		"baseStat": "helmet_red_base",
+		"id": "helmet_orangeTupo"
 	},
 	"glove_orange": {
 		"name": "Guanteletes acorazados",
@@ -59,6 +164,16 @@
 		"baseStat": "glove_orange_base",
 		"id": "glove_orange"
 	},
+	"glove_orangeTupo": {
+		"name": "Guanteletes acorazados",
+		"type": "FIRST",
+		"description": "Estos guanteletes pesados están especialmente diseñados para portar una gran variedad de armas.",
+		"icon": "/Game/Resources/Icon/weapon/glove_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "glove_randompool_orange",
+		"baseStat": "glove_red_base",
+		"id": "glove_orangeTupo"
+	},
 	"belt_orange": {
 		"name": "Cinturón acorazado",
 		"type": "NECKLACE",
@@ -69,6 +184,16 @@
 		"baseStat": "belt_orange_base",
 		"id": "belt_orange"
 	},
+	"belt_orangeTupo": {
+		"name": "Cinturón acorazado",
+		"type": "NECKLACE",
+		"description": "Contiene varios sensores que transmiten datos directamente al sistema de información del traje.",
+		"icon": "/Game/Resources/Icon/weapon/belt_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "belt_randompool_orange",
+		"baseStat": "belt_red_base",
+		"id": "belt_orangeTupo"
+	},
 	"shawl_orange": {
 		"name": "Hombreras acorazadas",
 		"type": "AMULET",
@@ -78,6 +203,16 @@
 		"statPool": "shawl_randompool_orange",
 		"baseStat": "shawl_orange_base",
 		"id": "shawl_orange"
+	},
+	"shawl_orangeTupo": {
+		"name": "Hombreras acorazadas",
+		"type": "AMULET",
+		"description": "Su material firme y a prueba de balas brinda una protección perfecta para los hombros y el cuello de quien las porte.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "shawl_randompool_orange",
+		"baseStat": "shawl_red_base",
+		"id": "shawl_orangeTupo"
 	},
 	"armband_purple": {
 		"name": "Brazaletes de élite",
@@ -479,6 +614,536 @@
 		"baseStat": "shawl_white_base",
 		"id": "shawl_white"
 	},
+	"unid_armband_orange": {
+		"name": "Brazales acorazados",
+		"type": "NECKLACE",
+		"description": "Diseñados para el equipo de operaciones especiales. Otorgan alta protección y movilidad.",
+		"icon": "/Game/Resources/Icon/weapon/armband_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "armband_orange_base",
+		"id": "unid_armband_orange"
+	},
+	"unid_cloth_orange": {
+		"name": "Armadura Acorazada",
+		"type": "CLOTH",
+		"description": "Una armadura pesada impenetrable, desarrollada por Hykros tras años de investigación.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "cloth_orange_base",
+		"id": "unid_cloth_orange"
+	},
+	"unid_pants_orange": {
+		"name": "Musleras acorazadas",
+		"type": "PANTS",
+		"description": "Están potenciadas para brindar al usuario más movilidad al llevar una armadura acorazada pesada.",
+		"icon": "/Game/Resources/Icon/weapon/pants_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "pants_orange_base",
+		"id": "unid_pants_orange"
+	},
+	"unid_shoes_orange": {
+		"name": "Escarpes acorazados",
+		"type": "SHOES",
+		"description": "El ruido de las pisadas de estas pesadas botas es el mejor disuasor.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "shoes_orange_base",
+		"id": "unid_shoes_orange"
+	},
+	"unid_helmet_orange": {
+		"name": "Casco Acorazado",
+		"type": "FIRST",
+		"description": "Un casco completamente sellado que proporciona defensa, circulación e información.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "helmet_orange_base",
+		"id": "unid_helmet_orange"
+	},
+	"unid_glove_orange": {
+		"name": "Guanteletes acorazados",
+		"type": "FIRST",
+		"description": "Estos guanteletes pesados están especialmente diseñados para portar una gran variedad de armas.",
+		"icon": "/Game/Resources/Icon/weapon/glove_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "glove_orange_base",
+		"id": "unid_glove_orange"
+	},
+	"unid_belt_orange": {
+		"name": "Cinturón acorazado",
+		"type": "NECKLACE",
+		"description": "Contiene varios sensores que transmiten datos directamente al sistema de información del traje.",
+		"icon": "/Game/Resources/Icon/weapon/belt_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "belt_orange_base",
+		"id": "unid_belt_orange"
+	},
+	"unid_shawl_orange": {
+		"name": "Hombreras acorazadas",
+		"type": "AMULET",
+		"description": "Su material firme y a prueba de balas brinda una protección perfecta para los hombros y el cuello de quien las porte.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "shawl_orange_base",
+		"id": "unid_shawl_orange"
+	},
+	"unid_armband_purple": {
+		"name": "Brazaletes de élite",
+		"type": "NECKLACE",
+		"description": "Permiten cambiar el área de cobertura según la situación actual.",
+		"icon": "/Game/Resources/Icon/weapon/armband_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "armband_purple_base",
+		"id": "unid_armband_purple"
+	},
+	"unid_cloth_purple": {
+		"name": "Traje de Combate de Élite",
+		"type": "CLOTH",
+		"description": "Equipo estándar de las Fuerzas Especiales de Hykros. Brinda una excelente defensa y resistencia hasta en las circunstancias más extremas.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "cloth_purple_base",
+		"id": "unid_cloth_purple"
+	},
+	"unid_pants_purple": {
+		"name": "Polainas de Combate de Élite",
+		"type": "PANTS",
+		"description": "Cuentan con complejos módulos de blindaje en las articulaciones para adaptarse mejor a las peligrosas batallas de los agentes de las Fuerzas Especiales.",
+		"icon": "/Game/Resources/Icon/weapon/pants_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "pants_purple_base",
+		"id": "unid_pants_purple"
+	},
+	"unid_shoes_purple": {
+		"name": "Botas de Combate de Élite",
+		"type": "SHOES",
+		"description": "Su nuevo compuesto se ajusta automáticamente a la textura de la superficie según la condición del terreno de batalla.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "shoes_purple_base",
+		"id": "unid_shoes_purple"
+	},
+	"unid_helmet_purple": {
+		"name": "Casco de Combate de Élite",
+		"type": "FIRST",
+		"description": "Un casco avanzado que cuenta con identificación de enemigos y mira asistida.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "helmet_purple_base",
+		"id": "unid_helmet_purple"
+	},
+	"unid_glove_purple": {
+		"name": "Guantes de élite",
+		"type": "FIRST",
+		"description": "Sus unidades de magnetización permiten al usuario sujetarse a superficies metálicas cuando lo necesite.",
+		"icon": "/Game/Resources/Icon/weapon/glove_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "glove_purple_base",
+		"id": "unid_glove_purple"
+	},
+	"unid_belt_purple": {
+		"name": "Cinturón de Combate de Élite",
+		"type": "NECKLACE",
+		"description": "Diseñado con ranuras multifuncionales para las diferentes necesidades de la misión.",
+		"icon": "/Game/Resources/Icon/weapon/belt_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "belt_purple_base",
+		"id": "unid_belt_purple"
+	},
+	"unid_shawl_purple": {
+		"name": "Hombreras de élite",
+		"type": "AMULET",
+		"description": "Equipadas con un generador de escudo deflector para proteger la cabeza y los hombros de quien las porte.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "shawl_purple_base",
+		"id": "unid_shawl_purple"
+	},
+	"unid_armband_blue": {
+		"name": "Muñequeras de halcón",
+		"type": "NECKLACE",
+		"description": "Su nueva aleación brinda el perfecto balance entre peso y protección.",
+		"icon": "/Game/Resources/Icon/weapon/armband_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "armband_blue_base",
+		"id": "unid_armband_blue"
+	},
+	"unid_cloth_blue": {
+		"name": "Traje de Combate de Halcón",
+		"type": "CLOTH",
+		"description": "Su nuevo material garantiza protección con un diseño simplificado.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "cloth_blue_base",
+		"id": "unid_cloth_blue"
+	},
+	"unid_pants_blue": {
+		"name": "Polainas de Combate de Halcón",
+		"type": "PANTS",
+		"description": "Una versión muy mejorada de su predecesora, con mejores materiales y diseño.",
+		"icon": "/Game/Resources/Icon/weapon/pants_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "pants_blue_base",
+		"id": "unid_pants_blue"
+	},
+	"unid_shoes_blue": {
+		"name": "Botas de Combate de Halcón",
+		"type": "SHOES",
+		"description": "Su doble capa amortiguadora brinda tanto comodidad como durabilidad.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "shoes_blue_base",
+		"id": "unid_shoes_blue"
+	},
+	"unid_helmet_blue": {
+		"name": "Casco de Combate de Halcón",
+		"type": "FIRST",
+		"description": "Su fuerte material protege a quien lo porte incluso en medio de una balacera.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "helmet_blue_base",
+		"id": "unid_helmet_blue"
+	},
+	"unid_glove_blue": {
+		"name": "Guantes de halcón",
+		"type": "FIRST",
+		"description": "Su material de polímero ligero no restringe en absoluto la agilidad de quien los use.",
+		"icon": "/Game/Resources/Icon/weapon/glove_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "glove_blue_base",
+		"id": "unid_glove_blue"
+	},
+	"unid_belt_blue": {
+		"name": "Cinturón de Halcón",
+		"type": "NECKLACE",
+		"description": "Cuenta con un microsensor para monitorear las estadísticas vitales del usuario.",
+		"icon": "/Game/Resources/Icon/weapon/belt_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "belt_blue_base",
+		"id": "unid_belt_blue"
+	},
+	"unid_shawl_blue": {
+		"name": "Hombreras de halcón",
+		"type": "AMULET",
+		"description": "Una versión mejorada de las hombreras de vanguardia que brinda una excelente defensa.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "shawl_blue_base",
+		"id": "unid_shawl_blue"
+	},
+	"unid_armband_green": {
+		"name": "Brazales de vanguardia",
+		"type": "NECKLACE",
+		"description": "Sacrifican un poco de movilidad para brindar mejor protección.",
+		"icon": "/Game/Resources/Icon/weapon/armband_010101",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "armband_green_base",
+		"id": "unid_armband_green"
+	},
+	"unid_cloth_green": {
+		"name": "Traje de Vanguardia",
+		"type": "CLOTH",
+		"description": "Ya no lo usa Hykros, pero todavía es un objeto muy buscado en el mercado negro.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "cloth_green_base",
+		"id": "unid_cloth_green"
+	},
+	"unid_pants_green": {
+		"name": "Musleras de vanguardia",
+		"type": "PANTS",
+		"description": "La versión antigua de pantalones de combate de Hykros. Es el eslabón más débil de la serie de vanguardia.",
+		"icon": "/Game/Resources/Icon/weapon/pants_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "pants_green_base",
+		"id": "unid_pants_green"
+	},
+	"unid_shoes_green": {
+		"name": "Botas de Vanguardia",
+		"type": "SHOES",
+		"description": "Estas antiguas Botas de Hykros se ven geniales y hacen bien su trabajo.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "shoes_green_base",
+		"id": "unid_shoes_green"
+	},
+	"unid_helmet_green": {
+		"name": "Casco de Vanguardia",
+		"type": "FIRST",
+		"description": "Un excelente casco para proteger la cabeza de quien lo porte.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "helmet_green_base",
+		"id": "unid_helmet_green"
+	},
+	"unid_glove_green": {
+		"name": "Guantes de vanguardia",
+		"type": "FIRST",
+		"description": "Estos guantes son controvertidos, ya que sacrifican movilidad a cambio de protección.",
+		"icon": "/Game/Resources/Icon/weapon/glove_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "glove_green_base",
+		"id": "unid_glove_green"
+	},
+	"unid_belt_green": {
+		"name": "Cinturón de Vanguardia",
+		"type": "NECKLACE",
+		"description": "Su hebilla tiene un diseño antiguo y duradero, pero no puede ajustarse.",
+		"icon": "/Game/Resources/Icon/weapon/belt_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "belt_green_base",
+		"id": "unid_belt_green"
+	},
+	"unid_shawl_green": {
+		"name": "Hombreras de vanguardia",
+		"type": "AMULET",
+		"description": "Están diseñadas para usarse únicamente con el Traje de Vanguardia y protegen la parte superior de los brazos de quien lo porte.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "shawl_green_base",
+		"id": "unid_shawl_green"
+	},
+	"unid_armband_white": {
+		"name": "Brazales de exploración",
+		"type": "NECKLACE",
+		"description": "Estos brazales están hechos para salir de aventura, de modo que son más delgados y ligeros.",
+		"icon": "/Game/Resources/Icon/weapon/armband_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "armband_white_base",
+		"id": "unid_armband_white"
+	},
+	"unid_cloth_white": {
+		"name": "Uniforme de exploración",
+		"type": "CLOTH",
+		"description": "Una armadura ligera de cuero utilizada para proteger al grupo de exploración del refugio.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "cloth_white_base",
+		"id": "unid_cloth_white"
+	},
+	"unid_pants_white": {
+		"name": "Pantalones de exploración",
+		"type": "PANTS",
+		"description": "No muy agradables a la vista, pero duraderos y prácticos.",
+		"icon": "/Game/Resources/Icon/weapon/pants_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "pants_white_base",
+		"id": "unid_pants_white"
+	},
+	"unid_shoes_white": {
+		"name": "Botas de Exploración",
+		"type": "SHOES",
+		"description": "Estas botas pesadas y fuertes están específicamente diseñadas para el grupo de Exploración del refugio.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "shoes_white_base",
+		"id": "unid_shoes_white"
+	},
+	"unid_helmet_white": {
+		"name": "Casco de Exploración",
+		"type": "FIRST",
+		"description": "Brinda una excelente protección para la cabeza.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "helmet_white_base",
+		"id": "unid_helmet_white"
+	},
+	"unid_glove_white": {
+		"name": "Guantes de exploración",
+		"type": "FIRST",
+		"description": "Su relleno adicional hace más fácil responder a diferentes situaciones en la naturaleza.",
+		"icon": "/Game/Resources/Icon/weapon/glove_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "glove_white_base",
+		"id": "unid_glove_white"
+	},
+	"unid_belt_white": {
+		"name": "Cinturón de Exploración",
+		"type": "NECKLACE",
+		"description": "Este cinturón tiene ranuras para llevar herramientas y sujetar cuerdas mientras exploras.",
+		"icon": "/Game/Resources/Icon/weapon/belt_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "belt_white_base",
+		"id": "unid_belt_white"
+	},
+	"unid_shawl_white": {
+		"name": "Hombreras de exploración",
+		"type": "AMULET",
+		"description": "Brindan una protección básica sin afectar los movimientos del torso.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "shawl_white_base",
+		"id": "unid_shawl_white"
+	},
+	"unid_visor_blue": {
+		"name": "Ocular Táctico de Halcón",
+		"type": "HEAD",
+		"description": "Un ocular táctico fabricado por Tecnología Banges. Solía ser popular entre civiles.",
+		"icon": "/Game/Resources/Icon/weapon/visor_blue",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_visor_blue"
+	},
+	"unid_core_orange": {
+		"name": "Motor de Combate de Fortaleza",
+		"type": "HEAD",
+		"description": "La más reciente creación del equipo de desarrollo de Hykros. Provee a los ejecutores un soporte superior.",
+		"icon": "/Game/Resources/Icon/weapon/core_orange_physic",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_core_orange"
+	},
+	"unid_core_purple": {
+		"name": "Motor de Combate de Élite (Sobrecarga)",
+		"type": "HEAD",
+		"description": "Equipo estándar de las Fuerzas especiales de Hykros. Ha ayudado en muchas tareas difíciles.",
+		"icon": "/Game/Resources/Icon/weapon/core_purple",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_core_purple"
+	},
+	"unid_core_blue": {
+		"name": "Motor de Combate de Halcón",
+		"type": "HEAD",
+		"description": "Un motor de combate fabricado por Tecnología Banges. Solía ser popular entre civiles.",
+		"icon": "/Game/Resources/Icon/weapon/core_blue",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_core_blue"
+	},
+	"unid_core_green": {
+		"name": "Motor de Combate de Vanguardia",
+		"type": "HEAD",
+		"description": "La versión antigua del motor de combate de Hykros. Sigue funcionando bien.",
+		"icon": "/Game/Resources/Icon/weapon/core_green",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_core_green"
+	},
+	"unid_visor_orange": {
+		"name": "Ocular Táctico de Fortaleza",
+		"type": "HEAD",
+		"description": "La más reciente creación del equipo de desarrollo de Hykros. Provee a los ejecutores un soporte superior.",
+		"icon": "/Game/Resources/Icon/weapon/visor_orange_physic",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_visor_orange"
+	},
+	"unid_visor_purple": {
+		"name": "Ocular Táctico de Élite (Sobrecarga)",
+		"type": "HEAD",
+		"description": "Equipo estándar de las Fuerzas especiales de Hykros. Ha ayudado en muchas tareas difíciles.",
+		"icon": "/Game/Resources/Icon/weapon/visor_purple",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_visor_purple"
+	},
+	"unid_reactor_orange": {
+		"name": "Microrreactor de Fortaleza",
+		"type": "FURNACE",
+		"description": "Un nuevo reactor de gran eficiencia diseñado por el departamento de desarrollo del Distrito 7 que proporciona soporte de estadísticas. Consigue uno de los siguientes elementos de Microrreactor de Fortaleza de forma aleatoria: Sobrecarga, Erupción, Esmaltado, Arco.",
+		"icon": "/Game/Resources/Icon/weapon/reactor_orange_physic",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_reactor_orange"
+	},
+	"unid_reactor_purple": {
+		"name": "Microrreactor de Élite",
+		"type": "FURNACE",
+		"description": "Un microrreactor equipado por los ejecutores del Distrito 7 para combatir a las entidades del Espacio Gris. Consigue uno de los siguientes tipos de microrreactores de élite de forma aleatoria: Sobrecarga, Erupción, Esmaltado, Arco.",
+		"icon": "/Game/Resources/Icon/weapon/reactor_purple",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_reactor_purple"
+	},
+	"unid_reactor_blue": {
+		"name": "Microrreactor de Halcón",
+		"type": "FURNACE",
+		"description": "Equipo normal para los integrantes del equipo de exploración de superficie de Vera. Proporciona energía suficiente y los mantiene preparados para cualquier misión. Consigue uno de los siguientes tipos de microrreactores de halcón de forma aleatoria: Sobrecarga, Erupción, Esmaltado, Arco.",
+		"icon": "/Game/Resources/Icon/weapon/reactor_blue",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_reactor_blue"
+	},
+	"unid_exoskeleton_orange": {
+		"name": "Exoesqueleto de Fortaleza",
+		"type": "FURNACE",
+		"description": "Un nuevo exoesqueleto del departamento de desarrollo del Distrito 7 que proporciona un excelente soporte de estadísticas. Recibe de forma aleatoria uno de los siguientes tipos de Exoesqueleto de Fortaleza: Sobrecarga, Estallido, Esmaltado, Arco.",
+		"icon": "/Game/Resources/Icon/weapon/exoskeleton_orange_physic",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_exoskeleton_orange"
+	},
+	"unid_exoskeleton_purple": {
+		"name": "Exoesqueleto de Élite",
+		"type": "FURNACE",
+		"description": "Un microesqueleto normal para que los ejecutores del Distrito 7 combatan a las entidades del Espacio Gris. Recibe de forma aleatoria uno de los siguientes tipos de Exoesqueleto de Élite: Sobrecarga, Estallido, Esmaltado, Arco.",
+		"icon": "/Game/Resources/Icon/weapon/exoskeleton_purple",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_exoskeleton_purple"
+	},
+	"unid_exoskeleton_blue": {
+		"name": "Exoesqueleto de Halcón",
+		"type": "FURNACE",
+		"description": "Equipo normal para los integrantes del equipo de exploración de superficie de Vera. Proporciona energía suficiente y los mantiene preparados para cualquier misión. Recibe de forma aleatoria uno de los siguientes tipos de exoesqueleto de halcón: Sobrecarga, Estallido, Esmaltado, Arco.",
+		"icon": "/Game/Resources/Icon/weapon/exoskeleton_blue",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_exoskeleton_blue"
+	},
 	"core_OS_red": {
 		"name": "Motor de Combate de Titán",
 		"type": "HEAD",
@@ -488,6 +1153,16 @@
 		"statPool": "core1_randompool_orange",
 		"baseStat": "core_red_base",
 		"id": "core_OS_red"
+	},
+	"core_OS_orangeTupo": {
+		"name": "Motor de Combate de Fortaleza",
+		"type": "HEAD",
+		"description": "La más reciente creación del equipo de desarrollo de Hykros. Provee un soporte superior a los Ejecutores.",
+		"icon": "/Game/Resources/Icon/weapon/core_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "core1_randompool_orange",
+		"baseStat": "core_red_base",
+		"id": "core_OS_orangeTupo"
 	},
 	"core_OS_orange": {
 		"name": "Motor de Combate de Fortaleza",
@@ -529,6 +1204,16 @@
 		"baseStat": "visor_red_base",
 		"id": "visor_OS_red"
 	},
+	"visor_OS_orangeTupo": {
+		"name": "Ocular Táctico de Fortaleza",
+		"type": "EYEPIECE",
+		"description": "La más reciente creación del equipo de desarrollo de Hykros. Provee un soporte superior a los Ejecutores.",
+		"icon": "/Game/Resources/Icon/weapon/visor_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "visor1_randompool_orange",
+		"baseStat": "visor_red_base",
+		"id": "visor_OS_orangeTupo"
+	},
 	"visor_OS_orange": {
 		"name": "Ocular Táctico de Fortaleza",
 		"type": "EYEPIECE",
@@ -568,6 +1253,16 @@
 		"statPool": "reactor1_randompool_orange",
 		"baseStat": "reactor_red_base",
 		"id": "reactor_OS_red"
+	},
+	"reactor_OS_orangeTupo": {
+		"name": "Microrreactor de Fortaleza",
+		"type": "FURNACE",
+		"description": "Un nuevo reactor de gran eficiencia desarrollado por el equipo de desarrollo del Distrito 7, el cual proporciona soporte excepcional.",
+		"icon": "/Game/Resources/Icon/weapon/reactor_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "reactor1_randompool_orange",
+		"baseStat": "reactor_red_base",
+		"id": "reactor_OS_orangeTupo"
 	},
 	"reactor_OS_orange": {
 		"name": "Microrreactor de Fortaleza",
@@ -609,6 +1304,16 @@
 		"baseStat": "exoskeleton_red_base",
 		"id": "exoskeleton_OS_red"
 	},
+	"exoskeleton_OS_orangeTupo": {
+		"name": "Exoesqueleto de Fortaleza",
+		"type": "ECTOSKELETON",
+		"description": "Un nuevo exoesqueleto desarrollado por el equipo de desarrollo del Distrito 7, que proporciona un excelente soporte.",
+		"icon": "/Game/Resources/Icon/weapon/exoskeleton_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "exoskeleton1_randompool_orange",
+		"baseStat": "exoskeleton_red_base",
+		"id": "exoskeleton_OS_orangeTupo"
+	},
 	"exoskeleton_OS_orange": {
 		"name": "Exoesqueleto de Fortaleza",
 		"type": "ECTOSKELETON",
@@ -638,5 +1343,206 @@
 		"statPool": "exoskeleton_OS_randompool_blue",
 		"baseStat": "exoskeleton_blue_OS_base",
 		"id": "exoskeleton_OS_blue"
+	},
+	"breakfate_equip_ssr_cloth": {
+		"name": "Armadura Acorazada",
+		"type": "CLOTH",
+		"description": "La armadura más avanzada que provee una protección absoluta.",
+		"source": "PS +500, Escudo +250",
+		"icon": "/Game/Resources/Icon/weapon/cloth_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_ssr_cloth_base",
+		"id": "breakfate_equip_ssr_cloth"
+	},
+	"breakfate_equip_ssr_helmet": {
+		"name": "Casco Acorazado",
+		"type": "HEAD",
+		"description": "El casco más avanzado que provee una protección absoluta.",
+		"source": "PS +643",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_ssr_helmet_base",
+		"id": "breakfate_equip_ssr_helmet"
+	},
+	"breakfate_equip_sr_cloth": {
+		"name": "Traje de Combate de Élite",
+		"type": "CLOTH",
+		"description": "Armadura exquisita con la que puedes contar para mantenerte a salvo.",
+		"source": "PS +358, Escudo +200",
+		"icon": "/Game/Resources/Icon/weapon/cloth_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_sr_cloth_base",
+		"id": "breakfate_equip_sr_cloth"
+	},
+	"breakfate_equip_sr_helmet": {
+		"name": "Casco de Combate de Élite",
+		"type": "HEAD",
+		"description": "Un casco de batalla exquisito con el que puedes contar para mantenerte a salvo.",
+		"source": "PS +500",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_sr_helmet_base",
+		"id": "breakfate_equip_sr_helmet"
+	},
+	"breakfate_equip_r_cloth": {
+		"name": "Traje de Combate de Halcón",
+		"type": "CLOTH",
+		"description": "Armadura ordinaria con protección justa.",
+		"source": "PS +250, Escudo +150",
+		"icon": "/Game/Resources/Icon/weapon/cloth_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_r_cloth_base",
+		"id": "breakfate_equip_r_cloth"
+	},
+	"breakfate_equip_r_helmet": {
+		"name": "Casco de Combate de Halcón",
+		"type": "HEAD",
+		"description": "Un casco común y corriente con buena protección.",
+		"source": "PS +320",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_r_helmet_base",
+		"id": "breakfate_equip_r_helmet"
+	},
+	"breakfate_equip_n_cloth": {
+		"name": "Traje de Vanguardia",
+		"type": "CLOTH",
+		"description": "Armadura desgastada. Cualquier defensa es mejor que nada.",
+		"source": "PS +107, Escudo +100",
+		"icon": "/Game/Resources/Icon/weapon/cloth_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_n_cloth_base",
+		"id": "breakfate_equip_n_cloth"
+	},
+	"breakfate_equip_n_helmet": {
+		"name": "Casco de Vanguardia",
+		"type": "HEAD",
+		"description": "Un casco maltrecho. Cualquier defensa es mejor que nada.",
+		"source": "PS +179",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_n_helmet_base",
+		"id": "breakfate_equip_n_helmet"
+	},
+	"Weapon_NPF_dressmaker": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_NPF_dressmaker"
+	},
+	"Weapon_NPF_Defend": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_NPF_Defend"
+	},
+	"Weapon_Katana_city_BP": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_Katana_city_BP"
+	},
+	"Weapon_NPF_DefendY": {
+		"name": "Arma NPF",
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_NPF_DefendY"
+	},
+	"Weapon_NPF_DefendXZ": {
+		"name": "Arma de Zeke",
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_NPF_DefendXZ"
+	},
+	"Gobin_Bow_Match_BP": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Gobin_Bow_Match_BP"
+	},
+	"CityDogWeapon": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "CityDogWeapon"
+	},
+	"Weapon_RockMan": {
+		"name": "Obelisco",
+		"type": "WEAPON",
+		"description": "Arma de jefe",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_RockMan"
+	},
+	"Weapon_Spider": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_Spider"
+	},
+	"Spera_wolfman": {
+		"name": "Lanza de Licántropo",
+		"type": "WEAPON",
+		"description": "Lanza de Licántropo",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Spera_wolfman"
+	},
+	"Row_Gobin": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Row_Gobin"
+	},
+	"Weapon_RockMan_BW": {
+		"name": "Obelisco del Mundo",
+		"type": "WEAPON",
+		"description": "Armas",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_RockMan_BW"
+	},
+	"Torch_Goblin": {
+		"name": "Antorcha de Duende",
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Torch_Goblin"
 	}
 }

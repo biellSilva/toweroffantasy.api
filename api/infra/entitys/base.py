@@ -12,8 +12,8 @@ class EntityBase(BaseModel):
         def _camel__(value: Any) -> Any:
 
             if isinstance(value, dict):
-                return {str(k)[0].lower() + k[1:]: _camel__(v) for k, v in value.items()} # type: ignore
-            
+                return {str(k)[0].lower() + k[1:]: _camel__(v) for k, v in value.items() if k} # type: ignore
+
             return value
 
         return _camel__(values)

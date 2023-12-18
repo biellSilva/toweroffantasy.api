@@ -1,4 +1,59 @@
 {
+	"Item_Mine_Crystal": {
+		"name": "Кристалл",
+		"type": "NONE",
+		"description": "Обычная руда, популярная благодаря своей прозрачности и ослепительной красоте.",
+		"source": "Дает **5** ед. опыта для укрепления снаряжения.",
+		"icon": "/Game/Resources/Icon/item/Item_Mine_Crystal",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Item_Mine_Crystal"
+	},
+	"core_exp_n": {
+		"name": "Универсальные боевые детали I",
+		"type": "NONE",
+		"description": "Обычные универсальные боевые детали. Они применяются в самых разных ситуациях, но в них нет ничего особенного.",
+		"source": "Дает **50** ед. опыта при укреплении некоторого снаряжения",
+		"icon": "/Game/Resources/Icon/item/core_exp_n",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "core_exp_n"
+	},
+	"core_exp_r": {
+		"name": "Универсальные боевые детали II",
+		"type": "NONE",
+		"description": "Такие универсальные боевые детали циркулируют на черном рынке. С учетом эффективности и цены покупатель неизменно чувствует, что его обдирают.",
+		"source": "Дает **200** ед. опыта при укреплении некоторого снаряжения",
+		"icon": "/Game/Resources/Icon/item/core_exp_r",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "core_exp_r"
+	},
+	"core_exp_sr": {
+		"name": "Универсальные боевые детали III",
+		"type": "NONE",
+		"description": "Универсальные боевые детали производства «БэнджиТех». Они совместимы с разными компонентами и очень полезны.",
+		"source": "Дает **800** ед. опыта при укреплении некоторого снаряжения",
+		"icon": "/Game/Resources/Icon/item/core_exp_sr",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "core_exp_sr"
+	},
+	"core_exp_ssr": {
+		"name": "Универсальные боевые детали IV",
+		"type": "NONE",
+		"description": "Новейшее творение подразделения НИОКР компании «Оборудование Гикроса». До максимума увеличивает эффективность боевого вспомогательного снаряжения.",
+		"source": "Дает **2400** ед. опыта при укреплении некоторого снаряжения",
+		"icon": "/Game/Resources/Icon/item/core_exp_ssr",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "core_exp_ssr"
+	},
 	"armband_orange": {
 		"name": "Наручи крепости",
 		"type": "NECKLACE",
@@ -8,6 +63,16 @@
 		"statPool": "armband_randompool_orange",
 		"baseStat": "armband_orange_base",
 		"id": "armband_orange"
+	},
+	"armband_orangeTupo": {
+		"name": "Наручи крепости",
+		"type": "NECKLACE",
+		"description": "Снаряжение, созданное для отряда специального назначения. Высокая степень защиты и мобильность.",
+		"icon": "/Game/Resources/Icon/weapon/armband_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "armband_randompool_orange",
+		"baseStat": "armband_red_base",
+		"id": "armband_orangeTupo"
 	},
 	"cloth_orange": {
 		"name": "Броня крепости",
@@ -19,6 +84,16 @@
 		"baseStat": "cloth_orange_base",
 		"id": "cloth_orange"
 	},
+	"cloth_orangeTupo": {
+		"name": "Броня крепости",
+		"type": "CLOTH",
+		"description": "Непробиваемая тяжелая броня, разработанная в Гикросе за долгие годы исследований.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "cloth_randompool_orange",
+		"baseStat": "cloth_red_base",
+		"id": "cloth_orangeTupo"
+	},
 	"pants_orange": {
 		"name": "Штаны крепости",
 		"type": "PANTS",
@@ -28,6 +103,16 @@
 		"statPool": "pants_randompool_orange",
 		"baseStat": "pants_orange_base",
 		"id": "pants_orange"
+	},
+	"pants_orangeTupo": {
+		"name": "Штаны крепости",
+		"type": "PANTS",
+		"description": "Эти штаны механически усилены для обеспечения большей подвижности владельца в тяжелой броне крепости.",
+		"icon": "/Game/Resources/Icon/weapon/pants_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "pants_randompool_orange",
+		"baseStat": "pants_red_base",
+		"id": "pants_orangeTupo"
 	},
 	"shoes_orange": {
 		"name": "Сабатоны крепости",
@@ -39,6 +124,16 @@
 		"baseStat": "shoes_orange_base",
 		"id": "shoes_orange"
 	},
+	"shoes_orangeTupo": {
+		"name": "Сабатоны крепости",
+		"type": "SHOES",
+		"description": "Звук топота этих тяжелых ботинок — лучший сдерживающий фактор.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "shoes_randompool_orange",
+		"baseStat": "shoes_red_base",
+		"id": "shoes_orangeTupo"
+	},
 	"helmet_orange": {
 		"name": "Шлем крепости",
 		"type": "FIRST",
@@ -48,6 +143,16 @@
 		"statPool": "helmet_randompool_orange",
 		"baseStat": "helmet_orange_base",
 		"id": "helmet_orange"
+	},
+	"helmet_orangeTupo": {
+		"name": "Шлем крепости",
+		"type": "FIRST",
+		"description": "Полностью герметичный шлем, обеспечивающий защиту, рециркуляцию воздуха и обработку информации.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "helmet_randompool_orange",
+		"baseStat": "helmet_red_base",
+		"id": "helmet_orangeTupo"
 	},
 	"glove_orange": {
 		"name": "Рукавицы крепости",
@@ -59,6 +164,16 @@
 		"baseStat": "glove_orange_base",
 		"id": "glove_orange"
 	},
+	"glove_orangeTupo": {
+		"name": "Рукавицы крепости",
+		"type": "FIRST",
+		"description": "Эти тяжелые защитные рукавицы специально разработаны для работы с самым разным оружием.",
+		"icon": "/Game/Resources/Icon/weapon/glove_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "glove_randompool_orange",
+		"baseStat": "glove_red_base",
+		"id": "glove_orangeTupo"
+	},
 	"belt_orange": {
 		"name": "Пояс крепости",
 		"type": "NECKLACE",
@@ -69,6 +184,16 @@
 		"baseStat": "belt_orange_base",
 		"id": "belt_orange"
 	},
+	"belt_orangeTupo": {
+		"name": "Пояс крепости",
+		"type": "NECKLACE",
+		"description": "Содержит несколько датчиков, передающих данные непосредственно в систему обработки информации.",
+		"icon": "/Game/Resources/Icon/weapon/belt_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "belt_randompool_orange",
+		"baseStat": "belt_red_base",
+		"id": "belt_orangeTupo"
+	},
 	"shawl_orange": {
 		"name": "Наплечники крепости",
 		"type": "AMULET",
@@ -78,6 +203,16 @@
 		"statPool": "shawl_randompool_orange",
 		"baseStat": "shawl_orange_base",
 		"id": "shawl_orange"
+	},
+	"shawl_orangeTupo": {
+		"name": "Наплечники крепости",
+		"type": "AMULET",
+		"description": "Прочный пуленепробиваемый материал обеспечивает идеальную защиту плеч и шеи владельца.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "shawl_randompool_orange",
+		"baseStat": "shawl_red_base",
+		"id": "shawl_orangeTupo"
 	},
 	"armband_purple": {
 		"name": "Элитные повязки",
@@ -479,6 +614,536 @@
 		"baseStat": "shawl_white_base",
 		"id": "shawl_white"
 	},
+	"unid_armband_orange": {
+		"name": "Наручи крепости",
+		"type": "NECKLACE",
+		"description": "Снаряжение, созданное для отряда специального назначения. Высокая степень защиты и мобильность.",
+		"icon": "/Game/Resources/Icon/weapon/armband_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "armband_orange_base",
+		"id": "unid_armband_orange"
+	},
+	"unid_cloth_orange": {
+		"name": "Броня крепости",
+		"type": "CLOTH",
+		"description": "Непробиваемая тяжелая броня, разработанная в Гикросе за долгие годы исследований.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "cloth_orange_base",
+		"id": "unid_cloth_orange"
+	},
+	"unid_pants_orange": {
+		"name": "Штаны крепости",
+		"type": "PANTS",
+		"description": "Эти штаны механически усилены для обеспечения большей подвижности владельца в тяжелой броне крепости.",
+		"icon": "/Game/Resources/Icon/weapon/pants_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "pants_orange_base",
+		"id": "unid_pants_orange"
+	},
+	"unid_shoes_orange": {
+		"name": "Сабатоны крепости",
+		"type": "SHOES",
+		"description": "Звук топота этих тяжелых ботинок — лучший сдерживающий фактор.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "shoes_orange_base",
+		"id": "unid_shoes_orange"
+	},
+	"unid_helmet_orange": {
+		"name": "Шлем крепости",
+		"type": "FIRST",
+		"description": "Полностью герметичный шлем, обеспечивающий защиту, рециркуляцию воздуха и обработку информации.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "helmet_orange_base",
+		"id": "unid_helmet_orange"
+	},
+	"unid_glove_orange": {
+		"name": "Рукавицы крепости",
+		"type": "FIRST",
+		"description": "Эти тяжелые защитные рукавицы специально разработаны для работы с самым разным оружием.",
+		"icon": "/Game/Resources/Icon/weapon/glove_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "glove_orange_base",
+		"id": "unid_glove_orange"
+	},
+	"unid_belt_orange": {
+		"name": "Пояс крепости",
+		"type": "NECKLACE",
+		"description": "Содержит несколько датчиков, передающих данные непосредственно в систему обработки информации.",
+		"icon": "/Game/Resources/Icon/weapon/belt_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "belt_orange_base",
+		"id": "unid_belt_orange"
+	},
+	"unid_shawl_orange": {
+		"name": "Наплечники крепости",
+		"type": "AMULET",
+		"description": "Прочный пуленепробиваемый материал обеспечивает идеальную защиту плеч и шеи владельца.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "shawl_orange_base",
+		"id": "unid_shawl_orange"
+	},
+	"unid_armband_purple": {
+		"name": "Элитные повязки",
+		"type": "NECKLACE",
+		"description": "Защищенную область можно менять в зависимости от текущей ситуации.",
+		"icon": "/Game/Resources/Icon/weapon/armband_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "armband_purple_base",
+		"id": "unid_armband_purple"
+	},
+	"unid_cloth_purple": {
+		"name": "Элитный боевой костюм",
+		"type": "CLOTH",
+		"description": "Стандартное снаряжение спецназа Гикроса. Обеспечивает превосходную защиту и устойчивость практически в любых экстремальных условиях.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "cloth_purple_base",
+		"id": "unid_cloth_purple"
+	},
+	"unid_pants_purple": {
+		"name": "Элитные боевые леггинсы",
+		"type": "PANTS",
+		"description": "Оснащены сложными броневыми модулями на стыках, чтобы агентам спецназа было проще выдерживать опасные сражения.",
+		"icon": "/Game/Resources/Icon/weapon/pants_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "pants_purple_base",
+		"id": "unid_pants_purple"
+	},
+	"unid_shoes_purple": {
+		"name": "Элитные боевые сапоги",
+		"type": "SHOES",
+		"description": "Новый композитный материал автоматически регулирует текстуру поверхности в зависимости от состояния поля боя.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "shoes_purple_base",
+		"id": "unid_shoes_purple"
+	},
+	"unid_helmet_purple": {
+		"name": "Элитный боевой шлем",
+		"type": "FIRST",
+		"description": "Продвинутый шлем, оснащенный функциями распознавания врагов и помощи при прицеливании.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "helmet_purple_base",
+		"id": "unid_helmet_purple"
+	},
+	"unid_glove_purple": {
+		"name": "Элитные перчатки",
+		"type": "FIRST",
+		"description": "Модули намагничивания позволяют владельцу при необходимости прикрепляться к металлическим поверхностям.",
+		"icon": "/Game/Resources/Icon/weapon/glove_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "glove_purple_base",
+		"id": "unid_glove_purple"
+	},
+	"unid_belt_purple": {
+		"name": "Элитный боевой пояс",
+		"type": "NECKLACE",
+		"description": "В нем предусмотрено множество модульных ячеек широкого назначения, подходящих под самые разнообразные задачи.",
+		"icon": "/Game/Resources/Icon/weapon/belt_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "belt_purple_base",
+		"id": "unid_belt_purple"
+	},
+	"unid_shawl_purple": {
+		"name": "Элитные наплечники",
+		"type": "AMULET",
+		"description": "Оснащены генератором отклоняющего щита для защиты головы и плеч владельца.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "shawl_purple_base",
+		"id": "unid_shawl_purple"
+	},
+	"unid_armband_blue": {
+		"name": "Браслеты сокола",
+		"type": "NECKLACE",
+		"description": "Новый сплав обеспечивает идеальный баланс между весом и защитой.",
+		"icon": "/Game/Resources/Icon/weapon/armband_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "armband_blue_base",
+		"id": "unid_armband_blue"
+	},
+	"unid_cloth_blue": {
+		"name": "Боевой костюм сокола",
+		"type": "CLOTH",
+		"description": "Новый материал гарантирует защиту при упрощенной конструкции.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "cloth_blue_base",
+		"id": "unid_cloth_blue"
+	},
+	"unid_pants_blue": {
+		"name": "Боевые леггинсы сокола",
+		"type": "PANTS",
+		"description": "Значительно улучшенная версия предыдущей модели из более качественных материалов и с новым дизайном.",
+		"icon": "/Game/Resources/Icon/weapon/pants_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "pants_blue_base",
+		"id": "unid_pants_blue"
+	},
+	"unid_shoes_blue": {
+		"name": "Боевые сапоги сокола",
+		"type": "SHOES",
+		"description": "Двойной амортизирующий слой обеспечивает комфорт и долговечность.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "shoes_blue_base",
+		"id": "unid_shoes_blue"
+	},
+	"unid_helmet_blue": {
+		"name": "Боевой шлем сокола",
+		"type": "FIRST",
+		"description": "Прочный материал защищает владельца даже от сильных обстрелов.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "helmet_blue_base",
+		"id": "unid_helmet_blue"
+	},
+	"unid_glove_blue": {
+		"name": "Перчатки сокола",
+		"type": "FIRST",
+		"description": "Легкий полимерный материал, ничуть не ограничивающий движения владельца.",
+		"icon": "/Game/Resources/Icon/weapon/glove_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "glove_blue_base",
+		"id": "unid_glove_blue"
+	},
+	"unid_belt_blue": {
+		"name": "Пояс сокола",
+		"type": "NECKLACE",
+		"description": "Содержит микродатчик для отслеживания основных показателей владельца.",
+		"icon": "/Game/Resources/Icon/weapon/belt_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "belt_blue_base",
+		"id": "unid_belt_blue"
+	},
+	"unid_shawl_blue": {
+		"name": "Наплечники сокола",
+		"type": "AMULET",
+		"description": "Усовершенствованная версия наплечников авангарда, обеспечивающая превосходную защиту.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "shawl_blue_base",
+		"id": "unid_shawl_blue"
+	},
+	"unid_armband_green": {
+		"name": "Наручи авангарда",
+		"type": "NECKLACE",
+		"description": "Повышенная защита за счет немного сниженной мобильности.",
+		"icon": "/Game/Resources/Icon/weapon/armband_010101",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "armband_green_base",
+		"id": "unid_armband_green"
+	},
+	"unid_cloth_green": {
+		"name": "Костюм авангарда",
+		"type": "CLOTH",
+		"description": "Больше не используется в Гикросе, но все еще очень популярен на черном рынке.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "cloth_green_base",
+		"id": "unid_cloth_green"
+	},
+	"unid_pants_green": {
+		"name": "Штаны авангарда",
+		"type": "PANTS",
+		"description": "Старая версия боевых штанов Гикроса. Самое слабое звено в серии «Авангард».",
+		"icon": "/Game/Resources/Icon/weapon/pants_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "pants_green_base",
+		"id": "unid_pants_green"
+	},
+	"unid_shoes_green": {
+		"name": "Сапоги авангарда",
+		"type": "SHOES",
+		"description": "Эти старые сапоги Гикроса отлично выглядят и хорошо выполняют свою работу.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "shoes_green_base",
+		"id": "unid_shoes_green"
+	},
+	"unid_helmet_green": {
+		"name": "Шлем авангарда",
+		"type": "FIRST",
+		"description": "Отличный шлем для защиты головы владельца.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "helmet_green_base",
+		"id": "unid_helmet_green"
+	},
+	"unid_glove_green": {
+		"name": "Перчатки авангарда",
+		"type": "FIRST",
+		"description": "Не все любят эти перчатки, поскольку ради дополнительной защиты приходится пожертвовать подвижностью.",
+		"icon": "/Game/Resources/Icon/weapon/glove_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "glove_green_base",
+		"id": "unid_glove_green"
+	},
+	"unid_belt_green": {
+		"name": "Пояс авангарда",
+		"type": "NECKLACE",
+		"description": "На пряжке виден старый узор. Прочный, но подогнать его нельзя.",
+		"icon": "/Game/Resources/Icon/weapon/belt_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "belt_green_base",
+		"id": "unid_belt_green"
+	},
+	"unid_shawl_green": {
+		"name": "Наплечники авангарда",
+		"type": "AMULET",
+		"description": "Предназначены для использования только в сочетании с костюмом «Авангард» и направлены на защиту верхней части рук пользователя.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "shawl_green_base",
+		"id": "unid_shawl_green"
+	},
+	"unid_armband_white": {
+		"name": "Наручи исследователя",
+		"type": "NECKLACE",
+		"description": "Эти наручи созданы для искателей приключений, поэтому они легче и тоньше.",
+		"icon": "/Game/Resources/Icon/weapon/armband_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "armband_white_base",
+		"id": "unid_armband_white"
+	},
+	"unid_cloth_white": {
+		"name": "Форма исследователя",
+		"type": "CLOTH",
+		"description": "Легкая кожаная броня, которую носят члены команды разведчиков убежища.",
+		"icon": "/Game/Resources/Icon/weapon/cloth_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "cloth_white_base",
+		"id": "unid_cloth_white"
+	},
+	"unid_pants_white": {
+		"name": "Штаны исследователя",
+		"type": "PANTS",
+		"description": "Не самая красивая одежда, но прочная и практичная.",
+		"icon": "/Game/Resources/Icon/weapon/pants_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "pants_white_base",
+		"id": "unid_pants_white"
+	},
+	"unid_shoes_white": {
+		"name": "Сапоги исследователя",
+		"type": "SHOES",
+		"description": "Эти тяжелые и прочные сапоги специально разработаны для команды разведчиков убежища.",
+		"icon": "/Game/Resources/Icon/weapon/shoes_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "shoes_white_base",
+		"id": "unid_shoes_white"
+	},
+	"unid_helmet_white": {
+		"name": "Шлем исследователя",
+		"type": "FIRST",
+		"description": "Обеспечивает отличную защиту головы.",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "helmet_white_base",
+		"id": "unid_helmet_white"
+	},
+	"unid_glove_white": {
+		"name": "Перчатки исследователя",
+		"type": "FIRST",
+		"description": "Дополнительная набивка позволяет проще справляться с различными ситуациями в дикой природе.",
+		"icon": "/Game/Resources/Icon/weapon/glove_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "glove_white_base",
+		"id": "unid_glove_white"
+	},
+	"unid_belt_white": {
+		"name": "Пояс исследователя",
+		"type": "NECKLACE",
+		"description": "Удобный пояс, на котором можно закрепить много инструментов и веревок во время обследования местности.",
+		"icon": "/Game/Resources/Icon/weapon/belt_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "belt_white_base",
+		"id": "unid_belt_white"
+	},
+	"unid_shawl_white": {
+		"name": "Наплечники исследователя",
+		"type": "AMULET",
+		"description": "Обеспечивают базовую защиту, не сковывая движение верхней части тела.",
+		"icon": "/Game/Resources/Icon/weapon/shawl_000101",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "shawl_white_base",
+		"id": "unid_shawl_white"
+	},
+	"unid_visor_blue": {
+		"name": "Тактический окуляр сокола",
+		"type": "HEAD",
+		"description": "Тактический окуляр производства «БэнджиТех». Раньше пользовался популярностью среди гражданских лиц.",
+		"icon": "/Game/Resources/Icon/weapon/visor_blue",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_visor_blue"
+	},
+	"unid_core_orange": {
+		"name": "Боевой механизм крепости",
+		"type": "HEAD",
+		"description": "Новейшее творение из исследовательских лабораторий Гикроса. Обеспечивает Исполнителям максимальную поддержку.",
+		"icon": "/Game/Resources/Icon/weapon/core_orange_physic",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_core_orange"
+	},
+	"unid_core_purple": {
+		"name": "Элитный боевой механизм (перегрузка)",
+		"type": "HEAD",
+		"description": "Стандартное снаряжение спецназа Гикроса. Оно не раз помогало им в различных сложных заданиях.",
+		"icon": "/Game/Resources/Icon/weapon/core_purple",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_core_purple"
+	},
+	"unid_core_blue": {
+		"name": "Боевой механизм сокола",
+		"type": "HEAD",
+		"description": "Боевой механизм производства «БэнджиТех». Раньше пользовался популярностью среди гражданских лиц.",
+		"icon": "/Game/Resources/Icon/weapon/core_blue",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_core_blue"
+	},
+	"unid_core_green": {
+		"name": "Боевой механизм авангарда",
+		"type": "HEAD",
+		"description": "Самый старый из боевых механизмов Гикроса. До сих пор надежно работает.",
+		"icon": "/Game/Resources/Icon/weapon/core_green",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_core_green"
+	},
+	"unid_visor_orange": {
+		"name": "Тактический окуляр крепости",
+		"type": "HEAD",
+		"description": "Новейшее творение из исследовательских лабораторий Гикроса. Обеспечивает Исполнителям максимальную поддержку.",
+		"icon": "/Game/Resources/Icon/weapon/visor_orange_physic",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_visor_orange"
+	},
+	"unid_visor_purple": {
+		"name": "Элитный тактический окуляр (перегрузка)",
+		"type": "HEAD",
+		"description": "Стандартное снаряжение спецназа Гикроса. Оно не раз помогало им в различных сложных заданиях.",
+		"icon": "/Game/Resources/Icon/weapon/visor_purple",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_visor_purple"
+	},
+	"unid_reactor_orange": {
+		"name": "Микрореактор крепости",
+		"type": "FURNACE",
+		"description": "Новый высокоэффективный реактор, разработанный исследователями Округа 7 и улучшающий параметры. Получите микрореактор крепости случайного типа: «Перегрузка», «Извержение», «Наледь» или «Дуга».",
+		"icon": "/Game/Resources/Icon/weapon/reactor_orange_physic",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_reactor_orange"
+	},
+	"unid_reactor_purple": {
+		"name": "Элитный микрореактор",
+		"type": "FURNACE",
+		"description": "Микрореактор, которым пользуются Исполнители Округа 7 для борьбы с сущностями Серой Зоны. Получите элитный микрореактор случайного типа: «Перегрузка», «Извержение», «Наледь» или «Дуга».",
+		"icon": "/Game/Resources/Icon/weapon/reactor_purple",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_reactor_purple"
+	},
+	"unid_reactor_blue": {
+		"name": "Микрореактор сокола",
+		"type": "FURNACE",
+		"description": "Стандартное снаряжение для исследователей поверхности Веры. Обеспечивает подачу достаточного количества энергии и готовность к выполнению любых миссий. Получите микрореактор сокола случайного типа: «Перегрузка», «Извержение», «Наледь» или «Дуга».",
+		"icon": "/Game/Resources/Icon/weapon/reactor_blue",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_reactor_blue"
+	},
+	"unid_exoskeleton_orange": {
+		"name": "Экзоскелет крепости",
+		"type": "FURNACE",
+		"description": "Новый экзоскелет с выдающимися параметрами, разработанный научно-исследовательским центром Округа 7. Получите экзоскелет крепости случайного типа: «Перегрузка», «Вспышка», «Наледь» или «Дуга».",
+		"icon": "/Game/Resources/Icon/weapon/exoskeleton_orange_physic",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_exoskeleton_orange"
+	},
+	"unid_exoskeleton_purple": {
+		"name": "Элитный экзоскелет",
+		"type": "FURNACE",
+		"description": "Стандартный малый экзоскелет для Исполнителей Округа 7, позволяющий противостоять сущностям Серой зоны. Получите элитный экзоскелет случайно выбранного типа: «Перегрузка», «Вспышка», «Наледь» или «Дуга».",
+		"icon": "/Game/Resources/Icon/weapon/exoskeleton_purple",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_exoskeleton_purple"
+	},
+	"unid_exoskeleton_blue": {
+		"name": "Экзоскелет сокола",
+		"type": "FURNACE",
+		"description": "Стандартное снаряжение для исследователей поверхности Веры. Обеспечивает подачу достаточного количества энергии и готовность к выполнению любых миссий. Получите экзоскелет сокола случайного типа: «Перегрузка», «Вспышка», «Наледь», «Дуга».",
+		"icon": "/Game/Resources/Icon/weapon/exoskeleton_blue",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "unid_exoskeleton_blue"
+	},
 	"core_OS_red": {
 		"name": "Боевой механизм титана",
 		"type": "HEAD",
@@ -488,6 +1153,16 @@
 		"statPool": "core1_randompool_orange",
 		"baseStat": "core_red_base",
 		"id": "core_OS_red"
+	},
+	"core_OS_orangeTupo": {
+		"name": "Боевой механизм крепости",
+		"type": "HEAD",
+		"description": "Новинка из исследовательских лабораторий Гикроса. Обеспечивает Исполнителям высшую поддержку.",
+		"icon": "/Game/Resources/Icon/weapon/core_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "core1_randompool_orange",
+		"baseStat": "core_red_base",
+		"id": "core_OS_orangeTupo"
 	},
 	"core_OS_orange": {
 		"name": "Боевой механизм крепости",
@@ -529,6 +1204,16 @@
 		"baseStat": "visor_red_base",
 		"id": "visor_OS_red"
 	},
+	"visor_OS_orangeTupo": {
+		"name": "Тактический окуляр крепости",
+		"type": "EYEPIECE",
+		"description": "Новинка из исследовательских лабораторий Гикроса. Обеспечивает Исполнителям высшую поддержку.",
+		"icon": "/Game/Resources/Icon/weapon/visor_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "visor1_randompool_orange",
+		"baseStat": "visor_red_base",
+		"id": "visor_OS_orangeTupo"
+	},
 	"visor_OS_orange": {
 		"name": "Тактический окуляр крепости",
 		"type": "EYEPIECE",
@@ -568,6 +1253,16 @@
 		"statPool": "reactor1_randompool_orange",
 		"baseStat": "reactor_red_base",
 		"id": "reactor_OS_red"
+	},
+	"reactor_OS_orangeTupo": {
+		"name": "Микрореактор крепости",
+		"type": "FURNACE",
+		"description": "Новый высокоэффективный реактор, разработанный в лабораториях Округа 7, который обеспечивает превосходную поддержку.",
+		"icon": "/Game/Resources/Icon/weapon/reactor_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "reactor1_randompool_orange",
+		"baseStat": "reactor_red_base",
+		"id": "reactor_OS_orangeTupo"
 	},
 	"reactor_OS_orange": {
 		"name": "Микрореактор крепости",
@@ -609,6 +1304,16 @@
 		"baseStat": "exoskeleton_red_base",
 		"id": "exoskeleton_OS_red"
 	},
+	"exoskeleton_OS_orangeTupo": {
+		"name": "Экзоскелет крепости",
+		"type": "ECTOSKELETON",
+		"description": "Новый экзоскелет, разработанный в лабораториях Округа 7, который обеспечивает отличную поддержку.",
+		"icon": "/Game/Resources/Icon/weapon/exoskeleton_red_1",
+		"quality": "LEGENDRY",
+		"statPool": "exoskeleton1_randompool_orange",
+		"baseStat": "exoskeleton_red_base",
+		"id": "exoskeleton_OS_orangeTupo"
+	},
 	"exoskeleton_OS_orange": {
 		"name": "Экзоскелет крепости",
 		"type": "ECTOSKELETON",
@@ -638,5 +1343,206 @@
 		"statPool": "exoskeleton_OS_randompool_blue",
 		"baseStat": "exoskeleton_blue_OS_base",
 		"id": "exoskeleton_OS_blue"
+	},
+	"breakfate_equip_ssr_cloth": {
+		"name": "Броня крепости",
+		"type": "CLOTH",
+		"description": "Самая продвинутая броня, обеспечивающая абсолютную защиту.",
+		"source": "ОЗ +500, щит +250",
+		"icon": "/Game/Resources/Icon/weapon/cloth_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_ssr_cloth_base",
+		"id": "breakfate_equip_ssr_cloth"
+	},
+	"breakfate_equip_ssr_helmet": {
+		"name": "Шлем крепости",
+		"type": "HEAD",
+		"description": "Самый продвинутый шлем, обеспечивающий абсолютную защиту.",
+		"source": "ОЗ +643",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_040101",
+		"quality": "LEGENDRY",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_ssr_helmet_base",
+		"id": "breakfate_equip_ssr_helmet"
+	},
+	"breakfate_equip_sr_cloth": {
+		"name": "Элитный боевой костюм",
+		"type": "CLOTH",
+		"description": "Изысканная броня, надежно защищающая тело.",
+		"source": "ОЗ +358, щит +200",
+		"icon": "/Game/Resources/Icon/weapon/cloth_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_sr_cloth_base",
+		"id": "breakfate_equip_sr_cloth"
+	},
+	"breakfate_equip_sr_helmet": {
+		"name": "Элитный боевой шлем",
+		"type": "HEAD",
+		"description": "Изысканный боевой шлем, надежно защищающий голову.",
+		"source": "ОЗ +500",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_030101",
+		"quality": "EPIC",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_sr_helmet_base",
+		"id": "breakfate_equip_sr_helmet"
+	},
+	"breakfate_equip_r_cloth": {
+		"name": "Боевой костюм сокола",
+		"type": "CLOTH",
+		"description": "Обычная броня с хорошей защитой.",
+		"source": "ОЗ +250, щит +150",
+		"icon": "/Game/Resources/Icon/weapon/cloth_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_r_cloth_base",
+		"id": "breakfate_equip_r_cloth"
+	},
+	"breakfate_equip_r_helmet": {
+		"name": "Боевой шлем сокола",
+		"type": "HEAD",
+		"description": "Обычный шлем с хорошей защитой.",
+		"source": "ОЗ +320",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_020101",
+		"quality": "RARE",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_r_helmet_base",
+		"id": "breakfate_equip_r_helmet"
+	},
+	"breakfate_equip_n_cloth": {
+		"name": "Костюм авангарда",
+		"type": "CLOTH",
+		"description": "Поношенная броня. Хоть какая-то защита— лучше, чем ничего.",
+		"source": "ОЗ +107, щит +100",
+		"icon": "/Game/Resources/Icon/weapon/cloth_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_n_cloth_base",
+		"id": "breakfate_equip_n_cloth"
+	},
+	"breakfate_equip_n_helmet": {
+		"name": "Шлем авангарда",
+		"type": "HEAD",
+		"description": "Побитый шлем. Хоть какая-то защита— лучше, чем ничего.",
+		"source": "ОЗ +179",
+		"icon": "/Game/Resources/Icon/weapon/Helmet_010100",
+		"quality": "COMMON",
+		"statPool": "None",
+		"baseStat": "breakfate_equip_n_helmet_base",
+		"id": "breakfate_equip_n_helmet"
+	},
+	"Weapon_NPF_dressmaker": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_NPF_dressmaker"
+	},
+	"Weapon_NPF_Defend": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_NPF_Defend"
+	},
+	"Weapon_Katana_city_BP": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_Katana_city_BP"
+	},
+	"Weapon_NPF_DefendY": {
+		"name": "Оружие NPF",
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_NPF_DefendY"
+	},
+	"Weapon_NPF_DefendXZ": {
+		"name": "Оружие Зика",
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_NPF_DefendXZ"
+	},
+	"Gobin_Bow_Match_BP": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Gobin_Bow_Match_BP"
+	},
+	"CityDogWeapon": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "CityDogWeapon"
+	},
+	"Weapon_RockMan": {
+		"name": "Обелиск",
+		"type": "WEAPON",
+		"description": "Оружие босса",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_RockMan"
+	},
+	"Weapon_Spider": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_Spider"
+	},
+	"Spera_wolfman": {
+		"name": "Волчье копье",
+		"type": "WEAPON",
+		"description": "Волчье копье",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Spera_wolfman"
+	},
+	"Row_Gobin": {
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Row_Gobin"
+	},
+	"Weapon_RockMan_BW": {
+		"name": "Мировой обелиск",
+		"type": "WEAPON",
+		"description": "Оружие",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Weapon_RockMan_BW"
+	},
+	"Torch_Goblin": {
+		"name": "Факел гоблинов",
+		"type": "WEAPON",
+		"icon": "None",
+		"quality": "POOR",
+		"statPool": "None",
+		"baseStat": "None",
+		"id": "Torch_Goblin"
 	}
 }

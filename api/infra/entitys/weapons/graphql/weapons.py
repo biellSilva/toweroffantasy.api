@@ -9,10 +9,8 @@ from api.infra.entitys.weapons.graphql.extra import (
     WeaponAttacks,
     WeaponAssets,
     MetaData,
-    FashionWeaponInfo,
-    MatrixSuit,
     BaseStats,
-    UpgradeMaterial,
+    WeaponMats,
 )
 
 
@@ -37,6 +35,8 @@ class Weapon:
 
     # FashionWeaponInfos: list[FashionWeaponInfo]
     # RecommendedMatrices: list[MatrixSuit]
+
+    upgradeMats: WeaponMats | None
 
     elementEffect: WeaponEffect | None
     weaponEffects: list[WeaponEffect]

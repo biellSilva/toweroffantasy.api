@@ -92,3 +92,13 @@ class BaseStats:
 class UpgradeMaterial:
     id: str
     need: int
+
+@strawberry.type
+class WeaponMat:
+    id: str | None 
+    amount: int | None 
+
+@strawberry.type
+class WeaponMats:
+    id: str
+    items: list[list[WeaponMat]]
