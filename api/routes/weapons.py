@@ -17,7 +17,14 @@ METADATA = {
     }
 
 INCLUDE = {'id', 'name', 'assets', 'category', 'rarity', 'element'}
-EXCLUDE = {'weaponAttacks': {'__all__': {'__all__': 'values'}}}
+EXCLUDE = {
+    'upgradeMats': True, 
+    'weaponAttacks': {
+        '__all__': {
+            '__all__': 'values'
+        }
+    }
+}
 
 
 @router.get('/{id}', name='Get weapon', response_model=Weapon)
