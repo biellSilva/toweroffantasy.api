@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import Any
 
 from api.infra.repository.base_repo import ModelRepository
+from api.infra.repository.item import ItemRepo
+
 from api.infra.entitys import Weapon, EntityBase
 from api.infra.entitys.weapons.extra import MetaData
 
@@ -12,7 +14,7 @@ from api.core.exceptions import VersionNotFound, LanguageNotFound, FileNotFound,
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
 from api.utils import sort_weapons, place_numbers
-from api.config import GB_BANNERS, WEAPON_MATS
+from api.config import GB_BANNERS
 
 
 class WeaponRepo(ModelRepository[EntityBase, Weapon]):
@@ -25,8 +27,12 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                          class_base=WeaponRepo,
                          repo_name='weapons')
         
+        self.__ITEMS_REPO = ItemRepo()
+
         self.META_GB: dict[str, dict[str, list[Any]]] = json.loads(Path('api/infra/database/global/meta.json').read_bytes())
         self.DESC_VALUES: dict[str, list[float]] = json.loads(Path('api/infra/database/global/weaponskillnumbers.json').read_bytes())
+
+        self.__weapon_mats: dict[str, list[list[dict[str, str | int | None]]]] = json.loads(Path(f'api/infra/database/global/weaponUpgrade.json').read_bytes())
 
 
     async def get(self, model: EntityBase, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False) -> Weapon:
@@ -113,7 +119,16 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             if version == 'global':
                 value_dict['Meta'] = self.META_GB.get(key_id.lower(), MetaData())
                 value_dict['banners'] = [banner for banner in GB_BANNERS if banner.weaponId and banner.weaponId == key_id.lower()]
-                value_dict['upgradeMats'] = WEAPON_MATS.get(value_dict['weaponUpgradeId'], None)
+                
+                if upgrade_obj := self.__weapon_mats.get(value_dict['weaponUpgradeId'], None):
+                    for i in upgrade_obj:
+                        for j in i:
+                            if mat_id := j.get('mat_id', None):
+                                if isinstance(mat_id, str) and mat_id.lower() != "none":
+                                    if item_obj := await self.__ITEMS_REPO.get(EntityBase(id=mat_id), lang=lang, version=version):
+                                        j.update(item_obj.model_dump())
+
+                    value_dict['upgradeMats'] = {'id': value_dict['weaponUpgradeId'], 'items': upgrade_obj}
                 
             for type_skill, skill_list in value_dict['skills'].items():
                 skill_list: list[dict[str, Any]]
