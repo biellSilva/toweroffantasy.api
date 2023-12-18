@@ -97,6 +97,11 @@ class UpgradeMaterial:
 class WeaponMat:
     id: str | None 
     amount: int | None 
+    name: str | None
+    icon: str | None
+    type: str | None
+    description: str | None
+    rarity: str | None
 
 @strawberry.type
 class WeaponMats:
