@@ -2,9 +2,7 @@
 from pathlib import Path
 from json import loads
 
-
 from api.infra.entitys.banners import Banner
-from api.infra.entitys.weapon_mats import WeaponMats
 
 
 GLOBAL_ASSETS = 'https://raw.githubusercontent.com/FortOfFans/ToF.github.io/main'
@@ -12,8 +10,6 @@ CN_ASSETS = 'https://raw.githubusercontent.com/Silyky/Icon_CN/main'
 
 
 GB_BANNERS: list[Banner] = [Banner(**data) for data in loads(Path(f'api/infra/database/global/banners_global.json').read_bytes())]
-
-WEAPON_MATS: dict[str, WeaponMats] = {id: WeaponMats(id=id, items=value) for id, value in loads(Path(f'api/infra/database/global/weaponUpgrade.json').read_bytes()).items()}
 
 EXTRA_ASSETS: dict[str, str | list[str]] = {
     'DPS': "icon_qianggong",
