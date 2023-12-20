@@ -18,5 +18,5 @@ if __name__ == '__main__':
         run(app=app,
             host='0.0.0.0',
             port=8080, 
-            access_log=True, 
+            access_log=False, 
             timeout_keep_alive=60)
