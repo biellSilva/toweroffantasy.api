@@ -4743,17 +4743,33 @@
 				"id": "CritAdded"
 			}
 		],
+		"effects": [
+			{
+				"title": "**Die letzte Melodie**:",
+				"description": "Erhöht den ANG um **30%**. Wird durch Ausrüsten von **3** veränderten Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot."
+			},
+			{
+				"title": "**Durchdringen**:",
+				"description": "Nach dem Wechsel von einer anderen Waffe zu Schwarzrohrbambus wird das Schadenselement von Schwarzrohrbambus zu dem der vorherigen Waffe."
+			},
+			{
+				"title": "**Besetzen**:",
+				"description": "Die Macht der Dunkelheit kann von jeder freigeschalteten Waffe Besitz ergreifen. Wenn Schwarzrohrbambus nicht im Einsatz ist, kann die Macht der Dunkelheit jede andere Waffe besetzen, was ihren verursachten Schaden um **1%** erhöht. Wenn Schwarzrohrbambus im Einsatz ist, besetzt die Macht der Dunkelheit Schwarzrohrbambus, was den vom Wanderer verursachten Schaden um **15%** erhöht."
+			}
+		],
 		"elementEffects": {
 			"title": "**Veränderter Schaden**:",
 			"description": "Wenn die Waffe voll geladen ist, markiert der nächste Angriff das Ziel und verursacht nach **5**Sek. eine Explosion. Verursacht zusätzlichen Schaden in Höhe von **25%** des gesamten vom Ziel während der Markierung erlittenen Schadens (bis zu **560%** des ANG des Wanderers). Es kann immer nur 1Markierung auf einem Ziel bestehen."
 		},
 		"advancements": [
 			{
+				"description": "**Die letzte Melodie**: Erhöht den ANG um **30%**. Wird durch Ausrüsten von **3** veränderten Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot.\r\n**Durchdringen**: Nach dem Wechsel von einer anderen Waffe zu Schwarzrohrbambus wird das Schadenselement von Schwarzrohrbambus zu dem der vorherigen Waffe.\r\n**Besetzen**: Die Macht der Dunkelheit kann von jeder freigeschalteten Waffe Besitz ergreifen. Wenn Schwarzrohrbambus nicht im Einsatz ist, kann die Macht der Dunkelheit jede andere Waffe besetzen, was ihren verursachten Schaden um **1%** erhöht. Wenn Schwarzrohrbambus im Einsatz ist, besetzt die Macht der Dunkelheit Schwarzrohrbambus, was den vom Wanderer verursachten Schaden um **15%** erhöht.",
 				"charge": 12,
 				"shatter": 12,
 				"need": null
 			},
 			{
+				"description": "Für **jeden** Stern, den die von der Dunkelheit besetzten Waffe erhält, wird der Schadensbonus von „Besetzen“ zusätzlich um **1%** erhöht.\r\n„Dimensionaler Kollaps“ verursacht erhöhten Schaden in Höhe von (**0.1%** des gesamten tatsächlichen Schadens, den der Wanderer im hochdimensionalen Raum verursacht hat (Leerenspur ausgenommen) + **2400%** des ANG) (zählt als Basismultiplikator, beeinflusst durch Schadensbonus).",
 				"charge": 12,
 				"shatter": 12,
 				"need": "Nanyin_superpower_plasm"
@@ -4765,6 +4781,7 @@
 				"need": "Nanyin_superpower_plasm"
 			},
 			{
+				"description": "Leerenspur erhält zusätzlich **50%** des ANG des Wanderers. Wenn du tödlichen Schaden erleidest, während du nicht von „Besitz“ betroffen bist, verbrauchst du Leerenspur, anstatt besiegt zu werden, blockst den tödlichen Schaden 1-mal und wirst für kurze Zeit immun gegen Schaden. Dieser Effekt kann nur 1-mal alle **60**Sek. ausgelöst werden und hat eine niedrigere Priorität, wenn ähnliche Effekte vorhanden sind. Der Set-Effekt funktioniert auch im Nebenhand-Slot.",
 				"charge": 12,
 				"shatter": 12,
 				"need": "Nanyin_superpower_plasm"
@@ -4776,11 +4793,13 @@
 				"need": "Nanyin_superpower_plasm"
 			},
 			{
+				"description": "Im hochdimensionalen Raum werden **20%** der Widerstände des Ziels ignoriert.\r\nBis zu **3**Abgrundströmungen der Leere können jetzt erzeugt werden.",
 				"charge": 12,
 				"shatter": 12,
 				"need": "Nanyin_superpower_plasm"
 			},
 			{
+				"description": "„Dimensionaler Kollaps“ verursacht jetzt Schaden in Höhe von (**0.4%** des gesamten tatsächlichen Schadens, den der Wanderer im hochdimensionalen Raum verursacht hat (Leerenspur ausgenommen) + **2400%** des ANG) (zählt als Basismultiplikator, beeinflusst durch Schadensbonus).",
 				"charge": 12,
 				"shatter": 12,
 				"need": "Nanyin_superpower_plasm"
@@ -4823,7 +4842,7 @@
 				},
 				{
 					"name": "Dunkelschatten-Explosion",
-					"description": "Tippe und halte auf dem Boden den normalen Angriff während des ersten/zweiten/dritten normalen Angriffs bis zum vierten normalen Angriff, um „Dunkelschatten-Explosion“ auszulösen und Ausdauer zu verbrauchen.\r\nFührt einen Angriff nach vorn aus, der Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> / <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> / <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> zufügt und sie schweben lässt.\r\nTippe und halte nach dem Auslösen von „Dunkelschatten-Explosion“ den normalen Angriff, um „Spaltwelle“ auszulösen.",
+					"description": "Tippe und halte auf dem Boden den normalen Angriff, während des ersten bis vierten normalen Angriffs, um „Dunkelschatten-Explosion“ auszulösen und Ausdauer zu verbrauchen.\r\nFührt einen Angriff nach vorn aus, der Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> / <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> / <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> zufügt und sie schweben lässt.\r\nTippe und halte nach dem Auslösen von „Dunkelschatten-Explosion“ den normalen Angriff, um „Spaltwelle“ auszulösen.",
 					"operations": [
 						"Attack",
 						"Hold Attack"
@@ -4864,7 +4883,7 @@
 				},
 				{
 					"name": "Risseruption",
-					"description": "Tippe und halte am Boden nach dem Auslösen von „Dunkelschatten-Ausbruch“ den normalen Angriff, um „Risseruption“ auszulösen und Ausdauer zu verbrauchen.\r\nFührt einen Angriff nach vorn aus, der Zielen in der Nähe Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt und sie schweben lässt.\r\nDer Schaden hängt davon ab, wie lange der normale Angriff gehalten wird, bis zu einem Maximum von 1,5-fachem Schaden.",
+					"description": "Tippe und halte am Boden nach dem Auslösen von „Dunkelschatten-Ausbruch“ den normalen Angriff, um „Risseruption“ auszulösen und Ausdauer zu verbrauchen.\r\nFührt einen Angriff nach vorn aus, der Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt und sie schweben lässt.\r\nDer Schaden hängt davon ab, wie lange der normale Angriff gehalten wird, bis zu einem Maximum von 1,5-fachem Schaden.",
 					"operations": [
 						"Jump",
 						"Attack",
@@ -4904,7 +4923,7 @@
 				},
 				{
 					"name": "Vortexfeld",
-					"description": "Verwende zum Auslösen von „Vortexfeld“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff.\r\nErzeugt dunkle Materie am Zielort und fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Wenn sie sich in der Nähe der dunklen Materie befinden, werden sie ebenfalls von dem erzeugten Vortexfeld herangezogen.\r\nGewährt <shuzhi>15</> Sek. lang „Dimensionaler Wächter“, wenn der Wanderer das Vortexfeld passiert, und blockt <shuzhi>1</>-mal Schaden vom anvisierten Ziel (nicht mehr als <shuzhi>300%</> der max. LP des Wanderers). „Dimensionaler Wächter“ kann nur <shuzhi>1</>-mal alle <shuzhi>15</> Sekunden ausgelöst werden.",
+					"description": "Verwende zum Auslösen von „Vortexfeld“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff.\r\nErzeugt dunkle Materie am Zielort und fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Wenn sich Ziele in der Nähe der dunklen Materie befinden, bildet sich ein Vortexfeld und zieht sie heran.\r\nGewährt <shuzhi>15</> Sek. lang „Dimensionaler Wächter“, wenn der Wanderer das Vortexfeld passiert, und blockt <shuzhi>1</>-mal Schaden vom anvisierten Ziel (nicht mehr als <shuzhi>300%</> der max. LP des Wanderers). „Dimensionaler Wächter“ kann nur <shuzhi>1</>-mal alle <shuzhi>15</> Sekunden ausgelöst werden.",
 					"operations": [
 						"Movement",
 						"Dash",
@@ -4918,7 +4937,7 @@
 				},
 				{
 					"name": "Schmetterlingstanz",
-					"description": "Ruft im <shuzhi>Teamspiel</> nach dem Ausweichen mit Schwarzrohrbambus <shuzhi>1</> Schmetterling herbei, der dem Wanderer <shuzhi>60</> Sek. lang folgt.\r\nNach der Aktivierung von „Angriffsresonanz“ oder „Ausgeglichene Resonanz“ fliegt der Schmetterling um das anvisierte Ziel herum und erzeugt mit seinen Spuren eine Komposition, die Zielen, die sie passieren, Schaden in Höhe von <shuzhi>{0}%</> des ANG zufügt.\r\nNach der Aktivierung von „Standhaftigkeit-Resonanz“ werden Ziele, die die Komposition passieren, <shuzhi>2</> Sek. lang mit einer Verzögerung in Höhe von <shuzhi>65%</> belegt. Dem Wanderer und seinen Teammitgliedern wird <shuzhi>15</> Sek. lang ein Schild in Höhe von <shuzhi>10%</> der max. LP des Wanderers gewährt, wenn sie die Komposition passieren Dieser Effekt kann bis zu <shuzhi>1</>-mal pro Sekunde auftreten und bis zu <shuzhi>2</>-mal gestapelt werden.\r\nNach der Aktivierung von „Segnungsresonanz“ wird der Schmetterling verbraucht, um einem zurückgestoßenen Teammitglied sofort aufzuhelfen.",
+					"description": "Ruft im <shuzhi>Teamspiel</> nach dem Ausweichen mit Schwarzrohrbambus <shuzhi>1</> Schmetterling herbei, der dem Wanderer <shuzhi>60</> Sek. lang folgt.\r\nNach der Aktivierung von „Angriffsresonanz“ oder „Ausgeglichene Resonanz“ fliegt der Schmetterling um das anvisierte Ziel herum und erzeugt mit seinen Spuren eine Komposition, die Zielen, die sie passieren, Schaden in Höhe von <shuzhi>{0}%</> des ANG zufügt.\r\nNach der Aktivierung von „Standhaftigkeit-Resonanz“ werden Ziele, die die Komposition passieren, <shuzhi>2</> Sek. lang mit einer Verzögerung in Höhe von <shuzhi>65%</> belegt. Dem Wanderer und seinen Teammitgliedern wird <shuzhi>15</> Sek. lang ein Schild in Höhe von <shuzhi>10%</> der max. LP des Wanderers gewährt, wenn sie die Komposition passieren Dieser Effekt kann bis zu <shuzhi>1</>-mal pro Sekunde auftreten und bis zu <shuzhi>2</>-mal gestapelt werden.\r\nNach der Aktivierung von „Segnungsresonanz“ wird der Schmetterling verbraucht, um einem niedergeschlagenen Teammitglied sofort aufzuhelfen.",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -4931,7 +4950,7 @@
 			"skill": [
 				{
 					"name": "Hyperdimensionales Feld",
-					"description": "Aktiviert das hyperdimensionale Feld, gewährt vorübergehend Unbesiegbarkeit, fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und belegt sie <shuzhi>3</> Sek. lang mit einer Verzögerung in Höhe von <shuzhi>65%</> (gegen Bosse im Teamspiel unwirksam). Sorgt außerdem dafür, dass <shuzhi>Leerenspur</> eine Fähigkeit verwendet. Abklingzeit: <shuzhi>60</> Sek.\r\nSteigt in die Luft auf und erzeugt ein Feld, das Ziele in der Nähe in einem hochdimensionalen Raum platziert, der bis zu <shuzhi>60</> Sekunden anhält. Während dieser Zeit erhält der Wanderer „Hyperkörper“ und der Schaden, den Schwarzrohrbambus Zielen im hochdimensionalen Raum zufügt, ignoriert Schilde.\r\nDer hochdimensionale Raum erhält Energie in Höhe von <shuzhi>2</> + <shuzhi>Anzahl der Ziele</> im Raum und löst bei <shuzhi>45</> Energie „Dimensionaler Kollaps“ aus, was Zielen im Raum Schaden in Höhe von (<shuzhi>0,1%</> des tatsächlich vom Wanderer verursachten Schadens (Leerenspur ausgenommen) + <shuzhi>{2}%</> des ANG) zufügt (als Basismultiplikator gezählt, durch Schadensbonus beeinflusst). Zählt als passiver Schaden. Der hochdimensionale Raum verschwindet nach <shuzhi>4</> dimensionalen Kollapsen.",
+					"description": "Aktiviert hyperdimensionales Feld, gewährt vorübergehend Unbesiegbarkeit, fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und belegt sie <shuzhi>3</> Sek. lang mit einer Verzögerung in Höhe von <shuzhi>65%</> (gegen Bosse im Teamspiel unwirksam). Gleichzeitig führt die <shuzhi>Leerenspur</> auf dem Feld sofort ihre Fähigkeit aus. Abklingzeit: <shuzhi>60</> Sek.\r\nSteigt in die Luft auf und erzeugt ein Feld, das Ziele in der Nähe in einem hochdimensionalen Raum platziert, der bis zu <shuzhi>60</> Sekunden anhält. Während dieser Zeit erhält der Wanderer „Hyperkörper“ und der Schaden, den Schwarzrohrbambus Zielen im hochdimensionalen Raum zufügt, ignoriert Schilde.\r\nDer hochdimensionale Raum erhält jede Sekunde Energie in Höhe von <shuzhi>2</> + <shuzhi>Anzahl der Ziele</> im Raum und löst bei <shuzhi>45</> Energie „Dimensionaler Kollaps“ aus, was Zielen Schaden in Höhe von (<shuzhi>0,1%</> des vom Wanderer verursachten Gesamtschadens (Leerenspur ausgenommen) + <shuzhi>{2}%</> des ANG) zufügt. Dieser Schaden zählt als passiver Schaden und ist der Basismultiplikator. Er ist durch Schadensbonus beeinflusst. Der hochdimensionale Raum verschwindet nach <shuzhi>4</> dimensionalen Kollapsen.",
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -4943,7 +4962,7 @@
 			"discharge": [
 				{
 					"name": "Begrenzende Melodie",
-					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Anwender entfernt</> und es werden Ketten aus einer anderen Dimension erzeugt, die das Ziel binden und es <shuzhi>3</> Sek. lang um <shuzhi>65%</> verzögert (unwirksam gegen Bosse im Teamspiel). Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und gewährt für <shuzhi>2,6</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).\r\n\r\n<shuzhi>Passiv: Leerenspur</>\r\n„Begrenzende Melodie“ erzeugt <shuzhi>1</> Leerenspur, die das derzeit anvisierte Ziel koordiniert angreift. Nur <shuzhi>1</> Leerenspur kann aktiv sein, und sie verschwindet nach <shuzhi>20</> Sek., wenn du dich nicht im Kampf befindest.\r\nFür <shuzhi>jede</> ausgerüstete Waffe eines anderen Elements oder veränderte Waffe wird der Schaden von Leerenspur um <shuzhi>10%</> erhöht. Der Schaden von Leerenspur wird nicht durch Schadensboni beeinflusst, mit Ausnahme von „Besetzen“, „Begrenzende Melodie“ und seltenen Werten auf Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.\r\nHalte „Ausweichen“, wenn du <shuzhi>Schwarzrohrbambus</> einsetzt, um „Besitz“ (nicht in der Apex-Liga verfügbar) auszulösen, in den Besitz von Leerenspur zu kommen und seine Bewegungen zu koordinieren. „Koordinierte Leere“ wird zum normalen Angriff und zu normalen Fähigkeiten.\r\nWährend „Besitz“ wird Leerenspur rasend und erhöht Geschwindigkeit, Schadensreduktion, Zertrümmern und Waffenladung um <shuzhi>50%</>. Ihr normaler Angriff und ihr Fähigkeitsschaden erhöhen sich um denselben Prozentsatz wie die zu diesem Zeitpunkt verlorenen max. LP.\r\n<shuzhi>Koordinierte Leere</>: Ein periodischer koordinierter Angriff von Leerenspur, der Schaden in Höhe von <shuzhi>{2}% bis {3}%</> des ANG von Leerenspur verursacht.\r\n<shuzhi>Leerenschein</>: Fügt Zielen in der Nähe jede Sekunde Schaden in Höhe von <shuzhi>{4}%</> des ANG von Leerenspur zu.\r\n<shuzhi>Leerenangriff</>: Tippe auf den normalen Angriff, um 4 Angriffe hintereinander auszuführen, die jeweils Schaden in Höhe von <shuzhi>{5}% bis {6}%</> des ANG von Leerenspur verursachen.\r\n<shuzhi>Leerenfähigkeit</>: Verbrauche <shuzhi>25%</> der max. LP von Leerenspur und verursache Schaden in Höhe von <shuzhi>{7}% bis {8}%</> des ANG von Leerenspur, was die kritische Trefferrate von Leerenspur <shuzhi>60</> Sek. lang <shuzhi>30%</> erhöht.\r\n<shuzhi>Leerenlinderung</>: Kann ausgelöst werden, wenn Leerenspur tödlichen Schaden erleidet, wenn der Wanderer Schwarzrohrbambus ausrüstet oder ablegt oder wenn er „Ausweichen“ hält, während er von „Besitz“ betroffen ist.\r\n\r\n<shuzhi>Passiv: Dunkles Scheusal</>\r\nWenn du von einer anderen Waffe zu Schwarzrohrbambus wechselst, gewährt „Begrenzende Melodie“ zusätzliche Effekte, die auf dem Element der Waffe basieren.\r\n<shuzhi>Frost</>: Ruft Dunkelheit: Alabaster-Elite herbei und verursacht Flächenschaden in Höhe von <shuzhi>{9}%</> des ANG. Gewährt außerdem <shuzhi>30</> Sek. lang einen Schild in Höhe von <shuzhi>60%</> der max. LP (nicht in der Apex-Liga verfügbar). Erzeugt einen Hagelsturm über dem anvisierten Ziel, der Zielen in der Nähe <shuzhi>60</> Sek. lang jede Sekunde Schaden in Höhe von <shuzhi>{10}%</> des ANG zufügt. Zählt als normaler Angriffsschaden.\r\n<shuzhi>Flamme</>: Ruft Dunkles Scheusal: Schwarze Krähe herbei und verursacht Flächenschaden in Höhe von <shuzhi>{11}%</> des ANG. Verbrennt Ziele in der Nähe und fügt ihnen <shuzhi>10</> Sek. lang jede Sekunde Schaden in Höhe von <shuzhi>{12}%</> des ANG zu. Zählt als passiver Schaden.\r\n<shuzhi>Volt</>: Ruft Dunkles Scheusal: Longxiang herbei und verursacht Schaden in Höhe von <shuzhi>{13}%</> des ANG. Verbraucht jede Sekunde <shuzhi>5%</> der max. LP von Leerenspur und fügt Zielen in der Nähe Schaden in Höhe <shuzhi>50%</> dieses Werts zu, wenn du nicht von „Besitz“ betroffen bist. Zählt als normaler Angriffsschaden (nicht in der Apex-Liga verfügbar).\r\n<shuzhi>Physisch</>: Ruft Dunkelheit: Hornmähne herbei und verursacht Flächenschaden in Höhe von <shuzhi>{14}%</> des ANG. Gewährt <shuzhi>30</> Sek. lang „Rohe Kraft“ und fügt Zielen in der Nähe bei einem krit. Treffer Schaden in Höhe von <shuzhi>{15}%</> des ANG zu. Zählt als normaler Angriffsschaden. Kann nur <shuzhi>1</>-mal alle <shuzhi>0,85</> Sekunden ausgelöst werden.\r\n<shuzhi>Verändert</>: Ruft Dunkelheit: Taotie herbei und verursacht Flächenschaden in Höhe von <shuzhi>{16}%</> des ANG. Leerenspur erhält zusätzlich <shuzhi>100%</> des ANG des Wanderers. Fügt Zielen in der Nähe während „Leerenlinderung“ zusätzlichen Schaden in Höhe von <shuzhi>{17}%</> des ANG von Leerenspur zu. Zählt als Fähigkeitsschaden.",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Anwender entfernt</> und es werden Ketten aus einer anderen Dimension erzeugt, die das Ziel binden und es <shuzhi>3</> Sek. lang um <shuzhi>65%</> verzögert (unwirksam gegen Bosse im Teamspiel). Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und gewährt für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).\r\n\r\n<shuzhi>Passiv: Leerenspur</>\r\n„Begrenzende Melodie“ erzeugt <shuzhi>1</> Leerenspur, die das derzeit anvisierte Ziel koordiniert angreift. Nur <shuzhi>1</> Leerenspur kann aktiv sein, und sie verschwindet nach <shuzhi>20</> Sek., wenn du dich nicht im Kampf befindest.\r\nFür <shuzhi>jede</> ausgerüstete Waffe eines anderen Elements oder veränderte Waffe wird der Schaden von Leerenspur um <shuzhi>10%</> erhöht. Der Schaden von Leerenspur wird nicht durch Schadensboni beeinflusst, mit Ausnahme von „Besetzen“, „Begrenzende Melodie“ und seltenen Werten auf Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.\r\nHalte „Ausweichen“, wenn du <shuzhi>Schwarzrohrbambus</> einsetzt, um „Besitz“ (nicht in der Apex-Liga verfügbar) auszulösen, in den Besitz von Leerenspur zu kommen und seine Bewegungen zu koordinieren. Während „Besitz“ wird „Koordinierte Leere“ zum normalen Angriff und zu normalen Fähigkeiten von Leerenspur.\r\nWährend „Besitz“ geht Leerenspur in einen Tobsuchts-Zustand über und erhöht Geschwindigkeit, Schadensreduktion, Zertrümmern und Waffenladung um <shuzhi>50%</>. Ihr normaler Angriff und ihr Fähigkeitsschaden erhöhen sich um denselben Prozentsatz wie die zu diesem Zeitpunkt verlorenen max. LP.\r\n<shuzhi>Koordinierte Leere</>: Ein periodischer koordinierter Angriff von Leerenspur, der Schaden in Höhe von <shuzhi>{2}% bis {3}%</> des ANG von Leerenspur verursacht.\r\n<shuzhi>Leerenschein</>: Fügt Zielen in der Nähe jede Sekunde Schaden in Höhe von <shuzhi>{4}%</> des ANG von Leerenspur zu.\r\n<shuzhi>Leerenangriff</>: Tippe auf den normalen Angriff, um 4 Angriffe hintereinander auszuführen, die jeweils Schaden in Höhe von <shuzhi>{5}% bis {6}%</> des ANG von Leerenspur verursachen.\r\n<shuzhi>Leerenfähigkeit</>: Verbrauche <shuzhi>25%</> der max. LP von Leerenspur und verursache Schaden in Höhe von <shuzhi>{7}% bis {8}%</> des ANG von Leerenspur, was die kritische Trefferrate von Leerenspur <shuzhi>60</> Sek. lang <shuzhi>30%</> erhöht.\r\n<shuzhi>Leerenlinderung</>: Kann ausgelöst werden, wenn Leerenspur tödlichen Schaden erleidet, wenn der Wanderer Schwarzrohrbambus ausrüstet oder ablegt oder wenn er „Ausweichen“ hält, während er von „Besitz“ betroffen ist.\r\n\r\n<shuzhi>Passiv: Dunkles Scheusal</>\r\nWenn du von einer anderen Waffe zu Schwarzrohrbambus wechselst, gewährt „Begrenzende Melodie“ zusätzliche Effekte, die auf dem Element der Waffe basieren.\r\n<shuzhi>Frost</>: Ruft Dunkelheit: Alabaster-Elite herbei und verursacht Flächenschaden in Höhe von <shuzhi>{9}%</> des ANG. Gewährt außerdem <shuzhi>30</> Sek. lang einen Schild in Höhe von <shuzhi>60%</> der max. LP (nicht in der Apex-Liga verfügbar). Erzeugt einen Hagelsturm über dem anvisierten Ziel, der Zielen in der Nähe <shuzhi>15</> Sek. lang jede Sekunde Schaden in Höhe von <shuzhi>{10}%</> des ANG zufügt. Zählt als normaler Angriffsschaden.\r\n<shuzhi>Flamme</>: Ruft Dunkles Scheusal: Schwarze Krähe herbei und verursacht Flächenschaden in Höhe von <shuzhi>{11}%</> des ANG. Verbrennt Ziele in der Nähe und fügt ihnen Schaden in Höhe von <shuzhi>{12}%</> des ANG zu. Zählt als passiver Schaden.\r\n<shuzhi>Volt</>: Ruft Dunkles Scheusal: Longxiang herbei und verursacht Schaden in Höhe von <shuzhi>{13}%</> des ANG. Verbraucht jede Sekunde <shuzhi>5%</> der max. LP von Leerenspur und fügt Zielen in der Nähe Schaden in Höhe <shuzhi>50%</> dieses Werts zu, wenn du nicht von „Besitz“ betroffen bist. Zählt als normaler Angriffsschaden (nicht in der Apex-Liga verfügbar).\r\n<shuzhi>Physisch</>: Ruft Dunkelheit: Hornmähne herbei und verursacht Flächenschaden in Höhe von <shuzhi>{14}%</> des ANG. Gewährt <shuzhi>30</> Sek. lang „Schwungeffekt“ und fügt Zielen in der Nähe bei einem krit. Treffer Schaden in Höhe von <shuzhi>{15}%</> des ANG zu. Zählt als normaler Angriffsschaden. Kann nur <shuzhi>1</>-mal alle <shuzhi>0,85</> Sekunden ausgelöst werden.\r\n<shuzhi>Verändert</>: Ruft Dunkelheit: Taotie herbei und verursacht Flächenschaden in Höhe von <shuzhi>{16}%</> des ANG. Leerenspur erhält zusätzlich <shuzhi>100%</> des ANG des Wanderers. Fügt Zielen in der Nähe während „Leerenlinderung“ zusätzlichen Schaden in Höhe von <shuzhi>{17}%</> des ANG von Leerenspur zu. Zählt als Fähigkeitsschaden.",
 					"tags": [
 						"Damage"
 					],
@@ -5009,11 +5028,11 @@
 		"effects": [
 			{
 				"title": "**Frostresonanz**:",
-				"description": "Erhöht den Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden."
+				"description": "Erhöht Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden."
 			},
 			{
 				"title": "**Extreme Kälte: Entladen**:",
-				"description": "Nach Verwendung von **Schwertkunst: Schatteneis** wird **30**Sek. lang jede Sekunde Schaden in Höhe von **70%** des Frost-ANG + **10%** der max. LP des Wanderers + **36%** der Summe aller Widerstandsarten des Wanderers + **135%** des krit. Schadens verursacht. Mehrfacher Entladungsschaden wird nicht gestapelt und Schaden von „Extreme Kälte“ zählt als Fähigkeitsschaden. Wenn **1** Volt-/Flammen-/physische Waffe jeglicher Art ausgerüstet ist, wird der Schaden von „Extreme Kälte“ um das **1.3**-fache multipliziert. Außerdem wird der Schaden von „Extreme Kälte“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und er löst keine zusätzlichen Angriffseffekte aus."
+				"description": "Fügt nach Verwendung von **Schwertkunst: Schatteneis** Zielen **30**Sek. lang jede Sekunde Schaden in Höhe von **70%** des Frost-ANG + **10%** der max. LP des Wanderers + **36%** der Summe aller Widerstandsarten des Wanderers + **135%** des krit. Schadens zu. Mehrfacher Entladungsschaden wird nicht gestapelt und Schaden von „Extreme Kälte“zählt als Fähigkeitsschaden. Wenn **1** Volt-/Flammen-/physische Waffe jeglicher Art ausgerüstet ist, wird der Schaden von „Extreme Kälte“ um das **1.3**-fache multipliziert. Außerdem wird der Schaden von „Extreme Kälte“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und er löst keine zusätzlichen Angriffseffekte aus."
 			}
 		],
 		"elementEffects": {
@@ -5022,13 +5041,13 @@
 		},
 		"advancements": [
 			{
-				"description": "**Frostresonanz**: Erhöht den Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden.\r\n**Extreme Kälte: Entladen**: Nach Verwendung von **Schwertkunst: Schatteneis** wird **30**Sek. lang jede Sekunde Schaden in Höhe von **70%** des Frost-ANG + **10%** der max. LP des Wanderers + **36%** der Summe aller Widerstandsarten des Wanderers + **135%** des krit. Schadens verursacht. Mehrfacher Entladungsschaden wird nicht gestapelt und Schaden von „Extreme Kälte“ zählt als Fähigkeitsschaden. Wenn **1** Volt-/Flammen-/physische Waffe jeglicher Art ausgerüstet ist, wird der Schaden von „Extreme Kälte“ um das **1.3**-fache multipliziert. Außerdem wird der Schaden von „Extreme Kälte“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und er löst keine zusätzlichen Angriffseffekte aus.",
+				"description": "**Frostresonanz**: Erhöht Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden.\r\n**Extreme Kälte: Entladen**: Fügt nach Verwendung von **Schwertkunst: Schatteneis** Zielen **30**Sek. lang jede Sekunde Schaden in Höhe von **70%** des Frost-ANG + **10%** der max. LP des Wanderers + **36%** der Summe aller Widerstandsarten des Wanderers + **135%** des krit. Schadens zu. Mehrfacher Entladungsschaden wird nicht gestapelt und Schaden von „Extreme Kälte“zählt als Fähigkeitsschaden. Wenn **1** Volt-/Flammen-/physische Waffe jeglicher Art ausgerüstet ist, wird der Schaden von „Extreme Kälte“ um das **1.3**-fache multipliziert. Außerdem wird der Schaden von „Extreme Kälte“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und er löst keine zusätzlichen Angriffseffekte aus.",
 				"charge": 8,
 				"shatter": 16,
 				"need": null
 			},
 			{
-				"description": "Nach dem Abfeuern von **Frostklingen** wird der Frost-ANG des Wanderers um **10%** erhöht und Zielen in der Nähe wird für **30**Sek. jede Sekunde Schaden in Höhe von **104%** des ANG zugefügt.",
+				"description": "Nach dem Abfeuern von **Frostklingen** wird der Frost-ANG des Wanderers um **10%** erhöht und Zielen in der Nähe wird für **30**Sek. jede Sekunde Schaden in Höhe von **80%** des ANG zugefügt.",
 				"charge": 8,
 				"shatter": 16,
 				"need": "Linghan_ice_plasm"
@@ -5040,7 +5059,7 @@
 				"need": "Linghan_ice_plasm"
 			},
 			{
-				"description": "Der Wanderer kann bis zu **4** **Frostklingen** erzeugen und der Basismultiplikator des Schadens von **Temperaturabfall** wird auf **468%** erhöht.\r\nWenn das Ziel das einzige ist, das innerhalb von **6**Sek. von **Temperaturabfall** betroffen ist, wird dem Ziel zusätzlich ein **Adersiegel** zugefügt, wodurch es um **30%** verlangsamt wird (nicht in der Apex-Liga oder gegen Bosse verfügbar). Wenn das Ziel während der Dauer von **Adersiegel** erneut Schaden durch **Frostklinge** erleidet, wird „Eisiger Ausbruch“ ausgelöst, was Fähigkeitsschaden in Höhe von **1700%** des ANG + **2%** der zu diesem Zeitpunkt verlorenen LP des Ziels verursacht (der Schaden von „Eisiger Ausbruch“ ist nicht geringer als **2000%** und nicht höher als **2200%** des Frost-ANG des Wanderers). Anschließend werden die Effekte von **Adersiegel** und **Temperaturabfall** vom Ziel entfernt.",
+				"description": "Der Wanderer kann bis zu **4** **Frostklingen** erzeugen und der Basismultiplikator des Schadens von **Temperaturabfall** wird auf **360%** erhöht.\r\nWenn das Ziel das einzige ist, das innerhalb von **6**Sek. von **Temperaturabfall** betroffen ist, wird dem Ziel zusätzlich ein **Adersiegel** zugefügt, wodurch es um **30%** verlangsamt wird (nicht in der Apex-Liga oder gegen Bosse verfügbar). Wenn das Ziel während der Dauer von **Adersiegel** erneut Schaden durch **Frostklinge** erleidet, wird „Eisiger Ausbruch“ ausgelöst, was Fähigkeitsschaden in Höhe von **1700%** des ANG + **2%** der zu diesem Zeitpunkt bereits verlorenen LP des Ziels verursacht (der Schaden von „Eisiger Ausbruch“ ist nicht geringer als **2000%** und nicht höher als **2200%** des Frost-ANG des Wanderers). Anschließend werden die Effekte von **Adersiegel** und **Temperaturabfall** vom Ziel entfernt.",
 				"charge": 8,
 				"shatter": 16,
 				"need": "Linghan_ice_plasm"
@@ -5058,7 +5077,7 @@
 				"need": "Linghan_ice_plasm"
 			},
 			{
-				"description": "Nach dem Einsatz von **Frostklingen** wird der Effekt von **Temperaturabfall** auf ein Gebiet angewendet. Zudem fügt er Zielen in der Nähe zusätzlichen Schaden in Höhe von **1170%** des ANG zu.",
+				"description": "Nach dem Einsatz von **Frostklingen** wird der Effekt von **Temperaturabfall** auf ein Gebiet angewendet. Zudem fügt er Zielen in der Nähe zusätzlichen Schaden in Höhe von **990%** des ANG zu.",
 				"charge": 8,
 				"shatter": 16,
 				"need": "Linghan_ice_plasm"
@@ -7374,6 +7393,534 @@
 		],
 		"id": "iceblade_ice"
 	},
+	"killknife_physic": {
+		"name": "Gleichgewicht",
+		"description": "Mit Regeln ist das Universum im Gleichgewicht. Nach Tausenden Anläufen sticht allein die schärfste Klinge heraus. Unbefangen welken und verblassen alle Farben. Den Wolken gleich lässt die Gerechtigkeit Schwerter auf die Erde herabregnen.",
+		"assets": {
+			"icon": "/Game/Resources/Icon/weapon/Icon/item_Weapon_SSR_Killknife",
+			"weaponIconForMatrix": "/Game/Resources/Icon/weapon/icon_yizhi/yizhi_SSR_Killknife"
+		},
+		"assetsA3": {
+			"iconA3": "/Game/Resources/Icon/weapon/Icon/item_Weapon_SSR_Killknife",
+			"weaponIconForMatrixA3": "/Game/Resources/Icon/weapon/icon_yizhi/yizhi_SSR_Killknife"
+		},
+		"rarity": "SSR",
+		"element": "Physics",
+		"type": "Killknife",
+		"weaponUpgradeId": "physic_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Killknife_physics_ssr_star",
+		"avatar": "imitation_46",
+		"mats": {
+			"Item_Mine_physic": 39,
+			"Item_Mine_physic_02": 65,
+			"Item_breakthrough_A2": 65,
+			"Item_breakthrough_C2": 65,
+			"Item_Mine_physic_03": 32,
+			"Item_breakthrough_A3": 32,
+			"Item_breakthrough_C3": 32,
+			"Item_breakthrough_A1": 35,
+			"Item_breakthrough_C1": 32
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_atk",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "LP",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_hp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Krit",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_baoji",
+				"id": "CritAdded"
+			}
+		],
+		"effects": [
+			{
+				"title": "**Masse- und Flammenfusion**:",
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten physischen/Flammen-Basis-ANG der aktuell ausgerüsteten Waffe, des höchsten ausgerüsteten physischen/Flammen-ANG-Prozentwerts und des höchsten ausgerüsteten physischen/Flammenschaden-Bonus berechnet, und die Waffe gilt sowohl als physische als auch als Flammenwaffe."
+			},
+			{
+				"title": "**Physische Resonanz**:",
+				"description": "Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird."
+			},
+			{
+				"title": "**Flammenresonanz**:",
+				"description": "Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird."
+			},
+			{
+				"title": "**Messerwurf: Auf dem Feld**:",
+				"description": "Beim Treffen eines Ziels mit **Gleichgewicht** wird Zielen in der Nähe Schaden in Höhe von **164%** des physischen ANG + **2.3%** der max. LP des Wanderers + **85%** der Summe aller Widerstandsarten des Wanderers + **312%** des krit. Schadens zugefügt. Kann einmal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Messerwurf“ zählt als normaler Angriffsschaden. Wenn **1** beliebige Frost- oder Voltwaffe ausgerüstet ist, wird der Schaden von „Messerwurf“ mit **1.3** multipliziert. Außerdem wird der Schaden von „Messerwurf“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+			}
+		],
+		"elementEffects": {
+			"title": "**Verwunden**:",
+			"description": "Wenn die Waffe voll geladen ist, verwundet der nächste Angriff Gegner für **7**Sek., erhöht den von ihnen erlittenen Schaden um **20%** und fügt ihnen Schaden in Höhe von **137.00%** des ANG zu. Im **Teamspiel** wird der physische Schaden, der verwundeten Zielen zugefüht wird, um **20%** erhöht."
+		},
+		"advancements": [
+			{
+				"description": "**Masse- und Flammenfusion**: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten physischen/Flammen-Basis-ANG der aktuell ausgerüsteten Waffe, des höchsten ausgerüsteten physischen/Flammen-ANG-Prozentwerts und des höchsten ausgerüsteten physischen/Flammenschaden-Bonus berechnet, und die Waffe gilt sowohl als physische als auch als Flammenwaffe.\r\n**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.\r\n**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n**Messerwurf: Auf dem Feld**: Beim Treffen eines Ziels mit **Gleichgewicht** wird Zielen in der Nähe Schaden in Höhe von **164%** des physischen ANG + **2.3%** der max. LP des Wanderers + **85%** der Summe aller Widerstandsarten des Wanderers + **312%** des krit. Schadens zugefügt. Kann einmal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Messerwurf“ zählt als normaler Angriffsschaden. Wenn **1** beliebige Frost- oder Voltwaffe ausgerüstet ist, wird der Schaden von „Messerwurf“ mit **1.3** multipliziert. Außerdem wird der Schaden von „Messerwurf“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+				"charge": 12,
+				"shatter": 16,
+				"need": null
+			},
+			{
+				"description": "Erhöht die Anzahl der bei der Verwendung von **Dauerhafte Rotation** erhaltenen **Sengenden Klingen** auf **4**. Verringert die Abklingzeit von **Sengende Klinge** so, dass sie **1**-mal alle **1.8**Sekunde(n) ausgelöst werden kann.",
+				"charge": 12,
+				"shatter": 16,
+				"need": "Killknife_physic_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"charge": 12,
+				"shatter": 16,
+				"need": "Killknife_physic_plasm"
+			},
+			{
+				"description": "Ignoriert **15%** des physischen Widerstands des Ziels sowie **15%** seines Flammenwiderstands. (Der insgesamt ignorierte Widerstand jedes Elements kann 50% nicht übersteigen.)",
+				"charge": 12,
+				"shatter": 16,
+				"need": "Killknife_physic_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"charge": 12,
+				"shatter": 16,
+				"need": "Killknife_physic_plasm"
+			},
+			{
+				"description": "Erhalte beim Verbrauchen einer **Sengenden Klinge** für **20**Sekunden einen Schild in Höhe von **30%** der max. LP. Der Schild kann **30%** der max. LP nicht übersteigen, wobei **50%** der darüber hinausgehenden Menge in Heilung umgewandelt werden.",
+				"charge": 12,
+				"shatter": 16,
+				"need": "Killknife_physic_plasm"
+			},
+			{
+				"description": "Erhöht den Schaden von **Sengende Klinge** auf **1800%**. Nach dem Verbrauchen einer **Sengenden Klinge** erhöht sich der Endschaden um weitere **8%**.",
+				"charge": 12,
+				"shatter": 16,
+				"need": "Killknife_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Strömendes Licht und Tinte",
+					"description": "Verwende am Boden den normalen Angriff, um 6 Angriffe hintereinander auszuführen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</>.\r\nSechster Angriff: Verursacht Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_melee",
+					"id": "GA_FPlayerKillknifeMelee_Melee"
+				},
+				{
+					"name": "Wolkenhimmel pur",
+					"description": "Verwende in der Luft den normalen Angriff, um 6 Angriffe hintereinander in der Luft auszuführen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</>.\r\nSechster Angriff: Verursacht Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_airmelee",
+					"id": "GA_FPlayerKillknifeMelee_AirAttack"
+				},
+				{
+					"name": "Reich der Tiefe",
+					"description": "Halte den normalen Angriff auf dem Boden während des dritten normalen Angriffs, um „Reich der Tiefe“ auszulösen.\r\nWirft Gleichgewicht in Richtung Boden, wodurch sich eine Wirbelklinge bildet, die sich nach außen dreht und Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht und zudem Ziele in der Luft schweben lässt.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_meleebranch",
+					"id": "GA_FPlayerKillknifeMelee_Branch"
+				},
+				{
+					"name": "Fallendes Mondblatt",
+					"description": "Halte in der Luft den normalen Angriff, um „Fallendes Mondblatt“ auszulösen.\r\nFällt aus der Luft auf den Boden, entfesselt Gleichgewicht, fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und schleudert sie hoch. Gleichgewicht dehnt sich aus und zieht sich zusammen, wodurch es Ziele in der Nähe leicht heranzieht und ihnen Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zufügt.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_jumpattack",
+					"id": "GA_FPlayerKillknifeMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerKillknifeEvade_Evade"
+				},
+				{
+					"name": "Tanzende Schatten",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Richtungstaste), um „Tanzende Schatten“ auszulösen und Gleichgewicht zu schleudern. Dies fügt Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_fevadeattack",
+					"id": "GA_FPlayerKillknifeEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Wolkenschnitzer",
+					"description": "Verwende während des kurzen Zeitraums nach dem Ausweichen nach hinten den normalen Angriff, um „Wolkenschnitzer“ auszulösen, wodurch zufällig <shuzhi>8</> Paare von zielsuchenden Klingen auf Ziele voraus geworfen werden, die bei Treffern insgesamt Flächenschaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursachen.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_bevadeattack",
+					"id": "GA_FPlayerKillknifeEvadeAttack_BackAttack"
+				},
+				{
+					"name": "Kalter Glanz",
+					"description": "Halte während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, um „Kalter Glanz“ auszulösen, wodurch kontinuierlich zielsuchende Klingen auf Ziele voraus geworfen werden, die bei Treffern explodieren und insgesamt Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursachen. Springe beim Loslassen und schleudere Gleichgewicht nach vorne. Dies verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>. Kann bis zu <shuzhi>3</> Sekunden lang gehalten werden, woraufhin Gleichgewicht automatisch geworfen wird.",
+					"operations": [
+						"Dash",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_evadeattack_hold",
+					"id": "GA_FPlayerKillknifeEvade_EvadeAttackHold"
+				},
+				{
+					"name": "Wolkendurchdringender Wirbel",
+					"description": "Weiche auf dem Boden oder in der Luft nach hinten aus und halte „Ausweichen“, um „Wolkendurchdringender Wirbel“ auszulösen. Das Loslassen nach kurzem Aufladen führt zur Verwandlung in einen Lichtstrahl, der nach vorne fliegt und Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht. Längeres Aufladen erhöht die Flugdistanz. Kann bis zu <shuzhi>1,5</> Sekunden gehalten werden.",
+					"operations": [],
+					"tags": [
+						"Support"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_evade_hold",
+					"id": "GA_FPlayerKillknifeEvade_EvadeHold"
+				}
+			],
+			"skill": [
+				{
+					"name": "Dauerhafte Rotation",
+					"description": "Füge Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und erhalte für <shuzhi>20</> Sekunden „Hyperkörper“. Wenn <shuzhi>Dauerhafte Rotation</> endet, erhältst du für <shuzhi>20</> Sekunden <shuzhi>3</> <shuzhi>Sengende Klingen</> (<shuzhi>Sengende Klingen</> können alle <shuzhi>20</> Sekunden erhalten werden). Abklingzeit: <shuzhi>20</> Sekunden.\r\n<shuzhi>Sengende Klingen</>: Wenn du einem Ziel <shuzhi>physischen</> oder <shuzhi>Flammen</>-Ausweichangriffsschaden zufügst, verbrauchst du <shuzhi>1</> <shuzhi>Sengende Klinge</> und fügst dem Ziel zusätzlichen Schaden des entsprechenden Elements der Waffe in Höhe von <shuzhi>{2}%</> des ANG sowie <shuzhi>Rüstungsauflösung</> zu. Stellt nach verursachtem Schaden <shuzhi>1</> Ausweichversuch wieder her und erhöht den Endschaden für <shuzhi>20</> Sekunden um <shuzhi>10%</>. Dieser Schaden zählt als normaler Angriffsschaden und kann nur <shuzhi>1</>-mal alle <shuzhi>2,8</> Sekunden ausgelöst werden.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_skill",
+					"id": "GA_FPlayerKillknifeMelee_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Himmelsdurchdringender Meteor",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und Gleichgewicht schnell gedreht, wodurch ein schneidender Wind entsteht, der nach vorne losstürmt. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_killknife_changeskill",
+					"id": "GA_FPlayerKillknifeMelee_ChangeSkill"
+				}
+			]
+		},
+		"FashionWeaponInfos": [],
+		"id": "killknife_physic"
+	},
+	"blevi_thunder": {
+		"name": "Bündniswappen-Metz",
+		"description": "Vertraute und Vertragsbestien können mehreren Mädchen außergewöhnliche Kräfte verleihen – wäre es da nicht effizienter, wenn sie direkt in den Kampf eingreifen würden? In diesem Sinne hat sie beschlossen, ihren kleinen Helfer mit gutem Beispiel vorangehen zu lassen.",
+		"assets": {
+			"icon": "/Game/Resources/Icon/weapon/Icon/item_Weapon_SSR_bulewei",
+			"weaponIconForMatrix": "/Game/Resources/Icon/weapon/Icon/yizhi_SSR_bulewei"
+		},
+		"assetsA3": {
+			"iconA3": "/Game/Resources/Icon/weapon/Icon/item_Weapon_SSR_bulewei",
+			"weaponIconForMatrixA3": "/Game/Resources/Icon/weapon/Icon/yizhi_SSR_bulewei"
+		},
+		"rarity": "SSR",
+		"element": "Thunder",
+		"type": "Blevi",
+		"weaponUpgradeId": "thunder_ssr_tupo_BD",
+		"wc": "SUP",
+		"advanceID": "Blevi_thunder_ssr_star",
+		"avatar": "imitation_52",
+		"mats": {
+			"Item_Mine_thunder": 39,
+			"Item_Mine_thunder_02": 65,
+			"Item_breakthrough_B2": 65,
+			"Item_breakthrough_D2": 65,
+			"Item_Mine_thunder_03": 32,
+			"Item_breakthrough_B3": 32,
+			"Item_breakthrough_D3": 32,
+			"Item_breakthrough_B1": 35,
+			"Item_breakthrough_D1": 32
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_atk",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "LP",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_hp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Krit",
+				"icon": "/Game/Resources/UI/AttributeIcon/icon_baoji",
+				"id": "CritAdded"
+			}
+		],
+		"effects": [
+			{
+				"title": "**Volt-Frost-Fusion**:",
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Volt-/Frost-Basis-ANG, des höchsten ausgerüsteten Volt-/Frost-ANG-Prozentwerts und des höchsten ausgerüsteten Volt-/Frostschaden-Bonus berechnet, und die Waffe gilt sowohl als Volt- als auch als Frostwaffe."
+			},
+			{
+				"title": "**Voltresonanz**:",
+				"description": "Erhöht Volt-ANG um **20%** und Voltwiderstand um **40%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird."
+			},
+			{
+				"title": "**Frostresonanz**:",
+				"description": "Erhöht Frost-ANG um **20%** und Frostwiderstand um **40%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird."
+			},
+			{
+				"title": "**Donnerkeil: Schneller Hieb**:",
+				"description": "Wenn **Bündniswappen-Metz** ausgerüstet ist, fügen Waffenentladungsfähigkeiten Zielen in der Nähe Schaden in Höhe von **600%** des Volt-ANG + **10%** der max. LP + **360%** der Summe aller Widerstandsarten des Wanderers + **1200%** des krit. Schadens zu. Während des Kampfes wird der nächste Schneller-Hieb-Schaden alle **0,5** Sek. um **1** weiteres Mal bis maximal **30**-mal erhöht. Wenn es mehrere Schneller-Hieb-Schäden gibt, wird der höchste Ausgangswert für die Berechnung verwendet. Schneller-Hieb-Schaden zählt als Entladungsschaden. Wenn eine Flammen- oder physische Waffe ausgerüstet ist, wird der Voltschaden mit **2,5** multipliziert. Außerdem wird Voltschaden nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+			},
+			{
+				"title": "**Wundersame Wendung**:",
+				"description": "Wenn beim Antritt in „Vergessene Sinnestäuschung” und „Sequenz-Sinnestäuschung” **Bündniswappen-Metz** ausgerüstet ist, verlängert sich die Dauer der Herausforderung um **15** Sek. Beim Antritt in **„Ursprung des Krieges”** erhält das Team für **jedes** ausgerüstete **Bündniswappen-Metz** zusätzliche **25** Sek. auf die Dauer der Herausforderung, bis zu **50** Sek."
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Wenn die Waffe voll geladen ist, werden Ziele beim nächsten Angriff für **1**Sek. **stark gelähmt** und **6**Sek. lang elektrisiert. Die Buffs der Ziele werden entfernt und sie erleiden Schaden in Höhe von **144.00%** des ANG. Elektrisiere Ziele können für die nächsten **6**Sek. keine Buffs erhalten."
+		},
+		"advancements": [
+			{
+				"description": "**Volt-Frost-Fusion**: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Volt-/Frost-Basis-ANG, des höchsten ausgerüsteten Volt-/Frost-ANG-Prozentwerts und des höchsten ausgerüsteten Volt-/Frostschaden-Bonus berechnet, und die Waffe gilt sowohl als Volt- als auch als Frostwaffe.\r\n**Voltresonanz**: Erhöht Volt-ANG um **20%** und Voltwiderstand um **40%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird.\r\n**Frostresonanz**: Erhöht Frost-ANG um **20%** und Frostwiderstand um **40%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird.\r\n**Donnerkeil: Schneller Hieb**: Wenn **Bündniswappen-Metz** ausgerüstet ist, fügen Waffenentladungsfähigkeiten Zielen in der Nähe Schaden in Höhe von **600%** des Volt-ANG + **10%** der max. LP + **360%** der Summe aller Widerstandsarten des Wanderers + **1200%** des krit. Schadens zu. Während des Kampfes wird der nächste Schneller-Hieb-Schaden alle **0,5** Sek. um **1** weiteres Mal bis maximal **30**-mal erhöht. Wenn es mehrere Schneller-Hieb-Schäden gibt, wird der höchste Ausgangswert für die Berechnung verwendet. Schneller-Hieb-Schaden zählt als Entladungsschaden. Wenn eine Flammen- oder physische Waffe ausgerüstet ist, wird der Voltschaden mit **2,5** multipliziert. Außerdem wird Voltschaden nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.\r\n**Wundersame Wendung**: Wenn beim Antritt in „Vergessene Sinnestäuschung” und „Sequenz-Sinnestäuschung” **Bündniswappen-Metz** ausgerüstet ist, verlängert sich die Dauer der Herausforderung um **15** Sek. Beim Antritt in **„Ursprung des Krieges”** erhält das Team für **jedes** ausgerüstete **Bündniswappen-Metz** zusätzliche **25** Sek. auf die Dauer der Herausforderung, bis zu **50** Sek.",
+				"charge": 10,
+				"shatter": 12,
+				"need": null
+			},
+			{
+				"description": "Jeder Treffer von koordinierten Angriffen mit **Rosa Kettenrausch** oder dem **koordinierten Metz-Nebenhand-Angriff**, stellt LP in Höhe von **12%** des ANG wieder her. Im Teamspiel stellt jeder Treffer LP in Höhe von **18%** wieder her.\r\nWenn ein BFF Schaden nimmt, der die LP unter **25%** der max. LP senkt, werden auch LP in Höhe von **30%** der max. LP wiederhergestellt und für **3** Sek. Schadensimmunität gewährt. Wenn der Schaden tödlich ist, wird der tödliche Schaden zusätzlich einmaligverhindert. Kann **1**-mal alle **60** ausgelöst werden.",
+				"charge": 10,
+				"shatter": 12,
+				"need": "Blevi_thunder_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"charge": 10,
+				"shatter": 12,
+				"need": "Blevi_thunder_plasm"
+			},
+			{
+				"description": "Wenn **Segnungsresonanz nicht aktiv ist**, kann **Metz-Energiewelle** **2**-mal zusätzlich eingesetzt werden und der Volt- und Frostschaden an Bossen wird um **16%** erhöht.\r\nWenn **Segnungsresonanz** aktiv ist, kann **Millionen-Metz-Schockwelle** **1**-mal zusätzlich eingesetzt werden und die LP des BFF werden in Höhe von **15%** der max. LP wiederhergestellt.",
+				"charge": 10,
+				"shatter": 12,
+				"need": "Blevi_thunder_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"charge": 10,
+				"shatter": 12,
+				"need": "Blevi_thunder_plasm"
+			},
+			{
+				"description": "Erhöht Schaden, der von dem **koordinierten Metz-Nebenhand-Angriff** und der **Metz-Energiewelle** verursacht wird, um **30%**.",
+				"charge": 10,
+				"shatter": 12,
+				"need": "Blevi_thunder_plasm"
+			},
+			{
+				"description": "Während Pakt-Verstärkung aktiv ist, wird der Volt- und Frostschaden-Bonus um **20%** erhöht. Metz-Heiligenschein erhöht den Endschaden von Teammitgliedern in der Nähe um **20%** und Zertrümmern um **25%**. Dieser Effekt kann nicht gestapelt werden.",
+				"charge": 10,
+				"shatter": 12,
+				"need": "Blevi_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Glühwürmchen-Welle",
+					"description": "Greift auf dem Boden 5-mal hintereinander mit dem normalen Angriff an.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und lässt das Ziel schweben.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und bringt das Ziel zu Fall.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und lässt das Ziel schweben.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und bringt das Ziel zu Fall.\r\n\r\nTippe und halte nach dem Auslösen von „Glühwürmchen-Welle“ den normalen Angriff, um <shuzhi>Rhythmus der Sinnestäuschung\n</> auszulösen.\r\n\r\nWenn sich <shuzhi>Bündniswappen-Metz</> im Kampf im Nebenhand-Slot befindet, bleibt Metz für koordinierte Angriffe auf dem Schlachtfeld. Metz gilt als Herbeirufung und jeder Angriff fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{10}%</> des ANG zu. Die Art des zugefügten Elementarschadens ist die der aktuellen Waffe.\r\nWenn Segnungsresonanz aktiv ist:\r\nAußerhalb des Kampfes ernennt der erste Angriff von Glühwürmchen-Welle <shuzhi>1</> Teammitglied zum „BFF” und beschwört bis zu <shuzhi>1</> Metz, der dem BFF folgt. Wenn „Metz-Heiligenschein” eingesetzt wird, erhalten Teammitglieder in der Nähe LP in Höhe von <shuzhi>100%</> des ANG des Wanderers zurück und ihr Endschaden wird um <shuzhi>5%</> erhöht. Dieser Effekt kann nicht gestapelt. Metz hört auf, dem BFF zu folgen, wenn der Wanderer zu Fall gebracht wird oder wenn Metz zu weit vom Wanderer entfernt ist.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_melee",
+					"id": "GA_FPlayerBleviMelee_Melee"
+				},
+				{
+					"name": "Fliegende Sternwelle",
+					"description": "Setze in der Luft einen normalen Angriff ein, um Ausdauer zu verbrauchen und 5-mal hintereinander in der Luft anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_airattack",
+					"id": "GA_FPlayerBleviMelee_AirAttack"
+				},
+				{
+					"name": "Rosa Kettenrausch",
+					"description": "Tippe und halte den normalen Angriff auf dem Boden, um „Rosa Kettenrausch“ auszulösen.\r\nBefiehlt Metz, ein Ziel anzugreifen. Gewährt währenddessen Hyperkörper, was Ausdauer verbraucht. Jeder Treffer fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_powerattack",
+					"id": "GA_FPlayerBleviMelee_PowerAttack"
+				},
+				{
+					"name": "Rhythmus der Sinnestäuschung",
+					"description": "Tippe und halte während normaler Angriffe auf dem Boden den normalen Angriff beim Verwenden des ersten bis vierten normalen Angriffs gedrückt, um „Rhythmus der Sinnestäuschung“ auszulösen.\r\nVerwandelt sich in Metz, sprintet vorwärts und fügt den Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Stürzt sich dann auf die getroffenen Ziele und verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_branch",
+					"id": "GA_FPlayerBleviMelee_Branch"
+				},
+				{
+					"name": "Vertrauter Abstieg",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist (tippe, wenn ein Ziel verfügbar ist), oder setze einen normalen Angriff ein, während du kletterst, rückwärts springst oder das Jetpack benutzt, um „Vertrauter Abstieg“ auszulösen.\r\nVerursacht beim Fallen jedes Mal, wenn das Ziel getroffen wird, Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_jumpattack",
+					"id": "GA_FPlayerBleviMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/common_evade",
+					"id": "GA_FPlayerBleviEvade_Evade"
+				},
+				{
+					"name": "Spazierender Flash",
+					"description": "Verwende zum Auslösen von „Spazierender Flash“ während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Pfeiltaste). Dies fügt getroffenen Zielen Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_fevadeattack",
+					"id": "GA_FPlayerBleviEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "MetzZZz",
+					"description": "Verwende zum Auslösen von „MetzZZz“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff. Metz stürzt sich auf dem Boden und fügt Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_bevadeattack",
+					"id": "GA_FPlayerBleviEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Millionen-Metz-Schockwelle",
+					"description": "Nach dem Einsatz von Millionen-Metz-Schockwelle geht der Wanderer für <shuzhi>30</> Sek. in Paktverstärkung über: Wenn sich <shuzhi>Bündniswappen-Metz</> im Haupt-Slot befindet, wird der Voltschaden des Wanderers um <shuzhi>40%</> erhöht. Wenn sich <shuzhi>Bündniswappen-Metz</> im Nebenhand-Slot befindet, wird der Frostschaden des Wanderers um <shuzhi>20%</> erhöht. Abklingzeit: <shuzhi>30</> Sek.\r\n\r\nWenn <shuzhi>Segnungsresonanz nicht aktiv ist</>:\r\nFügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und wendet <shuzhi>Kraftaufprall</> auf sie an. Während Millionen-Metz Schockwelle in der Abklingzeit ist, gewährt das Zufügen von kumuliertem Schaden in Höhe des <shuzhi>100</>-fachen des ANG während der Pakt-Verstärkung jedes Mal <shuzhi>1</> Einsatz von Metz-Energiewelle. Metz-Energiewelle: Fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>4500%</> des ANG zu. Erhalte alle <shuzhi>10</> Sekunden bis zu <shuzhi>1</> Einsatz.\r\nWenn Millionen-Metz-Schockwelle während der Pakt-Verstärkung erneut eingesetzt wird, werden die Dauer der Pakt-Verstärkung und der kumulierte Schaden zurückgesetzt.\r\nWenn die Pakt-Verstärkung von alleine endet, werden ungenutzte Metz-Energiewellen gesammelt und verursachen Schaden in Höhe der ungenutzten Ladungen mal <shuzhi>3000%</> des ANG.\r\n\r\nWenn <shuzhi>Segnungsresonanz aktiv ist</>:\r\nDer Einsatz von Fähigkeiten verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und wendet <shuzhi>Kraftaufprall</> auf getroffene Ziele an. Die LP des Wanderers und seiner Teammitglieder in der Nähe werden in Höhe von <shuzhi>400%</> des ANG wiederhergestellt und zusätzlich werden <shuzhi>10%</> der maximalen LP des BFF wiederhergestellt. Entfernt Debuffs und Kontrolleffekte vom Wanderer und von Teammitgliedern in der Nähe (einschließlich Vergrauender Biss) und gewährt für <shuzhi>10</> Sek. Immunität gegen Debuffs und Kontrolleffekte. Abklingzeit: <shuzhi>15</> Sek.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_skill",
+					"id": "GA_FPlayerBleviSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Seltsamer symphonischer Raum",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und ein „Seltsamer symphonischer Raum“ herbeigerufen, der Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Während dieser Zeit hält die Schadensimmunität <shuzhi>2,6</> Sek. lang an (nicht in der Apex-Liga verfügbar).\r\n\r\nWährend <shuzhi>Segnungsresonanz</> aktiv ist:\r\nAlle Debuffs und Kontrolleffekte werden vom Wanderer und von Teammitgliedern in der Nähe entfernt (einschließlich „Vergrauender Biss“), und ihnen wird für <shuzhi>10</> Sekunden Immunität gegen Debuffs und Kontrolleffekte gewährt. Der „Seltsame symphonische Raum“ verwandelt getroffene Ziele in der Nähe sowie Spieler, die keine Teammitglieder sind, für <shuzhi>4</> Sekunden in Metz (wirkt nicht gegen Bosse, und nicht in der Apex-Liga verfügbar). Jedes Ziel kann <shuzhi>1</>-mal alle <shuzhi>30</> Sekunden verwandelt werden.",
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "/Game/Resources/Icon/skill/WeaponSkill/skill_blevi_changeskill",
+					"id": "GA_FPlayerBleviChangeSkill_Success"
+				}
+			]
+		},
+		"FashionWeaponInfos": [
+			{
+				"name": "Im Schlaf reden",
+				"id": "imitation_fashion_52"
+			}
+		],
+		"id": "blevi_thunder"
+	},
 	"snipe_fire": {
 		"name": "Klee-Kreuz",
 		"description": "Ein VR-Mehrspieler-Shooter, der in Mirroria wahnsinnig beliebt ist, hat diese exklusive Waffe für den besten Spieler einer Saison entwickelt. Das maßgefertigte echte Modell der Waffe wurde dem Spieler zugesendet. Niemand konnte ahnen, dass sie wie im Spiel funktioniert …",
@@ -8679,7 +9226,12 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"FashionWeaponInfos": [
+			{
+				"name": "Null Dezibel",
+				"id": "imitation_fashion_32"
+			}
+		],
 		"id": "fenrir_thunder"
 	},
 	"umbrella_fire": {
@@ -9487,7 +10039,7 @@
 			"weaponIconForMatrixA3": "/Game/Resources/Icon/weapon/icon_yizhi/yizhi_SSR_Zeke_Phy01"
 		},
 		"rarity": "SSR",
-		"element": "PhysicsFlame",
+		"element": "OverseasZeke",
 		"type": "zeke",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",
@@ -9535,10 +10087,6 @@
 				"description": "Nach Verwendung von **Bodenlose Schlucht** wird bei getroffenen Zielen **30**Sek. lang pro Sekunde Schaden in Höhe von **70%** des physischen ANG + **1%** der max. LP des Wanderers + **36%** der Summe aller Widerstandsarten des Wanderers + **135%** des krit. Schadens verursacht. Mehrfacher Distanzierungsschaden wird nicht gestapelt und Schildbruchschaden zählt als Fähigkeitsschaden. Wenn **1** Volt-/Flammen-/Frostwaffe ausgerüstet ist, wird der Schildbruchschaden um das **1.3**-fache multipliziert. Außerdem wird der Schildbruchschaden nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
 			}
 		],
-		"elementEffects": {
-			"title": "**Verwunden**:",
-			"description": "Wenn die Waffe voll geladen ist, verwundet der nächste Angriff Gegner für **7**Sek., erhöht den von ihnen erlittenen Schaden um **20%** und fügt ihnen Schaden in Höhe von **137.00%** des ANG zu. Im **Teamspiel** wird der physische Schaden, der verwundeten Zielen zugefüht wird, um **20%** erhöht."
-		},
 		"advancements": [
 			{
 				"description": "**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.\r\n**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n\r\n**Schildbruch: Distanzierung**: Nach Verwendung von **Bodenlose Schlucht** wird bei getroffenen Zielen **30**Sek. lang pro Sekunde Schaden in Höhe von **70%** des physischen ANG + **1%** der max. LP des Wanderers + **36%** der Summe aller Widerstandsarten des Wanderers + **135%** des krit. Schadens verursacht. Mehrfacher Distanzierungsschaden wird nicht gestapelt und Schildbruchschaden zählt als Fähigkeitsschaden. Wenn **1** Volt-/Flammen-/Frostwaffe ausgerüstet ist, wird der Schildbruchschaden um das **1.3**-fache multipliziert. Außerdem wird der Schildbruchschaden nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
