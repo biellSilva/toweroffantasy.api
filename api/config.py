@@ -6,6 +6,8 @@ from api.infra.entitys.banners import Banner
 
 
 GLOBAL_ASSETS = 'https://raw.githubusercontent.com/FortOfFans/ToF.github.io/main'
+GLOBAL_ASSETS_WEBP = 'https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp'
+
 CN_ASSETS = 'https://raw.githubusercontent.com/Silyky/Icon_CN/main' 
 
 

@@ -15,7 +15,7 @@ if __name__ == '__main__':
             reload=True, 
             workers=1)
     else:
-        run(app=app, 
+        run(app=app,
             host='0.0.0.0',
             port=8080, 
             access_log=False, 
