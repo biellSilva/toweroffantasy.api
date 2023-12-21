@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from api.core.exceptions import LanguageNotFound, VersionNotFound, FileNotFound
+from api.core.exceptions import LanguageNotFound, VersionNotFound, FileNotFound, ItemNotFound
 
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Simulacra_v2, EntityBase
@@ -28,6 +28,20 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
         self.MATRIX_REPO = MatricesRepo()
         
         self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
+    
+    async def get(self, model: EntityBase, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False) -> Simulacra_v2:
+        if version in self.class_base.cache:
+            if lang in self.class_base.cache[version]:
+                if model.id in self.class_base.cache[version][lang]:
+                    if graphql:
+                        return self.class_base.cache[version][lang][model.id]
+                    else:
+                        return place_numbers_v2(Simulacra_v2(**self.class_base.cache[version][lang][model.id].model_dump(by_alias=True)))
+                else:
+                    ItemNotFound(model.id, lang, version)
+        
+        await self.get_all(lang, version, graphql)
+        return await self.get(model, lang, version, graphql)
 
     async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False) -> list[Simulacra_v2]:
         if version in self.class_base.cache:
