@@ -28,7 +28,8 @@ from api.routes import (
     image,
     graphql,
     mounts,
-    servants
+    servants,
+    home
 )
 
 
@@ -115,6 +116,8 @@ app.include_router(mounts.router)
 app.include_router(servants.router)
 app.include_router(extras.router)
 app.include_router(image.router)
+
+app.include_router(home.router, include_in_schema=False)
 
 app.include_router(graphql.graphql, tags=['GraphQL']) 
 app.add_websocket_route('/graphql', graphql.graphql) # type: ignore

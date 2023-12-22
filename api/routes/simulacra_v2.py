@@ -20,6 +20,7 @@ METADATA = {
 EXCLUDE = {
     'weapon': {
         'banners': True,
+        'upgradeMats': True,
         'weaponAttacks': {
             '__all__': {
                 '__all__': 'values'
