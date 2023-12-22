@@ -43,7 +43,7 @@ class Weapon(EntityBase):
 
     upgradeMats: WeaponMats | None
 
-    elementEffect: WeaponEffect | None = Field(None, validation_alias=AliasChoices('elementEffects'))
+    elementEffect: WeaponEffect | None = Field(None, validation_alias=AliasChoices('elementEffects', 'elementEffect'))
     weaponEffects: list[WeaponEffect] = []
 
     weaponAdvancements: list[WeaponAdvancement] = Field(validation_alias=AliasChoices('advancements', 'weaponAdvancements'))
