@@ -10,6 +10,7 @@ if TYPE_CHECKING:
 
 
 T = TypeVar('T')
+GLOBAL_ASSETS_WEBP = 'https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp'
 
 
 # Sort order for items that do not have a banner. 
@@ -109,17 +110,17 @@ def replace_cv(text: str):
 
 def replace_icon(text: str):
     if '/Game/Resources/' in text:
-        return text.replace('/Game/Resources', '/assets')
+        return GLOBAL_ASSETS_WEBP + text.replace('/Game/Resources', '') + '.webp'
     else:
         return text
 
 def localized_asset(text: str, lang: LANGS):
-    return f'/assets/L10N/{lang}/Resources/{text.replace("/Game/Resources/", "")}'
+    return GLOBAL_ASSETS_WEBP + f'/L10N/{lang}/Resources/{text.replace("/Game/Resources/", "")}.webp'
 
 def put_imitation_icon(text: str):
-    if '/assets' in text:
+    if GLOBAL_ASSETS_WEBP in text:
         return text
-    return f'/assets/UI/huanxing/lihui/{text}'
+    return GLOBAL_ASSETS_WEBP + f'/UI/huanxing/lihui/{text}.webp'
 
 def check_string(text: str):
     if text.lower() == 'none':
@@ -129,8 +130,8 @@ def check_string(text: str):
 def replace_rarity_asset(text: str):
     if text.lower() == 'none':
         return None
-    if '/Game/Resources/' in text:
-        return text.replace('/Game/Resources', '/assets')
+    if GLOBAL_ASSETS_WEBP in text:
+        return GLOBAL_ASSETS_WEBP +  text.replace('/Game/Resources', '') + '.webp'
     else:
         return text
 
