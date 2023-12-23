@@ -60,12 +60,13 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                     text = value_dict['assetsA0']['descPainting'],
                     lang=LANGS(lang)
                 )
+                value_dict['assetsA0']['artwork'] = '/UI/huanxing/lihui/' + value_dict['avatarId']
 
                 if value_dict.get('assetsA3', None):
                     value_dict['assetsA3']['descPainting'] = localized_asset(
                     text = value_dict['assetsA3']['descPainting'],
-                    lang=LANGS(lang)
-                )
+                    lang=LANGS(lang))
+                    value_dict['assetsA3']['artwork'] = '/UI/huanxing/lihui/' + value_dict['avatarId']
 
             if LINK := self.LINK_DATA.get(key_id.lower(), None):
                 value_dict['MatrixId'] = LINK.get('matrice', None)
