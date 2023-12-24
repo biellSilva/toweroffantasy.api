@@ -1,48 +1,29 @@
 
-from pydantic import BaseModel, model_validator, BeforeValidator
-from typing import Any, Annotated
+from pydantic import BaseModel, BeforeValidator
+from typing import Annotated
 
-from api.utils import voice_actor_string_rework
+from api.utils import voice_actor_string_rework, replace_icon
 
 
 class Assets(BaseModel):
-    avatar: str
-    titlePicture: str
-    painting: str
-    namePicture: str
-    grayPainting: str
-    thumbPainting: str
-    weaponShowPicture: str
-    activeImitation: str
-    inactiveImitation:str
-    advancePainting: str
-    advanceGrayPainting: str
-    backPhoto: str
-    rarityIcon: str
-    lotteryCardImage: str
-    # lotteryDrawing: str
-    matrixPainting: str
+    avatar: Annotated[str | None, BeforeValidator(replace_icon)] 
+    titlePicture: Annotated[str | None, BeforeValidator(replace_icon)] 
+    artwork: Annotated[str | None, BeforeValidator(replace_icon)] 
+    painting: Annotated[str | None, BeforeValidator(replace_icon)] 
+    namePicture: Annotated[str | None, BeforeValidator(replace_icon)] 
+    grayPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
+    thumbPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
+    weaponShowPicture: Annotated[str | None, BeforeValidator(replace_icon)] 
+    activeImitation: Annotated[str | None, BeforeValidator(replace_icon)] 
+    inactiveImitation:Annotated[str | None, BeforeValidator(replace_icon)] 
+    advancePainting: Annotated[str | None, BeforeValidator(replace_icon)] 
+    advanceGrayPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
+    backPhoto: Annotated[str | None, BeforeValidator(replace_icon)] 
+    rarityIcon: Annotated[str | None, BeforeValidator(replace_icon)] 
+    lotteryCardImage: Annotated[str | None, BeforeValidator(replace_icon)] 
+    # lotteryDrawing: Annotated[str | None, BeforeValidator(replace_icon)] 
+    matrixPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
     descPainting: str
-
-    @model_validator(mode='before')
-    def _replace_assets(cls, values: Any):
-
-        def _replace_string__(value: Any) -> Any:
-            if isinstance(value, dict):
-                _: dict[str, Any] = {}
-
-                for k, v in values.items():
-                    if isinstance(v, str):
-                        _.update({k: v.replace('/Game/Resources', '/assets')})
-
-                    else:
-                        _.update({k: v})
-
-                return _
-            
-            return value
-
-        return _replace_string__(values)
 
 
 class VoiceActors(BaseModel):
@@ -56,26 +37,5 @@ class VoiceActors(BaseModel):
 class Awakening(BaseModel):
     name: str
     description: str
-    icon: str
+    icon: Annotated[str | None, BeforeValidator(replace_icon)] 
     need: int
-
-
-    @model_validator(mode='before')
-    def _replace_assets(cls, values: Any):
-
-        def _replace_string__(value: Any) -> Any:
-            if isinstance(value, dict):
-                _: dict[str, Any] = {}
-
-                for k, v in values.items():
-                    if isinstance(v, str):
-                        _.update({k: v.replace('/Game/Resources', '/assets')})
-
-                    else:
-                        _.update({k: v})
-
-                return _
-            
-            return value
-
-        return _replace_string__(values)
