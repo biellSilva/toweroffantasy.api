@@ -12,7 +12,7 @@ from .extra import MatrixSet, MatrixAssets
 class Matrix(EntityBase):
     name: str
     simulacrumId: str | None = None
-    type: str
+    version: str
     description: Annotated[str, BeforeValidator(bold_numbers)]
     assets: MatrixAssets
     rarity: str

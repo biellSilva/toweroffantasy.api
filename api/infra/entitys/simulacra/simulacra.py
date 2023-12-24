@@ -11,6 +11,7 @@ from ..banners import Banner
 class Simulacra(EntityBase):
     name: str
     rarity: str
+    version: str
     # characterSex: str
     avatarId: str 
     advanceId: str | None = None

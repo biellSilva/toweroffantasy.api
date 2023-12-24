@@ -22,6 +22,7 @@ class Weapon:
     # isUpPoolWeapon: bool = False
 
     name: str
+    version: str
     rarity: str
     assets: WeaponAssets
 

@@ -9,6 +9,7 @@ from .extra import Assets, VoiceActors as VC, Awakening
 class Simulacra:
     id: str
     name: str
+    version: str
     rarity: str
     # sex: str
     avatarId: str 

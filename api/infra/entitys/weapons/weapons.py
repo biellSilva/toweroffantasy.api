@@ -27,6 +27,7 @@ class Weapon(EntityBase):
     # isUpPoolWeapon: bool = False
 
     name: str
+    version: str
     rarity: str
     assets: Assets
 

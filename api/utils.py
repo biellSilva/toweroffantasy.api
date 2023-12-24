@@ -109,10 +109,10 @@ def replace_cv(text: str):
     return text.replace('CV : ', '')
 
 def replace_icon(text: str):
-    if '/Game/Resources/' in text:
-        return GLOBAL_ASSETS_WEBP + text.replace('/Game/Resources', '') + '.webp'
-    else:
+    if GLOBAL_ASSETS_WEBP in text:
         return text
+    else:
+        return GLOBAL_ASSETS_WEBP + text.replace('/Game/Resources', '') + '.webp'
 
 def localized_asset(text: str, lang: LANGS):
     return GLOBAL_ASSETS_WEBP + f'/L10N/{lang}/Resources/{text.replace("/Game/Resources/", "")}.webp'
