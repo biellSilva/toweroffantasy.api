@@ -13,6 +13,7 @@ class WeaponAssets:
     # itemLargeIcon: str | None
     # WeaponUPIcon: str | None
     weaponIconForMatrix: str | None
+    characterIcon: str | None
 
 @strawberry.type
 class Skill:

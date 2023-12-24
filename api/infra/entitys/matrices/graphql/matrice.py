@@ -9,8 +9,8 @@ from .extra import MatriceSet, MatrixAssets
 class Matrice:
     id: str
     simulacrumId: str | None
+    version: str
     name: str
-    type: str
     description: str
     assets: MatrixAssets
     rarity: str

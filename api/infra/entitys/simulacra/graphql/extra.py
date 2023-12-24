@@ -22,6 +22,7 @@ class Assets:
     # lotteryDrawing: str
     matrixPainting: str
     descPainting: str
+    awakenPhoto: str
     
 
 @strawberry.type

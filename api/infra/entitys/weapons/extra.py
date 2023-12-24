@@ -15,6 +15,7 @@ class Assets(BaseModel):
     # itemLargeIcon: str | None
     # WeaponUPIcon: str | None
     weaponIconForMatrix: Annotated[str | None, BeforeValidator(replace_icon)] 
+    characterIcon: str | None = None
 
 
 class Skill(BaseModel):
