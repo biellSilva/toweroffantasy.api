@@ -11,7 +11,7 @@ from api.infra.entitys import Simulacra_v2, EntityBase
 from api.infra.repository import WeaponRepo, MatricesRepo
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
-from api.utils import sort_simulacra, localized_asset, place_numbers_v2
+from api.utils import sort_simulacra, place_numbers_v2
 from api.config import GB_BANNERS
 
 
@@ -77,16 +77,6 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
 
             if version == 'global':
                 value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.simulacrumId and banner.simulacrumId == key_id.lower()]
-                value_dict['assetsA0']['descPainting'] = localized_asset(
-                    text = value_dict['assetsA0']['descPainting'],
-                    lang=LANGS(lang)
-                )
-
-                if value_dict.get('assetsA3', None):
-                    value_dict['assetsA3']['descPainting'] = localized_asset(
-                    text = value_dict['assetsA3']['descPainting'],
-                    lang=LANGS(lang)
-                )
 
             if LINK := self.LINK_DATA.get(key_id.lower(), None):
                 value_dict['MatrixId'] = LINK.get('matrice', None)

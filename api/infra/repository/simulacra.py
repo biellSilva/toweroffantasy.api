@@ -10,7 +10,7 @@ from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Simulacra, EntityBase
 
 from api.enums import LANGS, LANGS_CN, VERSIONS
-from api.utils import sort_simulacra, localized_asset
+from api.utils import sort_simulacra
 from api.config import GB_BANNERS
 
 
@@ -56,17 +56,6 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
 
             if version == 'global':
                 value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.simulacrumId and banner.simulacrumId == key_id.lower()]
-                value_dict['assetsA0']['descPainting'] = localized_asset(
-                    text = value_dict['assetsA0']['descPainting'],
-                    lang=LANGS(lang)
-                )
-                value_dict['assetsA0']['artwork'] = '/UI/huanxing/lihui/' + value_dict['avatarId']
-
-                if value_dict.get('assetsA3', None):
-                    value_dict['assetsA3']['descPainting'] = localized_asset(
-                    text = value_dict['assetsA3']['descPainting'],
-                    lang=LANGS(lang))
-                    value_dict['assetsA3']['artwork'] = '/UI/huanxing/lihui/' + value_dict['avatarId']
 
             if LINK := self.LINK_DATA.get(key_id.lower(), None):
                 value_dict['MatrixId'] = LINK.get('matrice', None)
