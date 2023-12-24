@@ -8,7 +8,7 @@ from api.utils import voice_actor_string_rework, replace_icon
 class Assets(BaseModel):
     avatar: Annotated[str | None, BeforeValidator(replace_icon)] 
     titlePicture: Annotated[str | None, BeforeValidator(replace_icon)] 
-    awakenPhoto: Annotated[str | None, BeforeValidator(replace_icon)] 
+    characterArtwork: Annotated[str | None, BeforeValidator(replace_icon)] 
     painting: Annotated[str | None, BeforeValidator(replace_icon)] 
     namePicture: Annotated[str | None, BeforeValidator(replace_icon)] 
     grayPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
