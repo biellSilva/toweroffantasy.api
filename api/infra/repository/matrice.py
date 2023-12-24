@@ -23,6 +23,8 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                          model=Matrix, 
                          class_base=MatricesRepo,
                          repo_name='matrices')
+        
+        self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
     
     async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Matrix]:
         if version in self.cache:
@@ -56,8 +58,12 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
             matrice_id = matrice_id.removesuffix('_1').lower()
             matrice_dict['id'] = matrice_id
 
-            matrice_dict['sets'] = matrice_set_rework(rarity=matrice_dict.get('rarity', ''),
-                                                    sets=matrice_dict.pop('set'))
+            matrice_dict['sets'] = matrice_set_rework(rarity=matrice_dict.get('rarity', ''), sets=matrice_dict.pop('set'))
+            
+            for i in self.LINK_DATA:
+                if isinstance(self.LINK_DATA.get(i, {}).get('matrice', None), str):
+                    if self.LINK_DATA[i]['matrice'].lower() == matrice_id.lower():
+                        matrice_dict['simulacrumId'] = i
             
             if version == 'global':
                 matrice_dict['Banners'] = [banner for banner in GB_BANNERS if banner.matrixId and banner.matrixId == matrice_id.lower()]
