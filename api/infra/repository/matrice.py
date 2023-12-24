@@ -62,7 +62,7 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
             
             for i in self.LINK_DATA:
                 if isinstance(self.LINK_DATA.get(i, {}).get('matrice', None), str):
-                    if self.LINK_DATA[i]['matrice'].lower() == matrice_id.lower():
+                    if self.LINK_DATA[i]['matrice'].lower() == matrice_id.lower(): # type: ignore
                         matrice_dict['simulacrumId'] = i
             
             if version == 'global':
