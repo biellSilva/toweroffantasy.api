@@ -37,12 +37,23 @@ async def get_rarity():
 
 
 @router.get('/banners', name='Banners', response_model=list[Banner])
-async def get_banners():
+async def get_banners(includeUnreleased: bool = False):
     '''  
+    **Query Params** \n
+        includeUnreleased:
+            type: bool
+            default: False
+            desc: Only released data
+
     **Return** \n
         list[Banner]
     '''
+    
+    if not includeUnreleased:
+        return list(filter(lambda x: x.isReleased, GB_BANNERS))
+    
     return GB_BANNERS
+
 
 @router.get('/assets/{id}', name='Extra Assets')
 async def get_extra_asset(id: str = ApiPath(description='Asset ID')):

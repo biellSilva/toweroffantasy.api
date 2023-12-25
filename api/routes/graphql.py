@@ -339,7 +339,12 @@ class Query:
     
 
     @strawberry.field(name='banners')
-    async def get_banners(self) -> List[Banner]:
+    async def get_banners(self, includeUnreleased: bool = False) -> List[Banner]:
+
+        if not includeUnreleased:
+            return list(filter(lambda x: x.isReleased, GB_BANNERS)) # type: ignore
+    
+
         return GB_BANNERS # type: ignore
     
 
