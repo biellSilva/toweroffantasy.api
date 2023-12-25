@@ -1,9 +1,5 @@
 
-from pydantic import BeforeValidator
-from typing import Annotated
-
 from api.infra.entitys.base import EntityBase
-from api.utils import replace_icon
 
 from .extra import Ingredient
 
@@ -12,7 +8,7 @@ class Food(EntityBase):
     name: str
     description: str
     buff: str
-    icon: Annotated[str, BeforeValidator(replace_icon)]
+    icon: str | None
     stars: int
     quality: str
     effect: str | None = None
