@@ -1,1091 +1,4 @@
 {
-	"spear_ice": {
-		"name": "Lanza Escarchada",
-		"description": "Un arma común entre los habitantes del Campo de Nieve de Warren. Imbuida de escarcha para reflejar los gustos locales. Es muy popular porque es barata y altamente efectiva.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Ice",
-		"type": "Spear",
-		"weaponUpgradeId": "ice_r_tupo_AD",
-		"wc": "DPS",
-		"advanceID": "spear_ice_r_star",
-		"mats": {
-			"Item_Mine_ice": 15,
-			"Item_Mine_ice_02": 25,
-			"Item_breakthrough_A2": 25,
-			"Item_breakthrough_D2": 25,
-			"Item_Mine_ice_03": 14,
-			"Item_breakthrough_A3": 14,
-			"Item_breakthrough_D3": 14,
-			"Item_breakthrough_A1": 13,
-			"Item_breakthrough_D1": 12
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Resistencia",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Eléctrico**:",
-			"description": "Cuando el arma esté completamente cargada, el siguiente ataque **congelará con fuerza** a los objetivos por **2**seg y los dejará afligidos de congelación por **6**seg. Romper el caparazón de hielo inflige daño igual a **67.00%** del ATQ. Mientras está afligido de congelación, reduce la tasa de carga de arma del objetivo un **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 5.6,
-				"shatter": 6.9,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Arremetida",
-					"description": "Mientras estás en el suelo, blande la lanza larga para atacar 5 veces seguidas.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder un poco al objetivo.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y hace retroceder un poco al objetivo.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y hace retroceder un poco al objetivo.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y hace retroceder un poco al objetivo.\r\nQuinto ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y hace retroceder al objetivo una larga distancia.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"id": "GA_FPlayerSpearMelee_Melee_R"
-				},
-				{
-					"name": "Golpe de Salto",
-					"description": "Mientras estás en el aire, utiliza el ataque normal para atacar 4 veces seguidas en el aire.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
-					"id": "GA_FPlayerSpearMelee_AirAttack_R"
-				},
-				{
-					"name": "Choque Propulsor",
-					"description": "Pulsa y mantén pulsado el ataque normal mientras estás en el aire (pulsa cuando haya un objetivo disponible), o utiliza el ataque normal mientras escalas, saltas hacia atrás o utilizas el propulsor para activar Choque Propulsor.\r\nMientras caes, inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> en cada impacto. Al aterrizar, inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y suspende al objetivo.\r\nCuanto mayor sea la altitud al activar el ataque, mayor será el daño infligido, hasta <shuzhi>600%</> de daño.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
-					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
-				},
-				{
-					"name": "Ráfaga de Lanza",
-					"description": "Luego del tercer ataque normal, mantén pulsado el botón de ataque normal para activar Ráfaga de Lanza.\r\nAl impactar, <shuzhi>suspende fuerte</> al objetivo e inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Pulsa de nuevo para continuar atacando al objetivo en el aire, lo que inflige hasta <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> de daño a un solo objetivo.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
-					"id": "GA_FPlayerSpearMelee_Branch_R"
-				},
-				{
-					"name": "Ataque Sorpresa",
-					"description": "Lanza una larga estocada con la lanza larga e inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSpearMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Patada Voladora",
-					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Patada Voladora.\r\nAl golpear al objetivo, infliges daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>, lo haces retroceder considerablemente y <shuzhi>aturdes</> a los enemigos por <shuzhi>1</> seg, ó <shuzhi>0.5</> seg contra nómadas.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
-					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
-				},
-				{
-					"name": "Embestida Aplastante",
-					"description": "Usa tu ataque normal durante el breve periodo tras evadir para activar Embestida Aplastante.\r\nAzota la lanza larga contra el suelo, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y <shuzhi>suspende fuerte</> a los objetivos.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
-					"id": "GA_FPlayerSpearEvade_BackAttack_R"
-				},
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSpearEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Cazalunas",
-					"description": "<shuzhi>Suspende fuerte</> a los objetivos y quedas en el aire, lo que inflige daño equivalente al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Enfriamiento: <shuzhi>{2}</> seg.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
-					"id": "GA_FPlayerSpearSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Baile de Lanza",
-					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y agarras al objetivo; lo sacudes varias veces para infligir daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. El último impacto <shuzhi>suspende fuerte</> al objetivo.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
-					"id": "GA_FPlayerSpearChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "spear_ice"
-	},
-	"digger_physic": {
-		"name": "Cuchilla de Combate",
-		"description": "Un arma básica desarrollada por Tecnología Banges. Forjada con una aleación especial, es ligera, ágil y fácil de portar.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Physics",
-		"type": "DoubleSword",
-		"weaponUpgradeId": "physic_r_tupo_BC",
-		"wc": "DPS",
-		"advanceID": "digger_physic_r_star",
-		"mats": {
-			"Item_Mine_physic": 15,
-			"Item_Mine_physic_02": 25,
-			"Item_breakthrough_B2": 25,
-			"Item_breakthrough_C2": 25,
-			"Item_Mine_physic_03": 14,
-			"Item_breakthrough_B3": 14,
-			"Item_breakthrough_C3": 14,
-			"Item_breakthrough_B1": 13,
-			"Item_breakthrough_C1": 12
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Crít",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Grave**:",
-			"description": "Cuando el arma esté completamente cargada, el siguiente ataque dejará graves a los enemigos por **7**seg, lo que aumenta su daño recibido un **20%** y les inflige daño igual a **63.00%** del ATQ. Al jugar **partidas en equipo**, aumenta el daño físico infligido a objetivos graves un **20%** adicional."
-		},
-		"advancements": [
-			{
-				"charge": 9.6,
-				"shatter": 3.2,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Cuchillas Gemelas",
-					"description": "Mientras estás en el suelo, blandes el par de cuchillas dobles para lanzar hasta 5 ataques consecutivos.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder un poco al objetivo.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y hace retroceder un poco al objetivo.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y hace retroceder un poco al objetivo.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y hace retroceder un poco al objetivo.\r\nQuinto ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y hace retroceder un poco al objetivo.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
-					"id": "GA_FPlayerDsMelee_Melee_R"
-				},
-				{
-					"name": "Ráfaga de Aire",
-					"description": "Mientras estás en el aire o después de saltar una vez, utiliza el ataque normal para atacar 4 veces seguidas.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
-					"id": "GA_FPlayerDsMelee_AirAttack_R"
-				},
-				{
-					"name": "Embestida Rápida",
-					"description": "Luego del tercer ataque normal, mantén pulsado el botón de ataque normal para activar Embestida Rápida.\r\nAl impactar <shuzhi>suspende fuerte</> al objetivo, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
-					"id": "GA_FPlayerDsMelee_Branch_R"
-				},
-				{
-					"name": "Impulso en Espiral",
-					"description": "Pulsa y mantén pulsado el ataque normal mientras estás en el aire (pulsa cuando haya un objetivo disponible), o utiliza el ataque normal mientras escalas, saltas hacia atrás o utilizas el propulsor para activar Impulso en Espiral.\r\nMientras caes, inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> en cada impacto.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
-					"id": "GA_FPlayerDsMelee_JumpAttack_R"
-				},
-				{
-					"name": "Ataque Sorpresa",
-					"description": "Acércate al enemigo desde atrás en posición agachada y usa el ataque normal para usar Ataque Sorpresa, lo que inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerDsMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Cuchillas Voladoras",
-					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Cuchillas Voladoras.\r\nAl impactar, <shuzhi>suspendes fuerte</> al objetivo y le infliges daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Sigue pulsando para lanzar hasta <shuzhi>6</> Cuchillas Voladoras más, cada una inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
-					"id": "GA_FPlayerDsEvade_FrontAttack_R"
-				},
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Enfriamiento: 15 seg. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerDsEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Cuchillas Bumerán",
-					"description": "Lanza <shuzhi>6</> Cuchillas Bumerán en todas las direcciones. Cada una inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. <shuzhi>{2}</> seg de enfriamiento.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
-					"id": "GA_FPlayerDSSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Cuchillas de Órbita",
-					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y lanzas Cuchillas de Órbita, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> e invoca <shuzhi>2</> cuchillas voladoras más que giran alrededor del nómada para infligir <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> de daño a los objetivos con los que entran en contacto.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
-					"id": "GA_FPlayerDsChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "digger_physic"
-	},
-	"sword_thunder": {
-		"name": "Cuchilla Magnética",
-		"description": "El primer proyecto electromagnético de Omnio. Esta cuchilla es fácil de portar y es muy popular entre los nómadas que no son buenos luchadores.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Thunder",
-		"type": "Sword",
-		"weaponUpgradeId": "thunder_r_tupo_BD",
-		"wc": "DPS",
-		"advanceID": "sword_thunder_r_star",
-		"mats": {
-			"Item_Mine_thunder": 15,
-			"Item_Mine_thunder_02": 25,
-			"Item_breakthrough_B2": 25,
-			"Item_breakthrough_D2": 25,
-			"Item_Mine_thunder_03": 14,
-			"Item_breakthrough_B3": 14,
-			"Item_breakthrough_D3": 14,
-			"Item_breakthrough_B1": 13,
-			"Item_breakthrough_D1": 12
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Resistencia",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Eléctrico**:",
-			"description": "Cuando el arma está totalmente cargada, el siguiente ataque **paraliza fuerte** a los objetivos por **1**seg y los electrifica por **6**seg, lo que elimina todas sus mejoras e inflige daño igual a **70.00%** del ATQ. Los objetivos electrificados no pueden recibir ninguna mejora durante los próximos **6**seg."
-		},
-		"advancements": [
-			{
-				"charge": 8.8,
-				"shatter": 3.6,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Corte Rápido",
-					"description": "Mientras estás en el suelo, blande la cuchilla para atacar 5 veces seguidas.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder un poco al objetivo.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y hace retroceder un poco al objetivo.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y hace retroceder un poco al objetivo.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y hace retroceder un poco al objetivo.\r\nQuinto ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y <shuzhi>lanza</> al objetivo.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
-					"id": "GA_FPlayerSwordMelee_Melee_R"
-				},
-				{
-					"name": "Golpe de Salto",
-					"description": "Mientras estás en el aire, utiliza el ataque normal para atacar 4 veces seguidas.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y provoca un <shuzhi>derribo</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
-					"id": "GA_FPlayerSwordMelee_AirAttack_R"
-				},
-				{
-					"name": "Arenamar",
-					"description": "Pulsa y mantén pulsado el botón de ataque normal tras los ataques normales para activar Ciclón.\r\nAl impacto, suspende al objetivo e inflige <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a un solo objetivo.",
-					"operations": [
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
-					"id": "GA_FPlayerSwordMelee_Branch_R"
-				},
-				{
-					"name": "Borde de Inmersión",
-					"description": "Pulsa y mantén pulsado el ataque normal mientras estás en el aire, o utiliza el ataque normal mientras escalas, saltas hacia atrás o usas el propulsor para activar Borde de Inmersión.\r\nMientras caes, inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> en cada impacto. Al aterrizar, inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> a los objetivos circundantes y los hace retroceder.\r\nCuanto mayor sea la altitud al activar el ataque, mayor será el daño infligido, hasta <shuzhi>600%</> de daño.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
-					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
-				},
-				{
-					"name": "Ataque Sorpresa",
-					"description": "Acércate al enemigo por detrás mientras te agachas; luego, usa el ataque normal para usar Ataque Sorpresa, lo que inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSwordMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Enfriamiento: 15 seg. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSwordEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Recorrer",
-					"description": "Recorre los objetivos, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a un máximo de <shuzhi>5</> objetivos, y el último impacto suspende al objetivo. Eres inmune a la conmoción durante el efecto. Reduce el daño infligido al mismo objetivo un <shuzhi>40%</> cada vez. <shuzhi>{2}</> seg de enfriamiento.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
-					"id": "GA_FPlayerSwordSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Ráfaga Desenfrenada",
-					"description": "Cuando la <red>carga de arma</> está completa o al activar <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y te desplazas hacia el objetivo, lo cual lo <shuzhi>suspensión fuerte</> y le inflige daño equivalente al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
-					"id": "GA_FPlayerSwordChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "sword_thunder"
-	},
-	"bow_fire": {
-		"name": "Arco Compuesto",
-		"description": "Un arma común usada por los cazadores en los campos de nieve. Fácil de portar y de gran precisión. Con bastante promoción, logró captar más de la mitad del mercado civil de armas económicas.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Flame",
-		"type": "Bow",
-		"weaponUpgradeId": "fire_r_tupo_AC",
-		"wc": "DPS",
-		"advanceID": "bow_fire_r_star",
-		"mats": {
-			"Item_Mine_fire": 15,
-			"Item_Mine_fire_02": 25,
-			"Item_breakthrough_A2": 25,
-			"Item_breakthrough_C2": 25,
-			"Item_Mine_fire_03": 14,
-			"Item_breakthrough_A3": 14,
-			"Item_breakthrough_C3": 14,
-			"Item_breakthrough_A1": 13,
-			"Item_breakthrough_C1": 12
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Crít",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Fuego**:",
-			"description": "Cuando el arma esté completamente cargada, el siguiente ataque encenderá al objetivo por **8**seg, lo que inflige daño igual a **27.00%** del ATQ cada segundo. Mientras está encendido, los efectos de curación en el objetivo son **50%** menos efectivos."
-		},
-		"advancements": [
-			{
-				"charge": 8,
-				"shatter": 4.8,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Ataque normal",
-					"description": "Mientras estás en el suelo, tira del arco repetidamente para atacar 5 veces.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.\r\nQuinto ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y hace retroceder un poco al objetivo.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Melee"
-				},
-				{
-					"name": "Flecha Cargada",
-					"description": "Pulsa y mantén pulsado el ataque normal para cargar un ataque. Inflige daño base igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>, y <shuzhi>50%</> más por cada <shuzhi>1</> seg de carga, hasta <shuzhi>3</> seg. Inflige el doble de daño al hacer un tiro en la cabeza o al golpear el punto débil de un enemigo, y derriba al objetivo (los tiros en la cabeza no son efectivos contra los nómadas).",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
-				},
-				{
-					"name": "Lluvia de Flechas",
-					"description": "Después de cualquier ataque normal, mantén pulsado el botón de ataque normal para desatar Lluvia de Flechas que inflige hasta el <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> de daño de área a los objetivos.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Branch"
-				},
-				{
-					"name": "Descarga Aérea",
-					"description": "Mientras estás en el aire, utiliza el ataque normal para atacar 4 veces seguidas en el aire.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_AirAttack"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Enfriamiento: 15 seg. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerBowEvadeNew_Evade"
-				},
-				{
-					"name": "Flecha Equipada",
-					"description": "Pulsa el ataque tras esquivar para activar una Flecha Equipada, que hacer retroceder un poco al objetivo e inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
-				}
-			],
-			"skill": [
-				{
-					"name": "Disparo Perforante",
-					"description": "Retrocede en una voltereta y realiza <shuzhi>1</> disparo perforante hacia adelante, lo que inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder al objetivo. <shuzhi>{2}</> seg de enfriamiento.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Ráfaga Explosiva",
-					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y desata Ráfaga Explosiva sobre el objetivo, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
-					"id": "GA_FPlayerBowChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "bow_fire"
-	},
-	"stave_thunder": {
-		"name": "Vara de Cicatrices",
-		"description": "Un bastón mecánico con una runa cruzada grabada en él. Es capaz tanto de perdonar pecados como de desatar castigos.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Thunder",
-		"type": "Staves",
-		"weaponUpgradeId": "thunder_sr_tupo_AC",
-		"wc": "SUP",
-		"advanceID": "stave_thunder_sr_star",
-		"avatar": "imitation_14",
-		"mats": {
-			"Item_Mine_thunder": 28,
-			"Item_Mine_thunder_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_thunder_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Resistencia",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Eléctrico**:",
-			"description": "Cuando el arma está totalmente cargada, el siguiente ataque **paraliza fuerte** a los objetivos por **1**seg y los electrifica por **6**seg, lo que elimina todas sus mejoras e inflige daño igual a **106.00%** del ATQ. Los objetivos electrificados no pueden recibir ninguna mejora durante los próximos **6**seg."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 4,
-				"need": null
-			},
-			{
-				"description": "Cura a todos los compañeros en un radio de **10** metros por un **100%** del ATQ luego de utilizar una habilidad de evasión.",
-				"charge": 10,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de los PS base del arma actual en un **10%**.",
-				"charge": 10,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Los ataques normales también lanzan dos misiles, cada uno de los cuales inflige daño equivalente al **5%** del ATQ del objetivo y recuperan **5** puntos de carga de arma.",
-				"charge": 11.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de los PS base del arma actual en un **20%**.",
-				"charge": 11.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Aumenta la velocidad de adquisición de carga de arma en un **20%** (no aplicable a los ataques de misiles).",
-				"charge": 13.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Otorga a todos los compañeros de grupo cercanos **60%** de reducción de daño cada vez que una habilidad remueva efectos de control del objetivo.",
-				"charge": 13.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Ataque normal",
-					"description": "Mientras estás en el suelo, blande el bastón para atacar 5 veces seguidas.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.\r\nQuinto ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
-					"id": "GA_FPlayerStavesMelee_Melee"
-				},
-				{
-					"name": "Ráfaga Elevada",
-					"description": "Mientras estás en el aire o después de saltar una vez, utiliza el ataque normal para atacar 5 veces seguidas en el aire.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.\r\nQuinto ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
-					"id": "GA_FPlayerStavesMelee_AirAttack"
-				},
-				{
-					"name": "Cascada Lunar",
-					"description": "Mantén pulsado el ataque normal en el aire para activar Cascada Lunar.\r\nAl aterrizar, inflige daño una vez cada <shuzhi>0.2</> seg, por un total de daño equivalente al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
-					"id": "GA_FPlayerStavesMelee_JumpAttack"
-				},
-				{
-					"name": "Asalto Enfocado",
-					"description": "Después del tercer ataque normal, mantén pulsado el botón de ataque normal para activar los ataques divergentes, lo que consume <shuzhi>300</> puntos de resistencia.\r\nPrimer ataque: Atrae a los enemigos frente al usuario, los <shuzhi>suspende fuerte</> e inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> cada <shuzhi>0.3</> seg (hasta <shuzhi>4</> veces).\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> en la ubicación objetivo y a los enemigos cercanos cada <shuzhi>0.3</> seg.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
-					"id": "GA_FPlayerStavesMelee_Branch"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Enfriamiento: 15 seg. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerStavesEvade_Evade"
-				},
-				{
-					"name": "Sobrecarga",
-					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Sobrecarga.\r\nCada pulso de energía inflige daño igual a un <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos.\r\nObtienes <shuzhi>75</> puntos de carga de arma al usarlo.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
-					"id": "GA_FPlayerStavesEvade_FrontAttack"
-				},
-				{
-					"name": "Teseracto",
-					"description": "Usa tu ataque normal durante el breve periodo tras evadir para activar Explosión evasiva.\r\nDispara un orbe de energía hacia adelante, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos en el camino cada <shuzhi>0.3</> seg (hasta 5 veces).\r\nOtorga <shuzhi>75</> puntos de carga de arma al usarse.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
-					"id": "GA_FPlayerStavesEvade_BackAttack"
-				}
-			],
-			"skill": [
-				{
-					"name": "Santuario",
-					"description": "Crea un escudo energético en la ubicación del nómada. Cura a los aliados dentro del escudo un <shuzhi>{3}%</> del ATQ más <shuzhi>{4}</> cada segundo y reduce su daño recibido un <shuzhi>{0}%</> por <shuzhi>10</> seg. <shuzhi>60</> seg de enfriamiento.",
-					"tags": [
-						"Support"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
-					"id": "GA_FPlayerStavesSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Liberación Rápida",
-					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</>; además, el bastón seguirá eliminando desventajas de nómadas y aliados, además de curar a los nómadas cercanos y a las camaradas por <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> PS por <shuzhi>7</> seg.",
-					"tags": [
-						"Support"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
-					"id": "GA_FPlayerStavesChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "stave_thunder"
-	},
-	"cannon_ice": {
-		"name": "Exterminadora",
-		"description": "El arma más aterradora jamás creada, también conocida como una torreta andante.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Ice",
-		"type": "Cannon",
-		"weaponUpgradeId": "ice_sr_tupo_AD",
-		"wc": "DPS",
-		"advanceID": "cannon_ice_sr_star",
-		"avatar": "imitation_15",
-		"mats": {
-			"Item_Mine_ice": 28,
-			"Item_Mine_ice_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_D2": 42,
-			"Item_Mine_ice_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_D3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_D1": 23
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Resistencia",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Eléctrico**:",
-			"description": "Cuando el arma esté completamente cargada, el siguiente ataque **congelará con fuerza** a los objetivos por **2**seg y los dejará afligidos de congelación por **6**seg. Romper el caparazón de hielo inflige daño igual a **111.00%** del ATQ. Mientras está afligido de congelación, reduce la tasa de carga de arma del objetivo un **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 10,
-				"need": null
-			},
-			{
-				"description": "Cada ataque normal exitoso aumenta el daño un **1%** por **2** segundos. Se puede acumular hasta **15** veces. Aumenta la cantidad de munición a **60**.",
-				"charge": 10,
-				"shatter": 10,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de ATQ base del arma actual en un **10%**.",
-				"charge": 10,
-				"shatter": 10,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Dentro de **10** segundos de cambiar al arma, aumenta el daño de los ataques normales y de destrucción en un **30%**. Enfriamiento: **25** segundos. Aumenta la capacidad de municiones a **80**.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de ATQ base del arma actual en un **20%**.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Reduce en **2** segundos el enfriamiento de los ataques normales en modo de torreta.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Dentro de **10** segundos de cambiar al arma, aumenta el daño de los ataques normales y de destrucción en un **60%**. Enfriamiento: **25** segundos.",
-				"charge": 10,
-				"shatter": 16,
-				"need": "cannon_ice_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Ataque normal",
-					"description": "Pulsa el ataque normal para entrar en el modo de apuntar. Mantén el ataque normal para disparar continuamente, hasta <shuzhi>40</> rondas. Cada disparo inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Inflige el doble de daño al hacer un tiro en la cabeza o al impactar en el punto débil de un enemigo, y derriba al objetivo (los tiros en la cabeza no son efectivos contra los nómadas).",
-					"operations": [
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
-					"id": "GA_FPlayerCannonMelee_Melee"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Enfriamiento: 15 seg. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerCannonEvade_Evade"
-				}
-			],
-			"skill": [
-				{
-					"name": "Torreta",
-					"description": "Activa el modo torreta y dispara grandes orbes de energía, cada uno de los cuales inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y lanza al objetivo por el aire. Te vuelves inmune a la conmoción y a los efectos de control mientras preparas la torreta. Enfriamiento: <shuzhi>{2}</> seg.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
-					"id": "GA_FPlayerCannonSkillNew"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Rayo Ártico",
-					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y dispara un Rayo Ártico, lo que inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y causa un efecto de <shuzhi>congelación fuerte</> por <shuzhi>3</> seg. También reduce la resistencia a la escarcha del objetivo un <shuzhi>50%</> por <shuzhi>10</> seg.",
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
-					"id": "GA_FPlayerCannonChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "cannon_ice"
-	},
 	"chainsaw_physic": {
 		"name": "Minihuracán",
 		"description": "Demasiado peligroso para ser un juguete. No hay forma de que una niña haya podido conseguirlo por medios honestos. Quién sabe qué tipo de tecnología se usó para refinarlo… Quizás lo recogió en algún camino olvidado.",
@@ -1347,678 +260,9 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
-	},
-	"hammer_ice": {
-		"name": "Vapuleador",
-		"description": "Nadie quiere ser el objetivo de esta maza.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Ice",
-		"type": "Hammer",
-		"weaponUpgradeId": "ice_sr_tupo_BC",
-		"wc": "Tank",
-		"advanceID": "hammer_ice_sr_star",
-		"avatar": "imitation_2",
-		"mats": {
-			"Item_Mine_ice": 28,
-			"Item_Mine_ice_02": 42,
-			"Item_breakthrough_B2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_ice_03": 22,
-			"Item_breakthrough_B3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_B1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Resistencia",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Eléctrico**:",
-			"description": "Cuando el arma esté completamente cargada, el siguiente ataque **congelará con fuerza** a los objetivos por **2**seg y los dejará afligidos de congelación por **6**seg. Romper el caparazón de hielo inflige daño igual a **111.00%** del ATQ. Mientras está afligido de congelación, reduce la tasa de carga de arma del objetivo un **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 6,
-				"shatter": 10,
-				"need": null
-			},
-			{
-				"description": "Provoca a los objetivos cercanos después de cambiar a esta arma, lo que impide **1** instancia de daño en los próximos **8** segundos y te otorga hipercuerpo durante los próximos **8** segundos. Enfriamiento: **15** segundos.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de los PS base del arma actual en un **10%**.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Después de recibir daño, reduce todo daño recibido en un **50%** durante los próximos **6** segundos. Enfriamiento: **20** segundos.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de los PS base del arma actual en un **20%**.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Los ataques normales **aturden** a los objetivos durante **2.5** segundos. Enfriamiento: **20** segundos.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Las habilidades de descarga infligen un daño adicional del **10%** a los objetivos y aumentan el daño de escarcha en un **10%** adicional durante **25** segundos.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Ataque normal",
-					"description": "Mientras estás en el suelo, blande el mazo para atacar 4 veces seguidas.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder un poco al objetivo.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y hace retroceder un poco al objetivo.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y hace retroceder un poco al objetivo.\r\nCuarto ataque: Inflige un daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y lanza al objetivo.\r\nMientras Arrebato está activo, usa el mazo para atacar 4 veces seguidas.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y hace retroceder un poco al objetivo.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{10}%</> del ATQ más <shuzhi>{11}</> y hace retroceder un poco al objetivo.\r\nTercer ataque: Inflige daño igual a <shuzhi>{12}%</> del ATQ más <shuzhi>{13}</> y hace retroceder un poco al objetivo.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{14}%</> del ATQ más <shuzhi>{15}</> y <shuzhi>suspende fuerte al objetivo</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
-					"id": "GA_FPlayerHammerMelee_Melee"
-				},
-				{
-					"name": "Vapuleador",
-					"description": "Mientras estás en el aire o después de saltar una vez, usa el ataque normal para activar Ráfaga de Salto. Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y suspende al objetivo.\r\nMientras Arrebato esté activo, inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y <shuzhi>suspende fuerte</> al objetivo.\r\nCuanto mayor sea la altitud al activar el ataque, mayor será el daño infligido, hasta <shuzhi>600%</> de daño.",
-					"operations": [
-						"Jump",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
-					"id": "GA_FPlayerHammerMelee_AirAttack"
-				},
-				{
-					"name": "Onda de Choque",
-					"description": "Pulsa y mantén pulsado mientras estás en el aire, salta dos veces, pulsa brevemente en el aire cuando haya objetivos cerca, escala, salta hacia atrás o ataca mientras usas el propulsor y desencadenará una Onda de Choque. <shuzhi>Suspende fuerte</> al objetivo <shuzhi>4</> veces, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> cada vez. Cuesta <shuzhi>250</> de resistencia.\r\nMientras Arrebato está activo, Onda de Choque <shuzhi>suspende fuerte</> al objetivo <shuzhi>5</> veces, lo que inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> cada vez.\r\nCuanto mayor sea la altitud al activar el ataque, mayor será el daño infligido, hasta <shuzhi>600%</> de daño.",
-					"operations": [
-						"Jump",
-						"Jump",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
-					"id": "GA_FPlayerHammerMelee_JumpAttack"
-				},
-				{
-					"name": "Ataque Sorpresa",
-					"description": "Acércate al enemigo desde atrás en posición agachada y usa el ataque normal para usar Ataque Sorpresa, lo que inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerHammerMelee_Sneak"
-				},
-				{
-					"name": "Embestida de Concentración",
-					"description": "Pulsa y mantén pulsado el ataque normal para activar la Embestida de Concentración (se puede cargar hasta 3 acumulaciones). Otorga inmunidad a todos los efectos de control y al hipercuerpo mientras cargas.\r\nPrimera acumulación: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y suspende al objetivo.\r\nSegunda acumulación: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y <shuzhi>suspende fuerte al objetivo</>.\r\nTercera acumulación: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y <shuzhi>suspende fuerte</> al objetivo.\r\nMientras Arrebato está activo, pulsa y mantén pulsado el ataque normal para activar Golpes Furiosos, lo que inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y <shuzhi>suspende fuerte</> al objetivo.",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
-					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Embestida de Salto",
-					"description": "Usa los botones de flecha y el botón de evadir para activar Embestida de Salto y desatar una Onda de Choque que suspende al enemigo <shuzhi>4</> veces e inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
-					"id": "GA_FPlayerHammerEvade_FrontAttack"
-				},
-				{
-					"name": "Rompemundos",
-					"description": "Pulsa el ataque normal durante el corto periodo luego de evadir para activar Rompemundos, que lanza <shuzhi>3</> ondas de choque hacia adelante, cada una de las cuales inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y suspende a los objetivos.\r\nEn modo Arrebato, dispara <shuzhi>5</> ondas de choque hacia adelante, cada una de las cuales inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y suspende al objetivo.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
-					"id": "GA_FPlayerHammerEvade_BackAttack"
-				},
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Enfriamiento: 15 seg. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerHammerEvade_Evade"
-				}
-			],
-			"skill": [
-				{
-					"name": "Arrebato",
-					"description": "Enciende para activar Arrebato, lo que aumenta el daño infligido por <shuzhi>25</> seg.\r\nMientras que Arrebato está activo, las habilidades activan Furia del Viento, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>; <shuzhi>suspende fuerte</> al objetivo y crea una corriente de aire en el suelo. Al estar en la corriente, evadir no tiene costo. Enfriamiento: <shuzhi>{2}</> seg (enfriamiento de Furia del Viento: <shuzhi>10</> seg).",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
-					"id": "GA_FPlayerHammerBigSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Embate Arrollador",
-					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y <shuzhi>suspende fuerte</> a los objetivos cercanos, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. También invoca una maza que cae sobre los objetivos cercanos, lo que inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
-					"id": "GA_FPlayerHammerChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "hammer_ice"
-	},
-	"bow_physic": {
-		"name": "Pluma de Ruiseñor",
-		"description": "Perfecta para una noche gris.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Physics",
-		"type": "Bow",
-		"weaponUpgradeId": "physic_sr_tupo_BD",
-		"wc": "DPS",
-		"advanceID": "bow_physic_sr_star",
-		"avatar": "imitation_16",
-		"mats": {
-			"Item_Mine_physic": 28,
-			"Item_Mine_physic_02": 42,
-			"Item_breakthrough_B2": 42,
-			"Item_breakthrough_D2": 42,
-			"Item_Mine_physic_03": 22,
-			"Item_breakthrough_B3": 22,
-			"Item_breakthrough_D3": 22,
-			"Item_breakthrough_B1": 25,
-			"Item_breakthrough_D1": 23
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Crít",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Grave**:",
-			"description": "Cuando el arma esté completamente cargada, el siguiente ataque dejará graves a los enemigos por **7**seg, lo que aumenta su daño recibido un **20%** y les inflige daño igual a **100.00%** del ATQ. Al jugar **partidas en equipo**, aumenta el daño físico infligido a objetivos graves un **20%** adicional."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 6,
-				"need": null
-			},
-			{
-				"description": "Restaura 1 intento de evasión cada cinco ataques normales o después de usar **Disparo Perforante**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de ATQ base del arma actual en un **10%**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Aumenta el daño por tiro en la cabeza en un **30%**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de ATQ base del arma actual en un **20%**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Las habilidades de evasión infligen un efecto grave en los objetivos por **7** segundos.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Aumenta la tasa de críticos a objetivos graves en un **30%** y el daño crítico en un **50%**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Reflejos Rápidos",
-					"description": "Mientras estás en el suelo, tira del arco repetidamente para atacar 5 veces.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.\r\nQuinto ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y hace retroceder un poco al objetivo.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Melee_R"
-				},
-				{
-					"name": "Flecha Cargada",
-					"description": "Pulsa y mantén pulsado el ataque normal para cargar un ataque. Inflige daño base igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>, y <shuzhi>50%</> más por cada <shuzhi>1</> seg de carga, hasta <shuzhi>3</> seg. Inflige el doble de daño al hacer un tiro en la cabeza o al golpear el punto débil de un enemigo, y derriba al objetivo (los tiros en la cabeza no son efectivos contra los nómadas).",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
-				},
-				{
-					"name": "Lluvia de Flechas",
-					"description": "Después de cualquier ataque normal, mantén pulsado el botón de ataque normal para desatar Lluvia de Flechas que inflige hasta el <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> de daño de área a los objetivos.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Branch_R"
-				},
-				{
-					"name": "Descarga Aérea",
-					"description": "Mientras estás en el aire, utiliza el ataque normal para atacar 4 veces seguidas en el aire.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Enfriamiento: 15 seg. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerBowEvadeNew_Evade_R"
-				},
-				{
-					"name": "Flecha Equipada",
-					"description": "Pulsa el ataque tras esquivar para activar una Flecha Equipada, que hacer retroceder un poco al objetivo e inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Disparo Perforante",
-					"description": "Retrocede en una voltereta y realiza <shuzhi>1</> disparo perforante hacia adelante, lo que inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder al objetivo. <shuzhi>{2}</> seg de enfriamiento.",
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Ráfaga Explosiva",
-					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y desata Ráfaga Explosiva sobre el objetivo, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
-					"id": "GA_FPlayerBowChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "bow_physic"
-	},
-	"spear_thunder": {
-		"name": "Alabarda de Trueno",
-		"description": "Una alabarda imbuida del poder del trueno. Es excelente para infligir daño de ráfaga, y su tamaño la hace perfecta para una diversidad de alcances.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Thunder",
-		"type": "Spear",
-		"weaponUpgradeId": "thunder_sr_tupo_AC",
-		"wc": "DPS",
-		"advanceID": "spear_thunder_sr_star",
-		"avatar": "imitation_4",
-		"mats": {
-			"Item_Mine_thunder": 28,
-			"Item_Mine_thunder_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_thunder_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Ataque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Resistencia",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PS",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Eléctrico**:",
-			"description": "Cuando el arma está totalmente cargada, el siguiente ataque **paraliza fuerte** a los objetivos por **1**seg y los electrifica por **6**seg, lo que elimina todas sus mejoras e inflige daño igual a **106.00%** del ATQ. Los objetivos electrificados no pueden recibir ninguna mejora durante los próximos **6**seg."
-		},
-		"advancements": [
-			{
-				"charge": 7,
-				"shatter": 11,
-				"need": null
-			},
-			{
-				"description": "Aumenta la destrucción en un **15%**. Luego de destruir el escudo del objetivo, aumenta el ATQ de todos los compañeros de grupo en un **15%** durante **30** segundos. No puede acumularse.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de los PS base del arma actual en un **10%**.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Luego de golpear un objetivo con **Cazalunas**, reduce su ATQ en un **5%** y aumenta el ATQ del usuario en un **5%** durante **15** segundos (el efecto puede acumularse hasta **3** veces si se golpean varios objetivos). El efecto se duplica para los objetivos graves.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Aumenta el crecimiento de ATQ base del arma actual en un **20%**.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Duración de aturdimiento doble para las habilidades de evasión.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Las habilidades de descarga infligen más daño cuanto más lejos se desplazan, hasta **100%** de daño adicional.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Arremetida",
-					"description": "Mientras estás en el suelo, blande la lanza larga para atacar 5 veces seguidas.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder un poco al objetivo.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y hace retroceder un poco al objetivo.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y hace retroceder un poco al objetivo.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y hace retroceder un poco al objetivo.\r\nQuinto ataque: Inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y hace retroceder al objetivo una larga distancia.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
-				},
-				{
-					"name": "Golpe de Salto",
-					"description": "Mientras estás en el aire, utiliza el ataque normal para atacar 4 veces seguidas en el aire.\r\nPrimer ataque: Inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.\r\nSegundo ataque: Inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>.\r\nTercer ataque: Inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>.\r\nCuarto ataque: Inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
-					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
-				},
-				{
-					"name": "Choque Propulsor",
-					"description": "Pulsa y mantén pulsado el ataque normal mientras estás en el aire (pulsa cuando haya un objetivo disponible), o utiliza el ataque normal mientras escalas, saltas hacia atrás o utilizas el propulsor para activar Choque Propulsor.\r\nMientras caes, inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> en cada impacto. Al aterrizar, inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y derriba al objetivo.\r\nCuanto mayor sea la altitud al activar el ataque, mayor será el daño infligido, hasta <shuzhi>600%</> de daño.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
-					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
-				},
-				{
-					"name": "Ráfaga de Lanza",
-					"description": "Luego del tercer ataque normal, mantén pulsado el botón de ataque normal para activar Ráfaga de Lanza.\r\nAl impactar, <shuzhi>suspende fuerte</> al objetivo e inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Pulsa de nuevo para continuar atacando al objetivo en el aire, lo que inflige hasta <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> de daño a un solo objetivo.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
-					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
-				},
-				{
-					"name": "Ataque Sorpresa",
-					"description": "Lanza una larga estocada con la lanza larga e inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Patada Voladora",
-					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Patada Voladora.\r\nAl golpear al objetivo, infliges daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>, lo haces retroceder considerablemente y <shuzhi>aturdes</> a los enemigos por <shuzhi>1</> seg, ó <shuzhi>0.5</> seg contra nómadas.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
-					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
-				},
-				{
-					"name": "Embestida Aplastante",
-					"description": "Usa tu ataque normal durante el breve periodo tras evadir para activar Embestida Aplastante.\r\nAzota la lanza larga contra el suelo, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y <shuzhi>suspende fuerte</> a los objetivos.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
-					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
-				},
-				{
-					"name": "Evasión",
-					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los enemigos dentro del área. Te vuelves inmune a la conmoción mientras evades durante <shuzhi>0.5</> seg.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
-				}
-			],
-			"skill": [
-				{
-					"name": "Cazalunas",
-					"description": "<shuzhi>Suspende fuerte</> a los objetivos y quedas en el aire, lo que inflige daño equivalente al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Enfriamiento: <shuzhi>25</> seg.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
-					"id": "GA_FPlayerSpearSkillThu_SSR"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Trueno",
-					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</>; luego, saltas al aire y lanzas una Lanza de Trueno que explota al impactar contra el suelo, lo que inflige un <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> de daño y <shuzhi>paraliza contundentemente</> a los objetivos por <shuzhi>1</> seg.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
-					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "Cuchillas Relampagueantes",
@@ -2241,7 +485,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "digger_thunder"
 	},
@@ -2491,7 +735,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "bigsword_ice"
 	},
@@ -2699,7 +943,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "bow_ice"
 	},
@@ -2935,7 +1179,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "stave_ice"
 	},
@@ -3174,7 +1418,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "sickle_fire"
 	},
@@ -3397,7 +1641,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Intuición Argenta",
@@ -3650,7 +1894,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.5",
 		"id": "sword_physic"
 	},
@@ -3872,7 +2116,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "darts_physic"
 	},
@@ -4096,7 +2340,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "cube_fire"
 	},
@@ -4306,7 +2550,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "dgun_thunder"
 	},
@@ -4516,7 +2760,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "shieldaxe_fire"
 	},
@@ -4764,7 +3008,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Arboleda Serena",
@@ -5070,7 +3314,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Melodía Tranquila",
@@ -5345,7 +3589,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Escarcha de Verano",
@@ -5602,7 +3846,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Shirli",
@@ -5844,7 +4088,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "frigg_ice"
 	},
@@ -6074,7 +4318,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Canción carmesí",
@@ -6335,7 +4579,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Blanco Puro Definitivo",
@@ -6596,7 +4840,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Sombra Estía Cool",
@@ -6870,7 +5114,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.2",
 		"id": "tianlang_thunder"
 	},
@@ -7134,7 +5378,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.2",
 		"id": "arm_physic"
 	},
@@ -7384,7 +5628,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Eclipse Luminoso",
@@ -7656,7 +5900,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Resplandor platino",
@@ -7947,7 +6191,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.5",
 		"id": "killknife_physic"
 	},
@@ -8207,7 +6451,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Hablando en Sueños",
@@ -8443,7 +6687,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Sin Miedo al Sol",
@@ -8762,7 +7006,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Refinamiento de Tintero",
@@ -9045,7 +7289,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Maravilla de Borona",
@@ -9339,7 +7583,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.2",
 		"id": "feise_fire"
 	},
@@ -9606,7 +7850,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Chocolate Blanco Esponjoso",
@@ -9877,7 +8121,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Flor de marfil",
@@ -10145,7 +8389,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.4",
 		"id": "yoyo_ice"
 	},
@@ -10448,7 +8692,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.0",
 		"id": "yulan_ice"
 	},
@@ -10707,7 +8951,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Zeke",
@@ -11053,7 +9297,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Honor estelar",

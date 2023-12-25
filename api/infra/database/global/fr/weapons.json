@@ -1,1091 +1,4 @@
 {
-	"spear_ice": {
-		"name": "Lance givrée",
-		"description": "Une arme répandue parmi les habitants du Champ de neige de Warren. Infusée de givre pour refléter l'atmosphère locale. Elle est très populaire, car très efficace sans être chère.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Ice",
-		"type": "Spear",
-		"weaponUpgradeId": "ice_r_tupo_AD",
-		"wc": "DPS",
-		"advanceID": "spear_ice_r_star",
-		"mats": {
-			"Item_Mine_ice": 15,
-			"Item_Mine_ice_02": 25,
-			"Item_breakthrough_A2": 25,
-			"Item_breakthrough_D2": 25,
-			"Item_Mine_ice_03": 14,
-			"Item_breakthrough_A3": 14,
-			"Item_breakthrough_D3": 14,
-			"Item_breakthrough_A1": 13,
-			"Item_breakthrough_D1": 12
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Résistance",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Foudre**:",
-			"description": "Lorsque l'arme est entièrement chargée, la prochaine attaque **gèle longuement** les cibles pendant **2**secondes et leur inflige Gelure pendant **6**secondes. Briser la coquille de glace inflige des dégâts équivalant à **67.00%** de l'ATQ. Lorsque la cible subit Gelure, son taux de recharge d'arme est réduit de **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 5.6,
-				"shatter": 6.9,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Percée",
-					"description": "Lorsque vous êtes au sol, brandissez la lance longue pour attaquer 5 fois de suite.\r\nPremière attaque : vous infligez des dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repoussez la cible sur une courte distance.\r\nDeuxième attaque : vous infligez des dégâts correspondant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>, et repoussez la cible sur une courte distance.\r\nTroisième attaque : vous infligez des dégâts correspondant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>, et repoussez la cible sur une courte distance.\r\nQuatrième attaque : vous infligez des dégâts correspondant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>, et repoussez la cible sur une courte distance.\r\nCinquième attaque : vous infligez des dégâts correspondant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</>, et repoussez la cible sur une distance importante.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"id": "GA_FPlayerSpearMelee_Melee_R"
-				},
-				{
-					"name": "Coup sauté",
-					"description": "Lorsque vous êtes dans les airs, utilisez l'attaque normale pour attaquer 4 fois de suite.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
-					"id": "GA_FPlayerSpearMelee_AirAttack_R"
-				},
-				{
-					"name": "Frappe écrasante",
-					"description": "Appuyez et maintenez Attaque normale en l'air (appuyez quand une cible est disponible), ou utilisez l'attaque normale lorsque vous escaladez, sautez en arrière ou utilisez le jetpack pour déclencher Frappe écrasante.\r\nLorsque vous tombez, vous infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à chaque coup. À l'atterrissage, vous infligez des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>, et suspendez la cible.\r\nInflige une plus grande quantité de dégâts en fonction de l'altitude de l'utilisateur au moment où l'attaque est déclenchée, jusqu'à <shuzhi>600%</> de dégâts.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
-					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
-				},
-				{
-					"name": "Déluge de lances",
-					"description": "Après la troisième attaque normale, maintenez Attaque normale pour déclencher Déluge de lances.\r\nLorsque vous touchez la cible, vous la <shuzhi>suspendez longuement</>, lui infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Appuyez à nouveau pour continuer à attaquer la cible dans les airs, et infliger jusqu'à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> de dégâts à une seule cible.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
-					"id": "GA_FPlayerSpearMelee_Branch_R"
-				},
-				{
-					"name": "Attaque furtive",
-					"description": "Vous projetez la lance longue vers l'avant et infligez des dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSpearMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Coup de pied volant",
-					"description": "Utilisez l'attaque normale pendant la courte fenêtre d'esquive parfaite (utilisez un bouton directionnel avant d'esquiver) pour déclencher Coup de pied volant.\r\nLorsque vous touchez la cible, vous lui infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repoussez les ennemis sur une grande distance, et vous les <shuzhi>étourdissez</> pendant <shuzhi>1</> seconde ou pendant <shuzhi>0,5</> seconde aux Explorateurs.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
-					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
-				},
-				{
-					"name": "Frappe en fente",
-					"description": "Utilisez l'attaque normale rapidement après une esquive pour déclencher Frappe en fente.\r\nHeurte le sol avec la lance longue, infligeant aux cibles des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et les <shuzhi>suspendant longuement dans les airs</>.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
-					"id": "GA_FPlayerSpearEvade_BackAttack_R"
-				},
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSpearEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Chasselune",
-					"description": "<shuzhi>Suspend longuement</> la cible et vous fait décoller du sol, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>{2}</> secondes.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
-					"id": "GA_FPlayerSpearSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Danse de la lance",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou que <red>Fantaisie</> est déclenchée, <shuzhi>supprime toutes les altérations sur l'Explorateur</>, et attrape la cible au moment où vous changez d'arme pour passer à celle-ci, avant de la secouer à de nombreuses reprises, lui infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Le dernier coup <shuzhi>suspend longuement</> la cible.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
-					"id": "GA_FPlayerSpearChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "spear_ice"
-	},
-	"digger_physic": {
-		"name": "Lame de combat",
-		"description": "Une arme basique développée par Banges Tech. Forgée dans un alliage spécial, elle est légère, souple et facile à manier.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Physics",
-		"type": "DoubleSword",
-		"weaponUpgradeId": "physic_r_tupo_BC",
-		"wc": "DPS",
-		"advanceID": "digger_physic_r_star",
-		"mats": {
-			"Item_Mine_physic": 15,
-			"Item_Mine_physic_02": 25,
-			"Item_breakthrough_B2": 25,
-			"Item_breakthrough_C2": 25,
-			"Item_Mine_physic_03": 14,
-			"Item_breakthrough_B3": 14,
-			"Item_breakthrough_C3": 14,
-			"Item_breakthrough_B1": 13,
-			"Item_breakthrough_C1": 12
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Crit",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Blessure grave**:",
-			"description": "Lorsque l'arme est entièrement chargée, la prochaine attaque inflige une blessure grave aux ennemis pendant **7** secondes, augmentant leurs dégâts subis de **20%** et infligeant des dégâts équivalant à **63.00%** de l'ATQ. En **jeu en équipe**, les cibles gravement blessées subissent **20%** de dégâts physiques supplémentaires."
-		},
-		"advancements": [
-			{
-				"charge": 9.6,
-				"shatter": 3.2,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Lames jumelles",
-					"description": "Lorsque vous êtes au sol, brandissez la paire de lames doubles pour lancer jusqu'à 5 attaques consécutives.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et repousse la cible sur une courte distance.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et repousse la cible sur une courte distance.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et repousse la cible sur une courte distance.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et repousse la cible sur une courte distance.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et repousse la cible sur une courte distance.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
-					"id": "GA_FPlayerDsMelee_Melee_R"
-				},
-				{
-					"name": "Déluge céleste",
-					"description": "Lorsque vous êtes dans les airs ou après un saut, utilisez l'attaque normale pour attaquer 4 fois de suite.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
-					"id": "GA_FPlayerDsMelee_AirAttack_R"
-				},
-				{
-					"name": "Fente rapide",
-					"description": "Après la troisième attaque normale, maintenez Attaque normale pour déclencher Fente rapide.\r\nFrappe la cible et la <shuzhi>suspend longuement</>, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
-					"id": "GA_FPlayerDsMelee_Branch_R"
-				},
-				{
-					"name": "Frappe spirale",
-					"description": "Appuyez et maintenez Attaque normale en l'air (appuyez quand une cible est disponible), ou utilisez l'attaque normale lorsque vous escaladez, sautez en arrière ou utilisez le jetpack pour déclencher Frappe spirale.\r\nEn descendant, vous infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à chaque coup.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
-					"id": "GA_FPlayerDsMelee_JumpAttack_R"
-				},
-				{
-					"name": "Attaque furtive",
-					"description": "Accroupissez-vous et approchez-vous de l'ennemi par-derrière, puis utilisez l'attaque normale pour déclencher Attaque furtive et infliger des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerDsMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Lames volantes",
-					"description": "Utilisez l'attaque normale pendant la courte fenêtre d'esquive parfaite (utilisez un bouton directionnel avant d'esquiver) pour déclencher Lames volantes.\r\nAu contact, <shuzhi>suspend longuement la cible</> et inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Continuez à appuyer pour lancer jusqu'à <shuzhi>6</> lames volantes de plus, chacune infligeant des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
-					"id": "GA_FPlayerDsEvade_FrontAttack_R"
-				},
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. Temps de recharge : 15 secondes. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerDsEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Lames boomerang",
-					"description": "Envoyez <shuzhi>6</> lames boomerang dans toutes les directions, chacune infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>{2}</> secondes.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
-					"id": "GA_FPlayerDSSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Lames orbitales",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou que <red>Fantaisie</> est déclenchée, changer d'arme pour utiliser celle-ci <shuzhi>supprime toutes les altérations sur l'Explorateur</> et déclenche Lames orbitales, qui inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. <shuzhi>2</> autres lames volantes tournent autour de l'Explorateur pour infliger des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles qu'elles touchent.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
-					"id": "GA_FPlayerDsChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "digger_physic"
-	},
-	"sword_thunder": {
-		"name": "Lame EM",
-		"description": "Le tout premier projet d'omnium électromagnétique. Cette lame est facile à manier, et est très appréciée des Explorateurs qui ne sont pas de très grands combattants.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Thunder",
-		"type": "Sword",
-		"weaponUpgradeId": "thunder_r_tupo_BD",
-		"wc": "DPS",
-		"advanceID": "sword_thunder_r_star",
-		"mats": {
-			"Item_Mine_thunder": 15,
-			"Item_Mine_thunder_02": 25,
-			"Item_breakthrough_B2": 25,
-			"Item_breakthrough_D2": 25,
-			"Item_Mine_thunder_03": 14,
-			"Item_breakthrough_B3": 14,
-			"Item_breakthrough_D3": 14,
-			"Item_breakthrough_B1": 13,
-			"Item_breakthrough_D1": 12
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Résistance",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Foudre**:",
-			"description": "Quand une arme est entièrement chargée, la prochaine attaque **paralyse lourdement** les cibles pendant **1**seconde et les électrocute pendant **6**secondes. Annule tous leurs effets bénéfiques et inflige des dégâts équivalant à **70.00%** de l'ATQ. Les cibles électrocutées ne peuvent recevoir aucun effet bénéfique pendant les **6**secondes suivantes."
-		},
-		"advancements": [
-			{
-				"charge": 8.8,
-				"shatter": 3.6,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Taillade rapide",
-					"description": "Lorsque vous êtes au sol, attaquez 5 fois de suite avec la lame.\r\nPremière attaque : vous infligez des dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repoussez la cible sur une courte distance.\r\nDeuxième attaque : vous infligez des dégâts correspondant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>, et repoussez la cible sur une courte distance.\r\nTroisième attaque : vous infligez des dégâts correspondant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>, et repoussez la cible sur une courte distance.\r\nQuatrième attaque : vous infligez des dégâts correspondant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>, et repoussez la cible sur une courte distance.\r\nCinquième attaque : vous infligez des dégâts correspondant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</>, et <shuzhi>projetez</> la cible.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
-					"id": "GA_FPlayerSwordMelee_Melee_R"
-				},
-				{
-					"name": "Coup sauté",
-					"description": "Lorsque vous êtes dans les airs, utilisez l'attaque normale pour attaquer 4 fois de suite.\r\nPremière attaque : inflige des dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts correspondant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts correspondant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts correspondant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>, ainsi qu'un <shuzhi>renversement</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
-					"id": "GA_FPlayerSwordMelee_AirAttack_R"
-				},
-				{
-					"name": "de mer-sable",
-					"description": "Pressez et maintenez appuyé le bouton d'attaque normale après des attaques normales pour déclencher Cyclone.\r\nLorsque vous touchez la cible, vous la suspendez et infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à une seule cible.",
-					"operations": [
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
-					"id": "GA_FPlayerSwordMelee_Branch_R"
-				},
-				{
-					"name": "Lame plongeante",
-					"description": "Appuyez et maintenez Attaque normale lorsque vous êtes dans les airs, ou utilisez l'attaque normale lorsque vous escaladez, sautez en arrière ou utilisez le jetpack pour déclencher Lame plongeante.\r\nLorsque vous tombez, vous infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à chaque coup sur la cible. À l'atterrissage, vous infligez des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles proches et vous les repoussez.\r\nInflige une plus grande quantité de dégâts en fonction de l'altitude de l'utilisateur au moment où l'attaque est déclenchée, jusqu'à <shuzhi>600%</> de dégâts.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
-					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
-				},
-				{
-					"name": "Attaque furtive",
-					"description": "Accroupissez-vous et approchez-vous de l'ennemi par-derrière, puis utilisez l'attaque normale pour déclencher Attaque furtive et infliger des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSwordMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. Temps de recharge : 15 secondes. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSwordEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Itinérance",
-					"description": "Circulez entre les cibles et infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à <shuzhi>5</> cibles max. Le dernier coup suspend la cible. Itinérance vous immunise contre l'hébétement. Les dégâts infligés à la même cible sont réduits de <shuzhi>40%</> à chaque fois. Temps de recharge : <shuzhi>{2}</> secondes.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
-					"id": "GA_FPlayerSwordSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Déluge effréné",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou que <red>Fantaisie</> est déclenchée, en passant à cette arme, <shuzhi>supprime toutes les altérations sur l'Explorateur</>. Vous foncez sur la cible et la <shuzhi>suspendez longuement</>, lui infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
-					"id": "GA_FPlayerSwordChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "sword_thunder"
-	},
-	"bow_fire": {
-		"name": "Arc composite",
-		"description": "Une arme communément utilisée par les chasseurs du champ de neige. Facile à manier et d'une très grande précision. Grâce à la publicité, elle a conquis plus de la moitié du marché civil.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Flame",
-		"type": "Bow",
-		"weaponUpgradeId": "fire_r_tupo_AC",
-		"wc": "DPS",
-		"advanceID": "bow_fire_r_star",
-		"mats": {
-			"Item_Mine_fire": 15,
-			"Item_Mine_fire_02": 25,
-			"Item_breakthrough_A2": 25,
-			"Item_breakthrough_C2": 25,
-			"Item_Mine_fire_03": 14,
-			"Item_breakthrough_A3": 14,
-			"Item_breakthrough_C3": 14,
-			"Item_breakthrough_A1": 13,
-			"Item_breakthrough_C1": 12
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Crit",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Feu**:",
-			"description": "Lorsque l'arme est complètement chargée, la prochaine attaque embrasera la cible pendant **8** secondes, infligeant des dégâts équivalant à **27.00%** de l'ATQ chaque seconde. L'efficacité des soins des cibles embrasées est réduite de **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 8,
-				"shatter": 4.8,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Attaque normale",
-					"description": "Lorsque vous êtes au sol, utilisez l'arc pour attaquer 5 fois de suite.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et repousse la cible sur une courte distance.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Melee"
-				},
-				{
-					"name": "Flèche chargée",
-					"description": "Appuyez et maintenez Attaque normale pour charger une attaque. Vous infligez des dégâts de base équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et <shuzhi>50%</> de plus chaque fois que vous passez <shuzhi>1</> seconde à charger, jusqu'à <shuzhi>3</> secondes. Vous doublez vos dégâts en cas de tir à la tête ou lorsque vous atteignez le point faible de l'ennemi, et vous renversez la cible (les tirs à la tête ne fonctionnent pas sur les Explorateurs).",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
-				},
-				{
-					"name": "Pluie de flèches",
-					"description": "Après une attaque normale, maintenez Attaque normale pour déclencher Pluie de flèches, qui inflige aux cibles jusqu'à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> dégâts de zone.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Branch"
-				},
-				{
-					"name": "Salve aérienne",
-					"description": "Lorsque vous êtes dans les airs, utilisez l'attaque normale pour attaquer 4 fois de suite.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_AirAttack"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. Temps de recharge : 15 secondes. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerBowEvadeNew_Evade"
-				},
-				{
-					"name": "Flèche piégée",
-					"description": "Appuyez sur Attaque après une esquive pour déclencher Flèche piégée, qui repousse la cible sur une courte distance et inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
-				}
-			],
-			"skill": [
-				{
-					"name": "Tir perçant",
-					"description": "Vous faites un salto arrière et tirez <shuzhi>1</> tir perçant vers l'avant, qui inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repousse la cible. Temps de recharge : <shuzhi>{2}</> secondes.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Barrage explosif",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou que <red>Fantaisie</> est déclenchée, <shuzhi>supprime toutes les altérations sur l'Explorateur</>, et déclenche un Barrage explosif sur la cible au moment où vous changez d'arme pour utiliser celle-ci, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
-					"id": "GA_FPlayerBowChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "bow_fire"
-	},
-	"stave_thunder": {
-		"name": "Bâton des balafres",
-		"description": "Un bâton mécanique avec une rune en forme de croix gravée dessus. Capable de pardonner les péchés ou d'infliger des punitions.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Thunder",
-		"type": "Staves",
-		"weaponUpgradeId": "thunder_sr_tupo_AC",
-		"wc": "SUP",
-		"advanceID": "stave_thunder_sr_star",
-		"avatar": "imitation_14",
-		"mats": {
-			"Item_Mine_thunder": 28,
-			"Item_Mine_thunder_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_thunder_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Résistance",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Foudre**:",
-			"description": "Quand une arme est entièrement chargée, la prochaine attaque **paralyse lourdement** les cibles pendant **1**seconde et les électrocute pendant **6**secondes. Annule tous leurs effets bénéfiques et inflige des dégâts équivalant à **106.00%** de l'ATQ. Les cibles électrocutées ne peuvent recevoir aucun effet bénéfique pendant les **6**secondes suivantes."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 4,
-				"need": null
-			},
-			{
-				"description": "Après l'utilisation d'une compétence d'esquive, soigne les membres du groupe dans un rayon de **10**m d'un nombre de PV égal à **100%** de l'ATQ.",
-				"charge": 10,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Augmente de **10%** la croissance de PV de base actuelle de l'arme.",
-				"charge": 10,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Les attaques normales tirent aussi deux missiles, chacun infligeant à la cible des dégâts équivalant à **5%** de l'ATQ et régénérant **5** points de recharge d'arme.",
-				"charge": 11.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Augmente de **20%** la croissance de PV de base actuelle de l'arme.",
-				"charge": 11.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Augmente de **20%** la vitesse d'obtention d'une recharge d'arme (ne s'applique pas aux attaques des missiles).",
-				"charge": 13.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Confère à tous les membres du groupe à portée une réduction des dégâts de **60%** lorsqu'une compétence dissipe les effets de contrôle sur la cible.",
-				"charge": 13.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Attaque normale",
-					"description": "Lorsque vous êtes au sol, brandissez le bâton pour attaquer 5 fois de suite.\r\nPremière attaque : vous infligez des dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : vous infligez des dégâts correspondant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : vous infligez des dégâts correspondant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : vous infligez des dégâts correspondant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.\r\nCinquième attaque : vous infligez des dégâts correspondant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
-					"id": "GA_FPlayerStavesMelee_Melee"
-				},
-				{
-					"name": "Barrage aérien",
-					"description": "Lorsque vous êtes dans les airs ou après avoir sauté une fois, utilisez l'attaque normale pour attaquer 5 fois de suite.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
-					"id": "GA_FPlayerStavesMelee_AirAttack"
-				},
-				{
-					"name": "Tombelune",
-					"description": "Appuyez et maintenez Attaque normale lorsque vous êtes dans les airs pour déclencher Tombelune.\r\nÀ l'atterrissage, vous infligez des dégâts toutes les <shuzhi>0,2</> seconde, pour un total de dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
-					"id": "GA_FPlayerStavesMelee_JumpAttack"
-				},
-				{
-					"name": "Attaque concentrée",
-					"description": "Après la troisième attaque normale, maintenez Attaque normale pour déclencher des attaques ramifiées, consommant <shuzhi>300</> points d'endurance.\r\nPremière attaque : attire les ennemis devant l'utilisateur, les <shuzhi>suspendant</> et leur infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> chaque <shuzhi>0,3</> seconde (jusqu'à <shuzhi>4</> fois).\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> à l'emplacement ciblé et aux ennemis proches chaque <shuzhi>0,3</> seconde.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
-					"id": "GA_FPlayerStavesMelee_Branch"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. Temps de recharge : 15 secondes. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerStavesEvade_Evade"
-				},
-				{
-					"name": "Déferlement",
-					"description": "Utilisez l'attaque normale pendant la courte fenêtre d'esquive parfaite (utilisez un bouton directionnel avant d'esquiver) pour déclencher Déferlement.\r\nChaque impulsion d'énergie inflige aux cibles des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nConfère <shuzhi>75</> points de recharge d'arme au moment de l'utilisation.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
-					"id": "GA_FPlayerStavesEvade_FrontAttack"
-				},
-				{
-					"name": "Tesseract",
-					"description": "Utilisez l'attaque normale rapidement après une esquive pour déclencher Explosion évasive.\r\nProjette un orbe d'énergie vers l'avant, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles sur sa trajectoire chaque <shuzhi>0,3</> seconde (jusqu'à 5 fois).\r\nConfère <shuzhi>75</> points de recharge d'arme au moment de l'utilisation.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
-					"id": "GA_FPlayerStavesEvade_BackAttack"
-				}
-			],
-			"skill": [
-				{
-					"name": "Sanctuaire",
-					"description": "Vous créez un bouclier d'énergie à l'endroit où se trouve l'Explorateur. Ce bouclier applique des soins aux alliés correspondant à <shuzhi>{3}%</> de l'ATQ + <shuzhi>{4}</> toutes les secondes, et réduit les dégâts subis de <shuzhi>{0}%</> pendant <shuzhi>10</> secondes. Temps de recharge : <shuzhi>60</> secondes.",
-					"tags": [
-						"Support"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
-					"id": "GA_FPlayerStavesSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Délivrance rapide",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou lorsque <red>Fantaisie</> est déclenchée, <shuzhi>supprime toutes les altérations sur l'Explorateur</> au moment où vous changez d'arme pour passer à celle-ci, et le bâton continue à éliminer les altérations sur l'Explorateur et ses alliés, tout en guérissant les Explorateurs proches et leurs alliés de <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> PV pendant <shuzhi>7</> secondes.",
-					"tags": [
-						"Support"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
-					"id": "GA_FPlayerStavesChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "stave_thunder"
-	},
-	"cannon_ice": {
-		"name": "L'Exterminateur",
-		"description": "L'arme à feu la plus redoutable jamais créée, aussi connue sous le nom de tourelle mobile.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Ice",
-		"type": "Cannon",
-		"weaponUpgradeId": "ice_sr_tupo_AD",
-		"wc": "DPS",
-		"advanceID": "cannon_ice_sr_star",
-		"avatar": "imitation_15",
-		"mats": {
-			"Item_Mine_ice": 28,
-			"Item_Mine_ice_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_D2": 42,
-			"Item_Mine_ice_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_D3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_D1": 23
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Résistance",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Foudre**:",
-			"description": "Lorsque l'arme est entièrement chargée, la prochaine attaque **gèle longuement** les cibles pendant **2**secondes et leur inflige Gelure pendant **6**secondes. Briser la coquille de glace inflige des dégâts équivalant à **111.00%** de l'ATQ. Lorsque la cible subit Gelure, son taux de recharge d'arme est réduit de **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 10,
-				"need": null
-			},
-			{
-				"description": "Chaque attaque normale réussie accroît les dégâts de **1%** pendant **2**secondes (cumulable jusqu'à **15**fois). Accroît le nombre de munitions à **60**.",
-				"charge": 10,
-				"shatter": 10,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Augmente de **10%** la croissance d'ATQ de base de l'arme actuelle.",
-				"charge": 10,
-				"shatter": 10,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Accroît de **30%** les dégâts des attaques normales et la capacité de fracture dans les **10**secondes après avoir changé d'arme. Temps de recharge: **25**secondes. Accroît le nombre de munitions à **80**.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Augmente de **20%** la croissance d'ATQ de base de l'arme actuelle.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Réduit de **2**secondes le temps de recharge des attaques normales en mode Tourelle.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Accroît de **60%** les dégâts des attaques normales et la capacité de fracture dans les **10**secondes après avoir changé d'arme. Temps de recharge: **25**secondes.",
-				"charge": 10,
-				"shatter": 16,
-				"need": "cannon_ice_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Attaque normale",
-					"description": "Appuyez sur Attaque normale pour entrer en mode Visée. Maintenez Attaque normale pour tirer en continu, jusqu'à <shuzhi>40</> cartouches. Chaque tir inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Vous doublez vos dégâts en cas de tir à la tête ou lorsque vous atteignez le point faible d'un ennemi, et renversez la cible (les tirs à la tête ne fonctionnent pas sur les Explorateurs).",
-					"operations": [
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
-					"id": "GA_FPlayerCannonMelee_Melee"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. Temps de recharge : 15 secondes. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerCannonEvade_Evade"
-				}
-			],
-			"skill": [
-				{
-					"name": "Tourelle",
-					"description": "Vous activez le mode Tourelle et envoyez de grands orbes d'énergie. Chacun d'entre eux inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et projette la cible dans les airs. Lors de l'installation de la tourelle, vous êtes immunisé contre l'hébétement et les effets de contrôle. Temps de recharge : <shuzhi>{2}</> secondes.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
-					"id": "GA_FPlayerCannonSkillNew"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Rayon arctique",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou que <red>Fantaisie</> est déclenchée, <shuzhi>supprime toutes les altérations sur l'Explorateur</>, et tire un rayon arctique au moment où vous changez d'arme pour passer à celle-ci, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, ainsi qu'un effet de <shuzhi>gel long</> de <shuzhi>3</> secondes. Réduit aussi de <shuzhi>50%</> la résistance au givre de la cible pendant <shuzhi>10</> secondes.",
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
-					"id": "GA_FPlayerCannonChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "cannon_ice"
-	},
 	"chainsaw_physic": {
 		"name": "Mini ouragan",
 		"description": "Bien trop dangereuse pour n'être qu'un jouet. Un enfant n'aurait aucunement pu mettre la main dessus de manière légale. Qui sait quel genre de technologie a permis sa reconversion… Elle a peut-être été récupérée quelque part hors des sentiers battus.",
@@ -1345,678 +258,9 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
-	},
-	"hammer_ice": {
-		"name": "Pilon",
-		"description": "Personne ne veut se retrouver du mauvais côté de ce merlin.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Ice",
-		"type": "Hammer",
-		"weaponUpgradeId": "ice_sr_tupo_BC",
-		"wc": "Tank",
-		"advanceID": "hammer_ice_sr_star",
-		"avatar": "imitation_2",
-		"mats": {
-			"Item_Mine_ice": 28,
-			"Item_Mine_ice_02": 42,
-			"Item_breakthrough_B2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_ice_03": 22,
-			"Item_breakthrough_B3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_B1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Résistance",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Foudre**:",
-			"description": "Lorsque l'arme est entièrement chargée, la prochaine attaque **gèle longuement** les cibles pendant **2**secondes et leur inflige Gelure pendant **6**secondes. Briser la coquille de glace inflige des dégâts équivalant à **111.00%** de l'ATQ. Lorsque la cible subit Gelure, son taux de recharge d'arme est réduit de **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 6,
-				"shatter": 10,
-				"need": null
-			},
-			{
-				"description": "Provoque les cibles à proximité après avoir pris cette arme, empêchant **1**instance de dégâts dans les **8**prochaines secondes et confère Hypercorps pendant les **8**prochaines secondes. Temps de recharge: **15**secondes.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Augmente de **10%** la croissance de PV de base actuelle de l'arme.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Après avoir subi des dégâts, réduisez tous les dégâts reçus de **50%** pendant les **6**prochaines secondes. Temps de recharge: **20**secondes.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Augmente de **20%** la croissance de PV de base actuelle de l'arme.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Les attaques normales **étourdissent** les cibles pendant **2,5**secondes. Temps de recharge: **20**secondes.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Les compétences de décharge infligent **10%** de dégâts en plus aux cibles et accroissent les dégâts de givre de **10%** supplémentaires pendant **25**secondes.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Attaque normale",
-					"description": "Lorsque vous êtes au sol, brandissez le merlin pour attaquer 4 fois d'affilée.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et repousse la cible sur une courte distance.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et repousse la cible sur une courte distance.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et repousse la cible sur une courte distance.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et projette la cible.\r\nPendant qu'Explosion de rage est active, brandissez le merlin pour attaquer 4 fois d'affilée.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et repousse la cible sur une courte distance.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{10}%</> de l'ATQ + <shuzhi>{11}</> et repousse la cible sur une courte distance.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{12}%</> de l'ATQ + <shuzhi>{13}</> et repousse la cible sur une courte distance.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{14}%</> de l'ATQ + <shuzhi>{15}</> et <shuzhi>suspend longuement</> la cible.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
-					"id": "GA_FPlayerHammerMelee_Melee"
-				},
-				{
-					"name": "Pilonner",
-					"description": "Lorsque vous êtes dans les airs ou après avoir sauté une fois, utilisez l'attaque normale pour déclencher Explosion sautée. Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et suspend la cible.\r\nTant qu'Explosion de rage est active, inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et <shuzhi>suspend longuement</> la cible.\r\nPlus vous prenez de l'altitude avant de déclencher l'attaque, plus les dégâts infligés sont importants, pour un bonus maximal de <shuzhi>600%</>.",
-					"operations": [
-						"Jump",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
-					"id": "GA_FPlayerHammerMelee_AirAttack"
-				},
-				{
-					"name": "Onde de choc",
-					"description": "Les actions suivantes déclencheront Onde de choc : maintenir Attaque lorsque vous êtes dans les airs, faire un double-saut, appuyer brièvement sur Attaque dans les airs lorsque des cibles sont proches, escalader, sauter en arrière, ou attaquer pendant que vous utilisez le jetpack. <shuzhi>Suspend longuement</> la cible <shuzhi>4</> fois, lui infligeant à chaque fois des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Consomme <shuzhi>250</> d'endurance.\r\nTant que l'effet Explosion de rage est actif, l'onde de choc <shuzhi>suspend longuement</> la cible <shuzhi>5</> fois, lui infligeant à chaque fois des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nInflige une plus grande quantité de dégâts en fonction de l'altitude de l'utilisateur au moment où l'attaque est déclenchée, jusqu'à <shuzhi>600%</> de dégâts.",
-					"operations": [
-						"Jump",
-						"Jump",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
-					"id": "GA_FPlayerHammerMelee_JumpAttack"
-				},
-				{
-					"name": "Attaque furtive",
-					"description": "Accroupissez-vous et approchez-vous de l'ennemi par-derrière, puis utilisez l'attaque normale pour déclencher Attaque furtive et infliger des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerHammerMelee_Sneak"
-				},
-				{
-					"name": "Frappe concentrée",
-					"description": "Appuyez et maintenez Attaque normale pour déclencher Frappe concentrée (peut être rechargée jusqu'à 3 cumuls). Pendant la recharge, confère une immunité contre tous les effets de contrôle ainsi que l'effet Hypercorps.\r\nPremier cumul : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et suspend la cible.\r\nDeuxième cumul : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et <shuzhi>suspend longuement</> la cible.\r\nTroisième cumul : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et <shuzhi>suspend longuement</> la cible.\r\nTant qu'Explosion de rage est active, maintenez Attaque normale pour déclencher Frappes furieuses. Inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et <shuzhi>suspend longuement</> la cible.",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
-					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Frappe sautée",
-					"description": "Utilisez les flèches et la touche d'esquive pour déclencher Frappe sautée et libérer une onde de choc. L'ennemi est suspendu <shuzhi>4</> fois et subit des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
-					"id": "GA_FPlayerHammerEvade_FrontAttack"
-				},
-				{
-					"name": "Pourfendeur",
-					"description": "Appuyez sur Attaque normale rapidement après une esquive pour déclencher Pourfendeur et libérer <shuzhi>3</> ondes de choc vers l'avant, chacune infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et suspendant les cibles.\r\nEn mode Explosion de rage, envoie <shuzhi>5</> ondes de choc vers l'avant, chacune infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et suspendant la cible.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
-					"id": "GA_FPlayerHammerEvade_BackAttack"
-				},
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. Temps de recharge : 15 secondes. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerHammerEvade_Evade"
-				}
-			],
-			"skill": [
-				{
-					"name": "Explosion de rage",
-					"description": "Changez d'arme pour activer Explosion de rage, augmentant les dégâts infligés pendant <shuzhi>25</> secondes.\r\nTant qu'Explosion de rage est active, les compétences déclenchent Fureur du vent, qui inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, <shuzhi>suspend longuement</> la cible, et crée un courant d'air au sol. Tant que vous vous tenez dans le courant d'air, esquiver n'a aucun coût. Temps de recharge : <shuzhi>{2}</> secondes (temps de recharge de Fureur du vent : <shuzhi>10</> secondes).",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
-					"id": "GA_FPlayerHammerBigSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Merlin écrasant",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou que <red>Fantaisie</> est déclenchée, <shuzhi>supprime toutes les altérations sur l'Explorateur</> et <shuzhi>suspend longuement</> les cibles proches au moment où vous changez d'arme pour utiliser celle-ci, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Invoque aussi un merlin qui tombe sur les cibles proches, infligeant des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
-					"id": "GA_FPlayerHammerChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "hammer_ice"
-	},
-	"bow_physic": {
-		"name": "Plume de rossignol",
-		"description": "Se fond parfaitement dans la nuit noire.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Physics",
-		"type": "Bow",
-		"weaponUpgradeId": "physic_sr_tupo_BD",
-		"wc": "DPS",
-		"advanceID": "bow_physic_sr_star",
-		"avatar": "imitation_16",
-		"mats": {
-			"Item_Mine_physic": 28,
-			"Item_Mine_physic_02": 42,
-			"Item_breakthrough_B2": 42,
-			"Item_breakthrough_D2": 42,
-			"Item_Mine_physic_03": 22,
-			"Item_breakthrough_B3": 22,
-			"Item_breakthrough_D3": 22,
-			"Item_breakthrough_B1": 25,
-			"Item_breakthrough_D1": 23
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Crit",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Blessure grave**:",
-			"description": "Lorsque l'arme est entièrement chargée, la prochaine attaque inflige une blessure grave aux ennemis pendant **7** secondes, augmentant leurs dégâts subis de **20%** et infligeant des dégâts équivalant à **100.00%** de l'ATQ. En **jeu en équipe**, les cibles gravement blessées subissent **20%** de dégâts physiques supplémentaires."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 6,
-				"need": null
-			},
-			{
-				"description": "Restaure 1tentative d'esquive toutes les cinq attaques normales ou après avoir utilisé **Tir perforant**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Augmente de **10%** la croissance d'ATQ de base de l'arme actuelle.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Accroît de **30%** les dégâts de tir à la tête.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Augmente de **20%** la croissance d'ATQ de base de l'arme actuelle.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Les compétences d'esquive infligent un effet de blessure grave aux cibles pendant **7**secondes.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Accroît de **30%** le taux de crit aux cibles gravement blessées et de **50%** les dégâts critiques.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Dégainement",
-					"description": "Lorsque vous êtes au sol, utilisez l'arc pour attaquer 5 fois de suite.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et repousse la cible sur une courte distance.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Melee_R"
-				},
-				{
-					"name": "Flèche chargée",
-					"description": "Appuyez et maintenez Attaque normale pour charger une attaque. Vous infligez des dégâts de base équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et <shuzhi>50%</> de plus chaque fois que vous passez <shuzhi>1</> seconde à charger, jusqu'à <shuzhi>3</> secondes. Vous doublez vos dégâts en cas de tir à la tête ou lorsque vous atteignez le point faible de l'ennemi, et vous renversez la cible (les tirs à la tête ne fonctionnent pas sur les Explorateurs).",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
-				},
-				{
-					"name": "Pluie de flèches",
-					"description": "Après une attaque normale, maintenez Attaque normale pour déclencher Pluie de flèches, qui inflige aux cibles jusqu'à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> dégâts de zone.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Branch_R"
-				},
-				{
-					"name": "Salve aérienne",
-					"description": "Lorsque vous êtes dans les airs, utilisez l'attaque normale pour attaquer 4 fois de suite.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. Temps de recharge : 15 secondes. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerBowEvadeNew_Evade_R"
-				},
-				{
-					"name": "Flèche piégée",
-					"description": "Appuyez sur Attaque après une esquive pour déclencher Flèche piégée, qui repousse la cible sur une courte distance et inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Tir perçant",
-					"description": "Vous faites un salto arrière et tirez <shuzhi>1</> tir perçant vers l'avant, qui inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repousse la cible. Temps de recharge : <shuzhi>{2}</> secondes.",
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Barrage explosif",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou que <red>Fantaisie</> est déclenchée, <shuzhi>supprime toutes les altérations sur l'Explorateur</>, et déclenche un Barrage explosif sur la cible au moment où vous changez d'arme pour utiliser celle-ci, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
-					"id": "GA_FPlayerBowChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "bow_physic"
-	},
-	"spear_thunder": {
-		"name": "Hallebarde foudroyante",
-		"description": "Une hallebarde imprégnée de la puissance du tonnerre. Elle est idéale pour les dégâts en rafale, et sa longueur en fait une arme adaptée à différentes portées.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Thunder",
-		"type": "Spear",
-		"weaponUpgradeId": "thunder_sr_tupo_AC",
-		"wc": "DPS",
-		"advanceID": "spear_thunder_sr_star",
-		"avatar": "imitation_4",
-		"mats": {
-			"Item_Mine_thunder": 28,
-			"Item_Mine_thunder_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_thunder_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Attaque",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Résistance",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "PV",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Foudre**:",
-			"description": "Quand une arme est entièrement chargée, la prochaine attaque **paralyse lourdement** les cibles pendant **1**seconde et les électrocute pendant **6**secondes. Annule tous leurs effets bénéfiques et inflige des dégâts équivalant à **106.00%** de l'ATQ. Les cibles électrocutées ne peuvent recevoir aucun effet bénéfique pendant les **6**secondes suivantes."
-		},
-		"advancements": [
-			{
-				"charge": 7,
-				"shatter": 11,
-				"need": null
-			},
-			{
-				"description": "Augmente la fracture de **15%**. Après avoir fracturé le bouclier de la cible, augmente l'ATQ de tous les membres de groupe de **15%** pendant **30**secondes. Cet effet ne peut être cumulé.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Augmente de **10%** la croissance de PV de base actuelle de l'arme.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Après avoir touché une cible avec le **Chasselune**, réduit son ATQ de **5%** et augmente de **5%** l'ATQ de l'utilisateur pendant **15**secondes (cet effet peut se cumuler jusqu'à **3**fois en touchant plusieurs cibles). L'effet est doublé sur les cibles gravement blessées.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Augmente de **20%** la croissance d'ATQ de base de l'arme actuelle.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "La durée de l’étourdissement est doublée pour les compétences d'esquive.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Plus la compétence de décharge va loin, plus elle inflige de dégâts, jusqu'à **100%** de dégâts supplémentaires.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Percée",
-					"description": "Lorsque vous êtes au sol, brandissez la lance longue pour attaquer 5 fois de suite.\r\nPremière attaque : vous infligez des dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repoussez la cible sur une courte distance.\r\nDeuxième attaque : vous infligez des dégâts correspondant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>, et repoussez la cible sur une courte distance.\r\nTroisième attaque : vous infligez des dégâts correspondant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>, et repoussez la cible sur une courte distance.\r\nQuatrième attaque : vous infligez des dégâts correspondant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>, et repoussez la cible sur une courte distance.\r\nCinquième attaque : vous infligez des dégâts correspondant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</>, et repoussez la cible sur une distance importante.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
-				},
-				{
-					"name": "Coup sauté",
-					"description": "Lorsque vous êtes dans les airs, utilisez l'attaque normale pour attaquer 4 fois de suite.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
-					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
-				},
-				{
-					"name": "Frappe écrasante",
-					"description": "Appuyez et maintenez Attaque normale en l'air (appuyez quand une cible est disponible), ou utilisez l'attaque normale lorsque vous escaladez, sautez en arrière ou utilisez le jetpack pour déclencher Frappe écrasante.\r\nLorsque vous tombez, vous infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à chaque coup. À l'atterrissage, vous infligez des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>, et vous renversez la cible.\r\nInflige une plus grande quantité de dégâts en fonction de l'altitude de l'utilisateur au moment où l'attaque est déclenchée, jusqu'à <shuzhi>600%</> de dégâts.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
-					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
-				},
-				{
-					"name": "Déluge de lances",
-					"description": "Après la troisième attaque normale, maintenez Attaque normale pour déclencher Déluge de lances.\r\nLorsque vous touchez la cible, vous la <shuzhi>suspendez longuement</>, lui infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Appuyez à nouveau pour continuer à attaquer la cible dans les airs, et infliger jusqu'à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> de dégâts à une seule cible.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
-					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
-				},
-				{
-					"name": "Attaque furtive",
-					"description": "Vous projetez la lance longue vers l'avant et infligez des dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Coup de pied volant",
-					"description": "Utilisez l'attaque normale pendant la courte fenêtre d'esquive parfaite (utilisez un bouton directionnel avant d'esquiver) pour déclencher Coup de pied volant.\r\nLorsque vous touchez la cible, vous lui infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repoussez les ennemis sur une grande distance, et vous les <shuzhi>étourdissez</> pendant <shuzhi>1</> seconde ou pendant <shuzhi>0,5</> seconde aux Explorateurs.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
-					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
-				},
-				{
-					"name": "Frappe en fente",
-					"description": "Utilisez l'attaque normale rapidement après une esquive pour déclencher Frappe en fente.\r\nHeurte le sol avec la lance longue, infligeant aux cibles des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et les <shuzhi>suspendant longuement dans les airs</>.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
-					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
-				},
-				{
-					"name": "Esquiver",
-					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des ennemis dans la zone. L'esquive vous immunise contre l'hébétement pendant <shuzhi>0,5</> seconde.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
-				}
-			],
-			"skill": [
-				{
-					"name": "Chasselune",
-					"description": "<shuzhi>Suspend longuement</> la cible et vous fait décoller du sol, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>25</> secondes.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
-					"id": "GA_FPlayerSpearSkillThu_SSR"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Coup de tonnerre",
-					"description": "Lorsque la <red>recharge d'arme</> est pleine ou que <red>Fantaisie</> est déclenchée, <shuzhi>supprime toutes les altérations sur l'Explorateur</> au moment où vous changez d'arme pour passer à celle-ci, puis vous sautez dans les airs et projetez une lance foudroyante qui explose en touchant le sol, infligeant aux cibles des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et un effet de <shuzhi>paralysie lourde</> pendant <shuzhi>1</> seconde.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
-					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "Lames de tonnerre",
@@ -2239,7 +483,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "digger_thunder"
 	},
@@ -2489,7 +733,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "bigsword_ice"
 	},
@@ -2697,7 +941,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "bow_ice"
 	},
@@ -2933,7 +1177,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "stave_ice"
 	},
@@ -3172,7 +1416,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "sickle_fire"
 	},
@@ -3395,7 +1639,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Intuition argentée",
@@ -3648,7 +1892,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.5",
 		"id": "sword_physic"
 	},
@@ -3870,7 +2114,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "darts_physic"
 	},
@@ -4094,7 +2338,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "cube_fire"
 	},
@@ -4304,7 +2548,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "dgun_thunder"
 	},
@@ -4514,7 +2758,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "shieldaxe_fire"
 	},
@@ -4762,7 +3006,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Bosquet serein",
@@ -5068,7 +3312,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Douce mélodie",
@@ -5343,7 +3587,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Givre estival",
@@ -5600,7 +3844,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Shirli",
@@ -5842,7 +4086,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "frigg_ice"
 	},
@@ -6072,7 +4316,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Chant pourpre",
@@ -6333,7 +4577,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Blanc pur ultime",
@@ -6594,7 +4838,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Ombre estivale",
@@ -6868,7 +5112,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.2",
 		"id": "tianlang_thunder"
 	},
@@ -7132,7 +5376,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.2",
 		"id": "arm_physic"
 	},
@@ -7382,7 +5626,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Éclipse brillante",
@@ -7654,7 +5898,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Rayon-platine",
@@ -7945,7 +6189,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.5",
 		"id": "killknife_physic"
 	},
@@ -8205,7 +6449,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Somniloquie",
@@ -8441,7 +6685,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Pas peur du soleil",
@@ -8760,7 +7004,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Encrier raffiné",
@@ -9043,7 +7287,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Paradis du millet",
@@ -9337,7 +7581,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.2",
 		"id": "feise_fire"
 	},
@@ -9604,7 +7848,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Chocolat blanc onctueux",
@@ -9875,7 +8119,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Fleur d'ivoire",
@@ -10143,7 +8387,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.4",
 		"id": "yoyo_ice"
 	},
@@ -10446,7 +8690,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.0",
 		"id": "yulan_ice"
 	},
@@ -10705,7 +8949,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Zeke",
@@ -11051,7 +9295,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Honneur étoilé",

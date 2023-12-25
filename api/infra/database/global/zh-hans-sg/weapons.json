@@ -1,1091 +1,4 @@
 {
-	"spear_ice": {
-		"name": "霜冻长枪",
-		"description": "沃兰雪原居民常用的武器，根据地域特点增加了寒冰属性。平价而高效，广受欢迎。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Ice",
-		"type": "Spear",
-		"weaponUpgradeId": "ice_r_tupo_AD",
-		"wc": "DPS",
-		"advanceID": "spear_ice_r_star",
-		"mats": {
-			"Item_Mine_ice": 15,
-			"Item_Mine_ice_02": 25,
-			"Item_breakthrough_A2": 25,
-			"Item_breakthrough_D2": 25,
-			"Item_Mine_ice_03": 14,
-			"Item_breakthrough_A3": 14,
-			"Item_breakthrough_D3": 14,
-			"Item_breakthrough_A1": 13,
-			"Item_breakthrough_D1": 12
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "全抗",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**雷电**:",
-			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**67.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
-		},
-		"advancements": [
-			{
-				"charge": 5.6,
-				"shatter": 6.9,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "长枪普攻",
-					"description": "在地面时，挥舞长枪可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并小幅击退目标。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并小幅击退目标。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并小幅击退目标。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并小幅击退目标。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并大幅击退目标。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"id": "GA_FPlayerSpearMelee_Melee_R"
-				},
-				{
-					"name": "飞击",
-					"description": "当拓荒者滞空时，点击普攻可在空中连续进行四次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
-					"id": "GA_FPlayerSpearMelee_AirAttack_R"
-				},
-				{
-					"name": "破击",
-					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，会触发破击。\r\n下落过程中，每次命中目标对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害；落地时对周围目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并浮空目标。\r\n触发时离地距离越高，伤害越高，最高可达<shuzhi>600%</>伤害。",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
-					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
-				},
-				{
-					"name": "乱枪狂舞",
-					"description": "普攻第三下后，长按普攻可触发乱枪狂舞。\r\n命中目标会<shuzhi>强控浮空</>目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害；再次点击对浮空目标连续攻击，对单个目标最多可造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
-					"id": "GA_FPlayerSpearMelee_Branch_R"
-				},
-				{
-					"name": "偷袭",
-					"description": "长枪刺出，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSpearMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "飞踢",
-					"description": "使用方向键加闪避按钮触发前闪避的短暂时间内，点击普攻，可触发飞踢。\r\n飞踢命中目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，大幅击退目标并对怪物造成<shuzhi>1</>秒，对玩家造成<shuzhi>0.5</>秒<shuzhi>强控眩晕</>效果。",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
-					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
-				},
-				{
-					"name": "挑击",
-					"description": "闪避之后的短暂时间内，点击普攻，可触发挑击。\r\n挥舞长枪砸地造成<shuzhi>强控浮空</>效果，造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
-					"id": "GA_FPlayerSpearEvade_BackAttack_R"
-				},
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSpearEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "逐月",
-					"description": "旋风一般将目标<shuzhi>强控浮空</>，并使拓荒者滞空，造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，冷却<shuzhi>{2}</>秒。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
-					"id": "GA_FPlayerSpearSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "长击飞挑",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，抓取目标，并将目标多次甩动，造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，最后一击附带<shuzhi>强控浮空</>效果。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
-					"id": "GA_FPlayerSpearChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "spear_ice"
-	},
-	"digger_physic": {
-		"name": "格斗刀",
-		"description": "班吉斯重工研发的基础型武器，使用特制合金制作，轻便而灵活，打击感十足。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Physics",
-		"type": "DoubleSword",
-		"weaponUpgradeId": "physic_r_tupo_BC",
-		"wc": "DPS",
-		"advanceID": "digger_physic_r_star",
-		"mats": {
-			"Item_Mine_physic": 15,
-			"Item_Mine_physic_02": 25,
-			"Item_breakthrough_B2": 25,
-			"Item_breakthrough_C2": 25,
-			"Item_Mine_physic_03": 14,
-			"Item_breakthrough_B3": 14,
-			"Item_breakthrough_C3": 14,
-			"Item_breakthrough_B1": 13,
-			"Item_breakthrough_C1": 12
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "暴击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**重伤**:",
-			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**63.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
-		},
-		"advancements": [
-			{
-				"charge": 9.6,
-				"shatter": 3.2,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "双刀普攻",
-					"description": "在地面时，挥舞双刀可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并小幅击退目标。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并小幅击退目标。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并小幅击退目标。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并小幅击退目标。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并小幅击退目标。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
-					"id": "GA_FPlayerDsMelee_Melee_R"
-				},
-				{
-					"name": "空中穿梭",
-					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行四次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
-					"id": "GA_FPlayerDsMelee_AirAttack_R"
-				},
-				{
-					"name": "闪击",
-					"description": "普攻第三下后，长按普攻可触发闪击。\r\n命中目标会<shuzhi>强控浮空</>目标，总计造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
-					"id": "GA_FPlayerDsMelee_Branch_R"
-				},
-				{
-					"name": "旋转利刃",
-					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，会触发旋转利刃。\r\n下落过程中，每次命中目标对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
-					"id": "GA_FPlayerDsMelee_JumpAttack_R"
-				},
-				{
-					"name": "偷袭",
-					"description": "处于下蹲状态时靠近敌人身后，点击普攻可触发偷袭，双刀刺击，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerDsMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "飞刃",
-					"description": "使用方向键加闪避按钮触发前闪避的短暂时间内，点击普攻，可触发飞刃。\r\n命中目标会<shuzhi>强控浮空</>目标并造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害；再次点击掷出飞刃，飞刃每次命中目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，最多<shuzhi>6</>次。",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
-					"id": "GA_FPlayerDsEvade_FrontAttack_R"
-				},
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerDsEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "回旋飞刃",
-					"description": "向四周射出<shuzhi>6</>个回旋飞刃，每个飞刃造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，冷却<shuzhi>{2}</>秒。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
-					"id": "GA_FPlayerDSSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "轮转飞刃",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，轮转飞刃造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害；并掷出<shuzhi>2</>个飞刃围绕拓荒者旋转，对每次触碰的目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
-					"id": "GA_FPlayerDsChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "digger_physic"
-	},
-	"sword_thunder": {
-		"name": "电磁刃",
-		"description": "最早被立项的电能原能武具项目，上手简单，受到许多不擅长战斗的拓荒者的欢迎。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Thunder",
-		"type": "Sword",
-		"weaponUpgradeId": "thunder_r_tupo_BD",
-		"wc": "DPS",
-		"advanceID": "sword_thunder_r_star",
-		"mats": {
-			"Item_Mine_thunder": 15,
-			"Item_Mine_thunder_02": 25,
-			"Item_breakthrough_B2": 25,
-			"Item_breakthrough_D2": 25,
-			"Item_Mine_thunder_03": 14,
-			"Item_breakthrough_B3": 14,
-			"Item_breakthrough_D3": 14,
-			"Item_breakthrough_B1": 13,
-			"Item_breakthrough_D1": 12
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "全抗",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**雷电**:",
-			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**70.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
-		},
-		"advancements": [
-			{
-				"charge": 8.8,
-				"shatter": 3.6,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "短剑普攻",
-					"description": "在地面时，挥舞短剑可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并小幅击退目标。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并小幅击退目标。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并小幅击退目标。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并小幅击退目标。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，造成<shuzhi>击飞</>效果。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
-					"id": "GA_FPlayerSwordMelee_Melee_R"
-				},
-				{
-					"name": "飞击",
-					"description": "当拓荒者滞空后，点击普攻可在空中连续进行四次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并造成<shuzhi>强控击倒</>效果。",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
-					"id": "GA_FPlayerSwordMelee_AirAttack_R"
-				},
-				{
-					"name": "气旋",
-					"description": "普攻后长按可触发气旋。\r\n命中目标会浮空目标，气旋可对单个目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
-					"id": "GA_FPlayerSwordMelee_Branch_R"
-				},
-				{
-					"name": "落斩",
-					"description": "滞空时长按普攻，攀爬，反向跳攻击或使用喷气背包普攻，会触发落斩。\r\n下落过程中，每次命中目标对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害；落地时对周围目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并击退目标。\r\n触发时离地距离越高，伤害越高，最高可达<shuzhi>600%</>伤害。",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
-					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
-				},
-				{
-					"name": "偷袭",
-					"description": "处于下蹲状态时靠近敌人身后，点击普攻可触发偷袭，刺出短剑，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSwordMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSwordEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "穿梭",
-					"description": "挥舞短剑穿梭于目标之间，最多可对<shuzhi>5</>个目标总计造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，最后一击浮空目标，技能期间免疫硬直效果，对同一目标造成的伤害依次递减<shuzhi>40%</>，冷却<shuzhi>{2}</>秒。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
-					"id": "GA_FPlayerSwordSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "剑气纵横",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，冲向目标并将目标<shuzhi>强控浮空</>，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
-					"id": "GA_FPlayerSwordChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "sword_thunder"
-	},
-	"bow_fire": {
-		"name": "复合弓",
-		"description": "雪原上的猎人常用的武器，能够轻松命中猎物。经过推广后，现已在平价民用市场占据半壁江山。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Flame",
-		"type": "Bow",
-		"weaponUpgradeId": "fire_r_tupo_AC",
-		"wc": "DPS",
-		"advanceID": "bow_fire_r_star",
-		"mats": {
-			"Item_Mine_fire": 15,
-			"Item_Mine_fire_02": 25,
-			"Item_breakthrough_A2": 25,
-			"Item_breakthrough_C2": 25,
-			"Item_Mine_fire_03": 14,
-			"Item_breakthrough_A3": 14,
-			"Item_breakthrough_C3": 14,
-			"Item_breakthrough_A1": 13,
-			"Item_breakthrough_C1": 12
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "暴击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**烈焰**:",
-			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**27.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
-		},
-		"advancements": [
-			{
-				"charge": 8,
-				"shatter": 4.8,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "普通攻击",
-					"description": "在地面时，连续拉弓进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并小幅击退目标。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Melee"
-				},
-				{
-					"name": "蓄力箭",
-					"description": "长按普攻，进入蓄力攻击状态，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点基础伤害，蓄力每增加<shuzhi>1</>秒，伤害增加<shuzhi>0.5</>倍，蓄力<shuzhi>3</>秒后达到伤害最大值，若命中怪物头部或者弱点，触发爆头效果（爆头效果对拓荒者无效），造成双倍伤害，并击倒目标。",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
-				},
-				{
-					"name": "箭雨",
-					"description": "任意一段普攻后长按普攻，释放箭雨造成范围伤害，对目标最多造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Branch"
-				},
-				{
-					"name": "空中连击",
-					"description": "当拓荒者滞空时，点击普攻可在空中连续进行四次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_AirAttack"
-				}
-			],
-			"dodge": [
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerBowEvadeNew_Evade"
-				},
-				{
-					"name": "蓄力一击",
-					"description": "闪避后，点击攻击，可触发蓄力一击效果，小幅击退目标，并对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
-				}
-			],
-			"skill": [
-				{
-					"name": "穿透箭",
-					"description": "后空翻并向前方射出<shuzhi>1</>支穿透箭，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击退目标，冷却<shuzhi>{2}</>秒。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "爆裂箭雨",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，向目标射出爆裂箭雨，对单个目标最多造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
-					"id": "GA_FPlayerBowChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "bow_fire"
-	},
-	"stave_thunder": {
-		"name": "圣痕权杖",
-		"description": "刻有十字圣符的机械法杖，或宽恕己罪或降临神罚。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Thunder",
-		"type": "Staves",
-		"weaponUpgradeId": "thunder_sr_tupo_AC",
-		"wc": "SUP",
-		"advanceID": "stave_thunder_sr_star",
-		"avatar": "imitation_14",
-		"mats": {
-			"Item_Mine_thunder": 28,
-			"Item_Mine_thunder_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_thunder_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "全抗",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**雷电**:",
-			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**106.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 4,
-				"need": null
-			},
-			{
-				"description": "释放闪避技时治疗周围**10**米内所有队友，治疗量为**100%**攻击。",
-				"charge": 10,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "当前武器的基础生命成长+**10%**",
-				"charge": 10,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "每次普攻附加两枚飞弹，每个飞弹对目标造成**5%**攻击伤害，并获得**5**点武器充能值。",
-				"charge": 11.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "当前武器的基础生命成长+**20%**",
-				"charge": 11.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "武器充能值获取速度提高**20%**。（飞弹的攻击不享受此加成）",
-				"charge": 13.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "技能为目标解除控制效果，技能范围内的友方单位获得**60%**的减伤。",
-				"charge": 13.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "普通攻击",
-					"description": "在地面时，挥舞法杖可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
-					"id": "GA_FPlayerStavesMelee_Melee"
-				},
-				{
-					"name": "临空打击",
-					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻可在空中连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
-					"id": "GA_FPlayerStavesMelee_AirAttack"
-				},
-				{
-					"name": "落月击",
-					"description": "滞空时长按普攻，会触发落月击。\r\n落地时对周围目标每<shuzhi>0.2</>秒造成一次伤害，共计<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
-					"id": "GA_FPlayerStavesMelee_JumpAttack"
-				},
-				{
-					"name": "聚能攻击",
-					"description": "普攻第三下后，长按普攻可触发分支攻击，消耗<shuzhi>300</>点耐力。\r\n第一下分支将前方附近的怪物聚拢（<shuzhi>强制浮空</>）并每<shuzhi>0.3</>秒造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害(最多<shuzhi>4</>次)。\r\n第二下分支对目标位置及其附近的敌方单位每<shuzhi>0.3</>秒造成一次<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
-					"id": "GA_FPlayerStavesMelee_Branch"
-				}
-			],
-			"dodge": [
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerStavesEvade_Evade"
-				},
-				{
-					"name": "涌现",
-					"description": "使用方向键加闪避按钮触发前闪避的短暂时间内，点击普攻，可触发涌现。\r\n每个能量波动命中目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n释放立即获得<shuzhi>75</>点武器充能值。",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
-					"id": "GA_FPlayerStavesEvade_FrontAttack"
-				},
-				{
-					"name": "灵球",
-					"description": "闪避之后的短暂时间内，点击普攻，可触发后闪攻击。\r\n拓荒者向前放释放一个能量球，对经过的敌方单位每<shuzhi>0.3</>秒造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害(最多五次)。\r\n释放立即获得<shuzhi>75</>点武器充能值。",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
-					"id": "GA_FPlayerStavesEvade_BackAttack"
-				}
-			],
-			"skill": [
-				{
-					"name": "庇护",
-					"description": "在原地释放一个能量护盾，对护盾中的友方单位每秒恢复<shuzhi>{3}%</>*攻击力+<shuzhi>{4}</>点生命值，并降低<shuzhi>{0}%</>受到的伤害，持续<shuzhi>10</>秒。冷却<shuzhi>60</>秒。",
-					"tags": [
-						"Support"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
-					"id": "GA_FPlayerStavesSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "极速救援",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，设置权杖持续清除拓荒者和友方的负面效果，并治疗附近拓荒者和友方目标<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点生命，持续<shuzhi>7</>秒。",
-					"tags": [
-						"Support"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
-					"id": "GA_FPlayerStavesChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "stave_thunder"
-	},
-	"cannon_ice": {
-		"name": "终结者",
-		"description": "火器界超越枪炮史的绝命之作，人称移动炮台的重型机枪。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Ice",
-		"type": "Cannon",
-		"weaponUpgradeId": "ice_sr_tupo_AD",
-		"wc": "DPS",
-		"advanceID": "cannon_ice_sr_star",
-		"avatar": "imitation_15",
-		"mats": {
-			"Item_Mine_ice": 28,
-			"Item_Mine_ice_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_D2": 42,
-			"Item_Mine_ice_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_D3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_D1": 23
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "全抗",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**雷电**:",
-			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**111.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 10,
-				"need": null
-			},
-			{
-				"description": "普攻每次命中提高**1%**伤害，持续**2**秒，最多叠加**15**层，子弹提升至**60**发。",
-				"charge": 10,
-				"shatter": 10,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "当前武器的基础攻击成长+**10%**",
-				"charge": 10,
-				"shatter": 10,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "切换至该武器后**10**秒内普攻伤害和破盾率提高**30%**，冷却**25**秒，子弹提升至**80**发。",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "当前武器的基础攻击成长+**20%**",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "炮塔状态下的普攻冷却时间降低到**2**秒。",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "切换至该武器后**10**秒内普攻伤害和破盾率提高**60%**，冷却**25**秒。",
-				"charge": 10,
-				"shatter": 16,
-				"need": "cannon_ice_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "普通攻击",
-					"description": "点击普攻进入到瞄准状态，长按普攻，可进行连续射击，最多可连续射击<shuzhi>40</>发子弹。每发子弹造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。若命中怪物头部或者弱点，触发爆头效果（爆头效果对拓荒者无效），造成双倍伤害，并击倒目标",
-					"operations": [
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
-					"id": "GA_FPlayerCannonMelee_Melee"
-				}
-			],
-			"dodge": [
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerCannonEvade_Evade"
-				}
-			],
-			"skill": [
-				{
-					"name": "炮台",
-					"description": "开启炮台模式，射出能量巨大的炮弹，每发炮弹造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击飞目标，冷却<shuzhi>{2}</>秒，架设炮台时免疫硬直和控制效果。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
-					"id": "GA_FPlayerCannonSkillNew"
-				}
-			],
-			"discharge": [
-				{
-					"name": "极寒激光",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，向前方发出一束极寒激光，命中造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>伤害，附带<shuzhi>3</>秒<shuzhi>强控冰冻</>效果，同时使目标冰抗减少<shuzhi>50%</>，持续<shuzhi>10</>秒",
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
-					"id": "GA_FPlayerCannonChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "cannon_ice"
-	},
 	"chainsaw_physic": {
 		"name": "小小飓风",
 		"description": "对于小朋友的玩物来说，实在是过于危险了。不可能是那孩子通过正规途径得到的东西。谁知道是用什么技术改装来的……或许是某场冒险中寻获的失落财宝吗？",
@@ -1345,678 +258,9 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
-	},
-	"hammer_ice": {
-		"name": "初动重击",
-		"description": "面对这样的大锤，应该没有人会想要迎面接下它的沉重敲击。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Ice",
-		"type": "Hammer",
-		"weaponUpgradeId": "ice_sr_tupo_BC",
-		"wc": "Tank",
-		"advanceID": "hammer_ice_sr_star",
-		"avatar": "imitation_2",
-		"mats": {
-			"Item_Mine_ice": 28,
-			"Item_Mine_ice_02": 42,
-			"Item_breakthrough_B2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_ice_03": 22,
-			"Item_breakthrough_B3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_B1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "全抗",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**雷电**:",
-			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**111.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
-		},
-		"advancements": [
-			{
-				"charge": 6,
-				"shatter": 10,
-				"need": null
-			},
-			{
-				"description": "切换至该武器时嘲讽周围目标，**8**秒内免受**1**次伤害并且霸体**8**秒，冷却**15**秒。",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "当前武器的基础生命成长+**10%**",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "受到伤害时，在接下来的**6**秒内受到的伤害减少**50%**，冷却**20**秒。",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "当前武器的基础生命成长+**20%**",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "普攻附带**2.5**秒**强控眩晕**效果，冷却**20**秒。",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "连携技使目标受到的伤害加**10%**，冰伤害再提高**10%**，持续**25**秒。",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "普通攻击",
-					"description": "在地面时，挥舞大锤可连续进行四次攻击。\r\n第一次攻击对目标可造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并小幅击退目标。\r\n第二次攻击对目标可造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并小幅击退目标。\r\n第三次攻击对目标可造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并小幅击退目标。\r\n第四次攻击对目标可造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并击飞目标。\r\n开启喷气状态下，挥舞大锤可连续进行四次攻击。\r\n第一次攻击对目标可造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并小幅击退目标。\r\n第二次攻击对目标可造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害，并小幅击退目标。\r\n第三次攻击对目标可造成<shuzhi>{12}%</>*攻击力+<shuzhi>{13}</>点伤害，并小幅击退目标。\r\n第四次攻击对目标可造成<shuzhi>{14}%</>*攻击力+<shuzhi>{15}</>点伤害，并造成<shuzhi>强控浮空</>效果。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
-					"id": "GA_FPlayerHammerMelee_Melee"
-				},
-				{
-					"name": "重击",
-					"description": "当拓荒者滞空时或使用一段跳之后，点击普攻触发跳跃攻击，造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n开启喷气状态下，造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害并<shuzhi>强控浮空</>目标。\r\n触发时离地距离越高，伤害越高，最高可达<shuzhi>600%</>伤害。",
-					"operations": [
-						"Jump",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
-					"id": "GA_FPlayerHammerMelee_AirAttack"
-				},
-				{
-					"name": "震荡波",
-					"description": "滞空长按，二段跳或附近有目标时在空中短按，攀爬，反向跳攻击或使用喷气背包普攻，触发震荡波，<shuzhi>强控浮空</>目标<shuzhi>4</>次，每次造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，消耗<shuzhi>250</>点耐力。\r\n开启喷气状态下，触发震荡波，<shuzhi>强控浮空</>目标<shuzhi>5</>次，每次造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n触发时离地距离越高，伤害越高，最高可达<shuzhi>600%</>伤害。",
-					"operations": [
-						"Jump",
-						"Jump",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
-					"id": "GA_FPlayerHammerMelee_JumpAttack"
-				},
-				{
-					"name": "偷袭",
-					"description": "处于下蹲状态时靠近敌人身后，点击普攻可触发偷袭，挥舞重锤，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerHammerMelee_Sneak"
-				},
-				{
-					"name": "蓄力重击",
-					"description": "长按普攻，可触发蓄力重击，最多可蓄力三层，蓄力期间开启霸体和免控效果。\r\n第一层，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并浮空目标；\r\n第二层，对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并<shuzhi>强控浮空</>目标；\r\n第三层，对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并<shuzhi>强控浮空</>目标。\r\n开启喷气的状态下，长按普攻触发怒气连击，造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并造成<shuzhi>强控浮空</>效果。",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
-					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
-				}
-			],
-			"dodge": [
-				{
-					"name": "跳跃重击",
-					"description": "使用方向键加闪避按钮触发跳跃重击，触发震荡波，浮空目标<shuzhi>4</>次，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
-					"id": "GA_FPlayerHammerEvade_FrontAttack"
-				},
-				{
-					"name": "破击长空",
-					"description": "闪避之后的短暂时间内，点击普攻，可触发破击长空，向前方释放出<shuzhi>3</>个震荡波，每段造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并浮空目标。\r\n开启喷气状态下，可向前方释放出<shuzhi>5</>个震荡波，每段造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并浮空目标。",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
-					"id": "GA_FPlayerHammerEvade_BackAttack"
-				},
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerHammerEvade_Evade"
-				}
-			],
-			"skill": [
-				{
-					"name": "喷气切换",
-					"description": "大锤切换为喷气状态，伤害得到增强，持续<shuzhi>25</>秒。\r\n喷气状态下，使用技能触发乘风重击，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害并<shuzhi>强控浮空</>目标，同时在地面形成流风，自身在流风里使用闪避不消耗闪避次数，技能冷却<shuzhi>{2}</>秒，乘风重击冷却<shuzhi>10</>秒。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
-					"id": "GA_FPlayerHammerBigSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "大锤当空",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，<shuzhi>强控浮空</>近身范围的目标并造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并在周围目标头顶创建大锤从天而降，再次造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
-					"id": "GA_FPlayerHammerChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "hammer_ice"
-	},
-	"bow_physic": {
-		"name": "夜雀之羽",
-		"description": "犹如暗夜般的弓矢，可以完美地融入幽邃的夜色。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Physics",
-		"type": "Bow",
-		"weaponUpgradeId": "physic_sr_tupo_BD",
-		"wc": "DPS",
-		"advanceID": "bow_physic_sr_star",
-		"avatar": "imitation_16",
-		"mats": {
-			"Item_Mine_physic": 28,
-			"Item_Mine_physic_02": 42,
-			"Item_breakthrough_B2": 42,
-			"Item_breakthrough_D2": 42,
-			"Item_Mine_physic_03": 22,
-			"Item_breakthrough_B3": 22,
-			"Item_breakthrough_D3": 22,
-			"Item_breakthrough_B1": 25,
-			"Item_breakthrough_D1": 23
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "暴击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**重伤**:",
-			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**100.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 6,
-				"need": null
-			},
-			{
-				"description": "普攻第五下或者施放技能**穿透箭**恢复一次闪避次数。",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "当前武器的基础攻击成长+**10%**",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "爆头伤害提升**30%**。",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "当前武器的基础攻击成长+**20%**",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "闪避技对目标附加持续**7**秒的重伤。",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "对重伤目标暴击率提高**30%**，暴击伤害提高**50%**。",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "弓箭普攻",
-					"description": "在地面时，连续拉弓进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并小幅击退目标。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Melee_R"
-				},
-				{
-					"name": "蓄力箭",
-					"description": "长按普攻，进入蓄力攻击状态，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点基础伤害，蓄力每增加<shuzhi>1</>秒，伤害增加<shuzhi>0.5</>倍，蓄力<shuzhi>3</>秒后达到伤害最大值，若命中怪物头部或者弱点，触发爆头效果（爆头效果对拓荒者无效），造成双倍伤害，并击倒目标。",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
-				},
-				{
-					"name": "箭雨",
-					"description": "任意一段普攻后长按普攻，释放箭雨造成范围伤害，对目标最多造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Branch_R"
-				},
-				{
-					"name": "空中连击",
-					"description": "当拓荒者滞空时，点击普攻可在空中连续进行四次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，冷却15秒，使一定范围内目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerBowEvadeNew_Evade_R"
-				},
-				{
-					"name": "蓄力一击",
-					"description": "闪避后，点击攻击，可触发蓄力一击效果，小幅击退目标，并对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "穿透箭",
-					"description": "后空翻并向前方射出<shuzhi>1</>支穿透箭，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击退目标，冷却<shuzhi>{2}</>秒。",
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "爆裂箭雨",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，向目标射出爆裂箭雨，对单个目标最多造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
-					"id": "GA_FPlayerBowChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "bow_physic"
-	},
-	"spear_thunder": {
-		"name": "雷霆战戟",
-		"description": "被灌注了雷霆之力的长枪，爆发力超高，兼顾近远攻守。",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Thunder",
-		"type": "Spear",
-		"weaponUpgradeId": "thunder_sr_tupo_AC",
-		"wc": "DPS",
-		"advanceID": "spear_thunder_sr_star",
-		"avatar": "imitation_4",
-		"mats": {
-			"Item_Mine_thunder": 28,
-			"Item_Mine_thunder_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_thunder_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "攻击",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "全抗",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "生命",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**雷电**:",
-			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**106.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
-		},
-		"advancements": [
-			{
-				"charge": 7,
-				"shatter": 11,
-				"need": null
-			},
-			{
-				"description": "破盾效率提高**15%**，破盾目标后提高全队**15%**攻击，不叠加，持续**30**秒。",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "当前武器的基础生命成长+**10%**",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "技能**逐月**命中目标后，降低目标**5%**攻击，提高自身**5%**攻击，持续**15**秒，命中多个目标时可叠加，最多叠加**3**层。对于重伤的目标，效果翻倍。",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "当前武器的基础攻击成长+**20%**",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "前闪避技的眩晕时长翻倍",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "连携技投掷距离越远伤害越高，最多提高**100%**伤害。",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "长枪普攻",
-					"description": "在地面时，挥舞长枪可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并小幅击退目标。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并小幅击退目标。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并小幅击退目标。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并小幅击退目标。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并大幅击退目标。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
-				},
-				{
-					"name": "飞击",
-					"description": "当拓荒者滞空时，点击普攻可在空中连续进行四次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
-					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
-				},
-				{
-					"name": "破击",
-					"description": "滞空时长按普攻(存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，会触发破击。\r\n下落过程中，每次命中目标对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害；落地时对周围目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并击倒目标。\r\n触发时离地距离越高，伤害越高，最高可达<shuzhi>600%</>伤害。",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
-					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
-				},
-				{
-					"name": "乱枪狂舞",
-					"description": "普攻第三下后，长按普攻可触发乱枪狂舞。\r\n命中目标会<shuzhi>强控浮空</>目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害；再次点击对浮空目标连续攻击，对单个目标最多可造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
-					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
-				},
-				{
-					"name": "偷袭",
-					"description": "长枪刺出，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
-				}
-			],
-			"dodge": [
-				{
-					"name": "飞踢",
-					"description": "使用方向键加闪避按钮触发前闪避的短暂时间内，点击普攻，可触发飞踢。\r\n飞踢命中目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，大幅击退目标并对怪物造成<shuzhi>1</>秒，对玩家造成<shuzhi>0.5</>秒<shuzhi>强控眩晕</>效果。",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
-					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
-				},
-				{
-					"name": "挑击",
-					"description": "闪避之后的短暂时间内，点击普攻，可触发挑击。\r\n挥舞长枪砸地造成<shuzhi>强控浮空</>，造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
-					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
-				},
-				{
-					"name": "闪避",
-					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果，持续<shuzhi>0.5</>秒。",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
-				}
-			],
-			"skill": [
-				{
-					"name": "逐月",
-					"description": "旋风一般将目标<shuzhi>强控浮空</>，并使拓荒者滞空，造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害与浮空，冷却<shuzhi>25</>秒。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
-					"id": "GA_FPlayerSpearSkillThu_SSR"
-				}
-			],
-			"discharge": [
-				{
-					"name": "雷枪",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，跳向空中，蓄力后向目标位置投掷出雷电长枪，落地会产生范围爆炸，造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，且<shuzhi>强控麻痹</>目标<shuzhi>1</>秒。",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
-					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "疾雷双刃",
@@ -2239,7 +483,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "digger_thunder"
 	},
@@ -2489,7 +733,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "bigsword_ice"
 	},
@@ -2697,7 +941,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "bow_ice"
 	},
@@ -2931,7 +1175,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "stave_ice"
 	},
@@ -3170,7 +1414,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "sickle_fire"
 	},
@@ -3392,7 +1636,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "芯白直感",
@@ -3644,7 +1888,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.5",
 		"id": "sword_physic"
 	},
@@ -3866,7 +2110,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "darts_physic"
 	},
@@ -4088,7 +2332,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "cube_fire"
 	},
@@ -4298,7 +2542,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "dgun_thunder"
 	},
@@ -4508,7 +2752,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "shieldaxe_fire"
 	},
@@ -4754,7 +2998,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "晴空幽篁",
@@ -5057,7 +3301,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "澄泠幽韵",
@@ -5330,7 +3574,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "霜花盛夏",
@@ -5585,7 +3829,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "「莎莉」",
@@ -5826,7 +4070,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "frigg_ice"
 	},
@@ -6055,7 +4299,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "绯红童谣",
@@ -6315,7 +4559,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "超究极的纯白",
@@ -6576,7 +4820,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "纤纤夏影",
@@ -6849,7 +5093,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.2",
 		"id": "tianlang_thunder"
 	},
@@ -7111,7 +5355,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.2",
 		"id": "arm_physic"
 	},
@@ -7360,7 +5604,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "灿星蚀日",
@@ -7631,7 +5875,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "白铠华调",
@@ -7918,7 +6162,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.5",
 		"id": "killknife_physic"
 	},
@@ -8173,7 +6417,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "浮寐梦呓",
@@ -8408,7 +6652,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "无惧骄阳",
@@ -8725,7 +6969,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "墨池清修",
@@ -9007,7 +7251,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "荼蘼谜境",
@@ -9299,7 +7543,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.2",
 		"id": "feise_fire"
 	},
@@ -9564,7 +7808,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "棉绒白巧",
@@ -9834,7 +8078,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "荆白绽放",
@@ -10100,7 +8344,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.4",
 		"id": "yoyo_ice"
 	},
@@ -10401,7 +8645,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.0",
 		"id": "yulan_ice"
 	},
@@ -10657,7 +8901,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "夏佐",
@@ -11002,7 +9246,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "星月予卿",

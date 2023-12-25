@@ -1,1091 +1,4 @@
 {
-	"spear_ice": {
-		"name": "Морозное копье",
-		"description": "Распространенное оружие среди жителей Снежного поля Уоррена. В него влита энергия мороза, чтобы отразить местный колорит. Очень популярно, потому что дешево и при этом весьма эффективно.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Ice",
-		"type": "Spear",
-		"weaponUpgradeId": "ice_r_tupo_AD",
-		"wc": "DPS",
-		"advanceID": "spear_ice_r_star",
-		"mats": {
-			"Item_Mine_ice": 15,
-			"Item_Mine_ice_02": 25,
-			"Item_breakthrough_A2": 25,
-			"Item_breakthrough_D2": 25,
-			"Item_Mine_ice_03": 14,
-			"Item_breakthrough_A3": 14,
-			"Item_breakthrough_D3": 14,
-			"Item_breakthrough_A1": 13,
-			"Item_breakthrough_D1": 12
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Сопротивление",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Электричество**:",
-			"description": "Когда оружие полностью заряжено, следующая атака **интенсивно замораживает** цели на **2** сек. и оставляет их обмороженными на **6** сек. Если разбить ледяную оболочку, это нанесет урон в размере **67.00%** от АТК. Пока цель обморожена, скорость заряда ее оружия снижается на **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 5.6,
-				"shatter": 6.9,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Колющий удар",
-					"description": "Находясь на земле, взмахните длинным копьем, чтобы провести 5 последовательных атак.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и отбрасывает цель назад на небольшое расстояние.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и отбрасывает цель назад на небольшое расстояние.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</> и отбрасывает цель назад на небольшое расстояние.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</> и отбрасывает цель назад на небольшое расстояние.\r\nПятая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</> и отбрасывает цель назад на значительное расстояние.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"id": "GA_FPlayerSpearMelee_Melee_R"
-				},
-				{
-					"name": "Удар в прыжке",
-					"description": "Находясь в полете, используйте обычную атаку, чтобы атаковать в воздухе 4 раза подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
-					"id": "GA_FPlayerSpearMelee_AirAttack_R"
-				},
-				{
-					"name": "Сокрушающее движение",
-					"description": "Для запуска Сокрушающего движения нажмите и удерживайте обычную атаку в полете (нажимайте, когда цель доступна) или используйте обычную атаку во время подъема, прыжка назад или использования реактивного ранца.\r\nВ падении при каждом попадании наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. При приземлении наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и подвешивает цель.\r\nЧем больше высота при начале атаки, тем больше нанесенный урон, вплоть до <shuzhi>600%</>.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
-					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
-				},
-				{
-					"name": "Шквал копий",
-					"description": "Для запуска Шквала копий после третьей обычной атаки удерживайте кнопку обычной атаки.\r\nПри попадании <shuzhi>интенсивно подвешивает</> цель, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Нажмите еще раз, чтобы продолжить атаковать цель в полете, нанося одной цели урон в размере до <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
-					"id": "GA_FPlayerSpearMelee_Branch_R"
-				},
-				{
-					"name": "Коварная атака",
-					"description": "Проведите колющий удар вперед длинным копьем и нанесите урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSpearMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Пинок в полете",
-					"description": "Используйте обычную атаку во время короткого окна для идеального уклонения (используйте кнопку направления перед уклонением), чтобы запустить Пинок в полете.\r\nПопав по цели, наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>, отбрасывая врагов далеко назад, а также <shuzhi>оглушает</> врагов на <shuzhi>1</> сек., а странников — на <shuzhi>0,5</> сек.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
-					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
-				},
-				{
-					"name": "Выпад с затрещиной",
-					"description": "Используйте обычную атаку в течение короткого периода после уклонения, чтобы запустить Выпад с затрещиной.\r\nСтранник бьет длинным копьем в землю, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>, и <shuzhi>интенсивно подвешивает</> цели.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
-					"id": "GA_FPlayerSpearEvade_BackAttack_R"
-				},
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSpearEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Искатель Луны",
-					"description": "<shuzhi>Интенсивно подвешивает</> цели и поднимается в воздух, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Перезарядка: <shuzhi>{2}</> сек.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
-					"id": "GA_FPlayerSpearSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Танец копий",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</>. Странник хватает цель и встряхивает ее несколько раз, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Последний удар <shuzhi>интенсивно подвешивает</> цель.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
-					"id": "GA_FPlayerSpearChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "spear_ice"
-	},
-	"digger_physic": {
-		"name": "Боевой клинок",
-		"description": "Базовое оружие, разработанное в «БэнджиТех». Изготавливается из особого сплава и отличается легкостью и простотой применения.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Physics",
-		"type": "DoubleSword",
-		"weaponUpgradeId": "physic_r_tupo_BC",
-		"wc": "DPS",
-		"advanceID": "digger_physic_r_star",
-		"mats": {
-			"Item_Mine_physic": 15,
-			"Item_Mine_physic_02": 25,
-			"Item_breakthrough_B2": 25,
-			"Item_breakthrough_C2": 25,
-			"Item_Mine_physic_03": 14,
-			"Item_breakthrough_B3": 14,
-			"Item_breakthrough_C3": 14,
-			"Item_breakthrough_B1": 13,
-			"Item_breakthrough_C1": 12
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Крит. удар",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Тяжелое ранение**:",
-			"description": "Когда оружие полностью заряжено, следующая атака накладывает на врагов эффект тяжелого ранения на **7** секунд, увеличивая получаемый ими урон на **20%** и нанося урон в размере **63.00%** от АТК. В **командной игре** физический урон по тяжелораненым целям увеличивается дополнительно на **20%**."
-		},
-		"advancements": [
-			{
-				"charge": 9.6,
-				"shatter": 3.2,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Два клинка",
-					"description": "Находясь на земле, взмахните парными клинками, чтобы провести вплоть до 5 последовательных атак.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и отбрасывает цель назад на небольшое расстояние.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и отбрасывает цель назад на небольшое расстояние.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</> и отбрасывает цель назад на небольшое расстояние.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</> и отбрасывает цель назад на небольшое расстояние.\r\nПятая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</> и отбрасывает цель назад на небольшое расстояние.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
-					"id": "GA_FPlayerDsMelee_Melee_R"
-				},
-				{
-					"name": "Небесный шквал",
-					"description": "Используйте обычную атаку в полете или при однократном прыжке, чтобы атаковать 4 раза подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
-					"id": "GA_FPlayerDsMelee_AirAttack_R"
-				},
-				{
-					"name": "Стремительный выпад",
-					"description": "Для запуска Стремительного выпада после третьей обычной атаки удерживайте кнопку обычной атаки.\r\nПри попадании <shuzhi>интенсивно подвешивает</> цель, нанося общий урон в размере <shuzhi>{0}%</>от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
-					"id": "GA_FPlayerDsMelee_Branch_R"
-				},
-				{
-					"name": "Движение по спирали",
-					"description": "Для запуска Движения по спирали нажмите и удерживайте кнопку обычной атаки, находясь в полете (нажимайте, когда цель доступна), либо выполните обычную атаку при подъеме, прыжке назад или использовании реактивного ранца.\r\nВ падении при каждом попадании наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
-					"id": "GA_FPlayerDsMelee_JumpAttack_R"
-				},
-				{
-					"name": "Коварная атака",
-					"description": "Пригнитесь и подкрадитесь к врагу сзади, а затем используйте обычную атаку, чтобы провести коварную атаку и нанести урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerDsMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Летающие клинки",
-					"description": "Используйте обычную атаку во время короткого окна для идеального уклонения (используйте кнопку направления перед уклонением), чтобы запустить Летающие клинки.\r\nПри попадании <shuzhi>интенсивно подвешивает</> цель и наносит урон в размере <shuzhi>{0}%</>от АТК + <shuzhi>{1}</>. Продолжайте нажимать на кнопку, чтобы бросить еще до <shuzhi>6</> летающих клинков, каждый из которых наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
-					"id": "GA_FPlayerDsEvade_FrontAttack_R"
-				},
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Перезарядка: 15 сек. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerDsEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Возвращающиеся клинки",
-					"description": "Запускает во все стороны <shuzhi>6</> возвращающихся клинков, каждый из которых наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Перезарядка: <shuzhi>{2}</> сек.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
-					"id": "GA_FPlayerDSSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Вращающиеся клинки",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</>. Странник метает крутящиеся клинки, которые наносят урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Еще <shuzhi>2</> клинка вращаются вокруг него и наносят урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> тем, кто их касается.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
-					"id": "GA_FPlayerDsChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "digger_physic"
-	},
-	"sword_thunder": {
-		"name": "ЭМ-клинок",
-		"description": "Самый ранний проект электромагнитного омния. Клинок прост в обращении и популярен среди не очень опытных странников.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Thunder",
-		"type": "Sword",
-		"weaponUpgradeId": "thunder_r_tupo_BD",
-		"wc": "DPS",
-		"advanceID": "sword_thunder_r_star",
-		"mats": {
-			"Item_Mine_thunder": 15,
-			"Item_Mine_thunder_02": 25,
-			"Item_breakthrough_B2": 25,
-			"Item_breakthrough_D2": 25,
-			"Item_Mine_thunder_03": 14,
-			"Item_breakthrough_B3": 14,
-			"Item_breakthrough_D3": 14,
-			"Item_breakthrough_B1": 13,
-			"Item_breakthrough_D1": 12
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Сопротивление",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Электричество**:",
-			"description": "Когда оружие полностью заряжено, следующая атака **интенсивно парализует** цели на **1** сек. и электризует их на **6** сек., убирая с целей все баффы и нанося урон в размере **70.00%** от АТК. Наэлектризованные цели не могут получать никаких баффов в течение следующих **6** сек."
-		},
-		"advancements": [
-			{
-				"charge": 8.8,
-				"shatter": 3.6,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Быстрый разрез",
-					"description": "Находясь на земле, взмахните клинком, чтобы провести 5 последовательных атак.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и отбрасывает цель назад на небольшое расстояние.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и отбрасывает цель назад на небольшое расстояние.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</> и отбрасывает цель назад на небольшое расстояние.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</> и отбрасывает цель назад на небольшое расстояние.\r\nПятая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</> и <shuzhi>подбрасывает</> цель в воздух.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
-					"id": "GA_FPlayerSwordMelee_Melee_R"
-				},
-				{
-					"name": "Удар в прыжке",
-					"description": "Находясь в полете, используйте обычную атаку, чтобы атаковать 4 раза подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</> и <shuzhi>сбивает цель с ног</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
-					"id": "GA_FPlayerSwordMelee_AirAttack_R"
-				},
-				{
-					"name": "Циклон",
-					"description": "Нажмите и удерживайте кнопку обычной атаки после обычных атак, чтобы запустить Циклон.\r\nПосле попадания подвешивает цель и наносит одной цели урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
-					"id": "GA_FPlayerSwordMelee_Branch_R"
-				},
-				{
-					"name": "Пикирующее острие",
-					"description": "Для запуска «Пикирующего острия» нажмите и удерживайте обычную атаку в полете или используйте обычную атаку во время подъема, прыжка назад или использования реактивного ранца.\r\nВ падении каждым попаданием наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. При приземлении наносит окружающим целям урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и отбрасывает врагов назад.\r\nЧем больше высота при срабатывании, тем больше нанесенный урон, вплоть до <shuzhi>600%</>.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
-					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
-				},
-				{
-					"name": "Коварная атака",
-					"description": "Пригнитесь и подкрадитесь к врагу сзади, а затем используйте обычную атаку, чтобы применить Коварную атаку и нанести урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSwordMelee_Sneak_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Перезарядка: 15 сек. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSwordEvade_Evade_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Блуждание",
-					"description": "Перемещайтесь между целями, нанося общий урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и поражая до <shuzhi>5</> целей. Последний удар подвешивает цель. Пока действует эффект, он дает невосприимчивость к оглушающему удару. Урон, наносимый одной и той же цели, с каждым разом снижается на <shuzhi>40%</>. Перезарядка: <shuzhi>{2}</> сек.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
-					"id": "GA_FPlayerSwordSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Неукротимый шквал",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</>, затем странник устремляется к цели и <shuzhi>интенсивно подвешивает</> ее, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
-					"id": "GA_FPlayerSwordChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "sword_thunder"
-	},
-	"bow_fire": {
-		"name": "Составной лук",
-		"description": "Обычное оружие охотников из Снежных полей. Точное и легкое в обращении. После нескольких усовершенствований оно прочно завоевало себе место на рынке гражданского оружия.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
-		},
-		"assetsA3": {},
-		"rarity": "R",
-		"element": "Flame",
-		"type": "Bow",
-		"weaponUpgradeId": "fire_r_tupo_AC",
-		"wc": "DPS",
-		"advanceID": "bow_fire_r_star",
-		"mats": {
-			"Item_Mine_fire": 15,
-			"Item_Mine_fire_02": 25,
-			"Item_breakthrough_A2": 25,
-			"Item_breakthrough_C2": 25,
-			"Item_Mine_fire_03": 14,
-			"Item_breakthrough_A3": 14,
-			"Item_breakthrough_C3": 14,
-			"Item_breakthrough_A1": 13,
-			"Item_breakthrough_C1": 12
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Крит. удар",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Огонь**:",
-			"description": "Когда оружие полностью заряжено, следующая атака на **8** секунд поджигает цель, нанося урон в размере **27.00%** от АТК каждую секунду. У горящих целей эффективность лечения снижается на **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 8,
-				"shatter": 4.8,
-				"need": null
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Обычная атака",
-					"description": "Находясь на земле, натяните лук, чтобы быстро атаковать 5 раз подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.\r\nПятая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</> и отбрасывает цель назад на небольшое расстояние.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Melee"
-				},
-				{
-					"name": "Заряженная стрела",
-					"description": "Нажмите и удерживайте кнопку обычной атаки для зарядки атаки. Наносит базовый урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и еще <shuzhi>50%</> за каждую <shuzhi>1</> секунду зарядки, вплоть до <shuzhi>3</> секунд. При выстреле в голову или попадании в уязвимое место врага наносит двойной урон и сбивает врага с ног (выстрелы в голову не работают против странников).",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
-				},
-				{
-					"name": "Град стрел",
-					"description": "После любой обычной атаки удерживайте кнопку обычной атаки, чтобы выпустить Град стрел, наносящий целям урон по области в размере до <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Branch"
-				},
-				{
-					"name": "Воздушный залп",
-					"description": "Находясь в полете, используйте обычную атаку, чтобы атаковать в воздухе 4 раза подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_AirAttack"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Перезарядка: 15 сек. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerBowEvadeNew_Evade"
-				},
-				{
-					"name": "Утяжеленная стрела",
-					"description": "После уклонения нажмите на атаку, чтобы сработала Утяжеленная стрела, которая отбрасывает цель назад на небольшое расстояние и наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
-				}
-			],
-			"skill": [
-				{
-					"name": "Пробивающий выстрел",
-					"description": "Делает сальто назад и выстреливает вперед <shuzhi>1</> пробивающий выстрел, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и отбрасывая цель назад. Перезарядка: <shuzhi>{2}</> сек.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Взрывной залп",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</> и запускает Взрывной залп, который наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
-					"id": "GA_FPlayerBowChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "bow_fire"
-	},
-	"stave_thunder": {
-		"name": "Посох шрамов",
-		"description": "Механический посох с вырезанной на нем руной креста, способный как отпускать грехи, так и карать.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Thunder",
-		"type": "Staves",
-		"weaponUpgradeId": "thunder_sr_tupo_AC",
-		"wc": "SUP",
-		"advanceID": "stave_thunder_sr_star",
-		"avatar": "imitation_14",
-		"mats": {
-			"Item_Mine_thunder": 28,
-			"Item_Mine_thunder_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_thunder_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Сопротивление",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Электричество**:",
-			"description": "Когда оружие полностью заряжено, следующая атака **интенсивно парализует** цели на **1** сек. и электризует их на **6** сек., убирая с целей все баффы и нанося урон в размере **106.00%** от АТК. Наэлектризованные цели не могут получать никаких баффов в течение следующих **6** сек."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 4,
-				"need": null
-			},
-			{
-				"description": "После использования навыка уклонения лечит всех товарищей по команде в пределах **10** метров на **100%** от АТК.",
-				"charge": 10,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовых ОЗ текущего оружия на **10%**.",
-				"charge": 10,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Обычные атаки также выпускают две ракеты, каждая из которых наносит урон в размере **5%** от АТК цели и восстанавливает **5** очк. заряда оружия.",
-				"charge": 11.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовых ОЗ текущего оружия на **20%**.",
-				"charge": 11.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Увеличивает скорость получения заряда оружия на **20%** (не применяется к ракетным атакам).",
-				"charge": 13.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			},
-			{
-				"description": "Когда любой навык снимает с цели эффекты контроля, все товарищи по команде в радиусе действия получают **60%** снижение урона.",
-				"charge": 13.2,
-				"shatter": 4,
-				"need": "stave_thunder_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Обычная атака",
-					"description": "Находясь на земле, взмахните посохом, чтобы атаковать 5 раз подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.\r\nПятая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
-					"id": "GA_FPlayerStavesMelee_Melee"
-				},
-				{
-					"name": "Парящее заграждение",
-					"description": "Находясь в полете или один раз прыгнув, используйте обычную атаку, чтобы атаковать 5 раз подряд в воздухе.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.\r\nПятая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
-					"id": "GA_FPlayerStavesMelee_AirAttack"
-				},
-				{
-					"name": "Лунное падение",
-					"description": "Для запуска Лунного падения нажмите и удерживайте обычную атаку в полете.\r\nПосле приземления наносит урон раз в <shuzhi>0,2</> сек., в общей сложности <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
-					"id": "GA_FPlayerStavesMelee_JumpAttack"
-				},
-				{
-					"name": "Направленный штурм",
-					"description": "После третьей обычной атаки удерживайте кнопку обычной атаки, чтобы применить двунаправленную атаку. При этом расходуется <shuzhi>300</> очков выносливости.\r\nПервая атака: притягивает врагов, находящихся перед персонажем, <shuzhi>интенсивно подвешивая их</> и каждые <shuzhi>0,3</> сек. нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> (до <shuzhi>4</> раз).\r\nВторая атака: каждые <shuzhi>0,3</> сек. наносит в выбранной точке и ближайшим врагам урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
-					"id": "GA_FPlayerStavesMelee_Branch"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Перезарядка: 15 сек. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerStavesEvade_Evade"
-				},
-				{
-					"name": "Всплеск",
-					"description": "Используйте обычную атаку во время короткого окна для идеального уклонения (используйте кнопку направления перед уклонением), чтобы запустить Всплеск.\r\nКаждый энергетический импульс наносит целям урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nПри использовании дает <shuzhi>75</> ед. заряда оружия.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
-					"id": "GA_FPlayerStavesEvade_FrontAttack"
-				},
-				{
-					"name": "Тессеракт",
-					"description": "Используйте обычную атаку в течение короткого периода после уклонения, чтобы запустить Уклоняющийся взрыв.\r\nСтранник выстреливает вперед энергетической сферой, каждые <shuzhi>0,3</> секунды нанося целям на пути урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> (до 5 раз).\r\nПри использовании дает <shuzhi>75</> ед. заряда оружия.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
-					"id": "GA_FPlayerStavesEvade_BackAttack"
-				}
-			],
-			"skill": [
-				{
-					"name": "Святилище",
-					"description": "Создает энергетический щит в месте нахождения странника. Каждую секунду исцеляет союзников внутри щита на <shuzhi>{3}%</> от АТК + <shuzhi>{4}</> и уменьшает получаемый ими урон на <shuzhi>{0}%</> в течение <shuzhi>10</> секунд. Перезарядка: <shuzhi>60</> сек.",
-					"tags": [
-						"Support"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
-					"id": "GA_FPlayerStavesSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Стремительное освобождение",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</>. Посох продолжает снимать дебаффы со cтранника и союзников и восстанавливает у ближайших странников и союзников ОЗ в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> в течение <shuzhi>7</> секунд.",
-					"tags": [
-						"Support"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
-					"id": "GA_FPlayerStavesChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "stave_thunder"
-	},
-	"cannon_ice": {
-		"name": "Терминатор",
-		"description": "Самое чудовищное огнестрельное оружие, когда-либо созданное человеком. Его еще называют передвижной турелью.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Ice",
-		"type": "Cannon",
-		"weaponUpgradeId": "ice_sr_tupo_AD",
-		"wc": "DPS",
-		"advanceID": "cannon_ice_sr_star",
-		"avatar": "imitation_15",
-		"mats": {
-			"Item_Mine_ice": 28,
-			"Item_Mine_ice_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_D2": 42,
-			"Item_Mine_ice_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_D3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_D1": 23
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Сопротивление",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Электричество**:",
-			"description": "Когда оружие полностью заряжено, следующая атака **интенсивно замораживает** цели на **2** сек. и оставляет их обмороженными на **6** сек. Если разбить ледяную оболочку, это нанесет урон в размере **111.00%** от АТК. Пока цель обморожена, скорость заряда ее оружия снижается на **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 10,
-				"need": null
-			},
-			{
-				"description": "Каждая успешная обычная атака увеличивает урон на **1%** на **2** сек. Накапливается до **15** раз. Увеличивает число боеприпасов до **60**.",
-				"charge": 10,
-				"shatter": 10,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовой АТК текущего оружия на **10%**.",
-				"charge": 10,
-				"shatter": 10,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "В течение **10** сек. после переключения на это оружие увеличивает урон от обычных атак и раскол на **30%**. Перезарядка: **25** сек. Повышает количество боеприпасов до **80**.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовой АТК текущего оружия на **20%**.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "Уменьшает перезарядку обычных атак в режиме турели на **2** сек.",
-				"charge": 10,
-				"shatter": 13,
-				"need": "cannon_ice_plasm"
-			},
-			{
-				"description": "В течение **10** сек. после переключения на это оружие увеличивает урон от обычных атак и раскол на **60%**. Перезарядка: **25** сек.",
-				"charge": 10,
-				"shatter": 16,
-				"need": "cannon_ice_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Обычная атака",
-					"description": "Нажмите на кнопку обычной атаки, чтобы перейти в режим прицеливания. Удерживайте кнопку обычной атаки, чтобы сделать до <shuzhi>40</> выстрелов подряд. Каждый выстрел наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. При выстреле в голову или попадании в уязвимое место врага наносит двойной урон и сбивает врага с ног (выстрелы в голову не работают против странников).",
-					"operations": [
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
-					"id": "GA_FPlayerCannonMelee_Melee"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Перезарядка: 15 сек. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerCannonEvade_Evade"
-				}
-			],
-			"skill": [
-				{
-					"name": "Турель",
-					"description": "Включает режим турели и стреляет большими энергетическими сферами, каждая из которых наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и подбрасывает цель в воздух. При установке турели дает невосприимчивость к оглушающему удару и эффектам контроля. Перезарядка: <shuzhi>{2}</> сек.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
-					"id": "GA_FPlayerCannonSkillNew"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Арктический луч",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</> и запускает Арктический луч, наносящий урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Луч <shuzhi>интенсивно замораживает</> врага на <shuzhi>3</> сек., а также снижает его сопротивление холоду на <shuzhi>50%</> в течение <shuzhi>10</> сек.",
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
-					"id": "GA_FPlayerCannonChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "cannon_ice"
-	},
 	"chainsaw_physic": {
 		"name": "Мини-ураган",
 		"description": "Это слишком опасная штука для детской игрушки — честным путем ребенку такую не достать. Кто знает, какие технологии использовали для переделки?.. Возможно, эту штуку просто подобрали где-нибудь в стороне от хоженых путей.",
@@ -1347,678 +260,9 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
-	},
-	"hammer_ice": {
-		"name": "Громила",
-		"description": "Никому не хотелось бы получить такой булавой.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Ice",
-		"type": "Hammer",
-		"weaponUpgradeId": "ice_sr_tupo_BC",
-		"wc": "Tank",
-		"advanceID": "hammer_ice_sr_star",
-		"avatar": "imitation_2",
-		"mats": {
-			"Item_Mine_ice": 28,
-			"Item_Mine_ice_02": 42,
-			"Item_breakthrough_B2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_ice_03": 22,
-			"Item_breakthrough_B3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_B1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Сопротивление",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Электричество**:",
-			"description": "Когда оружие полностью заряжено, следующая атака **интенсивно замораживает** цели на **2** сек. и оставляет их обмороженными на **6** сек. Если разбить ледяную оболочку, это нанесет урон в размере **111.00%** от АТК. Пока цель обморожена, скорость заряда ее оружия снижается на **50%**."
-		},
-		"advancements": [
-			{
-				"charge": 6,
-				"shatter": 10,
-				"need": null
-			},
-			{
-				"description": "После переключения на это оружие провоцирует ближайшие цели и предотвращает **1** получение урона в течение следующих **8** сек. Дает гипертело на следующие **8** сек. Перезарядка: **15** сек.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовых ОЗ текущего оружия на **10%**.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "После получения урона снижает весь получаемый урон на **50%** в течение следующих **6** сек. Перезарядка: **20** сек.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовых ОЗ текущего оружия на **20%**.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Обычные атаки **оглушают** цели на **2,5** сек. Перезарядка: **20** сек.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			},
-			{
-				"description": "Навыки разрядки наносят дополнительно **10%** урона по целям, а урон от холода увеличивается еще на **10%** на **25** сек.",
-				"charge": 6,
-				"shatter": 10,
-				"need": "hammer_ice_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Обычная атака",
-					"description": "Находясь на земле, взмахните булавой, чтобы атаковать 4 раза подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и отбрасывает цель назад на небольшое расстояние.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и отбрасывает цель назад на небольшое расстояние.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</> и отбрасывает цель назад на небольшое расстояние.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</> и подбрасывает цель.\r\nПока действует Вспышка гнева взмахните булавой, чтобы атаковать 4 раза подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</> и отбрасывает цель назад на небольшое расстояние.\r\nВторая атака: наносит урон в размере <shuzhi>{10}%</> от АТК + <shuzhi>{11}</> и отбрасывает цель назад на небольшое расстояние.\r\nТретья атака: наносит урон в размере <shuzhi>{12}%</> от АТК + <shuzhi>{13}</> и отбрасывает цель назад на небольшое расстояние.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{14}%</> от АТК + <shuzhi>{15}</> и <shuzhi>интенсивно подвешивает</> цель.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
-					"id": "GA_FPlayerHammerMelee_Melee"
-				},
-				{
-					"name": "Трёпка",
-					"description": "Для запуска Взрыва в прыжке выполните обычную атаку, находясь в полете или прыгнув. Наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и подвешивает цель.\r\nПока активна Вспышка гнева, наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и <shuzhi>интенсивно подвешивает</> цель.\r\nЧем больше высота в начале атаки, тем больше урон, вплоть до <shuzhi>600%</> урона.",
-					"operations": [
-						"Jump",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
-					"id": "GA_FPlayerHammerMelee_AirAttack"
-				},
-				{
-					"name": "Ударная волна",
-					"description": "Для запуска Ударной волны нажмите и удерживайте, находясь в полете, совершите двойной прыжок, коротко нажмите в полете, когда рядом есть цели, поднимайтесь, прыгните назад или атакуйте, используя реактивный ранец. <shuzhi>Интенсивно подвешивает</> цель <shuzhi>4</> раза, каждый раз нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Расходует <shuzhi>250</> ед. выносливости.\r\nПока активна Вспышка гнева, ударная волна <shuzhi>интенсивно подвешивает</> цель <shuzhi>5</> раз, каждый раз нанося урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nЧем больше высота, на которой срабатывает атака, тем больше наносимый урон, вплоть до <shuzhi>600%</> урона.",
-					"operations": [
-						"Jump",
-						"Jump",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
-					"id": "GA_FPlayerHammerMelee_JumpAttack"
-				},
-				{
-					"name": "Коварная атака",
-					"description": "Пригнитесь и подкрадитесь к врагу сзади, а затем используйте обычную атаку, чтобы провести коварную атаку и нанести урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerHammerMelee_Sneak"
-				},
-				{
-					"name": "Направленная затрещина",
-					"description": "Для запуска Направленной затрещины нажмите и удерживайте обычную атаку (можно зарядить до 3 экз.). Во время зарядки дает гипертело и невосприимчивость ко всем эффектам контроля.\r\nПервый экземпляр: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и подвешивает цель.\r\nВторой экземпляр: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и <shuzhi>интенсивно подвешивает</> цель.\r\nТретий экземпляр: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</> и <shuzhi>интенсивно подвешивает</> цель.\r\nПока активна Вспышка гнева, нажмите и удерживайте обычную атаку для запуска Бешеных ударов, которые наносят урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</> и <shuzhi>интенсивно подвешивают</> цель.",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
-					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Затрещина в прыжке",
-					"description": "Используйте кнопки со стрелками и кнопку уклонения, чтобы применить Затрещину в прыжке. Выпускает ударную волну, которая подвешивает противника <shuzhi>4</> раза, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
-					"id": "GA_FPlayerHammerEvade_FrontAttack"
-				},
-				{
-					"name": "Рассекатель миров",
-					"description": "Для запуска Рассекателя миров нажмите на кнопку обычной атаки сразу после уклонения. Выпускает вперед <shuzhi>3</> ударные волны, каждая из которых наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>, и подвешивает цели.\r\nВ режиме «Вспышка гнева» выпускает вперед <shuzhi>5</> ударных волн, каждая из которых наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и подвешивает цель.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
-					"id": "GA_FPlayerHammerEvade_BackAttack"
-				},
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Перезарядка: 15 сек. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerHammerEvade_Evade"
-				}
-			],
-			"skill": [
-				{
-					"name": "Вспышка гнева",
-					"description": "Переключение активирует Вспышку гнева, что увеличит время нанесения урона на <shuzhi>25</> секунд.\r\nВо время действия Вспышки гнева навыки вызывают Ярость ветра, которая наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>, <shuzhi>интенсивно подвешивая</> цель и создавая воздушный поток на земле. Когда персонаж находится в потоке, можно уклоняться, ничего не расходуя. Перезарядка: <shuzhi>{2}</> сек. (время действия Ярости ветра: <shuzhi>10</> секунд).",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
-					"id": "GA_FPlayerHammerBigSkill"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Крушащая булава",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</> и <shuzhi>интенсивно подвешивает</> ближайшие цели, нанося им урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Также призывает булаву, которая падает на ближайшие цели, нанося урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
-					"id": "GA_FPlayerHammerChangeSkill_Success"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "hammer_ice"
-	},
-	"bow_physic": {
-		"name": "Соловьиное перышко",
-		"description": "Идеально сливается с ночной тьмой.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Physics",
-		"type": "Bow",
-		"weaponUpgradeId": "physic_sr_tupo_BD",
-		"wc": "DPS",
-		"advanceID": "bow_physic_sr_star",
-		"avatar": "imitation_16",
-		"mats": {
-			"Item_Mine_physic": 28,
-			"Item_Mine_physic_02": 42,
-			"Item_breakthrough_B2": 42,
-			"Item_breakthrough_D2": 42,
-			"Item_Mine_physic_03": 22,
-			"Item_breakthrough_B3": 22,
-			"Item_breakthrough_D3": 22,
-			"Item_breakthrough_B1": 25,
-			"Item_breakthrough_D1": 23
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			},
-			{
-				"name": "Крит. удар",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
-				"id": "CritAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Тяжелое ранение**:",
-			"description": "Когда оружие полностью заряжено, следующая атака накладывает на врагов эффект тяжелого ранения на **7** секунд, увеличивая получаемый ими урон на **20%** и нанося урон в размере **100.00%** от АТК. В **командной игре** физический урон по тяжелораненым целям увеличивается дополнительно на **20%**."
-		},
-		"advancements": [
-			{
-				"charge": 10,
-				"shatter": 6,
-				"need": null
-			},
-			{
-				"description": "Восстанавливает 1 попытку уклонения с каждой пятой обычной атакой или после использования **Пробивающего выстрела**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовой АТК текущего оружия на **10%**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Увеличивает урон от выстрела в голову на **30%**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовой АТК текущего оружия на **20%**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Навыки уклонения наносят цели тяжелое ранение на **7** сек.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			},
-			{
-				"description": "Шанс крит. удара по тяжело раненым целям увеличивается на **30%**, а крит. урон на **50%**.",
-				"charge": 10,
-				"shatter": 6,
-				"need": "bow_physic_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Быстрая реакция",
-					"description": "Находясь на земле, натяните лук, чтобы быстро атаковать 5 раз подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.\r\nПятая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</> и отбрасывает цель назад на небольшое расстояние.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Melee_R"
-				},
-				{
-					"name": "Заряженная стрела",
-					"description": "Нажмите и удерживайте кнопку обычной атаки для зарядки атаки. Наносит базовый урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и еще <shuzhi>50%</> за каждую <shuzhi>1</> секунду зарядки, вплоть до <shuzhi>3</> секунд. При выстреле в голову или попадании в уязвимое место врага наносит двойной урон и сбивает врага с ног (выстрелы в голову не работают против странников).",
-					"operations": [
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
-				},
-				{
-					"name": "Град стрел",
-					"description": "После любой обычной атаки удерживайте кнопку обычной атаки, чтобы выпустить Град стрел, наносящий целям урон по области в размере до <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
-					"id": "GA_FPlayerBowMeleeNew_Branch_R"
-				},
-				{
-					"name": "Воздушный залп",
-					"description": "Находясь в полете, используйте обычную атаку, чтобы атаковать в воздухе 4 раза подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Перезарядка: 15 сек. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerBowEvadeNew_Evade_R"
-				},
-				{
-					"name": "Утяжеленная стрела",
-					"description": "После уклонения нажмите на атаку, чтобы сработала Утяжеленная стрела, которая отбрасывает цель назад на небольшое расстояние и наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
-					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
-				}
-			],
-			"skill": [
-				{
-					"name": "Пробивающий выстрел",
-					"description": "Делает сальто назад и выстреливает вперед <shuzhi>1</> пробивающий выстрел, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и отбрасывая цель назад. Перезарядка: <shuzhi>{2}</> сек.",
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
-					"id": "GA_FPlayerBowSkill_R"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Взрывной залп",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</> и запускает Взрывной залп, который наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
-					"id": "GA_FPlayerBowChangeSkill_Success_R"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "bow_physic"
-	},
-	"spear_thunder": {
-		"name": "Громовая алебарда",
-		"description": "Алебарда, напитанная мощью грозы. Обладает огромной взрывной силой, а длина позволяет поражать противника на любом расстоянии.",
-		"assets": {
-			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
-			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
-		},
-		"assetsA3": {},
-		"rarity": "SR",
-		"element": "Thunder",
-		"type": "Spear",
-		"weaponUpgradeId": "thunder_sr_tupo_AC",
-		"wc": "DPS",
-		"advanceID": "spear_thunder_sr_star",
-		"avatar": "imitation_4",
-		"mats": {
-			"Item_Mine_thunder": 28,
-			"Item_Mine_thunder_02": 42,
-			"Item_breakthrough_A2": 42,
-			"Item_breakthrough_C2": 42,
-			"Item_Mine_thunder_03": 22,
-			"Item_breakthrough_A3": 22,
-			"Item_breakthrough_C3": 22,
-			"Item_breakthrough_A1": 25,
-			"Item_breakthrough_C1": 23
-		},
-		"stats": [
-			{
-				"name": "Атака",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
-				"id": "CommonAtkAdded"
-			},
-			{
-				"name": "Сопротивление",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
-				"id": "ElementDef"
-			},
-			{
-				"name": "ОЗ",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
-				"id": "MaxHealthAdded"
-			}
-		],
-		"elementEffects": {
-			"title": "**Электричество**:",
-			"description": "Когда оружие полностью заряжено, следующая атака **интенсивно парализует** цели на **1** сек. и электризует их на **6** сек., убирая с целей все баффы и нанося урон в размере **106.00%** от АТК. Наэлектризованные цели не могут получать никаких баффов в течение следующих **6** сек."
-		},
-		"advancements": [
-			{
-				"charge": 7,
-				"shatter": 11,
-				"need": null
-			},
-			{
-				"description": "Увеличивает раскол на **15%**. После раскола щита у цели АТК всех товарищей по команде увеличивается на **15%** на **30** сек. Не накапливается.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовых ОЗ текущего оружия на **10%**.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "После попадания по цели **Искатель Луны** уменьшает ее АТК на **5%** и увеличивает АТК персонажа на **5%** на **15**сек. Эффект накапливается до **3**раз, поражая несколько целей. Если у цели есть тяжелое ранение, эффект удваивается.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Увеличивает рост базовой АТК текущего оружия на **20%**.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Удвоенная продолжительность оглушения от навыков уклонения.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			},
-			{
-				"description": "Навык разрядки наносит тем больше урона, чем дальше он проходит, вплоть до **100%** к урону.",
-				"charge": 7,
-				"shatter": 12.6,
-				"need": "spear_thunder_plasm"
-			}
-		],
-		"skills": {
-			"normals": [
-				{
-					"name": "Колющий удар",
-					"description": "Находясь на земле, взмахните длинным копьем, чтобы провести 5 последовательных атак.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и отбрасывает цель назад на небольшое расстояние.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и отбрасывает цель назад на небольшое расстояние.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</> и отбрасывает цель назад на небольшое расстояние.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</> и отбрасывает цель назад на небольшое расстояние.\r\nПятая атака: наносит урон в размере <shuzhi>{8}%</> от АТК + <shuzhi>{9}</> и отбрасывает цель назад на значительное расстояние.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
-				},
-				{
-					"name": "Удар в прыжке",
-					"description": "Находясь в полете, используйте обычную атаку, чтобы атаковать в воздухе 4 раза подряд.\r\nПервая атака: наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.\r\nВторая атака: наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.\r\nТретья атака: наносит урон в размере <shuzhi>{4}%</> от АТК + <shuzhi>{5}</>.\r\nЧетвертая атака: наносит урон в размере <shuzhi>{6}%</> от АТК + <shuzhi>{7}</>.",
-					"operations": [
-						"Jump",
-						"Attack",
-						"Attack",
-						"Attack",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
-					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
-				},
-				{
-					"name": "Сокрушающее движение",
-					"description": "Для запуска Сокрушающего движения нажмите и удерживайте обычную атаку в полете (нажимайте, когда цель доступна) или используйте обычную атаку во время подъема, прыжка назад или использования реактивного ранца.\r\nВ падении при каждом попадании наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. При приземлении наносит урон в размере <shuzhi>{2}%</> от АТК + <shuzhi>{3}</> и сбивает цель с ног.\r\nЧем больше высота при начале атаки, тем больше нанесенный урон, вплоть до <shuzhi>600%</>.",
-					"operations": [
-						"Jump",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
-					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
-				},
-				{
-					"name": "Шквал копий",
-					"description": "Для запуска Шквала копий после третьей обычной атаки удерживайте кнопку обычной атаки.\r\nПри попадании <shuzhi>интенсивно подвешивает</> цель, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Нажмите еще раз, чтобы продолжить атаковать цель в полете, нанося одной цели урон в размере до <shuzhi>{2}%</> от АТК + <shuzhi>{3}</>.",
-					"operations": [
-						"Attack",
-						"Attack",
-						"Attack",
-						"Hold Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
-					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
-				},
-				{
-					"name": "Коварная атака",
-					"description": "Проведите колющий удар вперед длинным копьем и нанесите урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>.",
-					"operations": [
-						"Crouch",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
-					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
-				}
-			],
-			"dodge": [
-				{
-					"name": "Пинок в полете",
-					"description": "Используйте обычную атаку во время короткого окна для идеального уклонения (используйте кнопку направления перед уклонением), чтобы запустить Пинок в полете.\r\nПопав по цели, наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>, отбрасывая врагов далеко назад, а также <shuzhi>оглушает</> врагов на <shuzhi>1</> сек., а странников — на <shuzhi>0,5</> сек.",
-					"operations": [
-						"Movement",
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
-					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
-				},
-				{
-					"name": "Выпад с затрещиной",
-					"description": "Используйте обычную атаку в течение короткого периода после уклонения, чтобы запустить Выпад с затрещиной.\r\nСтранник бьет длинным копьем в землю, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>, и <shuzhi>интенсивно подвешивает</> цели.",
-					"operations": [
-						"Dash",
-						"Attack"
-					],
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
-					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
-				},
-				{
-					"name": "Уклонение",
-					"description": "Уклонитесь точно перед получением удара, чтобы запустить Фантазию, которая снижает скорость врагов в зоне действия. Дает невосприимчивость к оглушающему удару на <shuzhi>0,5</> сек. во время уклонения.",
-					"operations": [
-						"Movement",
-						"Dash"
-					],
-					"tags": [],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
-					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
-				}
-			],
-			"skill": [
-				{
-					"name": "Искатель Луны",
-					"description": "<shuzhi>Интенсивно подвешивает</> цели и поднимается в воздух, нанося урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</>. Перезарядка: <shuzhi>25</> сек.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
-					"id": "GA_FPlayerSpearSkillThu_SSR"
-				}
-			],
-			"discharge": [
-				{
-					"name": "Раскат грома",
-					"description": "Когда <red>оружие полностью заряжено</> или активирована <red>Фантазия</>, переключение на это оружие <shuzhi>снимает со странника все дебаффы</>. Странник подпрыгивает в воздух и бросает громовое копье. Копье взрывается, когда попадает в землю, наносит урон в размере <shuzhi>{0}%</> от АТК + <shuzhi>{1}</> и <shuzhi>интенсивно парализует</> цели на <shuzhi>1</> секунду.",
-					"tags": [
-						"Damage"
-					],
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
-					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
-				}
-			]
-		},
-		"FashionWeaponInfos": [],
-		"version": "1.0",
-		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "Грозовые клинки",
@@ -2241,7 +485,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "digger_thunder"
 	},
@@ -2491,7 +735,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "bigsword_ice"
 	},
@@ -2699,7 +943,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "bow_ice"
 	},
@@ -2935,7 +1179,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "stave_ice"
 	},
@@ -3174,7 +1418,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "sickle_fire"
 	},
@@ -3397,7 +1641,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Серебристая интуиция",
@@ -3650,7 +1894,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.5",
 		"id": "sword_physic"
 	},
@@ -3872,7 +2116,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "darts_physic"
 	},
@@ -4096,7 +2340,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "cube_fire"
 	},
@@ -4306,7 +2550,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "dgun_thunder"
 	},
@@ -4516,7 +2760,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "shieldaxe_fire"
 	},
@@ -4764,7 +3008,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Безмятежная роща",
@@ -5070,7 +3314,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Спокойная мелодия",
@@ -5345,7 +3589,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Летний иней",
@@ -5602,7 +3846,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Ширли",
@@ -5844,7 +4088,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "1.0",
 		"id": "frigg_ice"
 	},
@@ -6074,7 +4318,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Алая песня",
@@ -6335,7 +4579,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Абсолютная белоснежность",
@@ -6596,7 +4840,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Изящная летняя тень",
@@ -6870,7 +5114,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.2",
 		"id": "tianlang_thunder"
 	},
@@ -7134,7 +5378,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.2",
 		"id": "arm_physic"
 	},
@@ -7384,7 +5628,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Сияющее затмение",
@@ -7656,7 +5900,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Блеск платины",
@@ -7947,7 +6191,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.5",
 		"id": "killknife_physic"
 	},
@@ -8207,7 +6451,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Разговор во сне",
@@ -8443,7 +6687,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Не боясь солнца",
@@ -8762,7 +7006,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Утонченный росчерк",
@@ -9045,7 +7289,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Страна чудесного шиповника",
@@ -9339,7 +7583,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.2",
 		"id": "feise_fire"
 	},
@@ -9606,7 +7850,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Воздушный белый шоколад",
@@ -9877,7 +8121,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Кремовый цвет",
@@ -10145,7 +8389,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "2.4",
 		"id": "yoyo_ice"
 	},
@@ -10448,7 +8692,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [],
+		"fashion": [],
 		"version": "3.0",
 		"id": "yulan_ice"
 	},
@@ -10707,7 +8951,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Зик",
@@ -11053,7 +9297,7 @@
 				}
 			]
 		},
-		"FashionWeaponInfos": [
+		"fashion": [
 			{
 				"outfit": {
 					"name": "Звездные почести",
