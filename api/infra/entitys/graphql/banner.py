@@ -19,3 +19,4 @@ class Banner:
     isFinalBanner: bool
     isCollab: bool
     noWeapon: bool
+    isReleased: bool
