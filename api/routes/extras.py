@@ -48,7 +48,7 @@ async def get_banners(includeUnreleased: bool = False):
     **Return** \n
         list[Banner]
     '''
-    
+
     if not includeUnreleased:
         return list(filter(lambda x: x.isReleased, GB_BANNERS))
     
@@ -75,3 +75,7 @@ async def get_extra_asset(id: str = ApiPath(description='Asset ID')):
     
     raise HTTPException(status_code=404, detail='Asset not found')
         
+
+@router.get('/version', name='Game Current Version')
+async def get_game_version():
+    return HTTPException(501, {'error': 'not implemented yet'})
