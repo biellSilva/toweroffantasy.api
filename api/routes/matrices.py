@@ -2,6 +2,7 @@
 from fastapi import APIRouter
 
 from api.enums import MATRICES, LANGS, VERSIONS
+from api.utils import filter_released
 
 from api.core.response import PrettyJsonResponse
 
@@ -16,7 +17,9 @@ METADATA = {
     'name': 'Matrices',
     'description': ('Matrices are items that can be attached to one of the four weapon slots '
                     '(Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects. \n\n **DOES NOT CONTAINS CN DATA**'),
-    }
+}
+
+INCLUDE = {'name', 'id', 'assets', 'rarity'}
 
 
 @router.get('/{id}', name='Get matrix', response_model=Matrix)
@@ -48,12 +51,12 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = T
     if include:
         return PrettyJsonResponse(matrice.model_dump())
     else:
-        return PrettyJsonResponse(matrice.model_dump(include={'name', 'id', 'assets', 'rarity'}))
+        return PrettyJsonResponse(matrice.model_dump(include=INCLUDE))
 
 
 
 @router.get('', name='All matrices', response_model=list[Matrix])
-async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False):
+async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False, released: bool = False):
     '''
     **Query Params** \n
         lang:
@@ -65,14 +68,23 @@ async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False):
             type: bool
             default: False
             desc: Include all data keys
+        
+        released:
+            type: bool
+            default: False
+            desc: Only released data
             
     **Return** \n
         List[Matrix]
     '''
     
     matrices = await MATRICE_REPO.get_all(lang=lang, version=VERSIONS('global'))
+
+    if released:
+        matrices = filter(filter_released, matrices)
+
     if include:
         return PrettyJsonResponse([matrice.model_dump() for matrice in matrices])
     else:
-        return PrettyJsonResponse([matrice.model_dump(include={'name', 'id', 'assets', 'rarity'}) for matrice in matrices])
+        return PrettyJsonResponse([matrice.model_dump(include=INCLUDE) for matrice in matrices])
     
