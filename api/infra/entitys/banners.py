@@ -3,6 +3,7 @@ from pydantic import BaseModel, BeforeValidator, Field, model_validator, AliasCh
 from typing import Annotated, Any
 from pathlib import Path
 from json import loads
+from datetime import datetime
 
 
 weapons_data: dict[str, Any] = loads(Path('api/infra/database/global/en/weapons.json').read_bytes())
@@ -24,11 +25,22 @@ class Banner(BaseModel):
     isFinalBanner: bool = Field(validation_alias=AliasChoices('final_rerun', 'isFinalBanner'))
     isCollab: bool = Field(validation_alias=AliasChoices('is_collab', 'isCollab'))
     noWeapon: bool = Field(validation_alias=AliasChoices('no_weapon', 'noWeapon'))
+    isReleased: bool = True
 
     @model_validator(mode='before')
     def add_element_and_category(cls, value: dict[str, Any]):
         if weapon_data := weapons_data.get(value.get('weapon_id', ''), None):
             value['element'] = weapon_data['element']
             value['category'] = weapon_data['wc']
-        
+
+        try:
+            if datetime.strptime(value['start'], '%Y/%m/%d %H:%M') > datetime.now():
+                value['isReleased'] = False
+        except:
+            try:
+                if datetime.strptime(value['start'], '%Y/%m/%d') > datetime.now():
+                    value['isReleased'] = False
+            except:
+                pass
+
         return value
