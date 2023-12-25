@@ -55,7 +55,7 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = T
 
 
 @router.get('', name='All matrices', response_model=list[Matrix])
-async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False, released: bool = False):
+async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False, released: bool = True):
     '''
     **Query Params** \n
         lang:
@@ -70,7 +70,7 @@ async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False, rel
         
         released:
             type: bool
-            default: False
+            default: True
             desc: Only released data
             
     **Return** \n

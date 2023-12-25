@@ -76,7 +76,7 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
 async def get_all_weapons(# version: VERSIONS = VERSIONS('global'), 
                           lang: LANGS | LANGS_CN = LANGS('en'), 
                           include: bool = False,
-                          released: bool = False):
+                          released: bool = True):
     '''
     **Query Params** \n
         version (DISABLED):
@@ -98,7 +98,7 @@ async def get_all_weapons(# version: VERSIONS = VERSIONS('global'),
 
         released:
             type: bool
-            default: False
+            default: True
             desc: Only released data
     
     **Return** \n
