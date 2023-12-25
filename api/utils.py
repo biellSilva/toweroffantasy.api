@@ -361,3 +361,8 @@ def place_numbers_v2(simulacra: 'Simulacra_v2'):
 
 def paginator(items: list[T], page: int = 0, chunk: int = 10) -> tuple[list[T], int]:
     return items[page*chunk : page*chunk+chunk], len(items) // chunk if len(items) % chunk == 0 else len(items) // chunk + 1
+
+def filter_released(items: 'Simulacra | Weapon | Matrix') -> bool:
+    if items.banners and items.banners[0].isReleased or not items.banners:
+        return True
+    return False

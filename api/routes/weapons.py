@@ -3,6 +3,7 @@ from fastapi import APIRouter
 from fastapi.responses import ORJSONResponse
 
 from api.enums import WEAPONS, WEAPONS_CN, LANGS, LANGS_CN, VERSIONS
+from api.utils import filter_released
 
 from api.infra.entitys import Weapon, EntityBase
 from api.infra.repository import WeaponRepo
@@ -74,7 +75,8 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
 @router.get(path='', name='All Weapons', response_model=list[Weapon])
 async def get_all_weapons(# version: VERSIONS = VERSIONS('global'), 
                           lang: LANGS | LANGS_CN = LANGS('en'), 
-                          include: bool = False):
+                          include: bool = False,
+                          released: bool = False):
     '''
     **Query Params** \n
         version (DISABLED):
@@ -93,6 +95,11 @@ async def get_all_weapons(# version: VERSIONS = VERSIONS('global'),
             type: bool
             default: False
             desc: Include all data keys
+
+        released:
+            type: bool
+            default: False
+            desc: Only released data
     
     **Return** \n
         List[Weapon]
@@ -100,6 +107,10 @@ async def get_all_weapons(# version: VERSIONS = VERSIONS('global'),
     '''
 
     weapons = await WEAPON_REPO.get_all(lang, version=VERSIONS('global'))
+
+    if released:
+        weapons = filter(filter_released, weapons)
+
     if include:
         return ORJSONResponse([weapon.model_dump(exclude=EXCLUDE) for weapon in weapons])
 

@@ -3,7 +3,7 @@ from fastapi import APIRouter, Query, Path
 from fastapi.responses import ORJSONResponse
 
 from api.enums import SIMULACRA, LANGS, VERSIONS
-from api.utils import paginator
+from api.utils import paginator, filter_released
 
 from api.infra.repository import SimulacraV2Repo
 from api.infra.entitys import EntityBase, Simulacra_v2
@@ -93,6 +93,7 @@ async def get_simulacrum(id: SIMULACRA = Path(description='Imitation/Simulacrum 
 @router.get('', name='All Simulacra', response_model=list[Simulacra_v2])
 async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible languages'),
                         include: bool = Query(False, description='Include all data keys'), 
+                        released: bool = Query(False, description='Only released data'),
                         page: int | None = Query(None, description='Page to return'),
                         chunk: int | None = Query(None, description='How many items per page')):
     '''
@@ -106,6 +107,11 @@ async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible l
             type: bool
             default: False
             desc: Include all data keys
+        
+        released:
+            type: bool
+            default: False
+            desc: Only released data
         
         page:
             type: int
@@ -123,6 +129,9 @@ async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible l
     
     simulacra = await SIMULACRA_REPO.get_all(lang, version=VERSIONS('global'))
 
+    if released:
+        simulacra = list(filter(filter_released, simulacra))
+
     if page != None:
         if chunk:
             items, pages = paginator(items=simulacra, page=page, chunk=chunk)
@@ -133,10 +142,13 @@ async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible l
             return ORJSONResponse([simulacrum.model_dump(exclude=EXCLUDE) for simulacrum in items],
                                   headers={'pages': str(pages)})
         else:
-            return ORJSONResponse([simulacrum.model_dump(include=INCLUDE, exclude=EXCLUDE) for simulacrum in items],
+            return ORJSONResponse([simulacrum.model_dump(exclude=EXCLUDE) for simulacrum in items],
                                   headers={'pages': str(pages)})
+            
     else:
         if include:
             return ORJSONResponse([simulacrum.model_dump(exclude=EXCLUDE) for simulacrum in simulacra])
         else:
-            return ORJSONResponse([simulacrum.model_dump(include=INCLUDE, exclude=EXCLUDE) for simulacrum in simulacra])
+            return ORJSONResponse([simulacrum.model_dump(exclude=EXCLUDE, include=INCLUDE) for simulacrum in simulacra])
+        
+    
