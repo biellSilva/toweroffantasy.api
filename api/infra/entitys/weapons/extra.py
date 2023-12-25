@@ -2,7 +2,7 @@
 from pydantic import BaseModel, BeforeValidator, Field, AliasChoices
 from typing import Annotated
 
-from api.utils import replace_icon, classify_rework, bold_numbers
+from api.utils import classify_rework, bold_numbers
 
 
 class ListKeys(BaseModel):
@@ -11,18 +11,18 @@ class ListKeys(BaseModel):
 
 
 class Assets(BaseModel):
-    icon: Annotated[str | None, BeforeValidator(replace_icon)] 
+    icon: str | None 
     # itemLargeIcon: str | None
     # WeaponUPIcon: str | None
-    weaponIconForMatrix: Annotated[str | None, BeforeValidator(replace_icon)] 
-    characterIcon: str | None = None
+    weaponIconForMatrix: str | None 
+    characterArtwork: str | None = None
 
 
 class Skill(BaseModel):
     name: str | None
     description: Annotated[str, BeforeValidator(bold_numbers)] | None
     values: list[list[float | int]] = []
-    icon: Annotated[str | None, BeforeValidator(replace_icon)] 
+    icon: str | None 
     tags: list[str] = []
     operations: list[str] = []
     id: str | None
@@ -31,7 +31,7 @@ class Skill(BaseModel):
 class WeaponSkills(BaseModel):
     Name: str | None
     Description: str | None
-    Icon: Annotated[str | None, BeforeValidator(replace_icon)] 
+    Icon: str | None 
     Attacks: list[Skill]
 
 
@@ -85,7 +85,7 @@ class MetaData(BaseModel):
 class BaseStats(BaseModel):
     id: str
     name: str
-    icon: Annotated[str, BeforeValidator(replace_icon)]
+    icon: str | None
     value: float = Field(0, validation_alias=AliasChoices('PropValue', 'value'))
     isTag: bool = Field(False, validation_alias=AliasChoices('IsTag', 'isTag'))
     modifier: str = Field('', validation_alias=AliasChoices('modifier', 'ModifierOp'))

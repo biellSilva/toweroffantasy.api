@@ -3,6 +3,7 @@ from fastapi import APIRouter
 from fastapi.responses import ORJSONResponse
 
 from api.enums import SIMULACRA, SIMULACRA_CN, LANGS, LANGS_CN, VERSIONS
+from api.utils import filter_released
 
 from api.infra.entitys import Simulacra, EntityBase
 from api.infra.repository import SimulacraRepo
@@ -50,6 +51,8 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
             type: bool
             default: True
             desc: Include all data keys
+        
+        
             
     **Return** \n
         Simulacra
@@ -68,7 +71,8 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
 @router.get('', name='All simulacra', response_model=list[Simulacra])
 async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'), 
                             lang: LANGS | LANGS_CN = LANGS('en'), 
-                            include: bool = False):
+                            include: bool = False,
+                            includeUnreleased: bool = False):
     '''
     **Query Params** \n
         version (DISABLED):
@@ -87,16 +91,24 @@ async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'),
             type: bool
             default: False
             desc: Include all data keys
+
+        includeUnreleased:
+            type: bool
+            default: False
+            desc: Only released data
             
     **Return** \n
         List[Simulacra]
 
     '''
     
-    simulacras = await SIMU_REPO.get_all(lang=lang, version=VERSIONS('global'))
+    simulacra = await SIMU_REPO.get_all(lang=lang, version=VERSIONS('global'))
+
+    if not includeUnreleased:
+        simulacra = filter(filter_released, simulacra)
 
     if include:
-        return ORJSONResponse([simulacra.custom_model_dump() for simulacra in simulacras])
+        return ORJSONResponse([simulacrum.model_dump() for simulacrum in simulacra])
     else:
-        return ORJSONResponse([simulacra.custom_model_dump(include=INCLUDE) for simulacra in simulacras])
+        return ORJSONResponse([simulacrum.model_dump(include=INCLUDE) for simulacrum in simulacra])
     

@@ -12,3 +12,4 @@ class MatriceSet:
 class MatrixAssets:
     icon: str
     iconLarge: str
+    characterArtwork: str | None = None

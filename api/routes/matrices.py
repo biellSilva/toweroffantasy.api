@@ -1,9 +1,9 @@
 
 from fastapi import APIRouter
+from fastapi.responses import ORJSONResponse
 
 from api.enums import MATRICES, LANGS, VERSIONS
-
-from api.core.response import PrettyJsonResponse
+from api.utils import filter_released
 
 from api.infra.repository import MatricesRepo
 from api.infra.entitys import EntityBase, Matrix
@@ -16,7 +16,9 @@ METADATA = {
     'name': 'Matrices',
     'description': ('Matrices are items that can be attached to one of the four weapon slots '
                     '(Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects. \n\n **DOES NOT CONTAINS CN DATA**'),
-    }
+}
+
+INCLUDE = {'name', 'id', 'assets', 'rarity'}
 
 
 @router.get('/{id}', name='Get matrix', response_model=Matrix)
@@ -46,14 +48,14 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = T
     matrice = await MATRICE_REPO.get(EntityBase(id=id), lang, version=VERSIONS('global'))
 
     if include:
-        return PrettyJsonResponse(matrice.model_dump())
+        return ORJSONResponse(matrice.model_dump())
     else:
-        return PrettyJsonResponse(matrice.model_dump(include={'name', 'id', 'assets', 'rarity'}))
+        return ORJSONResponse(matrice.model_dump(include=INCLUDE))
 
 
 
 @router.get('', name='All matrices', response_model=list[Matrix])
-async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False):
+async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False, includeUnreleased: bool = False):
     '''
     **Query Params** \n
         lang:
@@ -65,14 +67,23 @@ async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False):
             type: bool
             default: False
             desc: Include all data keys
+        
+        released:
+            type: bool
+            default: False
+            desc: Only released data
             
     **Return** \n
         List[Matrix]
     '''
     
     matrices = await MATRICE_REPO.get_all(lang=lang, version=VERSIONS('global'))
+
+    if not includeUnreleased:
+        matrices = filter(filter_released, matrices)
+
     if include:
-        return PrettyJsonResponse([matrice.model_dump() for matrice in matrices])
+        return ORJSONResponse([matrice.model_dump() for matrice in matrices])
     else:
-        return PrettyJsonResponse([matrice.model_dump(include={'name', 'id', 'assets', 'rarity'}) for matrice in matrices])
+        return ORJSONResponse([matrice.model_dump(include=INCLUDE) for matrice in matrices])
     

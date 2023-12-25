@@ -2,28 +2,28 @@
 from pydantic import BaseModel, BeforeValidator
 from typing import Annotated
 
-from api.utils import voice_actor_string_rework, replace_icon
+from api.utils import voice_actor_string_rework
 
 
 class Assets(BaseModel):
-    avatar: Annotated[str | None, BeforeValidator(replace_icon)] 
-    titlePicture: Annotated[str | None, BeforeValidator(replace_icon)] 
-    awakenPhoto: Annotated[str | None, BeforeValidator(replace_icon)] 
-    painting: Annotated[str | None, BeforeValidator(replace_icon)] 
-    namePicture: Annotated[str | None, BeforeValidator(replace_icon)] 
-    grayPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
-    thumbPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
-    weaponShowPicture: Annotated[str | None, BeforeValidator(replace_icon)] 
-    activeImitation: Annotated[str | None, BeforeValidator(replace_icon)] 
-    inactiveImitation:Annotated[str | None, BeforeValidator(replace_icon)] 
-    advancePainting: Annotated[str | None, BeforeValidator(replace_icon)] 
-    advanceGrayPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
-    backPhoto: Annotated[str | None, BeforeValidator(replace_icon)] 
-    rarityIcon: Annotated[str | None, BeforeValidator(replace_icon)] 
-    lotteryCardImage: Annotated[str | None, BeforeValidator(replace_icon)] 
-    # lotteryDrawing: Annotated[str | None, BeforeValidator(replace_icon)] 
-    matrixPainting: Annotated[str | None, BeforeValidator(replace_icon)] 
-    descPainting: str
+    avatar: Annotated[str | None, BeforeValidator(lambda x: str(x).rsplit('.', 1)[0] if isinstance(x, str) and '.webp.webp' in x else x)]
+    titlePicture: str | None
+    characterArtwork: str | None
+    painting: str | None
+    namePicture: str | None
+    grayPainting: str | None
+    thumbPainting: str | None
+    weaponShowPicture: str | None
+    activeImitation: str | None
+    inactiveImitation:str | None
+    advancePainting: str | None
+    advanceGrayPainting: str | None
+    backPhoto: str | None
+    rarityIcon: str | None
+    lotteryCardImage: str | None
+    # lotteryDrawing: str | None
+    matrixPainting: str | None
+    descPainting: str | None
 
 
 class VoiceActors(BaseModel):
@@ -37,5 +37,5 @@ class VoiceActors(BaseModel):
 class Awakening(BaseModel):
     name: str
     description: str
-    icon: Annotated[str | None, BeforeValidator(replace_icon)] 
+    icon: str | None
     need: int

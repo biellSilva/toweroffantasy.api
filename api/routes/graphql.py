@@ -12,6 +12,7 @@ from api.enums import (
 )
 
 from api.config import GB_BANNERS
+from api.utils import filter_released
 
 from api.core.exceptions import VersionNotFound, LanguageNotFound, MissingArgument
 
@@ -65,7 +66,7 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='simulacra')
-    async def get_simulacra(self, lang: str = 'en') -> List[Simulacra]:
+    async def get_simulacra(self, lang: str = 'en', includeUnreleased: bool = False) -> List[Simulacra]:
         version = 'global'
         check_params(lang=lang, version=version)
         
@@ -73,6 +74,10 @@ class Query:
         #     lang = 'cn'
         
         simulacra = await SIMU_REPO.get_all(lang=lang, version=VERSIONS(version))
+
+        if not includeUnreleased:
+            simulacra = filter(filter_released, simulacra)
+
         return simulacra # type: ignore
         
 
@@ -96,11 +101,15 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='simulacra_v2')
-    async def get_simulacra_v2(self, lang: str = 'en') -> List[SimulacraV2]:
+    async def get_simulacra_v2(self, lang: str = 'en', includeUnreleased: bool = False) -> List[SimulacraV2]:
         version = 'global'
         check_params(lang=lang, version=version)
                 
         simulacra = await SIMU_V2_REPO.get_all(lang=LANGS(lang), version=VERSIONS(version), graphql=True)
+
+        if not includeUnreleased:
+            simulacra = filter(filter_released, simulacra)
+
         return simulacra # type: ignore
         
     
@@ -123,7 +132,7 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='weapons')
-    async def get_weapons(self, lang: str = 'en') -> List[Weapon]:
+    async def get_weapons(self, lang: str = 'en', includeUnreleased: bool = False) -> List[Weapon]:
         version = 'global'
         check_params(lang=lang, version=version)
 
@@ -131,6 +140,10 @@ class Query:
         #     lang = 'cn'
         
         weapons = await WEAPON_REPO.get_all(lang=lang, version=VERSIONS(version), graphql=True)
+
+        if not includeUnreleased:
+            weapons = filter(filter_released, weapons)
+
         return weapons # type: ignore
 
     @strawberry.field(name='matrix')
@@ -149,11 +162,15 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='matrices')
-    async def get_matrices(self, lang: str = 'en') -> List[Matrice]:
+    async def get_matrices(self, lang: str = 'en', includeUnreleased: bool = False) -> List[Matrice]:
         version = 'global'
         check_params(lang=lang, version=version)
 
         matrix = await MATRICE_REPO.get_all(lang=lang, version=VERSIONS(version))
+
+        if not includeUnreleased:
+            matrix = filter(filter_released, matrix)
+
         return matrix # type: ignore
     
     @strawberry.field(name='achievement')
@@ -322,7 +339,12 @@ class Query:
     
 
     @strawberry.field(name='banners')
-    async def get_banners(self) -> List[Banner]:
+    async def get_banners(self, includeUnreleased: bool = False) -> List[Banner]:
+
+        if not includeUnreleased:
+            return list(filter(lambda x: x.isReleased, GB_BANNERS)) # type: ignore
+    
+
         return GB_BANNERS # type: ignore
     
 

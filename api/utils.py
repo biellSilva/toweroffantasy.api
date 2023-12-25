@@ -182,10 +182,12 @@ def relic_advanc_rework(advanc: list[dict[str, str]]):
     return [value for i in advanc for key, value in i.items() if not key == 'id']
 
 
-def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, int]:
+def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, float]:
     if simulacrum.rarity == 'SSR':
         if simulacrum.banners:
             return -1, -simulacrum.banners[-1].bannerNumber
+        elif simulacrum.id == 'imitation_33':
+            return -1, -70.9
         else:
             if simulacrum.id in SIMULACRA_SORT_ORDER:
                 return -1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
@@ -359,3 +361,8 @@ def place_numbers_v2(simulacra: 'Simulacra_v2'):
 
 def paginator(items: list[T], page: int = 0, chunk: int = 10) -> tuple[list[T], int]:
     return items[page*chunk : page*chunk+chunk], len(items) // chunk if len(items) % chunk == 0 else len(items) // chunk + 1
+
+def filter_released(items: 'Simulacra | Weapon | Matrix') -> bool:
+    if items.banners and items.banners[0].isReleased or not items.banners:
+        return True
+    return False
