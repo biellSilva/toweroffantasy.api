@@ -72,7 +72,7 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
 async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'), 
                             lang: LANGS | LANGS_CN = LANGS('en'), 
                             include: bool = False,
-                            released: bool = True):
+                            includeUnreleased: bool = False):
     '''
     **Query Params** \n
         version (DISABLED):
@@ -92,9 +92,9 @@ async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'),
             default: False
             desc: Include all data keys
 
-        released:
+        includeUnreleased:
             type: bool
-            default: True
+            default: False
             desc: Only released data
             
     **Return** \n
@@ -104,7 +104,7 @@ async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'),
     
     simulacra = await SIMU_REPO.get_all(lang=lang, version=VERSIONS('global'))
 
-    if released:
+    if not includeUnreleased:
         simulacra = filter(filter_released, simulacra)
 
     if include:

@@ -14,6 +14,6 @@ class Relic(EntityBase):
     source: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     type: str
     icon: str | None
-    attributeID: str = Field(alias='AttributeID', serialization_alias='attributeID', exclude=True)
+    # attributeID: str = Field(alias='AttributeID', serialization_alias='attributeID', exclude=True)
     advancements: Annotated[list[str], BeforeValidator(relic_advanc_rework)] = Field(alias='advancement', serialization_alias='advancements')
 

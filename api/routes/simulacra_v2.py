@@ -93,7 +93,7 @@ async def get_simulacrum(id: SIMULACRA = Path(description='Imitation/Simulacrum 
 @router.get('', name='All Simulacra', response_model=list[Simulacra_v2])
 async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible languages'),
                         include: bool = Query(False, description='Include all data keys'), 
-                        released: bool = Query(True, description='Only released data'),
+                        includeUnreleased: bool = Query(False, description='Only released data'),
                         page: int | None = Query(None, description='Page to return'),
                         chunk: int | None = Query(None, description='How many items per page')):
     '''
@@ -108,9 +108,9 @@ async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible l
             default: False
             desc: Include all data keys
         
-        released:
+        includeUnreleased:
             type: bool
-            default: True
+            default: False
             desc: Only released data
         
         page:
@@ -129,7 +129,7 @@ async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible l
     
     simulacra = await SIMULACRA_REPO.get_all(lang, version=VERSIONS('global'))
 
-    if released:
+    if not includeUnreleased:
         simulacra = list(filter(filter_released, simulacra))
 
     if page != None:

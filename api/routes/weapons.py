@@ -76,7 +76,7 @@ async def get_weapon(id: WEAPONS | WEAPONS_CN,
 async def get_all_weapons(# version: VERSIONS = VERSIONS('global'), 
                           lang: LANGS | LANGS_CN = LANGS('en'), 
                           include: bool = False,
-                          released: bool = True):
+                          includeUnreleased: bool = False):
     '''
     **Query Params** \n
         version (DISABLED):
@@ -96,9 +96,9 @@ async def get_all_weapons(# version: VERSIONS = VERSIONS('global'),
             default: False
             desc: Include all data keys
 
-        released:
+        includeUnreleased:
             type: bool
-            default: True
+            default: False
             desc: Only released data
     
     **Return** \n
@@ -108,7 +108,7 @@ async def get_all_weapons(# version: VERSIONS = VERSIONS('global'),
 
     weapons = await WEAPON_REPO.get_all(lang, version=VERSIONS('global'))
 
-    if released:
+    if not includeUnreleased:
         weapons = filter(filter_released, weapons)
 
     if include:
