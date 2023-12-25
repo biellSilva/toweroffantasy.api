@@ -12,6 +12,13 @@ from api.infra.entitys import Raritys
 from api.infra.entitys.banners import Banner
 
 
+router = APIRouter(prefix='/extras', tags=['Extras'])
+METADATA = {
+    'name': 'Extras',
+    'description': 'Simple route to get extra data/assets',
+}
+
+
 RARITYS_DATA: dict[str, dict[str, dict[str, str]]] = loads(Path('api/infra/database/rarity.json').read_bytes())
 RARITY_DATA_RE = {rarity_key: value_asset
                 for rarity_key, rarity_value in RARITYS_DATA.items() 
@@ -19,12 +26,7 @@ RARITY_DATA_RE = {rarity_key: value_asset
 
 RARITY_MODEL = Raritys(**RARITY_DATA_RE) # type: ignore
 
-
-router = APIRouter(prefix='/extras', tags=['Extras'])
-METADATA = {
-    'name': 'Extras',
-    'description': 'Simple route to get extra data/assets',
-    }
+RELEASE_DATA: list[dict[str, str | list[str]]] = [{'version': k, 'items': v} for k, v in loads(Path('api/infra/database/global/release.json').read_bytes()).items() if v and 'cn' not in k.lower()]
 
 
 @router.get('/rarities', name='Get rarity', response_model=Raritys)
@@ -76,6 +78,8 @@ async def get_extra_asset(id: str = ApiPath(description='Asset ID')):
     raise HTTPException(status_code=404, detail='Asset not found')
         
 
-@router.get('/version', name='Game Current Version')
-async def get_game_version():
-    return HTTPException(501, {'error': 'not implemented yet'})
+@router.get('/version', name='Game Versions')
+async def all_game_version(current: bool = False):
+    if current:
+        return RELEASE_DATA[-1]
+    return RELEASE_DATA
