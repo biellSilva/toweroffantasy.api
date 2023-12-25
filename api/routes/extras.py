@@ -26,7 +26,16 @@ RARITY_DATA_RE = {rarity_key: value_asset
 
 RARITY_MODEL = Raritys(**RARITY_DATA_RE) # type: ignore
 
-RELEASE_DATA: list[dict[str, str | list[str]]] = [{'version': k, 'items': v} for k, v in loads(Path('api/infra/database/global/release.json').read_bytes()).items() if v and 'cn' not in k.lower()]
+RELEASE_DATA: list[dict[str, str | list[str]]] = [
+    {
+        'version': k, 
+        'simulacra': [i.lower() for i in v if 'imitation' in i.lower()],
+        'weapons': [i.lower() for i in v if 'imitation' not in i.lower() and 'matrix' not in i.lower() and 'mount' not in i.lower()],
+        'matrices': [i.lower() for i in v if 'matrix' in i.lower()],
+        'mounts': [i.lower() for i in v if 'mount' in i.lower()]
+    } 
+    for k, v in loads(Path('api/infra/database/global/release.json').read_bytes()).items() 
+    if v and 'cn' not in k.lower()]
 
 
 @router.get('/rarities', name='Get rarity', response_model=Raritys)
