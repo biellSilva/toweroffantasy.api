@@ -1,10 +1,9 @@
 
 from fastapi import APIRouter
+from fastapi.responses import ORJSONResponse
 
 from api.enums import MATRICES, LANGS, VERSIONS
 from api.utils import filter_released
-
-from api.core.response import PrettyJsonResponse
 
 from api.infra.repository import MatricesRepo
 from api.infra.entitys import EntityBase, Matrix
@@ -49,9 +48,9 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = T
     matrice = await MATRICE_REPO.get(EntityBase(id=id), lang, version=VERSIONS('global'))
 
     if include:
-        return PrettyJsonResponse(matrice.model_dump())
+        return ORJSONResponse(matrice.model_dump())
     else:
-        return PrettyJsonResponse(matrice.model_dump(include=INCLUDE))
+        return ORJSONResponse(matrice.model_dump(include=INCLUDE))
 
 
 
@@ -84,7 +83,7 @@ async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False, rel
         matrices = filter(filter_released, matrices)
 
     if include:
-        return PrettyJsonResponse([matrice.model_dump() for matrice in matrices])
+        return ORJSONResponse([matrice.model_dump() for matrice in matrices])
     else:
-        return PrettyJsonResponse([matrice.model_dump(include=INCLUDE) for matrice in matrices])
+        return ORJSONResponse([matrice.model_dump(include=INCLUDE) for matrice in matrices])
     
