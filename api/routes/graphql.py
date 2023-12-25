@@ -66,7 +66,7 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='simulacra')
-    async def get_simulacra(self, lang: str = 'en', released: bool = False) -> List[Simulacra]:
+    async def get_simulacra(self, lang: str = 'en', released: bool = True) -> List[Simulacra]:
         version = 'global'
         check_params(lang=lang, version=version)
         
@@ -101,7 +101,7 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='simulacra_v2')
-    async def get_simulacra_v2(self, lang: str = 'en', released: bool = False) -> List[SimulacraV2]:
+    async def get_simulacra_v2(self, lang: str = 'en', released: bool = True) -> List[SimulacraV2]:
         version = 'global'
         check_params(lang=lang, version=version)
                 
@@ -132,7 +132,7 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='weapons')
-    async def get_weapons(self, lang: str = 'en', released: bool = False) -> List[Weapon]:
+    async def get_weapons(self, lang: str = 'en', released: bool = True) -> List[Weapon]:
         version = 'global'
         check_params(lang=lang, version=version)
 
@@ -162,7 +162,7 @@ class Query:
         raise MissingArgument
 
     @strawberry.field(name='matrices')
-    async def get_matrices(self, lang: str = 'en', released: bool = False) -> List[Matrice]:
+    async def get_matrices(self, lang: str = 'en', released: bool = True) -> List[Matrice]:
         version = 'global'
         check_params(lang=lang, version=version)
 
