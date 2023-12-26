@@ -1,4 +1,1091 @@
 {
+	"spear_ice": {
+		"name": "Frostspeer",
+		"description": "Eine gewöhnliche Waffe unter den Einwohnern des Warren-Schneefelds. Mit Frost bearbeitet, ganz nach dem Geschmack vor Ort. Sehr beliebt, da sie günstig, jedoch gleichzeitig auch sehr wirksam ist.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Ice",
+		"type": "Spear",
+		"weaponUpgradeId": "ice_r_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "spear_ice_r_star",
+		"mats": {
+			"Item_Mine_ice": 15,
+			"Item_Mine_ice_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_ice_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Widerstand",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Wenn die Waffe voll geladen ist, bewirkt der nächste Angriff für **2**Sek. einen **starken Einfrieren-Effekt** und verursacht bei Zielen **6**Sek. lang Erfrierungen. Das Durchbrechen der Eisschicht verursacht zusätzlichen Schaden in Höhe von **67.00%** des ANG. Während der Erfrierungen wird die Waffenladegeschwindigkeit des Ziels um **50%** verringert."
+		},
+		"advancements": [
+			{
+				"charge": 5.6,
+				"shatter": 6.9,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Stoß",
+					"description": "Wenn der Anwender am Boden den Langspeer schwingt, greift er 5-mal hintereinander an.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und stößt das Ziel eine kurze Strecke zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und stößt das Ziel eine kurze Strecke zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</> und stößt das Ziel eine kurze Strecke zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</> und stößt das Ziel eine kurze Strecke zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</> und stößt das Ziel deutlich zurück.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_Melee_R"
+				},
+				{
+					"name": "Sprungschlag",
+					"description": "Setze in der Luft einen normalen Angriff ein, um 4-mal hintereinander in der Luft anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttack_R"
+				},
+				{
+					"name": "Kopfspalter",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist (tippe, wenn ein Ziel verfügbar ist), oder setze einen normalen Angriff ein, während du kletterst, rückwärts springst oder den Jetpack benutzt, um „Kopfspalter“ auszulösen.\r\nVerursacht beim Fallen pro Treffer Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Verursacht bei der Landung Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und lässt das Ziel schweben.\r\nJe höher du dich zum Zeitpunkt des Auslösens des Angriffs befindest, desto höher ist auch der verursachte Schaden (bis zu <shuzhi>600%</>).",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
+				},
+				{
+					"name": "Speerhagel",
+					"description": "Halte nach dem dritten normalen Angriff die normale Angriffstaste gedrückt, um „Speerhagel“ auszulösen.\r\nLässt das Ziel bei einem Treffer <shuzhi>länger schweben</> und verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Tippe erneut, um das Ziel in der Luft weiter anzugreifen und ihm Schaden in Höhe von bis zu <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> zuzufügen.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_Branch_R"
+				},
+				{
+					"name": "Schleichattacke",
+					"description": "Stößt den Langspeer nach vorne, um Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu verursachen.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Fliegender Tritt",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen einen normalen Angriff (verwende vor dem Ausweichen eine Richtungstaste), um „Fliegender Tritt“ auszulösen.\r\nDies fügt getroffenen Gegnern Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu, stößt sie deutlich zurück und <shuzhi>betäubt</> sie für <shuzhi>1</> Sek. oder für <shuzhi>0,5</> Sek., wenn das Ziel ein Wanderer ist.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
+				},
+				{
+					"name": "Stürzender Aufprall",
+					"description": "Verwende während des kurzen Zeitraums nach dem Ausweichen einen normalen Angriff, um „Stürzender Aufprall“ auszulösen.\r\nDies rammt den Langspeer in den Boden, verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und lässt Ziele <shuzhi>länger schweben</>.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttack_R"
+				},
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Gegnern in der Umgebung reduziert. Werde für <shuzhi>0,5</> Sek. immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Mondjäger",
+					"description": "Lässt Ziele <shuzhi>länger schweben</> und den Anwender in die Luft springen, um Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu verursachen. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Speertanz",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und das Ziel gepackt und mehrfach geschüttelt. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Der letzte Treffer lässt das Ziel <shuzhi>länger schweben</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_ice"
+	},
+	"digger_physic": {
+		"name": "Kampfklinge",
+		"description": "Eine einfache, von Banges-Technik entwickelte Waffe. Dank einer speziellen Legierung ist sie leicht, wendig und einfach zu handhaben.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Physics",
+		"type": "DoubleSword",
+		"weaponUpgradeId": "physic_r_tupo_BC",
+		"wc": "DPS",
+		"advanceID": "digger_physic_r_star",
+		"mats": {
+			"Item_Mine_physic": 15,
+			"Item_Mine_physic_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_physic_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Krit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Verwunden**:",
+			"description": "Wenn die Waffe voll geladen ist, verwundet der nächste Angriff Gegner für **7**Sek., erhöht den von ihnen erlittenen Schaden um **20%** und fügt ihnen Schaden in Höhe von **63.00%** des ANG zu. Im **Teamspiel** wird der physische Schaden, der verwundeten Zielen zugefüht wird, um **20%** erhöht."
+		},
+		"advancements": [
+			{
+				"charge": 9.6,
+				"shatter": 3.2,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Zwillingsklingen",
+					"description": "Wenn der Anwender am Boden die Zwillingsklingen schwingt, kann er bis zu 5-mal hintereinander angreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und stößt das Ziel eine kurze Strecke zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und stößt das Ziel eine kurze Strecke zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</> und stößt das Ziel eine kurze Strecke zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</> und stößt das Ziel eine kurze Strecke zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</> und stößt das Ziel eine kurze Strecke zurück.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
+					"id": "GA_FPlayerDsMelee_Melee_R"
+				},
+				{
+					"name": "Himmelssturm",
+					"description": "Setze in der Luft oder nach einmaligem Springen einen normalen Angriff ein, um 4-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
+					"id": "GA_FPlayerDsMelee_AirAttack_R"
+				},
+				{
+					"name": "Schneller Stoß",
+					"description": "Halte nach dem dritten normalen Angriff die normale Angriffstaste gedrückt, um „Schneller Stoß“ auszulösen.\r\nDies lässt das Ziel beim Treffer <shuzhi>länger schweben</> und verursacht einen Gesamtschaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
+					"id": "GA_FPlayerDsMelee_Branch_R"
+				},
+				{
+					"name": "Wirbelangriff",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist (tippe, wenn ein Ziel verfügbar ist), oder setze einen normalen Angriff ein, während du kletterst, rückwärts springst oder das Jetpack benutzt, um „Wirbelangriff“ auszulösen.\r\nVerursacht beim Fallen mit jedem Treffer Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
+					"id": "GA_FPlayerDsMelee_JumpAttack_R"
+				},
+				{
+					"name": "Schleichattacke",
+					"description": "Nähert sich der Anwender dem Gegner geduckt von hinten und setzt einen normalen Angriff ein, wird eine Schleichattacke ausgelöst, die Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerDsMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Messerwurf",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Richtungstaste), um „Messerwurf“ auszulösen.\r\nDies lässt das Ziel beim Treffer <shuzhi>länger schweben</> und verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Tippe erneut, um bis zu <shuzhi>6</> weitere Messer zu werfen, die jeweils Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> verursachen.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
+					"id": "GA_FPlayerDsEvade_FrontAttack_R"
+				},
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Gegner in der Umgebung verlangsamt. Abklingzeit: 15 Sek. Gewährt für <shuzhi>0,5</> Sek. Immunität gegen Trefferlähmung.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDsEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Bumerang-Klingen",
+					"description": "Feuert <shuzhi>6</> Bumerang-Klingen in alle Richtungen ab, die jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursachen. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
+					"id": "GA_FPlayerDSSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Tornadoklingen",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und Tornadoklingen losgelassen. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und lässt <shuzhi>2</> weitere Klingen um den Wanderer wirbeln, die Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> verursachen, wenn sie mit Zielen in Kontakt kommen.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
+					"id": "GA_FPlayerDsChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "digger_physic"
+	},
+	"sword_thunder": {
+		"name": "EM-Klinge",
+		"description": "Eines der ersten elektromagnetischen Omnium-Projekte. Die Klinge liegt gut in der Hand und ist bei Wanderern beliebt, die nicht sonderlich gut kämpfen können.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Thunder",
+		"type": "Sword",
+		"weaponUpgradeId": "thunder_r_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "sword_thunder_r_star",
+		"mats": {
+			"Item_Mine_thunder": 15,
+			"Item_Mine_thunder_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_thunder_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Widerstand",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Wenn die Waffe voll geladen ist, werden Ziele beim nächsten Angriff für **1**Sek. **stark gelähmt** und **6**Sek. lang elektrisiert. Die Buffs der Ziele werden entfernt und sie erleiden Schaden in Höhe von **70.00%** des ANG. Elektrisiere Ziele können für die nächsten **6**Sek. keine Buffs erhalten."
+		},
+		"advancements": [
+			{
+				"charge": 8.8,
+				"shatter": 3.6,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Schneller Schnitt",
+					"description": "Wenn der Anwender am Boden die Klinge schwingt, greift er 5-mal hintereinander an.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und stößt das Ziel eine kurze Strecke zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und stößt das Ziel eine kurze Strecke zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</> und stößt das Ziel eine kurze Strecke zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</> und stößt das Ziel eine kurze Strecke zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</> und <shuzhi>schleudert</> das Ziel hoch.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
+					"id": "GA_FPlayerSwordMelee_Melee_R"
+				},
+				{
+					"name": "Sprungschlag",
+					"description": "Setze in der Luft einen normalen Angriff ein, um 4-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</> und verursacht <shuzhi>Knockdown</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
+					"id": "GA_FPlayerSwordMelee_AirAttack_R"
+				},
+				{
+					"name": "-Zyklon",
+					"description": "Tippe und halte nach normalen Angriffen die Taste gedrückt, um „Zyklon“ auszulösen.\r\nLässt das Ziel bei einem Treffer schweben und fügt ihm Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
+					"id": "GA_FPlayerSwordMelee_Branch_R"
+				},
+				{
+					"name": "Fallender Schwung",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist, oder setze einen normalen Angriff ein, während du kletterst, rückwärts springst oder das Jetpack benutzt, um „Fallender Schwung“ auszulösen.\r\nVerursacht beim Fallen Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> pro Treffer. Bei der Landung verursachst du Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> an Zielen in der Nähe und schleuderst sie zurück.\r\nJe höher du dich zum Zeitpunkt des Auslösens des Angriffs befindest, desto höher ist auch der verursachte Schaden (bis zu <shuzhi>600%</>).",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
+					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
+				},
+				{
+					"name": "Schleichattacke",
+					"description": "Nähert sich der Anwender dem Gegner geduckt von hinten und setzt einen normalen Angriff ein, wird eine Schleichattacke ausgelöst, die Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSwordMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Gegner in der Umgebung verlangsamt. Abklingzeit: 15 Sek. Gewährt für <shuzhi>0,5</> Sek. Immunität gegen Trefferlähmung.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSwordEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Durchstreifen",
+					"description": "Der Anwender streift zwischen den Zielen hin und her und verursacht an bis zu <shuzhi>5</> Zielen einen Gesamtschaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>, wobei der letzte Schlag das Ziel schweben lässt. Gewährt Lähmungsangriff-Immunität im aktiven Zustand. Verringert den Schaden gegen dasselbe Ziel jedes Mal um <shuzhi>40%</>. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
+					"id": "GA_FPlayerSwordSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Unbändiger Ansturm",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>, er stürmt auf das Ziel zu und lässt es <shuzhi>länger schweben</>. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
+					"id": "GA_FPlayerSwordChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "sword_thunder"
+	},
+	"bow_fire": {
+		"name": "Kompositbogen",
+		"description": "Eine Waffe, die häufig von Jägern im Schneefeld verwendet wird. Kann leicht und sehr genau geführt werden. Nach reichlich Werbung hat sie mehr als die Hälfte des erschwinglichen zivilen Marktes erobert.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Flame",
+		"type": "Bow",
+		"weaponUpgradeId": "fire_r_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "bow_fire_r_star",
+		"mats": {
+			"Item_Mine_fire": 15,
+			"Item_Mine_fire_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_fire_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Krit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Flamme**:",
+			"description": "Wenn die Waffe voll geladen ist, entzündet sie das Ziel beim nächsten Angriff für **8**Sek. und verursacht jede Sekunde Schaden in Höhe von **27.00%** des ANG. Während Ziele entzündet sind, werden ihre Heileffekte um **50%** verringert."
+		},
+		"advancements": [
+			{
+				"charge": 8,
+				"shatter": 4.8,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Normaler Angriff",
+					"description": "Der Anwender spannt den Bogen am Boden mehrfach, um 5-mal anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</> und stößt das Ziel eine kurze Strecke zurück.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee"
+				},
+				{
+					"name": "Aufgeladener Pfeil",
+					"description": "Tippe und halte den normalen Angriff, um einen Angriff aufzuladen. Verursacht Grundschaden in Höhe von <shuzhi>{0}</> des ANG +<shuzhi>{1}</>, der pro <shuzhi>1</> Sek. Aufladen um <shuzhi>50%</> steigt (bis zu <shuzhi>3</> Sek.). Bei Kopfschüssen oder einem Treffer an der Schwachstelle des Gegners wird der Schaden verdoppelt und der Gegner zu Fall gebracht (Kopfschüsse sind gegen Wanderer unwirksam).",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
+				},
+				{
+					"name": "Pfeilhagel",
+					"description": "Halte den normalen Angriff nach einem beliebigen normalen Angriff, um „Pfeilhagel“ auszulösen. Dies fügt Zielen Flächenschaden in Höhe von bis zu <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch"
+				},
+				{
+					"name": "Luft-Salve",
+					"description": "Setze in der Luft einen normalen Angriff ein, um 4-mal hintereinander in der Luft anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Gegner in der Umgebung verlangsamt. Abklingzeit: 15 Sek. Gewährt für <shuzhi>0,5</> Sek. Immunität gegen Trefferlähmung.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade"
+				},
+				{
+					"name": "Geladener Pfeil",
+					"description": "Tippe nach dem Ausweichen auf den normalen Angriff, um „Geladener Pfeil“ auszulösen. Dieser stößt das Ziel eine kurze Strecke zurück und verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Durchdringender Schuss",
+					"description": "Macht einen Rückwärtssalto und schießt <shuzhi>1</>-mal „Durchdringender Schuss“ nach vorne, der Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht und das Ziel zurückstößt. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Explosives Sperrfeuer",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und „Explosives Sperrfeuer“ auf das Ziel entfesselt. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_fire"
+	},
+	"stave_thunder": {
+		"name": "Stab der Narben",
+		"description": "Ein mechanischer Stab mit einer kreuzförmig eingeritzten Rune. Damit kann vergeben und bestraft werden.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Staves",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "SUP",
+		"advanceID": "stave_thunder_sr_star",
+		"avatar": "imitation_14",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Widerstand",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Wenn die Waffe voll geladen ist, werden Ziele beim nächsten Angriff für **1**Sek. **stark gelähmt** und **6**Sek. lang elektrisiert. Die Buffs der Ziele werden entfernt und sie erleiden Schaden in Höhe von **106.00%** des ANG. Elektrisiere Ziele können für die nächsten **6**Sek. keine Buffs erhalten."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 4,
+				"need": null
+			},
+			{
+				"description": "Heilt alle Teammitglieder innerhalb von **10** Metern nach Einsetzen einer Ausweichfähigkeit um **100%** des ANG.",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-LP-Wachstum der aktuellen Waffe um **10%**.",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Normale Angriffe feuern zusätzlich zwei Raketen ab, die dem Ziel Schaden in Höhe von **5%** des ANG zufügen und **5** Waffenladungspunkte wiederherstellen.",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-LP-Wachstum der aktuellen Waffe um **20%**.",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Erhöht die Auffüllgeschwindigkeit der Waffenladung um **20%** (gilt nicht für Raketenangriffe).",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Gewährt allen Teammitgliedern in Reichweite **60%** Schadensreduktion, wenn eine Fähigkeit Kontrolleffekte vom Ziel entfernt.",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Normaler Angriff",
+					"description": "Der Anwender schwingt den Stab am Boden, um 5-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
+					"id": "GA_FPlayerStavesMelee_Melee"
+				},
+				{
+					"name": "Steigendes Sperrfeuer",
+					"description": "Setze in der Luft oder nach einmaligem Springen einen normalen Angriff ein, um 5-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
+					"id": "GA_FPlayerStavesMelee_AirAttack"
+				},
+				{
+					"name": "Mondfall",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist, um „Mondfall“ auszulösen.\r\nVerursacht bei der Landung alle <shuzhi>0,2</> Sek. Schaden bis zu einem Gesamtschaden von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
+					"id": "GA_FPlayerStavesMelee_JumpAttack"
+				},
+				{
+					"name": "Fokussierter Angriff",
+					"description": "Halte nach dem dritten normalen Angriff die normale Angriffstaste gedrückt, um Variantenangriffe auszulösen. Dies verbraucht <shuzhi>300</> Ausdauerpunkte.\r\nErster Angriff: Zieht Gegner vor dem Anwender heran, <shuzhi>lässt sie länger schweben</> und verursacht alle <shuzhi>0,3</> Sek. Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> (bis zu <shuzhi>4</>-mal).\r\nZweiter Angriff: Fügt am Zielort und Gegnern in der Nähe alle <shuzhi>0,3</> Sek. Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> zu.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
+					"id": "GA_FPlayerStavesMelee_Branch"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Gegner in der Umgebung verlangsamt. Abklingzeit: 15 Sek. Gewährt für <shuzhi>0,5</> Sek. Immunität gegen Trefferlähmung.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerStavesEvade_Evade"
+				},
+				{
+					"name": "Volt-Welle",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen einen normalen Angriff (verwende vor dem Ausweichen eine Richtungstaste), um „Volt-Welle“ auszulösen.\r\nJeder Energieimpuls fügt Zielen Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.\r\nGewährt bei Verwendung <shuzhi>75</> Waffenladungspunkte.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_FrontAttack"
+				},
+				{
+					"name": "Tesserakt",
+					"description": "Verwende während des kurzen Zeitraums nach dem Ausweichen einen normalen Angriff, um „Ausweichende Explosion“ auszulösen.\r\nDies schießt eine Energiekugel nach vorne und fügt allen Zielen im Weg alle <shuzhi>0,3</> Sek. Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu (bis zu 5-mal).\r\nGewährt bei Verwendung <shuzhi>75</> Waffenladungspunkte.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Heiligtum",
+					"description": "Erzeugt einen Energieschild an der Position des Wanderers. Heilt Verbündete innerhalb des Schilds jede Sekunde um <shuzhi>{3}%</> des ANG +<shuzhi>{4}</> und verringert den von ihnen erlittenen Schaden für <shuzhi>10</> Sek. um <shuzhi>{0}%</>. Abklingzeit: <shuzhi>60</> Sek.",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
+					"id": "GA_FPlayerStavesSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Hauch von Ruhe",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>. Der Stab entfernt weiterhin Debuffs vom Wanderer und seinen Verbündeten und heilt Wanderer und Verbündete in der Nähe <shuzhi>7</> Sek. lang um <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> LP.",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
+					"id": "GA_FPlayerStavesChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "stave_thunder"
+	},
+	"cannon_ice": {
+		"name": "Der Terminator",
+		"description": "Die knorrigste Feuerwaffe aller Zeiten, auch als beweglicher Geschützturm bekannt.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Cannon",
+		"weaponUpgradeId": "ice_sr_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "cannon_ice_sr_star",
+		"avatar": "imitation_15",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Widerstand",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Wenn die Waffe voll geladen ist, bewirkt der nächste Angriff für **2**Sek. einen **starken Einfrieren-Effekt** und verursacht bei Zielen **6**Sek. lang Erfrierungen. Das Durchbrechen der Eisschicht verursacht zusätzlichen Schaden in Höhe von **111.00%** des ANG. Während der Erfrierungen wird die Waffenladegeschwindigkeit des Ziels um **50%** verringert."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "Erhöht mit jedem Treffer eines normalen Angriffs den Schaden um **1%**. Der Effekt hält **2** Sek. an. Kann bis zu **15**-mal gestapelt werden. Erhöht die Munition auf **60**.",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **10%**.",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Erhöht beim Wechsel zu dieser Waffe innerhalb von **10** Sek. den Schaden von normalen Angriffen sowie von „Zertrümmern“ um **30%**. Abklingzeit: **25** Sek. Erhöht die Munition auf **80**.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **20%**.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Verringert die Abklingzeit von normalen Angriffen im Geschützturm-Modus um **2** Sek.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Erhöht beim Wechsel zu dieser Waffe innerhalb von **10** Sek. den Schaden von normalen Angriffen sowie von „Zertrümmern“ um **60%**. Abklingzeit: **25** Sek.",
+				"charge": 10,
+				"shatter": 16,
+				"need": "cannon_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Normaler Angriff",
+					"description": "Tippe auf den normalen Angriff, um den Zielmodus zu aktivieren. Halte den normalen Angriff gedrückt, um kontinuierlich bis zu <shuzhi>40</> Schüsse abzufeuern. Jeder Schuss verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Bei Kopfschüssen oder einem Treffer an der Schwachstelle des Gegners wird der Schaden verdoppelt und der Gegner zu Fall gebracht (Kopfschüsse sind gegen Wanderer unwirksam).",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
+					"id": "GA_FPlayerCannonMelee_Melee"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Gegner in der Umgebung verlangsamt. Abklingzeit: 15 Sek. Gewährt für <shuzhi>0,5</> Sek. Immunität gegen Trefferlähmung.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerCannonEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "Geschützturm",
+					"description": "Aktiviere den Geschützmodus und feuere große Energiekugeln ab, die jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursachen und das Ziel hochschleudern. der Wanderer ist gegen Lähmungsangriff und Kontrolleffekte immun, während der Geschützturm aufgestellt wird. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
+					"id": "GA_FPlayerCannonSkillNew"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Arktischer Strahl",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und ein arktischer Strahl abgefeuert. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und bewirkt einen <shuzhi>3</> Sek. anhaltenden <shuzhi>starken Einfrieren-Effekt</>. Außerdem sinkt der Frostwiderstand des Ziels für <shuzhi>10</> Sek. um <shuzhi>50%</>.",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
+					"id": "GA_FPlayerCannonChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "cannon_ice"
+	},
 	"chainsaw_physic": {
 		"name": "Wirbelstürmchen",
 		"description": "Viel zu gefährlich, um ein Kinderspielzeug zu sein. Es ist unmöglich, dass ein Kind es auf ehrliche Weise in die Hände bekommen hat. Wer weiß, was für eine Technik verwendet wurde, um es umzubauen … Vielleicht wurde es einfach irgendwo abseits des Weges aufgeschnappt.",
@@ -263,6 +1350,675 @@
 		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
+	},
+	"hammer_ice": {
+		"name": "Die Breitseite",
+		"description": "Niemand will von diesem Vorschlaghammer eine volle Breitseite abbekommen.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Hammer",
+		"weaponUpgradeId": "ice_sr_tupo_BC",
+		"wc": "Tank",
+		"advanceID": "hammer_ice_sr_star",
+		"avatar": "imitation_2",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Widerstand",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Wenn die Waffe voll geladen ist, bewirkt der nächste Angriff für **2**Sek. einen **starken Einfrieren-Effekt** und verursacht bei Zielen **6**Sek. lang Erfrierungen. Das Durchbrechen der Eisschicht verursacht zusätzlichen Schaden in Höhe von **111.00%** des ANG. Während der Erfrierungen wird die Waffenladegeschwindigkeit des Ziels um **50%** verringert."
+		},
+		"advancements": [
+			{
+				"charge": 6,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "Verspottet Ziele in der Nähe nach dem Wechsel zu dieser Waffe, verhindert innerhalb der nächsten **8** Sek. **1**-mal eingehenden Schaden und gewährt Hyperkörper für die nächsten **8** Sek. Abklingzeit: **15** Sek.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-LP-Wachstum der aktuellen Waffe um **10%**.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Reduziert nach erlittenem Schaden für die nächsten **6** Sek. allen erlittenen Schaden um **50%**. Abklingzeit: **20** Sek.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-LP-Wachstum der aktuellen Waffe um **20%**.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Normale Angriffe **betäuben** Ziele für **2,5** Sek. Abklingzeit: **20** Sek.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Entladungsfähigkeiten fügen Zielen für **25** Sek. **10%** zusätzlichen Schaden zu und erhöhen den Frostschaden zusätzlich um **10%**.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Normaler Angriff",
+					"description": "Wenn der Anwender am Boden den Vorschlaghammer schwingt, kann er 4-mal hintereinander angreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und stößt das Ziel eine kurze Strecke zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und stößt das Ziel eine kurze Strecke zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</> und stößt das Ziel eine kurze Strecke zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</> und schleudert das Ziel hoch.\r\nWenn der Anwender den Hammer schwingt, während „Rage“ aktiv ist, kann er 4-mal hintereinander angreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</> und stößt das Ziel eine kurze Strecke zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{10}%</> des ANG +<shuzhi>{11}</> und stößt das Ziel eine kurze Strecke zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{12}%</> des ANG +<shuzhi>{13}</> und stößt das Ziel eine kurze Strecke zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{14}%</> des ANG +<shuzhi>{15}</> und lässt das Ziel <shuzhi>länger schweben</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
+					"id": "GA_FPlayerHammerMelee_Melee"
+				},
+				{
+					"name": "Stampfen",
+					"description": "Setze in der Luft oder nach einmaligem Springen einen normalen Angriff ein, um „Sprungbombe“ auszulösen. Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und lässt das Ziel schweben.\r\nWährend „Rage“ aktiv ist, verursachst du Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und lässt das Ziel <shuzhi>länger schweben</>.\r\nJe höher du dich zum Zeitpunkt des Auslösens des Angriffs befindest, desto höher ist auch der verursachte Schaden (bis zu <shuzhi>600%</>).",
+					"operations": [
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
+					"id": "GA_FPlayerHammerMelee_AirAttack"
+				},
+				{
+					"name": "Schockwelle",
+					"description": "Eine Schockwelle wird ausgelöst durch Tippen und Halten in der Luft, bei einem Doppelsprung, durch kurzes Tippen in der Luft, wenn sich Ziele in der Nähe befinden, beim Klettern, beim Rückwärtsspringen oder durch Angriffe mit dem Jetpack. Lässt das Ziel <shuzhi>4</>-mal <shuzhi>länger schweben</> und verursacht jedes Mal Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Ausdauerkosten <shuzhi>250</>.\r\nWährend „Rage“ aktiv ist, lässt „Schockwelle“ das Ziel <shuzhi>5</>-mal <shuzhi>länger schweben</> und verursacht jedes Mal Schaden in Höhe von <shuzhi>{2}%</> des *ANG +<shuzhi>{3}</>.\r\nJe höher du dich zum Zeitpunkt des Auslösens des Angriffs befindest, desto höher ist auch der verursachte Schaden. Der Höchstwert beträgt <shuzhi>600%</> des Schadens.",
+					"operations": [
+						"Jump",
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
+					"id": "GA_FPlayerHammerMelee_JumpAttack"
+				},
+				{
+					"name": "Schleichattacke",
+					"description": "Nähert sich der Anwender dem Gegner geduckt von hinten und setzt einen normalen Angriff ein, wird eine Schleichattacke ausgelöst, die Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerHammerMelee_Sneak"
+				},
+				{
+					"name": "Gezielter Aufprall",
+					"description": "Tippe und halte den normalen Angriff, um „Gezielter Aufprall“ auszulösen (kann bis zu 3-mal gestapelt werden). Gewährt während des Aufladens Immunität gegen alle Kontrolleffekte und „Hyperkörper“.\r\nErster Stapel: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und lässt das Ziel schweben.\r\nZweiter Stapel: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und lässt das Ziel <shuzhi>länger schweben</>.\r\nDritter Stapel: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</> und lässt das Ziel <shuzhi>länger schweben</>.\r\nWährend „Rage“ aktiv ist, halte die normale Angriffstaste gedrückt, um „Rasende Schläge“ auszulösen. Dies verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</> und lässt das Ziel <shuzhi>länger schweben</>.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
+					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Springender Aufprall",
+					"description": "Benutze die Pfeiltasten und die Ausweichen-Taste, um „Springender Aufprall“ auszulösen. Dadurch wird eine Schockwelle entfesselt, die den Gegner <shuzhi>4</> Mal schweben lässt, um Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu verursachen.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
+					"id": "GA_FPlayerHammerEvade_FrontAttack"
+				},
+				{
+					"name": "Weltenspalter",
+					"description": "Tippe während des kurzen Zeitraums nach dem Ausweichen auf einen normalen Angriff, um „Weltenspalter“ auszulösen. Dadurch werden <shuzhi>3</> Schockwellen nach vorne geschickt, die jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursachen und Ziele schweben lassen.\r\nWährend „Rage“ aktiv ist, feuerst du <shuzhi>5</> Schockwellen nach vorne, die jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursachen und das Ziel schweben lassen.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
+					"id": "GA_FPlayerHammerEvade_BackAttack"
+				},
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Gegner in der Umgebung verlangsamt. Abklingzeit: 15 Sek. Gewährt für <shuzhi>0,5</> Sek. Immunität gegen Trefferlähmung.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerHammerEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "Rage",
+					"description": "Wechseln, um „Rage“ zu aktivieren und den verursachten Schaden <shuzhi>25</> Sek. lang zu erhöhen.\r\nWährend „Rage“ aktiv ist, lösen Fähigkeiten „Zorn der Lüfte“ aus. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>, lässt das Ziel <shuzhi>länger schweben</> und erzeugt einen Luftstrom auf dem Boden. Solange man im Luftstrom steht, kostet das Ausweichen nichts. Abklingzeit: <shuzhi>{2}</> Sek. (Abklingzeit von „Zorn der Lüfte“: <shuzhi>10</> Sek).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
+					"id": "GA_FPlayerHammerBigSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Zerfleischen",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe Ziele in der Nähe <shuzhi>länger schweben</> gelassen und <shuzhi>alle Debuffs vom Wanderer entfernt</>. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Außerdem wird ein Vorschlaghammer beschworen, der auf Ziele in der Nähe fällt und Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> verursacht.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
+					"id": "GA_FPlayerHammerChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "hammer_ice"
+	},
+	"bow_physic": {
+		"name": "Nachtigallfeder",
+		"description": "Der ideale Verbündete für düstere Nächte.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Physics",
+		"type": "Bow",
+		"weaponUpgradeId": "physic_sr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "bow_physic_sr_star",
+		"avatar": "imitation_16",
+		"mats": {
+			"Item_Mine_physic": 28,
+			"Item_Mine_physic_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_physic_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Krit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Verwunden**:",
+			"description": "Wenn die Waffe voll geladen ist, verwundet der nächste Angriff Gegner für **7**Sek., erhöht den von ihnen erlittenen Schaden um **20%** und fügt ihnen Schaden in Höhe von **100.00%** des ANG zu. Im **Teamspiel** wird der physische Schaden, der verwundeten Zielen zugefüht wird, um **20%** erhöht."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 6,
+				"need": null
+			},
+			{
+				"description": "Nach jedem fünften normalen Angriff oder der Verwendung von **Durchdringender Schuss** wird 1 Ausweichversuch wiederhergestellt.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **10%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Erhöht den Kopfschussschaden um **30%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **20%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Ausweichfähigkeiten belegen Ziele für **7** Sek. mit einem „Verwunden“-Effekt.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Erhöht die kritische Trefferrate bei Zielen mit „Verwunden“ um **30%** und den kritischen Schaden um **50%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Schnelles Ziehen",
+					"description": "Der Anwender spannt den Bogen am Boden mehrfach, um 5-mal anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</> und stößt das Ziel eine kurze Strecke zurück.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee_R"
+				},
+				{
+					"name": "Aufgeladener Pfeil",
+					"description": "Tippe und halte den normalen Angriff, um einen Angriff aufzuladen. Verursacht Grundschaden in Höhe von <shuzhi>{0}</> des ANG +<shuzhi>{1}</>, der pro <shuzhi>1</> Sek. Aufladen um <shuzhi>50%</> steigt (bis zu <shuzhi>3</> Sek.). Bei Kopfschüssen oder einem Treffer an der Schwachstelle des Gegners wird der Schaden verdoppelt und der Gegner zu Fall gebracht (Kopfschüsse sind gegen Wanderer unwirksam).",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
+				},
+				{
+					"name": "Pfeilhagel",
+					"description": "Halte den normalen Angriff nach einem beliebigen normalen Angriff, um „Pfeilhagel“ auszulösen. Dies fügt Zielen Flächenschaden in Höhe von bis zu <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch_R"
+				},
+				{
+					"name": "Luft-Salve",
+					"description": "Setze in der Luft einen normalen Angriff ein, um 4-mal hintereinander in der Luft anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Gegner in der Umgebung verlangsamt. Abklingzeit: 15 Sek. Gewährt für <shuzhi>0,5</> Sek. Immunität gegen Trefferlähmung.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade_R"
+				},
+				{
+					"name": "Geladener Pfeil",
+					"description": "Tippe nach dem Ausweichen auf den normalen Angriff, um „Geladener Pfeil“ auszulösen. Dieser stößt das Ziel eine kurze Strecke zurück und verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Durchdringender Schuss",
+					"description": "Macht einen Rückwärtssalto und schießt <shuzhi>1</>-mal „Durchdringender Schuss“ nach vorne, der Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht und das Ziel zurückstößt. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Explosives Sperrfeuer",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und „Explosives Sperrfeuer“ auf das Ziel entfesselt. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_physic"
+	},
+	"spear_thunder": {
+		"name": "Donner-Hellebarde",
+		"description": "Eine Hellebarde mit der Kraft des Donners. Gut für Explosionsschaden, und durch die Länge ist sie in unterschiedlichen Entfernungen einsetzbar.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Spear",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "spear_thunder_sr_star",
+		"avatar": "imitation_4",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Angriff",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Widerstand",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "LP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Wenn die Waffe voll geladen ist, werden Ziele beim nächsten Angriff für **1**Sek. **stark gelähmt** und **6**Sek. lang elektrisiert. Die Buffs der Ziele werden entfernt und sie erleiden Schaden in Höhe von **106.00%** des ANG. Elektrisiere Ziele können für die nächsten **6**Sek. keine Buffs erhalten."
+		},
+		"advancements": [
+			{
+				"charge": 7,
+				"shatter": 11,
+				"need": null
+			},
+			{
+				"description": "Erhöht Zertrümmern um **15%**. Wenn der Schild des Ziels zertrümmert wurde, wird der ANG aller Teammitglieder für **30 Sek.** um **15%** erhöht. Kann nicht gestapelt werden.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-LP-Wachstum der aktuellen Waffe um **10%**.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Nachdem ein Ziel mit **Mondjäger** getroffen wurde, wird sein ANG für **15** Sek. um **5%** verringert und der ANG des Anwenders um **5%** erhöht (Effekt bis zu **3**-mal stapelbar, indem mehrere Ziele getroffen werden). Der Effekt wird gegen Ziele mit Verwunden verdoppelt.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **20%**.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Verdoppelt die Betäubungsdauer von Ausweichfähigkeiten.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Je höher die zurückgelegte Entfernung der Entladungsfähigkeit ist, desto mehr Schaden verursacht sie (bis zu **100%** mehr Schaden).",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Stoß",
+					"description": "Wenn der Anwender am Boden den Langspeer schwingt, greift er 5-mal hintereinander an.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und stößt das Ziel eine kurze Strecke zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und stößt das Ziel eine kurze Strecke zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</> und stößt das Ziel eine kurze Strecke zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</> und stößt das Ziel eine kurze Strecke zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</> und stößt das Ziel deutlich zurück.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
+				},
+				{
+					"name": "Sprungschlag",
+					"description": "Setze in der Luft einen normalen Angriff ein, um 4-mal hintereinander in der Luft anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG +<shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
+				},
+				{
+					"name": "Kopfspalter",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist (tippe, wenn ein Ziel verfügbar ist), oder setze einen normalen Angriff ein, während du kletterst, rückwärts springst oder den Jetpack benutzt, um „Kopfspalter“ auszulösen.\r\nVerursacht beim Fallen pro Treffer Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Verursacht bei der Landung Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> und bringt das Ziel zu Fall.\r\nJe höher du dich zum Zeitpunkt des Auslösens des Angriffs befindest, desto höher ist auch der verursachte Schaden (bis zu <shuzhi>600%</>).",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
+				},
+				{
+					"name": "Speerhagel",
+					"description": "Halte nach dem dritten normalen Angriff die normale Angriffstaste gedrückt, um „Speerhagel“ auszulösen.\r\nLässt das Ziel bei einem Treffer <shuzhi>länger schweben</> und verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Tippe erneut, um das Ziel in der Luft weiter anzugreifen und ihm Schaden in Höhe von bis zu <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> zuzufügen.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
+				},
+				{
+					"name": "Schleichattacke",
+					"description": "Stößt den Langspeer nach vorne, um Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu verursachen.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Fliegender Tritt",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen einen normalen Angriff (verwende vor dem Ausweichen eine Richtungstaste), um „Fliegender Tritt“ auszulösen.\r\nDies fügt getroffenen Gegnern Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu, stößt sie deutlich zurück und <shuzhi>betäubt</> sie für <shuzhi>1</> Sek. oder für <shuzhi>0,5</> Sek., wenn das Ziel ein Wanderer ist.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
+				},
+				{
+					"name": "Stürzender Aufprall",
+					"description": "Verwende während des kurzen Zeitraums nach dem Ausweichen einen normalen Angriff, um „Stürzender Aufprall“ auszulösen.\r\nDies rammt den Langspeer in den Boden, verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und lässt Ziele <shuzhi>länger schweben</>.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
+				},
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Gegnern in der Umgebung reduziert. Werde für <shuzhi>0,5</> Sek. immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
+				}
+			],
+			"skill": [
+				{
+					"name": "Mondjäger",
+					"description": "Lässt Ziele <shuzhi>länger schweben</> und den Anwender in die Luft springen, um Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu verursachen. Abklingzeit: <shuzhi>25</> Sek.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkillThu_SSR"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Donnerschlag",
+					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>, er springt in die Luft und wirft einen donnernden Speer. Dieser explodiert bei Bodenkontakt und verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und <shuzhi>betäubt</> die Ziele <shuzhi>1</> Sek. lang stark.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "Donnerklingen",
@@ -5941,7 +7697,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Killknife.webp"
 		},
 		"rarity": "SSR",
-		"element": "Physics",
+		"element": "PhysicsFlame",
 		"type": "Killknife",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",
@@ -8708,7 +10464,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Zeke_Phy01.webp"
 		},
 		"rarity": "SSR",
-		"element": "OverseasZeke",
+		"element": "PhysicsFlame",
 		"type": "zeke",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",

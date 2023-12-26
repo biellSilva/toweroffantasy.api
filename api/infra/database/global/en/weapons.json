@@ -1,4 +1,1091 @@
 {
+	"spear_ice": {
+		"name": "Frosted Spear",
+		"description": "A common weapon among residents of Warren Snowfield. Infused with frost to reflect the local flavor. It's very popular, because it's cheap yet highly effective.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Ice",
+		"type": "Spear",
+		"weaponUpgradeId": "ice_r_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "spear_ice_r_star",
+		"mats": {
+			"Item_Mine_ice": 15,
+			"Item_Mine_ice_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_ice_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "When the weapon is fully charged, the next attack will **strongly freeze** targets for **2** seconds and leave them frostbitten for **6** seconds. Breaking the ice shell deals damage equal to **67.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
+		},
+		"advancements": [
+			{
+				"charge": 5.6,
+				"shatter": 6.9,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Thrust",
+					"description": "While on the ground, swing the long spear to attack 5 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back a short distance.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back a short distance.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and knock the target back a significant distance.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_Melee_R"
+				},
+				{
+					"name": "Jumping Strike",
+					"description": "While airborne, use normal attack to attack 4 times in a row in the air.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttack_R"
+				},
+				{
+					"name": "Crashing Drive",
+					"description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Crashing Drive.\r\nWhile falling, deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> each hit. Upon landing, deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and suspend the target.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to <shuzhi>600%</> damage.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
+				},
+				{
+					"name": "Spear Flurry",
+					"description": "After the third normal attack, hold the normal attack button to trigger Spear Flurry.\r\nUpon hit, <shuzhi>strongly suspend</> the target, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. Tap again to continue attacking the airborne target, dealing up to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> damage to a single target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_Branch_R"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Thrust the long spear forward, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Flying Kick",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Flying Kick.\r\nOnce hit the target, deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>, knock the enemies back significantly, and <shuzhi>stun</> enemies for <shuzhi>1</> second or <shuzhi>0.5</> seconds to Wanderers.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
+				},
+				{
+					"name": "Lunging Smash",
+					"description": "Use normal attack during the short period after dodging to trigger Lunging Smash.\r\nSlam the long spear into the ground, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and <shuzhi>strongly suspending</> targets.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttack_R"
+				},
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of enemies within the area. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Moonchaser",
+					"description": "<shuzhi>Strongly suspend</> targets and go airborne, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. Cooldown: <shuzhi>{2}</> seconds.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Spear Dance",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and grab the target and shake them multiple times, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. The last hit <shuzhi>strongly suspends</> the target.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_ice"
+	},
+	"digger_physic": {
+		"name": "Combat Blade",
+		"description": "A basic weapon developed by Banges Tech. Forged in a special alloy, it is light, agile, and easy to handle.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Physics",
+		"type": "DoubleSword",
+		"weaponUpgradeId": "physic_r_tupo_BC",
+		"wc": "DPS",
+		"advanceID": "digger_physic_r_star",
+		"mats": {
+			"Item_Mine_physic": 15,
+			"Item_Mine_physic_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_physic_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Crit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Grievous**:",
+			"description": "When the weapon is fully charged, the next attack will cause enemies to become grievous for **7** seconds, increasing their damage received by **20%** and dealing damage equal to **63.00%** of ATK. When in **team play**, physical damage dealt to grievous targets is increased by an additional **20%**."
+		},
+		"advancements": [
+			{
+				"charge": 9.6,
+				"shatter": 3.2,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Twin Blades",
+					"description": "While on the ground, brandish the pair of dual blades to launch up to 5 consecutive attacks.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back a short distance.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back a short distance.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and knock the target back a short distance.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
+					"id": "GA_FPlayerDsMelee_Melee_R"
+				},
+				{
+					"name": "Sky Flurry",
+					"description": "While airborne or after jumping once, use normal attack to attack 4 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
+					"id": "GA_FPlayerDsMelee_AirAttack_R"
+				},
+				{
+					"name": "Rapid Lunge",
+					"description": "After the third normal attack, hold the normal attack button to trigger Rapid Lunge.\r\nUpon hit, <shuzhi>strongly suspend</> the target, dealing total damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
+					"id": "GA_FPlayerDsMelee_Branch_R"
+				},
+				{
+					"name": "Spiral Drive",
+					"description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Spiral Drive.\r\nWhile falling, deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> each hit.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
+					"id": "GA_FPlayerDsMelee_JumpAttack_R"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Approach the enemy from behind while crouching, then use normal attack to use Sneak Attack, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerDsMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Flying Blades",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Flying Blades.\r\nUpon hit, <shuzhi>strongly suspend</> the target and deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. Keep tapping to throw up to <shuzhi>6</> more Flying Blades, each dealing damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
+					"id": "GA_FPlayerDsEvade_FrontAttack_R"
+				},
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDsEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Returning Blades",
+					"description": "Fire <shuzhi>6</> Returning Blades in all directions, each dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. <shuzhi>{2}</>-second cooldown.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
+					"id": "GA_FPlayerDSSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Orbiting Blades",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon <shuzhi>remove all debuffs from the Wanderer</> and unleashes orbiting blades that deal <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> damage, with <shuzhi>2</> more flying blades spinning around the Wanderer to deal <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> damage to targets coming into contact.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
+					"id": "GA_FPlayerDsChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "digger_physic"
+	},
+	"sword_thunder": {
+		"name": "EM Blade",
+		"description": "The earliest electromagnetic Omnium project. The blade is easy to handle, and is very popular among Wanderers that are not great fighters.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Thunder",
+		"type": "Sword",
+		"weaponUpgradeId": "thunder_r_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "sword_thunder_r_star",
+		"mats": {
+			"Item_Mine_thunder": 15,
+			"Item_Mine_thunder_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_thunder_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "When the weapon is fully charged, the next attack will **strongly paralyze** targets for **1** second and electrify them for **6** seconds, removing all their buffs and dealing damage equal to **70.00%** of ATK. Electrified targets can't receive any buffs for the next **6** seconds."
+		},
+		"advancements": [
+			{
+				"charge": 8.8,
+				"shatter": 3.6,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Quick Slash",
+					"description": "While on the ground, swing the blade to attack 5 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back a short distance.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back a short distance.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and <shuzhi>launch</> the target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
+					"id": "GA_FPlayerSwordMelee_Melee_R"
+				},
+				{
+					"name": "Jumping Strike",
+					"description": "While airborne, use normal attack to attack 4 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and deliver a <shuzhi>knockdown</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
+					"id": "GA_FPlayerSwordMelee_AirAttack_R"
+				},
+				{
+					"name": "Cyclone",
+					"description": "Tap and hold the normal attack button after normal attacks to trigger Cyclone.\r\nUpon hit, suspend the target and deal <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to a single target.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
+					"id": "GA_FPlayerSwordMelee_Branch_R"
+				},
+				{
+					"name": "Diving Edge",
+					"description": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Diving Edge.\r\nWhile falling, deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> each hit. Upon landing, deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> to surrounding targets and knock them back.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to <shuzhi>600%</> damage.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
+					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Approach the enemy from behind while crouching, then use normal attack to trigger Sneak Attack, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSwordMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSwordEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Roam",
+					"description": "Roam between targets, dealing total damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to up to <shuzhi>5</> targets, with the last hit suspending the target. Immune to hitstun while active. Reduce damage dealt to the same target by <shuzhi>40%</> each time. <shuzhi>{2}</>-second cooldown.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
+					"id": "GA_FPlayerSwordSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Unbridled Flurry",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</>, then rush to the target and <shuzhi>strongly suspend</> them, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
+					"id": "GA_FPlayerSwordChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "sword_thunder"
+	},
+	"bow_fire": {
+		"name": "Composite Bow",
+		"description": "A common weapon used by hunters in the snowfield. Easy to handle with very high accuracy. After enough promotion, it has earned more than half of the affordable civilian market.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Flame",
+		"type": "Bow",
+		"weaponUpgradeId": "fire_r_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "bow_fire_r_star",
+		"mats": {
+			"Item_Mine_fire": 15,
+			"Item_Mine_fire_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_fire_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Crit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Flame**:",
+			"description": "When the weapon is fully charged, the next attack will ignite the target for **8** seconds, dealing damage equal to **27.00%** of ATK every second. While ignited, targets' healing effect is reduced by **50%**."
+		},
+		"advancements": [
+			{
+				"charge": 8,
+				"shatter": 4.8,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Normal Attack",
+					"description": "While on the ground, draw the bow repeatedly to attack 5 times.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and knock the target back a short distance.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee"
+				},
+				{
+					"name": "Charged Arrow",
+					"description": "Tap and hold normal attack to charge an attack. Deal base damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>, and <shuzhi>50%</> more for each <shuzhi>1</> second spent charging, up to <shuzhi>3</> seconds. Deal double damage when scoring a headshot or when hitting an enemy's weak point, and knock the target down (headshots are ineffective against Wanderers).",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
+				},
+				{
+					"name": "Arrow Rain",
+					"description": "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> area damage to targets.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch"
+				},
+				{
+					"name": "Air Volley",
+					"description": "While airborne, use normal attack to attack 4 times in a row in the air.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade"
+				},
+				{
+					"name": "Loaded Arrow",
+					"description": "Tap attack after dodging to trigger Loaded Arrow, knocking the target back by a short distance and dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Piercing Shot",
+					"description": "Backflips and fires <shuzhi>1</> piercing shot forward, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knocking the target back. <shuzhi>{2}</>-second cooldown.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Explosive Barrage",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and unleash Explosive Barrage on the target, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_fire"
+	},
+	"stave_thunder": {
+		"name": "Staff of Scars",
+		"description": "A mechanical staff with a cross rune carved into it. Capable of both forgiving sins or unleashing punishments.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Staves",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "SUP",
+		"advanceID": "stave_thunder_sr_star",
+		"avatar": "imitation_14",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "When the weapon is fully charged, the next attack will **strongly paralyze** targets for **1** second and electrify them for **6** seconds, removing all their buffs and dealing damage equal to **106.00%** of ATK. Electrified targets can't receive any buffs for the next **6** seconds."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 4,
+				"need": null
+			},
+			{
+				"description": "Heal all teammates within **10** meters for **100%** of ATK after using a dodge skill.",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base HP growth by **10%**.",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Normal attacks also fire two missiles, each dealing damage equal to **5%** of ATK to the target and restoring **5** weapon charge points.",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base HP growth by **20%**.",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Increase speed of obtaining weapon charge by **20%** (not applicable to missile attacks).",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Grant all teammates within range **60%** damage reduction whenever a skill dispels control effects from the target.",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Normal Attack",
+					"description": "While on the ground, swing the staff to attack 5 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
+					"id": "GA_FPlayerStavesMelee_Melee"
+				},
+				{
+					"name": "Soaring Barrage",
+					"description": "While airborne or after jumping once, use normal attack to attack 5 times in a row in mid-air.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
+					"id": "GA_FPlayerStavesMelee_AirAttack"
+				},
+				{
+					"name": "Moonfall",
+					"description": "Tap and hold normal attack while airborne to trigger Moonfall.\r\nUpon landing, deal damage once every <shuzhi>0.2</> seconds, for a total of <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> damage.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
+					"id": "GA_FPlayerStavesMelee_JumpAttack"
+				},
+				{
+					"name": "Focused Assault",
+					"description": "After the third normal attack, hold the normal attack button to trigger branch attacks, consuming <shuzhi>300</> points of endurance.\r\nFirst Attack: Pull in enemies in front of the user, <shuzhi>strongly suspending</> them and deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> every <shuzhi>0.3</> seconds (up to <shuzhi>4</> times).\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> at the target location and to nearby enemies every <shuzhi>0.3</> seconds.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
+					"id": "GA_FPlayerStavesMelee_Branch"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerStavesEvade_Evade"
+				},
+				{
+					"name": "Surge",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Surge.\r\nEach energy pulse deals damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets.\r\nGrant <shuzhi>75</> weapon charge points upon use.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_FrontAttack"
+				},
+				{
+					"name": "Tesseract",
+					"description": "Use normal attack during the short period after dodging to trigger Evasive Blast.\r\nFire an energy orb forward, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets in its path every <shuzhi>0.3</> seconds (up to 5 times).\r\nGrant <shuzhi>75</> weapon charge points upon use.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Sanctuary",
+					"description": "Create an energy shield at the Wanderer's location. Heal allies within the shield for <shuzhi>{3}%</> of ATK plus <shuzhi>{4}</> every second and reduce their damage taken by <shuzhi>{0}%</> for <shuzhi>10</> seconds. <shuzhi>60</>-second cooldown.",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
+					"id": "GA_FPlayerStavesSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Swift Deliverance",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and the staff continues to remove debuffs from the Wanderer and allies, plus heals nearby Wanderers and allies for <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> HP for <shuzhi>7</> seconds.",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
+					"id": "GA_FPlayerStavesChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "stave_thunder"
+	},
+	"cannon_ice": {
+		"name": "The Terminator",
+		"description": "The most gnarly firearm ever created, also known as a moving turret.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Cannon",
+		"weaponUpgradeId": "ice_sr_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "cannon_ice_sr_star",
+		"avatar": "imitation_15",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "When the weapon is fully charged, the next attack will **strongly freeze** targets for **2** seconds and leave them frostbitten for **6** seconds. Breaking the ice shell deals damage equal to **111.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "Every successful normal attack increases damage by **1%** for **2** seconds. Stack up to **15** times. Increase ammo count to **60**.",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **10%**.",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Within **10** seconds of switching to the weapon, increase damage of normal attacks and shatter by **30%**. Cooldown: **25** seconds. Increase ammo to **80**.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **20%**.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Reduce cooldown of normal attacks while in turret mode by **2** seconds.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Within **10** seconds upon switching to the weapon, increase damage of normal attacks and shatter by **60%**. Cooldown: **25** seconds.",
+				"charge": 10,
+				"shatter": 16,
+				"need": "cannon_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Normal Attack",
+					"description": "Tap normal attack to enter aiming mode. Hold normal attack to fire continuously, up to <shuzhi>40</> rounds. Each shot deals damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. Deal double damage when scoring a headshot or hitting an enemy's weak point, and knock the target down (headshots are ineffective against Wanderers).",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
+					"id": "GA_FPlayerCannonMelee_Melee"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerCannonEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "Turret",
+					"description": "Enable turret mode and fire large energy orbs, each dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and launching the target into the air. Become immune to hitstun and control effects while setting up the turret. Cooldown: <shuzhi>{2}</> seconds.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
+					"id": "GA_FPlayerCannonSkillNew"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Arctic Beam",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and fire an arctic beam, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and inflict a <shuzhi>3</>-second <shuzhi>strong freeze</> effect. Also, reduce the target's frost resistance by <shuzhi>50%</> for <shuzhi>10</> seconds.",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
+					"id": "GA_FPlayerCannonChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "cannon_ice"
+	},
 	"chainsaw_physic": {
 		"name": "Mini Hurricane",
 		"description": "Far too dangerous to be a child's plaything. There is no way a kid could have gotten their hands on it through honest means. Who knows what kind of tech was used to refit it... Maybe it was simply picked up somewhere off the beaten path.",
@@ -263,6 +1350,675 @@
 		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
+	},
+	"hammer_ice": {
+		"name": "Pummeler",
+		"description": "No one wants to be on the receiving end of this maul.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Hammer",
+		"weaponUpgradeId": "ice_sr_tupo_BC",
+		"wc": "Tank",
+		"advanceID": "hammer_ice_sr_star",
+		"avatar": "imitation_2",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "When the weapon is fully charged, the next attack will **strongly freeze** targets for **2** seconds and leave them frostbitten for **6** seconds. Breaking the ice shell deals damage equal to **111.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
+		},
+		"advancements": [
+			{
+				"charge": 6,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "Taunt nearby targets after switching to this weapon, preventing **1** instance of damage in the next **8** seconds and granting hyperbody for the next **8** seconds. Cooldown: **15** seconds.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base HP growth by **10%**.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "After taking damage, reduce all damage received by **50%** for the next **6** seconds. Cooldown: **20** seconds.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base HP growth by **20%**.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Normal attacks **stun** targets for **2.5** seconds. Cooldown: **20** seconds.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Discharge skills deal an additional **10%** damage to targets and increase frost damage by an additional **10%** for **25** seconds.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Normal Attack",
+					"description": "While on the ground, swing the maul to attack 4 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back a short distance.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and launch the target.\r\nWhile Outburst is active, swing the maul to attack 4 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to <shuzhi>{10}%</> of ATK plus <shuzhi>{11}</> and knock the target back a short distance.\r\nThird Attack: Deal damage equal to <shuzhi>{12}%</> of ATK plus <shuzhi>{13}</> and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to <shuzhi>{14}%</> of ATK plus <shuzhi>{15}</> and <shuzhi>strongly suspend</> the target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
+					"id": "GA_FPlayerHammerMelee_Melee"
+				},
+				{
+					"name": "Pummel",
+					"description": "While airborne or after jumping once, use normal attack to trigger Jumping Blast. Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>and suspend the target.\r\nWhile Outburst is active, deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and <shuzhi>strongly suspend</> the target.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to <shuzhi>600%</> damage.",
+					"operations": [
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
+					"id": "GA_FPlayerHammerMelee_AirAttack"
+				},
+				{
+					"name": "Shockwave",
+					"description": "Tapping and holding while airborne, double-jumping, short tapping in the air when there are targets nearby, climbing, jumping backward, or attacking while using the Jetpack will trigger a Shockwave. <shuzhi>Strongly suspend</> the target <shuzhi>4</> times, dealing damage equal to <shuzhi>{0}%</> of ATK+ <shuzhi>{1}</> each time. Cost <shuzhi>250</> endurance.\r\nWhile Outburst is active, Shockwave <shuzhi>strongly suspends</> the target <shuzhi>5</> times, dealing damage equal to <shuzhi>{2}%</> of *ATK plus <shuzhi>{3}</> each time.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to <shuzhi>600%</> damage.",
+					"operations": [
+						"Jump",
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
+					"id": "GA_FPlayerHammerMelee_JumpAttack"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Approach the enemy from behind while crouching, then use normal attack to use Sneak Attack, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerHammerMelee_Sneak"
+				},
+				{
+					"name": "Focus Smash",
+					"description": "Tap and hold normal attack to trigger Focus Smash (can be charged up to 3 stacks). Grant immunity to all control effects and hyperbody while charging.\r\nFirst Stack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and suspend the target.\r\nSecond Stack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and <shuzhi>strongly suspend</> the target.\r\nThird Stack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and <shuzhi>strongly suspend</> the target.\r\nWhile Outburst is active, tap and hold normal attack to trigger Furious Strikes, dealing damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and <shuzhi>strongly suspend</> the target.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
+					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Jumping Smash",
+					"description": "Use the arrow buttons and the dodge button to trigger Jumping Smash, unleashing a Shockwave that suspends the enemy <shuzhi>4</> times, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
+					"id": "GA_FPlayerHammerEvade_FrontAttack"
+				},
+				{
+					"name": "Worldsplitter",
+					"description": "Tap normal attack during the short period of time after a dodge to trigger Worldsplitter, unleashing <shuzhi>3</> shockwaves forward, each dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>, and suspending the targets.\r\nWhile in Outburst mode, fire <shuzhi>5</> shockwaves forward, each dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and suspending the target.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
+					"id": "GA_FPlayerHammerEvade_BackAttack"
+				},
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerHammerEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "Outburst",
+					"description": "Switch to activate Outburst, increasing damage dealt for <shuzhi>25</> seconds.\r\nWhile Outburst is active, skills trigger Windfury, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>, <shuzhi>strongly suspending</> the target and creating an air current on the ground. While standing in the current, dodging has no cost. Cooldown: <shuzhi>{2}</> seconds (Windfury's cooldown: <shuzhi>10</> seconds).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
+					"id": "GA_FPlayerHammerBigSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Overwhelming Maul",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and <shuzhi>strongly suspend</> nearby targets, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. Also summon a maul to fall on nearby targets, dealing damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
+					"id": "GA_FPlayerHammerChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "hammer_ice"
+	},
+	"bow_physic": {
+		"name": "Nightingale's Feather",
+		"description": "Blends perfectly into the gloomy night.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Physics",
+		"type": "Bow",
+		"weaponUpgradeId": "physic_sr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "bow_physic_sr_star",
+		"avatar": "imitation_16",
+		"mats": {
+			"Item_Mine_physic": 28,
+			"Item_Mine_physic_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_physic_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Crit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Grievous**:",
+			"description": "When the weapon is fully charged, the next attack will cause enemies to become grievous for **7** seconds, increasing their damage received by **20%** and dealing damage equal to **100.00%** of ATK. When in **team play**, physical damage dealt to grievous targets is increased by an additional **20%**."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 6,
+				"need": null
+			},
+			{
+				"description": "Restore 1 dodge attempt every fifth normal attack or after using **Piercing Shot**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **10%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Increase headshot damage by **30%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **20%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Dodge skills inflict a grievous effect on targets for **7** seconds.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Increase crit rate to grievous targets by **30%** and crit damage by **50%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Quickdraw",
+					"description": "While on the ground, draw the bow repeatedly to attack 5 times.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and knock the target back a short distance.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee_R"
+				},
+				{
+					"name": "Charged Arrow",
+					"description": "Tap and hold normal attack to charge an attack. Deal base damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>, and <shuzhi>50%</> more for each <shuzhi>1</> second spent charging, up to <shuzhi>3</> seconds. Deal double damage when scoring a headshot or when hitting an enemy's weak point, and knock the target down (headshots are ineffective against Wanderers).",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
+				},
+				{
+					"name": "Arrow Rain",
+					"description": "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> area damage to targets.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch_R"
+				},
+				{
+					"name": "Air Volley",
+					"description": "While airborne, use normal attack to attack 4 times in a row in the air.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, which reduces the speed of enemies within the area. Cooldown: 15 seconds. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade_R"
+				},
+				{
+					"name": "Loaded Arrow",
+					"description": "Tap attack after dodging to trigger Loaded Arrow, knocking the target back by a short distance and dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Piercing Shot",
+					"description": "Backflips and fires <shuzhi>1</> piercing shot forward, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knocking the target back. <shuzhi>{2}</>-second cooldown.",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Explosive Barrage",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and unleash Explosive Barrage on the target, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_physic"
+	},
+	"spear_thunder": {
+		"name": "Thunderous Halberd",
+		"description": "A halberd infused with the power of thunder. Great for burst damage, and its length makes it a great weapon for a variety of ranges.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Spear",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "spear_thunder_sr_star",
+		"avatar": "imitation_4",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "When the weapon is fully charged, the next attack will **strongly paralyze** targets for **1** second and electrify them for **6** seconds, removing all their buffs and dealing damage equal to **106.00%** of ATK. Electrified targets can't receive any buffs for the next **6** seconds."
+		},
+		"advancements": [
+			{
+				"charge": 7,
+				"shatter": 11,
+				"need": null
+			},
+			{
+				"description": "Increase shatter by **15%**. After shattering the target's shield, increase all teammates' ATK by **15%** for **30** seconds. This cannot be stacked.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base HP growth by **10%**.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "After hitting a target with **Moonchaser**, reduce their ATK by **5%** and increase the user's ATK by **5%** for **15** seconds (effect can be stacked up to **3** times by hitting multiple targets). Effect is doubled to grievous targets.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **20%**.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Double stun duration from dodge skills.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Discharge skill deals more damage the further it travels, up to **100%** more damage.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Thrust",
+					"description": "While on the ground, swing the long spear to attack 5 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back a short distance.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back a short distance.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back a short distance.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and knock the target back a significant distance.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
+				},
+				{
+					"name": "Jumping Strike",
+					"description": "While airborne, use normal attack to attack 4 times in a row in the air.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
+				},
+				{
+					"name": "Crashing Drive",
+					"description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger Crashing Drive.\r\nWhile falling, deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> each hit. Upon landing, deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target down.\r\nThe higher the altitude when triggering the attack, the greater the damage dealt, up to <shuzhi>600%</> damage.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
+				},
+				{
+					"name": "Spear Flurry",
+					"description": "After the third normal attack, hold the normal attack button to trigger Spear Flurry.\r\nUpon hit, <shuzhi>strongly suspend</> the target, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. Tap again to continue attacking the airborne target, dealing up to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> damage to a single target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Thrust the long spear forward, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Flying Kick",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Flying Kick.\r\nOnce hit the target, deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>, knock the enemies back significantly, and <shuzhi>stun</> enemies for <shuzhi>1</> second or <shuzhi>0.5</> seconds to Wanderers.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
+				},
+				{
+					"name": "Lunging Smash",
+					"description": "Use normal attack during the short period after dodging to trigger Lunging Smash.\r\nSlam the long spear into the ground, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and <shuzhi>strongly suspending</> targets.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
+				},
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of enemies within the area. Become immune to hitstun while dodging for <shuzhi>0.5</> seconds.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
+				}
+			],
+			"skill": [
+				{
+					"name": "Moonchaser",
+					"description": "<shuzhi>Strongly suspend</> targets and go airborne, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. Cooldown: <shuzhi>25</> seconds.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkillThu_SSR"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Thunderclap",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</>, then jump in the air and throw a thunderous spear that explodes on hitting the ground, dealing <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> damage and <shuzhi>strongly paralyzing</> targets for <shuzhi>1</> second.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "Thunderblades",
@@ -5941,7 +7697,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Killknife.webp"
 		},
 		"rarity": "SSR",
-		"element": "Physics",
+		"element": "PhysicsFlame",
 		"type": "Killknife",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",
@@ -8709,7 +10465,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Zeke_Phy01.webp"
 		},
 		"rarity": "SSR",
-		"element": "OverseasZeke",
+		"element": "PhysicsFlame",
 		"type": "zeke",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",

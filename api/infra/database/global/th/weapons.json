@@ -1,4 +1,1091 @@
 {
+	"spear_ice": {
+		"name": "หอกน้ำแข็ง",
+		"description": "อาวุธทั่วไปของผู้ที่อาศัยอยู่ในทุ่งหิมะวอร์เรน อาวุธนี้บรรจุไปด้วยพลังน้ำแข็ง สะท้อนให้เห็นถึงลักษณะท้องถิ่นที่ใช้งานมัน มันเป็นที่นิยมมากเพราะราคาถูก แต่ก็มีประสิทธิภาพสูง",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Ice",
+		"type": "Spear",
+		"weaponUpgradeId": "ice_r_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "spear_ice_r_star",
+		"mats": {
+			"Item_Mine_ice": 15,
+			"Item_Mine_ice_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_ice_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "ค่าต้านทาน",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟฟ้า**:",
+			"description": "เมื่ออาวุธชาร์จเต็ม การโจมตีครั้งต่อไปจะสร้างเอฟเฟกต์**บังคับแช่แข็ง**ต่อเป้าหมาย เป็นเวลา **2** วินาที และปล่อยให้เป้าหมายถูกน้ำแข็งกัดเป็นเวลา **6** วินาที เมื่อน้ำแข็งแตกเป็นเสี่ยง ๆ จะสร้างดาเมจ **67.00%** ของ ATK ในระหว่างที่ถูกน้ำแข็งกัด ความเร็วชาร์จอาวุธของเป้าหมายจะลดลง **50%**"
+		},
+		"advancements": [
+			{
+				"charge": 5.6,
+				"shatter": 6.9,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "รุกราน",
+					"description": "ขณะอยู่บนพื้น เหวี่ยงหอกยาวเพื่อโจมตี 5 ครั้งติดต่อกัน\r\nโจมตีครั้งแรก: สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สอง: สร้างดาเมจ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สาม: สร้างดาเมจ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่ห้า: สร้างดาเมจ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และทำให้เป้าหมายกระเด็นถอยหลังไปไกล",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_Melee_R"
+				},
+				{
+					"name": "กระโดดโจมตี",
+					"description": "ในระหว่างที่อยู่กลางอากาศ จะใช้ท่าโจมตีปกติเพื่อโจมตี 4 ครั้งติดต่อกันกลางอากาศ\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttack_R"
+				},
+				{
+					"name": "เงายมทูต",
+					"description": "แตะและกดปุ่มโจมตีปกติค้างไว้ในระหว่างที่ลอยอยู่กลางอากาศ (แตะมีเป้าหมายศัตรู) หรือใช้ท่าโจมตีปกติในระหว่างที่กำลังปีน กระโดดถอยหลังหรือใช้เจ็ตแพ็กเพื่อเรียกใช้เงายมทูต\r\nในขณะที่กำลังตกลงมา จะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ในแต่ละครั้งที่โจมตีโดน เมื่อลงถึงพื้น จะสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และทำให้เป้าหมายลอยค้าง\r\nยิ่งการโจมตีถูกเรียกใช้สูงจากพื้น ดาเมจที่สร้างก็จะรุนแรงยิ่งขึ้น สูงสุดไม่เกิน <shuzhi>600%</>",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
+				},
+				{
+					"name": "หอกปลิดชีพ",
+					"description": "หลังจากโจมตีปกติเป็นครั้งที่สาม ให้แตะหรือกดปุ่มโจมตีปกติค้างไว้ เพื่อเรียกใช้งานหอกปลิดชีพ\r\nเมื่อโจมตีถูกเป้าหมาย เป้าหมายจะถูก <shuzhi>บังคับลอยค้าง</> การโจมตีจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้แตะปุ่มอีกครั้งเพื่อโจมตีศัตรูที่ลอยค้างต่อไป การโจมตีจะสร้างดาเมจสูงสุด <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> แก่เป้าหมายเดี่ยว",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_Branch_R"
+				},
+				{
+					"name": "ลอบโจมตี",
+					"description": "แทงหอกยาวไปข้างหน้า สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "กระโดดเตะ",
+					"description": "แตะโจมตีปกติในระหว่างช่วงสั้นๆ หลังช่วงหลบหลีกสมบูรณ์ (แตะปุ่มธนูก่อนหลบหลีก) เพื่อเรียกใช้งานกระโดดเตะ\r\nเมื่อโจมตีเป้าหมาย สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ทำให้เป้าหมายกระเด็นถอยหลังไปไกลและสร้างเอฟเฟกต์ <shuzhi>สตัน</> <shuzhi>1</> วินาที หรือ <shuzhi>0.5</> วินาที ต่อนักพเนจร",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
+				},
+				{
+					"name": "ท้าปฐพี",
+					"description": "แตะการโจมตีปกติในช่วงเวลาสั้น ๆ หลังจากหลบหลีกเพื่อเรียกใช้ท้าปฐพี\r\nกระแทกหอกยาวลงไปที่พื้น สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttack_R"
+				},
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้งานแฟนตาเซีย ซึ่งจะลดความเร็วของศัตรูภายในบริเวณ และไม่โดนติดสตันระหว่างหลบหลีก เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "นักล่าพระจันทร์",
+					"description": "ทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>และลอยไปในอากาศ และสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ระยะเวลาคูลดาวน์: <shuzhi>{2}</> วินาที",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "หอกร่ายรำ",
+					"description": "เมื่อ<red>แถบชาร์จอาวุธ</>เต็มหรือมีการเรียกใช้งาน <red>แฟนตาเซีย</> การเปลี่ยนไปใช้อาวุธชิ้นนี้ <shuzhi>จะลบดีบัฟทั้งหมดของผู้ถือ</> และผู้ใช้อาวุธจะคว้าจับเป้าหมายแล้วเขย่าหลายครั้ง ซึ่งจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> การโจมตีครั้งสุดท้ายจะทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_ice"
+	},
+	"digger_physic": {
+		"name": "ดาบปะทะ",
+		"description": "อาวุธพื้นฐานที่พัฒนาขึ้นโดยเบนเจสเทค หลอมในอัลลอยพิเศษ น้ำหนักเบา คล่องแคล่ว และถือสะดวก",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Physics",
+		"type": "DoubleSword",
+		"weaponUpgradeId": "physic_r_tupo_BC",
+		"wc": "DPS",
+		"advanceID": "digger_physic_r_star",
+		"mats": {
+			"Item_Mine_physic": 15,
+			"Item_Mine_physic_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_physic_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "คริติคอล",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**สาหัส**:",
+			"description": "หลังจากค่าชาร์จอาวุธเต็มแล้ว การโจมตีครั้งต่อไปจะทำให้ศัตรูเข้าสู่สถานะสาหัส **7** วินาที ได้รับดาเมจเพิ่มขึ้น **20%** และสร้างดาเมจเท่ากับ **63.00%** ของ ATK เมื่อ**เล่นเป็นทีม** หากเป้าหมายอยู่ในสถานะสาหัสจะได้รับดาเมจกายภาพเพิ่มขึ้น **20%**"
+		},
+		"advancements": [
+			{
+				"charge": 9.6,
+				"shatter": 3.2,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "คมดาบคู่",
+					"description": "ขณะอยู่บนพื้น กวัดแกว่งดาบคู่เพื่อโจมตี 5 ครั้งติดต่อกัน\r\nโจมตีครั้งแรก: สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สอง: สร้างดาเมจ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สาม: สร้างดาเมจ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และทำให้เป้าหมายถอยหลังกระเด็นเล็กน้อย\r\nโจมตีครั้งที่ห้า: สร้างดาเมจ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
+					"id": "GA_FPlayerDsMelee_Melee_R"
+				},
+				{
+					"name": "ป่วนฟ้า",
+					"description": "ขณะลอยกลางอากาศหรือหลังกระโดดหนึ่งครั้ง จะใช้ท่าโจมตีปกติเพื่อโจมตี 4 ครั้งติดต่อกัน\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
+					"id": "GA_FPlayerDsMelee_AirAttack_R"
+				},
+				{
+					"name": "ทิ่มแทง",
+					"description": "หลังจากโจมตีปกติเป็นครั้งที่สาม ให้กดปุ่มโจมตีปกติเพื่อเรียกใช้งานทิ่มแทง\r\nเมื่อโจมตีโดน เป้าหมายจะถูก <shuzhi>บังคับลอยค้าง</> การโจมตีจะสร้างดาเมจรวมเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
+					"id": "GA_FPlayerDsMelee_Branch_R"
+				},
+				{
+					"name": "พายุหมุน",
+					"description": "ให้แตะและกดปุ่มโจมตีปกติค้างไว้ในระหว่างที่ลอยอยู่กลางอากาศ (แตะเมื่อมีเป้าหมายเป็นศัตรู) หรือใช้ท่าโจมตีปกติในระหว่างที่กำลังปีน, กระโดดถอยหลังหรือใช้เจ็ตแพ็กเพื่อเรียกใช้พายุหมุน\r\nในขณะที่กำลังตกลงมา จะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ในแต่ละครั้งที่โจมตีโดน",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
+					"id": "GA_FPlayerDsMelee_JumpAttack_R"
+				},
+				{
+					"name": "ลอบโจมตี",
+					"description": "เข้าประชิดศัตรูจากด้านหลังในระหว่างที่กำลังย่อตัว แล้วใช้ท่าโจมตีปกติเพื่อเรียกใช้งานสกิลลอบโจมตี ซึ่งจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerDsMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "มีดบิน",
+					"description": "ให้แตะหรือกดปุ่มโจมตีปกติในช่วงระยะเวลาสั้น ๆ สำหรับการหลบหลีกสมบูรณ์แบบ (แตะหรือกดปุ่มลูกศรก่อนหลบหลีก) เพื่อเรียกใช้งานมีดบิน\r\nเมื่อโจมตีโดน เป้าหมายจะถูก <shuzhi>บังคับลอยค้าง</> สกิลจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้แตะหรือกดปุ่มโจมตีปกติอย่างต่อเนื่องเพื่อขว้างมีดบินเพิ่มได้สูงสุดอีก <shuzhi>6</> เล่ม มีดบินแต่ละเล่มจะสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
+					"id": "GA_FPlayerDsEvade_FrontAttack_R"
+				},
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้แฟนตาเซียซึ่งลดความเร็วของศัตรูภายในพื้นที่ คูลดาวน์: 15 วินาที ขณะหลบคุณจะไม่โดนติดสตัน เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDsEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "มีดวกกลับ",
+					"description": "ขว้างมีดวกกลับ <shuzhi>6</> เล่ม ในทุกทิศทาง แต่ละเล่มสร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> คูลดาวน์ <shuzhi>{2}</> วินาที",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
+					"id": "GA_FPlayerDSSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "มีดโคจร",
+					"description": "เมื่อ<red>แถบชาร์จอาวุธ</>เต็มหรือมีการเรียกใช้งาน <red>แฟนตาเซีย</> การเปลี่ยนจากอาวุธอื่นมาใช้อาวุธชิ้นนี้ จะทำให้ <shuzhi>จะลบดีบัฟทั้งหมดของผู้ใช้</> และจะปล่อยมีดโคจรซึ่งสร้างดาเมจ <shuzhi>{0}%</> of ATK + <shuzhi>{1}</> โดยจะมีมีดบินอีก <shuzhi>2</> หมุนวนรอบตัวนักพเนจรซึ่งสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> แก่เป้าหมายที่เข้ามาโดนมัน",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
+					"id": "GA_FPlayerDsChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "digger_physic"
+	},
+	"sword_thunder": {
+		"name": "ดาบ EM",
+		"description": "โครงการออมเนียมแม่เหล็กไฟฟ้าแรกสุด ดาบนี้ใช้งานง่ายและได้รับความนิยมอย่างมากในหมู่นักพเนจรที่ไม่ได้ถนัดการต่อสู้",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Thunder",
+		"type": "Sword",
+		"weaponUpgradeId": "thunder_r_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "sword_thunder_r_star",
+		"mats": {
+			"Item_Mine_thunder": 15,
+			"Item_Mine_thunder_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_thunder_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "ค่าต้านทาน",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟฟ้า**:",
+			"description": "เมื่ออาวุธชาร์จเต็ม ในการโจมตีครั้งต่อไปจะทำให้เป้าหมายเป็น **อัมพาตรุนแรง** เป็นเวลา **1** วินาที และไฟฟ้าช็อตเป็นเวลา ** 6** วินาที โดยจะล้างบัฟทั้งหมดของเป้าหมายและสร้างดาเมจเท่ากับ **70.00%** ของ ATK ซึ่งเป้าหมายจะไม่สามารถรับบัฟได้อีกเป็นระยะเวลา **6** วินาที"
+		},
+		"advancements": [
+			{
+				"charge": 8.8,
+				"shatter": 3.6,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "ควิกแสลช",
+					"description": "ขณะอยู่บนพื้น เหวี่ยงดาบเพื่อโจมตี 5 ครั้งติดต่อกัน\r\nโจมตีครั้งแรก: สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สอง: สร้างดาเมจ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สาม: สร้างดาเมจ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่ห้า: สร้างดาเมจ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และ <shuzhi>ใส่</> เป้าหมาย",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
+					"id": "GA_FPlayerSwordMelee_Melee_R"
+				},
+				{
+					"name": "กระโดดโจมตี",
+					"description": "ในระหว่างที่อยู่กลางอากาศ ให้ใช้ท่าโจมตีปกติเพื่อโจมตี 4 ครั้งติดต่อกัน\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และทำให้เป้าหมาย <shuzhi>ล้มลง</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
+					"id": "GA_FPlayerSwordMelee_AirAttack_R"
+				},
+				{
+					"name": "ไซโคลน",
+					"description": "กดปุ่มโจมตีปกติค้างไว้หลังจากการโจมตีปกติเพื่อเรียกใช้งานไซโคลน\r\nเมื่อโจมตีถูกเป้าหมาย เป้าหมายจะถูกบังคับลอยค้าง สกิลจะสร้างค่าดาเมจเท่ากับ <shuzhi>{0}%</> ของค่า ATK + <shuzhi>{1}</> แก่เป้าหมายเดี่ยว",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
+					"id": "GA_FPlayerSwordMelee_Branch_R"
+				},
+				{
+					"name": "ดิ่งพสุธา",
+					"description": "แตะและกดปุ่มโจมตีปกติค้างไว้ในขณะที่อยู่กลางอากาศ หรือใช้ท่าโจมตีปกติในขณะที่กำลังปีน กระโดดถอยหลัง หรือใช้เจ็ตแพ็กเพื่อเรียกใช้ดิ่งพสุธา\r\nในขณะที่ตกลงมา จะสร้างค่าดาเมจเท่ากับ <shuzhi>{0}%</> ของค่า ATK + <shuzhi>{1}</> เมื่อโจมตีโดนในแต่ละครั้ง เมื่อลงถึงพื้นจะสร้างค่าดาเมจเท่ากับ <shuzhi>{2}%</> ของค่า ATK + <shuzhi>{3}</> แก่เป้าหมายโดยรอบ และกระแทกเป้าหมายถอยหลังกลับไป\r\nยิ่งการโจมตีถูกเรียกใช้สูงจากพื้น ค่าดาเมจที่สร้างก็จะรุนแรงยิ่งขึ้น สูงสุดไม่เกิน <shuzhi>600%</>",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
+					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
+				},
+				{
+					"name": "ลอบโจมตี",
+					"description": "เข้าประชิดศัตรูจากด้านหลังในระหว่างที่กำลังย่อตัว แล้วใช้ท่าโจมตีปกติเพื่อใช้สกิลลอบโจมตี ซึ่งจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSwordMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้แฟนตาเซียซึ่งลดความเร็วของศัตรูภายในพื้นที่ คูลดาวน์: 15 วินาที ขณะหลบคุณจะไม่โดนติดสตัน เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSwordEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "พุ่งทะลวง",
+					"description": "โลดแล่นไปมาระหว่างเป้าหมาย พร้อมสร้างดาเมจแก่เป้าหมายสูงสุด <shuzhi>5</> รายโดยจะมีดาเมจรวมเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> โดยการโจมตีครั้งสุดท้ายจะทำให้เป้าหมายถูกบังคับลอยค้าง ในระหว่างที่สกิลมีผล ผู้ใช้จะทนต่อการติดสตัน ในแต่ละครั้งที่โจมตีโดนเป้าหมายซ้ำ ดาเมจจะลดลง <shuzhi>40%</> ระยะเวลาคูลดาวน์จะอยู่ที่ <shuzhi>{2}</>-วินาที",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
+					"id": "GA_FPlayerSwordSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "คลื่นพลังไร้ทิศ",
+					"description": "เมื่อ<red>แถบชาร์จอาวุธ</>เต็มหรือมีการเรียกใช้งาน <red>แฟนตาเซีย</> การเปลี่ยนไปใช้อาวุธชิ้นนี้ <shuzhi>จะลบดีบัฟทั้งหมดของผู้ถือ</> จากนั้นผู้ใช้จะวิ่งไปยังเป้าหมายและทำให้เป้าหมายเหล่านั้นถูก <shuzhi>บังคับลอยค้าง</> ผู้ใช้จะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
+					"id": "GA_FPlayerSwordChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "sword_thunder"
+	},
+	"bow_fire": {
+		"name": "ธนูแบบผสม",
+		"description": "อาวุธทั่วไปที่นักล่าใช้ในทุ่งหิมะ ถือสะดวกและมีความแม่นยำสูง หลังจากโฆษณาขายมากพอ มันมีส่วนแบ่งมากกว่าครึ่งหนึ่งของตลาดพลเรือนที่มีราคาไม่แพง",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Flame",
+		"type": "Bow",
+		"weaponUpgradeId": "fire_r_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "bow_fire_r_star",
+		"mats": {
+			"Item_Mine_fire": 15,
+			"Item_Mine_fire_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_fire_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "คริติคอล",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟ**:",
+			"description": "เมื่ออาวุธชาร์จเต็ม การโจมตีครั้งต่อไปจะทำให้เป้าหมายลุกไหม้ เป็นเวลา **8** วินาที ทุกวินาทีสร้างดาเมจเท่ากับ **27.00%** ของ ATK ขณะลุกไหม้เอฟเฟกต์รักษาของเป้าหมายจะลดลง **50%**"
+		},
+		"advancements": [
+			{
+				"charge": 8,
+				"shatter": 4.8,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "โจมตีปกติ",
+					"description": "ขณะอยู่บนพื้น ดึงคันธนูซ้ำเพื่อโจมตี 5 ครั้ง\r\nโจมตีครั้งแรก: สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nโจมตีครั้งที่สอง: สร้างดาเมจ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nโจมตีครั้งที่สาม: สร้างดาเมจ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>\r\nโจมตีครั้งที่ห้า: สร้างดาเมจ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee"
+				},
+				{
+					"name": "ธนูชาร์จ",
+					"description": "แตะโจมตีปกติและกดค้างไว้เพื่อชาร์จโจมตี สร้างดาเมจพื้นฐานเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และจะเพิ่มขึ้น <shuzhi>50%</> ในทุก <shuzhi>1</> วินาทีที่ชาร์จ สูงสุดไม่เกิน <shuzhi>3</> วินาที ดาเมจที่สร้างจะเพิ่มเป็นสองเท่าเมื่อเฮดช็อต หรือเมื่อโจมตีจุดอ่อนของศัตรู และทำให้เป้าหมายล้มลง (เฮดช็อตไม่มีผลต่อนักพเนจร)",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
+				},
+				{
+					"name": "ฝนธนู",
+					"description": "หลังจากการโจมตีปกติ ให้กดปุ่มโจมตีปกติค้างไว้เพื่อปล่อยฝนธนู สร้างดาเมจหมู่สูงสุด <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้กับเป้าหมาย",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch"
+				},
+				{
+					"name": "สวรรค์พิพากษา",
+					"description": "ในระหว่างที่อยู่กลางอากาศ จะใช้ท่าโจมตีปกติเพื่อโจมตี 4 ครั้งติดต่อกันกลางอากาศ\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้แฟนตาเซียซึ่งลดความเร็วของศัตรูภายในพื้นที่ คูลดาวน์: 15 วินาที ขณะหลบคุณจะไม่โดนติดสตัน เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade"
+				},
+				{
+					"name": "โหลดธนู",
+					"description": "แตะโจมตีหลังหลบหลีกเพื่อเรียกใช้งานโหลดธนู ทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อยและสร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "ทะลุทะลวง",
+					"description": "ตีลังกากลับหลังและยิงทะลุทะลวง <shuzhi>1</> นัดไปข้างหน้า สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายกระเด็นถอยหลัง คูลดาวน์ <shuzhi>{2}</> วินาที",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "ถล่มราบ",
+					"description": "เมื่อ<red>ชาร์จอาวุธ</>เต็มแล้วหรือเรียกใช้งาน <red>แฟนตาเซีย</> จะ <shuzhi>ลบดีบัฟทั้งหมดจากผู้ถือ</> และปล่อยท่าถล่มราบใส่เป้าหมายเมื่อสลับเป็นอาวุธนี้ สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_fire"
+	},
+	"stave_thunder": {
+		"name": "คทารอยแผล",
+		"description": "คทายนต์ที่สลักรูนไม้กางเขนเข้าไป สามารถใช้อภัยบาปหรือลงทัณฑ์ได้",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Staves",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "SUP",
+		"advanceID": "stave_thunder_sr_star",
+		"avatar": "imitation_14",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "ค่าต้านทาน",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟฟ้า**:",
+			"description": "เมื่ออาวุธชาร์จเต็ม ในการโจมตีครั้งต่อไปจะทำให้เป้าหมายเป็น **อัมพาตรุนแรง** เป็นเวลา **1** วินาที และไฟฟ้าช็อตเป็นเวลา ** 6** วินาที โดยจะล้างบัฟทั้งหมดของเป้าหมายและสร้างดาเมจเท่ากับ **106.00%** ของ ATK ซึ่งเป้าหมายจะไม่สามารถรับบัฟได้อีกเป็นระยะเวลา **6** วินาที"
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 4,
+				"need": null
+			},
+			{
+				"description": "รักษาเพื่อนร่วมทีมทั้งหมดภายในระยะ **10** เมตร เทียบเท่ากับ **100%** ของ ATK หลังจากใช้สกิลหลบหลีก",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "เพิ่ม HP พื้นฐานของอาวุธปัจจุบัน **10%**",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "การโจมตีปกติจะยิงมิสไซล์ออกไป 2 ลูก โดยแต่ละลูกจะสร้างดาเมจเท่ากับ **5%** ของ ATK ต่อเป้าหมายและฟื้นฟูคะแนนชาร์จอาวุธ **5** คะแนน",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "เพิ่ม HP พื้นฐานของอาวุธปัจจุบัน **20%**",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "เพิ่มความเร็วในการชาร์จอาวุธ**20%** (ไม่รวมโจมตีด้วยขีปนาวุธ)",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "ลดดาเมจ **60%** ให้เพื่อนร่วมทีมทุกคนที่อยู่ในระยะเมื่อใดก็ตามที่สกิล\r\nได้ขจัดเอฟเฟกต์การควบคุมออกจากเป้าหมายสำเร็จ",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "โจมตีปกติ",
+					"description": "ขณะอยู่บนพื้น เหวี่ยงคทาเพื่อโจมตี 5 ครั้งติดต่อกัน\r\nโจมตีครั้งแรก: สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nโจมตีครั้งที่สอง: สร้างดาเมจ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nโจมตีครั้งที่สาม: สร้างดาเมจ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>\r\nโจมตีครั้งที่ห้า: สร้างดาเมจ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
+					"id": "GA_FPlayerStavesMelee_Melee"
+				},
+				{
+					"name": "เหนือเมฆา",
+					"description": "ในระหว่างที่อยู่กลางอากาศหรือหลังจากทำการกระโดดหนึ่งครั้ง ใช้ท่าโจมตีปกติเพื่อโจมตี 5 ครั้งติดต่อกันกลางอากาศ\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>\r\nการโจมตีครั้งที่ห้า: สร้างดาเมจเท่ากับ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
+					"id": "GA_FPlayerStavesMelee_AirAttack"
+				},
+				{
+					"name": "จันทร์ลับฟ้า",
+					"description": "แตะโจมตีปกติและกดค้างไว้ขณะลอยกลางอากาศ เพื่อเรียกใช้งานจันทร์ลับฟ้า\r\nเมื่อลงถึงพื้น สร้างดาเมจทุก <shuzhi>0.2</> วินาที โดยมีดาเมจทั้งหมด <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
+					"id": "GA_FPlayerStavesMelee_JumpAttack"
+				},
+				{
+					"name": "เน้นจู่โจม",
+					"description": "หลังจากการโจมตีปกติครั้งที่สาม ให้กดปุ่มโจมตีปกติค้างไว้ เพื่อเรียกใช้งานการโจมตีย่อย โดยจะใช้ค่าพลังกาย <shuzhi>300</>แต้ม\r\nการโจมตีครั้งแรก: ดึงศัตรูที่อยู่ด้านหน้าผู้ใช้เข้ามา และทำให้ถูก <shuzhi>บังคับลอยค้าง</> และสร้างค่าดาเมจเท่ากับ <shuzhi>{0}%</> ของค่า ATK + <shuzhi>{1}</> ในทุก ๆ <shuzhi>0.3</> วินาที (สูงสุด <shuzhi>4</> ครั้ง)\r\nการโจมตีครั้งที่สอง: สร้างค่าดาเมจเท่ากับ <shuzhi>{2}%</> ของค่า ATK + <shuzhi>{3}</> ที่ตำแหน่งของเป้าหมายและศัตรูที่อยู่ใกล้เคียงในทุก ๆ <shuzhi>0.3</> วินาที",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
+					"id": "GA_FPlayerStavesMelee_Branch"
+				}
+			],
+			"dodge": [
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้แฟนตาเซียซึ่งลดความเร็วของศัตรูภายในพื้นที่ คูลดาวน์: 15 วินาที ขณะหลบคุณจะไม่โดนติดสตัน เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerStavesEvade_Evade"
+				},
+				{
+					"name": "คลื่นยักษ์",
+					"description": "แตะโจมตีปกติในระหว่างช่วงสั้นๆ หลังช่วงหลบหลีกสมบูรณ์ (แตะปุ่มธนูก่อนหลบหลีก) เพื่อเรียกใช้งานคลื่นยักษ์\r\nแต่ละพลังสั่นสะเทือนสร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ไปยังเป้าหมาย\r\nเมื่อใช้จะได้รับแต้มชาร์จอาวุธทันที <shuzhi>75</> แต้ม",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_FrontAttack"
+				},
+				{
+					"name": "เทสเซอร์แรคต์",
+					"description": "แตะโจมตีปกติในระหว่างช่วงสั้นๆ หลังหลบหลีกเพื่อเรียกใช้งานคลื่นระเบิดหลบหลีก\r\nยิงคริสตัลพลังงานไปข้างหน้า สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แก่เป้าหมายในเส้นทางทุก <shuzhi>0.3</> วินาที (สูงสุด 5 ครั้ง)\r\nเมื่อใช้จะได้รับแต้มชาร์จอาวุธทันที <shuzhi>75</> แต้ม",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "เขตปลอดภัย",
+					"description": "สร้างโล่พลังงานที่ตำแหน่งของนักพเนจร ฟื้นฟูพันธมิตรภายในโล่ <shuzhi>{3}%</> ของ ATK + <shuzhi>{4}</> ทุกวินาที และลดดาเมจที่พวกเขาได้รับ <shuzhi>{0}%</> <shuzhi>10</> วินาที คูลดาวน์ <shuzhi>60</>-วินาที",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
+					"id": "GA_FPlayerStavesSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "ปลดพันธนาการ",
+					"description": "เมื่อ<red>แถบชาร์จอาวุธ</>เต็มหรือมีการเรียกใช้งาน <red>แฟนตาเซีย</> การเปลี่ยนจากอาวุธอื่นมาใช้อาวุธชิ้นนี้ จะทำให้ <shuzhi>จะลบดีบัฟทั้งหมดของผู้ใช้</> ส่วนไม้เท้าจะยังคงทำหน้าที่ลบดีบัฟจากนักพเนจรและพันธมิตรต่อไป อีกทั้งจะรักษาแก่นักพเนจรและพันธมิตรที่อยู่ใกล้เคียงเป็นค่า HP เท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> เป็นเวลา <shuzhi>7</> วินาที",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
+					"id": "GA_FPlayerStavesChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "stave_thunder"
+	},
+	"cannon_ice": {
+		"name": "ปืนทำลายล้าง",
+		"description": "ปืนที่ดีที่สุดที่เคยสร้างขึ้นมา มีฉายาว่าป้อมปืนเคลื่อนที่",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Cannon",
+		"weaponUpgradeId": "ice_sr_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "cannon_ice_sr_star",
+		"avatar": "imitation_15",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "ค่าต้านทาน",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟฟ้า**:",
+			"description": "เมื่ออาวุธชาร์จเต็ม การโจมตีครั้งต่อไปจะสร้างเอฟเฟกต์**บังคับแช่แข็ง**ต่อเป้าหมาย เป็นเวลา **2** วินาที และปล่อยให้เป้าหมายถูกน้ำแข็งกัดเป็นเวลา **6** วินาที เมื่อน้ำแข็งแตกเป็นเสี่ยง ๆ จะสร้างดาเมจ **111.00%** ของ ATK ในระหว่างที่ถูกน้ำแข็งกัด ความเร็วชาร์จอาวุธของเป้าหมายจะลดลง **50%**"
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "ทุก ๆ การโจมตีปกติที่สำเร็จจะเพิ่มดาเมจ **1%** เป็นเวลา **2** วินาที ซ้อนทับได้สูงสุด **15** ครั้ง เพิ่มจำนวนกระสุนเป็น **60** นัด",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **10%**",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "ภายใน **10** วินาทีหลังจากเปลี่ยนเป็นอาวุธ เพิ่มดาเมจของการโจมตีปกติและทำลายโล่ **30%** คูลดาวน์: **25** วินาที เพิ่มกระสุนเป็น **80**",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **20%**",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "ลดคูลดาวน์ของการโจมตีปกติขณะอยู่ในโหมดป้อมปืน **2** วินาที",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "ภายใน **10** วินาทีเมื่อเปลี่ยนเป็นอาวุธนี้ เพิ่มดาเมจของการโจมตีปกติและทำลายโล่ **60%** คูลดาวน์: **25** วินาที",
+				"charge": 10,
+				"shatter": 16,
+				"need": "cannon_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "โจมตีปกติ",
+					"description": "แตะปุ่มโจมตีปกติเพื่อเข้าสู่โหมดเล็ง กดปุ่มโจมตีปกติค้างไว้เพื่อยิงต่อเนื่อง สูงสุด <shuzhi>40</> นัด การยิงแต่ละนัดจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และจะสร้างดาเมจสองเท่าเมื่อเฮดช็อต หรือโจมตีจุดอ่อนของศัตรู และจะทำให้ศัตรูล้มลง (เฮดช็อตไม่มีผลต่อนักพเนจร)",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
+					"id": "GA_FPlayerCannonMelee_Melee"
+				}
+			],
+			"dodge": [
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้แฟนตาเซียซึ่งลดความเร็วของศัตรูภายในพื้นที่ คูลดาวน์: 15 วินาที ขณะหลบคุณจะไม่โดนติดสตัน เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerCannonEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "ป้อมปืน",
+					"description": "เปิดโหมดป้อมปืนและยิงคริสตัลพลังงานขนาดใหญ่ แต่ละลูกสร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และโจมตีเป้าหมายกระเด็นขึ้นไปในอากาศ ไม่โดนสตันหลังโดนโจมตีและไม่โดนเอฟเฟกต์ควบคุมขณะกำลังตั้งป้อมปืน คูลดาวน์ <shuzhi>{2}</> วินาที",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
+					"id": "GA_FPlayerCannonSkillNew"
+				}
+			],
+			"discharge": [
+				{
+					"name": "ลำแสงอาร์กติก",
+					"description": "เมื่อ<red>ชาร์จอาวุธ</>เต็มแล้วหรือเรียกใช้งาน <red>แฟนตาเซีย</> จะ <shuzhi>ลบดีบัฟทั้งหมดจากผู้ถือ</> และยิงลำแสงอาร์กติกเมื่อสลับเป็นอาวุธนี้ สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และสร้างเอฟเฟกต์บังคับแช่แข็ง <shuzhi>3</>-วินาที <shuzhi></> และลดความต้านทานน้ำแข็งของเป้าหมาย <shuzhi>50%</> เป็นเวลา <shuzhi>10</> วินาที",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
+					"id": "GA_FPlayerCannonChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "cannon_ice"
+	},
 	"chainsaw_physic": {
 		"name": "มินิเฮอริเคน",
 		"description": "มันอันตรายเกินกว่าจะเป็นของเล่นของเด็ก และเด็กคนนั้นไม่มีทางที่จะได้มันมาโดยบังเอิญแน่ ๆ ใครจะไปรู้ว่ามันได้รับการปรับแต่งโดยเทคโนโลยีแบบไหน... อีกอย่างนะ นี่อาจจะเป็นสมบัติที่หายไประหว่างการผจญภัยบางอย่างก็ได้ว่ามั้ย?",
@@ -263,6 +1350,675 @@
 		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
+	},
+	"hammer_ice": {
+		"name": "จอมทุบ",
+		"description": "ไม่มีใครอยากโดนค้อนนี้ทุบ",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Hammer",
+		"weaponUpgradeId": "ice_sr_tupo_BC",
+		"wc": "Tank",
+		"advanceID": "hammer_ice_sr_star",
+		"avatar": "imitation_2",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "ค่าต้านทาน",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟฟ้า**:",
+			"description": "เมื่ออาวุธชาร์จเต็ม การโจมตีครั้งต่อไปจะสร้างเอฟเฟกต์**บังคับแช่แข็ง**ต่อเป้าหมาย เป็นเวลา **2** วินาที และปล่อยให้เป้าหมายถูกน้ำแข็งกัดเป็นเวลา **6** วินาที เมื่อน้ำแข็งแตกเป็นเสี่ยง ๆ จะสร้างดาเมจ **111.00%** ของ ATK ในระหว่างที่ถูกน้ำแข็งกัด ความเร็วชาร์จอาวุธของเป้าหมายจะลดลง **50%**"
+		},
+		"advancements": [
+			{
+				"charge": 6,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "ยั่วยุเป้าหมายที่อยู่ใกล้เคียงหลังจากเปลี่ยนมาใช้อาวุธนี้ ป้องกันดาเมจ **1** ครั้งใน **8** วินาที และมอบสถานะไฮเปอร์บอดี้เป็นเวลา **8** วินาที คูลดาวน์: **15** วินาที",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "เพิ่ม HP พื้นฐานของอาวุธปัจจุบัน **10%**",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "หลังจากได้รับดาเมจ ลดดาเมจทั้งหมดที่ได้รับ **50%** เป็นเวลา **6** วินาที คูลดาวน์: **20** วินาที",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "เพิ่ม HP พื้นฐานของอาวุธปัจจุบัน **20%**",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "การโจมตีปกติจะทำให้เป้าหมาย**สตัน** เป็นเวลา **2.5** วินาที คูลดาวน์: **20** วินาที",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "สกิลคอมโบจะสร้างดาเมจเพิ่มเติม **10%** ให้กับเป้าหมาย และเพิ่มดาเมจน้ำแข็งอีก **10%** เป็นเวลา **25** วินาที",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "โจมตีปกติ",
+					"description": "เมื่ออยู่บนพื้นดิน จะเหวี่ยงค้อนออกไปโจมตี 4 ครั้งต่อเนื่อง\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และกระแทกเป้าหมายถอยหลังไปเป็นระยะทางสั้นๆ \r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และกระแทกเป้าหมายถอยหลังไปเป็นระยะทางสั้นๆ \r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> และกระแทกเป้าหมายถอยหลังไปเป็นระยะทางสั้นๆ \r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และยิงเป้าหมายไปในอากาศ\r\nเมื่ออยู่ในโหมดบ้าคลั่ง จะเหวี่ยงค้อนออกไปโจมตี 4 ครั้งต่อเนื่อง\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และกระแทกเป้าหมายถอยหลังไปเป็นระยะทางสั้นๆ \r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{10}%</> ของ ATK + <shuzhi>{11}</> และกระแทกเป้าหมายถอยหลังไปเป็นระยะทางสั้นๆ \r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{12}%</> ของ ATK + <shuzhi>{13}</> และกระแทกเป้าหมายถอยหลังไปเป็นระยะทางสั้นๆ \r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{14}%</> ของ ATK + <shuzhi>{15}</> และทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
+					"id": "GA_FPlayerHammerMelee_Melee"
+				},
+				{
+					"name": "รัวไม่ยั้ง",
+					"description": "ขณะลอยกลางอากาศหรือหลังกระโดดหนึ่งครั้ง จะใช้ท่าโจมตีปกติเพื่อเรียกใช้ระเบิดกระโดด ซึ่งจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>และทำให้เป้าหมายลอยค้าง\r\nในขณะที่บ้าคลั่งกำลังอยู่ระหว่างการใช้งาน จะสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>\r\nยิ่งการโจมตีถูกเรียกใช้สูงจากพื้น ดาเมจที่สร้างก็จะรุนแรงยิ่งขึ้น สูงสุดไม่เกิน <shuzhi>600%</>",
+					"operations": [
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
+					"id": "GA_FPlayerHammerMelee_AirAttack"
+				},
+				{
+					"name": "คลื่นกระแทก",
+					"description": "ให้แตะและกดปุ่มโจมตีปกติค้างไว้ในระหว่างที่อยู่กลางอากาศ, กระโดดสองชั้น หรือแตะปุ่มโจมตีปกติเป็นระยะสั้นๆ กลางอากาศในขณะที่มีเป้าหมายอยู่ในบริเวณใกล้เคียง, ในขณะที่กำลังปืน, กระโดนถอยหลังหรือโจมตีโดยใช้เจ็ตแพ็ก เพื่อเรียกใช้งานคลื่นกระแทก คลื่นจะทำให้เป้าหมาย <shuzhi>ถูกบังคับลอยค้าง</> เป็นจำนวน <shuzhi>4</> ครั้ง สกิลจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK+ <shuzhi>{1}</> ในแต่ละครั้ง และใช้ค่าพลังกาย <shuzhi>250</> เต้ม\r\nเมื่ออยู่ในโหมดบ้าคลั่ง คลื่นกระแทกจะทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</> เป็นจำนวน <shuzhi>5</> ครั้ง สกิลจะสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> ในแต่ละครั้ง\r\nยิ่งการโจมตีถูกเรียกใช้งานสูงจากพื้น ดาเมจที่สร้างก็จะรุนแรงยิ่งขึ้น สูงสุดไม่เกิน <shuzhi>600%</>",
+					"operations": [
+						"Jump",
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
+					"id": "GA_FPlayerHammerMelee_JumpAttack"
+				},
+				{
+					"name": "ลอบโจมตี",
+					"description": "เข้าประชิดศัตรูจากด้านหลังในระหว่างที่กำลังย่อตัว แล้วใช้ท่าโจมตีปกติเพื่อเรียกใช้งานสกิลลอบโจมตี ซึ่งจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerHammerMelee_Sneak"
+				},
+				{
+					"name": "ทุบเน้นเป้าหมาย",
+					"description": "แตะและกดปุ่มโจมตีปกติค้างไว้เพื่อเรียกใช้งานทุบเน้นเป้าหมาย (สามารถชาร์จซ้อนทับกันได้สูงสุด 3 ชั้น) ในระหว่างที่ชาร์จ จะได้รับความทนต่อเอฟเฟกต์ควบคุมทุกอย่างและไฮเปอร์บอดี้\r\nซ้อนทับชั้นแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายลอยค้าง\r\nซ้อนทับชั้นที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>\r\nซ้อนทับชั้นที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> และทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</> \r\nเมื่ออยู่ในโหมดบ้าคลั่ง ให้แตะและกดปุ่มโจมตีปกติค้างไว้เพื่อเรียกใช้งานชำระแค้น ซึ่งจะสร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
+					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
+				}
+			],
+			"dodge": [
+				{
+					"name": "กระโดดตบ",
+					"description": "ใช้ปุ่มลูกศรและปุ่มหลบหลีกเพื่อเรียกใช้งานกระโดดทุบ ซึ่งจะปลดปล่อยคลื่นกระแทกซึ่งทำให้ศัตรูลอยค้าง <shuzhi>4</> ครั้ง และสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
+					"id": "GA_FPlayerHammerEvade_FrontAttack"
+				},
+				{
+					"name": "ผ่าพิภพ",
+					"description": "แตะปุ่มโจมตีปกติภายในช่วงเวลาสั้นๆ หลังจากการหลบหลีกเพื่อเรียกใช้งานผ่าพิภพ ซึ่งจะเป็นการปลดปล่อยคลื่นกระแทก <shuzhi>3</> ออกไปข้างหน้า คลื่นแต่ละลูกจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และจะทำให้เป้าหมายถูกบังคับลอยค้าง\r\nในระหว่างที่กำลังอยู่ในโหมดบ้าคลั่ง จะยิงคลื่นกระแทก <shuzhi>5</> ลูกออกไปข้างหน้า คลื่นแต่ละลูกจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายถูกบังคับลอยค้าง",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
+					"id": "GA_FPlayerHammerEvade_BackAttack"
+				},
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้แฟนตาเซียซึ่งลดความเร็วของศัตรูภายในพื้นที่ คูลดาวน์: 15 วินาที ขณะหลบคุณจะไม่โดนติดสตัน เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerHammerEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "บ้าคลั่ง",
+					"description": "เปลี่ยนไปใช้งานโหมดบ้าคลั่ง ซึ่งจะเพิ่มดาเมจที่สร้างเป็นเวลา <shuzhi>25</> วินาที\r\nในระหว่างที่อยู่ในโหมดบ้าคลั่ง สกิลจะเรียกใช้งานวายุพิโรธซึ่งสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และจะทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</> และสร้างกระแสลมขึ้นบนดิน ในระหว่างที่ยืนอยู่ในกระแสลม จะไม่ต้องใช้ค่าพลังในการหลบหลีก ระยะเวลาคูลดาวน์: <shuzhi>{2}</> วินาที (ระยะเวลาคูลดาวน์ของวายุพิโรธ: <shuzhi>10</> วินาที)",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
+					"id": "GA_FPlayerHammerBigSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "ไร้ปรานี",
+					"description": "เมื่อ<red>ชาร์จอาวุธ</>เต็มแล้วหรือเรียกใช้งาน <red>แฟนตาเซีย</> การเปลี่ยนไปใช้อาวุธชิ้นนี้จะ<shuzhi>ลบดีบัฟทั้งหมดของผู้ถือ</> และเป้าหมายที่อยู่ใกล้เคียงจะถูก <shuzhi>บังคับลอยค้าง</> สร้างดาเมจแก่เป้าหมายเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และยังเรียกค้อนให้ตกใส่เป้าหมายที่อยู่ใกล้เคียงด้วย สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
+					"id": "GA_FPlayerHammerChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "hammer_ice"
+	},
+	"bow_physic": {
+		"name": "ธนูขนไนติงเกล",
+		"description": "พรางตัวได้ดีในราตรีมืดหม่น",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Physics",
+		"type": "Bow",
+		"weaponUpgradeId": "physic_sr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "bow_physic_sr_star",
+		"avatar": "imitation_16",
+		"mats": {
+			"Item_Mine_physic": 28,
+			"Item_Mine_physic_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_physic_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "คริติคอล",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**สาหัส**:",
+			"description": "หลังจากค่าชาร์จอาวุธเต็มแล้ว การโจมตีครั้งต่อไปจะทำให้ศัตรูเข้าสู่สถานะสาหัส **7** วินาที ได้รับดาเมจเพิ่มขึ้น **20%** และสร้างดาเมจเท่ากับ **100.00%** ของ ATK เมื่อ**เล่นเป็นทีม** หากเป้าหมายอยู่ในสถานะสาหัสจะได้รับดาเมจกายภาพเพิ่มขึ้น **20%**"
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 6,
+				"need": null
+			},
+			{
+				"description": "ฟื้นคืนการหลบหลีก 1 ครั้งในทุก ๆ การโจมตีปกติครั้งที่ 5 หรือหลังจากใช้ **ทะลุทะลวง**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **10%**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "เพิ่มดาเมจเฮดช็อต **30%**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **20%**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "สกิลหลบหลีกจะสร้างเอฟเฟกต์สาหัสแก่เป้าหมายเป็นเวลา **7** วินาที",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "เพิ่มอัตราคริติคอลให้กับเป้าหมายสาหัส **30%** และดาเมจคริติคอล **50%**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "ยิงเร็ว",
+					"description": "ขณะอยู่บนพื้น ดึงคันธนูซ้ำเพื่อโจมตี 5 ครั้ง\r\nโจมตีครั้งแรก: สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nโจมตีครั้งที่สอง: สร้างดาเมจ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nโจมตีครั้งที่สาม: สร้างดาเมจ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>\r\nโจมตีครั้งที่ห้า: สร้างดาเมจ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee_R"
+				},
+				{
+					"name": "ธนูชาร์จ",
+					"description": "แตะโจมตีปกติและกดค้างไว้เพื่อชาร์จโจมตี สร้างดาเมจพื้นฐานเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และจะเพิ่มขึ้น <shuzhi>50%</> ในทุก <shuzhi>1</> วินาทีที่ชาร์จ สูงสุดไม่เกิน <shuzhi>3</> วินาที ดาเมจที่สร้างจะเพิ่มเป็นสองเท่าเมื่อเฮดช็อต หรือเมื่อโจมตีจุดอ่อนของศัตรู และทำให้เป้าหมายล้มลง (เฮดช็อตไม่มีผลต่อนักพเนจร)",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
+				},
+				{
+					"name": "ฝนธนู",
+					"description": "หลังจากการโจมตีปกติ ให้กดปุ่มโจมตีปกติค้างไว้เพื่อปล่อยฝนธนู สร้างดาเมจหมู่สูงสุด <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้กับเป้าหมาย",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch_R"
+				},
+				{
+					"name": "สวรรค์พิพากษา",
+					"description": "ในระหว่างที่อยู่กลางอากาศ จะใช้ท่าโจมตีปกติเพื่อโจมตี 4 ครั้งติดต่อกันกลางอากาศ\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้แฟนตาเซียซึ่งลดความเร็วของศัตรูภายในพื้นที่ คูลดาวน์: 15 วินาที ขณะหลบคุณจะไม่โดนติดสตัน เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade_R"
+				},
+				{
+					"name": "โหลดธนู",
+					"description": "แตะโจมตีหลังหลบหลีกเพื่อเรียกใช้งานโหลดธนู ทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อยและสร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "ทะลุทะลวง",
+					"description": "ตีลังกากลับหลังและยิงทะลุทะลวง <shuzhi>1</> นัดไปข้างหน้า สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายกระเด็นถอยหลัง คูลดาวน์ <shuzhi>{2}</> วินาที",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "ถล่มราบ",
+					"description": "เมื่อ<red>ชาร์จอาวุธ</>เต็มแล้วหรือเรียกใช้งาน <red>แฟนตาเซีย</> จะ <shuzhi>ลบดีบัฟทั้งหมดจากผู้ถือ</> และปล่อยท่าถล่มราบใส่เป้าหมายเมื่อสลับเป็นอาวุธนี้ สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_physic"
+	},
+	"spear_thunder": {
+		"name": "ง้าวอัสนี",
+		"description": "ง้าวที่มีพลังไฟฟ้า สร้างความเสียหายได้ดีเยี่ยม และมีความยาวที่ช่วยให้ต่อสู้ได้หลายระยะ",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Spear",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "spear_thunder_sr_star",
+		"avatar": "imitation_4",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "โจมตี",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "ค่าต้านทาน",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟฟ้า**:",
+			"description": "เมื่ออาวุธชาร์จเต็ม ในการโจมตีครั้งต่อไปจะทำให้เป้าหมายเป็น **อัมพาตรุนแรง** เป็นเวลา **1** วินาที และไฟฟ้าช็อตเป็นเวลา ** 6** วินาที โดยจะล้างบัฟทั้งหมดของเป้าหมายและสร้างดาเมจเท่ากับ **106.00%** ของ ATK ซึ่งเป้าหมายจะไม่สามารถรับบัฟได้อีกเป็นระยะเวลา **6** วินาที"
+		},
+		"advancements": [
+			{
+				"charge": 7,
+				"shatter": 11,
+				"need": null
+			},
+			{
+				"description": "เพิ่มทำลายโล่ **15%** หลังจากทำลายโล่ของเป้าหมาย เพิ่ม ATK ของเพื่อนร่วมทีมทั้งหมด **15%** เป็นเวลา **30** วินาที ไม่สามารถซ้อนทับได้",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "เพิ่ม HP พื้นฐานของอาวุธปัจจุบัน **10%**",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "หลังจากโจมตีเป้าหมายด้วย**นักล่าพระจันทร์**ลด ATK ของเป้าหมาย **5%** และเพิ่ม ATK ของผู้ใช้ **5%** เป็นเวลา **15** วินาที (เอฟเฟกต์ สามารถซ้อนทับได้สูงสุด **3** ชั้นโดยเมื่อโจมตีโดนหลายเป้าหมาย) เอฟเฟกต์จะเพิ่มเป็นสองเท่าสำหรับเป้าหมายที่โดนสถานะสาหัส",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **20%**",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "ระยะเวลาสตันสองเท่าจากสกิลการหลบหลีก",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "สกิลคอมโบจะสร้างดาเมจมากขึ้นตามระยะทาง ดาเมจเพิ่มขึ้นสูงสุด **100%**",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "รุกราน",
+					"description": "ขณะอยู่บนพื้น เหวี่ยงหอกยาวเพื่อโจมตี 5 ครั้งติดต่อกัน\r\nโจมตีครั้งแรก: สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สอง: สร้างดาเมจ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สาม: สร้างดาเมจ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และทำให้เป้าหมายกระเด็นถอยหลังเล็กน้อย\r\nโจมตีครั้งที่ห้า: สร้างดาเมจ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และทำให้เป้าหมายกระเด็นถอยหลังไปไกล",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
+				},
+				{
+					"name": "กระโดดโจมตี",
+					"description": "ในระหว่างที่อยู่กลางอากาศ จะใช้ท่าโจมตีปกติเพื่อโจมตี 4 ครั้งติดต่อกันกลางอากาศ\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
+				},
+				{
+					"name": "เงายมทูต",
+					"description": "แตะและกดปุ่มโจมตีปกติค้างไว้ในระหว่างที่ลอยอยู่กลางอากาศ (แตะมีเป้าหมายศัตรู) หรือใช้ท่าโจมตีปกติในระหว่างที่กำลังปีน กระโดดถอยหลังหรือใช้เจ็ตแพ็กเพื่อเรียกใช้เงายมทูต\r\nในขณะที่กำลังตกลงมา จะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ในแต่ละครั้งที่โจมตีโดน เมื่อลงถึงพื้น จะสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และทำให้เป้าหมายล้มลง\r\nยิ่งการโจมตีถูกเรียกใช้สูงจากพื้น ดาเมจที่สร้างก็จะรุนแรงยิ่งขึ้น สูงสุดไม่เกิน <shuzhi>600%</>",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
+				},
+				{
+					"name": "หอกปลิดชีพ",
+					"description": "หลังจากโจมตีปกติเป็นครั้งที่สาม ให้แตะหรือกดปุ่มโจมตีปกติค้างไว้ เพื่อเรียกใช้งานหอกปลิดชีพ\r\nเมื่อโจมตีถูกเป้าหมาย เป้าหมายจะถูก <shuzhi>บังคับลอยค้าง</> การโจมตีจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้แตะปุ่มอีกครั้งเพื่อโจมตีศัตรูที่ลอยค้างต่อไป การโจมตีจะสร้างดาเมจสูงสุด <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> แก่เป้าหมายเดี่ยว",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
+				},
+				{
+					"name": "ลอบโจมตี",
+					"description": "แทงหอกยาวไปข้างหน้า สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
+				}
+			],
+			"dodge": [
+				{
+					"name": "กระโดดเตะ",
+					"description": "แตะโจมตีปกติในระหว่างช่วงสั้นๆ หลังช่วงหลบหลีกสมบูรณ์ (แตะปุ่มธนูก่อนหลบหลีก) เพื่อเรียกใช้งานกระโดดเตะ\r\nเมื่อโจมตีเป้าหมาย สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ทำให้เป้าหมายกระเด็นถอยหลังไปไกลและสร้างเอฟเฟกต์ <shuzhi>สตัน</> <shuzhi>1</> วินาที หรือ <shuzhi>0.5</> วินาที ต่อนักพเนจร",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
+				},
+				{
+					"name": "ท้าปฐพี",
+					"description": "แตะการโจมตีปกติในช่วงเวลาสั้น ๆ หลังจากหลบหลีกเพื่อเรียกใช้ท้าปฐพี\r\nกระแทกหอกยาวลงไปที่พื้น สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
+				},
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตีเพื่อเรียกใช้งานแฟนตาเซีย ซึ่งจะลดความเร็วของศัตรูภายในบริเวณ และไม่โดนติดสตันระหว่างหลบหลีก เป็นเวลา <shuzhi>0.5</> วินาที",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
+				}
+			],
+			"skill": [
+				{
+					"name": "นักล่าพระจันทร์",
+					"description": "ทำให้เป้าหมายถูก <shuzhi>บังคับลอยค้าง</>และลอยไปในอากาศ และสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ระยะเวลาคูลดาวน์: <shuzhi>25</> วินาที",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkillThu_SSR"
+				}
+			],
+			"discharge": [
+				{
+					"name": "ฟ้าคำราม",
+					"description": "เมื่อ<red>แถบชาร์จอาวุธ</>เต็มหรือมีการเรียกใช้งาน <red>แฟนตาเซีย</> การเปลี่ยนจากอาวุธอื่นมาใช้อาวุธชิ้นนี้ จะ <shuzhi>ลบดีบัฟทั้งหมดจากผู้ถือ</> จากนั้นกระโดดขึ้นไปในอากาศและขว้างหอกสายฟ้า ซึ่งจะระเบิดขึ้นเมื่อลงถึงพื้น สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> พร้อมทำให้เป้าหมายเป็น <shuzhi>อัมพาตรุนแรง</> เป็นเวลา <shuzhi>1</> วินาที",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "มีดอัสนี",
@@ -5941,7 +7697,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Killknife.webp"
 		},
 		"rarity": "SSR",
-		"element": "Physics",
+		"element": "PhysicsFlame",
 		"type": "Killknife",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",
@@ -8709,7 +10465,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Zeke_Phy01.webp"
 		},
 		"rarity": "SSR",
-		"element": "OverseasZeke",
+		"element": "PhysicsFlame",
 		"type": "zeke",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",

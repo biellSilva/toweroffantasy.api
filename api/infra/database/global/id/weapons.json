@@ -1,4 +1,1091 @@
 {
+	"spear_ice": {
+		"name": "Frosted Spear",
+		"description": "Senjata umum di kalangan penduduk Tundra Warren. Diisi dengan es untuk mencerminkan cita rasa setempat. Karena murah dan sangat efektif, ini jadi benda yang sangat populer.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Ice",
+		"type": "Spear",
+		"weaponUpgradeId": "ice_r_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "spear_ice_r_star",
+		"mats": {
+			"Item_Mine_ice": 15,
+			"Item_Mine_ice_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_ice_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Saat Charge Senjata terisi penuh, serangan berikutnya akan membuat target terkena **Freeze Kuat** selama **2** detik dan Frostbite selama **6** detik. Jika lapisan es ini dipecahkan, target akan menerima DMG sebesar **67.00%** ATK. Saat dalam kondisi Frostbite, kecepatan pengisian Charge Senjata target berkurang **50%**."
+		},
+		"advancements": [
+			{
+				"charge": 5.6,
+				"shatter": 6.9,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Thrust",
+					"description": "Saat di darat, ayunkan Long Spear untuk menyerang 5 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> membuat target terpental sedikit ke belakang.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</> dan membuat target terpental cukup jauh ke belakang.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_Melee_R"
+				},
+				{
+					"name": "Jumping Strike",
+					"description": "Saat di udara, tekan Serangan Biasa untuk menyerang 4 kali berturut-turut di udara.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttack_R"
+				},
+				{
+					"name": "Crashing Drive",
+					"description": "Tahan Serangan Biasa saat di udara (tekan saat ada target yang tersedia), atau gunakan Serangan Biasa saat memanjat, melompat ke belakang, atau menggunakan Jetpack untuk mengaktifkan Crashing Drive.\r\nSaat terjun, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> tiap menghantam target. Saat mendarat, menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan mengakibatkan Suspend kepada target.\r\nMakin tinggi posisimu saat mengaktifkan serangan, makin besar pula DMG yang ditimpakan, maks <shuzhi>600%</> DMG.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
+				},
+				{
+					"name": "Spear Flurry",
+					"description": "Setelah Serangan Biasa ketiga, tahan tombol Serangan Biasa untuk mengaktifkan Spear Flurry.\r\nSetelah kena, mengakibatkan <shuzhi>Suspend Keras</> kepada target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Tekan lagi untuk terus menyerang target yang tertahan di udara, menimpakan DMG sebesar maks <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> DMG kepada satu target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_Branch_R"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Tusukkan Long Spear ke depan, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Flying Kick",
+					"description": "Gunakan tombol Serangan Biasa selama rentang waktu Dodge Sempurna yang singkat (pakai tombol arah sebelum menghindar) untuk mengaktifkan Flying Kick.\r\nSetelah mengenai target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK + <shuzhi>{1}</>, memukul mundur target cukup jauh, dan memberikan efek <shuzhi>Stun</> kepada target selama <shuzhi>1</> detik atau <shuzhi>0,5</> detik kepada Wanderer.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
+				},
+				{
+					"name": "Lunging Smash",
+					"description": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah Menghindar untuk melakukan Lunging Smash.\r\nHantamkan tombak panjang ke tanah, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terkena <shuzhi>Suspend Keras</>.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttack_R"
+				},
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, mengurangi SPD musuh di dalam area tersebut. Saat menghindar, kamu menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Moonchaser",
+					"description": "Mengakibatkan <shuzhi>Suspend Keras</> kepada target dan mengudara, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. CD: <shuzhi>{2}</> detik.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Spear Dance",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan mencengkeram target lalu mengguncang mereka beberapa kali, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Serangan yang terakhir akan membuat target <shuzhi>terpental keras</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_ice"
+	},
+	"digger_physic": {
+		"name": "Combat Blade",
+		"description": "Senjata dasar yang dikembangkan oleh Banges Tech. Ditempa dengan logam campuran khusus, ringan, gesit, dan mudah digunakan.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Physics",
+		"type": "DoubleSword",
+		"weaponUpgradeId": "physic_r_tupo_BC",
+		"wc": "DPS",
+		"advanceID": "digger_physic_r_star",
+		"mats": {
+			"Item_Mine_physic": 15,
+			"Item_Mine_physic_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_physic_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Crit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Grievous**:",
+			"description": "Saat senjata terisi penuh, serangan berikutnya akan menerapkan efekGrievouspada lawan selama **7** detik, meningkatkan DMG yang mereka terima sebesar **20%** dan menimpakan DMG sebesar **63.00%** ATK. Saat dalam **Permainan Tim**, target yang terkena Grievous menerima Physical DMG **20%** lebih besar."
+		},
+		"advancements": [
+			{
+				"charge": 9.6,
+				"shatter": 3.2,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Twin Blades",
+					"description": "Saat di darat, ayunkan kedua pisau untuk melakukan hingga 5 serangan beruntun.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</> dan membuat target terpental sedikit ke belakang.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
+					"id": "GA_FPlayerDsMelee_Melee_R"
+				},
+				{
+					"name": "Sky Flurry",
+					"description": "Saat di udara atau setelah melompat satu kali, gunakan Serangan Biasa untuk menyerang 4 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
+					"id": "GA_FPlayerDsMelee_AirAttack_R"
+				},
+				{
+					"name": "Rapid Lunge",
+					"description": "Setelah Serangan Biasa ketiga, tahan tombol Serangan Biasa untuk mengaktifkan Rapid Lunge.\r\nSaat serangan kena, membuat target <shuzhi>Terpental Ke Atas</> dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
+					"id": "GA_FPlayerDsMelee_Branch_R"
+				},
+				{
+					"name": "Spiral Drive",
+					"description": "Tahan dan tahan Serangan Biasa saat di udara (atau tekan saat ada musuh yang ditarget), atau gunakan Serangan Biasa saat memanjat, melompat ke belakang, atau menggunakan Jetpack untuk mengaktifkan Spiral Drive.\r\nMelakukan serangan ke bawah, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> setiap kali menghantam target.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
+					"id": "GA_FPlayerDsMelee_JumpAttack_R"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Dekati musuh dari belakang sambil berjongkok, lalu gunakan Serangan Biasa untuk mengaktifkan Sneak Attack, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerDsMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Flying Blades",
+					"description": "Gunakan Serangan Biasa selama rentang waktu Dodge Sempurna yang singkat (pakai tombol arah sebelum menghindar) untuk mengaktifkan Flying Blades.\r\nSaat serangan kena, membuat target <shuzhi>terpental keras</> dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Terus tekan tombol untuk melemparkan hingga <shuzhi>6</> Flying Blade lagi, masing-masing menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
+					"id": "GA_FPlayerDsEvade_FrontAttack_R"
+				},
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, yang akan memperlambat musuh dalam area tersebut. CD: 15 detik. Saat Menghindar, kamu akan menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDsEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Returning Blades",
+					"description": "Mengeluarkan <shuzhi>6</> pisau ke segala arah yang akan berputar dan kembali kepadamu, masing-masing menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. CD: <shuzhi>{2}</> detik.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
+					"id": "GA_FPlayerDSSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Orbiting Blades",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan membuat senjata pisaumu berputar mengelilingimu, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Selain pisaumu sendiri, ada <shuzhi>2</> pisau lagi yang berputar mengelilingimu, masing-masing menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> kepada target yang menyentuhnya.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
+					"id": "GA_FPlayerDsChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "digger_physic"
+	},
+	"sword_thunder": {
+		"name": "EM Blade",
+		"description": "Proyek Omnium elektromagnetis paling awal. Pedangnya mudah digunakan, dan sangat populer di kalangan Wanderer yang tidak mahir bertarung.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Thunder",
+		"type": "Sword",
+		"weaponUpgradeId": "thunder_r_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "sword_thunder_r_star",
+		"mats": {
+			"Item_Mine_thunder": 15,
+			"Item_Mine_thunder_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_thunder_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Saat senjata terisi penuh, serangan berikutnya akan mengakibatkan**Paralyze Kuat**pada target selama **1** detik dan menerapkan Electrify selama **6** detik, menetralkan semua buff mereka dan menimpakan DMG sebesar **70.00%** ATK. Selama **6** detik berikutnya, target yang terkena Electrify tidak bisa menerima buff."
+		},
+		"advancements": [
+			{
+				"charge": 8.8,
+				"shatter": 3.6,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Quick Slash",
+					"description": "Saat di darat, ayunkan pedang untuk menyerang 5 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</> dan buat target <shuzhi>terpental</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
+					"id": "GA_FPlayerSwordMelee_Melee_R"
+				},
+				{
+					"name": "Jumping Strike",
+					"description": "Saat di udara, gunakan Serangan Biasa untuk menyerang 4 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan <shuzhi>menjatuhkan</> target.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
+					"id": "GA_FPlayerSwordMelee_AirAttack_R"
+				},
+				{
+					"name": "Cyclone",
+					"description": "Tahan dan tahan tombol Serangan Biasa setelah melakukan Serangan Biasa untuk mengaktifkan Cyclone.\r\nSaat menghantam target, membuat target tersebut terpental dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke satu target.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
+					"id": "GA_FPlayerSwordMelee_Branch_R"
+				},
+				{
+					"name": "Diving Edge",
+					"description": "Tekan dan tahan Serangan Biasa saat di udara atau gunakan Serangan Biasa saat memanjat, melompat ke belakang, atau menggunakan Jetpack untuk mengaktifkan Diving Edge.\r\nSaat turun, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> setiap kali menghantam target. Saat mendarat, menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> pada target di sekitar dan membuat mereka terpental ke belakang.\r\nMakin tinggi posisi saat mengaktifkan serangan, makin besar pula DMG yang ditimpakan, maks <shuzhi>600%</> DMG.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
+					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Dekati musuh dari belakang sambil berjongkok, lalu gunakan Serangan Biasa untuk melakukan Sneak Attack yang menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSwordMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, yang akan memperlambat musuh dalam area tersebut. CD: 15 detik. Saat Menghindar, kamu akan menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSwordEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Roam",
+					"description": "Berkeliaran di sekitar target, menimbulkan total DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada maks <shuzhi>5</> target, dan serangan yang terakhir mengenai akan mengakibatkan Suspend kepada target. Kebal terhadap Hitstun saat aktif. Mengurangi DMG yang ditimpakan kepada target yang sama sebesar <shuzhi>40%</> setiap kalinya. CD <shuzhi>{2}</> detik.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
+					"id": "GA_FPlayerSwordSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Unbridled Flurry",
+					"description": "Saat <red>Charge Senjata penuh</> atau <red>Phantasia</> terpicu, setelah beralih ke senjata ini, <shuzhi>melenyapkan semua Debuff dari Wanderer</>, lalu menerjang target dan membuat mereka <shuzhi>terpental keras</> kepada mereka, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
+					"id": "GA_FPlayerSwordChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "sword_thunder"
+	},
+	"bow_fire": {
+		"name": "Composite Bow",
+		"description": "Senjata umum yang digunakan oleh Hunter di padang salju. Mudah digunakan dan akurasinya sangat tinggi. Setelah cukup promosi, senjata ini menguasai lebih dari setengah pasar sipil yang terjangkau.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Flame",
+		"type": "Bow",
+		"weaponUpgradeId": "fire_r_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "bow_fire_r_star",
+		"mats": {
+			"Item_Mine_fire": 15,
+			"Item_Mine_fire_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_fire_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Crit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Flame**:",
+			"description": "Saat Charge Senjata penuh, serangan berikutnya akan membakar target selama **8** detik, menimpakan DMG sebesar **27.00%** ATK setiap detik. Efek penyembuhan target yang terbakar berkurang **50%**."
+		},
+		"advancements": [
+			{
+				"charge": 8,
+				"shatter": 4.8,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Serangan Biasa",
+					"description": "Saat di darat, tarik busur berulang kali untuk menyerang 5 kali.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</> dan pukul mundur target dalam jarak dekat.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee"
+				},
+				{
+					"name": "Charged Arrow",
+					"description": "Tahan Serangan Biasa untuk mengisi tenaga. Menimpakan DMG dasar sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>, dan <shuzhi>50%</> lagi untuk setiap <shuzhi>1</> detik pengisian, maks <shuzhi>3</> detik. Menimpakan DMG dua kali lipat saat Headshot atau saat mengenai titik lemah, dan menjatuhkan target (efek Headshot tidak berlaku bagi Wanderer).",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
+				},
+				{
+					"name": "Arrow Rain",
+					"description": "Setelah Serangan Biasa, tahan tombol Serangan Biasa untuk melancarkan Arrow Rain, menimpakan DMG area dengan total sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch"
+				},
+				{
+					"name": "Air Volley",
+					"description": "Saat di udara, tekan Serangan Biasa untuk menyerang 4 kali berturut-turut di udara.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, yang akan memperlambat musuh dalam area tersebut. CD: 15 detik. Saat Menghindar, kamu akan menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade"
+				},
+				{
+					"name": "Loaded Arrow",
+					"description": "Tekan Serang setelah Dodge untuk mengaktifkan Loaded Arrow, yang akan membuat target terpental sedikit ke belakang dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Piercing Shot",
+					"description": "Salto ke belakang sambil menembakkan <shuzhi>1</> Piercing Shot ke depan, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental ke belakang. CD <shuzhi>{2}</> detik.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Explosive Barrage",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan melancarkan Explosive Barrage ke arah target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_fire"
+	},
+	"stave_thunder": {
+		"name": "Staff of Scars",
+		"description": "Tongkat mekanis dengan ukiran rune silang. Mampu mengampuni dosa-dosa atau memberi hukuman.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Staves",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "SUP",
+		"advanceID": "stave_thunder_sr_star",
+		"avatar": "imitation_14",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Saat senjata terisi penuh, serangan berikutnya akan mengakibatkan**Paralyze Kuat**pada target selama **1** detik dan menerapkan Electrify selama **6** detik, menetralkan semua buff mereka dan menimpakan DMG sebesar **106.00%** ATK. Selama **6** detik berikutnya, target yang terkena Electrify tidak bisa menerima buff."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 4,
+				"need": null
+			},
+			{
+				"description": "Memulihkan semua rekan tim dalam radius **10** meter sebesar **100%** ATK setelah menggunakan Skill Dodge.",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan HP dasar untuk senjata saat ini sebesar **10%**.",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Serangan Biasa juga akan menembakkan dua misil, masing-masing menimpakan DMG sebesar **5%** ATK kepada target, dan memulihkan **5** poin Charge Senjata.",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan HP dasar untuk senjata saat ini sebesar **20%**.",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Meningkatkan kecepatan untuk memperoleh Charge Senjata sebesar **20%** (tidak berlaku untuk serangan misil).",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "Memberikan **60%** Damage Reduction kepada semua rekan tim setiap kali ada skill yang menangkal efek kontrol dari target.",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Serangan Biasa",
+					"description": "Saat di darat, ayunkan tongkat untuk menyerang 5 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
+					"id": "GA_FPlayerStavesMelee_Melee"
+				},
+				{
+					"name": "Soaring Barrage",
+					"description": "Saat di udara atau setelah melompat satu kali, gunakan Serangan Biasa untuk menyerang 5 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
+					"id": "GA_FPlayerStavesMelee_AirAttack"
+				},
+				{
+					"name": "Moonfall",
+					"description": "Tekan dan tahan Serangan Biasa saat mengudara untuk mengaktifkan Moonfall.\r\nSaat mendarat, timpakan DMG satu kali setiap <shuzhi>0,2</> detik, dengan total <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> DMG.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
+					"id": "GA_FPlayerStavesMelee_JumpAttack"
+				},
+				{
+					"name": "Focused Assault",
+					"description": "Setelah Serangan Biasa ketiga, tahan Serangan Biasa untuk mengaktifkan Branch Attack, yang akan mengonsumsi <shuzhi>300</> Stamina.\r\nSerangan Pertama: Menarik musuh di depan pengguna dan mengakibatkan <shuzhi>Suspend Keras</> kepada mereka serta menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> setiap <shuzhi>0,3</> detik (maks <shuzhi>4</> kali).\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> di lokasi target dan kepada musuh di sekitarnya setiap <shuzhi>0,3</> detik.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
+					"id": "GA_FPlayerStavesMelee_Branch"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, yang akan memperlambat musuh dalam area tersebut. CD: 15 detik. Saat Menghindar, kamu akan menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerStavesEvade_Evade"
+				},
+				{
+					"name": "Surge",
+					"description": "Gunakan tombol Serangan Biasa selama rentang waktu Dodge Sempurna yang singkat (pakai tombol arah sebelum menghindar) untuk mengaktifkan Surge.\r\nSetiap Energy Pulse akan menimbulkan DMG sebesar <shuzhi>{0}%</> ATK + <shuzhi>{1}</> kepada target.\r\nMemberikan <shuzhi>75</> poin Charge Senjata saat digunakan.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_FrontAttack"
+				},
+				{
+					"name": "Tesseract",
+					"description": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah Menghindar untuk melakukan Evasive Blast.\r\nMenembakkan bola energi ke depan, dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sepanjang lintasannya setiap <shuzhi>0,3</> detik (maks 5 kali).\r\nSaat digunakan, memberikan <shuzhi>75</> poin Charge Senjata.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Sanctuary",
+					"description": "Buat perisai energi di lokasi Wanderer. Sembuhkan kawan dalam perisai sebesar <shuzhi>{3}%</> ATK plus <shuzhi>{4}</> HP setiap detik dan kurangi DMG yang mereka terima sebesar <shuzhi>{0}%</> selama <shuzhi>10</> detik. Cooldown <shuzhi>60</> detik.",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
+					"id": "GA_FPlayerStavesSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Swift Deliverance",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</>, dan senjata tongkat ini akan terus melenyapkan debuff dari Wanderer dan kawan-kawannya, serta menyembuhkan Wanderer dan kawan di sekitar sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> HP selama <shuzhi>7</> detik.",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
+					"id": "GA_FPlayerStavesChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "stave_thunder"
+	},
+	"cannon_ice": {
+		"name": "The Terminator",
+		"description": "Senjata api paling keras kepala yang pernah dibuat, juga dikenal sebagai turret berjalan.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Cannon",
+		"weaponUpgradeId": "ice_sr_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "cannon_ice_sr_star",
+		"avatar": "imitation_15",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Saat Charge Senjata terisi penuh, serangan berikutnya akan membuat target terkena **Freeze Kuat** selama **2** detik dan Frostbite selama **6** detik. Jika lapisan es ini dipecahkan, target akan menerima DMG sebesar **111.00%** ATK. Saat dalam kondisi Frostbite, kecepatan pengisian Charge Senjata target berkurang **50%**."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "Setiap Serangan Biasa yang berhasil akan meningkatkan DMG sebesar **1%** selama **2** detik. Bisa ditumpuk maks **15** kali. Menambah jumlah amunisi menjadi **60**.",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar untuk senjata saat ini sebesar **10%**.",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Dalam waktu **10** detik setelah beralih ke senjata ini, meningkatkan DMG dari Serangan Biasa dan Shatter sebesar **30%**. Cooldown: **25** detik. Menambah jumlah amunisi menjadi **80**.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar untuk senjata saat ini sebesar **20%**.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Mengurangi cooldown untuk Serangan Biasa selama dalam mode Turret sebesar **2** detik.",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "Dalam waktu **10** detik setelah beralih ke senjata ini, meningkatkan DMG dari Serangan Biasa dan Shatter sebesar **60%**. Cooldown: **25** detik.",
+				"charge": 10,
+				"shatter": 16,
+				"need": "cannon_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Serangan Biasa",
+					"description": "Tekan Serangan Biasa untuk memasuki mode bidik. Tahan Serangan Biasa untuk terus menembak, maks <shuzhi>40</> tembakan. Setiap tembakan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Menimpakan DMG dua kali lipat saat Headshot atau saat mengenai titik lemah musuh dan menjatuhkan target (efek Headshot tidak berlaku bagi Wanderer).",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
+					"id": "GA_FPlayerCannonMelee_Melee"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, yang akan memperlambat musuh dalam area tersebut. CD: 15 detik. Saat Menghindar, kamu akan menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerCannonEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "Turret",
+					"description": "Mengaktifkan mode Turret dan menembakkan peluru-peluru energi yang besar, masing-masing menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental ke atas. Menjadi kebal terhadap Hitstun dan efek kontrol saat dalam mode Turret. CD: <shuzhi>{2}</> detik.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
+					"id": "GA_FPlayerCannonSkillNew"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Arctic Beam",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan menembakkan Arctic Beam, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan mengakibatkan efek <shuzhi>Freeze Kuat</> selama <shuzhi>3</> detik. Selain itu, Frost Resistance target juga berkurang <shuzhi>50%</> selama <shuzhi>10</> detik.",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
+					"id": "GA_FPlayerCannonChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "cannon_ice"
+	},
 	"chainsaw_physic": {
 		"name": "Mini Hurricane",
 		"description": "Terlalu berbahaya untuk dijadikan mainan anak-anak. Kalau dipikir secara wajar, mustahil anak kecil bisa mempunyai benda semacam ini. Teknologi macam apa yang digunakan untuk memperbaikinya? Tak ada yang tahu... Atau, apa mungkin benda ini diambil dari suatu tempat?",
@@ -263,6 +1350,675 @@
 		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
+	},
+	"hammer_ice": {
+		"name": "Pummeler",
+		"description": "Tak ada yang mau jadi sasaran pukul Maul ini.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Hammer",
+		"weaponUpgradeId": "ice_sr_tupo_BC",
+		"wc": "Tank",
+		"advanceID": "hammer_ice_sr_star",
+		"avatar": "imitation_2",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Saat Charge Senjata terisi penuh, serangan berikutnya akan membuat target terkena **Freeze Kuat** selama **2** detik dan Frostbite selama **6** detik. Jika lapisan es ini dipecahkan, target akan menerima DMG sebesar **111.00%** ATK. Saat dalam kondisi Frostbite, kecepatan pengisian Charge Senjata target berkurang **50%**."
+		},
+		"advancements": [
+			{
+				"charge": 6,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "Memberikan Taunt kepada target di dekatnya setelah beralih ke senjata ini, mencegah **1** DMG dalam waktu **8** detik berikutnya, dan memberikan Hyperbody selama **8** detik berikutnya. Cooldown: **15** detik.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan HP dasar untuk senjata saat ini sebesar **10%**.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Setelah menerima DMG, mengurangi semua DMG yang diterima sebesar **50%** selama **6** detik berikutnya. Cooldown: **20** detik.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan HP dasar untuk senjata saat ini sebesar **20%**.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Serangan Biasa akan mengakibatkan **Stun** kepada target selama **2,5** detik. Cooldown: **20** detik.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "Skill Discharge menimpakan **10%** DMG tambahan kepada target dan meningkatkan Frost DMG sebesar **10%** lagi selama **25** detik.",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Serangan Biasa",
+					"description": "Saat di darat, ayunkan palu untuk menyerang 4 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan membuat target terpental ke atas.\r\nSaat Outburst aktif, ayunkan palu untuk menyerang 4 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{10}%</> ATK plus <shuzhi>{11}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{12}%</> ATK plus <shuzhi>{13}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{14}%</> ATK plus <shuzhi>{15}</> dan membuat target <shuzhi>Terpental Ke Atas</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
+					"id": "GA_FPlayerHammerMelee_Melee"
+				},
+				{
+					"name": "Pummel",
+					"description": "Saat di udara atau setelah melompat satu kali, gunakan Serangan Biasa untuk mengaktifkan Jumping Blast. Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental ke atas.\r\nSaat Outburst aktif, menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan membuat target <shuzhi>Terpental Ke Atas</>.\r\nMakin tinggi posisimu saat melancarkan serangan, makin besar pula DMG yang ditimpakan, maks <shuzhi>600%</> DMG.",
+					"operations": [
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
+					"id": "GA_FPlayerHammerMelee_AirAttack"
+				},
+				{
+					"name": "Shockwave",
+					"description": "Mengetuk dan menahan tombol saat di udara, melompat dua kali, mengetuk sebentar di udara saat ada target di sekitar, memanjat, melompat ke belakang, atau menyerang sambil menggunakan Jetpack akan melancarkan sebuah Shockwave, membuat target <shuzhi>Terpental Ke Atas</> <shuzhi>4</> kali, masing-masing menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Mengonsumsi <shuzhi>250</> Stamina.\r\nSaat Outburst aktif, Shockwave ini akan membuat target <shuzhi>Terpental Ke Atas</> <shuzhi>5</> kali, masing-masing menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nMakin tinggi posisi pemain saat melancarkan serangan, makin besar DMG yang ditimpakan, maks <shuzhi>600%</> DMG.",
+					"operations": [
+						"Jump",
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
+					"id": "GA_FPlayerHammerMelee_JumpAttack"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Dekati musuh dari belakang sambil berjongkok, lalu gunakan Serangan Biasa untuk mengaktifkan Sneak Attack, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerHammerMelee_Sneak"
+				},
+				{
+					"name": "Focus Smash",
+					"description": "Tekan dan tahan tombol Serangan Biasa untuk mengaktifkan Focus Smash (bisa mengumpulkan tenaga sampai 3 tahap). Saat mengumpulkan tenaga, kamu kebal terhadap efek kontrol dan mendapatkan Hyperbody.\r\nTahap Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental ke atas.\r\nTahap Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan membuat target <shuzhi>Terpental Ke Atas</>.\r\nTahap Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan membuat target <shuzhi>Terpental Ke Atas</>.\r\nSaat Outburst aktif, tekan dan tahan tombol Serangan Biasa untuk mengaktifkan Furious Strike, menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan membuat target <shuzhi>Terpental Ke Atas</>.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
+					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Jumping Smash",
+					"description": "Gunakan tombol panah dan tombol menghindar untuk mengaktifkan Jumping Smash, melancarkan gelombang kejut yang membuat target terpental ke atas <shuzhi>4</> kali, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
+					"id": "GA_FPlayerHammerEvade_FrontAttack"
+				},
+				{
+					"name": "Worldsplitter",
+					"description": "Tekan Serangan Biasa dalam rentang waktu singkat setelah menghindar untuk mengaktifkan Worldsplitter, melancarkan <shuzhi>3</> gelombang kejut ke depan, masing-masing menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> membuat target terpental ke atas.\r\nSaat di mode Outburst, menembakkan <shuzhi>5</> gelombang kejut ke depan, masing-masing menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental ke atas.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
+					"id": "GA_FPlayerHammerEvade_BackAttack"
+				},
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, yang akan memperlambat musuh dalam area tersebut. CD: 15 detik. Saat Menghindar, kamu akan menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerHammerEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "Outburst",
+					"description": "Beralih ke Outburst, meningkatkan DMG yang ditimpakan selama <shuzhi>25</> detik.\r\nSaat Outburst aktif, menggunakan Skill Senjata akan mengaktifkan Windfury, yang akan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>, membuat target <shuzhi>Terpental Ke Atas</>, dan menciptakan arus udara di tanah. Saat berada di arus tersebut, tidak butuh biaya apa pun untuk Menghindar. CD: <shuzhi>{2}</> detik (CD Windfury: <shuzhi>10</> detik).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
+					"id": "GA_FPlayerHammerBigSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Overwhelming Maul",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan membuat target di sekitar <shuzhi>terpental keras</>, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Selain itu, mengeluarkan palu yang akan jatuh menimpa target di sekitar, menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
+					"id": "GA_FPlayerHammerChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "hammer_ice"
+	},
+	"bow_physic": {
+		"name": "Nightingale Feather",
+		"description": "Berpadu sempurna ke dalam malam yang suram.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Physics",
+		"type": "Bow",
+		"weaponUpgradeId": "physic_sr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "bow_physic_sr_star",
+		"avatar": "imitation_16",
+		"mats": {
+			"Item_Mine_physic": 28,
+			"Item_Mine_physic_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_physic_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "Crit",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Grievous**:",
+			"description": "Saat senjata terisi penuh, serangan berikutnya akan menerapkan efekGrievouspada lawan selama **7** detik, meningkatkan DMG yang mereka terima sebesar **20%** dan menimpakan DMG sebesar **100.00%** ATK. Saat dalam **Permainan Tim**, target yang terkena Grievous menerima Physical DMG **20%** lebih besar."
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 6,
+				"need": null
+			},
+			{
+				"description": "Memulihkan 1 upaya Dodge untuk setiap Serangan Biasa kelima atau setelah menggunakan **Piercing Shot**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar untuk senjata saat ini sebesar **10%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Meningkatkan Headshot DMG sebesar **30%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar untuk senjata saat ini sebesar **20%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Skill Dodge mengakibatkan efek Grievous kepada target selama **7** detik.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "Meningkatkan Crit Rate untuk target yang terkena Grievous sebesar **30%** dan Crit DMG sebesar **50%**.",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Bagi Cepat",
+					"description": "Saat di darat, tarik busur berulang kali untuk menyerang 5 kali.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</> dan pukul mundur target dalam jarak dekat.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee_R"
+				},
+				{
+					"name": "Charged Arrow",
+					"description": "Tahan Serangan Biasa untuk mengisi tenaga. Menimpakan DMG dasar sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>, dan <shuzhi>50%</> lagi untuk setiap <shuzhi>1</> detik pengisian, maks <shuzhi>3</> detik. Menimpakan DMG dua kali lipat saat Headshot atau saat mengenai titik lemah, dan menjatuhkan target (efek Headshot tidak berlaku bagi Wanderer).",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
+				},
+				{
+					"name": "Arrow Rain",
+					"description": "Setelah Serangan Biasa, tahan tombol Serangan Biasa untuk melancarkan Arrow Rain, menimpakan DMG area dengan total sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch_R"
+				},
+				{
+					"name": "Air Volley",
+					"description": "Saat di udara, tekan Serangan Biasa untuk menyerang 4 kali berturut-turut di udara.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, yang akan memperlambat musuh dalam area tersebut. CD: 15 detik. Saat Menghindar, kamu akan menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade_R"
+				},
+				{
+					"name": "Loaded Arrow",
+					"description": "Tekan Serang setelah Dodge untuk mengaktifkan Loaded Arrow, yang akan membuat target terpental sedikit ke belakang dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "Piercing Shot",
+					"description": "Salto ke belakang sambil menembakkan <shuzhi>1</> Piercing Shot ke depan, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental ke belakang. CD <shuzhi>{2}</> detik.",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Explosive Barrage",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan melancarkan Explosive Barrage ke arah target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_physic"
+	},
+	"spear_thunder": {
+		"name": "Thunderous Halberd",
+		"description": "Sebuah tombak berisi kekuatan guntur. Sangat bagus untuk Burst Damage, dan panjangnya menjadikannya senjata yang bagus untuk berbagai jangkauan.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Spear",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "spear_thunder_sr_star",
+		"avatar": "imitation_4",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "Attack",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "Resistance",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**:",
+			"description": "Saat senjata terisi penuh, serangan berikutnya akan mengakibatkan**Paralyze Kuat**pada target selama **1** detik dan menerapkan Electrify selama **6** detik, menetralkan semua buff mereka dan menimpakan DMG sebesar **106.00%** ATK. Selama **6** detik berikutnya, target yang terkena Electrify tidak bisa menerima buff."
+		},
+		"advancements": [
+			{
+				"charge": 7,
+				"shatter": 11,
+				"need": null
+			},
+			{
+				"description": "Meningkatkan Shatter sebesar **15%**. Setelah menghancurkan Perisai musuh, meningkatkan ATK semua rekan tim sebesar **15%** selama **30** detik. Efek ini tidak bisa ditumpuk.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan HP dasar untuk senjata saat ini sebesar **10%**.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Setelah menghantam target dengan **Moonchaser**, mengurangi ATK mereka sebesar **5%** dan meningkatkan ATK pengguna sebesar **5%** selama **15** detik (efek bisa ditumpuk maks **3** kali dengan menghantam beberapa target). Efek akan digandakan pada target yang terkena Grievous.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar untuk senjata saat ini sebesar **20%**.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Menggandakan durasi Stun dari Skill Dodge.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "Makin jauh laju Skill Discharge, DMG yang ditimpakan pun makin besar, hingga **100%** DMG lebih besar.",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Thrust",
+					"description": "Saat di darat, ayunkan Long Spear untuk menyerang 5 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> membuat target terpental sedikit ke belakang.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</> dan membuat target terpental cukup jauh ke belakang.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
+				},
+				{
+					"name": "Jumping Strike",
+					"description": "Saat di udara, tekan Serangan Biasa untuk menyerang 4 kali berturut-turut di udara.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
+				},
+				{
+					"name": "Crashing Drive",
+					"description": "Tahan Serangan Biasa saat di udara (tekan saat ada target yang tersedia), atau gunakan Serangan Biasa saat memanjat, melompat ke belakang, atau menggunakan Jetpack untuk mengaktifkan Crashing Drive.\r\nSaat terjun, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> tiap menghantam target. Saat mendarat, menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan menjatuhkan target.\r\nMakin tinggi posisimu saat mengaktifkan serangan, makin besar pula DMG yang ditimpakan, maks <shuzhi>600%</> DMG.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
+				},
+				{
+					"name": "Spear Flurry",
+					"description": "Setelah Serangan Biasa ketiga, tahan tombol Serangan Biasa untuk mengaktifkan Spear Flurry.\r\nSetelah kena, mengakibatkan <shuzhi>Suspend Keras</> kepada target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Tekan lagi untuk terus menyerang target yang tertahan di udara, menimpakan DMG sebesar maks <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> DMG kepada satu target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
+				},
+				{
+					"name": "Sneak Attack",
+					"description": "Tusukkan Long Spear ke depan, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Flying Kick",
+					"description": "Gunakan tombol Serangan Biasa selama rentang waktu Dodge Sempurna yang singkat (pakai tombol arah sebelum menghindar) untuk mengaktifkan Flying Kick.\r\nSetelah mengenai target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK + <shuzhi>{1}</>, memukul mundur target cukup jauh, dan memberikan efek <shuzhi>Stun</> kepada target selama <shuzhi>1</> detik atau <shuzhi>0,5</> detik kepada Wanderer.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
+				},
+				{
+					"name": "Lunging Smash",
+					"description": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah Menghindar untuk melakukan Lunging Smash.\r\nHantamkan tombak panjang ke tanah, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terkena <shuzhi>Suspend Keras</>.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
+				},
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, mengurangi SPD musuh di dalam area tersebut. Saat menghindar, kamu menjadi kebal terhadap Hitstun selama <shuzhi>0,5</> detik.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
+				}
+			],
+			"skill": [
+				{
+					"name": "Moonchaser",
+					"description": "Mengakibatkan <shuzhi>Suspend Keras</> kepada target dan mengudara, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. CD: <shuzhi>25</> detik.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkillThu_SSR"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Thunderclap",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</>, lalu melompat ke udara dan melemparkan Thunderous Spear yang akan meledak saat menghantam tanah, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan mengakibatkan <shuzhi>Paralyze Keras</> kepada target selama <shuzhi>1</> detik.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "Thunderblades",
@@ -5941,7 +7697,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Killknife.webp"
 		},
 		"rarity": "SSR",
-		"element": "Physics",
+		"element": "PhysicsFlame",
 		"type": "Killknife",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",
@@ -8709,7 +10465,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Zeke_Phy01.webp"
 		},
 		"rarity": "SSR",
-		"element": "OverseasZeke",
+		"element": "PhysicsFlame",
 		"type": "zeke",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",

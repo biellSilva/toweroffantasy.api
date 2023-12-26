@@ -1,4 +1,1091 @@
 {
+	"spear_ice": {
+		"name": "フロストスピア",
+		"description": "フォラント雪原の住民がよく使う武器。地域の特性により氷属性を有している。安価だが強度が高いことから広く使用されている",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Spear_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Spear_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Ice",
+		"type": "Spear",
+		"weaponUpgradeId": "ice_r_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "spear_ice_r_star",
+		"mats": {
+			"Item_Mine_ice": 15,
+			"Item_Mine_ice_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_ice_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "全属性耐性",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**雷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、敵を**2**秒間**強制凍結**し、**6**秒間の凍傷効果を与える。凍結状態が解けると攻撃力×**67.00%**のダメージを与える。凍傷効果の発動中、ターゲットの武器エナジー値獲得速度-**50%**。"
+		},
+		"advancements": [
+			{
+				"charge": 5.6,
+				"shatter": 6.9,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "長槍通常攻撃",
+					"description": "地上にいる時、長槍を振るうと5回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージと少しのノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージと少しのノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージと少しのノックバック\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージと少しのノックバック\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージと大幅なノックバック",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_Melee_R"
+				},
+				{
+					"name": "飛撃",
+					"description": "滞空時、通常攻撃を行うと空中で4回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttack_R"
+				},
+				{
+					"name": "破撃",
+					"description": "滞空時に通常攻撃を長押し(敵の存在時)、またはクライミング時/反転ジャンプ攻撃時/ジェットパック使用時に通常攻撃を行うと、破撃を発動する。\r\n落下中、ターゲットに命中するごとに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。着地時に周囲のターゲットに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与え、ターゲットを浮遊させる。\r\n発動時に地面から距離が離れているほどダメージが大きくなる。最大で<shuzhi>600%</>のダメージ。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttack_R"
+				},
+				{
+					"name": "乱槍狂舞",
+					"description": "3回目の通常攻撃の後、通常攻撃を長押しすると乱槍狂舞を発動できる\r\n命中するとターゲットを<shuzhi>強制浮遊</>させて攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。再度タップすると浮遊させたターゲットに連続攻撃を行い、ターゲット単体に最大で攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_Branch_R"
+				},
+				{
+					"name": "奇襲",
+					"description": "長槍で突き、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "飛び蹴り",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、飛び蹴りを発動できる\r\n飛び蹴りが命中したターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、大幅にノックバックさせる。さらにモンスターを<shuzhi>1</>秒間、プレイヤーを<shuzhi>0.5</>秒間<shuzhi>強制スタン</>させる",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttack_R"
+				},
+				{
+					"name": "挑撃",
+					"description": "回避後すぐに通常攻撃を行うと、挑撃を発動できる\r\n長槍を地面に振り降ろして<shuzhi>強制浮遊</>効果と攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttack_R"
+				},
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "望月",
+					"description": "旋風のようにターゲットを<shuzhi>強制浮遊</>させるとともに探索者が滞空し、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。クールダウン<shuzhi>{2}</>秒",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "永撃跳躍",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。ターゲットをつかんで何度か振り回し、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、最後の一撃に<shuzhi>強制浮遊</>を付与する",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_ice"
+	},
+	"digger_physic": {
+		"name": "コンバットナイフ",
+		"description": "ベンジス重工が開発した基本タイプの武器。特殊合金で作られており、軽くて小回りが利いて扱いやすい",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Ds_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Ds_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Physics",
+		"type": "DoubleSword",
+		"weaponUpgradeId": "physic_r_tupo_BC",
+		"wc": "DPS",
+		"advanceID": "digger_physic_r_star",
+		"mats": {
+			"Item_Mine_physic": 15,
+			"Item_Mine_physic_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_physic_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "会心",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**重傷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると攻撃力×**63.00%**のダメージを与え、さらに**7**秒間、敵を被ダメージ+**20%**の重傷状態にする。**チームプレイ**中、重傷状態のターゲットが物理ダメージを受けた場合、さらに**20%**の追加物理ダメージを負う。"
+		},
+		"advancements": [
+			{
+				"charge": 9.6,
+				"shatter": 3.2,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "双剣通常攻撃",
+					"description": "地上にいる時、双剣を振るうと5回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージと少しのノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージと少しのノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージと少しのノックバック\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージと少しのノックバック\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージと少しのノックバック",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_melee.webp",
+					"id": "GA_FPlayerDsMelee_Melee_R"
+				},
+				{
+					"name": "空中高速移動",
+					"description": "滞空時または1段ジャンプ使用後、通常攻撃を行うと空中で4回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_air.webp",
+					"id": "GA_FPlayerDsMelee_AirAttack_R"
+				},
+				{
+					"name": "閃撃",
+					"description": "3回目の通常攻撃の後、通常攻撃を長押しすると閃撃を発動できる\r\n命中するとターゲットを<shuzhi>強制浮遊</>させ、合計で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_frontattack.webp",
+					"id": "GA_FPlayerDsMelee_Branch_R"
+				},
+				{
+					"name": "旋回刃",
+					"description": "滞空時に通常攻撃を長押し(敵の存在時)、またはクライミング時/反転ジャンプ攻撃時/ジェットパック使用時に通常攻撃を行うと、旋回刃を発動する。\r\n落下中、ターゲットに命中するごとに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_jump.webp",
+					"id": "GA_FPlayerDsMelee_JumpAttack_R"
+				},
+				{
+					"name": "奇襲",
+					"description": "しゃがんだ状態で敵の背後に近づき、通常攻撃を行うと、奇襲を発動できる。双剣で刺突を繰り出し、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerDsMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "飛刃",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、飛刃を発動できる\r\n命中するとターゲットを<shuzhi>強制浮遊</>させ、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。再度タップすると飛刃を投げ、ターゲットに命中するごとに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを最大<shuzhi>6</>回与える",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_branch.webp",
+					"id": "GA_FPlayerDsEvade_FrontAttack_R"
+				},
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムを発動(クールダウン15秒)し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直無効、<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDsEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "輪転飛刃",
+					"description": "周囲に<shuzhi>6</>本の輪転飛刃を放つ。飛刃1本につき攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。クールダウン<shuzhi>{2}</>秒",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_ds_1.webp",
+					"id": "GA_FPlayerDSSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "回転飛刃",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>し、回転飛刃で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。さらに飛刃を<shuzhi>2</>本投げて探索者の周囲を旋回させ、ターゲットが触れるたびに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_ds_changeskill.webp",
+					"id": "GA_FPlayerDsChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "digger_physic"
+	},
+	"sword_thunder": {
+		"name": "電磁ブレイド",
+		"description": "最初に開発が進められた電気オムニアム武器。扱いやすく、戦いが不得手な探索者に大人気",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Sword_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Sword_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Thunder",
+		"type": "Sword",
+		"weaponUpgradeId": "thunder_r_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "sword_thunder_r_star",
+		"mats": {
+			"Item_Mine_thunder": 15,
+			"Item_Mine_thunder_02": 25,
+			"Item_breakthrough_B2": 25,
+			"Item_breakthrough_D2": 25,
+			"Item_Mine_thunder_03": 14,
+			"Item_breakthrough_B3": 14,
+			"Item_breakthrough_D3": 14,
+			"Item_breakthrough_B1": 13,
+			"Item_breakthrough_D1": 12
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "全属性耐性",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**雷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、**1**秒間の**強制パラライズ**、**6**秒間の感電、および攻撃力×**70.00%**のダメージを与え、敵のバフを解除する。また、敵は**6**秒間、新たなバフを獲得できなくなる。"
+		},
+		"advancements": [
+			{
+				"charge": 8.8,
+				"shatter": 3.6,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "短剣通常攻撃",
+					"description": "地上にいる時、短剣を使うと5回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージと少しのノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージと少しのノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージと少しのノックバック\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージと少しのノックバック\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージと<shuzhi>ノックアップ</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_melee.webp",
+					"id": "GA_FPlayerSwordMelee_Melee_R"
+				},
+				{
+					"name": "飛撃",
+					"description": "滞空時、通常攻撃を行うと空中で4回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージ\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージ\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージ\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージと<shuzhi>強制ノックダウン</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_air.webp",
+					"id": "GA_FPlayerSwordMelee_AirAttack_R"
+				},
+				{
+					"name": "サイクロン",
+					"description": "通常攻撃後に攻撃ボタンを長押しするとサイクロンを発動できる。\r\n命中するとターゲットが浮遊し、1体のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_branch.webp",
+					"id": "GA_FPlayerSwordMelee_Branch_R"
+				},
+				{
+					"name": "風落斬",
+					"description": "滞空時に通常攻撃を長押し、またはクライミング時、反転ジャンプ攻撃時、ジェットパック使用時に通常攻撃をすると、風落斬を発動する。\r\n落下中、ターゲットに命中するごとに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。着地時に周囲のターゲットに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与え、ターゲットをノックバックする。\r\n発動時に地面から距離が離れているほどダメージが大きくなる。最大で<shuzhi>600%</>のダメージを与える。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_jump.webp",
+					"id": "GA_FPlayerSwordMelee_JumpAttack_R"
+				},
+				{
+					"name": "奇襲",
+					"description": "しゃがんだ状態で敵の背後に近づき、通常攻撃を行うと、奇襲を発動できる。短剣を突き出し、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSwordMelee_Sneak_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムを発動(クールダウン15秒)し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直無効、<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSwordEvade_Evade_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "高速移動",
+					"description": "短剣を使ってターゲット間を高速移動し、最大で<shuzhi>5</>体のターゲットに合計で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、最後の一撃でターゲットを浮遊させる。発動期間中、硬直を無効化。同一ターゲットに与えるダメージは一撃ごとに-<shuzhi>40%</>。クールダウン<shuzhi>{2}</>秒。",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/sword_skill1.webp",
+					"id": "GA_FPlayerSwordSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "剣気縦横",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。ターゲットに突撃するとともに<shuzhi>強制浮遊</>させ、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_sword_changeskill.webp",
+					"id": "GA_FPlayerSwordChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "sword_thunder"
+	},
+	"bow_fire": {
+		"name": "複合弓",
+		"description": "雪原の狩人がよく使う武器。簡単に獲物を射止めることができる。販売促進の結果、今では低価格帯市場で半分以上のシェアを誇っている",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Bow_Fire01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Bow_Fire01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"assetsA3": {},
+		"rarity": "R",
+		"element": "Flame",
+		"type": "Bow",
+		"weaponUpgradeId": "fire_r_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "bow_fire_r_star",
+		"mats": {
+			"Item_Mine_fire": 15,
+			"Item_Mine_fire_02": 25,
+			"Item_breakthrough_A2": 25,
+			"Item_breakthrough_C2": 25,
+			"Item_Mine_fire_03": 14,
+			"Item_breakthrough_A3": 14,
+			"Item_breakthrough_C3": 14,
+			"Item_breakthrough_A1": 13,
+			"Item_breakthrough_C1": 12
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "会心",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**炎**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、敵を**8**秒間点火状態にし、毎秒、攻撃力×**27.00%**のダメージを与える。点火状態中はターゲットの回復効果-**50%**。"
+		},
+		"advancements": [
+			{
+				"charge": 8,
+				"shatter": 4.8,
+				"need": null
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "通常攻撃",
+					"description": "地上にいる時、連続で弓を引き、5回連続で攻撃する。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージと少しのノックバック",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee"
+				},
+				{
+					"name": "チャージの矢",
+					"description": "通常攻撃長押しでチャージ攻撃を発動。基礎ダメージは攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>、チャージ時間+<shuzhi>1</>秒ごとにダメージが+<shuzhi>50</>%、<shuzhi>3</>秒で最大になる。ターゲットの頭部または弱点に命中すると、ヘッドショット効果を発動(ヘッドショット効果は探索者には無効)、2倍のダメージを与えてターゲットをノックダウンする",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack"
+				},
+				{
+					"name": "矢の雨",
+					"description": "任意の回数の通常攻撃の後、通常攻撃を長押しすると矢の雨を発動し、範囲内のターゲットに最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch"
+				},
+				{
+					"name": "空中連撃",
+					"description": "滞空時、通常攻撃を行うと空中で4回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムを発動(クールダウン15秒)し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直無効、<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade"
+				},
+				{
+					"name": "チャージの一撃",
+					"description": "回避後、攻撃をタップするとチャージの一撃を発動でき、ターゲットを少しノックバックする。さらにターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "貫く矢",
+					"description": "後方転回して前方に貫く矢を<shuzhi>1</>本放ち、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ターゲットをノックバックする。クールダウン<shuzhi>{2}</>秒",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "爆裂矢の雨",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。同時に爆裂矢の雨を召喚し、ターゲット単体に攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ターゲットを浮遊させる",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_fire"
+	},
+	"stave_thunder": {
+		"name": "聖痕の杖",
+		"description": "十字架のルーンが刻まれた機械の杖。罪を許したり、天罰を下したりする",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Stave_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Stave_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/peipei.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Staves",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "SUP",
+		"advanceID": "stave_thunder_sr_star",
+		"avatar": "imitation_14",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "全属性耐性",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**雷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、**1**秒間の**強制パラライズ**、**6**秒間の感電、および攻撃力×**106.00%**のダメージを与え、敵のバフを解除する。また、敵は**6**秒間、新たなバフを獲得できなくなる。"
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 4,
+				"need": null
+			},
+			{
+				"description": "回避スキルの発動時に周囲**10**ｍ以内にいる仲間全員を回復する。回復量は攻撃力×**100%**",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "現在の武器のHP基本成長率+**10%**",
+				"charge": 10,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "毎回の通常攻撃にミサイルを2発付与する。ミサイル1発につきターゲットに攻撃力×**5%**のダメージを与え、武器エナジー値を**5**Pt獲得する",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "現在の武器のHP基本成長率+**20%**",
+				"charge": 11.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "武器エナジー値の獲得速度+**20%**(ミサイルの攻撃では無効)",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			},
+			{
+				"description": "スキルでターゲットの行動制限を解消すると、スキルの範囲内にいる味方が被ダメージ-**60%**を獲得する",
+				"charge": 13.2,
+				"shatter": 4,
+				"need": "stave_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "通常攻撃",
+					"description": "地上にいる時、杖を振るうと5回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_staves.webp",
+					"id": "GA_FPlayerStavesMelee_Melee"
+				},
+				{
+					"name": "滞空打撃",
+					"description": "滞空時または1段ジャンプ使用後、通常攻撃を行うと空中で5回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_air.webp",
+					"id": "GA_FPlayerStavesMelee_AirAttack"
+				},
+				{
+					"name": "落月撃",
+					"description": "滞空時に通常攻撃を長押しすると、落月撃を発動する。\r\n着地時に周囲のターゲットに対して<shuzhi>0.2</>秒ごとに1回ダメージを与え、合計で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_jump.webp",
+					"id": "GA_FPlayerStavesMelee_JumpAttack"
+				},
+				{
+					"name": "フォース攻撃",
+					"description": "3回目の通常攻撃の後、通常攻撃を長押しすると分岐攻撃を発動でき、<shuzhi>300</>Ptのスタミナを消費する\r\n1回目の分岐では前方付近のモンスターを集め(<shuzhi>強制浮遊</>)、<shuzhi>0.3</>秒ごとに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える(最大<shuzhi>4</>回)\r\n2回目の分岐ではターゲットの位置およびその付近の敵に<shuzhi>0.3</>秒ごとに1回、攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_branch.webp",
+					"id": "GA_FPlayerStavesMelee_Branch"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムを発動(クールダウン15秒)し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直無効、<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerStavesEvade_Evade"
+				},
+				{
+					"name": "湧出",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、湧出を発動できる\r\nエナジー波動はターゲットに命中するたびに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える\r\n発動するとただちに武器エナジー値を<shuzhi>75</>Pt獲得する",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_FrontAttack"
+				},
+				{
+					"name": "チャクラ",
+					"description": "回避後すぐに通常攻撃を行うと、後方回避攻撃を発動できる\r\n探索者が前方にエナジーボールを1個放ち、経路上の敵に対し<shuzhi>0.3</>秒ごとに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える(最大5回)\r\n発動するとただちに武器エナジー値を<shuzhi>75</>Pt獲得する",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_frontattack.webp",
+					"id": "GA_FPlayerStavesEvade_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "庇護",
+					"description": "その場でエナジーシールドを1つ生成する。シールド内の味方は攻撃力×<shuzhi>{3}%</>+<shuzhi>{4}</>PtのHPを回復し、被ダメージ-<shuzhi>{0}%</>。持続時間<shuzhi>10</>秒。クールダウン<shuzhi>60</>秒",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/staves_skill1.webp",
+					"id": "GA_FPlayerStavesSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "疾風の救援",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>し、セットした杖が探索者や味方のデバフを解消し続ける。さらに付近の探索者や味方を治療し、攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>PtのHPを回復する。<shuzhi>7</>秒間持続",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_staves_changeskill.webp",
+					"id": "GA_FPlayerStavesChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "stave_thunder"
+	},
+	"cannon_ice": {
+		"name": "エンダー",
+		"description": "史上最も凶悪な銃器であり、移動式砲台とも呼ばれる大型銃器",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Cannon_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Cannon_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xierda.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Cannon",
+		"weaponUpgradeId": "ice_sr_tupo_AD",
+		"wc": "DPS",
+		"advanceID": "cannon_ice_sr_star",
+		"avatar": "imitation_15",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "全属性耐性",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**雷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、敵を**2**秒間**強制凍結**し、**6**秒間の凍傷効果を与える。凍結状態が解けると攻撃力×**111.00%**のダメージを与える。凍傷効果の発動中、ターゲットの武器エナジー値獲得速度-**50%**。"
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "通常攻撃が命中するたびにダメージ+**1%**、**2**秒間持続。最大**15**スタックまで可能。銃弾が**60**発に増加",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**10%**",
+				"charge": 10,
+				"shatter": 10,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "この武器に変更後の**10**秒間は通常攻撃のダメージとシールドブレイク率+**30%**。クールダウン**25**秒。銃弾が**80**発に増える",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**20%**",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "砲塔状態中、通常攻撃のクールダウンが**2**秒に短縮される",
+				"charge": 10,
+				"shatter": 13,
+				"need": "cannon_ice_plasm"
+			},
+			{
+				"description": "この武器に変更後の**10**秒間は通常攻撃のダメージとシールドブレイク率+**60%**。クールダウン**25**秒",
+				"charge": 10,
+				"shatter": 16,
+				"need": "cannon_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "通常攻撃",
+					"description": "通常攻撃を行うと照準状態になり、通常攻撃長押しで連射できる。最大で<shuzhi>40</>発連射可能。1発につき攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。敵の頭部または弱点に命中するとヘッドショットを発動し(ヘッドショットは探索者に対して無効)、2倍のダメージを与えてノックダウンする",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_cannon.webp",
+					"id": "GA_FPlayerCannonMelee_Melee"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムを発動(クールダウン15秒)し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直無効、<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerCannonEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "砲台",
+					"description": "砲台モードをオンにすると、強力なエナジー砲弾を発射する。砲弾1発につき攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ターゲットをノックアップする。クールダウン<shuzhi>{2}</>秒。砲台設置時、硬直と行動制限を無効化する",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon.webp",
+					"id": "GA_FPlayerCannonSkillNew"
+				}
+			],
+			"discharge": [
+				{
+					"name": "極寒レーザー",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。前方に極寒レーザーを放ち、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、<shuzhi>3</>秒間<shuzhi>強制凍結</>する。さらにターゲットの氷耐性-<shuzhi>50%</>、<shuzhi>10</>秒間持続",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_cannon_skill3.webp",
+					"id": "GA_FPlayerCannonChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "cannon_ice"
+	},
 	"chainsaw_physic": {
 		"name": "プチハリケーン",
 		"description": "子どもの遊び道具としては危険すぎる代物であり、子どもが正規のルートで手に入れられる物ではない。一体、どのような技術を用いてここまで改造したのだろうか…あるいは、何かの冒険で見つけた宝物なのか…？",
@@ -261,6 +1348,675 @@
 		"fashion": [],
 		"version": "2.5",
 		"id": "chainsaw_physic"
+	},
+	"hammer_ice": {
+		"name": "初動重撃",
+		"description": "こんな大槌を前にしたら、誰もこの重い攻撃を受けようとは思わないはず",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SR_Hammer_Ice01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SR_Hammer_Ice01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/xi.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Ice",
+		"type": "Hammer",
+		"weaponUpgradeId": "ice_sr_tupo_BC",
+		"wc": "Tank",
+		"advanceID": "hammer_ice_sr_star",
+		"avatar": "imitation_2",
+		"mats": {
+			"Item_Mine_ice": 28,
+			"Item_Mine_ice_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_ice_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "全属性耐性",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**雷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、敵を**2**秒間**強制凍結**し、**6**秒間の凍傷効果を与える。凍結状態が解けると攻撃力×**111.00%**のダメージを与える。凍傷効果の発動中、ターゲットの武器エナジー値獲得速度-**50%**。"
+		},
+		"advancements": [
+			{
+				"charge": 6,
+				"shatter": 10,
+				"need": null
+			},
+			{
+				"description": "この武器に変更すると周囲のターゲットを挑発、**8**秒の間被ダメージを**1**回無効化し、さらに**8**秒間の不屈を獲得する。クールダウン**15**秒",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "現在の武器のHP基本成長率+**10%**",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "ダメージを受けると、その後の**6**秒間は被ダメージ-**50%**。クールダウン**20**秒",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "現在の武器のHP基本成長率+**20%**",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "通常攻撃に**2.5**秒間の**強制スタン**効果を付与する。クールダウン**20**秒",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			},
+			{
+				"description": "連携スキルでターゲットに被ダメージ+**10%**を与え、氷ダメージはさらに+**10%**を与える。**25**秒間持続",
+				"charge": 6,
+				"shatter": 10,
+				"need": "hammer_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "通常攻撃",
+					"description": "地上にいる時、大槌を振るうと4回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージと少しのノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージと少しのノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージと少しのノックバック\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージとノックアップ\r\nジェット状態の時、大槌を振るうと4回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージと少しのノックバック\r\n2回目：攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>のダメージと少しのノックバック\r\n3回目：攻撃力×<shuzhi>{12}%</>+<shuzhi>{13}</>のダメージと少しのノックバック\r\n4回目：攻撃力×<shuzhi>{14}%</>+<shuzhi>{15}</>のダメージと<shuzhi>強制浮遊</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/Melee/pugong_hammer.webp",
+					"id": "GA_FPlayerHammerMelee_Melee"
+				},
+				{
+					"name": "重撃",
+					"description": "滞空時または1段ジャンプ使用後、通常攻撃を行うとジャンプ攻撃を発動し、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える\r\nジェット状態の時、攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージと<shuzhi>強制浮遊</>を与える\r\n発動時に地面から距離が離れているほどダメージが大きくなり、最大で<shuzhi>600%</>に達する",
+					"operations": [
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_air.webp",
+					"id": "GA_FPlayerHammerMelee_AirAttack"
+				},
+				{
+					"name": "振動波",
+					"description": "滞空時に長押し、2段ジャンプまたは近くにターゲットがいる場合は空中で短押し、クライミング、反転ジャンプ攻撃、ジェットパック使用時に通常攻撃をすると、振動波を発動してターゲットを<shuzhi>4</>回<shuzhi>強制浮遊</>させ、毎回攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、スタミナを<shuzhi>250</>Pt消費する\r\nジェット状態中は振動波を発動してターゲットを<shuzhi>5</>回<shuzhi>強制浮遊</>させ、毎回攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える\r\n発動時に地面から距離が離れているほどダメージが大きくなり、最大で<shuzhi>600%</>に達する",
+					"operations": [
+						"Jump",
+						"Jump",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump.webp",
+					"id": "GA_FPlayerHammerMelee_JumpAttack"
+				},
+				{
+					"name": "奇襲",
+					"description": "しゃがんだ状態で敵の背後に近づき、通常攻撃を行うと、奇襲を発動できる。大槌を振り回し、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージ",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerHammerMelee_Sneak"
+				},
+				{
+					"name": "チャージ重撃",
+					"description": "通常攻撃を長押しするとチャージ重撃を発動でき、最大3段チャージできる。チャージ中は不屈および行動制限無効となる\r\n1段目：ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、浮遊させる\r\n2段目：ターゲットに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与え、<shuzhi>強制浮遊</>させる\r\n3段目：ターゲットに攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージを与え、<shuzhi>強制浮遊</>させる\r\nジェット状態の時、通常攻撃を長押しするとレイジ連撃を発動し、攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージを与え、<shuzhi>強制浮遊</>させる",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_jump-05.webp",
+					"id": "GA_FPlayerHammerMelee_PowerAttack_OS"
+				}
+			],
+			"dodge": [
+				{
+					"name": "ジャンプ重撃",
+					"description": "ジャンプ重撃(方向キー+回避ボタン)を発動すると、振動波を放ってターゲットを<shuzhi>4</>回浮遊させ、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_frontattack.webp",
+					"id": "GA_FPlayerHammerEvade_FrontAttack"
+				},
+				{
+					"name": "空中破撃",
+					"description": "回避後すぐに通常攻撃を行うと、空中破撃を発動でき、前方に振動波を<shuzhi>3</>回放つ。それぞれ攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ターゲットを浮遊させる。\r\nジェット状態の時、前方に振動波を<shuzhi>5</>回放つ。それぞれ攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ターゲットを浮遊させる。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_backattck.webp",
+					"id": "GA_FPlayerHammerEvade_BackAttack"
+				},
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムを発動(クールダウン15秒)し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直無効、<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerHammerEvade_Evade"
+				}
+			],
+			"skill": [
+				{
+					"name": "ジェット切替",
+					"description": "大槌をジェット状態に変更すると、ダメージが増加する。<shuzhi>25</>秒間持続\r\nジェット状態の時、スキルを使用すると風雲の重撃を発動し、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージと<shuzhi>強制浮遊</>を与える。さらに地面に風の流れを作り、風の流れの中で自身が回避を使用しても回避回数を消費しなくなる。スキルのクールダウン<shuzhi>{2}</>秒、風雲の重撃のクールダウン<shuzhi>10</>秒",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/hammer_skill2.webp",
+					"id": "GA_FPlayerHammerBigSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "空飛ぶ大槌",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。近接範囲内にいるターゲットを<shuzhi>強制浮遊</>させ、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。さらに周囲のターゲットに頭上から大槌を落下させ、再度、攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_hammer_changeskill.webp",
+					"id": "GA_FPlayerHammerChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "hammer_ice"
+	},
+	"bow_physic": {
+		"name": "夜雀の羽根",
+		"description": "闇夜のような弓。夜の闇に完璧に溶け込める",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_R_Bow_Phy01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_R_Bow_Phy01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/bailing.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Physics",
+		"type": "Bow",
+		"weaponUpgradeId": "physic_sr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "bow_physic_sr_star",
+		"avatar": "imitation_16",
+		"mats": {
+			"Item_Mine_physic": 28,
+			"Item_Mine_physic_02": 42,
+			"Item_breakthrough_B2": 42,
+			"Item_breakthrough_D2": 42,
+			"Item_Mine_physic_03": 22,
+			"Item_breakthrough_B3": 22,
+			"Item_breakthrough_D3": 22,
+			"Item_breakthrough_B1": 25,
+			"Item_breakthrough_D1": 23
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			},
+			{
+				"name": "会心",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+				"id": "CritAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**重傷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると攻撃力×**100.00%**のダメージを与え、さらに**7**秒間、敵を被ダメージ+**20%**の重傷状態にする。**チームプレイ**中、重傷状態のターゲットが物理ダメージを受けた場合、さらに**20%**の追加物理ダメージを負う。"
+		},
+		"advancements": [
+			{
+				"charge": 10,
+				"shatter": 6,
+				"need": null
+			},
+			{
+				"description": "通常攻撃5回目、またはスキル**貫く矢**を発動すると、回避回数を1回回復する",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**10%**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "ヘッドショットのダメージ+**30%**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**20%**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "回避スキルでターゲットに**7**秒間の重傷を付与する",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			},
+			{
+				"description": "重傷状態のターゲットへの会心率+**30%**、会心ダメージ+**50%**",
+				"charge": 10,
+				"shatter": 6,
+				"need": "bow_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "弓通常攻撃",
+					"description": "地上にいる時、連続で弓を引き、5回連続で攻撃する。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージと少しのノックバック",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Melee_R"
+				},
+				{
+					"name": "チャージの矢",
+					"description": "通常攻撃長押しでチャージ攻撃を発動。基礎ダメージは攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>、チャージ時間+<shuzhi>1</>秒ごとにダメージが+<shuzhi>50</>%、<shuzhi>3</>秒で最大になる。ターゲットの頭部または弱点に命中すると、ヘッドショット効果を発動(ヘッドショット効果は探索者には無効)、2倍のダメージを与えてターゲットをノックダウンする",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_PowerAttack_R"
+				},
+				{
+					"name": "矢の雨",
+					"description": "任意の回数の通常攻撃の後、通常攻撃を長押しすると矢の雨を発動し、範囲内のターゲットに最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_changeskill.webp",
+					"id": "GA_FPlayerBowMeleeNew_Branch_R"
+				},
+				{
+					"name": "空中連撃",
+					"description": "滞空時、通常攻撃を行うと空中で4回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowMeleeNew_AirAttack_R"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムを発動(クールダウン15秒)し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直無効、<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerBowEvadeNew_Evade_R"
+				},
+				{
+					"name": "チャージの一撃",
+					"description": "回避後、攻撃をタップするとチャージの一撃を発動でき、ターゲットを少しノックバックする。さらにターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_bow_power.webp",
+					"id": "GA_FPlayerBowEvadeNew_FrontAttack_R"
+				}
+			],
+			"skill": [
+				{
+					"name": "貫く矢",
+					"description": "後方転回して前方に貫く矢を<shuzhi>1</>本放ち、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ターゲットをノックバックする。クールダウン<shuzhi>{2}</>秒",
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
+					"id": "GA_FPlayerBowSkill_R"
+				}
+			],
+			"discharge": [
+				{
+					"name": "爆裂矢の雨",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。同時に爆裂矢の雨を召喚し、ターゲット単体に攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ターゲットを浮遊させる",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/skill_artifact11_1.webp",
+					"id": "GA_FPlayerBowChangeSkill_Success_R"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "bow_physic"
+	},
+	"spear_thunder": {
+		"name": "雷霆の戟",
+		"description": "雷の力を宿した長槍。爆発的な力を持ち、遠距離攻撃、近接攻撃、防御のあらゆる面で優れている",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Spear_Thunder01.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Spear_Thunder01.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/aige.webp"
+		},
+		"assetsA3": {},
+		"rarity": "SR",
+		"element": "Thunder",
+		"type": "Spear",
+		"weaponUpgradeId": "thunder_sr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "spear_thunder_sr_star",
+		"avatar": "imitation_4",
+		"mats": {
+			"Item_Mine_thunder": 28,
+			"Item_Mine_thunder_02": 42,
+			"Item_breakthrough_A2": 42,
+			"Item_breakthrough_C2": 42,
+			"Item_Mine_thunder_03": 22,
+			"Item_breakthrough_A3": 22,
+			"Item_breakthrough_C3": 22,
+			"Item_breakthrough_A1": 25,
+			"Item_breakthrough_C1": 23
+		},
+		"stats": [
+			{
+				"name": "攻撃",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+				"id": "CommonAtkAdded"
+			},
+			{
+				"name": "全属性耐性",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_resist_all.webp",
+				"id": "ElementDef"
+			},
+			{
+				"name": "HP",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+				"id": "MaxHealthAdded"
+			}
+		],
+		"elementEffects": {
+			"title": "**雷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、**1**秒間の**強制パラライズ**、**6**秒間の感電、および攻撃力×**106.00%**のダメージを与え、敵のバフを解除する。また、敵は**6**秒間、新たなバフを獲得できなくなる。"
+		},
+		"advancements": [
+			{
+				"charge": 7,
+				"shatter": 11,
+				"need": null
+			},
+			{
+				"description": "シールドブレイク率+**15%**、ターゲットのシールドをブレイクすると、チーム全体の攻撃力+**15%**、スタック不可。**30**秒間持続",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "現在の武器のHP基本成長率+**10%**",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "スキル**望月**がターゲットに命中すると、ターゲットの攻撃力-**5%**、自身の攻撃力+**5%**。最大**15**秒間持続。複数のターゲットに命中した場合は最大**3**スタックまで可能。重症状態のターゲットが受ける効果は2倍",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**20%**",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "前方回避スキルのスタン持続時間が2倍になる",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			},
+			{
+				"description": "連携スキルの投てき距離が遠いほどダメージが大きくなり、最大でダメージ+**100%**になる",
+				"charge": 7,
+				"shatter": 12.6,
+				"need": "spear_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "長槍通常攻撃",
+					"description": "地上にいる時、長槍を振るうと5回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージと少しのノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージと少しのノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージと少しのノックバック\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージと少しのノックバック\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージと大幅なノックバック",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"id": "GA_FPlayerSpearMelee_MeleeThu_SSR"
+				},
+				{
+					"name": "飛撃",
+					"description": "滞空時、通常攻撃を行うと空中で4回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_air.webp",
+					"id": "GA_FPlayerSpearMelee_AirAttackThu_SSR"
+				},
+				{
+					"name": "破撃",
+					"description": "滞空時に通常攻撃を長押し(敵の存在時)、またはクライミング時/反転ジャンプ攻撃時/ジェットパック使用時に通常攻撃を行うと、破撃を発動する。\r\n落下中、ターゲットに命中するごとに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。着地時に周囲のターゲットに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与え、ターゲットをノックダウンする。\r\n発動時に地面から距離が離れているほどダメージが大きくなる、最大で<shuzhi>600%</>のダメージ。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_jump.webp",
+					"id": "GA_FPlayerSpearMelee_JumpAttackThu_SSR"
+				},
+				{
+					"name": "乱槍狂舞",
+					"description": "3回目の通常攻撃の後、通常攻撃を長押しすると乱槍狂舞を発動できる\r\n命中するとターゲットを<shuzhi>強制浮遊</>させて攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。再度タップすると浮遊させたターゲットに連続攻撃を行い、ターゲット単体に最大で攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_branch.webp",
+					"id": "GA_FPlayerSpearMelee_BranchThu_SSR"
+				},
+				{
+					"name": "奇襲",
+					"description": "長槍で突き、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Crouch",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_sneak.webp",
+					"id": "GA_FPlayerSpearMelee_SneakThu_SSR"
+				}
+			],
+			"dodge": [
+				{
+					"name": "飛び蹴り",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、飛び蹴りを発動できる\r\n飛び蹴りが命中したターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、大幅にノックバックさせる。さらにモンスターを<shuzhi>1</>秒間、プレイヤーを<shuzhi>0.5</>秒間<shuzhi>強制スタン</>させる",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_frontattack.webp",
+					"id": "GA_FPlayerSpearEvade_FrontAttackThu_SSR"
+				},
+				{
+					"name": "挑撃",
+					"description": "回避後すぐに通常攻撃を行うと、挑撃を発動できる\r\n長槍を地面に振り降ろして<shuzhi>強制浮遊</>効果と攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_backattck.webp",
+					"id": "GA_FPlayerSpearEvade_BackAttackThu_SSR"
+				},
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。<shuzhi>0.5</>秒間持続",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerSpearEvade_EvadeThu_SSR"
+				}
+			],
+			"skill": [
+				{
+					"name": "望月",
+					"description": "旋風のようにターゲットを<shuzhi>強制浮遊</>させるとともに探索者が滞空し、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、浮遊させる。クールダウン<shuzhi>25</>秒",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/spear_skill1.webp",
+					"id": "GA_FPlayerSpearSkillThu_SSR"
+				}
+			],
+			"discharge": [
+				{
+					"name": "雷槍",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>し、空中にジャンプ、チャージしてからターゲットの位置に雷電の槍を投げる。槍が地面に落ちると範囲爆発を起こし、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ターゲットを<shuzhi>1</>秒間<shuzhi>強制パラライズ</>にする",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_changeskill.webp",
+					"id": "GA_FPlayerSpearChangeSkill_SuccessThu_SSR"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "1.0",
+		"id": "spear_thunder"
 	},
 	"digger_thunder": {
 		"name": "迅雷の双刃",
@@ -5916,7 +7672,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Killknife.webp"
 		},
 		"rarity": "SSR",
-		"element": "Physics",
+		"element": "PhysicsFlame",
 		"type": "Killknife",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",
@@ -8662,7 +10418,7 @@
 			"weaponIconForMatrixA3": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Zeke_Phy01.webp"
 		},
 		"rarity": "SSR",
-		"element": "OverseasZeke",
+		"element": "PhysicsFlame",
 		"type": "zeke",
 		"weaponUpgradeId": "physic_ssr_tupo_AC",
 		"wc": "DPS",
