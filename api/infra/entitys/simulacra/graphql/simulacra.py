@@ -10,6 +10,7 @@ class Simulacra:
     id: str
     name: str
     version: str
+    isReleased: bool
     rarity: str
     # sex: str
     avatarId: str 
