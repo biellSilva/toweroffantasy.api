@@ -7,6 +7,19 @@ class MountAsset:
     icon: str
     showImage: str
 
+@strawberry.type
+class MountPart:
+    id: str
+    name: str
+    description: str
+    rarity: str
+    icon: str
+    type: str
+    
+@strawberry.type
+class UnlockItem:
+    amount: int
+    item: MountPart
 
 @strawberry.type
 class Mount:
@@ -14,3 +27,5 @@ class Mount:
     name: str | None
     description: str
     assets: MountAsset
+    version: str
+    unlockItems: list[UnlockItem]
