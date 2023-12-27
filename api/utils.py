@@ -368,4 +368,7 @@ def filter_released(items: 'Simulacra | Weapon | Matrix') -> bool:
     return False
 
 def sort_mounts(mount: 'Mount') -> tuple[float, float]:
+    if mount.version.lower() in ('cn-only', 'ps-only'):
+        return -float('-inf'), -mount.rarity
+    
     return -float(mount.version), -mount.rarity
