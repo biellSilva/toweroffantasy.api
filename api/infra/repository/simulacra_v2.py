@@ -76,17 +76,17 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
                 continue
 
             if version == 'global':
-                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.simulacrumId and banner.simulacrumId == key_id.lower()]
+                value_dict['banners'] = [banner for banner in GB_BANNERS if banner.simulacrumId and banner.simulacrumId == key_id.lower()]
+                if value_dict['banners']:
+                    value_dict['isReleased'] = value_dict['banners'][-1].isReleased
 
-            if LINK := self.LINK_DATA.get(key_id.lower(), None):
-                value_dict['MatrixId'] = LINK.get('matrice', None)
             
             if WEAPON_ID := value_dict.get('weaponId', None):
                 if WEAPON_ID and WEAPON_ID not in ('none', 'null'):
                     if WEAPON := await self.WEAPON_REPO.get(EntityBase(id=WEAPON_ID), lang=lang, version=VERSIONS('global'), graphql=True):
                         value_dict['weapon'] = WEAPON
             
-            if MATRIX_ID := value_dict.get('MatrixId', None):
+            if MATRIX_ID := value_dict.get('matrixId', None):
                 if MATRIX_ID and MATRIX_ID not in ('none', 'null'):
                     if MATRIX := await self.MATRIX_REPO.get(EntityBase(id=MATRIX_ID), lang=lang, version=VERSIONS('global')):
                         value_dict['matrix'] = MATRIX

@@ -15,7 +15,7 @@ class Matrix(EntityBase):
     version: str
     description: Annotated[str, BeforeValidator(bold_numbers)]
     assets: MatrixAssets
-    rarity: str
+    rarity: int
     sets: list[MatrixSet]
     banners: list[Banner] = []
 

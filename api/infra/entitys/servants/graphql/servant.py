@@ -23,7 +23,7 @@ class SmartServant:
     id: str
     name: str
     description: str
-    rarity: str 
+    rarity: int 
     element: str 
     type: str 
     assets: ServantAsset

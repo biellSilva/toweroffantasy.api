@@ -9,16 +9,17 @@ from ..banners import Banner
 
 
 class Simulacra(EntityBase):
-    name: str
-    rarity: str
-    version: str
+    name: str = 'unknown'
+    rarity: int
+    version: str = 'unknown'
+    isReleased: bool = True
     # characterSex: str
     avatarId: str 
     advanceId: str | None = None
     # UnlockInfo: str
     
-    weaponId: Annotated[str | None, BeforeValidator(lambda x: None if not x or (isinstance(x, str) and (x.lower() == 'none' or x.lower() == 'null')) else x)] = None 
-    matrixId: Annotated[str | None, BeforeValidator(lambda x: None if not x or (isinstance(x, str) and (x.lower() == 'none' or x.lower() == 'null')) else x)] = None
+    weaponId: Annotated[str | None, BeforeValidator(lambda x: None if not x or (isinstance(x, str) and (x.lower() == 'none' or x.lower() == 'null')) else x.lower())] = None 
+    matrixId: Annotated[str | None, BeforeValidator(lambda x: None if not x or (isinstance(x, str) and (x.lower() == 'none' or x.lower() == 'null')) else x.lower())] = None
 
     likedGiftTypes: list[str] = Field(validation_alias=AliasChoices('like', 'likedGiftTypes'))
     # dislikedGiftTypes: list[str] = Field(validation_alias='dislike')
@@ -34,4 +35,4 @@ class Simulacra(EntityBase):
     assetsA3: Assets | None = None
     voicing: VC = Field(validation_alias=AliasChoices('va', 'voicing'))
     awakening: list[Awakening]
-    banners: list[Banner]
+    banners: list[Banner] = []

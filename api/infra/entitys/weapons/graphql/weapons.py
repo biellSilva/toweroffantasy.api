@@ -23,7 +23,7 @@ class Weapon:
 
     name: str
     version: str
-    rarity: str
+    rarity: int
     assets: WeaponAssets
 
     # Brief: str

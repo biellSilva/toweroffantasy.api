@@ -6,7 +6,7 @@ from api.utils import voice_actor_string_rework
 
 
 class Assets(BaseModel):
-    avatar: Annotated[str | None, BeforeValidator(lambda x: str(x).rsplit('.', 1)[0] if isinstance(x, str) and '.webp.webp' in x else x)]
+    avatar: Annotated[str | None, BeforeValidator(lambda x: str(x).rsplit('.', 1)[0] if isinstance(x, str) and '.webp.webp' in x else x)] = ''
     titlePicture: str | None
     characterArtwork: str | None
     painting: str | None

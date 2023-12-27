@@ -55,10 +55,13 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                 continue
 
             if version == 'global':
-                value_dict['Banners'] = [banner for banner in GB_BANNERS if banner.simulacrumId and banner.simulacrumId == key_id.lower()]
-
-            if LINK := self.LINK_DATA.get(key_id.lower(), None):
-                value_dict['MatrixId'] = LINK.get('matrice', None)
+                value_dict['banners'] = [banner for banner in GB_BANNERS if banner.simulacrumId and banner.simulacrumId == key_id.lower()]
+                if value_dict['banners']:
+                    value_dict['isReleased'] = value_dict['banners'][-1].isReleased
+            
+            if version == 'china':
+                CN_TRAITS: dict[str, list[dict[str, str | int]]] = json.loads(Path(LANG_PATH, 'traits.json').read_bytes())
+                value_dict['awakening'] = CN_TRAITS.get(key_id.lower(), [])
 
             if value_dict.get('id', None):
                 self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict)})

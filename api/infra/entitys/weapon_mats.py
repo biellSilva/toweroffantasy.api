@@ -10,7 +10,7 @@ class WeaponMat(BaseModel):
     icon: str | None = None
     type: str | None = None
     description: str | None = None
-    rarity: str | None = None
+    rarity: int | None = None
 
 
 class WeaponMats(BaseModel):

@@ -102,7 +102,7 @@ class WeaponMat:
     icon: str | None
     type: str | None
     description: str | None
-    rarity: str | None
+    rarity: int | None
 
 @strawberry.type
 class WeaponMats:

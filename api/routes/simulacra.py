@@ -69,13 +69,13 @@ async def get_simulacrum(id: SIMULACRA | SIMULACRA_CN,
 
 
 @router.get('', name='All simulacra', response_model=list[Simulacra])
-async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'), 
+async def get_all_simulacra(version: VERSIONS = VERSIONS('global'), 
                             lang: LANGS | LANGS_CN = LANGS('en'), 
                             include: bool = False,
                             includeUnreleased: bool = False):
     '''
     **Query Params** \n
-        version (DISABLED):
+        version:
             type: str
             default: global
             desc: Game version
@@ -102,7 +102,7 @@ async def get_all_simulacra( # version: VERSIONS = VERSIONS('global'),
 
     '''
     
-    simulacra = await SIMU_REPO.get_all(lang=lang, version=VERSIONS('global'))
+    simulacra = await SIMU_REPO.get_all(lang=lang, version=version)
 
     if not includeUnreleased:
         simulacra = filter(filter_released, simulacra)

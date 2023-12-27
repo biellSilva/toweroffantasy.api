@@ -9,7 +9,7 @@ from api.infra.entitys.base import EntityBase
 
 class Relic(EntityBase):
     name: str
-    rarity: str
+    rarity: int
     description: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     source: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     type: str
