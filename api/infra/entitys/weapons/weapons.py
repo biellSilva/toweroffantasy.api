@@ -28,7 +28,7 @@ class Weapon(EntityBase):
 
     name: str
     version: str
-    rarity: str
+    rarity: int
     assets: Assets
 
     # Brief: str

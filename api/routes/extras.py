@@ -20,11 +20,11 @@ METADATA = {
 
 
 RARITYS_DATA: dict[str, dict[str, dict[str, str]]] = loads(Path('api/infra/database/rarity.json').read_bytes())
-RARITY_DATA_RE = {rarity_key: value_asset
-                for rarity_key, rarity_value in RARITYS_DATA.items() 
-                for _, value_asset in rarity_value.items()}
+# RARITY_DATA_RE = {rarity_key: value_asset
+#                 for rarity_key, rarity_value in RARITYS_DATA.items() 
+#                 for _, value_asset in rarity_value.items()}
 
-RARITY_MODEL = Raritys(**RARITY_DATA_RE) # type: ignore
+# RARITY_MODEL = Raritys(**RARITY_DATA_RE) # type: ignore
 
 RELEASE_DATA: list[dict[str, str | list[str]]] = [
     {
@@ -38,13 +38,13 @@ RELEASE_DATA: list[dict[str, str | list[str]]] = [
     if v and 'cn' not in k.lower()]
 
 
-@router.get('/rarities', name='Get rarity', response_model=Raritys)
+@router.get('/rarities', name='Get rarity')
 async def get_rarity():
     '''  
     **Return** \n
         Rarity
     '''
-    return RARITY_MODEL
+    return RARITYS_DATA
 
 
 @router.get('/banners', name='Banners', response_model=list[Banner])

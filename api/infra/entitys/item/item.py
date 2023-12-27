@@ -8,5 +8,5 @@ class Item(EntityBase):
     type: str
     description: str | None = None
     icon: str | None = None
-    rarity: str
+    rarity: int
     

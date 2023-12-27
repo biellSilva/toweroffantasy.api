@@ -9,4 +9,4 @@ class Item:
     type: str
     description: str | None
     icon: str | None
-    rarity: str
+    rarity: int

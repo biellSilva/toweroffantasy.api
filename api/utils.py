@@ -147,14 +147,14 @@ def classifier(number: float):
     else:
         return 'C'
     
-def matrice_set_rework(rarity: str, sets: list[dict[str, str]]):
-    if rarity == 'N':
+def matrice_set_rework(rarity: int, sets: list[dict[str, str]]):
+    if rarity == 2:
         return [{'need': 4, 'description': sets[0].get('2', '')}]
-    elif rarity == 'R':
+    elif rarity == 3:
         return [{'need': 3, 'description': sets[0].get('2', '')}]
-    elif rarity == 'SR':
+    elif rarity == 4:
         return [{'need': 3, 'description': sets[0].get('2', '')}]
-    elif rarity == 'SSR':
+    elif rarity == 5:
         return [{'need': 2, 'description': sets[0].get('2', '')}, 
                 {'need': 4, 'description': sets[0].get('4', '')}]
     else:
@@ -183,7 +183,7 @@ def relic_advanc_rework(advanc: list[dict[str, str]]):
 
 
 def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, float]:
-    if simulacrum.rarity == 'SSR':
+    if simulacrum.rarity == 5:
         if simulacrum.banners:
             return -1, -simulacrum.banners[-1].bannerNumber
         elif simulacrum.id == 'imitation_33':
@@ -194,7 +194,7 @@ def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, float]:
             else:
                 return -1, 0
         
-    elif simulacrum.rarity == 'SR':
+    elif simulacrum.rarity == 4:
         if simulacrum.banners:
             return 1, -simulacrum.banners[-1].bannerNumber
         else:
@@ -206,7 +206,7 @@ def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, float]:
     return 2, 0
 
 def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
-    if weapon.rarity == 'SSR':
+    if weapon.rarity == 5:
         if weapon.banners:
             return -1, -weapon.banners[-1].bannerNumber
         else:
@@ -215,7 +215,7 @@ def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
             else:
                 return -1, 0
     
-    elif weapon.rarity == 'SR':
+    elif weapon.rarity == 4:
         if weapon.banners:
             return 1, -weapon.banners[-1].bannerNumber
         else:
@@ -224,7 +224,7 @@ def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
             else:
                 return 1, 0
     
-    elif weapon.rarity == 'R':
+    elif weapon.rarity == 3:
         if weapon.banners:
             return 2, -weapon.banners[-1].bannerNumber
         else:
@@ -237,7 +237,7 @@ def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
 
 
 def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
-    if matrice.rarity == 'SSR':
+    if matrice.rarity == 5:
         if matrice.banners:
             return -1, -matrice.banners[-1].bannerNumber
         else:
@@ -249,7 +249,7 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
             else:
                 return -1, 0
     
-    elif matrice.rarity == 'SR':
+    elif matrice.rarity == 4:
         if matrice.banners:
             return 1, -matrice.banners[-1].bannerNumber
         else:
@@ -258,7 +258,7 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
             else:
                 return 1, 0
     
-    elif matrice.rarity == 'R':
+    elif matrice.rarity == 3:
         if matrice.banners:
             return 2, -matrice.banners[-1].bannerNumber
         else:
@@ -267,7 +267,7 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
             else:
                 return 2, 0
 
-    elif matrice.rarity == 'N':
+    elif matrice.rarity == 2:
         if matrice.banners:
             return 3, -matrice.banners[-1].bannerNumber
         else:

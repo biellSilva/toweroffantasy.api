@@ -13,6 +13,6 @@ class Matrice:
     name: str
     description: str
     assets: MatrixAssets
-    rarity: str
+    rarity: int
     sets: list[MatriceSet]
     banners: list[Banner]

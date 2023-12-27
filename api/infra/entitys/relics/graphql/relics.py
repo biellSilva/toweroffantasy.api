@@ -6,7 +6,7 @@ import strawberry
 class Relic:
     id: str
     name: str
-    rarity: str
+    rarity: int
     description: str | None
     source: str | None
     type: str
