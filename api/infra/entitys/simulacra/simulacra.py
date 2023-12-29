@@ -4,7 +4,7 @@ from typing import Annotated
 
 from api.infra.entitys.base import EntityBase
 
-from .extra import VoiceActors as VC, Awakening, Assets
+from .extra import VoiceActors as VC, Awakening, Assets, Fashion
 from ..banners import Banner
 
 
@@ -36,3 +36,4 @@ class Simulacra(EntityBase):
     voicing: VC = Field(validation_alias=AliasChoices('va', 'voicing'))
     awakening: list[Awakening]
     banners: list[Banner] = []
+    fashion: list[Fashion] = []
