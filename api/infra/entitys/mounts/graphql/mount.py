@@ -12,7 +12,7 @@ class MountPart:
     id: str
     name: str
     description: str
-    rarity: str
+    rarity: int
     icon: str
     type: str
     
@@ -25,6 +25,7 @@ class UnlockItem:
 class Mount:
     id: str
     name: str | None
+    rarity: int
     description: str
     assets: MountAsset
     version: str
