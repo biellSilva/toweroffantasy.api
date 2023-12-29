@@ -2,7 +2,7 @@
 import strawberry
 
 from api.infra.entitys.graphql.banner import Banner
-from .extra import Assets, VoiceActors as VC, Awakening
+from .extra import Assets, VoiceActors as VC, Awakening, Fashion
 
 
 @strawberry.type()
@@ -33,3 +33,4 @@ class Simulacra:
     voicing: VC 
     awakening: list[Awakening]
     banners: list[Banner]
+    fashion: list[Fashion]

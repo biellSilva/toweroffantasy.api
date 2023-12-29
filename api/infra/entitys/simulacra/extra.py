@@ -1,5 +1,5 @@
 
-from pydantic import BaseModel, BeforeValidator
+from pydantic import BaseModel, BeforeValidator, Field, AliasChoices
 from typing import Annotated
 
 from api.utils import voice_actor_string_rework
@@ -39,3 +39,19 @@ class Awakening(BaseModel):
     description: str
     icon: str | None
     need: int
+
+
+class FashionAssets(BaseModel):
+    painting: str
+    grayPainting: str = Field(validation_alias=AliasChoices('prayPainting', 'grayPainting'))
+
+
+class Fashion(BaseModel):
+    id: str
+    name: str
+    description: str
+    rarity: int
+    source: str
+    simulacrumId: str
+    weaponId: str
+    assets: FashionAssets
