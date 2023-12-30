@@ -39,3 +39,21 @@ class Awakening:
     description: str
     icon: str
     need: int
+
+
+@strawberry.type
+class FashionAssets:
+    painting: str
+    grayPainting: str
+
+
+@strawberry.type
+class Fashion:
+    id: str
+    name: str
+    description: str
+    rarity: int
+    source: str
+    simulacrumId: str
+    weaponId: str
+    assets: FashionAssets

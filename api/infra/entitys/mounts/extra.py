@@ -11,7 +11,7 @@ class MountPart(BaseModel):
     id: str
     name: str = 'none'
     description: str
-    rarity: str
+    rarity: int
     icon: str
     type: str
     
