@@ -17,7 +17,7 @@ class Food:
     buff: str
     icon: str
     stars: int
-    quality: str
+    rarity: int
     effect: str | None
     ingredients: list[Ingredient]
     categories: list[str]

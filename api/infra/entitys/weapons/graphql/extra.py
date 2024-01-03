@@ -10,8 +10,6 @@ class ListKeys:
 @strawberry.type
 class WeaponAssets:
     icon: str | None
-    # itemLargeIcon: str | None
-    # WeaponUPIcon: str | None
     weaponIconForMatrix: str | None
     characterArtwork: str | None
 
@@ -24,12 +22,6 @@ class Skill:
     tags: list[str] 
     operations: list[str] 
 
-# @strawberry.type
-# class WeaponSkills:
-#     Name: str | None
-#     Description: str | None
-#     Icon: str | None
-#     Attacks: list[Skill]
 
 @strawberry.type
 class WeaponAttacks:
@@ -44,13 +36,17 @@ class ShatterOrCharge:
     tier: str
 
 @strawberry.type
+class AdvancMultipliers:
+    id: str
+    coefficient: float
+
+@strawberry.type
 class WeaponAdvancement:
     description: str | None
-    # GoldNeeded: int 
     shatter: ShatterOrCharge
     charge: ShatterOrCharge
     need: str | None
-    # WeaponFashionID: str | None
+    multiplier: list[AdvancMultipliers]
 
 @strawberry.type
 class FashionWeaponInfo:
@@ -67,27 +63,12 @@ class WeaponEffect:
     title: str
     description: str
 
-
-@strawberry.type
-class RecoMatrix:
-    id: str
-    pieces: int
-
-@strawberry.type
-class MetaData:
-    recommendedPairings: list[str]
-    recommendedMatrices: list[RecoMatrix]
-    rating: list[int]
-    analyticVideoId: str | None
-
 @strawberry.type
 class BaseStats:
     id: str
     name: str
     icon: str
     value: float
-    isTag: bool
-    modifier: str
 
 @strawberry.type
 class UpgradeMaterial:

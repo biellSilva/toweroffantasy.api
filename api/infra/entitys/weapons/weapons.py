@@ -5,6 +5,7 @@ from typing import Annotated
 from api.infra.entitys.base import EntityBase
 from api.infra.entitys.banners import Banner
 from api.infra.entitys.weapon_mats import WeaponMats
+from api.infra.entitys.meta import MetaData
 
 from api.utils import classify_rework
 
@@ -12,10 +13,7 @@ from .extra import (
     ShatterOrCharge, 
     WeaponEffect, 
     Assets,
-    MetaData,
     BaseStats,
-    # FashionWeaponInfo,
-    # MatrixSuit,
     WeaponAdvancement,
     WeaponAttacks
 )

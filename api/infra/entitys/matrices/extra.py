@@ -13,3 +13,6 @@ class MatrixAssets(BaseModel):
     icon: str | None = Field(alias='itemIcon')
     iconLarge: str | None = Field(alias='itemLargeIcon')
     characterArtwork: str | None = None
+
+class MatrixMeta(BaseModel):
+    recommendedWeapons: list[str] = []

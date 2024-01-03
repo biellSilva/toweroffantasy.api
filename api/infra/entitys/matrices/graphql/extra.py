@@ -13,3 +13,8 @@ class MatrixAssets:
     icon: str
     iconLarge: str
     characterArtwork: str | None = None
+
+    
+@strawberry.type
+class MatrixMeta:
+    recommendedWeapons: list[str] 

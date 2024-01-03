@@ -6,6 +6,7 @@ from typing import Any
 
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Matrix, EntityBase
+from api.infra.entitys.meta import MetaData
 
 from api.core.exceptions import FileNotFound, VersionNotFound, LanguageNotFound
 
@@ -25,6 +26,7 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                          repo_name='matrices')
         
         self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
+        self.META_DATA: dict[str, MetaData] = {k: MetaData(**v) for k, v in json.loads(Path('api/infra/database/global/meta.json').read_bytes()).items()}
     
     async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Matrix]:
         if version in self.cache:
@@ -67,6 +69,8 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
             
             if version == 'global':
                 matrice_dict['Banners'] = [banner for banner in GB_BANNERS if banner.matrixId and banner.matrixId == matrice_id.lower()]
+                matrice_dict['meta'] = {}
+                matrice_dict['meta']['recommendedWeapons'] = [k for k, v in self.META_DATA.items() for matrix in v.recommendedMatrices if matrice_id == matrix.id]
 
             self.cache[version][lang].update({matrice_id: Matrix(**matrice_dict)})
 
