@@ -46,12 +46,19 @@ class ShatterOrCharge(BaseModel):
     value: float
     tier: str
 
+
+class AdvancMultipliers(BaseModel):
+    id: str = Field(validation_alias=AliasChoices('PropName', 'id'))
+    coefficient: float = Field(validation_alias=AliasChoices('PropCoefficient', 'coefficient'))
+
+
 class WeaponAdvancement(BaseModel):
     description: str | None = None
     # GoldNeeded: int 
     shatter: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]    # type: ignore
     charge: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]     # type: ignore
     need: str | None
+    multiplier: list[AdvancMultipliers]
     # WeaponFashionID: str | None
 
 
@@ -75,9 +82,6 @@ class BaseStats(BaseModel):
     name: str
     icon: str | None
     value: float = Field(0, validation_alias=AliasChoices('PropValue', 'value'))
-    isTag: bool = Field(False, validation_alias=AliasChoices('IsTag', 'isTag'))
-    modifier: str = Field('', validation_alias=AliasChoices('modifier', 'ModifierOp'))
-
 
 class UpgradeMaterial(BaseModel):
     id: str

@@ -72,7 +72,6 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             raise FileNotFound(self.repo_name, lang, version)
 
         DATA: dict[str, dict[str, Any]] = json.loads(FILEPATH.read_bytes())
-        STAT_VALUES: dict[str, dict[str, str]] = json.loads(Path(f'api/infra/database/global/{lang}/stats.json').read_bytes())
 
         if version not in self.cache:
             self.cache.update({version: {}})
@@ -109,12 +108,17 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                     'Charge': value_dict['advancements'][0]['charge']
                 })
             
-            for i in value_dict.get('baseStats', []):
-                if stats_data := STAT_VALUES.get(i.get('PropName'), None):
-                    i.update(stats_data)
+            
+            value_dict['stats'] = [{'id': i['stat']['id'], 
+                                    'name': i['stat']['name'], 
+                                    'icon': i['stat']['icon'], 
+                                    'value': i['value']} for i in value_dict['stats']]
+
+
 
             if len(value_dict['advancements']) == 7:
                 value_dict['advancements'].pop(0)
+
 
             if version == 'global':
                 value_dict['Meta'] = self.META_GB.get(key_id.lower(), MetaData())

@@ -20,6 +20,11 @@ METADATA = {
 INCLUDE = {'id', 'name', 'assets', 'category', 'rarity', 'element'}
 EXCLUDE = {
     'upgradeMats': True, 
+    'weaponAdvancements': {
+        '__all__': {
+            'multiplier': True
+        }
+    },
     'weaponAttacks': {
         '__all__': {
             '__all__': 'values'

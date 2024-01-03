@@ -2,13 +2,13 @@
 import strawberry
 
 from api.infra.entitys.graphql.banner import Banner
+from api.infra.entitys.graphql.meta import MetaData
 from api.infra.entitys.weapons.graphql.extra import (
     ShatterOrCharge, 
     WeaponEffect, 
     WeaponAdvancement, 
     WeaponAttacks,
     WeaponAssets,
-    MetaData,
     BaseStats,
     WeaponMats,
 )
