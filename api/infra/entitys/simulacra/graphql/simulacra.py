@@ -12,19 +12,15 @@ class Simulacra:
     version: str
     isReleased: bool
     rarity: int
-    # sex: str
     avatarId: str 
     advanceId: str | None 
-    # UnlockInfo: str
+    unlockInfo: str
     weaponId: str | None 
     matrixId: str | None 
     likedGiftTypes: list[str] 
-    # dislikedGiftTypes: list[str] = Field(alias='dislike')
+    dislikedGiftTypes: list[str]
     gender: str | None 
     birthday: str | None
-    # Age: str | None = None
-    # Title: str | None = None
-    # Job: str | None = None
     height: str | None 
     affiliation: str | None
     homeTown: str | None

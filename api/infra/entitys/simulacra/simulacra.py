@@ -13,21 +13,17 @@ class Simulacra(EntityBase):
     rarity: int
     version: str = 'unknown'
     isReleased: bool = True
-    # characterSex: str
     avatarId: str 
     advanceId: str | None = None
-    # UnlockInfo: str
+    unlockInfo: str
     
     weaponId: Annotated[str | None, BeforeValidator(lambda x: None if not x or (isinstance(x, str) and (x.lower() == 'none' or x.lower() == 'null')) else x.lower())] = None 
     matrixId: Annotated[str | None, BeforeValidator(lambda x: None if not x or (isinstance(x, str) and (x.lower() == 'none' or x.lower() == 'null')) else x.lower())] = None
 
-    likedGiftTypes: list[str] = Field(validation_alias=AliasChoices('like', 'likedGiftTypes'))
-    # dislikedGiftTypes: list[str] = Field(validation_alias='dislike')
+    likedGiftTypes: list[str] = Field(default=[], validation_alias=AliasChoices('like', 'likedGiftTypes'))
+    dislikedGiftTypes: list[str] = Field(default=[], validation_alias=AliasChoices('dislike', 'dislikedGiftTypes'))
     gender: str | None = None
     birthday: str | None = Field(default=None, validation_alias=AliasChoices('age', 'birthday'))
-    # Age: str | None = None
-    # Title: str | None = None
-    # Job: str | None = None
     height: str | None = None
     affiliation: str | None = Field(default=None, validation_alias=AliasChoices('state', 'affiliation'))
     homeTown: str | None = Field(default=None, validation_alias=AliasChoices('city', 'homeTown'))
