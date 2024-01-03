@@ -10,7 +10,7 @@ class Food(EntityBase):
     buff: str
     icon: str | None
     stars: int
-    rarity: int
+    rarity: int = 1
     effect: str | None = None
     ingredients: list[Ingredient] = []
     categories: list[str] = []
