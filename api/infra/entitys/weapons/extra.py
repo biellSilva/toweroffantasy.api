@@ -66,20 +66,8 @@ class MatrixSuit(BaseModel):
 
 
 class WeaponEffect(BaseModel):
-    title: Annotated[str, BeforeValidator(lambda x: x.replace(':', '').replace('*', '') if x and str(x).endswith(':') else x)]
+    title: Annotated[str, BeforeValidator(lambda x: str(x).replace(':', '').replace('*', '') if x and str(x).endswith(':') else x)]
     description: str
-
-
-class RecoMatrix(BaseModel):
-    id: str
-    pieces: int
-
-
-class MetaData(BaseModel):
-    recommendedPairings: list[str] = []
-    recommendedMatrices: list[RecoMatrix] = []
-    rating: list[int] = []
-    analyticVideoId: str | None = None
 
 
 class BaseStats(BaseModel):

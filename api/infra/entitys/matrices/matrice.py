@@ -6,7 +6,7 @@ from api.utils import bold_numbers
 
 from api.infra.entitys.base import EntityBase
 from api.infra.entitys.banners import Banner
-from .extra import MatrixSet, MatrixAssets
+from .extra import MatrixSet, MatrixAssets, MatrixMeta
 
 
 class Matrix(EntityBase):
@@ -18,4 +18,4 @@ class Matrix(EntityBase):
     rarity: int
     sets: list[MatrixSet]
     banners: list[Banner] = []
-
+    meta: MatrixMeta

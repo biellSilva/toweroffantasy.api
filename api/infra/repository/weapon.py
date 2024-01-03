@@ -8,7 +8,7 @@ from api.infra.repository.base_repo import ModelRepository
 from api.infra.repository.item import ItemRepo
 
 from api.infra.entitys import Weapon, EntityBase
-from api.infra.entitys.weapons.extra import MetaData
+from api.infra.entitys.meta import MetaData
 
 from api.core.exceptions import VersionNotFound, LanguageNotFound, FileNotFound, ItemNotFound
 
