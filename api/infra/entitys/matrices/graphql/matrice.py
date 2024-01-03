@@ -2,7 +2,7 @@
 import strawberry
 
 from api.infra.entitys.graphql.banner import Banner
-from .extra import MatriceSet, MatrixAssets
+from .extra import MatriceSet, MatrixAssets, MatrixMeta
 
 
 @strawberry.type
@@ -16,3 +16,4 @@ class Matrice:
     rarity: int
     sets: list[MatriceSet]
     banners: list[Banner]
+    meta: MatrixMeta
