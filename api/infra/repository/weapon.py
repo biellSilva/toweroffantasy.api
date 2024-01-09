@@ -127,7 +127,6 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 if upgrade_obj := self.__weapon_mats.get(value_dict['weaponUpgradeId'], None):
                     if upgrade_obj[0][0]['mat_amount'] == None:
                         upgrade_obj.pop(0)
-                        continue
                     
                     for i in upgrade_obj:
                         for j in i:
