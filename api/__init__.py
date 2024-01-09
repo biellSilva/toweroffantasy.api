@@ -74,7 +74,7 @@ DESC = (
             '- [FortOfFans (Data side)](https://discord.com/users/238308687373008898)\t\n'
             '- [Zakum (ToF Index)](https://discord.com/users/134492795133100033)\t\n'
         '\n'
-        f'Last restart: {LAST_RESTART}' 
+        f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")}' 
         )
 
 
