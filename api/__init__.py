@@ -55,7 +55,7 @@ TAGS_METADATA = [
     achievements.METADATA,
 
     extras.METADATA,
-    image.METADATA,
+    # image.METADATA,
     graphql.METADATA
 ]
 
@@ -124,7 +124,7 @@ app.include_router(outfits.router)
 app.include_router(mounts.router)
 app.include_router(servants.router)
 app.include_router(extras.router)
-app.include_router(image.router)
+# app.include_router(image.router)
 
 app.include_router(home.router, include_in_schema=False)
 
