@@ -62,17 +62,17 @@ TAGS_METADATA = [
 LAST_RESTART = datetime.now(timezone("UTC"))
 
 DESC = (
-        '[Interactive docs](https://api.toweroffantasy.info/docs)\t\n'
-        '[Detailed docs](https://api.toweroffantasy.info/redoc)\t\n'
-        '[GraphQL docs](https://api.toweroffantasy.info/graphql)\t\n'
-        '[Discord](https://discord.com/invite/aida-cafe-670617630717116426)\t\n'
-        '[Github](https://github.com/biellSilva/toweroffantasy.api)\t\n'
+        '[Interactive docs](https://api.toweroffantasy.info/docs) \t\n '
+        '[Detailed docs](https://api.toweroffantasy.info/redoc) \t\n '
+        '[GraphQL docs](https://api.toweroffantasy.info/graphql) \t\n '
+        '[Discord](https://discord.com/invite/aida-cafe-670617630717116426) \t\n'
+        '[Github](https://github.com/biellSilva/toweroffantasy.api) \t\n '
         '\n'
-        'Created by:\t\n'
-            '- [biell (API side)](https://discord.com/users/420634633793699851)\t\n'
-            '- [Emi (ToF Index)](https://discord.com/users/851815237120163840)\t\n'
-            '- [FortOfFans (Data side)](https://discord.com/users/238308687373008898)\t\n'
-            '- [Zakum (ToF Index)](https://discord.com/users/134492795133100033)\t\n'
+        'Created by: \t\n '
+            '- [biell (API side)](https://discord.com/users/420634633793699851) \t\n '
+            '- [Emi (ToF Index)](https://discord.com/users/851815237120163840) \t\n '
+            '- [FortOfFans (Data side)](https://discord.com/users/238308687373008898) \t\n '
+            '- [Zakum (ToF Index)](https://discord.com/users/134492795133100033) \t\n '
         '\n'
         f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")}' 
         )
