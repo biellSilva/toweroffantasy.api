@@ -15,7 +15,8 @@ router = APIRouter(prefix='/matrices', tags=['Matrices'])
 METADATA = {
     'name': 'Matrices',
     'description': ('Matrices are items that can be attached to one of the four weapon slots '
-                    '(Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects. \n\n **DOES NOT CONTAINS CN DATA**'),
+                    '(Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects.\t\n'
+                    'DOES NOT CONTAINS CN DATA'),
 }
 
 INCLUDE = {'name', 'id', 'assets', 'rarity'}
