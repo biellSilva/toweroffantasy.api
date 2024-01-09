@@ -39,7 +39,7 @@ async def get_mount(id: MOUNTS = Path(description='Mount ID'),
 
 @router.get('', name='All mounts', response_model=list[Mount])
 async def get_all_mounts(lang: LANGS = Query(LANGS('en'), description='Language code'), 
-                         include: bool = Query(True, description='Include all data keys')):
+                         include: bool = Query(False, description='Include all data keys')):
     '''
     **Return** \n
         List[Mount]

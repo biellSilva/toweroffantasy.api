@@ -39,7 +39,7 @@ async def get_item(id: ITEMS = Path(description='Item ID'),
 
 @router.get('', response_model=list[Item])
 async def get_all_items(lang: LANGS = Query(LANGS('en'), description='Language code'), 
-                        include: bool = Query(True, description='Include all data keys')):
+                        include: bool = Query(False, description='Include all data keys')):
     '''
     **Return** \n
         List[Item]

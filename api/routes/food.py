@@ -38,7 +38,7 @@ async def get_food(id: FOOD = Path(description='Food ID'),
 
 @router.get('', name='All foods', response_model=list[Food])
 async def get_all_foods(lang: LANGS = Query(LANGS('en'), description='Language code'), 
-                        include: bool = Query(True, description='Include all data keys')):
+                        include: bool = Query(False, description='Include all data keys')):
     '''
     **Return** \n
         List[Food]

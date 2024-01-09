@@ -40,7 +40,7 @@ async def get_achiev(id: ACHIEVS = Path(description='Achievement ID'),
 
 @router.get('', name='All achievements', response_model=list[Achievement])
 async def get_all_achievs(lang: LANGS = Query(LANGS('en'), description='Language code'), 
-                          include: bool = Query(True, description='Include all data keys')):
+                          include: bool = Query(False, description='Include all data keys')):
     '''
     **Return** \t\n
         List[Achievement]

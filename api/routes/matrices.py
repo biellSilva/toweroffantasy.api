@@ -42,7 +42,7 @@ async def get_matrice(id: MATRICES = Path(description='Matrix ID'),
 
 @router.get('', name='All matrices', response_model=list[Matrix])
 async def get_all_matrices(lang: LANGS = Query(LANGS('en'), description='Language code'), 
-                           include: bool = Query(True, description='Include all data keys'), 
+                           include: bool = Query(False, description='Include all data keys'), 
                            includeUnreleased: bool = Query(False, description='Include unreleased data')):
     '''
     **Return** \n
