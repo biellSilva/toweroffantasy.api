@@ -14,7 +14,7 @@ ITEM_REPO = ItemRepo()
 router = APIRouter(prefix="/items", tags=["Items"])
 METADATA = {
     'name': 'Items',
-    'description': 'Contains most of the items in-game \n\n **DOES NOT CONTAINS CN DATA**'
+    'description': 'Contains most of the items in-game \t\n DOES NOT CONTAINS CN DATA'
 }
 
 INCLUDE = {'id', 'name', 'rarity', 'icon'}
