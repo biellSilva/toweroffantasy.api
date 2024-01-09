@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Path, Query
 
 from api.enums import ITEMS, LANGS, VERSIONS
 
@@ -15,30 +15,17 @@ router = APIRouter(prefix="/items", tags=["Items"])
 METADATA = {
     'name': 'Items',
     'description': 'Contains most of the items in-game \n\n **DOES NOT CONTAINS CN DATA**'
-    }
+}
+
+INCLUDE = {'id', 'name', 'rarity', 'icon'}
 
 
 @router.get('/{id}', response_model=Item)
-async def get_item(id: ITEMS, lang: LANGS = LANGS('en'), include: bool = True):
-    '''
-    **Path Param** \n
-        id: 
-            type: str
-            required: True
-            desc: item_id
-
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-        
-        include:
-            type: bool
-            default: True
-            desc: Include all data keys
-            
-    return \n
+async def get_item(id: ITEMS = Path(description='Item ID'), 
+                   lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                   include: bool = Query(True, description='Include all data keys')):
+    '''    
+    **Return** \n
         Item
     '''
 
@@ -46,25 +33,15 @@ async def get_item(id: ITEMS, lang: LANGS = LANGS('en'), include: bool = True):
     if include:
         return PrettyJsonResponse(item.model_dump())
     else:
-        return PrettyJsonResponse(item.model_dump(include={'id', 'name', 'rarity', 'icon'}))
+        return PrettyJsonResponse(item.model_dump(include=INCLUDE))
     
 
 
 @router.get('', response_model=list[Item])
-async def get_all_items(lang: LANGS = LANGS('en'), include: bool = False):
+async def get_all_items(lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                        include: bool = Query(True, description='Include all data keys')):
     '''
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-
-        include:
-            type: bool
-            default: False
-            desc: Include all data keys
-            
-    return \n
+    **Return** \n
         List[Item]
     '''
 
@@ -72,4 +49,4 @@ async def get_all_items(lang: LANGS = LANGS('en'), include: bool = False):
     if include:
         return PrettyJsonResponse([item.model_dump() for item in items])
     else:
-        return PrettyJsonResponse([item.model_dump(include={'id', 'name', 'rarity', 'icon'}) for item in items])
+        return PrettyJsonResponse([item.model_dump(include=INCLUDE) for item in items])
