@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Path, Query
 
 from api.enums import ACHIEVS, LANGS, VERSIONS
 
@@ -14,31 +14,19 @@ ACHIEV_REPO = AchievementRepo()
 router = APIRouter(prefix="/achievements", tags=["Achievements"])
 METADATA = {
     'name': 'Achievements',
-    'description': 'Player\'s achievements \n\n **DOES NOT CONTAINS CN DATA**',
-    }
+    'description': ('Player\'s achievements\t\n'
+                   'DOES NOT CONTAINS CN DATA'),
+}
+
+INCLUDE = {'id', 'name', 'icon', 'tags'}
 
 
 @router.get('/{id}', name='Get achievement', response_model=Achievement)
-async def get_achiev(id: ACHIEVS, lang: LANGS = LANGS('en'), include: bool = True):
-    '''
-    **Path Param** \n
-        id: 
-            type: str
-            required: True
-            desc: achievement_id
-            
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-        
-        include:
-            type: bool
-            default: True
-            desc: Include all data keys
-            
-    return \n
+async def get_achiev(id: ACHIEVS = Path(description='Achievement ID'), 
+                     lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                     include: bool = Query(True, description='Include all data keys')):
+    '''  
+    **Return** \t\n
         Achievement
     '''
 
@@ -46,25 +34,15 @@ async def get_achiev(id: ACHIEVS, lang: LANGS = LANGS('en'), include: bool = Tru
     if include:
         return PrettyJsonResponse(achieve.model_dump())
     else:
-        return PrettyJsonResponse(achieve.model_dump(include={'id', 'name', 'icon', 'tags'}))
+        return PrettyJsonResponse(achieve.model_dump(include=INCLUDE))
     
 
 
 @router.get('', name='All achievements', response_model=list[Achievement])
-async def get_all_achievs(lang: LANGS = LANGS('en'), include: bool = False):
+async def get_all_achievs(lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                          include: bool = Query(True, description='Include all data keys')):
     '''
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-        
-        include:
-            type: bool
-            default: False
-            desc: Include all data keys
-            
-    return \n
+    **Return** \t\n
         List[Achievement]
     '''
 
@@ -72,4 +50,4 @@ async def get_all_achievs(lang: LANGS = LANGS('en'), include: bool = False):
     if include:
         return PrettyJsonResponse([achiev.model_dump() for achiev in achievs])
     else:
-        return PrettyJsonResponse([achiev.model_dump(include={'id', 'name', 'icon', 'tags'}) for achiev in achievs])
+        return PrettyJsonResponse([achiev.model_dump(include=INCLUDE) for achiev in achievs])
