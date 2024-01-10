@@ -4,7 +4,7 @@ from typing import Annotated
 
 
 class WeaponMat(BaseModel):
-    matId: Annotated[str | None, BeforeValidator(lambda x: x if x and str(x).lower() != 'none' else None)] = Field(validation_alias=AliasChoices('mat_id', 'id'))
+    matId: Annotated[str | None, BeforeValidator(lambda x: x if x and str(x).lower() != 'none' else None)] = Field(validation_alias=AliasChoices('mat_id', 'matId'))
     amount: int | None = Field(validation_alias=AliasChoices('mat_amount', 'amount'))
     name: str | None = None
     icon: str | None = None
