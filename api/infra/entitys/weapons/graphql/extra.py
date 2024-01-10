@@ -77,7 +77,7 @@ class UpgradeMaterial:
 
 @strawberry.type
 class WeaponMat:
-    mat_id: str | None 
+    matId: str | None 
     amount: int | None 
     name: str | None
     icon: str | None
