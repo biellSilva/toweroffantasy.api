@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Query, Path
 
 from api.enums import FOOD, LANGS, VERSIONS
 
@@ -14,31 +14,18 @@ FOOD_REPO = FoodRepo()
 router = APIRouter(prefix="/food", tags=["Food"])
 METADATA = {
     'name': 'Food',
-    'description': 'Food can provide buffs and recover HP, satiety, and stamina \n\n **DOES NOT CONTAINS CN DATA**',
-    }
+    'description': 'Food can provide buffs and recover HP, satiety, and stamina \t\n DOES NOT CONTAINS CN DATA',
+}
+
+INCLUDE = {'id', 'name', 'icon', 'quality', 'stars'}
 
 
 @router.get('/{id}', name='Get food', response_model=Food)
-async def get_food(id: FOOD, lang: LANGS = LANGS('en'), include: bool = True):
+async def get_food(id: FOOD = Path(description='Food ID'), 
+                   lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                   include: bool = Query(True, description='Include all data keys')):
     '''
-    **Path Param** \n
-        id: 
-            type: str
-            required: True
-            desc: food_id
-
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-        
-        include:
-            type: bool
-            default: True
-            desc: Include all data keys
-            
-    return \n
+    **Return** \t\n
         Food
     '''
 
@@ -46,25 +33,14 @@ async def get_food(id: FOOD, lang: LANGS = LANGS('en'), include: bool = True):
     if include:
         return PrettyJsonResponse(food.model_dump())
     else:
-        return PrettyJsonResponse(food.model_dump(include={'id', 'name', 'icon', 'quality', 'stars'}))
+        return PrettyJsonResponse(food.model_dump(include=INCLUDE))
 
 
 @router.get('', name='All foods', response_model=list[Food])
-async def get_all_foods(lang: LANGS = LANGS('en'), include: bool = False):
+async def get_all_foods(lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                        include: bool = Query(False, description='Include all data keys')):
     '''
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-        
-        include:
-            type: bool
-            default: False
-            desc: Include all data keys
-
-            
-    return \n
+    **Return** \n
         List[Food]
     '''
 
@@ -72,5 +48,5 @@ async def get_all_foods(lang: LANGS = LANGS('en'), include: bool = False):
     if include:
         return PrettyJsonResponse([food.model_dump() for food in foods])
     else:
-        return PrettyJsonResponse([food.model_dump(include={'id', 'name', 'icon', 'quality', 'stars'}) for food in foods])
+        return PrettyJsonResponse([food.model_dump(include=INCLUDE) for food in foods])
     

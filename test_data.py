@@ -19,37 +19,37 @@ def config_log():
 async def test_global_data(lang: str):
     _logger = logging.getLogger(name=lang.upper())
 
-    simulacra = await SimulacraRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    simulacra = [i.model_dump() for i in await SimulacraRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('simulacra: %s items', len(simulacra))
 
-    weapons = await WeaponRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    weapons = [i.model_dump() for i in await WeaponRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('weapons: %s items', len(weapons))
 
-    matrices = await MatricesRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    matrices = [i.model_dump() for i in await MatricesRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('matrices: %s items', len(matrices))
     
-    simulacra_v2 = await SimulacraV2Repo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    simulacra_v2 = [i.model_dump() for i in await SimulacraV2Repo().get_all(lang=LANGS(lang), version=VERSIONS('global'), graphql=True)]
     _logger.info('simulacra_v2: %s items', len(simulacra_v2))
 
-    relics = await RelicRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    relics = [i.model_dump() for i in await RelicRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('relics: %s items', len(relics))
     
-    food = await FoodRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    food = [i.model_dump() for i in await FoodRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('food: %s items', len(food))
 
-    items = await ItemRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    items = [i.model_dump() for i in await ItemRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('items: %s items', len(items))
 
-    achievs = await AchievementRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    achievs = [i.model_dump() for i in await AchievementRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('achievements: %s items', len(achievs))
 
-    outfits =  await OutfitRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    outfits = [i.model_dump() for i in await OutfitRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('outfits: %s items', len(outfits))
     
-    mounts = await MountsRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    mounts = [i.model_dump() for i in await MountsRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('mounts: %s items', len(mounts))
 
-    servants = await ServantsRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))
+    servants = [i.model_dump() for i in await ServantsRepo().get_all(lang=LANGS(lang), version=VERSIONS('global'))]
     _logger.info('servants: %s items', len(servants))
 
 

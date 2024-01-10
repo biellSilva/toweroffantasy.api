@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Path, Query
 
 from api.enums import OUTFITS, LANGS, VERSIONS
 
@@ -14,30 +14,18 @@ OUTFIT_REPO = OutfitRepo()
 router = APIRouter(prefix='/outfits', tags=['Outfits'])
 METADATA = {
     'name': 'Outfits',
-    'description': 'Player\'s cloths \n\n **DOES NOT CONTAINS CN DATA**',
-    }
+    'description': ('Player\'s cloths\t\n'
+                    'DOES NOT CONTAINS CN DATA'),
+}
+
+INCLUDE = {'id', 'name', 'icon'}
 
 
 @router.get('/{id}', name='Get outfit', response_model=Outfit)
-async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en'), include: bool = True):
+async def get_outfit(id: OUTFITS = Path(description='Outfit ID'), 
+                     lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                     include: bool = Query(True, description='Include all data keys')):
     '''
-    **Path Param** \n
-        id: 
-            type: str
-            required: True
-            desc: outfit_id
-
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-        
-        include:
-            type: bool
-            default: True
-            desc: Include all data keys
-            
     **Return** \n
         Outfit
     '''
@@ -51,19 +39,9 @@ async def get_outfit(id: OUTFITS, lang: LANGS = LANGS('en'), include: bool = Tru
 
 
 @router.get('', name='All outfits', response_model=list[Outfit])
-async def get_all_outfits(lang: LANGS = LANGS('en'), include: bool = False):
+async def get_all_outfits(lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                         include: bool = Query(False, description='Include all data keys')):
     '''
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-
-        include:
-            type: bool
-            default: False
-            desc: Include all data keys
-            
     **Return** \n
         List[Outfit]
     '''

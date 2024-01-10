@@ -125,6 +125,9 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 value_dict['banners'] = [banner for banner in GB_BANNERS if banner.weaponId and banner.weaponId == key_id.lower()]
                 
                 if upgrade_obj := self.__weapon_mats.get(value_dict['weaponUpgradeId'], None):
+                    if upgrade_obj[0][0]['mat_amount'] == None:
+                        upgrade_obj.pop(0)
+                    
                     for i in upgrade_obj:
                         for j in i:
                             if mat_id := j.get('mat_id', None):

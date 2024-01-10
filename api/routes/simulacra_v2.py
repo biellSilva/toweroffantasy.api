@@ -14,7 +14,8 @@ SIMULACRA_REPO = SimulacraV2Repo()
 router = APIRouter(prefix='/simulacra-v2', tags=['Simulacra v2'])
 METADATA = {
     'name': 'Simulacra v2',
-    'description': 'Simulacra v2 is the same as /simulacra, except it contains Weapons and Matrices if possible \n\n **DOES NOT CONTAINS CN DATA**',
+    'description': ('Simulacra v2 is the same as /simulacra, except it contains Weapons and Matrices if possible \t\n'
+                    '**DOES NOT CONTAINS CN DATA**'),
 }
 
 EXCLUDE = {
@@ -58,26 +59,9 @@ INCLUDE = {
 
 @router.get('/{id}', name='Get Simulacrum', response_model=Simulacra_v2)
 async def get_simulacrum(id: SIMULACRA = Path(description='Imitation/Simulacrum Id'), 
-                         lang: LANGS = Query(LANGS('en'), description='Possible languages'),
+                         lang: LANGS = Query(LANGS('en'), description='Language code'), 
                          include: bool = Query(True, description='Include all data keys')):
     '''
-    **Path Param** \n
-        id: 
-            type: string
-            required: True
-            desc: Imitation/Simulacra ID
-
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: Possible languages
-        
-        include:
-            type: bool
-            default: True
-            desc: Include all data keys
-            
     **Return** \n
         Simulacra_v2
     '''
@@ -91,38 +75,12 @@ async def get_simulacrum(id: SIMULACRA = Path(description='Imitation/Simulacrum 
 
 
 @router.get('', name='All Simulacra', response_model=list[Simulacra_v2])
-async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Possible languages'),
+async def get_simulacra(lang: LANGS = Query(LANGS('en'), description='Language code'), 
                         include: bool = Query(False, description='Include all data keys'), 
-                        includeUnreleased: bool = Query(False, description='Only released data'),
+                        includeUnreleased: bool = Query(False, description='Include unreleased data'),
                         page: int | None = Query(None, description='Page to return'),
                         chunk: int | None = Query(None, description='How many items per page')):
     '''
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: Possible languages
-        
-        include:
-            type: bool
-            default: False
-            desc: Include all data keys
-        
-        includeUnreleased:
-            type: bool
-            default: False
-            desc: Only released data
-        
-        page:
-            type: int
-            default: None
-            desc: Page to return
-        
-        chunk:
-            type: int
-            default: None | 10 *if page is used*
-            desc: How many items per page
-            
     **Return** \n
         List[Simulacra_v2]
     '''

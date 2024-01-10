@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Path, Query
 
 from api.enums import RELICS, LANGS, VERSIONS
 
@@ -14,30 +14,18 @@ RELIC_REPO = RelicRepo()
 router = APIRouter(prefix='/relics', tags=['Relics'])
 METADATA = {
     'name': 'Relics',
-    'description': 'Relics are tools that aid the player in exploration or combat \n\n **DOES NOT CONTAINS CN DATA**',
-    }
+    'description': ('Relics are tools that aid the player in exploration or combat \t\n'
+                    'DOES NOT CONTAINS CN DATA'),
+}
+
+INCLUDE = {'id', 'name', 'icon', 'rarity'}
 
 
 @router.get('/{id}', name='Get relic', response_model=Relic)
-async def get_relic(id: RELICS, lang: LANGS = LANGS('en'), include: bool = True):
+async def get_relic(id: RELICS = Path(description='Relic ID'), 
+                    lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                    include: bool = Query(True, description='Include all data keys')):
     '''
-    **Path Param** \n
-        id: 
-            type: str
-            required: True
-            desc: relic_id
-            
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-
-        include:
-            type: bool
-            default: True
-            desc: Include all data keys
-            
     **Return** \n
         Relic
     '''
@@ -46,24 +34,14 @@ async def get_relic(id: RELICS, lang: LANGS = LANGS('en'), include: bool = True)
     if include:
         return PrettyJsonResponse(relic.model_dump())
     else:
-        return PrettyJsonResponse(relic.model_dump(include={'name', 'id', 'icon', 'rarity'}))
+        return PrettyJsonResponse(relic.model_dump(include=INCLUDE))
 
 
 
 @router.get('', name='All relics', response_model=list[Relic])
-async def get_all_relics(lang: LANGS = LANGS('en'), include: bool = False):
+async def get_all_relics(lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                         include: bool = Query(False, description='Include all data keys')):
     '''
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-
-        include:
-            type: bool
-            default: False
-            desc: Include all data keys
-            
     **Return** \n
         List[Relic]
     '''
@@ -72,4 +50,4 @@ async def get_all_relics(lang: LANGS = LANGS('en'), include: bool = False):
     if include:
         return PrettyJsonResponse([relic.model_dump() for relic in relics])
     else:
-        return PrettyJsonResponse([relic.model_dump(include={'name', 'id', 'icon', 'rarity'}) for relic in relics])
+        return PrettyJsonResponse([relic.model_dump(include=INCLUDE) for relic in relics])
