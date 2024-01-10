@@ -4,6 +4,8 @@ import uvicorn
 
 from typing import Callable, Any
 from time import time as timer
+from datetime import datetime
+from pytz import timezone
 
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
@@ -53,22 +55,32 @@ TAGS_METADATA = [
     achievements.METADATA,
 
     extras.METADATA,
-    image.METADATA,
+    # image.METADATA,
     graphql.METADATA
 ]
 
-DESC = ('[Interactive documentation](https://api.toweroffantasy.info/docs)\n\n'
-        '[Detailed documentation](https://api.toweroffantasy.info/redoc)\n\n'
-        '[Github](https://github.com/biellSilva/toweroffantasy.api)\n\n'
-        '[GraphQL Docs](https://api.toweroffantasy.info/)\n\n\n'
-        'If you find bugs, issues or want to tell us something, use the Github features like Issues or Discussions\n\n'
-        '**HIGHLY RECOMMENDED TO USE DETAILED DOCS TO LEARN HOW THE API WORKS**')
+LAST_RESTART = datetime.now(timezone("UTC"))
+
+DESC = (
+        '[Interactive docs](https://api.toweroffantasy.info/docs) \t\n '
+        '[Detailed docs](https://api.toweroffantasy.info/redoc) \t\n '
+        '[GraphQL docs](https://api.toweroffantasy.info/graphql) \t\n '
+        '[Discord](https://discord.com/invite/aida-cafe-670617630717116426) \t\n'
+        '[Github](https://github.com/biellSilva/toweroffantasy.api) \t\n '
+        '\n'
+        'Created by: \t\n '
+            '- [biell (API side)](https://discord.com/users/420634633793699851) \t\n '
+            '- [Emi (ToF Index)](https://discord.com/users/851815237120163840) \t\n '
+            '- [FortOfFans (Data side)](https://discord.com/users/238308687373008898) \t\n '
+            '- [Zakum (ToF Index)](https://discord.com/users/134492795133100033) \t\n '
+        '\n'
+        f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")}' 
+        )
 
 
 app = FastAPI(title='Tower of Fantasy API',
               openapi_tags=TAGS_METADATA,
               description=DESC,
-              version='1.1.3',
             )
 
 limiter = Limiter(key_func=get_remote_address, application_limits=['1/10seconds'], enabled=False)
@@ -112,9 +124,9 @@ app.include_router(outfits.router)
 app.include_router(mounts.router)
 app.include_router(servants.router)
 app.include_router(extras.router)
-app.include_router(image.router)
+# app.include_router(image.router)
 
 app.include_router(home.router, include_in_schema=False)
 
 app.include_router(graphql.graphql, tags=['GraphQL']) 
-app.add_websocket_route('/graphql', graphql.graphql) # type: ignore
+app.add_websocket_route('/graphql', graphql.graphql) # type: ignore  

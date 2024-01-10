@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Path, Query
 
 from api.enums import MOUNTS, LANGS, VERSIONS
 
@@ -14,30 +14,18 @@ MOUNTS_REPO = MountsRepo()
 router = APIRouter(prefix='/mounts', tags=['Mounts'])
 METADATA = {
     'name': 'Mounts',
-    'description': 'Mounts are "vehicles" so the player can move faster around the map \n\n **DOES NOT CONTAINS CN DATA**',
-    }
+    'description': 'Mounts are "vehicles" so the player can move faster around the map \t\n'
+    'DOES NOT CONTAINS CN DATA',
+}
+
+INCLUDE = {'id', 'name', 'assets'}
 
 
 @router.get('/{id}', name='Get mount', response_model=Mount)
-async def get_mount(id: MOUNTS, lang: LANGS = LANGS('en'), include: bool = True):
+async def get_mount(id: MOUNTS = Path(description='Mount ID'), 
+                    lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                    include: bool = Query(True, description='Include all data keys')):
     '''
-    **Path Param** \n
-        id: 
-            type: str
-            required: True
-            desc: mount_id
-
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-        
-        include:
-            type: bool
-            default: True
-            desc: Include all data keys
-            
     **Return** \n
         Mount
     '''
@@ -46,23 +34,13 @@ async def get_mount(id: MOUNTS, lang: LANGS = LANGS('en'), include: bool = True)
     if include:
         return PrettyJsonResponse(mount.model_dump())
     else:
-        return PrettyJsonResponse(mount.model_dump(include={'id', 'name', 'assets'}))
+        return PrettyJsonResponse(mount.model_dump(include=INCLUDE))
 
 
 @router.get('', name='All mounts', response_model=list[Mount])
-async def get_all_mounts(lang: LANGS = LANGS('en'), include: bool = False):
+async def get_all_mounts(lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                         include: bool = Query(False, description='Include all data keys')):
     '''
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-
-        include:
-            type: bool
-            default: False
-            desc: Include all data keys
-            
     **Return** \n
         List[Mount]
     '''
@@ -71,5 +49,5 @@ async def get_all_mounts(lang: LANGS = LANGS('en'), include: bool = False):
     if include:
         return PrettyJsonResponse([mount.model_dump() for mount in mounts])
     else:
-        return PrettyJsonResponse([mount.model_dump(include={'name', 'assets'}) for mount in mounts])
+        return PrettyJsonResponse([mount.model_dump(include=INCLUDE) for mount in mounts])
     

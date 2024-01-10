@@ -1,5 +1,5 @@
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Path, Query
 from fastapi.responses import ORJSONResponse
 
 from api.enums import MATRICES, LANGS, VERSIONS
@@ -15,32 +15,18 @@ router = APIRouter(prefix='/matrices', tags=['Matrices'])
 METADATA = {
     'name': 'Matrices',
     'description': ('Matrices are items that can be attached to one of the four weapon slots '
-                    '(Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects. \n\n **DOES NOT CONTAINS CN DATA**'),
+                    '(Emotion, Mind, Belief, and Memory) to provide stat boosts and special effects.\t\n'
+                    'DOES NOT CONTAINS CN DATA'),
 }
 
 INCLUDE = {'name', 'id', 'assets', 'rarity'}
 
 
 @router.get('/{id}', name='Get matrix', response_model=Matrix)
-async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = True):
-    '''
-    **Path Param** \n
-        id: 
-            type: str
-            required: True
-            desc: Matrix ID
-
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: Possible languages
-        
-        include: 
-            type: bool
-            default: True
-            desc: Include all data keys
-            
+async def get_matrice(id: MATRICES = Path(description='Matrix ID'), 
+                      lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                      include: bool = Query(True, description='Include all data keys')):
+    ''' 
     **Return** \n
         Matrix
     '''
@@ -55,24 +41,10 @@ async def get_matrice(id: MATRICES, lang: LANGS = LANGS('en'), include: bool = T
 
 
 @router.get('', name='All matrices', response_model=list[Matrix])
-async def get_all_matrices(lang: LANGS = LANGS('en'), include: bool = False, includeUnreleased: bool = False):
+async def get_all_matrices(lang: LANGS = Query(LANGS('en'), description='Language code'), 
+                           include: bool = Query(False, description='Include all data keys'), 
+                           includeUnreleased: bool = Query(False, description='Include unreleased data')):
     '''
-    **Query Params** \n
-        lang:
-            type: string
-            default: en
-            desc: possible languages to use
-        
-        include:
-            type: bool
-            default: False
-            desc: Include all data keys
-        
-        released:
-            type: bool
-            default: False
-            desc: Only released data
-            
     **Return** \n
         List[Matrix]
     '''
