@@ -796,7 +796,7 @@
 		]
 	},
 	"Item_Cooking_1032": {
-		"name": "Ostiones hervidos",
+		"name": "Vieiras hervidas",
 		"description": "Un plato simple y sabroso que no requiere condimentos.",
 		"buff": "Entrada",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/caiyao/1032.webp",
@@ -3568,6 +3568,35 @@
 			"FireDef"
 		],
 		"effect": "Aumenta **Flame Attack +4% Flame Resistance +1800** por **Flame Attack +undefined%Flame Resistance +%** segundos."
+	},
+	"item_Cooking_5008": {
+		"name": "Frutas en Conserva Natural",
+		"description": "Consigue fruta, córtala en rodajas, sécalas y ponlas en remojo. El bocadillo perfecto para el camino.",
+		"buff": "Entrada",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/caiyao/5008.webp",
+		"stars": 2,
+		"ingredients": [
+			{
+				"matID": "Item_Jiuyu_Harvest_003",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fruit_002",
+				"min": " 2",
+				"max": " 2"
+			},
+			{
+				"matID": "Item_Fruit_001",
+				"min": " 2",
+				"max": " 2"
+			}
+		],
+		"categories": [
+			"AddHealth",
+			"AddEnergyRecover"
+		],
+		"effect": "Permite recuperar inmediatamente (**16% + 34000**) PS del nómada."
 	},
 	"item_activity_cooking_001": {
 		"name": "Cerdo rostizado",
