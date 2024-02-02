@@ -1,4 +1,3 @@
-
 from pydantic import BaseModel
 
 
@@ -9,12 +8,12 @@ class MountAsset(BaseModel):
 
 class MountPart(BaseModel):
     id: str
-    name: str = 'none'
-    description: str
+    name: str = "none"
+    description: str = "No Description"
     rarity: int
     icon: str
     type: str
-    
+
 
 class UnlockItem(BaseModel):
     amount: int

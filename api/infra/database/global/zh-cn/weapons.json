@@ -1360,7 +1360,7 @@
 				"need": "cannon_ice_plasm"
 			},
 			{
-				"description": "切换至该武器后**10**秒内普攻伤害和破盾率提高**60%**，冷却**25**秒。",
+				"description": "切换至该武器后**10**秒内普攻伤害和破盾率提高**40%**，冷却**25**秒。",
 				"charge": 10,
 				"shatter": 16,
 				"multiplier": [
@@ -5157,14 +5157,6 @@
 					},
 					"weaponId": "gun_fire_Fashion",
 					"id": "imitation_fashion_10"
-				},
-				"weapon": {
-					"name": "银焰左轮",
-					"description": "如果能给燃烧中的火焰也轻松地抹上各色颜料就好了，不过目前看来……还有诸多技术问题亟待攻克。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_10_w"
 				}
 			}
 		],
@@ -7353,14 +7345,6 @@
 					},
 					"weaponId": "mimi_thunder_fashion_UI",
 					"id": "imitation_fashion_41"
-				},
-				"weapon": {
-					"name": "祥云鎏金",
-					"description": "祥云驰骋意，御空彩鎏金。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_huang.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_41_w"
 				}
 			}
 		],
@@ -7795,19 +7779,431 @@
 					},
 					"weaponId": "umbrella_fire_fashion_imitationUI",
 					"id": "imitation_fashion_49"
-				},
-				"weapon": {
-					"name": "清籁",
-					"description": "故人所赠的珍品，出自名家之手，因音色空灵、清亮，故此得名。「这支故曲，便为你而奏！」",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nanyin_w.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_49_w"
 				}
 			}
 		],
 		"version": "3.4",
 		"id": "nanyin_superpower"
+	},
+	"paradox_fire": {
+		"name": "EP-7000天火",
+		"description": "海嘉德总部-防卫方舟第一制造局出品，为轮值授权者帕洛蒂量身定做的契合她作战需求的特种武器，即使是挑剔的帕帕也表示非常的满意。",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_paluodi.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_paluodi.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/paluodi.webp"
+		},
+		"assetsA3": {},
+		"rarity": 5,
+		"element": "FlamePhysics",
+		"type": "Paradox",
+		"weaponUpgradeId": "fire_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Paradox_fire_ssr_star",
+		"avatar": "imitation_53",
+		"mats": {
+			"Item_Mine_fire": 39,
+			"Item_Mine_fire_02": 65,
+			"Item_breakthrough_B2": 65,
+			"Item_breakthrough_D2": 65,
+			"Item_Mine_fire_03": 32,
+			"Item_breakthrough_B3": 32,
+			"Item_breakthrough_D3": 32,
+			"Item_breakthrough_B1": 35,
+			"Item_breakthrough_D1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "攻击",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"id": "CommonAtkAdded"
+				},
+				"value": 18.93204
+			},
+			{
+				"stat": {
+					"name": "生命",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "暴击",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"id": "CritAdded"
+				},
+				"value": 14.563107
+			}
+		],
+		"upgradeProps": [],
+		"effects": [
+			{
+				"title": "**火物融合**：该武器计算伤害时取装备最高的火焰/物理基础攻击，装备最高的火焰/物理百分比攻击，装备最高的火焰/物理增伤。且该武器能同时视为火焰元素武器和物理元素武器。**:"
+			},
+			{
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。**:"
+			},
+			{
+				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:"
+			},
+			{
+				"title": "**帕帕-脱手**：释放技能**镜中你我**后，每秒对命中目标造成**87.5%***火攻+**12.5%***自身最大生命值+**45%***各元素抗性之和+**168.8%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，帕帕伤害视为技能伤害，若装备任意**1**把雷电/寒冰武器，则帕帕伤害提升至**1.3**倍。此外，帕帕伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+			}
+		],
+		"elementEffects": {
+			"title": "**烈焰**:",
+			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
+		},
+		"advancements": [
+			{
+				"description": "**火物融合**：该武器计算伤害时取装备最高的火焰/物理基础攻击，装备最高的火焰/物理百分比攻击，装备最高的火焰/物理增伤。且该武器能同时视为火焰元素武器和物理元素武器。\r\n**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**帕帕-脱手**：释放技能**镜中你我**后，每秒对命中目标造成**87.5%***火攻+**12.5%***自身最大生命值+**45%***各元素抗性之和+**168.8%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，帕帕伤害视为技能伤害，若装备任意**1**把雷电/寒冰武器，则帕帕伤害提升至**1.3**倍。此外，帕帕伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "**帕帕出场**状态下，每发射**7**枚爆能弹后，帕帕会出现发射一枚**重装能源弹Ⅱ型**，对附近目标造成**590%***攻击力伤害，同时分裂成多枚高爆弹，对附近目标再造成**660%***攻击力伤害。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Paradox_fire_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**16%**",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Paradox_fire_plasm"
+			},
+			{
+				"description": "帕帕出现后，自身最终伤害提升**12%**，物理伤害提升**6%**，持续**25**秒；\r\n帕帕累计出现**5**次后，下次释放**镜中你我**时，会重置当前幻时冷却，并立即触发幻时。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Paradox_fire_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**32%**",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Paradox_fire_plasm"
+			},
+			{
+				"description": "**重装能源弹Ⅰ型**的触发间隔减少至**6**秒，发射**重装能源弹Ⅰ型**、**重装能源弹Ⅱ型**时会同步发射一枚治疗弹，回复自身**10%**最大生命值。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Paradox_fire_plasm"
+			},
+			{
+				"description": "**镜面-目标**的伤害反射效果对目标自身也可生效；\r\n**镜面-自身**的伤害反弹比例提升至**30%**，反弹伤害上限提升至自身**800%**最大生命值。\r\n此外，**镜面-自身**持续期间，每次受到伤害时，额外格挡自身**10%**最大生命值（溢出部分正常扣除，巅峰联赛不生效），该效果每**3**秒至多触发**1**次，冷却状态下，帕帕出现后会欣赏着镜中的自己，为该效果减少**1**秒触发冷却。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Paradox_fire_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "标准协议",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_melee.webp",
+					"id": "GA_FPlayerParadoxMelee_Melee"
+				},
+				{
+					"name": "连射协议",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_airattack.webp",
+					"id": "GA_FPlayerParadoxMelee_AirAttack"
+				},
+				{
+					"name": "快射协议",
+					"description": "在地面时，使用第二次至第四次普攻时，长按普攻可触发快射协议，并消耗耐力。\r\n向前方发动进攻，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并浮空目标。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_meleebranch.webp",
+					"id": "GA_FPlayerParadoxMelee_MeleeBranch"
+				},
+				{
+					"name": "充能协议",
+					"description": "在地面时，长按普攻可触发蓄力攻击。\r\n向目标发射蓄力弹，命中对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_powerattack.webp",
+					"id": "GA_FPlayerParadoxMelee_PowerAttack"
+				},
+				{
+					"name": "空射协议",
+					"description": "当拓荒者滞空时，使用第二次至第四次普攻时，长按普攻可触发空中分支，并消耗耐力。\r\n向前方发动进攻，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并浮空目标。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_airbranch.webp",
+					"id": "GA_FPlayerParadoxMelee_AirAttackBranch"
+				},
+				{
+					"name": "俯冲协议",
+					"description": "滞空时长按闪避，可触发俯冲协议，落地造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Jump",
+						"Dash",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_jumpattack.webp",
+					"id": "GA_FPlayerParadoxMelee_JumpAttack"
+				},
+				{
+					"name": "五色绚烂",
+					"description": "大世界、地面、非战斗状态长按闪避后布置一个烟花，短暂延迟后释放，烟花的款式随机。",
+					"operations": [],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_beidong.webp",
+					"id": "GA_FPlayerParadoxMelee_Beidong"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。\r\n<shuzhi>被动：</>回复<shuzhi>150</>点耐力，并清除<shuzhi>帕帕出场</>状态下发射爆能弹的耐力消耗提升效果。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerParadoxEvade_Evade"
+				},
+				{
+					"name": "突袭协议",
+					"description": "使用方向键加闪避按钮触发前闪避的短暂时间内，点击普攻，可触发突袭协议。\r\n召唤星际导弹，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n<shuzhi>帕帕出场</>状态下，触发突袭协议后，长按普攻可连续发射爆能弹。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_forward.webp",
+					"id": "GA_FPlayerParadoxEvade_ForWardAttack"
+				},
+				{
+					"name": "推进协议",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发推进协议。\r\n发射镭射光线，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n<shuzhi>帕帕出场</>状态下，触发突袭协议后，长按普攻可连续发射爆能弹。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_back.webp",
+					"id": "GA_FPlayerParadoxEvade_BackAttack"
+				},
+				{
+					"name": "空中协议",
+					"description": "当拓荒者滞空时，也可使用闪避攻击。\r\n每释放<shuzhi>2</>次<shuzhi>EP-7000天火</>任意闪避攻击后，帕帕会出现释放闪避攻击，并根据帕帕心情造成闪避攻击的<shuzhi>50%-100%</>比例伤害。\r\n每释放<shuzhi>2</>次<shuzhi>EP-7000天火</>任意闪避攻击，或<shuzhi>帕帕出场</>状态下每释放<shuzhi>1</>次<shuzhi>EP-7000天火</>任意闪避攻击后，<shuzhi>镜中你我</>的冷却时间减少<shuzhi>10</>秒，每次技能冷却期间至多可触发<shuzhi>1</>次。",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_evadeBD.webp",
+					"id": "GA_FPlayerParadoxEvade_BeiDong"
+				}
+			],
+			"skill": [
+				{
+					"name": "镜中你我",
+					"description": "在内心与现实中来回穿梭，在自身周围构筑<shuzhi>8</>枚心之镜壁（视为召唤物），对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，释放成功后自身进入<shuzhi>15</>秒帕帕出场状态，获得飞行能力，移动速度和弹跳能力提升，普攻更换为发射爆能弹，命中对附近目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并消耗耐力，爆能弹击中地面后会传送至心之镜壁中，随后发射向锁定目标，冷却<shuzhi>30</>秒，帕帕出场状态自然结束后，立即获得<shuzhi>300</>点武器充能值。\r\n帕帕出场状态下，自身根据与命中目标的高度差值获得最终伤害提升，至多获得<shuzhi>1%</>。\r\n战斗状态下，自身不处于帕帕出场状态时，每<shuzhi>8</>秒帕帕会出现发射一枚重装能源弹Ⅰ型，对附近目标造成<shuzhi>590%</>*攻击力伤害。",
+					"tags": [
+						"Damage",
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_skill.webp",
+					"id": "GA_FPlayerParadoxSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "杀伤协议",
+					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，启动卫星离子束，从空间站发射集束粒子，落地爆炸，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，同时给命中目标添加<shuzhi>装甲溶解</>效果，期间免疫伤害持续<shuzhi>1.5</>秒（巅峰联赛不生效）。\r\n杀伤协议命中后，为当前锁定目标与自身分别添加至多<shuzhi>1</>枚镜面，持续<shuzhi>45</>秒。\r\n镜面-目标：自身造成的伤害会通过镜面向附近其它目标额外反射<shuzhi>15%</>。\r\n镜面-自身：获得无视目标<shuzhi>15%</>火抗效果（所有单个元素无视抗性总值不能超过<shuzhi>50%</>）。每次受到伤害时反弹<shuzhi>20%</>（反弹伤害不超过自身<shuzhi>500%</>最大生命值），该效果每<shuzhi>3</>秒至多触发<shuzhi>1</>次，冷却状态下，帕帕出现后会欣赏着镜中的自己，为该效果减少<shuzhi>1</>秒触发冷却。",
+					"tags": [
+						"Damage",
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_changeskill.webp",
+					"id": "GA_FPlayerParadoxChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{}
+		],
+		"version": "3.6",
+		"id": "paradox_fire"
 	},
 	"linghan_ice": {
 		"name": "监兵",
@@ -8207,14 +8603,6 @@
 					},
 					"weaponId": "umbrella_fire_fashion_imitationUI",
 					"id": "imitation_fashion_43"
-				},
-				"weapon": {
-					"name": "花涧",
-					"description": "浪尖之上，雪花成锋。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_linghan01.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_43_w"
 				}
 			}
 		],
@@ -8578,7 +8966,7 @@
 			"discharge": [
 				{
 					"name": "粒子束喷发",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，操控启明星，向地面发出交叉射线，地面立即形成一个不稳定的区域，敌方目标在<shuzhi>5</>秒内减速<shuzhi>70%</>，短暂时间后电磁喷发，造成<shuzhi>{0}%</>*攻击力的伤害，技能期间免疫伤害持续<shuzhi>2</>秒（巅峰联赛不生效）。\r\n连携释放后会在目标位置生成<shuzhi>1</>个“电极”，电极每<shuzhi>1.5</>秒进行一次攻击，造成<shuzhi>{1}%</>*攻击力的伤害。\r\n电极继承玩家<shuzhi>100%</>属性，可被攻击，可被治疗，电极每秒扣除<shuzhi>3%</>最大生命值。\r\n最多存在<shuzhi>1</>个电极。新的电极出现时，会替换之前的电极。电极造成伤害时不会提供充能效果。",
+					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，操控启明星，向地面发出交叉射线，地面立即形成一个不稳定的区域，敌方目标在<shuzhi>5</>秒内减速<shuzhi>70%</>，短暂时间后电磁喷发，造成<shuzhi>{0}%</>*攻击力的伤害，同时自身获得5%最大生命值的护盾和霸体状态，持续3.5秒\r\n连携释放后会在目标位置生成<shuzhi>1</>个“电极”，电极每<shuzhi>1.5</>秒进行一次攻击，造成<shuzhi>{1}%</>*攻击力的伤害。\r\n电极继承玩家<shuzhi>100%</>属性，可被攻击，可被治疗，电极每秒扣除<shuzhi>3%</>最大生命值。\r\n最多存在<shuzhi>1</>个电极。新的电极出现时，会替换之前的电极。电极造成伤害时不会提供充能效果。",
 					"tags": [
 						"Damage"
 					],
@@ -8601,14 +8989,6 @@
 					},
 					"weaponId": "Suspension_thunder_Fashion",
 					"id": "imitation_fashion_17"
-				},
-				"weapon": {
-					"name": "白矮星",
-					"description": "看似微小的星间光点，却有难以想象的能量在不断发散。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_SL_weapon.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_17_w"
 				}
 			}
 		],
@@ -9066,7 +9446,7 @@
 				"need": null
 			},
 			{
-				"description": "【炙热】使斯帕克普攻增伤提高至**0%**；技能冷却缩减至**24**秒",
+				"description": "【炙热】使斯帕克普攻增伤提高至**0%**；技能冷却缩减至**35**秒",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9186,7 +9566,7 @@
 				"need": "funnel_fire_plasm"
 			},
 			{
-				"description": "【炙热】使斯帕克普攻增伤提高至**0%**；技能冷却缩减至**16**秒",
+				"description": "【炙热】使斯帕克普攻增伤提高至**0%**；技能冷却缩减至**30**秒",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9349,14 +9729,6 @@
 					},
 					"weaponId": "funnel_fire_Fashion",
 					"id": "imitation_fashion_21"
-				},
-				"weapon": {
-					"name": "落焰",
-					"description": "绘本「绯红奇遇记」中蕴含神秘能量的魔法产物，也是小红帽最亲密的小跟班。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LB_weapon.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_21_w"
 				}
 			}
 		],
@@ -9747,14 +10119,6 @@
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_BPX_Lock.webp"
 					},
 					"weaponId": "Dkatana_ice_Fashion_ImitationUI",
-					"id": "imitation_fashion_22"
-				},
-				"weapon": {
-					"name": "超究极的纯白",
-					"description": "「超究极的正义！超究极的勇气！超究极的守护夜城和平的白核心超究极战士！优雅！纯洁！强大！超超超超超——超究极！」",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_bupoxiao.webp",
-					"type": "CONSUMABLE",
 					"id": "imitation_fashion_22"
 				}
 			}
@@ -10148,14 +10512,6 @@
 					},
 					"weaponId": "fan_fashion_imitation23_UIshow",
 					"id": "imitation_fashion_23"
-				},
-				"weapon": {
-					"name": "云蒸水织",
-					"description": "这把扇子所刮出的风，似乎比之前更清凉了……虽然也可能只是视觉效果造成的心理作用？",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LY_weapon.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_23_w"
 				}
 			},
 			{
@@ -10171,14 +10527,6 @@
 					},
 					"weaponId": "fan_fashion_imitation23_UIshow2",
 					"id": "imitation_fashion_23_2"
-				},
-				"weapon": {
-					"name": "珊瑚花织",
-					"description": "即使是在海底，也仿若能顶住水流掀出清风。虽不像原来那样便于在黑夜中隐蔽，但华丽了许多。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LY_weapon_2.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_23_w_2"
 				}
 			}
 		],
@@ -11349,14 +11697,6 @@
 					},
 					"weaponId": "Rubilia_thunder_fashion",
 					"id": "imitation_fashion_48"
-				},
-				"weapon": {
-					"name": "终曲",
-					"description": "「她」的最后致意。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LBLY_weapon.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_48_w"
 				}
 			}
 		],
@@ -11759,14 +12099,6 @@
 					},
 					"weaponId": "iceblade_ice_Fashion",
 					"id": "imitation_fashion_30"
-				},
-				"weapon": {
-					"name": "白铠之翼",
-					"description": "不灭之翼转换构筑了白铠装甲形态，现在的艾莉丝有了更强的力量。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_ALS_weapon.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_30_w"
 				}
 			}
 		],
@@ -11997,7 +12329,7 @@
 				"need": "Killknife_physic_plasm"
 			},
 			{
-				"description": "**灼刃**伤害提升至**1800%**，消耗**灼刃**后最终伤害额外提升**8%**。",
+				"description": "**灼刃**伤害提升至**2600%**，消耗**灼刃**后最终伤害额外提升**8%**。",
 				"charge": 12,
 				"shatter": 16,
 				"multiplier": [
@@ -12185,7 +12517,7 @@
 		},
 		"assetsA3": {},
 		"rarity": 5,
-		"element": "Thunder",
+		"element": "VoltIce",
 		"type": "Blevi",
 		"weaponUpgradeId": "thunder_ssr_tupo_BD",
 		"wc": "SUP",
@@ -12240,25 +12572,21 @@
 				"title": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。**:"
 			},
 			{
-				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**20%**雷攻和**40%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。**:"
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:"
 			},
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**20%**冰攻和**40%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
 			},
 			{
-				"title": "**雷霆-速切**：装备**契约徽章玫茨**时，任意武器连携技对附近目标初始造成**600%***雷攻+**10%***自身最大生命值+**360%***各元素抗性之和+**1200%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把火焰/物理武器，则雷霆伤害提升至**2.5**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**雷霆-速切**：装备**契约徽章玫茨**时，任意武器连携技对附近目标初始造成**46.87%***雷攻+**0.62%***自身最大生命值+**23.43%***各元素抗性之和+**85.93%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把火焰/物理武器，则雷霆伤害提升至**1.3**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
 			},
 			{
 				"title": "**奇迹逆转**：挑战旧日幻象、序列幻象副本时，装备**契约徽章玫茨**额外获得**15**秒挑战时长；挑战**起源战境**副本时，队伍中每装备**1**把**契约徽章玫茨**，全队额外获得**25**秒挑战时长，至多可获得**50**秒。**:"
 			}
 		],
-		"elementEffects": {
-			"title": "**雷电**:",
-			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**144.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
-		},
 		"advancements": [
 			{
-				"description": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。\r\n**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**20%**雷攻和**40%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。\r\n**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**20%**冰攻和**40%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n**雷霆-速切**：装备**契约徽章玫茨**时，任意武器连携技对附近目标初始造成**600%***雷攻+**10%***自身最大生命值+**360%***各元素抗性之和+**1200%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把火焰/物理武器，则雷霆伤害提升至**2.5**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。\r\n**奇迹逆转**：挑战旧日幻象、序列幻象副本时，装备**契约徽章玫茨**额外获得**15**秒挑战时长；挑战**起源战境**副本时，队伍中每装备**1**把**契约徽章玫茨**，全队额外获得**25**秒挑战时长，至多可获得**50**秒。",
+				"description": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。\r\n**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。\r\n**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。\r\n**雷霆-速切**：装备**契约徽章玫茨**时，任意武器连携技对附近目标初始造成**46.87%***雷攻+**0.62%***自身最大生命值+**23.43%***各元素抗性之和+**85.93%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把火焰/物理武器，则雷霆伤害提升至**1.3**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。\r\n**奇迹逆转**：挑战旧日幻象、序列幻象副本时，装备**契约徽章玫茨**额外获得**15**秒挑战时长；挑战**起源战境**副本时，队伍中每装备**1**把**契约徽章玫茨**，全队额外获得**25**秒挑战时长，至多可获得**50**秒。",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -12330,7 +12658,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "激活**非恩赐共鸣**时，**玫茨蓄能波**可额外积攒**2**次使用次数，自身对Boss造成的雷电伤害与寒冰伤害提升**16%**；\r\n激活**恩赐共鸣**时，**百万玫茨冲击波**可额外积攒**1**次使用次数，对挚友最大生命值回复效果提升至**15%**。",
+				"description": "激活**非恩赐共鸣**时，**玫茨蓄能波**可额外积攒**2**次使用次数，自身对Boss造成的雷电伤害与寒冰伤害提升**10%**；\r\n激活**恩赐共鸣**时，**百万玫茨冲击波**可额外积攒**1**次使用次数，对挚友最大生命值回复效果提升至**15%**。",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -12402,7 +12730,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "契约增幅状态下，自身雷电伤害提升效果与寒冰伤害提升效果分别提升**20%**；玫茨光环使附近队友的最终伤害提升至**20%**，破盾效率提升**25%**，该效果不可叠加。",
+				"description": "契约增幅状态下，自身雷电伤害提升效果与寒冰伤害提升效果分别提升**10%**；玫茨光环使附近队友的最终伤害提升至**20%**，破盾效率提升**25%**，该效果不可叠加。",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -12544,7 +12872,7 @@
 			"skill": [
 				{
 					"name": "百万玫茨冲击波",
-					"description": "百万玫茨冲击波释放成功，自身进入持续<shuzhi>30</>秒的契约增幅状态：<shuzhi>契约徽章玫茨</>处于前台时，自身雷电伤害提升<shuzhi>40%</>；<shuzhi>契约徽章玫茨</>处于后台时，自身寒冰伤害提升<shuzhi>20%</>，冷却<shuzhi>30</>秒。\r\n\r\n激活<shuzhi>非恩赐共鸣</>时：\r\n对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，同时给命中目标添加<shuzhi>高压彻骨</>效果。百万玫茨冲击波处于冷却状态时，契约增幅状态下自身每次累计造成<shuzhi>100</>倍最高攻击力伤害时，获得<shuzhi>1</>次玫茨蓄能波：对附近目标造成<shuzhi>4500%</>*攻击力伤害。玫茨蓄能波能每<shuzhi>10</>秒至多获得<shuzhi>1</>次。\r\n契约增幅状态下若再次释放百万玫茨冲击波，契约增幅状态持续时间以及伤害累计进度将会重置。\r\n契约增幅状态自然结束时，结算未释放的玫茨蓄能波，对附近目标造成积攒次数*<shuzhi>3000%</>*攻击力伤害。\r\n\r\n激活<shuzhi>恩赐共鸣</>时：\r\n释放技能造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，同时给命中目标添加<shuzhi>高压彻骨</>效果。回复自身与附近队友<shuzhi>400%</>*攻击力生命值，额外回复挚友<shuzhi>10%</>最大生命值，解除自身与附近队友的负面状态与控制效果（包括灰噬效果），并在<shuzhi>10</>秒内免疫负面状态与控制效果，冷却<shuzhi>15</>秒。",
+					"description": "百万玫茨冲击波释放成功，自身进入持续<shuzhi>30</>秒的契约增幅状态：<shuzhi>契约徽章玫茨</>处于前台时，自身雷电伤害提升<shuzhi>30%</>；<shuzhi>契约徽章玫茨</>处于后台时，自身寒冰伤害提升<shuzhi>10%</>，冷却<shuzhi>30</>秒。\r\n\r\n激活<shuzhi>非恩赐共鸣</>时：\r\n对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，同时给命中目标添加<shuzhi>高压彻骨</>效果。百万玫茨冲击波处于冷却状态时，契约增幅状态下自身每次累计造成<shuzhi>100</>倍最高攻击力伤害时，获得<shuzhi>1</>次玫茨蓄能波：对附近目标造成<shuzhi>3000%</>*攻击力伤害。玫茨蓄能波能每<shuzhi>10</>秒至多获得<shuzhi>1</>次。\r\n契约增幅状态下若再次释放百万玫茨冲击波，契约增幅状态持续时间以及伤害累计进度将会重置。\r\n契约增幅状态自然结束时，结算未释放的玫茨蓄能波，对附近目标造成积攒次数*<shuzhi>1000%</>*攻击力伤害。\r\n\r\n激活<shuzhi>恩赐共鸣</>时：\r\n释放技能造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，同时给命中目标添加<shuzhi>高压彻骨</>效果。回复自身与附近队友<shuzhi>400%</>*攻击力生命值，额外回复挚友<shuzhi>10%</>最大生命值，解除自身与附近队友的负面状态与控制效果（包括灰噬效果），并在<shuzhi>10</>秒内免疫负面状态与控制效果，冷却<shuzhi>15</>秒。",
 					"tags": [
 						"Damage"
 					],
@@ -12555,7 +12883,7 @@
 			"discharge": [
 				{
 					"name": "奇约交响结界",
-					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，召唤奇约交响结界，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>2.6</>秒（巅峰联赛不生效）。\r\n\r\n激活<shuzhi>恩赐共鸣</>时：\r\n解除自身与附近队友的负面状态与控制效果（包括灰噬效果），并在<shuzhi>10</>秒内免疫负面状态与控制效果，奇约交响结界会将命中的附近目标及非队友玩家变身为玫茨（对Boss不生效，巅峰联赛不生效），持续<shuzhi>4</>秒，每个目标每<shuzhi>30</>秒至多可变身<shuzhi>1</>次。",
+					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，召唤奇约交响结界，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>1.3</>秒（巅峰联赛不生效）。\r\n\r\n激活<shuzhi>恩赐共鸣</>时：\\r\\n解除自身与附近队友的负面状态与控制效果（包括灰噬效果），并在<shuzhi>10</>秒内免疫负面状态与控制效果，奇约交响结界会将命中的附近目标及非队友玩家变身为玫茨（对Boss不生效，巅峰联赛不生效），持续<shuzhi>4</>秒，每个目标每<shuzhi>30</>秒至多可变身<shuzhi>1</>次。",
 					"tags": [
 						"Damage",
 						"Control"
@@ -12579,14 +12907,6 @@
 					},
 					"weaponId": "Blevi_thunder_fashion_imitationUI",
 					"id": "imitation_fashion_52"
-				},
-				"weapon": {
-					"name": "心花徽章玫茨",
-					"description": "积攒到饱满的能量，一次性以大满开之势绽放出来的话，玫茨也会解锁全新的进化形态吧……？会吗？",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_bulewei01.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_52_w"
 				}
 			}
 		],
@@ -12952,14 +13272,6 @@
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_ANBL_Lock.webp"
 					},
 					"weaponId": "Snipe_fire_fashion_ImitationUI",
-					"id": "imitation_fashion_26"
-				},
-				"weapon": {
-					"name": "无惧骄阳",
-					"description": "紫外线本是大敌，这对每一位女性来说都一样……但她似乎还挺享受日光浴的呢。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_annabeila0.webp",
-					"type": "CONSUMABLE",
 					"id": "imitation_fashion_26"
 				}
 			}
@@ -13409,14 +13721,6 @@
 					},
 					"weaponId": "brush_fire_fashion",
 					"id": "imitation_fashion_37"
-				},
-				"weapon": {
-					"name": "辰砂",
-					"description": "如火烧云一般的回环之印缭绕于笔杆，握紧它，能预感到热忱满溢的诗文摇笔即来……",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_liuhuo01.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_37_w"
 				}
 			}
 		],
@@ -13830,14 +14134,6 @@
 					},
 					"weaponId": "Snipe_fire_fashion_ImitationUI",
 					"id": "imitation_fashion_31"
-				},
-				"weapon": {
-					"name": "幽芒",
-					"description": "荼蘼古堡继承人的「魔力」来源，似乎还有更多的秘密等待挖掘……",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_wumi1.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_31_w"
 				}
 			}
 		],
@@ -14668,14 +14964,6 @@
 					},
 					"weaponId": "fenrir_thunder_fashion",
 					"id": "imitation_fashion_32"
-				},
-				"weapon": {
-					"name": "零度分贝",
-					"description": "冰冷而安静的世界里，任何响动都会变得格外刺耳。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_32_w"
 				}
 			}
 		],
@@ -15077,14 +15365,6 @@
 					},
 					"weaponId": "umbrella_fire_fashion_imitationUI",
 					"id": "imitation_fashion_34"
-				},
-				"weapon": {
-					"name": "明羽",
-					"description": "感受到朱雀的心意后，陵光幻变出了新的模样……",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_lan1.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_34_w"
 				}
 			}
 		],
@@ -16321,14 +16601,6 @@
 					},
 					"weaponId": "Zeke_physic_fashion_UI",
 					"id": "imitation_fashion_50"
-				},
-				"weapon": {
-					"name": "尘影阑珊",
-					"description": "保护他唯一的家人。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_mingjing01.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_50_w"
 				}
 			}
 		],
@@ -16805,14 +17077,6 @@
 					},
 					"weaponId": "queen_superpower_fashion",
 					"id": "imitation_fashion_36"
-				},
-				"weapon": {
-					"name": "辉星皓月",
-					"description": "星月之力于此汇聚，凝结，释放。",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_feiouna01.webp",
-					"type": "CONSUMABLE",
-					"id": "imitation_fashion_36_w"
 				}
 			}
 		],
