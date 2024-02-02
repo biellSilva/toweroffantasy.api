@@ -1,4 +1,3 @@
-
 from pydantic import BaseModel, BeforeValidator, Field, AliasChoices
 from typing import Annotated
 
@@ -11,10 +10,10 @@ class ListKeys(BaseModel):
 
 
 class Assets(BaseModel):
-    icon: str | None 
+    icon: str | None
     # itemLargeIcon: str | None
     # WeaponUPIcon: str | None
-    weaponIconForMatrix: str | None 
+    weaponIconForMatrix: str | None
     characterArtwork: str | None = None
 
 
@@ -22,7 +21,7 @@ class Skill(BaseModel):
     name: str | None
     description: Annotated[str, BeforeValidator(bold_numbers)] | None
     values: list[list[float | int]] = []
-    icon: str | None 
+    icon: str | None
     tags: list[str] = []
     operations: list[str] = []
     id: str | None
@@ -31,7 +30,7 @@ class Skill(BaseModel):
 class WeaponSkills(BaseModel):
     Name: str | None
     Description: str | None
-    Icon: str | None 
+    Icon: str | None
     Attacks: list[Skill]
 
 
@@ -48,15 +47,17 @@ class ShatterOrCharge(BaseModel):
 
 
 class AdvancMultipliers(BaseModel):
-    id: str = Field(validation_alias=AliasChoices('PropName', 'id'))
-    coefficient: float = Field(validation_alias=AliasChoices('PropCoefficient', 'coefficient'))
+    statId: str = Field(validation_alias=AliasChoices("PropName", "id", "statId"))
+    coefficient: float = Field(
+        validation_alias=AliasChoices("PropCoefficient", "coefficient")
+    )
 
 
 class WeaponAdvancement(BaseModel):
     description: str | None = None
-    # GoldNeeded: int 
-    shatter: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]    # type: ignore
-    charge: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]     # type: ignore
+    # GoldNeeded: int
+    shatter: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]  # type: ignore
+    charge: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]  # type: ignore
     need: str | None
     multiplier: list[AdvancMultipliers]
     # WeaponFashionID: str | None
@@ -73,7 +74,16 @@ class MatrixSuit(BaseModel):
 
 
 class WeaponEffect(BaseModel):
-    title: Annotated[str, BeforeValidator(lambda x: str(x).replace(':', '').replace('*', '') if x and str(x).endswith(':') else x)]
+    title: Annotated[
+        str,
+        BeforeValidator(
+            lambda x: (
+                str(x).replace(":", "").replace("*", "")
+                if x and str(x).endswith(":")
+                else x
+            )
+        ),
+    ]
     description: str
 
 
@@ -81,8 +91,9 @@ class BaseStats(BaseModel):
     id: str
     name: str
     icon: str | None
-    value: float = Field(0, validation_alias=AliasChoices('PropValue', 'value'))
-    upgradeProp: float = Field(validation_alias=AliasChoices('upgradeProp'))
+    value: float = Field(0, validation_alias=AliasChoices("PropValue", "value"))
+    upgradeProp: float = Field(validation_alias=AliasChoices("upgradeProp"))
+
 
 class UpgradeMaterial(BaseModel):
     id: str
