@@ -159,16 +159,29 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 }
             )
 
-            value_dict["stats"] = [
-                {
-                    "id": value["stat"]["id"],
-                    "name": value["stat"]["name"],
-                    "icon": value["stat"]["icon"],
-                    "value": value["value"],
-                    "upgradeProp": value_dict["upgradeProps"][0][i],
-                }
-                for i, value in enumerate(value_dict["stats"])
-            ]
+            # remove after data fix
+            try:
+                value_dict["stats"] = [
+                    {
+                        "id": value["stat"]["id"],
+                        "name": value["stat"]["name"],
+                        "icon": value["stat"]["icon"],
+                        "value": value["value"],
+                        "upgradeProp": value_dict["upgradeProps"][0][i],
+                    }
+                    for i, value in enumerate(value_dict["stats"])
+                ]
+            except IndexError:
+                value_dict["stats"] = [
+                    {
+                        "id": value["stat"]["id"],
+                        "name": value["stat"]["name"],
+                        "icon": value["stat"]["icon"],
+                        "value": value["value"],
+                        "upgradeProp": [3.15534, 194.17476, 2.427185][i],
+                    }
+                    for i, value in enumerate(value_dict["stats"])
+                ]
 
             if len(value_dict["advancements"]) == 7:
                 value_dict["advancements"].pop(0)

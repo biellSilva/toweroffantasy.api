@@ -19,7 +19,7 @@ class Assets(BaseModel):
 
 class Skill(BaseModel):
     name: str | None
-    description: Annotated[str, BeforeValidator(bold_numbers)] | None
+    description: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     values: list[list[float | int]] = []
     icon: str | None
     tags: list[str] = []

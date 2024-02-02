@@ -1,4 +1,3 @@
-
 from pydantic import BeforeValidator
 from typing import Annotated
 
@@ -10,7 +9,7 @@ from .extra import MatrixSet, MatrixAssets, MatrixMeta
 
 
 class Matrix(EntityBase):
-    name: str
+    name: str = "Missing"
     simulacrumId: str | None = None
     version: str
     description: Annotated[str, BeforeValidator(bold_numbers)]
