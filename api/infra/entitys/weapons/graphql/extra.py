@@ -40,7 +40,7 @@ class ShatterOrCharge:
 
 @strawberry.type
 class AdvancMultipliers:
-    id: str
+    statId: str
     coefficient: float
 
 
