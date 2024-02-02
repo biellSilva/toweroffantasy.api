@@ -82,6 +82,7 @@ class BaseStats(BaseModel):
     name: str
     icon: str | None
     value: float = Field(0, validation_alias=AliasChoices('PropValue', 'value'))
+    upgradeProp: float = Field(validation_alias=AliasChoices('upgradeProp'))
 
 class UpgradeMaterial(BaseModel):
     id: str

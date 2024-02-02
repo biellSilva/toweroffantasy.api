@@ -1,4 +1,3 @@
-
 import strawberry
 
 
@@ -7,11 +6,13 @@ class ListKeys:
     Time: float
     Value: float
 
+
 @strawberry.type
 class WeaponAssets:
     icon: str | None
     weaponIconForMatrix: str | None
     characterArtwork: str | None
+
 
 @strawberry.type
 class Skill:
@@ -19,8 +20,8 @@ class Skill:
     description: str | None
     values: list[list[float]]
     icon: str | None
-    tags: list[str] 
-    operations: list[str] 
+    tags: list[str]
+    operations: list[str]
 
 
 @strawberry.type
@@ -30,15 +31,18 @@ class WeaponAttacks:
     skill: list[Skill]
     discharge: list[Skill]
 
+
 @strawberry.type
 class ShatterOrCharge:
     value: float
     tier: str
 
+
 @strawberry.type
 class AdvancMultipliers:
     id: str
     coefficient: float
+
 
 @strawberry.type
 class WeaponAdvancement:
@@ -48,20 +52,24 @@ class WeaponAdvancement:
     need: str | None
     multiplier: list[AdvancMultipliers]
 
+
 @strawberry.type
 class FashionWeaponInfo:
     FashionName: str
     FashionImitationId: str
+
 
 @strawberry.type
 class MatrixSuit:
     MatrixSuitName: str
     MatrixSuitDes: str
 
+
 @strawberry.type
 class WeaponEffect:
     title: str
     description: str
+
 
 @strawberry.type
 class BaseStats:
@@ -69,21 +77,25 @@ class BaseStats:
     name: str
     icon: str
     value: float
+    upgradeProp: float
+
 
 @strawberry.type
 class UpgradeMaterial:
     id: str
     need: int
 
+
 @strawberry.type
 class WeaponMat:
-    matId: str | None 
-    amount: int | None 
+    matId: str | None
+    amount: int | None
     name: str | None
     icon: str | None
     type: str | None
     description: str | None
     rarity: int | None
+
 
 @strawberry.type
 class WeaponMats:
