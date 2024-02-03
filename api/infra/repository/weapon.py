@@ -211,7 +211,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                                             item.update(item_obj.model_dump())
 
                                 upgrade_obj[ind] = {
-                                    "requiredExp": upgrade_exp_require[ind],
+                                    "requiredExp": upgrade_exp_require[ind * 10],
                                     "mats": level,
                                 }
                     else:
