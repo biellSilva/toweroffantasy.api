@@ -22,4 +22,4 @@ class LevelUpgrade(BaseModel):
 
 class WeaponMats(BaseModel):
     id: str
-    items: list[LevelUpgrade]
+    levels: list[LevelUpgrade]

@@ -236,7 +236,7 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
 
                 value_dict["upgradeMats"] = {
                     "id": value_dict["weaponUpgradeId"],
-                    "items": upgrade_obj,
+                    "levels": upgrade_obj,
                 }
 
             for type_skill, skill_list in value_dict["skills"].items():

@@ -106,4 +106,4 @@ class LevelUpgrade:
 @strawberry.type
 class WeaponMats:
     id: str
-    items: list[LevelUpgrade]
+    levels: list[LevelUpgrade]
