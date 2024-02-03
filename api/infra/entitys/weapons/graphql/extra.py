@@ -87,7 +87,7 @@ class UpgradeMaterial:
 
 
 @strawberry.type
-class WeaponMat:
+class UpgradeMaterial:
     matId: str | None
     amount: int | None
     name: str | None
@@ -98,6 +98,12 @@ class WeaponMat:
 
 
 @strawberry.type
+class LevelUpgrade:
+    requiredExp: int
+    mats: list[UpgradeMaterial]
+
+
+@strawberry.type
 class WeaponMats:
     id: str
-    items: list[list[WeaponMat]]
+    items: list[LevelUpgrade]

@@ -1,24 +1,20 @@
 import json
-
 from pathlib import Path
 from typing import Any
 
-from api.infra.repository.base_repo import ModelRepository
-from api.infra.repository.item import ItemRepo
-
-from api.infra.entitys import Weapon, EntityBase
-from api.infra.entitys.meta import MetaData
-
+from api.config import GB_BANNERS
 from api.core.exceptions import (
-    VersionNotFound,
-    LanguageNotFound,
     FileNotFound,
     ItemNotFound,
+    LanguageNotFound,
+    VersionNotFound,
 )
-
 from api.enums import LANGS, LANGS_CN, VERSIONS
-from api.utils import sort_weapons, place_numbers
-from api.config import GB_BANNERS
+from api.infra.entitys import EntityBase, Weapon
+from api.infra.entitys.meta import MetaData
+from api.infra.repository.base_repo import ModelRepository
+from api.infra.repository.item import ItemRepo
+from api.utils import place_numbers, sort_weapons
 
 
 class WeaponRepo(ModelRepository[EntityBase, Weapon]):
@@ -47,6 +43,15 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 Path(f"api/infra/database/global/weaponUpgrade.json").read_bytes()
             )
         )
+
+        self.__weapon_exp_required_levels: dict[str, list[int]] = {
+            k.lower().rsplit("_", 1)[0]: v
+            for k, v in dict(
+                json.loads(
+                    Path(f"api/infra/database/global/weaponExp.json").read_bytes()
+                )
+            ).items()
+        }
 
     async def get(
         self,
@@ -159,29 +164,16 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                 }
             )
 
-            # remove after data fix
-            try:
-                value_dict["stats"] = [
-                    {
-                        "id": value["stat"]["id"],
-                        "name": value["stat"]["name"],
-                        "icon": value["stat"]["icon"],
-                        "value": value["value"],
-                        "upgradeProp": value_dict["upgradeProps"][0][i],
-                    }
-                    for i, value in enumerate(value_dict["stats"])
-                ]
-            except IndexError:
-                value_dict["stats"] = [
-                    {
-                        "id": value["stat"]["id"],
-                        "name": value["stat"]["name"],
-                        "icon": value["stat"]["icon"],
-                        "value": value["value"],
-                        "upgradeProp": [3.15534, 194.17476, 2.427185][i],
-                    }
-                    for i, value in enumerate(value_dict["stats"])
-                ]
+            value_dict["stats"] = [
+                {
+                    "id": value["stat"]["id"],
+                    "name": value["stat"]["name"],
+                    "icon": value["stat"]["icon"],
+                    "value": value["value"],
+                    "upgradeProp": value_dict["upgradeProps"][0][i],
+                }
+                for i, value in enumerate(value_dict["stats"])
+            ]
 
             if len(value_dict["advancements"]) == 7:
                 value_dict["advancements"].pop(0)
@@ -194,24 +186,58 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                     if banner.weaponId and banner.weaponId == key_id.lower()
                 ]
 
-                if upgrade_obj := self.__weapon_mats.get(
+                upgrade_obj = self.__weapon_mats.get(
                     value_dict["weaponUpgradeId"], None
-                ):
-                    for i in upgrade_obj:
-                        for j in i:
-                            if mat_id := j.get("mat_id", None):
-                                if isinstance(mat_id, str) and mat_id.lower() != "none":
-                                    if item_obj := await self.__ITEMS_REPO.get(
-                                        EntityBase(id=mat_id),
-                                        lang=lang,
-                                        version=version,
-                                    ):
-                                        j.update(item_obj.model_dump())
+                )
 
-                    value_dict["upgradeMats"] = {
-                        "id": value_dict["weaponUpgradeId"],
-                        "items": upgrade_obj,
-                    }
+                if upgrade_obj and "requiredExp" not in upgrade_obj[0]:
+                    upgrade_exp_require = self.__weapon_exp_required_levels.get(
+                        key_id.lower(), None
+                    )
+
+                    if upgrade_exp_require:
+                        for ind, level in enumerate(upgrade_obj):
+                            for item in level:
+                                if mat_id := item.get("mat_id", None):
+                                    if (
+                                        isinstance(mat_id, str)
+                                        and mat_id.lower() != "none"
+                                    ):
+                                        if item_obj := await self.__ITEMS_REPO.get(
+                                            EntityBase(id=mat_id),
+                                            lang=lang,
+                                            version=version,
+                                        ):
+                                            item.update(item_obj.model_dump())
+
+                                upgrade_obj[ind] = {
+                                    "requiredExp": upgrade_exp_require[ind],
+                                    "mats": level,
+                                }
+                    else:
+                        for ind, level in enumerate(upgrade_obj):
+                            for item in level:
+                                if mat_id := item.get("mat_id", None):
+                                    if (
+                                        isinstance(mat_id, str)
+                                        and mat_id.lower() != "none"
+                                    ):
+                                        if item_obj := await self.__ITEMS_REPO.get(
+                                            EntityBase(id=mat_id),
+                                            lang=lang,
+                                            version=version,
+                                        ):
+                                            item.update(item_obj.model_dump())
+
+                                upgrade_obj[ind] = {
+                                    "requiredExp": 0,
+                                    "mats": level,
+                                }
+
+                value_dict["upgradeMats"] = {
+                    "id": value_dict["weaponUpgradeId"],
+                    "items": upgrade_obj,
+                }
 
             for type_skill, skill_list in value_dict["skills"].items():
                 skill_list: list[dict[str, Any]]
