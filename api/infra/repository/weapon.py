@@ -210,8 +210,16 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
                                         ):
                                             item.update(item_obj.model_dump())
 
+                                ind_start, ind_end = (ind * 10) - 10, ind * 10
+
                                 upgrade_obj[ind] = {
-                                    "requiredExp": upgrade_exp_require[ind * 10],
+                                    "requiredExp": sum(
+                                        upgrade_exp_require[
+                                            (
+                                                ind_start if ind_start > 0 else 0
+                                            ) : ind_end
+                                        ]
+                                    ),
                                     "mats": level,
                                 }
                     else:
