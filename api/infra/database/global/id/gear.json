@@ -1,67 +1,70 @@
 {
-	"Item_Mine_Crystal": {
-		"name": "Crystal",
-		"type": "NONE",
-		"description": "Sebuah bijih yang umum ditemukan. Bijih ini terkenal karena keindahannya yang menawan dan seperti kristal.",
-		"source": "Memberikan **5** EXP untuk proses Advancement Equipment.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/Item_Mine_Crystal.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Item_Mine_Crystal"
-	},
-	"core_exp_n": {
-		"name": "Universal Combat Part I",
-		"type": "NONE",
-		"description": "Universal Combat Part biasa. Memiliki berbagai macam kegunaan, tapi tak ada yang istimewa dari ini.",
-		"source": "Beberapa Equipment memberi **5** EXP selama Advancement",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/core_exp_n.webp",
-		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "core_exp_n"
-	},
-	"core_exp_r": {
-		"name": "Universal Combat Part II",
-		"type": "NONE",
-		"description": "Universal Combat Part diam-diam beredar di Pasar Gelap. Karena kinerja dan harganya, pembeli mungkin merasa ditipu oleh pedagang yang menjualnya.",
-		"source": "Beberapa Equipment memberi **25** EXP selama Advancement",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/core_exp_r.webp",
-		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "core_exp_r"
-	},
-	"core_exp_sr": {
-		"name": "Universal Combat Part III",
-		"type": "NONE",
-		"description": "Universal Combat Part buatan Banges Tech. Kompatibel dan berguna.",
-		"source": "Beberapa Equipment memberi **100** EXP selama Advancement",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/core_exp_sr.webp",
-		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "core_exp_sr"
-	},
-	"core_exp_ssr": {
-		"name": "Universal Combat Part IV",
-		"type": "NONE",
-		"description": "Ciptaan terbaru dari Hykros Equipment R&D. Bisa meningkatkan kinerja Equipment pendukung tempur sampai tingkat maksimum.",
-		"source": "Beberapa Equipment memberi **400** EXP selama Advancement",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/core_exp_ssr.webp",
-		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "core_exp_ssr"
-	},
 	"armband_orange": {
 		"name": "Fortress Bracers",
 		"type": "NECKLACE",
 		"description": "Perlengkapan yang dibuat untuk tim operasi khusus. Memberikan perlindungan tinggi, namun tetap bisa bergerak bebas.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_040101.webp",
 		"rarity": 5,
-		"statPool": "armband_randompool_orange",
-		"baseStat": "armband_orange_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 5400,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "armband_orange"
 	},
 	"armband_orangeTupo": {
@@ -70,8 +73,66 @@
 		"description": "Perlengkapan yang dibuat untuk tim operasi khusus. Memberikan perlindungan tinggi, namun tetap bisa bergerak bebas.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_red_1.webp",
 		"rarity": 5,
-		"statPool": "armband_randompool_orange",
-		"baseStat": "armband_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 144,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6480,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "armband_orangeTupo"
 	},
 	"cloth_orange": {
@@ -80,8 +141,66 @@
 		"description": "Armor berat tak tertembus yang dikembangkan oleh Hykros setelah riset bertahun-tahun.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_040101.webp",
 		"rarity": 5,
-		"statPool": "cloth_randompool_orange",
-		"baseStat": "cloth_orange_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 100,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 8600,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "cloth_orange"
 	},
 	"cloth_orangeTupo": {
@@ -90,8 +209,66 @@
 		"description": "Armor berat tak tertembus yang dikembangkan oleh Hykros setelah riset bertahun-tahun.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_red_1.webp",
 		"rarity": 5,
-		"statPool": "cloth_randompool_orange",
-		"baseStat": "cloth_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 10320,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "cloth_orangeTupo"
 	},
 	"pants_orange": {
@@ -100,8 +277,66 @@
 		"description": "Pelindung kaki ini menggunakan tenaga baterai guna memberikan mobilitas yang lebih tinggi kepada pemakainya saat menggunakan Fortress Armor yang berat.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_040101.webp",
 		"rarity": 5,
-		"statPool": "pants_randompool_orange",
-		"baseStat": "pants_orange_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 100,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 8600,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "pants_orange"
 	},
 	"pants_orangeTupo": {
@@ -110,8 +345,66 @@
 		"description": "Pelindung kaki ini menggunakan tenaga baterai guna memberikan mobilitas yang lebih tinggi kepada pemakainya saat menggunakan Fortress Armor yang berat.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_red_1.webp",
 		"rarity": 5,
-		"statPool": "pants_randompool_orange",
-		"baseStat": "pants_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 10320,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "pants_orangeTupo"
 	},
 	"shoes_orange": {
@@ -120,8 +413,70 @@
 		"description": "Suara hentakan yang dihasilkan oleh sepatu berat ini merupakan cara pencegahan terbaik terhadap serangan musuh.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_040101.webp",
 		"rarity": 5,
-		"statPool": "shoes_randompool_orange",
-		"baseStat": "shoes_orange_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 5400,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shoes_orange"
 	},
 	"shoes_orangeTupo": {
@@ -130,8 +485,70 @@
 		"description": "Suara hentakan yang dihasilkan oleh sepatu berat ini merupakan cara pencegahan terbaik terhadap serangan musuh.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_red_1.webp",
 		"rarity": 5,
-		"statPool": "shoes_randompool_orange",
-		"baseStat": "shoes_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 144,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6480,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shoes_orangeTupo"
 	},
 	"helmet_orange": {
@@ -140,8 +557,66 @@
 		"description": "Helm yang tertutup seluruhnya dan memberikan pertahanan, sirkulasi udara, serta pemrosesan informasi.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_040101.webp",
 		"rarity": 5,
-		"statPool": "helmet_randompool_orange",
-		"baseStat": "helmet_orange_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 112.5,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6000,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "helmet_orange"
 	},
 	"helmet_orangeTupo": {
@@ -150,8 +625,66 @@
 		"description": "Helm yang tertutup seluruhnya dan memberikan pertahanan, sirkulasi udara, serta pemrosesan informasi.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_red_1.webp",
 		"rarity": 5,
-		"statPool": "helmet_randompool_orange",
-		"baseStat": "helmet_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 135,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 7200,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "helmet_orangeTupo"
 	},
 	"glove_orange": {
@@ -160,8 +693,70 @@
 		"description": "Pelindung tangan yang berat ini secara spesifik dirancang agar pemakainya bisa menggunakan berbagai macam senjata.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_040101.webp",
 		"rarity": 5,
-		"statPool": "glove_randompool_orange",
-		"baseStat": "glove_orange_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 127.5,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 300,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "glove_orange"
 	},
 	"glove_orangeTupo": {
@@ -170,8 +765,70 @@
 		"description": "Pelindung tangan yang berat ini secara spesifik dirancang agar pemakainya bisa menggunakan berbagai macam senjata.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_red_1.webp",
 		"rarity": 5,
-		"statPool": "glove_randompool_orange",
-		"baseStat": "glove_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 153,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 360,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "glove_orangeTupo"
 	},
 	"belt_orange": {
@@ -180,8 +837,66 @@
 		"description": "Berisi sejumlah sensor untuk mentransmisikan data secara langsung ke sistem pemrosesan informasi pada pakaian ini.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_040101.webp",
 		"rarity": 5,
-		"statPool": "belt_randompool_orange",
-		"baseStat": "belt_orange_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 100,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 8600,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "belt_orange"
 	},
 	"belt_orangeTupo": {
@@ -190,8 +905,66 @@
 		"description": "Berisi sejumlah sensor untuk mentransmisikan data secara langsung ke sistem pemrosesan informasi pada pakaian ini.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_red_1.webp",
 		"rarity": 5,
-		"statPool": "belt_randompool_orange",
-		"baseStat": "belt_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 10320,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "belt_orangeTupo"
 	},
 	"shawl_orange": {
@@ -200,8 +973,66 @@
 		"description": "Materialnya yang kokoh dan antipeluru memberikan perlindungan sempurna bagi bahu dan leher pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_040101.webp",
 		"rarity": 5,
-		"statPool": "shawl_randompool_orange",
-		"baseStat": "shawl_orange_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 5400,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shawl_orange"
 	},
 	"shawl_orangeTupo": {
@@ -210,8 +1041,66 @@
 		"description": "Materialnya yang kokoh dan antipeluru memberikan perlindungan sempurna bagi bahu dan leher pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_red_1.webp",
 		"rarity": 5,
-		"statPool": "shawl_randompool_orange",
-		"baseStat": "shawl_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 144,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6480,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shawl_orangeTupo"
 	},
 	"armband_purple": {
@@ -220,8 +1109,66 @@
 		"description": "Mampu mengubah area cakupannya sesuai dengan situasi saat ini.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_030101.webp",
 		"rarity": 4,
-		"statPool": "armband_randompool_purple",
-		"baseStat": "armband_purple_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 68.15534,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3066.9902,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "armband_purple"
 	},
 	"armband_red": {
@@ -230,8 +1177,66 @@
 		"description": "Perlengkapan yang dibuat untuk tim operasi khusus. Memberikan perlindungan tinggi, namun tetap bisa bergerak bebas.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_red_2.webp",
 		"rarity": 6,
-		"statPool": "armband_randompool_orange",
-		"baseStat": "armband_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 144,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6480,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "armband_red"
 	},
 	"cloth_purple": {
@@ -240,8 +1245,66 @@
 		"description": "Perlengkapan standar dari Hykros Special Forces. Memberikan Defense dan Resistance yang menakjubkan untuk menghadapi berbagai situasi ekstrem.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_030101.webp",
 		"rarity": 4,
-		"statPool": "cloth_randompool_purple",
-		"baseStat": "cloth_purple_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 56.796116,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 4884.466,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "cloth_purple"
 	},
 	"cloth_red": {
@@ -250,8 +1313,66 @@
 		"description": "Armor berat tak tertembus yang dikembangkan oleh Hykros setelah riset bertahun-tahun.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_red_2.webp",
 		"rarity": 6,
-		"statPool": "cloth_randompool_orange",
-		"baseStat": "cloth_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 10320,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "cloth_red"
 	},
 	"pants_purple": {
@@ -260,8 +1381,66 @@
 		"description": "Bagian persendiannya kini dilengkapi modul armor yang kompleks demi mengakomodasi kondisi pertempuran berbahaya bagi para agen Special Forces.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_030101.webp",
 		"rarity": 4,
-		"statPool": "pants_randompool_purple",
-		"baseStat": "pants_purple_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 56.796116,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 4884.466,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "pants_purple"
 	},
 	"pants_red": {
@@ -270,8 +1449,66 @@
 		"description": "Pelindung kaki ini menggunakan tenaga baterai guna memberikan mobilitas yang lebih tinggi kepada pemakainya saat menggunakan Fortress Armor yang berat.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_red_2.webp",
 		"rarity": 6,
-		"statPool": "pants_randompool_orange",
-		"baseStat": "pants_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 10320,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "pants_red"
 	},
 	"shoes_purple": {
@@ -280,8 +1517,70 @@
 		"description": "Gabungan baru mampu mengubah tekstur permukaannya secara otomatis sesuai dengan kondisi di medan tempur.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_030101.webp",
 		"rarity": 4,
-		"statPool": "shoes_randompool_purple",
-		"baseStat": "shoes_purple_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 68.15534,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3066.9902,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shoes_purple"
 	},
 	"shoes_red": {
@@ -290,8 +1589,70 @@
 		"description": "Suara hentakan yang dihasilkan oleh sepatu berat ini merupakan cara pencegahan terbaik terhadap serangan musuh.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_red_2.webp",
 		"rarity": 6,
-		"statPool": "shoes_randompool_orange",
-		"baseStat": "shoes_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 144,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6480,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shoes_red"
 	},
 	"helmet_purple": {
@@ -300,8 +1661,66 @@
 		"description": "Helm canggih yang dilengkapi sistem pengenalan musuh dan bantuan membidik.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_030101.webp",
 		"rarity": 4,
-		"statPool": "helmet_randompool_purple",
-		"baseStat": "helmet_purple_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 63.89563,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3407.767,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "helmet_purple"
 	},
 	"helmet_red": {
@@ -310,8 +1729,66 @@
 		"description": "Helm yang tertutup seluruhnya dan memberikan pertahanan, sirkulasi udara, serta pemrosesan informasi.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_red_2.webp",
 		"rarity": 6,
-		"statPool": "helmet_randompool_orange",
-		"baseStat": "helmet_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 135,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 7200,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "helmet_red"
 	},
 	"glove_purple": {
@@ -320,8 +1797,70 @@
 		"description": "Modul magnet memungkinkan pemakainya untuk menempel di permukaan logam saat diperlukan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_030101.webp",
 		"rarity": 4,
-		"statPool": "glove_randompool_purple",
-		"baseStat": "glove_purple_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 72.41505,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 170.38835,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "glove_purple"
 	},
 	"glove_red": {
@@ -330,8 +1869,70 @@
 		"description": "Pelindung tangan yang berat ini secara spesifik dirancang agar pemakainya bisa menggunakan berbagai macam senjata.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_red_2.webp",
 		"rarity": 6,
-		"statPool": "glove_randompool_orange",
-		"baseStat": "glove_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 153,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 360,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "glove_red"
 	},
 	"belt_purple": {
@@ -340,8 +1941,66 @@
 		"description": "Dirancang dengan slot modul multifungsi untuk berbagai kebutuhan dalam misi.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_030101.webp",
 		"rarity": 4,
-		"statPool": "belt_randompool_purple",
-		"baseStat": "belt_purple_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 56.796116,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 4884.466,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "belt_purple"
 	},
 	"belt_red": {
@@ -350,8 +2009,66 @@
 		"description": "Berisi sejumlah sensor untuk mentransmisikan data secara langsung ke sistem pemrosesan informasi pada pakaian ini.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_red_2.webp",
 		"rarity": 6,
-		"statPool": "belt_randompool_orange",
-		"baseStat": "belt_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 10320,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "belt_red"
 	},
 	"shawl_purple": {
@@ -360,8 +2077,66 @@
 		"description": "Dilengkapi sistem Deflection Shield Generator untuk melindungi kepala dan bahu pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_030101.webp",
 		"rarity": 4,
-		"statPool": "shawl_randompool_purple",
-		"baseStat": "shawl_purple_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 68.15534,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3066.9902,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shawl_purple"
 	},
 	"shawl_red": {
@@ -370,8 +2145,66 @@
 		"description": "Materialnya yang kokoh dan antipeluru memberikan perlindungan sempurna bagi bahu dan leher pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_red_2.webp",
 		"rarity": 6,
-		"statPool": "shawl_randompool_orange",
-		"baseStat": "shawl_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 144,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6480,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shawl_red"
 	},
 	"armband_blue": {
@@ -380,8 +2213,66 @@
 		"description": "Logam gabungan mutakhir memberikan keseimbangan sempurna antara bobot dan perlindungan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_020101.webp",
 		"rarity": 3,
-		"statPool": "armband_randompool_blue",
-		"baseStat": "armband_blue_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 34.07767,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1533.4951,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "armband_blue"
 	},
 	"cloth_blue": {
@@ -390,8 +2281,46 @@
 		"description": "Material terbarunya dijamin memberikan perlindungan dengan desain yang sederhana.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_020101.webp",
 		"rarity": 3,
-		"statPool": "cloth_randompool_blue",
-		"baseStat": "cloth_blue_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 28.398058,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 2442.233,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "cloth_blue"
 	},
 	"pants_blue": {
@@ -400,8 +2329,46 @@
 		"description": "Versi yang telah jauh berkembang dibandingkan pendahulunya, dengan material dan desain yang lebih baik.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_020101.webp",
 		"rarity": 3,
-		"statPool": "pants_randompool_blue",
-		"baseStat": "pants_blue_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 28.398058,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 2442.233,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "pants_blue"
 	},
 	"shoes_blue": {
@@ -410,8 +2377,70 @@
 		"description": "Dua lapisan penyerap benturan memberikan kenyamanan dan daya tahan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_020101.webp",
 		"rarity": 3,
-		"statPool": "shoes_randompool_blue",
-		"baseStat": "shoes_blue_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 34.07767,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1533.4951,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shoes_blue"
 	},
 	"helmet_blue": {
@@ -420,8 +2449,66 @@
 		"description": "Materialnya yang kokoh melindungi pemakainya bahkan dalam baku tembak yang sengit.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_020101.webp",
 		"rarity": 3,
-		"statPool": "helmet_randompool_blue",
-		"baseStat": "helmet_blue_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 31.947815,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1703.8835,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "helmet_blue"
 	},
 	"glove_blue": {
@@ -430,8 +2517,70 @@
 		"description": "Material polimernya yang ringan sama sekali tidak menghambat kelincahan pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_020101.webp",
 		"rarity": 3,
-		"statPool": "glove_randompool_blue",
-		"baseStat": "glove_blue_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 36.207523,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 85.194176,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "glove_blue"
 	},
 	"belt_blue": {
@@ -440,8 +2589,46 @@
 		"description": "Berisi sensor mikro untuk memantau kondisi tubuh pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_020101.webp",
 		"rarity": 3,
-		"statPool": "belt_randompool_blue",
-		"baseStat": "belt_blue_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 28.398058,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 2442.233,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "belt_blue"
 	},
 	"shawl_blue": {
@@ -450,8 +2637,46 @@
 		"description": "Versi peningkatan dari Vanguard Spaulders yang memberikan pertahanan luar biasa.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_020101.webp",
 		"rarity": 3,
-		"statPool": "shawl_randompool_blue",
-		"baseStat": "shawl_blue_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 34.07767,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1533.4951,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shawl_blue"
 	},
 	"armband_green": {
@@ -460,8 +2685,66 @@
 		"description": "Mengorbankan sedikit mobilitas demi perlindungan lebih baik.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_010101.webp",
 		"rarity": 2,
-		"statPool": "armband_randompool_green",
-		"baseStat": "armband_green_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 17.038836,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 766.74756,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "armband_green"
 	},
 	"cloth_green": {
@@ -470,8 +2753,46 @@
 		"description": "Tak lagi digunakan oleh Hykros, tapi masih menjadi komoditas populer di pasar gelap.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_010100.webp",
 		"rarity": 2,
-		"statPool": "cloth_randompool_green",
-		"baseStat": "cloth_green_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 14.199029,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1221.1165,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "cloth_green"
 	},
 	"pants_green": {
@@ -480,8 +2801,46 @@
 		"description": "Versi lama dari bawahan tempur Hykros. Bagian paling rentan dari seri Vanguard.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_010100.webp",
 		"rarity": 2,
-		"statPool": "pants_randompool_green",
-		"baseStat": "pants_green_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 14.199029,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1221.1165,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "pants_green"
 	},
 	"shoes_green": {
@@ -490,8 +2849,50 @@
 		"description": "Sepatu Hykros model lama ini tampak bagus dan berfungsi dengan baik.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_010100.webp",
 		"rarity": 2,
-		"statPool": "shoes_randompool_green",
-		"baseStat": "shoes_green_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 17.038836,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 766.74756,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shoes_green"
 	},
 	"helmet_green": {
@@ -500,8 +2901,46 @@
 		"description": "Helm bagus untuk melindungi kepala pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_010100.webp",
 		"rarity": 2,
-		"statPool": "helmet_randompool_green",
-		"baseStat": "helmet_green_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 15.973907,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 851.9418,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "helmet_green"
 	},
 	"glove_green": {
@@ -510,8 +2949,70 @@
 		"description": "Sarung tangan ini dinilai kontroversial karena mengorbankan mobilitas demi perlindungan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_010100.webp",
 		"rarity": 2,
-		"statPool": "glove_randompool_green",
-		"baseStat": "glove_green_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 18.103762,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 42.597088,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "glove_green"
 	},
 	"belt_green": {
@@ -520,8 +3021,46 @@
 		"description": "Sabuk ini menggunakan desain lama yang kokoh, tapi tak bisa disesuaikan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_010100.webp",
 		"rarity": 2,
-		"statPool": "belt_randompool_green",
-		"baseStat": "belt_green_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 14.199029,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1221.1165,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "belt_green"
 	},
 	"shawl_green": {
@@ -530,8 +3069,46 @@
 		"description": "Didesain hanya untuk digunakan bersama dengan Vanguard Suit dan berfokus dalam melindungi lengan atas pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_010100.webp",
 		"rarity": 2,
-		"statPool": "shawl_randompool_green",
-		"baseStat": "shawl_green_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 17.038836,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 766.74756,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shawl_green"
 	},
 	"armband_white": {
@@ -540,8 +3117,46 @@
 		"description": "Bracer ini dibuat untuk bertualang, lebih ringan dan lebih tipis.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_000101.webp",
 		"rarity": 1,
-		"statPool": "armband_randompool_white",
-		"baseStat": "armband_white_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 8.519418,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 383.37378,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "armband_white"
 	},
 	"cloth_white": {
@@ -550,8 +3165,46 @@
 		"description": "Armor kulit yang ringan dan dipakai oleh Shelter's Exploration Team.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_000101.webp",
 		"rarity": 1,
-		"statPool": "cloth_randompool_white",
-		"baseStat": "cloth_white_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 7.099514,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 610.5582,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "cloth_white"
 	},
 	"pants_white": {
@@ -560,8 +3213,46 @@
 		"description": "Bukan bawahan yang paling enak dilihat, tapi kokoh dan praktis.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_000101.webp",
 		"rarity": 1,
-		"statPool": "pants_randompool_white",
-		"baseStat": "pants_white_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 7.099514,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 610.5582,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "pants_white"
 	},
 	"shoes_white": {
@@ -570,8 +3261,50 @@
 		"description": "Sepatu yang berat dan kokoh ini didesain secara spesifik untuk Shelter's Exploration Team.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_000101.webp",
 		"rarity": 1,
-		"statPool": "shoes_randompool_white",
-		"baseStat": "shoes_white_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 8.519418,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 383.37378,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shoes_white"
 	},
 	"helmet_white": {
@@ -580,8 +3313,46 @@
 		"description": "Memberikan perlindungan kepala yang menakjubkan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_000101.webp",
 		"rarity": 1,
-		"statPool": "helmet_randompool_white",
-		"baseStat": "helmet_white_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 7.986954,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 425.9709,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "helmet_white"
 	},
 	"glove_white": {
@@ -590,8 +3361,50 @@
 		"description": "Bantalan tambahan memudahkan respons terhadap berbagai kondisi di alam liar.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_000101.webp",
 		"rarity": 1,
-		"statPool": "glove_randompool_white",
-		"baseStat": "glove_white_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "CritAdded",
+				"WeightValue": 15
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 9.051881,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 21.298544,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "glove_white"
 	},
 	"belt_white": {
@@ -600,8 +3413,46 @@
 		"description": "Sabuk dengan slot untuk menaruh peralatan dan mengikat tali saat menjelajah.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_000101.webp",
 		"rarity": 1,
-		"statPool": "belt_randompool_white",
-		"baseStat": "belt_white_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 7.099514,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 610.5582,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "belt_white"
 	},
 	"shawl_white": {
@@ -610,8 +3461,46 @@
 		"description": "Memberikan perlindungan dasar tanpa memengaruhi gerakan tubuh bagian atas.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_000101.webp",
 		"rarity": 1,
-		"statPool": "shawl_randompool_white",
-		"baseStat": "shawl_white_base",
+		"statPool": [
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 10
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 8.519418,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 383.37378,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "shawl_white"
 	},
 	"unid_armband_orange": {
@@ -620,8 +3509,20 @@
 		"description": "Perlengkapan yang dibuat untuk tim operasi khusus. Memberikan perlindungan tinggi, namun tetap bisa bergerak bebas.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "armband_orange_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 5400,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_armband_orange"
 	},
 	"unid_cloth_orange": {
@@ -630,8 +3531,20 @@
 		"description": "Armor berat tak tertembus yang dikembangkan oleh Hykros setelah riset bertahun-tahun.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "cloth_orange_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 100,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 8600,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_cloth_orange"
 	},
 	"unid_pants_orange": {
@@ -640,8 +3553,20 @@
 		"description": "Pelindung kaki ini menggunakan tenaga baterai guna memberikan mobilitas yang lebih tinggi kepada pemakainya saat menggunakan Fortress Armor yang berat.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "pants_orange_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 100,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 8600,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_pants_orange"
 	},
 	"unid_shoes_orange": {
@@ -650,8 +3575,20 @@
 		"description": "Suara hentakan yang dihasilkan oleh sepatu berat ini merupakan cara pencegahan terbaik terhadap serangan musuh.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "shoes_orange_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 5400,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shoes_orange"
 	},
 	"unid_helmet_orange": {
@@ -660,8 +3597,20 @@
 		"description": "Helm yang tertutup seluruhnya dan memberikan pertahanan, sirkulasi udara, serta pemrosesan informasi.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "helmet_orange_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 112.5,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6000,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_helmet_orange"
 	},
 	"unid_glove_orange": {
@@ -670,8 +3619,20 @@
 		"description": "Pelindung tangan yang berat ini secara spesifik dirancang agar pemakainya bisa menggunakan berbagai macam senjata.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "glove_orange_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 127.5,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 300,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_glove_orange"
 	},
 	"unid_belt_orange": {
@@ -680,8 +3641,20 @@
 		"description": "Berisi sejumlah sensor untuk mentransmisikan data secara langsung ke sistem pemrosesan informasi pada pakaian ini.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "belt_orange_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 100,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 8600,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_belt_orange"
 	},
 	"unid_shawl_orange": {
@@ -690,8 +3663,20 @@
 		"description": "Materialnya yang kokoh dan antipeluru memberikan perlindungan sempurna bagi bahu dan leher pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "shawl_orange_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 120,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 5400,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shawl_orange"
 	},
 	"unid_armband_purple": {
@@ -700,8 +3685,20 @@
 		"description": "Mampu mengubah area cakupannya sesuai dengan situasi saat ini.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "armband_purple_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 68.15534,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3066.9902,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_armband_purple"
 	},
 	"unid_cloth_purple": {
@@ -710,8 +3707,20 @@
 		"description": "Perlengkapan standar dari Hykros Special Forces. Memberikan Defense dan Resistance yang menakjubkan untuk menghadapi berbagai situasi ekstrem.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "cloth_purple_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 56.796116,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 4884.466,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_cloth_purple"
 	},
 	"unid_pants_purple": {
@@ -720,8 +3729,20 @@
 		"description": "Bagian persendiannya kini dilengkapi modul armor yang kompleks demi mengakomodasi kondisi pertempuran berbahaya bagi para agen Special Forces.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "pants_purple_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 56.796116,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 4884.466,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_pants_purple"
 	},
 	"unid_shoes_purple": {
@@ -730,8 +3751,20 @@
 		"description": "Gabungan baru mampu mengubah tekstur permukaannya secara otomatis sesuai dengan kondisi di medan tempur.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "shoes_purple_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 68.15534,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3066.9902,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shoes_purple"
 	},
 	"unid_helmet_purple": {
@@ -740,8 +3773,20 @@
 		"description": "Helm canggih yang dilengkapi sistem pengenalan musuh dan bantuan membidik.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "helmet_purple_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 63.89563,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3407.767,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_helmet_purple"
 	},
 	"unid_glove_purple": {
@@ -750,8 +3795,20 @@
 		"description": "Modul magnet memungkinkan pemakainya untuk menempel di permukaan logam saat diperlukan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "glove_purple_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 72.41505,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 170.38835,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_glove_purple"
 	},
 	"unid_belt_purple": {
@@ -760,8 +3817,20 @@
 		"description": "Dirancang dengan slot modul multifungsi untuk berbagai kebutuhan dalam misi.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "belt_purple_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 56.796116,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 4884.466,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_belt_purple"
 	},
 	"unid_shawl_purple": {
@@ -770,8 +3839,20 @@
 		"description": "Dilengkapi sistem Deflection Shield Generator untuk melindungi kepala dan bahu pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "shawl_purple_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 68.15534,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3066.9902,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shawl_purple"
 	},
 	"unid_armband_blue": {
@@ -780,8 +3861,20 @@
 		"description": "Logam gabungan mutakhir memberikan keseimbangan sempurna antara bobot dan perlindungan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "armband_blue_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 34.07767,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1533.4951,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_armband_blue"
 	},
 	"unid_cloth_blue": {
@@ -790,8 +3883,20 @@
 		"description": "Material terbarunya dijamin memberikan perlindungan dengan desain yang sederhana.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "cloth_blue_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 28.398058,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 2442.233,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_cloth_blue"
 	},
 	"unid_pants_blue": {
@@ -800,8 +3905,20 @@
 		"description": "Versi yang telah jauh berkembang dibandingkan pendahulunya, dengan material dan desain yang lebih baik.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "pants_blue_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 28.398058,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 2442.233,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_pants_blue"
 	},
 	"unid_shoes_blue": {
@@ -810,8 +3927,20 @@
 		"description": "Dua lapisan penyerap benturan memberikan kenyamanan dan daya tahan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "shoes_blue_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 34.07767,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1533.4951,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shoes_blue"
 	},
 	"unid_helmet_blue": {
@@ -820,8 +3949,20 @@
 		"description": "Materialnya yang kokoh melindungi pemakainya bahkan dalam baku tembak yang sengit.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "helmet_blue_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 31.947815,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1703.8835,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_helmet_blue"
 	},
 	"unid_glove_blue": {
@@ -830,8 +3971,20 @@
 		"description": "Material polimernya yang ringan sama sekali tidak menghambat kelincahan pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "glove_blue_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 36.207523,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 85.194176,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_glove_blue"
 	},
 	"unid_belt_blue": {
@@ -840,8 +3993,20 @@
 		"description": "Berisi sensor mikro untuk memantau kondisi tubuh pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "belt_blue_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 28.398058,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 2442.233,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_belt_blue"
 	},
 	"unid_shawl_blue": {
@@ -850,8 +4015,20 @@
 		"description": "Versi peningkatan dari Vanguard Spaulders yang memberikan pertahanan luar biasa.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "shawl_blue_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 34.07767,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1533.4951,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shawl_blue"
 	},
 	"unid_armband_green": {
@@ -860,8 +4037,20 @@
 		"description": "Mengorbankan sedikit mobilitas demi perlindungan lebih baik.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_010101.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "armband_green_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 17.038836,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 766.74756,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_armband_green"
 	},
 	"unid_cloth_green": {
@@ -870,8 +4059,20 @@
 		"description": "Tak lagi digunakan oleh Hykros, tapi masih menjadi komoditas populer di pasar gelap.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "cloth_green_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 14.199029,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1221.1165,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_cloth_green"
 	},
 	"unid_pants_green": {
@@ -880,8 +4081,20 @@
 		"description": "Versi lama dari bawahan tempur Hykros. Bagian paling rentan dari seri Vanguard.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "pants_green_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 14.199029,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1221.1165,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_pants_green"
 	},
 	"unid_shoes_green": {
@@ -890,8 +4103,20 @@
 		"description": "Sepatu Hykros model lama ini tampak bagus dan berfungsi dengan baik.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "shoes_green_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 17.038836,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 766.74756,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shoes_green"
 	},
 	"unid_helmet_green": {
@@ -900,8 +4125,20 @@
 		"description": "Helm bagus untuk melindungi kepala pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "helmet_green_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 15.973907,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 851.9418,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_helmet_green"
 	},
 	"unid_glove_green": {
@@ -910,8 +4147,20 @@
 		"description": "Sarung tangan ini dinilai kontroversial karena mengorbankan mobilitas demi perlindungan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "glove_green_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 18.103762,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 42.597088,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_glove_green"
 	},
 	"unid_belt_green": {
@@ -920,8 +4169,20 @@
 		"description": "Sabuk ini menggunakan desain lama yang kokoh, tapi tak bisa disesuaikan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "belt_green_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 14.199029,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1221.1165,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_belt_green"
 	},
 	"unid_shawl_green": {
@@ -930,8 +4191,20 @@
 		"description": "Didesain hanya untuk digunakan bersama dengan Vanguard Suit dan berfokus dalam melindungi lengan atas pemakainya.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "shawl_green_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 17.038836,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 766.74756,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shawl_green"
 	},
 	"unid_armband_white": {
@@ -940,8 +4213,20 @@
 		"description": "Bracer ini dibuat untuk bertualang, lebih ringan dan lebih tipis.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/armband_000101.webp",
 		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "armband_white_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 8.519418,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 383.37378,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_armband_white"
 	},
 	"unid_cloth_white": {
@@ -950,8 +4235,20 @@
 		"description": "Armor kulit yang ringan dan dipakai oleh Shelter's Exploration Team.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_000101.webp",
 		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "cloth_white_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 7.099514,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 610.5582,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_cloth_white"
 	},
 	"unid_pants_white": {
@@ -960,8 +4257,20 @@
 		"description": "Bukan bawahan yang paling enak dilihat, tapi kokoh dan praktis.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/pants_000101.webp",
 		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "pants_white_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 7.099514,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 610.5582,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_pants_white"
 	},
 	"unid_shoes_white": {
@@ -970,8 +4279,20 @@
 		"description": "Sepatu yang berat dan kokoh ini didesain secara spesifik untuk Shelter's Exploration Team.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shoes_000101.webp",
 		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "shoes_white_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 8.519418,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 383.37378,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shoes_white"
 	},
 	"unid_helmet_white": {
@@ -980,8 +4301,20 @@
 		"description": "Memberikan perlindungan kepala yang menakjubkan.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_000101.webp",
 		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "helmet_white_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 7.986954,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 425.9709,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_helmet_white"
 	},
 	"unid_glove_white": {
@@ -990,8 +4323,20 @@
 		"description": "Bantalan tambahan memudahkan respons terhadap berbagai kondisi di alam liar.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/glove_000101.webp",
 		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "glove_white_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 9.051881,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 21.298544,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_glove_white"
 	},
 	"unid_belt_white": {
@@ -1000,8 +4345,20 @@
 		"description": "Sabuk dengan slot untuk menaruh peralatan dan mengikat tali saat menjelajah.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/belt_000101.webp",
 		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "belt_white_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 7.099514,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 610.5582,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_belt_white"
 	},
 	"unid_shawl_white": {
@@ -1010,139 +4367,21 @@
 		"description": "Memberikan perlindungan dasar tanpa memengaruhi gerakan tubuh bagian atas.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/shawl_000101.webp",
 		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "shawl_white_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 8.519418,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 383.37378,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "unid_shawl_white"
-	},
-	"unid_visor_blue": {
-		"name": "Falcon Tactics Eyepiece",
-		"type": "HEAD",
-		"description": "Tactics Eyepiece buatan Banges Tech. Equipment sipil yang pernah populer.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/visor_blue.webp",
-		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_visor_blue"
-	},
-	"unid_core_orange": {
-		"name": "Fortress Combat Engine",
-		"type": "HEAD",
-		"description": "Ciptaan terbaru dari Departemen Riset Hykros. Memberikan dukungan superior bagi Eksekutor.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/core_orange_physic.webp",
-		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_core_orange"
-	},
-	"unid_core_purple": {
-		"name": "Elite Combat Engine (Overload)",
-		"type": "HEAD",
-		"description": "Equipment standar Hykros Special Force. Mesin ini sudah membantu mereka melaksanakan berbagai tugas yang sulit.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/core_purple.webp",
-		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_core_purple"
-	},
-	"unid_core_blue": {
-		"name": "Falcon Combat Engine",
-		"type": "HEAD",
-		"description": "Combat Engine buatan Banges Tech. Equipment sipil yang pernah populer.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/core_blue.webp",
-		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_core_blue"
-	},
-	"unid_core_green": {
-		"name": "Vanguard Combat Engine",
-		"type": "HEAD",
-		"description": "Versi lama dari Peralatan Tempur Hykros. Masih bisa berjalan dengan stabil.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/core_green.webp",
-		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_core_green"
-	},
-	"unid_visor_orange": {
-		"name": "Fortress Tactics Eyepiece",
-		"type": "HEAD",
-		"description": "Ciptaan terbaru dari Departemen Riset Hykros. Memberikan dukungan superior bagi Eksekutor.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/visor_orange_physic.webp",
-		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_visor_orange"
-	},
-	"unid_visor_purple": {
-		"name": "Elite Tactics Eyepiece (Overload)",
-		"type": "HEAD",
-		"description": "Equipment standar Hykros Special Force. Mesin ini sudah membantu mereka melaksanakan berbagai tugas yang sulit.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/visor_purple.webp",
-		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_visor_purple"
-	},
-	"unid_reactor_orange": {
-		"name": "Fortress Microreactor",
-		"type": "FURNACE",
-		"description": "Reaktor baru dengan tingkat efisiensi tinggi yang dikembangkan oleh tim pengembang dari Distrik 7 yang mampu memberikan stat tambahan. Dapatkan salah satu tipe Fortress Microreactor berikut secara acak: Overload, Erupt, Glaze, Arc.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/reactor_orange_physic.webp",
-		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_reactor_orange"
-	},
-	"unid_reactor_purple": {
-		"name": "Elite Microreactor",
-		"type": "FURNACE",
-		"description": "Microreactor yang dipakai oleh Eksekutor dari Distrik 7 untuk melawan Grayspace Entity. Dapatkan salah satu tipe Elite Microreactor berikut secara acak: Overload, Erupt, Glaze, Arc.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/reactor_purple.webp",
-		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_reactor_purple"
-	},
-	"unid_reactor_blue": {
-		"name": "Falcon Microreactor",
-		"type": "FURNACE",
-		"description": "Peralatan standar untuk anggota tim eksplorasi permukaan Vera. Memberikan cukup energi dan membuat mereka siap menjalankan misi apa pun. Dapatkan salah satu tipe Falcon Microreactor berikut secara acak: Overload, Erupt, Glaze, Arc.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/reactor_blue.webp",
-		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_reactor_blue"
-	},
-	"unid_exoskeleton_orange": {
-		"name": "Fortress Exoskeleton",
-		"type": "FURNACE",
-		"description": "Exoskeleton baru yang dikembangkan oleh R&D dari Distrik 7 dan mampu memberikan stat yang luar biasa. Dapatkan salah satu tipe Fortress Exoskeleton berikut secara acak: Overload, Burst, Glaze, Arc.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/exoskeleton_orange_physic.webp",
-		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_exoskeleton_orange"
-	},
-	"unid_exoskeleton_purple": {
-		"name": "Elite Exoskeleton",
-		"type": "FURNACE",
-		"description": "Exoskeleton mikro standar yang digunakan Eksekutor Distrik 7 untuk melawan Grayspace Entity. Dapatkan salah satu dari tipe Elite Exoskeleton berikut secara acak: Overload, Burst, Glaze, Arc.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/exoskeleton_purple.webp",
-		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_exoskeleton_purple"
-	},
-	"unid_exoskeleton_blue": {
-		"name": "Falcon Exoskeleton",
-		"type": "FURNACE",
-		"description": "Perlengkapan standar untuk anggota tim eksplorasi permukaan Vera. Memberikan cukup energi dan membuat mereka siap menjalankan misi apa pun. Dapatkan salah satu tipe Falcon Exoskeleton berikut secara acak: Overload, Burst, Glaze, Arc.",
-		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/exoskeleton_blue.webp",
-		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "unid_exoskeleton_blue"
 	},
 	"core_OS_red": {
 		"name": "Titan Combat Engine",
@@ -1150,8 +4389,118 @@
 		"description": "Ciptaan terbaru dari Hykros Equipment R&D. Memberikan dukungan superior bagi Eksekutor.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/core_red_2.webp",
 		"rarity": 6,
-		"statPool": "core1_randompool_orange",
-		"baseStat": "core_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 128.7,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 7704,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "core_OS_red"
 	},
 	"core_OS_orangeTupo": {
@@ -1160,8 +4509,118 @@
 		"description": "Ciptaan terbaru dari Hykros Equipment R&D. Memberikan dukungan superior bagi Eksekutor.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/core_red_1.webp",
 		"rarity": 5,
-		"statPool": "core1_randompool_orange",
-		"baseStat": "core_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 128.7,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 7704,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "core_OS_orangeTupo"
 	},
 	"core_OS_orange": {
@@ -1170,8 +4629,118 @@
 		"description": "Ciptaan terbaru dari Hykros Equipment R&D. Menyediakan Stat Support untuk Eksekutor.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webpOverSea/Icon/weapon/core_orange.webp",
 		"rarity": 5,
-		"statPool": "core_OS_randompool_orange",
-		"baseStat": "core_orange_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 107.25,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6420,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "core_OS_orange"
 	},
 	"core_OS_purple": {
@@ -1180,8 +4749,118 @@
 		"description": "Equipment standar Hykros Special Force. Mesin ini sudah membantu mereka melaksanakan berbagai tugas yang sulit.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/core_purple.webp",
 		"rarity": 4,
-		"statPool": "core_OS_randompool_purple",
-		"baseStat": "core_purple_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 60.913834,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3646.3108,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "core_OS_purple"
 	},
 	"core_OS_blue": {
@@ -1190,8 +4869,66 @@
 		"description": "Combat Engine buatan Banges Tech. Equipment sipil yang pernah populer.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/core_blue.webp",
 		"rarity": 3,
-		"statPool": "core_OS_randompool_blue",
-		"baseStat": "core_blue_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 30.456917,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1823.1554,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "core_OS_blue"
 	},
 	"visor_OS_red": {
@@ -1200,8 +4937,112 @@
 		"description": "Ciptaan terbaru dari Hykros Equipment R&D. Memberikan dukungan superior bagi Eksekutor.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/visor_red_2.webp",
 		"rarity": 6,
-		"statPool": "visor1_randompool_orange",
-		"baseStat": "visor_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "FinalCrit",
+				"WeightValue": 60
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 155.25,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 5184,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 180,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "visor_OS_red"
 	},
 	"visor_OS_orangeTupo": {
@@ -1210,8 +5051,112 @@
 		"description": "Ciptaan terbaru dari Hykros Equipment R&D. Memberikan dukungan superior bagi Eksekutor.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/visor_red_1.webp",
 		"rarity": 5,
-		"statPool": "visor1_randompool_orange",
-		"baseStat": "visor_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "FinalCrit",
+				"WeightValue": 60
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 155.25,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 5184,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 180,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "visor_OS_orangeTupo"
 	},
 	"visor_OS_orange": {
@@ -1220,8 +5165,124 @@
 		"description": "Ciptaan terbaru dari Hykros Equipment R&D. Menyediakan Stat Support untuk Eksekutor.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webpOverSea/Icon/weapon/visor_orange.webp",
 		"rarity": 5,
-		"statPool": "visor_OS_randompool_orange",
-		"baseStat": "visor_orange_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "SuperpowerAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "SuperpowerDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "SuperpowerDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "FinalCrit",
+				"WeightValue": 60
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 129.375,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 4320,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 150,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "visor_OS_orange"
 	},
 	"visor_OS_purple": {
@@ -1230,8 +5291,124 @@
 		"description": "Equipment standar Hykros Special Force. Mesin ini sudah membantu mereka melaksanakan berbagai tugas yang sulit.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/visor_purple.webp",
 		"rarity": 4,
-		"statPool": "visor_OS_randompool_purple",
-		"baseStat": "visor_purple_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "SuperpowerAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "SuperpowerDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "SuperpowerDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "FinalCrit",
+				"WeightValue": 60
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 73.47997,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 2453.5923,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 85.194176,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "visor_OS_purple"
 	},
 	"visor_OS_blue": {
@@ -1240,8 +5417,80 @@
 		"description": "Tactics Eyepiece buatan Banges Tech. Equipment sipil yang pernah populer.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/visor_blue.webp",
 		"rarity": 3,
-		"statPool": "visor_OS_randompool_blue",
-		"baseStat": "visor_blue_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "SuperpowerAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "SuperpowerDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 36.739986,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1226.7961,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "CritAdded",
+				"PropValue": 42.597088,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "visor_OS_blue"
 	},
 	"reactor_OS_red": {
@@ -1250,8 +5499,120 @@
 		"description": "Reaktor baru dengan tingkat efisiensi tinggi yang dikembangkan oleh R&D dari Distrik 7, mampu memberikan bantuan yang luar biasa.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/reactor_red_2.webp",
 		"rarity": 6,
-		"statPool": "reactor1_randompool_orange",
-		"baseStat": "reactor_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "SuperpowerAtkAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "SuperpowerDefAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "SuperpowerDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 102.6,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 24.75,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 8208,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "reactor_OS_red"
 	},
 	"reactor_OS_orangeTupo": {
@@ -1260,8 +5621,120 @@
 		"description": "Reaktor baru dengan tingkat efisiensi tinggi yang dikembangkan oleh R&D dari Distrik 7, mampu memberikan bantuan yang luar biasa.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/reactor_red_1.webp",
 		"rarity": 5,
-		"statPool": "reactor1_randompool_orange",
-		"baseStat": "reactor_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "SuperpowerAtkAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "SuperpowerDefAdded",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "SuperpowerDefMult",
+				"WeightValue": 24
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 102.6,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 24.75,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 8208,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "reactor_OS_orangeTupo"
 	},
 	"reactor_OS_orange": {
@@ -1270,8 +5743,124 @@
 		"description": "Reaktor baru dengan tingkat efisiensi tinggi yang dikembangkan oleh R&D dari Distrik 7, mampu memberikan bantuan stat.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webpOverSea/Icon/weapon/reactor_orange.webp",
 		"rarity": 5,
-		"statPool": "reactor_OS_randompool_orange",
-		"baseStat": "reactor_orange_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 85.5,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 20.625,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6840,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "reactor_OS_orange"
 	},
 	"reactor_OS_purple": {
@@ -1280,8 +5869,124 @@
 		"description": "Microreactor yang dipakai oleh Eksekutor dari Distrik 7 untuk melawan Grayspace Entity.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/reactor_purple.webp",
 		"rarity": 4,
-		"statPool": "reactor_OS_randompool_purple",
-		"baseStat": "reactor_purple_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 48.56068,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 11.714199,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3884.8542,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "reactor_OS_purple"
 	},
 	"reactor_OS_blue": {
@@ -1290,8 +5995,72 @@
 		"description": "Standar untuk para anggota tim eksplorasi permukaan Vera. Memberikan cukup banyak energi dan membuat mereka siap menjalankan misi apa pun.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/reactor_blue.webp",
 		"rarity": 3,
-		"statPool": "reactor_OS_randompool_blue",
-		"baseStat": "reactor_blue_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 24.28034,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ElementDef",
+				"PropValue": 5.8571,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1942.4271,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "reactor_OS_blue"
 	},
 	"exoskeleton_OS_red": {
@@ -1300,8 +6069,118 @@
 		"description": "Exoskeleton baru yang dikembangkan oleh R&D dari Distrik 7, mampu memberikan dukungan yang unggul.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/exoskeleton_red_2.webp",
 		"rarity": 6,
-		"statPool": "exoskeleton1_randompool_orange",
-		"baseStat": "exoskeleton_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 128.7,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 7704,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "exoskeleton_OS_red"
 	},
 	"exoskeleton_OS_orangeTupo": {
@@ -1310,8 +6189,118 @@
 		"description": "Exoskeleton baru yang dikembangkan oleh R&D dari Distrik 7, mampu memberikan dukungan yang unggul.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/exoskeleton_red_1.webp",
 		"rarity": 5,
-		"statPool": "exoskeleton1_randompool_orange",
-		"baseStat": "exoskeleton_red_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 96
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 48
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 128.7,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 7704,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "exoskeleton_OS_orangeTupo"
 	},
 	"exoskeleton_OS_orange": {
@@ -1320,8 +6309,118 @@
 		"description": "Exoskeleton baru yang dikembangkan oleh R&D dari Distrik 7, mampu memberikan stat support yang unggul.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webpOverSea/Icon/weapon/exoskeleton_orange.webp",
 		"rarity": 5,
-		"statPool": "exoskeleton_OS_randompool_orange",
-		"baseStat": "exoskeleton_orange_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 107.25,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 6420,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "exoskeleton_OS_orange"
 	},
 	"exoskeleton_OS_purple": {
@@ -1330,8 +6429,118 @@
 		"description": "Exoskeleton yang dipakai oleh Eksekutor dari Distrik 7 untuk melawan Grayspace Entity.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/exoskeleton_purple.webp",
 		"rarity": 4,
-		"statPool": "exoskeleton_OS_randompool_purple",
-		"baseStat": "exoskeleton_purple_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			},
+			{
+				"PropName": "PhyAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "PhyDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderDefMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "MaxHealthMult",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "FireAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "IceAtkExtraUpMult",
+				"WeightValue": 30
+			},
+			{
+				"PropName": "ThunderAtkExtraUpMult",
+				"WeightValue": 30
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 60.913834,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 3646.3108,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "exoskeleton_OS_purple"
 	},
 	"exoskeleton_OS_blue": {
@@ -1340,8 +6549,66 @@
 		"description": "Standar untuk para anggota tim eksplorasi permukaan Vera. Memberikan cukup banyak energi dan membuat mereka siap menjalankan misi apa pun.",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/exoskeleton_blue.webp",
 		"rarity": 3,
-		"statPool": "exoskeleton_OS_randompool_blue",
-		"baseStat": "exoskeleton_blue_OS_base",
+		"statPool": [
+			{
+				"PropName": "CommonAtkAdded",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderAtkAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ElementDef",
+				"WeightValue": 120
+			},
+			{
+				"PropName": "PhyDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "FireDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "IceDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "ThunderDefAdded",
+				"WeightValue": 60
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"WeightValue": 360
+			}
+		],
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "CommonAtkAdded",
+				"PropValue": 30.456917,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 1823.1554,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "exoskeleton_OS_blue"
 	},
 	"breakfate_equip_ssr_cloth": {
@@ -1351,8 +6618,20 @@
 		"source": "HP +500, Perisai +250",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "breakfate_equip_ssr_cloth_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 500,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ArmorAdded",
+				"PropValue": 250,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "breakfate_equip_ssr_cloth"
 	},
 	"breakfate_equip_ssr_helmet": {
@@ -1362,8 +6641,14 @@
 		"source": "HP +643",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_040101.webp",
 		"rarity": 5,
-		"statPool": "None",
-		"baseStat": "breakfate_equip_ssr_helmet_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 643,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "breakfate_equip_ssr_helmet"
 	},
 	"breakfate_equip_sr_cloth": {
@@ -1373,8 +6658,20 @@
 		"source": "HP +358, Perisai +200",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "breakfate_equip_sr_cloth_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 358,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ArmorAdded",
+				"PropValue": 200,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "breakfate_equip_sr_cloth"
 	},
 	"breakfate_equip_sr_helmet": {
@@ -1384,8 +6681,14 @@
 		"source": "HP +500",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_030101.webp",
 		"rarity": 4,
-		"statPool": "None",
-		"baseStat": "breakfate_equip_sr_helmet_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 500,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "breakfate_equip_sr_helmet"
 	},
 	"breakfate_equip_r_cloth": {
@@ -1395,8 +6698,20 @@
 		"source": "HP +250, Perisai +150",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "breakfate_equip_r_cloth_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 250,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ArmorAdded",
+				"PropValue": 150,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "breakfate_equip_r_cloth"
 	},
 	"breakfate_equip_r_helmet": {
@@ -1406,8 +6721,14 @@
 		"source": "HP +320",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_020101.webp",
 		"rarity": 3,
-		"statPool": "None",
-		"baseStat": "breakfate_equip_r_helmet_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 320,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "breakfate_equip_r_helmet"
 	},
 	"breakfate_equip_n_cloth": {
@@ -1417,8 +6738,20 @@
 		"source": "HP +107, Perisai +100",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/cloth_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "breakfate_equip_n_cloth_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 107,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			},
+			{
+				"IsTag": false,
+				"PropName": "ArmorAdded",
+				"PropValue": 100,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "breakfate_equip_n_cloth"
 	},
 	"breakfate_equip_n_helmet": {
@@ -1428,121 +6761,14 @@
 		"source": "HP +179",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Helmet_010100.webp",
 		"rarity": 2,
-		"statPool": "None",
-		"baseStat": "breakfate_equip_n_helmet_base",
+		"baseStat": [
+			{
+				"IsTag": false,
+				"PropName": "MaxHealthAdded",
+				"PropValue": 179,
+				"ModifierOp": "MODIFY_MODOP_ADDITIVE"
+			}
+		],
 		"id": "breakfate_equip_n_helmet"
-	},
-	"Weapon_NPF_dressmaker": {
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Weapon_NPF_dressmaker"
-	},
-	"Weapon_NPF_Defend": {
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Weapon_NPF_Defend"
-	},
-	"Weapon_Katana_city_BP": {
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Weapon_Katana_city_BP"
-	},
-	"Weapon_NPF_DefendY": {
-		"name": "Senjata NPF",
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Weapon_NPF_DefendY"
-	},
-	"Weapon_NPF_DefendXZ": {
-		"name": "Senjata Zeke",
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Weapon_NPF_DefendXZ"
-	},
-	"Gobin_Bow_Match_BP": {
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Gobin_Bow_Match_BP"
-	},
-	"CityDogWeapon": {
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "CityDogWeapon"
-	},
-	"Weapon_RockMan": {
-		"name": "Obelisk",
-		"type": "WEAPON",
-		"description": "Senjata Boss",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Weapon_RockMan"
-	},
-	"Weapon_Spider": {
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Weapon_Spider"
-	},
-	"Spera_wolfman": {
-		"name": "Lycan Spear",
-		"type": "WEAPON",
-		"description": "Lycan Spear",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Spera_wolfman"
-	},
-	"Row_Gobin": {
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Row_Gobin"
-	},
-	"Weapon_RockMan_BW": {
-		"name": "World Obelisk",
-		"type": "WEAPON",
-		"description": "Senjata",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Weapon_RockMan_BW"
-	},
-	"Torch_Goblin": {
-		"name": "Goblin Torch",
-		"type": "WEAPON",
-		"icon": "None.webp",
-		"rarity": 1,
-		"statPool": "None",
-		"baseStat": "None",
-		"id": "Torch_Goblin"
 	}
 }

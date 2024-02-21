@@ -1360,7 +1360,7 @@
 				"need": "cannon_ice_plasm"
 			},
 			{
-				"description": "Within **10** seconds upon switching to the weapon, increase damage of normal attacks and shatter by **40%**. Cooldown: **25** seconds.",
+				"description": "Increase normal attack damage and shatter by **40%** for **10** seconds upon switching to this weapon. Cooldown: **25** seconds.",
 				"charge": 10,
 				"shatter": 16,
 				"multiplier": [
@@ -5162,6 +5162,14 @@
 					},
 					"weaponId": "gun_fire_Fashion",
 					"id": "imitation_fashion_10"
+				},
+				"weapon": {
+					"name": "Silver Flame Revolver",
+					"description": "It would be great if I could apply paints of all colors to the flame... but there are still many technical problems to overcome.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_10_w"
 				}
 			}
 		],
@@ -7355,6 +7363,14 @@
 					},
 					"weaponId": "mimi_thunder_fashion_UI",
 					"id": "imitation_fashion_41"
+				},
+				"weapon": {
+					"name": "Gilded Cloud",
+					"description": "Auspicious clouds are drifting across the sky, painting it gold.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_huang.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_41_w"
 				}
 			}
 		],
@@ -7792,6 +7808,14 @@
 					},
 					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_49"
+				},
+				"weapon": {
+					"name": "Diaphlute",
+					"description": "A treasured gift from an old friend, crafted by a master's hand. Renowned for its ethereal and clear tones, it was aptly named. \"I play this cherished tune just for you!\"",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nanyin_w.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_49_w"
 				}
 			}
 		],
@@ -7873,7 +7897,7 @@
 			},
 			{
 				"title": "**Poppa: Detachment**:",
-				"description": "After using **Mirror Image**, deal damage equal to **87.5%** of flame ATK plus **12.5%** of Max HP plus **45%** the sum of all the Wanderer's resistance types plus **168.8%** of crit every second for **30** seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is **1** volt or frost weapon equipped, then Poppa's damage is multiplied by **1.3** times. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+				"description": "After using **Mirror Image**, deal damage equal to **87.5%** of flame ATK plus **12.5%** of the Wanderer's Max HP plus **45%** of the sum of all the Wanderer's resistance types plus **168.8%** of crit to the target every second for **30** seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is **1** volt or frost weapon equipped, then Poppa's damage is multiplied by **1.3**. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
 			}
 		],
 		"elementEffects": {
@@ -7882,7 +7906,7 @@
 		},
 		"advancements": [
 			{
-				"description": "**Fusion of Flame and Mass**: When the weapon deals damage, damage is calculated using the highest equipped flame/physical base ATK, the highest equipped flame/physical ATK percentage, and the highest equipped flame/physical damage boost, and the weapon is considered both a flame and a physical weapon.\r\n**Flame Resonance**: Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame reaction effects, with Flame Resonance taking precedence.\r\n**Physical Resonance**: Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical reaction effects, with Physical Resonance taking precedence.\r\n**Poppa: Detachment**: After using **Mirror Image**, deal damage equal to **87.5%** of flame ATK plus **12.5%** of Max HP plus **45%** the sum of all the Wanderer's resistance types plus **168.8%** of crit every second for **30** seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is **1** volt or frost weapon equipped, then Poppa's damage is multiplied by **1.3** times. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.",
+				"description": "**Fusion of Flame and Mass**: When the weapon deals damage, damage is calculated using the highest equipped flame/physical base ATK, the highest equipped flame/physical ATK percentage, and the highest equipped flame/physical damage boost, and the weapon is considered both a flame and a physical weapon.\r\n**Flame Resonance**: Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame reaction effects, with Flame Resonance taking precedence.\r\n**Physical Resonance**: Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical reaction effects, with Physical Resonance taking precedence.\r\n**Poppa: Detachment**: After using **Mirror Image**, deal damage equal to **87.5%** of flame ATK plus **12.5%** of the Wanderer's Max HP plus **45%** of the sum of all the Wanderer's resistance types plus **168.8%** of crit to the target every second for **30** seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is **1** volt or frost weapon equipped, then Poppa's damage is multiplied by **1.3**. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -7906,6 +7930,7 @@
 				"need": null
 			},
 			{
+				"description": "While **Poppa is Here** is active, Poppa will launch a **Heavy Energy Round II** for every **7** explosive shot fired, dealing damage equal to **590%** of ATK to nearby targets and then splits into several high explosives, dealing damage equal to **660%** of ATK to nearby targets.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8086,7 +8111,7 @@
 				},
 				{
 					"name": "Rapid Fire Protocol",
-					"description": "While airborne, tap and hold normal attack when using the second to fourth normal attacks to trigger Rapid Fire Protocol and consume endurance.\r\nLaunch an attack ahead, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets and suspending them.",
+					"description": "While on the ground, tap and hold normal attack when using the second to fourth normal attacks to trigger Rapid Fire Protocol and consume endurance.\r\nLaunch an attack ahead, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets and suspending them.",
 					"operations": [
 						"Attack",
 						"Hold Attack"
@@ -8099,7 +8124,7 @@
 				},
 				{
 					"name": "Energizing Protocol",
-					"description": "While on the ground, tap and hold normal attack to trigger a charged attack.\r\nFire a charged shot at the target, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets hit.",
+					"description": "While on the ground, tap and hold normal attack to trigger a charged attack.\r\nFire a charged shot at the target, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets upon hit.",
 					"operations": [
 						"Hold Attack"
 					],
@@ -8139,7 +8164,7 @@
 				},
 				{
 					"name": "Brilliant Colors",
-					"description": "When in the overworld, on the ground, or in the non-combat state, hold dodge to place fireworks of a random style that explode after a short delay.",
+					"description": "When in the overworld, on the ground, and in the non-combat state, hold dodge to place fireworks of a random style that explode after a short delay.",
 					"operations": [],
 					"tags": [],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_beidong.webp",
@@ -8187,7 +8212,7 @@
 				},
 				{
 					"name": "Airborne Protocol",
-					"description": "Dodge attacks can be used while the Wanderer is airborne.\r\nFor every <shuzhi>2</> dodge attacks using <shuzhi>EP-7000 Skyfire</>, Poppa appears and uses a dodge attack as well, dealing damage equal to <shuzhi>50% to 100%</> of the Wanderer's damage dealt based on Poppa's mood.\r\nAfter every <shuzhi>2</> dodge attacks from <shuzhi>EP-7000 Skyfire</> or <shuzhi>1</> dodge attack from <shuzhi>EP-7000 Skyfire</> while <shuzhi>Poppa is Here</> is in effect, reduce <shuzhi>Mirror Image's</> cooldown by <shuzhi>10</> seconds. Can only be triggered <shuzhi>1</> time for each skill's cooldown duration.",
+					"description": "Dodge attacks can be used while the Wanderer is airborne.\r\nFor every <shuzhi>2</> dodge attacks using <shuzhi>EP-7000 Skyfire</>, Poppa appears and uses a dodge attack as well, dealing damage equal to <shuzhi>50% to 100%</> of the Wanderer's damage dealt based on Poppa's mood.\r\nAfter every <shuzhi>2</> dodge attacks using <shuzhi>EP-7000 Skyfire</> or <shuzhi>1</> dodge attack using <shuzhi>EP-7000 Skyfire</> while <shuzhi>Poppa is Here</> is in effect, reduce <shuzhi>Mirror Image's</> cooldown by <shuzhi>10</> seconds. Can only be triggered <shuzhi>1</> time for each Mirror Image's cooldown.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -8199,6 +8224,7 @@
 			"skill": [
 				{
 					"name": "Mirror Image",
+					"description": "Roam between the mind and reality, creating <shuzhi>8</> Heart Mirror Walls around the Wanderer (these count as summons) and deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. After using the skill, activate Poppa is Here for <shuzhi>15</> seconds, gaining the ability to fly as well as improved movement speed and jumping capabilities. Normal attack now fires explosive shots that deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> to nearby targets upon hit and consumes endurance. After an explosive shot hits the ground, it will be transmitted to a Heart Mirror Wall and fired toward the locked-on target. Cooldown: <shuzhi>30</> seconds. After Poppa is Here naturally ends, immediately gain <shuzhi>300</> weapon charge.\r\nDuring Poppa is Here, increase final damage according to the distance in height between the Wanderer and the target hit, by up to <shuzhi>1%</>.\r\nWhile in the combat state and Poppa is Here not active, Poppa will appear every <shuzhi>8</> seconds and fire a Heavy Energy Round I dealing damage equal to <shuzhi>590%</> of ATK to nearby targets.",
 					"tags": [
 						"Damage",
 						"Support"
@@ -8210,7 +8236,7 @@
 			"discharge": [
 				{
 					"name": "Extermination Protocol",
-					"description": "When <red>weapon charge</> is full or <red>Phantasia</> is triggered, <shuzhi>remove debuffs from the Wanderer</> and activate the Satellite Ionic Beam upon switching to this weapon, summoning an ionic beam from the space station and dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. At the same time, inflict <shuzhi>Armor Dissolve</> on targets hit and gain damage immunity for <shuzhi>1.5</> seconds (unavailable in Apex League).\r\nAfter Extermination Protocol lands a hit, place <shuzhi>1</> Mirror on both the locked-on target and the Wanderer for <shuzhi>45</> seconds.\r\nMirror (Target): The damage dealt by the Wanderer will be reflected by Mirrors to other targets for an additional <shuzhi>15%</> damage.\r\nMirror (Self): Ignore <shuzhi>15%</> of the target's Flame Resistance (each element's total resistance ignored cannot exceed <shuzhi>50%</>). Whenever damage is taken, reflect <shuzhi>20%</> of the damage received (no more than <shuzhi>500%</> of the Wanderer's Max HP). This effect can be triggered up to <shuzhi>1</> time every <shuzhi>3</> seconds. During cooldown, after Poppa appears, she will admire her reflection in the mirror, reducing this effect's cooldown by <shuzhi>1</> second.",
+					"description": "When <red>weapon charge</> is full or <red>Phantasia</> is triggered, <shuzhi>remove debuffs from the Wanderer</> and activate the Satellite Ionic Beam upon switching to this weapon, summoning an ionic beam from the space station and dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. At the same time, gain damage immunity for <shuzhi>1.5</> seconds (unavailable in Apex League) and inflict <shuzhi>Armor Dissolve</> on targets hit.\r\nAfter Extermination Protocol lands a hit, place up to <shuzhi>1</> Mirror on both the locked-on target and the Wanderer for <shuzhi>45</> seconds.\r\nMirror (Target): The damage dealt by the Wanderer will be reflected by Mirrors to other targets nearby for an additional <shuzhi>15%</> damage.\r\nMirror (Self): Ignore <shuzhi>15%</> of the target's Flame Resistance (each element's total resistance ignored cannot exceed <shuzhi>50%</>). Whenever damage is taken, bounce back <shuzhi>20%</> of the damage received (no more than <shuzhi>500%</> of the Wanderer's Max HP). This effect can be triggered up to <shuzhi>1</> time every <shuzhi>3</> seconds. During cooldown, after Poppa appears, she will admire her reflection in the mirror, reducing this effect's cooldown by <shuzhi>1</> second.",
 					"tags": [
 						"Damage",
 						"Support"
@@ -8234,6 +8260,14 @@
 					},
 					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_53"
+				},
+				"weapon": {
+					"name": "CP-3000 Terrafire",
+					"description": "Ablaze like the fires of hell, it unleashes its fury within the impregnable fortress.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/weapon_paradox.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_53_w"
 				}
 			}
 		],
@@ -8640,6 +8674,14 @@
 					},
 					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_43"
+				},
+				"weapon": {
+					"name": "Flowerstream",
+					"description": "Atop the waves, where snowflakes dance.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_linghan01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_43_w"
 				}
 			}
 		],
@@ -9028,6 +9070,14 @@
 					},
 					"weaponId": "Suspension_thunder_Fashion",
 					"id": "imitation_fashion_17"
+				},
+				"weapon": {
+					"name": "White Dwarf",
+					"description": "A shining star might look small, but it gives off unimaginable energy.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_SL_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_17_w"
 				}
 			}
 		],
@@ -9770,6 +9820,14 @@
 					},
 					"weaponId": "funnel_fire_Fashion",
 					"id": "imitation_fashion_21"
+				},
+				"weapon": {
+					"name": "Falling Flames",
+					"description": "A magical creation that contains mysterious energy in the picture book Crimson Tale. It's also Little Red Riding Hood's closest friend.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LB_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_21_w"
 				}
 			}
 		],
@@ -10161,6 +10219,14 @@
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_BPX_Lock.webp"
 					},
 					"weaponId": "Dkatana_ice_Fashion_ImitationUI",
+					"id": "imitation_fashion_22"
+				},
+				"weapon": {
+					"name": "Ultimate Pure White",
+					"description": "\"Ultimate justice! Ultimate valor! The Ultimate Warriors who give Night City ultimate protection! Elegant, pure, mighty! Super, super ultimate!\"",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_bupoxiao.webp",
+					"type": "CONSUMABLE",
 					"id": "imitation_fashion_22"
 				}
 			}
@@ -10554,6 +10620,14 @@
 					},
 					"weaponId": "fan_fashion_imitation23_UIshow",
 					"id": "imitation_fashion_23"
+				},
+				"weapon": {
+					"name": "Misty Weave",
+					"description": "The wind blown by this fan seems cooler than before... Though it may just be the visual effects which make it seem that way?",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LY_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_23_w"
 				}
 			},
 			{
@@ -10569,6 +10643,14 @@
 					},
 					"weaponId": "fan_fashion_imitation23_UIshow2",
 					"id": "imitation_fashion_23_2"
+				},
+				"weapon": {
+					"name": "Coral Weave",
+					"description": "Even at the bottom of the sea, Coral Weave seems to withstand the current and emit a gentle breeze. Although it may not be as easy to conceal in the darkness as before, its appearance is now far more stunning.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LY_weapon_2.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_23_w_2"
 				}
 			}
 		],
@@ -11743,6 +11825,14 @@
 					},
 					"weaponId": "Rubilia_thunder_fashion",
 					"id": "imitation_fashion_48"
+				},
+				"weapon": {
+					"name": "Swan Song",
+					"description": "Final regards from her.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LBLY_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_48_w"
 				}
 			}
 		],
@@ -12146,6 +12236,14 @@
 					},
 					"weaponId": "iceblade_ice_Fashion",
 					"id": "imitation_fashion_30"
+				},
+				"weapon": {
+					"name": "Platinum Wings",
+					"description": "Unyielding Wing is converted to Platinum Armor Form to make Alyss even mightier.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_ALS_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_30_w"
 				}
 			}
 		],
@@ -12786,7 +12884,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "While Pact Amplification is active, increase volt and frost damage boost by **10%**. Metz Halo increases nearby teammates' final damage by **20%** and shatter by **25%**. This effect does not stack.",
+				"description": "While Pact Amplification is active, increase volt and frost damage boost effects by **10%** and **4%** respectively. Metz Halo increases nearby teammates' final damage by **20%** and shatter by **25%**. This effect does not stack.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -12928,7 +13026,7 @@
 			"skill": [
 				{
 					"name": "Million-Metz Shockwave",
-					"description": "After using Million-Metz Shockwave, the Wanderer enters Pact Amplification for <shuzhi>20</> seconds: When <shuzhi>Pactcrest ☆ Metz</> is in the main slot, increase the Wanderer's volt damage by <shuzhi>20%</>. When <shuzhi>Pactcrest ☆ Metz</> is in the off-hand slot, increase the Wanderer's frost damage by <shuzhi>10%</>. Cooldown: <shuzhi>30</> seconds.\r\n\r\nWhen <shuzhi>non-Benediction Resonances are active</>:\r\nDeal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets, and apply <shuzhi>Force Impact</> on them. When Million-Metz Shockwave is on cooldown, dealing accumulated damage equal to <shuzhi>100</> times of ATK during Pact Amplification grants <shuzhi>1</> use of Metz Energy Wave each time. Metz Energy Wave: Deal damage equal to <shuzhi>3,000%</> of ATK to nearby targets. Gain up to <shuzhi>1</> use every <shuzhi>10</> seconds.\r\nUsing Million-Metz Shockwave again during Pact Amplification resets the duration of Pact Amplification and accumulated damage.\r\nWhen Pact Amplification ends naturally, unused Metz Energy Waves are accumulated, and deal damage equal to unused charges times <shuzhi>1,000%</> of ATK.\r\n\r\nWhen <shuzhi>Benediction Resonance is active</>:\r\nUsing skills deals damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and applies <shuzhi>Force Impact</> on targets hit. Recover HP equal to <shuzhi>400%</> of ATK to the Wanderer and nearby teammates, and recover an additional <shuzhi>10%</> of the Bestie's Max HP. Remove debuffs and control effects on the Wanderer and nearby teammates (including Graying Bite), and grant immunity to debuffs and control effects for <shuzhi>10</> seconds. Cooldown: <shuzhi>15</> seconds.",
+					"description": "After using Million-Metz Shockwave, the Wanderer enters Pact Amplification for <shuzhi>30</> seconds: When <shuzhi>Pactcrest ☆ Metz</> is in the main slot, increase the Wanderer's volt damage by <shuzhi>25%</>. When <shuzhi>Pactcrest ☆ Metz</> is in the off-hand slot, increase the Wanderer's frost damage by <shuzhi>10%</>. Cooldown: <shuzhi>30</> seconds.\r\n\r\nWhen <shuzhi>non-Benediction Resonances are active</>:\r\nDeal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets, and apply <shuzhi>Force Impact</> on them. When Million-Metz Shockwave is on cooldown, dealing accumulated damage equal to <shuzhi>100</> times of ATK during Pact Amplification grants <shuzhi>1</> use of Metz Energy Wave each time. Metz Energy Wave: Deal damage equal to <shuzhi>1,800%</> of ATK to nearby targets. Gain up to <shuzhi>1</> use every <shuzhi>10</> seconds.\r\nUsing Million-Metz Shockwave again during Pact Amplification resets the duration of Pact Amplification and accumulated damage.\r\nWhen Pact Amplification ends naturally, unused Metz Energy Waves are accumulated, and deal damage equal to unused charges times <shuzhi>1,200%</> of ATK.\r\n\r\nWhen <shuzhi>Benediction Resonance is active</>:\r\nUsing skills deals damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and applies <shuzhi>Force Impact</> on targets hit. Recover HP equal to <shuzhi>400%</> of ATK to the Wanderer and nearby teammates, and recover an additional <shuzhi>10%</> of the Bestie's Max HP. Remove debuffs and control effects on the Wanderer and nearby teammates (including Graying Bite), and grant immunity to debuffs and control effects for <shuzhi>10</> seconds. Cooldown: <shuzhi>15</> seconds.",
 					"tags": [
 						"Damage"
 					],
@@ -12939,6 +13037,7 @@
 			"discharge": [
 				{
 					"name": "Strange Symphonic Realm",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and summon a Strange Symphonic Realm, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets, during which damage immunity lasts for <shuzhi>1.5</> seconds (unavailable in Apex League).\r\n\r\nWhen <shuzhi>Benediction Resonance is active</>:\r\nRemove all debuffs and control effects from the Wanderer and nearby teammates (including Graying Bite), and grant them immunity to debuffs and control effects for <shuzhi>10</> seconds. The Strange Symphonic Realm transforms nearby targets hit and non-teammate players into Metz (not effective against bosses, and unavailable in Apex League) for <shuzhi>4</> seconds. Each target can be transformed up to <shuzhi>1</> time every <shuzhi>30</> seconds.",
 					"tags": [
 						"Damage",
 						"Control"
@@ -12962,6 +13061,14 @@
 					},
 					"weaponId": "Blevi_thunder_fashion_imitationUI",
 					"id": "imitation_fashion_52"
+				},
+				"weapon": {
+					"name": "Heartcrest Metz",
+					"description": "If a rose saves up its energy and unleashes it all at once in full bloom, will it also unlock an all-new evolutionary form...? I wonder...",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_bulewei01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_52_w"
 				}
 			}
 		],
@@ -13328,6 +13435,14 @@
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_ANBL_Lock.webp"
 					},
 					"weaponId": "Snipe_fire_fashion_ImitationUI",
+					"id": "imitation_fashion_26"
+				},
+				"weapon": {
+					"name": "No Fear of the Sun",
+					"description": "UV rays are the enemy of all women... But she seems to enjoy bathing in the sunlight.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_annabeila0.webp",
+					"type": "CONSUMABLE",
 					"id": "imitation_fashion_26"
 				}
 			}
@@ -13779,6 +13894,14 @@
 					},
 					"weaponId": "brush_fire_fashion",
 					"id": "imitation_fashion_37"
+				},
+				"weapon": {
+					"name": "Cinnabar",
+					"description": "As the afterglow emblem encircles the pen, hold it to get overwhelmed by the inspiration from the poem...",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_liuhuo01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_37_w"
 				}
 			}
 		],
@@ -14193,6 +14316,14 @@
 					},
 					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_31"
+				},
+				"weapon": {
+					"name": "Gloom",
+					"description": "There are many secrets surrounding the source of the Millet Castle's heir's magical powers.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_wumi1.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_31_w"
 				}
 			}
 		],
@@ -15027,6 +15158,14 @@
 					},
 					"weaponId": "fenrir_thunder_fashion",
 					"id": "imitation_fashion_32"
+				},
+				"weapon": {
+					"name": "Zero Decibel",
+					"description": "In a cold and quiet world, even the slightest sound pierces through the silence.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_32_w"
 				}
 			}
 		],
@@ -15249,7 +15388,7 @@
 				"need": "umbrella_fire_plasm"
 			},
 			{
-				"description": "Increase the damage dealt by Dancing Flames and Soaring Strike by **50%**.\r\nThe multiplier for rapidly spinning parasols, Phoenix Sweep, and Fiery Crash is now Polyfeather Parasol plus **2**.",
+				"description": "Increase the damage dealt by Dancing Flames and Soaring Strike by **50%**.\r\n When calculating the effects of spinning parasols, Phoenix Sweep, and Fiery Crash add **2** to Polyfeather Paraso.",
 				"charge": 8,
 				"shatter": 14,
 				"multiplier": [
@@ -15429,6 +15568,14 @@
 					},
 					"weaponId": "umbrella_fire_fashion_imitationUI",
 					"id": "imitation_fashion_34"
+				},
+				"weapon": {
+					"name": "Akaba",
+					"description": "Vermilion Bird changes its appearance after sensing Zhuque's intent.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_lan1.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_34_w"
 				}
 			}
 		],
@@ -16672,6 +16819,14 @@
 					},
 					"weaponId": "Zeke_physic_fashion_UI",
 					"id": "imitation_fashion_50"
+				},
+				"weapon": {
+					"name": "Fading Shadows",
+					"description": "To protect his only family.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_mingjing01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_50_w"
 				}
 			}
 		],
@@ -17149,6 +17304,14 @@
 					},
 					"weaponId": "queen_superpower_fashion",
 					"id": "imitation_fashion_36"
+				},
+				"weapon": {
+					"name": "Astraluna",
+					"description": "The power of the stars and the moon gathers, condenses, and discharges here.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_feiouna01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_36_w"
 				}
 			}
 		],
