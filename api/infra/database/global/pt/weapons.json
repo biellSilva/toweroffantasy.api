@@ -1360,7 +1360,7 @@
 				"need": "cannon_ice_plasm"
 			},
 			{
-				"description": "Durante **10** segundos após trocar de arma, aumenta em **40%** o dano de ataques normais e o despedaçar. Tempo de recarga: **25** seg.",
+				"description": "Aumenta o dano de ataque normal e o despedaçar em **40%** durante **10** segundos ao trocar para esta arma. Tempo de recarga: **25** seg.",
 				"charge": 10,
 				"shatter": 16,
 				"multiplier": [
@@ -7266,7 +7266,7 @@
 				},
 				{
 					"name": "Dragão Vagante",
-					"description": "No ar, segure o botão de ataque normal do primeiro ao quarto ataque normal para acionar Dragão Vagante e consumir vigor.\r\nDesfere um ataque à frente, causando dano de <shuzhi>{0}%</> do ATQ +<shuzhi>{1}</> aos alvos próximos e os suspendendo.",
+					"description": "No ar, segure o botão de ataque normal do primeiro ao quarto ataque normal para acionar Dragão Vagante e consumir vigor.\r\nDesfere um ataque à frente, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e os suspendendo.",
 					"operations": [
 						"Jump",
 						"Attack",
@@ -7790,7 +7790,7 @@
 						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NYIN.webp",
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NYIN_lock.webp"
 					},
-					"weaponId": "umbrella_fire_fashion_imitationUI",
+					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_49"
 				}
 			}
@@ -7861,7 +7861,7 @@
 		"effects": [
 			{
 				"title": "**Fusão de massa e chama**:",
-				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ mínimo físico/ígneo equipado, a maior porcentagem de ATQ físico/ígneo equipada, o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea."
+				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ físico/ígneo mínimo equipado, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea."
 			},
 			{
 				"title": "**Ressonância ígnea**:",
@@ -7873,7 +7873,7 @@
 			},
 			{
 				"title": "**Poppa: Separação**:",
-				"description": "Após usar **Imagem Refletida**, causa dano equivalente a **87.5%** do ATQ ígneo + **12.5%** da vida máxima + **45%** da soma de todos os tipos de resistência do Errante + **168.8%** do crítico a cada segundo por **30** segundos. O dano de várias instâncias de separação não se acumula. O dano de Poppa conta como dano de habilidade. Se houver **1** arma gélida ou elétrica equipada, o dano de Poppa é multiplicado por **1.3**. Além disso, o dano de Poppa não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
+				"description": "Após usar **Imagem Refletida**, causa dano equivalente a **87.5%** do ATQ ígneo + **12.5%** da vida máxima do Errante + **45%** da soma de todos os tipos de resistência do Errante + **168.8%** do crítico por segundo durante **30** segundos. O dano de várias instâncias de separação não se acumula. O dano de Poppa conta como dano de habilidade. Se houver **1** arma gélida ou elétrica equipada, o dano de Poppa é multiplicado por **1.3**. Além disso, o dano de Poppa não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
 			}
 		],
 		"elementEffects": {
@@ -7882,7 +7882,7 @@
 		},
 		"advancements": [
 			{
-				"description": "**Fusão de massa e chama**: Quando a arma causa dano, o dano é calculado usando o maior ATQ mínimo físico/ígneo equipado, a maior porcentagem de ATQ físico/ígneo equipada, o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea.\r\n**Ressonância ígnea**: Aumenta o ATQ ígneo em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas ígneas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância ígnea ou reação ígnea, e a ressonância ígnea tem prioridade.\r\n**Ressonância física**: Aumenta o ATQ físico em **15%** e a resistência física em **25%**. Ativa-se ao equipar **2** ou mais armas físicas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância física ou reação física, e a ressonância física tem prioridade.\r\n**Poppa: Separação**: Após usar **Imagem Refletida**, causa dano equivalente a **87.5%** do ATQ ígneo + **12.5%** da vida máxima + **45%** da soma de todos os tipos de resistência do Errante + **168.8%** do crítico a cada segundo por **30** segundos. O dano de várias instâncias de separação não se acumula. O dano de Poppa conta como dano de habilidade. Se houver **1** arma gélida ou elétrica equipada, o dano de Poppa é multiplicado por **1.3**. Além disso, o dano de Poppa não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.",
+				"description": "**Fusão de massa e chama**: Quando a arma causa dano, o dano é calculado usando o maior ATQ físico/ígneo mínimo equipado, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea.\r\n**Ressonância ígnea**: Aumenta o ATQ ígneo em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas ígneas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância ígnea ou reação ígnea, e a ressonância ígnea tem prioridade.\r\n**Ressonância física**: Aumenta o ATQ físico em **15%** e a resistência física em **25%**. Ativa-se ao equipar **2** ou mais armas físicas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância física ou reação física, e a ressonância física tem prioridade.\r\n**Poppa: Separação**: Após usar **Imagem Refletida**, causa dano equivalente a **87.5%** do ATQ ígneo + **12.5%** da vida máxima do Errante + **45%** da soma de todos os tipos de resistência do Errante + **168.8%** do crítico por segundo durante **30** segundos. O dano de várias instâncias de separação não se acumula. O dano de Poppa conta como dano de habilidade. Se houver **1** arma gélida ou elétrica equipada, o dano de Poppa é multiplicado por **1.3**. Além disso, o dano de Poppa não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -7906,6 +7906,7 @@
 				"need": null
 			},
 			{
+				"description": "Enquanto **Poppa está Aqui** estiver ativa, Poppa dispara um **projétil de energia carregada II** a cada **7** tiros explosivos, causando dano de **590%** do ATQ aos alvos próximos e então se dividindo em diversas bombas altamente explosivas que causam dano de **660%** do ATQ aos alvos próximos.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -7953,7 +7954,7 @@
 				"need": "Paradox_fire_plasm"
 			},
 			{
-				"description": "Após o aparecimento de Poppa, aumenta o dano final em **12%** e o dano físico em **6%** durante **25** segundos.\r\nDepois que Poppa aparecer **5** vezes, o próximo uso de **Imagem Refletida** atualizará o tempo de recarga de Phantasia e a acionará imediatamente.",
+				"description": "Após o aparecimento de Poppa, aumenta o dano final em **12%** e o dano físico em **6%** durante **25** segundos.\r\nDepois que Poppa aparecer **5** vezes, o próximo uso de **Imagem Refletida** zera o tempo de recarga de Phantasia e a aciona imediatamente.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8025,7 +8026,7 @@
 				"need": "Paradox_fire_plasm"
 			},
 			{
-				"description": "O efeito de reflexo de dano do **espelho (alvo)** também pode afetar o alvo.\r\nA quantidade de dano refletido pelo **espelho (Errante)** aumenta para **30%** e a quantidade máxima de dano refletido aumenta para **800%** da sua vida máxima.\r\nAlém disso, toda vez que você sofre dano enquanto o **espelho (Errante)** estiver ativo, ele bloqueia mais o equivalente a **10%** da vida máxima de dano (o dano em excesso terá efeito normalmente, e fica indisponível na Liga do Apogeu). Esse efeito pode ser acionado **1** vez a cada **3** segundos. Quando Poppa aparece durante o tempo de recarga e admira o próprio reflexo no espelho, ela reduz o tempo de recarga dese efeito em **1** seg.",
+				"description": "O efeito de reflexo de dano do **espelho (alvo)** também pode afetar o alvo.\r\nA quantidade de dano refletido pelo **espelho (Errante)** aumenta para **30%**, e a quantidade máxima de dano refletido aumenta para **800%** da sua vida máxima.\r\nAlém disso, toda vez que você sofre dano enquanto o **espelho (Errante)** estiver ativo, ele bloqueia adicionalmente dano equivalente a **10%** da vida máxima (o dano em excesso terá efeito normalmente, e fica indisponível na Liga do Apogeu). Esse efeito pode ser acionado **1** vez a cada **3** segundos. Quando Poppa aparece durante o tempo de recarga e admira o próprio reflexo no espelho, ela reduz o tempo de recarga desse efeito em **1** segundo.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8086,7 +8087,7 @@
 				},
 				{
 					"name": "Protocolo de Disparo Rápido",
-					"description": "No ar, segure o botão de ataque normal do segundo ao quarto ataque normal para acionar Protocolo de Disparo Rápido e consumir vigor.\r\nDesfere um ataque à frente, causando dano de <shuzhi>{0}%</> do ATQ +<shuzhi>{1}</> aos alvos próximos e os suspendendo.",
+					"description": "No chão, segure o botão de ataque normal do segundo ao quarto ataque normal para acionar Protocolo de Disparo Rápido e consumir vigor.\r\nDesfere um ataque à frente, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e os suspendendo.",
 					"operations": [
 						"Attack",
 						"Hold Attack"
@@ -8099,7 +8100,7 @@
 				},
 				{
 					"name": "Protocolo de Energização",
-					"description": "No chão, segure o botão de ataque normal para acionar um ataque concentrado.\r\nDispara um tiro concentrado no alvo, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> a alvos próximos atingidos.",
+					"description": "No chão, segure o botão de ataque normal para acionar um ataque concentrado.\r\nDispara um tiro concentrado no alvo, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> a alvos próximos ao atingi-los.",
 					"operations": [
 						"Hold Attack"
 					],
@@ -8111,7 +8112,7 @@
 				},
 				{
 					"name": "Protocolo de Ataque Aéreo",
-					"description": "No ar, segure o botão de ataque normal do segundo ao quarto ataque normal para acionar um ataque encadeado aéreo e consumir vigor.\r\nDesfere um ataque à frente, causando dano de <shuzhi>{0}%</> do ATQ +<shuzhi>{1}</> aos alvos próximos e os suspendendo.",
+					"description": "No ar, segure o botão de ataque normal do segundo ao quarto ataque normal para acionar um ataque encadeado aéreo e consumir vigor.\r\nDesfere um ataque à frente, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e os suspendendo.",
 					"operations": [
 						"Jump",
 						"Attack",
@@ -8125,7 +8126,7 @@
 				},
 				{
 					"name": "Protocolo de Mergulho",
-					"description": "Segure o botão de esquiva enquanto estiver para acionar Protocolo de Mergulho, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> ao chegar no solo.",
+					"description": "Segure o botão de esquiva enquanto estiver no ar para acionar Protocolo de Mergulho. Ao aterrissar, causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.",
 					"operations": [
 						"Jump",
 						"Dash",
@@ -8139,7 +8140,7 @@
 				},
 				{
 					"name": "Cores Brilhantes",
-					"description": "Quando estiver no Mundo Geral, no solo ou no estado fora de combate, segure o botão de esquiva para posicionar fogos de artifício aleatoriamente, que explodirão pouco tempo depois.",
+					"description": "Quando estiver no Mundo Geral, no solo e no estado fora de combate, segure o botão de esquiva para posicionar fogos de artifício aleatoriamente, que explodirão pouco tempo depois.",
 					"operations": [],
 					"tags": [],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_beidong.webp",
@@ -8187,7 +8188,7 @@
 				},
 				{
 					"name": "Protocolo Aéreo",
-					"description": "Ataques de esquiva podem ser usados no ar.\r\nA cada <shuzhi>2</> ataques de esquiva com a <shuzhi>EP-7000 Firmachama</>, Poppa aparece e também usa um ataque de esquiva. Causa dano de <shuzhi>50% a 100%</> do dano causado pelo Errante, com base no humor de Poppa.\r\nA cada <shuzhi>2</> ataques de esquiva com a <shuzhi>EP-7000 Firmachama</> ou <shuzhi>1</> ataque de esquiva com a <shuzhi>EP-7000 Firmachama</> enquanto <shuzhi>Poppa está Aqui</> estiver ativa, o tempo de recarga de <shuzhi>Imagem Refletida</> é reduzido em <shuzhi>10</> segundos. Pode ser acionado apenas<shuzhi>uma</> vez por tempo de recarga da habilidade.",
+					"description": "Ataques de esquiva podem ser usados no ar.\r\nA cada <shuzhi>2</> ataques de esquiva com a <shuzhi>EP-7000 Firmachama</>, Poppa aparece e também usa um ataque de esquiva. Causa dano de <shuzhi>50% a 100%</> do dano causado pelo Errante, com base no humor de Poppa.\r\nA cada <shuzhi>2</> ataques de esquiva com a <shuzhi>EP-7000 Firmachama</> ou <shuzhi>1</> ataque de esquiva com a <shuzhi>EP-7000 Firmachama</> enquanto <shuzhi>Poppa está Aqui</> estiver ativa, o tempo de recarga de <shuzhi>Imagem Refletida</> é reduzido em <shuzhi>10</> segundos. Pode ser acionado apenas <shuzhi>uma</> vez por tempo de recarga da habilidade.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -8199,6 +8200,7 @@
 			"skill": [
 				{
 					"name": "Imagem Refletida",
+					"description": "Vagueia entre a mente e a realidade, criando <shuzhi>8</> muros espelhados do coração ao seu redor (eles contam como invocações) e causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> a alvos próximos. Após usar a habilidade, ativa Poppa está Aqui durante <shuzhi>15</> segundos, permitindo que voe e melhorando a velocidade de movimento e o salto. Os ataques normais passam a disparar tiros explosivos que causam dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> a alvos próximos ao atingir e consomem vigor. Quando um tiro explosivo atinge o solo, ele é transmitido para um muro espelhado do coração e disparado contra o alvo travado. Tempo de recarga: <shuzhi>30</> seg. Recebe <shuzhi>300</> cargas de arma imediatamente após o término natural de Poppa está Aqui.\r\nEnquanto Poppa está Aqui estiver ativa, aumenta o dano final de acordo com a distância vertical entre você e o alvo atingido em até <shuzhi>1%</>.\r\nQuando Poppa está Aqui não estiver ativa durante o combate, Poppa aparecerá a cada <shuzhi>8</> segundos para disparar um projétil de energia carregada I, causando dano de <shuzhi>590%</> do ATQ a alvos próximos.",
 					"tags": [
 						"Damage",
 						"Support"
@@ -8210,7 +8212,7 @@
 			"discharge": [
 				{
 					"name": "Protocolo de Extermínio",
-					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e ativa o feixe iônico satélite, que invoca um feixe iônico da estação espacial e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, inflige <shuzhi>dissolução de armadura</> nos alvos atingidos e recebe imunidade a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).\r\nApós atingir um inimigo com Protocolo de Extermínio, coloca <shuzhi>1</> espelho tanto no alvo travado quanto em você durante <shuzhi>45</> segundos.\r\nEspelho (alvo): O dano causado por você será refletido pelos espelhos para outros alvos com dano adicional de <shuzhi>15%</>.\r\nEspelho (Errante): Ignora <shuzhi>15%</> da resistência ígnea do alvo (a resistência total ignorada para cada elemento não pode exceder <shuzhi>50%</>). Reflete <shuzhi>20%</> de cada dano sofrido (limitado a <shuzhi>500%</> da sua vida máxima). Esse efeito pode ser acionado <shuzhi>1</> vez a cada <shuzhi>3</> segundos. Durante o tempo de recarga após o aparecimento de Poppa, ela irá admirar o próprio reflexo no espelho, reduzindo o tempo de recarga desse efeito em <shuzhi>1</> segundo.",
+					"description": "Quando a <red>carga da arma</> estiver completa ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e ativa o feixe iônico satélite, que invoca um feixe iônico da estação espacial e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, inflige <shuzhi>dissolução de armadura</> nos alvos atingidos e recebe imunidade a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).\r\nApós atingir um inimigo com Protocolo de Extermínio, coloca <shuzhi>1</> espelho tanto no alvo travado quanto em você durante <shuzhi>45</> segundos.\r\nEspelho (alvo): O dano causado por você será refletido pelos espelhos para outros alvos próximos com dano adicional de <shuzhi>15%</>.\r\nEspelho (Errante): Ignora <shuzhi>15%</> da resistência ígnea do alvo (a resistência total ignorada para cada elemento não pode exceder <shuzhi>50%</>). Reflete <shuzhi>20%</> de cada dano sofrido (limitado a <shuzhi>500%</> da sua vida máxima) ao atacante. Esse efeito pode ser acionado <shuzhi>1</> vez a cada <shuzhi>3</> segundos. Durante o tempo de recarga após o aparecimento de Poppa, ela irá admirar o próprio reflexo no espelho, reduzindo o tempo de recarga desse efeito em <shuzhi>1</> segundo.",
 					"tags": [
 						"Damage",
 						"Support"
@@ -8221,7 +8223,21 @@
 			]
 		},
 		"fashion": [
-			{}
+			{
+				"outfit": {
+					"name": "Sombra Infiltrante",
+					"description": "Oculta nas profundezas da escuridão, ela se infiltra perfeitamente, sem deixar rastros que não um ar de mistério.",
+					"rarity": 5,
+					"source": "Em eventos",
+					"simulacrumId": "imitation_53",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_PLD.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_PLD_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_53"
+				}
+			}
 		],
 		"version": "3.6",
 		"id": "paradox_fire"
@@ -8624,7 +8640,7 @@
 						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LHAN.webp",
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LHAN_Lock.webp"
 					},
-					"weaponId": "umbrella_fire_fashion_imitationUI",
+					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_43"
 				}
 			}
@@ -8991,7 +9007,7 @@
 			"discharge": [
 				{
 					"name": "Explosão de Raios de Partícula",
-					"description": "Quando a <red>carga da arma</> estiver completa ou <red>Phantasia for desencadeada</>, ao trocar para esta arma, <shuzhi>remove todos os efeitos negativos de você</> e ordena que Vênus dispare um raio em forma de cruz no chão ao trocar para esta arma, criando uma área instável e reduzindo a velocidade de movimento em <shuzhi>70%</> durante <shuzhi>5</> segundos. Após um pequeno atraso, libera uma explosão eletromagnética que causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nUsar um ataque de descarga irá gerar <shuzhi>1</> eletrodo na posição do alvo, que ataca uma vez a cada <shuzhi>1,5</> segundo. Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nO eletrodo ganha <shuzhi>100%</> dos seus atributos, não pode ser atacado e nem curado e perde <shuzhi>3%</> da vida máxima a cada segundo.\r\nApenas <shuzhi>1</> eletrodo pode existir por vez, e materializar um novo eletrodo substituirá o anterior.",
+					"description": "Quando a <red>carga da arma</> estiver completa ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e faz com que a Vênus dispare um raio em forma de cruz no chão, criando uma área instável e reduzindo a velocidade de movimento dos alvos em <shuzhi>70%</> durante <shuzhi>5</> segundos. Pouco depois, provoca uma explosão eletromagnética que causa dano de <shuzhi>{0}%</> do ATQ. Ao mesmo tempo, recebe corpo de aço e um escudo equivalente a 5% da vida máxima durante 3,5 segundos.\r\nUsar um ataque de descarga irá gerar <shuzhi>1</> eletrodo próximo ao alvo, que ataca a cada <shuzhi>1,5</> segundo. Causa dano de <shuzhi>{1}%</> do ATQ.\r\nO eletrodo recebe <shuzhi>100%</> dos seus atributos, pode ser atacado e curado e perde <shuzhi>3%</> da vida máxima a cada segundo.\r\nApenas <shuzhi>1</> eletrodo pode existir por vez, e materializar um novo eletrodo substitui o anterior. O efeito de carga não se aplica quando o eletrodo causa dano.",
 					"tags": [
 						"Damage"
 					],
@@ -9473,7 +9489,7 @@
 				"need": null
 			},
 			{
-				"description": "Esbrasear aumenta o dano de Ataque do Faísca em **0%**. O tempo de recarga da habilidade diminui para **24** segundos.",
+				"description": "Esbrasear aumenta o dano de Ataque do Faísca em **0%**. O tempo de recarga da habilidade diminui para **35** segundos.",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9593,7 +9609,7 @@
 				"need": "funnel_fire_plasm"
 			},
 			{
-				"description": "Esbrasear reforça o dano de Ataque do Faísca para **0%** e dobra a eficiência de aquisição de calor. O tempo de recarga da habilidade diminui para **16** segundos.",
+				"description": "Esbrasear aumenta o reforço de dano de Ataque do Faísca para **0%**. O tempo de recarga da habilidade diminui para **30** segundos.",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -12201,7 +12217,7 @@
 		"effects": [
 			{
 				"title": "**Fusão de massa e chama**:",
-				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ mínimo físico/ígneo da arma equipada, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea."
+				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ físico/ígneo mínimo da arma equipada, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea."
 			},
 			{
 				"title": "**Ressonância física**:",
@@ -12213,7 +12229,7 @@
 			},
 			{
 				"title": "**Adagas voadoras: Em campo**:",
-				"description": "Ao atingir qualquer alvo com **Equilibrium**, causa dano equivalente a **164%** do ATQ físico + **2.3%** da vida máxima do Errante + **85%** da soma de todos os tipos de resistência do Errante + **312%** do crítico aos alvos próximos. Pode ser acionado até 1 vez a cada **1,5** segundo. O dano de adagas voadoras conta como dano de ataque normal. Se houver **1** arma gélida ou elétrica equipada, o dano de adagas voadoras é multiplicado por **1.3**. Além disso, o dano de adagas voadoras não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
+				"description": "Ao atingir qualquer alvo com **Equilibrium**, causa dano equivalente a **164%** do ATQ físico + **2.3%** da vida máxima do Errante + **85%** da soma de todas as resistências do Errante + **312%** do crítico aos alvos próximos. Pode ser acionado até 1 vez a cada **1,5** segundo. O dano de adagas voadoras conta como dano de ataque normal. Se houver **1** arma gélida ou elétrica equipada, o dano de adagas voadoras é multiplicado por **1.3**. Além disso, o dano de adagas voadoras não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
 			}
 		],
 		"elementEffects": {
@@ -12222,7 +12238,7 @@
 		},
 		"advancements": [
 			{
-				"description": "**Fusão de massa e chama**: Quando a arma causa dano, o dano é calculado usando o maior ATQ mínimo físico/ígneo da arma equipada, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea.\r\n**Ressonância física**: Aumenta o ATQ físico em **15%** e a resistência física em **25%**. Ativa-se ao equipar **2** ou mais armas físicas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância física ou reação física, e a ressonância física tem prioridade.\r\n**Ressonância ígnea**: Aumenta o ATQ ígneo em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas ígneas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância ígnea ou reação ígnea, e a ressonância ígnea tem prioridade.\r\n**Adagas voadoras: Em campo**: Ao atingir qualquer alvo com **Equilibrium**, causa dano equivalente a **164%** do ATQ físico + **2.3%** da vida máxima do Errante + **85%** da soma de todos os tipos de resistência do Errante + **312%** do crítico aos alvos próximos. Pode ser acionado até 1 vez a cada **1,5** segundo. O dano de adagas voadoras conta como dano de ataque normal. Se houver **1** arma gélida ou elétrica equipada, o dano de adagas voadoras é multiplicado por **1.3**. Além disso, o dano de adagas voadoras não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.",
+				"description": "**Fusão de massa e chama**: Quando a arma causa dano, o dano é calculado usando o maior ATQ físico/ígneo mínimo da arma equipada, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea.\r\n**Ressonância física**: Aumenta o ATQ físico em **15%** e a resistência física em **25%**. Ativa-se ao equipar **2** ou mais armas físicas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância física ou reação física, e a ressonância física tem prioridade.\r\n**Ressonância ígnea**: Aumenta o ATQ ígneo em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas ígneas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância ígnea ou reação ígnea, e a ressonância ígnea tem prioridade.\r\n**Adagas voadoras: Em campo**: Ao atingir qualquer alvo com **Equilibrium**, causa dano equivalente a **164%** do ATQ físico + **2.3%** da vida máxima do Errante + **85%** da soma de todas as resistências do Errante + **312%** do crítico aos alvos próximos. Pode ser acionado até 1 vez a cada **1,5** segundo. O dano de adagas voadoras conta como dano de ataque normal. Se houver **1** arma gélida ou elétrica equipada, o dano de adagas voadoras é multiplicado por **1.3**. Além disso, o dano de adagas voadoras não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.",
 				"charge": 12,
 				"shatter": 16,
 				"multiplier": [
@@ -12772,7 +12788,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "Durante amplificação Pact, aumenta os reforços de dano gélido e elétrico em **10%**. Auréola de Metz aumenta o dano final dos colegas próximos em **20%** e o despedaçar em **25%**. Esse efeito não se acumula.",
+				"description": "Durante amplificação Pact, aumenta o efeito dos reforços de dano gélido e elétrico em **10%** e **4%** respectivamente. Auréola de Metz aumenta o dano final dos colegas próximos em **20%** e o despedaçar em **25%**. Esse efeito não se acumula.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -12914,7 +12930,7 @@
 			"skill": [
 				{
 					"name": "Onda de Choque Mega-Metz",
-					"description": "メイツ☆メガトンウェーブの発動に成功すると、自身は<shuzhi>30</>秒間、契約パワーアップ状態に入る。この状態下で<shuzhi>プロミスパクトメイツ</>がフロントにある時、自身の雷ダメージ+<shuzhi>30%</>。<shuzhi>プロミスパクトメイツ</>がバックグラウンドにある時、自身の氷ダメージ+<shuzhi>10%</>。クールダウン<shuzhi>30</>秒。\r\n\r\n<shuzhi>恩恵共鳴以外</>の発動中：\r\n付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、同時に命中したターゲットを<shuzhi>高圧貫通</>状態にする。メイツ☆メガトンウェーブのクールダウン中、かつ契約パワーアップ状態時に自身の最高攻撃力×<shuzhi>100</>倍の累計ダメージを与えるたび、メイツ☆エナジーウェーブの使用回数を<shuzhi>1</>獲得する。メイツ☆エナジーウェーブは付近のターゲットに攻撃力×<shuzhi>1800%</>のダメージを与える。またメイツ☆エナジーウェーブの使用回数は<shuzhi>10</>秒ごとに最大<shuzhi>1</>回獲得可能。\r\n契約パワーアップ状態のときに再びメイツ☆メガトンウェーブを発動すると、契約パワーアップの持続時間と累計ダメージがリセットされる。\r\n契約パワーアップ状態が時間経過などで自然に解除されたとき、未使用分のメイツ☆エナジーウェーブを精算し、付近のターゲットに攻撃力×<shuzhi>1200%</>×未使用分のダメージを与える。\r\n\r\n<shuzhi>恩恵共鳴</>の発動中：\r\nスキル発動で攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与え、同時に命中したターゲットを<shuzhi>高圧貫通</>状態にする。自身と付近の仲間のHPを自身の攻撃力×<shuzhi>400%</>回復し、親友の場合は追加で最大HP×<shuzhi>10%</>を回復する。さらに自身と付近の仲間のステータス異常と行動制限を解除し(グレイバイト効果を含む)、<shuzhi>10</>秒間、自身と付近の仲間のステータス異常と行動制限を無効化する。クールダウン<shuzhi>15</>秒。",
+					"description": "Após usar Onda de Choque Mega-Metz, você entra em amplificação Pact durante <shuzhi>30</> segundos. Quando <shuzhi>Metz ☆ Pactalha</> está no espaço principal, aumenta o dano elétrico em <shuzhi>25%</>. Quando <shuzhi>Metz ☆ Pactalha</> está no espaço secundário, aumenta o dano gélido em <shuzhi>10%</>. Tempo de recarga: <shuzhi>30</> seg. \r\n\r\nCom <shuzhi>ressonância diferente de bendição</>:\r\nCausa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e aplica <shuzhi>impacto de força</> neles. Quando Onda de Choque Mega-Metz está em recarga, causar dano acumulado equivalente a <shuzhi>100</> vezes o ATQ durante amplificação Pact confere <shuzhi>1</> uso de onda de energia de Metz a cada vez. Onda de energia de Metz: Causa dano de <shuzhi>1.800%</> do ATQ aos alvos próximos. Recebe <shuzhi>1</> uso a cada <shuzhi>10</> segundos.\r\nUsar Onda de Choque Mega-Metz novamente durante a amplificação de Pact redefine a duração e o dano acumulado dela.\r\nQuando amplificação Pact termina, as onda de energia de Metz não utilizadas se acumulam e causam dano equivalente ao número de cargas não utilizadas × <shuzhi>1.200%</> do ATQ.\r\n\r\nCom <shuzhi>ressonância de bendição</>:\r\nUsar habilidades causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> e aplica <shuzhi>impacto de força</> nos alvos atingidos. Restaura vida equivalente a <shuzhi>400%</> do ATQ para você e os colegas próximos e restaura mais <shuzhi>10%</> da vida máxima da \"amizade\". Remove todos os efeitos negativos e de controle de você e dos seus colegas próximos e confere imunidade a efeitos negativos e de controle durante <shuzhi>10</> segundos (incluindo mordida cinzenta). Tempo de recarga: <shuzhi>15</> seg.",
 					"tags": [
 						"Damage"
 					],
@@ -12925,6 +12941,7 @@
 			"discharge": [
 				{
 					"name": "Reino Sinfônico Singular",
+					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e invoca Reino Sinfônico Singular, causando dano equivalente a <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> a alvos próximos. Neste período, a imunidade a dano dura <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).\r\n\r\nCom <shuzhi>ressonância de bendição</>:\r\nRemove todos os efeitos negativos e de controle de você e dos seus colegas próximos (incluindo mordida cinzenta), confere imunidade a efeitos negativos e de controle durante <shuzhi>10</> segundos. O Reino Sinfônico Singular transforma em Metz os alvos próximos e os Errantes fora da equipe que forem atingidos (ineficaz contra chefes e indisponível na Liga do Apogeu) durante <shuzhi>4</> segundos. Cada alvo pode ser transformado até <shuzhi>1</> vez a cada <shuzhi>30</> segundos.",
 					"tags": [
 						"Damage",
 						"Control"
@@ -14177,7 +14194,7 @@
 						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_WUMI.webp",
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_WUMI_Lock.webp"
 					},
-					"weaponId": "Snipe_fire_fashion_ImitationUI",
+					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_31"
 				}
 			}
@@ -15235,7 +15252,7 @@
 				"need": "umbrella_fire_plasm"
 			},
 			{
-				"description": "Aumenta o dano causado por Chamas Dançantes e Golpe Ascendente em **50%**.\r\nO multiplicador para sombrinhas giratórias velozes, Furacão da Fênix e colisão flamejante passa a ser as sombrinhas de penas + **2**.",
+				"description": "Aumenta o dano causado por Chamas Dançantes e Golpe Ascendente em **50%**.\r\nAo calcular os efeitos das sombrinhas giratórias, de Furacão da Fênix e de Colisão Flamejante, aumenta em **2** as sombrinhas de penas.",
 				"charge": 8,
 				"shatter": 14,
 				"multiplier": [

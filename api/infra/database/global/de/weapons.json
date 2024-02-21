@@ -1360,7 +1360,7 @@
 				"need": "cannon_ice_plasm"
 			},
 			{
-				"description": "Erhöht beim Wechsel zu dieser Waffe innerhalb von **10** Sek. den Schaden von normalen Angriffen sowie von „Zertrümmern“ um **60%**. Abklingzeit: **25** Sek.",
+				"description": "Erhöht beim Wechsel zu dieser Waffe den Schaden normaler Angriffe und Zertrümmern für **10**Sek. um **40%**. Abklingzeit: **25**Sek.",
 				"charge": 10,
 				"shatter": 16,
 				"multiplier": [
@@ -5162,6 +5162,14 @@
 					},
 					"weaponId": "gun_fire_Fashion",
 					"id": "imitation_fashion_10"
+				},
+				"weapon": {
+					"name": "Silberner Flammenrevolver",
+					"description": "Es wäre toll, wenn die Flamme allerlei Farben annehmen könnte, aber momentan gibt es noch zu viele technische Probleme zu überwinden.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_10_w"
 				}
 			}
 		],
@@ -7355,6 +7363,14 @@
 					},
 					"weaponId": "mimi_thunder_fashion_UI",
 					"id": "imitation_fashion_41"
+				},
+				"weapon": {
+					"name": "Goldwolke",
+					"description": "Glücksverheißende Wolken erstrecken sich über den Himmel und färben ihn golden.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_huang.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_41_w"
 				}
 			}
 		],
@@ -7790,8 +7806,16 @@
 						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NYIN.webp",
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NYIN_lock.webp"
 					},
-					"weaponId": "umbrella_fire_fashion_imitationUI",
+					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_49"
+				},
+				"weapon": {
+					"name": "Diaflöte",
+					"description": "Ein geschätztes Geschenk eines alten Freundes – mit Meisterhand hergestellt. Sie ist bekannt für ihre ätherischen und klaren Töne. „Diese geliebte Melodie spiele ich nur für dich!“",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nanyin_w.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_49_w"
 				}
 			}
 		],
@@ -7861,7 +7885,7 @@
 		"effects": [
 			{
 				"title": "**Flammen- und Massefusion**:",
-				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Flammen-/physischen Basis-ANG, des höchsten ausgerüsteten Flammen-/ physischenANG-Prozentwerts und des höchsten ausgerüsteten Flammen-/physischen Schadensbonus berechnet, und die Waffe gilt sowohl als Flammen- als auch als physische Waffe."
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Flammen-/physischen Basis-ANG, des höchsten ausgerüsteten Flammen-/physischen ANG-Prozentwerts und des höchsten ausgerüsteten Flammen-/physischen Schadensbonus berechnet, und die Waffe gilt sowohl als Flammen- als auch als physische Waffe."
 			},
 			{
 				"title": "**Flammenresonanz**:",
@@ -7873,7 +7897,7 @@
 			},
 			{
 				"title": "**Poppa: Distanzierung**:",
-				"description": "Nach der Verwendung von **Spiegelung** wird für **30**Sek. jede Sek. Schaden in Höhe von **87.5%** des Flammen-ANG + **12.5%** der max. LP + **45%** der Summe aller Widerstandsarten des Wanderers + **168.8%** des krit. Schadens verursacht. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt. Schaden von Poppa zählt als Fähigkeitsschaden. Wenn **1** beliebige Volt- oder Frostwaffe ausgerüstet ist, wird der Schaden von Poppa mit **1.3** multipliziert. Außerdem wird der Schaden von Poppa nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+				"description": "Fügt dem Ziel nach der Verwendung von **Spiegelung** für **30**Sek. jede Sek. Schaden in Höhe von **87.5%** des Flammen-ANG + **12.5%** der max. LP des Wanderers + **45%** der Summe aller Widerstandsarten des Wanderers + **168.8%** des krit. Schadens zu. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt. Schaden von Poppa zählt als Fähigkeitsschaden. Wenn **1** beliebige Volt- oder Frostwaffe ausgerüstet ist, wird der Schaden von Poppa mit **1.3** multipliziert. Außerdem wird der Schaden von Poppa nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
 			}
 		],
 		"elementEffects": {
@@ -7882,7 +7906,7 @@
 		},
 		"advancements": [
 			{
-				"description": "**Flammen- und Massefusion**: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Flammen-/physischen Basis-ANG, des höchsten ausgerüsteten Flammen-/ physischenANG-Prozentwerts und des höchsten ausgerüsteten Flammen-/physischen Schadensbonus berechnet, und die Waffe gilt sowohl als Flammen- als auch als physische Waffe.\r\n**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.\r\n**Poppa: Distanzierung**: Nach der Verwendung von **Spiegelung** wird für **30**Sek. jede Sek. Schaden in Höhe von **87.5%** des Flammen-ANG + **12.5%** der max. LP + **45%** der Summe aller Widerstandsarten des Wanderers + **168.8%** des krit. Schadens verursacht. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt. Schaden von Poppa zählt als Fähigkeitsschaden. Wenn **1** beliebige Volt- oder Frostwaffe ausgerüstet ist, wird der Schaden von Poppa mit **1.3** multipliziert. Außerdem wird der Schaden von Poppa nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+				"description": "**Flammen- und Massefusion**: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Flammen-/physischen Basis-ANG, des höchsten ausgerüsteten Flammen-/physischen ANG-Prozentwerts und des höchsten ausgerüsteten Flammen-/physischen Schadensbonus berechnet, und die Waffe gilt sowohl als Flammen- als auch als physische Waffe.\r\n**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.\r\n**Poppa: Distanzierung**: Fügt dem Ziel nach der Verwendung von **Spiegelung** für **30**Sek. jede Sek. Schaden in Höhe von **87.5%** des Flammen-ANG + **12.5%** der max. LP des Wanderers + **45%** der Summe aller Widerstandsarten des Wanderers + **168.8%** des krit. Schadens zu. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt. Schaden von Poppa zählt als Fähigkeitsschaden. Wenn **1** beliebige Volt- oder Frostwaffe ausgerüstet ist, wird der Schaden von Poppa mit **1.3** multipliziert. Außerdem wird der Schaden von Poppa nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -7906,6 +7930,7 @@
 				"need": null
 			},
 			{
+				"description": "Während **Poppa ist da** aktiv ist, feuert Poppa nach jeweils **7** abgefeuerten explosiven Schüssen ein **Schwerenergiegeschoss II** ab. Fügt Zielen in der Nähe Schaden in Höhe von **590%** des ANG zu und teilt sich in mehrere hochexplosive Sprengkörper auf, die Zielen in der Nähe Schaden in Höhe von **660%** des ANG zufügen.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8086,7 +8111,7 @@
 				},
 				{
 					"name": "Schnellfeuerprotokoll",
-					"description": "Tippe und halte in der Luft den normalen Angriff während des ersten bis vierten normalen Angriffs, um „Schnellfeuerprotokoll“ auszulösen und Ausdauer zu verbrauchen.\r\nFührt einen Angriff nach vorn aus, fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und lässt sie schweben.",
+					"description": "Tippe und halte auf dem Boden den normalen Angriff während des zweiten bis vierten normalen Angriffs, um „Schnellfeuerprotokoll“ auszulösen und Ausdauer zu verbrauchen.\r\nFührt einen Angriff nach vorn aus, fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und lässt sie schweben.",
 					"operations": [
 						"Attack",
 						"Hold Attack"
@@ -8139,7 +8164,7 @@
 				},
 				{
 					"name": "Kräftige Farben",
-					"description": "Halte in der Oberwelt, auf dem Boden oder außerhalb des Kampfes „Ausweichen“, um Feuerwerk eines zufälligen Stils zu platzieren und nach kurzer Verzögerung explodieren zu lassen.",
+					"description": "Halte in der Oberwelt, auf dem Boden und außerhalb des Kampfes „Ausweichen“, um Feuerwerk eines zufälligen Stils zu platzieren und nach kurzer Verzögerung explodieren zu lassen.",
 					"operations": [],
 					"tags": [],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_paradox_beidong.webp",
@@ -8187,7 +8212,7 @@
 				},
 				{
 					"name": "Luftprotokoll",
-					"description": "Ausweichangriffe können in der Luft durchgeführt werden.\r\nAlle <shuzhi>2</> Ausweichangriffe mit <shuzhi>EP-7000-Himmelsfeuer</> erscheint Poppa und führt auch einen Ausweichangriff durch, der je nach Poppas Laune Schaden in Höhe von <shuzhi>50% bis 100%</> des vom Wanderer zugefügten Schaden zufügt.\r\nAlle <shuzhi>2</> Ausweichangriffe durch <shuzhi>EP-7000-Himmelsfeuer</> oder nach <shuzhi>1</> Ausweichangriff durch <shuzhi>EP-7000-Himmelsfeuer</> während <shuzhi>Poppa ist da</> aktiv ist, wird die Abklingzeit von <shuzhi>Spiegelung</> um <shuzhi>10</> Sek. verringert. Kann nur <shuzhi>1</>-mal pro Abklingzeit der Fähigkeit ausgelöst werden.",
+					"description": "Ausweichangriffe können in der Luft durchgeführt werden.\r\nAlle <shuzhi>2</> Ausweichangriffe mit <shuzhi>EP-7000-Himmelsfeuer</> erscheint Poppa und führt auch einen Ausweichangriff durch, der je nach Poppa Laune Schaden in Höhe von <shuzhi>50% bis 100%</> des vom Wanderer zugefügten Schadens zufügt.\r\nAlle <shuzhi>2</> Ausweichangriffe mit <shuzhi>EP-7000-Himmelsfeuer</> oder nach <shuzhi>1</> Ausweichangriff mit <shuzhi>EP-7000-Himmelsfeuer</> während <shuzhi>Poppa ist da</> aktiv ist, wird die Abklingzeit von <shuzhi>Spiegelung</> um <shuzhi>10</> Sek. verringert. Kann nur <shuzhi>1</>-mal pro Abklingzeit von Spiegelung ausgelöst werden.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -8199,6 +8224,7 @@
 			"skill": [
 				{
 					"name": "Spiegelung",
+					"description": "Schwankt zwischen Geist und Realität, was <shuzhi>8</> Herzspiegelwände um den Wanderer (diese zählen als Herbeirufung) erzeugt und Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Nach Verwendung der Fähigkeit wird „Poppa ist da“ für <shuzhi>15</> Sek. aktiviert, was die Fähigkeit zu fliegen sowie verbesserte Bewegungsgeschwindigkeit und Sprungfähigkeit gewährt. Normale Angriffe feuern nun explosive Schüsse ab, die getroffenen Zielen in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zufügen und Ausdauer verbrauchen. Wenn ein explosiver Schuss den Boden trifft, wird er durch eine Herzspiegelwand übermittelt und auf das anvisierte Ziel abgefeuert. Abklingzeit: <shuzhi>30</> Sek. Gewährt sofort, nachdem „Poppa ist da“ von selbst endet, <shuzhi>300</> Waffenladung.\r\nErhöht während „Poppa ist da“ den Endschaden je nach Höhenunterschied zwischen dem Wanderer und dem getroffenen Ziel, um bis zu <shuzhi>1%</>.\r\nWenn im Kampf „Poppa ist da“ nicht aktiv ist, erscheint alle <shuzhi>8</> Sek. Poppa und feuert ein Schwerenergiegeschoss I ab, was Zielen in der Nähe Schaden in Höhe von <shuzhi>590%</> des ANG zufügt.",
 					"tags": [
 						"Damage",
 						"Support"
@@ -8210,6 +8236,7 @@
 			"discharge": [
 				{
 					"name": "Auslöschungsprotokoll",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und ein Satelliten-Ionenstrahl ausgelöst, was einen Ionenstrahl von der Raumstation herbeiruft und Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Gleichzeitig erhält der Wanderer <shuzhi>1,5</> Sek. lang Schadensimmunität (nicht in der Apex-Liga verfügbar) und getroffene Ziele erleiden <shuzhi>Rüstungsauflösung</>.\r\nNach einem Treffer mit „Auslöschungsprotokoll“ werden das anvisierte Ziel und der Wanderer für <shuzhi>45</> Sek. mit bis zu <shuzhi>1</> Spiegel belegt.\r\nSpiegel (Ziel): Schaden in Höhe von zusätzlich <shuzhi>15%</> des vom Wanderer zugefügten Schadens wird durch Spiegel auf andere Ziele in der Nähe reflektiert.\r\nSpiegel (Wanderer): Ignoriert <shuzhi>15%</> des Flammenwiderstands des Ziels (der insgesamt ignorierte Widerstand jedes Elements kann <shuzhi>50%</> nicht übersteigen). Wenn der Wanderer Schaden erleidet, werden <shuzhi>20%</> des erlittenen Schadens zurückgeworfen (maximal <shuzhi>500%</> der max. LP des Wanderers). Dieser Effekt kann bis zu <shuzhi>1</>-mal alle <shuzhi>3</> Sek. ausgelöst werden. Nachdem Poppa erschienen ist, bewundert sie sich während der Abklingzeit im Spiegel und verringert die Abklingzeit dieses Effekts um <shuzhi>1</> Sek.",
 					"tags": [
 						"Damage",
 						"Support"
@@ -8220,7 +8247,29 @@
 			]
 		},
 		"fashion": [
-			{}
+			{
+				"outfit": {
+					"name": "Eindringender Schatten",
+					"description": "Tief verborgen in den Abgründen der Dunkelheit nistet er sich unerkannt ein und hinterlässt nichts als einen Hauch von Mystik.",
+					"rarity": 5,
+					"source": "Aus Events",
+					"simulacrumId": "imitation_53",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_PLD.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_PLD_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_53"
+				},
+				"weapon": {
+					"name": "CP-3000-Terrafeuer",
+					"description": "Wutentbranntem Höllenfeuer gleich legt der entfesselte Schatten jedes Bollwerk in Schutt und Asche.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/weapon_paradox.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_53_w"
+				}
+			}
 		],
 		"version": "3.6",
 		"id": "paradox_fire"
@@ -8623,8 +8672,16 @@
 						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LHAN.webp",
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LHAN_Lock.webp"
 					},
-					"weaponId": "umbrella_fire_fashion_imitationUI",
+					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_43"
+				},
+				"weapon": {
+					"name": "Blumenschwall",
+					"description": "Auf den Wellen, wo Schneeflocken tanzen.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_linghan01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_43_w"
 				}
 			}
 		],
@@ -8990,7 +9047,7 @@
 			"discharge": [
 				{
 					"name": "Teilchenstrahl-Explosion",
-					"description": "Wenn die <red>Waffenladung</> voll ist oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>. Venus feuert einen kreuzförmigen Strahl auf den Boden und erzeugt dort ein instabiles Feld, das Ziele für <shuzhi>5</> Sek. um <shuzhi>70%</> verlangsamt. Kurz darauf verursacht eine elektromagnetische Explosion Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nEntladungsangriffe erzeugen beim Gegner <shuzhi>1</> Elektrode, die einmal alle <shuzhi>1,5</> Sek. angreift und Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursacht.\r\nDie Elektrode erhält <shuzhi>100%</> der Werte des Wanderers, kann angegriffen und geheilt werden und verliert pro Sekunde <shuzhi>3%</> ihrer max. LP.\r\nEs kann immer nur jeweils <shuzhi>1</> Elektrode aktiv sein und neu herbeigerufene Elektroden ersetzen ihre Vorgänger.",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>. Venus feuert einen kreuzförmigen Strahl auf den Boden und erzeugt dort ein instabiles Feld, das Ziele für <shuzhi>5</> Sek. um <shuzhi>70%</> verlangsamt. Kurz darauf verursacht eine elektromagnetische Explosion Schaden in Höhe von <shuzhi>{0}%</> des ANG. Gewährt währenddessen für 3,5 Sek. „Hyperkörper“ und einen Schild in Höhe von 5% der max. LP.\r\nEntladungsangriffe erzeugen an der Position des Ziels <shuzhi>1</> Elektrode, die alle <shuzhi>1,5</> Sek. angreift und Schaden in Höhe von <shuzhi>{1}%</> des ANG verursacht.\r\nDie Elektrode erhält <shuzhi>100%</> der Werte des Wanderers, kann angegriffen und geheilt werden und verliert pro Sekunde <shuzhi>3%</> ihrer max. LP.\r\nEs kann immer nur jeweils <shuzhi>1</> Elektrode aktiv sein und neu herbeigerufene Elektroden ersetzen ihre Vorgänger. Der Ladeeffekt tritt nicht ein, wenn die Elektrode Schaden verursacht.",
 					"tags": [
 						"Damage"
 					],
@@ -9013,6 +9070,14 @@
 					},
 					"weaponId": "Suspension_thunder_Fashion",
 					"id": "imitation_fashion_17"
+				},
+				"weapon": {
+					"name": "Weißer Zwerg",
+					"description": "Jeder noch so kleine Stern strahlt unermessliche Energie aus.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_SL_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_17_w"
 				}
 			}
 		],
@@ -9472,7 +9537,7 @@
 				"need": null
 			},
 			{
-				"description": "„Lodern“ erhöht den Schaden von „Spark-Angriff“ um **0%**. Die Fähigkeits-Abklingzeit wird auf **24**Sek. verringert.",
+				"description": "„Lodern“ erhöht den Schaden von „Spark-Angriff“ um **0%**. Die Fähigkeits-Abklingzeit wird auf **35**Sek. verringert.",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9592,7 +9657,7 @@
 				"need": "funnel_fire_plasm"
 			},
 			{
-				"description": "„Lodern“ erhöht den Schaden von Spark-Angriff um **0%** und die Effizienz bei der Hitzegewinnung wird verdoppelt. Die Fähigkeits-Abklingzeit wird auf **16** Sek. verringert.",
+				"description": "„Lodern“ erhöht den Schadensbonus von „Spark-Angriff“ um **0%**. Die Fähigkeits-Abklingzeit wird auf **30**Sek. verringert.",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9755,6 +9820,14 @@
 					},
 					"weaponId": "funnel_fire_Fashion",
 					"id": "imitation_fashion_21"
+				},
+				"weapon": {
+					"name": "Fallende Flammen",
+					"description": "Eine magische Schöpfung aus dem Bilderbuch „Blutrote Geschichte“. Sie enthält mysteriöse Energie und ist auch der beste Freund von Rotkäppchen.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LB_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_21_w"
 				}
 			}
 		],
@@ -10146,6 +10219,14 @@
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_BPX_Lock.webp"
 					},
 					"weaponId": "Dkatana_ice_Fashion_ImitationUI",
+					"id": "imitation_fashion_22"
+				},
+				"weapon": {
+					"name": "Ultimatives Reinweiß",
+					"description": "„Ultimative Gerechtigkeit! Ultimative Tapferkeit! Die Ultimativen Kriegerinnen, die der Nachtstadt ultimativen Schutz gewähren! Elegant, unfehlbar, mächtig! Super-duper ultimativ!“",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_bupoxiao.webp",
+					"type": "CONSUMABLE",
 					"id": "imitation_fashion_22"
 				}
 			}
@@ -10539,6 +10620,14 @@
 					},
 					"weaponId": "fan_fashion_imitation23_UIshow",
 					"id": "imitation_fashion_23"
+				},
+				"weapon": {
+					"name": "Nebliges Gewebe",
+					"description": "Der Wind, der von diesem Ventilator geblasen wird, scheint kühler zu sein als vorher … Vielleicht sind es aber auch nur die visuellen Effekte, die ihn so erscheinen lassen?",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LY_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_23_w"
 				}
 			},
 			{
@@ -10554,6 +10643,14 @@
 					},
 					"weaponId": "fan_fashion_imitation23_UIshow2",
 					"id": "imitation_fashion_23_2"
+				},
+				"weapon": {
+					"name": "Korallengeflecht",
+					"description": "Selbst auf dem Meeresgrund scheint das Korallengeflecht der Strömung zu widerstehen und eine sanfte Brise auszustrahlen. Auch wenn es in der Dunkelheit nicht mehr so leicht zu verbergen ist wie früher, so ist seine Erscheinung jetzt doch viel beeindruckender.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LY_weapon_2.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_23_w_2"
 				}
 			}
 		],
@@ -11728,6 +11825,14 @@
 					},
 					"weaponId": "Rubilia_thunder_fashion",
 					"id": "imitation_fashion_48"
+				},
+				"weapon": {
+					"name": "Schwanenlied",
+					"description": "Ein Abschiedsgruß von ihr.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_LBLY_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_48_w"
 				}
 			}
 		],
@@ -12131,6 +12236,14 @@
 					},
 					"weaponId": "iceblade_ice_Fashion",
 					"id": "imitation_fashion_30"
+				},
+				"weapon": {
+					"name": "Platinflügel",
+					"description": "Unnachgiebiger Flügel wird in die Platinrüstungsform umgewandelt, damit Alyss noch mächtiger wird.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_ALS_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_30_w"
 				}
 			}
 		],
@@ -12651,7 +12764,7 @@
 				"need": null
 			},
 			{
-				"description": "Jeder Treffer mit **Rosa Kettenrausch** oder **Koordinierter Metz-Nebenhand-Angriff** stellt LP in Höhe von **12%** des ANG wieder her. Im Teamspiel stellt jeder Treffer LP in Höhe von **18%** wieder her.\r\nWenn ein BFF Schaden erleidet, der seine LP unter **25%** der max. LP senkt, werden zusätzlich LP in Höhe von **30%** seiner max. LP wiederhergestellt und ihm für **3**Sek. Schadensimmunität gewährt. Wenn der Schaden tödlich ist, wird der tödliche Schaden zusätzlich einmalig verhindert. Kann bis zu **1**-mal alle **60**Sek. ausgelöst werden.",
+				"description": "Jeder Treffer mit **Rosa Kettenrausch** oder **Koordinierter Metz-Nebenhand-Angriff** stellt LP in Höhe von **12%** des ANG wieder her. Im Teamspiel stellt jeder Treffer LP in Höhe von **18%** wieder her.\r\nWenn ein BFF Schaden erleidet, der seine LP unter **25%** der max. LP senkt, werden zusätzlich LP in Höhe von **30%** seiner max. LP wiederhergestellt und ihm für **3**Sek. Schadensimmunität gewährt. Wenn der Schaden tödlich ist, wird der tödliche Effekt zusätzlich 1-mal verhindert. Kann bis zu **1**-mal alle **60**Sek. ausgelöst werden.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -12699,7 +12812,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "Wenn **eine Resonanz (mit Ausnahme von Segnungsresonanz) aktiv ist**, kann **Metz-Energiewelle** **2**-mal zusätzlich eingesetzt werden und der Volt- und Frostschaden an Bossen wird um **10%** erhöht.\r\nWenn **Segnungsresonanz** aktiv ist, kann **Millionen-Metz-Schockwelle** **1**-mal zusätzlich eingesetzt werden und die LP des BFF werden jetzt in Höhe von **15%** seiner max. LP wiederhergestellt.",
+				"description": "Wenn **Resonanzen (mit Ausnahme von Segnungsresonanz) aktiv sind**, kann **Metz-Energiewelle** **2**-mal zusätzlich eingesetzt werden und der Volt- und Frostschaden an Bossen wird um **10%** erhöht.\r\nWenn **Segnungsresonanz** aktiv ist, kann **Millionen-Metz-Schockwelle** **1**-mal zusätzlich eingesetzt werden und die LP des BFF werden jetzt in Höhe von **15%** seiner max. LP wiederhergestellt.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -12771,7 +12884,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "Während „Pakt-Verstärkung“ aktiv ist, wird der Volt- und Frostschaden-Bonus um **10%** erhöht. „Metz-Heiligenschein“ erhöht den Endschaden von Teammitgliedern in der Nähe um **20%** und Zertrümmern um **25%**. Dieser Effekt kann nicht gestapelt werden.",
+				"description": "Während „Pakt-Verstärkung“ aktiv ist, werden die Volt- und Frostschadensbonus-Effekte um **10%** bzw. **4%** erhöht. „Metz-Heiligenschein“ erhöht den Endschaden von Teammitgliedern in der Nähe um **20%** und Zertrümmern um **25%**. Dieser Effekt kann nicht gestapelt werden.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -12799,7 +12912,7 @@
 			"normals": [
 				{
 					"name": "Glühwürmchen-Welle",
-					"description": "Greift auf dem Boden 5-mal hintereinander mit dem normalen Angriff an.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und lässt das Ziel schweben.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und bringt das Ziel zu Fall.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und lässt das Ziel schweben.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und bringt das Ziel zu Fall.\r\n\r\nTippe und halte nach dem Auslösen von „Glühwürmchen-Welle“ den normalen Angriff, um <shuzhi>Rhythmus der Sinnestäuschung</> auszulösen.\r\n\r\nWenn sich <shuzhi>Bündniswappen-Metz☆</> im Kampf im Nebenhand-Slot befindet, bleibt Metz für koordinierte Angriffe auf dem Schlachtfeld. Metz gilt als Herbeirufung und jeder Angriff fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{10}%</> des ANG zu. Die Art des zugefügten Elementarschadens ist die der aktuellen Waffe.\r\nWenn „Segnungsresonanz“ aktiv ist:\r\nAußerhalb des Kampfes ernennt der erste Angriff von „Glühwürmchen-Welle“ <shuzhi>1</> Teammitglied zum „BFF” und beschwört bis zu <shuzhi>1</> Metz, der dem BFF folgt. Wenn „Metz-Heiligenschein” eingesetzt wird, erhalten Teammitglieder in der Nähe LP in Höhe von <shuzhi>100%</> des ANG des Wanderers zurück und ihr Endschaden wird um <shuzhi>5%</> erhöht. Dieser Effekt kann nicht gestapelt werden. Metz folgt dem BFF nicht mehr, wenn der Wanderer zu Fall gebracht wird oder wenn Metz zu weit vom Wanderer entfernt ist.",
+					"description": "Verwende am Boden den normalen Angriff, um 5 Angriffe hintereinander auszuführen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und lässt das Ziel schweben.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und bringt das Ziel zu Fall.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und lässt das Ziel schweben.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und bringt das Ziel zu Fall.\r\n\r\nTippe und halte nach dem Auslösen von „Glühwürmchen-Welle“ den normalen Angriff, um <shuzhi>Rhythmus der Sinnestäuschung</> auszulösen.\r\n\r\nWenn sich <shuzhi>Bündniswappen-Metz☆</> im Kampf im Nebenhand-Slot befindet, bleibt Metz für koordinierte Angriffe auf dem Schlachtfeld. Metz gilt als Herbeirufung und jeder Angriff fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{10}%</> des ANG zu. Die Art des zugefügten Elementarschadens ist die der aktuellen Waffe.\r\nWenn Segnungsresonanz aktiv ist:\r\nAußerhalb des Kampfes ernennt der erste Angriff von „Glühwürmchen-Welle“ <shuzhi>1</> Teammitglied zum „BFF” und beschwört bis zu <shuzhi>1</> Metz, der dem BFF folgt. Wenn „Metz-Heiligenschein” eingesetzt wird, erhalten Teammitglieder in der Nähe LP in Höhe von <shuzhi>100%</> des ANG des Wanderers zurück und ihr Endschaden wird um <shuzhi>5%</> erhöht. Dieser Effekt kann nicht gestapelt werden. Metz folgt dem BFF nicht mehr, wenn der Wanderer zu Fall gebracht wird oder wenn Metz zu weit vom Wanderer entfernt ist.",
 					"operations": [
 						"Attack",
 						"Attack",
@@ -12913,6 +13026,7 @@
 			"skill": [
 				{
 					"name": "Millionen-Metz-Schockwelle",
+					"description": "Nach der Verwendung von „Millionen-Metz-Schockwelle“ geht der Wanderer für <shuzhi>30</> Sek. in „Pakt-Verstärkung“ über: Wenn sich <shuzhi>Bündniswappen-Metz☆</> im Haupt-Slot befindet, wird der Voltschaden des Wanderers um <shuzhi>25%</> erhöht. Wenn sich <shuzhi>Bündniswappen-Metz☆</> im Nebenhand-Slot befindet, wird der Frostschaden des Wanderers um <shuzhi>10%</> erhöht. Abklingzeit: <shuzhi>30</> Sek.\r\n\r\nWenn <shuzhi>Resonanzen (mit Ausnahme von Segnungsresonanz) aktiv sind</>:\r\nFügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und wendet <shuzhi>Kraftaufprall</> auf sie an. Während „Millionen-Metz-Schockwelle“ abklingt, gewährt das Verursachen von kumuliertem Schaden in Höhe des <shuzhi>100</>-fachen des ANG während „Pakt-Verstärkung“ jedes Mal <shuzhi>1</> Verwendung von „Metz-Energiewelle“. Metz-Energiewelle: Fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>1800%</> des ANG zu. Gewährt alle <shuzhi>10</> Sek. bis zu <shuzhi>1</> Verwendung.\r\nWenn „Millionen-Metz-Schockwelle“ während „Pakt-Verstärkung“ erneut eingesetzt wird, werden die Dauer von „Pakt-Verstärkung“ und der kumulierte Schaden zurückgesetzt.\r\nWenn „Pakt-Verstärkung“ von alleine endet, werden ungenutzte Metz-Energiewellen gesammelt und verursachen Schaden in Höhe der ungenutzten Verwendungen × <shuzhi>1200%</> des ANG.\r\n\r\nWenn <shuzhi>Segnungsresonanz</> aktiv ist:\r\nDie Verwendung von Fähigkeiten verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und wendet <shuzhi>Kraftaufprall</> auf getroffene Ziele an. Die LP des Wanderers und seiner Teammitglieder in der Nähe werden in Höhe von <shuzhi>400%</> des ANG wiederhergestellt und zusätzlich werden <shuzhi>10%</> der max. LP des BFF wiederhergestellt. Entfernt Debuffs und Kontrolleffekte vom Wanderer und von Teammitgliedern in der Nähe (einschließlich „Vergrauender Biss“) und gewährt für <shuzhi>10</> Sek. Immunität gegen Debuffs und Kontrolleffekte. Abklingzeit: <shuzhi>15</> Sek.",
 					"tags": [
 						"Damage"
 					],
@@ -12923,6 +13037,7 @@
 			"discharge": [
 				{
 					"name": "Seltsamer symphonischer Raum",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und ein „Seltsamer symphonischer Raum“ herbeigerufen, der Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Während dieser Zeit hält die Schadensimmunität <shuzhi>1,5</> Sek. lang an (nicht in der Apex-Liga verfügbar).\r\n\r\nWährend <shuzhi>Segnungsresonanz aktiv ist</>:\r\nAlle Debuffs und Kontrolleffekte werden vom Wanderer und von Teammitgliedern in der Nähe entfernt (einschließlich „Vergrauender Biss“), und ihnen wird für <shuzhi>10</> Sekunden Immunität gegen Debuffs und Kontrolleffekte gewährt. „Seltsamer symphonischer Raum“ verwandelt getroffene Ziele in der Nähe sowie Spieler, die keine Teammitglieder sind, für <shuzhi>4</> Sekunden in Metz (wirkt nicht gegen Bosse, und nicht in der Apex-Liga verfügbar). Jedes Ziel kann bis zu <shuzhi>1</>-mal alle <shuzhi>30</> Sekunden verwandelt werden.",
 					"tags": [
 						"Damage",
 						"Control"
@@ -12946,6 +13061,14 @@
 					},
 					"weaponId": "Blevi_thunder_fashion_imitationUI",
 					"id": "imitation_fashion_52"
+				},
+				"weapon": {
+					"name": "Herzwappen-Metz",
+					"description": "Wenn eine Rose ihre Energie ansammelt und sie in voller Blüte auf einen Schlag freisetzt, bringt sie dann auch eine völlig neue Evolutionsform hervor…? Das frage ich mich…",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_bulewei01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_52_w"
 				}
 			}
 		],
@@ -13312,6 +13435,14 @@
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_ANBL_Lock.webp"
 					},
 					"weaponId": "Snipe_fire_fashion_ImitationUI",
+					"id": "imitation_fashion_26"
+				},
+				"weapon": {
+					"name": "Keine Angst vor der Sonne",
+					"description": "UV-Strahlen sind der Gegner aller Frauen … Aber sie scheint das Baden im Sonnenlicht zu genießen.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_annabeila0.webp",
+					"type": "CONSUMABLE",
 					"id": "imitation_fashion_26"
 				}
 			}
@@ -13763,6 +13894,14 @@
 					},
 					"weaponId": "brush_fire_fashion",
 					"id": "imitation_fashion_37"
+				},
+				"weapon": {
+					"name": "Zinnober",
+					"description": "Halte den Stift fest, während das nachglühende Emblem ihn umkreist, und sei überwältigt von der Inspiration, die das Gedicht versprüht…",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_liuhuo01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_37_w"
 				}
 			}
 		],
@@ -14175,8 +14314,16 @@
 						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_WUMI.webp",
 						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_WUMI_Lock.webp"
 					},
-					"weaponId": "Snipe_fire_fashion_ImitationUI",
+					"weaponId": "Paradox_fire_fashion_imitationUI",
 					"id": "imitation_fashion_31"
+				},
+				"weapon": {
+					"name": "Düsternis",
+					"description": "Viele Geheimnisse ranken sich darum, woher der Erbe des Hirsen-Schlosses seine magischen Kräfte hat.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_wumi1.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_31_w"
 				}
 			}
 		],
@@ -15000,7 +15147,7 @@
 		"fashion": [
 			{
 				"outfit": {
-					"name": "Flauschige weiße Schokolade",
+					"name": "Fluffige weiße Schokolade",
 					"description": "Im Winter braucht man unbedingt einen kompletten Satz flauschiger Kleidung, auch für die Ohren! Und vergiss zudem nicht, dich mit dem süßen, milchigen Duft weißer Schokolade einzusprühen, bevor du das Haus verlässt!",
 					"rarity": 5,
 					"source": "Aus Events",
@@ -15011,6 +15158,14 @@
 					},
 					"weaponId": "fenrir_thunder_fashion",
 					"id": "imitation_fashion_32"
+				},
+				"weapon": {
+					"name": "Null Dezibel",
+					"description": "In einer kalten, lautlosen Welt durchdringt selbst das leiseste Geräusch die Stille.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_32_w"
 				}
 			}
 		],
@@ -15233,7 +15388,7 @@
 				"need": "umbrella_fire_plasm"
 			},
 			{
-				"description": "Erhöht den von „Tanzende Flammen“ und „Schwungschlag“ verursachten Schaden um **50%**.\r\nDer Multiplikator für schnell rotierende Sonnenschirme, „Phönixhieb“ und „Gleißender Aufprall“ beträgt jetzt „Vielfeder-Sonnenschirm“ + **2**.",
+				"description": "Erhöht den von „Tanzende Flammen“ und „Schwungschlag“ verursachten Schaden um **50%**.\r\nAddiere bei der Berechnung der Effekte von rotierenden Sonnenschirmen, Phönixhieb und Gleißender Aufprall **2** zu Vielfeder-Sonnenschirm.",
 				"charge": 8,
 				"shatter": 14,
 				"multiplier": [
@@ -15413,6 +15568,14 @@
 					},
 					"weaponId": "umbrella_fire_fashion_imitationUI",
 					"id": "imitation_fashion_34"
+				},
+				"weapon": {
+					"name": "Akaba",
+					"description": "Nachdem es Zhuques Absicht gespürt hat, verändert Purpurköpfchen sein Aussehen.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_lan1.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_34_w"
 				}
 			}
 		],
@@ -16656,6 +16819,14 @@
 					},
 					"weaponId": "Zeke_physic_fashion_UI",
 					"id": "imitation_fashion_50"
+				},
+				"weapon": {
+					"name": "Schwindende Schatten",
+					"description": "Um seine einzige Familie zu beschützen.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_mingjing01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_50_w"
 				}
 			}
 		],
@@ -17133,6 +17304,14 @@
 					},
 					"weaponId": "queen_superpower_fashion",
 					"id": "imitation_fashion_36"
+				},
+				"weapon": {
+					"name": "Astraluna",
+					"description": "Die Kraft der Sterne und des Monds sammelt, verdichtet und entlädt sich hier.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_feiouna01.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_36_w"
 				}
 			}
 		],
