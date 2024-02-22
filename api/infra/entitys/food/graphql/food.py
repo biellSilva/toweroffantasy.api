@@ -1,10 +1,11 @@
-
 import strawberry
+
+from api.infra.entitys.item.graphql.item import Item
 
 
 @strawberry.type
 class Ingredient:
-    matID: str
+    matID: Item
     min: str
     max: str
 
@@ -21,4 +22,3 @@ class Food:
     effect: str | None
     ingredients: list[Ingredient]
     categories: list[str]
-
