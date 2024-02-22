@@ -1,4 +1,3 @@
-
 import re
 
 from typing import TYPE_CHECKING, TypeVar
@@ -6,32 +5,32 @@ from typing import TYPE_CHECKING, TypeVar
 from api.enums import LANGS
 
 if TYPE_CHECKING:
-    from api.infra.entitys import Simulacra, Weapon, Matrix, Simulacra_v2, Mount
+    from api.infra.entitys import Simulacra, Weapon, Matrix, Simulacra_v2, Mount, Relic
 
 
-T = TypeVar('T')
-GLOBAL_ASSETS_WEBP = 'https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp'
+T = TypeVar("T")
+GLOBAL_ASSETS_WEBP = "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp"
 
 
-# Sort order for items that do not have a banner. 
-# Useful to keep a consistent order of data across languages, 
+# Sort order for items that do not have a banner.
+# Useful to keep a consistent order of data across languages,
 # because sorting by name may result in a different order of data based on the language.
 
 SIMULACRA_SORT_ORDER = [
-    "imitation_11",     # Cocoritter
-    "imitation_13",     # Crow
-    "imitation_6",      # Huma
-    "imitation_9",      # KING
-    "imitation_3",      # Meryl
-    "imitation_33",     # Samir
-    "imitation_5",      # Shiro
-    "imitation_8",      # Tsubasa
-    "imitation_7",      # Zero
-    "imitation_1",      # Bai Ling
-    "imitation_16",     # Echo
-    "imitation_4",      # Ene
-    "imitation_2",      # Hilda
-    "imitation_15",     # Pepper
+    "imitation_11",  # Cocoritter
+    "imitation_13",  # Crow
+    "imitation_6",  # Huma
+    "imitation_9",  # KING
+    "imitation_3",  # Meryl
+    "imitation_33",  # Samir
+    "imitation_5",  # Shiro
+    "imitation_8",  # Tsubasa
+    "imitation_7",  # Zero
+    "imitation_1",  # Bai Ling
+    "imitation_16",  # Echo
+    "imitation_4",  # Ene
+    "imitation_2",  # Hilda
+    "imitation_15",  # Pepper
     "imitation_14",
 ]
 
@@ -51,10 +50,10 @@ WEAPON_SORT_ORDER = [
     "hammer_ice",
     "cannon_ice",
     "stave_thunder",
-    "digger_physic",    # Combat Blade
-    "bow_fire",         # Composite Bow
-    "sword_thunder",    # EM Blade
-    "spear_ice"         # Frosted Spear
+    "digger_physic",  # Combat Blade
+    "bow_fire",  # Composite Bow
+    "sword_thunder",  # EM Blade
+    "spear_ice",  # Frosted Spear
 ]
 
 MATRIX_SORT_ORDER = [
@@ -68,132 +67,171 @@ MATRIX_SORT_ORDER = [
     "matrix_ssr7",
     "matrix_ssr2",
     "matrix_ssr8",
-    "matrix_sr2",       # Apophis
-    "matrix_sr9",       # Bai Ling
-    "matrix_sr5",       # Barbarossa
-    "matrix_sr12",      # Echo
-    "matrix_sr8",       # Ene
-    "matrix_sr3",       # Frost Bot
-    "matrix_sr7",       # Hilda
-    "matrix_sr6",       # Pepper
-    "matrix_sr4",       # Sobek
-    "matrix_sr1",       # Robarg
-    "matrix_r6",        # Attack Analyzer
-    "matrix_r1",        # Explosive Core
-    "matrix_r2",        # Hauler
-    "matrix_r4",        # Provocateurs
-    "matrix_r7",        # Purge Pact
-    "matrix_r3",        # Standard Guard
-    "matrix_n2",        # Overheat
-    "matrix_n1",        # Wandering Aberrant
+    "matrix_sr2",  # Apophis
+    "matrix_sr9",  # Bai Ling
+    "matrix_sr5",  # Barbarossa
+    "matrix_sr12",  # Echo
+    "matrix_sr8",  # Ene
+    "matrix_sr3",  # Frost Bot
+    "matrix_sr7",  # Hilda
+    "matrix_sr6",  # Pepper
+    "matrix_sr4",  # Sobek
+    "matrix_sr1",  # Robarg
+    "matrix_r6",  # Attack Analyzer
+    "matrix_r1",  # Explosive Core
+    "matrix_r2",  # Hauler
+    "matrix_r4",  # Provocateurs
+    "matrix_r7",  # Purge Pact
+    "matrix_r3",  # Standard Guard
+    "matrix_n2",  # Overheat
+    "matrix_n1",  # Wandering Aberrant
 ]
 
 
-
 def bold_numbers(text: str):
-    text_a = re.sub(r'\<[a-zA-Z]+\>(\D)+\<\/\>', 
-                  lambda x: x.group(0).replace("<shuzhi>", "**").replace("<red>", "**").replace("<blue>", "**").replace("<green>", "**").replace("<ComLblGreen>", "**").replace("</>", "**")
-                            if text[x.span(0)[0]-1] != '*' else x.group(0), 
-                  text, flags=re.UNICODE)
-    
-    text_b = re.sub(r'\+?\{?\d+(\.?\,?\d+)?\}?%?', 
-                  lambda x: f'**{x.group(0)}**' if text_a[x.span(0)[0]-1] != '*' else x.group(0), 
-                  text_a.replace("<shuzhi>", "").replace("<red>", "").replace("<blue>", "").replace("<green>", "").replace("</>", ""), 
-                  flags=re.UNICODE)
-    
+    text_a = re.sub(
+        r"\<[a-zA-Z]+\>(\D)+\<\/\>",
+        lambda x: (
+            x.group(0)
+            .replace("<shuzhi>", "**")
+            .replace("<red>", "**")
+            .replace("<blue>", "**")
+            .replace("<green>", "**")
+            .replace("<ComLblGreen>", "**")
+            .replace("</>", "**")
+            if text[x.span(0)[0] - 1] != "*"
+            else x.group(0)
+        ),
+        text,
+        flags=re.UNICODE,
+    )
+
+    text_b = re.sub(
+        r"\+?\{?\d+(\.?\,?\d+)?\}?%?",
+        lambda x: (
+            f"**{x.group(0)}**" if text_a[x.span(0)[0] - 1] != "*" else x.group(0)
+        ),
+        text_a.replace("<shuzhi>", "")
+        .replace("<red>", "")
+        .replace("<blue>", "")
+        .replace("<green>", "")
+        .replace("</>", ""),
+        flags=re.UNICODE,
+    )
+
     return text_b
 
+
 def replace_cv(text: str):
-    if not text or text == '':
+    if not text or text == "":
         return None
-    return text.replace('CV : ', '')
+    return text.replace("CV : ", "")
+
 
 def replace_icon(text: str):
     if GLOBAL_ASSETS_WEBP in text:
         return text
     else:
-        return GLOBAL_ASSETS_WEBP + text.replace('/Game/Resources', '') + '.webp'
+        return GLOBAL_ASSETS_WEBP + text.replace("/Game/Resources", "") + ".webp"
+
 
 def localized_asset(text: str, lang: LANGS):
-    return GLOBAL_ASSETS_WEBP + f'/L10N/{lang}/Resources/{text.replace("/Game/Resources/", "")}.webp'
+    return (
+        GLOBAL_ASSETS_WEBP
+        + f'/L10N/{lang}/Resources/{text.replace("/Game/Resources/", "")}.webp'
+    )
+
 
 def put_imitation_icon(text: str):
     if GLOBAL_ASSETS_WEBP in text:
         return text
-    return GLOBAL_ASSETS_WEBP + f'/UI/huanxing/lihui/{text}.webp'
+    return GLOBAL_ASSETS_WEBP + f"/UI/huanxing/lihui/{text}.webp"
+
 
 def check_string(text: str):
-    if text.lower() == 'none':
+    if text.lower() == "none":
         return None
     return text
 
+
 def replace_rarity_asset(text: str):
-    if text.lower() == 'none':
+    if text.lower() == "none":
         return None
     if GLOBAL_ASSETS_WEBP in text:
-        return GLOBAL_ASSETS_WEBP +  text.replace('/Game/Resources', '') + '.webp'
+        return GLOBAL_ASSETS_WEBP + text.replace("/Game/Resources", "") + ".webp"
     else:
         return text
 
+
 def classifier(number: float):
     if number >= 15:
-        return 'SS'
+        return "SS"
     elif number >= 10.01:
-        return 'S'
+        return "S"
     elif number >= 8:
-        return 'A'
+        return "A"
     elif number >= 4:
-        return 'B'
+        return "B"
     else:
-        return 'C'
-    
+        return "C"
+
+
 def matrice_set_rework(rarity: int, sets: list[dict[str, str]]):
     if rarity == 2:
-        return [{'need': 4, 'description': sets[0].get('2', '')}]
+        return [{"need": 4, "description": sets[0].get("2", "")}]
     elif rarity == 3:
-        return [{'need': 3, 'description': sets[0].get('2', '')}]
+        return [{"need": 3, "description": sets[0].get("2", "")}]
     elif rarity == 4:
-        return [{'need': 3, 'description': sets[0].get('2', '')}]
+        return [{"need": 3, "description": sets[0].get("2", "")}]
     elif rarity == 5:
-        return [{'need': 2, 'description': sets[0].get('2', '')}, 
-                {'need': 4, 'description': sets[0].get('4', '')}]
+        return [
+            {"need": 2, "description": sets[0].get("2", "")},
+            {"need": 4, "description": sets[0].get("4", "")},
+        ]
     else:
         return None
 
+
 def trait_rework(trait: dict[str, dict[str, str]]):
-    return [value for key, value in trait.items() if not key == 'id']
+    return [value for key, value in trait.items() if not key == "id"]
+
 
 def voice_actors_rework(va: list[dict[str, str]]):
     return {key.lower(): value for i in va for key, value in i.items()}
 
+
 def voice_actor_string_rework(actor: str):
-    return actor.removeprefix(' ')
+    return actor.removeprefix(" ")
+
 
 def classify_rework(value: float):
-    return {'tier': classifier(value), 'value': value}
+    return {"tier": classifier(value), "value": value}
+
 
 def material_rework(mats: dict[str, int]):
-    return [{'id': key.lower(), 'need': value} for key, value in mats.items()]
+    return [{"id": key.lower(), "need": value} for key, value in mats.items()]
+
 
 def pet_material_rework(mats: dict[str, int]):
-    return [{'id': key.lower(), 'xpGain': value} for key, value in mats.items()]
+    return [{"id": key.lower(), "xpGain": value} for key, value in mats.items()]
+
 
 def relic_advanc_rework(advanc: list[dict[str, str]]):
-    return [value for i in advanc for key, value in i.items() if not key == 'id']
+    return [value for i in advanc for key, value in i.items() if not key == "id"]
 
 
-def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, float]:
+def sort_simulacra(simulacrum: "Simulacra") -> tuple[int, float]:
     if simulacrum.rarity == 5:
         if simulacrum.banners:
             return -1, -simulacrum.banners[-1].bannerNumber
-        elif simulacrum.id == 'imitation_33':
+        elif simulacrum.id == "imitation_33":
             return -1, -70.9
         else:
             if simulacrum.id in SIMULACRA_SORT_ORDER:
                 return -1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
             else:
                 return -1, 0
-        
+
     elif simulacrum.rarity == 4:
         if simulacrum.banners:
             return 1, -simulacrum.banners[-1].bannerNumber
@@ -202,10 +240,11 @@ def sort_simulacra(simulacrum: 'Simulacra') -> tuple[int, float]:
                 return 1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
             else:
                 return 1, 0
-        
+
     return 2, 0
 
-def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
+
+def sort_weapons(weapon: "Weapon") -> tuple[int, int]:
     if weapon.rarity == 5:
         if weapon.banners:
             return -1, -weapon.banners[-1].bannerNumber
@@ -214,7 +253,7 @@ def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
                 return -1, WEAPON_SORT_ORDER.index(weapon.id)
             else:
                 return -1, 0
-    
+
     elif weapon.rarity == 4:
         if weapon.banners:
             return 1, -weapon.banners[-1].bannerNumber
@@ -223,7 +262,7 @@ def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
                 return 1, WEAPON_SORT_ORDER.index(weapon.id)
             else:
                 return 1, 0
-    
+
     elif weapon.rarity == 3:
         if weapon.banners:
             return 2, -weapon.banners[-1].bannerNumber
@@ -232,23 +271,23 @@ def sort_weapons(weapon: 'Weapon') -> tuple[int, int]:
                 return 2, WEAPON_SORT_ORDER.index(weapon.id)
             else:
                 return 2, 0
-            
+
     return 3, 0
 
 
-def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
+def sort_matrices(matrice: "Matrix") -> tuple[int, float]:
     if matrice.rarity == 5:
         if matrice.banners:
             return -1, -matrice.banners[-1].bannerNumber
         else:
-            if matrice.id == 'matrix_ssr25' or matrice.id == 'matrix_ssr26':
+            if matrice.id == "matrix_ssr25" or matrice.id == "matrix_ssr26":
                 return -1, -25.5
-        
+
             if matrice.id in MATRIX_SORT_ORDER:
                 return -1, MATRIX_SORT_ORDER.index(matrice.id)
             else:
                 return -1, 0
-    
+
     elif matrice.rarity == 4:
         if matrice.banners:
             return 1, -matrice.banners[-1].bannerNumber
@@ -257,7 +296,7 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
                 return 1, MATRIX_SORT_ORDER.index(matrice.id)
             else:
                 return 1, 0
-    
+
     elif matrice.rarity == 3:
         if matrice.banners:
             return 2, -matrice.banners[-1].bannerNumber
@@ -275,22 +314,22 @@ def sort_matrices(matrice: 'Matrix') -> tuple[int, float]:
                 return 3, MATRIX_SORT_ORDER.index(matrice.id)
             else:
                 return 3, 0
-    
+
     return 4, 0
 
 
-def place_numbers(weapon: 'Weapon'):
+def place_numbers(weapon: "Weapon"):
     for attack in weapon.weaponAttacks.normals:
-        if attack.description and r'{0}' in attack.description:
+        if attack.description and r"{0}" in attack.description:
             if not attack.values:
                 print(attack.id, [i[-1] for i in attack.values])
                 continue
 
             new_desc = attack.description.format(*[i[-1] for i in attack.values])
             attack.description = new_desc
-    
+
     for attack in weapon.weaponAttacks.dodge:
-        if attack.description and r'{0}' in attack.description:
+        if attack.description and r"{0}" in attack.description:
             if not attack.values:
                 print(attack.id, [i[-1] for i in attack.values])
                 continue
@@ -299,7 +338,7 @@ def place_numbers(weapon: 'Weapon'):
             attack.description = new_desc
 
     for attack in weapon.weaponAttacks.skill:
-        if attack.description and r'{0}' in attack.description:
+        if attack.description and r"{0}" in attack.description:
             if not attack.values:
                 print(attack.id, [i[-1] for i in attack.values])
                 continue
@@ -308,7 +347,7 @@ def place_numbers(weapon: 'Weapon'):
             attack.description = new_desc
 
     for attack in weapon.weaponAttacks.discharge:
-        if attack.description and r'{0}' in attack.description:
+        if attack.description and r"{0}" in attack.description:
             if not attack.values:
                 print(attack.id, [i[-1] for i in attack.values])
                 continue
@@ -318,19 +357,20 @@ def place_numbers(weapon: 'Weapon'):
 
     return weapon
 
-def place_numbers_v2(simulacra: 'Simulacra_v2'):
+
+def place_numbers_v2(simulacra: "Simulacra_v2"):
     if simulacra.weapon:
         for attack in simulacra.weapon.weaponAttacks.normals:
-            if attack.description and r'{0}' in attack.description:
+            if attack.description and r"{0}" in attack.description:
                 if not attack.values:
                     print(attack.id, [i[-1] for i in attack.values])
                     continue
 
                 new_desc = attack.description.format(*[i[-1] for i in attack.values])
                 attack.description = new_desc
-        
+
         for attack in simulacra.weapon.weaponAttacks.dodge:
-            if attack.description and r'{0}' in attack.description:
+            if attack.description and r"{0}" in attack.description:
                 if not attack.values:
                     print(attack.id, [i[-1] for i in attack.values])
                     continue
@@ -339,7 +379,7 @@ def place_numbers_v2(simulacra: 'Simulacra_v2'):
                 attack.description = new_desc
 
         for attack in simulacra.weapon.weaponAttacks.skill:
-            if attack.description and r'{0}' in attack.description:
+            if attack.description and r"{0}" in attack.description:
                 if not attack.values:
                     print(attack.id, [i[-1] for i in attack.values])
                     continue
@@ -348,27 +388,37 @@ def place_numbers_v2(simulacra: 'Simulacra_v2'):
                 attack.description = new_desc
 
         for attack in simulacra.weapon.weaponAttacks.discharge:
-            if attack.description and r'{0}' in attack.description:
+            if attack.description and r"{0}" in attack.description:
                 if not attack.values:
                     print(attack.id, [i[-1] for i in attack.values])
                     continue
 
                 new_desc = attack.description.format(*[i[-1] for i in attack.values])
                 attack.description = new_desc
-    
+
     return simulacra
 
 
 def paginator(items: list[T], page: int = 0, chunk: int = 10) -> tuple[list[T], int]:
-    return items[page*chunk : page*chunk+chunk], len(items) // chunk if len(items) % chunk == 0 else len(items) // chunk + 1
+    return items[page * chunk : page * chunk + chunk], (
+        len(items) // chunk if len(items) % chunk == 0 else len(items) // chunk + 1
+    )
 
-def filter_released(items: 'Simulacra | Weapon | Matrix') -> bool:
+
+def filter_released(items: "Simulacra | Weapon | Matrix") -> bool:
     if items.banners and items.banners[0].isReleased or not items.banners:
         return True
     return False
 
-def sort_mounts(mount: 'Mount') -> tuple[float, float]:
-    if mount.version.lower() in ('cn-only', 'ps-only'):
-        return -float('-inf'), -mount.rarity
-    
+
+def sort_mounts(mount: "Mount") -> tuple[float, float]:
+    if mount.version.lower() in ("cn-only", "ps-only"):
+        return -float("-inf"), -mount.rarity
+
     return -float(mount.version), -mount.rarity
+
+
+def sort_relics(relic: "Relic") -> tuple[float, float]:
+    if "only" in relic.version.lower():
+        return 0, -float(relic.rarity)
+    return -float(relic.version), -float(relic.rarity)

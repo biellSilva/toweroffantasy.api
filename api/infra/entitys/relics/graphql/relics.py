@@ -1,4 +1,3 @@
-
 import strawberry
 
 
@@ -11,6 +10,5 @@ class Relic:
     source: str | None
     type: str
     icon: str
-    attributeID: str
+    version: str
     advancements: list[str]
-
