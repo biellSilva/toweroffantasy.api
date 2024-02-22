@@ -1,4 +1,3 @@
-
 from pydantic import BeforeValidator, Field, AliasChoices
 from typing import Annotated
 
@@ -14,6 +13,8 @@ class Relic(EntityBase):
     source: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     type: str
     icon: str | None
+    version: str
     # attributeID: str = Field(alias='AttributeID', serialization_alias='attributeID', exclude=True)
-    advancements: Annotated[list[str], BeforeValidator(relic_advanc_rework)] = Field(validation_alias=AliasChoices('advancements', 'advancement'))
-
+    advancements: Annotated[list[str], BeforeValidator(relic_advanc_rework)] = Field(
+        validation_alias=AliasChoices("advancements", "advancement")
+    )

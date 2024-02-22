@@ -11,6 +11,7 @@ from api.enums import langs_cn as LANGS_CN_
 from api.infra.entitys import EntityBase
 from api.infra.entitys.graphql import *
 from api.infra.repository import *
+from api.infra.repository.guidebook import GuideBookRepo
 from api.utils import filter_released
 
 SIMU_REPO = SimulacraRepo()
@@ -24,6 +25,7 @@ ITEM_REPO = ItemRepo()
 RELIC_REPO = RelicRepo()
 SERVAN_REPO = ServantsRepo()
 MOUNTS_REPO = MountsRepo()
+GUIDEBOOK_REPO = GuideBookRepo()
 
 
 def check_params(lang: str, version: str):
@@ -274,6 +276,24 @@ class Query:
             return list(filter(lambda x: x.isReleased, GB_BANNERS))  # type: ignore
 
         return GB_BANNERS  # type: ignore
+
+    @strawberry.field(name="guidebook")
+    async def get_guidebook(self, id: str, lang: str = "en") -> Guidebook:
+        version = "global"
+        check_params(lang=lang, version=version)
+
+        item = await GUIDEBOOK_REPO.get(
+            EntityBase(id=id), lang=lang, version=VERSIONS(version)
+        )
+        return item  # type: ignore
+
+    @strawberry.field(name="guidebooks")
+    async def get_guidebooks(self, lang: str = "en") -> List[Guidebook]:
+        version = "global"
+        check_params(lang=lang, version=version)
+
+        items = await GUIDEBOOK_REPO.get_all(lang=lang, version=VERSIONS(version))
+        return items  # type: ignore
 
 
 graphql = GraphQLRouter[Any, Any](

@@ -1,4 +1,3 @@
-
 from ..achievements.graphql.achivement import Achievement
 from ..food.graphql.food import Food
 from ..item.graphql.item import Item
@@ -13,6 +12,7 @@ from ..simulacra_v2.graphql.simulacra_v2 import SimulacraV2
 from ..weapons.graphql.weapons import Weapon
 from ..graphql.banner import Banner
 from ..graphql.meta import MetaData
+from ..guidebooks.graphql import Guidebook
 
 
 __import__ = [
@@ -29,22 +29,24 @@ __import__ = [
     Weapon,
     SimulacraV2,
     Banner,
-    MetaData
+    MetaData,
+    Guidebook,
 ]
 
 __all__ = (
-    'Achievement',
-    'Food',
-    'Item',
-    'Mount',
-    'Outfit',
-    'Raritys',
-    'Relic',
-    'SmartServant',
-    'Simulacra',
-    'Matrice',
-    'Weapon',
-    'SimulacraV2',
-    'Banner',
-    'MetaData'
+    "Achievement",
+    "Food",
+    "Item",
+    "Mount",
+    "Outfit",
+    "Raritys",
+    "Relic",
+    "SmartServant",
+    "Simulacra",
+    "Matrice",
+    "Weapon",
+    "SimulacraV2",
+    "Banner",
+    "MetaData",
+    "Guidebook",
 )
