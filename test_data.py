@@ -100,6 +100,14 @@ async def test_global_data(lang: str):
     ]
     _logger.info("servants: %s items", len(servants))
 
+    guidebooks = [
+        i.model_dump()
+        for i in await ServantsRepo().get_all(
+            lang=LANGS(lang), version=VERSIONS("global")
+        )
+    ]
+    _logger.info("guidebooks: %s items", len(guidebooks))
+
 
 async def test_init():
 
