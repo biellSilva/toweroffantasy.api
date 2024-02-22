@@ -1,4 +1,3 @@
-
 import json
 
 from pathlib import Path
@@ -17,26 +16,26 @@ class MountsRepo(ModelRepository[EntityBase, Mount]):
     __load_all_data__: bool = False
 
     def __init__(self) -> None:
-        super().__init__(model_base=EntityBase, 
-                         model=Mount, 
-                         class_base=MountsRepo,
-                         repo_name='mount')
-    
-    
-    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Mount]:
+        super().__init__(
+            model_base=EntityBase, model=Mount, class_base=MountsRepo, repo_name="mount"
+        )
+
+    async def get_all(
+        self, lang: LANGS | LANGS_CN | str, version: VERSIONS
+    ) -> list[Mount]:
         if version in self.cache:
             if lang in self.cache[version]:
                 return list(self.cache[version][lang].values())
 
-        VERSION_PATH = Path(f'api/infra/database/{version}')
+        VERSION_PATH = Path(f"api/infra/database/{version}")
         if not VERSION_PATH.exists():
             raise VersionNotFound(version)
-        
+
         LANG_PATH = Path(VERSION_PATH, lang)
         if not LANG_PATH.exists():
             raise LanguageNotFound(lang, version)
 
-        FILEPATH = Path(LANG_PATH, f'{self.repo_name}.json')
+        FILEPATH = Path(LANG_PATH, f"{self.repo_name}.json")
         if not FILEPATH.exists():
             raise FileNotFound(self.repo_name, lang, version)
 
@@ -49,11 +48,24 @@ class MountsRepo(ModelRepository[EntityBase, Mount]):
             self.cache[version].update({lang: {}})
 
         for key_id, value_dict in DATA.items():
-            if value_dict.get('id', None):
-                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict)})
+
+            if "cn-only" in value_dict["version"].lower():
+                continue
+
+            if value_dict.get("id", None):
+                self.cache[version][lang].update(
+                    {key_id.lower(): self.model(**value_dict)}
+                )
             else:
-                self.cache[version][lang].update({key_id.lower(): self.model(**value_dict, id=key_id)})
-        
-        self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_mounts))}
+                self.cache[version][lang].update(
+                    {key_id.lower(): self.model(**value_dict, id=key_id)}
+                )
+
+        self.cache[version][lang] = {
+            i.id: i
+            for i in list(
+                sorted(list(self.cache[version][lang].values()), key=sort_mounts)
+            )
+        }
 
         return list(self.cache[version][lang].values())

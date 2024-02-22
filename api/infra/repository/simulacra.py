@@ -51,7 +51,7 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
             self.cache[version].update({lang: {}})
 
         for key_id, value_dict in DATA.items():
-            if 'L1' in key_id:
+            if 'L1' in key_id or "cn-only" in value_dict["version"].lower():
                 continue
 
             if version == 'global':
