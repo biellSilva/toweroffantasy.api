@@ -64,7 +64,7 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
             self.cache[version].update({lang: {}})
 
         for matrice_id, matrice_dict in DATA.items():
-            if "cn-only" in value_dict["version"].lower():
+            if "cn-only" in matrice_dict["version"].lower():
                 continue
 
             matrice_id = matrice_id.removesuffix("_1").lower()
