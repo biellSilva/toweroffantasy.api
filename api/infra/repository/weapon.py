@@ -114,6 +114,9 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             self.cache[version].update({lang: {}})
 
         for key_id, value_dict in DATA.items():
+            if "cn-only" in value_dict["version"].lower():
+                continue
+            
             weaponEffects: list[dict[str, str]] = []
 
             if key_id.lower() == "blevi_thunder":

@@ -46,7 +46,7 @@ class RelicRepo(ModelRepository[EntityBase, Relic]):
             self.cache[version].update({lang: {}})
 
         for key_id, value_dict in DATA.items():
-            if "only" in value_dict["version"].lower():
+            if "cn-only" in value_dict["version"].lower():
                 continue
 
             if value_dict.get("id", None):
