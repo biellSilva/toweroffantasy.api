@@ -60,17 +60,17 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
         version: VERSIONS,
         graphql: bool = False,
     ) -> Weapon:
-        if version in self.class_base.cache:
-            if lang in self.class_base.cache[version]:
-                if model.id in self.class_base.cache[version][lang]:
+        if version in self.cache:
+            if lang in self.cache[version]:
+                if model.id in self.cache[version][lang]:
                     if graphql:
-                        return self.class_base.cache[version][lang][model.id]
+                        return self.cache[version][lang][model.id]
                     else:
                         return place_numbers(
                             Weapon(
-                                **self.class_base.cache[version][lang][
-                                    model.id
-                                ].model_dump(by_alias=True)
+                                **self.cache[version][lang][model.id].model_dump(
+                                    by_alias=True
+                                )
                             )
                         )
                 else:
@@ -83,14 +83,14 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
         self, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False
     ) -> list[Weapon]:
 
-        if version in self.class_base.cache:
-            if lang in self.class_base.cache[version]:
+        if version in self.cache:
+            if lang in self.cache[version]:
                 if graphql:
-                    return list(self.class_base.cache[version][lang].values())
+                    return list(self.cache[version][lang].values())
                 else:
                     return [
                         place_numbers(Weapon(**value.model_dump(by_alias=True)))
-                        for value in self.class_base.cache[version][lang].values()
+                        for value in self.cache[version][lang].values()
                     ]
 
         VERSION_PATH = Path(f"api/infra/database/{version}")
@@ -114,7 +114,13 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
             self.cache[version].update({lang: {}})
 
         for key_id, value_dict in DATA.items():
+            if "cn-only" in value_dict["version"].lower():
+                continue
+            
             weaponEffects: list[dict[str, str]] = []
+
+            if key_id.lower() == "blevi_thunder":
+                value_dict["element"] = "IceThunder"
 
             if advancements := value_dict.get("advancements", []):
                 if description := advancements[0].get("description", None):
@@ -273,9 +279,9 @@ class WeaponRepo(ModelRepository[EntityBase, Weapon]):
         }
 
         if graphql:
-            return list(self.class_base.cache[version][lang].values())
+            return list(self.cache[version][lang].values())
         else:
             return [
                 place_numbers(Weapon(**value.model_dump(by_alias=True)))
-                for value in self.class_base.cache[version][lang].values()
+                for value in self.cache[version][lang].values()
             ]
