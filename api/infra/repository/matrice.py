@@ -1,4 +1,3 @@
-
 import json
 
 from pathlib import Path
@@ -20,28 +19,39 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
     __load_all_data__: bool = False
 
     def __init__(self) -> None:
-        super().__init__(model_base=EntityBase, 
-                         model=Matrix, 
-                         class_base=MatricesRepo,
-                         repo_name='matrices')
-        
-        self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
-        self.META_DATA: dict[str, MetaData] = {k: MetaData(**v) for k, v in json.loads(Path('api/infra/database/global/meta.json').read_bytes()).items()}
-    
-    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS) -> list[Matrix]:
+        super().__init__(
+            model_base=EntityBase,
+            model=Matrix,
+            class_base=MatricesRepo,
+            repo_name="matrices",
+        )
+
+        self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(
+            Path("api/infra/database/imitation_links.json").read_bytes()
+        )
+        self.META_DATA: dict[str, MetaData] = {
+            k: MetaData(**v)
+            for k, v in json.loads(
+                Path("api/infra/database/global/meta.json").read_bytes()
+            ).items()
+        }
+
+    async def get_all(
+        self, lang: LANGS | LANGS_CN | str, version: VERSIONS
+    ) -> list[Matrix]:
         if version in self.cache:
             if lang in self.cache[version]:
                 return list(self.cache[version][lang].values())
 
-        VERSION_PATH = Path(f'api/infra/database/{version}')
+        VERSION_PATH = Path(f"api/infra/database/{version}")
         if not VERSION_PATH.exists():
             raise VersionNotFound(version)
-        
+
         LANG_PATH = Path(VERSION_PATH, lang)
         if not LANG_PATH.exists():
             raise LanguageNotFound(lang, version)
 
-        FILEPATH = Path(LANG_PATH, f'{self.repo_name}.json')
+        FILEPATH = Path(LANG_PATH, f"{self.repo_name}.json")
         if not FILEPATH.exists():
             raise FileNotFound(self.repo_name, lang, version)
 
@@ -49,31 +59,47 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
 
         if version not in self.cache:
             self.cache.update({version: {}})
-        
+
         if lang not in self.cache[version]:
             self.cache[version].update({lang: {}})
 
         for matrice_id, matrice_dict in DATA.items():
-            if version == 'global' and matrice_id in ('matrix_SSR12_1', 'matrix_SSR13_1'):
+            if "only" in matrice_dict["version"].lower():
                 continue
-            
-            matrice_id = matrice_id.removesuffix('_1').lower()
-            matrice_dict['id'] = matrice_id
 
-            matrice_dict['sets'] = matrice_set_rework(rarity=matrice_dict.get('rarity', ''), sets=matrice_dict.pop('set'))
-            
+            matrice_id = matrice_id.removesuffix("_1").lower()
+            matrice_dict["id"] = matrice_id
+
+            matrice_dict["sets"] = matrice_set_rework(
+                rarity=matrice_dict.get("rarity", ""), sets=matrice_dict.pop("set")
+            )
+
             for i in self.LINK_DATA:
-                if isinstance(self.LINK_DATA.get(i, {}).get('matrice', None), str):
-                    if self.LINK_DATA[i]['matrice'].lower() == matrice_id.lower(): # type: ignore
-                        matrice_dict['simulacrumId'] = i
-            
-            if version == 'global':
-                matrice_dict['Banners'] = [banner for banner in GB_BANNERS if banner.matrixId and banner.matrixId == matrice_id.lower()]
-                matrice_dict['meta'] = {}
-                matrice_dict['meta']['recommendedWeapons'] = [k for k, v in self.META_DATA.items() for matrix in v.recommendedMatrices if matrice_id == matrix.id]
+                if isinstance(self.LINK_DATA.get(i, {}).get("matrice", None), str):
+                    if self.LINK_DATA[i]["matrice"].lower() == matrice_id.lower():  # type: ignore
+                        matrice_dict["simulacrumId"] = i
+
+            if version == "global":
+                matrice_dict["Banners"] = [
+                    banner
+                    for banner in GB_BANNERS
+                    if banner.matrixId and banner.matrixId == matrice_id.lower()
+                ]
+                matrice_dict["meta"] = {}
+                matrice_dict["meta"]["recommendedWeapons"] = [
+                    k
+                    for k, v in self.META_DATA.items()
+                    for matrix in v.recommendedMatrices
+                    if matrice_id == matrix.id
+                ]
 
             self.cache[version][lang].update({matrice_id: Matrix(**matrice_dict)})
 
-        self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_matrices))}
-        
+        self.cache[version][lang] = {
+            i.id: i
+            for i in list(
+                sorted(list(self.cache[version][lang].values()), key=sort_matrices)
+            )
+        }
+
         return list(self.cache[version][lang].values())
