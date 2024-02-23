@@ -11,7 +11,7 @@ from src.domain.models.simulacra.extra import (
     SimulacraAssets,
     VoiceActors,
 )
-from src.utils.simulacra import weapon_matrix_rework
+from src.utils import string_or_null
 
 
 class Simulacra(ModelBase):
@@ -19,11 +19,12 @@ class Simulacra(ModelBase):
     rarity: int
     version: str
     isReleased: bool = True
+    limited: bool
     avatarId: str
     advanceId: str | None = None
     unlockInfo: str
-    weaponId: Annotated[str, BeforeValidator(weapon_matrix_rework)] | None = None
-    matrixId: Annotated[str, BeforeValidator(weapon_matrix_rework)] | None = None
+    weaponId: Annotated[str, BeforeValidator(string_or_null)] | None = None
+    matrixId: Annotated[str, BeforeValidator(string_or_null)] | None = None
     likedGiftTypes: list[str] = Field(
         default=[], validation_alias=AliasChoices("like", "likedGiftTypes")
     )

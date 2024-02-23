@@ -35,7 +35,7 @@ class SimulacraAssets(BaseModel):
 
 
 class Awakening(BaseModel):
-    name: Annotated[str | None, BeforeValidator(to_strip)] = None
+    name: Annotated[str, BeforeValidator(to_strip)] | None = None
     description: str | None = Field(
         None, validation_alias=AliasChoices("trait", "description")
     )
@@ -45,7 +45,9 @@ class Awakening(BaseModel):
 
 class FashionAssets(BaseModel):
     painting: str
-    grayPainting: str
+    grayPainting: str = Field(
+        validation_alias=AliasChoices("grayPainting", "prayPainting")
+    )
 
 
 class Fashion(BaseModel):
