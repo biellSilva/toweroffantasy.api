@@ -21,8 +21,20 @@ license = { text = "All Rights Reserved" }
 distribution = false
 
 [tool.pdm.dev-dependencies]
-dev = ["types-pytz>=2024.1.0.20240203"]
+dev = [
+    "types-pytz>=2024.1.0.20240203",
+    "pytest>=8.0.1",
+    "pytest-asyncio>=0.23.5",
+]
 
 [tool.pdm.scripts]
 prod = "uvicorn src.main.app:app --no-access-log --log-config ./log-config.yml"
 dev = "uvicorn src.main.app:app --reload --reload-dir ./ --log-config ./log-config.yml"
+test = "pytest"
+
+[tool.pytest.ini_options]
+console_output_style = "progress"
+testpaths = ["tests"]
+python_classes = ["*Suite"]
+python_files = ["test_*.py"]
+python_functions = ["*_test"]
