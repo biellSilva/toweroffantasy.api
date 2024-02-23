@@ -1,16 +1,19 @@
 from datetime import datetime
 from typing import Any
 
-from src.utils import current_time
+from src.utils import current_time, project_toml
+
+__PROJECT_TOML = project_toml()
+
 
 # Last time project restarted
 LAST_RESTART: datetime = current_time()
 
 
 # Project information
-PROJECT_NAME: str = "Tower of Fantasy API"
-PROJECT_VERSION: str = "2.0.0"
-PROJECT_SUMMARY: str = "Made from players to players"
+PROJECT_NAME: str = __PROJECT_TOML.name
+PROJECT_VERSION: str = __PROJECT_TOML.version
+PROJECT_SUMMARY: str = __PROJECT_TOML.description
 PROJECT_DESC: str = (
     "[Interactive docs](https://api.toweroffantasy.info/docs) \t\n "
     "[Detailed docs](https://api.toweroffantasy.info/redoc) \t\n "
@@ -26,7 +29,7 @@ PROJECT_DESC: str = (
     "\n"
     f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")}'
 )
-PROJECT_LICENSE: dict[str, str] = {"License": "All Rigths Reserved"}
+PROJECT_LICENSE: dict[str, str] = {"name": __PROJECT_TOML.license.text}
 
 
 SWAGGER_UI_PARAMS: dict[str, Any] = {"defaultModelsExpandDepth": -1}  # hide schemas
