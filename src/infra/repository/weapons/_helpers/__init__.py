@@ -1,9 +1,13 @@
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
+from src.config.sorter import WEAPON_SORT_ORDER
 from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.weapons import RawWeapon
 from src.infra.models.weapons.extra import RawStatConverted
 from src.infra.repository.items import ItemsRepository
+
+if TYPE_CHECKING:
+    from src.domain.models.weapons import Weapon
 
 
 def ignore_weapon(dict_: RawWeapon) -> bool:
@@ -63,24 +67,25 @@ async def weapon_upgrade_mats(
             dict_["id"].lower(), None
         ):
             for ind, level in enumerate(upgrade_obj):
-                for item in level:
-                    if mat_id := item.get("mat_id", None):
-                        if mat_id.lower() != "none":
-                            if item_obj := await __ITEM_REPO.find_by_id(
-                                mat_id.lower(), version=version, lang=lang
-                            ):
-                                item.update(**item_obj.model_dump())
+                if not "requiredExp" in level:
+                    for item in level:
+                        if mat_id := item.get("mat_id", None):
+                            if mat_id.lower() != "none":
+                                if item_obj := await __ITEM_REPO.find_by_id(
+                                    mat_id.lower(), version=version, lang=lang
+                                ):
+                                    item.update(**item_obj.model_dump())
 
-                    ind_start, ind_end = (ind * 10) - 10, ind * 10
+                        ind_start, ind_end = (ind * 10) - 10, ind * 10
 
-                    upgrade_obj[ind] = {
-                        "requiredExp": sum(
-                            upgrade_exp_require[
-                                (ind_start if ind_start > 0 else 0) : ind_end
-                            ]
-                        ),
-                        "mats": level,
-                    }
+                        upgrade_obj[ind] = {
+                            "requiredExp": sum(
+                                upgrade_exp_require[
+                                    (ind_start if ind_start > 0 else 0) : ind_end
+                                ]
+                            ),
+                            "mats": level,
+                        }
 
         else:
             for ind, level in enumerate(upgrade_obj):
@@ -119,3 +124,37 @@ def weapon_skill_values(dict_: RawWeapon, DESC_VALUES: dict[str, Any]) -> RawWea
                 dict_["skills"][type_skill][i]["values"] = values
 
     return dict_
+
+
+def sort_weapons(weapons: dict[str, "Weapon"]) -> dict[str, "Weapon"]:
+    def __sort(weapon: "Weapon") -> tuple[int, int]:
+        if weapon.rarity == 5:
+            if weapon.banners:
+                return -1, -weapon.banners[-1].bannerNumber
+            else:
+                if weapon.id in WEAPON_SORT_ORDER:
+                    return -1, WEAPON_SORT_ORDER.index(weapon.id)
+                else:
+                    return -1, 0
+
+        elif weapon.rarity == 4:
+            if weapon.banners:
+                return 1, -weapon.banners[-1].bannerNumber
+            else:
+                if weapon.id in WEAPON_SORT_ORDER:
+                    return 1, WEAPON_SORT_ORDER.index(weapon.id)
+                else:
+                    return 1, 0
+
+        elif weapon.rarity == 3:
+            if weapon.banners:
+                return 2, -weapon.banners[-1].bannerNumber
+            else:
+                if weapon.id in WEAPON_SORT_ORDER:
+                    return 2, WEAPON_SORT_ORDER.index(weapon.id)
+                else:
+                    return 2, 0
+
+        return 3, 0
+
+    return {weapon.id: weapon for weapon in sorted(list(weapons.values()), key=__sort)}
