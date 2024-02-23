@@ -49,8 +49,8 @@ class Weapon(ModelBase):
         validation_alias=AliasChoices("skills", "weaponAttacks")
     )
     weaponStats: list[BaseStats] = Field(
-        validation_alias=AliasChoices("stats", "baseStats", "weaponStats")
+        validation_alias=AliasChoices("stats_att", "baseStats", "weaponStats")
     )
 
-    meta: MetaData
+    meta: MetaData = MetaData()
     banners: list[Banner] = []
