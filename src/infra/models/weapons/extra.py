@@ -1,10 +1,12 @@
-from typing import TypedDict
+from typing import Any, TypedDict
 
 
 class RawAdvancement(TypedDict):
-    description: str
-    charge: float | int
-    shatter: float | int
+    description: str | None
+    charge: float
+    shatter: float
+    multiplier: list[Any]
+    need: str | None
 
 
 class RawStat(TypedDict):
