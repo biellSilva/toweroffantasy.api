@@ -1,4 +1,3 @@
-
 from pydantic import BeforeValidator, Field, AliasChoices
 from typing import Annotated
 
@@ -10,44 +9,57 @@ from api.infra.entitys.meta import MetaData
 from api.utils import classify_rework
 
 from .extra import (
-    ShatterOrCharge, 
-    WeaponEffect, 
+    ShatterOrCharge,
+    WeaponEffect,
     Assets,
     BaseStats,
     WeaponAdvancement,
-    WeaponAttacks
+    WeaponAttacks,
 )
 
 
 class Weapon(EntityBase):
-    simulacrumId: str | None = Field(validation_alias=AliasChoices('avatar', 'simulacrumId'), default=None)
-    advanceId: str | None = Field(validation_alias=AliasChoices('advanceID', 'advanceId'), default=None)
+    simulacrumId: str | None = Field(
+        validation_alias=AliasChoices("avatar", "simulacrumId"), default=None
+    )
+    advanceId: str | None = Field(
+        validation_alias=AliasChoices("advanceID", "advanceId"), default=None
+    )
     # isUpPoolWeapon: bool = False
 
     name: str
     version: str
     rarity: int
+    limited: bool
     assets: Assets
 
     # Brief: str
-    category: str = Field(validation_alias=AliasChoices('wc', 'category'))
+    category: str = Field(validation_alias=AliasChoices("wc", "category"))
     element: str
     description: str
 
-    shatter: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))] # type: ignore
-    charge: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))] # type: ignore
+    shatter: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]  # type: ignore
+    charge: Annotated[ShatterOrCharge, BeforeValidator(lambda x: x if isinstance(x, dict) else classify_rework(x))]  # type: ignore
 
     # FashionWeaponInfos: list[FashionWeaponInfo]
     # RecommendedMatrices: list[MatrixSuit]
 
     upgradeMats: WeaponMats | None
 
-    elementEffect: WeaponEffect | None = Field(None, validation_alias=AliasChoices('elementEffects', 'elementEffect'))
+    elementEffect: WeaponEffect | None = Field(
+        None, validation_alias=AliasChoices("elementEffects", "elementEffect")
+    )
     weaponEffects: list[WeaponEffect] = []
 
-    weaponAdvancements: list[WeaponAdvancement] = Field(validation_alias=AliasChoices('advancements', 'weaponAdvancements'))
-    weaponAttacks: WeaponAttacks = Field(validation_alias=AliasChoices('skills', 'weaponAttacks'))
-    weaponStats: list[BaseStats] = Field(validation_alias=AliasChoices('stats', 'baseStats', 'weaponStats'))
+    weaponAdvancements: list[WeaponAdvancement] = Field(
+        validation_alias=AliasChoices("advancements", "weaponAdvancements")
+    )
+    weaponAttacks: WeaponAttacks = Field(
+        validation_alias=AliasChoices("skills", "weaponAttacks")
+    )
+    weaponStats: list[BaseStats] = Field(
+        validation_alias=AliasChoices("stats", "baseStats", "weaponStats")
+    )
 
     meta: MetaData
     banners: list[Banner] = []

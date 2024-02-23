@@ -40,6 +40,7 @@ INCLUDE = {
     'weaponId': True, 
     'matrixId': True, 
     'rarity': True, 
+    'limited': True,
     'weapon': {
         'id': True, 
         'name': True, 

@@ -18,7 +18,7 @@ METADATA = {
                     'CONTAINS CN DATA'),
     }
 
-INCLUDE = {'id', 'name', 'assetsA0', 'weaponId', 'matrixId', 'rarity'}
+INCLUDE = {'id', 'name', 'assetsA0', 'weaponId', 'matrixId', 'rarity', 'limited'}
 
 
 @router.get('/{id}', name='Get simulacrum', response_model=Simulacra)
