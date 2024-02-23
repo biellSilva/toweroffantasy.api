@@ -8,6 +8,7 @@ authors = [
 dependencies = [
     "pydantic>=2.6.1",
     "fastapi>=0.109.2",
+    "pytz>=2024.1",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
@@ -16,3 +17,8 @@ license = { text = "All Rigths Reserved" }
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "types-pytz>=2024.1.0.20240203",
+]
