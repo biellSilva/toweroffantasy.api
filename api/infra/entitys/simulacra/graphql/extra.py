@@ -1,4 +1,3 @@
-
 import strawberry
 
 
@@ -13,7 +12,7 @@ class Assets:
     thumbPainting: str
     weaponShowPicture: str
     activeImitation: str
-    inactiveImitation:str
+    inactiveImitation: str
     advancePainting: str
     advanceGrayPainting: str
     backPhoto: str
@@ -22,7 +21,7 @@ class Assets:
     # lotteryDrawing: str
     matrixPainting: str
     descPainting: str
-    
+
 
 @strawberry.type
 class VoiceActors:
@@ -35,10 +34,10 @@ class VoiceActors:
 
 @strawberry.type
 class Awakening:
-    name: str
-    description: str
-    icon: str
-    need: int
+    name: str | None
+    description: str | None
+    icon: str | None
+    need: int | None
 
 
 @strawberry.type
