@@ -1,3 +1,4 @@
+import re
 import tomllib
 from datetime import datetime
 
@@ -27,3 +28,37 @@ def string_or_null(text: str) -> str | None:
     if text.lower() in ("none", "null"):
         return None
     return text.lower()
+
+
+def bold_numbers(text: str) -> str:
+    text_a = re.sub(
+        r"\<[a-zA-Z]+\>(\D)+\<\/\>",
+        lambda x: (
+            x.group(0)
+            .replace("<shuzhi>", "**")
+            .replace("<red>", "**")
+            .replace("<blue>", "**")
+            .replace("<green>", "**")
+            .replace("<ComLblGreen>", "**")
+            .replace("</>", "**")
+            if text[x.span(0)[0] - 1] != "*"
+            else x.group(0)
+        ),
+        text,
+        flags=re.UNICODE,
+    )
+
+    text_b = re.sub(
+        r"\+?\{?\d+(\.?\,?\d+)?\}?%?",
+        lambda x: (
+            f"**{x.group(0)}**" if text_a[x.span(0)[0] - 1] != "*" else x.group(0)
+        ),
+        text_a.replace("<shuzhi>", "")
+        .replace("<red>", "")
+        .replace("<blue>", "")
+        .replace("<green>", "")
+        .replace("</>", ""),
+        flags=re.UNICODE,
+    )
+
+    return text_b
