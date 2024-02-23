@@ -44,7 +44,6 @@ class VoiceActors(BaseModel):
 
 class Awakening(BaseModel):
     name: Annotated[str | None, BeforeValidator(lambda x: str(x).strip())] = None
-    type: Annotated[str | None, BeforeValidator(lambda x: str(x).strip())] = None
     description: str | None = Field(
         None, validation_alias=AliasChoices("trait", "description")
     )

@@ -76,27 +76,25 @@ class SimulacraRepo(ModelRepository[EntityBase, Simulacra]):
                         _unlockables: dict[str, Any] = {"need": dict_["stage"]}
                         if text := dict_.get("text"):
                             if "award" not in dict_:
-
-                                type_, name = str(text).split(":", 1)
-                                _unlockables.update({"type": type_, "name": name})
+                                _unlockables.update({"name": text})
 
                                 if _ := dict_.get("trait"):
                                     for awake in value_dict["awakening"]:
                                         if awake["need"] == dict_["stage"]:
                                             _unlockables.update({"icon": awake["icon"]})
                             else:
-                                type_, _ = str(text).split(":", 1)
+                                try:
+                                    icon = dict_["award"]["icon"]
 
-                                icon = dict_["award"]["icon"]
+                                    if "name" in dict_["award"]:
+                                        name = dict_["award"]["name"]
 
-                                if "name" in dict_["award"]:
-                                    name = dict_["award"]["name"]
-                                else:
-                                    name = "King"
+                                    else:
+                                        name = "King"
 
-                                _unlockables.update(
-                                    {"type": type_, "name": name, "icon": icon}
-                                )
+                                    _unlockables.update({"name": name, "icon": icon})
+                                except:
+                                    print(str(text).split(":", 1), lang, key_id)
 
                         __unlockables.append(_unlockables)
                     value_dict["awakening"] = __unlockables
