@@ -1,7 +1,7 @@
-echo "Digite o nome da classe:"
+echo "File and class name:"
 read classname
 
-echo "Digite o nome da Pasta:"
+echo "Folder name:"
 read foldername
 
 to_camel_case() {
@@ -56,10 +56,15 @@ class I${classname_python}UseCase(IUsecase[${classname_python}Params, ${classnam
 
 
 echo >> "src/data/usecases/$foldername/${classname}.py" "
+from typing import Any
 from src.domain.usecases.$foldername.${classname} import ${classname_python}Params, ${classname_python}Result, I${classname_python}UseCase
 
 
 class ${classname_python}UseCase(I${classname_python}UseCase):
+    def __init__(self, repository: ${camel_classname}Repository) -> None:
+        self.repository = repository
+
+        
     async def execute(self, params: ${classname_python}Params) -> ${classname_python}Result:
         ...
 
@@ -82,7 +87,7 @@ class ${classname_python}Controller:
 
 echo >> "src/main/factories/usecases/${foldername}/${classname}.py" "
 from src.data.usecases.$foldername.${classname} import ${classname_python}UseCase
-
+from src.infra.repository.${classname} import ${camel_classname}Repository
 
 class ${classname_python}UsecaseFactory:
 
