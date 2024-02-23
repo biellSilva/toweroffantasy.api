@@ -1,10 +1,9 @@
 from fastapi import FastAPI
-
-from src import config
 from fastapi.middleware.cors import CORSMiddleware
 
+from src import config
+from src.main.app.routes import simulacra
 from src.presentation.middlewares.timer import ProcessTimerMiddleware
-
 
 app = FastAPI(
     title=config.PROJECT_NAME,
@@ -24,3 +23,5 @@ app.add_middleware(
 )
 
 app.add_middleware(ProcessTimerMiddleware)
+
+app.include_router(router=simulacra.router)
