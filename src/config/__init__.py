@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import Any
 
 from src.utils import current_time
 
@@ -26,3 +27,6 @@ PROJECT_DESC: str = (
     f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")}'
 )
 PROJECT_LICENSE: dict[str, str] = {"License": "All Rigths Reserved"}
+
+
+SWAGGER_UI_PARAMS: dict[str, Any] = {"defaultModelsExpandDepth": -1}  # hide schemas
