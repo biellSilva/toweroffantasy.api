@@ -17,6 +17,7 @@ from src.utils.simulacra import weapon_matrix_rework
 class Simulacra(ModelBase):
     name: str
     rarity: int
+    version: str
     isReleased: bool = True
     avatarId: str
     advanceId: str | None = None
