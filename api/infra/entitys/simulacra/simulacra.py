@@ -18,6 +18,7 @@ class Simulacra(EntityBase):
     avatarId: str
     advanceId: str | None = None
     unlockInfo: str
+    limited: bool
 
     weaponId: Annotated[
         str | None,

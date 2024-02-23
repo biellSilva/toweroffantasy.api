@@ -1,12 +1,11 @@
-
 import strawberry
 
 from api.infra.entitys.graphql.banner import Banner
 from api.infra.entitys.graphql.meta import MetaData
 from api.infra.entitys.weapons.graphql.extra import (
-    ShatterOrCharge, 
-    WeaponEffect, 
-    WeaponAdvancement, 
+    ShatterOrCharge,
+    WeaponEffect,
+    WeaponAdvancement,
     WeaponAttacks,
     WeaponAssets,
     BaseStats,
@@ -25,12 +24,13 @@ class Weapon:
     version: str
     rarity: int
     assets: WeaponAssets
+    limited: bool
 
     # Brief: str
     category: str
     element: str
     description: str
-    
+
     shatter: ShatterOrCharge
     charge: ShatterOrCharge
 
@@ -42,10 +42,9 @@ class Weapon:
     elementEffect: WeaponEffect | None
     weaponEffects: list[WeaponEffect]
 
-    weaponAdvancements: list[WeaponAdvancement] 
-    weaponAttacks: WeaponAttacks 
+    weaponAdvancements: list[WeaponAdvancement]
+    weaponAttacks: WeaponAttacks
     weaponStats: list[BaseStats]
 
     meta: MetaData
     banners: list[Banner]
-

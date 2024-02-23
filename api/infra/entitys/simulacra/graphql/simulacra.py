@@ -11,6 +11,7 @@ class Simulacra:
     name: str
     version: str
     isReleased: bool
+    limited: bool
     rarity: int
     avatarId: str
     advanceId: str | None
