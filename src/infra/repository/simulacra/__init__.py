@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-from typing import NoReturn
 
 from src.data.protocols.db.simulacra.find import FindSimulacraRepository
 from src.domain.errors.http import DataNotFoundErr
@@ -35,6 +34,8 @@ class SimulacraRepository(FindSimulacraRepository):
 
         await self.load_data(version=version, lang=lang)
 
+        return await self.find_by_id(id=id, version=version, lang=lang)
+
     async def get_all(
         self, version: VERSIONS_ENUM, lang: LANGS_GLOBAL_ENUM | LANGS_CHINA_ENUM
     ) -> list[Simulacra]:
@@ -44,9 +45,11 @@ class SimulacraRepository(FindSimulacraRepository):
 
         await self.load_data(version=version, lang=lang)
 
+        return await self.get_all(version=version, lang=lang)
+
     async def load_data(
         self, version: VERSIONS_ENUM, lang: LANGS_GLOBAL_ENUM | LANGS_CHINA_ENUM
-    ) -> NoReturn:
+    ) -> None:
 
         if version not in self.cache:
             self.cache.update({version: {}})
@@ -70,3 +73,5 @@ class SimulacraRepository(FindSimulacraRepository):
             self.cache[version][lang].update({key_id.lower(): Simulacra(**value_dict)})  # type: ignore
 
         self.cache[version][lang] = sort_simulacra(self.cache[version][lang])
+
+        return None
