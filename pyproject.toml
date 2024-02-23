@@ -25,12 +25,30 @@ dev = [
     "types-pytz>=2024.1.0.20240203",
     "pytest>=8.0.1",
     "pytest-asyncio>=0.23.5",
+    "mypy>=1.8.0",
+    "flake8>=7.0.0",
+    "flake8-pyproject>=1.2.3",
+    "isort>=5.13.2",
+    "black>=24.2.0",
+    "autoflake>=2.3.0",
 ]
 
 [tool.pdm.scripts]
 prod = "uvicorn src.main.app:app --no-access-log --log-config ./log-config.yml"
 dev = "uvicorn src.main.app:app --reload --reload-dir ./ --log-config ./log-config.yml"
+
 test = "pytest"
+
+pyright = "pyright ."
+mypy = "mypy ."
+flake8 = "flake8 ."
+autoflake = "autoflake ."
+isort = "isort ."
+black = "black ."
+
+format = { composite = ["autoflake", "flake8", "isort", "black"] }
+lint = { composite = ["format", "mypy"] }
+
 
 [tool.pytest.ini_options]
 console_output_style = "progress"
@@ -38,3 +56,53 @@ testpaths = ["tests"]
 python_classes = ["*Suite"]
 python_files = ["test_*.py"]
 python_functions = ["*_test"]
+
+
+[tool.mypy]
+pretty = true
+color_output = true
+disallow_untyped_defs = true
+exclude = [
+    ".venv",
+    "venv",
+    '.git',
+    '.mypy_cache',
+    '.pytest_cache',
+    '__pycache__',
+]
+
+
+[tool.flake8]
+max-line-length = 88
+exclude = [
+    ".git",
+    "__pycache__",
+    "__init__.py",
+    ".mypy_cache",
+    ".pytest_cache",
+    "venv",
+    ".venv",
+]
+
+[tool.autoflake]
+check = false
+in-place = true
+recursive = true
+exclude = ".git,venv,.venv,.mypy_cache,.pytest_cache,__pycache__"
+remove-all-unused-imports = true
+ignore-init-module-imports = true
+remove-duplicate-keys = true
+remove-unused-variables = true
+
+
+[tool.isort]
+profile = "black"
+use_parentheses = true
+src_paths = ["src", "test"]
+remove_redundant_aliases = true
+float_to_top = true
+color_output = true
+
+
+[tool.black]
+color = true
