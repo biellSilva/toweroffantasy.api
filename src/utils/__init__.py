@@ -21,3 +21,9 @@ def current_time() -> datetime:
 def project_toml() -> __models.Project:
     with open("./pyproject.toml", "rb") as f:
         return __models.PyProject(**tomllib.load(f)).project
+
+
+def string_or_null(text: str) -> str | None:
+    if text.lower() in ("none", "null"):
+        return None
+    return text.lower()
