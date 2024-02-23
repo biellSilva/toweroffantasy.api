@@ -11,9 +11,9 @@ from .extra import VoiceActors as VC
 
 
 class Simulacra(EntityBase):
-    name: str = "unknown"
+    name: str
     rarity: int
-    version: str = "unknown"
+    version: str
     isReleased: bool = True
     avatarId: str
     advanceId: str | None = None
