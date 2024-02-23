@@ -16,10 +16,6 @@ class FindSimulacraParams(BaseModel):
     )
 
 
-class FindSimulacraResult(Simulacra):
-    pass
-
-
-class IFindSimulacraUseCase(IUsecase[FindSimulacraParams, FindSimulacraResult], ABC):
+class IFindSimulacraUseCase(IUsecase[FindSimulacraParams, Simulacra], ABC):
     @abstractmethod
-    async def execute(self, params: FindSimulacraParams) -> FindSimulacraResult: ...
+    async def execute(self, params: FindSimulacraParams) -> Simulacra: ...
