@@ -54,9 +54,13 @@ class AchievementRepo(ModelRepository[EntityBase, Achievement]):
             rewards: list[dict[str, Any]] = []
 
             for reward in achievement_dict["achievementRewards"]:
+                if "material" in reward:
+                    reward.update(reward["material"])
                 rewards.append(reward)
 
             for reward_2 in achievement_dict["extraRewards"]:
+                if "material" in reward_2:
+                    reward_2.update(reward_2["material"])
                 rewards.append(reward_2)
 
             achievement_dict["rewards"] = rewards
