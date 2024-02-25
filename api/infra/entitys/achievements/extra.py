@@ -2,7 +2,7 @@ from pydantic import AliasChoices, BaseModel, Field
 
 
 class Award(BaseModel):
-    id: str = Field(validation_alias=AliasChoices("id"))
+    matId: str
     name: str
     description: str
     icon: str
