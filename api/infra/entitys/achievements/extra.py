@@ -1,15 +1,11 @@
 from pydantic import AliasChoices, BaseModel, Field
 
 
-class Material(BaseModel):
-    id: str
+class Award(BaseModel):
+    id: str = Field(validation_alias=AliasChoices("id"))
     name: str
     description: str
     icon: str
     rarity: int | None = None
     type: str | None = None
-
-
-class Award(BaseModel):
-    material: Material
     amount: int = Field(validation_alias=AliasChoices("amt"))

@@ -1,11 +1,16 @@
-
 import strawberry
 
 
 @strawberry.type
 class Award:
-    type: str
+    matId: str
+    name: str
+    description: str
+    icon: str
+    rarity: int | None
+    type: str | None
     amount: int
+
 
 @strawberry.type
 class Achievement:
