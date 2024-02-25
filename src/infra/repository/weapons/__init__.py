@@ -95,6 +95,9 @@ class WeaponsRepository:
 
             value_dict = weapon_fix_minor_issues(dict_=value_dict)
 
+            assert isinstance(value_dict["advancements"][0]["shatter"], (float, int))
+            assert isinstance(value_dict["advancements"][0]["charge"], (float, int))
+
             value_dict["shatter"] = shatter_or_charge_setter(
                 value_dict["advancements"][0]["shatter"]
             )
@@ -111,6 +114,8 @@ class WeaponsRepository:
                     "need": advanc["need"],
                 }
                 for advanc in value_dict["advancements"]
+                if isinstance(advanc["shatter"], float)
+                and isinstance(advanc["charge"], float)
             ]
 
             value_dict["stats_att"] = weapon_convert_stat(dict_=value_dict)
