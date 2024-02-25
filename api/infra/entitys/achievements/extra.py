@@ -1,7 +1,15 @@
+from pydantic import AliasChoices, BaseModel, Field
 
-from pydantic import BaseModel
+
+class Material(BaseModel):
+    id: str
+    name: str
+    description: str
+    icon: str
+    rarity: int | None = None
+    type: str | None = None
 
 
 class Award(BaseModel):
-    type: str
-    amount: int
+    material: Material
+    amount: int = Field(validation_alias=AliasChoices("amt"))
