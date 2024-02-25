@@ -1,4 +1,5 @@
 from typing import Annotated
+
 from pydantic import AliasChoices, BaseModel, BeforeValidator, Field
 
 from src.utils import bold_numbers

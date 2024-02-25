@@ -1,9 +1,9 @@
 from abc import ABC, abstractmethod
+
 from fastapi import Path, Query
-
 from pydantic import BaseModel
-from src.domain.models.simulacra import Simulacra
 
+from src.domain.models.simulacra import Simulacra
 from src.domain.usecases.base import IUsecase
 from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 

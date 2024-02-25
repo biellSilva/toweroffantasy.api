@@ -32,4 +32,5 @@ PROJECT_DESC: str = (
 PROJECT_LICENSE: dict[str, str] = {"name": __PROJECT_TOML.license.text}
 
 
+# SWAGGER PARAMS
 SWAGGER_UI_PARAMS: dict[str, Any] = {"defaultModelsExpandDepth": -1}  # hide schemas

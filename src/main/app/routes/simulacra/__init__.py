@@ -2,7 +2,6 @@ from fastapi import APIRouter
 
 from src.main.factories.controller.simulacra.find import FindSimulacraControllerFactory
 
-
 router = APIRouter(prefix="/simulacra", tags=["Simulacra"])
 
 find = FindSimulacraControllerFactory.create()

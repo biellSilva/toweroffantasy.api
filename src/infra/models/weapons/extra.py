@@ -3,8 +3,8 @@ from typing import Any, TypedDict
 
 class RawAdvancement(TypedDict):
     description: str | None
-    charge: float
-    shatter: float
+    charge: float | dict[str, Any]
+    shatter: float | dict[str, Any]
     multiplier: list[Any]
     need: str | None
 

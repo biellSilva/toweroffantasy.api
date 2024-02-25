@@ -1,4 +1,5 @@
 from typing import TYPE_CHECKING
+
 from src.config.sorter import SIMULACRA_SORT_ORDER
 from src.infra.models.simulacra import RawSimulacra
 

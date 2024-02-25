@@ -24,7 +24,7 @@ def weapon_fix_minor_issues(dict_: RawWeapon) -> RawWeapon:
     return dict_
 
 
-def shatter_or_charge_classifier(number: float):
+def shatter_or_charge_classifier(number: float) -> str:
     if number >= 15:
         return "SS"
     elif number >= 10.01:
@@ -113,7 +113,6 @@ async def weapon_upgrade_mats(
 
 def weapon_skill_values(dict_: RawWeapon, DESC_VALUES: dict[str, Any]) -> RawWeapon:
     for type_skill, skill_list in dict_["skills"].items():
-        skill_list: list[dict[str, Any]]
         for i, item in enumerate(skill_list):
             if skill_id := item.get("id", None):
                 values: list[list[float]] = []

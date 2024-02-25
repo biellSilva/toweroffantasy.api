@@ -27,7 +27,10 @@ class DataIncompleteErr(HTTPException):
     def __init__(
         self,
         status_code: int = status.HTTP_404_NOT_FOUND,
-        detail: Any = "While loading data files something went wrong, most likely due to a missing file",
+        detail: Any = (
+            "While loading data files something went wrong,"
+            " most likely due to a missing file"
+        ),
         headers: Dict[str, str] | None = None,
     ) -> None:
         super().__init__(status_code, detail, headers)

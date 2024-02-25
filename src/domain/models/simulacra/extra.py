@@ -1,8 +1,8 @@
 from typing import Annotated
 
 from pydantic import AliasChoices, BaseModel, BeforeValidator, Field
-from src.utils import to_strip
 
+from src.utils import to_strip
 from src.utils.simulacra import voice_actor_rework
 
 

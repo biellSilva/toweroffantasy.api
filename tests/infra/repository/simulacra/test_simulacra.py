@@ -7,7 +7,7 @@ from src.infra.repository.simulacra import SimulacraRepository
 class SimulacraSuite:
 
     @pytest.mark.asyncio
-    async def global_de_test(self):
+    async def global_de_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -16,7 +16,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_en_test(self):
+    async def global_en_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -25,7 +25,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_es_test(self):
+    async def global_es_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -34,7 +34,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_fr_test(self):
+    async def global_fr_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -43,7 +43,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_id_test(self):
+    async def global_id_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -52,7 +52,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_ja_test(self):
+    async def global_ja_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -61,7 +61,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_pt_test(self):
+    async def global_pt_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -70,7 +70,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_ru_test(self):
+    async def global_ru_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -79,7 +79,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_th_test(self):
+    async def global_th_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -88,7 +88,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_zh_cn_test(self):
+    async def global_zh_cn_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(
@@ -97,7 +97,7 @@ class SimulacraSuite:
         assert len(DATA) != 0
 
     @pytest.mark.asyncio
-    async def global_zh_hans_sg_test(self):
+    async def global_zh_hans_sg_test(self) -> None:
         REPO = SimulacraRepository()
 
         DATA = await REPO.get_all(

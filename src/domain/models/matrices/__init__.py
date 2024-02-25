@@ -1,5 +1,7 @@
 from typing import Annotated
+
 from pydantic import AliasChoices, BeforeValidator, Field
+
 from src.domain.models.banner import Banner
 from src.domain.models.base import ModelBase
 from src.domain.models.matrices.extra import MatrixAsset, MatrixMeta, MatrixSet
