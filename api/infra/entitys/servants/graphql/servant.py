@@ -42,3 +42,5 @@ class SmartServant:
     assets: ServantAsset
     skills: list[ServantSkill]
     upgradeItems: list[ServantUpgrade]
+    propreties: str
+    advancements: list[str]

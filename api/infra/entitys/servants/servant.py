@@ -14,3 +14,5 @@ class SmartServant(EntityBase):
     assets: ServantAsset
     skills: list[ServantSkill]
     upgradeItems: list[ServantUpgrade] = Field(validation_alias="petUpgradeItemMap")
+    properties: str
+    advancements: list[str]
