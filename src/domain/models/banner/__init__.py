@@ -1,3 +1,4 @@
+from datetime import datetime
 from typing import Annotated
 
 from pydantic import AliasChoices, BaseModel, BeforeValidator, Field
@@ -18,11 +19,11 @@ class Banner(BaseModel):
     simulacrumName: str | None = Field(
         default=None, validation_alias=AliasChoices("simulacrum", "simulacrumName")
     )
-    bannerNumber: int = Field(validation_alias=AliasChoices("bannerNo", "bannerNumber"))
+    bannerNumber: int
     element: str | None = None
     category: str | None = None
-    startDate: str = Field(validation_alias=AliasChoices("start", "startDate"))
-    endDate: str = Field(validation_alias=AliasChoices("end", "endDate"))
+    startDate: datetime
+    endDate: datetime
     detailsLink: str = Field(
         validation_alias=AliasChoices("details_link", "detailsLink")
     )
@@ -34,4 +35,3 @@ class Banner(BaseModel):
         validation_alias=AliasChoices("final_rerun", "isFinalBanner")
     )
     isCollab: bool = Field(validation_alias=AliasChoices("is_collab", "isCollab"))
-    isReleased: bool = True
