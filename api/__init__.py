@@ -31,6 +31,7 @@ from api.routes import (
     mounts,
     servants,
     guidebook,
+    gear,
     home,
 )
 
@@ -59,6 +60,7 @@ TAGS_METADATA = [
     extras.METADATA,
     image.METADATA,
     graphql.METADATA,
+    gear.METADATA,
 ]
 
 LAST_RESTART = datetime.now(timezone("UTC"))
@@ -129,6 +131,7 @@ app.include_router(outfits.router)
 app.include_router(mounts.router)
 app.include_router(servants.router)
 app.include_router(guidebook.router)
+app.include_router(gear.router)
 
 app.include_router(extras.router)
 app.include_router(image.router)

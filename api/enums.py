@@ -86,6 +86,12 @@ __global_guidbooks: list[str] = [
 ]
 GUIDEBOOKS = StrEnum("GUIDEBOOKS", __global_guidbooks)
 
+__global_gears: list[str] = [
+    str(file).lower()
+    for file in loads(Path("api/infra/database/global/en/gear.json").read_bytes())
+]
+GEARS = StrEnum("GEARS", __global_gears)
+
 ## CHINA ENUMS
 langs_cn: list[str] = [
     file.name for file in Path("api/infra/database/china").iterdir() if file.is_dir()

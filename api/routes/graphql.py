@@ -11,6 +11,7 @@ from api.enums import langs_cn as LANGS_CN_
 from api.infra.entitys import EntityBase
 from api.infra.entitys.graphql import *
 from api.infra.repository import *
+from api.infra.repository.gear import GearRepo
 from api.infra.repository.guidebook import GuideBookRepo
 from api.utils import filter_released
 
@@ -26,6 +27,7 @@ RELIC_REPO = RelicRepo()
 SERVAN_REPO = ServantsRepo()
 MOUNTS_REPO = MountsRepo()
 GUIDEBOOK_REPO = GuideBookRepo()
+GEAR_REPO = GearRepo()
 
 
 def check_params(lang: str, version: str):
@@ -293,6 +295,24 @@ class Query:
         check_params(lang=lang, version=version)
 
         items = await GUIDEBOOK_REPO.get_all(lang=lang, version=VERSIONS(version))
+        return items  # type: ignore
+
+    @strawberry.field(name="gear")
+    async def get_gear(self, id: str, lang: str = "en") -> Gear:
+        version = "global"
+        check_params(lang=lang, version=version)
+
+        item = await GEAR_REPO.get(
+            EntityBase(id=id), lang=lang, version=VERSIONS(version)
+        )
+        return item  # type: ignore
+
+    @strawberry.field(name="gears")
+    async def get_gears(self, lang: str = "en") -> List[Gear]:
+        version = "global"
+        check_params(lang=lang, version=version)
+
+        items = await GEAR_REPO.get_all(lang=lang, version=VERSIONS(version))
         return items  # type: ignore
 
 
