@@ -13,6 +13,7 @@ from ..weapons.graphql.weapons import Weapon
 from ..graphql.banner import Banner
 from ..graphql.meta import MetaData
 from ..guidebooks.graphql import Guidebook
+from ..gear.graphql import Gear
 
 
 __import__ = [
@@ -31,6 +32,7 @@ __import__ = [
     Banner,
     MetaData,
     Guidebook,
+    Gear,
 ]
 
 __all__ = (
@@ -49,4 +51,5 @@ __all__ = (
     "Banner",
     "MetaData",
     "Guidebook",
+    "Gear",
 )
