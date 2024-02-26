@@ -13271,6 +13271,47 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHoldAndAttack.webp",
 					"id": "GA_FPlayerLancesEvade_EvadeHoldAndAttack"
 				}
+			],
+			"skill": [
+				{
+					"name": "ขั้วโลกกัดกลืน",
+					"description": "กวัดแกว่งหอกยาวผ่ามิติ จากนั้นจะได้รับไฮเปอร์บอดี้ และได้รับเอฟเฟกต์ลดดาเมจที่ได้รับ <shuzhi>80%</> <shuzhi>2</> วินาที สร้างดาเมจแก่เป้าหมายที่อยู่ใกล้เคียงเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม และสร้างหลุมอากาศ <shuzhi>30</> วินาที ช่วงนี้จะดึงเป้าหมายโดยรอบอย่างต่อเนื่อง และสร้างแกนน้ำแข็ง <shuzhi>6</> ชิ้น (ในสนามสามารถมีได้สูงสุดถึง <shuzhi>45</> ชิ้น) คูลดาวน์ <shuzhi>60</> วินาที\r\nหลังจากใช้ขั้วโลกกัดกลืนสำเร็จ เพิ่มดาเมจไฟฟ้าน้ำแข็ง <shuzhi>15%</> และได้รับเอฟเฟกต์เพิกเฉยต่อค่าต้านทานไฟฟ้าน้ำแข็งของเป้าหมาย <shuzhi>30%</> เป็นเวลา <shuzhi>60</> วินาที (การเพิกเฉยต่อค่าต้านทานแต่ละธาตุรวมกันไม่เกิน <shuzhi>50%</>)",
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_Lances_RealSkill.webp",
+					"id": "GA_FPlayerLancesSkill"
+				},
+				{
+					"name": "น้ำแข็งบุกทะลวง",
+					"description": "<shuzhi>โจมตีปกติ: ล็อคการล่า</>เมื่ออาวุธที่ขว้างออกไปถูกเข้ากับหลุมอากาศจะทำให้เกิดระเบิดอากาศหนาวเย็น สร้างดาเมจแก่เป้าหมายที่อยู่ใกล้เคียงหลุมอากาศเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม เพิ่มเอฟเฟกต์<shuzhi>บังคับแช่แข็ง</> (ทุก <shuzhi>30</> วินาที สามารถเรียกใช้ได้สูงสุด <shuzhi>1</> ครั้ง และไม่มีผลกับ <shuzhi>บอส</>) เป็นเวลา <shuzhi>5</> วินาที พร้อมทั้งดึงและระเบิดแกนน้ำแข็งใกล้ ๆ ทั้งหมด และเพิ่มเอฟเฟกต์<shuzhi>ความดันถึงกระดูก</>\r\n<shuzhi>แกนน้ำแข็งระเบิด</>: แกนน้ำแข็งแต่ละแกนจะสร้างดาเมจให้แก่เป้าหมายที่อยู่ใกล้เคียงเท่ากับ <shuzhi>{2}%</> ของ ATK และหลังจากที่แกนน้ำแข็งแต่ละแกนระเบิดแล้วค่าการทำลายโล่จะคำนวณแยก",
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Skill2.webp",
+					"id": "GA_FPlayerLancesSkill2"
+				},
+				{
+					"name": "เงามายาสังหาร",
+					"description": "เคลื่อนที่ไปยังตำแหน่งของอาวุธเพื่อเข้าโจมตีอย่างรวดเร็ว (หากอาวุธที่ขว้างออกไปก่อนหน้าถูกเป้าหมาย จะเคลื่อนที่ไปยังตำแหน่งด้านหน้า) สร้างดาเมจแก่เป้าหมายโดยรอบเท่ากับ <shuzhi>{0}%</> ของ ATK+ <shuzhi>{1}</> แต้ม (เอฟเฟกต์เพิ่มเติมของสกิลจะไม่ถูกเรียกใช้) \r\nเมื่อเงามายาสังหารถูกเป้าหมาย หากแฟนตาเซียไม่อยู่ในสถานะคูลดาวน์ พื้นที่หยุดเวลาจะถูกสร้างขึ้นทันที",
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_ChaseAttack.webp",
+					"id": "GA_FPlayerLances_ChaseAttack"
+				}
+			],
+			"discharge": [
+				{
+					"name": "ความสุขในการสังหาร",
+					"description": "เมื่อ<red>ชาร์จอาวุธเต็ม</>หรือเรียกใช้<red>แฟนตาเซีย</> เมื่อเปลี่ยนเป็นอาวุธนี้<shuzhi>จะล้างสถานะดีบัฟของนักพเนจร</> ยานู่จะหมุนปักหอกลงพื้น สร้างดาเมจแก่เป้าหมายที่อยู่ด้านหน้าโดยรอบเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม และสร้างแกนน้ำแข็งขึ้น <shuzhi>6</> ชิ้น (ในสนามสามารถมีได้สูงสุด <shuzhi>45</> ชิ้น) โดยจะทนต่อดาเมจเป็นเวลา <shuzhi>2.6</> วินาที (ใช้ในลีกแข่งยอดฝีมือไม่ได้)",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_ChangeSkill.webp",
+					"id": "GA_FPlayerLancesChangeSkill"
+				}
 			]
 		},
 		"fashion": [],
