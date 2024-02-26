@@ -7,6 +7,7 @@ from src.infra.models.weapons.extra import RawAdvancement, RawStatBase, RawStatC
 class RawWeapon(TypedDict):
     id: str
     element: str
+    wc: str
     weaponUpgradeId: str
     version: str
     shatter: dict[str, Any]
@@ -18,3 +19,4 @@ class RawWeapon(TypedDict):
     meta: RawMeta
     upgradeMats: dict[str, Any]
     skills: dict[str, Any]
+    banners: list[Any]
