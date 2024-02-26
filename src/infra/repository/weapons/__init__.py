@@ -7,8 +7,9 @@ from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.meta import RawMeta
 from src.infra.models.weapons import RawWeapon
 from src.infra.models.weapons._helpers.weapon_upgrade import RawWeaponUpgrade
+from src.infra.repository.banners import BannersRepository
 from src.infra.repository.items import ItemsRepository
-from src.infra.repository.weapons._helpers import (
+from src.infra.repository.helpers.weapons import (
     ignore_weapon,
     shatter_or_charge_setter,
     sort_weapons,
@@ -44,6 +45,8 @@ class WeaponsRepository:
     __DESC_VALUES: dict[str, list[float]] = json.loads(
         Path("src/infra/database/global/weaponskillnumbers.json").read_bytes()
     )
+
+    __BANNERS_REPO = BannersRepository()
 
     async def find_by_id(
         self,
@@ -94,6 +97,10 @@ class WeaponsRepository:
                 continue
 
             value_dict = weapon_fix_minor_issues(dict_=value_dict)
+
+            value_dict["banners"] = await self.__BANNERS_REPO.find_by_id(
+                id=value_dict["id"]
+            )
 
             assert isinstance(value_dict["advancements"][0]["shatter"], (float, int))
             assert isinstance(value_dict["advancements"][0]["charge"], (float, int))
