@@ -21,8 +21,8 @@ class ItemsRepository:
 
         if cached_version := self.cache.get(version):
             if cached_lang := cached_version.get(lang):
-                if simulacra := cached_lang.get(id):
-                    return simulacra
+                if item := cached_lang.get(id):
+                    return item
                 return None
 
         await self.load_data(version=version, lang=lang)
