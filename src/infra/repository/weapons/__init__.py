@@ -8,7 +8,6 @@ from src.infra.models.meta import RawMeta
 from src.infra.models.weapons import RawWeapon
 from src.infra.models.weapons._helpers.weapon_upgrade import RawWeaponUpgrade
 from src.infra.repository.banners import BannersRepository
-from src.infra.repository.items import ItemsRepository
 from src.infra.repository.helpers.weapons import (
     ignore_weapon,
     shatter_or_charge_setter,
@@ -18,6 +17,7 @@ from src.infra.repository.helpers.weapons import (
     weapon_skill_values,
     weapon_upgrade_mats,
 )
+from src.infra.repository.items import ItemsRepository
 
 
 class WeaponsRepository:

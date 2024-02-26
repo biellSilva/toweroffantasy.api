@@ -6,10 +6,7 @@ from src.domain.errors.http import DataNotFoundErr
 from src.domain.models.simulacra import Simulacra
 from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.simulacra import RawSimulacra
-from src.infra.repository.helpers.simulacra import (
-    ignore_simulacra,
-    sort_simulacra,
-)
+from src.infra.repository.helpers.simulacra import ignore_simulacra, sort_simulacra
 from src.infra.repository.helpers.unlockables import add_unlockables
 
 

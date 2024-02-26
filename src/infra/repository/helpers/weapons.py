@@ -67,7 +67,7 @@ async def weapon_upgrade_mats(
             dict_["id"].lower(), None
         ):
             for ind, level in enumerate(upgrade_obj):
-                if not "requiredExp" in level:
+                if "requiredExp" not in level:
                     for item in level:
                         if mat_id := item.get("mat_id", None):
                             if mat_id.lower() != "none":
@@ -81,7 +81,9 @@ async def weapon_upgrade_mats(
                         upgrade_obj[ind] = {
                             "requiredExp": sum(
                                 upgrade_exp_require[
-                                    (ind_start if ind_start > 0 else 0) : ind_end
+                                    (
+                                        ind_start if ind_start > 0 else 0
+                                    ) : ind_end  # noqa: E203
                                 ]
                             ),
                             "mats": level,
