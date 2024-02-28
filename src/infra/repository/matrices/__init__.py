@@ -6,7 +6,7 @@ from src.domain.models.matrices import Matrix
 from src.domain.models.meta import MetaData
 from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.matrices import RawMatrix
-from src.infra.repository.matrices._helpers import ignore_matrix, matrix_set_rework
+from src.infra.repository.helpers.matrices import ignore_matrix, matrix_set_rework
 
 
 class MatricesRepository:
