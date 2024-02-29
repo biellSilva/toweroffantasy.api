@@ -1,14 +1,12 @@
 import pytest
 
-from src.infra.repository.banners import BannersRepository
+from src.infra.repository.banners.global_ import BannersGlobalRepository
 
 
-class ItemsSuite:
+class BannersSuite:
 
     @pytest.mark.asyncio
-    async def global_de_test(self) -> None:
-        REPO = BannersRepository()
-
+    async def global_banners_test(self) -> None:
+        REPO = BannersGlobalRepository()
         DATA = await REPO.get_all()
-
         assert len(DATA) != 0
