@@ -34,3 +34,15 @@ class DataIncompleteErr(HTTPException):
         headers: Dict[str, str] | None = None,
     ) -> None:
         super().__init__(status_code, detail, headers)
+
+
+class NotImplementedErr(HTTPException):
+    def __init__(
+        self,
+        status_code: int = status.HTTP_501_NOT_IMPLEMENTED,
+        detail: Any = (
+            "Not implemented yet"
+        ),
+        headers: Dict[str, str] | None = None,
+    ) -> None:
+        super().__init__(status_code, detail, headers)
