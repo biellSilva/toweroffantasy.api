@@ -1,13 +1,19 @@
 from typing import Any, TypedDict
 
 from src.infra.models.meta import RawMeta
-from src.infra.models.weapons.extra import RawAdvancement, RawStatBase, RawStatConverted
+from src.infra.models.weapons.extra import (
+    RawAdvancement,
+    RawStatBase,
+    RawStatConverted,
+    RawWeaponAssets,
+)
 
 
 class RawWeapon(TypedDict):
     id: str
     element: str
     wc: str
+    assets: RawWeaponAssets
     weaponUpgradeId: str
     version: str
     shatter: dict[str, Any]

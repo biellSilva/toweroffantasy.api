@@ -28,3 +28,7 @@ class RawStatConverted(TypedDict):
     icon: str
     value: float
     upgradeProp: float
+
+
+class RawWeaponAssets(TypedDict):
+    icon: str
