@@ -8,6 +8,9 @@ from datetime import datetime
 weapons_data: dict[str, Any] = loads(
     Path("api/infra/database/global/en/weapons.json").read_bytes()
 )
+imitations_data: dict[str, Any] = loads(
+    Path("api/infra/database/global/en/imitations.json").read_bytes()
+)
 
 
 class Banner(BaseModel):
@@ -25,9 +28,12 @@ class Banner(BaseModel):
     simulacrumName: str | None = Field(
         default=None, validation_alias=AliasChoices("simulacrum", "simulacrumName")
     )
+    simulacrumIcon: str | None
+    weaponIcon: str | None
     bannerNumber: int = Field(validation_alias=AliasChoices("bannerNo", "bannerNumber"))
     element: str | None = None
     category: str | None = None
+    rarity: int
     startDate: str = Field(validation_alias=AliasChoices("start", "startDate"))
     endDate: str = Field(validation_alias=AliasChoices("end", "endDate"))
     detailsLink: str = Field(
@@ -49,9 +55,14 @@ class Banner(BaseModel):
         if weapon_data := weapons_data.get(value.get("weapon_id", ""), None):
             value["element"] = weapon_data["element"]
             value["category"] = weapon_data["wc"]
+            value["weaponIcon"] = weapon_data["assets"]["icon"]
 
             if value["weapon_id"] == "blevi_thunder":
                 value["element"] = "IceThunder"
+
+        if imitation_data := imitations_data.get(value.get("imitation_id", ""), None):
+            value["simulacrumIcon"] = imitation_data["assetsA0"]["avatar"]
+            value["rarity"] = imitation_data["rarity"]
 
         try:
             if datetime.strptime(value["start"], "%Y/%m/%d %H:%M") > datetime.now():
