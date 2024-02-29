@@ -9,7 +9,7 @@ from src.infra.repository.helpers.banners import sort_banners_without_number
 from src.infra.repository.helpers.weapons import weapon_fix_minor_issues
 
 
-class BannersRepository:
+class BannersGlobalRepository:
     __cache: list[Banner] = []
 
     async def find_by_id(
@@ -35,8 +35,8 @@ class BannersRepository:
 
     async def load_data(self) -> None:
 
-        DATA_PATH = Path("./src/infra/database/global/banners_global.json")
-        WEAPONS_PATH = Path("./src/infra/database/global/en/weapons.json")
+        DATA_PATH = Path("./src/infra/database/global", "banners_global.json")
+        WEAPONS_PATH = Path("./src/infra/database/global/en/", "weapons.json")
 
         if not DATA_PATH.exists() or not WEAPONS_PATH.exists():
             raise DataNotFoundErr

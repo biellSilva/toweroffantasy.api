@@ -1,10 +1,10 @@
 from typing import TYPE_CHECKING, Any
 
 from src.config.sorter import WEAPON_SORT_ORDER
-from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM, VERSIONS_ENUM
+from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.models.weapons import RawWeapon
 from src.infra.models.weapons.extra import RawStatConverted
-from src.infra.repository.items import ItemsRepository
+from src.infra.repository.items.global_ import ItemsGlobalRepository
 
 if TYPE_CHECKING:
     from src.domain.models.weapons import Weapon
@@ -56,11 +56,10 @@ def weapon_convert_stat(dict_: RawWeapon) -> list[RawStatConverted]:
 
 async def weapon_upgrade_mats(
     dict_: RawWeapon,
-    version: VERSIONS_ENUM,
-    lang: LANGS_GLOBAL_ENUM | LANGS_CHINA_ENUM,
+    lang: LANGS_GLOBAL_ENUM,
     __WEAPON_MATS: dict[str, Any],
     __WEAPON_EXP_REQUIRED_LEVELS: dict[str, Any],
-    __ITEM_REPO: ItemsRepository,
+    __ITEM_REPO: ItemsGlobalRepository,
 ) -> RawWeapon:
     if upgrade_obj := __WEAPON_MATS.get(dict_["weaponUpgradeId"], None):
         if upgrade_exp_require := __WEAPON_EXP_REQUIRED_LEVELS.get(
@@ -72,7 +71,7 @@ async def weapon_upgrade_mats(
                         if mat_id := item.get("mat_id", None):
                             if mat_id.lower() != "none":
                                 if item_obj := await __ITEM_REPO.find_by_id(
-                                    mat_id.lower(), version=version, lang=lang
+                                    mat_id.lower(), lang=lang
                                 ):
                                     item.update(**item_obj.model_dump())
 
@@ -97,7 +96,6 @@ async def weapon_upgrade_mats(
                             if item_obj := await __ITEM_REPO.find_by_id(
                                 id=mat_id,
                                 lang=lang,
-                                version=version,
                             ):
                                 item.update(**item_obj.model_dump())
 

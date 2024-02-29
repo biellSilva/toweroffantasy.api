@@ -3,11 +3,11 @@ from pathlib import Path
 
 from src.domain.errors.http import DataNotFoundErr
 from src.domain.models.weapons import Weapon
-from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM, VERSIONS_ENUM
+from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.models.meta import RawMeta
 from src.infra.models.weapons import RawWeapon
 from src.infra.models.weapons._helpers.weapon_upgrade import RawWeaponUpgrade
-from src.infra.repository.banners import BannersRepository
+from src.infra.repository.banners.global_ import BannersGlobalRepository
 from src.infra.repository.helpers.weapons import (
     ignore_weapon,
     shatter_or_charge_setter,
@@ -17,16 +17,14 @@ from src.infra.repository.helpers.weapons import (
     weapon_skill_values,
     weapon_upgrade_mats,
 )
-from src.infra.repository.items import ItemsRepository
+from src.infra.repository.items.global_ import ItemsGlobalRepository
 
 
-class WeaponsRepository:
-    __cache: dict[
-        VERSIONS_ENUM,
-        dict[LANGS_GLOBAL_ENUM | LANGS_CHINA_ENUM, dict[str, Weapon]],
-    ] = {}
+class WeaponsGlobalRepository:
+    __cache: dict[LANGS_GLOBAL_ENUM, dict[str, Weapon]] = {}
 
-    __ITEM_REPO = ItemsRepository()
+    __ITEM_REPO = ItemsGlobalRepository()
+    __BANNERS_REPO = BannersGlobalRepository()
 
     __META_GB: dict[str, RawMeta] = json.loads(
         Path("src/infra/database/global/meta.json").read_bytes()
@@ -46,46 +44,38 @@ class WeaponsRepository:
         Path("src/infra/database/global/weaponskillnumbers.json").read_bytes()
     )
 
-    __BANNERS_REPO = BannersRepository()
 
     async def find_by_id(
         self,
         id: str,
-        version: VERSIONS_ENUM,
-        lang: LANGS_GLOBAL_ENUM | LANGS_CHINA_ENUM,
+        lang: LANGS_GLOBAL_ENUM,
     ) -> Weapon | None:
-        if cached_version := self.__cache.get(version):
-            if cached_lang := cached_version.get(lang):
-                if weapon := cached_lang.get(id):
-                    return weapon
-                return None
+        if cached_lang := self.__cache.get(lang):
+            if weapon := cached_lang.get(id):
+                return weapon
+            return None
 
-        await self.load_data(version=version, lang=lang)
-
-        return await self.find_by_id(id=id, version=version, lang=lang)
+        await self.load_data(lang=lang)
+        return await self.find_by_id(id=id, lang=lang)
 
     async def get_all(
-        self, version: VERSIONS_ENUM, lang: LANGS_GLOBAL_ENUM | LANGS_CHINA_ENUM
+        self,  lang: LANGS_GLOBAL_ENUM
     ) -> list[Weapon]:
-        if cached_version := self.__cache.get(version):
-            if cached_lang := cached_version.get(lang):
-                return list(cached_lang.values())
 
-        await self.load_data(version=version, lang=lang)
+        if cached_lang := self.__cache.get(lang):
+            return list(cached_lang.values())
 
-        return await self.get_all(version=version, lang=lang)
+        await self.load_data(lang=lang)
+        return await self.get_all(lang=lang)
 
     async def load_data(
-        self, version: VERSIONS_ENUM, lang: LANGS_GLOBAL_ENUM | LANGS_CHINA_ENUM
+        self,  lang: LANGS_GLOBAL_ENUM
     ) -> None:
 
-        if version not in self.__cache:
-            self.__cache.update({version: {}})
+        if lang not in self.__cache:
+            self.__cache.update({lang: {}})
 
-        if lang not in self.__cache[version]:
-            self.__cache[version].update({lang: {}})
-
-        DATA_PATH = Path("./src/infra/database", version, lang, "weapons.json")
+        DATA_PATH = Path("./src/infra/database/global", lang, "weapons.json")
 
         if not DATA_PATH.exists():
             raise DataNotFoundErr
@@ -135,7 +125,6 @@ class WeaponsRepository:
 
             value_dict = await weapon_upgrade_mats(
                 value_dict,
-                version,
                 lang,
                 self.__WEAPON_MATS,
                 self.__WEAPON_EXP_REQUIRED_LEVELS,
@@ -144,6 +133,6 @@ class WeaponsRepository:
 
             value_dict = weapon_skill_values(value_dict, self.__DESC_VALUES)
 
-            self.__cache[version][lang].update({key_id.lower(): Weapon(**value_dict)})  # type: ignore
+            self.__cache[lang].update({key_id.lower(): Weapon(**value_dict)})  # type: ignore
 
-        self.__cache[version][lang] = sort_weapons(self.__cache[version][lang])
+        self.__cache[lang] = sort_weapons(self.__cache[lang])
