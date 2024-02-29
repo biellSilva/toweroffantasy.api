@@ -2,6 +2,8 @@ import logging
 
 from api.infra.repository import *
 from api.enums import VERSIONS, LANGS, langs
+from api.infra.repository.gear import GearRepo
+from api.infra.repository.guidebook import GuideBookRepo
 
 
 def config_log():
@@ -102,11 +104,17 @@ async def test_global_data(lang: str):
 
     guidebooks = [
         i.model_dump()
-        for i in await ServantsRepo().get_all(
+        for i in await GuideBookRepo().get_all(
             lang=LANGS(lang), version=VERSIONS("global")
         )
     ]
     _logger.info("guidebooks: %s items", len(guidebooks))
+
+    gears = [
+        i.model_dump()
+        for i in await GearRepo().get_all(lang=LANGS(lang), version=VERSIONS("global"))
+    ]
+    _logger.info("gears: %s items", len(gears))
 
 
 async def test_init():
