@@ -4,7 +4,7 @@ from typing import Any
 
 from src.domain.errors.http import DataNotFoundErr
 from src.enums import LANGS_GLOBAL_ENUM
-from src.infra.models.servants import SmartServant
+from src.domain.models.servants import SmartServant
 
 
 class SmartServantsGlobalRepository:
