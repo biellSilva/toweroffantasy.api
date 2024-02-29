@@ -19,9 +19,12 @@ class Banner(BaseModel):
     simulacrumName: str | None = Field(
         default=None, validation_alias=AliasChoices("simulacrum", "simulacrumName")
     )
-    bannerNumber: int
     element: str | None = None
     category: str | None = None
+    simulacrumIcon: str | None = None
+    weaponIcon: str | None = None
+    rarity: int = 5
+    bannerNumber: int
     startDate: datetime
     endDate: datetime
     detailsLink: str = Field(

@@ -16,7 +16,10 @@ class RawBanner(TypedDict):
     is_collab: bool
     no_weapon: bool
     imitation_id: str
-    weapon_id: str
-    matrix_id: str
+    weapon_id: str | None
+    matrix_id: str | None
     element: str | None
     category: str | None
+    simulacrumIcon: str | None
+    weaponIcon: str | None
+    rarity: int
