@@ -4,8 +4,9 @@ from pathlib import Path
 from src.domain.errors.http import DataNotFoundErr
 from src.domain.models.simulacra_v2 import SimulacraV2
 from src.enums import LANGS_GLOBAL_ENUM, VERSIONS_ENUM
-from src.infra.models.simulacra_v2 import RawSimulacraV2
-from src.infra.repository.helpers.simulacra_v2 import ignore_simulacra, sort_simulacra
+from src.infra.models.simulacra import RawSimulacra
+from src.infra.repository.helpers.simulacra import ignore_simulacra
+from src.infra.repository.helpers.simulacra_v2 import sort_simulacra
 from src.infra.repository.helpers.unlockables import add_unlockables
 from src.infra.repository.matrices.global_ import MatricesGlobalRepository
 from src.infra.repository.weapons.global_ import WeaponsGlobalRepository
@@ -51,7 +52,7 @@ class SimulacraV2GlobalRepository:
         if not DATA_PATH.exists():
             raise DataNotFoundErr
 
-        DATA: dict[str, RawSimulacraV2] = json.loads(DATA_PATH.read_bytes())
+        DATA: dict[str, RawSimulacra] = json.loads(DATA_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
             if ignore_simulacra(value_dict):
@@ -61,13 +62,13 @@ class SimulacraV2GlobalRepository:
                 dict_=value_dict, version=VERSIONS_ENUM("global"), lang=lang
             )
 
-            if value_dict.get("weaponId"):
+            if weapon_id := value_dict.get("weaponId"):
                 value_dict["weapon"] = await self.__WEAPONS_REPO.find_by_id(  # type: ignore
-                    id=value_dict["weaponId"], lang=lang
+                    id=weapon_id, lang=lang
                 )
-            if value_dict.get("matrixId"):
+            if matrix_id := value_dict.get("matrixId"):
                 value_dict["matrix"] = await self.__MATRICES_REPO.find_by_id(  # type: ignore
-                    id=value_dict["matrixId"], lang=lang
+                    id=matrix_id, lang=lang
                 )
 
             self.__cache[lang].update({key_id.lower(): SimulacraV2(**value_dict)})  # type: ignore
