@@ -1,17 +1,23 @@
-from src.domain.errors.http import NotFoundErr
+from src.domain.errors.http import NotFoundErr, NotImplementedErr
 from src.domain.models.simulacra import Simulacra
 from src.domain.usecases.simulacra.find import (
     FindSimulacraParams,
     IFindSimulacraUseCase,
 )
-from src.infra.repository.simulacra import SimulacraRepository
+from src.infra.repository.simulacra.global_ import SimulacraGlobalRepository
 
 
 class FindSimulacraUseCase(IFindSimulacraUseCase):
-    def __init__(self, repository: SimulacraRepository) -> None:
+    def __init__(self, repository: SimulacraGlobalRepository) -> None:
         self.repository = repository
 
     async def execute(self, params: FindSimulacraParams) -> Simulacra:
-        if simulacra := await self.repository.find_by_id(**params.model_dump()):
-            return simulacra
-        raise NotFoundErr
+        if params.version == "global":
+            if simulacra := await self.repository.find_by_id(
+                **params.model_dump(exclude={"version"})
+            ):
+                return simulacra
+
+            raise NotFoundErr
+
+        raise NotImplementedErr
