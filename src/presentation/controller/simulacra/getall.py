@@ -1,7 +1,5 @@
 from typing import Any
 
-from fastapi import Depends
-
 from src.domain.models.simulacra import Simulacra
 from src.domain.usecases.simulacra.getall import (
     GetallSimulacraParams,
@@ -14,7 +12,8 @@ class GetallSimulacraController:
         self.usecase = usecase
 
     async def handle(
-        self,
-        params: GetallSimulacraParams = Depends(),
+        self, version: str = "global", lang: str = "en"
     ) -> list[Simulacra] | list[dict[str, Any]]:
-        return await self.usecase.execute(params)
+        return await self.usecase.execute(
+            GetallSimulacraParams(version=version, lang=lang)
+        )

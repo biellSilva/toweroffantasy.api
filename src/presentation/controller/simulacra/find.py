@@ -1,5 +1,4 @@
 from typing import Any
-from fastapi import Depends
 
 from src.domain.models.simulacra import Simulacra
 from src.domain.usecases.simulacra.find import (
@@ -13,8 +12,9 @@ class FindSimulacraController:
         self.usecase = usecase
 
     async def handle(
-        self,
-        params: FindSimulacraParams = Depends(),
+        self, id: str, version: str = "global", lang: str = "en"
     ) -> Simulacra | dict[str, Any]:
-        "Find simulacra based on ID"
-        return await self.usecase.execute(params)
+
+        return await self.usecase.execute(
+            FindSimulacraParams(id=id, version=version, lang=lang)
+        )
