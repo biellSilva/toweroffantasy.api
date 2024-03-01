@@ -1,4 +1,3 @@
-
 import strawberry
 
 
@@ -8,6 +7,9 @@ class Banner:
     weaponId: str | None
     matrixId: str | None
     simulacrumName: str | None
+    simulacrumIcon: str | None
+    weaponIcon: str | None
+    rarity: int
     element: str | None
     category: str | None
     bannerNumber: int
