@@ -13,11 +13,21 @@ class NotFoundErr(HTTPException):
         super().__init__(status_code, detail, headers)
 
 
-class DataNotFoundErr(HTTPException):
+class LangNotFoundErr(HTTPException):
     def __init__(
         self,
         status_code: int = status.HTTP_404_NOT_FOUND,
-        detail: Any = "Impossible to reach lang or version data path",
+        detail: Any = "Impossible to reach lang data path",
+        headers: Dict[str, str] | None = None,
+    ) -> None:
+        super().__init__(status_code, detail, headers)
+
+
+class VersionNotFoundErr(HTTPException):
+    def __init__(
+        self,
+        status_code: int = status.HTTP_404_NOT_FOUND,
+        detail: Any = "Impossible to reach version data path",
         headers: Dict[str, str] | None = None,
     ) -> None:
         super().__init__(status_code, detail, headers)
@@ -40,9 +50,7 @@ class NotImplementedErr(HTTPException):
     def __init__(
         self,
         status_code: int = status.HTTP_501_NOT_IMPLEMENTED,
-        detail: Any = (
-            "Not implemented yet"
-        ),
+        detail: Any = "Not implemented yet",
         headers: Dict[str, str] | None = None,
     ) -> None:
         super().__init__(status_code, detail, headers)
