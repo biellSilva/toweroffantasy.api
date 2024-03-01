@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.simulacra import Simulacra
 from src.enums import LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.simulacra import RawSimulacra
@@ -44,7 +44,7 @@ class SimulacraGlobalRepository:
         DATA_PATH = Path("./src/infra/database/global", lang, "imitations.json")
 
         if not DATA_PATH.exists():
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: dict[str, RawSimulacra] = json.loads(DATA_PATH.read_bytes())
 

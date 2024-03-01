@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.mounts import Mount
 from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.models.mounts import RawMount
@@ -39,7 +39,7 @@ class MountsGlobalRepository:
         DATA_PATH = Path("./src/infra/database/global", lang, "mount.json")
 
         if not DATA_PATH.exists():
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: dict[str, RawMount] = json.loads(DATA_PATH.read_bytes())
 

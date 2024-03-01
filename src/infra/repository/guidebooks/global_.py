@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.guidebook import GuideBook
 from src.enums import LANGS_GLOBAL_ENUM
 
@@ -38,7 +38,7 @@ class GuidebooksGlobalRepository:
         DATA_PATH = Path("./src/infra/database/global", lang, "guidebook.json")
 
         if not DATA_PATH.exists():
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: dict[str, dict[str, Any]] = json.loads(DATA_PATH.read_bytes())
 

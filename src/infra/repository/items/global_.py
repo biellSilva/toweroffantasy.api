@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.items import Item
 from src.enums import LANGS_GLOBAL_ENUM
 
@@ -24,9 +24,7 @@ class ItemsGlobalRepository:
         await self.load_data(lang=lang)
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(
-        self, lang: LANGS_GLOBAL_ENUM
-    ) -> list[Item]:
+    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[Item]:
 
         if cached_lang := self.__cache.get(lang):
             return list(cached_lang.values())
@@ -34,9 +32,7 @@ class ItemsGlobalRepository:
         await self.load_data(lang=lang)
         return await self.get_all(lang=lang)
 
-    async def load_data(
-        self, lang: LANGS_GLOBAL_ENUM
-    ) -> None:
+    async def load_data(self, lang: LANGS_GLOBAL_ENUM) -> None:
         if lang not in self.__cache:
             self.__cache.update({lang: {}})
 
@@ -44,7 +40,7 @@ class ItemsGlobalRepository:
         CURRENCY_PATH = Path("./src/infra/database/global", lang, "currency2.json")
 
         if not DATA_PATH.exists() or not CURRENCY_PATH.exists():
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: dict[str, dict[str, Any]] = json.loads(DATA_PATH.read_bytes())
         CURRENCY_DATA: dict[str, dict[str, Any]] = json.loads(

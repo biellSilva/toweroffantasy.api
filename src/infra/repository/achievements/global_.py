@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.achievements import Achievement
 from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.models.achievements import RawAchievement
@@ -43,7 +43,7 @@ class AchievementsGlobalRepository:
         DATA_PATH = Path("./src/infra/database/global", lang, "achievements.json")
 
         if not DATA_PATH.exists():
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: dict[str, RawAchievement] = json.loads(DATA_PATH.read_bytes())
 

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.banner import Banner
 from src.infra.models.banners import RawBanner
 from src.infra.models.simulacra import RawSimulacra
@@ -45,7 +45,7 @@ class BannersGlobalRepository:
             or not WEAPONS_PATH.exists()
             or not IMITATION_PATH.exists()
         ):
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: list[RawBanner] = json.loads(DATA_PATH.read_bytes())
         DATA.sort(key=sort_banners_without_number)
@@ -61,16 +61,16 @@ class BannersGlobalRepository:
 
         for value_dict in DATA:
             if (
-                'imitation_id' not in value_dict or
-                value_dict["imitation_id"] not in IMITATION_DATA
+                "imitation_id" not in value_dict
+                or value_dict["imitation_id"] not in IMITATION_DATA
             ):
                 continue
 
             value_dict["bannerNumber"] = index
 
-            if imitation_data := IMITATION_DATA.get(value_dict['imitation_id']):
-                value_dict['rarity'] = imitation_data['rarity']
-                value_dict['simulacrumIcon'] = imitation_data['assetsA0']['avatar']
+            if imitation_data := IMITATION_DATA.get(value_dict["imitation_id"]):
+                value_dict["rarity"] = imitation_data["rarity"]
+                value_dict["simulacrumIcon"] = imitation_data["assetsA0"]["avatar"]
 
             if "weapon_id" in value_dict and value_dict["weapon_id"]:
                 if weapon_data := WEAPONS_DATA.get(value_dict["weapon_id"]):

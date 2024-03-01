@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.weapons import Weapon
 from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.models.meta import RawMeta
@@ -44,7 +44,6 @@ class WeaponsGlobalRepository:
         Path("src/infra/database/global/weaponskillnumbers.json").read_bytes()
     )
 
-
     async def find_by_id(
         self,
         id: str,
@@ -58,9 +57,7 @@ class WeaponsGlobalRepository:
         await self.load_data(lang=lang)
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(
-        self,  lang: LANGS_GLOBAL_ENUM
-    ) -> list[Weapon]:
+    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[Weapon]:
 
         if cached_lang := self.__cache.get(lang):
             return list(cached_lang.values())
@@ -68,9 +65,7 @@ class WeaponsGlobalRepository:
         await self.load_data(lang=lang)
         return await self.get_all(lang=lang)
 
-    async def load_data(
-        self,  lang: LANGS_GLOBAL_ENUM
-    ) -> None:
+    async def load_data(self, lang: LANGS_GLOBAL_ENUM) -> None:
 
         if lang not in self.__cache:
             self.__cache.update({lang: {}})
@@ -78,7 +73,7 @@ class WeaponsGlobalRepository:
         DATA_PATH = Path("./src/infra/database/global", lang, "weapons.json")
 
         if not DATA_PATH.exists():
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: dict[str, RawWeapon] = json.loads(DATA_PATH.read_bytes())
 

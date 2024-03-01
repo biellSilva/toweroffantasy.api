@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.matrices import Matrix
 from src.domain.models.meta import MetaData
 from src.enums import LANGS_GLOBAL_ENUM
@@ -52,7 +52,7 @@ class MatricesGlobalRepository:
         DATA_PATH = Path("./src/infra/database/global", lang, "matrices.json")
 
         if not DATA_PATH.exists():
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: dict[str, RawMatrix] = json.loads(DATA_PATH.read_bytes())
 

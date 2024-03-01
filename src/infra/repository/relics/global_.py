@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from src.domain.errors.http import DataNotFoundErr
+from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.relics import Relic
 from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.models.relics import RawRelic
@@ -43,7 +43,7 @@ class RelicsGlobalRepository:
         DATA_PATH = Path("./src/infra/database/global", lang, "relics.json")
 
         if not DATA_PATH.exists():
-            raise DataNotFoundErr
+            raise LangNotFoundErr
 
         DATA: dict[str, RawRelic] = json.loads(DATA_PATH.read_bytes())
 
