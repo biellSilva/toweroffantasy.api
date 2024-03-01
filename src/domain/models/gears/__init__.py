@@ -1,5 +1,8 @@
+import strawberry
+
 from src.domain.models.base import ModelBase
-from .extra import StatPool, BaseStat
+
+from .extra import BaseStat, StatPool
 
 
 class Gear(ModelBase):
@@ -11,3 +14,8 @@ class Gear(ModelBase):
     rarity: int
     statPool: list[StatPool] = []
     baseStat: list[BaseStat]
+
+
+@strawberry.experimental.pydantic.type(model=Gear, all_fields=True)
+class GearType:
+    pass

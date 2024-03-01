@@ -1,3 +1,4 @@
+import strawberry
 from pydantic import BaseModel, Field
 
 
@@ -25,3 +26,23 @@ class ServantUpgradeMaterial(BaseModel):
 class ServantUpgrade(BaseModel):
     material: ServantUpgradeMaterial
     exp: int
+
+
+@strawberry.experimental.pydantic.type(model=ServantAsset, all_fields=True)
+class ServantAssetType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=ServantSkill, all_fields=True)
+class ServantSkillType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=ServantUpgradeMaterial, all_fields=True)
+class ServantUpgradeMaterialType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=ServantUpgrade, all_fields=True)
+class ServantUpgradeType:
+    pass

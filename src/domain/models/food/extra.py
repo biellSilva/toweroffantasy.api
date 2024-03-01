@@ -1,5 +1,6 @@
 from typing import Annotated
 from pydantic import BaseModel, BeforeValidator
+import strawberry
 
 from src.domain.models.items import Item
 
@@ -8,3 +9,8 @@ class Ingredient(BaseModel):
     matID: Item
     min: Annotated[int, BeforeValidator(lambda x: int(x))]
     max: Annotated[int, BeforeValidator(lambda x: int(x))]
+
+
+@strawberry.experimental.pydantic.type(model=Ingredient, all_fields=True)
+class IngredientType:
+    pass

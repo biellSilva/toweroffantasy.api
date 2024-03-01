@@ -1,3 +1,4 @@
+import strawberry
 from src.domain.models.base import ModelBase
 
 
@@ -7,3 +8,8 @@ class Outfit(ModelBase):
     description: str | None = None
     source: str | None = None
     icon: str | None
+
+
+@strawberry.experimental.pydantic.type(model=Outfit, all_fields=True)
+class OutfitType:
+    pass

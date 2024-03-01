@@ -1,3 +1,4 @@
+import strawberry
 from pydantic import BaseModel
 
 
@@ -17,3 +18,18 @@ class MetaData(BaseModel):
     rating: list[float] = []
     analyticVideoId: str | None = None
     lastUpdated: MetaLastUpdated = MetaLastUpdated()
+
+
+@strawberry.experimental.pydantic.type(model=MetaLastUpdated, all_fields=True)
+class MetaLastUpdatedType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=RecoMatrix, all_fields=True)
+class RecoMatrixType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=MetaData, all_fields=True)
+class MetaDataType:
+    pass

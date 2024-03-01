@@ -1,9 +1,10 @@
 from typing import Annotated
 
 from pydantic import AliasChoices, BeforeValidator, Field
+import strawberry
 
 from src.domain.models.banner import Banner
-from src.domain.models.base import ModelBase
+from src.domain.models.base import ModelBase, ModelBaseType
 from src.domain.models.guidebook.extra import GuideBookItem
 from src.domain.models.simulacra.extra import (
     Awakening,
@@ -51,3 +52,8 @@ class Simulacra(ModelBase):
     guidebook: list[GuideBookItem] = Field(
         default=[], validation_alias=AliasChoices("nitai", "guidebook")
     )
+
+
+@strawberry.experimental.pydantic.type(Simulacra, all_fields=True)
+class SimulacraType(ModelBaseType):
+    pass

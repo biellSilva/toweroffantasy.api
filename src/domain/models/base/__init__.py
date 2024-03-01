@@ -1,6 +1,7 @@
 from typing import Annotated, Any
 
 from pydantic import BaseModel, BeforeValidator, model_validator
+import strawberry
 
 from src.utils import to_lowercase
 
@@ -26,3 +27,8 @@ class ModelBase(BaseModel):
     @classmethod
     def __to_camel(cls, text: str) -> str:
         return text[0].lower() + text[1:]
+
+
+@strawberry.experimental.pydantic.interface(model=ModelBase, all_fields=True)
+class ModelBaseType:
+    pass

@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import Annotated
 
 from pydantic import AliasChoices, BaseModel, BeforeValidator, Field
+import strawberry
 
 from src.utils import to_lowercase
 
@@ -38,3 +39,8 @@ class Banner(BaseModel):
         validation_alias=AliasChoices("final_rerun", "isFinalBanner")
     )
     isCollab: bool = Field(validation_alias=AliasChoices("is_collab", "isCollab"))
+
+
+@strawberry.experimental.pydantic.type(model=Banner, all_fields=True)
+class BannerType:
+    pass

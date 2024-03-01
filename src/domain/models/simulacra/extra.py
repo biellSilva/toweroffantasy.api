@@ -1,5 +1,6 @@
 from typing import Annotated
 
+import strawberry
 from pydantic import AliasChoices, BaseModel, BeforeValidator, Field
 
 from src.utils import to_strip
@@ -59,3 +60,28 @@ class Fashion(BaseModel):
     simulacrumId: str
     weaponId: str
     assets: FashionAssets
+
+
+@strawberry.experimental.pydantic.type(model=VoiceActors, all_fields=True)
+class VoiceActorsType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=SimulacraAssets, all_fields=True)
+class SimulacraAssetsType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=Awakening, all_fields=True)
+class AwakeningType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=FashionAssets, all_fields=True)
+class FashionAssetsType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=Fashion, all_fields=True)
+class FashionType:
+    pass

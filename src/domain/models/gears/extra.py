@@ -1,4 +1,5 @@
 from pydantic import AliasChoices, BaseModel, Field
+import strawberry
 
 
 class StatPool(BaseModel):
@@ -11,3 +12,13 @@ class BaseStat(BaseModel):
     propName: str = Field(validation_alias=AliasChoices("PropName"))
     propValue: int | float = Field(validation_alias=AliasChoices("PropValue"))
     modifierOp: str = Field(validation_alias=AliasChoices("ModifierOp"))
+
+
+@strawberry.experimental.pydantic.type(model=StatPool, all_fields=True)
+class StatPoolType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=BaseStat, all_fields=True)
+class BaseStatType:
+    pass

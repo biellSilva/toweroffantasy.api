@@ -1,5 +1,6 @@
 from typing import Annotated
 
+import strawberry
 from pydantic import AliasChoices, BeforeValidator, Field
 
 from src.domain.models.base import ModelBase
@@ -15,3 +16,8 @@ class GuideBook(ModelBase):
     )
     menuId: Annotated[str, BeforeValidator(to_lowercase)]
     menuType: Annotated[str, BeforeValidator(to_lowercase)]
+
+
+@strawberry.experimental.pydantic.type(model=GuideBook, all_fields=True)
+class GuideBookType:
+    pass
