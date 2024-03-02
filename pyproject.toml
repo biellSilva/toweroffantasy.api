@@ -47,7 +47,7 @@ autoflake = "autoflake ."
 isort = "isort ."
 black = "black ."
 
-format = { composite = ["autoflake", "flake8", "isort", "black"] }
+format = { composite = ["isort", "black", "autoflake", "flake8"] }
 lint = { composite = ["format", "mypy"] }
 
 
