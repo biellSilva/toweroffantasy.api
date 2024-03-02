@@ -24,5 +24,5 @@ app.add_middleware(
 
 app.add_middleware(ProcessTimerMiddleware)
 
-app.include_router(router=graphql.router, tags=['Graphql'])
-app.add_websocket_route(path='/graphql', route=graphql.router) # type: ignore
+app.include_router(router=graphql.router, tags=["Graphql"])
+app.add_websocket_route(path="/graphql", route=graphql.router)  # type: ignore
