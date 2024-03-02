@@ -52,7 +52,7 @@ class WeaponEffect(BaseModel):
 class Skill(BaseModel):
     name: str | None
     description: Annotated[str, BeforeValidator(bold_numbers)] | None = None
-    values: list[list[float | int]] = []
+    values: list[list[float]] = []
     icon: str | None
     tags: list[str] = []
     operations: list[str] = []

@@ -7,10 +7,13 @@ from strawberry.http import GraphQLHTTPResponse
 from strawberry.types import ExecutionResult
 
 from src.domain.models.simulacra import SimulacraType
+from src.domain.models.weapons import WeaponType
 from src.main.factories.controller.simulacra.find import FindSimulacraControllerFactory
 from src.main.factories.controller.simulacra.getall import (
     GetallSimulacraControllerFactory,
 )
+from src.main.factories.controller.weapons.find import FindWeaponsControllerFactory
+from src.main.factories.controller.weapons.get_all import GetAllWeaponsControllerFactory
 
 
 class TOFGraphQLRouter(GraphQLRouter[Any, Any]):
@@ -42,6 +45,13 @@ class Query:
     )
     simulacra: List[SimulacraType] = strawberry.field(
         resolver=GetallSimulacraControllerFactory.create().handle
+    )
+
+    weapon: WeaponType = strawberry.field(
+        resolver=FindWeaponsControllerFactory.create().handle
+    )
+    weapons: List[WeaponType] = strawberry.field(
+        resolver=GetAllWeaponsControllerFactory.create().handle
     )
 
 
