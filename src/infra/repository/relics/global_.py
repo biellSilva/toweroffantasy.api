@@ -53,6 +53,8 @@ class RelicsGlobalRepository:
 
             value_dict["advancements"] = relic_advanc_rework(value_dict["advancement"])
 
-            self.__cache[lang].update({key_id.lower(): Relic(**value_dict)})  # type: ignore
+            self.__cache[lang].update(
+                {key_id.lower(): Relic(**value_dict)}  # type: ignore
+            )
 
         self.__cache[lang] = sort_relics(self.__cache[lang])

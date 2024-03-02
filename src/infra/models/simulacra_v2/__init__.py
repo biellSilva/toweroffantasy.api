@@ -1,4 +1,5 @@
 from typing import TYPE_CHECKING
+
 from src.infra.models.simulacra import RawSimulacra
 
 if TYPE_CHECKING:

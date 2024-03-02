@@ -69,5 +69,10 @@ class AchievementsGlobalRepository:
                 )
             else:
                 self.__cache[lang].update(
-                    {key_id.lower(): Achievement(**value_dict, id=key_id)}  # type: ignore
+                    {
+                        key_id.lower(): Achievement(
+                            id=key_id,
+                            **value_dict,  # type: ignore
+                        )
+                    }
                 )

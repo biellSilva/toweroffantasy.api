@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 
 from pydantic import BaseModel, Field
-from src.domain.models.simulacra import Simulacra
 
+from src.domain.models.simulacra import Simulacra
 from src.domain.usecases.base import IUsecase
 
 

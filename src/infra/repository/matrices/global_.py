@@ -75,4 +75,6 @@ class MatricesGlobalRepository:
                 if key_id.lower() == matrix.id.lower()
             ]
 
-            self.__cache[lang].update({key_id.lower(): Matrix(**value_dict)})  # type: ignore
+            self.__cache[lang].update(
+                {key_id.lower(): Matrix(**value_dict)}  # type: ignore
+            )

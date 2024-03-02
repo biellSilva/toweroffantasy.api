@@ -1,7 +1,7 @@
 from typing import Annotated, Any
 
-from pydantic import BaseModel, BeforeValidator, model_validator
 import strawberry
+from pydantic import BaseModel, BeforeValidator, model_validator
 
 from src.utils import to_lowercase
 

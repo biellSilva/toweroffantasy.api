@@ -56,5 +56,7 @@ class SimulacraGlobalRepository:
                 dict_=value_dict, version=VERSIONS_ENUM("global"), lang=lang
             )
 
-            self.__cache[lang].update({key_id.lower(): Simulacra(**value_dict)})  # type: ignore
+            self.__cache[lang].update(
+                {key_id.lower(): Simulacra(**value_dict)}  # type: ignore
+            )
         self.__cache[lang] = sort_simulacra(self.__cache[lang])

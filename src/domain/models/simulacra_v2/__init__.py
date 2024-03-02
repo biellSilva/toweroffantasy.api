@@ -1,4 +1,5 @@
 import strawberry
+
 from src.domain.models.matrices import Matrix
 from src.domain.models.simulacra import Simulacra, SimulacraType
 from src.domain.models.weapons import Weapon

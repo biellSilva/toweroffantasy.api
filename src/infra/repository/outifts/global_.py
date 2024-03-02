@@ -3,9 +3,8 @@ from pathlib import Path
 from typing import Any
 
 from src.domain.errors.http import LangNotFoundErr
-
-from src.enums import LANGS_GLOBAL_ENUM
 from src.domain.models.outfits import Outfit
+from src.enums import LANGS_GLOBAL_ENUM
 
 
 class OutfitsGlobalRepository:
@@ -44,4 +43,6 @@ class OutfitsGlobalRepository:
         DATA: dict[str, dict[str, Any]] = json.loads(DATA_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
-            self.__cache[lang].update({key_id.lower(): Outfit(**value_dict)})  # type: ignore
+            self.__cache[lang].update(
+                {key_id.lower(): Outfit(**value_dict)}
+            )  # type: ignore

@@ -1,4 +1,5 @@
 import strawberry
+
 from src.domain.models.base import ModelBase
 from src.domain.models.food.extra import Ingredient
 
@@ -13,6 +14,7 @@ class Food(ModelBase):
     effect: str | None = None
     ingredients: list[Ingredient] = []
     categories: list[str] = []
+
 
 @strawberry.experimental.pydantic.type(model=Food, all_fields=True)
 class FoodType:

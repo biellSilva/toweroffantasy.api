@@ -1,3 +1,4 @@
+import strawberry
 from pydantic import AliasChoices, Field
 
 from src.domain.models.banner import Banner
@@ -54,3 +55,8 @@ class Weapon(ModelBase):
 
     meta: MetaData = MetaData()
     banners: list[Banner] = []
+
+
+@strawberry.experimental.pydantic.type(model=Weapon, all_fields=True)
+class WeaponType:
+    pass

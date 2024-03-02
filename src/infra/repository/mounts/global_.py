@@ -47,6 +47,8 @@ class MountsGlobalRepository:
             if ignore_mounts(value_dict):
                 continue
 
-            self.__cache[lang].update({key_id.lower(): Mount(**value_dict)})  # type: ignore
+            self.__cache[lang].update(
+                {key_id.lower(): Mount(**value_dict)}  # type: ignore
+            )
 
         self.__cache[lang] = sort_mounts(self.__cache[lang])

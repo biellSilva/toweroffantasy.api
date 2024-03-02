@@ -1,4 +1,4 @@
-from typing import TypedDict
+from typing import TYPE_CHECKING, TypedDict
 
 from src.infra.models.simulacra.extra import (
     RawAwakening,
@@ -7,6 +7,10 @@ from src.infra.models.simulacra.extra import (
     RawSimulacraAssets,
     RawVoiceActors,
 )
+
+if TYPE_CHECKING:
+    from src.domain.models.matrices import Matrix
+    from src.domain.models.weapons import Weapon
 
 
 class RawSimulacra(TypedDict):
@@ -31,3 +35,5 @@ class RawSimulacra(TypedDict):
     awakening: list[RawAwakening]
     fashion: list[RawFashion]
     nitai: list[RawNitai] | None
+    weapon: "Weapon | None"
+    matrix: "Matrix | None"

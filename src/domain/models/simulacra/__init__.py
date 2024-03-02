@@ -1,7 +1,7 @@
 from typing import Annotated
 
-from pydantic import AliasChoices, BeforeValidator, Field
 import strawberry
+from pydantic import AliasChoices, BeforeValidator, Field
 
 from src.domain.models.banner import Banner
 from src.domain.models.base import ModelBase, ModelBaseType

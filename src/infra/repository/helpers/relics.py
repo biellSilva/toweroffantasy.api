@@ -1,4 +1,5 @@
 from typing import TYPE_CHECKING
+
 from src.infra.models.relics import RawRelic
 
 if TYPE_CHECKING:

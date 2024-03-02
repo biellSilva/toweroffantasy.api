@@ -4,7 +4,6 @@ from typing import Any
 
 from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.gears import Gear
-
 from src.enums import LANGS_GLOBAL_ENUM
 
 
@@ -44,4 +43,6 @@ class GearsGlobalRepository:
         DATA: dict[str, dict[str, Any]] = json.loads(DATA_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
-            self.__cache[lang].update({key_id.lower(): Gear(**value_dict)})  # type: ignore
+            self.__cache[lang].update(
+                {key_id.lower(): Gear(**value_dict)}
+            )  # type: ignore

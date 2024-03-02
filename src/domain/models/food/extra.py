@@ -1,6 +1,7 @@
 from typing import Annotated
-from pydantic import BaseModel, BeforeValidator
+
 import strawberry
+from pydantic import BaseModel, BeforeValidator
 
 from src.domain.models.items import Item
 

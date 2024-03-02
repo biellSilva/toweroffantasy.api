@@ -30,13 +30,13 @@ class WeaponsGlobalRepository:
         Path("src/infra/database/global/meta.json").read_bytes()
     )
     __WEAPON_MATS: dict[str, list[list[RawWeaponUpgrade]]] = json.loads(
-        Path(f"src/infra/database/global/weaponUpgrade.json").read_bytes()
+        Path("src/infra/database/global/weaponUpgrade.json").read_bytes()
     )
 
     __WEAPON_EXP_REQUIRED_LEVELS: dict[str, list[int]] = {
         str(k).lower().rsplit("_", 1)[0]: v
         for k, v in dict(
-            json.loads(Path(f"src/infra/database/global/weaponExp.json").read_bytes())
+            json.loads(Path("src/infra/database/global/weaponExp.json").read_bytes())
         ).items()
     }
 
@@ -128,6 +128,8 @@ class WeaponsGlobalRepository:
 
             value_dict = weapon_skill_values(value_dict, self.__DESC_VALUES)
 
-            self.__cache[lang].update({key_id.lower(): Weapon(**value_dict)})  # type: ignore
+            self.__cache[lang].update(
+                {key_id.lower(): Weapon(**value_dict)}  # type: ignore
+            )
 
         self.__cache[lang] = sort_weapons(self.__cache[lang])

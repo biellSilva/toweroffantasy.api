@@ -1,5 +1,5 @@
-from pydantic import AliasChoices, BaseModel, Field
 import strawberry
+from pydantic import AliasChoices, BaseModel, Field
 
 
 class Reward(BaseModel):

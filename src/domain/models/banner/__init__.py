@@ -1,8 +1,8 @@
 from datetime import datetime
 from typing import Annotated
 
-from pydantic import AliasChoices, BaseModel, BeforeValidator, Field
 import strawberry
+from pydantic import AliasChoices, BaseModel, BeforeValidator, Field
 
 from src.utils import to_lowercase
 

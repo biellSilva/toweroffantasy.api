@@ -1,4 +1,5 @@
 import strawberry
+
 from src.domain.models.achievements.extra import Reward
 from src.domain.models.base import ModelBase
 

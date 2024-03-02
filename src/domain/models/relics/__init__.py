@@ -1,7 +1,8 @@
 from typing import Annotated
 
-from pydantic import BeforeValidator
 import strawberry
+from pydantic import BeforeValidator
+
 from src.domain.models.base import ModelBase
 from src.utils import bold_numbers
 
