@@ -6,8 +6,13 @@ from strawberry.fastapi import GraphQLRouter
 from strawberry.http import GraphQLHTTPResponse
 from strawberry.types import ExecutionResult
 
+from src.domain.models.matrices import MatrixType
 from src.domain.models.simulacra import SimulacraType
 from src.domain.models.weapons import WeaponType
+from src.main.factories.controller.matrices.find import FindMatricesControllerFactory
+from src.main.factories.controller.matrices.get_all import (
+    GetAllMatricesControllerFactory,
+)
 from src.main.factories.controller.simulacra.find import FindSimulacraControllerFactory
 from src.main.factories.controller.simulacra.getall import (
     GetallSimulacraControllerFactory,
@@ -54,7 +59,16 @@ class Query:
         resolver=GetAllWeaponsControllerFactory.create().handle
     )
 
+    matrix: MatrixType = strawberry.field(
+        resolver=FindMatricesControllerFactory.create().handle
+    )
+    matrices: List[MatrixType] = strawberry.field(
+        resolver=GetAllMatricesControllerFactory.create().handle
+    )
+
 
 router = TOFGraphQLRouter(
-    schema=strawberry.Schema(query=Query), path="/graphql", allow_queries_via_get=False
+    schema=strawberry.Schema(query=Query),
+    path="/graphql",
+    allow_queries_via_get=False,
 )
