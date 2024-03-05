@@ -9,7 +9,7 @@ class MountAsset(BaseModel):
 
 class MountPart(BaseModel):
     id: str
-    name: str
+    name: str = "N/A"
     description: str
     rarity: int
     icon: str

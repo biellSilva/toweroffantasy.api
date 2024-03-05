@@ -1,18 +1,21 @@
 from typing import Any, List
 
 import strawberry
-from fastapi import Request
+from fastapi import HTTPException, Request
 from strawberry.fastapi import GraphQLRouter
 from strawberry.http import GraphQLHTTPResponse
 from strawberry.types import ExecutionResult
 
 from src.domain.models.matrices import MatrixType
+from src.domain.models.mounts import MountType
 from src.domain.models.simulacra import SimulacraType
 from src.domain.models.weapons import WeaponType
 from src.main.factories.controller.matrices.find import FindMatricesControllerFactory
 from src.main.factories.controller.matrices.get_all import (
     GetAllMatricesControllerFactory,
 )
+from src.main.factories.controller.mount.find import FindMountControllerFactory
+from src.main.factories.controller.mount.get_all import GetAllMountControllerFactory
 from src.main.factories.controller.simulacra.find import FindSimulacraControllerFactory
 from src.main.factories.controller.simulacra.getall import (
     GetallSimulacraControllerFactory,
@@ -28,14 +31,17 @@ class TOFGraphQLRouter(GraphQLRouter[Any, Any]):
         data: GraphQLHTTPResponse = {"data": result.data}
 
         if result.errors:
-            data["errors"] = [
-                {
-                    "err_class": err.original_error.__class__.__name__,
-                    "status_code": int(err.message.split(":")[0].strip()),
-                    "detail": err.message.split(":")[1].strip(),
-                }
-                for err in result.errors
-            ]
+            data["errors"] = []
+            for err in result.errors:
+                if isinstance(err.original_error, HTTPException):
+                    data['errors'].append({
+                        "err_class": err.original_error.__class__.__name__,
+                        "status_code": int(err.message.split(":")[0].strip()),
+                        "detail": err.message.split(":")[1].strip(),
+                    })
+                else:
+                    data['errors'].append(err.formatted)
+
 
         if result.extensions:
             data["extensions"] = result.extensions
@@ -64,6 +70,13 @@ class Query:
     )
     matrices: List[MatrixType] = strawberry.field(
         resolver=GetAllMatricesControllerFactory.create().handle
+    )
+
+    mount: MountType = strawberry.field(
+        resolver=FindMountControllerFactory.create().handle
+    )
+    mounts: List[MountType] = strawberry.field(
+        resolver=GetAllMountControllerFactory.create().handle
     )
 
 
