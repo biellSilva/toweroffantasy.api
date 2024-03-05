@@ -8,6 +8,7 @@ from strawberry.types import ExecutionResult
 
 from src.domain.models.matrices import MatrixType
 from src.domain.models.mounts import MountType
+from src.domain.models.relics import RelicType
 from src.domain.models.simulacra import SimulacraType
 from src.domain.models.weapons import WeaponType
 from src.main.factories.controller.matrices.find import FindMatricesControllerFactory
@@ -16,6 +17,8 @@ from src.main.factories.controller.matrices.get_all import (
 )
 from src.main.factories.controller.mount.find import FindMountControllerFactory
 from src.main.factories.controller.mount.get_all import GetAllMountControllerFactory
+from src.main.factories.controller.relics.find import FindRelicsControllerFactory
+from src.main.factories.controller.relics.get_all import GetAllRelicsControllerFactory
 from src.main.factories.controller.simulacra.find import FindSimulacraControllerFactory
 from src.main.factories.controller.simulacra.getall import (
     GetallSimulacraControllerFactory,
@@ -34,14 +37,15 @@ class TOFGraphQLRouter(GraphQLRouter[Any, Any]):
             data["errors"] = []
             for err in result.errors:
                 if isinstance(err.original_error, HTTPException):
-                    data['errors'].append({
-                        "err_class": err.original_error.__class__.__name__,
-                        "status_code": int(err.message.split(":")[0].strip()),
-                        "detail": err.message.split(":")[1].strip(),
-                    })
+                    data["errors"].append(
+                        {
+                            "err_class": err.original_error.__class__.__name__,
+                            "status_code": int(err.message.split(":")[0].strip()),
+                            "detail": err.message.split(":")[1].strip(),
+                        }
+                    )
                 else:
-                    data['errors'].append(err.formatted)
-
+                    data["errors"].append(err.formatted)
 
         if result.extensions:
             data["extensions"] = result.extensions
@@ -77,6 +81,13 @@ class Query:
     )
     mounts: List[MountType] = strawberry.field(
         resolver=GetAllMountControllerFactory.create().handle
+    )
+
+    relic: RelicType = strawberry.field(
+        resolver=FindRelicsControllerFactory.create().handle
+    )
+    relics: List[RelicType] = strawberry.field(
+        resolver=GetAllRelicsControllerFactory.create().handle
     )
 
 
