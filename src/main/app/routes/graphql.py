@@ -14,6 +14,7 @@ from src.domain.models.guidebook import GuideBookType
 from src.domain.models.items import ItemType
 from src.domain.models.matrices import MatrixType
 from src.domain.models.mounts import MountType
+from src.domain.models.outfits import OutfitType
 from src.domain.models.relics import RelicType
 from src.domain.models.simulacra import SimulacraType
 from src.domain.models.simulacra_v2 import SimulacraV2Type
@@ -43,6 +44,8 @@ from src.main.factories.controller.matrices.get_all import (
 )
 from src.main.factories.controller.mount.find import FindMountControllerFactory
 from src.main.factories.controller.mount.get_all import GetAllMountControllerFactory
+from src.main.factories.controller.outfits.find import FindOutfitsControllerFactory
+from src.main.factories.controller.outfits.get_all import GetAllOutfitsControllerFactory
 from src.main.factories.controller.relics.find import FindRelicsControllerFactory
 from src.main.factories.controller.relics.get_all import GetAllRelicsControllerFactory
 from src.main.factories.controller.simulacra.find import FindSimulacraControllerFactory
@@ -166,6 +169,13 @@ class Query:
     )
     items: List[ItemType] = strawberry.field(
         resolver=GetAllItemsControllerFactory.create().handle
+    )
+
+    outfit: OutfitType = strawberry.field(
+        resolver=FindOutfitsControllerFactory.create().handle
+    )
+    outfits: List[OutfitType] = strawberry.field(
+        resolver=GetAllOutfitsControllerFactory.create().handle
     )
 
 
