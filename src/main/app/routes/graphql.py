@@ -5,6 +5,7 @@ from fastapi import HTTPException, Request
 from strawberry.fastapi import GraphQLRouter
 from strawberry.http import GraphQLHTTPResponse
 from strawberry.types import ExecutionResult
+from src.domain.models.achievements import AchievementType
 from src.domain.models.food import FoodType
 
 from src.domain.models.matrices import MatrixType
@@ -13,6 +14,12 @@ from src.domain.models.relics import RelicType
 from src.domain.models.simulacra import SimulacraType
 from src.domain.models.simulacra_v2 import SimulacraV2Type
 from src.domain.models.weapons import WeaponType
+from src.main.factories.controller.achievements.find import (
+    FindAchievementsControllerFactory,
+)
+from src.main.factories.controller.achievements.get_all import (
+    GetAllAchievementsControllerFactory,
+)
 from src.main.factories.controller.food.find import FindFoodControllerFactory
 from src.main.factories.controller.food.get_all import GetAllFoodControllerFactory
 from src.main.factories.controller.matrices.find import FindMatricesControllerFactory
@@ -112,6 +119,13 @@ class Query:
     )
     foods: List[FoodType] = strawberry.field(
         resolver=GetAllFoodControllerFactory.create().handle
+    )
+
+    achievement: AchievementType = strawberry.field(
+        resolver=FindAchievementsControllerFactory.create().handle
+    )
+    achievements: List[AchievementType] = strawberry.field(
+        resolver=GetAllAchievementsControllerFactory.create().handle
     )
 
 
