@@ -17,6 +17,8 @@ class TOFGraphQLRouter(GraphQLRouter[Any, Any]):
 
         if result.errors:
             data["errors"] = []
+            assert isinstance(data["errors"], list), 'data["errors"] is not a list.'
+
             for err in result.errors:
                 if isinstance(err.original_error, HTTPException):
                     data["errors"].append(
