@@ -5,7 +5,6 @@ from src import config
 from src.main.app.routes import graphql
 from src.presentation.middlewares.timer import ProcessTimerMiddleware
 
-
 app = FastAPI(
     title=config.PROJECT_NAME,
     description=config.PROJECT_DESC,

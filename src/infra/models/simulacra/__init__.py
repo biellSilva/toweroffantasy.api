@@ -9,9 +9,9 @@ from src.infra.models.simulacra.extra import (
 )
 
 if TYPE_CHECKING:
+    from src.domain.models.banner import Banner
     from src.domain.models.matrices import Matrix
     from src.domain.models.weapons import Weapon
-    from src.domain.models.banner import Banner
 
 
 class RawSimulacra(TypedDict):

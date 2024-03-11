@@ -1,9 +1,6 @@
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.relics import Relic
-from src.domain.usecases.relics.get_all import (
-    GetAllRelicsParams,
-    IGetAllRelicsUseCase,
-)
+from src.domain.usecases.relics.get_all import GetAllRelicsParams, IGetAllRelicsUseCase
 from src.infra.repository.relics.global_ import RelicsGlobalRepository
 
 

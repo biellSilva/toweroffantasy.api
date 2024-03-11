@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 
 from pydantic import BaseModel
-from src.domain.models.gears import Gear
 
+from src.domain.models.gears import Gear
 from src.domain.usecases.base import IUsecase
 
 

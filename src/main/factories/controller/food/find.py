@@ -1,13 +1,9 @@
-
-from src.presentation.controller.food.find import FindFoodController
 from src.main.factories.usecases.food.find import FindFoodUsecaseFactory
+from src.presentation.controller.food.find import FindFoodController
+
 
 class FindFoodControllerFactory:
 
     @staticmethod
     def create() -> FindFoodController:
-        return FindFoodController(
-            FindFoodUsecaseFactory.create()
-        )
-
-
+        return FindFoodController(FindFoodUsecaseFactory.create())

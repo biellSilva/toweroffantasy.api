@@ -1,9 +1,6 @@
 from src.domain.errors.http import NotFoundErr, NotImplementedErr, VersionNotFoundErr
 from src.domain.models.servants import SmartServant
-from src.domain.usecases.servants.find import (
-    FindServantsParams,
-    IFindServantsUseCase,
-)
+from src.domain.usecases.servants.find import FindServantsParams, IFindServantsUseCase
 from src.infra.repository.servants.global_ import SmartServantsGlobalRepository
 
 

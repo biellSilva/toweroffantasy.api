@@ -1,9 +1,6 @@
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.food import Food
-from src.domain.usecases.food.get_all import (
-    GetAllFoodParams,
-    IGetAllFoodUseCase,
-)
+from src.domain.usecases.food.get_all import GetAllFoodParams, IGetAllFoodUseCase
 from src.infra.repository.food.global_ import FoodGlobalRepository
 
 
