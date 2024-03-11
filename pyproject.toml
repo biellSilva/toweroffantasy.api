@@ -39,6 +39,7 @@ prod = "uvicorn src.main.app:app --no-access-log --log-config ./log-config.yml"
 dev = "uvicorn src.main.app:app --reload --reload-dir ./ --log-config ./log-config.yml"
 
 test = "pytest"
+test-data = "pytest tests/infra/repository"
 
 pyright = "pyright ."
 mypy = "mypy ."
