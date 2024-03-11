@@ -13,10 +13,10 @@ class FindSimulacraUseCase(IFindSimulacraUseCase):
 
     async def execute(self, params: FindSimulacraParams) -> Simulacra:
         if params.version == "global":
-            if simulacra := await self.repository.find_by_id(
+            if data := await self.repository.find_by_id(
                 **params.model_dump(exclude={"version"})
             ):
-                return simulacra
+                return data
             raise NotFoundErr
 
         elif params.version == "china":

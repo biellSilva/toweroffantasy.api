@@ -13,10 +13,10 @@ class FindRelicsUseCase(IFindRelicsUseCase):
 
     async def execute(self, params: FindRelicsParams) -> Relic:
         if params.version == "global":
-            if mount := await self.repository.find_by_id(
+            if data := await self.repository.find_by_id(
                 **params.model_dump(exclude={"version"})
             ):
-                return mount
+                return data
             raise NotFoundErr
 
         elif params.version == "china":
