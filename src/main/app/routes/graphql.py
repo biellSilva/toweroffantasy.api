@@ -6,6 +6,7 @@ from strawberry.fastapi import GraphQLRouter
 from strawberry.http import GraphQLHTTPResponse
 from strawberry.types import ExecutionResult
 from src.domain.models.achievements import AchievementType
+from src.domain.models.banner import BannerType
 from src.domain.models.food import FoodType
 
 from src.domain.models.matrices import MatrixType
@@ -20,6 +21,7 @@ from src.main.factories.controller.achievements.find import (
 from src.main.factories.controller.achievements.get_all import (
     GetAllAchievementsControllerFactory,
 )
+from src.main.factories.controller.banners.find import FindBannersControllerFactory
 from src.main.factories.controller.food.find import FindFoodControllerFactory
 from src.main.factories.controller.food.get_all import GetAllFoodControllerFactory
 from src.main.factories.controller.matrices.find import FindMatricesControllerFactory
@@ -126,6 +128,10 @@ class Query:
     )
     achievements: List[AchievementType] = strawberry.field(
         resolver=GetAllAchievementsControllerFactory.create().handle
+    )
+
+    banners: List[BannerType] = strawberry.field(
+        resolver=FindBannersControllerFactory.create().handle
     )
 
 
