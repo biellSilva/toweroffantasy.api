@@ -75,8 +75,8 @@ class TOFGraphQLRouter(GraphQLRouter[Any, Any]):
                     data["errors"].append(
                         {
                             "err_class": err.original_error.__class__.__name__,
-                            "status_code": int(err.message.split(":")[0].strip()),
-                            "detail": err.message.split(":")[1].strip(),
+                            "status_code": err.original_error.status_code,
+                            "detail": err.original_error.detail,
                         }
                     )
                 else:
