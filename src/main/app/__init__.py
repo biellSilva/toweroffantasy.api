@@ -2,11 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from src import config
-
 from src.main.app.routes import graphql
-
-# from src.main.app.routes.rest import matrices
 from src.presentation.middlewares.timer import ProcessTimerMiddleware
+
 
 app = FastAPI(
     title=config.PROJECT_NAME,
@@ -27,7 +25,6 @@ app.add_middleware(
 
 app.add_middleware(ProcessTimerMiddleware)
 
+
 app.include_router(router=graphql.router, tags=["Graphql"])
 app.add_websocket_route(path="/graphql", route=graphql.router)  # type: ignore
-
-# app.include_router(matrices.router)

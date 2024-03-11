@@ -1,10 +1,6 @@
-from typing import Any, List
+from typing import List
 
 import strawberry
-from fastapi import HTTPException, Request
-from strawberry.fastapi import GraphQLRouter
-from strawberry.http import GraphQLHTTPResponse
-from strawberry.types import ExecutionResult
 
 from src.domain.models.achievements import AchievementType
 from src.domain.models.banner import BannerType
@@ -65,32 +61,6 @@ from src.main.factories.controller.simulacra_v2.get_all import (
 )
 from src.main.factories.controller.weapons.find import FindWeaponsControllerFactory
 from src.main.factories.controller.weapons.get_all import GetAllWeaponsControllerFactory
-
-
-class TOFGraphQLRouter(GraphQLRouter[Any, Any]):
-    async def process_result(
-        self, request: Request, result: ExecutionResult
-    ) -> GraphQLHTTPResponse:
-        data: GraphQLHTTPResponse = {"data": result.data}
-
-        if result.errors:
-            data["errors"] = []
-            for err in result.errors:
-                if isinstance(err.original_error, HTTPException):
-                    data["errors"].append(
-                        {
-                            "err_class": err.original_error.__class__.__name__,
-                            "status_code": err.original_error.status_code,
-                            "detail": err.original_error.detail,
-                        }
-                    )
-                else:
-                    data["errors"].append(err.formatted)
-
-        if result.extensions:
-            data["extensions"] = result.extensions
-
-        return data
 
 
 @strawberry.type
@@ -189,10 +159,3 @@ class Query:
     servants: List[SmartServantType] = strawberry.field(
         resolver=GetAllServantsControllerFactory.create().handle
     )
-
-
-router = TOFGraphQLRouter(
-    schema=strawberry.Schema(query=Query),
-    path="/graphql",
-    allow_queries_via_get=False,
-)
