@@ -5,12 +5,13 @@ from fastapi import HTTPException, Request
 from strawberry.fastapi import GraphQLRouter
 from strawberry.http import GraphQLHTTPResponse
 from strawberry.types import ExecutionResult
+
 from src.domain.models.achievements import AchievementType
 from src.domain.models.banner import BannerType
 from src.domain.models.food import FoodType
 from src.domain.models.gears import GearType
 from src.domain.models.guidebook import GuideBookType
-
+from src.domain.models.items import ItemType
 from src.domain.models.matrices import MatrixType
 from src.domain.models.mounts import MountType
 from src.domain.models.relics import RelicType
@@ -34,6 +35,8 @@ from src.main.factories.controller.guidebooks.find import (
 from src.main.factories.controller.guidebooks.get_all import (
     GetAllGuidebooksControllerFactory,
 )
+from src.main.factories.controller.items.find import FindItemsControllerFactory
+from src.main.factories.controller.items.get_all import GetAllItemsControllerFactory
 from src.main.factories.controller.matrices.find import FindMatricesControllerFactory
 from src.main.factories.controller.matrices.get_all import (
     GetAllMatricesControllerFactory,
@@ -156,6 +159,13 @@ class Query:
     )
     guidebooks: List[GuideBookType] = strawberry.field(
         resolver=GetAllGuidebooksControllerFactory.create().handle
+    )
+
+    item: ItemType = strawberry.field(
+        resolver=FindItemsControllerFactory.create().handle
+    )
+    items: List[ItemType] = strawberry.field(
+        resolver=GetAllItemsControllerFactory.create().handle
     )
 
 
