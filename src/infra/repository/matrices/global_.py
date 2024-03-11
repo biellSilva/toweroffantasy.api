@@ -6,6 +6,7 @@ from src.domain.models.matrices import Matrix
 from src.domain.models.meta import MetaData
 from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.models.matrices import RawMatrix
+from src.infra.repository.banners.global_ import BannersGlobalRepository
 from src.infra.repository.helpers.matrices import ignore_matrix, matrix_set_rework
 
 
@@ -21,6 +22,8 @@ class MatricesGlobalRepository:
             Path("src/infra/database/global/meta.json").read_bytes()
         ).items()
     }
+
+    __BANNERS = BannersGlobalRepository()
 
     async def find_by_id(
         self,
@@ -74,6 +77,8 @@ class MatricesGlobalRepository:
                 for matrix in v.recommendedMatrices
                 if key_id.lower() == matrix.id.lower()
             ]
+
+            value_dict["banners"] = await self.__BANNERS.find_by_id(id=key_id)
 
             self.__cache[lang].update(
                 {key_id.lower(): Matrix(**value_dict)}  # type: ignore

@@ -1,4 +1,7 @@
-from typing import Any, TypedDict
+from typing import TYPE_CHECKING, Any, TypedDict
+
+if TYPE_CHECKING:
+    from src.domain.models.banner import Banner
 
 
 class RawMatrix(TypedDict):
@@ -12,3 +15,4 @@ class RawMatrix(TypedDict):
     sets: Any
     simulacrumId: str
     meta: dict[str, Any]
+    banners: list["Banner"]
