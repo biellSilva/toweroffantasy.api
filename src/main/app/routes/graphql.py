@@ -10,6 +10,7 @@ from src.domain.models.matrices import MatrixType
 from src.domain.models.mounts import MountType
 from src.domain.models.relics import RelicType
 from src.domain.models.simulacra import SimulacraType
+from src.domain.models.simulacra_v2 import SimulacraV2Type
 from src.domain.models.weapons import WeaponType
 from src.main.factories.controller.matrices.find import FindMatricesControllerFactory
 from src.main.factories.controller.matrices.get_all import (
@@ -22,6 +23,12 @@ from src.main.factories.controller.relics.get_all import GetAllRelicsControllerF
 from src.main.factories.controller.simulacra.find import FindSimulacraControllerFactory
 from src.main.factories.controller.simulacra.getall import (
     GetallSimulacraControllerFactory,
+)
+from src.main.factories.controller.simulacra_v2.find import (
+    FindSimulacraV2ControllerFactory,
+)
+from src.main.factories.controller.simulacra_v2.get_all import (
+    GetAllSimulacraV2ControllerFactory,
 )
 from src.main.factories.controller.weapons.find import FindWeaponsControllerFactory
 from src.main.factories.controller.weapons.get_all import GetAllWeaponsControllerFactory
@@ -76,11 +83,11 @@ class Query:
         resolver=GetAllMatricesControllerFactory.create().handle
     )
 
-    simulacrum_v2: SimulacraType = strawberry.field(
-        resolver=FindSimulacraControllerFactory.create().handle
+    simulacrum_v2: SimulacraV2Type = strawberry.field(
+        resolver=FindSimulacraV2ControllerFactory.create().handle
     )
-    simulacra_v2: List[SimulacraType] = strawberry.field(
-        resolver=GetallSimulacraControllerFactory.create().handle
+    simulacra_v2: List[SimulacraV2Type] = strawberry.field(
+        resolver=GetAllSimulacraV2ControllerFactory.create().handle
     )
 
     mount: MountType = strawberry.field(
