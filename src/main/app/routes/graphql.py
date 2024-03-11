@@ -76,6 +76,13 @@ class Query:
         resolver=GetAllMatricesControllerFactory.create().handle
     )
 
+    simulacrum_v2: SimulacraType = strawberry.field(
+        resolver=FindSimulacraControllerFactory.create().handle
+    )
+    simulacra_v2: List[SimulacraType] = strawberry.field(
+        resolver=GetallSimulacraControllerFactory.create().handle
+    )
+
     mount: MountType = strawberry.field(
         resolver=FindMountControllerFactory.create().handle
     )
