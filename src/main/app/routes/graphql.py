@@ -8,6 +8,7 @@ from strawberry.types import ExecutionResult
 from src.domain.models.achievements import AchievementType
 from src.domain.models.banner import BannerType
 from src.domain.models.food import FoodType
+from src.domain.models.gears import GearType
 
 from src.domain.models.matrices import MatrixType
 from src.domain.models.mounts import MountType
@@ -24,6 +25,8 @@ from src.main.factories.controller.achievements.get_all import (
 from src.main.factories.controller.banners.find import FindBannersControllerFactory
 from src.main.factories.controller.food.find import FindFoodControllerFactory
 from src.main.factories.controller.food.get_all import GetAllFoodControllerFactory
+from src.main.factories.controller.gears.find import FindGearsControllerFactory
+from src.main.factories.controller.gears.get_all import GetAllGearsControllerFactory
 from src.main.factories.controller.matrices.find import FindMatricesControllerFactory
 from src.main.factories.controller.matrices.get_all import (
     GetAllMatricesControllerFactory,
@@ -132,6 +135,13 @@ class Query:
 
     banners: List[BannerType] = strawberry.field(
         resolver=FindBannersControllerFactory.create().handle
+    )
+
+    gear: GearType = strawberry.field(
+        resolver=FindGearsControllerFactory.create().handle
+    )
+    gears: List[GearType] = strawberry.field(
+        resolver=GetAllGearsControllerFactory.create().handle
     )
 
 
