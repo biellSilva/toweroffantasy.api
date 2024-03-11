@@ -12,10 +12,10 @@ from src.infra.repository.helpers.matrices import ignore_matrix, matrix_set_rewo
 class MatricesGlobalRepository:
     __cache: dict[LANGS_GLOBAL_ENUM, dict[str, Matrix]] = {}
 
-    LINK_DATA: dict[str, dict[str, str]] = json.loads(
+    __LINK_DATA: dict[str, dict[str, str]] = json.loads(
         Path("src/infra/database/imitation_links.json").read_bytes()
     )
-    META_DATA: dict[str, MetaData] = {
+    __META_DATA: dict[str, MetaData] = {
         k: MetaData(**v)
         for k, v in json.loads(
             Path("src/infra/database/global/meta.json").read_bytes()
@@ -62,15 +62,15 @@ class MatricesGlobalRepository:
 
             value_dict = matrix_set_rework(dict_=value_dict)
 
-            for i in self.LINK_DATA:
-                if isinstance(self.LINK_DATA.get(i, {}).get("matrice", None), str):
-                    if self.LINK_DATA[i]["matrice"].lower() == key_id.lower():
+            for i in self.__LINK_DATA:
+                if isinstance(self.__LINK_DATA.get(i, {}).get("matrice", None), str):
+                    if self.__LINK_DATA[i]["matrice"].lower() == key_id.lower():
                         value_dict["simulacrumId"] = i
 
             value_dict["meta"] = {}
             value_dict["meta"]["recommendedWeapons"] = [
                 k
-                for k, v in self.META_DATA.items()
+                for k, v in self.__META_DATA.items()
                 for matrix in v.recommendedMatrices
                 if key_id.lower() == matrix.id.lower()
             ]
