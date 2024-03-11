@@ -5,6 +5,7 @@ from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.simulacra_v2 import SimulacraV2
 from src.enums import LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.simulacra import RawSimulacra
+from src.infra.repository.banners.global_ import BannersGlobalRepository
 from src.infra.repository.helpers.simulacra import ignore_simulacra
 from src.infra.repository.helpers.simulacra_v2 import sort_simulacra
 from src.infra.repository.helpers.unlockables import add_unlockables
@@ -20,6 +21,7 @@ class SimulacraV2GlobalRepository:
 
         self.__WEAPONS_REPO = WeaponsGlobalRepository()
         self.__MATRICES_REPO = MatricesGlobalRepository()
+        self.__BANNERS_REPO = BannersGlobalRepository()
 
     async def find_by_id(
         self,
@@ -64,12 +66,15 @@ class SimulacraV2GlobalRepository:
 
             if weapon_id := value_dict.get("weaponId"):
                 value_dict["weapon"] = await self.__WEAPONS_REPO.find_by_id(
-                    id=weapon_id, lang=lang
+                    id=weapon_id.lower(), lang=lang
                 )
             if matrix_id := value_dict.get("matrixId"):
                 value_dict["matrix"] = await self.__MATRICES_REPO.find_by_id(
-                    id=matrix_id, lang=lang
+                    id=matrix_id.lower(), lang=lang
                 )
+
+            if banner_data := await self.__BANNERS_REPO.find_by_id(id=key_id.lower()):
+                value_dict["banners"] = banner_data
 
             self.__cache[lang].update(
                 {key_id.lower(): SimulacraV2(**value_dict)}  # type: ignore

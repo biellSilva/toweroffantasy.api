@@ -5,6 +5,7 @@ from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.simulacra import Simulacra
 from src.enums import LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.simulacra import RawSimulacra
+from src.infra.repository.banners.global_ import BannersGlobalRepository
 from src.infra.repository.helpers.simulacra import ignore_simulacra, sort_simulacra
 from src.infra.repository.helpers.unlockables import add_unlockables
 
@@ -14,6 +15,8 @@ class SimulacraGlobalRepository:
 
     def __init__(self) -> None:
         super().__init__()
+
+        self.__BANNERS_REPO = BannersGlobalRepository()
 
     async def find_by_id(
         self,
@@ -56,7 +59,14 @@ class SimulacraGlobalRepository:
                 dict_=value_dict, version=VERSIONS_ENUM("global"), lang=lang
             )
 
+            if banner_data := await self.__BANNERS_REPO.find_by_id(id=key_id):
+                value_dict["banners"] = banner_data
+
+            print(key_id)
+            print(value_dict.get("banner"))
+
             self.__cache[lang].update(
                 {key_id.lower(): Simulacra(**value_dict)}  # type: ignore
             )
+
         self.__cache[lang] = sort_simulacra(self.__cache[lang])
