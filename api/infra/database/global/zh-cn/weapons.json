@@ -13297,30 +13297,46 @@
 			],
 			"skill": [
 				{
-					"name": "N/A",
-					"description": "N/A",
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"operations": [
-						"N/A"
-					],
+					"name": "极地之噬",
+					"description": "挥动长枪撕开空间，期间自身获得霸体，并获得<shuzhi>2</>秒<shuzhi>80%</>减伤效果，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并生成<shuzhi>30</>秒的空洞，期间持续吸附附近目标，同时生成<shuzhi>6</>个冰核（场上至多存在<shuzhi>45</>个冰核），冷却<shuzhi>60</>秒。\r\n极地之噬释放成功后，自身冰雷伤害提升<shuzhi>9%</>，并获得无视目标<shuzhi>15%</>冰雷抗性效果，持续<shuzhi>60</>秒（所有单个元素无视抗性总值不能超过<shuzhi>50%</>）。",
+					"operations": [],
 					"tags": [
-						"N/A"
+						"Damage",
+						"Hyperbody"
 					],
-					"id": "GA_FplayerLancesSkill"
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_Lances_RealSkill.webp",
+					"id": "GA_FPlayerLancesSkill"
+				},
+				{
+					"name": "冰崩霜侵",
+					"description": "<shuzhi>普攻-锁猎</>掷出武器命中空洞时寒气爆发，对空洞附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，施加<shuzhi>强控冻结</>效果（每<shuzhi>30</>秒至多触发<shuzhi>1</>次，对<shuzhi>Boss</>不生效），持续<shuzhi>5</>秒，同时吸附并引爆附近所有冰核，并施加<shuzhi>高压彻骨</>效果。\r\n<shuzhi>冰核引爆</>：每个冰核对附近目标造成<shuzhi>{2}%</>*攻击力伤害，且每个冰核引爆后的破盾值独立计算。",
+					"operations": [],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Skill2.webp",
+					"id": "GA_FPlayerLancesSkill2"
+				},
+				{
+					"name": "落影瞬杀",
+					"description": "移动到武器位置进行快速打击（若投掷武器此前命中过目标，则移动至目标位置前方），对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害（不触发释放技能的额外效果）。\r\n落影瞬杀命中目标时，若幻时未处于冷却状态，则立即创建一片时停区域。",
+					"operations": [],
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_ChaseAttack.webp",
+					"id": "GA_FPlayerLances_ChaseAttack"
 				}
 			],
 			"discharge": [
 				{
-					"name": "N/A",
-					"description": "N/A",
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"operations": [
-						"N/A"
-					],
+					"name": "戮杀快感",
+					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，雅诺旋转骑枪插地，对前方范围目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并生成<shuzhi>6</>个冰核（场上至多存在<shuzhi>45</>个冰核），期间免疫伤害持续<shuzhi>1.5</>秒（巅峰联赛不生效）。",
 					"tags": [
-						"N/A"
+						"Damage"
 					],
-					"id": "GA_FplayerLancesChangeSkill"
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_ChangeSkill.webp",
+					"id": "GA_FPlayerLancesChangeSkill"
 				}
 			]
 		},

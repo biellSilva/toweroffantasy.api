@@ -13332,30 +13332,46 @@
 			],
 			"skill": [
 				{
-					"name": "N/A",
-					"description": "N/A",
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"operations": [
-						"N/A"
-					],
+					"name": "Morsure polaire",
+					"description": "Vous abattez la lance pour déchirer l'espace, octroyant Hypercorps à l'Explorateur et lui conférant <shuzhi>80%</> de réduction de dégâts pendant <shuzhi>2</> secondes, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches, et créant une déchirure qui attire les cibles proches et dure <shuzhi>30</> secondes. Ceci crée également <shuzhi>6</> noyaux de glace (jusqu'à <shuzhi>45</> noyaux de glace peuvent exister simultanément lors d'un même combat). Temps de recharge : <shuzhi>60</> secondes.\r\nAprès avoir utilisé Morsure arctique avec succès, accroît les dégâts de givre et de foudre de l'Explorateur de <shuzhi>9%</>, et l'Explorateur ignore <shuzhi>15%</> des résistances de givre et de foudre de la cible, pendant <shuzhi>60</> secondes (la résistance totale ignorée de chaque élément ne peut pas dépasser <shuzhi>50%</>).",
+					"operations": [],
 					"tags": [
-						"N/A"
+						"Damage",
+						"Hyperbody"
 					],
-					"id": "GA_FplayerLancesSkill"
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_Lances_RealSkill.webp",
+					"id": "GA_FPlayerLancesSkill"
+				},
+				{
+					"name": "Rafale glaciale",
+					"description": "Quand <shuzhi>Fixation</> jette l'arme à travers la déchirure, l'air froid explose, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux ennemis près de la déchirure, les <shuzhi>gelant longuement</> pendant <shuzhi>5</> secondes (se déclenche <shuzhi>une fois</> maximum toutes les <shuzhi>30</> secondes, ne fonctionne pas sur les <shuzhi>boss</>). De plus, il attire et fait exploser tous les noyaux de glace à proximité, et inflige <shuzhi>Impact de force</> aux cibles.\r\n<shuzhi>Noyaux de glace explosifs</> : chaque noyau de glace inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ aux cibles proches, et la fracture de chaque noyau de glace est calculée indépendamment.",
+					"operations": [],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Skill2.webp",
+					"id": "GA_FPlayerLancesSkill2"
+				},
+				{
+					"name": "Exécution de l'ombre",
+					"description": "Vous vous déplacez jusqu'à l'emplacement de l'arme et frappez rapidement (si l'arme lancée a déjà touché une cible, vous vous déplacez devant celle-ci), infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches (ne déclenche pas l'effet supplémentaire de la compétence).\r\nLorsqu'Exécution de l'ombre touche une cible, déclenche Fantaisie si elle n'est pas en cours de recharge.",
+					"operations": [],
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_ChaseAttack.webp",
+					"id": "GA_FPlayerLances_ChaseAttack"
 				}
 			],
 			"discharge": [
 				{
-					"name": "N/A",
-					"description": "N/A",
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
-					"operations": [
-						"N/A"
-					],
+					"name": "Euphorie mortelle",
+					"description": "Lorsque la <red>recharge d'arme est pleine</> ou que <red>Fantaisie</> est déclenchée, <shuzhi>élimine toutes les altérations sur l'Explorateur</> au moment où vous changez d'arme pour passer à celle-ci. Yanuo plante la lance dans le sol, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à toutes les cibles dans la zone droit devant et créant <shuzhi>6</> noyaux de glace (jusqu'à <shuzhi>45</> noyaux de glace peuvent exister simultanément lors d'un même combat). Durant cette période, accorde une immunité aux dégâts pendant <shuzhi>1,5</> seconde (non disponible en Ligue ultime).",
 					"tags": [
-						"N/A"
+						"Damage"
 					],
-					"id": "GA_FplayerLancesChangeSkill"
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_ChangeSkill.webp",
+					"id": "GA_FPlayerLancesChangeSkill"
 				}
 			]
 		},
