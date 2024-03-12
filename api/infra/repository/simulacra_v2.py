@@ -1,10 +1,14 @@
-
 import json
 
 from pathlib import Path
 from typing import Any
 
-from api.core.exceptions import LanguageNotFound, VersionNotFound, FileNotFound, ItemNotFound
+from api.core.exceptions import (
+    LanguageNotFound,
+    VersionNotFound,
+    FileNotFound,
+    ItemNotFound,
+)
 
 from api.infra.repository.base_repo import ModelRepository
 from api.infra.entitys import Simulacra_v2, EntityBase
@@ -19,47 +23,70 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
     cache = {}
 
     def __init__(self) -> None:
-        super().__init__(model_base=EntityBase, 
-                         model=Simulacra_v2, 
-                         class_base=SimulacraV2Repo,
-                         repo_name='imitations')
+        super().__init__(
+            model_base=EntityBase,
+            model=Simulacra_v2,
+            class_base=SimulacraV2Repo,
+            repo_name="imitations",
+        )
 
         self.WEAPON_REPO = WeaponRepo()
         self.MATRIX_REPO = MatricesRepo()
-        
-        self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(Path('api/infra/database/imitation_links.json').read_bytes())
-    
-    async def get(self, model: EntityBase, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False) -> Simulacra_v2:
-        if version in self.class_base.cache:
-            if lang in self.class_base.cache[version]:
-                if model.id in self.class_base.cache[version][lang]:
+
+        self.LINK_DATA: dict[str, dict[str, str | None]] = json.loads(
+            Path("api/infra/database/imitation_links.json").read_bytes()
+        )
+
+    async def get(
+        self,
+        model: EntityBase,
+        lang: LANGS | LANGS_CN | str,
+        version: VERSIONS,
+        graphql: bool = False,
+    ) -> Simulacra_v2:
+        if version in self.cache:
+            if lang in self.cache[version]:
+                if model.id in self.cache[version][lang]:
                     if graphql:
-                        return self.class_base.cache[version][lang][model.id]
+                        return self.cache[version][lang][model.id]
                     else:
-                        return place_numbers_v2(Simulacra_v2(**self.class_base.cache[version][lang][model.id].model_dump(by_alias=True)))
+                        return place_numbers_v2(
+                            Simulacra_v2(
+                                **self.cache[version][lang][model.id].model_dump(
+                                    by_alias=True
+                                )
+                            )
+                        )
                 else:
-                    ItemNotFound(model.id, lang, version)
-        
+                    raise ItemNotFound(model.id, lang, version)
+
         await self.get_all(lang, version, graphql)
         return await self.get(model, lang, version, graphql)
 
-    async def get_all(self, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False) -> list[Simulacra_v2]:
-        if version in self.class_base.cache:
-            if lang in self.class_base.cache[version]:
+    async def get_all(
+        self, lang: LANGS | LANGS_CN | str, version: VERSIONS, graphql: bool = False
+    ) -> list[Simulacra_v2]:
+        if version in self.cache:
+            if lang in self.cache[version]:
                 if graphql:
-                    return list(self.class_base.cache[version][lang].values())
+                    return list(self.cache[version][lang].values())
                 else:
-                    return [place_numbers_v2(Simulacra_v2(**value.model_dump(by_alias=True))) for value in self.class_base.cache[version][lang].values()]
+                    return [
+                        place_numbers_v2(
+                            Simulacra_v2(**value.model_dump(by_alias=True))
+                        )
+                        for value in self.cache[version][lang].values()
+                    ]
 
-        VERSION_PATH = Path(f'api/infra/database/{version}')
+        VERSION_PATH = Path(f"api/infra/database/{version}")
         if not VERSION_PATH.exists():
             raise VersionNotFound(version)
-        
+
         LANG_PATH = Path(VERSION_PATH, lang)
         if not LANG_PATH.exists():
             raise LanguageNotFound(lang, version)
 
-        FILEPATH = Path(LANG_PATH, f'{self.repo_name}.json')
+        FILEPATH = Path(LANG_PATH, f"{self.repo_name}.json")
         if not FILEPATH.exists():
             raise FileNotFound(self.repo_name, lang, version)
 
@@ -72,34 +99,56 @@ class SimulacraV2Repo(ModelRepository[EntityBase, Simulacra_v2]):
             self.cache[version].update({lang: {}})
 
         for key_id, value_dict in DATA.items():
-            if 'L1' in key_id:
+            if "L1" in key_id:
                 continue
 
-            if version == 'global':
-                value_dict['banners'] = [banner for banner in GB_BANNERS if banner.simulacrumId and banner.simulacrumId == key_id.lower()]
-                if value_dict['banners']:
-                    value_dict['isReleased'] = value_dict['banners'][-1].isReleased
+            if version == "global":
+                value_dict["banners"] = [
+                    banner
+                    for banner in GB_BANNERS
+                    if banner.simulacrumId and banner.simulacrumId == key_id.lower()
+                ]
+                if value_dict["banners"]:
+                    value_dict["isReleased"] = value_dict["banners"][-1].isReleased
 
-            
-            if WEAPON_ID := value_dict.get('weaponId', None):
-                if WEAPON_ID and WEAPON_ID not in ('none', 'null'):
-                    if WEAPON := await self.WEAPON_REPO.get(EntityBase(id=WEAPON_ID), lang=lang, version=VERSIONS('global'), graphql=True):
-                        value_dict['weapon'] = WEAPON
-            
-            if MATRIX_ID := value_dict.get('matrixId', None):
-                if MATRIX_ID and MATRIX_ID not in ('none', 'null'):
-                    if MATRIX := await self.MATRIX_REPO.get(EntityBase(id=MATRIX_ID), lang=lang, version=VERSIONS('global')):
-                        value_dict['matrix'] = MATRIX
+            if WEAPON_ID := value_dict.get("weaponId", None):
+                if WEAPON_ID and WEAPON_ID not in ("none", "null"):
+                    if WEAPON := await self.WEAPON_REPO.get(
+                        EntityBase(id=WEAPON_ID),
+                        lang=lang,
+                        version=VERSIONS("global"),
+                        graphql=True,
+                    ):
+                        value_dict["weapon"] = WEAPON
 
-            if value_dict.get('id', None):
-                self.cache[version][lang].update({key_id.lower(): Simulacra_v2(**value_dict)})
+            if MATRIX_ID := value_dict.get("matrixId", None):
+                if MATRIX_ID and MATRIX_ID not in ("none", "null"):
+                    if MATRIX := await self.MATRIX_REPO.get(
+                        EntityBase(id=MATRIX_ID), lang=lang, version=VERSIONS("global")
+                    ):
+                        value_dict["matrix"] = MATRIX
+
+            if value_dict.get("id", None):
+                self.cache[version][lang].update(
+                    {key_id.lower(): Simulacra_v2(**value_dict)}
+                )
 
             else:
-                self.cache[version][lang].update({key_id.lower(): Simulacra_v2(**value_dict, id=key_id)})
+                self.cache[version][lang].update(
+                    {key_id.lower(): Simulacra_v2(**value_dict, id=key_id)}
+                )
 
-        self.cache[version][lang] = {i.id: i for i in list(sorted(list(self.cache[version][lang].values()), key=sort_simulacra))}
+        self.cache[version][lang] = {
+            i.id: i
+            for i in list(
+                sorted(list(self.cache[version][lang].values()), key=sort_simulacra)
+            )
+        }
 
         if graphql:
-            return list(self.class_base.cache[version][lang].values())
+            return list(self.cache[version][lang].values())
         else:
-            return [place_numbers_v2(Simulacra_v2(**value.model_dump(by_alias=True))) for value in self.class_base.cache[version][lang].values()]
+            return [
+                place_numbers_v2(Simulacra_v2(**value.model_dump(by_alias=True)))
+                for value in self.cache[version][lang].values()
+            ]
