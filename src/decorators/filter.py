@@ -6,6 +6,9 @@ T = TypeVar("T", bound=BaseModel)
 
 
 def filter_models(models: list[T], filter_dict: dict[str, Any]) -> list[T]:
+    if not filter_dict or len(filter_dict) == 0:
+        return models
+
     filtered_models: list[T] = []
 
     for model in models:
@@ -26,6 +29,7 @@ def filter_models(models: list[T], filter_dict: dict[str, Any]) -> list[T]:
 
                 elif hasattr(current_value, k):
                     current_value = getattr(current_value, k)
+
                 else:
                     is_match = False
                     break
