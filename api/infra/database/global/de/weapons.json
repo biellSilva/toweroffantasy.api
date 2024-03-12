@@ -196,6 +196,7 @@
 				{
 					"name": "Mondjäger",
 					"description": "Lässt Ziele <shuzhi>länger schweben</> und den Anwender in die Luft springen, um Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu verursachen. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -404,6 +405,7 @@
 				{
 					"name": "Bumerang-Klingen",
 					"description": "Feuert <shuzhi>6</> Bumerang-Klingen in alle Richtungen ab, die jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursachen. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -596,6 +598,7 @@
 				{
 					"name": "Durchstreifen",
 					"description": "Der Anwender streift zwischen den Zielen hin und her und verursacht an bis zu <shuzhi>5</> Zielen einen Gesamtschaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>, wobei der letzte Schlag das Ziel schweben lässt. Gewährt Lähmungsangriff-Immunität im aktiven Zustand. Verringert den Schaden gegen dasselbe Ziel jedes Mal um <shuzhi>40%</>. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -791,6 +794,7 @@
 				{
 					"name": "Durchdringender Schuss",
 					"description": "Macht einen Rückwärtssalto und schießt <shuzhi>1</>-mal „Durchdringender Schuss“ nach vorne, der Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht und das Ziel zurückstößt. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -1162,6 +1166,7 @@
 				{
 					"name": "Heiligtum",
 					"description": "Erzeugt einen Energieschild an der Position des Wanderers. Heilt Verbündete innerhalb des Schilds jede Sekunde um <shuzhi>{3}%</> des ANG +<shuzhi>{4}</> und verringert den von ihnen erlittenen Schaden für <shuzhi>10</> Sek. um <shuzhi>{0}%</>. Abklingzeit: <shuzhi>60</> Sek.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -1401,7 +1406,7 @@
 				"need": "cannon_ice_plasm"
 			},
 			{
-				"description": "Erhöht beim Wechsel zu dieser Waffe innerhalb von **10** Sek. den Schaden von normalen Angriffen sowie von „Zertrümmern“ um **60%**. Abklingzeit: **25** Sek.",
+				"description": "Erhöht beim Wechsel zu dieser Waffe den Schaden normaler Angriffe und Zertrümmern für **10**Sek. um **40%**. Abklingzeit: **25**Sek.",
 				"charge": 10,
 				"shatter": 16,
 				"multiplier": [
@@ -1458,6 +1463,7 @@
 				{
 					"name": "Geschützturm",
 					"description": "Aktiviere den Geschützmodus und feuere große Energiekugeln ab, die jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursachen und das Ziel hochschleudern. der Wanderer ist gegen Lähmungsangriff und Kontrolleffekte immun, während der Geschützturm aufgestellt wird. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -1865,6 +1871,7 @@
 				{
 					"name": "Erkundungsteamschlag",
 					"description": "Geht in einen Aufladezustand über und wird vorübergehend unbesiegbar (nicht verfügbar in Apex-Liga). Zieht Ziele in der Nähe an den Anwender heran und fügt ihnen pro Treffer Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Abklingzeit: <shuzhi>20</> Sek. (kann während der Abklingzeit aufladen).\r\nBeim Loslassen detonieren alle <shuzhi>Schatzmale</> auf Zielen in der Nähe und bringen <shuzhi>Oktopeitsche</> so zur Tobsucht, wodurch die Geschwindigkeit von koordinierten Angriffen für <shuzhi>12</> Sek. um <shuzhi>100%</> erhöht wird.\r\n\r\nJe nach Anzahl an <shuzhi>Minitintenfischen</> über dem Wanderer bieten sich verschiedene Zeitpunkte zum Loslassen an.\r\n<shuzhi>Wutanfall</>: Bei <shuzhi>2</> <shuzhi>Minitintenfischen</> fügt das Loslassen Zielen in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zu.\r\n<shuzhi>Wutbeherrschung</>: Bei <shuzhi>1</> oder <shuzhi>3</> <shuzhi>Minitintenfischen</> fügt das Loslassen Zielen in der Nähe Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> zu.\r\n\r\n<shuzhi>Schleichende Klone</>: Gewährt <shuzhi>15</> <shuzhi>Oktopeitschen</> im Kampf, die anvisierte Ziele angreifen. Jeder Treffer verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG und verbraucht <shuzhi>1</> Oktopeitsche. Es können maximal <shuzhi>30</> Oktopeitschen gleichzeitig gespeichert werden.\r\n<shuzhi>Pippa-Oktopeitsche</>: Von Oktopeitschen getroffene Gegner werden mit jedem Treffer für <shuzhi>20</> Sek. mit <shuzhi>1</> <shuzhi>Schatzmal</> markiert (maximal <shuzhi>3</> Stapel).\r\nWenn ein markiertes Ziel physischen Schaden erleidet (<shuzhi>Oktopeitsche</> ausgenommen), explodiert <shuzhi>1</> <shuzhi>Schatzmal</> und verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG. Dieser Effekt kann nur <shuzhi>1</>-mal alle <shuzhi>0,1</> Sek. ausgelöst werden.\r\nGewährt <shuzhi>1</> Oktopeitsche, wenn eine Entladungsfähigkeit verwendet wird. Dieser Effekt kann nur <shuzhi>1</>-mal alle <shuzhi>0,1</> Sek. ausgelöst werden.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Ammo"
@@ -2243,6 +2250,7 @@
 				{
 					"name": "Rage",
 					"description": "Wechseln, um „Rage“ zu aktivieren und den verursachten Schaden <shuzhi>25</> Sek. lang zu erhöhen.\r\nWährend „Rage“ aktiv ist, lösen Fähigkeiten „Zorn der Lüfte“ aus. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>, lässt das Ziel <shuzhi>länger schweben</> und erzeugt einen Luftstrom auf dem Boden. Solange man im Luftstrom steht, kostet das Ausweichen nichts. Abklingzeit: <shuzhi>{2}</> Sek. (Abklingzeit von „Zorn der Lüfte“: <shuzhi>10</> Sek).",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -2601,6 +2609,7 @@
 				{
 					"name": "Durchdringender Schuss",
 					"description": "Macht einen Rückwärtssalto und schießt <shuzhi>1</>-mal „Durchdringender Schuss“ nach vorne, der Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht und das Ziel zurückstößt. Abklingzeit: <shuzhi>{2}</> Sek.",
+					"operations": [],
 					"tags": [],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
 					"id": "GA_FPlayerBowSkill_R"
@@ -2982,6 +2991,7 @@
 				{
 					"name": "Mondjäger",
 					"description": "Lässt Ziele <shuzhi>länger schweben</> und den Anwender in die Luft springen, um Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu verursachen. Abklingzeit: <shuzhi>25</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -3352,6 +3362,7 @@
 				{
 					"name": "Bumerang-Klingen",
 					"description": "Feuert <shuzhi>6</> „Bumerang-Klingen“ ab, die jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursachen. Gewährt für bis zu <shuzhi>8</> Sek. <shuzhi>Hyperkörper</>. Der Effekt wird entfernt, wenn die Klingen zurückkommen. Abklingzeit: <shuzhi>45</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -3748,6 +3759,7 @@
 				{
 					"name": "Schneesturm",
 					"description": "Schwinge das Großschwert, um Schwert-Auren nach vorne zu schleudern, die jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursachen, und erhöhe mit jedem Treffer den verursachten Schaden um <shuzhi>5%</>. Gewährt Immunität gegen Kontrolleffekte, solange es aktiv ist. Abklingzeit: <shuzhi>30</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -4103,6 +4115,7 @@
 				{
 					"name": "Durchdringender Schuss",
 					"description": "Schießt im Rückwärtssalto <shuzhi>3</>-mal „Durchdringender Schuss“ ab. Der Hauptschuss verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und die anderen beiden Schüsse verursachen 60% Schaden. Außerdem werden <shuzhi>Ziele zurückgestoßen</> und für <shuzhi>5</> Sek. betäubt, wenn sie auf ein Hindernis prallen. Abklingzeit: <shuzhi>12</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -4484,6 +4497,7 @@
 				{
 					"name": "Heiligtum",
 					"description": "Erzeugt eine Heilungszone, die sich mit dem Wanderer bewegt und Verbündete in der Nähe für <shuzhi>6</> Sek. alle <shuzhi>0,5</> Sek. um <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> heilt. Abklingzeit: <shuzhi>60</> Sek.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -4869,6 +4883,7 @@
 				{
 					"name": "Todesspirale",
 					"description": "Schwinge die Sense, um Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu verursachen. Abklingzeit: <shuzhi>45</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -5237,6 +5252,7 @@
 				{
 					"name": "Sperrfeuer",
 					"description": "Verursacht kontinuierlich in einem frontalen Kegelbereich Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Abklingzeit: <shuzhi>60</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -5635,6 +5651,7 @@
 				{
 					"name": "Durchstreifen",
 					"description": "Der Anwender streift zwischen den Gegnern umher, schwingt seine Klinge und fügt bis zu <shuzhi>5</> Zielen Gesamtschaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu (der Schaden jedes aufeinanderfolgenden Treffers auf dasselbe Ziel wird um <shuzhi>20%</> des vorherigen Treffers reduziert.). Am Ende von „Durchstreifen“ fügt der Anwender Gegnern in der Nähe mit einem Hieb nach vorn Flächenschaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zu und lässt sie schweben. Macht immun gegen Kontrolleffekte und verringert den erlittenen Schaden um <shuzhi>50%</>. Abklingzeit: <shuzhi>15</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -6001,6 +6018,7 @@
 				{
 					"name": "Der blühende Tod",
 					"description": "Erzeugt für <shuzhi>8</> Sek. einen Chakramsturm um den Wanderer. Gleichzeitig werden Gegner angezogen und ihre Geschwindigkeit für <shuzhi>8</> Sek. um <shuzhi>30%</> verringert. Feuert <shuzhi>5</> Chakrams ab, die zwischen Gegnern hin- und herspringen und Zielen im Weg Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zufügen, wobei sie bis zu <shuzhi>5</>-mal an Gegnern abprallen. <red>Die durch „Abnehmender Mond“ ausgelösten gespaltenen Chakrams prallen ebenfalls bis zu 5-mal ab.</> Abklingzeit: <shuzhi>45</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -6372,6 +6390,7 @@
 				{
 					"name": "Omnium-Schild",
 					"description": "Erzeugt einen Schild für den Anwender und Verbündete in der Nähe. Dieser blockiert <shuzhi>10</> Sek. lang Schaden in Höhe von bis zu <shuzhi>800%</> des ANG, fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu und <shuzhi>schleudert sie stark hoch</>. Jeder Würfel, den der Anwender bei Einsatz dieser Fähigkeit besitzt, fügt <shuzhi>160%</> ANG hinzu, bis der maximale Schildeffekt erreicht und der Würfel ausgeschöpft ist. Abklingzeit: <shuzhi>60</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -6726,6 +6745,7 @@
 				{
 					"name": "Elektrofeld",
 					"description": "Feuert einen Energieschild auf den Zielort, der die Strahlen innerhalb der Barriere reflektiert. Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Der letzte Treffer lässt Ziele <shuzhi>länger schweben</>. Abklingzeit: <shuzhi>45</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -7082,6 +7102,7 @@
 				{
 					"name": "Spaltung",
 					"description": "Schildumwandlung: Wechselt von der Schildform zur Axtform und schmettert auf den Boden. Dies verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und zusätzlichen Schaden in Höhe von <shuzhi>4%</> der max. LP des Wanderers. Außerdem lässt es das Ziel <shuzhi>länger schweben</>. Erzeugt außerdem für <shuzhi>5</> Sek. eine große Flammenzone, die das Ziel verbrennt und kontinuierlich Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursacht.\r\nAxtumwandlung: Wechselt von der Axtform in die Schildform und schlägt Gegner zu Boden. Dies verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und zusätzlichen Schaden in Höhe von <shuzhi>4%</> der max. LP des Wanderers am Ziel und stößt es zurück. Außerdem kann das Ziel für <shuzhi>5</> Sek. seine Waffe nicht wechseln, wenn es getroffen wird.\r\nAbklingzeit: <shuzhi>25</> Sek. Schildumwandlung und Axtumwandlung haben die gleiche Abklingzeit.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -7477,6 +7498,7 @@
 				{
 					"name": "Azurmond",
 					"description": "Ein Azurdrache fliegt durch den Himmel. Währenddessen erhält der Wanderer „Hyperkörper“ und Ziele in der Nähe erleiden Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Der Azurdrache umkreist das Gebiet für <shuzhi>8</> Sek., wobei kontinuierlich „Macht von Qinglong“ verbraucht wird und bis zu <shuzhi>8</> Blitze einschlagen. Jeder Blitzschlag fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zu. Wenn der Azurdrache verschwindet, wird Zielen in der Nähe noch einmal Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> zugefügt.\r\nAbklingzeit: <shuzhi>30</> Sek. Die Abklingzeit kann nicht auf unter <shuzhi>20</> Sek. reduziert werden. „Azurmond“ kann bis zu <shuzhi>2</>-mal verwendet werden.\r\n<shuzhi>Passiv:</> Wenn <shuzhi>3</> Voltwaffen ausgerüstet sind und „Azurmond“ trifft, wird dem Ziel für <shuzhi>30</> Sek. alle <shuzhi>2</> Sek. Fähigkeitsschaden in Höhe von <shuzhi>250%</> des ANG zugefügt.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -7927,6 +7949,7 @@
 				{
 					"name": "Hyperdimensionales Feld",
 					"description": "Aktiviert hyperdimensionales Feld, gewährt vorübergehend Unbesiegbarkeit, fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und belegt sie <shuzhi>3</> Sek. lang mit einer Verzögerung in Höhe von <shuzhi>65%</> (gegen Bosse im Teamspiel unwirksam). Gleichzeitig führt die <shuzhi>Leerenspur</> auf dem Feld sofort ihre Fähigkeit aus. Abklingzeit: <shuzhi>60</> Sek.\r\nSteigt in die Luft auf und erzeugt ein Feld, das Ziele in der Nähe in einem hochdimensionalen Raum platziert, der bis zu <shuzhi>60</> Sekunden anhält. Während dieser Zeit erhält der Wanderer „Hyperkörper“ und der Schaden, den Schwarzrohrbambus Zielen im hochdimensionalen Raum zufügt, ignoriert Schilde.\r\nDer hochdimensionale Raum erhält jede Sekunde Energie in Höhe von <shuzhi>2</> + <shuzhi>Anzahl der Ziele</> im Raum und löst bei <shuzhi>45</> Energie „Dimensionaler Kollaps“ aus, was Zielen Schaden in Höhe von (<shuzhi>0,1%</> des vom Wanderer verursachten Gesamtschadens (Leerenspur ausgenommen) + <shuzhi>{2}%</> des ANG) zufügt. Dieser Schaden zählt als passiver Schaden und ist der Basismultiplikator. Er ist durch Schadensbonus beeinflusst. Der hochdimensionale Raum verschwindet nach <shuzhi>4</> dimensionalen Kollapsen.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -8044,7 +8067,7 @@
 		"effects": [
 			{
 				"title": "**Flammen- und Massefusion**:",
-				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Flammen-/physischen Basis-ANG, des höchsten ausgerüsteten Flammen-/ physischenANG-Prozentwerts und des höchsten ausgerüsteten Flammen-/physischen Schadensbonus berechnet, und die Waffe gilt sowohl als Flammen- als auch als physische Waffe."
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Flammen-/physischen Basis-ANG, des höchsten ausgerüsteten Flammen-/physischen ANG-Prozentwerts und des höchsten ausgerüsteten Flammen-/physischen Schadensbonus berechnet, und die Waffe gilt sowohl als Flammen- als auch als physische Waffe."
 			},
 			{
 				"title": "**Flammenresonanz**:",
@@ -8056,7 +8079,7 @@
 			},
 			{
 				"title": "**Poppa: Distanzierung**:",
-				"description": "Nach der Verwendung von **Spiegelung** wird für **30**Sek. jede Sek. Schaden in Höhe von **87.5%** des Flammen-ANG + **12.5%** der max. LP + **45%** der Summe aller Widerstandsarten des Wanderers + **168.8%** des krit. Schadens verursacht. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt. Schaden von Poppa zählt als Fähigkeitsschaden. Wenn **1** beliebige Volt- oder Frostwaffe ausgerüstet ist, wird der Schaden von Poppa mit **1.3** multipliziert. Außerdem wird der Schaden von Poppa nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+				"description": "Fügt dem Ziel nach der Verwendung von **Spiegelung** für **30**Sek. jede Sek. Schaden in Höhe von **87.5%** des Flammen-ANG + **12.5%** der max. LP des Wanderers + **45%** der Summe aller Widerstandsarten des Wanderers + **168.8%** des krit. Schadens zu. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt. Schaden von Poppa zählt als Fähigkeitsschaden. Wenn **1** beliebige Volt- oder Frostwaffe ausgerüstet ist, wird der Schaden von Poppa mit **1.3** multipliziert. Außerdem wird der Schaden von Poppa nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
 			}
 		],
 		"elementEffects": {
@@ -8065,7 +8088,7 @@
 		},
 		"advancements": [
 			{
-				"description": "**Flammen- und Massefusion**: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Flammen-/physischen Basis-ANG, des höchsten ausgerüsteten Flammen-/ physischenANG-Prozentwerts und des höchsten ausgerüsteten Flammen-/physischen Schadensbonus berechnet, und die Waffe gilt sowohl als Flammen- als auch als physische Waffe.\r\n**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.\r\n**Poppa: Distanzierung**: Nach der Verwendung von **Spiegelung** wird für **30**Sek. jede Sek. Schaden in Höhe von **87.5%** des Flammen-ANG + **12.5%** der max. LP + **45%** der Summe aller Widerstandsarten des Wanderers + **168.8%** des krit. Schadens verursacht. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt. Schaden von Poppa zählt als Fähigkeitsschaden. Wenn **1** beliebige Volt- oder Frostwaffe ausgerüstet ist, wird der Schaden von Poppa mit **1.3** multipliziert. Außerdem wird der Schaden von Poppa nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+				"description": "**Flammen- und Massefusion**: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Flammen-/physischen Basis-ANG, des höchsten ausgerüsteten Flammen-/physischen ANG-Prozentwerts und des höchsten ausgerüsteten Flammen-/physischen Schadensbonus berechnet, und die Waffe gilt sowohl als Flammen- als auch als physische Waffe.\r\n**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.\r\n**Poppa: Distanzierung**: Fügt dem Ziel nach der Verwendung von **Spiegelung** für **30**Sek. jede Sek. Schaden in Höhe von **87.5%** des Flammen-ANG + **12.5%** der max. LP des Wanderers + **45%** der Summe aller Widerstandsarten des Wanderers + **168.8%** des krit. Schadens zu. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt. Schaden von Poppa zählt als Fähigkeitsschaden. Wenn **1** beliebige Volt- oder Frostwaffe ausgerüstet ist, wird der Schaden von Poppa mit **1.3** multipliziert. Außerdem wird der Schaden von Poppa nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8089,7 +8112,7 @@
 				"need": null
 			},
 			{
-				"description": "Während **Poppa ist da** aktiv ist, lösen **7** explosive Schüsse ein **Schwerenergiegeschoss II** aus, das Schaden in Höhe von **590%** des ANG auslöst und in sich mehrfache Sprengkörper aufteilt, die Zielen in der Nähe Schaden in Höhe von **660%** des ANG verursachen.",
+				"description": "Während **Poppa ist da** aktiv ist, feuert Poppa nach jeweils **7** abgefeuerten explosiven Schüssen ein **Schwerenergiegeschoss II** ab. Fügt Zielen in der Nähe Schaden in Höhe von **590%** des ANG zu und teilt sich in mehrere hochexplosive Sprengkörper auf, die Zielen in der Nähe Schaden in Höhe von **660%** des ANG zufügen.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8311,9 +8334,7 @@
 					"name": "Tauchprotokoll",
 					"description": "Halte in der Luft „Ausweichen“, um „Tauchprotokoll“ auszulösen und bei der Landung Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen.",
 					"operations": [
-						"Jump",
-						"Dash",
-						"Hold Attack"
+						"Jump"
 					],
 					"tags": [
 						"Damage"
@@ -8372,7 +8393,11 @@
 				{
 					"name": "Luftprotokoll",
 					"description": "Ausweichangriffe können in der Luft durchgeführt werden.\r\nAlle <shuzhi>2</> Ausweichangriffe mit <shuzhi>EP-7000-Himmelsfeuer</> erscheint Poppa und führt auch einen Ausweichangriff durch, der je nach Poppa Laune Schaden in Höhe von <shuzhi>50% bis 100%</> des vom Wanderer zugefügten Schadens zufügt.\r\nAlle <shuzhi>2</> Ausweichangriffe mit <shuzhi>EP-7000-Himmelsfeuer</> oder nach <shuzhi>1</> Ausweichangriff mit <shuzhi>EP-7000-Himmelsfeuer</> während <shuzhi>Poppa ist da</> aktiv ist, wird die Abklingzeit von <shuzhi>Spiegelung</> um <shuzhi>10</> Sek. verringert. Kann nur <shuzhi>1</>-mal pro Abklingzeit von Spiegelung ausgelöst werden.",
-					"operations": [],
+					"operations": [
+						"Jump",
+						"Dash",
+						"Attack"
+					],
 					"tags": [
 						"Damage"
 					],
@@ -8384,6 +8409,7 @@
 				{
 					"name": "Spiegelung",
 					"description": "Schwankt zwischen Geist und Realität, was <shuzhi>8</> Herzspiegelwände um den Wanderer (diese zählen als Herbeirufung) erzeugt und Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Nach Verwendung der Fähigkeit wird „Poppa ist da“ für <shuzhi>15</> Sek. aktiviert, was die Fähigkeit zu fliegen sowie verbesserte Bewegungsgeschwindigkeit und Sprungfähigkeit gewährt. Normale Angriffe feuern nun explosive Schüsse ab, die getroffenen Zielen in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zufügen und Ausdauer verbrauchen. Wenn ein explosiver Schuss den Boden trifft, wird er durch eine Herzspiegelwand übermittelt und auf das anvisierte Ziel abgefeuert. Abklingzeit: <shuzhi>30</> Sek. Gewährt sofort, nachdem „Poppa ist da“ von selbst endet, <shuzhi>300</> Waffenladung.\r\nErhöht während „Poppa ist da“ den Endschaden je nach Höhenunterschied zwischen dem Wanderer und dem getroffenen Ziel, um bis zu <shuzhi>1%</>.\r\nWenn im Kampf „Poppa ist da“ nicht aktiv ist, erscheint alle <shuzhi>8</> Sek. Poppa und feuert ein Schwerenergiegeschoss I ab, was Zielen in der Nähe Schaden in Höhe von <shuzhi>590%</> des ANG zufügt.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -8806,6 +8832,7 @@
 				{
 					"name": "Schwertkunst: Schatteneis",
 					"description": "Fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und zieht sie heran. Erzeugt dann ein Schwertfeld, um einen heftigen Regen von Schwertern herbeizurufen und Zielen für <shuzhi>4</> Sek. einen <shuzhi>starken Einfrieren-Effekt</> zuzufügen (nicht in der Apex-Liga oder gegen Bosse verfügbar). Abklingzeit: <shuzhi>30</> Sek.\r\nNach dem erfolgreichen Einsatz von „Schwertkunst: Schatteneis“ stößt der Wanderer <shuzhi>Kalte Luft</> aus, die Zielen in der Nähe jede Sekunde Schaden in Höhe von <shuzhi>{4}%</> des ANG zufügt und sie zudem um <shuzhi>30%</> verlangsamt (nicht in der Apex-Liga oder gegen Bosse verfügbar).\r\nNach dem vollständigen Ausführen von „Schwertkunst: Schatteneis“ erzeugt der Wanderer die maximale Anzahl an <shuzhi>Frostklingen</>, von denen er alle <shuzhi>7,5</> Sek. <shuzhi>1</> Klinge auf das aktuell anvisierte Ziel abfeuert, dabei Schaden in Höhe von <shuzhi>{5}%</> des ANG verursacht und das Ziel mit <shuzhi>Temperaturabfall</> belegt. Anfangs können bis zu <shuzhi>3</> <shuzhi>Frostklingen</> erzeugt werden und alle Klingen werden außerhalb des Kampfes entfernt.\r\n<shuzhi>Temperaturabfall</>: Fügt Zielen in der Nähe <shuzhi>12</> Sek. lang alle <shuzhi>3</> Sek. Schaden in Höhe von <shuzhi>{6}%</> des ANG zu.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -9208,6 +9235,7 @@
 				{
 					"name": "Impulsverschluss",
 					"description": "Venus feuert eine Lenkrakete ab, die beim Kontakt mit gegnerischen Zielen explodiert, ihnen Schaden in Höhe von <shuzhi>{0}%</> des ANG zufügt und sie zu Fall bringt. Gleichzeitig werden Verbündete in der Nähe für <shuzhi>6</> Sek. pro Sekunde um <shuzhi>{1}%</> des ANG des Wanderers geheilt. Abklingzeit: <shuzhi>25</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -9594,6 +9622,7 @@
 				{
 					"name": "Fimbulwinter",
 					"description": "Der Wanderer schlägt wild um sich und verursacht Gesamtschaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Schleudert Ziele in die Luft, lässt sie dort schweben und gewährt Schadensimmunität, während diese Fähigkeit eingesetzt wird. Abklingzeit: <shuzhi>30</> Sek.\r\nDer Einsatz von <shuzhi>Fimbulwinter</> erzeugt für <shuzhi>25</> Sek. einen großen Froststurm um den Wanderer herum. Innerhalb des Froststurms verbraucht „Balmung-Ausweichen“ keine Ausweichversuche.\r\nGewährt innerhalb des Froststurms „Froststurm I“, wodurch beim Verwenden einer Frostwaffe der Frost-ANG um <shuzhi>25%</> und „Zertrümmern“ um <shuzhi>15%</> erhöht wird.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -9720,7 +9749,7 @@
 				"need": null
 			},
 			{
-				"description": "„Lodern“ erhöht den Schaden von „Spark-Angriff“ um **0%**. Die Fähigkeits-Abklingzeit wird auf **24**Sek. verringert.",
+				"description": "„Lodern“ erhöht den Schaden von „Spark-Angriff“ um **0%**. Die Fähigkeits-Abklingzeit wird auf **35**Sek. verringert.",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9840,7 +9869,7 @@
 				"need": "funnel_fire_plasm"
 			},
 			{
-				"description": "„Lodern“ erhöht den Schaden von Spark-Angriff um **0%** und die Effizienz bei der Hitzegewinnung wird verdoppelt. Die Fähigkeits-Abklingzeit wird auf **16** Sek. verringert.",
+				"description": "„Lodern“ erhöht den Schadensbonus von „Spark-Angriff“ um **0%**. Die Fähigkeits-Abklingzeit wird auf **30**Sek. verringert.",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9969,6 +9998,7 @@
 				{
 					"name": "Funkelnde Karambolage",
 					"description": "Spark versprüht Funken, die 15 Sek. anhalten und zwischen dem Ziel und dem Wanderer hin und her springen. Wenn das Ziel getroffen wird, verlangsamen die Funken es für <shuzhi>4</> Sek. (Abklingzeit: <shuzhi>15</> Sek.). Je weiter die Funken fliegen, desto mehr Schaden verursachen sie. Sie fügen dem Ziel bei Treffern Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu und belegen es für <shuzhi>25</> Sek. mit einer „Lodern“-Markierung. Gleichzeitig feuert Spark 4 Geschosse ab, die dem Ziel jeweils Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> zufügen. Sparks normale Angriffe fügen Zielen mit „Lodern“-Markierungen <shuzhi>30%</> mehr Schaden zu. Wenn Funken Ziele treffen, die unter einem „Verbrennen“-Effekt vom Wanderer leiden, werden einmal verbrannt oder entzündet und erleiden dabei zusätzlichen Schaden in Höhe von <shuzhi>45%</> des verbleibenden Gesamtschadens (mehrfache „Verbrennen“- oder „Entzünden“-Effekte werden zusammengerechnet). Anschließend zählen sie erneut 1-mal. Die Abklingzeit für diesen Effekt beträgt <shuzhi>6</> Sek. Die Abklingzeit der Fähigkeit beträgt <shuzhi>30</> Sek.\r\n<shuzhi>Passiv</>: Während Funken aktiv sind, erhält der Wanderer <shuzhi>1</> Hitzepunkt, wenn Spark-Angriff Schaden verursacht (Abklingzeit: <shuzhi>0,9</> Sek.; bis zu <shuzhi>8</> Hitzepunkte). Wenn die Hitzepunkte voll sind, erhält der Wanderer den Effekt „Ultimative Hitze“, der den Flammen-ANG für <shuzhi>25</> Sek. um <shuzhi>10%</> erhöht.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -10367,6 +10397,7 @@
 				{
 					"name": "Aufgeregter Flow: Rauschender Strom",
 					"description": "Sprinte auf das Ziel zu und mache Gegner entlang des Wegs vorübergehend bewegungsunfähig. Du verursachst dabei verzögerten Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>. Abklingzeit: <shuzhi>30</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -10376,6 +10407,7 @@
 				{
 					"name": "Stiller Flow: Konzentrierter Strom",
 					"description": "Setzt die „Stiller Flow“-Fähigkeiten ein, um bis zu <shuzhi>3</> Sek. lang aufzuladen und so Ziele in der Nähe kontinuierlich zu verspotten und Schaden in Höhe von bis zu <shuzhi>60%</> der max. LP zu absorbieren. Am Ende des Aufladens wird Zielen Frostschaden in Höhe von <shuzhi>408%</> des Frost-ANG + <shuzhi>50%</> des absorbierten Schadens zugefügt. <shuzhi>20%</> des nicht verbrauchten Werts wird in LP-Wiederherstellung umgewandelt. Abklingzeit: <shuzhi>30</> Sek.\r\n\r\nWechselt zu „Stiller Flow“, wenn Standhaftigkeit-Resonanz aktiviert ist. <shuzhi>Aufgeregter Flow: Rauschender Strom</> wird durch <shuzhi>Stiller Flow: Konzentrierter Strom</> ersetzt. Wechselt zu „Aufgeregter Flow“, wenn Standhaftigkeit-Resonanz nicht aktiviert ist.\r\nDer Wanderer kann „Schwertschatten“ erlangen, der ihm folgt, wenn er Saki Fuwas Fähigkeiten einsetzt. Schwertschatten löst „Volt-Welle“ aus, wenn der Wanderer Saki Fuwas Varianten- oder Entladungsfähigkeiten einsetzt, und verursacht Flächenschaden in Höhe von <shuzhi>175%</> des Frost-ANG. Abklingzeit von „Volt-Welle“: <shuzhi>10</> Sek.\r\nWährend „Aufgeregter Flow“: Wenn der Wanderer mit einer beliebigen Waffe Schaden verursacht, löst „Schwertschatten“ „Flow“ aus, der dem ersten getroffenen Ziel Schaden in Höhe von <shuzhi>45%</> des Frost-ANG zufügt und LP in Höhe von <shuzhi>57%</> des Schadens wiederherstellt. Die maximale Wiederherstellung übersteigt jeweils nicht <shuzhi>100%</> des ANG. Abklingzeit: <shuzhi>0,8</> Sek.\r\nWährend „Stiller Flow“: Nachdem „Schwertschatten“ „Volt-Welle“ ausgelöst hat, erhält der Wanderer <shuzhi>10</> Sek. lang <shuzhi>3</> Blocks, deren maximale Blockkapazität höchstens <shuzhi>15%</> der max. LP beträgt. Jeder erfolgreiche Block fügt dem Ziel Gegenangriffsschaden in Höhe von <shuzhi>225%</> des Frost-ANG zu, und das Zertrümmern von „Volt-Welle“ erhöht sich um <shuzhi>100%</> und erhält zusätzlich einen Verspottungseffekt.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -10780,6 +10812,7 @@
 				{
 					"name": "Reich des Mondlichts",
 					"description": "Erschaffe um dich herum für <shuzhi>15</> Sek. ein „Reich des Mondlichts“. Dein Angriff im Reich ist um <shuzhi>15%</> erhöht, die Sprungfähigkeit ist um <shuzhi>20%</> erhöht und der Ausdauerverbrauch ist um <shuzhi>50%</> verringert. Abklingzeit: <shuzhi>30</> Sek.\r\nTritt in den speziellen Zustand „Luftblüten“ ein, wenn „Schattenweben“ im Reich eingesetzt wird. Deine Fallgeschwindigkeit ist stark reduziert und du kannst mehrere Doppelsprünge durchführen. Benutze in diesem Zustand die Richtungssteuerung und die Sprungtaste, während du dich in der Luft befindest, um „Durchstreifen“ und einen Angriff auf das Ziel auszuführen. Bei einem Treffer wird Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht und es werden zufällig <shuzhi>1–3</> Epiphyllen generiert.\r\n\r\nPassiv: Im „Reich des Mondlichts“ wird alle <shuzhi>0,8</> Sek. <shuzhi>1</> Epiphyllum in der Nähe von 1 Ziel generiert.\r\nPassiv: Wenn du „Schattenweben“ im „Reich des Mondlichts“ einsetzt, werden Gegnern, deren LP niedriger als <shuzhi>20%</> sind, zusätzliche <shuzhi>50%</> Schaden zugefügt.\r\nPassiv: Wenn du „Schattenweben“ im „Reich des Mondlichts“ einsetzt, wird erlittener Schaden erkannt und du teleportierst dich weg von der Position eines Ziels. Abklingzeit: <shuzhi>10</> Sek.\r\n\r\nPassiv: Waffenmeister\r\nFlamme: Wenn „Schattenweben“ mit 2 Flammenwaffen kombiniert wird, wird „Reich des Mondlichts“ zu „Flamme: Reich des Mondlichts“. Wenn ein Ziel verbrannt wird, während du dich in „Flamme: Reich des Mondlichts“ befindest, hält dieser Effekt für zusätzliche <shuzhi>4</> Sek. an. Ziele mit einem Schild erleiden zusätzliche <shuzhi>15%</> Flammenschaden.\r\n\r\nVolt: Wenn „Schattenweben“ mit 2 Voltwaffen kombiniert wird, wird „Reich des Mondlichts“ zu „Volt: Reich des Mondlichts“. Während du dich in „Volt: Reich des Mondlichts“ befindest, besteht eine Chance von <shuzhi>65%</>, beim Ausweichen keinen Ausweichversuch zu verbrauchen. Außerdem verfügen Ausweichangriffe über einen Schadensbonus von <shuzhi>5%</> und Voltschaden wird um zusätzliche <shuzhi>10%</> erhöht.\r\n\r\nFrost: Wenn „Schattenweben“ mit 2 Frostwaffen kombiniert wird, wird „Reich des Mondlichts“ zu „Frost: Reich des Mondlichts“, in welchem der Frost-ANG um <shuzhi>10%</> erhöht wird.\r\n\r\nPhysisch: Wenn „Schattenweben“ mit 2 physischen Waffen kombiniert wird, wird „Reich des Mondlichts“ zu „Physisch: Reich des Mondlichts“, in welchem du Zielen in Angriffsreichweite jede Sekunde Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> zufügst.\r\n\r\nBalance: Wenn „Schattenweben“ mit zwei unterschiedlichen Elementarwaffen (darunter Flamme, Volt, Frost, Physisch) kombiniert wird, wird der ANG des Wanderers im Reich um <shuzhi>15%</> erhöht und so gewertet, als würden Flammen-, Volt-, Frost- und physische Resonanz ohne Resonanzeffekte aktiviert werden.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -11201,6 +11234,7 @@
 				{
 					"name": "Dubhe",
 					"description": "Entfesselt ein Sperrfeuer von Angriffen, die Gegnern in Reichweite Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zufügen sowie Gegner oder eigene Beschwörungen innerhalb einer bestimmten Reichweite in Elektroentitäten verwandeln, wobei bis zu 3 Elektroentitäten gleichzeitig existieren können. Abklingzeit: <shuzhi>30</> Sek.\r\n\r\nErhalte „Voltsinn“, wenn „Dubhe“ benutzt wird: Scanne die beiden anderen ausgerüsteten Waffen, wenn du deine Fähigkeiten einsetzt. Jedes Mal, wenn eine Voltwaffe gescannt wird, erhöht sich der Voltschaden für <shuzhi>25</> Sek. um <shuzhi>6%</>.\r\n\r\nElektroentität: Beim Entfesseln einer Voltwaffen-Entladungsfähigkeit verursachen die Elektroentitäten einen Volt-Flächenschaden in Höhe von <shuzhi>5%</> der fehlenden LP (nicht weniger als <shuzhi>100%</> des Volt-ANG, nicht mehr als <shuzhi>1.000%</> des Volt-ANG).\r\n\r\nBeim Einsatz von Donnerbrecher verbraucht die Entfesselung einer beliebigen Volt-Waffenfähigkeit oder Entladungsfähigkeit <shuzhi>30%</> der aktuellen LP, um zusätzlichen Voltschaden in Höhe von <shuzhi>45%</> der verbrauchten LP zu verursachen (nicht weniger als <shuzhi>400%</> des Volt-ANG, nicht mehr als <shuzhi>3.000%</> des Volt-ANG). <shuzhi>8</> Sek. später oder wenn die LP niedriger als <shuzhi>10%</> sind, werden für <shuzhi>8</> Sek. <shuzhi>5%</> der fehlenden LP pro Sek. wiederhergestellt (nicht beeinflusst von Heileffekten). Dieser Wiederherstellungseffekt kann nicht gestapelt werden.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -11587,6 +11621,7 @@
 				{
 					"name": "Vergebungswächter",
 					"description": "<ComLblGreen>Vergebungswächter</>: Wenn der Heileffekt über die LP hinausgeht, wird ein LP-Schild in Höhe von bis zu <shuzhi>30%</> der max. LP verliehen. Wenn Vesper Vergebungswächter besitzt, werden unter verschiedenen Resonanzen unterschiedliche Wächtereffekte aktiviert.\r\n<ComLblGreen>Segnender Wächter</>: Die Fähigkeit wird mit <shuzhi>Kometenschweif</> ersetzt und der Wanderer erhält keine weiteren Erleuchtungswächter, die dann zu Vergebungswächtern für Teammitglieder umgewandelt werden. Verdiene 1 Vergebungswächter pro <shuzhi>15%</> der geheilten max. LP und verleiht jedem Teammitglied bis zu 1 Vergebungs-Wächter. Wenn jedes Teammitglied einen besitzt, fügt der Vergebungswächter einem Gegner physischen Schaden in Höhe von <shuzhi>60%</> des ANG zu und verschwindet dann. Dieser Schaden löst keine zusätzlichen Angriffseffekte aus. Außerdem werden die eigenen max. LP und die der Teammitglieder um <shuzhi>12,5%</> erhöht. Nicht stapelbar.\r\n<ComLblGreen>Angriffswächter</>: Wenn eine Vesper-Fähigkeit trifft, wird sofort ein Schild in Höhe von <shuzhi>30%</> der max. LP erschaffen. Abklingzeit: <shuzhi>30</> Sek.\r\n<ComLblGreen>Standhaftigkeitswächter</>: Wenn eine Vesper-Fähigkeit trifft, wird sofort eine Heilung gewährt, die <shuzhi>20</> Sek. lang pro Sekunde <shuzhi>2%</> der max. LP wiederherstellt. Abklingzeit: <shuzhi>30</> Sek.\r\n<ComLblGreen>Ausgeglichener Wächter</>: Wenn die LP über <shuzhi>50%</> liegen, wird „Zertrümmern“ um <shuzhi>20%</> erhöht. Wenn die LP unter <shuzhi>50%</> liegen, wird der Endschaden um <shuzhi>10%</> und „Zertrümmern“ um <shuzhi>10%</> erhöht.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -11597,6 +11632,7 @@
 				{
 					"name": "Sternenfall",
 					"description": "Springe auf das Ziel zu, verursache Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und lasse das Ziel <shuzhi>länger schweben</>. Belegt das Ziel für <shuzhi>18 Sek.</> mit einer Markierung der Erleuchtung. Abklingzeit: <shuzhi>20</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Debuff"
@@ -11607,6 +11643,7 @@
 				{
 					"name": "Kometenschweif",
 					"description": "Stampfe auf den Boden und Ziele vor dir werden <shuzhi>stark hochgeschleudert</>. Dabei wird Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> verursacht und es werden bis zu <shuzhi>3</> <shuzhi>Klingen</> für <shuzhi>75</> Sek. herbeigerufen (bis zu 1 Klinge alle 2 Meter). Diese Fähigkeit kann bis zu <shuzhi>3</>-mal eingesetzt werden und hat jedes Mal eine Abklingzeit von <shuzhi>20</> Sek. Wenn im Kampfbereich 2 <shuzhi>Klingen</> existieren, wird ein <shuzhi>„Heller Glanz“</> erschaffen. Wenn eine <shuzhi>Klinge</> berührt wird, heilt sie Ziele im Bewegungsradius und stellt LP in Höhe von <shuzhi>{2}%</> des ANG des Ziels wieder her. Wenn 3 <shuzhi>Klingen</> existieren, wird eine <shuzhi>Galaxie</> erschaffen. Wenn eine <shuzhi>Klinge</> berührt wird, fügt sie Zielen im Bewegungsradius Schaden in Höhe von <shuzhi>{3}%</> des ANG × Bewegungsdistanz / <shuzhi>5</> m zu.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -12005,6 +12042,7 @@
 				{
 					"name": "Feld",
 					"description": "Flitzt schnell <shuzhi>10</>-mal zwischen zwei Punkten hin und her, zieht Ziele in der Nähe zu sich und fügt ihnen Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Fügt Zielen in der Nähe bei der Landung Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zu. Abklingzeit: <shuzhi>20</> Sek.\r\nBei jedem Flitzen werden <shuzhi>10%</> der max. LP der Krystamax-Dornen absorbiert (nicht in der Apex-Liga verfügbar) und es wird zusätzlicher Schaden in Höhe von <shuzhi>40%</> des ANG multipliziert mit der Anzahl an bestehenden Krystamax-Dornen oder <shuzhi>1%</> der max. LP des Wanderers multipliziert mit der Anzahl an bestehenden Krystamax-Dornen zugefügt, je nachdem welcher Wert höher ist. Hält an, bis die Krystamax-Dornen erschöpft sind.\r\nDas <shuzhi>LP-Verlustverhältnis</> der max. LP der Krystamax-Dornen zählt als das <shuzhi>LP-Verlustverhältnis</> der max. LP des Wanderers.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -12395,8 +12433,7 @@
 					"name": "Verborgener Zustand",
 					"description": "Weiche vor dem Halten aus, um in „Verborgener Zustand“ überzugehen. In diesem Zustand wird durchgehend Ausdauer verbraucht und die Geschwindigkeit wird um <shuzhi>50%</> erhöht. Im „Kältefeld“ wird die Geschwindigkeit um zusätzliche <shuzhi>50%</> erhöht. Beim Verlassen von „Verborgener Zustand“ wird allen Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zugefügt und sie werden für <shuzhi>2</> Sek. eingefroren.",
 					"operations": [
-						"Dash",
-						"Hold Attack"
+						"Movement"
 					],
 					"tags": [
 						"Control"
@@ -12420,6 +12457,7 @@
 				{
 					"name": "Kältefeld",
 					"description": "Ziehe alle Ziele in der Nähe zusammen, füge ihnen Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zu und lasse sie <shuzhi>länger schweben</>. Der Wanderer betritt das „Kältefeld“ für <shuzhi>30</> Sek. Abklingzeit: <shuzhi>25</> Sek. Erhalte beim Aktivieren der Fähigkeit „Hyperkörper“.\r\n<red>Passiv</>: Fügt bei Verwendung einer beliebigen Entladungsfähigkeit einer Frostwaffe innerhalb von „Kältefeld“ 1-mal Raureif-Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> zu und verlangsamt das Ziel <shuzhi>2</> Sek. lang (der Verlangsamungseffekt ist unwirksam gegen Bosse). Innerhalb des Felds wird bei jedem <shuzhi>12.</> Treffereffekt von „Unnachgiebiger Flügel“ zusätzlich „Raumschlitzer“ ausgelöst, was allen Zielen im Raum für <shuzhi>25</> Sek. alle 2 Sek. 1-mal Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</> zufügt (dieser Effekt endet mit dem Verschwinden des Raums.).",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support",
@@ -12858,6 +12896,7 @@
 				{
 					"name": "Dauerhafte Rotation",
 					"description": "Füge Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und erhalte für <shuzhi>20</> Sekunden „Hyperkörper“. Wenn <shuzhi>Dauerhafte Rotation</> endet, erhältst du für <shuzhi>20</> Sekunden <shuzhi>3</> <shuzhi>Sengende Klingen</> (<shuzhi>Sengende Klingen</> können alle <shuzhi>20</> Sekunden erhalten werden). Abklingzeit: <shuzhi>20</> Sekunden.\r\n<shuzhi>Sengende Klingen</>: Wenn du einem Ziel <shuzhi>physischen</> oder <shuzhi>Flammen</>-Ausweichangriffsschaden zufügst, verbrauchst du <shuzhi>1</> <shuzhi>Sengende Klinge</> und fügst dem Ziel zusätzlichen Schaden des entsprechenden Elements der Waffe in Höhe von <shuzhi>{2}%</> des ANG sowie <shuzhi>Rüstungsauflösung</> zu. Stellt nach verursachtem Schaden <shuzhi>1</> Ausweichversuch wieder her und erhöht den Endschaden für <shuzhi>20</> Sekunden um <shuzhi>10%</>. Dieser Schaden zählt als normaler Angriffsschaden und kann nur <shuzhi>1</>-mal alle <shuzhi>2,8</> Sekunden ausgelöst werden.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -12881,6 +12920,451 @@
 		"version": "3.5",
 		"limited": true,
 		"id": "killknife_physic"
+	},
+	"lances_ice": {
+		"name": "Fiesling",
+		"description": "Indem er die bösartige dunkle Energie in der Lanze einschließt, wird der Ritter wahrhaftig zu einem „Ritter“. Und dann … ergreift der Ritter die Hand des Mädchens und gemeinsam schreiten sie einer Zukunft voller endloser Möglichkeiten entgegen.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_yanuo.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_yanuo.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/yanuo.webp"
+		},
+		"rarity": 5,
+		"element": "Ice",
+		"type": "Lances",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Lances_Ice_ssr_star",
+		"avatar": "imitation_54",
+		"mats": {
+			"Item_Mine_ice": 39,
+			"Item_Mine_ice_02": 65,
+			"Item_breakthrough_B2": 65,
+			"Item_breakthrough_D2": 65,
+			"Item_Mine_ice_03": 32,
+			"Item_breakthrough_B3": 32,
+			"Item_breakthrough_D3": 32,
+			"Item_breakthrough_B1": 35,
+			"Item_breakthrough_D1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "Angriff",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "LP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Krit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Volt- und Frostfusion**:",
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Volt-/Frost-Basis-ANG, des höchsten ausgerüsteten Volt-/Frost-ANG-Prozentwerts und des höchsten ausgerüsteten Volt-/Frostschaden-Bonus berechnet, und die Waffe gilt sowohl als Volt- als auch als Frostwaffe."
+			},
+			{
+				"title": "**Voltresonanz**:",
+				"description": "Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird."
+			},
+			{
+				"title": "**Frostresonanz**:",
+				"description": "Erhöht den Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird."
+			},
+			{
+				"title": "**Eishieb: Auf dem Feld**:",
+				"description": "Beim Treffen eines Ziels mit **Fiesling** wird Zielen in der Nähe Schaden in Höhe von **205%** des Frost-ANG + **2.9%** der max. LP + **106%** der Summe aller Widerstandsarten des Wanderers + **3.9%** des krit. Schadens zugefügt. Kann 1-mal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Eishieb“ zählt als normaler Angriffsschaden. Wenn **1** beliebige physische oder Flammenwaffe ausgerüstet ist, wird der Schaden von „Eishieb“ mit **1.3** multipliziert. Außerdem wird der Schaden von „Eishieb“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+			}
+		],
+		"elementEffects": {
+			"title": "**Eispanzer**:",
+			"description": "Wenn die Waffe voll geladen ist, bewirkt der nächste Angriff für **2**Sek. einen **starken Einfrieren-Effekt** und verursacht bei Zielen **6**Sek. lang Erfrierungen. Das Durchbrechen der Eisschicht verursacht zusätzlichen Schaden in Höhe von **151.00%** des ANG. Während der Erfrierungen wird die Waffenladegeschwindigkeit des Ziels um **50%** verringert."
+		},
+		"advancements": [
+			{
+				"description": "**Volt- und Frostfusion**: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Volt-/Frost-Basis-ANG, des höchsten ausgerüsteten Volt-/Frost-ANG-Prozentwerts und des höchsten ausgerüsteten Volt-/Frostschaden-Bonus berechnet, und die Waffe gilt sowohl als Volt- als auch als Frostwaffe.\r\n**Voltresonanz**: Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird.\r\n**Frostresonanz**: Erhöht den Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird.\r\n\r\n**Eishieb: Auf dem Feld**: Beim Treffen eines Ziels mit **Fiesling** wird Zielen in der Nähe Schaden in Höhe von **205%** des Frost-ANG + **2.9%** der max. LP + **106%** der Summe aller Widerstandsarten des Wanderers + **3.9%** des krit. Schadens zugefügt. Kann 1-mal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Eishieb“ zählt als normaler Angriffsschaden. Wenn **1** beliebige physische oder Flammenwaffe ausgerüstet ist, wird der Schaden von „Eishieb“ mit **1.3** multipliziert. Außerdem wird der Schaden von „Eishieb“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "Erhöht den Endschaden um **12%**, wenn Zielen mit weniger als **80%** LP Schaden zugefügt wird. Dieser Effekt funktioniert auch im Nebenhand-Slot.\r\nWenn der Anwender im **Tarn**modus angegriffen wird, wird die Tarnung nicht aufgehoben und die maximale Anzahl an Angriffen, die geblockt werden können, erhöht sich auf **3**. Gewährt bei der Aufhebung der Tarnung durch einen Angriff des Anwenders zusätzlich einen Schild in Höhe der Dauer der **Tarnung** × **5%** der max. LP des Wanderers (nicht mehr als **120%** der max. LP des Wanderers). Hält **30**Sek. lang an.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Erhöht das Zertrümmern von **Fiesling** um **20%**.\r\nWenn **Fieberhafte Jagd** **ausgelöst** wird, werden Eiskerne in der Nähe in den Umkreis des Wanderers herangezogen und gesprengt, bevor der Wanderer für **5**Sek. in den Eindringungszustand übergeht. Währenddessen ersetzt **Arktische Kälte** die Taste für den Waffenwechsel (diese „Arktische Kälte“ löst jedoch keine der zusätzlichen Fähigkeitseffekte aus) und jede Verwendung verringert die Abklingzeit von **Arktische Kälte** um **20**Sek. Mit einem normalen Angriff wird der Eindringungszustand sofort verlassen.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Erhöht den Schaden durch die Eiskernsprengung um **150%**.\nNachdem mit **Fesselung** die geworfene Waffe **ein Ziel trifft**, wird das Ziel für **5**Sek. mit „Schneespur“ markiert (der Auslöser dieses Effekts hat Vorrang vor dem Schaden des aufgeladenen Angriffs von **Fesselung**). Wenn „Schneespur“ nachlässt, erleidet das Ziel Schaden in Höhe von **30%** des während „Schneespur“ insgesamt erlittenen Schadens (im Solomodus maximal der ANG des Wanderers multipliziert mit **650**, in einem Team maximal der ANG des Wanderers multipliziert mit **6500**). Schaden wird nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus. „Schneespur“ kann bis zu **1**-mal alle **30**Sek. ausgelöst werden.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Der Frost-Voltschaden durch **Arktische Kälte** ist bis zu **3**-mal stapelbar.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Plündern",
+					"description": "Verwende am Boden den normalen Angriff, um 6 Angriffe hintereinander auszuführen (auf dem Schlachtfeld können bis zu <shuzhi>45</> Eiskerne gleichzeitig existieren).\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und erzeugt <shuzhi>1</> Eiskern.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und erzeugt <shuzhi>2</> Eiskerne.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und erzeugt <shuzhi>1</> Eiskern.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und erzeugt <shuzhi>3</> Eiskerne.\r\n Sechster Angriff: Verursacht Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Melee.webp",
+					"id": "GA_FPlayerLancesMelee_Melee"
+				},
+				{
+					"name": "Jagd",
+					"description": "Verwende in der Luft den normalen Angriff, um 6 Angriffe hintereinander in der Luft auszuführen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</>.\r\nSechster Angriff: Verursacht Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_AirAttack.webp",
+					"id": "GA_FPlayerLancesMelee_AirAttack"
+				},
+				{
+					"name": "Eiskeil",
+					"description": "Drücke und halte auf dem Boden den normalen Angriff während des zweiten, vierten und fünften normalen Angriffs, um bis zu<shuzhi>3</> Ladungen von „Eiskeil“ auszulösen und in der Luft rückwärts zu springen um anzugreifen.\r\nAufgeladener Angriff Phase 1: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</>.\r\nAufgeladener Angriff Phase 2: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>.\r\nAufgeladener Angriff Phase 3: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG +<shuzhi>{5}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Branch.webp",
+					"id": "GA_FPlayerLancesMelee_Branch"
+				},
+				{
+					"name": "Tod aus der Luft",
+					"description": "Tippe und halte den normalen Angriff in der Luft, um „Tod aus der Luft“ auszulösen.\r\nSticht mit der Lanze in den Boden, um Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_JumpAttack.webp",
+					"id": "GA_FPlayerLancesMelee_JumpAttack"
+				},
+				{
+					"name": "Fesselung",
+					"description": "Tippe und halte den normalen Angriff auf dem Boden, um „Fesselung“ auszulösen und aufzuladen. Innerhalb von <shuzhi>6</> Sek. erhöht sich der Schaden entsprechend der Ladedauer, während der Wanderer „Hyperkörper“ erhält und die Waffe in Richtung des Ziels geworfen wird. Wenn die Waffe <shuzhi>trifft</>, wird Zielen in der Nähe Schaden bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zugefügt. Die Zielhilfe wird aktiviert, nachdem ein Ziel in Reichweite <shuzhi>2,5</> Sek. lang während der Ladung von „Fesselung“ anvisiert wurde. Die geworfene Waffe trifft das Ziel automatisch am Kopf (der Verlust des Ziels mit Zielhilfe wirkt sich nicht auf die Ladung aus).\nNach dem Werfen der Waffe mit „Fesselung“ ist eine neue Fähigkeitstaste für <shuzhi>Schattenexekution</> verfügbar.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttack.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttack"
+				},
+				{
+					"name": "Knochenbeißer",
+					"description": "Tippe und halte den normalen Angriff auf dem Boden beim Zielen in die Luft, um „Knochenbeißer“ auszulösen. Der Wanderer erhält währenddessen „Hyperkörper“. Wirft die Lanze in Richtung des Ziels, was Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt und getroffene Ziele mit <shuzhi>Kraftaufprall</> belegt.\r\n„Knochenbeißer“ löst nach dem Werfen der Waffe <shuzhi>Schattenexekution</> nicht aus.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttackSp.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttackSP"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/main/shanbi.webp",
+					"id": "GA_FPlayerLancesEvade"
+				},
+				{
+					"name": "Tarnung",
+					"description": "Tippe und halte auf dem Boden Ausweichen, um für <shuzhi>60</> Sek. „Tarnung“ auszulösen und getarnt zu werden (erzeugt im Solo-Modus eine Eisskulptur, die die Aufmerksamkeit der Gegner bis zu <shuzhi>15</> Sek. lang auf sich zieht), was die Bewegungsgeschwindigkeit um <shuzhi>30%</> erhöht. Im Tarnmodus blockt der Wanderer bis zu <shuzhi>1</>-mal Schaden in Höhe von <shuzhi>50%</> der max. LP (dieser Effekt kann nur <shuzhi>1</>-mal alle <shuzhi>10</> Sek. ausgelöst werden). Die Tarnung wird aufgehoben, wenn der Wanderer einen Angriff mit <shuzhi>Fiesling</> startet und Schaden verursacht, angegriffen wird oder die Waffen wechselt.\r\n<shuzhi>Auf der Jagd</>: Wenn die Tarnung aufgehoben wird, weil der Wanderer einen Angriff mit <shuzhi>Fiesling</> startet und <shuzhi>trifft</>, wird „Fieberhafte Jagd“ ausgelöst. Das setzt die Abklingzeit von <shuzhi>Arktische Kälte</> zurück und erhöht den Endschaden des Wanderers exponentiell um <shuzhi>2,4%</>–<shuzhi>36%</>, basierend auf der Dauer der Tarnung. Gewährt nach <shuzhi>10</> Sek. in Tarnung den maximalen Schadensbonus. Zugefügter Schaden mit <shuzhi>Fesselung</>, um „Auf der Jagd“ auszulösen, erhält auch einen Schadensbonus.",
+					"operations": [],
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHold.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHold"
+				},
+				{
+					"name": "Aufkommende Kälte",
+					"description": "Verwende zum Auslösen von „Aufkommende Kälte“ während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Richtungstaste). Dies fügt Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und erzeugt <shuzhi>2</> Eiskerne (auf dem Schlachtfeld können bis zu <shuzhi>45</> Eiskerne gleichzeitig existieren).",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackFront.webp",
+					"id": "GA_FPlayerLancesEvade_AttackFront"
+				},
+				{
+					"name": "Todeswind",
+					"description": "Verwende zum Auslösen von „Todeswind“ gleich nach dem Ausweichen nach hinten den normalen Angriff, um nach vorne zu springen und den Zielen in der Nähe bei der Landung Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen. Erstellt auch <shuzhi>1</> Eiskern (auf dem Schlachtfeld können bis zu <shuzhi>45</> Eiskerne gleichzeitig existieren).",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackBack.webp",
+					"id": "GA_FPlayerLancesEvade_AttackBack"
+				},
+				{
+					"name": "Unvermitteltes Desaster",
+					"description": "Tippe auf den normalen Angriff, wenn der Wanderer nach dem Halten der Ausweichtaste in den Tarnmodus übergeht, um <shuzhi>Fesselung</> auszulösen und Schaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zuzufügen. Nach dem Werfen der Waffe ist eine neue Fähigkeitstaste für <shuzhi>Schattenexekution</> verfügbar.",
+					"operations": [
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHoldAndAttack.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHoldAndAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "N/A",
+					"description": "N/A",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"operations": [
+						"N/A"
+					],
+					"tags": [
+						"N/A"
+					],
+					"id": "GA_FplayerLancesSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "N/A",
+					"description": "N/A",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"operations": [
+						"N/A"
+					],
+					"tags": [
+						"N/A"
+					],
+					"id": "GA_FplayerLancesChangeSkill"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "3.6",
+		"limited": true,
+		"id": "lances_ice"
 	},
 	"blevi_thunder": {
 		"name": "Bündniswappen-Metz ☆",
@@ -12995,7 +13479,7 @@
 				"need": null
 			},
 			{
-				"description": "Jeder Treffer mit **Rosa Kettenrausch** oder **Koordinierter Metz-Nebenhand-Angriff** stellt LP in Höhe von **12%** des ANG wieder her. Im Teamspiel stellt jeder Treffer LP in Höhe von **18%** wieder her.\r\nWenn ein BFF Schaden erleidet, der seine LP unter **25%** der max. LP senkt, werden zusätzlich LP in Höhe von **30%** seiner max. LP wiederhergestellt und ihm für **3**Sek. Schadensimmunität gewährt. Wenn der Schaden tödlich ist, wird der tödliche Schaden zusätzlich einmalig verhindert. Kann bis zu **1**-mal alle **60**Sek. ausgelöst werden.",
+				"description": "Jeder Treffer mit **Rosa Kettenrausch** oder **Koordinierter Metz-Nebenhand-Angriff** stellt LP in Höhe von **12%** des ANG wieder her. Im Teamspiel stellt jeder Treffer LP in Höhe von **18%** wieder her.\r\nWenn ein BFF Schaden erleidet, der seine LP unter **25%** der max. LP senkt, werden zusätzlich LP in Höhe von **30%** seiner max. LP wiederhergestellt und ihm für **3**Sek. Schadensimmunität gewährt. Wenn der Schaden tödlich ist, wird der tödliche Effekt zusätzlich 1-mal verhindert. Kann bis zu **1**-mal alle **60**Sek. ausgelöst werden.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13043,7 +13527,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "Wenn **eine Resonanz (mit Ausnahme von Segnungsresonanz) aktiv ist**, kann **Metz-Energiewelle** **2**-mal zusätzlich eingesetzt werden und der Volt- und Frostschaden an Bossen wird um **10%** erhöht.\r\nWenn **Segnungsresonanz** aktiv ist, kann **Millionen-Metz-Schockwelle** **1**-mal zusätzlich eingesetzt werden und die LP des BFF werden jetzt in Höhe von **15%** seiner max. LP wiederhergestellt.",
+				"description": "Wenn **Resonanzen (mit Ausnahme von Segnungsresonanz) aktiv sind**, kann **Metz-Energiewelle** **2**-mal zusätzlich eingesetzt werden und der Volt- und Frostschaden an Bossen wird um **10%** erhöht.\r\nWenn **Segnungsresonanz** aktiv ist, kann **Millionen-Metz-Schockwelle** **1**-mal zusätzlich eingesetzt werden und die LP des BFF werden jetzt in Höhe von **15%** seiner max. LP wiederhergestellt.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13115,7 +13599,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "Während „Pakt-Verstärkung“ aktiv ist, wird der Volt- und Frostschaden-Bonus um **10%** erhöht. „Metz-Heiligenschein“ erhöht den Endschaden von Teammitgliedern in der Nähe um **20%** und Zertrümmern um **25%**. Dieser Effekt kann nicht gestapelt werden.",
+				"description": "Während „Pakt-Verstärkung“ aktiv ist, werden die Volt- und Frostschadensbonus-Effekte um **10%** bzw. **4%** erhöht. „Metz-Heiligenschein“ erhöht den Endschaden von Teammitgliedern in der Nähe um **20%** und Zertrümmern um **25%**. Dieser Effekt kann nicht gestapelt werden.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13258,6 +13742,7 @@
 				{
 					"name": "Millionen-Metz-Schockwelle",
 					"description": "Nach der Verwendung von „Millionen-Metz-Schockwelle“ geht der Wanderer für <shuzhi>30</> Sek. in „Pakt-Verstärkung“ über: Wenn sich <shuzhi>Bündniswappen-Metz☆</> im Haupt-Slot befindet, wird der Voltschaden des Wanderers um <shuzhi>25%</> erhöht. Wenn sich <shuzhi>Bündniswappen-Metz☆</> im Nebenhand-Slot befindet, wird der Frostschaden des Wanderers um <shuzhi>10%</> erhöht. Abklingzeit: <shuzhi>30</> Sek.\r\n\r\nWenn <shuzhi>Resonanzen (mit Ausnahme von Segnungsresonanz) aktiv sind</>:\r\nFügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und wendet <shuzhi>Kraftaufprall</> auf sie an. Während „Millionen-Metz-Schockwelle“ abklingt, gewährt das Verursachen von kumuliertem Schaden in Höhe des <shuzhi>100</>-fachen des ANG während „Pakt-Verstärkung“ jedes Mal <shuzhi>1</> Verwendung von „Metz-Energiewelle“. Metz-Energiewelle: Fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>1800%</> des ANG zu. Gewährt alle <shuzhi>10</> Sek. bis zu <shuzhi>1</> Verwendung.\r\nWenn „Millionen-Metz-Schockwelle“ während „Pakt-Verstärkung“ erneut eingesetzt wird, werden die Dauer von „Pakt-Verstärkung“ und der kumulierte Schaden zurückgesetzt.\r\nWenn „Pakt-Verstärkung“ von alleine endet, werden ungenutzte Metz-Energiewellen gesammelt und verursachen Schaden in Höhe der ungenutzten Verwendungen × <shuzhi>1200%</> des ANG.\r\n\r\nWenn <shuzhi>Segnungsresonanz</> aktiv ist:\r\nDie Verwendung von Fähigkeiten verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und wendet <shuzhi>Kraftaufprall</> auf getroffene Ziele an. Die LP des Wanderers und seiner Teammitglieder in der Nähe werden in Höhe von <shuzhi>400%</> des ANG wiederhergestellt und zusätzlich werden <shuzhi>10%</> der max. LP des BFF wiederhergestellt. Entfernt Debuffs und Kontrolleffekte vom Wanderer und von Teammitgliedern in der Nähe (einschließlich „Vergrauender Biss“) und gewährt für <shuzhi>10</> Sek. Immunität gegen Debuffs und Kontrolleffekte. Abklingzeit: <shuzhi>15</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -13640,8 +14125,10 @@
 				{
 					"name": "Glutmagazin",
 					"description": "Wechsle Module aus, um die Effekte von „Kreuzschuss“ und „Dämmerungsbogen“ umzuwandeln. „Kreuzschuss“ kann bis zu <shuzhi>8</>-mal benutzt werden. Abklingzeit: <shuzhi>14</> Sek.\r\n<shuzhi>Rücksichtslose Bombe</>: Der Effekt von „Kreuzschuss“ wird zur feurigen Explosion, die in einem bestimmten Gebiet Grundschaden in Höhe von <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> und nach dem Aufladen bis zu <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> verursacht. Treffer gegen Ziele, die nicht brennen, fügen ihnen „Kreuzbrand“ zu, wodurch sie <shuzhi>13</> Sek. lang pro Sek. Schaden in Höhe von <shuzhi>90%</> des ANG erleiden. Treffer gegen brennende Ziele fügen ihnen ebenso „Kreuzbrand“ zu und gewähren für <shuzhi>20</> Sek. Brandverbesserung, wodurch der von Zielen erlittene Brandschaden um <shuzhi>20%</> erhöht wird. Beim Einsatz von „Dämmerungsbogen“ wirfst du nun stattdessen <shuzhi>3</> Granaten.\r\n<shuzhi>Hinterlistige Bombe</>: Wandelt den Effekt von „Kreuzschuss“ zum Fernkampf-Gasangriff um, der Grundschaden <shuzhi>{4}%</> des ANG +<shuzhi>{5}</> und nach dem Aufladen <shuzhi>{6}%</> des ANG +<shuzhi>{7}</> verursacht. Das Gas hält <shuzhi>7</> Sek. an und Ziele darin werden verlangsamt. Der Verlangsamungseffekt wird im Lauf der Zeit immer stärker. „Dämmerungsbogen“ bringt das Gas zum Explodieren (je länger aufgeladen wird, desto höher der Gasexplosionsschaden), verursacht so Explosionsschaden in Höhe von <shuzhi>{8}%</> des ANG +<shuzhi>{9}</> (wird als 1 Auslösung von „Kreuzschuss“ gewertet) und verringert den Flammenwiderstand des Ziels für <shuzhi>10</> Sek. um <shuzhi>10%</>.\r\n\r\n<shuzhi>Passiv</>: Nach der Bestätigung des Moduls erhältst du mehrere Aufladungen „Sichtverbesserung“, die deiner Anzahl an Ausweichversuchen entsprechen und die Ladezeit für Kreuzschuss wird verringert. Sichtverbesserung: Verringert die Aufladezeit von „Kreuzschuss“ um <shuzhi>30%</> und gewährt während des Aufladens Immunität gegen Kontrolleffekte. Jedes <shuzhi>2.</> Ausweichen stellt <shuzhi>1</> Ausweichversuch wieder her (bis zu <shuzhi>4</> Ausweichversuche).\r\n<shuzhi>Passiv</>: Während das Modul „Hinterlistige Bombe“ aktiv ist, haben Treffer mit „Kreuzschuss“ eine Chance, die Abklingzeit anderer Flammenwaffen um <shuzhi>0,7</> Sek. zu verringern.\r\n<shuzhi>Passiv</><shuzhi>: Ruhiges Herz</>: Wenn Klee-Kreuz eine Entladung/Fähigkeit/einen aufgeladenen Angriff/Ausweichen verwendet, erhöht sich die endgültige kritische Trefferrate von Klee-Kreuz <shuzhi>15</> Sek. lang um <shuzhi>5%</>. Dieser Effekt kann bis zu <shuzhi>3</> Mal gestapelt werden. Nachdem die kritische Trefferrate <shuzhi>100%</> überschritten hat, werden <shuzhi>50%</> der überschüssigen kritischen Trefferrate in kritischen Schaden umgewandelt, bis zu einem Maximum von <shuzhi>7,5%</> kritischem Schaden.",
+					"operations": [],
 					"tags": [
-						"Damage"
+						"Damage",
+						"Ammo"
 					],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_snipe_skillstart.webp",
 					"id": "GA_FPlayerSnipeSkill_Skill"
@@ -14101,6 +14588,7 @@
 				{
 					"name": "In alle Richtungen",
 					"description": "Verwandelt sich in mehrere Tinten-Doppelgänger und wird für kurze Zeit unbesiegbar. Fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Die Tinte zieht sich dann zusammen, zieht Ziele in der Nähe an und löst einen Tintenangriff aus, der Schaden in Höhe von bis zu <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursacht. Abklingzeit: <shuzhi>25</> Sek.\r\nSammelt in alle Richtungen <shuzhi>Kalligrafie-Schriftzeichen</> auf dem Feld und setzt die „Flammender Vogel“-Verwandlung ein, wobei Zielen in der Nähe Schaden in Höhe von (Anzahl der Beschwörungen plus Kalligrafie-Schriftzeichen auf dem Feld, bis zu <shuzhi>8</>) × <shuzhi>{4}%</> des ANG zugefügt wird. Anschließend tritt der Wanderer in den <shuzhi>Gipfel</>-Zustand ein, der <shuzhi>{12}%</> des Flammenwiderstands des Ziels für <shuzhi>30</> Sek. ignoriert.\r\nDer <shuzhi>Gipfel</>-Zustand gewährt basierend auf der Art und Anzahl der von „In alle Richtungen“ gesammelten <shuzhi>Kalligrafie-Schriftzeichen</> verschiedene Effekte:\r\nSammle <shuzhi>1</> Entladungs-Schriftzeichen „携“ für eine Entladungsschadenserhöhung von <shuzhi>{5}%</>. Sammle <shuzhi>2</> Entladungs-Schriftzeichen „携“ für eine Zertrümmerungserhöhung von <shuzhi>{6}%</>.\r\nSammle <shuzhi>1</> Fähigkeits-Schriftzeichen „技“ für eine Fähigkeitsschadenserhöhung von <shuzhi>{7}%</>. Sammle <shuzhi>2</> Fähigkeits-Schriftzeichen „技“, um die Abklingzeit von „In alle Richtungen“ um <shuzhi>5</> Sekunden zu verringern.\r\nSammle <shuzhi>1</> Ausweich-Schriftzeichen „闪“ für eine Schadenserhöhung bei Ausweichangriffen von <shuzhi>{8}%</>. Sammle <shuzhi>2</> Ausweich-Schriftzeichen „闪“, um <shuzhi>{9}</> Ausweichversuche zu erhalten.\r\nSammle <shuzhi>1</> Angriffs-Schriftzeichen „攻“ für eine Schadenserhöhung bei normalen Angriffen von <shuzhi>{10}%</>. Sammle <shuzhi>2</> Angriffs-Schriftzeichen „攻“ für eine Schadensreduktion bei normalen Angriffen von <shuzhi>{11}%</>.\r\nPro <shuzhi>1</> aufgesammeltes Kalligrafie-Schriftzeichen wird für <shuzhi>2</> Sek. Hyperkörper Schadensreduktion (bis zu maximal <shuzhi>16</> Sek.).\r\n\r\n<shuzhi>Passiv: Kalligrafie-Schriftzeichen</>\r\nDurch den Einsatz von Entladungen/Fähigkeiten/Ausweichen/normalen Angriffen einer Waffe werden die entsprechenden <shuzhi>Kalligrafie-Schriftzeichen</> hinterlassen.\r\n<shuzhi>Entladung</>: Hinterlässt <shuzhi>1</> Entladungs-Schriftzeichen „携“, wenn <shuzhi>1</> Entladungsfähigkeit eingesetzt wird (maximal <shuzhi>2</> Entladungs-Schriftzeichen „携“ können gleichzeitig auf dem Feld bestehen).\r\n<shuzhi>Fähigkeit</>: Hinterlässt <shuzhi>1</> Fähigkeits-Schriftzeichen „技“, wenn <shuzhi>1</> Fähigkeit eingesetzt wird (maximal <shuzhi>2</> Fähigkeits-Schriftzeichen „技“ können gleichzeitig auf dem Feld bestehen).\r\n<shuzhi>Ausweichen</>: Hinterlässt <shuzhi>1</> Ausweich-Schriftzeichen „闪“, wenn <shuzhi>2</>-mal ausgewichen wird (maximal <shuzhi>2</> Ausweich-Schriftzeichen „闪“ können gleichzeitig auf dem Feld bestehen).\r\n<shuzhi>Angriff</>: Hinterlässt <shuzhi>1</> Angriffs-Schriftzeichen „攻“, wenn <shuzhi>4</> normale Angriffe verwendet werden (maximal <shuzhi>2</> Angriffs-Schriftzeichen „攻“ können gleichzeitig auf dem Feld bestehen).",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support",
@@ -14503,6 +14991,7 @@
 				{
 					"name": "Es ist Zauberzeit",
 					"description": "Wenn du mit einer beliebigen Waffe im Haupt-Slot Schaden verursachst, erhältst du <shuzhi>Aufwärmpunkte</>. Abklingzeit: <shuzhi>0,06</> Sek. Physische Waffen bringen <shuzhi>1</> Punkt pro Treffer, nicht-physische Waffen <shuzhi>0,5</> Punkte pro Treffer. Die Anzahl der <shuzhi>Aufwärmpunkte</>, die du hast, wird in der <shuzhi>Magieanzeige</> angezeigt, bis zu <shuzhi>100</> Punkten. Wenn du in den Kampf ziehst, erhältst du sofort <shuzhi>100</> <shuzhi>Aufwärmpunkte</>.\r\nFähigkeiten können eingesetzt werden, sobald sich <shuzhi>100</> <shuzhi>Aufwärmpunkte</> in der <shuzhi>Magieanzeige</> befinden. Zieht Gegner in einem bestimmten Gebiet zusammen und fügt dem Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Werde vorübergehend unbesiegbar (nicht verfügbar in Apex-Liga und entscheidender Abgrund) und reduziere die Geschwindigkeit von Zielen im Trefferbereich (nicht verfügbar in Apex-Liga und entscheidender Abgrund). Aktiviere gleichzeitig <shuzhi>Zaubertrick</>, um <shuzhi>18</> Sekunden lang kontinuierlich <shuzhi>Aufwärmpunkte</> zu verbrauchen. Abklingzeit: <shuzhi>30</> Sek. Diese Abklingzeit wird von Effekten (einschließlich der Aufhebung, Rücksetzung oder Änderung der Abklingzeit), die nicht von Möbius stammen, nicht beeinflusst. Während dieser Zeit wird die Fähigkeit durch „Karte abheben“ ersetzt.\r\nWährend <shuzhi>Zaubertrick</> erhältst du automatisch alle 2 Sek. entweder eine <shuzhi>Pik</>- oder <shuzhi>Herz</>-<shuzhi>Pokerkarte</>. Die Art der <shuzhi>Pokerkarte</>, die du bald erhältst, kann im Voraus mit der Schaltfläche „Karte abheben“ umgeschaltet werden. Wenn es <shuzhi>2</> <shuzhi>Pokerkarten</> gibt, wird automatisch der entsprechende <shuzhi>Kartenzauber</> verwendet. Abklingzeit: <shuzhi>3,8</> Sek.\r\nWenn während <shuzhi>Zaubertrick</> Hyperkörper aktiv ist, wird deine <shuzhi>Magieanzeige</> nicht mehr automatisch ergänzt, da du bereits abgeschirmt bist. Erhöht den physischen Schaden von Möbius’ Angriffen (normaler Angriff und Ausweichangriff) um <shuzhi>10%</> und Zertrümmern um <shuzhi>20%</>.\r\nUnterschiedliche <shuzhi>Pokerkarten</>-Kombinationen aktivieren unterschiedliche <shuzhi>Kartenzauber</>.\r\nHerz + Pik → <ComLblGreen>Psychische Puppe</>\r\nHerz + Herz → <ComLblGreen>Widerspruchskorrosion</>\r\nPik + Pik → <ComLblGreen>Karte umdrehen</>\r\n<shuzhi>Zaubertrick</> endet, wenn du auf irgendeine Weise zu einer anderen Waffe wechselst oder wenn du stirbst.\r\nErhalte Hyperkörper für <shuzhi>20</> Sek., wenn „Zaubertrick“ endet. Wenn er auf natürliche Weise endet, fügt er Zielen in der Nähe zusätzlichen Schaden in Höhe von <shuzhi>1000%</> des ANG zu.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -14513,6 +15002,7 @@
 				{
 					"name": "Psychische Puppe",
 					"description": "Ziehe eine Fledermauskolonie aus deinem Hut und verbessere dich. Während des <shuzhi>Zaubertricks</> wird der von Möbius verursachte physische Schaden um <shuzhi>7,5%</> erhöht, und nur <shuzhi>60%</> des erlittenen Schadens werden gezählt. Die verbleibenden <shuzhi>40%</> werden über <shuzhi>10</> Sek., nachdem der <shuzhi>Zaubertrick</> endet, langsam von deinen LP abgezogen. Der Effekt der verzögerten Anzahl gilt nur, wenn Standhaftigkeit-Resonanz nicht aktiv ist.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -14522,6 +15012,7 @@
 				{
 					"name": "Widerspruchskorrosion",
 					"description": "Stellt sofort <shuzhi>10%</> der max. LP wieder her und pflanzt eine Korrosionsblume auf bis zu <shuzhi>7</> Ziele innerhalb einer bestimmten Reichweite, die jede Sekunde <shuzhi>{0}%</> ANG-Schaden für<shuzhi>3</> Sek. verursachen.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -14532,6 +15023,7 @@
 				{
 					"name": "Karte umdrehen",
 					"description": "Rufe eine große Anzahl fliegender Karten herbei, die einen Wirbelsturm bilden, der zum Zielort ausschwärmt, das Ziel bis zu <shuzhi>12</>-mal angreift und Gesamtschaden in Höhe von <shuzhi>{0}%</> des ANG verursacht.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -14965,6 +15457,7 @@
 				{
 					"name": "Wirbelwind",
 					"description": "Verursacht bei Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und erzeugt ein „Wunderwerk: Fantasie“, das bis zu <shuzhi>25</> Sek. lang anhält.\r\nGewährt während der Abklingzeit von „Wirbelwind“ die Fähigkeit „Wendigkeit“. „Wendigkeit“ kann verwendet werden, nachdem „Wunderwerk“ <shuzhi>20</> Sek. aktiv ist.\r\nSetzt die Abklingzeit von „Wirbelwind“ sofort nach dem Verschwinden von „Wunderwerk“ zurück. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.\r\n\r\nWährend „Wunderwerk“:\r\nPro Sekunde wird Seelenschwere-Schaden in Höhe von <shuzhi>{2}%</> des ANG im Wunderwerk verursacht. Seelenschwere-Schaden zählt als Schaden von normalen Angriffen.\r\nVerursacht bei Zielen im Wunderwerk alle <shuzhi>5</> Sek. „Flammendes Herz“ und fügt ihnen <shuzhi>5</> Sek. lang Brandschaden in Höhe von <shuzhi>{3}%</> des ANG zu. Pro <shuzhi>1</> <shuzhi>Fei Ses Trugbild</> oder vom Wanderer erzeugtem <shuzhi>Lotusblütenblatt</> im Wunderwerk wird der Schaden durch „Flammendes Herz“ zusätzlich um <shuzhi>6%</> erhöht.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -14974,6 +15467,7 @@
 				{
 					"name": "Wendigkeit",
 					"description": "Gewährt während der Abklingzeit von „Wirbelwind“ die Fähigkeit „Wendigkeit“. „Wendigkeit“ kann verwendet werden, nachdem „Wunderwerk“ <shuzhi>20</> Sek. aktiv ist.\r\nBeseitigt alle Einheiten von <shuzhi>Fei Ses Trugbild</> und alle <shuzhi>Lotusblütenblätter</>, die im Wunderwerk vom Wanderer erzeugt wurden. Fügt pro <shuzhi>1</> beseitigtem <shuzhi>Fei Ses Trugbild</> oder <shuzhi>Lotusblütenblatt</> Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Zertrümmere dann „Wunderwerk: Fantasie“, um Zielen in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zuzufügen.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -15386,6 +15880,7 @@
 				{
 					"name": "Wolfsgeheul",
 					"description": "Ruft ein vom Ziel losgelöstes Bewusstsein herbei, das pro Treffer Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht. Löst an der aktuellen Position des Wanderers für <shuzhi>30</> Sek. „Klangwelt“ aus, in der vom Wanderer erlittener Schaden um <shuzhi>8%</> verringert wird und <shuzhi>20%</> der Verteidigung des Ziels ignoriert werden.\r\nDie LP des Bewusstseins betragen das <shuzhi>30</>-Fache der max. LP des Wanderers. Es kann nur aktiv Schaden durch <shuzhi>Gleipnir</> erleiden, und <shuzhi>100%</> des Schadens wird an den Körper des ursprünglichen Ziels übertragen (<shuzhi>1%</> für gegnerische Wanderer) und der Wanderer stellt LP in Höhe von <shuzhi>50%</> des ANG wieder her. Während das Bewusstsein aktiv ist, erleidet der Wanderer <shuzhi>12%</> weniger Schaden durch den Körper des Ziels. Das Bewusstsein existiert für bis zu <shuzhi>15</> Sek.\r\nWenn das Bewusstsein in den Körper des ursprünglichen Ziels zurückkehrt, wird Flächenschaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursacht.\r\nRückkehr des Bewusstseins: Das Bewusstsein kehrt zum Körper zurück, wenn es besiegt wurde, die Dauer abläuft, ein neues Bewusstsein herbeigerufen wird oder es sich zu weit vom Körper entfernt.\r\nAbklingzeit von „Wolfsgeheul“: <shuzhi>30</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -15431,7 +15926,7 @@
 			}
 		],
 		"version": "2.3",
-		"limited": true,
+		"limited": false,
 		"id": "fenrir_thunder"
 	},
 	"umbrella_fire": {
@@ -15655,7 +16150,7 @@
 				"need": "umbrella_fire_plasm"
 			},
 			{
-				"description": "Erhöht den von „Tanzende Flammen“ und „Schwungschlag“ verursachten Schaden um **50%**.\r\nDer Multiplikator für schnell rotierende Sonnenschirme, „Phönixhieb“ und „Gleißender Aufprall“ beträgt jetzt „Vielfeder-Sonnenschirm“ + **2**.",
+				"description": "Erhöht den von „Tanzende Flammen“ und „Schwungschlag“ verursachten Schaden um **50%**.\r\nAddiere bei der Berechnung der Effekte von rotierenden Sonnenschirmen, Phönixhieb und Gleißender Aufprall **2** zu Vielfeder-Sonnenschirm.",
 				"charge": 8,
 				"shatter": 14,
 				"multiplier": [
@@ -15771,6 +16266,7 @@
 				{
 					"name": "Verheerendes Gleiten",
 					"description": "Fliegt auf die Sonnenschirme in der Reihenfolge zu, in der sie erzeugt wurden, und kehrt an die ursprüngliche Position zurück. Die Spur in der Luft hält 5 Sek. an und Ziele in der Nähe der Spur werden um <shuzhi>50%</> verlangsamt. Gewährt Immunität gegen Schaden während des Gleitens (nicht in der Apex-Liga verfügbar). Abklingzeit: <shuzhi>12</> Sek.\r\nJedes Mal, wenn ein Wanderer einen Sonnenschirm passiert, wird Flächenschaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht und der Sonnenschirm rotiert für <shuzhi>5</> Sek. schnell.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -15781,6 +16277,7 @@
 				{
 					"name": "Sonnenschirm",
 					"description": "Treffer mit einem normalen Angriff oder Ausweichangriff einer Waffe erzeugen für <shuzhi>20</> Sek. <shuzhi>1</> Sonnenschirm in der Nähe des Ziels. Abklingzeit: <shuzhi>1,5</> Sek. Bis zu <shuzhi>3</> Sonnenschirme können gleichzeitig aktiv sein.\r\n<shuzhi>Gleißender Aufprall</>: Während du „Verheerendes Gleiten“ verwendest, verursachst du für jeden Sonnenschirm, der durchschritten wurde, zusätzlichen Schaden in Höhe von <shuzhi>64,8%</> des ANG multipliziert mit „Vielfeder-Sonnenschirm“.\r\n<shuzhi>Korrosion</>: Ziele in der Nähe der Sonnenschirme erleiden <shuzhi>6%</> mehr Flammenschaden und <shuzhi>8%</> mehr Schaden von aufgeladenen Angriffen.\r\n<shuzhi>Leuchtende Flammen</>: Sonnenschirme verbrennen Ziele in der Nähe und verursachen für <shuzhi>4</> Sek. jede Sek. Schaden in Höhe von <shuzhi>105%</> des ANG.\r\n<shuzhi>Flammenvortex</>: Aktive Sonnenschirme verbrauchen jede Sek. <shuzhi>1</> Feder und verursachen Flächenschaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> (Schaden und Federkosten werden durch mehrere Sonnenschirme nicht erhöht).",
+					"operations": [],
 					"tags": [
 						"Support",
 						"Debuff"
@@ -15791,6 +16288,7 @@
 				{
 					"name": "Purpurdomäne",
 					"description": "Passiere bei der Verwendung von „Verheerendes Gleiten“ 3 Sonnenschirme und kehre an die ursprüngliche Position zurück, um „Purpurdomäne“ zu erzeugen, die für <shuzhi>8</> Sek. Hyperkörper und <shuzhi>40%</> Schadensreduktion gewährt.\r\nWährend des Tauchens fügt „Purpurdomäne“ Zielen im Wirkbereich pro Sek. Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und erhöht die Geschwindigkeit des Wanderers um <shuzhi>30%</>.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -15801,6 +16299,7 @@
 				{
 					"name": "Standhaftigkeit",
 					"description": "Nach Aktivierung von Standhaftigkeit-Resonanz:\r\nDie Verwendung einer Waffenfähigkeit verspottet Ziele in der Nähe für <shuzhi>2,5</> Sek.\r\nBei der Verwendung von „Verheerendes Gleiten“ dehnt sich die „Purpurdomäne“ aus und gewährt Teammitgliedern in der Nähe <shuzhi>20%</> Schadensreduktion.\r\nBei der Verwendung von „Schmelzendes Herz“ wird der Timer von „Purpurdomäne“ angehalten.",
+					"operations": [],
 					"tags": [
 						"Control"
 					],
@@ -16206,6 +16705,7 @@
 				{
 					"name": "Trostloser Tag",
 					"description": "Fügt Zielen in der Nähe Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und erzeugt 2 reguläre „Rasante Jo-Jos“. Abklingzeit: <shuzhi>60</> Sek. Die Geschwindigkeit von Zielen in Reichweite von „Trostloser Tag“ wird um <shuzhi>50%</> verringert (hat keine Auswirkung auf Wanderer oder Bosse).\r\nJedes „Rasante Jo-Jo“ durchquert das Zentrum der Flugbahn etwa 4-mal pro Bewegungszyklus und fügt Zielen in der Flugbahn dabei für <shuzhi>70</> Sek. Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zu. Der Bewegungszyklus hält 4 Sekunden lang an, wenn die Waffe 0 Sterne hat. Wird während dieser Zeit „Trostloser Tag“ verwendet, werden die Position und die Dauer von „Rasantes Jo-Jo“ zurückgesetzt. Abklingzeit: <shuzhi>4</> Sek.\r\nWährend „Trostloser Tag“ eingesetzt wird, wird der erlittene Schaden um <shuzhi>50%</> reduziert und es werden <shuzhi>5%</> der max. LP wiederhergestellt. Wird nicht von Heilungsbonuseffekten beeinflusst. Wiederherstellung und Schadensreduktion haben in der Apex-Liga keinen Effekt.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -16215,6 +16715,7 @@
 				{
 					"name": "Rückkehr zur Einsamkeit",
 					"description": "Verwendet „Begrenztes Wissen“, um bis zu <shuzhi>2</> Nutzungen der neuen Fähigkeit „Rückkehr zur Einsamkeit“ zu erhalten. Diese Fähigkeit kann nur verwendet werden, während „Trostloser Tag“ in der Abklingzeit ist. Verursacht Fähigkeitsschaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Während die Fähigkeit eingesetzt wird, wird der erlittene Schaden um <shuzhi>50%</> reduziert und es werden <shuzhi>5%</> der max. LP wiederhergestellt. Erhaltene oder gewährende Effekte, die Heilungsboni verursachen, wirken sich darauf nicht aus. Wiederherstellung und Schadensreduktion haben in der Apex-Liga keinen Effekt.\r\nWährend „Standhaftigkeit-Resonanz“ aktiv ist: Verwendet „Rückkehr zur Einsamkeit“ und verspottet Ziele in der Nähe, um <shuzhi>20</> Sek. lang <shuzhi>1</> Stapel „Blockschild“ (bis zu <shuzhi>3</> Stapel) zu erhalten. Die <shuzhi>Blockpunkte</> entsprechen der <shuzhi>Summe der 5 Widerstandsarten des Wanderers</>. Wenn „Blockschild“ verbraucht ist oder überläuft, fügst du dem Hauptziel Schaden in Höhe von <shuzhi>200% der Blockpunkte</> zu.\r\nWährend „Segnungsresonanz“ aktiv ist: Die Verwendung von „Rückkehr zur Einsamkeit“ gegen Ziele mit mehr als <shuzhi>95%</> LP fügt ihnen Schaden in Höhe von <shuzhi>8%</> ihrer jeweiligen max. LP zu (hat keine Auswirkung auf Wanderer). Schadensboni oder Schadensreduktionen haben keine Auswirkung auf diesen Effekt.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -16636,6 +17137,7 @@
 				{
 					"name": "Angriff & Verteidigung",
 					"description": "<shuzhi>Eintracht</> verfügt über 2 Formen: die <shuzhi>Kampfkünstler</>-Form und die <shuzhi>Rohe Kraft</>-Form. Unter Fähigkeiten – Einstellungen kann bis zu <shuzhi>1</> davon aktiviert werden. Im Kampfstatus kann die Form nicht gewechselt werden.\r\n\r\n<shuzhi>Kampfkünstler</>-Form: Im Kampfstatus wird der Multiplikator des Ausweichangriffs/normalen Angriffs von <shuzhi>Eintracht</> zusätzlich um <shuzhi>40%</> erhöht. Nachdem der Ausweichangriff oder der normale Angriff einer beliebigen Waffe <shuzhi>3</>-mal verwendet wurde, erhältst du <shuzhi>1</> <shuzhi>innere Stärke</> (max. <shuzhi>10</>). Alle <shuzhi>2</> Sek. kann nur <shuzhi>1</> <shuzhi>innere Stärke</> erhalten werden. Außerhalb des Kampfstatus wird sämtliche <shuzhi>innere Stärke</> entfernt.\r\n<shuzhi>Rohe Kraft</>-Form: Nachdem <shuzhi>Beobachten & reagieren</> einen Treffer landet, gehst du in den <shuzhi>Erwarten</>-Zustand über und erhältst für <shuzhi>60</> Sek. alle <shuzhi>0,8</> Sek. <shuzhi>1</> <shuzhi>Kampfgeist</> (max. <shuzhi>15</>). Außerhalb des Kampfstatus wird sämtlicher <shuzhi>Kampfgeist</> entfernt.\r\n<shuzhi>Passiv: Kühlen</>\r\nWenn <shuzhi>Eintracht</> ausgerüstet ist, werden <shuzhi>15%</> des Frostwiderstands der Ziele ignoriert. Dieser Effekt funktioniert auch im Nebenhand-Slot.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -16645,6 +17147,7 @@
 				{
 					"name": "Volle Deckung",
 					"description": "Fügt dem Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Abklingzeit: <shuzhi>15</> Sek.\r\nBei der Verwendung von „Volle Deckung“ verbraucht <shuzhi>Eintracht</> bis zu <shuzhi>5</> <shuzhi>Innere Stärke</>. Wenn <shuzhi>1</>/<shuzhi>2</>/<shuzhi>3</>/<shuzhi>4</>/<shuzhi>5</> <shuzhi>Innere Stärke</> verbraucht wird, verursacht „Volle Deckung“ jeweils <shuzhi>1,1</>-/<shuzhi>1,4</>-/<shuzhi>1,8</>-/<shuzhi>2,3</>-/<shuzhi>3</>-mal so viel Schaden wie sonst.\r\nNachdem „Volle Deckung“ verwendet wurde, wird der Frostschaden für <shuzhi>30</> Sek. um <shuzhi>12%</> erhöht.\r\nNachdem „Volle Deckung“ verwendet wurde, werden <shuzhi>2</> Ausweichversuche wiederhergestellt.\r\n\r\n„Volle Deckung“ kann nur in der <shuzhi>Kampfkünstler</>-Form verwendet werden.\r\nWenn <shuzhi>Innere Stärke</> <shuzhi>5</> erreicht, wird die Abklingzeit von „Volle Deckung“ zurückgesetzt.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -16654,6 +17157,7 @@
 				{
 					"name": "Waffenklirren",
 					"description": "Fügt dem Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Abklingzeit: <shuzhi>15</> Sek.\r\nIm <shuzhi>Erwarten</>-Zustand verbraucht <shuzhi>Eintracht</> bei Verwendung einer beliebigen Waffenfähigkeit bis zu <shuzhi>5</> <shuzhi>Kampfgeist</>. Wenn <shuzhi>1</>/<shuzhi>2</>/<shuzhi>3</>/<shuzhi>4</>/<shuzhi>5</> <shuzhi>Kampfgeist</> verbraucht wird, wird Zielen in der Nähe zusätzlicher Schaden in Höhe von <shuzhi>169%</>/<shuzhi>368%</>/<shuzhi>619%</>/<shuzhi>938%</>/<shuzhi>1350%</> des ANG sowie für <shuzhi>5</> Sek. jede Sekunde Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zugefügt.\r\nNach Verwendung einer beliebigen Frostwaffenfähigkeit wird für <shuzhi>2</> Sek. Hyperkörper gewährt.\r\n\r\n„Waffenklirren“ kann nur in der <shuzhi>Rohe Kraft</>-Form verwendet werden.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -17071,6 +17575,7 @@
 				{
 					"name": "Bodenlose Schlucht",
 					"description": "Spaltet den Boden vor dem Wanderer, gewährt vorübergehend Unbesiegbarkeit (nicht in der Apex-Liga verfügbar) und zieht Ziele in der Nähe heran, wobei Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht wird. Abklingzeit: <shuzhi>20</> Sek. Erhöht den physischen und Flammen-SCH des Wanderers für <shuzhi>30</> Sek. um <shuzhi>26%</> und ruft das Xuanwu-Totem herbei. Das Xuanwu-Totem wird außerhalb des Kampfes entfernt.\r\nDas Xuanwu-Totem ruft alle <shuzhi>0,6</> Sek. dunkle Seelen aus den vier Formationskernen herbei, wobei Zielen im Weg jeweils Schaden in Höhe von <shuzhi>30%</> des ANG zugefügt wird. Wenn „Bodenlose Schlucht“ in der Abklingzeit ist, wird die neue Fähigkeit <shuzhi>Spiegelbild</> gewährt: Schlägt die dunklen Seelen in der Nähe zurück und aktiviert ihre jeweiligen Formationskerne. Nachdem ein Formationskern aktiviert wurde, ist das Xuanwu-Totem abgeschlossen, und der <shuzhi>Selbstlose Raum</> kann betreten werden.\r\n\r\nVerwende, während das Xuanwu-Totem aktiv ist, <shuzhi>Onyx-Schildkröte</>, um Hyperkörper zu erhalten, und füge folgendermaßen Schlangenbisse zu:\r\nNachdem <shuzhi>Bodenlose Schlucht</> einen Treffer landet, wird dem Ziel mit den höchsten LP 1 Schlangenbiss zugefügt.\r\nNachdem der fünfte Angriff von <shuzhi>Widerstand</> seinen letzten Treffer landet, wird dem anvisierten Ziel 1 Schlangenbiss zugefügt.\r\nNachdem <shuzhi>Wolkenspaltung</> einen Treffer landet, wird dem anvisierten Ziel 1 Schlangenbiss zugefügt.\r\nNachdem <shuzhi>Schneidender Sand</> einen Treffer landet, wird dem anvisierten Ziel 1 Schlangenbiss zugefügt.\r\n„Schlangenbiss“ fügt dem Ziel Verschlingungsschaden in Höhe von <shuzhi>150%</> des ANG zu, stellt <shuzhi>12%</> der max. LP des Wanderers wieder her und verwandelt das Ziel in ein Schlangenkettenglied.\r\n\r\nSchlangenkette kann <shuzhi>30%</> des tatsächlich von der Waffe im Haupt-Slot des Wanderers verursachten Schadens beim anvisierten Schlangenkettenglied verursachen und <shuzhi>Verwunden</> auf alle Schlangenkettenglieder ausüben (das anvisierte Ziel eingeschlossen). Es kann maximal <shuzhi>4</> Schlangenkettenglieder geben.\r\nDer Elementtyp des Übertragungsschadens entspricht dem ursprünglichen Schaden und kann nicht erneut übertragen werden. Der gesamte Übertragungsschaden kann innerhalb von <shuzhi>30</> Sek. höchstens das <shuzhi>2400</>-fache des max. ANG des Wanderers betragen (im Teamspiel unbegrenzt). Der Schaden von <shuzhi>Dunkler Hieb</> kann nicht übertragen werden.\r\nNach dem Einsatz von <shuzhi>Bodenlose Schlucht</> kann der Wanderer auch <shuzhi>Mächtiger Wind</> auslösen: Schlangenkettenglieder fügen Zielen in der Nähe (das anvisierte Ziel eingeschlossen) Schaden in Höhe der Häufigkeit des verursachten Verschlingungsschadens multipliziert mit <shuzhi>25%</> des ANG zu und setzen dann den Verschlingungsschaden zurück.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -17503,6 +18008,7 @@
 				{
 					"name": "Spaltender Fall",
 					"description": "Flutwelle: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und lässt Ziele im Wirkbereich <shuzhi>länger schweben</>. Abklingzeit: <shuzhi>30</> Sek.\r\n<shuzhi>Passiv: Verstreuen</>\r\nNach dem Ausrüsten des <shuzhi>Mondstern-Armbands</> erhältst du „Streutechnik“. Bis zu <shuzhi>2</> von <shuzhi>6</> Streutechniken können unter Fähigkeiten – Einstellungen aktiviert werden.\r\nSteuerung: Tippe auf die spezielle Fähigkeitstaste, um „Streutechnik“ zu verwenden.\r\nWenn eine Streutechnik mit „Spaltender Fall“ verknüpft ist, löst der Einsatz von „Spaltender Fall“ die Streutechnik automatisch aus, und die Abklingzeit der Fähigkeit wird durch die Abklingzeit von „Streutechnik“ ersetzt.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -17513,6 +18019,7 @@
 				{
 					"name": "Hydro-Fokus",
 					"description": "Steigende Flut: Fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und erhöht für <shuzhi>20</> Sek. allen Elementarschaden um <shuzhi>6%</>.\r\nAbklingzeit: <shuzhi>14</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -17523,6 +18030,7 @@
 				{
 					"name": "Vortex",
 					"description": "Beschwört mehrere Wasserhosen, die Ziele in der Nähe zusammenziehen und ihnen Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügen. Danach entsteht eine große Wasserhose, die Zielen in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> zufügt.\r\nVon <shuzhi>Vortex</> verursachter Schaden zählt als Fähigkeits- und Entladungsschaden.\r\nAbklingzeit: <shuzhi>12</> Sek.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -17533,6 +18041,7 @@
 				{
 					"name": "Stürmische Kraft",
 					"description": "Tosendes Bad: Gewährt jede Sek. <shuzhi>60</> Waffenladung und erhöht für <shuzhi>35</> Sek. den Fähigkeitsschaden um <shuzhi>12%</>.\r\nDie Verwendung von <shuzhi>„Stürmische Kraft“</> zählt als Entladungsfähigkeit der aktuellen Waffe (ohne den Effekt).\r\nTreffer mit <shuzhi>„Schimmernde Pracht“</> setzen die Abklingzeit von <shuzhi>„Stürmische Kraft“</> zurück.\r\nAbklingzeit: <shuzhi>30</> Sek.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -17542,6 +18051,7 @@
 				{
 					"name": "Abwärtsstrudel",
 					"description": "Umhüllende Wellen: Gewährt einen Endschadensbonus, der sich im Laufe der Zeit auf bis zu <shuzhi>26%</> erhöht (erreicht innerhalb von <shuzhi>10</> Sek. den Maximalwert). Dieser Effekt kann nicht mit der wiederholten Verwendung von <shuzhi>„Abwärtsstrudel“</> gestapelt werden und geht beim Waffenwechsel verloren.\r\nAbklingzeit: <shuzhi>30</> Sek.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -17551,6 +18061,7 @@
 				{
 					"name": "Wasserfesseln",
 					"description": "Wende für <shuzhi>3</> Sek. „Wassergefängnis“ auf das Ziel an. Das Ziel kann sich für die Dauer von „Wassergefängnis“ weder bewegen noch Fähigkeiten verwenden, und alle Widerstände werden für <shuzhi>15</> Sek. um <shuzhi>8%</> verringert (funktioniert nicht gegen Wanderer).\r\nUnter Wasser wird der den Widerstand verringernde Effekt von <shuzhi>Wasserfesseln</> verdoppelt.\r\nAbklingzeit: <shuzhi>15</> Sek.",
+					"operations": [],
 					"tags": [
 						"Control",
 						"Support"
@@ -17561,6 +18072,7 @@
 				{
 					"name": "Urquelle",
 					"description": "Arkane Lebenskraft: Erhöht allen Elementarschaden um (<shuzhi>max. LP</> / <shuzhi>100.000</>)%, bis zu maximal <shuzhi>9%</>. Erhöht allen Elementarschaden für <shuzhi>20</> Sek. um weitere <shuzhi>7%</>, wenn die max. LP mehr als <shuzhi>1.600.000</> betragen.\r\nAbklingzeit: <shuzhi>15</> Sek.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],

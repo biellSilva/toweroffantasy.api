@@ -13747,6 +13747,10 @@
 		"name": "契约徽章玫茨",
 		"id": "buff_bigsecret_upstar_ssr_blevi_thunder"
 	},
+	"buff_bigsecret_upstar_ssr_ayanamirei_thunder": {
+		"name": "救赎",
+		"id": "buff_bigsecret_upstar_ssr_ayanamirei_thunder"
+	},
 	"buff_bigsecret_upstar_ssr_paluodi_fire": {
 		"name": "EP-7000天火",
 		"id": "buff_bigsecret_upstar_ssr_paluodi_fire"
@@ -14347,7 +14351,7 @@
 	},
 	"buff_boss_044_sp_fire": {
 		"name": "火种",
-		"description": "在异变的海拉附近逗留将被叠加火种，达到一定层数后，海拉的攻击将能够引爆火种，并根据火种层数对附加火种的目标造成基于该目标最大生命值的伤害。",
+		"description": "最多叠加100层。被叠加超过50层火种的角色受到海拉造成的伤害时，会被清空所有火种层数，并受到一个基于火种层数的额外伤害。",
 		"id": "buff_boss_044_sp_fire"
 	},
 	"buff_boss_044_sp_fire_ignore": {
@@ -14357,7 +14361,7 @@
 	},
 	"buff_boss_044_sp_ice_stack": {
 		"name": "极寒",
-		"description": "在异变的海拉附近逗留将被叠加极寒，达到一定层数后将被冰冻，冰冻状态下，海拉对该目标的攻击造成额外的破冰效果。",
+		"description": "最多叠加25层。当极寒标记叠加到满层时，目标角色将被冰冻，冰冻持续期间内若受到来自海拉造成的伤害将提前解除冰冻，同时受到一次高额破冰伤害。",
 		"id": "buff_boss_044_sp_ice_stack"
 	},
 	"buff_boss_044_sp_ice_ignore": {
@@ -14372,7 +14376,7 @@
 	},
 	"buff_boss_044_sp_superpower_stack": {
 		"name": "时间扭曲",
-		"description": "被海拉的攻击命中将被叠加时间扭曲，时间扭曲达到一定层数后将对目标施加枯萎效果。",
+		"description": "时间扭曲效果最多叠加10层，达到满层后将对目标施加枯萎效果。",
 		"id": "buff_boss_044_sp_superpower_stack"
 	},
 	"buff_boss_044_sp_superpower_ignore": {
@@ -14387,7 +14391,7 @@
 	},
 	"buff_boss_044_sp_phy_stack": {
 		"name": "威压",
-		"description": "每层叠加将减少当前角色1%最大生命值。",
+		"description": "最多叠加50层。每层叠加将减少当前角色1%最大生命值上限。",
 		"id": "buff_boss_044_sp_phy_stack"
 	},
 	"buff_boss_044_sp_phy_ignore": {
@@ -14397,7 +14401,7 @@
 	},
 	"buff_boss_044_sp_thu_stack": {
 		"name": "感电",
-		"description": "每层感电增加角色受到的雷属性伤害。",
+		"description": "最多叠加10层。角色受到雷击时，若感电低于10层，则受到一个基于层数的少量伤害，并叠加一层感电；若感电为10层，则该角色被高电压击穿，受到一次致命伤害。",
 		"id": "buff_boss_044_sp_thu_stack"
 	},
 	"buff_boss_044_thu_ignore": {
@@ -14511,82 +14515,82 @@
 		"id": "buff_evapdzw_defendlevel6real"
 	},
 	"buff_timerevert_dmgup": {
-		"name": "攻击提升",
+		"name": "灼热奋起",
 		"description": "造成伤害提升。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
 		"id": "buff_timerevert_dmgup"
 	},
 	"buff_timerevert_suck": {
-		"name": "生命偷取",
-		"description": "根据造成伤害恢复生命值。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
+		"name": "生命汲取",
+		"description": "根据造成伤害恢复生命值。数值为/**10%**/**20%**/**30%**。",
 		"id": "buff_timerevert_suck"
 	},
 	"buff_timerevert_chargeup": {
-		"name": "充能加速",
+		"name": "充能增幅器",
 		"description": "提升充能效率。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
 		"id": "buff_timerevert_chargeup"
 	},
 	"buff_timerevert_periodshield": {
 		"name": "再生护盾",
-		"description": "每**30**秒获得护盾。数值为复轨仪充能层数 * **0.5%**/**1%**/**1.5%** 执行者最大生命值。",
+		"description": "激活后获得护盾，每**30**秒刷新。数值为复轨仪充能层数 * **0.5%**/**1%**/**1.5%** 执行者最大生命值。",
 		"id": "buff_timerevert_periodshield"
 	},
 	"buff_timerevert_breakdefup": {
-		"name": "破盾",
+		"name": "护盾击碎",
 		"description": "提升破盾效率。数值为复轨仪充能层数 * **1%**/**1.5%**/**2%**。",
 		"id": "buff_timerevert_breakdefup"
 	},
 	"buff_timerevert_gettimerevertstack": {
-		"name": "快速复轨",
-		"description": "对BOSS造成伤害获得的充能层数，从**1**提高至**2**。",
+		"name": "极速复轨",
+		"description": "激活后，每**2**秒额外获得**1**层充能层数。",
 		"id": "buff_timerevert_gettimerevertstack"
 	},
 	"buff_timerevert_healup": {
-		"name": "治愈",
-		"description": "治疗效果提升。数值为复轨仪充能层数 * **1%**/**1.5%**/**2%**。",
+		"name": "甘露",
+		"description": "治疗效果提升。数值为/**25%**/**50%**/**75%**。",
 		"id": "buff_timerevert_healup"
 	},
 	"buff_timerevert_ignoredef": {
-		"name": "无视抗性",
+		"name": "蔑视",
 		"description": "攻击无视BOSS部分全抗。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
 		"id": "buff_timerevert_ignoredef"
 	},
 	"buff_timerevert_bedmgdown": {
-		"name": "减伤",
+		"name": "不屈",
 		"description": "受到的伤害减少。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
 		"id": "buff_timerevert_bedmgdown"
 	},
 	"buff_timerevert_dmgupinair": {
-		"name": "空中增伤",
+		"name": "轻灵",
 		"description": "在空中造成的伤害提升。数值为复轨仪充能层数 * **0.6%**/**1%**/**1.5%**。",
 		"id": "buff_timerevert_dmgupinair"
 	},
 	"buff_timerevert_addenergy": {
-		"name": "连携充能",
+		"name": "蓄能电池",
 		"description": "释放连携后立刻获得复轨仪充能层数 * **6**/**8**/**10** 点充能值。",
 		"id": "buff_timerevert_addenergy"
 	},
 	"buff_timerevert_exdmg": {
-		"name": "毁灭",
+		"name": "审判",
 		"description": "下次攻击将消耗掉所有层数，额外造成目标最大生命值伤害。数值为复轨仪充能层数 *  **0.05%**/**0.075%**/**0.1%**。",
 		"id": "buff_timerevert_exdmg"
 	},
 	"buff_timerevert_attackdmgmaxhp": {
-		"name": "强攻",
-		"description": "每间隔5秒，下一次攻击额外造成目标复轨仪计数 * **0.1%**/**0.15%**/**0.2%** 的当前生命值的伤害。（仅强攻共鸣触发）",
+		"name": "毁灭",
+		"description": "每间隔**20**秒，下一次攻击额外造成复轨仪计数 * **0.02%**/**0.03%**/**0.05%** BOSS最大生命值的伤害。（仅强攻共鸣触发）",
 		"id": "buff_timerevert_attackdmgmaxhp"
 	},
 	"buff_timerevert_defenfaddshield": {
-		"name": "坚毅",
-		"description": "激活后，所受伤害的1%转化为护盾值。攻击和技能额外造成造成护盾量**100%**/**200%**/**300%** 的伤害。（仅坚毅共鸣触发）",
+		"name": "盾击",
+		"description": "激活后，每**5**秒内所受伤害的**40%**/**60%**/**80%**转化为护盾值，最小为执行者最大生命值**5%**。拥有护盾时，攻击和技能额外造成BOSS最大生命值**0.25%**/**0.5%**/**0.75%** 的伤害。每10秒只能触发一次。（仅坚毅共鸣触发）",
 		"id": "buff_timerevert_defenfaddshield"
 	},
 	"buff_timerevert_healdmgaftertreatment": {
-		"name": "恩赐",
-		"description": "受到治疗后，下次攻击造成额外伤害。数值为复轨仪充能层数 * **0.2%**/**0.3%**/**0.5%** 的目标最大生命值。（仅恩赐共鸣触发）",
+		"name": "解脱",
+		"description": "受到治疗后，下次攻击造成额外伤害。数值为复轨仪充能层数 * **0.01%**/**0.02%**/**0.03%** 的目标最大生命值。每10秒只能触发一次。（仅恩赐共鸣触发）",
 		"id": "buff_timerevert_healdmgaftertreatment"
 	},
 	"buff_timerevert_reducecd": {
-		"name": "减少技能CD",
+		"name": "疾风骤雨",
 		"description": "技能基础冷却时间减少。数值为/**10%**/**20%**/**30%**。",
 		"id": "buff_timerevert_reducecd"
 	},
@@ -14687,7 +14691,7 @@
 	},
 	"eventdes_boss044sp_fire1": {
 		"name": "灼热",
-		"description": "在海拉周围的角色会被叠加火种标记，距离海拉越近，火种标记叠加速度越快。被叠加超过50层火种标记的角色受到海拉造成的伤害时，会被清空所有火种标记层数，并受到一个基于火种层数的额外伤害。",
+		"description": "在海拉周围的角色会被叠加火种标记，距离海拉越近，火种标记叠加速度越快，标记最多叠加100层。被叠加超过50层火种标记的角色受到海拉造成的伤害时，会被清空所有火种标记层数，并受到一个基于火种层数的额外伤害。",
 		"id": "eventdes_boss044sp_fire1"
 	},
 	"eventdes_boss044sp_fire2": {
@@ -14697,7 +14701,7 @@
 	},
 	"eventdes_boss044sp_ice1": {
 		"name": "冰封",
-		"description": "在海拉周围的玩家会被叠加极寒标记，距离海拉越近，极寒标记叠加速度越快。当极寒标记叠加到满层时，目标角色将被冰冻。冰冻持续期间内若受到来自海拉造成的伤害将解除冰冻，但同时受到一次高额破冰伤害。",
+		"description": "在海拉周围的玩家会被叠加极寒标记，标记最多叠加25层。当极寒标记叠加到满层时，目标角色将被冰冻，冰冻持续期间内若受到来自海拉造成的伤害将提前解除冰冻，同时受到一次高额破冰伤害。",
 		"id": "eventdes_boss044sp_ice1"
 	},
 	"eventdes_boss044sp_ice2": {
@@ -14707,7 +14711,7 @@
 	},
 	"eventdes_boss044sp_phy1": {
 		"name": "睥睨",
-		"description": "角色处于海拉附近或受到来自海拉造成的伤害时，会被叠加威压标记，每层威压标记将减少角色1%的最大生命值，最多减少50%的最大生命值。",
+		"description": "角色处于海拉附近或受到来自海拉造成的伤害时，会被叠加威压标记，标记最多叠加50层。每层威压标记将减少角色1%的最大生命值上限，最多减少50%的最大生命值上限。",
 		"id": "eventdes_boss044sp_phy1"
 	},
 	"eventdes_boss044sp_phy2": {
@@ -14717,7 +14721,7 @@
 	},
 	"eventdes_boss044sp_super1": {
 		"name": "枯萎",
-		"description": "角色每次受到来自海拉的伤害时，将会被叠加时间扭曲标记，当时间扭曲标记达到满层时，角色将被施加枯萎效果：持续时间内周期性扣除耐力。",
+		"description": "角色每次受到来自海拉的伤害时，将会被叠加时间扭曲标记，标记最多叠加10层。当时间扭曲标记达到满层时，角色将被施加枯萎效果：持续时间内周期性扣除耐力。",
 		"id": "eventdes_boss044sp_super1"
 	},
 	"eventdes_boss044sp_super2": {
@@ -14726,8 +14730,8 @@
 		"id": "eventdes_boss044sp_super2"
 	},
 	"eventdes_boss044sp_thu1": {
-		"name": "怒雷",
-		"description": "战斗中，海拉将周期性地在随机位置降下落雷，落雷将对范围内目标造成雷属性伤害。同时，当角色处于海拉附近时，将被叠加感电标记，每层感电标记都会提升角色受到的雷属性伤害。",
+		"name": "雷暴",
+		"description": "战斗中，海拉将周期性地降下落雷。当被雷击的角色感电层数小于十层时，受到基于感电层数的雷电伤害，并在伤害后叠加一层感电标记。感电满十层后，被雷击角色将被高电压击穿，从而受到最大生命值120%的致命伤害。",
 		"id": "eventdes_boss044sp_thu1"
 	},
 	"eventdes_boss044sp_thu2": {
@@ -14798,5 +14802,98 @@
 		"name": "惧怕物理",
 		"description": "怪物受到物伤害提升40%，破盾效率提升50%",
 		"id": "buff_origin_balance99_4th"
+	},
+	"buff_matrix_ssr89_level1": {
+		"name": "零之轮回",
+		"description": "雷电和寒冰伤害提升**0%**，装备**救赎**后，自身获得无视目标**1%**雷抗效果与冰抗效果（所有单个元素无视抗性总值不能超过**50%**）。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr89_level1"
+	},
+	"buff_matrix_ssr89_level2": {
+		"name": "零之轮回",
+		"description": "雷电和寒冰伤害提升**0%**，装备**救赎**后，自身获得无视目标**1%**雷抗效果与冰抗效果（所有单个元素无视抗性总值不能超过**50%**）。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr89_level2"
+	},
+	"buff_matrix_ssr89_level3": {
+		"name": "零之轮回",
+		"description": "雷电和寒冰伤害提升**0%**，装备**救赎**后，自身获得无视目标**1%**雷抗效果与冰抗效果（所有单个元素无视抗性总值不能超过**50%**）。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr89_level3"
+	},
+	"buff_matrix_ssr89_level4": {
+		"name": "零之轮回",
+		"description": "雷电和寒冰伤害提升**0%**，装备**救赎**后，自身获得无视目标**1%**雷抗效果与冰抗效果（所有单个元素无视抗性总值不能超过**50%**）。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr89_level4"
+	},
+	"buff_matrix_ssr90_level1": {
+		"name": "零之轮回",
+		"description": "最终伤害提升**0%**，**救赎**造成伤害后，雷电和寒冰攻击提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr90_level1"
+	},
+	"buff_matrix_ssr90_level2": {
+		"name": "零之轮回",
+		"description": "最终伤害提升**0%**，**救赎**造成伤害后，雷电和寒冰攻击提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr90_level2"
+	},
+	"buff_matrix_ssr90_level3": {
+		"name": "零之轮回",
+		"description": "最终伤害提升**0%**，**救赎**造成伤害后，雷电和寒冰攻击提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr90_level3"
+	},
+	"buff_matrix_ssr90_level4": {
+		"name": "零之轮回",
+		"description": "最终伤害提升**0%**，**救赎**造成伤害后，雷电和寒冰攻击提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr90_level4"
+	},
+	"buff_matrix_ssr89_iceandthunderdefdown": {
+		"name": "抗性降低",
+		"description": "雷抗/冰抗降低**0%**，持续**1**秒",
+		"id": "buff_matrix_ssr89_iceandthunderdefdown"
+	},
+	"buff_ayanamirei_thunder_resonance": {
+		"name": "雷电共鸣",
+		"id": "buff_ayanamirei_thunder_resonance"
+	},
+	"buff_ayanamirei_ice_ssr_resonance": {
+		"name": "寒冰共鸣",
+		"id": "buff_ayanamirei_ice_ssr_resonance"
+	},
+	"buff_ayanamireibedamagedown": {
+		"name": "格挡能力",
+		"description": "能够格挡最大不超过自身最大生命值的**10%**的伤害，持续**15**秒，玩家至多同时拥有三次格挡能力。",
+		"id": "buff_ayanamireibedamagedown"
+	},
+	"buff_ayanamireienergystate_damageup_level6": {
+		"name": "伤害提升",
+		"description": "提升**0%**雷电伤害与**1%**寒冰伤害，持续**2**秒。",
+		"id": "buff_ayanamireienergystate_damageup_level6"
+	},
+	"buff_ayanamirei_level1": {
+		"name": "出击",
+		"description": "提升**12%**最终伤害",
+		"id": "buff_ayanamirei_level1"
+	},
+	"buff_ayanamirei_level2": {
+		"name": "守护",
+		"description": "最终伤害提升**18%**，激活**强攻共鸣**时：雷电伤害提升**22%**；激活**非强攻共鸣**时：**普攻-蓄力连珠**格挡效果提升至自身**0%**最大生命值，**普攻-弓箭速射**、**普攻-空中连射**的**缓速磁场**持续时间提升至**4**秒。",
+		"id": "buff_ayanamirei_level2"
+	},
+	"buff_boss_002_5_ignore": {
+		"name": "脆弱",
+		"description": "持续时间内角色霸体失效，且无法进入无敌状态。",
+		"id": "buff_boss_002_5_ignore"
+	},
+	"buff_boss_002_4": {
+		"name": "毒奶",
+		"description": "角色施加的治疗将会转变为等量伤害。",
+		"id": "buff_boss_002_4"
+	},
+	"buff_ayanamireibedamagedown_imitationfeature": {
+		"name": "格挡能力",
+		"description": "能够格挡最大不超过自身最大生命值的**12%**的伤害，持续**15**秒，玩家至多同时拥有三次格挡能力。",
+		"id": "buff_ayanamireibedamagedown_imitationfeature"
+	},
+	"buff_matrix_ssr90_atkupcommon": {
+		"name": "寒冰/雷电攻击提升",
+		"description": "寒冰攻击，雷电攻击提升**0%**，持续**1**秒",
+		"id": "buff_matrix_ssr90_atkupcommon"
 	}
 }

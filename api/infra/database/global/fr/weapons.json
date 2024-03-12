@@ -196,6 +196,7 @@
 				{
 					"name": "Chasselune",
 					"description": "<shuzhi>Suspend longuement</> la cible et vous fait décoller du sol, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>{2}</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -404,6 +405,7 @@
 				{
 					"name": "Lames boomerang",
 					"description": "Envoyez <shuzhi>6</> lames boomerang dans toutes les directions, chacune infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>{2}</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -596,6 +598,7 @@
 				{
 					"name": "Itinérance",
 					"description": "Circulez entre les cibles et infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à <shuzhi>5</> cibles max. Le dernier coup suspend la cible. Itinérance vous immunise contre l'hébétement. Les dégâts infligés à la même cible sont réduits de <shuzhi>40%</> à chaque fois. Temps de recharge : <shuzhi>{2}</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -791,6 +794,7 @@
 				{
 					"name": "Tir perçant",
 					"description": "Vous faites un salto arrière et tirez <shuzhi>1</> tir perçant vers l'avant, qui inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repousse la cible. Temps de recharge : <shuzhi>{2}</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -1162,6 +1166,7 @@
 				{
 					"name": "Sanctuaire",
 					"description": "Vous créez un bouclier d'énergie à l'endroit où se trouve l'Explorateur. Ce bouclier applique des soins aux alliés correspondant à <shuzhi>{3}%</> de l'ATQ + <shuzhi>{4}</> toutes les secondes, et réduit les dégâts subis de <shuzhi>{0}%</> pendant <shuzhi>10</> secondes. Temps de recharge : <shuzhi>60</> secondes.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -1401,7 +1406,7 @@
 				"need": "cannon_ice_plasm"
 			},
 			{
-				"description": "Accroît de **60%** les dégâts des attaques normales et la capacité de fracture dans les **10**secondes après avoir changé d'arme. Temps de recharge: **25**secondes.",
+				"description": "Accroît de **40%** les dégâts des attaques normales et la capacité de fracture pendant **10**secondes au moment où vous changez d'arme pour passer à celle-ci. Temps de recharge: **25**secondes.",
 				"charge": 10,
 				"shatter": 16,
 				"multiplier": [
@@ -1458,6 +1463,7 @@
 				{
 					"name": "Tourelle",
 					"description": "Vous activez le mode Tourelle et envoyez de grands orbes d'énergie. Chacun d'entre eux inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et projette la cible dans les airs. Lors de l'installation de la tourelle, vous êtes immunisé contre l'hébétement et les effets de contrôle. Temps de recharge : <shuzhi>{2}</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -1863,6 +1869,7 @@
 				{
 					"name": "Frappe du groupe d'exploration",
 					"description": "Entrez en état de charge et devenez temporairement invincible. Non disponible en Ligue ultime. Attirez les cibles proches, leur infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à chaque attaque qui touche sa cible. Temps de recharge : <shuzhi>20</> secondes (le temps de recharge commence au début de l'état de charge).\r\nEn relâchant, vous détonez tous les <shuzhi>Traceurs de trésor</> sur les cibles proches et vous faites entrer <shuzhi>Octofouet</> en état de Fureur destructrice, ce qui augmente la vitesse des attaques coordonnées de <shuzhi>100%</>, pendant <shuzhi>12</> secondes.\r\n\r\nDes moments de relâche différents peuvent être choisis en fonction du nombre de <shuzhi>Minicalmars</> au-dessus de l'Explorateur.\r\n<shuzhi>Rage totale</> : lorsque le nombre de <shuzhi>Minicalmars</> est égal à <shuzhi>2</>, relâchez pour infliger aux cibles proches des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\n<shuzhi>Rage partielle</> : lorsque le nombre de <shuzhi>Minicalmars</> est de <shuzhi>1</> ou de <shuzhi>3</>, relâchez pour infliger aux cibles proches des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\n\r\n<shuzhi>Clones rôdeurs</> : pendant un combat, vous gagnez <shuzhi>15</> <shuzhi>Octofouets</>, qui attaquent les cibles verrouillées, infligeant des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ et consommant <shuzhi>1</> Octofouet à chaque attaque qui touche une cible. <shuzhi>30</> Octofouets au maximum peuvent être stockés simultanément.\r\n<shuzhi>Octofouet de Pip</> place <shuzhi>1</> <shuzhi>Traceur de trésor</>sur les cibles à chaque fois qu'elles sont touchées par un Octofouet, qui dure <shuzhi>20</> secondes, pour un maximum de <shuzhi>3</> cumuls.\r\nDétonez <shuzhi>1</> cumul de <shuzhi>Traceurs de trésor</> chaque fois que des dégâts physiques à part <shuzhi>Octofouet</> sont infligés à une cible, infligeant des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ. Cet effet ne peut être déclenché qu'<shuzhi>une fois</> toutes les <shuzhi>0,1</> seconde.\r\nGagnez <shuzhi>1</> Octofouet chaque fois qu'une compétence de décharge touche une cible. Cet effet ne peut être déclenché qu'<shuzhi>une fois</> toutes les <shuzhi>0,1</> seconde.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Ammo"
@@ -2241,6 +2248,7 @@
 				{
 					"name": "Explosion de rage",
 					"description": "Changez d'arme pour activer Explosion de rage, augmentant les dégâts infligés pendant <shuzhi>25</> secondes.\r\nTant qu'Explosion de rage est active, les compétences déclenchent Fureur du vent, qui inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, <shuzhi>suspend longuement</> la cible, et crée un courant d'air au sol. Tant que vous vous tenez dans le courant d'air, esquiver n'a aucun coût. Temps de recharge : <shuzhi>{2}</> secondes (temps de recharge de Fureur du vent : <shuzhi>10</> secondes).",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -2599,6 +2607,7 @@
 				{
 					"name": "Tir perçant",
 					"description": "Vous faites un salto arrière et tirez <shuzhi>1</> tir perçant vers l'avant, qui inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et repousse la cible. Temps de recharge : <shuzhi>{2}</> secondes.",
+					"operations": [],
 					"tags": [],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/bow_skill.webp",
 					"id": "GA_FPlayerBowSkill_R"
@@ -2980,6 +2989,7 @@
 				{
 					"name": "Chasselune",
 					"description": "<shuzhi>Suspend longuement</> la cible et vous fait décoller du sol, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>25</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -3350,6 +3360,7 @@
 				{
 					"name": "Lames boomerang",
 					"description": "Lance <shuzhi>6</> lames boomerang, chacune infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Octroie <shuzhi>Hypercorps</> pendant une durée allant jusqu'à <shuzhi>8</> secondes. Cet effet est dissipé lorsque les lames reviennent. Temps de recharge : <shuzhi>45</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -3746,6 +3757,7 @@
 				{
 					"name": "Blizzard",
 					"description": "Brandissez votre grande épée pour envoyer des auras vers l'avant, chacune d'entre elles infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> qui augmentent de <shuzhi>5%</> à chaque coup. L'attaque vous immunise contre les effets de contrôle. Temps de recharge : <shuzhi>30</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -4101,6 +4113,7 @@
 				{
 					"name": "Tir perçant",
 					"description": "Vous faites un salto arrière et tirez <shuzhi>3</> tirs perçants. Le tir principal inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, les deux autres infligent 60% de dégâts. <shuzhi>Vous repoussez également les cibles</>, et les étourdissez pendant <shuzhi>5</> secondes si elles heurtent un obstacle. Temps de recharge : <shuzhi>12</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -4482,6 +4495,7 @@
 				{
 					"name": "Sanctuaire",
 					"description": "Vous créez une zone de soin qui se déplace avec l'Explorateur et procure aux alliés proches des soins correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> toutes les <shuzhi>0,5</> seconde pendant <shuzhi>6</> secondes. Temps de recharge : <shuzhi>60</> secondes.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -4867,6 +4881,7 @@
 				{
 					"name": "Cercle mortel",
 					"description": "Vous brandissez la faux et infligez des dégâts correspondant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>45</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -5235,6 +5250,7 @@
 				{
 					"name": "Barrage",
 					"description": "Inflige des dégâts en continu dans une zone en forme de cône devant vous, équivalant au total à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>60</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -5633,6 +5649,7 @@
 				{
 					"name": "Itinérance",
 					"description": "Filez à travers les cibles en brandissant la lame, infligeant un total de dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à <shuzhi>5</> cibles maximum (les dégâts infligés par chaque coup consécutif sur une même cible sont réduits de <shuzhi>20%</> par rapport au précédent coup). Lorsque Itinérance prend fin, vous tailladez l'espace face à vous, infligeant des dégâts de zone équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles proches et les suspendant. Vous immunise contre les effets de contrôle tant que la compétence est en cours d'utilisation et réduit tous les dégâts subis de <shuzhi>50%</>. Temps de recharge : <shuzhi>15</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -5999,6 +6016,7 @@
 				{
 					"name": "Éclosion totale",
 					"description": "Crée un Domaine des chakrams qui dure <shuzhi>8</> secondes avec l'Explorateur en son centre. Au même moment, attire les cibles et réduit leur vitesse de <shuzhi>30%</> pendant <shuzhi>8</> secondes. Lance <shuzhi>5</> chakrams qui infligent des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles sur leur passage, et rebondissent jusqu'à <shuzhi>5</> fois entre les ennemis. <red>Les chakrams séparés déclenchés par Lune décroissante rebondissent aussi jusqu'à 5 fois.</> Temps de recharge : <shuzhi>45</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -6370,6 +6388,7 @@
 				{
 					"name": "Bouclier à omnium",
 					"description": "Crée un bouclier pour vous-même et pour les alliés proches qui bloque des dégâts allant jusqu'à <shuzhi>800%</> de l'ATQ pendant <shuzhi>10</> secondes, inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et les <shuzhi>projette fortement</>. Chaque cube en votre possession au moment où cette compétence est utilisée ajoute <shuzhi>160%</> de l'ATQ à la protection et à la durée maximales du cube. Temps de recharge : <shuzhi>60</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -6724,6 +6743,7 @@
 				{
 					"name": "Champ électrique",
 					"description": "Lance un bouclier d'énergie à l'emplacement ciblé qui reflète les rayons dans la barrière. Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> ; le dernier coup <shuzhi>suspend longuement les cibles</>. Temps de recharge : <shuzhi>45</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -7080,6 +7100,7 @@
 				{
 					"name": "Fission",
 					"description": "Conversion de bouclier : passez de la forme bouclier à la forme hache pour frapper violemment le sol. Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> auxquels viennent s'ajouter des dégâts supplémentaires à hauteur de <shuzhi>4%</> des PV max de l'Explorateur, et <shuzhi>suspend longuement</> la cible. Crée une vaste zone enflammée pendant <shuzhi>5</> secondes qui brûle la cible et inflige des dégâts continus équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nConversion de hache : passez de la forme hache à la forme bouclier pour frapper le sol. Repousse la cible et lui inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> auxquels viennent s'ajouter des dégâts supplémentaires à hauteur de <shuzhi>4%</> des PV max de l'Explorateur. Empêche la cible de changer d'arme pendant <shuzhi>5</> secondes si elle est touchée.\r\nTemps de recharge : <shuzhi>25</> secondes. Conversion de hache et Conversion de bouclier partagent le même temps de recharge.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -7475,6 +7496,7 @@
 				{
 					"name": "Lune azur",
 					"description": "Un dragon azur s'élance dans le ciel. Pendant ce laps de temps, confère Hypercorps à l'Explorateur et inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Le dragon azur décrit des cercles pendant <shuzhi>8</> secondes. Pendant ce laps de temps, vous consommez en continu la Puissance de Qinglong et la foudre frappe jusqu'à <shuzhi>8</> fois. Chaque frappe de foudre inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles proches, puis le dragon azur disparaît, infligeant à nouveau des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> aux cibles proches.\r\nTemps de recharge : <shuzhi>30</> secondes, et ce temps de recharge ne peut pas descendre en dessous de <shuzhi>20</> secondes. Lune azur peut amasser jusqu'à <shuzhi>2</> cumuls d'utilisations de compétences.\r\n<shuzhi>Effet passif :</> quand <shuzhi>3</> armes de foudre sont équipées, après que Lune azur touche une cible, inflige des dégâts de la compétence équivalant à <shuzhi>250%</> de l'ATQ à la cible toutes les <shuzhi>2</> secondes pendant <shuzhi>30</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -7925,6 +7947,7 @@
 				{
 					"name": "Champ hyperdimensionnel",
 					"description": "Active Champ hyperdimensionnel, ce qui permet d'obtenir une invincibilité temporaire, d'infliger des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et d'infliger un ralentissement de <shuzhi>65%</> pendant <shuzhi>3</> secondes aux cibles (inefficace contre les boss en jeu en équipe). Au même moment, la <shuzhi>Trace du néant</> sur le champ exécute immédiatement sa compétence. Temps de recharge : <shuzhi>60</> secondes.\r\nMonte dans les airs et génère un champ, plaçant les cibles proches dans un Espace à haute dimension qui dure jusqu'à <shuzhi>60</> secondes, pendant lesquelles l'Explorateur gagne hypercorps, et les dégâts de Bambou noir infligés aux cibles dans l'Espace à haute dimension ignorent les boucliers.\r\nL'Espace à haute dimension gagne une énergie équivalant à <shuzhi>2</> + le <shuzhi>nombre de cibles dans l'Espace</> par seconde, et déclenche Effondrement dimensionnel à <shuzhi>45</> énergies, infligeant des dégâts équivalant à (<shuzhi>0,1%</> du total des dégâts infligés par l'Explorateur dans l'Espace (à l'exception de Trace du néant) + <shuzhi>{2}%</> de l'ATQ) aux cibles (comptés comme multiplicateur de base, affectés par le bonus de dégâts). Ces dégâts comptent comme des dégâts passifs et représentent le multiplicateur de base, soumis aux bonus de dégâts. L'Espace à haute dimension s'efface après <shuzhi>4</> Effondrements dimensionnels.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -8054,7 +8077,7 @@
 			},
 			{
 				"title": "**Poppa: Détachement**:",
-				"description": "après avoir utilisé **Image miroir**, inflige des dégâts équivalant à **87.5%** de l'ATQ de feu + **12.5%** des PV max + **45%** de la somme de tous les types de résistance de l'Explorateur + **168.8%** de crit chaque seconde pendant **30**secondes. Les dégâts multiples de Détachement ne se cumulent pas. Les dégâts de Poppa sont comptabilisés comme des dégâts de compétence. Si **1**arme de foudre ou de givre est équipée, les dégâts de Poppa sont multipliés par **1.3**. Par ailleurs, les dégâts de Poppa ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire."
+				"description": "après avoir utilisé **Image miroir**, inflige des dégâts équivalant à **87.5%** de l'ATQ de feu + **12.5%** des PV max de l'Explorateur + **45%** de la somme de tous les types de résistance de l'Explorateur + **168.8%** de crit à la cible chaque seconde pendant **30**secondes. Les dégâts multiples de Détachement ne se cumulent pas. Les dégâts de Poppa sont comptabilisés comme des dégâts de compétence. Si **1**arme de foudre ou de givre est équipée, les dégâts de Poppa sont multipliés par **1.3**. Par ailleurs, les dégâts de Poppa ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire."
 			}
 		],
 		"elementEffects": {
@@ -8063,7 +8086,7 @@
 		},
 		"advancements": [
 			{
-				"description": "**Fusion du feu et de la matière**: lorsque l'arme inflige des dégâts, ces derniers sont calculés en fonction de l'ATQ de base de feu ou physique équipée la plus élevée, du pourcentage d'ATQ de feu ou physique équipée le plus élevé, et du bonus de dégâts de feu ou physiques équipé le plus élevé. L'arme est considérée à la fois comme une arme de feu et physique.\r\n**Résonance de feu**: accroît l'ATQ de feu de **15%** et la résistance au feu de **25%**. S'active en équipant au moins **2**armes de feu. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de feu ou de Réaction de feu, et Résonance de feu prévaut.\r\n**Résonance physique**: accroît l'ATQ physique de **15%** et la résistance physique de **25%**. S'active en équipant au moins **2**armes physiques. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance physique et de Réaction physique, et Résonance physique prévaut.\r\n**Poppa: Détachement**: après avoir utilisé **Image miroir**, inflige des dégâts équivalant à **87.5%** de l'ATQ de feu + **12.5%** des PV max + **45%** de la somme de tous les types de résistance de l'Explorateur + **168.8%** de crit chaque seconde pendant **30**secondes. Les dégâts multiples de Détachement ne se cumulent pas. Les dégâts de Poppa sont comptabilisés comme des dégâts de compétence. Si **1**arme de foudre ou de givre est équipée, les dégâts de Poppa sont multipliés par **1.3**. Par ailleurs, les dégâts de Poppa ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire.",
+				"description": "**Fusion du feu et de la matière**: lorsque l'arme inflige des dégâts, ces derniers sont calculés en fonction de l'ATQ de base de feu ou physique équipée la plus élevée, du pourcentage d'ATQ de feu ou physique équipée le plus élevé, et du bonus de dégâts de feu ou physiques équipé le plus élevé. L'arme est considérée à la fois comme une arme de feu et physique.\r\n**Résonance de feu**: accroît l'ATQ de feu de **15%** et la résistance au feu de **25%**. S'active en équipant au moins **2**armes de feu. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de feu ou de Réaction de feu, et Résonance de feu prévaut.\r\n**Résonance physique**: accroît l'ATQ physique de **15%** et la résistance physique de **25%**. S'active en équipant au moins **2**armes physiques. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance physique et de Réaction physique, et Résonance physique prévaut.\r\n**Poppa: Détachement**: après avoir utilisé **Image miroir**, inflige des dégâts équivalant à **87.5%** de l'ATQ de feu + **12.5%** des PV max de l'Explorateur + **45%** de la somme de tous les types de résistance de l'Explorateur + **168.8%** de crit à la cible chaque seconde pendant **30**secondes. Les dégâts multiples de Détachement ne se cumulent pas. Les dégâts de Poppa sont comptabilisés comme des dégâts de compétence. Si **1**arme de foudre ou de givre est équipée, les dégâts de Poppa sont multipliés par **1.3**. Par ailleurs, les dégâts de Poppa ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8087,7 +8110,7 @@
 				"need": null
 			},
 			{
-				"description": "Tant que **Poppa est là** est active, tous les **7**tirs explosifs lancent un **Projectile d'énergie lourdeII** infligeant des dégâts équivalant à **1800%** de l'ATQ, et se divisent en plusieurs explosifs qui infligent des dégâts équivalant à **2 000%** de l'ATQ aux cibles proches.",
+				"description": "Lorsque **Poppa est là** est actif, Poppa lance un **Projectile énergie lourde II** tous les **7** tirs explosifs lancés, infligeant des dégâts équivalant à **590%** de l'ATQ aux cibles proches, puis se divise en plusieurs explosifs puissants, infligeant des dégâts équivalant à **660%** de l'ATQ aux cibles proches.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8309,9 +8332,7 @@
 					"name": "Protocole de plongée",
 					"description": "Maintenez l'esquive lorsque vous êtes dans les airs pour déclencher Protocole de plongée, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à l'atterrissage.",
 					"operations": [
-						"Jump",
-						"Dash",
-						"Hold Attack"
+						"Jump"
 					],
 					"tags": [
 						"Damage"
@@ -8370,7 +8391,11 @@
 				{
 					"name": "Protocole aérien",
 					"description": "Les attaques d'esquive peuvent être utilisées lorsque l'Explorateur est dans les airs.\r\nToutes les <shuzhi>2</> attaques d'esquive effectuées avec <shuzhi>EP-7000 Feu céleste</>, Poppa apparaît et utilise également une attaque d'esquive, infligeant des dégâts allant de <shuzhi>50% à 100%</> des dégâts infligés par l'Explorateur en fonction de l'humeur de Poppa.\r\nAprès <shuzhi>2</> attaques d'esquive utilisant <shuzhi>EP-7000 Feu céleste</> ou <shuzhi>1</> attaque d'esquive utilisant <shuzhi>EP-7000 Feu céleste</> pendant que <shuzhi>Poppa est là</> est active, réduit le temps de recharge d'<shuzhi>Image miroir</> de <shuzhi>10</> secondes. Ne peut être déclenché qu'<shuzhi>une</> fois pendant la durée du temps de recharge de chaque Image miroir.",
-					"operations": [],
+					"operations": [
+						"Jump",
+						"Dash",
+						"Attack"
+					],
 					"tags": [
 						"Damage"
 					],
@@ -8382,6 +8407,7 @@
 				{
 					"name": "Image miroir",
 					"description": "Navigue entre l'esprit et la réalité, créant <shuzhi>8</> murs Coeur-miroir autour de l'Explorateur (ils comptent comme des invocations) et infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Après avoir utilisé la compétence, active Poppa est là pendant <shuzhi>15</> secondes, et confère la capacité de voler ainsi qu'une vitesse de déplacement et des capacités de saut améliorées. L'attaque normale lance désormais des tirs explosifs qui infligent des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles proches lorsqu'elles sont touchées et consomme de l'endurance. Lorsqu'un tir explosif touche le sol, il est transmis à un mur Coeur-miroir et lancé vers la cible verrouillée. Temps de recharge : <shuzhi>30</> secondes. Lorsque Poppa est là prend naturellement fin, confère immédiatement <shuzhi>300</> points de recharge d'arme.\r\nPendant Poppa est là, les dégâts finaux augmentent en fonction de la distance en hauteur entre l'Explorateur et la cible touchée, de jusqu'à <shuzhi>1%</>.\r\nEn état de combat, lorsque Poppa est là n'est pas active, Poppa apparaît toutes les <shuzhi>8</> secondes et lance un Projectile d'énergie lourde I qui inflige des dégâts équivalant à <shuzhi>590%</> de l'ATQ aux cibles proches.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -8804,6 +8830,7 @@
 				{
 					"name": "Technique de l'épée: Glace ombrée",
 					"description": "Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et les attire. Forme ensuite un Réseau d'épées qui fait s'abattre une pluie d'épées et <shuzhi>gèle longuement</> les cibles (non disponible en Ligue ultime et contre les boss) pendant <shuzhi>4</> secondes. Temps de recharge : <shuzhi>30</> secondes.\r\nAprès avoir réussi Technique de l'épée : Glace ombrée, l'Explorateur diffuse de l'<shuzhi>Air froid</>, infligeant des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ aux cibles proches chaque seconde et réduisant leur vitesse de <shuzhi>30%</> (non disponible en Ligue ultime et contre les boss).\r\nAprès avoir exécuté Technique de l'épée : Glace ombrée jusqu'au bout, l'Explorateur crée un maximum de <shuzhi>Lames de givre</> et lance <shuzhi>1</> lame toutes les <shuzhi>7,5</> secondes à la cible verrouillée, lui infligeant des dégâts équivalant à <shuzhi>{5}%</> de l'ATQ ainsi que l'effet <shuzhi>Réduction de température</>. Jusqu'à <shuzhi>3</> <shuzhi>Lames de givre</> peuvent être créées au début, et toutes les lames disparaissent en état hors combat.\r\n<shuzhi>Réduction de température</> : inflige des dégâts aux cibles proches équivalant à <shuzhi>{6}%</> de l'ATQ toutes les <shuzhi>3</> secondes pendant <shuzhi>12</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -9206,6 +9233,7 @@
 				{
 					"name": "Verrouillage d'impulsion",
 					"description": "Venus tire un missile guidé qui explose au contact des cibles ennemies, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ et repousse les cibles. Au même moment, soigne les alliés proches à hauteur de <shuzhi>{1}%</> de l'ATQ de l'Explorateur chaque seconde pendant <shuzhi>6</> secondes. Temps de recharge : <shuzhi>25</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -9592,6 +9620,7 @@
 				{
 					"name": "Fimbulhiver",
 					"description": "Frappe la zone autour de l'Explorateur, infligeant un total de dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Projette et suspend les cibles. Confère également une immunité aux dégâts lors de l'utilisation de la compétence. Temps de recharge : <shuzhi>30</> secondes.\r\nAprès avoir lancé <shuzhi>\"Fimbulhiver\"</>, un vaste domaine de givre se forme autour de l'Explorateur pendant <shuzhi>25</> secondes. Les tentatives d'esquive ne sont pas consommées lorsque vous esquivez avec Balmung dans le domaine de givre.\r\nConfère \"Zone de givre I\" lorsque vous êtes dans le domaine de givre. Accroît la capacité de fracture de <shuzhi>25%</> et l'ATQ de givre de <shuzhi>15%</> lorsque vous utilisez une arme de givre.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -9718,7 +9747,7 @@
 				"need": null
 			},
 			{
-				"description": "Inflammation augmente les dégâts d'Attaque d'étincelles jusqu'à **0%**. Le temps de recharge de la compétence diminue pour atteindre **24** secondes.",
+				"description": "Inflammation accroît les dégâts d'Attaque d'étincelles jusqu'à **0%**. Le temps de recharge de la compétence diminue pour atteindre **35**secondes.",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9838,7 +9867,7 @@
 				"need": "funnel_fire_plasm"
 			},
 			{
-				"description": "Inflammation augmente les dégâts d'Attaque d'étincelles jusqu'à **0%** et double l'efficacité d'Acquisition de chaleur. Le temps de recharge de la compétence diminue pour atteindre **16**secondes.",
+				"description": "Inflammation accroît le bonus de dégâts d'Attaque d'étincelles jusqu'à **0%**. Le temps de recharge de la compétence diminue pour atteindre **30**secondes.",
 				"charge": 8,
 				"shatter": 11.5,
 				"multiplier": [
@@ -9967,6 +9996,7 @@
 				{
 					"name": "Collisionneur d'étincelles",
 					"description": "Étincelle lance l'attaque Étincelles, qui dure 15 secondes et rebondit entre les cibles et l'Explorateur. Lorsqu'elles touchent une cible, les étincelles la ralentissent pendant <shuzhi>4</> secondes avec un temps de recharge de <shuzhi>15</> secondes. Plus les étincelles mettent de temps à atteindre leur cible, plus elles infligent de dégâts. À l'impact, elles infligent des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et appliquent une marque d'Inflammation sur la cible qui persiste pendant <shuzhi>25</> secondes. Au même moment, Étincelle tire 4 balles en direction de sa cible. Chacune de ces balles inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>. Les attaques normales d'Étincelle infligent <shuzhi>30%</> de dégâts supplémentaires aux cibles marquées par Inflammation. Lorsque les étincelles atteignent des cibles brûlées par l'Explorateur, elles brûlent ou embrasent la cible une fois, ce qui inflige des dégâts supplémentaires équivalant à <shuzhi>45%</> du total de dégâts restants (les effets de brûlure ou d'embrasement multiples sont comptés ensemble) et seront automatiquement décomptés une fois. Le résultat du calcul du temps de recharge est de <shuzhi>6</> secondes. Le temps de recharge de la compétence est de <shuzhi>30</> secondes.\r\n<shuzhi>Effet passif</> : pendant toute la durée d'Étincelles, chaque fois que des dégâts sont infligés par Étincelles ou Attaque d'étincelles, l'Explorateur gagne <shuzhi>1</> point de Chaleur (à intervalle de <shuzhi>0,9</> seconde) jusqu'à un plafond de <shuzhi>8</> points. Lorsque ce plafond est atteint, l'Explorateur reçoit l'effet Chaleur ultime qui augmente son ATQ de feu de <shuzhi>10%</> pendant <shuzhi>25</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -10365,6 +10395,7 @@
 				{
 					"name": "Flot agité: flux étincelant",
 					"description": "Vous vous élancez vers la cible et immobilisez temporairement les ennemis en chemin, en infligeant des dégâts retardés équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>30</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -10374,6 +10405,7 @@
 				{
 					"name": "Flot silencieux: flux concentré",
 					"description": "Utiliser les compétences Flot silencieux fait entrer en état de charge pendant <shuzhi>3</> secondes max, provoque les cibles proches et permet d'absorber des dégâts pouvant aller jusqu'à <shuzhi>60%</> des PV max. Lorsque la charge prend fin, inflige aux cibles des dégâts de givre équivalant à <shuzhi>408%</> de l'ATQ de givre + <shuzhi>50%</> des dégâts absorbés. <shuzhi>20%</> de la valeur non consommée est convertie en récupération de PV. Temps de recharge : <shuzhi>30</> secondes.\r\n\r\nEntre dans l'état Flot silencieux lorsque Résonance de fortitude est activée. <shuzhi>Flot silencieux : Flux concentré</> remplace <shuzhi>Flot agité : Flux étincelant</>. Entre dans l'état Flot agité lorsque Résonance de fortitude n'est pas activée.\r\nUtiliser les compétences de Saki Fuwa invoque une Ombre de l'épée persistante qui suit l'Explorateur. L'Ombre de l'épée libère Déferlement lorsque l'Explorateur utilise les compétences ramifiées et les compétences de décharge de Saki Fuwa, infligeant des dégâts de zone équivalant à <shuzhi>175%</> de l'ATQ de givre. Temps de recharge de Déferlement : <shuzhi>10</> secondes.\r\nDans l'état Flot agité : quand le joueur inflige des dégâts avec n'importe quelle arme, l'Ombre de l'épée libère Flux, infligeant des dégâts équivalant à <shuzhi>45%</> de l'ATQ de givre à la première cible touchée et récupérant des PV à hauteur de <shuzhi>57%</> des dégâts infligés. La récupération maximale ne dépasse jamais <shuzhi>100%</> de l'ATQ. Temps de recharge : <shuzhi>0,8</> seconde.\r\nDans l'état Flot silencieux : après que l'Ombre de l'épée a libéré Déferlement, l'Explorateur obtient <shuzhi>3</> blocages qui durent <shuzhi>10</> secondes. La capacité défensive de ces blocages ne dépasse pas <shuzhi>15%</> des PV max du joueur. Tout blocage réussi entraînera une Contre-attaque infligeant des dégâts à hauteur de <shuzhi>225%</> de l'ATQ de givre à la cible et les capacités de fracture de Déferlement augmenteront de <shuzhi>100%</> avec un effet de provocation.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -10778,6 +10810,7 @@
 				{
 					"name": "Royaume du Clair de lune",
 					"description": "Crée un Royaume du Clair de lune autour de vous pendant <shuzhi>15</> secondes. Les dégâts que vous infligez dans le royaume sont accrus de <shuzhi>15%</>, la capacité de saut de <shuzhi>20%</> et la consommation d'endurance est réduite de <shuzhi>50%</>. Temps de recharge : <shuzhi>30</> secondes.\r\nEntrez dans l'état spécial Fleur d'air lorsque Tissombre est déclenché dans le Royaume du Clair de lune, permettant des doubles sauts multiples et entraînant une réduction importante de la vitesse de chute. Dans cet état, utiliser les touches directionnelles ou le bouton de saut lorsque vous êtes en l'air entraîne Itinérance et lance une attaque sur la cible. Au contact, inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et génère de manière aléatoire <shuzhi>1 à 3</> épicactus.\r\n\r\nEffet passif : dans le Royaume du Clair de lune, <shuzhi>1</> épicactus apparaît près de 1 cible toutes les <shuzhi>0,8</> seconde. \r\nEffet passif : lorsque vous utilisez Tissombre dans le Royaume du Clair de lune, vous infligez <shuzhi>50%</> de dégâts supplémentaires aux ennemis dont les PV sont inférieurs à <shuzhi>20%</>.\r\nEffet passif : lorsque vous utilisez Tissombre dans le Royaume du Clair de lune, les dégâts subis seront détectés et vous vous téléporterez loin de leur source. Temps de recharge : <shuzhi>10</> secondes.\r\n\r\nEffet passif : Maître d'armes\r\nFeu : lorsque Tissombre est associé à 2 armes de feu, le Royaume du Clair de lune se transforme en Royaume du Clair de feu. Les cibles brûlées dans le Royaume du Clair de feu brûlent pendant <shuzhi>4</> secondes supplémentaires. Les cibles dotées d'un bouclier subissent <shuzhi>15%</> de dégâts de feu supplémentaires. \r\n\r\nFoudre : lorsque Tissombre est associé à 2 armes de foudre, le Royaume du Clair de lune se transforme en Royaume du Clair de foudre, avec <shuzhi>65%</> de chances de ne pas utiliser de tentative d'esquive pendant une esquive et un bonus de <shuzhi>5%</> aux dégâts issus des attaques d'esquive. Les dégâts de foudre gagnent <shuzhi>10%</> supplémentaires.\r\n\r\nGivre : lorsque Tissombre est associé à 2 armes de givre, le Royaume du Clair de lune se transforme en Royaume du Clair de givre. L'attaque de givre gagne <shuzhi>10%</>.\r\n\r\nPhysique : lorsque Tissombre est associé à 2 armes physiques, le Royaume du Clair de lune se transforme en Royaume du Clair physique. Dans le Royaume du Clair physique, vous infligez des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles à portée par seconde.\r\n\r\nÉquilibre : lorsque Tissombre est associé à 2 armes élémentaires différentes (parmi les armes de feu, de foudre, de givre et physiques), l'ATQ de l'Explorateur augmente de <shuzhi>15%</> dans le Royaume et active une résonance de feu, de foudre, de givre et physique sans les effets de résonance.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -11199,6 +11232,7 @@
 				{
 					"name": "Dubhe",
 					"description": "Lance un barrage d'attaques infligeant des dégâts à hauteur de <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux ennemis à portée, et transformant les ennemis ou vos invocations se trouvant dans un rayon déterminé en entités électrifiées (jusqu'à 3 entités électrifiées peuvent être actives à la fois). Temps de recharge : <shuzhi>30</> secondes.\r\n\r\nBénéficiez de Détection de foudre lors de l'utilisation de Dubhe : analyse les deux autres armes équipées lorsqu'une compétence est utilisée. Chaque fois qu'une arme de foudre est détectée, les dégâts de foudre augmentent de <shuzhi>6%</> pendant <shuzhi>25</> secondes.\r\n\r\nEntité électrifiée : lorsqu'une compétence de décharge d'arme de foudre est utilisée, les entités électrifiées infligent des dégâts de zone de foudre équivalant à <shuzhi>5%</> des PV manquants (les dégâts infligés ne peuvent pas être inférieurs à <shuzhi>100%</> ni supérieurs à <shuzhi>1 000%</> de l'ATQ de foudre).\r\n\r\nLorsque vous brandissez Brise-tonnerre, l'utilisation d'une compétence d'arme de foudre ou d'une compétence de décharge consomme <shuzhi>30%</> des PV actuels pour infliger des dégâts de foudre supplémentaires équivalant à <shuzhi>45%</> des PV consommés (les dégâts supplémentaires ne peuvent pas être inférieurs à <shuzhi>400%</> ni supérieurs à <shuzhi>3 000%</> de l'ATQ de foudre). Après <shuzhi>8</> secondes ou lorsque vos PV passent sous le seuil des <shuzhi>10%</>, vous récupérez <shuzhi>5%</> de vos PV manquants chaque seconde pendant <shuzhi>8</> secondes (ignore les effets de soin). L'effet de récupération ne peut pas être cumulé.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -11585,6 +11619,7 @@
 				{
 					"name": "Garde du pardon",
 					"description": "<ComLblGreen>Garde du pardon</> : en cas de surplus de l'effet de guérison, garantit un bouclier de PV pouvant aller jusqu'à <shuzhi>25%</> des PV max. Lorsque Vesper est associé à une garde du pardon, différentes résonances vont activer différents effets de garde.\r\n<ComLblGreen>Garde de la bénédiction</> : cette compétence est remplacée par <shuzhi>Lèvebrillance</> et l'Explorateur ne remporte plus de garde de l'illumination, convertie en garde du pardon pour les membres du groupe. Rapporte 1 garde du pardon tous les <shuzhi>15%</> de PV max soignés et rapporte jusqu'à 1 garde du pardon à chaque membre du groupe. Si chaque membre en possède une, la garde du pardon inflige à l'ennemi des dégâts physiques équivalant à <shuzhi>60%</> de l'ATQ avant de disparaître. Ces dégâts ne déclenchent pas d'effets d'attaque supplémentaires. Accroît également les PV max de <shuzhi>10%</> pour vous et les membres du groupe. L'effet ne peut pas être cumulé.\r\n <ComLblGreen>Garde d'attaque</> : lorsqu'une compétence de Vesper touche sa cible, gagne immédiatement un bouclier équivalant à <shuzhi>30%</> des PV max. Temps de recharge : <shuzhi>30</> secondes.\r\n<ComLblGreen>Garde de fortitude</> : lorsqu'une compétence de Vesper touche sa cible, gagne immédiatement un soin restaurant <shuzhi>2%</> des PV max par seconde pendant <shuzhi>20</> secondes, avec un temps de recharge de <shuzhi>30</> secondes.\r\n <ComLblGreen>Garde d'équilibre</> : lorsque les PV sont supérieurs à <shuzhi>50%</>, la fracture s'accroît de <shuzhi>20%</>. Lorsque les PV sont inférieurs à <shuzhi>50%</>, les dégâts finaux augmentent de <shuzhi>10%</> et la fracture de <shuzhi>10%</>.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -11595,6 +11630,7 @@
 				{
 					"name": "Tombétoile",
 					"description": "Bondir sur la cible inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et la <shuzhi>suspend longuement</>. Inflige une marque de l'Illumination sur la cible pendant <shuzhi>18</> secondes. Temps de recharge : <shuzhi>20</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Debuff"
@@ -11605,6 +11641,7 @@
 				{
 					"name": "Lèvebrillance",
 					"description": "Pilonne le sol et <shuzhi>projette fortement</> les cibles en face, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et invoque jusqu'à <shuzhi>3</> <shuzhi>lames</> pendant <shuzhi>75</> secondes (jusqu'à 1 lame tous les 2 mètres). Cette compétence peut être utilisée jusqu'à <shuzhi>3</> fois, avec un temps de recharge de <shuzhi>20</> secondes à chaque fois. La coexistence de 2 <shuzhi>lames</> sur le terrain crée une <shuzhi>Clairbrillance</>. Lorsqu'une <shuzhi>lame</> est touchée, elle soigne les cibles au sein du rayon de mouvement, restaurant des PV équivalant à <shuzhi>{2}%</> de l'ATQ de la cible. La coexistence de 3 <shuzhi>lames</> crée une <shuzhi>Nébuleuse</>. Lorsqu'une <shuzhi>lame</> est touchée, elle inflige des dégâts aux cibles se trouvant dans le rayon de mouvement équivalant à <shuzhi>{3}%</> de l'ATQ x la distance de mouvement / <shuzhi>5</> m.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -12003,6 +12040,7 @@
 				{
 					"name": "Champ",
 					"description": "Ruez-vous rapidement entre deux points <shuzhi>10</> fois, attirant les cibles proches et infligeant des dégâts jusqu'à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Au moment où vous atterrissez, inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles proches. Temps de recharge : <shuzhi>20</> secondes.\r\nChaque ruée absorbe <shuzhi>10%</> des PV max de toutes les épines de crystamax (non disponible en Ligue ultime) et inflige des dégâts supplémentaires équivalant au nombre le plus élevé entre le nombre d'épines de crystamax × <shuzhi>40%</> de l'ATQ ou le nombre d'épines de crystamax × <shuzhi>1%</> des PV max de l'Explorateur, jusqu'à épuisement des épines de crystamax.\r\nLe <shuzhi>taux de perte de PV</> des PV max des épines de crystamax est le même que le <shuzhi>taux de perte de PV</> des PV max de l'Explorateur.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -12393,8 +12431,7 @@
 					"name": "État latent",
 					"description": "Esquivez avant de maintenir pour entrer en État latent, pendant lequel l'endurance est constamment consommée et la vitesse est augmentée de <shuzhi>50%</>. Augmente la vitesse de <shuzhi>50%</> supplémentaires dans le Champ glaçant. À la sortie de l'État latent, inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à toutes les cibles proches et les gèle pendant <shuzhi>2</> secondes.",
 					"operations": [
-						"Dash",
-						"Hold Attack"
+						"Movement"
 					],
 					"tags": [
 						"Control"
@@ -12418,6 +12455,7 @@
 				{
 					"name": "Champ glaçant",
 					"description": "Rassemble les cibles proches, puis leur inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et les <shuzhi>suspend longuement</>. L'Explorateur entre dans le Champ glaçant pendant <shuzhi>30</> secondes. Temps de recharge : <shuzhi>25</> secondes. Vous gagnez Hypercorps en activant la compétence.\r\n<red>Effet passif</> : lorsque vous utilisez la compétence de décharge d'arme de givre dans le Champ glaçant, vous infligez des dégâts de Gelée équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> 1 fois et ralentissez la cible pendant <shuzhi>2</> secondes (l'effet de ralentissement est inefficace contre les boss). Lorsque vous êtes dans le champ, à chaque fois que l'effet d'Aile inflexible se déclenche à l'impact <shuzhi>12</> fois, il déclenche à son tour Taillade spatiale, infligeant des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> 1 fois aux cibles dans la zone toutes les 2 secondes pendant <shuzhi>25</> secondes (cet effet prend fin également lorsque la zone disparaît).",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support",
@@ -12856,6 +12894,7 @@
 				{
 					"name": "Rotation durable",
 					"description": "Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et obtient Hypercorps pendant <shuzhi>20</> secondes. Lorsque <shuzhi>Rotation durable</> se termine, vous obtenez <shuzhi>3</> <shuzhi>Lames ardentes</> pendant <shuzhi>20</> secondes (les <shuzhi>Lames ardentes</> peuvent être obtenues une fois toutes les <shuzhi>20</> secondes).. Temps de recharge : <shuzhi>20</> secondes.\r\n<shuzhi>Lame ardente</> : lorsque vous infligez des dégâts d'attaque d'esquive <shuzhi>physiques</> ou <shuzhi>de feu</> à une cible, consomme <shuzhi>1</> <shuzhi>Lame ardente</> et inflige à la cible des dégâts supplémentaires de l'élément correspondant à l'arme, équivalant à <shuzhi>{2}%</> de l'ATQ, ainsi que <shuzhi>dissolution d'armure</>. Après avoir infligé des dégâts, rétablit <shuzhi>1</> tentative d'esquive et augmente les dégâts finaux de <shuzhi>10%</> pendant <shuzhi>20</> secondes. Ces dégâts sont comptabilisés comme des dégâts d'attaque normale et ne peuvent être déclenchés qu'<shuzhi>une seule</> fois toutes les <shuzhi>2,8</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -12879,6 +12918,451 @@
 		"version": "3.5",
 		"limited": true,
 		"id": "killknife_physic"
+	},
+	"lances_ice": {
+		"name": "Maléfique",
+		"description": "En scellant l'énergie sombre malveillante dans la lance, le chevalier devient véritablement un \"chevalier\". Ensuite… le chevalier prend la main de la jeune fille, et ensemble, ils s'avancent vers un lendemain aux possibilités infinies.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_yanuo.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_yanuo.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/yanuo.webp"
+		},
+		"rarity": 5,
+		"element": "Ice",
+		"type": "Lances",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Lances_Ice_ssr_star",
+		"avatar": "imitation_54",
+		"mats": {
+			"Item_Mine_ice": 39,
+			"Item_Mine_ice_02": 65,
+			"Item_breakthrough_B2": 65,
+			"Item_breakthrough_D2": 65,
+			"Item_Mine_ice_03": 32,
+			"Item_breakthrough_B3": 32,
+			"Item_breakthrough_D3": 32,
+			"Item_breakthrough_B1": 35,
+			"Item_breakthrough_D1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "Attaque",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "PV",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Fusion de la foudre et du givre**:",
+				"description": "Lorsque l'arme inflige des dégâts, ces derniers sont calculés en fonction de l'ATQ de base de foudre ou de givre équipée la plus élevée, du pourcentage d'ATQ de foudre ou de givre équipée le plus élevé, et du bonus de dégâts de foudre ou de givre équipé le plus élevé. L'arme est considérée à la fois comme une arme de foudre ou de givre."
+			},
+			{
+				"title": "**Résonance de foudre**:",
+				"description": "accroît l'ATQ de foudre de **15%** et la résistance à la foudre de **25%**. S'active en équipant au moins **2**armes de foudre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, et Résonance de foudre prévaut."
+			},
+			{
+				"title": "**Résonance de givre**:",
+				"description": "accroît l'ATQ de givre de **15%** et la résistance au givre de **25%**. S'active en équipant au moins **2**armes de givre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de givre ou de Réaction de givre, et Résonance de givre prévaut."
+			},
+			{
+				"title": "**Frappe glaçante: Sur le terrain**:",
+				"description": "en frappant une cible avec **Maléfique**, inflige des dégâts équivalant à **205%** de l'ATQ de givre + **2.9%** des PV max + **106%** de la somme de tous les types de résistance de l'Explorateur + **3.9%** de crit aux cibles proches. Peut être déclenché jusqu'à une fois toutes les **1,5**secondes. Les dégâts de Frappe glaçante sont comptabilisés comme des dégâts d'attaque normale. Si **1**arme de physique ou de feu est équipée, les dégâts de Frappe glaçante sont multipliés par **1.3**. Par ailleurs, les dégâts de Frappe glaçante ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire."
+			}
+		],
+		"elementEffects": {
+			"title": "**Coquille de glace**:",
+			"description": "Lorsque l'arme est entièrement chargée, la prochaine attaque **gèle longuement** les cibles pendant **2**secondes et leur inflige Gelure pendant **6**secondes. Briser la coquille de glace inflige des dégâts équivalant à **151.00%** de l'ATQ. Lorsque la cible subit Gelure, son taux de recharge d'arme est réduit de **50%**."
+		},
+		"advancements": [
+			{
+				"description": "**Fusion de la foudre et du givre**: Lorsque l'arme inflige des dégâts, ces derniers sont calculés en fonction de l'ATQ de base de foudre ou de givre équipée la plus élevée, du pourcentage d'ATQ de foudre ou de givre équipée le plus élevé, et du bonus de dégâts de foudre ou de givre équipé le plus élevé. L'arme est considérée à la fois comme une arme de foudre ou de givre.\r\n**Résonance de foudre**: accroît l'ATQ de foudre de **15%** et la résistance à la foudre de **25%**. S'active en équipant au moins **2**armes de foudre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, et Résonance de foudre prévaut.\r\n**Résonance de givre**: accroît l'ATQ de givre de **15%** et la résistance au givre de **25%**. S'active en équipant au moins **2**armes de givre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de givre ou de Réaction de givre, et Résonance de givre prévaut.\r\n\r\n**Frappe glaçante: Sur le terrain**: en frappant une cible avec **Maléfique**, inflige des dégâts équivalant à **205%** de l'ATQ de givre + **2.9%** des PV max + **106%** de la somme de tous les types de résistance de l'Explorateur + **3.9%** de crit aux cibles proches. Peut être déclenché jusqu'à une fois toutes les **1,5**secondes. Les dégâts de Frappe glaçante sont comptabilisés comme des dégâts d'attaque normale. Si **1**arme de physique ou de feu est équipée, les dégâts de Frappe glaçante sont multipliés par **1.3**. Par ailleurs, les dégâts de Frappe glaçante ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "Lorsque vous infligez des dégâts à des cibles dont les PV sont inférieurs à **80%**, accroît les dégâts finaux de **12%**. Cet effet fonctionne dans l'emplacement main libre.\r\nSe faire attaquer lorsqu'on est en mode **Dissimulation** ne dissipe pas la Dissimulation et le nombre maximum d'attaques pouvant être bloquées passe à **3**fois. Lorsque Dissimulation se dissipe à la suite d'une attaque portée, vous gagnez également un bouclier équivalant au temps passé en mode **Dissimulation** multiplié par **5%** des PV max de l'Explorateur (sans pouvoir dépasser **120%** des PV max de l'Explorateur). Dure **30**secondes.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Accroît de **16%** la croissance d'ATQ de base de l'arme actuelle.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Accroît la capacité de fracture de **Maléfique** de **20%**.\r\nQuand **Chasse effrénée** se **déclenche**, attire tous les noyaux de glace autour de l'Explorateur, les fait exploser, puis entre en mode Perméation pendant **5**secondes, pendant lesquelles **Morsure arctique** remplace le bouton de changement d'arme (mais cette morsure arctique ne déclenche pas les effets de compétence supplémentaires) et chaque utilisation permet de réduire le temps de recharge de **Morsure arctique** de **20**secondes. Utilisez une attaque normale pour sortir immédiatement du mode Perméation.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Accroît de **32%** la croissance d'ATQ de base de l'arme actuelle.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Accroît de **150%** les dégâts de Noyaux de glace explosifs.\nAprès que **Fixation** a lancé l'arme et **touché une cible**, place Trace de neige sur la cible pendant **5**secondes (le déclenchement de cet effet est prioritaire par rapport aux dégâts de l'attaque chargée de **Fixation**). Lorsque Trace de neige se dissipe, la cible subit des dégâts équivalant à **30%** du total des dégâts subis pendant Trace de neige (ne peut pas excéder l'ATQ de l'Explorateur multipliée par **650** en mode solo, et l'ATQ de l'Explorateur multipliée par **6500** en équipe). Les dégâts ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent pas d'effets d'attaque supplémentaires. Trace de neige peut se déclencher jusqu'à **une** fois toutes les **30**secondes.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "L'augmentation des dégâts de foudre-givre par **Morsure polaire** peut se cumuler jusqu'à **3**fois.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Pillage",
+					"description": "Lorsque vous êtes au sol, utilisez l'attaque normale pour attaquer 6 fois de suite (jusqu'à <shuzhi>45</> noyaux de glace peuvent exister simultanément sur le terrain).\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>, et crée <shuzhi>1</> noyau de glace.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>, et crée <shuzhi>2</> noyaux de glace.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>, et crée <shuzhi>1</> noyau de glace.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</>, et crée <shuzhi>3</> noyaux de glace.\r\nSixième attaque : inflige des dégâts équivalant à <shuzhi>{10}%</> de l'ATQ + <shuzhi>{11}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Melee.webp",
+					"id": "GA_FPlayerLancesMelee_Melee"
+				},
+				{
+					"name": "Chasse",
+					"description": "Lorsque vous êtes dans les airs, utilisez l'attaque normale pour lancer 6 attaques consécutives en l'air, consommant de l'endurance.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</>.\r\nSixième attaque : inflige des dégâts équivalant à <shuzhi>{10}%</> de l'ATQ + <shuzhi>{11}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_AirAttack.webp",
+					"id": "GA_FPlayerLancesMelee_AirAttack"
+				},
+				{
+					"name": "Pique gelée",
+					"description": "Lorsque vous êtes au sol, appuyez et maintenez Attaque normale lorsque vous utilisez les 2e, 4e et 5e attaques normales pour déclencher Pique gelée, bondissant vers l'arrière pour effectuer jusqu'à <shuzhi>3</> charges dans les airs.\r\nPhase 1 de l'impact chargé : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>.\r\nPhase 2 de l'impact chargé : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nPhase 3 de l'impact chargé : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Branch.webp",
+					"id": "GA_FPlayerLancesMelee_Branch"
+				},
+				{
+					"name": "La mort vient d'en haut",
+					"description": "Dans les airs, appuyez et maintenez Attaque normale pour déclencher La mort vient d'en haut.\r\nVous plantez votre lance dans le sol à l'atterrissage, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_JumpAttack.webp",
+					"id": "GA_FPlayerLancesMelee_JumpAttack"
+				},
+				{
+					"name": "Fixation",
+					"description": "Lorsque vous êtes au sol, maintenez Attaque normale pour déclencher Fixation et charger. Dans les <shuzhi>6</> secondes, les dégâts augmentent en fonction de la durée de la charge, pendant laquelle l'Explorateur gagne Hypercorps, puis jette l'arme en direction de la cible. Après que l'arme <shuzhi>a touché une cible</>, inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Quand vous visez une cible à portée pendant au moins <shuzhi>2,5</> secondes pendant la charge de Fixation, l'aide à la visée est activée. L'arme lancée touchera automatiquement la cible à la tête (perdre la cible de l'aide à la visée n'affecte pas la charge).\nAprès avoir jeté l'arme avec Fixation, un nouveau bouton de compétence pour <shuzhi>Exécution de l'ombre</> devient disponible.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttack.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttack"
+				},
+				{
+					"name": "Acharnement",
+					"description": "Lorsque vous êtes au sol, appuyez et maintenez Attaque normale pour déclencher Acharnement, pendant lequel l'Explorateur gagne Hypercorps. Jette la lance en direction de la cible, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et infligeant <shuzhi>Impact de force</> aux cibles touchées.\r\nAcharnement ne déclenche pas <shuzhi>Exécution de l'ombre</> après avoir jeté l'arme.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttackSp.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttackSP"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Esquiver",
+					"description": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des cibles dans la zone. Immunise contre l'effet d'hébétement lors d'une esquive.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/main/shanbi.webp",
+					"id": "GA_FPlayerLancesEvade"
+				},
+				{
+					"name": "Camouflage",
+					"description": "Lorsque vous êtes au sol, appuyez et maintenez l'esquive pour déclencher Dissimulation pendant <shuzhi>60</> secondes et vous cacher (en mode solo, crée une sculpture de glace qui attire l'attention de l'ennemi jusqu'à <shuzhi>15</> secondes), ce qui augmente votre vitesse de déplacement de <shuzhi>30%</>. Lorsque vous vous cachez, vous bloquez jusqu'à <shuzhi>une</> fois un montant de dégâts équivalant à <shuzhi>50%</> des PV max (cet effet peut se déclencher jusqu'à <shuzhi>une</> fois toutes les <shuzhi>10</> secondes). Dissimulation se dissipe quand vous effectuez une attaque et infligez des dégâts avec <shuzhi>Maléfique</>, quand on vous attaque, ou quand vous changez d'arme.\r\n<shuzhi>En chasse</> : lorsque la dissimulation se dissipe à la suite d'une attaque portée avec <shuzhi>Maléfique</> qui <shuzhi>atteint sa cible</>, Chasse effrénée se déclenche. Le temps de recharge de <shuzhi>Morsure arctique</> est réinitialisé et vos dégâts finaux augmentent de façon exponentielle de <shuzhi>2,4%</> à <shuzhi>36%</> en fonction de la durée de Dissimulation. Bonus de dégâts maximum après <shuzhi>10</> secondes de Dissimulation. Les dégâts infligés en utilisant <shuzhi>Fixation</> pour déclencher En chasse bénéficient aussi du bonus de dégâts.",
+					"operations": [],
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHold.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHold"
+				},
+				{
+					"name": "Coup de froid",
+					"description": "Utilisez l'attaque normale pendant la courte fenêtre d'esquive parfaite (utilisez un bouton directionnel avant d'esquiver) pour déclencher Coup de froid, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles en vue et créant <shuzhi>2</> noyaux de glace (jusqu'à <shuzhi>45</> noyaux de glace peuvent exister simultanément sur le terrain).",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackFront.webp",
+					"id": "GA_FPlayerLancesEvade_AttackFront"
+				},
+				{
+					"name": "Agonie",
+					"description": "Utilisez l'attaque normale juste après une esquive vers l'arrière pour déclencher Agonie, bondissant vers l'avant et infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches à l'atterrissage. Crée également <shuzhi>1</> noyau de glace (jusqu'à <shuzhi>45</> noyaux de glace peuvent exister simultanément sur le terrain).",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackBack.webp",
+					"id": "GA_FPlayerLancesEvade_AttackBack"
+				},
+				{
+					"name": "Funeste destin",
+					"description": "Appuyez sur l'attaque normale au moment où l'Explorateur se camoufle en maintenant l'esquive pour rapidement déclencher <shuzhi>Fixation</>, ce qui inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Après avoir jeté l'arme, un nouveau bouton de compétence pour <shuzhi>Exécution de l'ombre</> devient disponible.",
+					"operations": [
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHoldAndAttack.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHoldAndAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "N/A",
+					"description": "N/A",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"operations": [
+						"N/A"
+					],
+					"tags": [
+						"N/A"
+					],
+					"id": "GA_FplayerLancesSkill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "N/A",
+					"description": "N/A",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_spear_melee.webp",
+					"operations": [
+						"N/A"
+					],
+					"tags": [
+						"N/A"
+					],
+					"id": "GA_FplayerLancesChangeSkill"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "3.6",
+		"limited": true,
+		"id": "lances_ice"
 	},
 	"blevi_thunder": {
 		"name": "Metz☆Badge du pacte",
@@ -12993,7 +13477,7 @@
 				"need": null
 			},
 			{
-				"description": "Chaque coup de **Chaîne rose frénétique** ou d'**Attaque coordonnée de Metz** restaure un nombre de PV équivalant à **12%** de l'ATQ. Dans le jeu en équipe, chaque coup restaure **18%** de PV.\r\nLorsqu'un Pote subit des dégâts qui font tomber ses PV en dessous de **25%** de ses PV max, restaure également des PV équivalant à **30%** de ses PV max et lui confère une immunité aux dégâts pendant **3**secondes. Si les dégâts sont fatals, empêche en plus les dégâts fatals 1fois. Peut être déclenché **1**fois toutes les **60**secondes.",
+				"description": "Chaque coup de **Chaîne rose frénétique** ou **Attaque coordonnée de Metz** régénère un montant de PV équivalant à **12%** de l'ATQ. Dans le jeu en équipe, chaque coup régénère **18%** de PV.\r\nLorsqu'un Pote subit des dégâts qui réduisent ses PV en dessous de **25%** de ses PV max, régénère également un montant de PV équivalant à **30%** de ses PV max et lui confère une immunité aux dégâts pendant **3**secondes. Si les dégâts sont fatals, empêche cet effet 1fois. Peut être déclenché jusqu'à **1**fois toutes les **60**secondes.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13041,7 +13525,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "Lorsqu'une **Résonance autre que Bénédiction est active**, confère **2**utilisations supplémentaires de **Vague d'énergie de Metz** et augmente les dégâts de foudre et de givre infligés aux boss de **10%**.\r\nLorsque **Résonance de bénédiction** est active, confère **1**utilisation supplémentaire d'**Onde de choc de Metz-100000volts** et restaure désormais à votre Pote des PV équivalant à **15%** de ses PV max.",
+				"description": "Lorsque **des Résonances autres que Résonance de Bénédiction sont actives**, confère **2**utilisations supplémentaires de **Vague d'énergie de Metz** et accroît les dégâts de foudre et de givre infligés aux boss de **10%**.\r\nLorsque **Résonance de Bénédiction** est active, confère **1**utilisation supplémentaire d'**Onde de choc Metz-100000volts** et régénère un montant de PV équivalant à **15%** de ses PV max à votre Pote.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13113,7 +13597,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "Pendant qu'Amplification du pacte est actif, augmente le bonus de dégâts de foudre et de givre de **10%**. Halo de Metz augmente les dégâts finaux des coéquipiers proches de **20%** et la fracture de **25%**. Effet non cumulable.",
+				"description": "Pendant qu'Amplification du pacte est actif, augmente le bonus de dégâts de foudre et de givre de **10%** et de **4%** respectivement. Halo de Metz augmente les dégâts finaux des coéquipiers proches de **20%** et la fracture de **25%**. Effet non cumulable.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13141,7 +13625,7 @@
 			"normals": [
 				{
 					"name": "Vague-luciole",
-					"description": "Lorsque vous êtes au sol, utilisez l'attaque normale pour lancer 5 attaques d'affilée.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et repousse la cible.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et suspend la cible dans les airs.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et renverse la cible.\r\nQuatrième attaque : inflige des dégâts jusqu'à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et suspend la cible dans les airs.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et renverse la cible.\r\n\r\nAprès avoir déclenché Vague-luciole, appuyez et maintenez Attaque normale pour déclencher <shuzhi>Rythme fantasmatique</>.\r\n\r\nEn état de combat, lorsque <shuzhi>Badge du pacte de Metz ☆</> est dans l'emplacement main libre, Metz reste sur le champ de bataille pour les attaques coordonnées. Metz est considéré comme une invocation, et chaque attaque inflige des dégâts équivalant à <shuzhi>{10}%</> de l'ATQ aux cibles proches. Le type de dégâts élémentaires infligés est celui de l'arme actuelle.\r\nQuand Résonance de bénédiction est active :\r\nEn état hors combat, la première attaque de Vague-luciole désigne <shuzhi>1</> coéquipier comme \"Pote\" et invoque jusqu'à <shuzhi>1</> Metz pour le suivre. Halo de Metz permet aux coéquipiers proches de récupérer un nombre de PV équivalant à <shuzhi>100%</> de l'ATQ de l'Explorateur chaque seconde et augmente leurs dégâts finaux de <shuzhi>5%</>. Effet non cumulable. Metz cesse de suivre le Pote lorsque l'Explorateur est mis à terre, ou lorsque Metz s'éloigne trop de l'Explorateur.",
+					"description": "Lorsque vous êtes au sol, utilisez l'attaque normale pour lancer 5 attaques d'affilée.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et repousse la cible.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et suspend la cible.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et renverse la cible.\r\nQuatrième attaque : inflige des dégâts jusqu'à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et suspend la cible.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et renverse la cible.\r\n\r\nAprès avoir déclenché Vague-luciole, appuyez et maintenez Attaque normale pour déclencher <shuzhi>Rythme fantasmatique</>.\r\n\r\nEn état de combat, lorsque <shuzhi>Metz☆Badge du pacte</> est dans l'emplacement main libre, Metz reste sur le champ de bataille pour les attaques coordonnées. Metz est considéré comme une invocation, et chaque attaque inflige des dégâts équivalant à <shuzhi>{10}%</> de l'ATQ aux cibles proches. Le type de dégâts élémentaires infligés est celui de l'arme actuelle.\r\nQuand Résonance de bénédiction est active :\r\nEn état hors combat, la première attaque de Vague-luciole désigne <shuzhi>1</> coéquipier comme \"Pote\" et invoque jusqu'à <shuzhi>1</> Metz pour le suivre. Halo de Metz permet aux coéquipiers proches de récupérer un nombre de PV équivalant à <shuzhi>100%</> de l'ATQ de l'Explorateur chaque seconde et augmente leurs dégâts finaux de <shuzhi>5%</>. Effet non cumulable. Metz cesse de suivre le Pote lorsque l'Explorateur est mis à terre, ou lorsque Metz s'éloigne trop de l'Explorateur.",
 					"operations": [
 						"Attack",
 						"Attack",
@@ -13255,7 +13739,8 @@
 			"skill": [
 				{
 					"name": "Onde de choc de Metz-100000volts",
-					"description": "Après avoir utilisé Onde de choc Metz-100 000 volts, l'Explorateur entre en mode Amplification du pacte pendant <shuzhi>30</> secondes : lorsque <shuzhi>Badge du pacte de Metz ☆</> se trouve dans l'emplacement principal, les dégâts de foudre de l'Explorateur augmentent de <shuzhi>25%</>. Lorsque <shuzhi>Badge du pacte de Metz ☆</> se trouve dans l'emplacement main libre, les dégâts de givre de l'Explorateur augmentent de <shuzhi>10%</>. Temps de recharge : <shuzhi>30</> secondes.\r\n\r\nLorsque <shuzhi>des Résonances autres que Résonance de Bénédiction sont actives</> :\r\nInflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et leur inflige <shuzhi>Impact de force</>. Lorsque Onde de choc Metz-100 000 volts est en cours de rechargement, infliger des dégâts accumulés équivalant à <shuzhi>100</> fois l'ATQ pendant Amplification du pacte octroie <shuzhi>1</> utilisation de Vague d'énergie de Metz à chaque fois. Vague d'énergie de Metz : inflige des dégâts équivalant à <shuzhi>1 800%</> de l'ATQ aux cibles proches. Gagne jusqu'à <shuzhi>1</> utilisation toutes les <shuzhi>10</> secondes.\r\nRéutiliser Onde de choc Metz-100 000 volts pendant Amplification du pacte réinitialise la durée d'Amplification du pacte et des dégâts accumulés.\r\nLorsqu'Amplification du pacte prend naturellement fin, les Vagues d'énergie de Metz non utilisées sont accumulées et infligent des dégâts équivalant aux charges non utilisées multipliés par <shuzhi>1 200%</> de l'ATQ.\r\n\r\nLorsque <shuzhi>Résonance de bénédiction est active</> :\r\nL'utilisation de compétences inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et inflige <shuzhi>Impact de force</> aux cibles touchées. Restaure des PV équivalant à <shuzhi>400%</> de l'ATQ à l'Explorateur et aux coéquipiers proches, et récupère <shuzhi>10%</> des PV max du Pote supplémentaires. Supprime les altérations et les effets de contrôle de l'Explorateur et des coéquipiers proches (y compris Morsure grisâtre), et immunise contre les altérations et les effets de contrôle pendant <shuzhi>10</> secondes. Temps de recharge : <shuzhi>15</> secondes.",
+					"description": "Après avoir utilisé Onde de choc Metz-100 000 volts, l'Explorateur entre en mode Amplification du pacte pendant <shuzhi>30</> secondes : lorsque <shuzhi>Metz☆Badge du pacte</> se trouve dans l'emplacement principal, les dégâts de foudre de l'Explorateur augmentent de <shuzhi>25%</>. Lorsque <shuzhi>Metz☆Badge du pacte</> se trouve dans l'emplacement main libre, les dégâts de givre de l'Explorateur augmentent de <shuzhi>10%</>. Temps de recharge : <shuzhi>30</> secondes.\r\n\r\nLorsque <shuzhi>des Résonances autres que Résonance de Bénédiction sont actives</> :\r\nInflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et leur inflige <shuzhi>Impact de force</>. Lorsque Onde de choc Metz-100 000 volts est en cours de rechargement, infliger des dégâts accumulés équivalant à <shuzhi>100</> fois l'ATQ pendant Amplification du pacte octroie <shuzhi>1</> utilisation de Vague d'énergie de Metz à chaque fois. Vague d'énergie de Metz : inflige des dégâts équivalant à <shuzhi>1 800%</> de l'ATQ aux cibles proches. Gagne jusqu'à <shuzhi>1</> utilisation toutes les <shuzhi>10</> secondes.\r\nRéutiliser Onde de choc Metz-100 000 volts pendant Amplification du pacte réinitialise la durée d'Amplification du pacte et des dégâts accumulés.\r\nLorsqu'Amplification du pacte prend naturellement fin, les Vagues d'énergie de Metz non utilisées sont accumulées et infligent des dégâts équivalant aux charges non utilisées multipliés par <shuzhi>1 200%</> de l'ATQ.\r\n\r\nLorsque <shuzhi>Résonance de bénédiction est active</> :\r\nL'utilisation de compétences inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et inflige <shuzhi>Impact de force</> aux cibles touchées. Restaure des PV équivalant à <shuzhi>400%</> de l'ATQ à l'Explorateur et aux coéquipiers proches, et récupère <shuzhi>10%</> des PV max du Pote supplémentaires. Supprime les altérations et les effets de contrôle de l'Explorateur et des coéquipiers proches (y compris Morsure grisâtre), et immunise contre les altérations et les effets de contrôle pendant <shuzhi>10</> secondes. Temps de recharge : <shuzhi>15</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -13638,8 +14123,10 @@
 				{
 					"name": "Chargeur de braise",
 					"description": "Changez de modules pour changer les effets de Tir croisé de sniper et Arc du crépuscule. Tir croisé de sniper peut être utilisé jusqu'à <shuzhi>8</> fois. Temps de recharge de la compétence : <shuzhi>14</> secondes.\r\n<shuzhi>Bombe sans pitié</> : l'effet de Tir croisé de sniper devient une explosion de feu qui inflige des dégâts de base équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> dans la zone. Une fois l'arme chargée, inflige des dégâts équivalant au maximum à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>. Lorsque vous touchez des cibles qui ne sont pas affectées par l'effet de brûlure, vous leur infligez Brûlure croisée, qui inflige des dégâts équivalant à <shuzhi>90%</> de l'ATQ par seconde pendant <shuzhi>13</> secondes. Lorsque vous touchez des cibles qui sont affectées par l'effet de brûlure, vous leur infligez Brûlure croisée, et entrez en état de Renforcement de brûlure pendant <shuzhi>20</> secondes, ce qui augmente les dégâts de brûlure sur les cibles de <shuzhi>20%</>. En utilisant Arc du crépuscule, vous lancez désormais <shuzhi>3</> grenades à la place.\r\n<shuzhi>Bombe fourbe</> : change les effets de Tir croisé de sniper pour une attaque de gaz à distance qui inflige des dégâts de base équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> lorsque la cible est touchée. Une fois l'arme chargée, inflige jusqu'à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</>. Les cibles dans le nuage de gaz seront ralenties. Les effets de ralentissement augmentent au fil du temps, et le gaz dure <shuzhi>7</> secondes. Arc du crépuscule peut faire exploser le gaz (plus le temps de charge est long, plus les dégâts d'explosion de gaz seront importants), infligeant des dégâts d'explosion équivalant au maximum à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> (ceci est considéré comme ayant déclenché le Tir croisé de sniper 1 fois) et réduisant la résistance au feu de la cible de <shuzhi>10%</> pendant <shuzhi>10</> secondes.\r\n\r\n<shuzhi>Effet passif</> : après avoir confirmé le module, vous recevrez un Renforcement optique correspondant au nombre de récupérations de tentatives d'esquive et des réductions de temps de charge de Tir croisé de sniper. Renforcement optique : réduit le temps de charge de Tir croisé de sniper de <shuzhi>30%</> et octroie une immunité aux effets de contrôle lors de la charge. Restaure <shuzhi>1</> tentative d'esquive (jusqu'à <shuzhi>4</> tentatives d'esquive) toutes les <shuzhi>2</> esquives.\r\n<shuzhi>Effet passif</> : lorsque le module Bombe fourbe est actif, Tir croisé de sniper a une chance de réduire le temps de recharge des autres compétences d'arme de feu de <shuzhi>0,7</> seconde après avoir touché une cible.\r\n<shuzhi>Effet passif</> <shuzhi>Cœur serein</> : Quand Croix de trèfle utilise une décharge/compétence/attaque chargée/esquive, accroît le taux de crit final de Croix de trèfle de <shuzhi>5%</> pendant <shuzhi>15</> secondes. Cet effet peut se cumuler jusqu'à <shuzhi>3</> fois. Quand le taux de crit dépasse <shuzhi>100%</>, <shuzhi>50%</> du surplus du taux de crit est converti en dégâts critiques, jusqu'à un maximum de <shuzhi>7,5%</> de dégâts critiques.",
+					"operations": [],
 					"tags": [
-						"Damage"
+						"Damage",
+						"Ammo"
 					],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_snipe_skillstart.webp",
 					"id": "GA_FPlayerSnipeSkill_Skill"
@@ -14099,6 +14586,7 @@
 				{
 					"name": "Dans toutes les directions",
 					"description": "Se transforme en de multiples doubles d'encre et devient invincible pendant une courte durée, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. L'encre converge ensuite, attirant les ennemis à portée et libérant une attaque d'encre, infligeant des dégâts équivalant jusqu'à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>. Temps de recharge : <shuzhi>25</> secondes.\r\nDans toutes les directions rassemble les <shuzhi>caractères calligraphiques</> tombés lors du combat et utilise la transformation en oiseau de flammes, infligeant des dégâts équivalant à (le nombre d'invocations et de caractères calligraphiques sur le terrain, jusqu'à <shuzhi>8</>) fois <shuzhi>{4}%</> de l'ATQ aux cibles proches. L'Explorateur entre dans l'état <shuzhi>Pinacle</>, ignorant <shuzhi>{12}%</> de la résistance aux flammes de la cible pendant <shuzhi>30</> secondes.\r\nL'état <shuzhi>Pinacle</> offre différents effets en fonction du type et de la quantité de <shuzhi>caractères calligraphiques</> rassemblés par Dans toutes les directions :\r\nRassemblez <shuzhi>1</> caractère de décharge \"携\" pour une augmentation des dégâts de décharge de <shuzhi>{5}%</>. Rassemblez <shuzhi>2</> caractères de décharge \"携\" pour une augmentation des dégâts de fracture de <shuzhi>{6}%</>.\r\nRassemblez <shuzhi>1</> caractère de compétence \"技\" pour une augmentation des dégâts de compétence de <shuzhi>{7}%</>. Rassemblez <shuzhi>2</> caractères de compétence \"技\" pour réduire le temps de recharge de la compétence Dans toutes les directions, de <shuzhi>5</> secondes.\r\nRassemblez <shuzhi>1</> caractère d'esquive \"闪\" pour une augmentation des dégâts de l'attaque d'esquive de <shuzhi>{8}%</>. Rassemblez <shuzhi>2</> caractères d'esquive \"闪\" pour gagner <shuzhi>{9}</> tentatives d'esquive.\r\nRassemblez <shuzhi>1</> caractère d'attaque \"攻\" pour une augmentation des dégâts de l'attaque normale de <shuzhi>{10}%</>. Rassemblez <shuzhi>2</> caractères d'attaque \"攻\" pour réduire les dégâts infligés par les attaques normales de <shuzhi>{11}%</>.\r\n<shuzhi>Chaque</> caractère calligraphique rassemblé confère Hypercorps pendant <shuzhi>2</> secondes, jusqu'à un maximum de <shuzhi>16</>.\r\n\r\n<shuzhi>Effet passif : Caractères calligraphiques</>\r\nL'utilisation de l'attaque de décharge/de compétence/d'esquive ou l'attaque normale de n'importe quelle arme fait tomber les <shuzhi>caractères calligraphiques</> correspondants.\r\n<shuzhi>Décharge</> : lâche <shuzhi>1</> caractère de décharge \"携\" après avoir utilisé <shuzhi>1</> compétence de décharge, jusqu'à un maximum de <shuzhi>2</> caractères de décharge \"携\" simultanés au même endroit.\r\n<shuzhi>Compétence</> : lâche <shuzhi>1</> caractère de compétence \"技\" après avoir utilisé <shuzhi>1</> compétence, jusqu'à un maximum de <shuzhi>2</> caractères de compétence \"技\" simultanés au même endroit.\r\n<shuzhi>Esquive</> : lâche <shuzhi>1</> caractère d'esquive \"闪\" après avoir esquivé <shuzhi>2</> fois, jusqu'à un maximum de <shuzhi>2</> caractères d'esquive \"闪\" simultanés au même endroit.\r\n<shuzhi>Attaque</> : lâche <shuzhi>1</> caractère d'attaque \"攻\" après avoir utilisé <shuzhi>4</> attaques normales, jusqu'à un maximum de <shuzhi>2</> caractères d'attaque \"攻\" simultanés au même endroit.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support",
@@ -14501,6 +14989,7 @@
 				{
 					"name": "C'est l'heure de la magie",
 					"description": "Infliger des dégâts avec une arme de l'emplacement principal accumule des <shuzhi>points d'échauffement</>. Temps de recharge : <shuzhi>0,06</> seconde. Les armes physiques accumulent <shuzhi>1</> point à chaque coup et les armes non physiques accumulent <shuzhi>0,5</> point à chaque coup. Vos <shuzhi>points d'échauffement</> s'affichent dans la <shuzhi>jauge de magie</>, comptant <shuzhi>100</> points maximum. Vous gagnez immédiatement <shuzhi>100</> <shuzhi>points d'échauffement</> en rejoignant le combat.\r\nVous ne pouvez lancer une compétence qu'avec <shuzhi>100</> <shuzhi>points d'échauffement</> dans votre <shuzhi>jauge de magie</>. Rassemblez des ennemis dans une même zone et infligez des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à la cible. Devenez temporairement invincible (non disponible en Ligue ultime et dans l'Abîme critique) et réduisez la vitesse des cibles situées au sein de la zone (non disponible en Ligue ultime et dans l'Abîme critique). Activez <shuzhi>Tour de magie</> en même temps pour consommer des <shuzhi>points d'échauffement</> en continu pendant <shuzhi>18</> secondes. Temps de recharge : <shuzhi>30</> secondes. Ce temps de recharge n'est pas affecté par les effets (y compris la suppression, la réinitialisation ou la modification du temps de recharge) autres que ceux de Mobius. Pendant ce temps, le bouton de compétence est remplacé par un bouton Couper les cartes.\r\nPendant <shuzhi>Tour de magie</>, vous obtenez automatiquement une <shuzhi>carte de poker</> de <shuzhi>Pique</> ou de <shuzhi>Cœur</> toutes les 2 secondes. Vous pouvez changer les prochaines <shuzhi>cartes de poker</> avec le bouton Couper les cartes. Lorsqu'il y a <shuzhi>2</> <shuzhi>cartes de poker</>, la <shuzhi>magie de carte</> correspondante est automatiquement utilisée. Temps de recharge : <shuzhi>3,8</> secondes.\r\nSi vous bénéficiez d'Hypercorps pendant <shuzhi>Tour de magie</>, votre <shuzhi>jauge de magie</> ne sera plus alimentée automatiquement, car vous serez déjà protégé par un bouclier. Accroît les dégâts physiques des attaques de Mobius (attaques normales et attaques d'esquive) de <shuzhi>10%</> et la fracture de <shuzhi>20%</>.\r\nDifférentes combinaisons de <shuzhi>cartes de poker</> activent différentes <shuzhi>magies de carte</>.\r\nCœur + Pique → <ComLblGreen>Marionnette psychique</>\r\nCœur + Cœur → <ComLblGreen>Contradiction corrosive</>\r\nPique + Pique → <ComLblGreen>Tirage de cartes</>\r\n<shuzhi>Tour de magie</> prend fin lorsque vous équipez une autre arme ou à votre mort.\r\nVous gagnez Hypercorps pendant <shuzhi>20</> secondes à la fin de Tour de magie. S'il prend fin naturellement, vous infligez des dégâts supplémentaires aux cibles à proximité équivalant à <shuzhi>1 000%</> de l'ATQ.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -14511,6 +15000,7 @@
 				{
 					"name": "Marionnette psychique",
 					"description": "Fait sortir une colonie de chauves-souris de votre chapeau pour vous renforcer. Pendant <shuzhi>Tour de magie</>, les dégâts physiques infligés par Mobius augmentent de <shuzhi>7,5%</>, et seuls <shuzhi>60%</> des dégâts subis sont décomptés. Les <shuzhi>40%</> restants sont lentement déduits de vos PV pendant <shuzhi>10</> secondes après la fin de <shuzhi>Tour de magie</>. L'effet de décompte repoussé ne s'applique que lorsque Résonance de fortitude est inactif.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -14520,6 +15010,7 @@
 				{
 					"name": "Contradiction corrosive",
 					"description": "Restaure immédiatement <shuzhi>10%</> des PV max et plante une fleur corrosive sur un maximum de <shuzhi>7</> cibles dans un rayon déterminé, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ chaque seconde pendant <shuzhi>3</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -14530,6 +15021,7 @@
 				{
 					"name": "Tirage de cartes",
 					"description": "Invoque une nuée de cartes volantes et forme un ouragan frappant l'emplacement ciblé, attaquant la cible jusqu'à <shuzhi>12</> fois et infligeant des dégâts totaux équivalant à <shuzhi>{0}%</> de l'ATQ.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -14963,6 +15455,7 @@
 				{
 					"name": "Tourbillon",
 					"description": "Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et crée un Mirage fantastique, d'une durée maximale de <shuzhi>25</> secondes.\r\nLorsque Tourbillon est en cours de recharge, confère la nouvelle compétence Agilité. Agilité peut être utilisée lorsque le Mirage est actif depuis plus de <shuzhi>20</> secondes.\r\nQuand le Mirage disparaît, le temps de recharge de Tourbillon est réinitialisé immédiatement. Ceci n'est pas affecté par d'autres effets de réduction, de réinitialisation ou de modification du temps de recharge.\r\n\r\nPendant le Mirage :\r\nToutes les secondes, inflige des dégâts d'Usure d'âme équivalant à <shuzhi>{2}%</> de l'ATQ aux cibles dans le Mirage. Les dégâts d'Usure d'âme comptent comme des dégâts d'attaque normale.\r\nToutes les <shuzhi>5</> secondes, inflige Cœur flamboyant aux cibles dans le Mirage, leur infligeant des dégâts de brûlure équivalant à <shuzhi>{3}%</> de l'ATQ pendant <shuzhi>5</> secondes. Pour <shuzhi>chaque</> <shuzhi>Fantaisie de Fei Se</> ou <shuzhi>Pétale de lotus</> créé par l'Explorateur dans le Mirage, les dégâts de Cœur flamboyant sont accrus de <shuzhi>6%</> supplémentaires.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -14972,6 +15465,7 @@
 				{
 					"name": "Agilité",
 					"description": "Lorsque Tourbillon est en cours de recharge, confère la nouvelle compétence Agilité. Agilité peut être utilisée lorsque le Mirage est actif depuis plus de <shuzhi>20</> secondes.\r\nToutes les <shuzhi>Fantaisies de Fei Se</> et tous les <shuzhi>Pétales de lotus</> créés par l'Explorateur dans le Mirage sont dissipés. Pour <shuzhi>chaque</> <shuzhi>Fantaisie de Fei Se</> ou <shuzhi>Pétale de lotus</> dissipé, inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Ensuite, le Mirage fantastique se fracture, infligeant des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles proches.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -15384,6 +15878,7 @@
 				{
 					"name": "Superstar",
 					"description": "Invoque une conscience distincte de la cible, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à l'impact. Crée un Monde du chant à l'emplacement actuel de l'Explorateur qui dure <shuzhi>30</> secondes, dans lequel les dégâts subis par l'Explorateur sont réduits de <shuzhi>8%</> tout en ignorant <shuzhi>20%</> de la défense de la cible.\r\nLa conscience a un nombre de PV équivalant à <shuzhi>30</> fois les PV max de l'Explorateur. Elle ne subit que des dégâts non passifs de <shuzhi>Gleipnir</>, et <shuzhi>100%</> des dégâts sont transférés au corps principal de la cible (<shuzhi>1%</> pour les Explorateurs ennemis), tout en régénérant des PV équivalant à <shuzhi>50%</> de l'ATQ à l'Explorateur. Tant que la conscience est active, l'Explorateur subit <shuzhi>12%</> de dégâts en moins de la part du corps principal de la cible. La conscience existera pour une durée allant jusqu'à <shuzhi>15</> secondes.\r\nAprès le retour de la conscience au corps principal de la cible, inflige des dégâts de zone équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>.\r\nRappeler la conscience : la conscience revient au corps principal lorsqu'elle est vaincue, lorsque sa durée est arrivée à terme, lorsqu'une nouvelle conscience est invoquée ou lorsqu'elle s'éloigne trop du corps.\r\nTemps de recharge de Superstar : <shuzhi>30</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -15429,7 +15924,7 @@
 			}
 		],
 		"version": "2.3",
-		"limited": true,
+		"limited": false,
 		"id": "fenrir_thunder"
 	},
 	"umbrella_fire": {
@@ -15653,7 +16148,7 @@
 				"need": "umbrella_fire_plasm"
 			},
 			{
-				"description": "Accroît les dégâts infligés par Danse de flammes et Frappe vertigineuse de **50%**.\r\nLe multiplicateur pour les ombrelles tournoyant rapidement, Revers du phénix et Impact incandescent devient Ombrelles duveteuses + **2**.",
+				"description": "Accroît les dégâts infligés par Danse de flammes et Frappe vertigineuse de **50%**.\r\nLe multiplicateur pour les ombrelles tournoyantes, Revers du phénix et Impact incandescent devient Ombrelles duveteuses + **2**.",
 				"charge": 8,
 				"shatter": 14,
 				"multiplier": [
@@ -15769,6 +16264,7 @@
 				{
 					"name": "Glissade dévastatrice",
 					"description": "Volez jusqu'aux ombrelles dans l'ordre où elles sont apparues et revenez à votre position d'origine. Vous laissez derrière vous une traînée qui dure 5 secondes. Les cibles à proximité de celle-ci sont ralenties de <shuzhi>50%</>. Vous êtes immunisé aux dégâts pendant les vols planés (non disponible en Ligue ultime). Temps de recharge : <shuzhi>12</> secondes.\r\nChaque fois que l'Explorateur traverse une ombrelle, inflige des dégâts de zone équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et fait rapidement tournoyer l'ombrelle pendant <shuzhi>5</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -15779,6 +16275,7 @@
 				{
 					"name": "Ombrelle",
 					"description": "Lorsqu'une attaque d'esquive ou une attaque normale avec une arme touche une cible, fait apparaître <shuzhi>1</> ombrelle à proximité de celle-ci pendant <shuzhi>20</> secondes. Temps de recharge : <shuzhi>1,5</> seconde. Jusqu'à <shuzhi>3</> ombrelles peuvent être actives en même temps.\r\n<shuzhi>Impact incandescent</> : lors de l'utilisation de Glissade dévastatrice, pour chaque ombrelle traversée, inflige des dégâts supplémentaires équivalant à <shuzhi>64,8%</> de l'ATQ multiplié par Ombrelles duveteuses.\r\n<shuzhi>Corrosion</> : les cibles à proximité des ombrelles subissent <shuzhi>6%</> de dégâts de feu supplémentaires et <shuzhi>8%</> de dégâts d'attaque chargée supplémentaires.\r\n<shuzhi>Flammes éclatantes</> : les ombrelles infligent aux cibles à proximité des dégâts de brûlure équivalant à <shuzhi>105%</> de l'ATQ chaque seconde pendant <shuzhi>4</> secondes.\r\n<shuzhi>Vortex de feu</> : les ombrelles actives consomment <shuzhi>1</> plume chaque seconde et infligent des dégâts de zone équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> (les dégâts et le coût en plumes de toutes les ombrelles ne se cumulent pas).",
+					"operations": [],
 					"tags": [
 						"Support",
 						"Debuff"
@@ -15789,6 +16286,7 @@
 				{
 					"name": "Domaine vermillon",
 					"description": "Lors de l'utilisation de Glissade dévastatrice, traversez 3 ombrelles avant de revenir à votre position d'origine pour gagner Domaine vermillon, ce qui confère Hypercorps et <shuzhi>40%</> de réduction des dégâts pendant <shuzhi>8</> secondes.\r\nLorsque vous plongez, Domaine vermillon inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles dans la zone chaque seconde et accroît la vitesse de l'Explorateur de <shuzhi>30%</>.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Hyperbody"
@@ -15799,6 +16297,7 @@
 				{
 					"name": "Fortitude",
 					"description": "Après avoir activé Résonance de fortitude :\r\nUtiliser avec succès une compétence d'arme provoque les cibles à proximité pendant <shuzhi>2,5</> secondes.\r\nLors de l'utilisation de Glissade dévastatrice, Domaine vermillon s'étend, conférant <shuzhi>20%</> de réduction des dégâts aux membres du groupe à proximité.\r\nLors de l'utilisation de Cœur coulant, le compte à rebours de Domaine vermillon s'arrête.",
+					"operations": [],
 					"tags": [
 						"Control"
 					],
@@ -16204,6 +16703,7 @@
 				{
 					"name": "Jour de désolation",
 					"description": "Infligez des dégâts aux cibles proches à hauteur de <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et créez 2 Yo-yo fulgurants réguliers. Temps de recharge : <shuzhi>60</> secondes. Réduit la vitesse des cibles à portée de Jour de désolation de <shuzhi>50%</> (n'affecte pas les Explorateurs ni les boss).\r\nChaque Yo-yo fulgurant passe à travers le centre de la trajectoire environ 4 fois par cycle, infligeant des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles dans la trajectoire pendant <shuzhi>70</> secondes. Le cycle dure 4 secondes lorsque l'arme est à 0 étoiles. Durant cette période, utiliser Jour de désolation réinitialise la position et la durée du Yo-yo fulgurant. Temps de recharge : <shuzhi>4</> secondes.\r\nLorsque Jour de désolation est en cours d'utilisation, réduit les dégâts subis de <shuzhi>50%</> et régénère <shuzhi>5%</> des PV max. Ignore les effets de soins améliorés. La récupération et la réduction des dégâts ne seront pas appliquées dans la Ligue ultime.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -16213,6 +16713,7 @@
 				{
 					"name": "Retour à la solitude",
 					"description": "Utilisez Savoir limité pour obtenir jusqu'à <shuzhi>2</> utilisations de la nouvelle compétence Retour à la solitude. Cette compétence peut uniquement être utilisée lorsque Jour de désolation est en cours de recharge. Inflige des dégâts de compétence équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Lorsque la compétence est en cours d'utilisation, réduit les dégâts subis de <shuzhi>50%</> et régénère <shuzhi>5%</> des PV max. Ignore les effets d'amélioration de soins prodigués et de soins reçus. La récupération et la réduction des dégâts ne seront pas appliquées dans la Ligue ultime.\r\nTant que Résonance de fortitude est actif : Utilisez Retour à la solitude et provoquez les cibles proches pour obtenir <shuzhi>1</> cumul de bouclier de blocage, jusqu'à <shuzhi>3</> cumuls, pendant <shuzhi>20</> secondes. <shuzhi>Les points de blocage</> équivalent à la <shuzhi>somme des 5 types de résistance de l'utilisateur</>. Lorsque le bouclier expire ou qu'il atteint son maximum, inflige des dégâts équivalant à <shuzhi>200% des points de blocage</> à la cible principale.\r\nTant que Résonance de bénédiction est actif : Utiliser Retour à la solitude sur les cibles dont les PV sont supérieurs à <shuzhi>95%</> inflige des dégâts équivalant à <shuzhi>8%</> de leurs PV max respectifs (n'affecte pas les Explorateurs). Ignore les effets de bonus et de réduction des dégâts.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -16634,6 +17135,7 @@
 				{
 					"name": "Attaque et défense",
 					"description": "<shuzhi>Unité</> a deux formes uniques : <shuzhi>Artiste martial</> et <shuzhi>Force de balayage</>. Activez <shuzhi>l'une</> d'entre elles via la page Compétences - Paramètres. Elles ne peuvent pas être changées en état de combat.\r\n\r\nForme <shuzhi>Artiste martial</> : en état de combat, le multiplicateur d'attaque d'esquive/attaque normale d'<shuzhi>Unité</> augmente de <shuzhi>40%</> supplémentaires. Après avoir utilisé l'attaque d'esquive ou l'attaque normale d'une arme <shuzhi>3</> fois, vous recevez <shuzhi>1</> <shuzhi>Force intérieure</> (jusqu'à <shuzhi>10</>). Vous pouvez obtenir un maximum d'<shuzhi>1</> <shuzhi>Force intérieure</> toutes les <shuzhi>2</> secondes. Hors de l'état de combat, le total de <shuzhi>Force intérieure</> est retiré.\r\nForme <shuzhi>Force de balayage</> : quand <shuzhi>Observation et action</> touche une cible, entre en état de <shuzhi>Prévoyance</> et reçoit <shuzhi>1</> <shuzhi>Esprit combatif</> toutes les <shuzhi>0,8</> seconde (jusqu'à <shuzhi>15</>) pendant <shuzhi>60</> secondes. Hors de l'état de combat, le total d'<shuzhi>Esprit combatif</> est retiré.\r\n<shuzhi>Effet passif : Frisson</>\r\nQuand <shuzhi>Unité</> est équipée, ignore <shuzhi>15%</> de la résistance au givre des cibles. Cet effet fonctionne également dans l'emplacement main libre.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -16643,6 +17145,7 @@
 				{
 					"name": "Feu aux poudres",
 					"description": "Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à la cible. Temps de recharge : <shuzhi>15</> secondes.\r\nQuand Feu aux poudres est utilisé, <shuzhi>Unité</> consomme jusqu'à <shuzhi>5</> <shuzhi>Forces intérieures</>. En consommant <shuzhi>1</>/<shuzhi>2</>/<shuzhi>3</>/<shuzhi>4</>/<shuzhi>5</> <shuzhi>Forces intérieures</>, Feu aux poudres infligera respectivement <shuzhi>1,1</>/<shuzhi>1,4</>/<shuzhi>1,8</>/<shuzhi>2,3</>/<shuzhi>3</> fois ses dégâts d'origine.\r\nAprès avoir utilisé Feu aux poudres, accroît les dégâts de givre de <shuzhi>12%</> pendant <shuzhi>30</> secondes.\r\nAprès avoir utilisé Feu aux poudres, restaure <shuzhi>2</> tentatives d'esquive.\r\n\r\nFeu aux poudres ne peut être utilisé que sous la forme <shuzhi>Artiste martial</>.\r\nQuand le total de <shuzhi>Force intérieure</> atteint <shuzhi>5</>, le temps de recharge de Feu aux poudres est réinitialisé.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -16652,6 +17155,7 @@
 				{
 					"name": "Fracas de la guerre",
 					"description": "Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à la cible. Temps de recharge : <shuzhi>15</> secondes.\r\nEn état de <shuzhi>Prévoyance</>, quand vous utilisez une compétence d'arme, <shuzhi>Unité</> consomme jusqu'à <shuzhi>5</> d'<shuzhi>Esprit combatif</>. En consommant <shuzhi>1</>/<shuzhi>2</>/<shuzhi>3</>/<shuzhi>4</>/<shuzhi>5</> <shuzhi>d'Esprit combatif</>, inflige aux cibles proches des dégâts supplémentaires équivalant à <shuzhi>169%</>/<shuzhi>368%</>/<shuzhi>619%</>/<shuzhi>938%</>/<shuzhi>1 350%</> de l'ATQ et inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> chaque seconde pendant <shuzhi>5</> secondes.\r\nAprès avoir utilisé une compétence d'arme de givre, gagne Hypercorps pendant <shuzhi>2</> secondes.\r\n\r\nFracas de la guerre ne peut être utilisé que sous la forme <shuzhi>Force de balayage</>.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -17069,6 +17573,7 @@
 				{
 					"name": "Ravin absolu",
 					"description": "Fend le sol vers l'avant, confère une invincibilité temporaire (non disponible en Ligue ultime) et attire les cibles proches, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Temps de recharge : <shuzhi>20</> secondes. Accroît les dégâts physiques et de feu de l'Explorateur de <shuzhi>26%</> pendant <shuzhi>30</> secondes et invoque le Totem de Xuanwu. Le Totem de Xuanwu disparaît en état hors combat.\r\nLe Totem de Xuanwu invoque des âmes sombres depuis les quatre noyaux de formation toutes les <shuzhi>0,6</> seconde, infligeant chaque fois des dégâts équivalant à <shuzhi>30%</> de l'ATQ aux cibles sur leurs chemins. Lorsque Ravin absolu est en cours de recharge, confère la nouvelle compétence <shuzhi>Reflet du miroir</> : repousse les âmes sombres proches et active les noyaux de formation correspondants. Après l'activation d'un noyau de formation, le Totem de Xuanwu sera achevé et vous pourrez pénétrer dans le <shuzhi>Royaume altruiste</>.\r\n\r\nTant que le Totem de Xuanwu est actif, utilisez <shuzhi>Tortue d'onyx</> pour gagner Hypercorps et des morsures de serpent pourront être appliquées comme suit :\r\nLorsque <shuzhi>Ravin absolu</> touche sa cible, applique une morsure de serpent à la cible ayant les PV les plus élevés.\r\nLorsque la cinquième attaque de <shuzhi>Résistance</> touche sa dernière cible, applique une morsure de serpent à la cible verrouillée.\r\nLorsqu'<shuzhi>Éclaircie</> touche sa cible, applique une morsure de serpent à la cible verrouillée.\r\nLorsque <shuzhi>Sables tranchants</> touche sa cible, applique une morsure de serpent à la cible verrouillée.\r\nLa morsure de serpent inflige des dégâts dévorants équivalant à <shuzhi>150%</> de l'ATQ à la cible, restaure <shuzhi>12%</> des PV max de l'Explorateur et transforme la cible en membre de la Chaîne serpentine.\r\n\r\nChaîne serpentine peut causer <shuzhi>30%</> des dégâts réels infligés par l'arme dans l'emplacement principal de l'Explorateur au membre de la Chaîne serpentine verrouillé et des <shuzhi>blessures graves</> en conduction à tous les membres de la Chaîne serpentine (y compris la cible verrouillée). La Chaîne serpentine peut contenir jusqu'à <shuzhi>4</> membres.\r\nLe type d'élément des dégâts de conduction correspond aux dégâts d'origine et ne peut pas être conduit à nouveau. Les dégâts de conduction totaux dans les <shuzhi>30 secondes</> ne peuvent pas dépasser <shuzhi>2400</> fois l'ATQ maximale de l'Explorateur (illimité en jeu en équipe). Les dégâts de <shuzhi>Taillades obscures</> ne peuvent pas être conduits.\r\nAprès l'utilisation de <shuzhi>Ravin absolu</>, l'Explorateur peut aussi déclencher <shuzhi>Vent puissant</> : les membres de la Chaîne serpentine infligent des dégâts dévorants équivalant à <shuzhi>25%</> de l'ATQ aux cibles proches (y compris la cible elle-même) et réinitialisent le compteur de dégâts dévorants.",
+					"operations": [],
 					"tags": [
 						"Damage"
 					],
@@ -17501,6 +18006,7 @@
 				{
 					"name": "Chutes percutantes",
 					"description": "Éruption marémotrice : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et <shuzhi>suspend longuement</> les cibles dans la zone. Temps de recharge : <shuzhi>30</> secondes.\r\n<shuzhi>Effet passif : Dispersion</>\r\nVous recevez Technique de dispersion après avoir équipé <shuzhi>Bracelet lunétoile</>. Vous pouvez activer jusqu'à <shuzhi>2</> Techniques de dispersion sur <shuzhi>6</> dans Compétences - Paramètres.\r\nCommandes : appuyez sur le bouton de compétence spéciale pour utiliser la technique de Dispersion.\r\nLorsque Technique de dispersion est associée à Chutes percutantes, utiliser Chutes percutantes la déclenche automatiquement, et le temps de recharge de la compétence est remplacé par celui de Technique de dispersion.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -17511,6 +18017,7 @@
 				{
 					"name": "Hydroconcentration",
 					"description": "Marée montante : inflige des dégâts jusqu'à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches et accroît tous les dégâts élémentaires de <shuzhi>6%</> pendant <shuzhi>20</> secondes.\r\nTemps de recharge : <shuzhi>14</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Support"
@@ -17521,6 +18028,7 @@
 				{
 					"name": "Vortex",
 					"description": "Invoque des jets d'eau qui rassemblent les cibles proches et infligent des dégâts équivalant au maximum à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. Un grand jet se forme peu après, infligeant des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles proches.\r\nLes dégâts infligés par <shuzhi>Vortex</> comptent comme des dégâts de compétence et de décharge.\r\nTemps de recharge : <shuzhi>12</> secondes.",
+					"operations": [],
 					"tags": [
 						"Damage",
 						"Control"
@@ -17531,6 +18039,7 @@
 				{
 					"name": "Force torrentielle",
 					"description": "Bain torrentiel : confère <shuzhi>60</> points de recharge d'arme chaque seconde. Accroît les dégâts de la compétence de <shuzhi>12%</> pendant <shuzhi>35</> secondes.\r\nToute utilisation de <shuzhi>Force torrentielle</> compte comme une utilisation de la compétence de décharge de l'arme actuelle (sans ses effets).\r\n<shuzhi>Rayonnement scintillant</> réinitialise le temps de recharge de <shuzhi>Force torrentielle</> à l'impact.\r\nTemps de recharge : <shuzhi>30</> secondes.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -17540,6 +18049,7 @@
 				{
 					"name": "Maelström",
 					"description": "Vagues enveloppantes : confère un bonus de dégâts finaux qui augmente au fil du temps, jusqu'à <shuzhi>26%</> (maximum atteint au bout de <shuzhi>10</> secondes). Cet effet ne se cumule pas en réutilisant <shuzhi>Maelström</> et disparaît quand vous changez d'arme.\r\nTemps de recharge : <shuzhi>30</> secondes.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],
@@ -17549,6 +18059,7 @@
 				{
 					"name": "Chaînes aquatiques",
 					"description": "Exécutez Prison aquatique sur la cible pendant <shuzhi>3</> secondes. La cible ne peut ni se déplacer ni utiliser de compétences pendant la durée de Prison aquatique, et sa résistance est réduite de <shuzhi>8%</> pendant <shuzhi>15</> secondes (ne fonctionne pas contre les Explorateurs).\r\nL'effet de réduction de la résistance de <shuzhi>Chaînes aquatiques</> est doublé pendant que vous plongez.\r\nTemps de recharge : <shuzhi>15</> secondes.",
+					"operations": [],
 					"tags": [
 						"Control",
 						"Support"
@@ -17559,6 +18070,7 @@
 				{
 					"name": "Source",
 					"description": "Vitalité arcanique : confère un bonus de dégâts élémentaires équivalant à (<shuzhi>PV max</>/<shuzhi>100 000</>)%, jusqu'à <shuzhi>9%</>. Confère <shuzhi>7%</> d'augmentation supplémentaire de tous les dégâts élémentaires pendant <shuzhi>20</> secondes lorsque vos PV max sont supérieurs à <shuzhi>1 600 000</>.\r\nTemps de recharge : <shuzhi>15</> secondes.",
+					"operations": [],
 					"tags": [
 						"Support"
 					],

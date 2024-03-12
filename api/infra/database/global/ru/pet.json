@@ -1599,5 +1599,54 @@
 			}
 		],
 		"id": "FightPet_10"
+	},
+	"FightPet_11": {
+		"name": "Пен-Пен",
+		"description": "Это питомец, живущий в персональном холодильнике в квартире Мисато Кацураги. Он любит горячие ванны и умеет ловко нажимать кнопки кончиками крыльев. Помимо сна и ванн, он усвоил даже настолько человеческую привычку, как чтение газет. Когда Синдзи с командой переехал в «Звездные апартаменты» в Миррории, он удивительным образом попал в холодильник и там.",
+		"PetElementType": "Ice",
+		"PetPropertyType": "Attack",
+		"PetRarity": 5,
+		"assets": {
+			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_011.webp",
+			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_011.webp",
+			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_11.webp"
+		},
+		"skills": [
+			{
+				"name": "Задымление",
+				"description": "Пен-Пен разгоняет двигатель, бросается к врагу и создает дымовую завесу. Он наносит урон в размере **351% / 526% / 526%** от АТК каждую секунду попавшим в дымовую завесу врагам и замедляет их.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act01.webp"
+			},
+			{
+				"name": "Батарея пива",
+				"description": "Пен-Пен бросает вперед батарею из пивных банок. Каждая банка при взрыве наносит ближайшим врагам урон в размере **412% / 412% / 618%** от АТК.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act02.webp"
+			},
+			{
+				"name": "Вдохновение Пен-Пена",
+				"description": "Пен-Пен мягко помахивает крыльями, вдохновляя странника, за которым следует. Вдохновленный странник восстанавливает здоровье в размере **220% / 220% / 220%** от АТК.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act03.webp"
+			}
+		],
+		"properties": "Перенимает **4%** от среднего значения базовых параметров атаки хозяина: огня, холода, электричества и физической атаки.\r\n**1** ячейка модуля и **5** ед. нагрузки.",
+		"advancements": [
+			"Преемственность АТК увеличивается до **6%**.\r\nУрон от каждой выпущенной дымовой завесы увеличивается до **526%**.\r\n**2** ячейки модуля и **8**ед. нагрузки.",
+			"Преемственность АТК увеличивается до **8%**.\r\nУрон от каждой пивной банки увеличивается до **618%**.\r\n**2** ячейки модуля и **8**ед. нагрузки.",
+			"Преемственность АТК увеличивается до **10%**.\r\nСпособность к лечению от рева увеличивается до **330%**.\r\n**4** ячейки модуля и **15**ед. нагрузки."
+		],
+		"PetUpgradeItemMap": [
+			{
+				"material": {
+					"name": "Модуль контроля питомца",
+					"description": "Модуль контроля для улучшения реактивного ранца. Его система управления удобнее для Пен-Пена.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/penpen_harvest.webp",
+					"type": "GIFT",
+					"id": "PENPEN_Harvest"
+				},
+				"exp": 60
+			}
+		],
+		"id": "FightPet_11"
 	}
 }

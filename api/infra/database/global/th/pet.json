@@ -1599,5 +1599,54 @@
 			}
 		],
 		"id": "FightPet_10"
+	},
+	"FightPet_11": {
+		"name": "Пен-Пен",
+		"description": "สัตว์เลี้ยงของคัตซึรางิ มิซาโตะ ปกติจะอาศัยอยู่ในตู้แช่แข็งพิเศษในอพาร์ตเมนต์ของเธอ มันชอบอาบน้ำร้อน และยังสามารถกดปุ่มได้ด้วยปลายปีกของตัวเอง ไม่เพียงแค่นอนหลับและอาบน้ำได้เหมือนคน แต่ยังอ่านหนังสือพิมพ์ได้อีกด้วย เมื่อชินจิและคนอื่น ๆ เข้ามาพักที่อพาร์ตเมนต์ทะเลดาวในมิเรอเรีย พวกเขาก็พบว่ามันปรากฏตัวอยู่ในตู้เย็นของอพาร์ตเมนต์ด้วย",
+		"PetElementType": "Ice",
+		"PetPropertyType": "Attack",
+		"PetRarity": 5,
+		"assets": {
+			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_011.webp",
+			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_011.webp",
+			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_11.webp"
+		},
+		"skills": [
+			{
+				"name": "ม่านควันพุ่งปะทะ",
+				"description": "PENPEN ใช้พลังของตัวขับเคลื่อนพุ่งเข้าหาศัตรู หลังจากนั้นจะหยุดอยู่ข้างศัตรูและปล่อยหมอกควันออกมา ศัตรูที่อยู่ในหมอกควันจะได้รับดาเมจ **351% / 526% / 526%** ของ ATK ทุกวินาที และเชื่องช้าลง",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act01.webp"
+			},
+			{
+				"name": "ระเบิดกระป๋องเบียร์",
+				"description": "PENPEN จะโยนกระป๋องเบียร์จำนวนมากไปด้านหน้าแบบสุ่ม ทุกครั้งที่กระป๋องเบียร์ระเบิด จะสร้างดาเมจให้แก่ศัตรูที่อยู่รอบ ๆ เท่ากับ **412% / 412% / 618%** ของ ATK",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act02.webp"
+			},
+			{
+				"name": "กำลังใจจาก PENPEN",
+				"description": "PENPEN กระพือปีกเบา ๆ แล้วให้กำลังใจนักพเนจรที่ตามมา นักพเนจรที่ได้รับกำลังใจจะฟื้นฟูค่า HP **220% / 220% / 220%** ของ ATK",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act03.webp"
+			}
+		],
+		"properties": "สืบทอด **4%** ของค่าโจมตีพื้นฐานของธาตุไฟ, น้ำแข็ง, ไฟฟ้า และกายภาพโดยเฉลี่ยของเจ้านาย\r\nมีช่องโมดูล **1** ช่อง ซึ่งมีค่าโหลด **5** แต้ม",
+		"advancements": [
+			"ค่าสืบทอดการโจมตีเพิ่มขึ้นเป็น **6%**\r\nดาเมจของการพ่นควันแต่ละครั้งเพิ่มขึ้นถึง **526%**\r\nมีช่องโมดูล **2** ช่อง ซึ่งมีค่าโหลด **8** แต้ม",
+			"ค่าสืบทอดการโจมตีเพิ่มขึ้นเป็น **8%**\r\nดาเมจของกระป๋องเบียร์แต่ละครั้งเพิ่มขึ้นถึง **618%**\r\nมีช่องโมดูล **2** ช่อง ซึ่งมีค่าโหลด **8** แต้ม",
+			"ค่าสืบทอดการโจมตีเพิ่มขึ้นเป็น **10%**\r\nความสามารถในการรักษาของการร้องเสียงรักษาเพิ่มขึ้นถึง **330%**\r\nมีช่องโมดูล **4** ช่อง ซึ่งมีค่าโหลด **15** แต้ม"
+		],
+		"PetUpgradeItemMap": [
+			{
+				"material": {
+					"name": "โมดูลควบคุมสัตว์เลี้ยง",
+					"description": "ใช้อัปเกรดโมดูลควบคุมเจ็ตแพ็กที่อยู่ด้านหลังของ PENPEN ระบบควบคุมจะเหมาะสมกับ PENPEN มากขึ้น",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/penpen_harvest.webp",
+					"type": "GIFT",
+					"id": "PENPEN_Harvest"
+				},
+				"exp": 60
+			}
+		],
+		"id": "FightPet_11"
 	}
 }
