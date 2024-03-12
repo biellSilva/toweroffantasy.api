@@ -74,10 +74,10 @@ class MatricesRepo(ModelRepository[EntityBase, Matrix]):
                 rarity=matrice_dict.get("rarity", ""), sets=matrice_dict.pop("set")
             )
 
-            for i in self.LINK_DATA:
-                if isinstance(self.LINK_DATA.get(i, {}).get("matrice", None), str):
-                    if self.LINK_DATA[i]["matrice"].lower() == matrice_id.lower():  # type: ignore
-                        matrice_dict["simulacrumId"] = i
+            for data_key, data_value in self.LINK_DATA.items():
+                if matrice_link := data_value.get("matrice", None):
+                    if matrice_link.lower() == matrice_id.lower():
+                        matrice_dict["simulacrumId"] = data_key
 
             if version == "global":
                 matrice_dict["Banners"] = [
