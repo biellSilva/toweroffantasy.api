@@ -2,7 +2,7 @@
 
 ## How to run
 
-> [!TIP]
+> [!WARNING]
 > Python version required: **3.12+**
 
 ### Steps
