@@ -1,3 +1,4 @@
+from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.banner import Banner
 from src.domain.usecases.banners.find import FindBannersParams, IFindBannersUseCase
@@ -11,14 +12,19 @@ class FindBannersUseCase(IFindBannersUseCase):
     async def execute(self, params: FindBannersParams) -> list[Banner]:
         if params.version == "global":
             if not params.id:
-                return await self.repository.get_all(
+                models = await self.repository.get_all(
                     **params.model_dump(exclude={"version", "id"})
                 )
-            return await self.repository.find_by_id(
-                **params.model_dump(exclude={"version"})
-            )
+
+            else:
+                models = await self.repository.find_by_id(
+                    **params.model_dump(exclude={"version"})
+                )
+
         elif params.version == "china":
             raise NotImplementedErr
 
         else:
             raise VersionNotFoundErr
+
+        return filter_models(models, params.filter)

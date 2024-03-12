@@ -1,3 +1,4 @@
+from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.simulacra_v2 import SimulacraV2
 from src.domain.usecases.simulacra_v2.get_all import (
@@ -13,11 +14,12 @@ class GetAllSimulacraV2UseCase(IGetAllSimulacraV2UseCase):
 
     async def execute(self, params: GetAllSimulacraV2Params) -> list[SimulacraV2]:
         if params.version == "global":
-            return await self.repository.get_all(
-                **params.model_dump(exclude={"version"})
-            )
+            models = await self.repository.get_all(**params.model_dump())
+
         elif params.version == "china":
             raise NotImplementedErr
 
         else:
             raise VersionNotFoundErr
+
+        return filter_models(models, params.filter)

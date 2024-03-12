@@ -1,3 +1,4 @@
+from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.food import Food
 from src.domain.usecases.food.get_all import GetAllFoodParams, IGetAllFoodUseCase
@@ -10,11 +11,12 @@ class GetAllFoodUseCase(IGetAllFoodUseCase):
 
     async def execute(self, params: GetAllFoodParams) -> list[Food]:
         if params.version == "global":
-            return await self.repository.get_all(
-                **params.model_dump(exclude={"version"})
-            )
+            models = await self.repository.get_all(**params.model_dump())
+
         elif params.version == "china":
             raise NotImplementedErr
 
         else:
             raise VersionNotFoundErr
+
+        return filter_models(models, params.filter)

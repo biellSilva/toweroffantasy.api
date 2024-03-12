@@ -1,3 +1,4 @@
+from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.matrices import Matrix
 from src.domain.usecases.matrices.get_all import (
@@ -13,11 +14,12 @@ class GetAllMatricesUseCase(IGetAllMatricesUseCase):
 
     async def execute(self, params: GetAllMatricesParams) -> list[Matrix]:
         if params.version == "global":
-            return await self.repository.get_all(
-                **params.model_dump(exclude={"version"})
-            )
+            models = await self.repository.get_all(**params.model_dump())
+
         elif params.version == "china":
             raise NotImplementedErr
 
         else:
             raise VersionNotFoundErr
+
+        return filter_models(models, params.filter)

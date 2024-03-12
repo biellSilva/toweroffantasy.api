@@ -1,3 +1,4 @@
+import json
 from typing import Any
 
 from src.domain.models.simulacra import Simulacra
@@ -12,8 +13,10 @@ class GetallSimulacraController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en"
+        self, version: str = "global", lang: str = "en", filter: str = ""
     ) -> list[Simulacra] | list[dict[str, Any]]:
         return await self.usecase.execute(
-            GetallSimulacraParams(version=version, lang=lang)
+            GetallSimulacraParams(
+                version=version, lang=lang, filter=json.loads(filter) if filter else {}
+            )
         )

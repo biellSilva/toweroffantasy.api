@@ -1,3 +1,5 @@
+import json
+
 from src.domain.models.matrices import Matrix
 from src.domain.usecases.matrices.get_all import (
     GetAllMatricesParams,
@@ -9,7 +11,11 @@ class GetAllMatricesController:
     def __init__(self, usecase: IGetAllMatricesUseCase):
         self.usecase = usecase
 
-    async def handle(self, version: str = "global", lang: str = "en") -> list[Matrix]:
+    async def handle(
+        self, version: str = "global", lang: str = "en", filter: str = ""
+    ) -> list[Matrix]:
         return await self.usecase.execute(
-            GetAllMatricesParams(version=version, lang=lang)
+            GetAllMatricesParams(
+                version=version, lang=lang, filter=json.loads(filter) if filter else {}
+            )
         )
