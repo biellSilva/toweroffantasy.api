@@ -24,7 +24,9 @@ class FoodGlobalRepository:
         await self.load_data(lang=lang)
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[Food]:
+    async def get_all(
+        self, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
+    ) -> list[Food]:
 
         if cached_lang := self.__cache.get(lang):
             return list(cached_lang.values())

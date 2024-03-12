@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from typing import Any
 
 from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.simulacra import Simulacra
@@ -32,7 +33,9 @@ class SimulacraGlobalRepository:
         await self.load_data(lang=lang)
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[Simulacra]:
+    async def get_all(
+        self, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
+    ) -> list[Simulacra]:
         if cached_lang := self.__cache.get(lang):
             return list(cached_lang.values())
 
@@ -61,9 +64,6 @@ class SimulacraGlobalRepository:
 
             if banner_data := await self.__BANNERS_REPO.find_by_id(id=key_id):
                 value_dict["banners"] = banner_data
-
-            print(key_id)
-            print(value_dict.get("banner"))
 
             self.__cache[lang].update(
                 {key_id.lower(): Simulacra(**value_dict)}  # type: ignore

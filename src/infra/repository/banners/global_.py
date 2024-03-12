@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from typing import Any
 
 from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.banner import Banner
@@ -28,7 +29,7 @@ class BannersGlobalRepository:
             or (banner.matrixId and banner.matrixId.lower() == id.lower())
         ]
 
-    async def get_all(self) -> list[Banner]:
+    async def get_all(self, *args: Any, **kwargs: Any) -> list[Banner]:
         if not self.__cache:
             await self.load_data()
 

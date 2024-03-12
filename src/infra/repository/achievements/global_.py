@@ -26,7 +26,9 @@ class AchievementsGlobalRepository:
 
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[Achievement]:
+    async def get_all(
+        self, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
+    ) -> list[Achievement]:
 
         if cached_lang := self.__cache.get(lang):
             return list(cached_lang.values())

@@ -23,7 +23,9 @@ class OutfitsGlobalRepository:
         await self.load_data(lang=lang)
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[Outfit]:
+    async def get_all(
+        self, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
+    ) -> list[Outfit]:
         if lang_cache := self.__cache.get(lang):
             return list(lang_cache.values())
 

@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from typing import Any
 
 from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.matrices import Matrix
@@ -39,7 +40,9 @@ class MatricesGlobalRepository:
         await self.load_data(lang=lang)
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[Matrix]:
+    async def get_all(
+        self, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
+    ) -> list[Matrix]:
 
         if lang_cache := self.__cache.get(lang):
             return list(lang_cache.values())

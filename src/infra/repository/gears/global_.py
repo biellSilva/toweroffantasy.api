@@ -30,7 +30,9 @@ class GearsGlobalRepository:
         await self.load_data(lang=lang)
         return await self.get_all(lang=lang)
 
-    async def load_data(self, lang: LANGS_GLOBAL_ENUM) -> None:
+    async def load_data(
+        self, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
+    ) -> None:
 
         if lang not in self.__cache or len(self.__cache[lang]) != len(lang):
             self.__cache.update({lang: {}})
