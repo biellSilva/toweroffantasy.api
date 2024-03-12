@@ -8294,9 +8294,7 @@
 					"name": "俯冲协议",
 					"description": "滞空时长按闪避，可触发俯冲协议，落地造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
 					"operations": [
-						"Jump",
-						"Dash",
-						"Hold Attack"
+						"Jump"
 					],
 					"tags": [
 						"Damage"
@@ -8355,7 +8353,11 @@
 				{
 					"name": "空中协议",
 					"description": "当拓荒者滞空时，也可使用闪避攻击。\r\n每释放<shuzhi>2</>次<shuzhi>EP-7000天火</>任意闪避攻击后，帕帕会出现释放闪避攻击，并根据帕帕心情造成闪避攻击的<shuzhi>50%-100%</>比例伤害。\r\n每释放<shuzhi>2</>次<shuzhi>EP-7000天火</>任意闪避攻击，或<shuzhi>帕帕出场</>状态下每释放<shuzhi>1</>次<shuzhi>EP-7000天火</>任意闪避攻击后，<shuzhi>镜中你我</>的冷却时间减少<shuzhi>10</>秒，每次技能冷却期间至多可触发<shuzhi>1</>次。",
-					"operations": [],
+					"operations": [
+						"Jump",
+						"Dash",
+						"Attack"
+					],
 					"tags": [
 						"Damage"
 					],
@@ -12366,8 +12368,7 @@
 					"name": "潜态构形",
 					"description": "长按前闪避可进入潜态构形并持续消耗耐力，移动速度提升<shuzhi>50%</>，若处于滞寒场域内，则移动速度额外提升<shuzhi>50%</>，离开该状态时对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害并冰冻目标<shuzhi>2</>秒。",
 					"operations": [
-						"Dash",
-						"Hold Attack"
+						"Movement"
 					],
 					"tags": [
 						"Control"
@@ -12849,6 +12850,419 @@
 		"limited": true,
 		"id": "killknife_physic"
 	},
+	"lances_ice": {
+		"name": "坏家伙",
+		"description": "将恶意的暗堕精神力封印于骑枪，骑士自此成为真正的「骑士」。然后……骑士牵起少女的手，两人一同迈向拥有无限可能性的明天。",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_yanuo.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_yanuo.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/yanuo.webp"
+		},
+		"rarity": 5,
+		"element": "Ice",
+		"type": "Lances",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Lances_Ice_ssr_star",
+		"avatar": "imitation_54",
+		"mats": {
+			"Item_Mine_ice": 39,
+			"Item_Mine_ice_02": 65,
+			"Item_breakthrough_B2": 65,
+			"Item_breakthrough_D2": 65,
+			"Item_Mine_ice_03": 32,
+			"Item_breakthrough_B3": 32,
+			"Item_breakthrough_D3": 32,
+			"Item_breakthrough_B1": 35,
+			"Item_breakthrough_D1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "攻击",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "生命",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "暴击",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。**:"
+			},
+			{
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。**:"
+			},
+			{
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。**:"
+			},
+			{
+				"title": "**寒袭-驻场**：**坏家伙**任意攻击命中时，对附近目标造成**205%***冰攻+**2.9%***自身最大生命值+**106%***各元素抗性之和+**3.9%***暴击值点伤害，每**1.5**秒至多触发一次，寒袭伤害视为普攻伤害，若装备任意**1**把物理/火焰武器，则寒袭伤害提升至**1.3**倍。此外，寒袭伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+			}
+		],
+		"elementEffects": {
+			"title": "**寒冰**:",
+			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
+		},
+		"advancements": [
+			{
+				"description": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。\r\n**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。\r\n**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n\r\n**寒袭-驻场**：**坏家伙**任意攻击命中时，对附近目标造成**205%***冰攻+**2.9%***自身最大生命值+**106%***各元素抗性之和+**3.9%***暴击值点伤害，每**1.5**秒至多触发一次，寒袭伤害视为普攻伤害，若装备任意**1**把物理/火焰武器，则寒袭伤害提升至**1.3**倍。此外，寒袭伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "自身对生命值低于**80%**的目标造成伤害时，最终伤害提升**12%**，装备后后台可生效；\r\n**匿形**状态中受到攻击不会破隐，可格挡攻击的次数上限提升至**3**次，发动攻击破隐后自身额外获得**匿形**时长***5%**最大生命值护盾（不超过**120%**最大生命值），持续**30**秒。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**16%**",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "**武器-坏家伙**造成伤害的破盾效率提升**20%**；\r\n**狂猎**状态**触发后**，吸引附近的冰核至玩家周围引爆并进入持续**5**秒的渗透状态，切换武器键位替换为**技能-极地之噬**（该极地之噬不触发释放技能的额外效果），且每次释放后**技能-极地之噬**的冷却时间减少**20**秒，使用普攻可立即退出渗透状态。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**32%**",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "冰核引爆造成的伤害提升**150%**；\n**普攻-锁猎**掷出武器**命中后**，对目标施加持续**5**秒的雪痕状态（此状态先于**普攻-锁猎**的蓄力伤害触发），雪痕状态结束时对目标再次造成期间受到伤害总量的**30%**（该伤害单人模式下不超过自身攻击***650**，组队模式下不超过自身攻击***6500**，且不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果），雪痕每**30**秒至多触发**1**次。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "**技能-极地之噬**的冰雷伤害提升效果可以叠加，至多叠加至**3**层。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "掠袭",
+					"description": "在地面时，点击普攻可连续进行六次攻击（场上至多存在<shuzhi>45</>个冰核）。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并生成<shuzhi>1</>个冰核。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并生成<shuzhi>2</>个冰核。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并生成<shuzhi>1</>个冰核。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并生成<shuzhi>3</>个冰核。\r\n第六次攻击对目标造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Melee.webp",
+					"id": "GA_FPlayerLancesMelee_Melee"
+				},
+				{
+					"name": "捕猎",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行六次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。\r\n第六次攻击对目标造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_AirAttack.webp",
+					"id": "GA_FPlayerLancesMelee_AirAttack"
+				},
+				{
+					"name": "冰棱刺",
+					"description": "在地面时，使用第二次第四次第五次普攻时，长按普攻可触发冰棱刺，后跳滞空持续蓄力，进行最多<shuzhi>3</>段蓄力；\r\n一段蓄力命中造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n二段蓄力命中造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n三段蓄力命中造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Branch.webp",
+					"id": "GA_FPlayerLancesMelee_Branch"
+				},
+				{
+					"name": "灭顶之灾",
+					"description": "当拓荒者滞空时，使用普攻时，长按普攻可触发灭顶之灾。\r\n从天而降，骑枪插地对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_JumpAttack.webp",
+					"id": "GA_FPlayerLancesMelee_JumpAttack"
+				},
+				{
+					"name": "锁猎",
+					"description": "在地面时，长按普攻可触发锁猎蓄力，<shuzhi>6</>秒内伤害随蓄力时间增加，期间自身获得霸体，随后朝目标方向掷出武器，<shuzhi>命中后</>至多对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，锁猎蓄力期间瞄准区域内某一目标<shuzhi>2.5</>秒后，可触发辅助瞄准，掷出武器可自动命中目标头部（辅助瞄准丢失目标不影响蓄力进度）。\n锁猎掷出武器后，新增特殊技能按键，点击可触发<shuzhi>技能-落影瞬杀</>。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttack.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttack"
+				},
+				{
+					"name": "霜华剜骨",
+					"description": "在地面时，长按普攻瞄准上空可触发霜华剜骨，期间自身获得霸体，朝目标方向射出投枪，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并对范围内的命中目标施加<shuzhi>高压彻骨</>的状态。\r\n霜华剜骨掷出武器后，不可触发<shuzhi>技能-落影瞬杀</>。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttackSp.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttackSP"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/main/shanbi.webp",
+					"id": "GA_FPlayerLancesEvade"
+				},
+				{
+					"name": "匿形",
+					"description": "在地面时，任意长按闪避可触发持续<shuzhi>60</>秒的匿形，自身进入隐身状态（单人模式下生成冰雕吸引附近目标注意，冰雕至多持续<shuzhi>15</>秒），移动速度提升<shuzhi>30%</>，触发匿形后受到攻击会格挡至多<shuzhi>1</>次自身<shuzhi>50%</>最大生命值伤害（该效果每<shuzhi>10</>秒至多触发<shuzhi>1</>次），匿形期间使用<shuzhi>武器-坏家伙</>造成任意伤害、受到攻击、切换武器时破隐，解除匿形状态。\r\n<shuzhi>猎杀</>：匿形期间使用<shuzhi>武器-坏家伙</>造成任意伤害<shuzhi>命中目标时</>，可触发狂猎效果，重置<shuzhi>技能-极地之噬</>的冷却时间，自身根据破隐前匿形时长获得指数增长的<shuzhi>2.4%</>~<shuzhi>36%</>最终伤害提升（匿形<shuzhi>10</>秒后触发满额增伤，通过<shuzhi>普攻-锁猎</>触发猎杀的此次伤害，也可享受到该增伤效果）",
+					"operations": [],
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHold.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHold"
+				},
+				{
+					"name": "寒意纷至",
+					"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，可触发寒意纷至，旋转骑枪横挥，对前方目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并生成<shuzhi>2</>个冰核（场上至多存在<shuzhi>45</>个冰核）。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackFront.webp",
+					"id": "GA_FPlayerLancesEvade_AttackFront"
+				},
+				{
+					"name": "死命翩然",
+					"description": "后闪避之后的短暂时间内，点击普攻，可触发死命翩然，向前撑枪跳跃，落地斜斩对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并生成<shuzhi>1</>个冰核（场上至多存在<shuzhi>45</>个冰核）。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackBack.webp",
+					"id": "GA_FPlayerLancesEvade_AttackBack"
+				},
+				{
+					"name": "灾厄骤至",
+					"description": "长按闪避，进入匿行的瞬间，点击普攻，可快速触发<shuzhi>普攻-锁猎</>，攻击命中造成攻击<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，掷出武器后，将新增特殊技能按键，点击可触发<shuzhi>技能-落影瞬杀</>。",
+					"operations": [
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHoldAndAttack.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHoldAndAttack"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "3.6",
+		"limited": true,
+		"id": "lances_ice"
+	},
 	"blevi_thunder": {
 		"name": "契约徽章玫茨",
 		"description": "使魔、契约兽那一类，既然有本事授予复数女孩强大的奇异力量，自己努努力揍上去不会更有效率吗？——出于这样的考量，她决定让这位小帮手来以身作则树立个榜样。",
@@ -13077,7 +13491,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "契约增幅状态下，自身雷电伤害提升效果与寒冰伤害提升效果分别提升**10%**；玫茨光环使附近队友的最终伤害提升至**20%**，破盾效率提升**25%**，该效果不可叠加。",
+				"description": "契约增幅状态下，自身雷电伤害提升效果与寒冰伤害提升效果分别提升**10%**和**4%**；玫茨光环使附近队友的最终伤害提升至**20%**，破盾效率提升**25%**，该效果不可叠加。",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13602,7 +14016,8 @@
 					"name": "余烬弹仓",
 					"description": "切换模组，改变十字狙射和暮光之弧效果，最多可使用<shuzhi>8</>次十字狙射，技能冷却<shuzhi>14</>秒。\r\n<shuzhi>暴戾烈弹</>：十字狙射效果变成范围火焰爆炸，命中造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点基础伤害，蓄力后最多可造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，命中的目标若不处于灼烧，则给目标添加“十字灼烧”（每秒造成<shuzhi>90%</>攻击力伤害，持续<shuzhi>13</>秒），若目标已经处于灼烧，则给目标添加“十字灼烧”的同时，自身获得<shuzhi>20</>秒“灼烧强化”状态，使目标的灼烧伤害提高<shuzhi>20%</>；暮光之弧变成向前方扔出<shuzhi>3</>枚爆破手雷。\r\n<shuzhi>谲诳魔弹</>：十字狙射效果变成范围瓦斯，命中造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点基础伤害，蓄力后最多可造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，目标处于瓦斯内会减速，减速效果随时间递增，瓦斯持续<shuzhi>7</>秒；暮光之弧可引爆瓦斯（释放瓦斯时十字狙射的蓄力越久，瓦斯爆炸伤害越高），对范围内敌方目标最多造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点爆炸伤害【视为触发一次十字狙射】，并使目标在<shuzhi>10</>秒内火抗减少<shuzhi>10%</>。\r\n\r\n<shuzhi>被动：</>确认模组后，会获得对应使用次数的“光学强化”。光学强化：十字狙射蓄力时间缩短<shuzhi>30%</>，蓄力期间免疫控制；每使用<shuzhi>2</>次闪避，回复<shuzhi>1</>次闪避次数（最多可回复<shuzhi>4</>次）。\r\n<shuzhi>被动：</>谲诳魔弹模组期间，十字狙射命中后减少其他火武器<shuzhi>0.7</>秒技能冷却。\r\n<shuzhi>被动：</><shuzhi>心静如水</>：四叶十字使用连携/技能/蓄力攻击/闪避，会使四叶十字的最终暴击率提高<shuzhi>5%</>，持续<shuzhi>15</>秒，可叠加<shuzhi>3</>层，暴击率超过<shuzhi>100%</>后，超出部分的<shuzhi>50%</>转化为暴击伤害（最多转化<shuzhi>7.5%</>暴击伤害）。",
 					"tags": [
-						"Damage"
+						"Damage",
+						"Ammo"
 					],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_snipe_skillstart.webp",
 					"id": "GA_FPlayerSnipeSkill_Skill"
@@ -13648,6 +14063,400 @@
 		"version": "2.2",
 		"limited": false,
 		"id": "snipe_fire"
+	},
+	"asuka_physic": {
+		"name": "朗基努斯之枪",
+		"description": "传说，这是生命之树的根须，所有生命都无法抵挡它的锋芒。",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_mingrixiang.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_mingrixiang.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/mingrixiang2.webp"
+		},
+		"rarity": 5,
+		"element": "Physics",
+		"type": "Asuka",
+		"weaponUpgradeId": "physic_ssr_tupo_AC",
+		"wc": "Tank",
+		"advanceID": "Asuka_physic_ssr_star",
+		"avatar": "imitation_55",
+		"mats": {
+			"Item_Mine_physic": 39,
+			"Item_Mine_physic_02": 65,
+			"Item_breakthrough_A2": 65,
+			"Item_breakthrough_C2": 65,
+			"Item_Mine_physic_03": 32,
+			"Item_breakthrough_A3": 32,
+			"Item_breakthrough_C3": 32,
+			"Item_breakthrough_A1": 35,
+			"Item_breakthrough_C1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "攻击",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "生命",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "暴击",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [],
+		"effects": [
+			{
+				"title": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。**:"
+			},
+			{
+				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:"
+			},
+			{
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。**:"
+			},
+			{
+				"title": "**神枪-速切**：装备**朗基努斯之枪**时，任意武器连携技对附近目标初始造成**58.58%***物攻+**0.78%***自身最大生命值+**29.29%***各元素抗性之和+**107.4%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把寒冰/雷电武器，则神枪伤害提升至**1.3**倍。此外，神枪伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+			}
+		],
+		"elementEffects": {
+			"title": "**重伤**:",
+			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**137.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
+		},
+		"advancements": [
+			{
+				"description": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。\r\n**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n**神枪-速切**：装备**朗基努斯之枪**时，任意武器连携技对附近目标初始造成**58.58%***物攻+**0.78%***自身最大生命值+**29.29%***各元素抗性之和+**107.4%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把寒冰/雷电武器，则神枪伤害提升至**1.3**倍。此外，神枪伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "技能-复仇层数上限由**10**层提升至**15**层，且所有层数消耗完毕后会会额外召唤一把巨大的朗基努斯之枪，若当前武器伤害的元素类型为**物理**或**火焰**，则对附近目标造成该伤害元素类型的**2000%***攻击力伤害。",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**16%**",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "**A.T力场**持续期间，对目标造成伤害时可无视**A.T力场**耐久值**当前百分比*****30%**+**20%**的目标护盾减伤；激活**坚毅共鸣**时，自身破盾效率提升**A.T力场**耐久值**当前百分比*****100%**。",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**32%**",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "每消耗**1**层**技能-复仇**，回复**6%****A.T立场**最大耐久值。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "**A.T立场**期间获得的物理增伤提升至**36%**，火焰增伤提升至**24%**；\r\n激活**坚毅共鸣**时，**A.T力场**持续期间，附近队友无视**15%**目标护盾减伤，并降低附近目标**1200%**全抗，该效果不可叠加。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "挥枪弄影",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击退目标。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并击退目标。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并击退目标。\r\n第四次攻击对目标至多造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并击退目标。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并击飞目标。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_melee.webp",
+					"id": "GA_FPlayerAsukaMelee_Melee"
+				},
+				{
+					"name": "穿枪瞬影",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害并击飞目标。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_airattack.webp",
+					"id": "GA_FPlayerAsukaMelee_AirAttack"
+				},
+				{
+					"name": "神枪狂澜",
+					"description": "在地面普攻时，使用第一次至第四次普攻中，长按普攻可触发<shuzhi>神枪狂澜</>。\r\n连续多次攻击，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_branch.webp",
+					"id": "GA_FPlayerAsukaMelee_Branch"
+				},
+				{
+					"name": "骑枪刺袭",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发<shuzhi>骑枪刺袭</>。\r\n从空中下落，落地后对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_jumpattack.webp",
+					"id": "GA_FPlayerAsukaMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAsukaEvade_Evade"
+				},
+				{
+					"name": "长枪掠袭",
+					"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，可触发<shuzhi>长枪掠袭</>，对前方目标造成至多<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_fevadeattack.webp",
+					"id": "GA_FPlayerAsukaEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "跃动猛击",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发<shuzhi>跃动猛击</>，对前方目标造成至多<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_bevadeattack.webp",
+					"id": "GA_FPlayerAsukaEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "穿云一击",
+					"description": "向目标投出武器，期间吸附附近目标，造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害并短暂定身附近目标，冷却<shuzhi>20</>秒（不受任何冷却时间清除、重置、变化效果的影响）。\r\n释放成功后自身获得<shuzhi>10</>层复仇，对目标造成伤害会消耗<shuzhi>1</>层复仇，若当前武器伤害的元素类型为<shuzhi>物理</>或<shuzhi>火焰</>，则对附近目标额外造成该伤害元素类型的<shuzhi>600%</>*攻击力伤害，且每秒至多触发<shuzhi>1</>次。\r\n释放成功后会为自身启动耐久值上限为执行者<shuzhi>50%</>最大生命值的A.T力场，持续<shuzhi>30</>秒，期间自身物理伤害提升<shuzhi>18%</>，火焰伤害提升<shuzhi>12%</>，同时获得霸体效果。\r\n当自身受到伤害时，A.T力场会根据耐久值剩余百分比为自身减伤，同时根据此次伤害量扣除A.T力场的耐久值（耐久值最低为上限值的<shuzhi>10%</>）。\r\n激活坚毅共鸣时，复仇存在期间若自身受到伤害，消耗<shuzhi>1</>层复仇，格挡自身<shuzhi>8%</>最大生命值的伤害，每<shuzhi>0.5</>秒至多触发<shuzhi>1</>次。",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
+					"id": "GA_FPlayerAsukaSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "福音战士出击",
+					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，驾驶2号机使出飞踢，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>1.5</>秒（巅峰联赛不生效）。",
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
+					"id": "GA_FPlayerAsukaChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "灰城眺望",
+					"description": "少女在此驻立眺望。",
+					"rarity": 5,
+					"source": "活动获取",
+					"simulacrumId": "imitation_55",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_MRX.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_MRX_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_55"
+				}
+			}
+		],
+		"version": "CN-Only",
+		"limited": true,
+		"id": "asuka_physic"
 	},
 	"brush_fire": {
 		"name": "松彗",
@@ -15385,7 +16194,7 @@
 			}
 		],
 		"version": "2.3",
-		"limited": true,
+		"limited": false,
 		"id": "fenrir_thunder"
 	},
 	"umbrella_fire": {

@@ -1599,5 +1599,46 @@
 			}
 		],
 		"id": "FightPet_10"
+	},
+	"FightPet_11": {
+		"name": "ペンペン",
+		"description": "葛城ミサトが飼っているペットで、いつも彼女のアパートの専用冷蔵庫に住んでいる。お風呂が大好きで、翼の先でボタンを押すことができる。人間のように寝たり、お風呂に入ったり、新聞を読んだりすることができる。シンジたちがミラポリスの星ノ海アパートに滞在している時も、そこの冷蔵庫から現れた",
+		"PetElementType": "Ice",
+		"PetPropertyType": "Attack",
+		"PetRarity": 5,
+		"assets": {
+			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_011.webp",
+			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_011.webp",
+			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_11.webp"
+		},
+		"skills": [
+			{
+				"name": "煙幕ダッシュ",
+				"description": "ペンペンが敵の付近まで突進し、一面の煙を放つ。煙の範囲内の敵は毎秒攻撃力×**351% / 526% / 526%**のダメージと減速を受ける。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act01.webp"
+			},
+			{
+				"name": "缶爆弾",
+				"description": "ペンペンが大量の缶を前方に向かって投げる。缶は炸裂するたび、敵に攻撃力×**412% / 412% / 618%**のダメージを与える。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act02.webp"
+			},
+			{
+				"name": "ペンペン応援",
+				"description": "ペンペンが翼をパタパタさせて、同行プレイヤーを励ます。励まされたプレイヤーは攻撃力×**220% / 220% / 220%**のHPを回復する。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act03.webp"
+			}
+		],
+		"properties": "AIサーバントの攻撃力はマスターの炎、氷、雷、物理の基礎攻撃力の平均値の**4%**を引き継いだ値となる(基本ステータスをもとに計算)。\r\nモジュールスロット数は**1**、負荷値は**5**。",
+		"advancements": [
+			"攻撃力として引き継ぐ際の割合が**6%**まで UP。\r\n煙幕の1撃ごとのダメージが**526%**まで UP。\r\nモジュールスロット数は**2**、負荷値は**8**。",
+			"攻撃力として引き継ぐ際の割合が**8%**まで UP。\r\nビール缶攻撃の1発ごとのダメージが**618%**まで UP。\r\nモジュールスロット数は**2**、負荷値は**8**。",
+			"攻撃力として引き継ぐ際の割合が**10%**まで UP。\r\n回復量が**330%**まで UP。\r\nモジュールスロット数は**4**、負荷値は**15**。"
+		],
+		"PetUpgradeItemMap": [
+			{
+				"exp": 60
+			}
+		],
+		"id": "FightPet_11"
 	}
 }

@@ -8192,7 +8192,7 @@
 				"need": "Paradox_fire_plasm"
 			},
 			{
-				"description": "**鏡面・ターゲット**のダメージ反射効果は、鏡面を付与されたターゲット自身にも反射ダメージを与えるようになる。\r\n**鏡面・自身**によるダメージ反射の割合が**30%**まで UPし、反射ダメージの上限が自身の最大HP×**800%**にまで UPする。\r\nさらに、**鏡面・自身**の持続期間中、ダメージを受けるたびに自身の最大HP×**10%**のダメージを防ぐ(トップリーグでは無効かつ、超過分は通常通り被ダメージとして受ける)。この効果は**3**秒ごとに最大**1**回まで発動可能。また、クールダウン中かつパッパ出現後に鏡の中の自分を見ると、この効果のクールダウン-**1**秒。",
+				"description": "**鏡面・ターゲット**のダメージ反射効果は、鏡面を付与されたターゲット自身にも反射ダメージを与えるようになる。\r\n**鏡面・自身**による反転ダメージの割合が**30%**まで UPし、反転ダメージの上限が自身の最大HP×**800%**にまで UPする。\r\nさらに、**鏡面・自身**の持続期間中、ダメージを受けるたびに自身の最大HP×**10%**のダメージをブロックする(トップリーグでは無効かつ、超過分は通常通り被ダメージとして受ける)。この効果は**3**秒ごとに最大**1**回まで発動可能。また、クールダウン中かつパッパ出現後に鏡の中の自分を見ると、この効果のクールダウン-**1**秒。",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8294,9 +8294,7 @@
 					"name": "降下プロトコル",
 					"description": "滞空時に回避長押しで降下プロトコルを発動できる。着地時に攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
 					"operations": [
-						"Jump",
-						"Dash",
-						"Hold Attack"
+						"Jump"
 					],
 					"tags": [
 						"Damage"
@@ -8355,7 +8353,11 @@
 				{
 					"name": "空中プロトコル",
 					"description": "滞空時、回避攻撃を発動できる。\r\n<shuzhi>EP-7000スカイファイア</>による任意の回避攻撃を<shuzhi>2</>回行うごとにパッパが出現し、回避攻撃を行う。その際のダメージ値はパッパの気分によって変動する(プレイヤーの与ダメージの<shuzhi>50%〜100%</>相当)。\r\n<shuzhi>EP-7000スカイファイア</>による任意の回避攻撃を<shuzhi>2</>回行うごとに、または<shuzhi>パッパ・オンステージ</>状態下で<shuzhi>EP-7000スカイファイア</>による任意の回避攻撃を<shuzhi>1</>回行うごとに、<shuzhi>ツイン・ミラージュ</>のクールダウン-<shuzhi>10</>秒。この効果はスキルのクールダウンに入るごとに最大<shuzhi>1回</>まで発動可能。",
-					"operations": [],
+					"operations": [
+						"Jump",
+						"Dash",
+						"Attack"
+					],
 					"tags": [
 						"Damage"
 					],
@@ -12366,8 +12368,7 @@
 					"name": "カムフラージュ",
 					"description": "長押しで前方へ回避するとカムフラージュ状態に入る。カムフラージュ中はスタミナを消費し続け、移動速度+<shuzhi>50%</>、コールドフィールド内にいる場合は移動速度がさらに+<shuzhi>50%</>。カムフラージュ解除時には付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、<shuzhi>2</>秒間凍結させる",
 					"operations": [
-						"Dash",
-						"Hold Attack"
+						"Movement"
 					],
 					"tags": [
 						"Control"
@@ -12849,6 +12850,419 @@
 		"limited": true,
 		"id": "killknife_physic"
 	},
+	"lances_ice": {
+		"name": "ウィキッドガール",
+		"description": "暗黒に染まりしエネルギーをランスに封印し、騎士は真の「騎士」となった。…そして騎士は少女の手を取り、二人は無限の可能性を秘めた明日へと向かう",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_yanuo.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_yanuo.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/yanuo.webp"
+		},
+		"rarity": 5,
+		"element": "Ice",
+		"type": "Lances",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Lances_Ice_ssr_star",
+		"avatar": "imitation_54",
+		"mats": {
+			"Item_Mine_ice": 39,
+			"Item_Mine_ice_02": 65,
+			"Item_breakthrough_B2": 65,
+			"Item_breakthrough_D2": 65,
+			"Item_Mine_ice_03": 32,
+			"Item_breakthrough_B3": 32,
+			"Item_breakthrough_D3": 32,
+			"Item_breakthrough_B1": 35,
+			"Item_breakthrough_D1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "攻撃",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "会心",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**雷・氷融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(雷/氷属性)、攻撃力パーセンテージ(雷/氷属性)、雷/氷バフ(雷/氷属性)の最高値をそれぞれ参照する。また、この武器属性は雷と氷の両属性と見なされる。**:"
+			},
+			{
+				"title": "**雷共鳴**：雷属性武器を**2**つ以上装備すると発動。雷攻撃力+**15%**、雷耐性+**25%**。装備すると常時有効(複数の雷共鳴/雷反応はスタック不可、雷共鳴が優先して発動)。**:"
+			},
+			{
+				"title": "**氷共鳴**：氷属性武器を**2**つ以上装備すると発動。氷攻撃力+**15%**、氷耐性+**25%**。装備すると常時有効(複数の氷共鳴/氷反応はスタック不可、氷共鳴が優先して発動)。**:"
+			},
+			{
+				"title": "**寒襲・顕在**：**ウィキッドガール**による任意攻撃の命中時、付近のターゲットに対し氷攻撃力×**205%**+自身の最大HP×**2.9%**+各属性耐性の合計値×**106%**+会心の値×**3.9%**のダメージを与える。**1.5**秒ごとに1回のみ発動可能。また、寒襲ダメージは通常攻撃と見なされる。物理/炎属性武器のいずれかを**1**つ以上装備している場合、寒襲ダメージが**1.3**倍まで UPする。なお、寒襲ダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない。**:"
+			}
+		],
+		"elementEffects": {
+			"title": "**氷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、敵を**2**秒間**強制凍結**し、**6**秒間の凍傷効果を与える。凍結状態が解けると攻撃力×**151.00%**のダメージを与える。凍傷効果の発動中、ターゲットの武器エナジー値獲得速度-**50%**。"
+		},
+		"advancements": [
+			{
+				"description": "**雷・氷融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(雷/氷属性)、攻撃力パーセンテージ(雷/氷属性)、雷/氷バフ(雷/氷属性)の最高値をそれぞれ参照する。また、この武器属性は雷と氷の両属性と見なされる。\r\n**雷共鳴**：雷属性武器を**2**つ以上装備すると発動。雷攻撃力+**15%**、雷耐性+**25%**。装備すると常時有効(複数の雷共鳴/雷反応はスタック不可、雷共鳴が優先して発動)。\r\n**氷共鳴**：氷属性武器を**2**つ以上装備すると発動。氷攻撃力+**15%**、氷耐性+**25%**。装備すると常時有効(複数の氷共鳴/氷反応はスタック不可、氷共鳴が優先して発動)。\r\n\r\n**寒襲・顕在**：**ウィキッドガール**による任意攻撃の命中時、付近のターゲットに対し氷攻撃力×**205%**+自身の最大HP×**2.9%**+各属性耐性の合計値×**106%**+会心の値×**3.9%**のダメージを与える。**1.5**秒ごとに1回のみ発動可能。また、寒襲ダメージは通常攻撃と見なされる。物理/炎属性武器のいずれかを**1**つ以上装備している場合、寒襲ダメージが**1.3**倍まで UPする。なお、寒襲ダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "HPが**80%**未満のターゲットに命中した際に、最終ダメージ+**12%**。装備すると常時有効。\r\n**ステルス**状態のときに攻撃を受けても解除されず、さらに攻撃のブロック回数が**3**回まで UPする。また、自身から攻撃を仕掛けてステルス状態が解除されると、最大HP×**5%**×**ステルス**状態に入っていた時間のシールドを追加で獲得する(このシールドは最大HP×**120%**を超えない)。**30**秒間持続。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**16%**。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "**武器-ウィキッドガール**のダメージによるシールドブレイク率+**20%**。\r\n**クレイジーハント**の**発動後**に付近の氷核を自身のそばまで引き寄せて爆発させ、同時にイロージョン状態に入る。**5**秒間持続。これにより、武器切り替えボタンが**スキル-アークティック・バイト**に置き換わり(ただし、この場合のアークティック・バイトはスキルの追加効果を発動しない)、**スキル-アークティック・バイト**を発動するたびにクールダウン-**20**秒。イロージョン状態は通常攻撃を行うと即解除される。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**32%**。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "氷核の爆発による与ダメージ+**150%**。\n**通常攻撃-マーシレス・ランス**による武器投げが**命中する**とターゲットに雪痕状態を付与する、**5**秒間持続(この状態は**通常攻撃-マーシレス・ランス**による攻撃ダメージ発生前に発動する)。雪痕状態の終了時に、当該ターゲットに雪痕状態での合計被ダメージ×**30%**のダメージを与える[ソロモードの場合、このダメージは自身の攻撃力×**650**を超えず、チームモードの場合は自身の攻撃力×**6500**を超えない。また、このダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない]。雪痕状態は**30**秒ごとに最大**1**回まで発動可能。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "**スキル-アークティック・バイト**による氷ダメージと雷ダメージの UP効果がスタック可能になる。最大**3**スタックまで可能。",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "略奪",
+					"description": "地上にいる時に通常攻撃を行うと、6回連続攻撃できる。ダメージは次の通り(氷核はフィールド上に最大<shuzhi>45</>個まで)。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>、氷核を<shuzhi>1</>個生成\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>、氷核を<shuzhi>2</>個生成\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>、氷核を<shuzhi>1</>個生成\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>、氷核を<shuzhi>3</>個生成\r\n6回目：攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Melee.webp",
+					"id": "GA_FPlayerLancesMelee_Melee"
+				},
+				{
+					"name": "狩猟",
+					"description": "滞空時に通常攻撃を行うと、スタミナを消費して空中で6回連続攻撃ができる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>\r\n6回目：攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_AirAttack.webp",
+					"id": "GA_FPlayerLancesMelee_AirAttack"
+				},
+				{
+					"name": "フローズン・スパイク",
+					"description": "地上にいる時、通常攻撃の2回目、4回目、5回目に通常攻撃を長押しするとフローズン・スパイクを発動できる。後方に飛び、空中でチャージする。チャージは最大で<shuzhi>3</>段階まで。\r\n1段目：命中時に攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージ\r\n2段目：命中時に攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージ\r\n3段目：命中時に攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージ",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Branch.webp",
+					"id": "GA_FPlayerLancesMelee_Branch"
+				},
+				{
+					"name": "シューティング・キラー",
+					"description": "滞空時、通常攻撃を長押しすると、シューティング・キラーを発動できる。\r\n空から降下し、槍を地面に突き刺して付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_JumpAttack.webp",
+					"id": "GA_FPlayerLancesMelee_JumpAttack"
+				},
+				{
+					"name": "マーシレス・ランス",
+					"description": "地上にいる時、通常攻撃を長押しするとマーシレス・ランスによるチャージが発動する。さらにこの間、自身は不屈効果を獲得する。ターゲットに向かって武器を投げ、<shuzhi>命中後</>に付近のターゲットに最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える(ダメージ量は投げる前のチャージ時間に基づく、チャージは最大<shuzhi>6</>秒まで)。チャージ中、照準範囲内に特定のターゲット1体を<shuzhi>2.5</>秒間捕捉しつづけると照準アシストが有効となり、武器を投げた際に自動でターゲットの頭部に命中する(この2.5秒以内にターゲットを見失ってもチャージカウントには影響しない)。\nマーシレス・ランスで武器を投げたあとに特殊スキルボタンが追加され、タップすると<shuzhi>スキル-シャドウ・エグゼキューション</>を発動できる。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttack.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttack"
+				},
+				{
+					"name": "ボーン・シェイビング",
+					"description": "地上にいる時、通常攻撃を長押しして上空に狙いを定めるとボーン・シェイビングを発動できる。さらにこの間、自身は不屈効果を獲得する。ターゲットに向かって武器を投げ、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与えるのと同時に、命中したターゲットに<shuzhi>高圧貫通</>を付与する。\r\nボーン・シェイビングで武器を投げたあとに<shuzhi>スキル-シャドウ・エグゼキューション</>を発動することはできない。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttackSp.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttackSP"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/main/shanbi.webp",
+					"id": "GA_FPlayerLancesEvade"
+				},
+				{
+					"name": "ステルス・ダイブ",
+					"description": "地上にいる時、任意の回避を長押しするとステルス・ダイブを発動できる。<shuzhi>60</>秒間持続。自身はステルス状態に入り、移動速度+<shuzhi>30%</>(ソロモードでは氷像を生成し、付近のターゲットの注意を引きつける。氷像は最大で<shuzhi>15</>秒間持続)。また、ステルス状態では攻撃を受けた際に自身の最大HP×<shuzhi>50%</>のダメージを最大<shuzhi>1</>回ブロックする(この効果は<shuzhi>10</>秒ごとに最大<shuzhi>1</>回まで発動可能)。なお、<shuzhi>武器・ウィキッドガール</>で任意攻撃によるダメージを与える、攻撃を受ける、武器を切り替えると、ステルス状態が解除される。\r\n<shuzhi>ハンティング</>：ステルス状態のときに<shuzhi>武器・ウィキッドガール</>で任意攻撃を行い、かつ<shuzhi>攻撃がターゲットに命中する</>とクレイジーハントが発動する。<shuzhi>スキル-アークティック・バイト</>のクールダウンをリセットし、自身はステルス状態に入っていた時間に基づいて最終ダメージ+<shuzhi>2.4%</>～<shuzhi>36%</>(ステルス状態が<shuzhi>10</>秒経過するとダメージ UP効果が最大値に到達する。また、<shuzhi>通常攻撃-マーシレス・ランス</>によってハンティングを発動した際のダメージもこのダメージ UP効果の対象)。",
+					"operations": [],
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHold.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHold"
+				},
+				{
+					"name": "コールド・ストライク",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、コールド・ストライクを発動できる。槍を横に振り回し、前方のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。さらに、氷核を<shuzhi>2</>個生成する(フィールド上に最大<shuzhi>45</>個まで)。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackFront.webp",
+					"id": "GA_FPlayerLancesEvade_AttackFront"
+				},
+				{
+					"name": "ライフ・ライク・ダスト",
+					"description": "後方回避後すぐに通常攻撃を行うとライフ・ライク・ダストを発動できる。槍を構えて前方にジャンプし、着地時に付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。さらに、氷核を<shuzhi>1</>個生成する(フィールド上に最大<shuzhi>45</>個まで)。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackBack.webp",
+					"id": "GA_FPlayerLancesEvade_AttackBack"
+				},
+				{
+					"name": "カラミティ・フェイト",
+					"description": "回避を長押しし、ステルス状態に入った瞬間に通常攻撃を行うと<shuzhi>通常攻撃-マーシレス・ランス</>を素早く発動できる。命中したターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。武器を投げたあとに特殊スキルボタンが追加され、タップすると<shuzhi>スキル-シャドウ・エグゼキューション</>を発動できる。",
+					"operations": [
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHoldAndAttack.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHoldAndAttack"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "3.6",
+		"limited": true,
+		"id": "lances_ice"
+	},
 	"blevi_thunder": {
 		"name": "プロミスパクト☆メイツ",
 		"description": "使い魔や契約獣は複数の少女に不思議な力を授けることができるのだから、いっそ、そういった存在が直接戦ったほうが効率的では？――そう考えた彼女は、小さなパートナーと共に手本を見せることにしたのだった",
@@ -13077,7 +13491,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "契約パワーアップ中の自身の雷ダメージと氷ダメージ UP効果が追加で+**10%**。また、メイツ☆リングによる付近の仲間の最終ダメージ UP効果が**20%**にまで上昇し、さらにシールドブレイク率+**25%**。この効果はスタック不可。",
+				"description": "契約パワーアップ中の自身の雷ダメージ UP効果が追加で+**10%**、氷ダメージ UP効果が追加で+**4%**。また、メイツ☆リングによる付近の仲間の最終ダメージ UP効果が**20%**にまで上昇し、さらにシールドブレイク率+**25%**。この効果はスタック不可。",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13602,7 +14016,8 @@
 					"name": "弾倉の残り火",
 					"description": "モジュールを切り替えてクロスファイアとトワイライトアークの効果を変更すると、最大でクロスファイアを<shuzhi>8</>回使用できる。クールダウン<shuzhi>14</>秒\r\n<shuzhi>ランペイジ弾</>：クロスファイアの効果が範囲炎爆発に変化し、命中すると攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>の基礎ダメージ、チャージ後には最大で攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える。命中したターゲットが燃焼状態ではない場合、ターゲットに「十字燃焼」(毎秒、攻撃力×<shuzhi>90%</>のダメージ、<shuzhi>13</>秒間持続)を付与する。ターゲットがすでに燃焼状態の場合は、ターゲットに「十字燃焼」を与えると同時に、自身が<shuzhi>20</>秒間「燃焼強化」状態となり、ターゲットの燃焼ダメージが+<shuzhi>20%</>となる。トワイライトアークは「前方に手榴弾を<shuzhi>3</>発投げる」に変化する\r\n<shuzhi>トリック弾</>：クロスファイアの効果が範囲ガスに変化し、命中すると攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>の基礎ダメージ、チャージ後には最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージを与える。ガス内にいるターゲットは減速効果を受け、効果は時間経過と共にアップする。ガスは<shuzhi>7</>秒間持続。トワイライトアークはガスに引火でき(ガス発動時にクロスファイアのチャージが長いほど、ガス爆発時のダメージが大きくなる)、範囲内の敵ターゲットに最大で攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>の爆発ダメージを与え、【クロスファイア1回の発動と判定】。さらに<shuzhi>10</>秒間、ターゲットの炎耐性-<shuzhi>10%</>\r\n\r\n<shuzhi>パッシブ：</>モジュールを確定すると、「光学強化」が発動し、対応する回数の回避回数回復とチャージ時間減少を獲得できる。光学強化：クロスファイアのチャージ時間-<shuzhi>30%</>、チャージ中は行動制限無効。回避を<shuzhi>2</>回使用するたびに回避回数を<shuzhi>1</>回回復する(最大<shuzhi>4</>回まで回復可能)\r\n<shuzhi>パッシブ：</>トリック弾モジュール使用中にクロスファイアが命中すると、他の炎属性武器スキルのクールダウン-<shuzhi>0.7</>秒\r\n<shuzhi>パッシブ</>：<shuzhi>明鏡止水</>：クローバークロスで連携スキル/スキル/チャージ攻撃/回避を使用すると、クローバークロスの固定会心率+<shuzhi>5%</>、<shuzhi>15</>秒間持続。<shuzhi>3</>スタックまで可能。会心率が<shuzhi>100%</>を超えると、超過部分の<shuzhi>50%</>を会心ダメージに変換する(会心ダメージへの変換は最大で+<shuzhi>7.5%</>まで)",
 					"tags": [
-						"Damage"
+						"Damage",
+						"Ammo"
 					],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_snipe_skillstart.webp",
 					"id": "GA_FPlayerSnipeSkill_Skill"
@@ -13648,6 +14063,399 @@
 		"version": "2.2",
 		"limited": false,
 		"id": "snipe_fire"
+	},
+	"asuka_physic": {
+		"name": "ロンギヌスの槍",
+		"description": "生命の樹の根から作られ、どんな生命も勝てないとされている",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_mingrixiang.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_mingrixiang.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/mingrixiang2.webp"
+		},
+		"rarity": 5,
+		"element": "Physics",
+		"type": "Asuka",
+		"weaponUpgradeId": "physic_ssr_tupo_AC",
+		"wc": "Tank",
+		"advanceID": "Asuka_physic_ssr_star",
+		"avatar": "imitation_55",
+		"mats": {
+			"Item_Mine_physic": 39,
+			"Item_Mine_physic_02": 65,
+			"Item_breakthrough_A2": 65,
+			"Item_breakthrough_C2": 65,
+			"Item_Mine_physic_03": 32,
+			"Item_breakthrough_A3": 32,
+			"Item_breakthrough_C3": 32,
+			"Item_breakthrough_A1": 35,
+			"Item_breakthrough_C1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "攻撃",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "会心",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [],
+		"effects": [
+			{
+				"title": "**物理・炎融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(物理/炎属性)、攻撃力パーセンテージ(物理/炎属性)、物理/炎バフ(物理/炎属性)の最高値をそれぞれ参照する。また、この武器属性は物理と炎の両属性と見なされる。**:"
+			},
+			{
+				"title": "**物理共鳴**：物理属性武器を**2**つ以上装備すると発動。物理攻撃力+**15%**、物理耐性+**25%**。装備すると常時有効(複数の物理共鳴/物理反応はスタック不可、物理共鳴が優先して発動)。**:"
+			},
+			{
+				"title": "**炎共鳴**：炎属性武器を**2**つ以上装備すると発動。炎攻撃力+**15%**、炎耐性+**25%**。装備すると常時有効(複数の炎共鳴/炎反応はスタック不可、炎共鳴が優先して発動)。**:"
+			},
+			{
+				"title": "**神槍・速斬り**：**ロンギヌスの槍**の装備時、任意武器による連携スキルを命中させると付近のターゲットに対し物理攻撃力×**58.58%**+自身の最大HP×**0.78%**+各属性耐性の合計値×**29.29%**+会心の値×**107.4%**のダメージを与える。その後、戦闘状態が継続する間、次回以降の速斬りは**0.5**秒間隔でダメージが上昇し、1回目の速斬りダメージ×**100％**ずつ加算されていく(この加算は最大**30**回まで)。1回目の速斬りダメージが複数発生した場合は、各攻撃が最初に与えたダメージのうちの最大値を基準にする。また、速斬りダメージは連携ダメージと見なされる。氷/雷属性武器のいずれかを1つ以上装備している場合、神槍ダメージが**1.3**倍まで UPする。なお、神槍ダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない。**:"
+			}
+		],
+		"elementEffects": {
+			"title": "**重傷**:",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると攻撃力×**137.00%**のダメージを与え、さらに**7**秒間、敵を被ダメージ+**20%**の重傷状態にする。**チームプレイ**中、重傷状態のターゲットが物理ダメージを受けた場合、さらに**20%**の追加物理ダメージを負う。"
+		},
+		"advancements": [
+			{
+				"description": "**物理・炎融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(物理/炎属性)、攻撃力パーセンテージ(物理/炎属性)、物理/炎バフ(物理/炎属性)の最高値をそれぞれ参照する。また、この武器属性は物理と炎の両属性と見なされる。\r\n**物理共鳴**：物理属性武器を**2**つ以上装備すると発動。物理攻撃力+**15%**、物理耐性+**25%**。装備すると常時有効(複数の物理共鳴/物理反応はスタック不可、物理共鳴が優先して発動)。\r\n**炎共鳴**：炎属性武器を**2**つ以上装備すると発動。炎攻撃力+**15%**、炎耐性+**25%**。装備すると常時有効(複数の炎共鳴/炎反応はスタック不可、炎共鳴が優先して発動)。\r\n**神槍・速斬り**：**ロンギヌスの槍**の装備時、任意武器による連携スキルを命中させると付近のターゲットに対し物理攻撃力×**58.58%**+自身の最大HP×**0.78%**+各属性耐性の合計値×**29.29%**+会心の値×**107.4%**のダメージを与える。その後、戦闘状態が継続する間、次回以降の速斬りは**0.5**秒間隔でダメージが上昇し、1回目の速斬りダメージ×**100％**ずつ加算されていく(この加算は最大**30**回まで)。1回目の速斬りダメージが複数発生した場合は、各攻撃が最初に与えたダメージのうちの最大値を基準にする。また、速斬りダメージは連携ダメージと見なされる。氷/雷属性武器のいずれかを1つ以上装備している場合、神槍ダメージが**1.3**倍まで UPする。なお、神槍ダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない。",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "復讐のスタック上限が**10**から**15**まで UPする。また、すべてのスタックを消費した後、巨大なロンギヌスの槍による攻撃が追加で発動する。現在の武器ダメージ属性が**物理**または**炎**の場合は、その攻撃力×**2000%**の属性ダメージを付近のターゲットに与える。",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**16%**。",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "**Ａ.Ｔ.フィールド**が存在しているとき、攻撃時にターゲットのシールドが持つダメージ軽減効果を一定値無視できる：現在の**Ａ.Ｔ.フィールド**の耐久値**パーセンテージ**×**30%**+**20%**。さらに**剛毅共鳴**の発動中は、自身のシールドブレイク率が UPする：現在の**Ａ.Ｔ.フィールド**の耐久値**パーセンテージ**×**100%**。",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**32%**。",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "**復讐**を**1**スタック消費するたび、**Ａ.Ｔ.フィールド**の最大耐久値を**6%**回復させる。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "**Ａ.Ｔ.フィールド**が存在しているときに獲得する物理ダメージバフが**36%**まで UP、炎ダメージバフが**24%**まで UPする。\r\nさらに**剛毅共鳴**の発動中かつ**Ａ.Ｔ.フィールド**が存在しているとき、\n近くの仲間にターゲットのシールドが持つダメージ軽減効果を**15%**無視させ、周囲のターゲットの全属性耐性-**1200%**、この効果はスタック不可。",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "揮槍シルエット",
+					"description": "地上にいる時、通常攻撃を行うと5回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージとノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージとノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージとノックバック\r\n4回目：最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージとノックバック\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージとノックアップ",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_melee.webp",
+					"id": "GA_FPlayerAsukaMelee_Melee"
+				},
+				{
+					"name": "穿槍ブリッツ",
+					"description": "滞空時に通常攻撃を行うと、スタミナを消費して空中で5回連続攻撃ができる。ターゲットに与えるダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>とノックアップ",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_airattack.webp",
+					"id": "GA_FPlayerAsukaMelee_AirAttack"
+				},
+				{
+					"name": "神槍ヒステリー",
+					"description": "地上で通常攻撃を行う時、1～4回目で通常攻撃を長押しすると、<shuzhi>神槍ヒステリー</>を発動できる。\r\n連続で攻撃を行い、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_branch.webp",
+					"id": "GA_FPlayerAsukaMelee_Branch"
+				},
+				{
+					"name": "騎槍ドライブ",
+					"description": "滞空時に通常攻撃を長押し(敵の存在時)、またはクライミング時/反転ジャンプ攻撃時/ジェットパック使用時に通常攻撃を行うと、<shuzhi>騎槍ドライブ</>を発動できる。\r\n空中から落下し、着地時に付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_jumpattack.webp",
+					"id": "GA_FPlayerAsukaMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAsukaEvade_Evade"
+				},
+				{
+					"name": "長槍プランダー",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、<shuzhi>長槍プランダー</>を発動できる。前方にいるターゲットに最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_fevadeattack.webp",
+					"id": "GA_FPlayerAsukaEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "躍動スマッシュ",
+					"description": "回避後すぐに通常攻撃を行うと、<shuzhi>躍動スマッシュ</>を発動できる。前方にいるターゲットに最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_bevadeattack.webp",
+					"id": "GA_FPlayerAsukaEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "ニンバスの破撃",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
+					"id": "GA_FPlayerAsukaSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "エヴァ出撃！",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解除</>する。２号機が飛び蹴りを行い、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>の範囲ダメージを与える。その間、ダメージ無効が<shuzhi>1.5</>秒間持続する(トップリーグでは無効)。",
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
+					"id": "GA_FPlayerAsukaChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Memandang Gray",
+					"description": "少女はここで、彼方を見つめる",
+					"rarity": 5,
+					"source": "イベントで獲得",
+					"simulacrumId": "imitation_55",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_MRX.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_MRX_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_55"
+				}
+			}
+		],
+		"version": "CN-Only",
+		"limited": true,
+		"id": "asuka_physic"
 	},
 	"brush_fire": {
 		"name": "松慧",
@@ -15385,7 +16193,7 @@
 			}
 		],
 		"version": "2.3",
-		"limited": true,
+		"limited": false,
 		"id": "fenrir_thunder"
 	},
 	"umbrella_fire": {
@@ -15608,7 +16416,7 @@
 				"need": "umbrella_fire_plasm"
 			},
 			{
-				"description": "舞火激昂意、孤羽騰祥雲で与えるダメージ+**50%**。\r\n飾り羽の高速回転、輝鳳長嘆嗟、【炎決壊】発動時に【群羽の力】+**2**。",
+				"description": "舞火激昂意、孤羽騰祥雲で与えるダメージ+**50%**。\r\n飾り羽の高速回転、輝鳳長嘆嗟、【炎決壊】の効果精算時に【群羽の力】+**2**。",
 				"charge": 8,
 				"shatter": 14,
 				"multiplier": [

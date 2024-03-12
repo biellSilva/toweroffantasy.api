@@ -1401,7 +1401,7 @@
 				"need": "cannon_ice_plasm"
 			},
 			{
-				"description": "Within **10** seconds upon switching to the weapon, increase damage of normal attacks and shatter by **40%**. Cooldown: **25** seconds.",
+				"description": "Increase normal attack damage and shatter by **40%** for **10** seconds upon switching to this weapon. Cooldown: **25** seconds.",
 				"charge": 10,
 				"shatter": 16,
 				"multiplier": [
@@ -8056,7 +8056,7 @@
 			},
 			{
 				"title": "**Poppa: Detachment**:",
-				"description": "After using **Mirror Image**, deal damage equal to **87.5%** of flame ATK plus **12.5%** of Max HP plus **45%** the sum of all the Wanderer's resistance types plus **168.8%** of crit every second for **30** seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is **1** volt or frost weapon equipped, then Poppa's damage is multiplied by **1.3** times. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+				"description": "After using **Mirror Image**, deal damage equal to **87.5%** of flame ATK plus **12.5%** of the Wanderer's Max HP plus **45%** of the sum of all the Wanderer's resistance types plus **168.8%** of crit to the target every second for **30** seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is **1** volt or frost weapon equipped, then Poppa's damage is multiplied by **1.3**. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
 			}
 		],
 		"elementEffects": {
@@ -8065,7 +8065,7 @@
 		},
 		"advancements": [
 			{
-				"description": "**Fusion of Flame and Mass**: When the weapon deals damage, damage is calculated using the highest equipped flame/physical base ATK, the highest equipped flame/physical ATK percentage, and the highest equipped flame/physical damage boost, and the weapon is considered both a flame and a physical weapon.\r\n**Flame Resonance**: Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame reaction effects, with Flame Resonance taking precedence.\r\n**Physical Resonance**: Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical reaction effects, with Physical Resonance taking precedence.\r\n**Poppa: Detachment**: After using **Mirror Image**, deal damage equal to **87.5%** of flame ATK plus **12.5%** of Max HP plus **45%** the sum of all the Wanderer's resistance types plus **168.8%** of crit every second for **30** seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is **1** volt or frost weapon equipped, then Poppa's damage is multiplied by **1.3** times. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.",
+				"description": "**Fusion of Flame and Mass**: When the weapon deals damage, damage is calculated using the highest equipped flame/physical base ATK, the highest equipped flame/physical ATK percentage, and the highest equipped flame/physical damage boost, and the weapon is considered both a flame and a physical weapon.\r\n**Flame Resonance**: Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame reaction effects, with Flame Resonance taking precedence.\r\n**Physical Resonance**: Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical reaction effects, with Physical Resonance taking precedence.\r\n**Poppa: Detachment**: After using **Mirror Image**, deal damage equal to **87.5%** of flame ATK plus **12.5%** of the Wanderer's Max HP plus **45%** of the sum of all the Wanderer's resistance types plus **168.8%** of crit to the target every second for **30** seconds. Multiple Detachment damages will not stack. Poppa damage counts as skill damage. If there is **1** volt or frost weapon equipped, then Poppa's damage is multiplied by **1.3**. In addition, Poppa's damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8089,7 +8089,7 @@
 				"need": null
 			},
 			{
-				"description": "While **Poppa is Here** is active, every **7** explosive shots will launch a **Heavy Energy Round II** that deal damage equal to **590%** of ATK and splits into several explosives, dealing damage equal to **660%** of ATK to nearby targets.",
+				"description": "While **Poppa is Here** is active, Poppa will launch a **Heavy Energy Round II** for every **7** explosive shot fired, dealing damage equal to **590%** of ATK to nearby targets and then splits into several high explosives, dealing damage equal to **660%** of ATK to nearby targets.",
 				"charge": 12,
 				"shatter": 14,
 				"multiplier": [
@@ -8311,9 +8311,7 @@
 					"name": "Diving Protocol",
 					"description": "Hold dodge while in mid-air to trigger Diving Protocol, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> upon landing.",
 					"operations": [
-						"Jump",
-						"Dash",
-						"Hold Attack"
+						"Jump"
 					],
 					"tags": [
 						"Damage"
@@ -8372,7 +8370,11 @@
 				{
 					"name": "Airborne Protocol",
 					"description": "Dodge attacks can be used while the Wanderer is airborne.\r\nFor every <shuzhi>2</> dodge attacks using <shuzhi>EP-7000 Skyfire</>, Poppa appears and uses a dodge attack as well, dealing damage equal to <shuzhi>50% to 100%</> of the Wanderer's damage dealt based on Poppa's mood.\r\nAfter every <shuzhi>2</> dodge attacks using <shuzhi>EP-7000 Skyfire</> or <shuzhi>1</> dodge attack using <shuzhi>EP-7000 Skyfire</> while <shuzhi>Poppa is Here</> is in effect, reduce <shuzhi>Mirror Image's</> cooldown by <shuzhi>10</> seconds. Can only be triggered <shuzhi>1</> time for each Mirror Image's cooldown.",
-					"operations": [],
+					"operations": [
+						"Jump",
+						"Dash",
+						"Attack"
+					],
 					"tags": [
 						"Damage"
 					],
@@ -12395,8 +12397,7 @@
 					"name": "Latent State",
 					"description": "Dodge before holding to enter Latent State, during which endurance is constantly consumed and speed is increased by <shuzhi>50%</>. Increase speed by an additional <shuzhi>50%</> in the Chilling Field. When exiting Latent State, deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to all nearby targets and freeze them for <shuzhi>2</> seconds.",
 					"operations": [
-						"Dash",
-						"Hold Attack"
+						"Movement"
 					],
 					"tags": [
 						"Control"
@@ -12882,6 +12883,423 @@
 		"limited": true,
 		"id": "killknife_physic"
 	},
+	"lances_ice": {
+		"name": "Wicked",
+		"description": "By sealing the malicious dark energy within the lance, the knight truly becomes a \"knight.\" And then... the knight takes the girl's hand, and together, they step into a tomorrow with endless possibilities.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_yanuo.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_yanuo.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/yanuo.webp"
+		},
+		"rarity": 5,
+		"element": "Ice",
+		"type": "Lances",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Lances_Ice_ssr_star",
+		"avatar": "imitation_54",
+		"mats": {
+			"Item_Mine_ice": 39,
+			"Item_Mine_ice_02": 65,
+			"Item_breakthrough_B2": 65,
+			"Item_breakthrough_D2": 65,
+			"Item_Mine_ice_03": 32,
+			"Item_breakthrough_B3": 32,
+			"Item_breakthrough_D3": 32,
+			"Item_breakthrough_B1": 35,
+			"Item_breakthrough_D1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "Attack",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Fusion of Volt and Frost**:",
+				"description": "When the weapon deals damage, damage is calculated using the highest equipped volt/frost base ATK, the highest equipped volt/frost ATK percentage, and the highest equipped volt/frost damage boost, and the weapon is considered both a volt and frost weapon."
+			},
+			{
+				"title": "**Volt Resonance**:",
+				"description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence."
+			},
+			{
+				"title": "**Frost Resonance**:",
+				"description": "Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect works in the off-hand slot. Cannot stack with other Frost Resonance or Frost Reaction effects, with Frost Resonance taking precedence"
+			},
+			{
+				"title": "**Chilling Strike: On-Field**:",
+				"description": "When hitting any target with **Wicked**, deal damage equal to **205%** of frost ATK plus **2.9%** of Max HP plus **106%** of the sum of all the Wanderer's resistance types plus **3.9%** of crit to nearby targets. Can be triggered up to 1 time every **1.5** seconds. Chilling Strike damage counts as normal attack damage. If any **1** physical or flame weapon is equipped, Chilling Strike damage is multiplied by **1.3**. In addition, Chilling Strike damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+			}
+		],
+		"elementEffects": {
+			"title": "**Ice Shell**:",
+			"description": "When the weapon is fully charged, the next attack will **strongly freeze** targets for **2** seconds and leave them frostbitten for **6** seconds. Breaking the ice shell deals damage equal to **151.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
+		},
+		"advancements": [
+			{
+				"description": "**Fusion of Volt and Frost**: When the weapon deals damage, damage is calculated using the highest equipped volt/frost base ATK, the highest equipped volt/frost ATK percentage, and the highest equipped volt/frost damage boost, and the weapon is considered both a volt and frost weapon.\r\n**Volt Resonance**: Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence.\r\n**Frost Resonance**: Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect works in the off-hand slot. Cannot stack with other Frost Resonance or Frost Reaction effects, with Frost Resonance taking precedence\r\n\r\n**Chilling Strike: On-Field**: When hitting any target with **Wicked**, deal damage equal to **205%** of frost ATK plus **2.9%** of Max HP plus **106%** of the sum of all the Wanderer's resistance types plus **3.9%** of crit to nearby targets. Can be triggered up to 1 time every **1.5** seconds. Chilling Strike damage counts as normal attack damage. If any **1** physical or flame weapon is equipped, Chilling Strike damage is multiplied by **1.3**. In addition, Chilling Strike damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "When dealing damage to targets below **80%** HP, increase final damage by **12%**. This effect works in the off-hand slot.\r\nBeing attacked when in **Concealment** state will not break Concealment and the maximum number of attacks that can be blocked is increased to **3** times. After breaking Concealment by launching an attack, additionally gain a shield equal to **Concealment** duration multiplied by **5%** of the Wanderer's Max HP (does not exceed **120%** of the Wanderer's Max HP). Lasts for **30** seconds.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **16%**.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Increase **Wicked's** shatter by **20%**.\r\nWhen **Fevered Hunt** is **triggered**, draw in nearby ice cores to the Wanderer's surroundings and detonate them, then enter Permeation for **5** seconds, during which **Arctic Bite** replaces the weapon-switching button (but this Arctic Bite does not trigger the additional skill effects) and each time it is used reduces **Arctic Bite's** cooldown by **20** seconds. Use normal attack to immediately exit Permeation.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **32%**.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "Increase Ice Core Detonation damage by **150%**.\nAfter **Fixate** tosses the weapon and **hits a target**, place Snow Trace on the target for **5** seconds (this effect's trigger is prioritized before the charged attack damage from **Fixate**). When Snow Trace fades, target takes damage equal to **30%** of the total damage taken during Snow Trace (does not exceed Wanderer's ATK multiplied by **650** in solo mode, and Wanderer's ATK multiplied by **6500** while on a team). Damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects. Snow Trace can be triggered up to **once** every **30** seconds.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			},
+			{
+				"description": "The frost-volt damage increase from **Arctic Bite** can be stacked up to **3** times.",
+				"charge": 12,
+				"shatter": 16,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Lances_Ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Pillage",
+					"description": "While on the ground, use normal attack to launch 6 consecutive attacks (up to <shuzhi>45</> ice cores may exist on the field at any given time).\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>, and create <shuzhi>1</> ice core.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>, and create <shuzhi>2</> ice cores.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>, and create <shuzhi>1</> ice core.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</>, and create <shuzhi>3</> ice cores.\r\nSixth Attack: Deal damage equal to <shuzhi>{10}%</> of ATK plus <shuzhi>{11}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Melee.webp",
+					"id": "GA_FPlayerLancesMelee_Melee"
+				},
+				{
+					"name": "Hunt",
+					"description": "While airborne, use normal attack to launch 6 consecutive attacks in mid-air, consuming endurance.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</>.\r\nSixth Attack: Deal damage equal to <shuzhi>{10}%</> of ATK plus <shuzhi>{11}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_AirAttack.webp",
+					"id": "GA_FPlayerLancesMelee_AirAttack"
+				},
+				{
+					"name": "Frozen Spike",
+					"description": "While on the ground, tap and hold normal attack when using the second, fourth, and fifth normal attacks to trigger Frozen Spike, leaping backward to charge while in the air, up to <shuzhi>3</> charges.\r\nPhase 1 charged hit: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nPhase 2 charged hit: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nPhase 3 charged hit: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_Branch.webp",
+					"id": "GA_FPlayerLancesMelee_Branch"
+				},
+				{
+					"name": "Death From Above",
+					"description": "While airborne, tap and hold normal attack to trigger Death From Above.\r\nStab the ground with the lance upon landing, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_JumpAttack.webp",
+					"id": "GA_FPlayerLancesMelee_JumpAttack"
+				},
+				{
+					"name": "Fixate",
+					"description": "While on the ground, hold normal attack to trigger Fixate to charge. Within <shuzhi>6</> seconds, damage increases depending on the charge duration, during which the Wanderer gains hyperbody, then the weapon is tossed in the target's direction. After the weapon <shuzhi>lands a hit</>, deal damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. Aim assist is activated after aiming at a target within range for <shuzhi>2.5</> seconds during Fixate's charging. The tossed weapon automatically hits the target in the head (losing the target with aim assist does not affect charging).\nAfter Fixate tosses the weapon, a new skill button for<shuzhi>Shadow Execution</> becomes available.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttack.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttack"
+				},
+				{
+					"name": "Boneshaver",
+					"description": "While on the ground, tap and hold normal attack when aiming at the sky to trigger Boneshaver, during which the Wanderer gains hyperbody. Tosses the lance in the target direction, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets and placing <shuzhi>Force Impact</> on targets hit.\r\nBoneshaver does not trigger <shuzhi>Shadow Execution</> after tossing the weapon.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttackSp.webp",
+					"id": "GA_FPlayerLancesMelee_PowerAttackSP"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/main/shanbi.webp",
+					"id": "GA_FPlayerLancesEvade"
+				},
+				{
+					"name": "Concealment",
+					"description": "While on the ground, tap and hold dodge to trigger Concealment for <shuzhi>60</> seconds and become concealed (in solo mode, create an ice sculpture that attracts enemy attention for up to <shuzhi>15</> seconds), increasing movement speed by <shuzhi>30%</>. While concealed, the Wanderer blocks damage equal to <shuzhi>50%</> of Max HP up to <shuzhi>1</> time (this effect can only be triggered up to <shuzhi>1</> time every <shuzhi>10</> seconds). Concealment breaks when launching an attack and dealing damage with <shuzhi>Wicked</>, being attacked, or swapping weapons.\r\n<shuzhi>Hunting</>: When concealment breaks from launching an attack with <shuzhi>Wicked</> and <shuzhi>landing a hit</>, trigger Fevered Hunt. This resets <shuzhi>Arctic Bite's</> cooldown and increases the Wanderer's final damage exponentially by <shuzhi>2.4%</> to <shuzhi>36%</> based on the Concealment duration. Receive maximum damage boost after <shuzhi>10</> seconds of Concealment. Damage dealt using <shuzhi>Fixate</> to trigger Hunting also benefits from the damage boost.",
+					"operations": [],
+					"tags": [
+						"Support"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHold.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHold"
+				},
+				{
+					"name": "Impending Chill",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Impending Chill, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead and creating <shuzhi>2</> ice cores (up to <shuzhi>45</> ice cores may exist on the field at any given time).",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackFront.webp",
+					"id": "GA_FPlayerLancesEvade_AttackFront"
+				},
+				{
+					"name": "Death Aflutter",
+					"description": "Use normal attack right after dodging backward to trigger Death Aflutter, leaping forward and dealing equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets upon landing. This also creates <shuzhi>1</> ice core (up to <shuzhi>45</> ice cores may exist on the field at any given time).",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeAttackBack.webp",
+					"id": "GA_FPlayerLancesEvade_AttackBack"
+				},
+				{
+					"name": "Unforeseen Doom",
+					"description": "Tap normal attack at the moment the Wanderer enters concealment from holding dodge to quickly trigger <shuzhi>Fixate</>, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. After tossing the weapon, a new skill button for <shuzhi>Shadow Execution</> becomes available.",
+					"operations": [
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_EvadeHoldAndAttack.webp",
+					"id": "GA_FPlayerLancesEvade_EvadeHoldAndAttack"
+				}
+			]
+		},
+		"fashion": [],
+		"version": "3.6",
+		"limited": true,
+		"id": "lances_ice"
+	},
 	"blevi_thunder": {
 		"name": "Pactcrest ☆ Metz",
 		"description": "Since familiars and contract beasts can grant extraordinary powers to multiple girls, wouldn't it be more efficient for them to take direct action in combat? With this in mind, she decided to let her little helper set an example.",
@@ -13115,7 +13533,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "While Pact Amplification is active, increase volt and frost damage boost by **10%**. Metz Halo increases nearby teammates' final damage by **20%** and shatter by **25%**. This effect does not stack.",
+				"description": "While Pact Amplification is active, increase volt and frost damage boost effects by **10%** and **4%** respectively. Metz Halo increases nearby teammates' final damage by **20%** and shatter by **25%**. This effect does not stack.",
 				"charge": 10,
 				"shatter": 12,
 				"multiplier": [
@@ -13641,7 +14059,8 @@
 					"name": "Ember Mag",
 					"description": "Switch modules to change the effects of Cross Snipe and Twilight Arc. Cross Snipe can be used up to <shuzhi>8</> times. Skill cooldown: <shuzhi>14</> seconds.\r\n<shuzhi>Ruthless Bomb</>: The effect of Cross Snipe becomes a flame explosion that deals base damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> within an area. After charging, deal damage up to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>. Upon hitting targets that are not burning, inflict them with Cross Burn, which deals damage equal to <shuzhi>90%</> of ATK every second for <shuzhi>13</> seconds. Upon hitting burning targets, inflict them with Cross Burn, and enter Burn Enhancement for <shuzhi>20</> seconds, which increases burn damage on targets by <shuzhi>20%</>. When using Twilight Arc, you now throw <shuzhi>3</> grenades instead.\r\n<shuzhi>Deceitful Bomb</>: Changes the effects of Cross Snipe into a ranged Gas attack that deals base damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> upon hit. After charging, deal up to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>. Targets in the Gas will be slowed. The slow effect becomes stronger over time, and the Gas lasts <shuzhi>7</> seconds. Twilight Arc can detonate the Gas (the longer the charge, the greater the Gas explosion damage), dealing explosion damage up to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> (this is deemed as triggering Cross Snipe 1 time) and reducing the target's flame resistance by <shuzhi>10%</> for <shuzhi>10</> seconds.\r\n\r\n<shuzhi>Passive</>: After confirming the module, you will receive Optical Enhancement corresponding to the number of dodge attempt recoveries and Cross Snipe charge time reductions. Optical Enhancement: Reduces the charging time of Cross Snipe by <shuzhi>30%</>, becoming immune to control effects while charging. Recover <shuzhi>1</> dodge attempt (up to <shuzhi>4</> dodge attempts) every <shuzhi>2</> dodges.\r\n<shuzhi>Passive</>: While the Deceitful Bomb Module is in effect, Cross Snipe has a chance of reducing the cooldown of other flame weapon skills by <shuzhi>0.7</> seconds after hitting a target.\r\n<shuzhi>Passive</> <shuzhi>Tranquil Heart</>: When Clover Cross uses discharge/skill/charged attack/dodge, increase final crit rate of Clover Cross by <shuzhi>5%</> for <shuzhi>15</> seconds. This effect can stack up to <shuzhi>3</> times. After crit rate exceeds <shuzhi>100%</>, <shuzhi>50%</> of the excess crit rate is converted to crit damage, up to a maximum of <shuzhi>7.5%</> crit damage.",
 					"tags": [
-						"Damage"
+						"Damage",
+						"Ammo"
 					],
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_snipe_skillstart.webp",
 					"id": "GA_FPlayerSnipeSkill_Skill"
@@ -13687,6 +14106,403 @@
 		"version": "2.2",
 		"limited": false,
 		"id": "snipe_fire"
+	},
+	"asuka_physic": {
+		"name": "Spear of Longinus",
+		"description": "Legend has it that these are the roots of the Tree of Life, possessing powers no one can withstand.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_mingrixiang.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_mingrixiang.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/mingrixiang2.webp"
+		},
+		"rarity": 5,
+		"element": "Physics",
+		"type": "Asuka",
+		"weaponUpgradeId": "physic_ssr_tupo_AC",
+		"wc": "Tank",
+		"advanceID": "Asuka_physic_ssr_star",
+		"avatar": "imitation_55",
+		"mats": {
+			"Item_Mine_physic": 39,
+			"Item_Mine_physic_02": 65,
+			"Item_breakthrough_A2": 65,
+			"Item_breakthrough_C2": 65,
+			"Item_Mine_physic_03": 32,
+			"Item_breakthrough_A3": 32,
+			"Item_breakthrough_C3": 32,
+			"Item_breakthrough_A1": 35,
+			"Item_breakthrough_C1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "Attack",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [],
+		"effects": [
+			{
+				"title": "**Fusion of Mass and Flame**:",
+				"description": "When the weapon deals damage, damage is calculated using the highest equipped physical/flame base ATK, the highest equipped physical/flame ATK percentage, and the highest equipped physical/flame damage boost, and the weapon is considered both a physical and flame weapon."
+			},
+			{
+				"title": "**Physical Resonance**:",
+				"description": "Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical Reaction effects, with Physical Resonance taking precedence."
+			},
+			{
+				"title": "**Flame Resonance**:",
+				"description": "Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence."
+			},
+			{
+				"title": "**Reverent Spear: Swift Cut**:",
+				"description": "When **Spear of Longinus** is equipped, any weapon's discharge skill will deal damage equal to **58.58%** of physical ATK plus **0.78%** of Max HP plus **29.29%** of the sum of all the Wanderer's resistance types plus **107.4%** of crit to nearby targets. While in combat, after every **0.5** seconds, the next Swift Cut damage will be increased by an additional **1** time, up to a maximum of **30** times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is 1 frost/volt weapon of any kind equipped, Reverent Spear damage is increased to **1.3** times. In addition, Reverent Spear damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+			}
+		],
+		"elementEffects": {
+			"title": "**Grievous**:",
+			"description": "When the weapon is fully charged, the next attack will cause enemies to become grievous for **7** seconds, increasing their damage received by **20%** and dealing damage equal to **137.00%** of ATK. When in **team play**, physical damage dealt to grievous targets is increased by an additional **20%**."
+		},
+		"advancements": [
+			{
+				"description": "**Fusion of Mass and Flame**: When the weapon deals damage, damage is calculated using the highest equipped physical/flame base ATK, the highest equipped physical/flame ATK percentage, and the highest equipped physical/flame damage boost, and the weapon is considered both a physical and flame weapon.\r\n**Physical Resonance**: Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical Reaction effects, with Physical Resonance taking precedence.\r\n**Flame Resonance**: Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence.\r\n**Reverent Spear: Swift Cut**: When **Spear of Longinus** is equipped, any weapon's discharge skill will deal damage equal to **58.58%** of physical ATK plus **0.78%** of Max HP plus **29.29%** of the sum of all the Wanderer's resistance types plus **107.4%** of crit to nearby targets. While in combat, after every **0.5** seconds, the next Swift Cut damage will be increased by an additional **1** time, up to a maximum of **30** times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is 1 frost/volt weapon of any kind equipped, Reverent Spear damage is increased to **1.3** times. In addition, Reverent Spear damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "Increase maximum Vengeance stacks from **10** to **15**. After all stacks are consumed, additionally trigger an enormous Spear of Longinus. If the current weapon's element is **physical** or **flame**, deal the weapon's elemental damage equal to **2000%** of ATK to nearby targets.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **16%**.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "While the Wanderer has an **A.T. Field** active, attacks can ignore a certain percentage of the damage reduction from a target's shield. This percentage is equal to **30%** of the current **A.T. Field's** **durability percentage** plus **20%**. When Fortitude Resonance is active, increase the Wanderer's shatter at a rate equal to **100%** of the **A.T. Field's** **durability percentage**.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **32%**.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "For every **1** stack of **Vengeance** consumed, regenerate **6%** of **A.T. Field's** maximum durability.",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "Increase the physical damage boost granted while **A.T. Field** is active to **36%** and the flame damage boost to **24%**.\r\nWhen **Fortitude Resonance** is activated, while **A.T. Field** is active, nearby teammates ignore**15%** of their targets' shield's damage reduction. Also, reduce nearby targets' all resistance by **1200%**. This effect cannot be stacked.",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Brandishing Spear: Forming Shadow",
+					"description": "While on the ground, use normal attack to launch 5 consecutive attacks.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back. \r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back.\r\nFourth Attack: Deal damage up to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and launch the target.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_melee.webp",
+					"id": "GA_FPlayerAsukaMelee_Melee"
+				},
+				{
+					"name": "Thrusting Spear: Blinking Shadow",
+					"description": "While airborne, use normal attack to attack 5 times in a row in mid-air, consuming endurance.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and launch the target.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_airattack.webp",
+					"id": "GA_FPlayerAsukaMelee_AirAttack"
+				},
+				{
+					"name": "Reverent Spear: Raging Wave",
+					"description": "While using normal attack on the ground, tap and hold normal attack when using the first to fourth normal attacks to trigger <shuzhi>Reverent Spear: Raging Wave</>.\r\nContinuously attack multiple times, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_branch.webp",
+					"id": "GA_FPlayerAsukaMelee_Branch"
+				},
+				{
+					"name": "Charging Spear: Assassinate",
+					"description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using the Jetpack to trigger <shuzhi>Charging Spear: Assassinate</>.\r\nDive down from above, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets upon reaching the ground.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_jumpattack.webp",
+					"id": "GA_FPlayerAsukaMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAsukaEvade_Evade"
+				},
+				{
+					"name": "Extending Spear: Plunder",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger <shuzhi>Extending Spear: Plunder</>, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_fevadeattack.webp",
+					"id": "GA_FPlayerAsukaEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Leaping Slam",
+					"description": "Use normal attack during the short period after dodging to trigger <shuzhi>Leaping Slam</>, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> damage to targets ahead.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_bevadeattack.webp",
+					"id": "GA_FPlayerAsukaEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Cloud-Piercer",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
+					"id": "GA_FPlayerAsukaSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Evangelion Attack",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and pilot EVA-02 to execute a flying kick, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this period, gain damage immunity for <shuzhi>1.5</> seconds (unavailable in Apex League).",
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
+					"id": "GA_FPlayerAsukaChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Overlooking the Gray",
+					"description": "The girl stood here and watched.",
+					"rarity": 5,
+					"source": "From events",
+					"simulacrumId": "imitation_55",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_MRX.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_MRX_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_55"
+				}
+			}
+		],
+		"version": "CN-Only",
+		"limited": true,
+		"id": "asuka_physic"
 	},
 	"brush_fire": {
 		"name": "Pine Comet",
@@ -15431,7 +16247,7 @@
 			}
 		],
 		"version": "2.3",
-		"limited": true,
+		"limited": false,
 		"id": "fenrir_thunder"
 	},
 	"umbrella_fire": {
@@ -15655,7 +16471,7 @@
 				"need": "umbrella_fire_plasm"
 			},
 			{
-				"description": "Increase the damage dealt by Dancing Flames and Soaring Strike by **50%**.\r\nThe multiplier for rapidly spinning parasols, Phoenix Sweep, and Fiery Crash is now Polyfeather Parasol plus **2**.",
+				"description": "Increase the damage dealt by Dancing Flames and Soaring Strike by **50%**.\r\n When calculating the effects of spinning parasols, Phoenix Sweep, and Fiery Crash add **2** to Polyfeather Paraso.",
 				"charge": 8,
 				"shatter": 14,
 				"multiplier": [
