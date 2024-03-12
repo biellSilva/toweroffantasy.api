@@ -35,8 +35,11 @@ dev = [
 ]
 
 [tool.pdm.scripts]
-prod = "uvicorn src.main.app:app --no-access-log --log-config ./log-config.yml"
+prod = "uvicorn src.main.app:app --no-access-log --log-config ./log-config.yml --host=0.0.0.0 --port=8080"
 dev = "uvicorn src.main.app:app --reload --reload-dir ./ --log-config ./log-config.yml"
+
+export-prod = 'pdm export --prod --output requirements.txt'
+export-dev = 'pdm export --dev --output requirements-dev.txt'
 
 test = "pytest"
 test-data = "pytest tests/infra/repository"
