@@ -15,7 +15,6 @@ GB_BANNERS: list[Banner] = [
     for data in loads(
         Path(f"api/infra/database/global/banners_global.json").read_bytes()
     )
-    if data["imitation_id"] not in ("imitation_54")
 ]
 
 EXTRA_ASSETS: dict[str, str | list[str]] = {
