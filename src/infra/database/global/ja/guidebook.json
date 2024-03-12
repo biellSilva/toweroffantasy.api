@@ -279,6 +279,48 @@
 		"menuType": "WorldExploration",
 		"id": "Guide_worldBarrier"
 	},
+	"Guide_WorldBoss_Bomb": {
+		"name": "元素手榴弾",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_cz02.webp",
+		"array": [
+			{
+				"title": "元素手榴弾",
+				"description": "緻密に計算のもとに設計された元素手榴弾、色ごとに効果が異なる。持ち運びは慎重に。敵に向かって投げると、戦闘がかなり有利になる",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/Minigame/worldbossbomb.webp"
+			}
+		],
+		"menuId": "WorldExplore",
+		"menuType": "WorldExploration",
+		"id": "Guide_WorldBoss_Bomb"
+	},
+	"Guide_WorldBoss_BombBall": {
+		"name": "エナジーロック",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_cz02.webp",
+		"array": [
+			{
+				"title": "エナジーロック",
+				"description": "異様な輝きを放つ石、色ごとに異なるエナジーを内包する。敵に向かって投げると、驚くほど役に立つ",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/Minigame/worldbossbombball.webp"
+			}
+		],
+		"menuId": "WorldExplore",
+		"menuType": "WorldExploration",
+		"id": "Guide_WorldBoss_BombBall"
+	},
+	"Guide_WorldBoss_DroneBomb": {
+		"name": "機載爆弾",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_cz02.webp",
+		"array": [
+			{
+				"title": "機載爆弾",
+				"description": "ドローンが搭載している高火力爆弾は一見ボロボロだが、その威力は絶大である。ドローンを破壊すると爆弾が自動的に落ちてきて…あとはドカーン！という仕組みだ",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/Minigame/worldbossDroneBomb.webp"
+			}
+		],
+		"menuId": "WorldExplore",
+		"menuType": "WorldExploration",
+		"id": "Guide_WorldBoss_DroneBomb"
+	},
 	"Guide_worldFB": {
 		"name": "遺跡",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_cz02.webp",
@@ -1677,6 +1719,20 @@
 		"menuType": "System",
 		"id": "Guide_Artifact_SSR_003"
 	},
+	"Guide_Artifact_SSR_015": {
+		"name": "ペリカン号",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_wfjq02.webp",
+		"menuId": "Battle",
+		"menuType": "System",
+		"id": "Guide_Artifact_SSR_015"
+	},
+	"Guide_Artifact_SSR_019": {
+		"name": "Speedwalker",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_wfjq02.webp",
+		"menuId": "Battle",
+		"menuType": "System",
+		"id": "Guide_Artifact_SSR_019"
+	},
 	"Guide_ArtifactGuideSR004": {
 		"name": "ジェットパック",
 		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_wfjq02.webp",
@@ -1746,6 +1802,20 @@
 		"menuId": "EQUIPMENT_SLOT_WEAPON",
 		"menuType": "All",
 		"id": "bow_physic"
+	},
+	"BP_BOSS_DianCI": {
+		"name": "電磁壁式フォースフィールド",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_cz02.webp",
+		"array": [
+			{
+				"title": "電磁壁式フォースフィールド",
+				"description": "九域がハガードから学んだ防御技術を用いて構築したエネルギーフォースフィールドは、接触した敵にダメージを与えることができる。この装置はテスト中であり、圧力式のメカニズムによって装置が起動するように設計されている",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/Minigame/worlddianci.webp"
+			}
+		],
+		"menuId": "WorldExplore",
+		"menuType": "WorldExploration",
+		"id": "BP_BOSS_DianCI"
 	},
 	"stave_thunder": {
 		"name": "聖痕の杖",
@@ -1886,6 +1956,13 @@
 		"menuId": "EQUIPMENT_SLOT_WEAPON",
 		"menuType": "All",
 		"id": "arm_physic"
+	},
+	"Asuka_physic": {
+		"name": "ロンギヌスの槍",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_wfjq02.webp",
+		"menuId": "EQUIPMENT_SLOT_WEAPON",
+		"menuType": "All",
+		"id": "Asuka_physic"
 	},
 	"tianlang_thunder": {
 		"name": "破重雷槍",
@@ -2139,7 +2216,7 @@
 		"array": [
 			{
 				"title": "煙渺・規衡",
-				"description": "武器「規衡」のアバターキャラクター「煙渺」。対応する武器を開放すると、「煙渺」に変身してTower of Fantasyの世界で冒険できる。",
+				"description": "武器「規衡」のアバターキャラクター。対応する武器を開放すると、「煙渺」に変身してTower of Fantasyの世界で冒険できる",
 				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/monster/UI_Nitai_YanMiao_SSR_L10N.webp"
 			},
 			{
@@ -2393,7 +2470,7 @@
 		"array": [
 			{
 				"title": "南音・紫竹",
-				"description": "武器「紫竹」のアバターキャラクター。対応する武器を開放すると、「南音」に変身してTower of Fantasyの世界で冒険できる。",
+				"description": "武器「紫竹」のアバターキャラクター。対応する武器を開放すると、「南音」に変身してTower of Fantasyの世界で冒険できる",
 				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/monster/UI_Nitai_nanyin_SSR_L10N.webp"
 			},
 			{
@@ -2538,6 +2615,25 @@
 		"menuId": "imitate_role",
 		"menuType": "Weapon",
 		"id": "Nitai_annabeila_SSR"
+	},
+	"Nitai_Asuka_SSR": {
+		"name": "アスカ",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_nitai02.webp",
+		"array": [
+			{
+				"title": "アスカ・ロンギヌスの槍",
+				"description": "武器「ロンギヌスの槍」のアバターキャラクター。対応する武器を開放すると、「アスカ」に変身してTower of Fantasyの世界を冒険できる",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/L10N/ja/Resources/UI/Scenery/monster/UI_Nitai_mingrixiang_SSR_L10N.webp"
+			},
+			{
+				"title": "アスカ・ロンギヌスの槍",
+				"description": "ロンギヌスの槍の操作マニュアル。武器スキルの発動方法が書いてある",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/L10N/ja/Resources/UI/Scenery/Minigame/UI_operate_langjinusizhiqiang_L10N.webp"
+			}
+		],
+		"menuId": "imitate_role",
+		"menuType": "Weapon",
+		"id": "Nitai_Asuka_SSR"
 	},
 	"Nitai_Blevi_SSR": {
 		"name": "ブレヴィ",
@@ -4952,7 +5048,7 @@
 		"array": [
 			{
 				"title": "動源検索",
-				"description": "装置起動後、散逸した動源に命中すると報酬をGETできます",
+				"description": "装置起動後、各地の動源に命中すると報酬を獲得できます",
 				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/Minigame/WorldThreeInARow.webp"
 			}
 		],
@@ -5289,6 +5385,20 @@
 		"menuId": "WorldExplore",
 		"menuType": "WorldExploration",
 		"id": "Guide_BingTian"
+	},
+	"Guide_Boss_BigMogu": {
+		"name": "巨大キノコ",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_cz02.webp",
+		"array": [
+			{
+				"title": "巨大キノコ",
+				"description": "成長を促進する能力を持つ、未知の力を宿した菌類。攻撃を受けると成長の早い胞子を吐き出し、その一部は同様の成長促進力を有しているらしい",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/Minigame/worldbigmogu.webp"
+			}
+		],
+		"menuId": "WorldExplore",
+		"menuType": "WorldExploration",
+		"id": "Guide_Boss_BigMogu"
 	},
 	"Guide_mon_hum_153": {
 		"name": "牛鬼",
@@ -5998,5 +6108,31 @@
 		"menuId": "WorldExplore",
 		"menuType": "WorldExploration",
 		"id": "Guide_FacialMovements_BH"
+	},
+	"Lances_Ice": {
+		"name": "ウィキッドガール",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_wfjq02.webp",
+		"menuId": "EQUIPMENT_SLOT_WEAPON",
+		"menuType": "All",
+		"id": "Lances_Ice"
+	},
+	"nitai_Lances_ssr": {
+		"name": "ヤノ",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PlayIntroduce/btn_nitai02.webp",
+		"array": [
+			{
+				"title": "ヤノ・ウィキッドガール",
+				"description": "武器「ウィキッドガール」のアバターキャラクター。対応する武器を開放すると、「ヤノ」に変身してTower of Fantasyの世界で冒険できる",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/monster/UI_Nitai_yanuo_SSR_L10N.webp"
+			},
+			{
+				"title": "ヤノ・ウィキッドガール",
+				"description": "ウィキッドガールの操作マニュアル。武器スキルの発動方法が書いてある",
+				"photo": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Scenery/Minigame/UI_operate_huaijiahuo_L10N.webp"
+			}
+		],
+		"menuId": "imitate_role",
+		"menuType": "Weapon",
+		"id": "nitai_Lances_ssr"
 	}
 }
