@@ -17,9 +17,8 @@ def filter_models(models: list[T], filter_dict: dict[str, Any]) -> list[T]:
 
             for k in keys:
                 if isinstance(current_value, list):
+                    item: Any
                     for item in current_value:
-                        item: Any
-
                         if isinstance(item, (BaseModel)) and hasattr(item, k):
                             if getattr(item, k) == filter_value:
                                 current_value = getattr(item, k)
