@@ -39,6 +39,7 @@ class Banner(BaseModel):
         validation_alias=AliasChoices("final_rerun", "isFinalBanner")
     )
     isCollab: bool = Field(validation_alias=AliasChoices("is_collab", "isCollab"))
+    noWeapon: bool = Field(validation_alias=AliasChoices("no_weapon", "noWeapon"))
 
 
 @strawberry.experimental.pydantic.type(model=Banner, all_fields=True)
