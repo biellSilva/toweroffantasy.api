@@ -14175,6 +14175,419 @@
 		"limited": false,
 		"id": "snipe_fire"
 	},
+	"asuka_physic": {
+		"name": "Lanze des Longinus",
+		"description": "Die Legende besagt, dass dies die Wurzeln des Lebensbaums sind und sie Kräfte besitzen, denen niemand widerstehen kann.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_mingrixiang.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_mingrixiang.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/mingrixiang2.webp"
+		},
+		"rarity": 5,
+		"element": "Physics",
+		"type": "Asuka",
+		"weaponUpgradeId": "physic_ssr_tupo_AC",
+		"wc": "Tank",
+		"advanceID": "Asuka_physic_ssr_star",
+		"avatar": "imitation_55",
+		"mats": {
+			"Item_Mine_physic": 39,
+			"Item_Mine_physic_02": 65,
+			"Item_breakthrough_A2": 65,
+			"Item_breakthrough_C2": 65,
+			"Item_Mine_physic_03": 32,
+			"Item_breakthrough_A3": 32,
+			"Item_breakthrough_C3": 32,
+			"Item_breakthrough_A1": 35,
+			"Item_breakthrough_C1": 32
+		},
+		"stats": [
+			{
+				"stat": {
+					"name": "Angriff",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "LP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Krit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Masse- und Flammenfusion**:",
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten physischen/Flammen-Basis-ANG, des höchsten ausgerüsteten physischen/Flammen-ANG-Prozentwerts und des höchsten ausgerüsteten physischen/Flammenschaden-Bonus berechnet, und die Waffe gilt sowohl als physische als auch als Flammenwaffe."
+			},
+			{
+				"title": "**Physische Resonanz**:",
+				"description": "Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird."
+			},
+			{
+				"title": "**Flammenresonanz**:",
+				"description": "Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird."
+			},
+			{
+				"title": "**Ehrfürchtige Lanze: Schneller Hieb**:",
+				"description": "Wenn **Lanze des Longinus** ausgerüstet ist, fügt die Entladungsfähigkeit jeder Waffe Zielen in der Nähe Schaden in Höhe von **58.58%** des physischen ANG + **0.78%** der max. LP + **29.29%** der Summe aller Widerstandsarten des Wanderers + **107.4%** des krit. Schadens zu. Nach Kampfbeginn wird der Schaden des nächsten schnellen Hiebs alle **0,5**Sek. zusätzlich um das **1**-fache erhöht, bis zu einem Maximum von **30**-mal. Falls „Schneller Hieb“ mehrmals Schaden verursacht, wird der höchste anfängliche Wert für die Berechnung verwendet. Der Schaden von „Schneller Hieb“ zählt als Entladungsfähigkeitsschaden. Wenn 1 Frost- oder Voltwaffe jeglicher Art ausgerüstet ist, wird der Schaden von „Ehrfürchtige Lanze“ auf das **1,3**-fache erhöht. Außerdem wird der Schaden von „Ehrfürchtige Lanze“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+			}
+		],
+		"elementEffects": {
+			"title": "**Verwunden**:",
+			"description": "Wenn die Waffe voll geladen ist, verwundet der nächste Angriff Gegner für **7**Sek., erhöht den von ihnen erlittenen Schaden um **20%** und fügt ihnen Schaden in Höhe von **137.00%** des ANG zu. Im **Teamspiel** wird der physische Schaden, der verwundeten Zielen zugefüht wird, um **20%** erhöht."
+		},
+		"advancements": [
+			{
+				"description": "**Masse- und Flammenfusion**: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten physischen/Flammen-Basis-ANG, des höchsten ausgerüsteten physischen/Flammen-ANG-Prozentwerts und des höchsten ausgerüsteten physischen/Flammenschaden-Bonus berechnet, und die Waffe gilt sowohl als physische als auch als Flammenwaffe.\r\n**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.\r\n**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n**Ehrfürchtige Lanze: Schneller Hieb**: Wenn **Lanze des Longinus** ausgerüstet ist, fügt die Entladungsfähigkeit jeder Waffe Zielen in der Nähe Schaden in Höhe von **58.58%** des physischen ANG + **0.78%** der max. LP + **29.29%** der Summe aller Widerstandsarten des Wanderers + **107.4%** des krit. Schadens zu. Nach Kampfbeginn wird der Schaden des nächsten schnellen Hiebs alle **0,5**Sek. zusätzlich um das **1**-fache erhöht, bis zu einem Maximum von **30**-mal. Falls „Schneller Hieb“ mehrmals Schaden verursacht, wird der höchste anfängliche Wert für die Berechnung verwendet. Der Schaden von „Schneller Hieb“ zählt als Entladungsfähigkeitsschaden. Wenn 1 Frost- oder Voltwaffe jeglicher Art ausgerüstet ist, wird der Schaden von „Ehrfürchtige Lanze“ auf das **1,3**-fache erhöht. Außerdem wird der Schaden von „Ehrfürchtige Lanze“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1
+					}
+				],
+				"need": null
+			},
+			{
+				"description": "Erhöht die maximalen „Rache“-Stapel von **10** auf **15**. Nachdem alle Stapel aufgebraucht sind, wird zusätzlich eine gewaltige Lanze des Longinus ausgelöst. Wenn das Element der aktuellen Waffe **physisch** oder **Flamme** ist, wird Zielen in der Nähe Elementarschaden der Waffe in Höhe von **2000%** des ANG zugefügt.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "Solange der Wanderer ein **AT-Feld** aktiviert hat, können Angriffe einen bestimmten Prozentsatz der Schadensreduktion des Schilds eines Ziels ignorieren. Dieser Prozentsatz entspricht **30%** des aktuellen **Haltbarkeit-Prozentwerts** des **AT-Felds** + **20%**. Wenn Standhaftigkeit-Resonanz aktiv ist, erhöht sich Zertrümmern des Wanderers um **100%** des **Haltbarkeit-Prozentwerts** des **AT-Felds**.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"charge": 10,
+				"shatter": 12,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "Für jeden **1** verbrauchten Stapel **Rache** werden **6%** der maximalen Haltbarkeit des **AT-Felds** wiederhergestellt.",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			},
+			{
+				"description": "Erhöht den gewährten physischen Schadensbonus, während das **AT-Feld** aktiv ist, auf **36%** und den Flammenschaden-Bonus auf **24%**.\r\nWenn **Standhaftigkeit-Resonanz** aktiviert ist, während das **AT-Feld** aktiv ist, ignorieren Teammitglieder in der Nähe **15%** der Schadensreduktion des Schilds ihres Ziels. Verringert außerdem alle Widerstände von Zielen in der Nähe um **1200%**. Dieser Effekt kann nicht gestapelt werden.",
+				"charge": 12,
+				"shatter": 14,
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Asuka_physic_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Drohende Lanze: Schattenformation",
+					"description": "Nutze den normalen Angriff auf dem Boden, um 5-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und stößt das Ziel zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und stößt das Ziel zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und stößt das Ziel zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und schleudert das Ziel hoch.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_melee.webp",
+					"id": "GA_FPlayerAsukaMelee_Melee"
+				},
+				{
+					"name": "Lanzenstoß: Schattenreflex",
+					"description": "Setze in der Luft einen normalen Angriff ein, um Ausdauer zu verbrauchen und 5-mal hintereinander anzugreifen.\r\nErster Angriff: verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.\r\nFünfter Angriff: verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und schleudert das Ziel hoch.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_airattack.webp",
+					"id": "GA_FPlayerAsukaMelee_AirAttack"
+				},
+				{
+					"name": "Ehrfürchtige Lanze: Wogende Wellen",
+					"description": "Tippe und halte während normaler Angriffe auf dem Boden den normalen Angriff beim Verwenden des ersten bis vierten normalen Angriffs gedrückt, um <shuzhi>Ehrfürchtige Lanze: Wogende Wellen</> auszulösen.\r\nDu greifst mehrmals kontinuierlich an und fügst Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_branch.webp",
+					"id": "GA_FPlayerAsukaMelee_Branch"
+				},
+				{
+					"name": "Lanzenangriff: Totschlag",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist (tippe, wenn ein Ziel verfügbar ist), oder verwende den normalen Angriff, während du kletterst, zurückspringst oder das Jetpack einsetzt, um <shuzhi>Lanzenangriff: Totschlag</> auszulösen.\r\nStürzt von oben herab und fügt beim Aufprall am Boden Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_jumpattack.webp",
+					"id": "GA_FPlayerAsukaMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAsukaEvade_Evade"
+				},
+				{
+					"name": "Lanzenschwung: Plünderung",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Richtungstaste), um <shuzhi>Lanzenschwung: Plünderung</> auszulösen, was bei Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_fevadeattack.webp",
+					"id": "GA_FPlayerAsukaEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Sprungschlag",
+					"description": "Verwende zum Auslösen von <shuzhi>Sprungschlag</> während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, was allen Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> Schaden zufügt.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_bevadeattack.webp",
+					"id": "GA_FPlayerAsukaEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Wolkenstoß",
+					"description": "N/A",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
+					"id": "GA_FPlayerAsukaSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Envangelion-Angriff",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und mit EVA-02 ein fliegender Tritt ausgeführt. Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
+					"id": "GA_FPlayerAsukaChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Blick ins Grau",
+					"description": "Das Mädchen stand hier und schaute zu.",
+					"rarity": 5,
+					"source": "Aus Events",
+					"simulacrumId": "imitation_55",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_MRX.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_MRX_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_55"
+				},
+				"weapon": {
+					"name": "Glänzende Lanze des Longinus",
+					"description": "Die Wurzeln des Lebensbaums strahlen seine einzigartige Kraft aus.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_asuka_weapon.webp",
+					"type": "CONSUMABLE",
+					"id": "imitation_fashion_55_w"
+				}
+			}
+		],
+		"version": "3.7",
+		"limited": true,
+		"id": "asuka_physic"
+	},
 	"brush_fire": {
 		"name": "Kienkomet",
 		"description": "„Keine Gewalt bitte! Echte Akademiker würden niemanden mit Briefpapier abschießen!“ – Rong Jin",
