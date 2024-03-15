@@ -1,10 +1,6 @@
-import json
-
 from src.domain.models.guidebook import GuideBook
-from src.domain.usecases.guidebooks.get_all import (
-    GetAllGuidebooksParams,
-    IGetAllGuidebooksUseCase,
-)
+from src.domain.usecases.base import GetAllParams
+from src.domain.usecases.guidebooks.get_all import IGetAllGuidebooksUseCase
 
 
 class GetAllGuidebooksController:
@@ -12,10 +8,8 @@ class GetAllGuidebooksController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[GuideBook]:
         return await self.usecase.execute(
-            GetAllGuidebooksParams(
-                version=version, lang=lang, filter=json.loads(filter) if filter else {}
-            )
+            GetAllParams(version=version, lang=lang, filter=filter)
         )

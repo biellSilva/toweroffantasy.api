@@ -11,9 +11,7 @@ class FoodGlobalRepository:
     __cache: dict[LANGS_GLOBAL_ENUM, dict[str, Food]] = {}
 
     async def find_by_id(
-        self,
-        id: str,
-        lang: LANGS_GLOBAL_ENUM,
+        self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> Food | None:
 
         if cached_lang := self.__cache.get(lang):

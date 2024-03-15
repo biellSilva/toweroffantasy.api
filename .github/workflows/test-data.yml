@@ -5,7 +5,9 @@ name: toweroffantasy.api test data
 
 on:
   push:
-    branches: ['remake']
+    branches: ['dev']
+  pull_request:
+    branches: ['main', 'dev']
 
 permissions:
   contents: read

@@ -1,17 +1,9 @@
 from abc import ABC, abstractmethod
 
-from pydantic import BaseModel
-
 from src.domain.models.mounts import Mount
-from src.domain.usecases.base import IUsecase
+from src.domain.usecases.base import FindParams, IUsecase
 
 
-class FindMountParams(BaseModel):
-    id: str
-    version: str
-    lang: str
-
-
-class IFindMountUseCase(IUsecase[FindMountParams, Mount], ABC):
+class IFindMountUseCase(IUsecase[FindParams, Mount], ABC):
     @abstractmethod
-    async def execute(self, params: FindMountParams) -> Mount: ...
+    async def execute(self, params: FindParams) -> Mount: ...

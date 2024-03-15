@@ -1,17 +1,9 @@
 from abc import ABC, abstractmethod
 
-from pydantic import BaseModel
-
 from src.domain.models.gears import Gear
-from src.domain.usecases.base import IUsecase
+from src.domain.usecases.base import FindParams, IUsecase
 
 
-class FindGearsParams(BaseModel):
-    id: str
-    version: str
-    lang: str
-
-
-class IFindGearsUseCase(IUsecase[FindGearsParams, Gear], ABC):
+class IFindGearsUseCase(IUsecase[FindParams, Gear], ABC):
     @abstractmethod
-    async def execute(self, params: FindGearsParams) -> Gear: ...
+    async def execute(self, params: FindParams) -> Gear: ...

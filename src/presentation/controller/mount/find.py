@@ -1,5 +1,6 @@
 from src.domain.models.mounts import Mount
-from src.domain.usecases.mount.find import FindMountParams, IFindMountUseCase
+from src.domain.usecases.base import FindParams
+from src.domain.usecases.mount.find import IFindMountUseCase
 
 
 class FindMountController:
@@ -7,6 +8,4 @@ class FindMountController:
         self.usecase = usecase
 
     async def handle(self, id: str, version: str = "global", lang: str = "en") -> Mount:
-        return await self.usecase.execute(
-            FindMountParams(id=id, version=version, lang=lang)
-        )
+        return await self.usecase.execute(FindParams(id=id, version=version, lang=lang))

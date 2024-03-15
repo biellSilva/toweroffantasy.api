@@ -14,10 +14,7 @@ from src.infra.repository.helpers.weapons import weapon_fix_minor_issues
 class BannersGlobalRepository:
     __cache: list[Banner] = []
 
-    async def find_by_id(
-        self,
-        id: str,
-    ) -> list[Banner]:
+    async def find_by_id(self, id: str, *args: Any, **kwargs: Any) -> list[Banner]:
         if not self.__cache:
             await self.load_data()
 

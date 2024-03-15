@@ -1,7 +1,7 @@
-from enum import Enum
 import logging
 import os
 import sys
+from enum import Enum
 from typing import Any
 
 
@@ -40,7 +40,7 @@ class _ColourFormatter(logging.Formatter):
         for level, colour in LEVEL_COLOURS
     }
 
-    def format(self, record: logging.LogRecord):
+    def format(self, record: logging.LogRecord) -> str:
         formatter = self.FORMATS.get(record.levelno)
         if formatter is None:
             formatter = self.FORMATS[logging.DEBUG]
@@ -73,14 +73,14 @@ def __stream_supports_colour(stream: Any) -> bool:
     return is_a_tty and ("ANSICON" in os.environ or "WT_SESSION" in os.environ)
 
 
-def setup_logging(level: LogLevel = LogLevel.INFO):
+def setup_logging(level: LogLevel = LogLevel.INFO) -> None:
 
     handler = logging.StreamHandler()
 
     if __stream_supports_colour(handler.stream):
-        formatter = _ColourFormatter()
+        formatter = _ColourFormatter()  # type: ignore [assignment]
     else:
-        formatter = logging.Formatter(
+        formatter = logging.Formatter(  # type: ignore [assignment]
             "%(asctime)-8s %(levelname)-8s %(name)s %(message)s",
             "%Y-%m-%d %H:%M:%S",
             style="{",
@@ -89,7 +89,7 @@ def setup_logging(level: LogLevel = LogLevel.INFO):
     handler.setFormatter(formatter)
 
     _logger = logging.getLogger("toweroffantasy")
-    
+
     _logger.setLevel(level.value)
     _logger.setLevel(level.value)
     _logger.addHandler(handler)

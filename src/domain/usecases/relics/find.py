@@ -1,17 +1,9 @@
 from abc import ABC, abstractmethod
 
-from pydantic import BaseModel
-
 from src.domain.models.relics import Relic
-from src.domain.usecases.base import IUsecase
+from src.domain.usecases.base import FindParams, IUsecase
 
 
-class FindRelicsParams(BaseModel):
-    id: str
-    version: str
-    lang: str
-
-
-class IFindRelicsUseCase(IUsecase[FindRelicsParams, Relic], ABC):
+class IFindRelicsUseCase(IUsecase[FindParams, Relic], ABC):
     @abstractmethod
-    async def execute(self, params: FindRelicsParams) -> Relic: ...
+    async def execute(self, params: FindParams) -> Relic: ...

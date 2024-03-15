@@ -27,9 +27,7 @@ class MatricesGlobalRepository:
     __BANNERS = BannersGlobalRepository()
 
     async def find_by_id(
-        self,
-        id: str,
-        lang: LANGS_GLOBAL_ENUM,
+        self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> Matrix | None:
 
         if lang_cache := self.__cache.get(lang):

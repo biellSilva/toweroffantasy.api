@@ -1,5 +1,6 @@
 from src.domain.models.items import Item
-from src.domain.usecases.items.find import FindItemsParams, IFindItemsUseCase
+from src.domain.usecases.base import FindParams
+from src.domain.usecases.items.find import IFindItemsUseCase
 
 
 class FindItemsController:
@@ -7,6 +8,4 @@ class FindItemsController:
         self.usecase = usecase
 
     async def handle(self, id: str, version: str = "global", lang: str = "en") -> Item:
-        return await self.usecase.execute(
-            FindItemsParams(id=id, version=version, lang=lang)
-        )
+        return await self.usecase.execute(FindParams(id=id, version=version, lang=lang))

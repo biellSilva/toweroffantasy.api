@@ -1,7 +1,6 @@
-import json
-
 from src.domain.models.mounts import Mount
-from src.domain.usecases.mount.get_all import GetAllMountParams, IGetAllMountUseCase
+from src.domain.usecases.base import GetAllParams
+from src.domain.usecases.mount.get_all import IGetAllMountUseCase
 
 
 class GetAllMountController:
@@ -9,10 +8,8 @@ class GetAllMountController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[Mount]:
         return await self.usecase.execute(
-            GetAllMountParams(
-                version=version, lang=lang, filter=json.loads(filter) if filter else {}
-            )
+            GetAllParams(version=version, lang=lang, filter=filter)
         )

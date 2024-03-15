@@ -1,10 +1,6 @@
-import json
-
 from src.domain.models.achievements import Achievement
-from src.domain.usecases.achievements.get_all import (
-    GetAllAchievementsParams,
-    IGetAllAchievementsUseCase,
-)
+from src.domain.usecases.achievements.get_all import IGetAllAchievementsUseCase
+from src.domain.usecases.base import GetAllParams
 
 
 class GetAllAchievementsController:
@@ -12,12 +8,12 @@ class GetAllAchievementsController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[Achievement]:
         return await self.usecase.execute(
-            GetAllAchievementsParams(
+            GetAllParams(
                 version=version,
                 lang=lang,
-                filter=json.loads(filter) if filter else {},
+                filter=filter,
             )
         )

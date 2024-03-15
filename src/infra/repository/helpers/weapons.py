@@ -57,12 +57,12 @@ def weapon_convert_stat(dict_: RawWeapon) -> list[RawStatConverted]:
 async def weapon_upgrade_mats(
     dict_: RawWeapon,
     lang: LANGS_GLOBAL_ENUM,
-    __WEAPON_MATS: dict[str, Any],
-    __WEAPON_EXP_REQUIRED_LEVELS: dict[str, Any],
-    __ITEM_REPO: ItemsGlobalRepository,
+    WEAPON_MATS: dict[str, Any],
+    WEAPON_EXP_REQUIRED_LEVELS: dict[str, Any],
+    ITEM_REPO: ItemsGlobalRepository,
 ) -> RawWeapon:
-    if upgrade_obj := __WEAPON_MATS.get(dict_["weaponUpgradeId"], None):
-        if upgrade_exp_require := __WEAPON_EXP_REQUIRED_LEVELS.get(
+    if upgrade_obj := WEAPON_MATS.get(dict_["weaponUpgradeId"], None):
+        if upgrade_exp_require := WEAPON_EXP_REQUIRED_LEVELS.get(
             dict_["id"].lower(), None
         ):
             for ind, level in enumerate(upgrade_obj):
@@ -70,7 +70,7 @@ async def weapon_upgrade_mats(
                     for item in level:
                         if mat_id := item.get("mat_id", None):
                             if mat_id.lower() != "none":
-                                if item_obj := await __ITEM_REPO.find_by_id(
+                                if item_obj := await ITEM_REPO.find_by_id(
                                     mat_id.lower(), lang=lang
                                 ):
                                     item.update(**item_obj.model_dump())
@@ -88,21 +88,6 @@ async def weapon_upgrade_mats(
                             "mats": level,
                         }
 
-        else:
-            for ind, level in enumerate(upgrade_obj):
-                for item in level:
-                    if mat_id := item.get("mat_id", None):
-                        if mat_id.lower() != "none":
-                            if item_obj := await __ITEM_REPO.find_by_id(
-                                id=mat_id,
-                                lang=lang,
-                            ):
-                                item.update(**item_obj.model_dump())
-
-                    upgrade_obj[ind] = {
-                        "requiredExp": 0,
-                        "mats": level,
-                    }
     dict_["upgradeMats"] = {
         "id": dict_["weaponUpgradeId"],
         "levels": upgrade_obj,

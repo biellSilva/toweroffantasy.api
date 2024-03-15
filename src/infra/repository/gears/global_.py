@@ -11,9 +11,7 @@ class GearsGlobalRepository:
     __cache: dict[LANGS_GLOBAL_ENUM, dict[str, Gear]] = {}
 
     async def find_by_id(
-        self,
-        id: str,
-        lang: LANGS_GLOBAL_ENUM,
+        self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> Gear | None:
         if lang_cache := self.__cache.get(lang):
             if relic := lang_cache.get(id):
