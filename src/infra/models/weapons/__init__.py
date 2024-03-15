@@ -27,3 +27,4 @@ class RawWeapon(TypedDict):
     skills: dict[str, Any]
     banners: list[Any]
     weaponAdvancements: list[dict[str, Any]]
+    attributes: list[dict[str, float]]
