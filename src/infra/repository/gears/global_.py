@@ -5,6 +5,7 @@ from typing import Any
 from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.gears import Gear
 from src.enums import LANGS_GLOBAL_ENUM
+from src.infra.repository.helpers.gears import ignore_gears, sort_gears
 
 
 class GearsGlobalRepository:
@@ -45,6 +46,10 @@ class GearsGlobalRepository:
         DATA: dict[str, dict[str, Any]] = json.loads(DATA_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
-            self.__cache[lang].update(
-                {key_id.lower(): Gear(**value_dict)}
-            )  # type: ignore
+
+            if ignore_gears(value_dict):
+                continue
+
+            self.__cache[lang].update({key_id.lower(): Gear(**value_dict)})
+
+        self.__cache[lang] = sort_gears(self.__cache[lang])

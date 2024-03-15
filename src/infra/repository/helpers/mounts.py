@@ -13,10 +13,10 @@ def ignore_mounts(dict_: RawMount) -> bool:
 
 
 def sort_mounts(mounts: dict[str, "Mount"]) -> dict[str, "Mount"]:
-    def __sort(mount: "Mount") -> tuple[float, float]:
+    def __sort(mount: "Mount") -> tuple[float, float, str]:
         if mount.version.lower() in ("cn-only", "ps-only"):
-            return 0, -mount.rarity
+            return -mount.rarity, 0, mount.name
 
-        return -float(mount.version), -mount.rarity
+        return -mount.rarity, -float(mount.version), mount.name
 
     return {mount.id: mount for mount in sorted(list(mounts.values()), key=__sort)}

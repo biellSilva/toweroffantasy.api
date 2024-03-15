@@ -17,9 +17,10 @@ def relic_advanc_rework(advanc: list[dict[str, str]]) -> list[str]:
 
 
 def sort_relics(relics: dict[str, "Relic"]) -> dict[str, "Relic"]:
-    def __sort(relic: "Relic") -> tuple[float, float]:
+    def __sort(relic: "Relic") -> tuple[float, float, str]:
         if "only" in relic.version.lower():
-            return 0, -float(relic.rarity)
-        return -float(relic.version), -float(relic.rarity)
+            return -float(relic.rarity), 0, relic.name
+
+        return -float(relic.rarity), -float(relic.version), relic.name
 
     return {relic.id: relic for relic in sorted(list(relics.values()), key=__sort)}
