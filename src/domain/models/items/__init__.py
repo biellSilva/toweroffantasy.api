@@ -2,6 +2,8 @@ import strawberry
 
 from src.domain.models.base import ModelBase
 
+from .extras import GiftTag
+
 
 class Item(ModelBase):
     name: str | None = None
@@ -9,6 +11,7 @@ class Item(ModelBase):
     description: str | None = None
     icon: str | None = None
     rarity: int
+    giftTags: list[GiftTag] = []
 
 
 @strawberry.experimental.pydantic.type(model=Item, all_fields=True)
