@@ -8,7 +8,11 @@ from src.domain.models.meta import MetaData
 from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.models.matrices import RawMatrix
 from src.infra.repository.banners.global_ import BannersGlobalRepository
-from src.infra.repository.helpers.matrices import ignore_matrix, matrix_set_rework
+from src.infra.repository.helpers.matrices import (
+    ignore_matrix,
+    matrix_set_rework,
+    sort_matrices,
+)
 
 
 class MatricesGlobalRepository:
@@ -84,3 +88,5 @@ class MatricesGlobalRepository:
             self.__cache[lang].update(
                 {key_id.lower(): Matrix(**value_dict)}  # type: ignore
             )
+
+        self.__cache[lang] = sort_matrices(self.__cache[lang])
