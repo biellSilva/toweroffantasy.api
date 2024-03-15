@@ -3,7 +3,6 @@ from fastapi.responses import RedirectResponse
 
 from src.config import GLOBAL_ASSETS_WEBP
 
-
 router = APIRouter(prefix="/assets", tags=["Assets"])
 
 

@@ -1,6 +1,5 @@
 from typing import TYPE_CHECKING, Any
 
-
 if TYPE_CHECKING:
     from src.domain.models.gears import Gear
 
