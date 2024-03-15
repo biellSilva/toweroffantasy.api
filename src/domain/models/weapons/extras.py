@@ -89,6 +89,15 @@ class BaseStats(BaseModel):
     upgradeProp: float = Field(validation_alias=AliasChoices("upgradeProp"))
 
 
+class WeaponFashion(BaseModel):
+    id: str
+    name: str
+    icon: str | None
+    description: str | None
+    rarity: int
+    type: str
+
+
 @strawberry.experimental.pydantic.type(model=ShatterOrCharge, all_fields=True)
 class ShatterOrChargeType:
     pass
@@ -141,4 +150,9 @@ class WeaponAdvancementType:
 
 @strawberry.experimental.pydantic.type(model=BaseStats, all_fields=True)
 class BaseStatsType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=WeaponFashion, all_fields=True)
+class WeaponFashionType:
     pass

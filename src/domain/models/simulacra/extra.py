@@ -44,6 +44,21 @@ class Awakening(BaseModel):
     need: int | None = Field(None, validation_alias=AliasChoices("stage", "need"))
 
 
+class SimulacraFashionAssets(BaseModel):
+    painting: str
+    grayPainting: str = Field(validation_alias=AliasChoices("prayPainting"))
+
+
+class SimulacraFashion(BaseModel):
+    id: str
+    name: str
+    description: str
+    rarity: int
+    source: str
+    simulacrumId: str
+    weaponId: str
+    assets: SimulacraFashionAssets
+
 
 @strawberry.experimental.pydantic.type(model=VoiceActors, all_fields=True)
 class VoiceActorsType:
@@ -59,3 +74,12 @@ class SimulacraAssetsType:
 class AwakeningType:
     pass
 
+
+@strawberry.experimental.pydantic.type(model=SimulacraFashionAssets, all_fields=True)
+class SimulacraFashionAssetsType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=SimulacraFashion, all_fields=True)
+class SimulacraFashionType:
+    pass

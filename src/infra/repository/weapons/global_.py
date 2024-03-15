@@ -128,6 +128,8 @@ class WeaponsGlobalRepository:
 
             value_dict = weapon_skill_values(value_dict, self.__DESC_VALUES)
 
+            value_dict["fashion"] = [fashion["weapon"] for fashion in value_dict.get("fashion", [])]  # type: ignore
+
             self.__cache[lang].update(
                 {key_id.lower(): Weapon(**value_dict)}  # type: ignore
             )
