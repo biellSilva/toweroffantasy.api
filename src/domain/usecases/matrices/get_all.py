@@ -1,22 +1,9 @@
 from abc import ABC, abstractmethod
-from typing import Any
-
-from pydantic import BaseModel, Field
 
 from src.domain.models.matrices import Matrix
-from src.domain.usecases.base import IUsecase
+from src.domain.usecases.base import GetAllParams, IUsecase
 
 
-class GetAllMatricesParams(BaseModel):
-    version: str = Field("global", description="Game version")
-    lang: str = Field("en", description="Game language")
-    filter: dict[str, Any] = Field(
-        {},
-        description="Filter to apply to the models",
-        examples=[{"awakening.need": 4000}, {"limited": True}],
-    )
-
-
-class IGetAllMatricesUseCase(IUsecase[GetAllMatricesParams, Matrix], ABC):
+class IGetAllMatricesUseCase(IUsecase[GetAllParams, Matrix], ABC):
     @abstractmethod
-    async def execute(self, params: GetAllMatricesParams) -> list[Matrix]: ...
+    async def execute(self, params: GetAllParams) -> list[Matrix]: ...

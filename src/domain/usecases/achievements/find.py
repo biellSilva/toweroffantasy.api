@@ -1,17 +1,9 @@
 from abc import ABC, abstractmethod
 
-from pydantic import BaseModel
-
 from src.domain.models.achievements import Achievement
-from src.domain.usecases.base import IUsecase
+from src.domain.usecases.base import FindParams, IUsecase
 
 
-class FindAchievementsParams(BaseModel):
-    id: str
-    version: str
-    lang: str
-
-
-class IFindAchievementsUseCase(IUsecase[FindAchievementsParams, Achievement], ABC):
+class IFindAchievementsUseCase(IUsecase[FindParams, Achievement], ABC):
     @abstractmethod
-    async def execute(self, params: FindAchievementsParams) -> Achievement: ...
+    async def execute(self, params: FindParams) -> Achievement: ...

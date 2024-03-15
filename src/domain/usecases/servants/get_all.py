@@ -1,22 +1,9 @@
 from abc import ABC, abstractmethod
-from typing import Any
-
-from pydantic import BaseModel, Field
 
 from src.domain.models.servants import SmartServant
-from src.domain.usecases.base import IUsecase
+from src.domain.usecases.base import GetAllParams, IUsecase
 
 
-class GetAllServantsParams(BaseModel):
-    version: str = Field("global", description="Game version")
-    lang: str = Field("en", description="Game language")
-    filter: dict[str, Any] = Field(
-        {},
-        description="Filter to apply to the models",
-        examples=[{"awakening.need": 4000}, {"limited": True}],
-    )
-
-
-class IGetAllServantsUseCase(IUsecase[GetAllServantsParams, SmartServant], ABC):
+class IGetAllServantsUseCase(IUsecase[GetAllParams, SmartServant], ABC):
     @abstractmethod
-    async def execute(self, params: GetAllServantsParams) -> list[SmartServant]: ...
+    async def execute(self, params: GetAllParams) -> list[SmartServant]: ...

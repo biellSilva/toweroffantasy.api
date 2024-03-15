@@ -1,20 +1,16 @@
 from abc import ABC, abstractmethod
-from typing import Any
 
-from pydantic import BaseModel, Field
+from fastapi import Query
+from pydantic import BaseModel
 
 from src.domain.models.banner import Banner
 from src.domain.usecases.base import IUsecase
 
 
 class FindBannersParams(BaseModel):
-    id: str | None = Field(None, description="Banner id")
-    version: str = Field("global", description="Game version")
-    filter: dict[str, Any] = Field(
-        {},
-        description="Filter to apply to the models",
-        examples=[{"awakening.need": 4000}, {"limited": True}],
-    )
+    id: str | None = Query(None, description="Object id")  # type: ignore (override id type)
+    version: str = Query("global", description="Game Version")
+    filter: str | None = Query(None, description="Filter string")
 
 
 class IFindBannersUseCase(IUsecase[FindBannersParams, Banner], ABC):
