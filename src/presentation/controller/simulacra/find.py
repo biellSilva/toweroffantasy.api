@@ -1,10 +1,8 @@
-from typing import Any
+from fastapi import Depends
 
 from src.domain.models.simulacra import Simulacra
-from src.domain.usecases.simulacra.find import (
-    FindSimulacraParams,
-    IFindSimulacraUseCase,
-)
+from src.domain.usecases.base import FindParams
+from src.domain.usecases.simulacra.find import IFindSimulacraUseCase
 
 
 class FindSimulacraController:
@@ -13,8 +11,9 @@ class FindSimulacraController:
 
     async def handle(
         self, id: str, version: str = "global", lang: str = "en"
-    ) -> Simulacra | dict[str, Any]:
+    ) -> Simulacra:
 
-        return await self.usecase.execute(
-            FindSimulacraParams(id=id, version=version, lang=lang)
-        )
+        return await self.usecase.execute(FindParams(id=id, version=version, lang=lang))
+
+    async def rest_handle(self, params: FindParams = Depends()) -> Simulacra:
+        return await self.usecase.execute(params)

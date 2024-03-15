@@ -1,3 +1,4 @@
+import json
 from typing import Any, TypeVar
 
 from pydantic import BaseModel
@@ -5,9 +6,11 @@ from pydantic import BaseModel
 T = TypeVar("T", bound=BaseModel)
 
 
-def filter_models(models: list[T], filter_dict: dict[str, Any]) -> list[T]:
-    if not filter_dict or len(filter_dict) == 0:
+async def filter_models(models: list[T], filter_str: str | None) -> list[T]:
+    if not filter_str or len(filter_str) == 0:
         return models
+
+    filter_dict: dict[str, Any] = json.loads(filter_str)
 
     filtered_models: list[T] = []
 
