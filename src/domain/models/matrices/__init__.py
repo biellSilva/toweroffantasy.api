@@ -15,11 +15,11 @@ class Matrix(ModelBase):
     assets: MatrixAsset
     rarity: int
     sets: list[MatrixSet] = Field(validation_alias=AliasChoices("sets", "set"))
-    version: str
+    version: str | None = None
     weaponId: str | None
     simulacrumId: str | None = None
     banners: list[Banner] = []
-    meta: MatrixMeta
+    meta: MatrixMeta = MatrixMeta()
 
 
 @strawberry.experimental.pydantic.type(model=Matrix, all_fields=True)
