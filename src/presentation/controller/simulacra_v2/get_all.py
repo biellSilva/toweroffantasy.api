@@ -1,8 +1,8 @@
 import json
 
 from src.domain.models.simulacra_v2 import SimulacraV2
+from src.domain.usecases.base import GetAllParams
 from src.domain.usecases.simulacra_v2.get_all import (
-    GetAllSimulacraV2Params,
     IGetAllSimulacraV2UseCase,
 )
 
@@ -12,10 +12,8 @@ class GetAllSimulacraV2Controller:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[SimulacraV2]:
         return await self.usecase.execute(
-            GetAllSimulacraV2Params(
-                version=version, lang=lang, filter=json.loads(filter) if filter else {}
-            )
+            GetAllParams(version=version, lang=lang, filter=filter)
         )

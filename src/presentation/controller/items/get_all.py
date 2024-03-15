@@ -1,7 +1,8 @@
 import json
 
 from src.domain.models.items import Item
-from src.domain.usecases.items.get_all import GetAllItemsParams, IGetAllItemsUseCase
+from src.domain.usecases.base import GetAllParams
+from src.domain.usecases.items.get_all import IGetAllItemsUseCase
 
 
 class GetAllItemsController:
@@ -9,10 +10,8 @@ class GetAllItemsController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[Item]:
         return await self.usecase.execute(
-            GetAllItemsParams(
-                version=version, lang=lang, filter=json.loads(filter) if filter else {}
-            )
+            GetAllParams(version=version, lang=lang, filter=filter)
         )

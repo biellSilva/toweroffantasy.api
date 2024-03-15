@@ -1,8 +1,8 @@
 import json
 
 from src.domain.models.servants import SmartServant
+from src.domain.usecases.base import GetAllParams
 from src.domain.usecases.servants.get_all import (
-    GetAllServantsParams,
     IGetAllServantsUseCase,
 )
 
@@ -12,10 +12,8 @@ class GetAllServantsController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[SmartServant]:
         return await self.usecase.execute(
-            GetAllServantsParams(
-                version=version, lang=lang, filter=json.loads(filter) if filter else {}
-            )
+            GetAllParams(version=version, lang=lang, filter=filter)
         )

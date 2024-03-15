@@ -1,5 +1,3 @@
-import json
-
 from src.domain.models.banner import Banner
 from src.domain.usecases.banners.find import FindBannersParams, IFindBannersUseCase
 
@@ -9,10 +7,8 @@ class FindBannersController:
         self.usecase = usecase
 
     async def handle(
-        self, id: str | None = None, version: str = "global", filter: str = ""
+        self, id: str | None = None, version: str = "global", filter: str | None = None
     ) -> list[Banner]:
         return await self.usecase.execute(
-            FindBannersParams(
-                id=id, version=version, filter=json.loads(filter) if filter else {}
-            )
+            FindBannersParams(id=id, version=version, filter=filter)
         )

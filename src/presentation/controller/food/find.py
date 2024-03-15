@@ -1,5 +1,6 @@
 from src.domain.models.food import Food
-from src.domain.usecases.food.find import FindFoodParams, IFindFoodUseCase
+from src.domain.usecases.base import FindParams
+from src.domain.usecases.food.find import IFindFoodUseCase
 
 
 class FindFoodController:
@@ -8,5 +9,5 @@ class FindFoodController:
 
     async def handle(self, id: str, version: str = "global", lang: str = "en") -> Food:
         return await self.usecase.execute(
-            FindFoodParams(id=id, version=version, lang=lang)
+            FindParams(id=id, version=version, lang=lang)
         )

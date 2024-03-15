@@ -1,5 +1,6 @@
 from src.domain.models.matrices import Matrix
-from src.domain.usecases.matrices.find import FindMatricesParams, IFindMatricesUseCase
+from src.domain.usecases.base import FindParams
+from src.domain.usecases.matrices.find import IFindMatricesUseCase
 
 
 class FindMatricesController:
@@ -10,6 +11,4 @@ class FindMatricesController:
         self, id: str, version: str = "global", lang: str = "en"
     ) -> Matrix:
 
-        return await self.usecase.execute(
-            FindMatricesParams(id=id, version=version, lang=lang)
-        )
+        return await self.usecase.execute(FindParams(id=id, version=version, lang=lang))

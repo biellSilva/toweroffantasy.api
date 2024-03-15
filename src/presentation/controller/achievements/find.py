@@ -1,8 +1,8 @@
 from src.domain.models.achievements import Achievement
 from src.domain.usecases.achievements.find import (
-    FindAchievementsParams,
     IFindAchievementsUseCase,
 )
+from src.domain.usecases.base import FindParams
 
 
 class FindAchievementsController:
@@ -13,5 +13,5 @@ class FindAchievementsController:
         self, id: str, version: str = "global", lang: str = "en"
     ) -> Achievement:
         return await self.usecase.execute(
-            FindAchievementsParams(id=id, version=version, lang=lang)
+            FindParams(id=id, version=version, lang=lang)
         )

@@ -1,7 +1,8 @@
 import json
 
 from src.domain.models.relics import Relic
-from src.domain.usecases.relics.get_all import GetAllRelicsParams, IGetAllRelicsUseCase
+from src.domain.usecases.base import GetAllParams
+from src.domain.usecases.relics.get_all import IGetAllRelicsUseCase
 
 
 class GetAllRelicsController:
@@ -9,10 +10,8 @@ class GetAllRelicsController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[Relic]:
         return await self.usecase.execute(
-            GetAllRelicsParams(
-                version=version, lang=lang, filter=json.loads(filter) if filter else {}
-            )
+            GetAllParams(version=version, lang=lang, filter=filter)
         )

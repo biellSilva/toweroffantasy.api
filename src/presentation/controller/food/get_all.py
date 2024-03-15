@@ -1,7 +1,8 @@
 import json
 
 from src.domain.models.food import Food
-from src.domain.usecases.food.get_all import GetAllFoodParams, IGetAllFoodUseCase
+from src.domain.usecases.base import GetAllParams
+from src.domain.usecases.food.get_all import IGetAllFoodUseCase
 
 
 class GetAllFoodController:
@@ -9,10 +10,8 @@ class GetAllFoodController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[Food]:
         return await self.usecase.execute(
-            GetAllFoodParams(
-                version=version, lang=lang, filter=json.loads(filter) if filter else {}
-            )
+            GetAllParams(version=version, lang=lang, filter=filter)
         )

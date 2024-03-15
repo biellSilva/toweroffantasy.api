@@ -1,7 +1,8 @@
 import json
 
 from src.domain.models.gears import Gear
-from src.domain.usecases.gears.get_all import GetAllGearsParams, IGetAllGearsUseCase
+from src.domain.usecases.base import GetAllParams
+from src.domain.usecases.gears.get_all import IGetAllGearsUseCase
 
 
 class GetAllGearsController:
@@ -9,10 +10,8 @@ class GetAllGearsController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str = ""
+        self, version: str = "global", lang: str = "en", filter: str | None = None
     ) -> list[Gear]:
         return await self.usecase.execute(
-            GetAllGearsParams(
-                version=version, lang=lang, filter=json.loads(filter) if filter else {}
-            )
+            GetAllParams(version=version, lang=lang, filter=filter)
         )
