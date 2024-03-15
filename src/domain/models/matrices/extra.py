@@ -9,7 +9,8 @@ from src.utils import bold_numbers
 class MatrixAsset(BaseModel):
     icon: str | None = Field(validation_alias=AliasChoices("itemIcon", "icon"))
     iconLarge: str | None = Field(
-        None, validation_alias=AliasChoices("ItemIconLarge", "iconLarge")
+        None,
+        validation_alias=AliasChoices("ItemLargeIcon", "itemLargeIcon"),
     )
     characterArtwork: str | None = None
 
