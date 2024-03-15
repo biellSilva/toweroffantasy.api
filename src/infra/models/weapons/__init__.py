@@ -26,3 +26,4 @@ class RawWeapon(TypedDict):
     upgradeMats: dict[str, Any]
     skills: dict[str, Any]
     banners: list[Any]
+    weaponAdvancements: list[dict[str, Any]]
