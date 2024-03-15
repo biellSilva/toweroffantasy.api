@@ -1,10 +1,9 @@
-from datetime import datetime
 from typing import Annotated
 
 import strawberry
 from pydantic import AliasChoices, BaseModel, BeforeValidator, Field
 
-from src.utils import to_lowercase
+from src.utils import banner_datetime_to_iso, to_lowercase
 
 
 class Banner(BaseModel):
@@ -26,8 +25,8 @@ class Banner(BaseModel):
     weaponIcon: str | None = None
     rarity: int = 5
     bannerNumber: int
-    startDate: datetime
-    endDate: datetime
+    startDate: Annotated[str, BeforeValidator(banner_datetime_to_iso)]
+    endDate: Annotated[str, BeforeValidator(banner_datetime_to_iso)]
     detailsLink: str = Field(
         validation_alias=AliasChoices("details_link", "detailsLink")
     )
