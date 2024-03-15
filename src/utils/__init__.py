@@ -65,4 +65,11 @@ def bold_numbers(text: str) -> str:
 
 
 def banner_datetime_to_iso(date: datetime) -> str:
-    return date.isoformat()
+    return date.replace(tzinfo=timezone("UTC")).isoformat()
+
+
+def meta_timestamp_to_iso(timestamp: float) -> str:
+    # timestamp is in milliseconds
+    return datetime.fromtimestamp(
+        float(timestamp) / 1000, tz=timezone("UTC")
+    ).isoformat()

@@ -44,8 +44,6 @@ class OutfitsGlobalRepository:
         DATA: dict[str, dict[str, Any]] = json.loads(DATA_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
-            self.__cache[lang].update(
-                {key_id.lower(): Outfit(**value_dict)}
-            )
-        
+            self.__cache[lang].update({key_id.lower(): Outfit(**value_dict)})
+
         self.__cache[lang] = sort_outfits(self.__cache[lang])

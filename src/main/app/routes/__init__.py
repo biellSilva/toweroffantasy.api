@@ -1,7 +1,6 @@
 from fastapi import APIRouter
 
-from . import graphql, simulacra, assets
-
+from . import assets, graphql, simulacra
 
 router = APIRouter(prefix="")
 
