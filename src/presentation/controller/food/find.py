@@ -8,6 +8,4 @@ class FindFoodController:
         self.usecase = usecase
 
     async def handle(self, id: str, version: str = "global", lang: str = "en") -> Food:
-        return await self.usecase.execute(
-            FindParams(id=id, version=version, lang=lang)
-        )
+        return await self.usecase.execute(FindParams(id=id, version=version, lang=lang))

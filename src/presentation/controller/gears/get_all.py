@@ -1,5 +1,3 @@
-import json
-
 from src.domain.models.gears import Gear
 from src.domain.usecases.base import GetAllParams
 from src.domain.usecases.gears.get_all import IGetAllGearsUseCase

@@ -1,5 +1,3 @@
-import json
-
 from src.domain.models.items import Item
 from src.domain.usecases.base import GetAllParams
 from src.domain.usecases.items.get_all import IGetAllItemsUseCase

@@ -1,10 +1,6 @@
-import json
-
 from src.domain.models.matrices import Matrix
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.matrices.get_all import (
-    IGetAllMatricesUseCase,
-)
+from src.domain.usecases.matrices.get_all import IGetAllMatricesUseCase
 
 
 class GetAllMatricesController:

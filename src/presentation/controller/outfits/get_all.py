@@ -1,10 +1,6 @@
-import json
-
 from src.domain.models.outfits import Outfit
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.outfits.get_all import (
-    IGetAllOutfitsUseCase,
-)
+from src.domain.usecases.outfits.get_all import IGetAllOutfitsUseCase
 
 
 class GetAllOutfitsController:

@@ -8,6 +8,4 @@ class FindGearsController:
         self.usecase = usecase
 
     async def handle(self, id: str, version: str = "global", lang: str = "en") -> Gear:
-        return await self.usecase.execute(
-            FindParams(id=id, version=version, lang=lang)
-        )
+        return await self.usecase.execute(FindParams(id=id, version=version, lang=lang))

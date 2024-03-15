@@ -2,9 +2,7 @@ from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.guidebook import GuideBook
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.guidebooks.get_all import (
-    IGetAllGuidebooksUseCase,
-)
+from src.domain.usecases.guidebooks.get_all import IGetAllGuidebooksUseCase
 from src.infra.repository.guidebooks.global_ import GuidebooksGlobalRepository
 
 

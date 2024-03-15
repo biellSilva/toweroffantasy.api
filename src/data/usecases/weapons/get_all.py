@@ -2,9 +2,7 @@ from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.weapons import Weapon
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.weapons.get_all import (
-    IGetAllWeaponsUseCase,
-)
+from src.domain.usecases.weapons.get_all import IGetAllWeaponsUseCase
 from src.infra.repository.weapons.global_ import WeaponsGlobalRepository
 
 

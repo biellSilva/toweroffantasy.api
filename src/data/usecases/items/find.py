@@ -11,9 +11,7 @@ class FindItemsUseCase(IFindItemsUseCase):
 
     async def execute(self, params: FindParams) -> Item:
         if params.version == "global":
-            if data := await self.repository.find_by_id(
-                **params.model_dump()
-            ):
+            if data := await self.repository.find_by_id(**params.model_dump()):
                 return data
             raise NotFoundErr
 

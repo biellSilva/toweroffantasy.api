@@ -1,8 +1,6 @@
 from src.domain.models.guidebook import GuideBook
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.guidebooks.get_all import (
-    IGetAllGuidebooksUseCase,
-)
+from src.domain.usecases.guidebooks.get_all import IGetAllGuidebooksUseCase
 
 
 class GetAllGuidebooksController:

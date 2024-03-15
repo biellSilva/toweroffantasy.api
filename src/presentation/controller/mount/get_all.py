@@ -1,5 +1,3 @@
-import json
-
 from src.domain.models.mounts import Mount
 from src.domain.usecases.base import GetAllParams
 from src.domain.usecases.mount.get_all import IGetAllMountUseCase

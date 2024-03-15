@@ -2,9 +2,7 @@ from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.outfits import Outfit
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.outfits.get_all import (
-    IGetAllOutfitsUseCase,
-)
+from src.domain.usecases.outfits.get_all import IGetAllOutfitsUseCase
 from src.infra.repository.outifts.global_ import OutfitsGlobalRepository
 
 

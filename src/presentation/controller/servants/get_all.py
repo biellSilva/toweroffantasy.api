@@ -1,10 +1,6 @@
-import json
-
 from src.domain.models.servants import SmartServant
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.servants.get_all import (
-    IGetAllServantsUseCase,
-)
+from src.domain.usecases.servants.get_all import IGetAllServantsUseCase
 
 
 class GetAllServantsController:

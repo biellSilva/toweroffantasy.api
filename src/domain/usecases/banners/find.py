@@ -8,7 +8,7 @@ from src.domain.usecases.base import IUsecase
 
 
 class FindBannersParams(BaseModel):
-    id: str | None = Query(None, description="Object id")  # type: ignore (override id type)
+    id: str | None = Query(None, description="Object id")
     version: str = Query("global", description="Game Version")
     filter: str | None = Query(None, description="Filter string")
 

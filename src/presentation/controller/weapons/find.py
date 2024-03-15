@@ -10,6 +10,4 @@ class FindWeaponsController:
     async def handle(
         self, id: str, version: str = "global", lang: str = "en"
     ) -> Weapon:
-        return await self.usecase.execute(
-            FindParams(id=id, version=version, lang=lang)
-        )
+        return await self.usecase.execute(FindParams(id=id, version=version, lang=lang))

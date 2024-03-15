@@ -1,5 +1,3 @@
-import json
-
 from src.domain.models.relics import Relic
 from src.domain.usecases.base import GetAllParams
 from src.domain.usecases.relics.get_all import IGetAllRelicsUseCase

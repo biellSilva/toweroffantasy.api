@@ -2,9 +2,7 @@ from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.servants import SmartServant
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.servants.get_all import (
-    IGetAllServantsUseCase,
-)
+from src.domain.usecases.servants.get_all import IGetAllServantsUseCase
 from src.infra.repository.servants.global_ import SmartServantsGlobalRepository
 
 

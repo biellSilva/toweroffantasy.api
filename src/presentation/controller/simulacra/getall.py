@@ -1,13 +1,10 @@
-import json
 from typing import Any
 
 from fastapi import Depends
 
 from src.domain.models.simulacra import Simulacra
 from src.domain.usecases.base import GetAllParams
-from src.domain.usecases.simulacra.getall import (
-    IGetallSimulacraUseCase,
-)
+from src.domain.usecases.simulacra.getall import IGetallSimulacraUseCase
 
 
 class GetallSimulacraController:

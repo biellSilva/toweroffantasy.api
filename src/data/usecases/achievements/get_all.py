@@ -1,9 +1,7 @@
 from src.decorators.filter import filter_models
 from src.domain.errors.http import NotImplementedErr, VersionNotFoundErr
 from src.domain.models.achievements import Achievement
-from src.domain.usecases.achievements.get_all import (
-    IGetAllAchievementsUseCase,
-)
+from src.domain.usecases.achievements.get_all import IGetAllAchievementsUseCase
 from src.domain.usecases.base import GetAllParams
 from src.infra.repository.achievements.global_ import AchievementsGlobalRepository
 
