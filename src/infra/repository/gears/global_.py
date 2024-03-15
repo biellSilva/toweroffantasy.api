@@ -21,7 +21,9 @@ class GearsGlobalRepository:
         await self.load_data(lang=lang)
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[Gear]:
+    async def get_all(
+        self, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
+    ) -> list[Gear]:
         if lang_cache := self.__cache.get(lang):
             return list(lang_cache.values())
 
