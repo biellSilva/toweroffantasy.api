@@ -34,3 +34,9 @@ PROJECT_LICENSE: dict[str, str] = {"name": __PROJECT_TOML.license.text}
 
 # SWAGGER PARAMS
 SWAGGER_UI_PARAMS: dict[str, Any] = {"defaultModelsExpandDepth": -1}  # hide schemas
+
+
+GLOBAL_ASSETS = "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/main"
+GLOBAL_ASSETS_WEBP = "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp"
+
+CN_ASSETS = "https://raw.githubusercontent.com/Silyky/Icon_CN/main"
