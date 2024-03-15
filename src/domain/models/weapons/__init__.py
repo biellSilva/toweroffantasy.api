@@ -3,6 +3,7 @@ from pydantic import AliasChoices, Field
 
 from src.domain.models.banner import Banner
 from src.domain.models.base import ModelBase
+from src.domain.models.fashion import Fashion
 from src.domain.models.meta import MetaData
 from src.domain.models.weapons.extras import (
     BaseStats,
@@ -53,6 +54,7 @@ class Weapon(ModelBase):
 
     meta: MetaData = MetaData()
     banners: list[Banner] = []
+    fashion: list[Fashion] = []
 
 
 @strawberry.experimental.pydantic.type(model=Weapon, all_fields=True)

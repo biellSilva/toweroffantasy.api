@@ -5,10 +5,10 @@ from pydantic import AliasChoices, BeforeValidator, Field
 
 from src.domain.models.banner import Banner
 from src.domain.models.base import ModelBase, ModelBaseType
+from src.domain.models.fashion import Fashion
 from src.domain.models.guidebook.extra import GuideBookItem
 from src.domain.models.simulacra.extra import (
     Awakening,
-    Fashion,
     SimulacraAssets,
     VoiceActors,
 )
@@ -18,7 +18,7 @@ from src.utils import string_or_null
 class Simulacra(ModelBase):
     name: str
     rarity: int
-    version: str
+    version: str | None = None
     isReleased: bool = True
     limited: bool
     avatarId: str
