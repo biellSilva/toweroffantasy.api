@@ -5,6 +5,7 @@ from typing import Any
 from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.servants import SmartServant
 from src.enums import LANGS_GLOBAL_ENUM
+from src.infra.repository.helpers.servants import sort_servants
 
 
 class SmartServantsGlobalRepository:
@@ -43,6 +44,6 @@ class SmartServantsGlobalRepository:
         DATA: dict[str, Any] = json.loads(DATA_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
-            self.__cache[lang].update(
-                {key_id.lower(): SmartServant(**value_dict)}
-            )  # type: ignore
+            self.__cache[lang].update({key_id.lower(): SmartServant(**value_dict)})
+
+        self.__cache[lang] = sort_servants(self.__cache[lang])

@@ -5,6 +5,7 @@ from typing import Any
 from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.outfits import Outfit
 from src.enums import LANGS_GLOBAL_ENUM
+from src.infra.repository.helpers.outfits import sort_outfits
 
 
 class OutfitsGlobalRepository:
@@ -45,4 +46,6 @@ class OutfitsGlobalRepository:
         for key_id, value_dict in DATA.items():
             self.__cache[lang].update(
                 {key_id.lower(): Outfit(**value_dict)}
-            )  # type: ignore
+            )
+        
+        self.__cache[lang] = sort_outfits(self.__cache[lang])
