@@ -66,3 +66,7 @@ def bold_numbers(text: str) -> str:
 
 def banner_datetime_to_iso(date: datetime) -> str:
     return date.isoformat()
+
+
+def meta_timestamp_to_iso(timestamp: int) -> str:
+    return datetime.fromtimestamp(timestamp).isoformat()
