@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from src.domain.errors.http import LangNotFoundErr
+from src.domain.errors.http import DataIncompleteErr, LangNotFoundErr
 from src.domain.models.simulacra import Simulacra
 from src.enums import LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.simulacra import RawSimulacra
@@ -46,11 +46,16 @@ class SimulacraGlobalRepository:
             self.__cache.update({lang: {}})
 
         DATA_PATH = Path("./src/infra/database/global", lang, "imitations.json")
+        WEAPONS_PATH = Path("./src/infra/database/global", lang, "weapons.json")
 
         if not DATA_PATH.exists():
             raise LangNotFoundErr
+        
+        if not WEAPONS_PATH.exists():
+            raise DataIncompleteErr
 
         DATA: dict[str, RawSimulacra] = json.loads(DATA_PATH.read_bytes())
+        WEAPONS: dict[str, dict[str, Any]] = json.loads(WEAPONS_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
             if ignore_simulacra(value_dict):
@@ -62,6 +67,9 @@ class SimulacraGlobalRepository:
 
             if banner_data := await self.__BANNERS_REPO.find_by_id(id=key_id):
                 value_dict["banners"] = banner_data
+            
+            if weapon_data := WEAPONS.get(value_dict['weaponId']):
+                value_dict["fashion"] = weapon_data.get("fashion", [])
 
             self.__cache[lang].update(
                 {key_id.lower(): Simulacra(**value_dict)}  # type: ignore

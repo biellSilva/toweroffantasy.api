@@ -1,10 +1,17 @@
+from datetime import datetime
+from typing import Annotated
+
 import strawberry
-from pydantic import BaseModel
+from pydantic import BaseModel, BeforeValidator
+
+from src.utils import meta_timestamp_to_iso
 
 
 class MetaLastUpdated(BaseModel):
     username: str = "unknown"
-    timestamp: int = 0
+    timestamp: Annotated[str, BeforeValidator(meta_timestamp_to_iso)] = (
+        datetime.now().isoformat()
+    )
 
 
 class RecoMatrix(BaseModel):
