@@ -11,9 +11,7 @@ class OutfitsGlobalRepository:
     __cache: dict[LANGS_GLOBAL_ENUM, dict[str, Outfit]] = {}
 
     async def find_by_id(
-        self,
-        id: str,
-        lang: LANGS_GLOBAL_ENUM,
+        self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> Outfit | None:
         if lang_cache := self.__cache.get(lang):
             if relic := lang_cache.get(id):

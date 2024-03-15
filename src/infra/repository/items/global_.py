@@ -11,9 +11,7 @@ class ItemsGlobalRepository:
     __cache: dict[LANGS_GLOBAL_ENUM, dict[str, Item]] = {}
 
     async def find_by_id(
-        self,
-        id: str,
-        lang: LANGS_GLOBAL_ENUM,
+        self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> Item | None:
 
         if cached_lang := self.__cache.get(lang):

@@ -11,9 +11,7 @@ class GuidebooksGlobalRepository:
     __cache: dict[LANGS_GLOBAL_ENUM, dict[str, GuideBook]] = {}
 
     async def find_by_id(
-        self,
-        id: str,
-        lang: LANGS_GLOBAL_ENUM,
+        self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> GuideBook | None:
 
         if cached_lang := self.__cache.get(lang):
@@ -24,7 +22,9 @@ class GuidebooksGlobalRepository:
         await self.load_data(lang=lang)
         return await self.find_by_id(id=id, lang=lang)
 
-    async def get_all(self, lang: LANGS_GLOBAL_ENUM) -> list[GuideBook]:
+    async def get_all(
+        self, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
+    ) -> list[GuideBook]:
         if cached_lang := self.__cache.get(lang):
             return list(cached_lang.values())
 

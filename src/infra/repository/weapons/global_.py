@@ -46,9 +46,7 @@ class WeaponsGlobalRepository:
     )
 
     async def find_by_id(
-        self,
-        id: str,
-        lang: LANGS_GLOBAL_ENUM,
+        self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> Weapon | None:
         if cached_lang := self.__cache.get(lang):
             if weapon := cached_lang.get(id):

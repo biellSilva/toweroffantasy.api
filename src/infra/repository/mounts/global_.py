@@ -13,9 +13,7 @@ class MountsGlobalRepository:
     __cache: dict[LANGS_GLOBAL_ENUM, dict[str, Mount]] = {}
 
     async def find_by_id(
-        self,
-        id: str,
-        lang: LANGS_GLOBAL_ENUM,
+        self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> Mount | None:
         if lang_cache := self.__cache.get(lang):
             if relic := lang_cache.get(id):
