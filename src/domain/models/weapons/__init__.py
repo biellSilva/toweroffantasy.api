@@ -42,7 +42,9 @@ class Weapon(ModelBase):
     elementEffect: WeaponEffect | None = Field(
         None, validation_alias=AliasChoices("elementEffects", "elementEffect")
     )
-    weaponEffects: list[WeaponEffect] = []
+    weaponEffects: list[WeaponEffect] = Field(
+        [], validation_alias=AliasChoices("effects")
+    )
 
     weaponAdvancements: list[WeaponAdvancement]
     weaponAttacks: WeaponAttacks = Field(
