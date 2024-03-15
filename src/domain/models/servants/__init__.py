@@ -3,7 +3,7 @@ from pydantic import Field
 
 from src.domain.models.base import ModelBase
 
-from .extras import ServantAsset, ServantSkill, ServantUpgrade
+from .extras import ServantAdvancement, ServantAsset, ServantSkill, ServantUpgrade
 
 
 class SmartServant(ModelBase):
@@ -16,7 +16,7 @@ class SmartServant(ModelBase):
     skills: list[ServantSkill]
     upgradeItems: list[ServantUpgrade] = Field(validation_alias="petUpgradeItemMap")
     properties: str
-    advancements: list[str]
+    advancements: list[ServantAdvancement]
 
 
 @strawberry.experimental.pydantic.type(model=SmartServant, all_fields=True)
