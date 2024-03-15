@@ -17,9 +17,7 @@ class FindBannersUseCase(IFindBannersUseCase):
                 )
 
             else:
-                models = await self.repository.find_by_id(
-                    **params.model_dump(exclude={"version"})
-                )
+                models = await self.repository.find_by_id(**params.model_dump())
 
         elif params.version == "china":
             raise NotImplementedErr
@@ -27,4 +25,4 @@ class FindBannersUseCase(IFindBannersUseCase):
         else:
             raise VersionNotFoundErr
 
-        return filter_models(models, params.filter)
+        return await filter_models(models, params.filter)
