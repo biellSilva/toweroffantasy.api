@@ -69,6 +69,9 @@ class SimulacraV2GlobalRepository:
                 value_dict["weapon"] = await self.__WEAPONS_REPO.find_by_id(
                     id=weapon_id.lower(), lang=lang
                 )
+                if value_dict["weapon"]:
+                    value_dict["fashion"] = value_dict["weapon"].fashion  # type: ignore
+
             if matrix_id := value_dict.get("matrixId"):
                 value_dict["matrix"] = await self.__MATRICES_REPO.find_by_id(
                     id=matrix_id.lower(), lang=lang

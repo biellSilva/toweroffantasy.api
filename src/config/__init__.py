@@ -1,6 +1,7 @@
 from datetime import datetime
 from typing import Any
 
+from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.utils import current_time, project_toml
 
 __PROJECT_TOML = project_toml()
@@ -27,7 +28,15 @@ PROJECT_DESC: str = (
     "- [FortOfFans (Data side)](https://github.com/FortOfFans) \t\n "
     "- [Zakum (ToF Index)](https://github.com/whotookzakum) \t\n "
     "\n"
-    f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")}'
+    "```\t\n"
+    f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")}\t\n\n'
+
+    f'Supported versions: {', '.join([value for value in VERSIONS_ENUM])}\t\n\n'
+
+    'Supported languages: \t\n'
+    f'Global: {', '.join([value for value in LANGS_GLOBAL_ENUM])}\t\n'
+    f'China: {', '.join([value for value in LANGS_CHINA_ENUM])}\t\n'
+    '```'
 )
 PROJECT_LICENSE: dict[str, str] = {"name": __PROJECT_TOML.license.text}
 
