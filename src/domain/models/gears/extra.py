@@ -4,7 +4,7 @@ from pydantic import AliasChoices, BaseModel, Field
 
 class StatPool(BaseModel):
     propName: str = Field(validation_alias=AliasChoices("PropName"))
-    weitghtValue: float = Field(validation_alias=AliasChoices("WeightValue"))
+    weightValue: float = Field(validation_alias=AliasChoices("WeightValue"))
 
 
 class BaseStat(BaseModel):
