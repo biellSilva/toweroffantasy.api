@@ -12,6 +12,7 @@ from src.domain.models.matrices import MatrixType
 from src.domain.models.mounts import MountType
 from src.domain.models.outfits import OutfitType
 from src.domain.models.relics import RelicType
+from src.domain.models.researchs import ResearchType
 from src.domain.models.servants import SmartServantType
 from src.domain.models.simulacra import SimulacraType
 from src.domain.models.simulacra_v2 import SimulacraV2Type
@@ -45,6 +46,10 @@ from src.main.factories.controller.outfits.find import FindOutfitsControllerFact
 from src.main.factories.controller.outfits.get_all import GetAllOutfitsControllerFactory
 from src.main.factories.controller.relics.find import FindRelicsControllerFactory
 from src.main.factories.controller.relics.get_all import GetAllRelicsControllerFactory
+from src.main.factories.controller.researchs.find import FindResearchControllerFactory
+from src.main.factories.controller.researchs.get_all import (
+    GetAllResearchsControllerFactory,
+)
 from src.main.factories.controller.servants.find import FindServantsControllerFactory
 from src.main.factories.controller.servants.get_all import (
     GetAllServantsControllerFactory,
@@ -158,4 +163,11 @@ class Query:
     )
     servants: List[SmartServantType] = strawberry.field(
         resolver=GetAllServantsControllerFactory.create().handle
+    )
+
+    research: ResearchType = strawberry.field(
+        resolver=FindResearchControllerFactory.create().handle
+    )
+    researchs: List[ResearchType] = strawberry.field(
+        resolver=GetAllResearchsControllerFactory.create().handle
     )
