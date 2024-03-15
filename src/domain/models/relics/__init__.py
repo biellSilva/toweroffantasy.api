@@ -14,7 +14,7 @@ class Relic(ModelBase):
     source: Annotated[str, BeforeValidator(bold_numbers)] | None = None
     type: str
     icon: str | None = None
-    version: str
+    version: str | None = None
     advancements: list[str]
 
 

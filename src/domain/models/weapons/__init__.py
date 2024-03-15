@@ -43,9 +43,7 @@ class Weapon(ModelBase):
     )
     weaponEffects: list[WeaponEffect] = []
 
-    weaponAdvancements: list[WeaponAdvancement] = Field(
-        validation_alias=AliasChoices("advancements", "weaponAdvancements")
-    )
+    weaponAdvancements: list[WeaponAdvancement]
     weaponAttacks: WeaponAttacks = Field(
         validation_alias=AliasChoices("skills", "weaponAttacks")
     )
