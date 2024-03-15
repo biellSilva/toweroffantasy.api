@@ -28,6 +28,31 @@ class ServantUpgrade(BaseModel):
     exp: int
 
 
+class ServantAdvanceMat(BaseModel):
+    id: str
+    name: str
+    description: str
+    icon: str
+    rarity: int
+    type: str
+    amount: int = Field(validation_alias="mat_amount")
+
+
+class ServantAdvancement(BaseModel):
+    description: str
+    mats: list[ServantAdvanceMat]
+
+
+@strawberry.experimental.pydantic.type(model=ServantAdvanceMat, all_fields=True)
+class ServantAdvanceMatType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=ServantAdvancement, all_fields=True)
+class ServantAdvancementType:
+    pass
+
+
 @strawberry.experimental.pydantic.type(model=ServantAsset, all_fields=True)
 class ServantAssetType:
     pass

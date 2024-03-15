@@ -6,17 +6,19 @@ from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.servants import SmartServant
 from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.repository.helpers.servants import sort_servants
+from src.infra.repository.items.global_ import ItemsGlobalRepository
 
 
 class SmartServantsGlobalRepository:
     __cache: dict[LANGS_GLOBAL_ENUM, dict[str, SmartServant]] = {}
+    __ITEMS_REPO = ItemsGlobalRepository()
 
     async def find_by_id(
         self, id: str, lang: LANGS_GLOBAL_ENUM, *args: Any, **kwargs: Any
     ) -> SmartServant | None:
         if lang_cache := self.__cache.get(lang):
-            if relic := lang_cache.get(id):
-                return relic
+            if data := lang_cache.get(id):
+                return data
             return None
 
         await self.load_data(lang=lang)
@@ -44,6 +46,13 @@ class SmartServantsGlobalRepository:
         DATA: dict[str, Any] = json.loads(DATA_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
+            for advancement in value_dict["advancements"]:
+                for material in advancement["mats"]:
+                    if item := await self.__ITEMS_REPO.find_by_id(
+                        material["mat_id"].lower(), lang
+                    ):
+                        material.update(item.model_dump())
+
             self.__cache[lang].update({key_id.lower(): SmartServant(**value_dict)})
 
         self.__cache[lang] = sort_servants(self.__cache[lang])
