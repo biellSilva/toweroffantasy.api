@@ -5,11 +5,11 @@ from pydantic import AliasChoices, BeforeValidator, Field
 
 from src.domain.models.banner import Banner
 from src.domain.models.base import ModelBase, ModelBaseType
-from src.domain.models.fashion import Fashion
 from src.domain.models.guidebook.extra import GuideBookItem
 from src.domain.models.simulacra.extra import (
     Awakening,
     SimulacraAssets,
+    SimulacraFashion,
     VoiceActors,
 )
 from src.utils import string_or_null
@@ -48,7 +48,7 @@ class Simulacra(ModelBase):
     voicing: VoiceActors = Field(validation_alias=AliasChoices("va", "voicing"))
     awakening: list[Awakening]
     banners: list[Banner] = []
-    fashion: list[Fashion] = []
+    fashion: list[SimulacraFashion] = []
     guidebook: list[GuideBookItem] = Field(
         default=[], validation_alias=AliasChoices("nitai", "guidebook")
     )

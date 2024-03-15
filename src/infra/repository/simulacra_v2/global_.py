@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from src.domain.errors.http import LangNotFoundErr
+from src.domain.errors.http import DataIncompleteErr, LangNotFoundErr
 from src.domain.models.simulacra_v2 import SimulacraV2
 from src.enums import LANGS_GLOBAL_ENUM, VERSIONS_ENUM
 from src.infra.models.simulacra import RawSimulacra
@@ -51,11 +51,16 @@ class SimulacraV2GlobalRepository:
             self.__cache.update({lang: {}})
 
         DATA_PATH = Path("./src/infra/database/global", lang, "imitations.json")
+        WEAPON_PATH = Path("./src/infra/database/global", lang, "weapons.json")
 
         if not DATA_PATH.exists():
             raise LangNotFoundErr
 
+        if not WEAPON_PATH.exists():
+            raise DataIncompleteErr
+
         DATA: dict[str, RawSimulacra] = json.loads(DATA_PATH.read_bytes())
+        WEAPON_DATA: dict[str, dict[str, Any]] = json.loads(WEAPON_PATH.read_bytes())
 
         for key_id, value_dict in DATA.items():
             if ignore_simulacra(value_dict):
@@ -69,13 +74,16 @@ class SimulacraV2GlobalRepository:
                 value_dict["weapon"] = await self.__WEAPONS_REPO.find_by_id(
                     id=weapon_id.lower(), lang=lang
                 )
-                if value_dict["weapon"]:
-                    value_dict["fashion"] = value_dict["weapon"].fashion  # type: ignore
 
             if matrix_id := value_dict.get("matrixId"):
                 value_dict["matrix"] = await self.__MATRICES_REPO.find_by_id(
                     id=matrix_id.lower(), lang=lang
                 )
+
+            if weapon_data := WEAPON_DATA.get(value_dict["weaponId"]):
+                value_dict["fashion"] = [
+                    fashion["outfit"] for fashion in weapon_data.get("fashion", [])
+                ]
 
             if banner_data := await self.__BANNERS_REPO.find_by_id(id=key_id.lower()):
                 value_dict["banners"] = banner_data

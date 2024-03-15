@@ -88,33 +88,32 @@ class WeaponsGlobalRepository:
                 id=value_dict["id"]
             )
 
-            assert isinstance(value_dict["advancements"][0]["shatter"], (float, int))
-            assert isinstance(value_dict["advancements"][0]["charge"], (float, int))
+            assert isinstance(value_dict["attributes"][0]["shatter"], (float, int))
+            assert isinstance(value_dict["attributes"][0]["charge"], (float, int))
 
             value_dict["shatter"] = shatter_or_charge_setter(
-                value_dict["advancements"][0]["shatter"]
+                value_dict["attributes"][0]["shatter"]
             )
             value_dict["charge"] = shatter_or_charge_setter(
-                value_dict["advancements"][0]["charge"]
+                value_dict["attributes"][0]["charge"]
             )
 
             value_dict["weaponAdvancements"] = [  # type: ignore
                 {
                     "description": advanc.get("description"),
-                    "shatter": shatter_or_charge_setter(advanc["shatter"]),
-                    "charge": shatter_or_charge_setter(advanc["charge"]),
+                    "shatter": shatter_or_charge_setter(
+                        value_dict["attributes"][ind]["shatter"]
+                    ),
+                    "charge": shatter_or_charge_setter(
+                        value_dict["attributes"][ind]["charge"]
+                    ),
                     "multiplier": advanc["multiplier"],
                     "need": advanc["need"],
                 }
-                for advanc in value_dict["advancements"]
-                if isinstance(advanc["shatter"], (float, int))
-                and isinstance(advanc["charge"], (float, int))
+                for ind, advanc in enumerate(value_dict["advancements"], start=1)
             ]
 
             value_dict["stats_att"] = weapon_convert_stat(dict_=value_dict)
-
-            if len(value_dict["weaponAdvancements"]) == 7:
-                value_dict["weaponAdvancements"].pop()
 
             if meta := self.__META_GB.get(key_id.lower(), None):
                 value_dict["meta"] = meta
@@ -128,6 +127,8 @@ class WeaponsGlobalRepository:
             )
 
             value_dict = weapon_skill_values(value_dict, self.__DESC_VALUES)
+
+            value_dict["fashion"] = [fashion["weapon"] for fashion in value_dict.get("fashion", [])]  # type: ignore
 
             self.__cache[lang].update(
                 {key_id.lower(): Weapon(**value_dict)}  # type: ignore
