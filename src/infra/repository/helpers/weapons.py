@@ -18,11 +18,28 @@ def ignore_weapon(dict_: RawWeapon) -> bool:
 
 
 def weapon_fix_minor_issues(dict_: RawWeapon) -> RawWeapon:
-    if dict_["id"].lower() == "blevi_thunder":
-        dict_["element"] = "IceThunder"
+    match dict_["id"].lower():
 
-    if dict_["id"].lower() == "lances_ice":
-        dict_["element"] = "ThunderIce"
+        case "asuka_physic":
+            dict_["id"] = "PhysicsFlame"
+
+        case "lances_ice":
+            dict_["element"] = "ThunderIce"
+
+        case "blevi_thunder":
+            dict_["element"] = "IceThunder"
+
+        case "paradox_fire":
+            dict_["element"] = "FlamePhysics"
+
+        case "killknife_physic":
+            dict_["element"] = "PhysicsFlame"
+
+        case "zeke_physic":
+            dict_["element"] = "PhysicsFlame"
+
+        case _:
+            pass
 
     return dict_
 
