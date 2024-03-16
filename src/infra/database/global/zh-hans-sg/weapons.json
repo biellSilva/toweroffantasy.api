@@ -67,15 +67,13 @@
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**67.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 5.6,
-				"shatter": 6.9,
-				"multiplier": [],
-				"need": null
+				"shatter": 6.9
 			}
 		],
+		"advancements": [],
 		"skills": {
 			"normals": [
 				{
@@ -289,15 +287,13 @@
 			"title": "**重伤**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**63.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 9.6,
-				"shatter": 3.2,
-				"multiplier": [],
-				"need": null
+				"shatter": 3.2
 			}
 		],
+		"advancements": [],
 		"skills": {
 			"normals": [
 				{
@@ -498,15 +494,13 @@
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**70.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 8.8,
-				"shatter": 3.6,
-				"multiplier": [],
-				"need": null
+				"shatter": 3.6
 			}
 		],
+		"advancements": [],
 		"skills": {
 			"normals": [
 				{
@@ -691,15 +685,13 @@
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**27.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 8,
-				"shatter": 4.8,
-				"multiplier": [],
-				"need": null
+				"shatter": 4.8
 			}
 		],
+		"advancements": [],
 		"skills": {
 			"normals": [
 				{
@@ -888,35 +880,39 @@
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**106.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 10,
-				"shatter": 4,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 4
 			},
 			{
-				"description": "释放闪避技时治疗周围**10**米内所有队友，治疗量为**100%**攻击。",
 				"charge": 10,
-				"shatter": 4,
+				"shatter": 4
+			},
+			{
+				"charge": 10,
+				"shatter": 4
+			},
+			{
+				"charge": 11.2,
+				"shatter": 4
+			},
+			{
+				"charge": 11.2,
+				"shatter": 4
+			},
+			{
+				"charge": 13.2,
+				"shatter": 4
+			},
+			{
+				"charge": 13.2,
+				"shatter": 4
+			}
+		],
+		"advancements": [
+			{
+				"description": "释放闪避技时治疗周围**10**米内所有队友，治疗量为**100%**攻击。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -939,8 +935,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**10%**",
-				"charge": 10,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -963,8 +957,6 @@
 			},
 			{
 				"description": "每次普攻附加两枚飞弹，每个飞弹对目标造成**5%**攻击伤害，并获得**5**点武器充能值。",
-				"charge": 11.2,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -987,8 +979,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**20%**",
-				"charge": 11.2,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1011,8 +1001,6 @@
 			},
 			{
 				"description": "武器充能值获取速度提高**20%**。（飞弹的攻击不享受此加成）",
-				"charge": 13.2,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1035,8 +1023,6 @@
 			},
 			{
 				"description": "技能为目标解除控制效果，技能范围内的友方单位获得**60%**的减伤。",
-				"charge": 13.2,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1260,35 +1246,39 @@
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**111.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 10,
-				"shatter": 10,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 10
 			},
 			{
-				"description": "普攻每次命中提高**1%**伤害，持续**2**秒，最多叠加**15**层，子弹提升至**60**发。",
 				"charge": 10,
-				"shatter": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 10,
+				"shatter": 13
+			},
+			{
+				"charge": 10,
+				"shatter": 13
+			},
+			{
+				"charge": 10,
+				"shatter": 13
+			},
+			{
+				"charge": 10,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "普攻每次命中提高**1%**伤害，持续**2**秒，最多叠加**15**层，子弹提升至**60**发。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1311,8 +1301,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**10%**",
-				"charge": 10,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1335,8 +1323,6 @@
 			},
 			{
 				"description": "切换至该武器后**10**秒内普攻伤害和破盾率提高**30%**，冷却**25**秒，子弹提升至**80**发。",
-				"charge": 10,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1359,8 +1345,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**20%**",
-				"charge": 10,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1383,8 +1367,6 @@
 			},
 			{
 				"description": "炮塔状态下的普攻冷却时间降低到**2**秒。",
-				"charge": 10,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1407,8 +1389,6 @@
 			},
 			{
 				"description": "切换至该武器后**10**秒内普攻伤害和破盾率提高**40%**，冷却**25**秒。",
-				"charge": 10,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1553,45 +1533,51 @@
 		],
 		"effects": [
 			{
-				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:"
+				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**万物共鸣**：装备**2**把除物理外的相同元素武器触发，最终伤害提升**15%**，装备后后台可生效。**:"
+				"title": "**万物共鸣**：装备**2**把除物理外的相同元素武器触发，最终伤害提升**15%**，装备后后台可生效。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**重伤**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**137.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**万物共鸣**：装备**2**把除物理外的相同元素武器触发，最终伤害提升**15%**，装备后后台可生效。",
 				"charge": 14,
-				"shatter": 12,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12
 			},
 			{
-				"description": "狂气掘宝、章鱼丸沸锅、小皮开路的破盾效率提升**80%**；\r\n自身生命护盾值低于**50%**最大生命值时，释放上述技能可获得**50%**最大生命值护盾，持续**8**秒，该效果**5**秒内至多触发**1**次（巅峰联赛不生效）。",
 				"charge": 14,
-				"shatter": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 14,
+				"shatter": 12
+			},
+			{
+				"charge": 14,
+				"shatter": 12
+			},
+			{
+				"charge": 14,
+				"shatter": 12
+			},
+			{
+				"charge": 14,
+				"shatter": 12
+			},
+			{
+				"charge": 14,
+				"shatter": 12
+			}
+		],
+		"advancements": [
+			{
+				"description": "狂气掘宝、章鱼丸沸锅、小皮开路的破盾效率提升**80%**；\r\n自身生命护盾值低于**50%**最大生命值时，释放上述技能可获得**50%**最大生命值护盾，持续**8**秒，该效果**5**秒内至多触发**1**次（巅峰联赛不生效）。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1614,8 +1600,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 14,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1638,8 +1622,6 @@
 			},
 			{
 				"description": "**小皮分裂触腕**的储存上限提升至**45**条；\r\n释放小皮大绝招后，自身物理伤害提升**12%**，持续**30**秒。",
-				"charge": 14,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1662,8 +1644,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 14,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1686,8 +1666,6 @@
 			},
 			{
 				"description": "引爆**宝藏标记**将刷新目标**重伤**状态的持续时间；\r\n对生命值低于**80%**的目标造成伤害时，自身物理伤害提升**10%**，装备后后台可生效。",
-				"charge": 14,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1710,8 +1688,6 @@
 			},
 			{
 				"description": "**宝藏标记**引爆造成的伤害提升至**90%***攻击力。",
-				"charge": 14,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -1964,35 +1940,39 @@
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**111.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 6,
-				"shatter": 10,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 10
 			},
 			{
-				"description": "切换至该武器时嘲讽周围目标，**8**秒内免受**1**次伤害并且霸体**8**秒，冷却**15**秒。",
 				"charge": 6,
-				"shatter": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 6,
+				"shatter": 10
+			},
+			{
+				"charge": 6,
+				"shatter": 10
+			},
+			{
+				"charge": 6,
+				"shatter": 10
+			},
+			{
+				"charge": 6,
+				"shatter": 10
+			},
+			{
+				"charge": 6,
+				"shatter": 10
+			}
+		],
+		"advancements": [
+			{
+				"description": "切换至该武器时嘲讽周围目标，**8**秒内免受**1**次伤害并且霸体**8**秒，冷却**15**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2015,8 +1995,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**10%**",
-				"charge": 6,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2039,8 +2017,6 @@
 			},
 			{
 				"description": "受到伤害时，在接下来的**6**秒内受到的伤害减少**50%**，冷却**20**秒。",
-				"charge": 6,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2063,8 +2039,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**20%**",
-				"charge": 6,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2087,8 +2061,6 @@
 			},
 			{
 				"description": "普攻附带**2.5**秒**强控眩晕**效果，冷却**20**秒。",
-				"charge": 6,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2111,8 +2083,6 @@
 			},
 			{
 				"description": "连携技使目标受到的伤害加**10%**，冰伤害再提高**10%**，持续**25**秒。",
-				"charge": 6,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2342,35 +2312,39 @@
 			"title": "**重伤**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**100.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 10,
-				"shatter": 6,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 6
 			},
 			{
-				"description": "普攻第五下或者施放技能**穿透箭**恢复一次闪避次数。",
 				"charge": 10,
-				"shatter": 6,
+				"shatter": 6
+			},
+			{
+				"charge": 10,
+				"shatter": 6
+			},
+			{
+				"charge": 10,
+				"shatter": 6
+			},
+			{
+				"charge": 10,
+				"shatter": 6
+			},
+			{
+				"charge": 10,
+				"shatter": 6
+			},
+			{
+				"charge": 10,
+				"shatter": 6
+			}
+		],
+		"advancements": [
+			{
+				"description": "普攻第五下或者施放技能**穿透箭**恢复一次闪避次数。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2393,8 +2367,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**10%**",
-				"charge": 10,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2417,8 +2389,6 @@
 			},
 			{
 				"description": "爆头伤害提升**30%**。",
-				"charge": 10,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2441,8 +2411,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**20%**",
-				"charge": 10,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2465,8 +2433,6 @@
 			},
 			{
 				"description": "闪避技对目标附加持续**7**秒的重伤。",
-				"charge": 10,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2489,8 +2455,6 @@
 			},
 			{
 				"description": "对重伤目标暴击率提高**30%**，暴击伤害提高**50%**。",
-				"charge": 10,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2699,35 +2663,39 @@
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**106.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 7,
-				"shatter": 11,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 11
 			},
 			{
-				"description": "破盾效率提高**15%**，破盾目标后提高全队**15%**攻击，不叠加，持续**30**秒。",
 				"charge": 7,
-				"shatter": 12.6,
+				"shatter": 12.6
+			},
+			{
+				"charge": 7,
+				"shatter": 12.6
+			},
+			{
+				"charge": 7,
+				"shatter": 12.6
+			},
+			{
+				"charge": 7,
+				"shatter": 12.6
+			},
+			{
+				"charge": 7,
+				"shatter": 12.6
+			},
+			{
+				"charge": 7,
+				"shatter": 12.6
+			}
+		],
+		"advancements": [
+			{
+				"description": "破盾效率提高**15%**，破盾目标后提高全队**15%**攻击，不叠加，持续**30**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2750,8 +2718,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**10%**",
-				"charge": 7,
-				"shatter": 12.6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2774,8 +2740,6 @@
 			},
 			{
 				"description": "技能**逐月**命中目标后，降低目标**5%**攻击，提高自身**5%**攻击，持续**15**秒，命中多个目标时可叠加，最多叠加**3**层。对于重伤的目标，效果翻倍。",
-				"charge": 7,
-				"shatter": 12.6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2798,8 +2762,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**20%**",
-				"charge": 7,
-				"shatter": 12.6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2822,8 +2784,6 @@
 			},
 			{
 				"description": "前闪避技的眩晕时长翻倍",
-				"charge": 7,
-				"shatter": 12.6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -2846,8 +2806,6 @@
 			},
 			{
 				"description": "连携技投掷距离越远伤害越高，最多提高**100%**伤害。",
-				"charge": 7,
-				"shatter": 12.6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3083,35 +3041,39 @@
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**144.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 8,
-				"shatter": 6,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 6
 			},
 			{
-				"description": "命中目标背部时双刀的所有攻击暴击率提高**40%**；对感电目标的背刺，暴击率提升**100%**，暴击伤害提升**30%**。",
 				"charge": 8,
-				"shatter": 6,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			}
+		],
+		"advancements": [
+			{
+				"description": "命中目标背部时双刀的所有攻击暴击率提高**40%**；对感电目标的背刺，暴击率提升**100%**，暴击伤害提升**30%**。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3134,8 +3096,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3158,8 +3118,6 @@
 			},
 			{
 				"description": "对生命值低于**60%**的目标伤害提高**30%**。",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3182,8 +3140,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**32%**",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3206,8 +3162,6 @@
 			},
 			{
 				"description": "触发背击时获得持续**4**秒的必定暴击状态，同时暴击伤害提高**50%**，冷却**10**秒。",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3230,8 +3184,6 @@
 			},
 			{
 				"description": "释放技能时目标受到的雷电伤害提高**20%**，持续**20**秒。",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3455,35 +3407,39 @@
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 4,
-				"shatter": 12,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12
 			},
 			{
-				"description": "破盾效率提高**15%**，破盾目标后回复**10%**生命",
 				"charge": 4,
-				"shatter": 13.8,
+				"shatter": 13.8
+			},
+			{
+				"charge": 4,
+				"shatter": 13.8
+			},
+			{
+				"charge": 4,
+				"shatter": 13.8
+			},
+			{
+				"charge": 4,
+				"shatter": 13.8
+			},
+			{
+				"charge": 4,
+				"shatter": 16.1
+			},
+			{
+				"charge": 4,
+				"shatter": 16.1
+			}
+		],
+		"advancements": [
+			{
+				"description": "破盾效率提高**15%**，破盾目标后回复**10%**生命",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3506,8 +3462,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**16%**",
-				"charge": 4,
-				"shatter": 13.8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3530,8 +3484,6 @@
 			},
 			{
 				"description": "切换至该武器时获得**10%**最大生命值的生命冰盾，冷却**20**秒，冰盾最多持续**10**秒。",
-				"charge": 4,
-				"shatter": 13.8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3554,8 +3506,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**32%**",
-				"charge": 4,
-				"shatter": 13.8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3578,8 +3528,6 @@
 			},
 			{
 				"description": "生命护盾期间伤害和破盾效率提高**50%**",
-				"charge": 4,
-				"shatter": 16.1,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3602,8 +3550,6 @@
 			},
 			{
 				"description": "切换至该武器时获得**20%**最大生命值的生命冰盾，护盾期间免控，冷却**20**秒，冰盾最多持续**10**秒。",
-				"charge": 4,
-				"shatter": 16.1,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3852,35 +3798,39 @@
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 11.5,
-				"shatter": 4,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 4
 			},
 			{
-				"description": "闪避攻击每支箭命中目标，获得一层“利箭”效果，每层提高**5%**伤害，最多**3**层，持续**15**秒",
 				"charge": 11.5,
-				"shatter": 4,
+				"shatter": 4
+			},
+			{
+				"charge": 11.5,
+				"shatter": 4
+			},
+			{
+				"charge": 11.5,
+				"shatter": 4
+			},
+			{
+				"charge": 11.5,
+				"shatter": 4
+			},
+			{
+				"charge": 11.5,
+				"shatter": 4
+			},
+			{
+				"charge": 11.5,
+				"shatter": 4
+			}
+		],
+		"advancements": [
+			{
+				"description": "闪避攻击每支箭命中目标，获得一层“利箭”效果，每层提高**5%**伤害，最多**3**层，持续**15**秒",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3903,8 +3853,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 11.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3927,8 +3875,6 @@
 			},
 			{
 				"description": "闪避攻击射出**3**只蓄力箭",
-				"charge": 11.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3951,8 +3897,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 11.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3975,8 +3919,6 @@
 			},
 			{
 				"description": "箭雨的持续时间延长一倍，附带**25%**减速",
-				"charge": 11.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -3999,8 +3941,6 @@
 			},
 			{
 				"description": "\"利箭\"可以叠加**5**层。蓄力箭命中目标后立即获得**3**层，如果打中头部获得**5**层",
-				"charge": 11.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4205,45 +4145,51 @@
 		],
 		"effects": [
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上冰元素武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上冰元素武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**寒冰恩赐**：自身激活恩赐共鸣时，提升全队**5%**冰攻**:"
+				"title": "**寒冰恩赐**：自身激活恩赐共鸣时，提升全队**5%**冰攻**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**寒冰共鸣**：装备**2**把及以上冰元素武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。\r\n**寒冰恩赐**：自身激活恩赐共鸣时，提升全队**5%**冰攻",
 				"charge": 12.5,
-				"shatter": 4,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 4
 			},
 			{
-				"description": "使用闪避后，召唤一只治疗蜜蜂跟随自己，治疗蜜蜂可治疗**15**米范围内的生命百分比最低的队友，每次治疗量为**25%**攻击力的生命并回复**50**点武器充能值，治疗蜜蜂持续**25**秒，召唤冷却**25**秒。",
 				"charge": 12.5,
-				"shatter": 4,
+				"shatter": 4
+			},
+			{
+				"charge": 12.5,
+				"shatter": 4
+			},
+			{
+				"charge": 12.5,
+				"shatter": 4
+			},
+			{
+				"charge": 12.5,
+				"shatter": 4
+			},
+			{
+				"charge": 12.5,
+				"shatter": 4
+			},
+			{
+				"charge": 12.5,
+				"shatter": 4
+			}
+		],
+		"advancements": [
+			{
+				"description": "使用闪避后，召唤一只治疗蜜蜂跟随自己，治疗蜜蜂可治疗**15**米范围内的生命百分比最低的队友，每次治疗量为**25%**攻击力的生命并回复**50**点武器充能值，治疗蜜蜂持续**25**秒，召唤冷却**25**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4266,8 +4212,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**16%**",
-				"charge": 12.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4290,8 +4234,6 @@
 			},
 			{
 				"description": "释放技能**庇护**或连携技为目标解除异常状态，可在被控制状态下释放，范围内的所有队友破盾效率和伤害提高**20%**，且免疫控制和破盾效果。",
-				"charge": 12.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4314,8 +4256,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**32%**",
-				"charge": 12.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4338,8 +4278,6 @@
 			},
 			{
 				"description": "治疗效果提升**15%**，并对生命值低于**60%**的目标再提升**20%**。",
-				"charge": 12.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4362,8 +4300,6 @@
 			},
 			{
 				"description": "治疗蜜蜂召唤出生和消失时对全体友方单位进行一次治疗，治疗量为**100%**攻击力。治疗蜜蜂**10**米内的所有友方单位获得**15%**全伤害和治疗效果提升，不叠加。",
-				"charge": 12.5,
-				"shatter": 4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4587,35 +4523,39 @@
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 5,
-				"shatter": 12.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12.5
 			},
 			{
-				"description": "破盾效率提高**15%**，破盾目标后对目标造成每秒**120%**攻击的灼烧伤害，持续**15**秒。",
 				"charge": 5,
-				"shatter": 14.3,
+				"shatter": 14.3
+			},
+			{
+				"charge": 5,
+				"shatter": 14.3
+			},
+			{
+				"charge": 5,
+				"shatter": 14.3
+			},
+			{
+				"charge": 5,
+				"shatter": 14.3
+			},
+			{
+				"charge": 5,
+				"shatter": 14.3
+			},
+			{
+				"charge": 5,
+				"shatter": 14.3
+			}
+		],
+		"advancements": [
+			{
+				"description": "破盾效率提高**15%**，破盾目标后对目标造成每秒**120%**攻击的灼烧伤害，持续**15**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4638,8 +4578,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**16%**",
-				"charge": 5,
-				"shatter": 14.3,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4662,8 +4600,6 @@
 			},
 			{
 				"description": "周围**6**米内每存在一个敌方目标，伤害提高**15%**，最多提高**30%**。",
-				"charge": 5,
-				"shatter": 14.3,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4686,8 +4622,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 5,
-				"shatter": 14.3,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4710,8 +4644,6 @@
 			},
 			{
 				"description": "对存在生命护盾的目标或护盾状态下的怪物伤害提高**100%**。",
-				"charge": 5,
-				"shatter": 14.3,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4734,8 +4666,6 @@
 			},
 			{
 				"description": "每击杀一个目标提升自己**10%**伤害，最多可叠加**3**层，持续**30**秒。",
-				"charge": 5,
-				"shatter": 14.3,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -4971,42 +4901,47 @@
 		],
 		"effects": [
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。",
 				"charge": 10,
-				"shatter": 12.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12.5
 			},
 			{
-				"description": "技能每段附加目标当前生命**0%**伤害，最高不超过攻击的**1%**",
 				"charge": 10,
-				"shatter": 12.5,
+				"shatter": 12.5
+			},
+			{
+				"charge": 10,
+				"shatter": 12.5
+			},
+			{
+				"charge": 10,
+				"shatter": 12.5
+			},
+			{
+				"charge": 10,
+				"shatter": 12.5
+			},
+			{
+				"charge": 10,
+				"shatter": 12.5
+			},
+			{
+				"charge": 10,
+				"shatter": 12.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "技能每段附加目标当前生命**0%**伤害，最高不超过攻击的**1%**",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5029,8 +4964,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 10,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5053,8 +4986,6 @@
 			},
 			{
 				"description": "分支技能\"爆破榴弹\"和闪避攻击\"近身破击\"会对灼烧状态下目标施加**离子灼烧**，每秒造成攻击力**40%**的火焰伤害，持续**10**秒",
-				"charge": 10,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5077,8 +5008,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 10,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5101,8 +5030,6 @@
 			},
 			{
 				"description": "**离子灼烧**的伤害提高到攻击的**60%**，且任意武器的“闪避技”命中目标刷新目标体内**离子灼烧**的持续时间",
-				"charge": 10,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5125,8 +5052,6 @@
 			},
 			{
 				"description": "技能**弹幕**附带灼烧效果持续**15**秒，任意武器的“闪避技”命中目标后降低技能**弹幕****4**秒的冷却时间，该效果冷却**1.5**秒；“闪避技”附带的持续灼烧也可触发降低冷却效果",
-				"charge": 10,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5363,42 +5288,47 @@
 		],
 		"effects": [
 			{
-				"title": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**重伤**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**137.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。",
 				"charge": 12,
-				"shatter": 7.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 7.5
 			},
 			{
-				"description": "每次释放技能或连携命中目标后，获得一层伤害提升效果，提高**8%**伤害，持续**25**秒，最多叠加**3**层（每次释放技能或连携最多叠加一层）。",
 				"charge": 12,
-				"shatter": 7.5,
+				"shatter": 7.5
+			},
+			{
+				"charge": 12,
+				"shatter": 7.5
+			},
+			{
+				"charge": 12,
+				"shatter": 8.2
+			},
+			{
+				"charge": 12,
+				"shatter": 8.2
+			},
+			{
+				"charge": 12,
+				"shatter": 8.2
+			},
+			{
+				"charge": 12,
+				"shatter": 8.2
+			}
+		],
+		"advancements": [
+			{
+				"description": "每次释放技能或连携命中目标后，获得一层伤害提升效果，提高**8%**伤害，持续**25**秒，最多叠加**3**层（每次释放技能或连携最多叠加一层）。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5421,8 +5351,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 7.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5445,8 +5373,6 @@
 			},
 			{
 				"description": "每次普攻命中目标后获得一层充能效果，每层充能效果持续**0**秒，累积**10**层充能效果后，获得“技能增伤”效果，所有武器的技能伤害提高**1%**，持续**2**秒，不叠加。",
-				"charge": 12,
-				"shatter": 8.2,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5469,8 +5395,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**32%**",
-				"charge": 12,
-				"shatter": 8.2,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5493,8 +5417,6 @@
 			},
 			{
 				"description": "技能或者连携技命中目标时，使目标受到“战损”效果：受到的物理元素武器破盾效率提高**0%**，持续**1**秒，最多**1**层。",
-				"charge": 12,
-				"shatter": 8.2,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5517,8 +5439,6 @@
 			},
 			{
 				"description": "技能命中同一目标后伤害不再递减。",
-				"charge": 12,
-				"shatter": 8.2,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5739,35 +5659,39 @@
 			"title": "**重伤**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**137.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 6,
-				"shatter": 10,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 10
 			},
 			{
-				"description": "技能**玲珑漫天**范围内目标受到的伤害和受到的全元素破盾效果提高**30%**。",
 				"charge": 6,
-				"shatter": 11.4,
+				"shatter": 11.4
+			},
+			{
+				"charge": 6,
+				"shatter": 11.4
+			},
+			{
+				"charge": 6,
+				"shatter": 13
+			},
+			{
+				"charge": 6,
+				"shatter": 13
+			},
+			{
+				"charge": 6,
+				"shatter": 13
+			},
+			{
+				"charge": 6,
+				"shatter": 13
+			}
+		],
+		"advancements": [
+			{
+				"description": "技能**玲珑漫天**范围内目标受到的伤害和受到的全元素破盾效果提高**30%**。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5790,8 +5714,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 6,
-				"shatter": 11.4,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5814,8 +5736,6 @@
 			},
 			{
 				"description": "破盾效率提高**15%**，破盾目标后清除所有武器技能的冷却，**30**秒触发一次。",
-				"charge": 6,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5838,8 +5758,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**32%**",
-				"charge": 6,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5862,8 +5780,6 @@
 			},
 			{
 				"description": "攻击命中带重伤效果的目标，使其重伤持续时间额外增加**7**秒，同效果内最多生效一次。",
-				"charge": 6,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -5886,8 +5802,6 @@
 			},
 			{
 				"description": "释放技能**玲珑漫天**后**8**秒内必暴击。",
-				"charge": 6,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6106,45 +6020,51 @@
 		],
 		"effects": [
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**火焰恩赐**：自身激活恩赐共鸣时，提升全队**5%**火攻。**:"
+				"title": "**火焰恩赐**：自身激活恩赐共鸣时，提升全队**5%**火攻。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。\r\n**火焰恩赐**：自身激活恩赐共鸣时，提升全队**5%**火攻。",
 				"charge": 13,
-				"shatter": 5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 5
 			},
 			{
-				"description": "造成伤害时生成一个回复治疗球，存在**20**秒，拾取治疗球的队友回复**60%**攻击生命，冷却**2**秒",
 				"charge": 13,
-				"shatter": 5,
+				"shatter": 5
+			},
+			{
+				"charge": 13,
+				"shatter": 5
+			},
+			{
+				"charge": 13,
+				"shatter": 5
+			},
+			{
+				"charge": 13,
+				"shatter": 5
+			},
+			{
+				"charge": 13,
+				"shatter": 5
+			},
+			{
+				"charge": 13,
+				"shatter": 5
+			}
+		],
+		"advancements": [
+			{
+				"description": "造成伤害时生成一个回复治疗球，存在**20**秒，拾取治疗球的队友回复**60%**攻击生命，冷却**2**秒",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6167,8 +6087,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 13,
-				"shatter": 5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6191,8 +6109,6 @@
 			},
 			{
 				"description": "技能冷却从**60**秒降低至**30**秒，护盾期间每秒回复**30%**攻击生命",
-				"charge": 13,
-				"shatter": 5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6215,8 +6131,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**32%**",
-				"charge": 13,
-				"shatter": 5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6239,8 +6153,6 @@
 			},
 			{
 				"description": "造成伤害时生成伤害能量球，存在**20**秒，拾取能量球的队友获得**2%**的全伤害和治疗效果提升，最多叠加**10**层，持续**30**秒，冷却**2.5**秒",
-				"charge": 13,
-				"shatter": 5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6263,8 +6175,6 @@
 			},
 			{
 				"description": "释放技能时，给友方单位添加原能魔方同等数量的治疗球和伤害球的效果",
-				"charge": 13,
-				"shatter": 5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6476,35 +6386,39 @@
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**144.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 10.7,
-				"shatter": 6,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 6
 			},
 			{
-				"description": "暴击目标时，在目标身上引起一次电爆，对目标及其附近单位额外造成**30%**攻击力的伤害，冷却**0.2**秒",
 				"charge": 10.7,
-				"shatter": 6,
+				"shatter": 6
+			},
+			{
+				"charge": 10.7,
+				"shatter": 6
+			},
+			{
+				"charge": 10.7,
+				"shatter": 6
+			},
+			{
+				"charge": 10.7,
+				"shatter": 6
+			},
+			{
+				"charge": 10.7,
+				"shatter": 6
+			},
+			{
+				"charge": 10.7,
+				"shatter": 6
+			}
+		],
+		"advancements": [
+			{
+				"description": "暴击目标时，在目标身上引起一次电爆，对目标及其附近单位额外造成**30%**攻击力的伤害，冷却**0.2**秒",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6527,8 +6441,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 10.7,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6551,8 +6463,6 @@
 			},
 			{
 				"description": "对有感电效果的目标暴击率提高**40%**，电爆时延长感电时间**0.5**秒，最长**5**秒",
-				"charge": 10.7,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6575,8 +6485,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 10.7,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6599,8 +6507,6 @@
 			},
 			{
 				"description": "电能光束持续时间翻倍，技能释放时会将目标拉至中心",
-				"charge": 10.7,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6623,8 +6529,6 @@
 			},
 			{
 				"description": "触发电爆时技能冷却降低**1**秒",
-				"charge": 10.7,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6833,35 +6737,39 @@
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "N/A",
 				"charge": 10,
-				"shatter": 10,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 10
 			},
 			{
-				"description": "释放连携-磅礴怒意获得一层“坚盾”，盾状态下释放闪避技/分支技获得一层“坚盾”，最多**3**层，每层提供**10%**的减伤，持续**15**秒。切换至斧形态时将“坚盾”转化为“利斧”，每层“利斧”提升**15%**伤害，持续**15**秒。（切换至其他武器时清除）",
 				"charge": 10,
-				"shatter": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 10,
+				"shatter": 10
+			}
+		],
+		"advancements": [
+			{
+				"description": "释放连携-磅礴怒意获得一层“坚盾”，盾状态下释放闪避技/分支技获得一层“坚盾”，最多**3**层，每层提供**10%**的减伤，持续**15**秒。切换至斧形态时将“坚盾”转化为“利斧”，每层“利斧”提升**15%**伤害，持续**15**秒。（切换至其他武器时清除）",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6884,8 +6792,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**16%**",
-				"charge": 10,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6908,8 +6814,6 @@
 			},
 			{
 				"description": "盾形态下，分支/闪避攻击命中目标后额外附加一次自身当前生命**4%**的额外伤害。",
-				"charge": 10,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6932,8 +6836,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 10,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6956,8 +6858,6 @@
 			},
 			{
 				"description": "切换至盾斧时立即获得**30%**减伤，之后开始递减，每**3**秒减少**10%**，最多减少到**10%**。切换到其他武器时消失，冷却**30**秒。",
-				"charge": 10,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -6980,8 +6880,6 @@
 			},
 			{
 				"description": "强化切换技能。\r\n盾之变强化——技能伤害提高**60%**，火焰地带范围扩大**30%**。\r\n斧之变强化——不与盾之变共用冷却；技能释放后，**5**秒内自身受到的所有伤害转化为自身生命值（最多可转化**15%**最大生命）。",
-				"charge": 10,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7188,45 +7086,51 @@
 		],
 		"effects": [
 			{
-				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**雷霆-驻场**：**孟章**任意攻击命中时，对附近目标造成**131.3%***雷攻+**1.9%***自身最大生命值+**68.8%***各元素抗性之和+**250%***暴击值点伤害，每**1.5**秒至多触发一次，雷霆伤害视为普攻伤害，若装备任意**1**把火焰/寒冰/物理武器，则雷霆伤害提升至**1.3**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**雷霆-驻场**：**孟章**任意攻击命中时，对附近目标造成**131.3%***雷攻+**1.9%***自身最大生命值+**68.8%***各元素抗性之和+**250%***暴击值点伤害，每**1.5**秒至多触发一次，雷霆伤害视为普攻伤害，若装备任意**1**把火焰/寒冰/物理武器，则雷霆伤害提升至**1.3**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**144.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。\r\n**雷霆-驻场**：**孟章**任意攻击命中时，对附近目标造成**131.3%***雷攻+**1.9%***自身最大生命值+**68.8%***各元素抗性之和+**250%***暴击值点伤害，每**1.5**秒至多触发一次，雷霆伤害视为普攻伤害，若装备任意**1**把火焰/寒冰/物理武器，则雷霆伤害提升至**1.3**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 15,
-				"shatter": 14,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 14
 			},
 			{
-				"description": "**霆爆**蓄力后每次会出现**2**条孟章小青龙，每条小青龙出现为召唤物回复**20%**最大生命值；\r\n**霆爆**蓄力攻击以及冲击波的伤害提升**30%**；\r\n释放**青云慑月**后立即获得**3**层青龙之力，释放其它雷武器技能后立即获得**1**层青龙之力。",
 				"charge": 15,
-				"shatter": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "**霆爆**蓄力后每次会出现**2**条孟章小青龙，每条小青龙出现为召唤物回复**20%**最大生命值；\r\n**霆爆**蓄力攻击以及冲击波的伤害提升**30%**；\r\n释放**青云慑月**后立即获得**3**层青龙之力，释放其它雷武器技能后立即获得**1**层青龙之力。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7249,8 +7153,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 15,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7273,8 +7175,6 @@
 			},
 			{
 				"description": "装备**孟章**时，所有雷武器原生技能冷却时间降低**20%**，且不受其它任何冷却时间清除、重置、变化效果的影响；\r\n此外，自身雷电伤害提升**15%**，装备后后台可生效。",
-				"charge": 15,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7297,8 +7197,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 15,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7321,8 +7219,6 @@
 			},
 			{
 				"description": "自身受到致命伤害时，抵挡一次致死效果并免疫伤害一小段时间，该效果**60**秒内至多触发一次，装备后后台可生效；\r\n激活坚毅共鸣后：\r\n释放**飞龙在天**可无视霸体地吸附附近目标（对boss不生效）；\r\n组队玩法中，**霆爆**蓄力期间每**6**秒生成**1**个雷电时章，并按照生成顺序链接形成电网，电网可阻挡怪物移动以及怪物的子弹类伤害，每个雷电时章至多存在**20**秒。",
-				"charge": 15,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7345,8 +7241,6 @@
 			},
 			{
 				"description": "释放**青云慑月**后，自身雷电伤害提升**10%**，最终伤害提升**10%**，持续**30**秒。",
-				"charge": 15,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7607,48 +7501,55 @@
 		],
 		"effects": [
 			{
-				"title": "**终末的箫声**：装备**3**把异能武器触发，提升**30%**攻击，装备后后台也生效。**:"
+				"title": "**终末的箫声**：装备**3**把异能武器触发，提升**30%**攻击，装备后后台也生效。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**浸染**：从其它武器切换至紫竹后，根据该武器的元素类型，更改紫竹造成伤害的元素类型。**:"
+				"title": "**浸染**：从其它武器切换至紫竹后，根据该武器的元素类型，更改紫竹造成伤害的元素类型。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**寄宿**：晦暝之力可以寄宿任意一把已解锁武器，当紫竹不上阵时，晦暝之力可寄宿任意其它武器，该武器造成伤害提升**1%**；当紫竹上阵时，晦暝之力仅可寄宿紫竹，玩家自身伤害提升**15%**。**:"
+				"title": "**寄宿**：晦暝之力可以寄宿任意一把已解锁武器，当紫竹不上阵时，晦暝之力可寄宿任意其它武器，该武器造成伤害提升**1%**；当紫竹上阵时，晦暝之力仅可寄宿紫竹，玩家自身伤害提升**15%**。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**异能**:",
 			"description": "武器充能值充满后下次攻击对敌人进行标记，**5**秒后爆炸，额外受到标记期间所有伤害的**25%**，最多不超过自身**560%**攻击。同时间目标只能存在一个标记。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**终末的箫声**：装备**3**把异能武器触发，提升**30%**攻击，装备后后台也生效。\r\n**浸染**：从其它武器切换至紫竹后，根据该武器的元素类型，更改紫竹造成伤害的元素类型。\r\n**寄宿**：晦暝之力可以寄宿任意一把已解锁武器，当紫竹不上阵时，晦暝之力可寄宿任意其它武器，该武器造成伤害提升**1%**；当紫竹上阵时，晦暝之力仅可寄宿紫竹，玩家自身伤害提升**15%**。",
 				"charge": 12,
-				"shatter": 12,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12
 			},
 			{
-				"description": "晦暝之力寄宿武器的星级每提升**1**级，寄宿增伤额外提升**1%**；\r\n维度坍缩伤害提升至（**0.1%***高维空间内自身（不包含虚影）累计实际伤害+**2400%***攻击力）伤害（视为基础倍率，受增伤效果影响）。",
 				"charge": 12,
-				"shatter": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 12,
+				"shatter": 12
+			}
+		],
+		"advancements": [
+			{
+				"description": "晦暝之力寄宿武器的星级每提升**1**级，寄宿增伤额外提升**1%**；\r\n维度坍缩伤害提升至（**0.1%***高维空间内自身（不包含虚影）累计实际伤害+**2400%***攻击力）伤害（视为基础倍率，受增伤效果影响）。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7671,8 +7572,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7695,8 +7594,6 @@
 			},
 			{
 				"description": "虚影额外继承玩家**50%**攻击力，非降神状态下，自身受到致命伤害时，解除虚影抵挡一次致死效果并免疫伤害一小段时间，该效果**60**秒内至多触发一次，有其它同类效果时优先生效其它同类效果，装备后后台可生效。",
-				"charge": 12,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7719,8 +7616,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 12,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7743,8 +7638,6 @@
 			},
 			{
 				"description": "高维空间内自身获得无视目标**20%**抗性效果；\r\n虚空渊流生成数量上限提升至**3**个。",
-				"charge": 12,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -7767,8 +7660,6 @@
 			},
 			{
 				"description": "维度坍缩伤害提升至（**0.4%***高维空间内自身（不包含虚影）累计实际伤害+**2400%***攻击力）伤害（视为基础倍率，受增伤效果影响）。",
-				"charge": 12,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8053,51 +7944,59 @@
 		],
 		"effects": [
 			{
-				"title": "**火物融合**：该武器计算伤害时取装备最高的火焰/物理基础攻击，装备最高的火焰/物理百分比攻击，装备最高的火焰/物理增伤。且该武器能同时视为火焰元素武器和物理元素武器。**:"
+				"title": "**火物融合**：该武器计算伤害时取装备最高的火焰/物理基础攻击，装备最高的火焰/物理百分比攻击，装备最高的火焰/物理增伤。且该武器能同时视为火焰元素武器和物理元素武器。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:"
+				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**帕帕-脱手**：释放技能**镜中你我**后，每秒对命中目标造成**87.5%***火攻+**12.5%***自身最大生命值+**45%***各元素抗性之和+**168.8%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，帕帕伤害视为技能伤害，若装备任意**1**把雷电/寒冰武器，则帕帕伤害提升至**1.3**倍。此外，帕帕伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**帕帕-脱手**：释放技能**镜中你我**后，每秒对命中目标造成**87.5%***火攻+**12.5%***自身最大生命值+**45%***各元素抗性之和+**168.8%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，帕帕伤害视为技能伤害，若装备任意**1**把雷电/寒冰武器，则帕帕伤害提升至**1.3**倍。此外，帕帕伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**装甲溶解**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**45**秒装甲溶解状态，受到的火焰和物理伤害增加**10%**，组队玩法中额外提升**15%**（该效果会替换掉目标的重伤，并且目标拥有该效果无法被添加重伤）。装甲溶解状态受到物理元素攻击会击晕目标**2**秒，受到火元素攻击会降低怪物**50%**移动速度**5**秒，相同目标**15**秒内最多触发**1**次"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**火物融合**：该武器计算伤害时取装备最高的火焰/物理基础攻击，装备最高的火焰/物理百分比攻击，装备最高的火焰/物理增伤。且该武器能同时视为火焰元素武器和物理元素武器。\r\n**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**帕帕-脱手**：释放技能**镜中你我**后，每秒对命中目标造成**87.5%***火攻+**12.5%***自身最大生命值+**45%***各元素抗性之和+**168.8%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，帕帕伤害视为技能伤害，若装备任意**1**把雷电/寒冰武器，则帕帕伤害提升至**1.3**倍。此外，帕帕伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 12,
-				"shatter": 14,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 14
 			},
 			{
-				"description": "**帕帕出场**状态下，每发射**7**枚爆能弹后，帕帕会出现发射一枚**重装能源弹Ⅱ型**，对附近目标造成**590%***攻击力伤害，同时分裂成多枚高爆弹，对附近目标再造成**660%***攻击力伤害。",
 				"charge": 12,
-				"shatter": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "**帕帕出场**状态下，每发射**7**枚爆能弹后，帕帕会出现发射一枚**重装能源弹Ⅱ型**，对附近目标造成**590%***攻击力伤害，同时分裂成多枚高爆弹，对附近目标再造成**660%***攻击力伤害。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8120,8 +8019,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8144,8 +8041,6 @@
 			},
 			{
 				"description": "帕帕出现后，自身最终伤害提升**12%**，物理伤害提升**6%**，持续**25**秒；\r\n帕帕累计出现**5**次后，下次释放**镜中你我**时，会重置当前幻时冷却，并立即触发幻时。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8168,8 +8063,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8192,8 +8085,6 @@
 			},
 			{
 				"description": "**重装能源弹Ⅰ型**的触发间隔减少至**6**秒，发射**重装能源弹Ⅰ型**、**重装能源弹Ⅱ型**时会同步发射一枚治疗弹，回复自身**10%**最大生命值。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8216,8 +8107,6 @@
 			},
 			{
 				"description": "**镜面-目标**的伤害反射效果对目标自身也可生效；\r\n**镜面-自身**的伤害反弹比例提升至**30%**，反弹伤害上限提升至自身**800%**最大生命值。\r\n此外，**镜面-自身**持续期间，每次受到伤害时，额外格挡自身**10%**最大生命值（溢出部分正常扣除，巅峰联赛不生效），该效果每**3**秒至多触发**1**次，冷却状态下，帕帕出现后会欣赏着镜中的自己，为该效果减少**1**秒触发冷却。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8510,45 +8399,51 @@
 		],
 		"effects": [
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**极寒-脱手**：释放**剑诀**•** 凌玄影**后，每秒对命中目标造成**70%***冰攻+**10%***自身最大生命值+**36%***各元素抗性之和+**135%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，极寒伤害视为技能伤害，若装备任意**1**把雷电/火焰/物理武器，则极寒伤害提升至**1.3**倍。此外，极寒伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**极寒-脱手**：释放**剑诀**•** 凌玄影**后，每秒对命中目标造成**70%***冰攻+**10%***自身最大生命值+**36%***各元素抗性之和+**135%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，极寒伤害视为技能伤害，若装备任意**1**把雷电/火焰/物理武器，则极寒伤害提升至**1.3**倍。此外，极寒伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。\r\n**极寒-脱手**：释放**剑诀**•** 凌玄影**后，每秒对命中目标造成**70%***冰攻+**10%***自身最大生命值+**36%***各元素抗性之和+**135%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，极寒伤害视为技能伤害，若装备任意**1**把雷电/火焰/物理武器，则极寒伤害提升至**1.3**倍。此外，极寒伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 8,
-				"shatter": 16,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 16
 			},
 			{
-				"description": "发射**冰刃**后自身冰攻提升**10%**，每秒对附近目标造成**80%***攻击力伤害，持续**30**秒。",
 				"charge": 8,
-				"shatter": 16,
+				"shatter": 16
+			},
+			{
+				"charge": 8,
+				"shatter": 16
+			},
+			{
+				"charge": 8,
+				"shatter": 16
+			},
+			{
+				"charge": 8,
+				"shatter": 16
+			},
+			{
+				"charge": 8,
+				"shatter": 16
+			},
+			{
+				"charge": 8,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "发射**冰刃**后自身冰攻提升**10%**，每秒对附近目标造成**80%***攻击力伤害，持续**30**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8571,8 +8466,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 8,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8595,8 +8488,6 @@
 			},
 			{
 				"description": "**冰刃**生成数量上限提升至**4**柄，**温度降低**伤害基础倍率提升至**360%**；\r\n若**6**秒内受到**温度降低**效果影响的仅有目标自身，则对目标额外添加**封脉**效果，移动速度降低**30%**（巅峰联赛、对boss不生效），若目标**封脉**期间再次受到**冰刃**伤害，可触发冰爆，造成**1700%***攻击力+**2%**目标已损失生命值的技能伤害（冰爆伤害不低于玩家**2000%**冰攻且不高于玩家**2200%**冰攻），并移除目标的**封脉**与**温度降低**效果。",
-				"charge": 8,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8619,8 +8510,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 8,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8643,8 +8532,6 @@
 			},
 			{
 				"description": "**晶裂**、**寒气**造成的伤害额外提升**50%**，**翩跹落**使用上限提升至**10**次，回复效率提升至每**3**秒回复**1**次使用次数。",
-				"charge": 8,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8667,8 +8554,6 @@
 			},
 			{
 				"description": "发射**冰刃**添加的**温度降低**效果变为范围添加，并对附近目标额外造成**990%***攻击力伤害。",
-				"charge": 8,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8929,45 +8814,51 @@
 		],
 		"effects": [
 			{
-				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**雷电恩赐**：自身激活恩赐共鸣时，提升全队**5%**雷攻。**:"
+				"title": "**雷电恩赐**：自身激活恩赐共鸣时，提升全队**5%**雷攻。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**144.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。\r\n**雷电恩赐**：自身激活恩赐共鸣时，提升全队**5%**雷攻。",
 				"charge": 8,
-				"shatter": 6,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 6
 			},
 			{
-				"description": "释放**技能“脉冲锁定”**或**连携“粒子束喷发”**时，创建**1**个电极，自身立即获得**5**层治疗链强化效果，同时释放一道治疗链，治疗附近友方单位（=拓荒者**135%***攻击力）。",
 				"charge": 8,
-				"shatter": 6,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			},
+			{
+				"charge": 8,
+				"shatter": 6
+			},
+			{
+				"charge": 11,
+				"shatter": 6
+			}
+		],
+		"advancements": [
+			{
+				"description": "释放**技能“脉冲锁定”**或**连携“粒子束喷发”**时，创建**1**个电极，自身立即获得**5**层治疗链强化效果，同时释放一道治疗链，治疗附近友方单位（=拓荒者**135%***攻击力）。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8990,8 +8881,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9014,8 +8903,6 @@
 			},
 			{
 				"description": "电极每**6**秒释放一次**环形电流**，最多造成**230%***攻击的范围伤害。",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9038,8 +8925,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9062,8 +8947,6 @@
 			},
 			{
 				"description": "释放**技能“脉冲锁定”**后，提高自身（**5**+自身电极数***5**）%攻击，持续**25**秒。",
-				"charge": 8,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9086,8 +8969,6 @@
 			},
 			{
 				"description": "最多同时存在**2**个电极。新的电极出现时，会替换距离自身距离较远的电极。",
-				"charge": 11,
-				"shatter": 6,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9330,42 +9211,47 @@
 		],
 		"effects": [
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。",
 				"charge": 8,
-				"shatter": 8,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 8
 			},
 			{
-				"description": "冰域结束时会对冰域内所有敌方目标造成**0%***冰攻的“爆域伤害”。\r\n使用巴尔蒙克造成的所有伤害无视目标**1%**的寒冰抗性。",
 				"charge": 8,
-				"shatter": 8,
+				"shatter": 8
+			},
+			{
+				"charge": 8,
+				"shatter": 8
+			},
+			{
+				"charge": 8,
+				"shatter": 8
+			},
+			{
+				"charge": 8,
+				"shatter": 8
+			},
+			{
+				"charge": 8,
+				"shatter": 8
+			},
+			{
+				"charge": 8,
+				"shatter": 8
+			}
+		],
+		"advancements": [
+			{
+				"description": "冰域结束时会对冰域内所有敌方目标造成**0%***冰攻的“爆域伤害”。\r\n使用巴尔蒙克造成的所有伤害无视目标**1%**的寒冰抗性。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9388,8 +9274,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**16%**",
-				"charge": 8,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9412,8 +9296,6 @@
 			},
 			{
 				"description": "寒冰值上限提高到**15**点，冰域内释放任意冰元素武器连携技时会对冰域内所有目标造成（自身寒冰值点数+5）***25%***冰攻的伤害",
-				"charge": 8,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9436,8 +9318,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 8,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9460,8 +9340,6 @@
 			},
 			{
 				"description": "冰域内使用寒冰武器破盾会冰冻目标**0**秒，并额外造成**1%***冰攻的伤害（目标无法被冰冻则额外造成的伤害翻倍）。",
-				"charge": 8,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9484,8 +9362,6 @@
 			},
 			{
 				"description": "寒冰值达到**15**点时自身处于冰域内额外获得“寒冰领域II”：使用冰元素武器时冰攻提升**25%**",
-				"charge": 8,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9693,42 +9569,47 @@
 		],
 		"effects": [
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。",
 				"charge": 8,
-				"shatter": 11.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 11.5
 			},
 			{
-				"description": "【炙热】使斯帕克普攻增伤提高至**0%**；技能冷却缩减至**35**秒",
 				"charge": 8,
-				"shatter": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 8,
+				"shatter": 11.5
+			},
+			{
+				"charge": 8,
+				"shatter": 11.5
+			},
+			{
+				"charge": 8,
+				"shatter": 11.5
+			},
+			{
+				"charge": 8,
+				"shatter": 11.5
+			},
+			{
+				"charge": 8,
+				"shatter": 11.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "【炙热】使斯帕克普攻增伤提高至**0%**；技能冷却缩减至**35**秒",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9751,8 +9632,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 8,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9775,8 +9654,6 @@
 			},
 			{
 				"description": "【炙热】附带受到火伤增加**0%**；灼烧结算倍率提升至**75%**",
-				"charge": 8,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9799,8 +9676,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 8,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9823,8 +9698,6 @@
 			},
 			{
 				"description": "**火花撞撞**造成的灼烧结算伤害比例提升至**0%**",
-				"charge": 8,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -9847,8 +9720,6 @@
 			},
 			{
 				"description": "【炙热】使斯帕克普攻增伤提高至**0%**；技能冷却缩减至**30**秒",
-				"charge": 8,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10092,42 +9963,47 @@
 		],
 		"effects": [
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。",
 				"charge": 8,
-				"shatter": 13.9,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 13.9
 			},
 			{
-				"description": "累计释放任意武器技能**6**次清除不破咲武器技能冷却",
 				"charge": 8,
-				"shatter": 13.9,
+				"shatter": 13.9
+			},
+			{
+				"charge": 8,
+				"shatter": 13.9
+			},
+			{
+				"charge": 8,
+				"shatter": 13.9
+			},
+			{
+				"charge": 8,
+				"shatter": 13.9
+			},
+			{
+				"charge": 8,
+				"shatter": 13.9
+			},
+			{
+				"charge": 8,
+				"shatter": 13.9
+			}
+		],
+		"advancements": [
+			{
+				"description": "累计释放任意武器技能**6**次清除不破咲武器技能冷却",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10150,8 +10026,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 8,
-				"shatter": 13.9,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10174,8 +10048,6 @@
 			},
 			{
 				"description": "动心流下：剑影【涌动】伤害提升至**350%***冰攻\r\n静心流下：剑影【涌动】冷却变为**5**秒",
-				"charge": 8,
-				"shatter": 13.9,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10198,8 +10070,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**32%**",
-				"charge": 8,
-				"shatter": 13.9,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10222,8 +10092,6 @@
 			},
 			{
 				"description": "【涌动】命中目标时会冻结时间触发幻时，与闪避触发的幻时共用冷却",
-				"charge": 8,
-				"shatter": 13.9,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10246,8 +10114,6 @@
 			},
 			{
 				"description": "动心流下：剑影【流转】命中目标后，使目标对自身造成的伤害降低**11%**，持续**15**秒\r\n静心流下：剑影触发【格挡】时会使周围所有敌方目标造成的伤害降低**25%**，持续**12**秒",
-				"charge": 8,
-				"shatter": 13.9,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10502,45 +10368,47 @@
 		],
 		"effects": [
 			{
-				"title": "影织与其他武器搭配时，可构成**“武器大师”**效果。**:"
-			},
-			{
-				"title": "昙花会随机出现在目标周围，并在**1-3**秒内爆炸，造成**37.5%**范围伤害。**:"
+				"title": "专属",
+				"description": "影织与其他武器搭配时，可构成**“武器大师”**效果。\r\n昙花会随机出现在目标周围，并在**1-3**秒内爆炸，造成**37.5%**范围伤害。"
 			}
 		],
 		"elementEffects": {
 			"title": "**异能**:",
 			"description": "武器充能值充满后下次攻击对敌人进行标记，**5**秒后爆炸，额外受到标记期间所有伤害的**25%**，最多不超过自身**560%**攻击。同时间目标只能存在一个标记。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "影织与其他武器搭配时，可构成**“武器大师”**效果。\r\n昙花会随机出现在目标周围，并在**1-3**秒内爆炸，造成**37.5%**范围伤害。",
 				"charge": 11.5,
-				"shatter": 11.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 11.5
 			},
 			{
-				"description": "普攻命中变为范围伤害。\r\n昙花引爆范围内存在其他昙花时，会使后续的昙花爆炸伤害提高（每个**1000%**，最多**5000%**）。\r\n**技能“映月之境”**生成昙花间隔缩短至**0.5**秒。",
 				"charge": 11.5,
-				"shatter": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "普攻命中变为范围伤害。\r\n昙花引爆范围内存在其他昙花时，会使后续的昙花爆炸伤害提高（每个**1000%**，最多**5000%**）。\r\n**技能“映月之境”**生成昙花间隔缩短至**0.5**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10563,8 +10431,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10587,8 +10453,6 @@
 			},
 			{
 				"description": "**技能“映月之境”**生成昙花间隔缩短至**0.3**秒。\r\n昙花会附着于敌方目标。\r\n**技能“映月之境”**持续时间延长至**20**秒。",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10611,8 +10475,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10635,8 +10497,6 @@
 			},
 			{
 				"description": "自身处于**技能“映月之境”**内时，每秒获得**30**点武器充能值，同时连携技造成伤害提高**15%**。",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10659,8 +10519,6 @@
 			},
 			{
 				"description": "**技能“映月之境”**模式改变，最多可使用**2**次（通过技能冷却最多可积攒**1**个次数，连携充能可额外积攒**1**个次数）。\r\n使用**3**次任意武器连携，**技能“映月之境”**使用次数**+1**（影织处于后台也生效）。\r\n**技能“映月之境”**内攻击加成提高至**23%**。",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10929,42 +10787,47 @@
 		],
 		"effects": [
 			{
-				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**144.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。",
 				"charge": 8,
-				"shatter": 12.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12.5
 			},
 			{
-				"description": "每次充电时获得1层“超导”：**0%**生命上限提升，但是自身受到的伤害提升**1%**（当前生命低于自身{2倍雷攻击且没有生命护盾时除外），最多叠加**8**层，**3**秒内如果未刷新“超导”则损失一层",
 				"charge": 8,
-				"shatter": 12.5,
+				"shatter": 12.5
+			},
+			{
+				"charge": 8,
+				"shatter": 12.5
+			},
+			{
+				"charge": 8,
+				"shatter": 12.5
+			},
+			{
+				"charge": 8,
+				"shatter": 12.5
+			},
+			{
+				"charge": 8,
+				"shatter": 12.5
+			},
+			{
+				"charge": 8,
+				"shatter": 12.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "每次充电时获得1层“超导”：**0%**生命上限提升，但是自身受到的伤害提升**1%**（当前生命低于自身{2倍雷攻击且没有生命护盾时除外），最多叠加**8**层，**3**秒内如果未刷新“超导”则损失一层",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10987,8 +10850,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 8,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11011,8 +10872,6 @@
 			},
 			{
 				"description": "释放任意雷武器技能或者连携技获得**2**次充电，并且超导叠满**8**层后获得霸体效果。",
-				"charge": 8,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11035,8 +10894,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**32%**",
-				"charge": 8,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11059,8 +10916,6 @@
 			},
 			{
 				"description": "每层“超导”获得**0%**的最终伤害提升",
-				"charge": 8,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11083,8 +10938,6 @@
 			},
 			{
 				"description": "贪狼的雷电感应效果提升至：每感应到1把其他雷武器获得**0%**雷电伤害提升，持续**1**秒。",
-				"charge": 8,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11301,45 +11154,51 @@
 		],
 		"effects": [
 			{
-				"title": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**物理恩赐**：自身激活恩赐共鸣时，提升全队**5%**物攻。**:"
+				"title": "**物理恩赐**：自身激活恩赐共鸣时，提升全队**5%**物攻。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**重伤**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**137.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。\r\n**物理恩赐**：自身激活恩赐共鸣时，提升全队**5%**物攻。",
 				"charge": 10,
-				"shatter": 12,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12
 			},
 			{
-				"description": "释放任意武器技能或连携时，若自身守护达到最大数量时，刷新守护时间，并根据场上守护数量对敌方目标造成守护数量***3000%**物攻的物理伤害（非恩赐下最多6个守护，恩赐下最多8个守护）。",
 				"charge": 10,
-				"shatter": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			}
+		],
+		"advancements": [
+			{
+				"description": "释放任意武器技能或连携时，若自身守护达到最大数量时，刷新守护时间，并根据场上守护数量对敌方目标造成守护数量***3000%**物攻的物理伤害（非恩赐下最多6个守护，恩赐下最多8个守护）。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11362,8 +11221,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11386,8 +11243,6 @@
 			},
 			{
 				"description": "所有守护造成的伤害提升**20%**，并且恩赐共鸣使用任意武器技能或连携使守护目标获得**15%**最终伤害提升，持续**10**秒",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11410,8 +11265,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11434,8 +11287,6 @@
 			},
 			{
 				"description": "「宽恕」守护：共鸣5次后，使自己和守护目标获得**1**次抵挡致命伤害，队友在抵挡致命伤害后消耗「宽恕」守护并回复**5%**最大生命值（巅峰联赛中不生效）\r\n「悔悟」守护：共鸣5次后且自身存在「悔悟」守护，使自己抵挡**2**次致命伤害，最多积累**5**次，抵挡伤害后消耗1层「悔悟」守护并回复**5%**最大生命值（巅峰联赛中不生效）",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11458,8 +11309,6 @@
 			},
 			{
 				"description": "释放任意武器技能或连携时，根据守护数量获得最终伤害和治疗提升，每个守护为玩家提供**1.6%**最终伤害和治疗，最多提升**8%**持续**25**秒",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11711,42 +11560,47 @@
 		],
 		"effects": [
 			{
-				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。**:"
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**144.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。",
 				"charge": 12,
-				"shatter": 10,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 10
 			},
 			{
-				"description": "触发**回响**后，每枚晶极刺每**2**秒会对附近目标造成**66.7%***攻击力点伤害，持续**NaN**秒。",
 				"charge": 12,
-				"shatter": 10,
+				"shatter": 10
+			},
+			{
+				"charge": 12,
+				"shatter": 10
+			},
+			{
+				"charge": 12,
+				"shatter": 10
+			},
+			{
+				"charge": 12,
+				"shatter": 10
+			},
+			{
+				"charge": 12,
+				"shatter": 10
+			},
+			{
+				"charge": 12,
+				"shatter": 10
+			}
+		],
+		"advancements": [
+			{
+				"description": "触发**回响**后，每枚晶极刺每**2**秒会对附近目标造成**66.7%***攻击力点伤害，持续**NaN**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11769,8 +11623,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11793,8 +11645,6 @@
 			},
 			{
 				"description": "释放任意武器技能，或释放其它武器连携技时，可生成**1**枚晶极刺。",
-				"charge": 12,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11817,8 +11667,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 12,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11841,8 +11689,6 @@
 			},
 			{
 				"description": "**回响**对晶极刺的最大生命值回复提升至**NaN%**。",
-				"charge": 12,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -11865,8 +11711,6 @@
 			},
 			{
 				"description": "成功释放海拉之拥后自身雷电伤害额外提升**NaN%**，持续**NaN**秒。",
-				"charge": 12,
-				"shatter": 10,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12130,42 +11974,47 @@
 		],
 		"effects": [
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。",
 				"charge": 12,
-				"shatter": 8,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 8
 			},
 			{
-				"description": "滞寒场域内释放任意冰元素武器技能，均可获得艾莉丝的支援，召唤艾莉丝出场释放一次连携技能，并视作玩家释放了一次连携，并在释放连携后释放一次触发该效果的技能（艾莉丝支援释放的连携与技能伤害为原伤害**70%**）",
 				"charge": 12,
-				"shatter": 8,
+				"shatter": 8
+			},
+			{
+				"charge": 12,
+				"shatter": 8
+			},
+			{
+				"charge": 12,
+				"shatter": 8
+			},
+			{
+				"charge": 12,
+				"shatter": 8
+			},
+			{
+				"charge": 12,
+				"shatter": 8
+			},
+			{
+				"charge": 12,
+				"shatter": 8
+			}
+		],
+		"advancements": [
+			{
+				"description": "滞寒场域内释放任意冰元素武器技能，均可获得艾莉丝的支援，召唤艾莉丝出场释放一次连携技能，并视作玩家释放了一次连携，并在释放连携后释放一次触发该效果的技能（艾莉丝支援释放的连携与技能伤害为原伤害**70%**）",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12188,8 +12037,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12212,8 +12059,6 @@
 			},
 			{
 				"description": "每触发一次白星贯夜，获得艾莉丝援助，白星贯夜和\"霜冻伤害\"提升**0%**，最多叠加**3**次，持续**1**秒",
-				"charge": 12,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12236,8 +12081,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 12,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12260,8 +12103,6 @@
 			},
 			{
 				"description": "不灭之翼普攻和空间切割伤害提升**0%**；当玩家受到致命伤害时，受到艾莉丝的守护，抵挡一次致死效果并免疫伤害一小段时间，冷却**1**秒",
-				"charge": 12,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12284,8 +12125,6 @@
 			},
 			{
 				"description": "艾莉丝援助达到3层时获得**0%**冰伤提升",
-				"charge": 12,
-				"shatter": 8,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12546,51 +12385,59 @@
 		],
 		"effects": [
 			{
-				"title": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。**:"
+				"title": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:"
+				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**飞刃-驻场**：**规衡**任意攻击命中时，对附近目标造成**164%***物攻+**2.3%***自身最大生命值+**85%***各元素抗性之和+**312%***暴击值点伤害，每**1.5**秒至多触发一次，飞刃伤害视为普攻伤害，若装备任意**1**把寒冰/雷电武器，则飞刃伤害提升至**1.3**倍。此外，飞刃伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**飞刃-驻场**：**规衡**任意攻击命中时，对附近目标造成**164%***物攻+**2.3%***自身最大生命值+**85%***各元素抗性之和+**312%***暴击值点伤害，每**1.5**秒至多触发一次，飞刃伤害视为普攻伤害，若装备任意**1**把寒冰/雷电武器，则飞刃伤害提升至**1.3**倍。此外，飞刃伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**装甲溶解**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**45**秒装甲溶解状态，受到的火焰和物理伤害增加**10%**，组队玩法中额外提升**15%**（该效果会替换掉目标的重伤，并且目标拥有该效果无法被添加重伤）。装甲溶解状态受到物理元素攻击会击晕目标**2**秒，受到火元素攻击会降低怪物**50%**移动速度**5**秒，相同目标**15**秒内最多触发**1**次"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。\r\n**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n**飞刃-驻场**：**规衡**任意攻击命中时，对附近目标造成**164%***物攻+**2.3%***自身最大生命值+**85%***各元素抗性之和+**312%***暴击值点伤害，每**1.5**秒至多触发一次，飞刃伤害视为普攻伤害，若装备任意**1**把寒冰/雷电武器，则飞刃伤害提升至**1.3**倍。此外，飞刃伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 12,
-				"shatter": 16,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 16
 			},
 			{
-				"description": "释放**连旋动九天**获得的**灼刃**增加至**4**把，**灼刃**触发间隔缩短为每**1.8**秒最多触发**1**次",
 				"charge": 12,
-				"shatter": 16,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "释放**连旋动九天**获得的**灼刃**增加至**4**把，**灼刃**触发间隔缩短为每**1.8**秒最多触发**1**次",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12613,8 +12460,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12637,8 +12482,6 @@
 			},
 			{
 				"description": "无视目标**15%**物理抗性和**15%**火焰抗性。（所有单个元素无视抗性总值不能超过50%）",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12661,8 +12504,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12685,8 +12526,6 @@
 			},
 			{
 				"description": "消耗**灼刃**时获得一个**30%**最大生命值护盾，持续**20**秒，获得的护盾不会超出最大生命值**30%**，超出部分的**50%**会转化为治疗",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12709,8 +12548,6 @@
 			},
 			{
 				"description": "**灼刃**伤害提升至**2600%**，消耗**灼刃**后最终伤害额外提升**8%**。",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -12955,51 +12792,59 @@
 		],
 		"effects": [
 			{
-				"title": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。**:"
+				"title": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。**:"
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**寒袭-驻场**：**坏家伙**任意攻击命中时，对附近目标造成**205%***冰攻+**2.9%***自身最大生命值+**106%***各元素抗性之和+**3.9%***暴击值点伤害，每**1.5**秒至多触发一次，寒袭伤害视为普攻伤害，若装备任意**1**把物理/火焰武器，则寒袭伤害提升至**1.3**倍。此外，寒袭伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**寒袭-驻场**：**坏家伙**任意攻击命中时，对附近目标造成**205%***冰攻+**2.9%***自身最大生命值+**106%***各元素抗性之和+**3.9%***暴击值点伤害，每**1.5**秒至多触发一次，寒袭伤害视为普攻伤害，若装备任意**1**把物理/火焰武器，则寒袭伤害提升至**1.3**倍。此外，寒袭伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**高压彻骨**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**45**秒高压彻骨状态，受到的寒冰和雷电伤害增加**10%**，组队玩法中额外提升**15%**（该效果会替换掉目标的重伤，并且目标拥有该效果无法被添加重伤）。高压彻骨状态受到冰元素攻击会冰冻目标**2**秒，受到雷元素攻击会清除目标的增益效果，相同目标**15**秒内最多触发**1**次"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。\r\n**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。\r\n**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n\r\n**寒袭-驻场**：**坏家伙**任意攻击命中时，对附近目标造成**205%***冰攻+**2.9%***自身最大生命值+**106%***各元素抗性之和+**3.9%***暴击值点伤害，每**1.5**秒至多触发一次，寒袭伤害视为普攻伤害，若装备任意**1**把物理/火焰武器，则寒袭伤害提升至**1.3**倍。此外，寒袭伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 12,
-				"shatter": 16,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 16
 			},
 			{
-				"description": "自身对生命值低于**80%**的目标造成伤害时，最终伤害提升**12%**，装备后后台可生效；\r\n**匿形**状态中受到攻击不会破隐，可格挡攻击的次数上限提升至**3**次，发动攻击破隐后自身额外获得**匿形**时长***5%**最大生命值护盾（不超过**120%**最大生命值），持续**30**秒。",
 				"charge": 12,
-				"shatter": 16,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "自身对生命值低于**80%**的目标造成伤害时，最终伤害提升**12%**，装备后后台可生效；\r\n**匿形**状态中受到攻击不会破隐，可格挡攻击的次数上限提升至**3**次，发动攻击破隐后自身额外获得**匿形**时长***5%**最大生命值护盾（不超过**120%**最大生命值），持续**30**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13022,8 +12867,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13046,8 +12889,6 @@
 			},
 			{
 				"description": "**武器-坏家伙**造成伤害的破盾效率提升**20%**；\r\n**狂猎**状态**触发后**，吸引附近的冰核至玩家周围引爆并进入持续**5**秒的渗透状态，切换武器键位替换为**技能-极地之噬**（该极地之噬不触发释放技能的额外效果），且每次释放后**技能-极地之噬**的冷却时间减少**20**秒，使用普攻可立即退出渗透状态。",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13070,8 +12911,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13094,8 +12933,6 @@
 			},
 			{
 				"description": "冰核引爆造成的伤害提升**150%**；\n**普攻-锁猎**掷出武器**命中后**，对目标施加持续**5**秒的雪痕状态（此状态先于**普攻-锁猎**的蓄力伤害触发），雪痕状态结束时对目标再次造成期间受到伤害总量的**30%**（该伤害单人模式下不超过自身攻击***650**，组队模式下不超过自身攻击***6500**，且不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果），雪痕每**30**秒至多触发**1**次。",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13118,8 +12955,6 @@
 			},
 			{
 				"description": "**技能-极地之噬**的冰雷伤害提升效果可以叠加，至多叠加至**3**层。",
-				"charge": 12,
-				"shatter": 16,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13412,54 +13247,63 @@
 		],
 		"effects": [
 			{
-				"title": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。**:"
+				"title": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**雷霆-速切**：装备**契约徽章☆玫茨**时，任意武器连携技对附近目标初始造成**46.87%***雷攻+**0.62%***自身最大生命值+**23.43%***各元素抗性之和+**85.93%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把火焰/物理武器，则雷霆伤害提升至**1.3**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**雷霆-速切**：装备**契约徽章☆玫茨**时，任意武器连携技对附近目标初始造成**46.87%***雷攻+**0.62%***自身最大生命值+**23.43%***各元素抗性之和+**85.93%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把火焰/物理武器，则雷霆伤害提升至**1.3**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**奇迹逆转**：挑战旧日幻象、序列幻象副本时，装备**契约徽章☆玫茨**额外获得**15**秒挑战时长；挑战**起源战境**副本时，队伍中每装备**1**把**契约徽章☆玫茨**，全队额外获得**25**秒挑战时长，至多可获得**50**秒。**:"
+				"title": "**奇迹逆转**：挑战旧日幻象、序列幻象副本时，装备**契约徽章☆玫茨**额外获得**15**秒挑战时长；挑战**起源战境**副本时，队伍中每装备**1**把**契约徽章☆玫茨**，全队额外获得**25**秒挑战时长，至多可获得**50**秒。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**高压彻骨**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**45**秒高压彻骨状态，受到的寒冰和雷电伤害增加**10%**，组队玩法中额外提升**15%**（该效果会替换掉目标的重伤，并且目标拥有该效果无法被添加重伤）。高压彻骨状态受到冰元素攻击会冰冻目标**2**秒，受到雷元素攻击会清除目标的增益效果，相同目标**15**秒内最多触发**1**次"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**雷冰融合**：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。\r\n**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。\r\n**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。\r\n**雷霆-速切**：装备**契约徽章☆玫茨**时，任意武器连携技对附近目标初始造成**46.87%***雷攻+**0.62%***自身最大生命值+**23.43%***各元素抗性之和+**85.93%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把火焰/物理武器，则雷霆伤害提升至**1.3**倍。此外，雷霆伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。\r\n**奇迹逆转**：挑战旧日幻象、序列幻象副本时，装备**契约徽章☆玫茨**额外获得**15**秒挑战时长；挑战**起源战境**副本时，队伍中每装备**1**把**契约徽章☆玫茨**，全队额外获得**25**秒挑战时长，至多可获得**50**秒。",
 				"charge": 10,
-				"shatter": 12,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12
 			},
 			{
-				"description": "**粉钻级连锁乱打**、**玫茨后台协同攻击**每次命中回复自身**12%***攻击力生命值，组队玩法中回复效果提升至**18%**；\r\n挚友受伤使当前生命值低于最大生命值的**25%**时，额外回复挚友**30%**最大生命值，并使挚友免疫伤害持续**3**秒，若本次伤害为致命伤害，则额外抵挡一次致死效果，该效果每**60**秒至多触发**1**次。",
 				"charge": 10,
-				"shatter": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			}
+		],
+		"advancements": [
+			{
+				"description": "**粉钻级连锁乱打**、**玫茨后台协同攻击**每次命中回复自身**12%***攻击力生命值，组队玩法中回复效果提升至**18%**；\r\n挚友受伤使当前生命值低于最大生命值的**25%**时，额外回复挚友**30%**最大生命值，并使挚友免疫伤害持续**3**秒，若本次伤害为致命伤害，则额外抵挡一次致死效果，该效果每**60**秒至多触发**1**次。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13482,8 +13326,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13506,8 +13348,6 @@
 			},
 			{
 				"description": "激活**非恩赐共鸣**时，**玫茨蓄能波**可额外积攒**2**次使用次数，自身对Boss造成的雷电伤害与寒冰伤害提升**10%**；\r\n激活**恩赐共鸣**时，**百万玫茨冲击波**可额外积攒**1**次使用次数，对挚友最大生命值回复效果提升至**15%**。",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13530,8 +13370,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13554,8 +13392,6 @@
 			},
 			{
 				"description": "**玫茨后台协同攻击**、**玫茨蓄能波**造成的伤害提升**30%**。",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13578,8 +13414,6 @@
 			},
 			{
 				"description": "契约增幅状态下，自身雷电伤害提升效果与寒冰伤害提升效果分别提升**10%**和**4%**；玫茨光环使附近队友的最终伤害提升至**20%**，破盾效率提升**25%**，该效果不可叠加。",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13837,42 +13671,47 @@
 		],
 		"effects": [
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。",
 				"charge": 9,
-				"shatter": 12.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12.5
 			},
 			{
-				"description": "使用十字狙射命中目标**2**次，会在目标位置形成持续**12**秒的**光学空间**，处于光学空间内的敌方单位触发灼烧结算后，后续会自动触发**2**次灼烧结算，敌方单位离开光学空间时，**2.5**秒内移动速度减少**80%**，冷却**12**秒。\r\n被十字狙射瞄准的目标会进入**1.5**秒“恐惧状态”【动作速率减缓**80%**】，冷却**4**秒。",
 				"charge": 9,
-				"shatter": 12.5,
+				"shatter": 12.5
+			},
+			{
+				"charge": 9,
+				"shatter": 12.5
+			},
+			{
+				"charge": 9,
+				"shatter": 12.5
+			},
+			{
+				"charge": 9,
+				"shatter": 12.5
+			},
+			{
+				"charge": 9,
+				"shatter": 12.5
+			},
+			{
+				"charge": 9,
+				"shatter": 12.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "使用十字狙射命中目标**2**次，会在目标位置形成持续**12**秒的**光学空间**，处于光学空间内的敌方单位触发灼烧结算后，后续会自动触发**2**次灼烧结算，敌方单位离开光学空间时，**2.5**秒内移动速度减少**80%**，冷却**12**秒。\r\n被十字狙射瞄准的目标会进入**1.5**秒“恐惧状态”【动作速率减缓**80%**】，冷却**4**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13895,8 +13734,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 9,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13919,8 +13756,6 @@
 			},
 			{
 				"description": "十字狙射暴击后，回复自身此次伤害**50%**的生命（不超过自身**15%**最大生命值，瓦斯爆炸伤害不生效），并回复自身**50**点武器充能值。\r\n【心静如水】每层最终暴击率提高至**9%**，上限提高至**27%**，最多转化**13.5%**暴击伤害。",
-				"charge": 9,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13943,8 +13778,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 9,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13967,8 +13800,6 @@
 			},
 			{
 				"description": "**暴戾烈弹**强化—“灼烧强化”状态，使目标的灼烧伤害提高至**30%**。\r\n**谲诳魔弹**强化—瓦斯引爆伤害无视目标**30%**火抗。",
-				"charge": 9,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13991,8 +13822,6 @@
 			},
 			{
 				"description": "十字狙射造成伤害额外提高**20%**。",
-				"charge": 9,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14219,51 +14048,59 @@
 		],
 		"effects": [
 			{
-				"title": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。**:"
+				"title": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:"
+				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**神枪-速切**：装备**朗基努斯之枪**时，任意武器连携技对附近目标初始造成**58.58%***物攻+**0.78%***自身最大生命值+**29.29%***各元素抗性之和+**107.4%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把寒冰/雷电武器，则神枪伤害提升至**1.3**倍。此外，神枪伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**神枪-速切**：装备**朗基努斯之枪**时，任意武器连携技对附近目标初始造成**58.58%***物攻+**0.78%***自身最大生命值+**29.29%***各元素抗性之和+**107.4%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把寒冰/雷电武器，则神枪伤害提升至**1.3**倍。此外，神枪伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**装甲溶解**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**45**秒装甲溶解状态，受到的火焰和物理伤害增加**10%**，组队玩法中额外提升**15%**（该效果会替换掉目标的重伤，并且目标拥有该效果无法被添加重伤）。装甲溶解状态受到物理元素攻击会击晕目标**2**秒，受到火元素攻击会降低怪物**50%**移动速度**5**秒，相同目标**15**秒内最多触发**1**次"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。\r\n**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n**神枪-速切**：装备**朗基努斯之枪**时，任意武器连携技对附近目标初始造成**58.58%***物攻+**0.78%***自身最大生命值+**29.29%***各元素抗性之和+**107.4%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把寒冰/雷电武器，则神枪伤害提升至**1.3**倍。此外，神枪伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 10,
-				"shatter": 12,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12
 			},
 			{
-				"description": "技能-复仇层数上限由**10**层提升至**15**层，且所有层数消耗完毕后会会额外召唤一把巨大的朗基努斯之枪，若当前武器伤害的元素类型为**物理**或**火焰**，则对附近目标造成该伤害元素类型的**2000%***攻击力伤害。",
 				"charge": 10,
-				"shatter": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 10,
+				"shatter": 12
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "技能-复仇层数上限由**10**层提升至**15**层，且所有层数消耗完毕后会会额外召唤一把巨大的朗基努斯之枪，若当前武器伤害的元素类型为**物理**或**火焰**，则对附近目标造成该伤害元素类型的**2000%***攻击力伤害。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14286,8 +14123,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14310,8 +14145,6 @@
 			},
 			{
 				"description": "**A.T力场**持续期间，对目标造成伤害时可无视**A.T力场**耐久值**当前百分比*****30%**+**20%**的目标护盾减伤；激活**坚毅共鸣**时，自身破盾效率提升**A.T力场**耐久值**当前百分比*****100%**。",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14334,8 +14167,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 10,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14358,8 +14189,6 @@
 			},
 			{
 				"description": "每消耗**1**层**技能-复仇**，回复**6%****A.T立场**最大耐久值。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14382,8 +14211,6 @@
 			},
 			{
 				"description": "**A.T立场**期间获得的物理增伤提升至**36%**，火焰增伤提升至**24%**；\r\n激活**坚毅共鸣**时，**A.T力场**持续期间，附近队友无视**15%**目标护盾减伤，并降低附近目标**1200%**全抗，该效果不可叠加。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14628,45 +14455,51 @@
 		],
 		"effects": [
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**爆炎-驻场**：**松彗**任意攻击命中时，对附近目标造成**105%***火攻+**1.5%***自身最大生命值+**55%***各元素抗性之和+**200%***暴击值点伤害，每**1.5**秒至多触发一次，爆炎伤害视为普攻伤害，若装备任意**1**把雷电/寒冰/物理武器，则爆炎伤害提升至**1.3**倍。此外，爆炎伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**爆炎-驻场**：**松彗**任意攻击命中时，对附近目标造成**105%***火攻+**1.5%***自身最大生命值+**55%***各元素抗性之和+**200%***暴击值点伤害，每**1.5**秒至多触发一次，爆炎伤害视为普攻伤害，若装备任意**1**把雷电/寒冰/物理武器，则爆炎伤害提升至**1.3**倍。此外，爆炎伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。\r\n**爆炎-驻场**：**松彗**任意攻击命中时，对附近目标造成**105%***火攻+**1.5%***自身最大生命值+**55%***各元素抗性之和+**200%***暴击值点伤害，每**1.5**秒至多触发一次，爆炎伤害视为普攻伤害，若装备任意**1**把雷电/寒冰/物理武器，则爆炎伤害提升至**1.3**倍。此外，爆炎伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 15,
-				"shatter": 12.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12.5
 			},
 			{
-				"description": "**雀羽**命中目标时产生扩散效果，触发一次灼烧及点燃总伤害**50%**的额外范围伤害，并将该目标的**雀燃**扩散到附近目标且刷新**雀燃**持续时间，扩散效果每**5**秒至多触发一次。",
 				"charge": 15,
-				"shatter": 12.5,
+				"shatter": 12.5
+			},
+			{
+				"charge": 15,
+				"shatter": 12.5
+			},
+			{
+				"charge": 15,
+				"shatter": 12.5
+			},
+			{
+				"charge": 15,
+				"shatter": 12.5
+			},
+			{
+				"charge": 15,
+				"shatter": 12.5
+			},
+			{
+				"charge": 15,
+				"shatter": 12.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "**雀羽**命中目标时产生扩散效果，触发一次灼烧及点燃总伤害**50%**的额外范围伤害，并将该目标的**雀燃**扩散到附近目标且刷新**雀燃**持续时间，扩散效果每**5**秒至多触发一次。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14689,8 +14522,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 15,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14713,8 +14544,6 @@
 			},
 			{
 				"description": "自身生命值低于**50%**最大生命值时，每**0.5**秒消耗**1**枚**雀羽**并回复**1.5%**最大生命值，单人玩法中生命回复效果提升至**3%**，直至生命值回满或者**雀羽**清空，装备后后台可生效。",
-				"charge": 15,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14737,8 +14566,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 15,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14761,8 +14588,6 @@
 			},
 			{
 				"description": "自身受到致命伤害时，抵挡一次致死效果并免疫伤害一小段时间，并立即获得**60**枚**雀羽**以及**1000**点武器充能值，该效果每**60**秒至多触发一次，装备后后台可生效。",
-				"charge": 15,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14785,8 +14610,6 @@
 			},
 			{
 				"description": "自身处于**极致**状态时，火焰伤害额外提升**14%**。",
-				"charge": 15,
-				"shatter": 12.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15091,42 +14914,47 @@
 		],
 		"effects": [
 			{
-				"title": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**重伤**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**137.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**物理共鸣**：装备**2**把及以上物理元素武器触发，提升**15%**物理攻击和**25%**物理抗性，装备后后台可生效，同类效果不叠加。",
 				"charge": 9,
-				"shatter": 12,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 12
 			},
 			{
-				"description": "切换至莫比乌斯时，立即获得**30**点【预热值】，冷却**17**秒，进入【魔术演出】时会对自身附近目标造成一次**840%***攻击的范围伤害，并减少其**1000%**物理抗性，持续**20**秒。",
 				"charge": 9,
-				"shatter": 12,
+				"shatter": 12
+			},
+			{
+				"charge": 9,
+				"shatter": 12
+			},
+			{
+				"charge": 9,
+				"shatter": 12
+			},
+			{
+				"charge": 9,
+				"shatter": 12
+			},
+			{
+				"charge": 9,
+				"shatter": 12
+			},
+			{
+				"charge": 9,
+				"shatter": 12
+			}
+		],
+		"advancements": [
+			{
+				"description": "切换至莫比乌斯时，立即获得**30**点【预热值】，冷却**17**秒，进入【魔术演出】时会对自身附近目标造成一次**840%***攻击的范围伤害，并减少其**1000%**物理抗性，持续**20**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15149,8 +14977,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 9,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15173,8 +14999,6 @@
 			},
 			{
 				"description": "提前离开【魔术演出】状态时，会造成一次持续**13**秒的大范围持续伤害，降低当前莫比乌斯技能的冷却时间，并获得一段时间的物理伤害提高**25%**的效果(该效果莫比乌斯自身无法享受)，若【魔术演出】剩余时间大于**13**秒，则额外获得**200**点武器充能值。【魔术演出】剩余时间越多，范围伤害越高，技能冷却时间降低越多，物理增伤持续时间越长。范围伤害每次至多造成**200%***攻击的伤害(剩余时间大于**13**秒时达到最大值)，冷却时间至多缩短**13**秒，物理增伤至多持续**20**秒。",
-				"charge": 9,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15197,8 +15021,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 9,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15221,8 +15043,6 @@
 			},
 			{
 				"description": "进入【魔术演出】状态时，立刻获得【意念傀儡】效果，【意念傀儡】莫比乌斯物理增伤效果提升至**15%**；【魔术演出】期间，自身每秒恢复**2%**最大生命值、**10**点武器充能值。",
-				"charge": 9,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15245,8 +15065,6 @@
 			},
 			{
 				"description": "【魔术演出】状态下，莫比乌斯拥有额外一条副鞭，莫比乌斯每次进行普攻或闪避攻击时，副鞭会跟随挥舞，造成莫比乌斯**100%***攻击的伤害（此伤害不视为普攻）。",
-				"charge": 9,
-				"shatter": 12,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15522,45 +15340,51 @@
 		],
 		"effects": [
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**爆炎-速切**：装备**重蕊**时，任意武器连携技命中后，对附近目标初始造成**37.5%***火攻+**0.5%***自身最大生命值+**18.75%***各元素抗性之和+**68.75%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，爆炎-速切伤害为连携伤害，若装备任意**1**把寒冰/雷电/物理武器，则爆炎伤害提升至**1.3**倍。此外，爆炎伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**爆炎-速切**：装备**重蕊**时，任意武器连携技命中后，对附近目标初始造成**37.5%***火攻+**0.5%***自身最大生命值+**18.75%***各元素抗性之和+**68.75%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，爆炎-速切伤害为连携伤害，若装备任意**1**把寒冰/雷电/物理武器，则爆炎伤害提升至**1.3**倍。此外，爆炎伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加。\r\n**爆炎-速切**：装备**重蕊**时，任意武器连携技命中后，对附近目标初始造成**37.5%***火攻+**0.5%***自身最大生命值+**18.75%***各元素抗性之和+**68.75%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，爆炎-速切伤害为连携伤害，若装备任意**1**把寒冰/雷电/物理武器，则爆炎伤害提升至**1.3**倍。此外，爆炎伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 12,
-				"shatter": 14,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 14
 			},
 			{
-				"description": "**心焰**伤害的基础倍率提升至**60%***攻击力，战斗状态下，若自身添加过多个灼烧状态，**心焰**伤害的基础倍率额外提升至其中的最高基础倍率。",
 				"charge": 12,
-				"shatter": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "**心焰**伤害的基础倍率提升至**60%***攻击力，战斗状态下，若自身添加过多个灼烧状态，**心焰**伤害的基础倍率额外提升至其中的最高基础倍率。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15583,8 +15407,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15607,8 +15429,6 @@
 			},
 			{
 				"description": "场上存在**妃色幻象**数量上限提升至**2**个，释放**扶摇**命中目标后，额外生成**1**个**妃色幻象**。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15631,8 +15451,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15655,8 +15473,6 @@
 			},
 			{
 				"description": "**蜃楼**中每有**1**个**妃色幻象**或**莲瓣**，**心焰**伤害额外提升**12%**。\r\n释放**莲步飞天**耐力消耗减少**75%**。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15679,8 +15495,6 @@
 			},
 			{
 				"description": "**心蚀**伤害的基础倍率提升至**270%***攻击力，破盾效率翻倍，并且命中目标后**15%**概率添加**2**秒**65%**迟缓（组队玩法中对BOSS不生效，巅峰联赛不生效）效果。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -15940,45 +15754,51 @@
 		],
 		"effects": [
 			{
-				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**均衡元素**：装备**3**把不同属性武器触发，提升**15%**全攻，装备后后台可生效。**:"
+				"title": "**均衡元素**：装备**3**把不同属性武器触发，提升**15%**全攻，装备后后台可生效。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**雷电**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**1**秒**强控麻痹**效果并感电**6**秒，清除目标的增益效果并造成**144.00%***攻击力伤害，并且**6**秒内无法获得增益效果。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效，同类效果不叠加。\r\n**均衡元素**：装备**3**把不同属性武器触发，提升**15%**全攻，装备后后台可生效。",
 				"charge": 10.5,
-				"shatter": 13.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 13.5
 			},
 			{
-				"description": "技能“**汪汪当家**”唤出意识体、且处于冷却状态时，获得新技能“**音潮狂欢**”：冲向目标进行多段攻击，至多造成**720%***攻击力伤害，每段命中带有短暂缓速效果，且回复自身**100%***攻击力生命值，最后一段命中为目标添加**2**枚音符，音潮狂欢冷却**15**秒；\r\n引爆**3**枚及以上音符、且音潮狂欢冷却大于**5**秒时，清除音潮狂欢技能冷却，该效果**15**秒内至多触发一次。",
 				"charge": 10.5,
-				"shatter": 13.5,
+				"shatter": 13.5
+			},
+			{
+				"charge": 10.5,
+				"shatter": 13.5
+			},
+			{
+				"charge": 10.5,
+				"shatter": 13.5
+			},
+			{
+				"charge": 10.5,
+				"shatter": 13.5
+			},
+			{
+				"charge": 10.5,
+				"shatter": 13.5
+			},
+			{
+				"charge": 10.5,
+				"shatter": 13.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "技能“**汪汪当家**”唤出意识体、且处于冷却状态时，获得新技能“**音潮狂欢**”：冲向目标进行多段攻击，至多造成**720%***攻击力伤害，每段命中带有短暂缓速效果，且回复自身**100%***攻击力生命值，最后一段命中为目标添加**2**枚音符，音潮狂欢冷却**15**秒；\r\n引爆**3**枚及以上音符、且音潮狂欢冷却大于**5**秒时，清除音潮狂欢技能冷却，该效果**15**秒内至多触发一次。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16001,8 +15821,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 10.5,
-				"shatter": 13.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16025,8 +15843,6 @@
 			},
 			{
 				"description": "歌歌世界存在期间：\r\n自身每损失**45%**最大生命或释放技能“**音潮狂欢**“会触发一次**歌歌世界震荡**，对歌歌世界内的目标造成**650%***攻击力伤害；\r\n自身每损失**99%**最大生命会获得**1**次免死（抵挡一次致死效果并免疫伤害一小段时间），持续**45**秒，最多可获得**1**层。",
-				"charge": 10.5,
-				"shatter": 13.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16049,8 +15865,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 10.5,
-				"shatter": 13.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16073,8 +15887,6 @@
 			},
 			{
 				"description": "引爆音符伤害系数提升至**40%**，沉醉状态下持续伤害提高至每秒**1.5%**最大生命。\r\n歌歌世界存在期间，战斗状态中连续**12**秒未触发**歌歌世界震荡**则自动触发一次。",
-				"charge": 10.5,
-				"shatter": 13.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16097,8 +15909,6 @@
 			},
 			{
 				"description": "使用**格莱普尼**武器期间暴击率提升**18%**，切换至其他武器后暴击率提升效果额外持续**5**秒。",
-				"charge": 10.5,
-				"shatter": 13.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16375,42 +16185,47 @@
 		],
 		"effects": [
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**烈焰**:",
 			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**58.00%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**火焰共鸣**：装备**2**把及以上火元素武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效，同类效果不叠加",
 				"charge": 8,
-				"shatter": 14,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 14
 			},
 			{
-				"description": "**【聚羽肆力】**：装备陵光时，其他武器的**【弹药类消耗】**也为**【聚羽力劲】**倍，同时其伤害、充能、破盾提高至**【聚羽力劲】**倍；\r\n**【烁火】**：羽翎附近目标受到灼烧结算/【崩炎】时，会将灼烧结算/【崩炎】伤害量的**30%**传导给目标附近生命值百分比最高的**3**个单位（可包含目标本身）。",
 				"charge": 8,
-				"shatter": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 8,
+				"shatter": 14
+			},
+			{
+				"charge": 8,
+				"shatter": 14
+			},
+			{
+				"charge": 8,
+				"shatter": 14
+			},
+			{
+				"charge": 8,
+				"shatter": 14
+			},
+			{
+				"charge": 8,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "**【聚羽肆力】**：装备陵光时，其他武器的**【弹药类消耗】**也为**【聚羽力劲】**倍，同时其伤害、充能、破盾提高至**【聚羽力劲】**倍；\r\n**【烁火】**：羽翎附近目标受到灼烧结算/【崩炎】时，会将灼烧结算/【崩炎】伤害量的**30%**传导给目标附近生命值百分比最高的**3**个单位（可包含目标本身）。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16433,8 +16248,6 @@
 			},
 			{
 				"description": "当前武器的基础生命成长+**16%**",
-				"charge": 8,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16457,8 +16270,6 @@
 			},
 			{
 				"description": "释放任意武器连携或破盾目标时，场上所有羽翎均触发**1**次**30%**效果的【崩炎】;羽翎附近的敌方单位攻击力降低**15%**；战斗状态下第一次造成伤害，在目标附近立刻生成**3**柄羽翎。",
-				"charge": 8,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16481,8 +16292,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 8,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16505,8 +16314,6 @@
 			},
 			{
 				"description": "【崩炎】及其传导伤害无视目标**60%**火抗；\r\n【侵蚀】的火焰伤害加成提升至**10%**。",
-				"charge": 8,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16529,8 +16336,6 @@
 			},
 			{
 				"description": "舞火激昂意、茕羽腾云霄造成的伤害提升**50%**；\r\n计算羽翎快速旋转、熠禽长叹嗟、【崩炎】效果时，【聚羽力劲】+**2**。",
-				"charge": 8,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16794,45 +16599,51 @@
 		],
 		"effects": [
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**元素大师**：每装备**1**种元素的武器，最终伤害提升**NaN%**，装备后后台也生效。**:"
+				"title": "**元素大师**：每装备**1**种元素的武器，最终伤害提升**NaN%**，装备后后台也生效。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。\r\n**元素大师**：每装备**1**种元素的武器，最终伤害提升**NaN%**，装备后后台也生效。",
 				"charge": 8,
-				"shatter": 9.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 9.5
 			},
 			{
-				"description": "释放任意武器技能，超速悠悠球可触发**谐振**，对附近目标造成**NaN%**玩家已损失生命值伤害，该伤害不低于玩家**NaN%**最大攻击，且不高于玩家**NaN%**最大攻击，伤害元素类型跟随当前武器。\r\n释放任意武器连携，超速悠悠球可触发**调律**，对附近目标造成**NaN%**玩家最大生命值伤害，该伤害不高于**NaN%**玩家最大攻击，伤害元素类型跟随当前武器。",
 				"charge": 8,
-				"shatter": 9.5,
+				"shatter": 9.5
+			},
+			{
+				"charge": 8,
+				"shatter": 9.5
+			},
+			{
+				"charge": 8,
+				"shatter": 9.5
+			},
+			{
+				"charge": 8,
+				"shatter": 9.5
+			},
+			{
+				"charge": 8,
+				"shatter": 9.5
+			},
+			{
+				"charge": 8,
+				"shatter": 9.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "释放任意武器技能，超速悠悠球可触发**谐振**，对附近目标造成**NaN%**玩家已损失生命值伤害，该伤害不低于玩家**NaN%**最大攻击，且不高于玩家**NaN%**最大攻击，伤害元素类型跟随当前武器。\r\n释放任意武器连携，超速悠悠球可触发**调律**，对附近目标造成**NaN%**玩家最大生命值伤害，该伤害不高于**NaN%**玩家最大攻击，伤害元素类型跟随当前武器。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16855,8 +16666,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 8,
-				"shatter": 9.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16879,8 +16688,6 @@
 			},
 			{
 				"description": "释放荒寒曳日时，超速悠悠球可触发**NaN**秒**极速**：超速悠悠球运动速度提升**NaN%**，伤害提升**160%**，途经目标造成伤害变为小范围伤害。",
-				"charge": 8,
-				"shatter": 9.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16903,8 +16710,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 8,
-				"shatter": 9.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16927,8 +16732,6 @@
 			},
 			{
 				"description": "超速悠悠球、归寂造成的伤害提升**NaN%**。",
-				"charge": 8,
-				"shatter": 9.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16951,8 +16754,6 @@
 			},
 			{
 				"description": "超速悠悠球持续期间获得**NaN%**最终伤害提升。",
-				"charge": 8,
-				"shatter": 9.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17183,45 +16984,51 @@
 		],
 		"effects": [
 			{
-				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:"
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**碎冰-速切**：装备**骈臻**时，任意武器连携技命中后，对附近目标初始造成**30%***冰攻+**0.4%***自身最大生命值+**15%***各元素抗性之和+**55%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意**1**把雷电/物理/火焰武器，则碎冰伤害提升至**1.3**倍。此外，碎冰伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**碎冰-速切**：装备**骈臻**时，任意武器连携技命中后，对附近目标初始造成**30%***冰攻+**0.4%***自身最大生命值+**15%***各元素抗性之和+**55%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意**1**把雷电/物理/火焰武器，则碎冰伤害提升至**1.3**倍。此外，碎冰伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**寒冰**:",
 			"description": "武器充能值充满后下次攻击对敌人造成**2**秒**强控冰冻**效果并造成**6**秒冻伤效果，冰冻破碎时造成**151.00%***攻击力伤害，目标冻伤期间武器充能值获取速度降低**50%**。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效，同类效果不叠加。\r\n**碎冰-速切**：装备**骈臻**时，任意武器连携技命中后，对附近目标初始造成**30%***冰攻+**0.4%***自身最大生命值+**15%***各元素抗性之和+**55%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意**1**把雷电/物理/火焰武器，则碎冰伤害提升至**1.3**倍。此外，碎冰伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 11,
-				"shatter": 13,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 13
 			},
 			{
-				"description": "**武道家**形态下，**骈臻**每消耗**3**点或以上**内劲**后，返还**1**点**内劲**，之后自身最终伤害提升**5%**，**骈臻**闪避攻击/普攻伤害提升**50%**，持续**30**秒；\r\n**掠阵**形态下，**骈臻**每消耗**3**点或以上**战意**后，返还**1**点**战意**，之后自身最终伤害提升**5%**，持续**15**秒",
 				"charge": 11,
-				"shatter": 13,
+				"shatter": 13
+			},
+			{
+				"charge": 11,
+				"shatter": 13
+			},
+			{
+				"charge": 11,
+				"shatter": 13
+			},
+			{
+				"charge": 11,
+				"shatter": 13
+			},
+			{
+				"charge": 11,
+				"shatter": 13
+			},
+			{
+				"charge": 11,
+				"shatter": 13
+			}
+		],
+		"advancements": [
+			{
+				"description": "**武道家**形态下，**骈臻**每消耗**3**点或以上**内劲**后，返还**1**点**内劲**，之后自身最终伤害提升**5%**，**骈臻**闪避攻击/普攻伤害提升**50%**，持续**30**秒；\r\n**掠阵**形态下，**骈臻**每消耗**3**点或以上**战意**后，返还**1**点**战意**，之后自身最终伤害提升**5%**，持续**15**秒",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17244,8 +17051,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 11,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17268,8 +17073,6 @@
 			},
 			{
 				"description": "**武道家**形态下，若**5**秒内未获得**内劲**，则下次获得**内劲**时获得**2**点；\r\n任意形态下，**骈臻**每消耗**3**点及以上**内劲**或**战意**后，回复自身**10%**最大生命值，单人玩法中提升至**20%**，该效果**掠阵**形态下**8**秒内至多触发一次，**武道家**形态下无限制。",
-				"charge": 11,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17292,8 +17095,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 11,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17316,8 +17117,6 @@
 			},
 			{
 				"description": "**骈臻**消耗**内劲**或**战意**后，自身受到致命伤害时，抵挡一次致死效果，之后回复自身**20%**最大生命值（巅峰联赛中不生效），单人玩法中提升至**40%**，该效果**60**秒内至多触发一次",
-				"charge": 11,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17340,8 +17139,6 @@
 			},
 			{
 				"description": "**武道家**形态下，**骈臻**闪避攻击/普攻伤害提升**70%**，消耗**内劲**后自身最终伤害提升**10%**，持续**30**秒；\r\n**掠阵**形态下，**骈臻**消耗**战意**后自身最终伤害提升**15%**，持续**30**秒",
-				"charge": 11,
-				"shatter": 13,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17632,48 +17429,55 @@
 		],
 		"effects": [
 			{
-				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣不叠加，优先生效物理共鸣）。**:"
+				"title": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣不叠加，优先生效物理共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣不叠加，优先生效火焰共鸣）。**:"
+				"title": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣不叠加，优先生效火焰共鸣）。**:",
+				"description": "N/A"
 			},
 			{
-				"title": "**破甲-脱手**：释放**绝壑**后，每秒对命中目标造成**70%***物攻+**1%***自身最大生命值+**36%***各元素抗性之和+**135%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，破甲伤害视为技能伤害，若装备任意**1**把雷电/火焰/寒冰武器，则破甲伤害提升至**1.3**倍。此外，破甲伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:"
+				"title": "**破甲-脱手**：释放**绝壑**后，每秒对命中目标造成**70%***物攻+**1%***自身最大生命值+**36%***各元素抗性之和+**135%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，破甲伤害视为技能伤害，若装备任意**1**把雷电/火焰/寒冰武器，则破甲伤害提升至**1.3**倍。此外，破甲伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**装甲溶解**:",
 			"description": "武器充能值充满后下次攻击使敌人进入**45**秒装甲溶解状态，受到的火焰和物理伤害增加**10%**，组队玩法中额外提升**15%**（该效果会替换掉目标的重伤，并且目标拥有该效果无法被添加重伤）。装甲溶解状态受到物理元素攻击会击晕目标**2**秒，受到火元素攻击会降低怪物**50%**移动速度**5**秒，相同目标**15**秒内最多触发**1**次"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣不叠加，优先生效物理共鸣）。\r\n**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣不叠加，优先生效火焰共鸣）。\r\n**破甲-脱手**：释放**绝壑**后，每秒对命中目标造成**70%***物攻+**1%***自身最大生命值+**36%***各元素抗性之和+**135%***暴击点伤害，持续**30**秒，多个脱手伤害不叠加，破甲伤害视为技能伤害，若装备任意**1**把雷电/火焰/寒冰武器，则破甲伤害提升至**1.3**倍。此外，破甲伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 				"charge": 12,
-				"shatter": 14,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 14
 			},
 			{
-				"description": "每次添加**重伤**状态，对目标造成一次**50%***攻击力点**吞噬**伤害，该效果**0.5**秒内至多触发一次。\r\n每次为目标施加武器特质中的**点燃**效果时，使未处于**重伤**状态的目标进入**重伤**状态，持续**7**秒。",
 				"charge": 12,
-				"shatter": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			},
+			{
+				"charge": 12,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "每次添加**重伤**状态，对目标造成一次**50%***攻击力点**吞噬**伤害，该效果**0.5**秒内至多触发一次。\r\n每次为目标施加武器特质中的**点燃**效果时，使未处于**重伤**状态的目标进入**重伤**状态，持续**7**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17696,8 +17500,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17720,8 +17522,6 @@
 			},
 			{
 				"description": "**东风浩荡**效果触发后，使命中目标成为**蛇链**成员。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17744,8 +17544,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17768,8 +17566,6 @@
 			},
 			{
 				"description": "释放**绝壑**后，自身受到伤害降低**10%**（单人玩法中提升至**20%**），持续**30**秒。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -17792,8 +17588,6 @@
 			},
 			{
 				"description": "**蛇链**成员为**1**名时，**传导**伤害的传导率提升至**50%**。",
-				"charge": 12,
-				"shatter": 14,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -18065,42 +17859,47 @@
 		],
 		"effects": [
 			{
-				"title": "**异能共鸣**：装备**2**把及以上异能武器触发，提升**20%**攻击和**30%**异能抗，装备后后台也生效（多个异能共鸣/异能反应不叠加，优先生效异能共鸣）。**:"
+				"title": "**异能共鸣**：装备**2**把及以上异能武器触发，提升**20%**攻击和**30%**异能抗，装备后后台也生效（多个异能共鸣/异能反应不叠加，优先生效异能共鸣）。**:",
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
 			"title": "**异能**:",
 			"description": "武器充能值充满后下次攻击对敌人进行标记，**5**秒后爆炸，额外受到标记期间所有伤害的**25%**，最多不超过自身**560%**攻击。同时间目标只能存在一个标记。"
 		},
-		"advancements": [
+		"attributes": [
 			{
-				"description": "**异能共鸣**：装备**2**把及以上异能武器触发，提升**20%**攻击和**30%**异能抗，装备后后台也生效（多个异能共鸣/异能反应不叠加，优先生效异能共鸣）。",
 				"charge": 11.5,
-				"shatter": 11.5,
-				"multiplier": [
-					{
-						"PropName": "CommonAtkAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "ElementDef",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "MaxHealthAdded",
-						"PropCoefficient": 1
-					},
-					{
-						"PropName": "CritAdded",
-						"PropCoefficient": 1
-					}
-				],
-				"need": null
+				"shatter": 11.5
 			},
 			{
-				"description": "释放任意武器技能或连携可获得**1**枚元素结晶，至多可获得**5**枚，元素结晶每**6**秒自动损耗**1**枚。\r\n元素结晶可使自身最终伤害提高**4%***【（**结晶数量**+**1**）/**2**】，治疗效果提升**6%***【（**结晶数量**+**1**）/**2**】。",
 				"charge": 11.5,
-				"shatter": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			},
+			{
+				"charge": 11.5,
+				"shatter": 11.5
+			}
+		],
+		"advancements": [
+			{
+				"description": "释放任意武器技能或连携可获得**1**枚元素结晶，至多可获得**5**枚，元素结晶每**6**秒自动损耗**1**枚。\r\n元素结晶可使自身最终伤害提高**4%***【（**结晶数量**+**1**）/**2**】，治疗效果提升**6%***【（**结晶数量**+**1**）/**2**】。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -18123,8 +17922,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**16%**",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -18147,8 +17944,6 @@
 			},
 			{
 				"description": "激活非恩赐共鸣时，目标生命低于（**结晶数量**+**2**）**%**时，使用**月星钏**可直接斩杀（对玩家无效）；\r\n激活恩赐共鸣时，目标生命低于（**结晶数量*****2**+**2**）**%**时，使用**月星钏**可直接斩杀（对玩家无效）。",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -18171,8 +17966,6 @@
 			},
 			{
 				"description": "当前武器的基础攻击成长+**32%**",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -18195,8 +17988,6 @@
 			},
 			{
 				"description": "每次释放散流技可获得**1**枚元素结晶；元素结晶每**20**秒自动损耗**1**枚。\r\n自身受到致命伤害时，消耗**3**枚元素结晶，抵挡一次致死效果并免疫伤害一小段时间，该效果**25**秒内至多触发**1**次。",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -18219,8 +18010,6 @@
 			},
 			{
 				"description": "自身最终伤害提升**7%***【（**结晶数量**+**3**）/**2**】。",
-				"charge": 11.5,
-				"shatter": 11.5,
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",

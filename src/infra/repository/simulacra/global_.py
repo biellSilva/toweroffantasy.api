@@ -69,7 +69,7 @@ class SimulacraGlobalRepository:
                 value_dict["banners"] = banner_data
             
             if weapon_data := WEAPONS.get(value_dict['weaponId']):
-                value_dict["fashion"] = weapon_data.get("fashion", [])
+                value_dict["fashion"] = [fashion['outfit'] for fashion in weapon_data.get("fashion", [])]
 
             self.__cache[lang].update(
                 {key_id.lower(): Simulacra(**value_dict)}  # type: ignore
