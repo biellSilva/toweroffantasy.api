@@ -21,6 +21,9 @@ def weapon_fix_minor_issues(dict_: RawWeapon) -> RawWeapon:
     if dict_["id"].lower() == "blevi_thunder":
         dict_["element"] = "IceThunder"
 
+    if dict_["id"].lower() == "lances_ice":
+        dict_["element"] = "ThunderIce"
+
     return dict_
 
 
