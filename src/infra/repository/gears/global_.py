@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from src.domain.errors.http import LangNotFoundErr
+from src.domain.errors.http import DataIncompleteErr, LangNotFoundErr
 from src.domain.models.gears import Gear
 from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.repository.helpers.gears import ignore_gears, sort_gears
@@ -40,15 +40,29 @@ class GearsGlobalRepository:
 
         DATA_PATH = Path("./src/infra/database/global", lang, "gear.json")
 
+        BASE_STATS_PATH = Path("./src/infra/database/global", lang, "stats.json")
+
         if not DATA_PATH.exists():
             raise LangNotFoundErr
 
+        if not BASE_STATS_PATH.exists():
+            raise DataIncompleteErr
+
         DATA: dict[str, dict[str, Any]] = json.loads(DATA_PATH.read_bytes())
+        BASE_STATS_DATA: dict[str, dict[str, Any]] = json.loads(
+            BASE_STATS_PATH.read_bytes()
+        )
 
         for key_id, value_dict in DATA.items():
 
             if ignore_gears(value_dict):
                 continue
+
+            for stat in value_dict["statPool"]:
+                stat = stat.update(BASE_STATS_DATA[stat["PropName"]])
+
+            for stat in value_dict["baseStat"]:
+                stat = stat.update(BASE_STATS_DATA[stat["PropName"]])
 
             self.__cache[lang].update({key_id.lower(): Gear(**value_dict)})
 

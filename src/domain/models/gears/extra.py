@@ -5,6 +5,10 @@ from pydantic import AliasChoices, BaseModel, Field
 class StatPool(BaseModel):
     propName: str = Field(validation_alias=AliasChoices("PropName"))
     weightValue: float = Field(validation_alias=AliasChoices("WeightValue"))
+    name: str
+    icon: str
+    multiplier: float
+    flat: bool
 
 
 class BaseStat(BaseModel):
@@ -12,6 +16,10 @@ class BaseStat(BaseModel):
     propName: str = Field(validation_alias=AliasChoices("PropName"))
     propValue: float = Field(validation_alias=AliasChoices("PropValue"))
     modifierOp: str = Field(validation_alias=AliasChoices("ModifierOp"))
+    name: str
+    icon: str
+    multiplier: float
+    flat: bool
 
 
 @strawberry.experimental.pydantic.type(model=StatPool, all_fields=True)
