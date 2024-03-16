@@ -22,6 +22,14 @@ class BaseStat(BaseModel):
     flat: bool
 
 
+class Prop(BaseModel):
+    PropId: str
+    Quality: str
+    PropInitValue: float
+    PropMinValue: float
+    PropMaxValue: float
+
+
 @strawberry.experimental.pydantic.type(model=StatPool, all_fields=True)
 class StatPoolType:
     pass
@@ -29,4 +37,9 @@ class StatPoolType:
 
 @strawberry.experimental.pydantic.type(model=BaseStat, all_fields=True)
 class BaseStatType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=Prop, all_fields=True)
+class PropType:
     pass

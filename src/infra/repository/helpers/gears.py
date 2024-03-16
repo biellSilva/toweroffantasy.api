@@ -1,10 +1,12 @@
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING
+
+from src.infra.models.gears import RawGear
 
 if TYPE_CHECKING:
     from src.domain.models.gears import Gear
 
 
-def ignore_gears(dict_: dict[str, Any]) -> bool:
+def ignore_gears(dict_: RawGear) -> bool:
     if "tupo" in dict_["id"].lower():
         return True
     return False

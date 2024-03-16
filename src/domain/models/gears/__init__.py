@@ -2,7 +2,7 @@ import strawberry
 
 from src.domain.models.base import ModelBase
 
-from .extra import BaseStat, StatPool
+from .extra import BaseStat, Prop, StatPool
 
 
 class Gear(ModelBase):
@@ -12,7 +12,8 @@ class Gear(ModelBase):
     icon: str
     rarity: int
     statPool: list[StatPool] = []
-    baseStat: list[BaseStat]
+    baseStat: list[BaseStat] = []
+    props: list[Prop] = []
 
 
 @strawberry.experimental.pydantic.type(model=Gear, all_fields=True)

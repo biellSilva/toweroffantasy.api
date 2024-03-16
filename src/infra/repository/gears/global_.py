@@ -5,6 +5,7 @@ from typing import Any
 from src.domain.errors.http import DataIncompleteErr, LangNotFoundErr
 from src.domain.models.gears import Gear
 from src.enums import LANGS_GLOBAL_ENUM
+from src.infra.models.gears import RawGear
 from src.infra.repository.helpers.gears import ignore_gears, sort_gears
 
 
@@ -48,7 +49,8 @@ class GearsGlobalRepository:
         if not BASE_STATS_PATH.exists():
             raise DataIncompleteErr
 
-        DATA: dict[str, dict[str, Any]] = json.loads(DATA_PATH.read_bytes())
+        DATA: dict[str, RawGear] = json.loads(DATA_PATH.read_bytes())
+
         BASE_STATS_DATA: dict[str, dict[str, Any]] = json.loads(
             BASE_STATS_PATH.read_bytes()
         )
@@ -59,11 +61,17 @@ class GearsGlobalRepository:
                 continue
 
             for stat in value_dict["statPool"]:
-                stat = stat.update(BASE_STATS_DATA[stat["PropName"]])
+                stat = stat.update(BASE_STATS_DATA[stat["PropName"]])  # type: ignore
 
             for stat in value_dict["baseStat"]:
-                stat = stat.update(BASE_STATS_DATA[stat["PropName"]])
+                stat = stat.update(BASE_STATS_DATA[stat["PropName"]])  # type: ignore
 
-            self.__cache[lang].update({key_id.lower(): Gear(**value_dict)})
+            value_dict["props"] = [  # type: ignore
+                {"PropId": prop_id, **prop_data}
+                for prop in value_dict["props"]
+                for prop_id, prop_data in prop.items()
+            ]
+
+            self.__cache[lang].update({key_id.lower(): Gear(**value_dict)})  # type: ignore
 
         self.__cache[lang] = sort_gears(self.__cache[lang])
