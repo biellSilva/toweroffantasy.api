@@ -30,6 +30,16 @@ class Prop(BaseModel):
     PropMaxValue: float
 
 
+class GearAdvancement(BaseModel):
+    matId: str = Field(validation_alias=AliasChoices("id"))
+    name: str
+    description: str
+    rarity: int
+    icon: str
+    type: str
+    amount: int = Field(validation_alias=AliasChoices("mat_amount", "matAmount"))
+
+
 @strawberry.experimental.pydantic.type(model=StatPool, all_fields=True)
 class StatPoolType:
     pass
@@ -42,4 +52,9 @@ class BaseStatType:
 
 @strawberry.experimental.pydantic.type(model=Prop, all_fields=True)
 class PropType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=GearAdvancement, all_fields=True)
+class GearAdvancementType:
     pass
