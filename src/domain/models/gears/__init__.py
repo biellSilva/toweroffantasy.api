@@ -2,7 +2,7 @@ import strawberry
 
 from src.domain.models.base import ModelBase
 
-from .extra import BaseStat, Prop, StatPool
+from .extra import BaseStat, Prop, StatPool, GearAdvancement
 
 
 class Gear(ModelBase):
@@ -15,6 +15,7 @@ class Gear(ModelBase):
     statPool: list[StatPool] = []
     baseStat: list[BaseStat] = []
     props: list[Prop] = []
+    advancement: list[list[GearAdvancement]]
 
 
 @strawberry.experimental.pydantic.type(model=Gear, all_fields=True)

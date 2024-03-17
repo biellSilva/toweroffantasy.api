@@ -66,10 +66,16 @@ class GearsGlobalRepository:
             for stat in value_dict["baseStat"]:
                 stat = stat.update(BASE_STATS_DATA[stat["PropName"]])  # type: ignore
 
-            value_dict["props"] = [  # type: ignore
+            value_dict["props"] = [
                 {"PropId": prop_id, **prop_data}
                 for prop in value_dict["props"]
                 for prop_id, prop_data in prop.items()
+            ]
+
+            value_dict["advancement"] = [
+                [{"matAmount": mat["mat_amount"], **mat["mat_id"]}]
+                for level_advance in value_dict["advancement"]
+                for mat in level_advance
             ]
 
             self.__cache[lang].update({key_id.lower(): Gear(**value_dict)})  # type: ignore

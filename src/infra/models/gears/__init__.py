@@ -1,6 +1,6 @@
-from typing import TypedDict
+from typing import Any, TypedDict
 
-from src.infra.models.gears.extras import RawBaseStat, RawPropValue, RawStatPool
+from src.infra.models.gears.extras import RawBaseStat, RawStatPool
 
 
 class RawGear(TypedDict):
@@ -12,4 +12,5 @@ class RawGear(TypedDict):
     rarity: int
     baseStat: list[RawBaseStat]
     statPool: list[RawStatPool]
-    props: list[dict[str, RawPropValue]]
+    props: list[Any]
+    advancement: list[Any]
