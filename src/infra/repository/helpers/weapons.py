@@ -21,7 +21,7 @@ def weapon_fix_minor_issues(dict_: RawWeapon) -> RawWeapon:
     match dict_["id"].lower():
 
         case "asuka_physic":
-            dict_["id"] = "PhysicsFlame"
+            dict_["element"] = "PhysicsFlame"
 
         case "lances_ice":
             dict_["element"] = "ThunderIce"

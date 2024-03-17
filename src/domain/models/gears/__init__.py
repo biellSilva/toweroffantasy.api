@@ -8,6 +8,7 @@ from .extra import BaseStat, Prop, StatPool
 class Gear(ModelBase):
     name: str
     type: str
+    maxLevel: int
     description: str
     icon: str
     rarity: int
