@@ -60,23 +60,34 @@ class GearsGlobalRepository:
             if ignore_gears(value_dict):
                 continue
 
-            for stat in value_dict["statPool"]:
-                stat = stat.update(BASE_STATS_DATA[stat["PropName"]])  # type: ignore
+            if statPool := value_dict.get("statPool"):
+                for stat in statPool:
+                    stat = stat.update(BASE_STATS_DATA[stat["PropName"]])  # type: ignore
 
-            for stat in value_dict["baseStat"]:
-                stat = stat.update(BASE_STATS_DATA[stat["PropName"]])  # type: ignore
+            if baseStat := value_dict.get("baseStat"):
+                for stat in baseStat:
+                    stat = stat.update(BASE_STATS_DATA[stat["PropName"]])  # type: ignore
 
-            value_dict["props"] = [
-                {"PropId": prop_id, **prop_data}
-                for prop in value_dict["props"]
-                for prop_id, prop_data in prop.items()
-            ]
+            if value_dict.get("props"):
+                value_dict["props"] = [
+                    {"PropId": prop_id, **prop_data}
+                    for prop in value_dict["props"]
+                    for prop_id, prop_data in prop.items()
+                ]
 
-            value_dict["advancement"] = [
-                [{"matAmount": mat["mat_amount"], **mat["mat_id"]}]
-                for level_advance in value_dict["advancement"]
-                for mat in level_advance
-            ]
+            if value_dict.get("advancement"):
+                value_dict["advancement"] = [
+                    [{"matAmount": mat["mat_amount"], **mat["mat_id"]}]
+                    for level_advance in value_dict["advancement"]
+                    for mat in level_advance
+                ]
+
+            if value_dict.get("baseUpgradeProps"):
+                value_dict["baseUpgradeProps"] = [
+                    [{"value": mat["value"], **mat["stat"]}]
+                    for level_advance in value_dict["baseUpgradeProps"]
+                    for mat in level_advance
+                ]
 
             self.__cache[lang].update({key_id.lower(): Gear(**value_dict)})  # type: ignore
 
