@@ -14,3 +14,4 @@ class RawGear(TypedDict):
     statPool: list[RawStatPool]
     props: list[Any]
     advancement: list[Any]
+    baseUpgradeProps: list[Any]

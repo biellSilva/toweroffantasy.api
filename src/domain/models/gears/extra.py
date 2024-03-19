@@ -40,6 +40,14 @@ class GearAdvancement(BaseModel):
     amount: int = Field(validation_alias=AliasChoices("mat_amount", "matAmount"))
 
 
+class UpgradeProp(BaseModel):
+    propId: str = Field(validation_alias=AliasChoices("id"))
+    name: str
+    multiplier: float
+    icon: str
+    flat: bool
+
+
 @strawberry.experimental.pydantic.type(model=StatPool, all_fields=True)
 class StatPoolType:
     pass
@@ -57,4 +65,9 @@ class PropType:
 
 @strawberry.experimental.pydantic.type(model=GearAdvancement, all_fields=True)
 class GearAdvancementType:
+    pass
+
+
+@strawberry.experimental.pydantic.type(model=UpgradeProp, all_fields=True)
+class UpgradePropType:
     pass
