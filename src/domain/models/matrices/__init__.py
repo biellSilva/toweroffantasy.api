@@ -14,6 +14,7 @@ class Matrix(ModelBase):
     description: Annotated[str, BeforeValidator(bold_numbers)]
     assets: MatrixAsset
     rarity: int
+    baseExp: int = Field(alias="baseEXP")
     sets: list[MatrixSet] = Field(validation_alias=AliasChoices("sets", "set"))
     version: str | None = None
     weaponId: str | None
