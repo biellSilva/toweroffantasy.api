@@ -9,6 +9,7 @@ from .extra import BaseStat, Prop, StatPool, GearAdvancement, UpgradeProp
 class Gear(ModelBase):
     name: str
     type: str
+    slotType: str
     maxLevel: int
     description: str
     icon: str
