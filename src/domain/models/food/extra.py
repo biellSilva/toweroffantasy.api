@@ -10,7 +10,7 @@ class Ingredient(BaseModel):
     matID: Item
     min: Annotated[int, BeforeValidator(lambda x: int(x))]
     max: Annotated[int, BeforeValidator(lambda x: int(x))]
-    source: list[str]
+    source: list[]
 
 
 @strawberry.experimental.pydantic.type(model=Ingredient, all_fields=True)
