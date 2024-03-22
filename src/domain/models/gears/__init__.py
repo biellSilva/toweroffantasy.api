@@ -23,6 +23,7 @@ class Gear(ModelBase):
     baseUpgradeProps: list[list[UpgradeProp]] = []
     advancementExp: list[int] = Field(validation_alias=AliasChoices("advancementEXP"))
     matList: list[str]
+    gearUpgradeProps: list[list[float]]
 
 
 @strawberry.experimental.pydantic.type(model=Gear, all_fields=True)
