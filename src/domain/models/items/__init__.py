@@ -12,6 +12,7 @@ class Item(ModelBase):
     icon: str | None = None
     rarity: int
     giftTags: list[GiftTag] = []
+    source: list[str] = []
 
 
 @strawberry.experimental.pydantic.type(model=Item, all_fields=True)
