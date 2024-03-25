@@ -1,12 +1,14 @@
 from typing import Annotated, Any
 
 import strawberry
-from pydantic import BaseModel, BeforeValidator, model_validator
+from pydantic import BaseModel, BeforeValidator, ConfigDict, model_validator
 
 from src.utils import to_lowercase
 
 
 class ModelBase(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True)
+
     id: Annotated[str, BeforeValidator(to_lowercase)]
 
     @model_validator(mode="before")
