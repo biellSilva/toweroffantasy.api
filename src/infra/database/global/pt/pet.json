@@ -1,2414 +1,602 @@
 {
-	"FightPet_1": {
-		"name": "Kaká",
-		"description": "Um dos primeiros modelos de servo inteligente desenvolvidos pela Dra. Claire da Ilha Cetus. Um novo módulo de combate para servo inteligente foi testado em resposta aos novos requisitos de combate.",
-		"PetElementType": "Physics",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Pet_Preview_018.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_1.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_1.webp"
-		},
-		"skills": [
-			{
-				"name": "Impacto de Kaká",
-				"description": "Kaká corre para a frente, causando dano de **765% / 1147% / 1147%** do ATQ aos alvos à frente, além de aumentar seu próprio ATQ em **10%** por 8 segundos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_018_act01.webp"
-			},
-			{
-				"name": "Laser de Kaká",
-				"description": "Kaká começa a carregar, e então libera uma rajada de laser concentrado à frente, causando dano de **1613% / 1613% / 1613%** do ATQ aos alvos à frente, além de restaurar a vida do mestre no equivalente a **1613% / 1613% / 1613%** do seu ATQ.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_018_act02.webp"
-			},
-			{
-				"name": "Punho de Kaká",
-				"description": "Kaká ataca para frente, com uma sucessão de 2 socos contra os inimigos à frente, causando dano de **496% / 496% / 744%** do ATQ a cada acerto.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_018_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. O dano do Impacto de Kaká aumenta para **1.147%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_1",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. Cada rodada de dano do Punho de Kaká aumenta para **744%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_1",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. O dano do Laser de Kaká aumenta para **2.420%** e a recuperação de vida aumenta para **140%** do ATQ. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_1",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 40
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_1"
+	"Gold": {
+		"name": "Ouro",
+		"description": "Esta moeda cunhada em estanho e ouro é a mais utilizada atualmente em todo o território.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jinbi.webp",
+		"id": "Gold"
 	},
-	"FightPet_2": {
-		"name": "Anja do Vazio",
-		"description": "Um servo inteligente multiuso dos tempos da Antiga Federação que pode ser usado em diversas situações. Um novo módulo de combate para servo inteligente foi testado em resposta aos novos requisitos de combate.",
-		"PetElementType": "Flame",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Pet_Preview_025.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_2.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_2.webp"
-		},
-		"skills": [
-			{
-				"name": "Bomba de Fogo",
-				"description": "A Anja do Vazio ergue o braço direito, lançando 4 Bombas de Fogo contra os inimigos. Cada Bomba de Fogo causa dano de **413% / 413% / 413%** do ATQ aos inimigos atingidos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_025_act01.webp"
-			},
-			{
-				"name": "Jato de Chamas",
-				"description": "A Anja do Vazio ergue os dois braços e lança jatos de fogo, causando 4 rodadas de ataques do fogo contra inimigos à frente, causando dano de **78% / 118% / 118%** do ATQ a cada acerto e queimando os inimigos, com dano de **78% / 118% / 118%** do ATQ por 5 segundos. Enquanto estiver queimando, a cura fornecida pelo alvo é reduzida em 50%.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_025_act02.webp"
-			},
-			{
-				"name": "Ira de Anjo",
-				"description": "A Anja do Vazio ergue os dois braços, criando uma bola de fogo acima de sua cabeça, então a lança em direção aos inimigos à frente, causando dano de **600% / 600% / 901%** do ATQ aos inimigos atingidos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_025_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. O dano de cada rodada de Jato de Chamas aumenta para **118%** e cada rodada de dano de queimadura aumenta para **90%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_2",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. O dano da Ira de Anjo aumenta para **901%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_2",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. Cada rodada de dano da Bomba de Fogo aumenta para **619%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_2",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 40
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_2"
+	"FakeDiamond": {
+		"name": "Cristal negro",
+		"description": "Contém energia instável e às vezes é utilizado como fonte de energia. Uma das moedas que podem ser trocadas por itens na Loja.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/fakediamonds.webp",
+		"id": "FakeDiamond"
 	},
-	"FightPet_3": {
-		"name": "Ângela",
-		"description": "Um servo inteligente dos tempos da Antiga Federação originalmente feito para servir como artista de entretenimento. Um novo módulo de combate para servo inteligente foi testado em resposta aos novos requisitos de combate.",
-		"PetElementType": "Ice",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Pet_Preview_027.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_3.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_3.webp"
-		},
-		"skills": [
-			{
-				"name": "Explosão Glacial",
-				"description": "Ângela ergue os dois braços, criando uma explosão de gelo no local onde estão os inimigos, causando dano de **987% / 987% / 1481%** do ATQ aos inimigos atingidos e fazendo com que eles sofram geladura por 6 segundos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_027_act01.webp"
-			},
-			{
-				"name": "Ângela Te Ama!",
-				"description": "Ângela ergue os dois braços, criando uma bola de gelo acima de sua cabeça, então a lança em direção aos inimigos à frente, causando dano de **1112% / 1112% / 1112%** do ATQ aos inimigos atingidos e fazendo com que eles sofram geladura por 6 segundos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_027_act02.webp"
-			},
-			{
-				"name": "Voadora da Ângela",
-				"description": "Ângela voa por certa distância para então descer com um chute, causando dano de **1068% / 1602% / 1602%** do ATQ aos inimigos em seu caminho.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_027_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. O dano da Voadora da Ângela aumenta para **1.602%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_3",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. O dano da Explosão Glacial aumenta para **1.481%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_3",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. O dano de Ângela Te Ama! aumenta para **1.668%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_3",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_3"
+	"Diamond": {
+		"name": "Tânio",
+		"description": "Um cristal estável utilizado mais comumente para fornecimento de energia. Uma das moedas que podem ser trocadas por itens na Loja.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/diamonds.webp",
+		"id": "Diamond"
 	},
-	"FightPet_4": {
-		"name": "Coelho Lunar",
-		"description": "Um servo inteligente assistente mecânico desenvolvido pela Banges Tech. Um novo módulo de combate para servo inteligente foi testado em resposta aos novos requisitos de combate.",
-		"PetElementType": "Thunder",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Pet_Preview_015.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_4.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_4.webp"
-		},
-		"skills": [
-			{
-				"name": "Turbilhão do Coelho Lunar",
-				"description": "O Coelho Lunar começa a girar e corre para frente, usando suas patas eletrificadas para causar 6 rodadas de ataques de raio contra inimigos próximos, causando dano de **163% / 244% / 244%** do ATQ a cada acerto.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_015_act01.webp"
-			},
-			{
-				"name": "Rajada do Coelho Lunar",
-				"description": "O Coelho Lunar dispara grandes projéteis elétricos de suas patas, realizando 3 rodadas de ataques de raio contra inimigos à frente, que causam dano de **382% / 382% / 573%** do ATQ a cada acerto, além de conceder um escudo equivalente a **382% / 382% / 573%** do ATQ a seu mestre por 5 segundos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_015_act02.webp"
-			},
-			{
-				"name": "Raiva Enfurecida",
-				"description": "O Coelho Lunar atrai trovões e relâmpagos ao seu redor, realizando 6 rodadas de ataques de raio contra os inimigos próximos, causando dano de **348% / 348% / 348%** do ATQ a cada acerto.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_015_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. Cada rodada de dano do Turbilhão do Coelho Lunar aumenta para **244%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_4",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. Cada rodada de dano da Rajada do Coelho Lunar aumenta para **573%** e o escudo de vida aumenta para **120%** do ATQ. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_4",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. Cada rodada de dano da Raiva Enfurecida aumenta para **522%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_4",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_4"
+	"AchievementScore": {
+		"name": "Conquista",
+		"description": "Pontos ganhos após alcançar uma conquista. Acumule conquistas e resgate recompensas na página de Conquistas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/chengjiudian.webp",
+		"id": "AchievementScore"
 	},
-	"FightPet_5": {
-		"name": "Pardal de Fogo",
-		"description": "Um servo inteligente de última geração desenvolvido por Ling Qiao, inspirado no tentilhão flamejante da região. Um novo módulo de combate para servo inteligente foi testado em resposta aos novos requisitos de combate.",
-		"PetElementType": "Flame",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_001.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_BattleRobot_001.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_5.webp"
-		},
-		"skills": [
-			{
-				"name": "Sopro Flamejante",
-				"description": "Pardal de Fogo atira em um inimigo 3 vezes, e cada vez causa dano de **489% / 489% / 733%** do ATQ.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_001_act01.webp"
-			},
-			{
-				"name": "Bomba de Fogo",
-				"description": "Pardal de Fogo voa por um tempo, e então solta uma bomba no inimigo, causando dano de **815% / 1222% / 1222%** do ATQ.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_001_act02.webp"
-			},
-			{
-				"name": "Mergulho Flamejante",
-				"description": "Pardal de Fogo voa por certa distância, e então se transforma em uma fênix e desce, causando dano de **1351% / 1351% / 1351%** do ATQ ao inimigo.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_001_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. O dano da Bomba de Fogo aumenta para **1.222%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_5",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. Cada rodada de dano do Sopro Flamejante aumenta para **733%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_5",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. O dano do Mergulho Flamejante aumenta para **2.026%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_5",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 40
-			},
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 40
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_5"
+	"WormholeCoin": {
+		"name": "Reflexa",
+		"description": "A moeda emitida e vigente em Reflexia. Utilizada em máquinas de venda, estações de serviço, restaurantes e outros estabelecimentos de Reflexia.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/vera_coin1.webp",
+		"id": "WormholeCoin"
 	},
-	"FightPet_6": {
-		"name": "Mi-a: Assistência",
-		"description": "O primeiro servo inteligente encontrado, apresentado por Shirli no Abrigo de Astra. Um tipo quieto, muito bom em cuidar das pessoas. Um novo módulo de combate para servos inteligentes foi testado para ele.",
-		"PetElementType": "Superpower",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Pet_Preview_mia.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_6.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_6.webp"
-		},
-		"skills": [
-			{
-				"name": "Canhão Pop",
-				"description": "As bebidas que Mi-a carrega podem ser usadas para alimentar Errantes e também para reabastecer balas de energia. A bala de energia pode causar dano de **817% / 817% / 1225%** do ATQ ao atingir o inimigo.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_004_act01.webp"
-			},
-			{
-				"name": "Clarão da Mi-a",
-				"description": "Mi-a reúne e carrega a energia em um feixe que causa dano de **725% / 1088% / 1088%** do ATQ ao atingir o inimigo.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_004_act02.webp"
-			},
-			{
-				"name": "Tábua de Corte",
-				"description": "Mi-a gera uma tábua de corte temporária, que ela aprendeu a usar graças ao hábito de cozinhar diariamente, e a usa como uma placa de energia para golpear o inimigo, causando dano de **876% / 876% / 876%** do ATQ ao acertar e reduzindo a velocidade do inimigo em 20% por 2 segundos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/SkillIcon_pet_004_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. O dano do Clarão da Mi-a aumenta para **1.088%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_6",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. O dano do Canhão Pop aumenta para **1.225%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_6",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. O dano da Tábua de Corte aumenta para **1.314%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_6",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_6"
+	"Gem": {
+		"name": "Núcleo de ativação I",
+		"description": "Uma amostra biológica viva rara, de alto valor de pesquisa.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/yongzhehuodong01.webp",
+		"id": "Gem"
 	},
-	"FightPet_7": {
-		"name": "Zongyun",
-		"description": "Um produto-chave criado através da colaboração entre o Pavilhão Tianzhang e a Niners: Maquinários Pesados. Dizem que o objetivo principal é investir em pesquisa e desenvolvimento para a universalização dos animais amigos da Madame Qinglong.",
-		"PetElementType": "Thunder",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Pet_Preview_003.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_003.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_7.webp"
-		},
-		"skills": [
-			{
-				"name": "Contas do Dragão",
-				"description": "Zongyun concentra seu poder de relâmpago em um orbe para atacar inimigos. Ao acertar, o orbe libera uma grande quantidade de relâmpagos, causando dano de **1661% / 2491% / 2491%** do ATQ nos inimigos na área.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_003_act01.webp"
-			},
-			{
-				"name": "Encantador de Trovões",
-				"description": "Zongyun invoca relâmpagos para atingir inimigos à frente, causando dano de **545% / 545% / 545%** do ATQ 5 vezes.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_003_act02.webp"
-			},
-			{
-				"name": "Anéis Trovejantes",
-				"description": "Zongyun cria dois anéis trovejantes em sua cauda e os lança nos inimigos. Cada anel causa dano de **1053% / 1053% / 1579%** do ATQ.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_003_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. O dano de Contas do Dragão aumenta para **2.491%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_7",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. O dano de Anéis Trovejantes aumenta para **1.579%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_7",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. O dano de Encantador de Trovões aumenta para **817%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_7",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 40
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_7"
+	"GuildContribution": {
+		"name": "Contribuição do Bando",
+		"description": " Somente para fins de registro.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/gongxian.webp",
+		"id": "GuildContribution"
 	},
-	"FightPet_8": {
-		"name": "Leia",
-		"description": "\"A série 'Superarma' fabricada pela Aliança Xiling Ltda., modelo γ1O-A. A Xiling é a única fornecedora de servos inteligentes da Hykros e faz parte do Comitê de Servos Inteligentes Hykros-Domínio 9. Fundada pelas Srtas. Shelly e Ling Qiao, duas das maiores engenheiras deste século, a empresa lançou seu primeiro servo inteligente produzido em massa em pequenos lotes apenas um mês após sua fundação. A empresa é conhecida principalmente por sua pesquisa e produção de servos inteligentes, produtos relacionados e mercadorias. À medida que ela avança, a empresa está se concentrando mais na integração vertical, estabelecendo conexões maiores com marcas famosas, como Superguerreiras, e formando um complexo comercial original. Caso tenha interesse em investir, contate o número * * * - * * * *. Realizamos o teste com módulo de combate de servo inteligente para atender às novas necessidades de combate.\"",
-		"PetElementType": "Ice",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Pet_Preview_002.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_002.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_8.webp"
-		},
-		"skills": [
-			{
-				"name": "Garra Gélida",
-				"description": "Leia atira várias garras gélidas e acerta 2 golpes. Cada golpe causa dano de **568% / 852% / 852%** do ATQ. Ela então dispara uma rajada de marcas de garra entrelaçadas que causa dano de **568% / 852% / 852%** do ATQ.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_002_skill1.webp"
-			},
-			{
-				"name": "Asas Congeladas",
-				"description": "Leia dilacera os inimigos com asas feitas de gelo concentrado. Causa dano de **765% / 765% / 1147%** do ATQ 2 vezes.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_002_skill2.webp"
-			},
-			{
-				"name": "Ciclone de Gelo",
-				"description": "Leia invoca um ciclone de gelo na posição do inimigo, que dura 5 segundos. Causa dano de **447% / 447% / 447%** do ATQ a cada 0,5 segundo.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_002_skill3.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas. Nível de absorção de energia de campo +1.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. Cada acerto de Garra Gélida aumenta para **852%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_8",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. O dano de cada golpe de Asas Congeladas aumenta para **1.147%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_8",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. O dano de cada golpe de Ciclone de Gelo aumenta para **670%**. **4** encaixes de módulos e **15** cargas. Nível de absorção de energia de campo +1.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_8",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_8"
+	"ArtifactCoin": {
+		"name": "Núcleo de ativação II",
+		"description": "Uma amostra biológica viva rara, de alto valor de pesquisa.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/yongzhehuodong02.webp",
+		"id": "ArtifactCoin"
 	},
-	"FightPet_9": {
-		"name": "Auralupus",
-		"description": "Um servo inteligente de última geração desenvolvido por Ling Qiao, inspirado em lendas do Domínio 9. Seu módulo de combate foi testado em resposta aos novos requisitos de combate.",
-		"PetElementType": "Physics",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_005.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_9.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_9.webp"
-		},
-		"skills": [
-			{
-				"name": "Canhão de Pulso Carregado",
-				"description": "Auralupus abre a boca e revela um canhão de energia. Após carregar, ele dispara um feixe de energia poderoso que causa dano de **1012% / 1518% / 1518%** do ATQ aos inimigos atingidos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_005_act01.webp"
-			},
-			{
-				"name": "Garras Frenéticas",
-				"description": "Auralupus golpeia com suas garras rapidamente, desferindo um total de seis golpes em um curto período. Cada golpe causa dano de **214% / 214% / 214%** do ATQ. Com uma rápida investida, ele desfere mais dois golpes poderosos, cada um causando dano de **214% / 214% / 214%** do ATQ aos inimigos atingidos.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_005_act02.webp"
-			},
-			{
-				"name": "Pancada Tripla",
-				"description": "Auralupus golpeia com suas garras duas vezes para a frente e cada golpe causa dano de **347% / 347% / 520%** do ATQ. Em seguida, ele usa seus propulsores traseiros para rodopiar para a frente, atingindo os inimigos com sua cauda e simultaneamente disparando uma lâmina de energia. A sequência causa dano de **347% / 347% / 520%** e **347% / 347% / 520%** do ATQ, respectivamente.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_005_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. O dano de Canhão de Pulso Carregado aumenta para **1.518%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_9",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. O dano de cada etapa de Pancada Tripla aumenta para **520%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_9",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. O dano dos primeiros 6 golpes de Garras Frenéticas aumenta para **321%**, e o dos últimos 2 golpes para **618%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_9",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Núcleo de energia",
-					"description": "Um núcleo de energia muito potente que mantém o funcionamento de máquinas.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_030.webp",
-					"type": "GIFT",
-					"source": [
-						"Aquavila: Derrote sentinelas",
-						"Aquavila: Derrote fornalhas",
-						null
-					],
-					"id": "Item_Jiuyu_Harvest_030"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Parafuso mecânico",
-					"description": "Uma peça mecânica comum, pequena, mas muito útil.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_031.webp",
-					"type": "GIFT",
-					"source": [
-						"Aquavila: Derrote sentinelas",
-						"Aquavila: Derrote fornalhas",
-						null
-					],
-					"id": "Item_Jiuyu_Harvest_031"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_9"
+	"EquipFragment": {
+		"name": "Chip básico",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment.webp",
+		"id": "EquipFragment"
 	},
-	"FightPet_10": {
-		"name": "Snowy",
-		"description": "Um servo inteligente estilo tigre que deixa cristais de gelo ao andar. O módulo de combate foi testado em resposta aos novos requisitos de combate.",
-		"PetElementType": "Ice",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_008.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_008.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_10.webp"
-		},
-		"skills": [
-			{
-				"name": "Espinhos de Gelo",
-				"description": "Snowy junta as mãos, reúne seis espinhos de gelo ao seu redor e depois balança as mãos, lançando os espinhos em duas partes. Cada espinho causa dano de **242% / 242% / 363%** do ATQ ao inimigo atingido.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_008_act01.webp"
-			},
-			{
-				"name": "Frio Extremo",
-				"description": "Snowy voa para cima, criando um cone de gelo no local do inimigo e causando dano de **995% / 995% / 995%** do ATQ. O cone de gelo então se quebra, causando dano de **995% / 995% / 995%** do ATQ.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_008_act02.webp"
-			},
-			{
-				"name": "Deixe Snowy em Paz!",
-				"description": "Snowy levanta as mãos, lançando uma enorme esfera de gelo acima de sua cabeça para esmagar os inimigos e causando dano de **1273% / 1909% / 1909%** do ATQ.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_008_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. O dano de Deixe Snowy em Paz! aumenta para **1.909%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_10",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. Cada rodada de dano de Espinhos de Gelo aumenta para **363%**. **3** encaixes de módulos e **11** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_10",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. Cada rodada de dano de Frio Extremo aumenta para **1.492%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_10",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Cristal celeste",
-					"description": "Um minério peculiar do Domínio 9. Sua aparência translúcida brilha na luz do sol.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote arquiláguias"
-					],
-					"id": "Item_Jiuyu_Harvest_009"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência escura",
-					"description": "Este cristal é formado na superfície após o vazamento de energia de uma linha de ley. Ele é afetado pelo ambiente e produz uma malha que tende a refletir mais luz púrpura, o que origina seu nome. É uma fonte de energia baixa.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote flagelo do pesadelo"
-					],
-					"id": "Item_Jiuyu_Mine_01"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Essência de gengibre",
-					"description": "Este cristal é formado da energia de uma linha de ley que vaza para a superfície. Ele é facilmente afetado pelo ambiente e produz uma malha que reflete mais luz amarela, o que origina seu nome. É uma fonte de energia alta.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Monte Queda-d'Alma",
-						"Fogarejo: Derrote plumenas"
-					],
-					"id": "Item_Jiuyu_Mine_02"
-				},
-				"exp": 20
-			},
-			{
-				"material": {
-					"name": "Pena do Corvo Preto",
-					"description": "Enquanto você observa, ela parece emitir um assobio audível ao cortar o vento.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Corvo Preto"
-					],
-					"id": "Item_Jiuyu_Harvest_005"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Cota de escamas de Zhuyan",
-					"description": "Os padrões na armadura de escamas deixam nítido que não foi criada por uma civilização qualquer.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_006"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Essência de Taotie",
-					"description": "Dizem que o corpo energético acoplado se formou a partir da energia residual do organismo devorado.",
-					"rarity": 4,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
-					"type": "GIFT",
-					"source": [
-						"Trovoado: Derrote Taotie"
-					],
-					"id": "Item_Jiuyu_Harvest_029"
-				},
-				"exp": 10
-			},
-			{
-				"material": {
-					"name": "Seixo cinza",
-					"description": "Um minério peculiar do Domínio 9. É um material fundamental para a produção de certos dispositivos de liga.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote Escuridão: Constelar",
-						"Fogarejo: Derrote Escuridão: Leonicórnio",
-						"Fogarejo: Derrote Escuridão: Soldado",
-						"Fogarejo: Derrote Escuridão: Líder",
-						"Fogarejo: Derrote Escuridão: Rochacal",
-						"Fogarejo: Derrote Escuridão: Lupânico"
-					],
-					"id": "Item_Jiuyu_Harvest_007"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Minério vermelho",
-					"description": "Um minério peculiar do Domínio 9. Seu tom vermelho vibrante lembra sangue.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_008.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote ratochas",
-						"Fogarejo: Derrote serpentouros",
-						"Fogarejo: Derrote Zhuyan"
-					],
-					"id": "Item_Jiuyu_Harvest_008"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Pedra umbral",
-					"description": "Um minério peculiar do Domínio 9. Sua cor estranha vem de sua textura incomum.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote guaxitrins",
-						"Fogarejo: Derrote antilatruzes",
-						"Fogarejo: Derrote ferursos"
-					],
-					"id": "Item_Jiuyu_Harvest_010"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Armadura lamelar padrão",
-					"description": "Uma armadura lamelar pequena e de estilo padrão que tem bom desempenho defensivo.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
-					"type": "GIFT",
-					"source": [
-						"Fogarejo: Derrote a desgraça sombria: Caudejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Fogarejo",
-						"Fogarejo: Derrote a desgraça sombria: Guarda do Domínio de Trovoado",
-						"Aquavila: Derrote as desgraças sombrias: Guarda do Domínio de Aquavila"
-					],
-					"id": "Item_Jiuyu_Harvest_011"
-				},
-				"exp": 5
-			},
-			{
-				"material": {
-					"name": "Licença de armas",
-					"description": "Um sistema essencial que concede autorização para usar armas.",
-					"rarity": 3,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
-					"type": "GIFT",
-					"source": [
-						"Viladeus: Derrote a desgraça sombria Longxiang",
-						"Trovoado: Derrote armadura maldita",
-						"Aquavila: Derrote as desgraças sombrias Tie Yuan"
-					],
-					"id": "Item_Jiuyu_Harvest_028"
-				},
-				"exp": 5
-			}
-		],
-		"id": "FightPet_10"
+	"WormholeLuckyCoin": {
+		"name": "Prova de Viastral",
+		"description": "Executores voltando de folga, espero que não tenham se esquecido de como lutar. E lembrem-se de que todo esforço será recompensado.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/regression/30/UI_30Day_Icon.webp",
+		"id": "WormholeLuckyCoin"
 	},
-	"FightPet_11": {
-		"name": "Pen Pen",
-		"description": "O animal de estimação de Misato Katsuragi, cuja casa é um freezer adaptado no apartamento dela. Ele gosta de tomar banho quente e aperta botões com a ponta das asas. Não só dorme e toma banho como um humano, como também lê jornal. Como num passe de mágica, ele apareceu na geladeira dos Apartamentos Astrais em Reflexia quando Shinji e os outros foram para lá.",
-		"PetElementType": "Ice",
-		"PetPropertyType": "Attack",
-		"PetRarity": 5,
-		"assets": {
-			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_011.webp",
-			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_011.webp",
-			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_11.webp"
-		},
-		"skills": [
-			{
-				"name": "Cortina de Fumaça",
-				"description": "Pen Pen reforça seu propulsor, investe em direção a um inimigo e cria uma cortina de fumaça ao parar. Causa dano de **351% / 526% / 526%** do ATQ por segundo aos inimigos pegos pela cortina de fumaça e os desacelera.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act01.webp"
-			},
-			{
-				"name": "Chuva de Latas",
-				"description": "Pen Pen arremessa várias latas de cerveja à frente. Cada uma causa dano de **412% / 412% / 618%** do ATQ aos inimigos próximos ao explodir.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act02.webp"
-			},
-			{
-				"name": "Pen Pen Curandeiro",
-				"description": "Pen Pen bate as asas de leve para puxar o Errante que segue, de quem restaura vida equivalente a **220% / 220% / 220%** do ATQ.",
-				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_011_act03.webp"
-			}
-		],
-		"properties": "Herda **4%** da média dos valores de ataque ígneo, gélido, elétrico e físico mínimo do mestre. **1** encaixe de módulos e **5** cargas.",
-		"advancements": [
-			{
-				"description": "A herança de ATQ aumenta para **6%**. Cada rodada de dano da cortina de fumaça aumenta para **526%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_11",
-						"mat_amount": 30
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **8%**. Cada rodada de dano das latas de cerveja aumenta para **618%**. **2** encaixes de módulos e **8** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_11",
-						"mat_amount": 40
-					}
-				]
-			},
-			{
-				"description": "A herança de ATQ aumenta para **10%**. A capacidade de cura aumenta para **330%**. **4** encaixes de módulos e **15** cargas.",
-				"mats": [
-					{
-						"mat_id": "fragment_FightPet_11",
-						"mat_amount": 60
-					}
-				]
-			}
-		],
-		"PetUpgradeItemMap": [
-			{
-				"material": {
-					"name": "Módulo de Controle de Pet",
-					"description": "O módulo de controle usado para aprimorar a mochila a jato do Pen Pen. Seu sistema de controle é mais adequado para ele.",
-					"rarity": 5,
-					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/penpen_harvest.webp",
-					"type": "GIFT",
-					"source": [
-						"Obtido no evento Front de Defesa Absoluta."
-					],
-					"id": "PENPEN_Harvest"
-				},
-				"exp": 60
-			}
-		],
-		"id": "FightPet_11"
+	"SoloLeagueCoin": {
+		"name": "Vero",
+		"description": "Moeda antiga de Reflexia que já saiu de circulação. Dizem que algumas máquinas de gachapon ainda aceitam estas moedas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/vera_coin2.webp",
+		"id": "SoloLeagueCoin"
+	},
+	"Gem2": {
+		"name": "Selo primaveril",
+		"description": "Selos vêm com o presente de apricidade. Juntar os selos e colá-los chega a ser um ritual.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/Blindbox_coin_01.webp",
+		"id": "Gem2"
+	},
+	"Gem3": {
+		"name": "Moeda aidense",
+		"description": "Moeda do evento Estrada da Contenda",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Activity/AstralPortal/UI_icon_huobi_xingli.webp",
+		"id": "Gem3"
+	},
+	"LocalReputation1": {
+		"name": "Moeda de caçada de Astra",
+		"description": "Cunhada com maestria singular, traz um relevo de aeronave caída. Trocável por itens especiais.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/shangjin_1.webp",
+		"id": "LocalReputation1"
+	},
+	"LocalReputation2": {
+		"name": "Boneco de Raposa Roxa",
+		"description": "Prêmio da grua de brinquedos.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/CatchDoll_P4.webp",
+		"id": "LocalReputation2"
+	},
+	"LocalReputation3": {
+		"name": "Boneco de Macaco Robo",
+		"description": "Prêmio da grua de brinquedos.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/CatchDoll_P3.webp",
+		"id": "LocalReputation3"
+	},
+	"LocalReputation4": {
+		"name": "Boneco de Cão Guaxinim",
+		"description": "Prêmio da grua de brinquedos.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/CatchDoll_P2.webp",
+		"id": "LocalReputation4"
+	},
+	"LocalReputation5": {
+		"name": "Boneco de Gato Preto",
+		"description": "Prêmio da grua de brinquedos.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/CatchDoll_P1.webp",
+		"id": "LocalReputation5"
+	},
+	"HookCloneAssistContribution": {
+		"name": "Pontos de auxílio",
+		"description": "Concedido àqueles que ajudaram novos Errantes. Possui uma imagem de apoio mútuo. Faça parte do Sistema de Auxílio para obter.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/zhulidian.webp",
+		"id": "HookCloneAssistContribution"
+	},
+	"Stamina": {
+		"name": "Vitalidade",
+		"description": "N/A",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/huoli.webp",
+		"id": "Stamina"
+	},
+	"PrimaryEnergy": {
+		"name": "Moeda de calorão",
+		"description": "Uma ficha obtida na celebração do Dia da Bênção no Porto de Banges. A paixão dos residentes de Banges que as fizeram a mão ainda está nelas. Como a moeda oficial do Dia da Bênção, podem ser trocadas por recompensas nas cabines em todos os mercados principais.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/SummerCoin_01.webp",
+		"id": "PrimaryEnergy"
+	},
+	"WeaponFragment": {
+		"name": "Ouro negro",
+		"description": "Ficha forjada por ferreiros a partir de antigas armas de Omnium. Circula apenas em mercados especiais. Trocável por armas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment.webp",
+		"id": "WeaponFragment"
+	},
+	"GenePointAttack": {
+		"name": "Dominium",
+		"description": "A moeda corrente do Domínio 9, emitida pela Zhen Gong. Contém uma pequena quantidade do material utilizado para fazer selos temporais, que serve como medida contra falsificações.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/jiuyu_coin.webp",
+		"id": "GenePointAttack"
+	},
+	"GuildCaption": {
+		"name": "Verba do Bando",
+		"description": "Serve para melhorar estruturas do Bando.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/gonghui.webp",
+		"id": "GuildCaption"
+	},
+	"PrimaryEnergy2": {
+		"name": "Pó de cristal energético",
+		"description": "Minicristais energéticos gerados ao usar um supressor, que valem a pena coletar. Trocável por recursos na Loja.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/Energy.webp",
+		"id": "PrimaryEnergy2"
+	},
+	"GuildMeritorious": {
+		"name": "Mérito",
+		"description": "Obtido em eventos de Bando para resgatar itens na Loja do Bando.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/gongxian.webp",
+		"id": "GuildMeritorious"
+	},
+	"LifeCrystal": {
+		"name": "Ponto de corrida",
+		"description": "Obtido ao participar de corridas em grupo.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/RaceToken.webp",
+		"id": "LifeCrystal"
+	},
+	"HomeOre": {
+		"name": "Material metálico",
+		"description": "Coletado de Casas-Britadeira ou derrubado por criaturas no modo de construção da Ilha Artificial (os hienas, Apófis, Robarg, Barbarossa, Devorador). Use para aprimorar a Loja de Trocas, a Oficina e estruturas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomeOre.webp",
+		"id": "HomeOre"
+	},
+	"HomePumpkin": {
+		"name": "Material fibroso",
+		"description": "Coletado da Casa-Abóbora ou derrubado por criaturas do modo de construção da Ilha Artificial (os hienas, Apófis, Robarg, Barbarossa, Devorador). Use na Loja de Trocas, na Oficina e para aprimorar estruturas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomePumpkin.webp",
+		"id": "HomePumpkin"
+	},
+	"HomeRattan": {
+		"name": "Material energético",
+		"description": "Coletado da Casa-Patinha ou derrubado por criaturas do modo de construção da Ilha Artificial (os hienas, Apófis, Robarg, Barbarossa, Devorador). Use para aprimorar a Loja de Trocas, a Oficina e estruturas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomeMeat.webp",
+		"id": "HomeRattan"
+	},
+	"HomeMeat": {
+		"name": "Materiais provisionais",
+		"description": "Coletado da Casa-Gatinho ou derrubado por criaturas do modo de construção da Ilha Artificial (os hienas, Apófis, Robarg, Barbarossa, Devorador). Use para aprimorar a Loja de Trocas, a Oficina e estruturas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomeFishBones.webp",
+		"id": "HomeMeat"
+	},
+	"HomeTwigs": {
+		"name": "Materiais acessórios",
+		"description": "Coletado da Casa-Tartaruga ou derrubado por criaturas do modo de construção da Ilha Artificial (os hienas, Apófis, Robarg, Barbarossa, Devorador). Use na Loja de Trocas, na Oficina e para aprimorar estruturas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomeShell.webp",
+		"id": "HomeTwigs"
+	},
+	"HomeFish": {
+		"name": "Materiais de qualidade",
+		"description": "Encontrado em criaturas do modo de construção da Ilha Artificial (devastadores, Apófis, Robarg, Barbarossa). Use para aprimorar a Loja de Trocas, a Oficina e estruturas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomeTwigs.webp",
+		"id": "HomeFish"
+	},
+	"HomeFishBones": {
+		"name": "Materiais compostos",
+		"description": "Encontrado em criaturas do modo de construção da Ilha Artificial (devastadores, Apófis, Robarg, Barbarossa). Use para aprimorar a Loja de Trocas, a Oficina e estruturas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomeRattan.webp",
+		"id": "HomeFishBones"
+	},
+	"HomeShellfish": {
+		"name": "Ficha da Loja Tech",
+		"description": "Uma ficha universal da Banges Tech. Trocável e utilizável na Loja de Trocas.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomeShellfish.webp",
+		"id": "HomeShellfish"
+	},
+	"HomeShell": {
+		"name": "Moeda de reserva da Casa 2",
+		"description": "N/A",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/HomeShell.webp",
+		"id": "HomeShell"
+	},
+	"GenePointAssist": {
+		"name": "Originum (Suporte)",
+		"description": "Um subproduto da pesquisa de radiação de Omnium que afeta a evolução de criaturas com um propósito. Após anos de pesquisa e otimização, agora pode ser utilizado com segurança no corpo humano.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/jysicon.webp",
+		"id": "GenePointAssist"
+	},
+	"GenePointDef": {
+		"name": "Originum (Função)",
+		"description": "Um subproduto da pesquisa de radiação de Omnium que afeta a evolução de criaturas com um propósito. Após anos de pesquisa e otimização, agora pode ser utilizado com segurança no corpo humano.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/jysicon.webp",
+		"id": "GenePointDef"
+	},
+	"RegressionCoin": {
+		"name": "Moeda de Incursão",
+		"description": " Cunhada com maestria singular, traz um moinho de vento mecânico em relevo. Trocável por recursos na Loja do Retorno.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/shangjin_3.webp",
+		"id": "RegressionCoin"
+	},
+	"PrimaryEnergy3": {
+		"name": "Pó de cristal energético",
+		"description": "Minicristais energéticos gerados ao usar um supressor, que valem a pena coletar. Trocável por recursos na Loja.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/Energy_2.webp",
+		"id": "PrimaryEnergy3"
+	},
+	"PrimaryEnergy4": {
+		"name": "Pó de cristal energético",
+		"description": "Minicristais energéticos gerados ao usar um supressor, que valem a pena coletar. Trocável por recursos na Loja.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/Energy_3.webp",
+		"id": "PrimaryEnergy4"
+	},
+	"MiniGameCoin": {
+		"name": "Pontos de treino",
+		"description": "Pontos universais de treino.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/xunliandu.webp",
+		"id": "MiniGameCoin"
+	},
+	"HopkinsOrder1": {
+		"name": "Cartão de ouro",
+		"description": "Aparentemente aceito como moeda no Mercado Ilegal de Banges.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/huohuahexin2.webp",
+		"id": "HopkinsOrder1"
+	},
+	"SharePhotoCoin": {
+		"name": "Parque de diversões",
+		"description": "Obtido ao brincar nas instalações de entretenimento da Ilha de Cetus. Trocável por recompensas exclusivas da Ilha de Cetus na Enfi da ilha.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/park/Item_ticket_baijingdao.webp",
+		"id": "SharePhotoCoin"
+	},
+	"WeaponFragmentUP1": {
+		"name": "Ouro incendiado (Lótus Vermelha)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP1"
+	},
+	"WeaponFragmentUP2": {
+		"name": "Ouro incendiado (Arroubo)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP2"
+	},
+	"EquipFragmentUP1": {
+		"name": "Chip modificado (Lótus Vermelha)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP1"
+	},
+	"EquipFragmentUP2": {
+		"name": "Chip modificado (Arroubo)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP2"
+	},
+	"HopkinsOrder2": {
+		"name": "Comprovante de crédito",
+		"description": "Se quer os melhores produtos do Mercado Ilegal do Hopkins, precisa conquistar a confiança dele. Prove seu valor como cliente.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/icon_hopkins.webp",
+		"id": "HopkinsOrder2"
+	},
+	"IncarnationCoin": {
+		"name": "Pontos de oferta",
+		"description": "Fichas especiais cunhadas pela Hykros para estimular a coleta de amostras biológicas de mana.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/Incarnation_01.webp",
+		"id": "IncarnationCoin"
+	},
+	"WeaponFragmentUP3": {
+		"name": "Ouro incendiado (Lua Branca)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP3"
+	},
+	"WeaponFragmentUP4": {
+		"name": "Ouro incendiado (Dawn)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP4"
+	},
+	"WeaponFragmentUP5": {
+		"name": "Ouro incendiado (Renascimento)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP5"
+	},
+	"WeaponFragmentUP6": {
+		"name": "Ouro incendiado (Coração de Ferro)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP6"
+	},
+	"WeaponFragmentUP7": {
+		"name": "Ouro incendiado (Sol)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP7"
+	},
+	"WeaponFragmentUP8": {
+		"name": "Ouro incendiado (Flow)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP8"
+	},
+	"WeaponFragmentUP9": {
+		"name": "Ouro incendiado (Sombra)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda. Trocável por armas limitadas. Luzes ofuscantes se refratavam infinitamente, mas nunca se esvaíam.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP9"
+	},
+	"WeaponFragmentUP10": {
+		"name": "Ouro incendiado (Travessura)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP10"
+	},
+	"WeaponFragmentUP11": {
+		"name": "Ouro incendiado (Candeia)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP11"
+	},
+	"WeaponFragmentUP12": {
+		"name": "Ouro incendiado (Estrelas)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP12"
+	},
+	"WeaponFragmentUP13": {
+		"name": "Ouro incendiado (Decreto)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP13"
+	},
+	"WeaponFragmentUP14": {
+		"name": "Ouro incendiado (Fusão)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP14"
+	},
+	"WeaponFragmentUP15": {
+		"name": "Ouro incendiado (Flor de Amoreira)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP15"
+	},
+	"WeaponFragmentUP16": {
+		"name": "Ouro incendiado (Gingado)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP16"
+	},
+	"WeaponFragmentUP17": {
+		"name": "Ouro incendiado (Pena Vermelha)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP17"
+	},
+	"WeaponFragmentUP18": {
+		"name": "Ouro incendiado",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP18"
+	},
+	"WeaponFragmentUP19": {
+		"name": "Ouro incendiado",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP19"
+	},
+	"WeaponFragmentUP20": {
+		"name": "Ouro incendiado (Constância)",
+		"description": "Ficha forjada por ferreiros a partir de armas de Omnium específicas recicladas. Está mais para um artefato que circula em um canal especial do que uma moeda.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/weaponfragment_up.webp",
+		"id": "WeaponFragmentUP20"
+	},
+	"EquipFragmentUP3": {
+		"name": "Chip modificado (Lua Branca)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP3"
+	},
+	"EquipFragmentUP4": {
+		"name": "Chip modificado (Dawn)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP4"
+	},
+	"EquipFragmentUP5": {
+		"name": "Chip modificado (Renascimento)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP5"
+	},
+	"EquipFragmentUP6": {
+		"name": "Chip modificado (Coração de Ferro)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP6"
+	},
+	"EquipFragmentUP7": {
+		"name": "Chip modificado (Sol)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP7"
+	},
+	"EquipFragmentUP8": {
+		"name": "Chip modificado (Flow)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP8"
+	},
+	"EquipFragmentUP9": {
+		"name": "Chip modificado (Sombra)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz limitados. — Então eu posso compartilhar a noite clara, cheia de estrelas, com todo mundo...",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP9"
+	},
+	"EquipFragmentUP10": {
+		"name": "Chip modificado (Travessura)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP10"
+	},
+	"EquipFragmentUP11": {
+		"name": "Chip modificado (Candeia)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP11"
+	},
+	"EquipFragmentUP12": {
+		"name": "Chip modificado (Estrela)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP12"
+	},
+	"EquipFragmentUP13": {
+		"name": "Chip modificado (Decreto)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP13"
+	},
+	"EquipFragmentUP14": {
+		"name": "Chip modificado (Fusão)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP14"
+	},
+	"EquipFragmentUP15": {
+		"name": "Chip modificado (Flor de Amoreira)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP15"
+	},
+	"EquipFragmentUP16": {
+		"name": "Chip modificado (Gingado)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP16"
+	},
+	"EquipFragmentUP17": {
+		"name": "Chip modificado (Pena Vermelha)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP17"
+	},
+	"EquipFragmentUP18": {
+		"name": "Chip modificado",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP18"
+	},
+	"EquipFragmentUP19": {
+		"name": "Chip modificado",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP19"
+	},
+	"EquipFragmentUP20": {
+		"name": "Chip modificado (Constância)",
+		"description": "Matéria-prima que passa por processos complexos a fim de produzir chips específicos. Trocável por chips de Matriz.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/matrixfragment_up.webp",
+		"id": "EquipFragmentUP20"
+	},
+	"IncarnationCoin1": {
+		"name": "Ficha do equilíbrio",
+		"description": "O ambiente ecológico atual já se estabilizou?",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/HJDEcoin.webp",
+		"id": "IncarnationCoin1"
+	},
+	"IncarnationCoin2": {
+		"name": "Disco criptografado",
+		"description": "Um disco com criptografia de ponta que contém dados importantíssimos. Talvez alguém da Hykros consiga decodificá-lo?...",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/Aida_photo_token.webp",
+		"id": "IncarnationCoin2"
+	},
+	"IncarnationCoin3": {
+		"name": "Comprovante de contribuição",
+		"description": "O certificado feito pelo Departamento Logístico da Hykros, que atesta os esforços e contribuições do Executor.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/Item_Incarnation_02.webp",
+		"id": "IncarnationCoin3"
+	},
+	"GameActivityCoin1": {
+		"name": "Comprovante de luz",
+		"description": "Cupons comemorativos do Salão Automotivo Liuguang. Tomara que você consiga os tesouros que quer lá.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/liuguanghuobi01.webp",
+		"id": "GameActivityCoin1"
+	},
+	"GameActivityCoin2": {
+		"name": "Cupom da exibição",
+		"description": "Um cupom gratuito oferecido a visitantes do Salão Automotivo Liuguang. Toda experiência é digna de ser lembrada.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/liuguanghuobi02.webp",
+		"id": "GameActivityCoin2"
+	},
+	"GameActivityCoin3": {
+		"name": "Pó de cristal do espaço-tempo",
+		"description": "O pó de cristal que se desviou da trajetória do espaço-tempo. Parece capaz de afetar a estabilidade de fragmentos do espaço-tempo.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/Energy_4.webp",
+		"id": "GameActivityCoin3"
+	},
+	"GameActivityCoin4": {
+		"name": "Estilhaços de cristal do espaço-tempo",
+		"description": "Esses fragmentos que flutuam na trajetória de operações do espaço-tempo são produtos do colapso do espaço-tempo que foi despedaçado.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/Energy_5.webp",
+		"id": "GameActivityCoin4"
+	},
+	"GameActivityCoin5": {
+		"name": "Núcleo de ativação I",
+		"description": "Uma amostra biológica viva rara, de alto valor de pesquisa.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/yongzhehuodong01.webp",
+		"id": "GameActivityCoin5"
+	},
+	"GameActivityCoin6": {
+		"name": "Corpo Energético Revitalizado",
+		"description": "Corpo energético revitalizado obtido de um alvo de incursão derrotado. Pode ser de extremo interesse para os pesquisadores na Hykros.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/yongzhehuodong02.webp",
+		"id": "GameActivityCoin6"
+	},
+	"GameActivityCoin7": {
+		"name": "Emblema do líder",
+		"description": "O emblema é dado aos participantes do evento Tour de Reflexia do Estúdio HOTTA. Admire a beleza de Reflexia de uma perspectiva completamente nova.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/OrienteeringCoin_01.webp",
+		"id": "GameActivityCoin7"
+	},
+	"GameActivityCoin8": {
+		"name": "Estrela dispersa",
+		"description": "Belos fragmentos de estrelas que refletem a luz do espaço sideral.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/huobi/Enlightenment_02.webp",
+		"id": "GameActivityCoin8"
+	},
+	"GameActivityCoin9": {
+		"name": "Bolhas",
+		"description": "Pou! Pou! Pou!",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/ChildrensDayCoin.webp",
+		"id": "GameActivityCoin9"
+	},
+	"GameActivityCoin10": {
+		"name": "Emblema traiçoeiro",
+		"description": "O emblema dado aos participantes do evento Piso Traiçoeiro, do Estúdio HOTTA. Cheguem mais!",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/HiveJumpCoin.webp",
+		"id": "GameActivityCoin10"
+	},
+	"RegressionHelpCoin": {
+		"name": "Pontos de auxílio de retorno",
+		"description": "Concedido àqueles que ajudaram Executores que voltaram. Forme equipe com Executores retornantes e joguem modos de jogo juntos para obter.",
+		"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/regression/30/huiguizhulidian.webp",
+		"id": "RegressionHelpCoin"
 	}
 }
