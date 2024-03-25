@@ -4,7 +4,7 @@ from src.enums import LANGS_GLOBAL_ENUM
 from src.infra.repository.servants.global_ import SmartServantsGlobalRepository
 
 
-class RelicsGlobalSuite:
+class ServantsGlobalSuite:
     REPO = SmartServantsGlobalRepository()
 
     @pytest.mark.asyncio
