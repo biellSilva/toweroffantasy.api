@@ -4,6 +4,7 @@ from src.domain.models.researchs.extras import ResearchMat, ResearchRedo, Resear
 
 
 class Research(ModelBase):
+    name: str
     group: str
     stage: str
     stageIcon: str
