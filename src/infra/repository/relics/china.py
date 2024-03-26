@@ -6,10 +6,7 @@ from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.relics import Relic
 from src.enums import LANGS_CHINA_ENUM
 from src.infra.models.relics import RawRelic
-from src.infra.repository.helpers.relics import (
-    relic_advanc_rework,
-    sort_relics,
-)
+from src.infra.repository.helpers.relics import relic_advanc_rework, sort_relics
 
 
 class RelicsChinaRepository:

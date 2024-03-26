@@ -6,10 +6,7 @@ from src.domain.errors.http import LangNotFoundErr
 from src.domain.models.matrices import Matrix
 from src.enums import LANGS_CHINA_ENUM
 from src.infra.models.matrices import RawMatrix
-from src.infra.repository.helpers.matrices import (
-    matrix_set_rework,
-    sort_matrices,
-)
+from src.infra.repository.helpers.matrices import matrix_set_rework, sort_matrices
 
 
 class MatricesChinaRepository:

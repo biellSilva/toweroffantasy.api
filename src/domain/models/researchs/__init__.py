@@ -1,4 +1,5 @@
 import strawberry
+
 from src.domain.models.base import ModelBase
 from src.domain.models.researchs.extras import ResearchMat, ResearchRedo, ResearchReq
 
