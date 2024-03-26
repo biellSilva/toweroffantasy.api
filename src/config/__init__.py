@@ -19,6 +19,7 @@ PROJECT_DESC: str = (
     "[Interactive docs](https://api.toweroffantasy.info/docs) \t\n "
     "[Detailed docs](https://api.toweroffantasy.info/redoc) \t\n "
     "[GraphQL docs](https://api.toweroffantasy.info/graphql) \t\n "
+    "[Scalar docs](https://api.toweroffantasy.info/docs/scalar) \t\n"
     "[Discord](https://discord.com/invite/aida-cafe-670617630717116426) \t\n"
     "[Github](https://github.com/biellSilva/toweroffantasy.api) \t\n "
     "\n"
@@ -29,10 +30,10 @@ PROJECT_DESC: str = (
     "- [Zakum (ToF Index)](https://github.com/whotookzakum) \t\n "
     "\n"
     "```\t\n"
-    f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")}\t\n\n'
-
-    f'Supported versions: {', '.join([value for value in VERSIONS_ENUM])}\t\n\n'
-
+    f'Last restart: {LAST_RESTART.strftime("%a %d %b %Y, %H:%M:%S %Z%z")} \t\n\n'
+    
+    f'Supported versions: {', '.join([value for value in VERSIONS_ENUM])} \t\n\n'
+    
     'Supported languages: \t\n'
     f'Global: {', '.join([value for value in LANGS_GLOBAL_ENUM])}\t\n'
     f'China: {', '.join([value for value in LANGS_CHINA_ENUM])}\t\n'

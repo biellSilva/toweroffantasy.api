@@ -1,9 +1,10 @@
 from typing import TYPE_CHECKING, Any
 
 from src.config.sorter import WEAPON_SORT_ORDER
-from src.enums import LANGS_GLOBAL_ENUM
+from src.enums import LANGS_CHINA_ENUM, LANGS_GLOBAL_ENUM
 from src.infra.models.weapons import RawWeapon
 from src.infra.models.weapons.extra import RawStatConverted
+from src.infra.repository.items.china import ItemsChinaRepository
 from src.infra.repository.items.global_ import ItemsGlobalRepository
 
 if TYPE_CHECKING:
@@ -18,28 +19,21 @@ def ignore_weapon(dict_: RawWeapon) -> bool:
 
 
 def weapon_fix_minor_issues(dict_: RawWeapon) -> RawWeapon:
-    match dict_["id"].lower():
 
-        case "asuka_physic":
-            dict_["element"] = "PhysicsFlame"
+    if dict_["id"].lower() in ("lances_ice"):
+        dict_["element"] = "ThunderIce"
 
-        case "lances_ice":
-            dict_["element"] = "ThunderIce"
+    elif dict_["id"].lower() in ("blevi_thunder"):
+        dict_["element"] = "IceThunder"
 
-        case "blevi_thunder":
-            dict_["element"] = "IceThunder"
+    elif dict_["id"].lower() in ("paradox_fire"):
+        dict_["element"] = "FlamePhysics"
 
-        case "paradox_fire":
-            dict_["element"] = "FlamePhysics"
+    elif dict_["id"].lower() in ("killknife_physic", "zeke_physic", "asuka_physic"):
+        dict_["element"] = "PhysicsFlame"
 
-        case "killknife_physic":
-            dict_["element"] = "PhysicsFlame"
-
-        case "zeke_physic":
-            dict_["element"] = "PhysicsFlame"
-
-        case _:
-            pass
+    else:
+        pass
 
     return dict_
 
@@ -76,10 +70,10 @@ def weapon_convert_stat(dict_: RawWeapon) -> list[RawStatConverted]:
 
 async def weapon_upgrade_mats(
     dict_: RawWeapon,
-    lang: LANGS_GLOBAL_ENUM,
+    lang: LANGS_GLOBAL_ENUM | LANGS_CHINA_ENUM,
     WEAPON_MATS: dict[str, Any],
     WEAPON_EXP_REQUIRED_LEVELS: dict[str, Any],
-    ITEM_REPO: ItemsGlobalRepository,
+    ITEM_REPO: ItemsGlobalRepository | ItemsChinaRepository,
 ) -> RawWeapon:
     if upgrade_obj := WEAPON_MATS.get(dict_["weaponUpgradeId"], None):
         if upgrade_exp_require := WEAPON_EXP_REQUIRED_LEVELS.get(
@@ -91,7 +85,7 @@ async def weapon_upgrade_mats(
                         if mat_id := item.get("mat_id", None):
                             if mat_id.lower() != "none":
                                 if item_obj := await ITEM_REPO.find_by_id(
-                                    mat_id.lower(), lang=lang
+                                    mat_id.lower(), lang=lang  # type: ignore
                                 ):
                                     item.update(**item_obj.model_dump())
 

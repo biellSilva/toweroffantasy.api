@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 from src.domain.models.researchs import Research
 from src.domain.usecases.base import GetAllParams, IUsecase
 

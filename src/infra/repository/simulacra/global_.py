@@ -50,7 +50,7 @@ class SimulacraGlobalRepository:
 
         if not DATA_PATH.exists():
             raise LangNotFoundErr
-        
+
         if not WEAPONS_PATH.exists():
             raise DataIncompleteErr
 
@@ -67,9 +67,11 @@ class SimulacraGlobalRepository:
 
             if banner_data := await self.__BANNERS_REPO.find_by_id(id=key_id):
                 value_dict["banners"] = banner_data
-            
-            if weapon_data := WEAPONS.get(value_dict['weaponId']):
-                value_dict["fashion"] = [fashion['outfit'] for fashion in weapon_data.get("fashion", [])]
+
+            if weapon_data := WEAPONS.get(value_dict["weaponId"]):
+                value_dict["fashion"] = [
+                    fashion["outfit"] for fashion in weapon_data.get("fashion", [])
+                ]
 
             self.__cache[lang].update(
                 {key_id.lower(): Simulacra(**value_dict)}  # type: ignore

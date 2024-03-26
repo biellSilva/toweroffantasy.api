@@ -25,7 +25,7 @@ class Weapon(ModelBase):
     )
 
     name: str
-    version: str
+    version: str | None = None
     rarity: int
     assets: WeaponAssets
     limited: bool

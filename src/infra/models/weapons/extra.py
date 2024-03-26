@@ -5,6 +5,8 @@ class RawAdvancement(TypedDict):
     description: str | None
     multiplier: list[Any]
     need: str | None
+    shatter: dict[str, Any] | float
+    charge: dict[str, Any] | float
 
 
 class RawStat(TypedDict):
