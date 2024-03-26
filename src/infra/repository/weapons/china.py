@@ -74,8 +74,6 @@ class WeaponsChinaRepository:
 
         for key_id, value_dict in DATA.items():
 
-            print(key_id)
-
             value_dict = weapon_fix_minor_issues(dict_=value_dict)
 
             assert isinstance(value_dict["attributes"][0]["shatter"], (float, int))
