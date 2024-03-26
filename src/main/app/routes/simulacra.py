@@ -11,10 +11,12 @@ router.add_api_route(
     path="/{id}",
     endpoint=FindSimulacraControllerFactory.create().rest_handle,
     methods=["GET"],
+    name="Get simulacrum",
 )
 
 router.add_api_route(
     path="",
     endpoint=GetallSimulacraControllerFactory.create().rest_handle,
     methods=["GET"],
+    name="Get simulacra",
 )
