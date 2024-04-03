@@ -12,6 +12,7 @@ class Mount(ModelBase):
     version: str
     rarity: int
     unlockItems: list[UnlockItem]
+    source: list[str] = []
 
 
 @strawberry.experimental.pydantic.type(model=Mount, all_fields=True)
