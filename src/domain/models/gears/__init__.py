@@ -1,9 +1,9 @@
-from pydantic import AliasChoices, Field
 import strawberry
+from pydantic import AliasChoices, Field
 
 from src.domain.models.base import ModelBase
 
-from .extra import BaseStat, Prop, StatPool, GearAdvancement, UpgradeProp
+from .extra import BaseStat, GearAdvancement, Prop, StatPool, UpgradeProp
 
 
 class Gear(ModelBase):
