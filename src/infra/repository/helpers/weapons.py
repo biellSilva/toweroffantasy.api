@@ -75,7 +75,18 @@ async def weapon_upgrade_mats(
     WEAPON_EXP_REQUIRED_LEVELS: dict[str, Any],
     ITEM_REPO: ItemsGlobalRepository | ItemsChinaRepository,
 ) -> RawWeapon:
-    if upgrade_obj := WEAPON_MATS.get(dict_["weaponUpgradeId"], None):
+
+    def get_material(mat_id: str):
+        if upgrade_obj := WEAPON_MATS.get(dict_["weaponUpgradeId"], None):
+            return upgrade_obj
+
+        for key, value in WEAPON_MATS.items():
+            if key.lower() == mat_id.lower():
+                return value
+
+        return None
+
+    if upgrade_obj := get_material(dict_["weaponUpgradeId"]):
         if upgrade_exp_require := WEAPON_EXP_REQUIRED_LEVELS.get(
             dict_["id"].lower(), None
         ):
