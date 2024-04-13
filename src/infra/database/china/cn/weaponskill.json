@@ -11837,5 +11837,149 @@
 				"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
 			}
 		]
+	},
+	"GA_FPlayerDFishChessMelee": {
+		"skills": [
+			{
+				"name": "斗转星移",
+				"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.png",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_Melee"
+			},
+			{
+				"name": "起势",
+				"description": "当拓荒者滞空时，点击普攻可在空中连续进行四次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.png",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_AirAttack"
+			},
+			{
+				"name": "审局",
+				"description": "在地面时，长按普攻或在普攻时长按，可进入审局状态，持续凝聚至多5枚棋子，释放后射出所有棋子追击目标，每枚棋子造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.png",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+			},
+			{
+				"name": "历世心游",
+				"description": "当拓荒者滞空时，使用普攻时，长按普攻可触发历世心游。\r\n从天而降，落地后甩出双鱼附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击飞目标。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.png",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessEvade": {
+		"skills": [
+			{
+				"name": "闪避",
+				"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/common_evade.png",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerDFishChessEvade_Evade"
+			},
+			{
+				"name": "ga_DFishChess_EvadeAttack_Front_name",
+				"description": "ga_DFishChess_EvadeAttack_Front_des",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.png",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "ga_DFishChess_EvadeAttack_Back_name",
+				"description": "ga_DFishChess_EvadeAttack_Back_des",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.png",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessSkill": {
+		"skills": [
+			{
+				"name": "以身入局",
+				"description": "腾空而起，将战场化为棋盘，悬浮于空中（期间不可移动），获得高空视角，至多持续<shuzhi>10</>秒，攻击替换为落下棋子，技能替换为<shuzhi>技能-亦胜半子</>，点触棋盘依次落下<shuzhi>18</>枚棋子，每枚棋子对棋盘内所有目标造成<shuzhi>500%</>*攻击力伤害，并短暂缓速目标，冷却<shuzhi>40</>秒（不受任何冷却时间清除、重置、变化效果的影响）。\r\n<shuzhi>落子无悔</>：释放<shuzhi>普攻-审局</>、<shuzhi>闪避-夺势</>、<shuzhi>闪避-星坠</>、<shuzhi>连携-此为定局</>，或创建（而非刷新）召唤物可获得对应数量的落子无悔层数，至多可获得<shuzhi>9</>层，技能期间每枚棋子消耗<shuzhi>1</>点落子无悔层数（技能持续期间无法获得落子无悔层数），对棋盘内的所有目标额外造成<shuzhi>500%</>*攻击力伤害。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/DFishChess_Skill1.png",
+				"operations": [],
+				"tags": [
+					"Damage",
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChess_Skill"
+			},
+			{
+				"name": "亦胜半子",
+				"description": "<shuzhi>技能-以身入局</>持续期间手动释放，或持续时间结束后可自动触发亦胜半子，从高空坠落，对棋盘内的所有目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>，并额外造成技能期间消耗的<shuzhi>落子无悔</>层数*400%*攻击力伤害，双鱼向外环游，推开自身附近的目标并造成<shuzhi>{2}%</>*攻击力伤害。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/DFishChess_Skill2.png",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_Skill2"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessChangeSkill": {
+		"skills": [
+			{
+				"name": "此为定局",
+				"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，释放场域，于前方落下<shuzhi>1</>枚棋子，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>2.6</>秒（巅峰联赛不生效）。\r\n开启场域，每秒对自身附近大范围目标造成<shuzhi>400%</>伤害，场域持续<shuzhi>30</>秒或者在脱战<shuzhi>5</>秒后消失，创建的每个召唤物可为场域增加<shuzhi>3</>秒持续时间。\r\n<shuzhi>布阵</>：创建的每个召唤物可叠加<shuzhi>1</>层布阵，每层布阵额外提升场域<shuzhi>120%</>*攻击力的每秒持续伤害，至多叠加至<shuzhi>8</>层。\r\n<shuzhi>焚阳</>：获得布阵层数时，可获得对应层数的焚阳，每层焚阳额外提升<shuzhi>2%</>火焰伤害，至多叠加至<shuzhi>8</>层。\r\n<shuzhi>灼心</>：释放火焰武器连携时，获得<shuzhi>8</>秒的霸体效果。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.png",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_ChangeSkill"
+			}
+		]
 	}
 }

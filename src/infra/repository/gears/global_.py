@@ -69,25 +69,25 @@ class GearsGlobalRepository:
                     stat = stat.update(BASE_STATS_DATA[stat["PropName"]])  # type: ignore
 
             if value_dict.get("props"):
-                value_dict["props"] = [
-                    {"PropId": prop_id, **prop_data}
-                    for prop in value_dict["props"]
-                    for prop_id, prop_data in prop.items()
-                ]
+                for ind, prop in enumerate(value_dict["props"]):
+                    for prop_id, prop_data in prop.items():
+                        value_dict["props"][ind] = {"PropId": prop_id, **prop_data}
 
             if value_dict.get("advancement"):
-                value_dict["advancement"] = [
-                    [{"matAmount": mat["mat_amount"], **mat["mat_id"]}]
-                    for level_advance in value_dict["advancement"]
-                    for mat in level_advance
-                ]
+                for ind, level_advance in enumerate(value_dict["advancement"]):
+                    for ind_inner, mat in enumerate(level_advance):
+                        value_dict["advancement"][ind][ind_inner] = {
+                            "matAmount": mat["mat_amount"],
+                            **mat["mat_id"],
+                        }
 
             if value_dict.get("baseUpgradeProps"):
-                value_dict["baseUpgradeProps"] = [
-                    [{"value": mat["value"], **mat["stat"]}]
-                    for level_advance in value_dict["baseUpgradeProps"]
-                    for mat in level_advance
-                ]
+                for ind, level_advance in enumerate(value_dict["baseUpgradeProps"]):
+                    for ind_inner, mat in enumerate(level_advance):
+                        value_dict["baseUpgradeProps"][ind][ind_inner] = {
+                            "value": mat["value"],
+                            **mat["stat"],
+                        }
 
             self.__cache[lang].update({key_id.lower(): Gear(**value_dict)})  # type: ignore
 

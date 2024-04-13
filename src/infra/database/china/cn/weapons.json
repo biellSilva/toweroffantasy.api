@@ -12180,7 +12180,7 @@
 			]
 		},
 		"fashion": [],
-		"limited": true,
+		"limited": false,
 		"id": "yoyo_ice"
 	},
 	"queen_superpower": {
@@ -18047,6 +18047,440 @@
 		],
 		"limited": true,
 		"id": "asuka_physic"
+	},
+	"dfishchess_fire": {
+		"name": "纵横",
+		"description": "纵有千古，横有八荒。",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/weapon/Icon/item_Weapon_SSR_DFishChess.png",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/weapon/icon_yizhi/yizhi_SSR_DFishChess.png",
+			"characterArtwork": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/huanxing/lihui/jiyu.png"
+		},
+		"rarity": 5,
+		"element": "Flame",
+		"type": "DFishChess",
+		"weaponUpgradeId": "Fire_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "DFishChess_fire_ssr_star",
+		"avatar": "imitation_57",
+		"stats": [
+			{
+				"stat": {
+					"name": "攻击",
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/AttributeIcon/icon_atk.png",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 16.571905
+			},
+			{
+				"stat": {
+					"name": "生命",
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/AttributeIcon/icon_hp.png",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1010.0971
+			},
+			{
+				"stat": {
+					"name": "暴击",
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/AttributeIcon/icon_baoji.png",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 11.837075
+			}
+		],
+		"upgradeProps": [
+			[
+				2.761984,
+				168.34952,
+				1.972846
+			]
+		],
+		"effects": [
+			{
+				"title": "**物火融合**",
+				"description": "该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。"
+			},
+			{
+				"title": "**物理共鸣**",
+				"description": "装备**2**把及以上物理武器触发，提升**20%**物攻和**40%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。"
+			},
+			{
+				"title": "**火焰共鸣**",
+				"description": "装备**2**把及以上火焰武器触发，提升**20%**火攻和**40%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。"
+			},
+			{
+				"title": "**天元-驻场**",
+				"description": "**纵横**任意攻击命中时，对附近目标造成**0%***火攻+**1%***自身最大生命值+**2%***各元素抗性之和+**3%***暴击值点伤害，每**1.5**秒至多触发一次，天元伤害视为普攻伤害，若装备任意**1**把寒冰/雷电武器，则天元伤害提升至**4**倍。此外，天元伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。"
+			}
+		],
+		"elementEffects": {
+			"title": "**烈焰**",
+			"description": "武器充能值充满后下次攻击点燃敌人**8**秒，每秒造成**undefined%***攻击力伤害，点燃期间目标的治疗效果降低**50%**。"
+		},
+		"attributes": [
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "**技能-落子无悔**层数上限提升至**1**层，消耗每层**落子无悔**层数造成的额外伤害提升至**0%***攻击力伤害。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**16%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "装备**纵横**时，自身造成的伤害无视场域内目标**0%**火焰抗性，装备后后台可生效。（所有单个元素无视抗性总值不能超过50%）",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**32%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "**技能-以身入局**期间自身获得**0%**减伤，并且自身受到致命伤害时立即回复自身**1%**最大生命值，每次技能期间至多触发**1**次。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "每层**连携-焚阳**的火焰伤害提升至**0%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "斗转星移",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.png",
+					"id": "GA_FPlayerDFishChessMelee_Melee"
+				},
+				{
+					"name": "起势",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行四次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.png",
+					"id": "GA_FPlayerDFishChessMelee_AirAttack"
+				},
+				{
+					"name": "审局",
+					"description": "在地面时，长按普攻或在普攻时长按，可进入审局状态，持续凝聚至多5枚棋子，释放后射出所有棋子追击目标，每枚棋子造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.png",
+					"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+				},
+				{
+					"name": "历世心游",
+					"description": "当拓荒者滞空时，使用普攻时，长按普攻可触发历世心游。\r\n从天而降，落地后甩出双鱼附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击飞目标。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.png",
+					"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/common_evade.png",
+					"id": "GA_FPlayerDFishChessEvade_Evade"
+				},
+				{
+					"name": "ga_DFishChess_EvadeAttack_Front_name",
+					"description": "ga_DFishChess_EvadeAttack_Front_des",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.png",
+					"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "ga_DFishChess_EvadeAttack_Back_name",
+					"description": "ga_DFishChess_EvadeAttack_Back_des",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.png",
+					"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "以身入局",
+					"description": "腾空而起，将战场化为棋盘，悬浮于空中（期间不可移动），获得高空视角，至多持续<shuzhi>10</>秒，攻击替换为落下棋子，技能替换为<shuzhi>技能-亦胜半子</>，点触棋盘依次落下<shuzhi>18</>枚棋子，每枚棋子对棋盘内所有目标造成<shuzhi>500%</>*攻击力伤害，并短暂缓速目标，冷却<shuzhi>40</>秒（不受任何冷却时间清除、重置、变化效果的影响）。\r\n<shuzhi>落子无悔</>：释放<shuzhi>普攻-审局</>、<shuzhi>闪避-夺势</>、<shuzhi>闪避-星坠</>、<shuzhi>连携-此为定局</>，或创建（而非刷新）召唤物可获得对应数量的落子无悔层数，至多可获得<shuzhi>9</>层，技能期间每枚棋子消耗<shuzhi>1</>点落子无悔层数（技能持续期间无法获得落子无悔层数），对棋盘内的所有目标额外造成<shuzhi>500%</>*攻击力伤害。",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/DFishChess_Skill1.png",
+					"id": "GA_FPlayerDFishChess_Skill"
+				},
+				{
+					"name": "亦胜半子",
+					"description": "<shuzhi>技能-以身入局</>持续期间手动释放，或持续时间结束后可自动触发亦胜半子，从高空坠落，对棋盘内的所有目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>，并额外造成技能期间消耗的<shuzhi>落子无悔</>层数*400%*攻击力伤害，双鱼向外环游，推开自身附近的目标并造成<shuzhi>{2}%</>*攻击力伤害。",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/DFishChess_Skill2.png",
+					"id": "GA_FPlayerDFishChess_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "此为定局",
+					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，释放场域，于前方落下<shuzhi>1</>枚棋子，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>2.6</>秒（巅峰联赛不生效）。\r\n开启场域，每秒对自身附近大范围目标造成<shuzhi>400%</>伤害，场域持续<shuzhi>30</>秒或者在脱战<shuzhi>5</>秒后消失，创建的每个召唤物可为场域增加<shuzhi>3</>秒持续时间。\r\n<shuzhi>布阵</>：创建的每个召唤物可叠加<shuzhi>1</>层布阵，每层布阵额外提升场域<shuzhi>120%</>*攻击力的每秒持续伤害，至多叠加至<shuzhi>8</>层。\r\n<shuzhi>焚阳</>：获得布阵层数时，可获得对应层数的焚阳，每层焚阳额外提升<shuzhi>2%</>火焰伤害，至多叠加至<shuzhi>8</>层。\r\n<shuzhi>灼心</>：释放火焰武器连携时，获得<shuzhi>8</>秒的霸体效果。",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.png",
+					"id": "GA_FPlayerDFishChess_ChangeSkill"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "绫罗时序",
+					"description": "衣装承载着过往，决意始终如一。",
+					"rarity": 5,
+					"source": "活动获取",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/shizhuang/nitai/UI_NT_SZ_JY.png",
+						"prayPainting": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/shizhuang/nitai/UI_NT_SZ_JY_Lock.png"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57"
+				},
+				"weapon": {
+					"name": "明灭",
+					"description": "掌中玄素，心间天下。",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/item/fashion_jiyu_weapon.png",
+					"type": "CONSUMABLE",
+					"source": [
+						"绫罗时序扭蛋活动获取"
+					],
+					"id": "imitation_fashion_57_w"
+				}
+			},
+			{
+				"outfit": {
+					"name": "素华",
+					"description": "虽然「玉先生穿哪一件都很好看」，但这是玉先生的衣橱中玉兰最喜欢的一件。也许是因为两人并肩时更像一对师徒了？",
+					"rarity": 5,
+					"source": "活动获取",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/shizhuang/nitai/UI_NT_SZ_JY02.png",
+						"prayPainting": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/shizhuang/nitai/UI_NT_SZ_JY02_Lock.png"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57_2"
+				},
+				"weapon": {
+					"name": "峥嵘",
+					"description": "沧桑变故，峥嵘岁月，她与他们曾一同走过。",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/item/fashion_jiyu_2_weapon.png",
+					"type": "CONSUMABLE",
+					"source": [
+						"格网追迹活动获取"
+					],
+					"id": "imitation_fashion_57_w_2"
+				}
+			}
+		],
+		"limited": true,
+		"id": "dfishchess_fire"
 	},
 	"paradox_fire": {
 		"name": "EP-7000天火",
