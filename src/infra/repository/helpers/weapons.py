@@ -113,9 +113,6 @@ async def weapon_upgrade_mats(
                             "mats": level,
                         }
 
-    else:
-        print(dict_["id"])
-
     dict_["upgradeMats"] = {
         "id": dict_["weaponUpgradeId"],
         "levels": upgrade_obj,
