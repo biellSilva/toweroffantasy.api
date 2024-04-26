@@ -11410,8 +11410,8 @@
 		"id": "DFishChess_fire_ssr_star_6"
 	},
 	"Loslyn_ice_ssr_star_0": {
-		"advancement": "<shuzhi>物火融合</>：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。\r\n<shuzhi>物理共鸣</>：装备<shuzhi>2</>把及以上物理武器触发，提升<shuzhi>20%</>物攻和<shuzhi>40%</>物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n<shuzhi>火焰共鸣</>：装备<shuzhi>2</>把及以上火焰武器触发，提升<shuzhi>20%</>火攻和<shuzhi>40%</>火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n<shuzhi>神枪-速切</>：装备<shuzhi>朗基努斯之枪</>时，任意武器连携技对附近目标初始造成<shuzhi>{0}%</>*物攻+<shuzhi>{1}%</>*自身最大生命值+<shuzhi>{2}%</>*各元素抗性之和+<shuzhi>{3}%</>*暴击值点伤害，战斗状态下每间隔<shuzhi>0.5</>秒，下次速切伤害额外提升<shuzhi>1</>倍，至多提升<shuzhi>30</>次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把寒冰/雷电武器，则神枪伤害提升至<shuzhi>2.5</>倍。此外，神枪伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
-		"numbermap": "AsukaEffectFigure",
+		"advancement": "<shuzhi>冰雷融合</>：该武器计算伤害时取装备最高的寒冰/雷电基础攻击，装备最高的寒冰/雷电百分比攻击，装备最高的寒冰/雷电增伤。且该武器能同时视为寒冰元素武器和雷电元素武器。\r\n<shuzhi>寒冰共鸣</>：装备<shuzhi>2</>把及以上寒冰武器触发，提升<shuzhi>20%</>冰攻和<shuzhi>40%</>冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n<shuzhi>雷电共鸣</>：装备<shuzhi>2</>把及以上雷电武器触发，提升<shuzhi>20%</>雷攻和<shuzhi>40%</>雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。\r\n<shuzhi>霜刃-速切</>：装备<shuzhi>静澜</>时，任意武器连携技对附近目标初始造成<shuzhi>{0}%</>*自身最大生命值+<shuzhi>{1}%</>*冰攻+<shuzhi>{2}%</>*各元素抗性之和+<shuzhi>{3}%</>*暴击值点伤害，战斗状态下每间隔<shuzhi>0.5</>秒，下次速切伤害额外提升<shuzhi>1</>倍，至多提升<shuzhi>30</>次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把物理/火焰武器，则霜刃伤害提升至<shuzhi>2.5</>倍。此外，霜刃伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。\r\n静澜切至后台后，造成一次崩裂伤害,若敌人身上有急冻则清除敌人身上的急冻并对其造成持续<shuzhi>{4}</>秒的后台伤害。",
+		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
 				"PropName": "CommonAtkAdded",
@@ -11432,19 +11432,23 @@
 		],
 		"numbers": [
 			{
-				"key": "AsukaEXChangeWeaponCoefficientPhyAttack",
+				"key": "LoslynEXChangeWeaponCoefficientMaxHp",
 				"value": 1
 			},
 			{
-				"key": "AsukaEXChangeWeaponCoefficientMaxHp",
+				"key": "LoslynEXChangeWeaponCoefficientIceAttack",
 				"value": 1
 			},
 			{
-				"key": "AsukaEXChangeWeaponCoefficientDef",
+				"key": "LoslynEXChangeWeaponCoefficientDef",
 				"value": 1
 			},
 			{
-				"key": "AsukaEXChangeWeaponCoefficientCrit",
+				"key": "LoslynEXChangeWeaponCoefficientCrit",
+				"value": 1
+			},
+			{
+				"key": "LoslynSpecChangeWeaponDotDuration",
 				"value": 1
 			}
 		],
@@ -11452,14 +11456,14 @@
 		"need": "None",
 		"needamt": null,
 		"stats": {
-			"shatter": 12,
-			"charge": 10
+			"shatter": 16,
+			"charge": 14
 		},
 		"id": "Loslyn_ice_ssr_star_0"
 	},
 	"Loslyn_ice_ssr_star_1": {
-		"advancement": "技能-复仇层数上限由<shuzhi>{0}</>层提升至<shuzhi>{1}</>层，且所有层数消耗完毕后会会额外召唤一把巨大的朗基努斯之枪，若当前武器伤害的元素类型为<shuzhi>物理</>或<shuzhi>火焰</>，则对附近目标造成该伤害元素类型的<shuzhi>{2}%</>*攻击力伤害。",
-		"numbermap": "AsukaEffectFigure",
+		"advancement": "释放<shuzhi>技能-霜寒链域</>后获得自身<shuzhi>{0}%</>最大生命值的护盾，持续<shuzhi>{1}</>秒。",
+		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
 				"PropName": "CommonAtkAdded",
@@ -11480,19 +11484,11 @@
 		],
 		"numbers": [
 			{
-				"key": "RevengeStack",
+				"key": "LoslynShieldMaxHp",
 				"value": 1
 			},
 			{
-				"key": "RevengeStackL1",
-				"value": 1
-			},
-			{
-				"key": "RevengeEndDmgPhyMult",
-				"value": 1
-			},
-			{
-				"key": "RevengeEndDmgFlameMult",
+				"key": "LoslynShieldDuration",
 				"value": 1
 			}
 		],
@@ -11500,8 +11496,8 @@
 		"need": "Loslyn_ice_plasm",
 		"needamt": 1,
 		"stats": {
-			"shatter": 12,
-			"charge": 10
+			"shatter": 16,
+			"charge": 14
 		},
 		"id": "Loslyn_ice_ssr_star_1"
 	},
@@ -11530,14 +11526,14 @@
 		"need": "Loslyn_ice_plasm",
 		"needamt": 1,
 		"stats": {
-			"shatter": 12,
-			"charge": 10
+			"shatter": 16,
+			"charge": 14
 		},
 		"id": "Loslyn_ice_ssr_star_2"
 	},
 	"Loslyn_ice_ssr_star_3": {
-		"advancement": "<shuzhi>A.T力场</>持续期间，对目标造成伤害时可无视<shuzhi>A.T力场</>耐久值<shuzhi>当前百分比</>*<shuzhi>{0}%</>+<shuzhi>{1}%</>的目标护盾减伤；激活<shuzhi>坚毅共鸣</>时，自身破盾效率提升<shuzhi>A.T力场</>耐久值<shuzhi>当前百分比</>*<shuzhi>{2}%</>。",
-		"numbermap": "AsukaEffectFigure",
+		"advancement": "附带<shuzhi>连携-寒袭</>效果的攻击命中目标时，额外造成本次攻击附带的<shuzhi>寒袭</>层数*<shuzhi>{0}%</>攻击力伤害。",
+		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
 				"PropName": "CommonAtkAdded",
@@ -11558,15 +11554,7 @@
 		],
 		"numbers": [
 			{
-				"key": "ATFieldPassArmorMult",
-				"value": 1
-			},
-			{
-				"key": "ATFieldPassArmorMultEx",
-				"value": 1
-			},
-			{
-				"key": "ATFieldBreakUpMult",
+				"key": "LoslynFrozenAddStackDmgMult",
 				"value": 1
 			}
 		],
@@ -11574,8 +11562,8 @@
 		"need": "Loslyn_ice_plasm",
 		"needamt": 1,
 		"stats": {
-			"shatter": 12,
-			"charge": 10
+			"shatter": 16,
+			"charge": 14
 		},
 		"id": "Loslyn_ice_ssr_star_3"
 	},
@@ -11604,14 +11592,14 @@
 		"need": "Loslyn_ice_plasm",
 		"needamt": 1,
 		"stats": {
-			"shatter": 12,
-			"charge": 10
+			"shatter": 16,
+			"charge": 14
 		},
 		"id": "Loslyn_ice_ssr_star_4"
 	},
 	"Loslyn_ice_ssr_star_5": {
-		"advancement": "每消耗<shuzhi>1</>层<shuzhi>技能-复仇</>，回复<shuzhi>{0}%</><shuzhi>A.T立场</>最大耐久值。",
-		"numbermap": "AsukaEffectFigure",
+		"advancement": "<shuzhi>连携-冰封</>状态持续时间提升至<shuzhi>{0}</>秒，<shuzhi>技能-急冻</>状态目标攻击力降低效果提升至<shuzhi>{1}%</>。",
+		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
 				"PropName": "CommonAtkAdded",
@@ -11632,22 +11620,26 @@
 		],
 		"numbers": [
 			{
-				"key": "AddATField",
+				"key": "Buff_Loslyn_SpecFrozenL1",
 				"value": 1
+			},
+			{
+				"key": "LoslynSkillDebuffAtkDownL5",
+				"value": -100
 			}
 		],
 		"cost": 9000,
 		"need": "Loslyn_ice_plasm",
 		"needamt": 1,
 		"stats": {
-			"shatter": 14,
-			"charge": 12
+			"shatter": 16,
+			"charge": 14
 		},
 		"id": "Loslyn_ice_ssr_star_5"
 	},
 	"Loslyn_ice_ssr_star_6": {
-		"advancement": "<shuzhi>A.T立场</>期间获得的物理增伤提升至<shuzhi>{0}%</>，火焰增伤提升至<shuzhi>{1}%</>；\r\n激活<shuzhi>坚毅共鸣</>时，<shuzhi>A.T力场</>持续期间，附近队友无视<shuzhi>{2}%</>目标护盾减伤，并降低附近目标<shuzhi>{3}%</>全抗，该效果不可叠加。",
-		"numbermap": "AsukaEffectFigure",
+		"advancement": "释放<shuzhi>技能-霜寒链域</>后，自身获得无视目标<shuzhi>{0}%</>冰抗效果（所有单个元素无视抗性总值不能超过<shuzhi>50%</>），同时最终伤害提升<shuzhi>{1}%</>，持续<shuzhi>{2}</>秒。",
+		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
 				"PropName": "CommonAtkAdded",
@@ -11668,28 +11660,24 @@
 		],
 		"numbers": [
 			{
-				"key": "AsukaATFieldDmgUpPhyL6",
+				"key": "Buff_Loslyn_Skill_DmgUp_IgnoreIceDef",
 				"value": 1
 			},
 			{
-				"key": "AsukaATFieldDmgUpFireL6",
+				"key": "Buff_Loslyn_Skill_DmgUp",
 				"value": 1
 			},
 			{
-				"key": "ATFieldPassArmorTeam",
+				"key": "Buff_Loslyn_Skill_DmgUp_Duration",
 				"value": 1
-			},
-			{
-				"key": "ATFieldMonDefDownTeam",
-				"value": -100
 			}
 		],
 		"cost": 13500,
 		"need": "Loslyn_ice_plasm",
 		"needamt": 1,
 		"stats": {
-			"shatter": 14,
-			"charge": 12
+			"shatter": 16,
+			"charge": 14
 		},
 		"id": "Loslyn_ice_ssr_star_6"
 	},
