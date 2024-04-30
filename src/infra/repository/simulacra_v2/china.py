@@ -77,7 +77,9 @@ class SimulacraV2ChinaRepository:
 
             if weapon_data := WEAPON_DATA.get(value_dict["weaponId"]):
                 value_dict["fashion"] = [
-                    fashion["outfit"] for fashion in weapon_data.get("fashion", [])
+                    fashion["outfit"]
+                    for fashion in weapon_data.get("fashion", [])
+                    if "outfit" in fashion
                 ]
 
             self.__cache[lang].update(
