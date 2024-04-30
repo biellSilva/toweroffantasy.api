@@ -329,6 +329,16 @@
 		"description": "Увеличивает конечный урон на **0%**. Когда **Сосновая комета** находится в ячейке дополнительного оружия, частота запуска **воробьиного перышка** увеличивается до **1** в секунду.\r\nКогда **воробьиное перышко** попадает в цель и вызывает эффект рассеивания, оно дополнительно рассеивает **Ионную вспышку** и **Перекрестное горение**.\r\nВ командной игре ваш урон, получаемый от приманенной цели, снижается на **1%**. Когда активирован резонанс силы духа, снижение урона увеличивается до **2%**.",
 		"id": "buff_imitation_brush_level2_damageup"
 	},
+	"buff_imitation_dfish_level1": {
+		"name": "Хитрый ход",
+		"description": "Увеличивает конечный урон на **0%**.",
+		"id": "buff_imitation_dfish_level1"
+	},
+	"buff_imitation_dfish_level2": {
+		"name": "Стратегический ход",
+		"description": "Увеличивает конечный урон на **0%**.\r\nКогда в экипировке есть **Вольный поток** и в зоне находится только **1** цель, увеличивает урон от огня на **1%**. Если целей не меньше **2**, увеличивает урон от огня на **2%**.",
+		"id": "buff_imitation_dfish_level2"
+	},
 	"buff_thunder_ready_lv1": {
 		"name": "Электричество",
 		"description": "Электризует цель на **3** сек. и наносит ей урон, не позволяя использовать оружие.",
@@ -420,83 +430,83 @@
 		"id": "buff_tianlang_weaponcharged"
 	},
 	"buff_timerevert_addenergy": {
-		"name": "Разрядка Заряда",
+		"name": "Заряженный аккумулятор",
 		"description": "После использования навыка разрядки, немедленно получите заряд оружия, равный количеству зарядов Re-Tracker, умноженному на **6**/**8**/**10**.",
 		"id": "buff_timerevert_addenergy"
 	},
 	"buff_timerevert_attackdmgmaxhp": {
-		"name": "Атака",
-		"description": "Каждые 5 секунд следующая атака наносит дополнительный урон, равный количеству зарядов Re-Tracker, умноженному на **0.1%**/**0.15%**/**0.2%** от текущего ОЗ цели (срабатывает только при резонансе атаки).",
+		"name": "Аннигиляция",
+		"description": "Каждые **20** секунд следующая атака наносит дополнительный урон, равный количеству зарядов ретрекера, умноженному на **0.02%**/**0.03%**/**0.05%** от макс. ОЗ шефа (срабатывает только во время резонанса атаки).",
 		"id": "buff_timerevert_attackdmgmaxhp"
 	},
 	"buff_timerevert_bedmgdown": {
-		"name": "Снижение урона",
-		"description": "Снижает получаемый урон на количество зарядов Re-Tracker, умноженное на **0.5%**/**0.75%**/**1%**.",
+		"name": "Несгибаемость",
+		"description": "Снижает получаемый урон на (счетчик зарядов ретрекера × **0,5%**/**0,75%**/**1%**).",
 		"id": "buff_timerevert_bedmgdown"
 	},
 	"buff_timerevert_breakdefup": {
-		"name": "Вдребезги",
-		"description": "Усиливает раскол в размере (счетчик зарядов ретрекера × **1%**/**1,5%**/**2%**).",
+		"name": "Щитовой Хрясь!",
+		"description": "Увеличивает раскол на (счетчик зарядов ретрекера × **1%**/**1,5%**/**2%**).",
 		"id": "buff_timerevert_breakdefup"
 	},
 	"buff_timerevert_chargeup": {
-		"name": "Увеличитель заряда",
-		"description": "Увеличивает эффективность заряда, равную количеству зарядов Re-Tracker, умноженному на **0,5%**/**0,75%**/**1%**.",
+		"name": "Усилитель заряда",
+		"description": "Увеличивает эффективность заряда на (счетчик зарядов ретрекера × **0,5%**/**0,75%**/**1%**).",
 		"id": "buff_timerevert_chargeup"
 	},
 	"buff_timerevert_defenfaddshield": {
-		"name": "Сила духа",
-		"description": "При активации 1% получаемого урона превращается в щит, а атаки и навыки наносят дополнительный урон, равный **100%**/**200%**/**300%** от значения щита (срабатывает только во время резонанса силы духа).",
+		"name": "Атака щитом",
+		"description": "После активации **40%**/**60%**/**80%** получаемого урона в течение **5** секунд превращается в щит, минимум **5%** от макс. ОЗ Исполнителя. При наличии щита, атаки и навыки наносят дополнительный урон, равный **0.25%**/**0.5%**/**0.75%** от макс. ОЗ шефа. Может быть активирован только 1 раз каждые 10 секунд (активируется только во время резонанса силы духа).",
 		"id": "buff_timerevert_defenfaddshield"
 	},
 	"buff_timerevert_dmgup": {
-		"name": "Усиление атаки",
-		"description": "Увеличивает наносимый урон в соответствии с количеством зарядов Re-Tracker **0,5%**/**0,75%**/**1%**.",
+		"name": "Повысьте температуру",
+		"description": "Увеличивает наносимый урон на (счетчик зарядов ретрекера × **0,5%**/**0,75%**/**1%**).",
 		"id": "buff_timerevert_dmgup"
 	},
 	"buff_timerevert_dmgupinair": {
-		"name": "Усиление урона в воздухе",
-		"description": "Увеличивает урон в воздухе, равный количеству зарядов Re-Tracker, умноженному на **0.6%**/**1%**/**1.5%**.",
+		"name": "Ловкость",
+		"description": "Увеличивает урон в воздухе на (счетчик зарядов ретрекера × **0,6%**/**1%**/**1,5%**).",
 		"id": "buff_timerevert_dmgupinair"
 	},
 	"buff_timerevert_exdmg": {
-		"name": "Аннигиляция",
+		"name": "Суд",
 		"description": "Следующая атака расходует все заряды и дополнительно наносит урон, равный максимальному ОЗ цели, который равен количеству зарядов Re-Tracker, умноженному на **0.05%**/**0.075%**/**0.1%**.",
 		"id": "buff_timerevert_exdmg"
 	},
 	"buff_timerevert_gettimerevertstack": {
-		"name": "Быстрое повторное отслеживание",
-		"description": "Увеличивает количество накопленных зарядов от нанесения урона боссу с **1** до **2**.",
+		"name": "Стремительный сброс",
+		"description": "После активации дополнительно получайте **1** заряд Счетчика зарядов каждые **2** секунды.",
 		"id": "buff_timerevert_gettimerevertstack"
 	},
 	"buff_timerevert_healdmgaftertreatment": {
-		"name": "Посвящение",
-		"description": "После получения исцеления, следующая атака наносит дополнительный урон, равный макс. ОЗ цели, который равен количеству зарядов Re-Tracker, умноженному на **0.2%**/**0.3%**/**0.5%** (срабатывает только во время Резонанса посвящения).",
+		"name": "Облегчение",
+		"description": "После получения исцеления, следующая атака наносит дополнительный урон, равный макс. ОЗ цели, который равен количеству зарядов ретрекера, умноженному на **0.01%**/**0.02%**/**0.03%**. Может запускаться только 1 раз каждые 10 секунд (только во время резонанса посвящения).",
 		"id": "buff_timerevert_healdmgaftertreatment"
 	},
 	"buff_timerevert_healup": {
-		"name": "Лечение",
-		"description": "Увеличивает эффект лечения, равный количеству зарядов Re-Tracker, умноженному на **1%**/**1.5%**/**2%**.",
+		"name": "Сладкая Роса",
+		"description": "Увеличивает эффект лечения на **25%**/**50%**/**75%**.",
 		"id": "buff_timerevert_healup"
 	},
 	"buff_timerevert_ignoredef": {
-		"name": "Игнорирование сопротивления",
-		"description": "Нанесите атаку, игнорируя все сопротивления босса, равную количеству зарядов Re-Tracker, умноженному на **0.5%**/**0.75%**/**1%**.",
+		"name": "Презрение",
+		"description": "Увеличивает наносимый урон за счет игнорирования определенного процента сопротивления всему у босса. Увеличение равно (счетчик зарядов ретрекера × **0,5%**/**0,75%**/**1%**).",
 		"id": "buff_timerevert_ignoredef"
 	},
 	"buff_timerevert_periodshield": {
 		"name": "Регенерирующий щит",
-		"description": "Каждые **30** секунд получаете щит, значение которого равно макс. ОЗ Исполнителя, что равно количеству зарядов Re-Tracker, умноженному на **0.5%**/**1%**/**1.5%**.",
+		"description": "После активации получаете щит, обновляющийся каждые **30** секунд. Значение щита равно количеству зарядов ретрекера, умноженному на **0.5%**/**1%**/**1.5%** от макс. ОЗ Исполнителя.",
 		"id": "buff_timerevert_periodshield"
 	},
 	"buff_timerevert_reducecd": {
-		"name": "Сокращение времени перезарядки навыка",
+		"name": "Ужасная буря",
 		"description": "Сокращает базовую перезарядку навыков на **10%**/**20%**/**30%**.",
 		"id": "buff_timerevert_reducecd"
 	},
 	"buff_timerevert_suck": {
-		"name": "Вампиризм",
-		"description": "Восстанавливает ОЗ, равное количеству зарядов Re-Tracker, умноженному на **0,5%**/**0,75%**/**1%** от нанесенного урона.",
+		"name": "Поглощение ОЗ",
+		"description": "Восстановите ОЗ в размере **10%**/**20%**/**30%** в зависимости от нанесенного урона.",
 		"id": "buff_timerevert_suck"
 	},
 	"attack_skill1": {
@@ -821,12 +831,12 @@
 	},
 	"eventdes_boss044sp_common3": {
 		"name": "Абсолютная защита",
-		"description": "Когда здоровье Харры снижается до определенного процента, она переходит в оборонительный режим, не атакуя и получая неуязвимость. Во время ее периода неуязвимости в воздухе появляются энергетические ядра, которые медленно опускаются, при контакте с ними странники получают бафф, значительно увеличивающий их высоту прыжка и скорость, а также снижающий расход ВЫН. Энергетические ядра также вмешиваются в оборонительный режим Харры. Если энергетические ядра захватываются несколько раз, состояние неуязвимости Харры преждевременно заканчивается.",
+		"description": "Когда здоровье Харры падает до определенного процента, она уходит в оборону, прекращая атаки и получая неуязвимость. Во время действия неуязвимости в воздухе появляются энергетические ядра, которые постепенно падают на землю. Если странник коснется ядер до того, как те достигнут поверхности, он получит бафф, значительно увеличивающий высоту прыжка и скорость, а также снижающий расход выносливости. Энергетические ядра также влияют на Харру: если они попадут в нее несколько раз, Харра выйдет из состояния неуязвимости.",
 		"id": "eventdes_boss044sp_common3"
 	},
 	"eventdes_boss044sp_fire1": {
 		"name": "Жгучий",
-		"description": "Харра накладывает метки Пламени на окружающих странников, и чем ближе они к Харре, тем быстрее накапливаются метки. Странники с более чем 50 накопленными метками Пламени, получив урон от Харры, теряют все свои метки Пламени и получают дополнительный урон в зависимости от количества меток Пламени.",
+		"description": "Харра наносит метки Тлеющих углей окружающим Странникам, и чем ближе они к Харре, тем быстрее накапливаются метки, в размере до 100 штук. Странники с более чем 50 накопленными метками Тлеющих углей, получив урон от Харры, будут полностью очищены от меток и получат дополнительный урон в зависимости от количества меток Тлеющих углей.",
 		"id": "eventdes_boss044sp_fire1"
 	},
 	"eventdes_boss044sp_fire2": {
@@ -836,7 +846,7 @@
 	},
 	"eventdes_boss044sp_ice1": {
 		"name": "Скованный льдом",
-		"description": "Харра накладывает метки Мороза на окружающих Странников, и чем ближе они к Харре, тем быстрее накапливаются метки. Когда метки Мороза достигают максимума, целевой Странник замораживается. Если во время заморозки Харра наносит урон, статус заморозки снимается, но цель получает значительный урон от Ледяного прорыва 1 раз.",
+		"description": "Харра накладывает морозные метки на окружающих Странников, в размере до 25 стопок. Когда морозные метки достигают максимального количества, цель-Странник замораживается. Если Харра наносит урон во время заморозки, статус заморозки снимается, но цель получает значительный ледобойный урон 1 раз.",
 		"id": "eventdes_boss044sp_ice1"
 	},
 	"eventdes_boss044sp_ice2": {
@@ -846,7 +856,7 @@
 	},
 	"eventdes_boss044sp_phy1": {
 		"name": "Презрение",
-		"description": "Странники, находящиеся рядом с Харрой или получающие от нее урон, получат метки Угнетения. Каждая метка Угнетения уменьшает макс. ОЗ странника на 1%, вплоть до максимального уменьшения на 50%.",
+		"description": "Странники, находящиеся рядом с Харрой или получающие от нее урон, получат метки Угнетения, в размере до 50 штук. Каждая метка Угнетения уменьшает макс. ОЗ странника на 1%, до максимального уменьшения на 50%.",
 		"id": "eventdes_boss044sp_phy1"
 	},
 	"eventdes_boss044sp_phy2": {
@@ -856,7 +866,7 @@
 	},
 	"eventdes_boss044sp_super1": {
 		"name": "Увядание",
-		"description": "Каждый раз, когда Странник получает урон от Харры, на него также накладываются метки Временного Искажения. Когда эти метки достигают максимального количества, персонаж подвергается эффекту Иссушения, теряя ВЫН периодически на протяжении всей длительности.",
+		"description": "Каждый раз, когда Странник получает урон от Харра, на него накладываются метки Темпорального искажения, в размере до 10 штук. Когда эти метки достигают максимального количества, персонаж подвергается эффекту Увядания, теряя ВЫН периодически на протяжении всей длительности.",
 		"id": "eventdes_boss044sp_super1"
 	},
 	"eventdes_boss044sp_super2": {
@@ -865,8 +875,8 @@
 		"id": "eventdes_boss044sp_super2"
 	},
 	"eventdes_boss044sp_thu1": {
-		"name": "Ярость Грома",
-		"description": "Во время боя Харра периодически вызывает удары молний, поражающие случайные позиции и наносящие урон от электричества целям в зоне поражения. Кроме того, странники, находящиеся рядом с Харрой, получают метки наэлектризованности. Каждый слой метки усиливает урон от электричества, получаемый странником.",
+		"name": "Круг бури",
+		"description": "Во время боя Харра периодически вызывает удары молнии. Когда у цели, пораженной молнией, меньше 10 зарядов наэлектризования, она получает урон от электричества, основанный на количестве зарядов наэлектризования, а затем получает 1 метку наэлектризования. После достижения 10 зарядов наэлектризования, цель, пораженная молнией, пронзается высоким напряжением, получая смертельный урон, равный 120% от Макс. ОЗ.",
 		"id": "eventdes_boss044sp_thu1"
 	},
 	"eventdes_boss044sp_thu2": {
@@ -1225,15 +1235,18 @@
 		"id": "buff_spear_stun"
 	},
 	"buff_eleweakpoint_bigice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigice"
 	},
 	"buff_eleweakpoint_bigfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfire"
 	},
 	"buff_eleweakpoint_bigthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigthunder"
 	},
 	"buff_artifact11_getweapon": {
@@ -1956,6 +1969,16 @@
 		"description": "Заметно увеличивает получаемый урон от электричества.",
 		"id": "buff_borderwar_weakthunder"
 	},
+	"buff_boss_002_4": {
+		"name": "Токсичай",
+		"description": "Лечение, применяемое странником, будет преобразовано в эквивалентное количество урона.",
+		"id": "buff_boss_002_4"
+	},
+	"buff_boss_002_5_ignore": {
+		"name": "Хрупкость",
+		"description": "Во время длительности, гипертело странника отключено и не может войти в состояние неуязвимости.",
+		"id": "buff_boss_002_5_ignore"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Сбой гипертела",
 		"description": "Странники не могут предоставить себе состояние гипертела.",
@@ -1963,7 +1986,7 @@
 	},
 	"buff_boss_044_sp_fire": {
 		"name": "Уголь",
-		"description": "Странники, находящиеся рядом с мутировавшим Харра, получают статус \"Тлеющий\", который, достигнув определенного количества экз., взрывается от атак Харра, нанося урон в зависимости от макс. ОЗ целевого странника и количества экз.",
+		"description": "Максимальное количество стеков: 100. Странники с более чем 50 стеками меток Тлеющих углей, получив урон от Харра, потеряют все свои метки Тлеющих углей и получат дополнительный урон в зависимости от количества стеков меток Тлеющих углей.",
 		"id": "buff_boss_044_sp_fire"
 	},
 	"buff_boss_044_sp_fire_ignore": {
@@ -1973,7 +1996,7 @@
 	},
 	"buff_boss_044_sp_ice_frozen": {
 		"name": "Заморозка",
-		"description": "Цель, находящаяся в замороженном состоянии из-за Мороза, получает дополнительный урон от Ледокола при атаке Харры.",
+		"description": "Состояние заморозки, вызванное Морозом. Странники в этом состоянии получают дополнительный ледобойный урон от атаки Харры.",
 		"id": "buff_boss_044_sp_ice_frozen"
 	},
 	"buff_boss_044_sp_ice_ignore": {
@@ -1983,7 +2006,7 @@
 	},
 	"buff_boss_044_sp_ice_stack": {
 		"name": "Мороз",
-		"description": "Странники, находящиеся рядом с мутировавшим Харра, получают эффект Мороз, который, достигнув определенного количества стаков, замораживает странника и заставляет его получать дополнительный урон от Ледяного прорыва при атаке Харра.",
+		"description": "Максимальное количество стеков: 25. Когда метки Мороза достигают максимума, цель - Странник замораживается. Если во время заморозки цель получает урон от Харры, статус заморозки снимается, но цель получает значительный ледобойный урон 1 раз.",
 		"id": "buff_boss_044_sp_ice_stack"
 	},
 	"buff_boss_044_sp_phy_ignore": {
@@ -1993,7 +2016,7 @@
 	},
 	"buff_boss_044_sp_phy_stack": {
 		"name": "Угнетение",
-		"description": "Каждый экземпляр уменьшает макс. ОЗ странника на 1%.",
+		"description": "Максимум стеков: 50. Каждый стек уменьшает макс. ОЗ странника на 1%.",
 		"id": "buff_boss_044_sp_phy_stack"
 	},
 	"buff_boss_044_sp_reward_energyconsumedown": {
@@ -2023,12 +2046,12 @@
 	},
 	"buff_boss_044_sp_superpower_stack": {
 		"name": "Темпоральное искажение",
-		"description": "Атаки Харры накладывают на цель Временное Искажение, которое, достигнув определенного количества экземпляров, применяет Иссушение к цели.",
+		"description": "Темпоральное искажение накапливается до 10 раз. При достижении максимального количества экземпляров, на цель будет наложено Увядание.",
 		"id": "buff_boss_044_sp_superpower_stack"
 	},
 	"buff_boss_044_sp_thu_stack": {
 		"name": "Электризация",
-		"description": "Каждый экземпляр наэлектризования увеличивает урон от электричества, который получает странник.",
+		"description": "Макс. количество экземпляров: 10. Если при ударе молнии у странника менее 10 экземпляров наэлектризованности, он получает небольшой урон в зависимости от количества экземпляров и дополнительный экземпляр. По достижении 10 экземпляров наэлектризованности странника пронзает удар током, наносящий смертельный урон.",
 		"id": "buff_boss_044_sp_thu_stack"
 	},
 	"buff_boss_044_thu_ignore": {
@@ -2102,15 +2125,18 @@
 		"id": "buff_boss_hum_042_5"
 	},
 	"buff_eleweakpoint_smallfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfire"
 	},
 	"buff_eleweakpoint_smallice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallice"
 	},
 	"buff_eleweakpoint_smallthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallthunder"
 	},
 	"buff_emby_atkupdefdown": {
@@ -2189,42 +2215,52 @@
 		"id": "buff_evadeaddeffect_level2"
 	},
 	"buff_evajdfw_breakdefup": {
+		"name": "",
 		"description": "Повышает раскол брони на 20%.",
 		"id": "buff_evajdfw_breakdefup"
 	},
 	"buff_evajdfw_critup": {
+		"name": "",
 		"description": "Повышает шанс крит. удара брони на 5%.",
 		"id": "buff_evajdfw_critup"
 	},
 	"buff_evajdfw_finbedamedup": {
+		"name": "",
 		"description": "5% снижение урона брони",
 		"id": "buff_evajdfw_finbedamedup"
 	},
 	"buff_evajdfw_findamup": {
+		"name": "",
 		"description": "5% усиление урона брони",
 		"id": "buff_evajdfw_findamup"
 	},
 	"buff_evajdfw_monsterhpdownandatkup": {
+		"name": "",
 		"description": "ОЗ врагов понижаются на 20%. АТК врагов повышается на 10%.",
 		"id": "buff_evajdfw_monsterhpdownandatkup"
 	},
 	"buff_evajdfw_monsterhpupandatkdown": {
+		"name": "",
 		"description": "ОЗ врагов увеличиваются на 20%. АТК врагов снижается на 20%.",
 		"id": "buff_evajdfw_monsterhpupandatkdown"
 	},
 	"buff_evajdfw_skill01cooldowncut": {
-		"description": "Снижает перезарядку Вызова подкреплений-104 на 2сек.",
+		"name": "",
+		"description": "Сокращает перезарядку Запроса поддержки 104 на 2сек.",
 		"id": "buff_evajdfw_skill01cooldowncut"
 	},
 	"buff_evajdfw_skill02cooldowncut": {
+		"name": "",
 		"description": "Снижает перезарядку Стойки стража на 2сек.",
 		"id": "buff_evajdfw_skill02cooldowncut"
 	},
 	"buff_evajdfw_skilldefendshieldex": {
+		"name": "",
 		"description": "После успешной защиты, мех получает щит, равный 5% от ОЗ, на 5 сек. Перезарядка: 10 сек.",
 		"id": "buff_evajdfw_skilldefendshieldex"
 	},
 	"buff_evajdfw_skilldefendup": {
+		"name": "",
 		"description": "Использование Щита силы духа увеличивает невосприимчивость к урону на 10%.",
 		"id": "buff_evajdfw_skilldefendup"
 	},
@@ -2304,32 +2340,32 @@
 		"id": "buff_evapdzw_defendlevel6real"
 	},
 	"buff_evapdzw_dpslevel1add": {
-		"name": "Запрос на резервирование-104",
-		"description": "Откройте навык \"Запасной вызов-104\". При использовании навыка вызывается авиаудар по местоположению цели, нанося урон, равный **0%** от АТК странника. Перезарядка: **1** сек.",
+		"name": "Запрос поддержки 104",
+		"description": "Откройте навык \"Запрос поддержки 104\". При использовании навыка вызывается авиаудар по местоположению цели, нанося урон, равный **0%** от АТК странника. Перезарядка: **1** сек.",
 		"id": "buff_evapdzw_dpslevel1add"
 	},
 	"buff_evapdzw_dpslevel2add": {
-		"name": "Запрос на резервирование-104",
+		"name": "Запрос поддержки 104",
 		"description": "При использовании навыка вызывается авиаудар по местоположению цели, нанося урон, равный {0% от АТК странника. Перезарядка: {1 секунд. **Дополнительно увеличивает урон от навыка на {2%**.",
 		"id": "buff_evapdzw_dpslevel2add"
 	},
 	"buff_evapdzw_dpslevel3add": {
-		"name": "Запрос на резервирование-104",
+		"name": "Запрос поддержки 104",
 		"description": "При использовании навыка вызывается авиаудар по местоположению цели, нанося урон, равный {0% от АТК странника. Перезарядка: {1 секунд. Кроме того, увеличивает урон от навыка на {2%. **При управлении мехой получает постоянное усиление урона на {3%**.",
 		"id": "buff_evapdzw_dpslevel3add"
 	},
 	"buff_evapdzw_dpslevel4add": {
-		"name": "Запрос на резервирование-104",
+		"name": "Запрос поддержки 104",
 		"description": "При использовании навыка вызывается авиаудар по местоположению цели, нанося урон, равный {0% от АТК странника. Перезарядка: {1 секунд. Кроме того, увеличивает урон от навыка на {2%. **Навык также накладывает на цель эффект горения на 3 секунды при попадании, нанося урон, равный {4% от АТК странника каждую секунду**. При управлении мехой получает постоянное дополнительное усиление урона на {3%.",
 		"id": "buff_evapdzw_dpslevel4add"
 	},
 	"buff_evapdzw_dpslevel5add": {
-		"name": "Запрос на резервирование-104",
+		"name": "Запрос поддержки 104",
 		"description": "При использовании навыка, вызывает авиаудар по местоположению цели, нанося урон, равный {0% от АТК странника. Перезарядка: {1 секунд. Дополнительно увеличивает урон от навыка на {2%. Навык также накладывает на цель эффект горения на **5** секунд при попадании, нанося урон, равный {4% от АТК странника каждую секунду. При управлении мехой получает постоянное дополнительное усиление урона на {3%.",
 		"id": "buff_evapdzw_dpslevel5add"
 	},
 	"buff_evapdzw_dpslevel6add": {
-		"name": "Запрос на резервирование-104",
+		"name": "Запрос поддержки 104",
 		"description": "При использовании навыка, вызывает авиаудар по местоположению цели, нанося урон, равный {0% от АТК странника. Перезарядка: {1 секунд. **Накопление 3 обычных атак сокращает время перезарядки навыка на {5 секунд**. Кроме того, увеличивает урон от навыка на {2%. Навык также накладывает на цель эффект горения на **5** секунд при попадании, нанося урон, равный {4% от АТК странника каждую секунду. При управлении мехой получает постоянное дополнительное усиление урона на {3%.",
 		"id": "buff_evapdzw_dpslevel6add"
 	},
@@ -2375,7 +2411,7 @@
 	},
 	"buff_hammerice_sr_level0_1": {
 		"name": "Ярость I",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerice_sr_level0_1"
 	},
 	"buff_hammerice_sr_level0_2": {
@@ -2390,7 +2426,7 @@
 	},
 	"buff_hammerthu_ssr_level0_1": {
 		"name": "Ярость I",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerthu_ssr_level0_1"
 	},
 	"buff_hammerthu_ssr_level0_4": {
@@ -2404,11 +2440,13 @@
 		"id": "buff_hammerthu_ssr_level0_5"
 	},
 	"buff_eleweakpoint_bigfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfhy"
 	},
 	"buff_eleweakpoint_smallfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfhy"
 	},
 	"buff_artifactssr006_display": {
@@ -2482,13 +2520,19 @@
 		"id": "wormhole_buff_smallthunder_phy"
 	},
 	"buff_cannonice_sr_level5_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_cannonice_sr_level5_1"
 	},
 	"buff_void_player_1001": {
 		"name": "Желание",
 		"description": "При получении 3 экз. любого особого эффекта увеличивает ОЗ и АТК всех товарищей по команде на **25%**. Каждый из эффектов может вызвать этот эффект только один раз.",
 		"id": "buff_void_player_1001"
+	},
+	"buff_wantedcriminal": {
+		"name": "Разыскивается!",
+		"description": "Вас разыскивают за совершение преступления. Спрячьтесь в безопасном месте, чтобы избежать ареста!",
+		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
 		"name": "Крепкий танк I",
@@ -4601,132 +4645,163 @@
 		"id": "wormhole_monsterbuff_019"
 	},
 	"hookclone_buff_immenergy": {
+		"name": "",
 		"description": "**Невосприимчивость к энергетическому урону**",
 		"id": "hookclone_buff_immenergy"
 	},
 	"hookclone_buff_immfire": {
+		"name": "",
 		"description": "**Невосприимчивость к урону огнем**",
 		"id": "hookclone_buff_immfire"
 	},
 	"hookclone_buff_immfirearms": {
+		"name": "",
 		"description": "**Невосприимчивость к огнестрельному урону**",
 		"id": "hookclone_buff_immfirearms"
 	},
 	"hookclone_buff_immice": {
+		"name": "",
 		"description": "**Невосприимчивость к урону холодом**",
 		"id": "hookclone_buff_immice"
 	},
 	"hookclone_buff_immphy": {
+		"name": "",
 		"description": "**Невосприимчивость к физическому урону**",
 		"id": "hookclone_buff_immphy"
 	},
 	"hookclone_buff_immpuncture": {
+		"name": "",
 		"description": "**Невосприимчивость к пробивающему урону**",
 		"id": "hookclone_buff_immpuncture"
 	},
 	"hookclone_buff_immsharp": {
+		"name": "",
 		"description": "**Невосприимчивость к урону от короткого клинка**",
 		"id": "hookclone_buff_immsharp"
 	},
 	"hookclone_buff_immstrength": {
+		"name": "",
 		"description": "**Невосприимчивость к урону от тяжелого оружия**",
 		"id": "hookclone_buff_immstrength"
 	},
 	"hookclone_buff_immthunder": {
+		"name": "",
 		"description": "**Невосприимчивость к урону электричеством**",
 		"id": "hookclone_buff_immthunder"
 	},
 	"hookclone_buff_smallenergy": {
+		"name": "",
 		"description": "**50% сопротивление энергетическому урону**",
 		"id": "hookclone_buff_smallenergy"
 	},
 	"hookclone_buff_resistanceenergy": {
+		"name": "",
 		"description": "**50% сопротивление энергетическому урону**",
 		"id": "hookclone_buff_resistanceenergy"
 	},
 	"hookclone_buff_smallfire": {
+		"name": "",
 		"description": "**50% сопротивление урону огнем**",
 		"id": "hookclone_buff_smallfire"
 	},
 	"hookclone_buff_resistancefire": {
+		"name": "",
 		"description": "**50% сопротивление урону огнем**",
 		"id": "hookclone_buff_resistancefire"
 	},
 	"hookclone_buff_smallfirearms": {
+		"name": "",
 		"description": "**50% сопротивление урону от огнестрельного оружия**",
 		"id": "hookclone_buff_smallfirearms"
 	},
 	"hookclone_buff_resistancefirearms": {
+		"name": "",
 		"description": "**50% сопротивление урону от огнестрельного оружия**",
 		"id": "hookclone_buff_resistancefirearms"
 	},
 	"hookclone_buff_smallice": {
+		"name": "",
 		"description": "**50% сопротивление урону холодом**",
 		"id": "hookclone_buff_smallice"
 	},
 	"hookclone_buff_resistanceice": {
+		"name": "",
 		"description": "**50% сопротивление урону холодом**",
 		"id": "hookclone_buff_resistanceice"
 	},
 	"hookclone_buff_smallphy": {
+		"name": "",
 		"description": "**50% сопротивление физическому урону**",
 		"id": "hookclone_buff_smallphy"
 	},
 	"hookclone_buff_resistancephy": {
+		"name": "",
 		"description": "**50% сопротивление физическому урону**",
 		"id": "hookclone_buff_resistancephy"
 	},
 	"hookclone_buff_smallpuncture": {
+		"name": "",
 		"description": "**50% сопротивление пробивающему урону**",
 		"id": "hookclone_buff_smallpuncture"
 	},
 	"hookclone_buff_resistancepuncture": {
+		"name": "",
 		"description": "**50% сопротивление пробивающему урону**",
 		"id": "hookclone_buff_resistancepuncture"
 	},
 	"hookclone_buff_smallsharp": {
+		"name": "",
 		"description": "**50% сопротивление урону от короткого клинка**",
 		"id": "hookclone_buff_smallsharp"
 	},
 	"hookclone_buff_resistancesharp": {
+		"name": "",
 		"description": "**50% сопротивление урону от короткого клинка**",
 		"id": "hookclone_buff_resistancesharp"
 	},
 	"hookclone_buff_smallstrength": {
+		"name": "",
 		"description": "**50% сопротивление урону от тяжелого оружия**",
 		"id": "hookclone_buff_smallstrength"
 	},
 	"hookclone_buff_resistancestrength": {
+		"name": "",
 		"description": "**50% сопротивление урону от тяжелого оружия**",
 		"id": "hookclone_buff_resistancestrength"
 	},
 	"hookclone_buff_smallthunder": {
+		"name": "",
 		"description": "**50% сопротивление урону электричеством**",
 		"id": "hookclone_buff_smallthunder"
 	},
 	"hookclone_buff_resistancethunder": {
+		"name": "",
 		"description": "**50% сопротивление урону электричеством**",
 		"id": "hookclone_buff_resistancethunder"
 	},
 	"hookclone_maxhp-20": {
+		"name": "",
 		"description": "**ОЗ врага -20%**",
 		"id": "hookclone_maxhp-20"
 	},
 	"hookclone_maxhp100": {
+		"name": "",
 		"description": "**ОЗ врага +100%**",
 		"id": "hookclone_maxhp100"
 	},
 	"hookclone_maxhp20": {
+		"name": "",
 		"description": "**ОЗ врага +20%**",
 		"id": "hookclone_maxhp20"
 	},
 	"hookclone_maxhp50": {
+		"name": "",
 		"description": "**ОЗ врага +50%**",
 		"id": "hookclone_maxhp50"
 	},
 	"buff_cubefire_ssr_level2def": {
 		"name": "Каждый экземпляр уменьшает получаемый урон на 1%. Эффект накапливается до 15 раз.",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_cubefire_ssr_level2def"
 	},
 	"buff_cubefire_ssr_level4dam": {
@@ -5155,7 +5230,8 @@
 		"id": "buff_frozen_3s"
 	},
 	"buff_artifactssr006_stun": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_artifactssr006_stun"
 	},
 	"buff_sword_001_ssr_damageup": {
@@ -5638,6 +5714,41 @@
 		"description": "При наличии **9** предметов оружия электричества: после использования навыка дает бафф наэлектризованности на **10** сек. В состоянии наэлектризованности обычная атака странника может вызывать цепную молнию **каждую** секунду, нанося урон от электричества в размере **800%** от АТК, на который не влияет усиление или снижение урона. Цепная молния отскакивает от врагов до **5** раз. Повторное получение наэлектризованности обновляет длительность этого эффекта.",
 		"id": "buff_autochess_thunderlink_3"
 	},
+	"buff_ayanamirei_ice_ssr_resonance": {
+		"name": "Резонанс холода",
+		"description": "**Резонанс холода**: увеличивает АТК холодом на **15%** и сопротивление холоду на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса холода или реакции холода, при этом резонанс холода берет верх.",
+		"id": "buff_ayanamirei_ice_ssr_resonance"
+	},
+	"buff_ayanamirei_level1": {
+		"name": "Взлет",
+		"description": "Увеличивает конечный урон на **12%**.",
+		"id": "buff_ayanamirei_level1"
+	},
+	"buff_ayanamirei_level2": {
+		"name": "Страж",
+		"description": "Увеличивает конечный урон на **18%**. Если активен **резонанс атаки**, повышает урон от электричества на **8%**. Если активен **любой резонанс, кроме атаки**, усиливает эффект блока **Заряженных выстрелов** до **0%** от макс.ОЗ странника и увеличивает длительность действия **замедляющего магнитного поля** **Скорострельного лука** и **Атаки с воздуха** до **4**сек.",
+		"id": "buff_ayanamirei_level2"
+	},
+	"buff_ayanamirei_thunder_resonance": {
+		"name": "Резонанс электричества",
+		"description": "**Резонанс электричества**: увеличивает АТК электричеством на **15%** и сопротивление электричеству на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия электричества. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса электричества или реакции электричества, при этом резонанс электричества берет верх.",
+		"id": "buff_ayanamirei_thunder_resonance"
+	},
+	"buff_ayanamireibedamagedown": {
+		"name": "Блокирующий барьер",
+		"description": "Блокирует урон, не превышающий **10%** от макс.ОЗ странника, на **15**сек. Странник может иметь не более 3 блокирующих барьеров одновременно.",
+		"id": "buff_ayanamireibedamagedown"
+	},
+	"buff_ayanamireibedamagedown_imitationfeature": {
+		"name": "Блокирующий барьер",
+		"description": "Блокирует урон, не превышающий **12%** от макс.ОЗ странника, на **15**сек. Странник может иметь не более 3 блокирующих барьеров одновременно.",
+		"id": "buff_ayanamireibedamagedown_imitationfeature"
+	},
+	"buff_ayanamireienergystate_damageup_level6": {
+		"name": "Усиление урона",
+		"description": "Увеличивает урон от электричества на **0%** и урон от холода на **1%** на **2**сек.",
+		"id": "buff_ayanamireienergystate_damageup_level6"
+	},
 	"buff_professioncommon": {
 		"name": "Резонанс: баланс",
 		"description": "Увеличивает конечный урон и базовое снижение урона на **5%**, усиливает эффекты раскола и лечения на **20%**. В командной игре конечный урон увеличивается на **40%**, а базовое снижение урона— на **15%**.",
@@ -6039,6 +6150,7 @@
 		"id": "buff_cannonice_sr_level3_damage"
 	},
 	"buff_dsthu_ssr_level6_1": {
+		"name": "",
 		"description": "Увеличивает получаемый от электричества урон на 20%.",
 		"id": "buff_dsthu_ssr_level6_1"
 	},
@@ -6088,10 +6200,12 @@
 		"id": "buff_matrix_n_2"
 	},
 	"buff_matrix_n_3": {
+		"name": "",
 		"description": "Увеличивает наносимый физический урон на **4%**.",
 		"id": "buff_matrix_n_3"
 	},
 	"buff_matrix_n_4": {
+		"name": "",
 		"description": "Увеличивает наносимый урон электричеством на **4%**.",
 		"id": "buff_matrix_n_4"
 	},
@@ -6116,6 +6230,7 @@
 		"id": "buff_matrix_r_4_level1"
 	},
 	"buff_matrix_r_5_level1": {
+		"name": "",
 		"description": "Увеличивает урон, наносимый огнестрельным оружием, на **6%**.",
 		"id": "buff_matrix_r_5_level1"
 	},
@@ -6250,14 +6365,17 @@
 		"id": "buff_matrix_sr_8_level3"
 	},
 	"buff_matrix_sr_9_level1": {
+		"name": "",
 		"description": "Дает **30%** вампиризма во время действия Фантазии и восстанавливает ОЗ до **60%** от АТК каждые 0,5 сек.",
 		"id": "buff_matrix_sr_9_level1"
 	},
 	"buff_matrix_sr_9_level2": {
+		"name": "",
 		"description": "Дает **36%** вампиризма во время действия Фантазии и восстанавливает ОЗ до **69%** от АТК каждые 0,5 сек.",
 		"id": "buff_matrix_sr_9_level2"
 	},
 	"buff_matrix_sr_9_level3": {
+		"name": "",
 		"description": "Дает **39%** вампиризма во время действия Фантазии и восстанавливает ОЗ до **73,5%** от АТК каждые 0,5 сек.",
 		"id": "buff_matrix_sr_9_level3"
 	},
@@ -6277,14 +6395,17 @@
 		"id": "buff_matrix_sr_10_level3"
 	},
 	"buff_matrix_sr_11_level1": {
+		"name": "",
 		"description": "Увеличивает крит. урон по целям с менее чем **60%** ОЗ на **35%**.",
 		"id": "buff_matrix_sr_11_level1"
 	},
 	"buff_matrix_sr_11_level2": {
+		"name": "",
 		"description": "Увеличивает крит. урон по целям с менее чем **60%** ОЗ на **44%**.",
 		"id": "buff_matrix_sr_11_level2"
 	},
 	"buff_matrix_sr_11_level3": {
+		"name": "",
 		"description": "Увеличивает крит. урон по целям с менее чем **60%** ОЗ на **52,5%**.",
 		"id": "buff_matrix_sr_11_level3"
 	},
@@ -6874,7 +6995,8 @@
 		"id": "ge_artifactr002_boom_level7"
 	},
 	"ge_commondeathbox": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "ge_commondeathbox"
 	},
 	"buff_matrix_ssr_1_level1_1": {
@@ -6993,7 +7115,8 @@
 		"id": "buff_gve_atk_level4"
 	},
 	"buff_gve_bedamage_dowm25": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_bedamage_dowm25"
 	},
 	"buff_gve_bedamageup_fire_l1": {
@@ -7187,11 +7310,13 @@
 		"id": "buff_gve_evadeattack_damup_level3"
 	},
 	"buff_gve_expup": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_expup"
 	},
 	"buff_gve_extradamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_extradamage_level1"
 	},
 	"buff_gve_finaldamagedown_20per": {
@@ -7205,11 +7330,13 @@
 		"id": "buff_gve_finaldamageup_20per"
 	},
 	"buff_gve_fireatk_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_fireatk_level1"
 	},
 	"buff_gve_firedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_firedamage_level1"
 	},
 	"buff_gve_firedamagelevel1": {
@@ -7268,15 +7395,18 @@
 		"id": "buff_gve_firstaid"
 	},
 	"buff_gve_halo": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_halo"
 	},
 	"buff_gve_iceatk_level1": {
+		"name": "",
 		"description": "Увеличивает АТК холодом на 15%.",
 		"id": "buff_gve_iceatk_level1"
 	},
 	"buff_gve_icedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_icedamage_level1"
 	},
 	"buff_gve_icedamagelevel1": {
@@ -7370,11 +7500,13 @@
 		"id": "buff_gve_immdamage_thunder"
 	},
 	"buff_gve_immunedamagecd_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_immunedamagecd_level1"
 	},
 	"buff_gve_jinji_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_jinji_level1"
 	},
 	"buff_gve_kill_l1": {
@@ -7393,7 +7525,8 @@
 		"id": "buff_gve_kill_l3"
 	},
 	"buff_gve_kill_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_kill_level1"
 	},
 	"buff_gve_linktime_l1": {
@@ -7437,11 +7570,13 @@
 		"id": "buff_gve_miansi_level2"
 	},
 	"buff_gve_phyatk_level1": {
+		"name": "",
 		"description": "Увеличивает физическую АТК на 15%.",
 		"id": "buff_gve_phyatk_level1"
 	},
 	"buff_gve_phydamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_phydamage_level1"
 	},
 	"buff_gve_phydamagelevel1": {
@@ -7695,12 +7830,204 @@
 		"id": "buff_gve_thuextradam_level3"
 	},
 	"buff_gve_thunderatk_level1": {
+		"name": "",
 		"description": "Увеличивает АТК электричеством на 15%.",
 		"id": "buff_gve_thunderatk_level1"
 	},
 	"buff_gve_thunderdamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_thunderdamage_level1"
+	},
+	"buff_gwzj_battlefield1": {
+		"name": "Бафф Критической бездны",
+		"description": "Сокращает время перезарядки навыка на 80%.",
+		"id": "buff_gwzj_battlefield1"
+	},
+	"buff_gwzj_levyclone3": {
+		"name": "Рейд",
+		"description": "Увеличивает здоровье странника на 100%, сопротивление на 50% и предоставляет невосприимчивость к урону на 60%.",
+		"id": "buff_gwzj_levyclone3"
+	},
+	"buff_gwzj_ordinal1_level1": {
+		"name": "Чертеж Федерации Норнса",
+		"description": "Увеличивает шанс появления Супер Скрытого Босса на 20%.",
+		"id": "buff_gwzj_ordinal1_level1"
+	},
+	"buff_gwzj_ordinal1_level2": {
+		"name": "Чертеж Федерации Норнса",
+		"description": "Увеличивает шанс появления Супер Скрытого Босса на 20%.",
+		"id": "buff_gwzj_ordinal1_level2"
+	},
+	"buff_gwzj_ordinal1_level3": {
+		"name": "Чертеж Федерации Норнса",
+		"description": "Увеличивает шанс появления Супер Скрытого Босса на 60%.",
+		"id": "buff_gwzj_ordinal1_level3"
+	},
+	"buff_gwzj_ordinal10_level1": {
+		"name": "Чертеж «Шудер Электроникс»",
+		"description": "Получите 10% шанса крит. удара.",
+		"id": "buff_gwzj_ordinal10_level1"
+	},
+	"buff_gwzj_ordinal10_level2": {
+		"name": "Чертеж «Шудер Электроникс»",
+		"description": "Увеличивает критический урон на 20%.",
+		"id": "buff_gwzj_ordinal10_level2"
+	},
+	"buff_gwzj_ordinal10_level3": {
+		"name": "Чертеж «Шудер Электроникс»",
+		"description": "Увеличивает крит. урон на 40%.",
+		"id": "buff_gwzj_ordinal10_level3"
+	},
+	"buff_gwzj_ordinal2_level1": {
+		"name": "Чертеж гуманизма будущего",
+		"description": "Увеличивает конечный урон на 10%.",
+		"id": "buff_gwzj_ordinal2_level1"
+	},
+	"buff_gwzj_ordinal2_level2": {
+		"name": "Чертеж гуманизма будущего",
+		"description": "Получить гипертело.",
+		"id": "buff_gwzj_ordinal2_level2"
+	},
+	"buff_gwzj_ordinal2_level3": {
+		"name": "Чертеж гуманизма будущего",
+		"description": "Увеличивает конечный урон на 12%.",
+		"id": "buff_gwzj_ordinal2_level3"
+	},
+	"buff_gwzj_ordinal3_level1": {
+		"name": "Чертеж первозданной Аиды",
+		"description": "+10% к АТК.",
+		"id": "buff_gwzj_ordinal3_level1"
+	},
+	"buff_gwzj_ordinal3_level2": {
+		"name": "Чертеж первозданной Аиды",
+		"description": "Атаки наносят дополнительный урон в размере 0,4% от макс. ОЗ цели. Перезарядка: 5 сек.",
+		"id": "buff_gwzj_ordinal3_level2"
+	},
+	"buff_gwzj_ordinal3_level3": {
+		"name": "Чертеж первозданной Аиды",
+		"description": "Атаки наносят дополнительный урон в размере 0,6% от макс. ОЗ цели. Перезарядка: 5 сек.",
+		"id": "buff_gwzj_ordinal3_level3"
+	},
+	"buff_gwzj_ordinal4_level1": {
+		"name": "Чертеж строительства «Девять Ковчегов»",
+		"description": "Увеличивает здоровье странника на 16%.",
+		"id": "buff_gwzj_ordinal4_level1"
+	},
+	"buff_gwzj_ordinal4_level2": {
+		"name": "Чертеж строительства «Девять Ковчегов»",
+		"description": "Странник восстанавливает 20% от потерянного ОЗ каждые 5 секунд.",
+		"id": "buff_gwzj_ordinal4_level2"
+	},
+	"buff_gwzj_ordinal4_level3": {
+		"name": "Чертеж строительства «Девять Ковчегов»",
+		"description": "Странник восстанавливает 30% потерянного ОЗ каждые 5 секунд.",
+		"id": "buff_gwzj_ordinal4_level3"
+	},
+	"buff_gwzj_ordinal5_level1": {
+		"name": "Чертеж Асперии",
+		"description": "Получите 250 ед. заряда оружия после использования навыка разрядки.",
+		"id": "buff_gwzj_ordinal5_level1"
+	},
+	"buff_gwzj_ordinal5_level2": {
+		"name": "Чертеж Асперии",
+		"description": "Получаете 1000 ед. заряда оружия при входе в бой.",
+		"id": "buff_gwzj_ordinal5_level2"
+	},
+	"buff_gwzj_ordinal5_level3": {
+		"name": "Чертеж Асперии",
+		"description": "После использования навыка разрядки увеличивает конечный урон странника на 12% на 10 секунд.",
+		"id": "buff_gwzj_ordinal5_level3"
+	},
+	"buff_gwzj_ordinal6_level1": {
+		"name": "Чертеж Вычислительного Ковчега",
+		"description": "Снижает АТК всех целей в пределах 8 метров на 10%.",
+		"id": "buff_gwzj_ordinal6_level1"
+	},
+	"buff_gwzj_ordinal6_level2": {
+		"name": "Чертеж Вычислительного Ковчега",
+		"description": "Получаете щит, равный 20% от макс. ОЗ, каждые 5 секунд.",
+		"id": "buff_gwzj_ordinal6_level2"
+	},
+	"buff_gwzj_ordinal6_level3": {
+		"name": "Чертеж Вычислительного Ковчега",
+		"description": "Когда у странника активен щит, конечный урон увеличивается на 12%.",
+		"id": "buff_gwzj_ordinal6_level3"
+	},
+	"buff_gwzj_ordinal7_level1": {
+		"name": "Чертеж Бюро общественного порядка",
+		"description": "Увеличивает сопротивление всему на 20%.",
+		"id": "buff_gwzj_ordinal7_level1"
+	},
+	"buff_gwzj_ordinal7_level2": {
+		"name": "Чертеж Бюро общественного порядка",
+		"description": "Снижает урон на 20%.",
+		"id": "buff_gwzj_ordinal7_level2"
+	},
+	"buff_gwzj_ordinal7_level3": {
+		"name": "Чертеж Бюро общественного порядка",
+		"description": "Снижает урон на 30%.",
+		"id": "buff_gwzj_ordinal7_level3"
+	},
+	"buff_gwzj_ordinal8_level1": {
+		"name": "Чертеж вооруженных сил",
+		"description": "Увеличивает эффекты лечения на 20%.",
+		"id": "buff_gwzj_ordinal8_level1"
+	},
+	"buff_gwzj_ordinal8_level2": {
+		"name": "Чертеж вооруженных сил",
+		"description": "После получения исцеления увеличивает конечный урон на 6% на 5 сек.",
+		"id": "buff_gwzj_ordinal8_level2"
+	},
+	"buff_gwzj_ordinal8_level3": {
+		"name": "Чертеж вооруженных сил",
+		"description": "После получения исцеления увеличивает конечный урон на 12% на 5 секунд.",
+		"id": "buff_gwzj_ordinal8_level3"
+	},
+	"buff_gwzj_ordinal9_level1": {
+		"name": "Чертеж «Аврора Индастриз»",
+		"description": "Повышает раскол на 30%.",
+		"id": "buff_gwzj_ordinal9_level1"
+	},
+	"buff_gwzj_ordinal9_level2": {
+		"name": "Чертеж «Аврора Индастриз»",
+		"description": "Увеличивает конечный урон на 15% по целям с активным Щитом.",
+		"id": "buff_gwzj_ordinal9_level2"
+	},
+	"buff_gwzj_ordinal9_level3": {
+		"name": "Чертеж «Аврора Индастриз»",
+		"description": "Увеличивает конечный урон на 25% по целям с активным Щитом.",
+		"id": "buff_gwzj_ordinal9_level3"
+	},
+	"buff_gwzj_ordinalsolo": {
+		"name": "Воинская мощь",
+		"description": "Увеличивает конечный урон на 400% и здоровье на 200%.",
+		"id": "buff_gwzj_ordinalsolo"
+	},
+	"buff_gwzj_teamclone3": {
+		"name": "Бафф совместной операции",
+		"description": "Использование навыков разрядки сбрасывает перезарядку навыка (эффективно также в Балансированном режиме).",
+		"id": "buff_gwzj_teamclone3"
+	},
+	"buff_gwzj_voidclone1": {
+		"name": "Бафф Разлома Пустоты",
+		"description": "Увеличивает эффективность заряда оружия на 50% (эффективно также в Бездне Пустоты).",
+		"id": "buff_gwzj_voidclone1"
+	},
+	"buff_gwzj_voidclone3": {
+		"name": "Бафф «Разлома Пустоты»",
+		"description": "В течение 10 секунд восстанавливает 1 попытку уклонения каждые 2 уклонения (эффективно также в Бездне Пустоты).",
+		"id": "buff_gwzj_voidclone3"
+	},
+	"buff_gwzj_worldboss3": {
+		"name": "Бафф «Приграничной схватки»",
+		"description": "Сокращает перезарядку навыка на 80%.",
+		"id": "buff_gwzj_worldboss3"
+	},
+	"buff_gwzj_worldboss4": {
+		"name": "Бафф «Приграничной схватки»",
+		"description": "Сокращает перезарядку реликвии на 90%.",
+		"id": "buff_gwzj_worldboss4"
 	},
 	"buff_bailing_level1": {
 		"name": "Бай Лин. Доблесть",
@@ -8407,6 +8734,11 @@
 		"description": "Покрывает странника желтыми чернилами теней и увеличивает урон, наносимый трихроматическим лисам с щитом другого цвета, на 170%.",
 		"id": "buff_mon_186_yellow_flower_player"
 	},
+	"buff_mon_192_thunderlinkforplay": {
+		"name": "WL-6 Электрод",
+		"description": "Эффект Электрода предоставляется WL-6. Когда вы находитесь на определенном расстоянии от WL-6, вы будете получать урон от электрического шока через регулярные промежутки времени.",
+		"id": "buff_mon_192_thunderlinkforplay"
+	},
 	"buff_shiro_atkup_level1": {
 		"name": "Усиление урона",
 		"description": "Усиливает все виды АТК на **10%**, а физическую АТК дополнительно на **7%** на **8** сек. Перезарядка: **16** сек.",
@@ -8579,52 +8911,52 @@
 	},
 	"buff_lucktarrow_01": {
 		"name": "Абсолютный заряд",
-		"description": "Увеличивает эффективность заряда на 100%.",
+		"description": "Увеличивает эффективность заряда на 30%.",
 		"id": "buff_lucktarrow_01"
 	},
 	"buff_lucktarrow_02": {
 		"name": "Лечение",
-		"description": "Увеличивает эффекты лечения на 20%.",
+		"description": "Увеличивает эффекты лечения на 45%.",
 		"id": "buff_lucktarrow_02"
 	},
 	"buff_lucktarrow_03": {
 		"name": "Ледяная оболочка",
-		"description": "Увеличивает получаемый врагами урон от холода на 20%.",
+		"description": "Увеличивает получаемый врагами урон от холода на 40%.",
 		"id": "buff_lucktarrow_03"
 	},
 	"buff_lucktarrow_04": {
 		"name": "Огонь",
-		"description": "Увеличивает получаемый врагами урон от огня на 20%.",
+		"description": "Увеличивает получаемый врагами урон от огня на 40%.",
 		"id": "buff_lucktarrow_04"
 	},
 	"buff_lucktarrow_05": {
 		"name": "Электричество",
-		"description": "Увеличивает получаемый врагами урон от электричества на 20%.",
+		"description": "Увеличивает получаемый врагами урон от электричества на 40%.",
 		"id": "buff_lucktarrow_05"
 	},
 	"buff_lucktarrow_06": {
 		"name": "Физический",
-		"description": "Увеличивает получаемый врагами физический урон на 20%.",
+		"description": "Увеличивает получаемый врагами физический урон на 40%.",
 		"id": "buff_lucktarrow_06"
 	},
 	"buff_lucktarrow_07": {
 		"name": "Ужас",
-		"description": "Увеличивает урон врагов на 20%.",
+		"description": "モンスターの与ダメージ+40%",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "Испуг",
-		"description": "Увеличивает АТК врагов на 20%.",
+		"description": "モンスターの攻撃力+40%",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
 		"name": "Упорство",
-		"description": "Увеличивает сопротивление врагов на 50%.",
+		"description": "Увеличивает сопротивление врагов на 100%.",
 		"id": "buff_lucktarrow_09"
 	},
 	"buff_lucktarrow_10": {
 		"name": "Яростный удар",
-		"description": "Враги со щитом наносят урон в размере 392% от АТК каждые 10 сек.",
+		"description": "Враги со щитом наносят урон в размере 300% от АТК 1 раз каждые 10 сек.",
 		"id": "buff_lucktarrow_10"
 	},
 	"buff_bati_artifact_ssr_011_1star": {
@@ -8649,7 +8981,7 @@
 	},
 	"buff_chiji_effect": {
 		"name": "Омниевое излучение",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_chiji_effect"
 	},
 	"buff_chiji_finaldmgup_40per": {
@@ -9401,6 +9733,16 @@
 		"name": "Милость богов",
 		"description": "Когда ОЗ любого союзного боевого зверя падает ниже 30%, восстанавливает ему 35% от его макс. ОЗ. Эффект срабатывает только 1 раз.",
 		"id": "mainbuff_fightmonster_replyhp_lowhp_level01"
+	},
+	"mainbuff_norncanteen_grill": {
+		"name": "Благословение в виде рыбы на гриле",
+		"description": "Увеличивает физический урон на 15%. Каждые 10 секунд следующее уклонение не будет тратить счетчик уклонений. Этот эффект может быть сохранен в размере до 1 раза. Длится 30 минут.",
+		"id": "mainbuff_norncanteen_grill"
+	},
+	"mainbuff_norncanteen_sushi": {
+		"name": "Благословение Суши",
+		"description": "Увеличивает урон от холода на 15%. Каждые 20 секунд уменьшает следующий урон, получаемый странником, на 50%. Этот эффект может сохраняться в размере до 1 раза. Действует 30 минут.",
+		"id": "mainbuff_norncanteen_sushi"
 	},
 	"buff_tfb_drop_2x": {
 		"name": "Удача в совместной операции I",
@@ -10157,6 +10499,71 @@
 		"description": "Увеличивает урон, наносимый целям с дебаффом, на **20%**.",
 		"id": "buff_matrix_ssr9_sea_level4"
 	},
+	"buff_matrix_ssr90_atkupcommon": {
+		"name": "Усиление атаки холодом и электричеством",
+		"description": "Увеличивает АТК холодом и электричеством на **0%** на **1**сек.",
+		"id": "buff_matrix_ssr90_atkupcommon"
+	},
+	"buff_matrix_ssr90_level1": {
+		"name": "Рефрен Рэй",
+		"description": "Увеличивает конечный урон на **0%**. После того как **Спасение** наносит урон, увеличивает АТК холодом и электричеством на **1%** на **2**сек. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr90_level1"
+	},
+	"buff_matrix_ssr90_level2": {
+		"name": "Рефрен Рэй",
+		"description": "Увеличивает конечный урон на **0%**. После того как **Спасение** наносит урон, увеличивает АТК холодом и электричеством на **1%** на **2**сек. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr90_level2"
+	},
+	"buff_matrix_ssr90_level3": {
+		"name": "Рефрен Рэй",
+		"description": "Увеличивает конечный урон на **0%**. После того как **Спасение** наносит урон, увеличивает АТК холодом и электричеством на **1%** на **2**сек. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr90_level3"
+	},
+	"buff_matrix_ssr90_level4": {
+		"name": "Рефрен Рэй",
+		"description": "Увеличивает конечный урон на **0%**. После того как **Спасение** наносит урон, увеличивает АТК холодом и электричеством на **1%** на **2**сек. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr90_level4"
+	},
+	"buff_matrix_ssr91_level1": {
+		"name": "Проницательность",
+		"description": "Увеличивает АТК огнем на **0%**. Когда действует **Начало партии**, каждый ход наносит всем целям на доске дополнительный урон в размере **120%** от АТК. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr91_level1"
+	},
+	"buff_matrix_ssr91_level2": {
+		"name": "Проницательность",
+		"description": "Увеличивает АТК огнем на **0%**. Когда действует **Начало партии**, каждый ход наносит всем целям на доске дополнительный урон в размере **120%** от АТК. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr91_level2"
+	},
+	"buff_matrix_ssr91_level3": {
+		"name": "Проницательность",
+		"description": "Увеличивает АТК огнем на **0%**. Когда действует **Начало партии**, каждый ход наносит всем целям на доске дополнительный урон в размере **120%** от АТК. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr91_level3"
+	},
+	"buff_matrix_ssr91_level4": {
+		"name": "Проницательность",
+		"description": "Увеличивает АТК огнем на **0%**. Когда действует **Начало партии**, каждый ход наносит всем целям на доске дополнительный урон в размере **120%** от АТК. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr91_level4"
+	},
+	"buff_matrix_ssr92_level1": {
+		"name": "Проницательность",
+		"description": "Увеличивает конечный урон на **0%**. Когда в экипировке есть **Вольный поток**, увеличивает крит. урон на **1%**. После вступления в бой дополнительно дает **9**экземпляров **Решительного хода**. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr92_level1"
+	},
+	"buff_matrix_ssr92_level2": {
+		"name": "Проницательность",
+		"description": "Увеличивает конечный урон на **0%**. Когда в экипировке есть **Вольный поток**, увеличивает крит. урон на **1%**. После вступления в бой дополнительно дает **9**экземпляров **Решительного хода**. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr92_level2"
+	},
+	"buff_matrix_ssr92_level3": {
+		"name": "Проницательность",
+		"description": "Увеличивает конечный урон на **0%**. Когда в экипировке есть **Вольный поток**, увеличивает крит. урон на **1%**. После вступления в бой дополнительно дает **9**экземпляров **Решительного хода**. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr92_level3"
+	},
+	"buff_matrix_ssr92_level4": {
+		"name": "Проницательность",
+		"description": "Увеличивает конечный урон на **0%**. Когда в экипировке есть **Вольный поток**, увеличивает крит. урон на **1%**. После вступления в бой дополнительно дает **9**экземпляров **Решительного хода**. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr92_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Коуант типа II: стражник",
 		"description": "Увеличивает защиту на **50%** от нанесенного повышенного урона и дает невосприимчивость к оглушающему удару в течение последующего периода времени.",
@@ -10314,22 +10721,22 @@
 	},
 	"buff_jiuyu_mon_snowrabbit_card1": {
 		"name": "Данные симулякра: Изящный кролевик",
-		"description": "Трансформация в Изящного кролевика на **180** сек. (чтобы отменить эффект, используйте навык снова).\r\nПока эффект активен, он может постепенно влиять максимум на **3** ближайших странников. Не действует в некоторых зонах.",
+		"description": "Трансформация в Изящного кролевика на **180**сек. (чтобы отменить эффект, используйте навык снова).\r\nПока эффект активен, он может постепенно влиять максимум на **3** ближайших странников. Не действует в некоторых зонах.",
 		"id": "buff_jiuyu_mon_snowrabbit_card1"
 	},
 	"buff_jiuyu_mon_snowrabbit_card1_infect_mark": {
 		"name": "Данные симулякра: Изящный кролевик (влияние)",
-		"description": "Действует **10** сек. и накапливается до **5** раз. При макс. накоплении запускается трансформация в Изящного кролевика.",
+		"description": "Действует **10**сек. и накапливается до **5**раз. При макс. накоплении запускается трансформация в Изящного кролевика.",
 		"id": "buff_jiuyu_mon_snowrabbit_card1_infect_mark"
 	},
 	"buff_jiuyu_mon_snowrabbit_change": {
 		"name": "Попадание под шквал снежков",
-		"description": "Трансформация в Изящного кролевика на **180** сек. Вы можете отменить эффект, нажав кнопку навыка снова через **10** секунд после трансформации.",
+		"description": "Трансформация в Изящного кролевика на **180**сек. Вы можете отменить эффект, нажав кнопку навыка снова через **10**сек. после трансформации.",
 		"id": "buff_jiuyu_mon_snowrabbit_change"
 	},
 	"buff_jiuyu_mon_snowrabbit_change_mark": {
 		"name": "Попадание снежком",
-		"description": "Действует **10** сек. и накапливается до **5** раз. При макс. накоплении запускается трансформация в Изящного кролевика.",
+		"description": "Действует **10**сек. и накапливается до **5**раз. При макс. накоплении запускается трансформация в Изящного кролевика.",
 		"id": "buff_jiuyu_mon_snowrabbit_change_mark"
 	},
 	"buff_jiuyu_mon_snowrabbit_infect_change": {
@@ -10816,6 +11223,71 @@
 		"name": "Снижение защиты",
 		"description": "Уменьшает снижение защиты для всех параметров на **20%**.",
 		"id": "buff_def_decrease"
+	},
+	"buff_dfishchess_arealevelstackcount": {
+		"name": "Тактическая расстановка",
+		"description": "Каждый экземпляр увеличивает урон еще на **0%** в зоне. Накапливается до **8**раз.",
+		"id": "buff_dfishchess_arealevelstackcount"
+	},
+	"buff_dfishchess_changeskilladdimmstatus": {
+		"name": "Пылающее ядро",
+		"description": "При использовании навыка разрядки любого оружия огня странник получает гипертело на **8**сек.",
+		"id": "buff_dfishchess_changeskilladdimmstatus"
+	},
+	"buff_dfishchess_chessenhancestackcount": {
+		"name": "Решительный ход",
+		"description": "Каждый ход урон увеличивается еще на **0%**, при этом каждый раз расходуется **1** экземпляр.",
+		"id": "buff_dfishchess_chessenhancestackcount"
+	},
+	"buff_dfishchess_chessenhancestackcount_level1": {
+		"name": "Решительный ход",
+		"description": "Каждый ход урон увеличивается еще на **0%**, при этом каждый раз расходуется **1** экземпляр.",
+		"id": "buff_dfishchess_chessenhancestackcount_level1"
+	},
+	"buff_dfishchess_declinespeedcut_in1s": {
+		"name": "Нефритовые вены",
+		"description": "Снижает скорость на **100%** на **1**сек.",
+		"id": "buff_dfishchess_declinespeedcut_in1s"
+	},
+	"buff_dfishchess_declinespeedcut_in3s": {
+		"name": "Верное сердце",
+		"description": "Снижает скорость на **100%** на **3**сек.",
+		"id": "buff_dfishchess_declinespeedcut_in3s"
+	},
+	"buff_dfishchess_firedmgup_level0": {
+		"name": "Палящее солнце",
+		"description": "Увеличивает урон от огня на **0%**. Накапливается до **8**раз.",
+		"id": "buff_dfishchess_firedmgup_level0"
+	},
+	"buff_dfishchess_firedmgup_level6": {
+		"name": "Палящее солнце",
+		"description": "Увеличивает урон от огня на **0%**. Накапливается до **8**раз.",
+		"id": "buff_dfishchess_firedmgup_level6"
+	},
+	"buff_dfishchess_flame_ssr_level0_resonance": {
+		"name": "Резонанс огня",
+		"description": "**Резонанс огня**: увеличивает АТК огнем на **15%** и сопротивление огню на **25%**. Для активации добавьте в экипировку минимум **2** предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса огня или реакции огня, при этом резонанс огня берет верх.",
+		"id": "buff_dfishchess_flame_ssr_level0_resonance"
+	},
+	"buff_dfishchess_immdeathandrecoverall": {
+		"name": "Вечное сияние",
+		"description": "Когда действует Начало партии, получаемый урон снижается на **0%**. При получении смертельного урона предотвращает гибель и восстанавливает ОЗ до 100%. Эффект снимается после активации.",
+		"id": "buff_dfishchess_immdeathandrecoverall"
+	},
+	"buff_dfishchess_level3": {
+		"name": "Розовый закат",
+		"description": "При нанесении урона странник игнорирует **0%** сопротивления огню у врагов в зоне.",
+		"id": "buff_dfishchess_level3"
+	},
+	"buff_dfishchess_physic_ssr_level0_resonance": {
+		"name": "Физический резонанс",
+		"description": "**Физический резонанс**: увеличивает физическую АТК на **15%** и сопротивление физическому урону на **25%**. Для активации добавьте в экипировку минимум **2** предмета физического оружия. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами физического резонанса или физической реакции, при этом физический резонанс берет верх.",
+		"id": "buff_dfishchess_physic_ssr_level0_resonance"
+	},
+	"buff_dfishchessfire_ssr_level0_firespecial": {
+		"name": "Центральная точка",
+		"description": "**Центральная точка: Постоянство**: когда странник наносит любой цели удар **Вольным потоком**, ближайшие цели получают урон в размере **0%** от АТК огнем + **1%** от макс. ОЗ странника + **2%** от суммы показателей всех типов сопротивления странника + **3%** от крит. удара. Эффект может срабатывать не чаще 1раза каждые **1,5**сек. Урон от Центральной точки считается уроном от обычной атаки. Если в экипировке есть **1** оружие холода или электричества, урон от Центральной точки умножается на **4**. Кроме того, на урон от Центральной точки не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.",
+		"id": "buff_dfishchessfire_ssr_level0_firespecial"
 	},
 	"buff_specialitem_003_speedcut": {
 		"name": "Замораживающий пистолет",
@@ -11533,7 +12005,8 @@
 		"id": "buff_void_boss_502"
 	},
 	"buff_void_boss_601": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_void_boss_601"
 	},
 	"buff_void_halohealdown": {
@@ -11832,18 +12305,22 @@
 		"id": "buff_banbigbubble_15s_artifact_ssr_020"
 	},
 	"buff_teamclone_smallice120": {
+		"name": "Уязвимость к холоду",
 		"description": "Увеличивает наносимый врагам урон от холода.",
 		"id": "buff_teamclone_smallice120"
 	},
 	"buff_teamclone_smallfire120": {
+		"name": "Уязвимость к огню",
 		"description": "Увеличивает урон от огня по врагам.",
 		"id": "buff_teamclone_smallfire120"
 	},
 	"buff_teamclone_smallphy120": {
+		"name": "Уязвимость к физическому урону",
 		"description": "Увеличивает наносимый врагам физический урон.",
 		"id": "buff_teamclone_smallphy120"
 	},
 	"buff_teamclone_smallthunder120": {
+		"name": "Уязвимость к электричеству",
 		"description": "Увеличивает наносимый врагам урон от электричества.",
 		"id": "buff_teamclone_smallthunder120"
 	},
@@ -12386,6 +12863,11 @@
 		"name": "Проказники",
 		"description": "Усиливает физический урон на **0%** при нанесении урона целям, у которых менее **80%** ОЗ.",
 		"id": "buff_chainsaw_ssr_level0damup"
+	},
+	"buff_changebodyscale": {
+		"name": "Мегаформа",
+		"description": "Войдите в состояние Мегаформы, увеличьте размер и максимальное количество ОЗ, получите гипертело. Атаки по целям наносят значительный дополнительный урон (эффективно только против монстров). Дополнительный урон имеет перезарядку в **1 секунду**. Мегаформа длится **60** секунд (эффект немедленно заканчивается при смерти, передаче или выходе из зоны ШЕФА).",
+		"id": "buff_changebodyscale"
 	},
 	"buff_matrix_ssr35_level1_attackup": {
 		"name": "Ночной город никогда не спит",
@@ -14032,6 +14514,31 @@
 		"description": "Увеличивает весь стихийный урон на **0%**. Добавьте в экипировку Копье Лонгина, чтобы увеличить конечный урон на **1%** и урон от Возмездия до **2%**. Активация **резонанса силы духа** повышает агро от атак на {3%. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
 		"id": "buff_matrix_ssr88_level4"
 	},
+	"buff_matrix_ssr89_iceandthunderdefdown": {
+		"name": "Снижение сопротивления",
+		"description": "Снижает сопротивление электричеству и холоду на **0%** на **1**сек.",
+		"id": "buff_matrix_ssr89_iceandthunderdefdown"
+	},
+	"buff_matrix_ssr89_level1": {
+		"name": "Рефрен Рэй",
+		"description": "Повышает урон от холода и электричества на **0%**. Добавьте в экипировку **Спасение**, чтобы игнорировать **1%** сопротивления электричеству и холоду у цели. Общий показатель проигнорированного сопротивления каждой стихии не может превышать **50%**. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr89_level1"
+	},
+	"buff_matrix_ssr89_level2": {
+		"name": "Рефрен Рэй",
+		"description": "Повышает урон от холода и электричества на **0%**. Добавьте в экипировку **Спасение**, чтобы игнорировать **1%** сопротивления электричеству и холоду у цели. Общий показатель проигнорированного сопротивления каждой стихии не может превышать **50%**. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr89_level2"
+	},
+	"buff_matrix_ssr89_level3": {
+		"name": "Рефрен Рэй",
+		"description": "Повышает урон от холода и электричества на **0%**. Добавьте в экипировку **Спасение**, чтобы игнорировать **1%** сопротивления электричеству и холоду у цели. Общий показатель проигнорированного сопротивления каждой стихии не может превышать **50%**. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr89_level3"
+	},
+	"buff_matrix_ssr89_level4": {
+		"name": "Рефрен Рэй",
+		"description": "Повышает урон от холода и электричества на **0%**. Добавьте в экипировку **Спасение**, чтобы игнорировать **1%** сопротивления электричеству и холоду у цели. Общий показатель проигнорированного сопротивления каждой стихии не может превышать **50%**. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+		"id": "buff_matrix_ssr89_level4"
+	},
 	"buff_hammerice_sr_level3_reducedamage20_breakfate": {
 		"name": "Снижение урона",
 		"description": "В течение следующих 6 сек. снижает получаемый урон на 10%.",
@@ -14508,35 +15015,43 @@
 		"id": "buff_lawplayer_main"
 	},
 	"buff_level_balance_mon_01": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_01"
 	},
 	"buff_level_balance_mon_02": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_02"
 	},
 	"buff_level_balance_mon_03": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_03"
 	},
 	"buff_level_balance_mon_04": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_04"
 	},
 	"buff_level_balance_mon_44": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_44"
 	},
 	"buff_level_balance_mon_45": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_45"
 	},
 	"buff_level_balance_mon_46": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_46"
 	},
 	"buff_level_balance_mon_47": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_47"
 	},
 	"buff_lawfriend_addsuceee": {
@@ -14649,6 +15164,11 @@
 		"description": "За каждый экземпляр полученного баффа получите **+1** к звездному уровню оружия. Избыточные звезды добавляют к оружию усиление урона в размере **5%**.",
 		"id": "buff_bigsecret_upstar_ssr_asuka_phy"
 	},
+	"buff_bigsecret_upstar_ssr_ayanamirei_thunder": {
+		"name": "Спасение",
+		"description": "За каждый экземпляр полученного баффа получите **+1** к звездному уровню оружия. Избыточные звезды добавляют к оружию усиление урона в размере **5%**.",
+		"id": "buff_bigsecret_upstar_ssr_ayanamirei_thunder"
+	},
 	"buff_bigsecret_upstar_ssr_bigsword_ice": {
 		"name": "Лезвие розы",
 		"description": "За каждый экземпляр полученного баффа получите **+1** к звездному уровню оружия. Избыточные звезды добавляют к оружию усиление урона в размере **5%**.",
@@ -14738,6 +15258,11 @@
 		"name": "Алайя",
 		"description": "За каждый экземпляр полученного баффа получите **+1** к звездному уровню оружия. Избыточные звезды добавляют к оружию усиление урона в размере **5%**.",
 		"id": "buff_bigsecret_upstar_ssr_immortal_thunder"
+	},
+	"buff_bigsecret_upstar_ssr_jiyu_fire": {
+		"name": "Вольный поток",
+		"description": "За каждый экземпляр полученного баффа получите **+1** к звездному уровню оружия. Избыточные звезды добавляют к оружию усиление урона в размере **5%**.",
+		"id": "buff_bigsecret_upstar_ssr_jiyu_fire"
 	},
 	"buff_bigsecret_upstar_ssr_lances_ice": {
 		"name": "Искуситель",
@@ -15484,6 +16009,21 @@
 		"description": "Эффективен только урон от огня и электричества; остальные виды урона неэффективны.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_nornbeach_star": {
+		"name": "Звезда Брызг",
+		"description": "Время на исходе! Иди ищи следующую звезду!",
+		"id": "buff_nornbeach_star"
+	},
+	"buff_norncanteen_baozi_thunderdamageup": {
+		"name": "Благословение супа с пельменями",
+		"description": "Увеличивает урон от электричества и скорость на 15%. Действует 30 минут.",
+		"id": "buff_norncanteen_baozi_thunderdamageup"
+	},
+	"buff_norncanteen_tofu_firedamageup": {
+		"name": "Благословение Тофу",
+		"description": "Увеличивает урон от огня на 15% и высоту прыжка на 20%. Действует 30 минут.",
+		"id": "buff_norncanteen_tofu_firedamageup"
+	},
 	"buff_origin_atkfire_level1": {
 		"name": "Пировспышка I",
 		"description": "После успешного попадания нанесите дополнительный урон от огня в размере **2000%** от АТК, на который не влияют никакие баффы и дебаффы. Перезарядка: **2** сек.",
@@ -15560,35 +16100,43 @@
 		"id": "buff_origin_atkthu_level3"
 	},
 	"buff_origin_balance99_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1"
 	},
 	"buff_origin_balance99_1th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1th"
 	},
 	"buff_origin_balance99_2": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2"
 	},
 	"buff_origin_balance99_2th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2th"
 	},
 	"buff_origin_balance99_3": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3"
 	},
 	"buff_origin_balance99_3th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3th"
 	},
 	"buff_origin_balance99_4": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4"
 	},
 	"buff_origin_balance99_4th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4th"
 	},
 	"buff_origin_bedamdown_level1": {

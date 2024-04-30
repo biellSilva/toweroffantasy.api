@@ -6890,7 +6890,7 @@
 		"id": "Asuka_physic_ssr_star_2"
 	},
 	"Asuka_physic_ssr_star_3": {
-		"advancement": "Solange der Wanderer ein <shuzhi>AT-Feld</> aktiviert hat, können Angriffe einen bestimmten Prozentsatz der Schadensreduktion des Schilds eines Ziels ignorieren. Dieser Prozentsatz entspricht <shuzhi>{0}%</> des aktuellen <shuzhi>Haltbarkeit-Prozentwerts</> des <shuzhi>AT-Felds</> + <shuzhi>{1}%</>. Wenn Standhaftigkeit-Resonanz aktiv ist, erhöht sich Zertrümmern des Wanderers um <shuzhi>{2}%</> des <shuzhi>Haltbarkeit-Prozentwerts</> des <shuzhi>AT-Felds</>.",
+		"advancement": "Solange der Wanderer ein <shuzhi>AT-Feld</> aktiviert hat, können Angriffe einen bestimmten Prozentsatz der Schadensreduktion des Schilds eines Ziels ignorieren. Dieser Prozentsatz entspricht <shuzhi>{0}%</> des aktuellen <shuzhi>Haltbarkeit-Prozentwerts</> des <shuzhi>AT-Felds</> + <shuzhi>{1}%</>. Wenn <shuzhi>Standhaftigkeit-Resonanz</> aktiv ist, erhöht sich Zertrümmern des Wanderers um <shuzhi>{2}%</> des <shuzhi>Haltbarkeit-Prozentwerts</> des <shuzhi>AT-Felds</>.",
 		"numbermap": "AsukaEffectFigure",
 		"multiplicators": [
 			{
@@ -7046,6 +7046,554 @@
 			"charge": 12
 		},
 		"id": "Asuka_physic_ssr_star_6"
+	},
+	"AyanamiRei_thunder_ssr_star_0": {
+		"advancement": "<shuzhi>Volt- und Frostfusion</>: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Volt-/Frost-Basis-ANG, des höchsten ausgerüsteten Volt-/Frost-ANG-Prozentwerts und des höchsten ausgerüsteten Volt-/Frostschaden-Bonus berechnet, und die Waffe gilt sowohl als Volt- als auch als Frostwaffe.\r\n<shuzhi>Voltresonanz</>: Erhöht den Volt-ANG um <shuzhi>15%</> und den Voltwiderstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird.\r\n<shuzhi>Frostresonanz</>: Erhöht den Frost-ANG um <shuzhi>15%</> und den Frostwiderstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird.\r\n<shuzhi>Blitz: Distanzierung</>: Nach dem Einsatz von <shuzhi>Mecha-Angriff</> wird Zielen <shuzhi>30</> Sek. lang pro Sek. Schaden in Höhe von <shuzhi>109,4%</> des Volt-ANG + <shuzhi>15,6%</> der max. LP + <shuzhi>56,3%</> der Summe aller Widerstandsarten des Wanderers + <shuzhi>210,9%</> des krit. Schadens zugefügt. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt und Schaden durch „Blitz“ zählt als Fähigkeitsschaden. Wenn <shuzhi>1</> beliebige physische oder Flammenwaffe ausgerüstet ist, wird der Schaden von „Blitz“ mit <shuzhi>1,3</> multipliziert. Außerdem wird der Schaden von „Blitz“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.\r\n<shuzhi>Zielsuchender Pfeil</>: Schießt beim Verursachen von Schaden mit einer beliebigen Waffe <shuzhi>1</> zielsuchenden Pfeil auf die Ziele und fügt dem ersten getroffenen Ziel Schaden in Höhe von <shuzhi>{4}%</> des ANG zu. Gleichzeitig erhältst du <shuzhi>{5}</> Spezialenergie. Der zielsuchende Pfeil verbleibt auf dem Ziel und wendet <shuzhi>{7}</> Sek. lang „Überladung“ an. Wenn die Zahl der zielsuchenden Pfeile auf dem Ziel <shuzhi>3</> erreicht, detonieren die Pfeile und fügen Zielen in der Nähe Schaden in Höhe von <shuzhi>{8}%</> des ANG zu. „Zielsuchender Pfeil“ kann bis zu <shuzhi>1</>-mal alle <shuzhi>{9}</> Sek. ausgelöst werden.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillThunderATK",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillMaxHpRate",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillDefSum",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillCofficientCrit",
+				"value": 1
+			},
+			{
+				"key": "GA_FPlayerAyanamiRei_TraceArrow_1",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEnergyAdd_TraceArrow",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_Bleed_RatePerStack",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_Bleed_Duration",
+				"value": 1
+			},
+			{
+				"key": "GA_FPlayerAyanamiRei_TraceArrow_Boom_1",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_CD",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_0"
+	},
+	"AyanamiRei_thunder_ssr_star_1": {
+		"advancement": "Wenn sich <shuzhi>Erlösung</> im Nebenhand-Slot befindet, wird der Detonationsschaden von <shuzhi>Zielsuchender Pfeil</> um <shuzhi>{0}%</> erhöht.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level1_DamageUp",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_1"
+	},
+	"AyanamiRei_thunder_ssr_star_2": {
+		"advancement": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um <shuzhi>16%</>.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_2"
+	},
+	"AyanamiRei_thunder_ssr_star_3": {
+		"advancement": "Erhöht den Voltschaden, den Ziele durch <shuzhi>Zielsuchender Pfeil: Überladung</> erleiden, um <shuzhi>{0}%</> und den Frostschaden um <shuzhi>{1}%</>. Der Set-Effekt funktioniert auch im Nebenhand-Slot.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level3_ThunderDamageUp",
+				"value": 1
+			},
+			{
+				"key": "AyanamiRei_Level3_IceDamageUp",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_3"
+	},
+	"AyanamiRei_thunder_ssr_star_4": {
+		"advancement": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um <shuzhi>32%</>.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_4"
+	},
+	"AyanamiRei_thunder_ssr_star_5": {
+		"advancement": "Gewährt nach dem Einsatz von <shuzhi>Mecha-Angriff</> zusätzlich <shuzhi>{0}</> Spezialenergie.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level5_SkillExtraAyanamiReiEnergyAdd",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_5"
+	},
+	"AyanamiRei_thunder_ssr_star_6": {
+		"advancement": "Nach Aktivierung von <shuzhi>Energieverbrauch</> werden der Voltschaden des Wanderers um <shuzhi>{0}%</> und der Frostschaden um <shuzhi>{1}%</> erhöht. Hält <shuzhi>20</> Sek. lang an.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level6_AyanamiReiState_ThunderDamageUp",
+				"value": 1
+			},
+			{
+				"key": "AyanamiRei_Level6_AyanamiReiState_IceDamageUp",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_6"
+	},
+	"DFishChess_fire_ssr_star_0": {
+		"advancement": "<shuzhi>Masse- und Flammenfusion</>: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten physischen/Flammen-Basis-ANG, des höchsten ausgerüsteten physischen/Flammen-ANG-Prozentwerts und des höchsten ausgerüsteten physischen/Flammenschaden-Bonus berechnet, und die Waffe gilt sowohl als physische als auch als Flammenwaffe.\r\n<shuzhi>Physische Resonanz</>: Erhöht den physischen ANG um <shuzhi>15%</> und den physischen Widerstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.\r\n<shuzhi>Flammenresonanz</>: Erhöht den Flammen-ANG um <shuzhi>15%</> und den Flammenwiderstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.\r\n<shuzhi>Zentralnexus: Auf dem Feld</>: Beim Treffen eines Ziels mit <shuzhi>Dualismus</> wird Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des Flammen-ANG + <shuzhi>{1}%</> der max. LP + <shuzhi>{2}%</> der Summe aller Widerstandsarten des Wanderers + <shuzhi>{3}%</> des krit. Schadens zugefügt. Kann 1-mal alle <shuzhi>1,5</> Sek. ausgelöst werden. Der Schaden von „Zentralnexus“ zählt als normaler Angriffsschaden. Wenn <shuzhi>1</> beliebige Frost- oder Voltwaffe ausgerüstet ist, wird der Schaden von „Zentralnexus“ mit <shuzhi>{4}</> multipliziert. Außerdem wird der Schaden von „Zentralnexus“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "DFishChessSpecialATKCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialMaxHPCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialDEFCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialCritCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialFinCoefficient",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_0"
+	},
+	"DFishChess_fire_ssr_star_1": {
+		"advancement": "Erhöht die maximale Anzahl an Stapeln von <shuzhi>Entscheidende Aufstellung</> auf <shuzhi>{1}</>. Der Bonusschaden jedes Stapels <shuzhi>Entscheidende Aufstellung</> wird auf <shuzhi>{0}%</> des ANG erhöht.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "GameTheory_PerChessDMGUp_Level1",
+				"value": 1
+			},
+			{
+				"key": "GameTheory_MaxChessCount_Level1",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_1"
+	},
+	"DFishChess_fire_ssr_star_2": {
+		"advancement": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um <shuzhi>16%</>.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_2"
+	},
+	"DFishChess_fire_ssr_star_3": {
+		"advancement": "Wenn <shuzhi>Dualismus</> ausgerüstet ist, wird <shuzhi>{0}%</> des Flammenwiderstands der Ziele in der Zone ignoriert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Der insgesamt ignorierte Widerstand jedes Elements kann 50% nicht übersteigen.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "IgnoreDef_Fire_Level3",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_3"
+	},
+	"DFishChess_fire_ssr_star_4": {
+		"advancement": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um <shuzhi>32%</>.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_4"
+	},
+	"DFishChess_fire_ssr_star_5": {
+		"advancement": "Wenn <shuzhi>Komm ins Spiel</> aktiv ist, wird der erlittene Schaden um <shuzhi>{0}%</> reduziert. Wenn der Anwender tödlichen Schaden erleidet, werden sofort <shuzhi>{1}%</> seiner max. LP wiederhergestellt. Dieser Effekt kann nur <shuzhi>1</>-mal pro Fähigkeitsaktivierung ausgelöst werden.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "BeDMGDown_InGameTheory_Level5",
+				"value": 1
+			},
+			{
+				"key": "FirstAid_Recover_InGameTheory_Level5",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_5"
+	},
+	"DFishChess_fire_ssr_star_6": {
+		"advancement": "Erhöht den Flammenschaden pro Stapel <shuzhi>Glühende Sonne</> auf <shuzhi>{0}%</>.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "FireDMGUp_PerAreaStackCount_Level6",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_6"
 	},
 	"tianlang_thunder_ssr_star_0": {
 		"advancement": "<shuzhi>Voltresonanz</>: Erhöht den Volt-ANG um <shuzhi>15%</> und den Voltwiderstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden.",

@@ -4693,6 +4693,150 @@
 			}
 		]
 	},
+	"GA_FPlayerDFishChessChangeSkill": {
+		"skills": [
+			{
+				"name": "此为定局",
+				"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，释放场域，于前方落下<shuzhi>1</>枚棋子，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>1.5</>秒（巅峰联赛不生效）。\r\n开启场域，每秒对自身附近大范围目标造成<shuzhi>200%</>伤害，场域持续<shuzhi>30</>秒或者在脱战<shuzhi>5</>秒后消失，创建的每个召唤物可为场域增加<shuzhi>3</>秒持续时间。\r\n<shuzhi>布阵</>：创建的每个召唤物可叠加<shuzhi>1</>层布阵，每层布阵额外提升场域<shuzhi>50%</>*攻击力的每秒持续伤害，至多叠加至<shuzhi>8</>层。\r\n<shuzhi>焚阳</>：获得布阵层数时，可获得对应层数的焚阳，每层焚阳额外提升<shuzhi>2.5%</>火焰伤害，至多叠加至<shuzhi>8</>层。\r\n<shuzhi>灼心</>：释放火焰武器连携时，获得<shuzhi>8</>秒的霸体效果。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_ChangeSkill"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessEvade": {
+		"skills": [
+			{
+				"name": "闪避",
+				"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerDFishChessEvade_Evade"
+			},
+			{
+				"name": "夺势",
+				"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，向前方掷出<shuzhi>1</>枚黑子，短暂吸附并减速小范围的目标，对前方目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "星坠",
+				"description": "后闪避之后的短暂时间内，点击普攻，向前方落下<shuzhi>3</>枚白子，每枚白子落下时对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点的范围伤害，同时布下陷阱，当目标靠近时爆炸，短暂减速并额外造成<shuzhi>57%</>伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessMelee": {
+		"skills": [
+			{
+				"name": "斗转星移",
+				"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_Melee"
+			},
+			{
+				"name": "起势",
+				"description": "当拓荒者滞空时，点击普攻可在空中连续进行四次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_AirAttack"
+			},
+			{
+				"name": "审局",
+				"description": "在地面时，长按普攻或在普攻时长按，可进入审局状态，持续凝聚至多5枚棋子，释放后射出所有棋子追击目标，每枚棋子造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+			},
+			{
+				"name": "历世心游",
+				"description": "当拓荒者滞空时，使用普攻时，长按普攻可触发历世心游。\r\n从天而降，落地后甩出双鱼附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击飞目标。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessSkill": {
+		"skills": [
+			{
+				"name": "以身入局",
+				"description": "腾空而起，将战场化为棋盘，悬浮于空中（期间不可移动），获得高空视角，至多持续<shuzhi>10</>秒，攻击替换为落下棋子，技能替换为<shuzhi>技能-亦胜半子</>，点触棋盘依次落下<shuzhi>18</>枚棋子，每枚棋子对棋盘内所有目标造成<shuzhi>250%</>*攻击力伤害，并短暂缓速目标，冷却<shuzhi>40</>秒（不受任何冷却时间清除、重置、变化效果的影响）。\r\n<shuzhi>落子无悔</>：释放<shuzhi>普攻-审局</>、<shuzhi>闪避-夺势</>、<shuzhi>闪避-星坠</>、<shuzhi>连携-此为定局</>，或创建（而非刷新）召唤物可获得对应数量的落子无悔层数，至多可获得<shuzhi>9</>层，技能期间每枚棋子消耗<shuzhi>1</>点落子无悔层数（技能持续期间无法获得落子无悔层数），对棋盘内的所有目标额外造成<shuzhi>200%</>*攻击力伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+				"operations": [],
+				"tags": [
+					"Damage",
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChess_Skill"
+			},
+			{
+				"name": "亦胜半子",
+				"description": "<shuzhi>技能-以身入局</>持续期间手动释放，或持续时间结束后可自动触发亦胜半子，从高空坠落，对棋盘内的所有目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>，并额外造成技能期间消耗的<shuzhi>落子无悔</>层数*200%*攻击力伤害，双鱼向外环游，推开自身附近的目标并造成<shuzhi>{2}%</>*攻击力伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_Skill2"
+			}
+		]
+	},
 	"GA_FPlayerCubeMelee": {
 		"skills": [
 			{
@@ -11816,6 +11960,154 @@
 					"Damage"
 				],
 				"id": "GA_FPlayerAsukaSkill_Skill"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiChangeSkill_Thu": {
+		"skills": [
+			{
+				"name": "绝对领域",
+				"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，召唤0号机使用盾牌砸地，释放冲击波对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并获得<shuzhi>30</>点特殊能量，期间免疫伤害持续<shuzhi>1.5</>秒（巅峰联赛不生效）。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiEvade_Thu": {
+		"skills": [
+			{
+				"name": "闪避",
+				"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerAyanamiReiEvade_Evade"
+			},
+			{
+				"name": "三连射",
+				"description": "任意闪避之后的短暂时间内，点按普攻，可触发三连射，对首次命中目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+			},
+			{
+				"name": "蓄力连珠",
+				"description": "闪避后在恰当时机点按普攻，可触发蓄力连珠，射出强力能量箭，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，同时射出数根追踪箭。自身获得一次格挡能力，持续<shuzhi>15</>秒，格挡量最大不超过自身最大生命值的<shuzhi>10%</>，玩家至多同时拥有三次格挡能力。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiMelee_Thu": {
+		"skills": [
+			{
+				"name": "弓箭速射",
+				"description": "在地面时，点击普攻可连续进行六次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并小幅击退目标。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并小幅击退目标。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并小幅击退目标。\r\n第四次攻击对目标至多造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并小幅击退目标。\r\n第五次攻击后摇出现闪光时点按触发第六次攻击，第六次攻击射出强力能量箭并释放数根追踪箭对目标造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害并在首次命中目标处生成一个缓速磁场，持续<shuzhi>3</>秒，【缓速磁场---范围内的敌方目标移动和攻击速度减少<shuzhi>35%</>】。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Melee"
+			},
+			{
+				"name": "空中连射",
+				"description": "当拓荒者滞空时，点击普攻可在空中连续进行六次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。\r\n第四次攻击对目标至多造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害。\r\n第五次攻击后摇出现闪光时点按触发第六次攻击，第六次攻击射出强力能量箭并释放<shuzhi>5</>根<shuzhi>追踪箭</>对目标造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害并在首次命中目标处生成一个缓速磁场：范围内的敌方目标移动和攻击速度减少<shuzhi>40%</>，持续<shuzhi>3</>秒。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+			},
+			{
+				"name": "后跃箭",
+				"description": "在地面或空中普攻时，使用第一次至第五次普攻中，长按普攻可触发后跃箭。\r\n后跳过程中向前方射击，对命中目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n若此时特殊能量高于<shuzhi>70</>，则触发<shuzhi>能量消耗</>状态：雷电攻击提升<shuzhi>15%</>，寒冰攻击提升<shuzhi>5%</>；\r\n<shuzhi>救赎</>位于前台时，每0.5秒消耗<shuzhi>5</>点特殊能量，<shuzhi>救赎</>造成的伤害提升30%，连续点按或持续长按普攻可触发<shuzhi>普攻—闪身速射</>\r\n<shuzhi>救赎</>位于后台时，每0.5秒消耗<shuzhi>3.3</>点特殊能量，追踪箭伤害提升<shuzhi>50%</>且达到最大残留数量引发的爆炸范围增大。\r\n特殊能量最高为<shuzhi>100</>点，充满后将<shuzhi>救赎</>从前台切至后台后，也可直接进入能量消耗状态。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+			},
+			{
+				"name": "闪身速射",
+				"description": "处于<shuzhi>能量消耗</>状态时，点击普攻可连续进行三次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+			},
+			{
+				"name": "精准射击",
+				"description": "长按普攻，进入蓄力攻击状态，对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，蓄力每增加<shuzhi>0.1</>秒，伤害提升<shuzhi>100%</>，蓄力<shuzhi>2.3</>秒后达到伤害最大值。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+				"operations": [
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiSkill_Thu": {
+		"skills": [
+			{
+				"name": "零号机出击",
+				"description": "召唤0号机重击敌人，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间自身获得霸体，并获得<shuzhi>35</>点特殊能量，冷却<shuzhi>20</>秒（不受其他任何冷却时间清除、重置、变化效果的影响）。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiSkill_Skill"
 			}
 		]
 	},

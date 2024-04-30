@@ -6890,7 +6890,7 @@
 		"id": "Asuka_physic_ssr_star_2"
 	},
 	"Asuka_physic_ssr_star_3": {
-		"advancement": "Tant que l'Explorateur a un <shuzhi>A.T. Field</> actif, les attaques peuvent ignorer un certain pourcentage de la réduction de dégâts du bouclier de la cible. Ce pourcentage est équivalant à <shuzhi>{0}%</> du <shuzhi>pourcentage de durabilité</> de l'<shuzhi>A.T. Field</> actuel + <shuzhi>{1}%</>. Lorsque Résonance de fortitude est active, accroît la fracture de l'Explorateur de <shuzhi>{2}%</> du <shuzhi>pourcentage de durabilité</> de l'<shuzhi>A.T. Field</>.",
+		"advancement": "Tant que l'Explorateur a un <shuzhi>A.T. Field</> actif, les attaques peuvent ignorer un certain pourcentage de la réduction de dégâts du bouclier de la cible. Ce pourcentage est équivalant à <shuzhi>{0}%</> du <shuzhi>pourcentage de durabilité</> de l'<shuzhi>A.T. Field</> actuel + <shuzhi>{1}%</>. Lorsque <shuzhi>Résonance de fortitude</> est active, accroît la fracture de l'Explorateur de <shuzhi>{2}%</> du <shuzhi>pourcentage de durabilité</> de l'<shuzhi>A.T. Field</>.",
 		"numbermap": "AsukaEffectFigure",
 		"multiplicators": [
 			{
@@ -7046,6 +7046,554 @@
 			"charge": 12
 		},
 		"id": "Asuka_physic_ssr_star_6"
+	},
+	"AyanamiRei_thunder_ssr_star_0": {
+		"advancement": "<shuzhi>Fusion de la foudre et du givre</> : lorsque l'arme inflige des dégâts, ces derniers sont calculés en fonction de l'ATQ de base de foudre ou de givre équipée la plus élevée, du pourcentage d'ATQ de foudre ou de givre équipée le plus élevé, et du bonus de dégâts de foudre ou de givre équipé le plus élevé. L'arme est considérée à la fois comme une arme de foudre ou de givre.\r\n<shuzhi>Résonance de foudre</> : accroît l'ATQ de foudre de <shuzhi>15%</> et la résistance à la foudre de <shuzhi>25%</>. S'active en équipant au moins <shuzhi>2</> armes de foudre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, et Résonance de foudre prévaut.\r\n<shuzhi>Résonance de givre</> : accroît l'ATQ de givre de <shuzhi>15%</> et la résistance au givre de <shuzhi>25%</>. S'active en équipant au moins <shuzhi>2</> armes de givre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de givre ou de Réaction de givre, et Résonance de givre prévaut.\r\n<shuzhi>Flash : Détachement</> : après avoir utilisé <shuzhi>Frappe de mécha</>, inflige des dégâts équivalant à <shuzhi>109,4%</> de l'ATQ de foudre + <shuzhi>15,6%</> des PV max + <shuzhi>56,3%</> de la somme de tous les types de résistance de l'Explorateur + <shuzhi>210,9%</> de crit aux cibles touchées chaque seconde pendant <shuzhi>30</> secondes. Les dégâts multiples de Détachement ne se cumulent pas et les dégâts de Flash comptent comme des dégâts de compétence. Si <shuzhi>1</> arme physique ou de feu est équipée, les dégâts de Flash sont multipliés par <shuzhi>1,3</>. De plus, les dégâts de Flash ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent pas d'effets d'attaque supplémentaires.\r\n<shuzhi>Flèche à tête chercheuse</> : lorsque vous utilisez une arme pour infliger des dégâts, tire <shuzhi>1</> Flèche à tête chercheuse en direction des cibles, infligeant des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ à la première cible touchée. Au même moment, régénère <shuzhi>{5}</> points d'énergie spéciale. La Flèche à tête chercheuse reste sur la cible et applique Surcharge pendant <shuzhi>{7}</> secondes. Lorsque le nombre de Flèches à tête chercheuse sur la cible atteint <shuzhi>3</>, les flèches explosent, infligeant des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ aux cibles proches. Les Flèches à tête chercheuse ne peuvent se déclencher qu'<shuzhi>1</> fois toutes les <shuzhi>{9}</> secondes.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillThunderATK",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillMaxHpRate",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillDefSum",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillCofficientCrit",
+				"value": 1
+			},
+			{
+				"key": "GA_FPlayerAyanamiRei_TraceArrow_1",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEnergyAdd_TraceArrow",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_Bleed_RatePerStack",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_Bleed_Duration",
+				"value": 1
+			},
+			{
+				"key": "GA_FPlayerAyanamiRei_TraceArrow_Boom_1",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_CD",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_0"
+	},
+	"AyanamiRei_thunder_ssr_star_1": {
+		"advancement": "Lorsque <shuzhi>Rédemption</> est dans l'emplacement main libre, accroît les dégâts d'explosion de la <shuzhi>Flèche à tête chercheuse</> de <shuzhi>{0}%</>.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level1_DamageUp",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_1"
+	},
+	"AyanamiRei_thunder_ssr_star_2": {
+		"advancement": "Accroît de <shuzhi>16%</> la croissance d'ATQ de base de l'arme actuelle.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_2"
+	},
+	"AyanamiRei_thunder_ssr_star_3": {
+		"advancement": "Accroît les dégâts de foudre infligés aux cibles avec la <shuzhi>Flèche à tête chercheuse : Surcharge</> de <shuzhi>{0}%</> et les dégâts de givre de <shuzhi>{1}%</>. Cet effet fonctionne dans l'emplacement main libre.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level3_ThunderDamageUp",
+				"value": 1
+			},
+			{
+				"key": "AyanamiRei_Level3_IceDamageUp",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_3"
+	},
+	"AyanamiRei_thunder_ssr_star_4": {
+		"advancement": "Accroît de <shuzhi>32%</> la croissance d'ATQ de base de l'arme actuelle.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_4"
+	},
+	"AyanamiRei_thunder_ssr_star_5": {
+		"advancement": "Après avoir utilisé <shuzhi>Frappe de mécha</>, régénère <shuzhi>{0}</> points d'énergie spéciale supplémentaires.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level5_SkillExtraAyanamiReiEnergyAdd",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_5"
+	},
+	"AyanamiRei_thunder_ssr_star_6": {
+		"advancement": "Après le début de <shuzhi>Consommation d'énergie</>, accroît les dégâts de foudre de l'Explorateur de <shuzhi>{0}%</> et les dégâts de givre de <shuzhi>{1}%</> pendant <shuzhi>20</> secondes.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level6_AyanamiReiState_ThunderDamageUp",
+				"value": 1
+			},
+			{
+				"key": "AyanamiRei_Level6_AyanamiReiState_IceDamageUp",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_6"
+	},
+	"DFishChess_fire_ssr_star_0": {
+		"advancement": "<shuzhi>Fusion de la matière et du feu</> : lorsque l'arme inflige des dégâts, ces derniers sont calculés en fonction de l'ATQ de base physique ou de feu équipée la plus élevée, du pourcentage d'ATQ physique ou de feu équipé le plus élevé, et du bonus de dégâts physiques ou de feu équipé le plus élevé. L'arme est considérée à la fois comme une arme physique et de feu.\r\n<shuzhi>Résonance physique</> : accroît l'ATQ physique de <shuzhi>15%</> et la résistance physique de <shuzhi>25%</>. S'active en équipant au moins <shuzhi>2</> armes physiques. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance physique et de Réaction physique, et Résonance physique prévaut.\r\n<shuzhi>Résonance de feu</> : accroît l'ATQ de feu de <shuzhi>15%</> et la résistance au feu de <shuzhi>25%</>. S'active en équipant au moins <shuzhi>2</> armes de feu. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de feu ou de Réaction de feu, et Résonance de feu prévaut.\r\n<shuzhi>Nexus central : Sur le terrain</> : en frappant une cible avec <shuzhi>Libreflux</>, inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ de feu + <shuzhi>{1}%</> des PV max + <shuzhi>{2}%</> de la somme de tous les types de résistance de l'Explorateur + <shuzhi>{3}%</> de crit aux cibles proches. Peut être déclenché jusqu'à une fois toutes les <shuzhi>1,5</> seconde. Les dégâts de Nexus central comptent comme des dégâts d'attaque normale. Si <shuzhi>1</> arme de foudre ou de givre est équipée, les dégâts de Nexus central sont multipliés par <shuzhi>{4}</>. Par ailleurs, les dégâts de Nexus central ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent pas d'effets d'attaque supplémentaires.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "DFishChessSpecialATKCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialMaxHPCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialDEFCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialCritCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialFinCoefficient",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_0"
+	},
+	"DFishChess_fire_ssr_star_1": {
+		"advancement": "Le nombre maximum de cumuls de <shuzhi>Placement décisif</> passe à <shuzhi>{1}</>. Les dégâts supplémentaires de chaque cumul de <shuzhi>Placement décisif</> passent à <shuzhi>{0}%</> de l'ATQ.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "GameTheory_PerChessDMGUp_Level1",
+				"value": 1
+			},
+			{
+				"key": "GameTheory_MaxChessCount_Level1",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_1"
+	},
+	"DFishChess_fire_ssr_star_2": {
+		"advancement": "Accroît de <shuzhi>16%</> la croissance d'ATQ de base de l'arme actuelle.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_2"
+	},
+	"DFishChess_fire_ssr_star_3": {
+		"advancement": "Lorsque <shuzhi>Libreflux</> est équipé, ignore <shuzhi>{0}%</> de la résistance au feu des cibles dans la zone. Cet effet fonctionne dans l'emplacement main libre. La résistance totale ignorée de chaque élément ne peut pas dépasser 50%.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "IgnoreDef_Fire_Level3",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_3"
+	},
+	"DFishChess_fire_ssr_star_4": {
+		"advancement": "Accroît de <shuzhi>32%</> la croissance d'ATQ de base de l'arme actuelle.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_4"
+	},
+	"DFishChess_fire_ssr_star_5": {
+		"advancement": "Lorsque <shuzhi>Mise à mal</> est active, réduit les dégâts subis de <shuzhi>{0}%</>. Lorsque vous subissez des dégâts fatals, restaure immédiatement <shuzhi>{1}%</> des PV max. Cet effet ne peut être déclenché que <shuzhi>1</> fois par activation de la compétence.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "BeDMGDown_InGameTheory_Level5",
+				"value": 1
+			},
+			{
+				"key": "FirstAid_Recover_InGameTheory_Level5",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_5"
+	},
+	"DFishChess_fire_ssr_star_6": {
+		"advancement": "Les dégâts de feu passent à <shuzhi>{0}%</> pour chaque cumul de <shuzhi>Soleil ardent</>.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "FireDMGUp_PerAreaStackCount_Level6",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_6"
 	},
 	"tianlang_thunder_ssr_star_0": {
 		"advancement": "<shuzhi>Résonance de foudre</> : accroît l'ATQ de foudre de <shuzhi>15%</> et la résistance à la foudre de <shuzhi>25%</>. Activez-la en équipant au moins <shuzhi>2</> armes de foudre. Cet effet fonctionne également dans l'emplacement main libre. Ne se cumule pas avec des effets du même type.",

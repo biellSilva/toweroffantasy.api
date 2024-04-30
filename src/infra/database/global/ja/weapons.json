@@ -6366,7 +6366,7 @@
 				},
 				{
 					"name": "エネルギーショット",
-					"description": "通常攻撃を長押し、または通常攻撃中に通常攻撃を長押しすると、ターゲットに連射でき、命中すると攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>Ptの基礎ダメージを与える",
+					"description": "通常攻撃を長押し、または通常攻撃中に通常攻撃を長押しするとターゲットに連射でき、命中すると攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>Ptの基礎ダメージを与える",
 					"operations": [
 						"Attack",
 						"Attack",
@@ -8584,7 +8584,7 @@
 		],
 		"advancements": [
 			{
-				"description": "**スキル「パルスロック」**または**連携スキル「粒子線放出」**の発動時に電極を**1**つ生成し、自身が即座に回復連鎖強化の効果を**5**スタック分獲得すると同時に、回復連鎖を発動して付近の味方を回復する(回復量はプレイヤーの攻撃力×**135%**)。",
+				"description": "**スキル「パルスロック」**または**連携スキル「粒子線放出」**の発動時時、電極を**1**つ生成し、自身はただちに回復連鎖の回復強化効果を**5**スタック獲得する。同時に、回復連鎖を発動して付近の味方を回復する(回復量はプレイヤーの攻撃力×**135%**)。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13225,6 +13225,441 @@
 		"limited": true,
 		"id": "blevi_thunder"
 	},
+	"dfishchess_fire": {
+		"name": "陰陽双魚",
+		"description": "古来より陰陽は双極の和を織りなす　",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_DFishChess.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_DFishChess.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/jiyu.webp"
+		},
+		"rarity": 5,
+		"element": "Flame",
+		"type": "DFishChess",
+		"weaponUpgradeId": "Fire_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "DFishChess_fire_ssr_star",
+		"avatar": "imitation_57",
+		"stats": [
+			{
+				"stat": {
+					"name": "攻撃",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "会心",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**物理・炎融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(物理/炎属性)、攻撃力パーセンテージ(物理/炎属性)、物理/炎バフ(物理/炎属性)の最高値をそれぞれ参照する。また、この武器属性は物理と炎の両属性と見なされる。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**物理共鳴**：物理属性武器を**2**つ以上装備すると発動。物理攻撃力+**15%**、物理耐性+**25%**。装備すると常時有効(複数の物理共鳴/物理反応はスタック不可、物理共鳴が優先して発動)。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**炎共鳴**：炎属性武器を**2**つ以上装備すると発動。炎攻撃力+**15%**、炎耐性+**25%**。装備すると常時有効(複数の炎共鳴/炎反応はスタック不可、炎共鳴が優先して発動)。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**天元・顕在**：**陰陽双魚**による任意攻撃の命中時、付近のターゲットに対し炎攻撃力×**256%**+自身の最大HP×**3.6%**+各属性耐性の合計値×**133%**+会心の値×**4.9%**のダメージを与える。**1.5**秒ごとに1回のみ発動可能。また、天元ダメージは通常攻撃と見なされる。氷/雷属性武器のいずれかを**1**つ以上装備している場合、天元ダメージが**1.3**倍まで UPする。なお、天元ダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない。**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**炎**",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、敵を**8**秒間点火状態にし、毎秒、攻撃力×**58.00%**のダメージを与える。点火状態中はターゲットの回復効果-**50%**。"
+		},
+		"attributes": [
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "**スキル-落子無悔(らくしむかい)**のスタック上限が**18**スタックまで UPする。さらに、**落子無悔**を1スタック消費するごとに与えるダメージ量が攻撃力×**400%**まで UPする。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**16%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "**陰陽双魚**の装備時、盤上領域内のターゲットの炎耐性を**15%**無視する。装備すると常時有効(無視する属性耐性の合計値はそれぞれ50%を超えない)。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**32%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "**スキル-入神開局**の発動中、自身は**30%**のダメージ軽減効果を獲得する。また、致命的ダメージを受けたとき、ただちにHPを最大HP×**100%**回復する。この効果はスキル発動中に最大**1**回まで発動可能。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "**連携スキル-焚陽**1スタックにつき炎ダメージ+**5%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "星月流転",
+					"description": "地上にいる時、通常攻撃を行うと5回連続攻撃できる。ターゲットに与えるダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+					"id": "GA_FPlayerDFishChessMelee_Melee"
+				},
+				{
+					"name": "起勢",
+					"description": "滞空時、通常攻撃を行うとスタミナを消費しながら空中で4回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_AirAttack"
+				},
+				{
+					"name": "判局",
+					"description": "地上にいる時、通常攻撃を長押しまたは通常攻撃の途中で長押しすると判局状態に入る。最大で碁石を5個集めてターゲットに向かって発射し、碁石1個につき攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+				},
+				{
+					"name": "浮玉遊歴",
+					"description": "滞空時、通常攻撃を長押しすると、浮玉遊歴を発動できる。\r\n空から降下したあと双魚を放ち、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与えてノックアップする。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDFishChessEvade_Evade"
+				},
+				{
+					"name": "転勢",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、前方に黒石を<shuzhi>1</>個放つ。一時的に狭い範囲のターゲットを引き寄せて減速させ、前方のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "星墜",
+					"description": "回避後すぐに通常攻撃を行うと、前方に向かって白石を<shuzhi>3</>個放つ。各白石は着地時に付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>の範囲ダメージを与え、同時に罠を張る。ターゲットが罠に接触すると爆発し、追加で<shuzhi>57%</>のダメージと一時的なスロウ効果を付与する。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "入神開局",
+					"description": "空中に飛び上がり、フィールドを碁盤に変えつつ宙に浮き続ける(この間、移動不可)。最大<shuzhi>10</>秒間持続。この間、攻撃は碁石を打つ落下攻撃になり、スキルは<shuzhi>半目勝負</>に置き換わる。碁盤をタップすると<shuzhi>18</>個の碁石を順番に配置し、各碁石は碁盤上にいるすべてのターゲットに攻撃力×<shuzhi>250%</>のダメージを与えて一時的なスロウ効果を付与する。クールダウン<shuzhi>40</>秒(クールダウンクリア、リセット、変化の影響を受けない)。\r\n<shuzhi>落子無悔</>：<shuzhi>通常攻撃-判局</>、<shuzhi>回避攻撃-転勢</>、<shuzhi>回避攻撃-星墜</>、<shuzhi>連携スキル-明定終局</>を発動するか、召喚物を召喚すると(既存の召喚物のリセットは除く)、対応する数の落子無悔(らくしむかい)を獲得する。最大で<shuzhi>9</>スタックまで獲得可能。空中に浮いている間、碁石を<shuzhi>1</>個打つごとに落子無悔を1スタック消費し、碁盤上のすべてのターゲットに攻撃力×<shuzhi>200%</>のダメージを与える。この間、落子無悔は獲得不可。",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+					"id": "GA_FPlayerDFishChess_Skill"
+				},
+				{
+					"name": "半目勝負",
+					"description": "<shuzhi>スキル-入神開局</>の持続中に手動で操作すると、もしくは持続時間が終了すると半目勝負(はんもくしょうぶ)が発動する。空から落下し、盤上のすべてのターゲットに攻撃力×<shuzhi>{0}％</>+<shuzhi>{1}</>のダメージを与える。さらに、スキル持続中に消費した<shuzhi>落子無悔</>のスタック数×攻撃力×200%のダメージを追加で与える。その後、双魚は外側に向かって円を描くように泳ぎながら付近のターゲットを押し退け、攻撃力×<shuzhi>{2}%</>のダメージを与える。",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+					"id": "GA_FPlayerDFishChess_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "明定終局",
+					"description": "N/A",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+					"id": "GA_FPlayerDFishChess_ChangeSkill"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "白糸綿々",
+					"description": "衣に変わらぬ志をのせて、未来へ託さん",
+					"rarity": 5,
+					"source": "イベントで獲得",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57"
+				},
+				"weapon": {
+					"name": "明滅",
+					"description": "次の一手を秘め、世を想う",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"ガチャイベント「白糸綿々」で獲得"
+					],
+					"id": "imitation_fashion_57_w"
+				}
+			},
+			{
+				"outfit": {
+					"name": "素華",
+					"description": "「姫玉様は何を着ても似合われます」と言う一方で、玉蘭個人としてはこの一着が一番のお気に入りである。なんと言っても、これを着て並んだ時の二人はとても師弟らしく見えるからだ",
+					"rarity": 5,
+					"source": "イベントで獲得",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57_2"
+				},
+				"weapon": {
+					"name": "異彩",
+					"description": "激動と変化の時代を、彼女はともに歩んできた",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"イベント「グリッド追跡」で獲得"
+					],
+					"id": "imitation_fashion_57_w_2"
+				}
+			}
+		],
+		"version": "3.8",
+		"limited": true,
+		"id": "dfishchess_fire"
+	},
 	"snipe_fire": {
 		"name": "クローバークロス",
 		"description": "ミラポリスで大流行しているVRマルチ・オンライン・シューティングゲームの主催者があるシーズンの個人チャンピオンのために特別に設計した銃。オーダーメイドされた実物模型はチャンピオン本人にも送られたのだが、まさか本当にゲームのように使えるとは…",
@@ -13937,7 +14372,7 @@
 			"skill": [
 				{
 					"name": "ニンバスの破撃",
-					"description": "N/A",
+					"description": "ターゲットに向かって武器を投げ、同時に付近のターゲットを引き寄せ、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与えて付近のターゲットを一時的に動けなくする。クールダウン<shuzhi>20</>秒(このスキルはクールダウンクリア、リセット、変化の影響を受けない)。\r\n\r\nこのスキルの発動に成功すると、復讐を<shuzhi>10</>スタック獲得する。ターゲットにダメージを与えるたびに復讐を<shuzhi>1</>スタック消費し、その時点でフロントにある武器のダメージ属性が<shuzhi>物理</>または<shuzhi>炎</>の場合は付近のターゲットに攻撃力×<shuzhi>600%</>の武器属性ダメージを与える。1秒ごとに最大<shuzhi>1</>回発動可能。\r\n\r\nスキルの発動に成功したあと、自身の最大HP×<shuzhi>50%</>を耐久値上限とするＡ.Ｔ.フィールドを1つ生成する。<shuzhi>30</>秒間持続。この間、自身の物理ダメージ+<shuzhi>18%</>、炎ダメージ+<shuzhi>12%</>、さらに不屈効果を獲得する。\r\n自身がダメージを受けたとき、Ａ.Ｔ.フィールドは残りパーセンテージに応じてダメージを軽減し、同時に受けたダメージ量に応じてＡ.Ｔ.フィールドの耐久値を減らす(耐久値は最低でも上限の<shuzhi>10%</>の状態を維持する)。\r\n剛毅共鳴の発動中かつ復讐をスタックしているとき、自身がダメージを受けると復讐を<shuzhi>1</>スタック消費して自身の最大HP×<shuzhi>8%</>のダメージをブロックする。<shuzhi>0.5</>秒ごとに最大<shuzhi>1</>回発動可能。",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -13948,7 +14383,7 @@
 			],
 			"discharge": [
 				{
-					"name": "エヴァ出撃！",
+					"name": "武装出撃！",
 					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解除</>する。２号機が飛び蹴りを行い、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>の範囲ダメージを与える。その間、ダメージ無効が<shuzhi>1.5</>秒間持続する(トップリーグでは無効)。",
 					"tags": [
 						"Damage",
@@ -13962,7 +14397,7 @@
 		"fashion": [
 			{
 				"outfit": {
-					"name": "Memandang Gray",
+					"name": "アッシュパノラマ",
 					"description": "少女はここで、彼方を見つめる",
 					"rarity": 5,
 					"source": "イベントで獲得",
@@ -13976,12 +14411,12 @@
 				},
 				"weapon": {
 					"name": "光輝・ロンギヌスの槍",
-					"description": "生命の樹の根、その本当の力が解き放たれる",
+					"description": "螺旋状の槍、先端は二股に分かれている",
 					"rarity": 5,
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_asuka_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"ガチャイベント「灰城眺望」で獲得"
+						"ガチャイベント「アッシュパノラマ」で獲得"
 					],
 					"id": "imitation_fashion_55_w"
 				}
@@ -13990,6 +14425,422 @@
 		"version": "3.7",
 		"limited": true,
 		"id": "asuka_physic"
+	},
+	"ayanamirei_thunder": {
+		"name": "リリーフ",
+		"description": "ミラポリス科学技術部が綾波レイのために特別開発したプロトタイプの弓で、零号機の外観とカラーリングを参考にしている。エネルギーを込めた矢を発射できる",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_AyanamiRei.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_AyanamiRei.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"rarity": 5,
+		"element": "Thunder",
+		"type": "AyanamiRei",
+		"weaponUpgradeId": "thunder_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "AyanamiRei_thunder_ssr_star",
+		"stats": [
+			{
+				"stat": {
+					"name": "攻撃",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "会心",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**雷・氷融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(雷/氷属性)、攻撃力パーセンテージ(雷/氷属性)、雷/氷バフ(雷/氷属性)の最高値をそれぞれ参照する。また、この武器属性は雷と氷の両属性と見なされる。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**雷共鳴**：雷属性武器を**2**つ以上装備すると発動。雷攻撃力+**15%**、雷耐性+**25%**。装備すると常時有効(複数の雷共鳴/雷反応はスタック不可、雷共鳴が優先して発動)。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**氷共鳴**：氷属性武器を**2**つ以上装備すると発動。氷攻撃力+**15%**、氷耐性+**25%**。装備すると常時有効(複数の氷共鳴/氷反応はスタック不可、氷共鳴が優先して発動)。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**疾電・脱手**：スキル-**装甲重撃**の発動後、命中したターゲットに対し雷攻撃力×**109.4%**+自身の最大HP×**15.6%**+各属性耐性の合計値×**56.3%**+会心の値×**210.9%**のダメージを毎秒与える。**30**秒間持続。脱手系ダメージはスタック不可。また、疾電ダメージはスキルダメージと見なされる。物理/炎属性武器のいずれかを**1**つ以上装備している場合、疾電ダメージが**1.3**倍まで UPする。なお、疾電ダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**ホーミングアロー**：任意の武器でダメージを与えると、ターゲットに向かってホーミングアローを**1**本発射する。初回命中したターゲットに攻撃力×**NaN%**のダメージを与え、同時に自身は特殊エネルギーを**4**Pt獲得する。また、ホーミングアローは命中したターゲットのもとに留まり、ターゲットをオーバーロード状態にする。**30**秒間持続。ターゲットに付与されたホーミングアローが**3**本に達すると当該ターゲットのホーミングアローをすべて解除するのと同時に爆発させ、付近のターゲットに攻撃力×**NaN%**のダメージを与える。ホーミングアローは**0.5**秒間に**1**回のみ発動。**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**雷**",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると、**1**秒間の**強制パラライズ**、**6**秒間の感電、および攻撃力×**144.00%**のダメージを与え、敵のバフを解除する。また、敵は**6**秒間、新たなバフを獲得できなくなる。"
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "**リリーフ**を装備しており、なおかつバックグラウンドにある時、**ホーミングアロー**による爆発ダメージ+**100%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**16%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "自身が**ホーミングアロー-オーバーロード**状態にあるターゲットに与える雷ダメージ+**10%**、氷ダメージ+**10%**。装備すると常時有効。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**32%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "**スキル-装甲重撃**の発動後に特殊エネルギーを追加で**25**Pt獲得する。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "**エネルギー消費**状態になると自身の雷ダメージ+**16%**、氷ダメージ+**10%**。**20**秒間持続。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "ラピッドアロー",
+					"description": "地上にいる時、通常攻撃を行うと6回連続攻撃ができる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージと少しのノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージと少しのノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージと少しのノックバック\r\n4回目：最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージと少しのノックバック\r\n5回目の攻撃後、フラッシュ発生時にタップすると6回目の攻撃が発動する。強力なエネルギーの矢とホーミングアローを数本発射してターゲットに攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>のダメージを与えるのと同時に、初回命中した場所に減速磁場を1つ生成する。減速磁場：範囲内にいる敵ターゲットの移動速度と攻撃速度-<shuzhi>35%</>、<shuzhi>3</>秒間持続。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Melee"
+				},
+				{
+					"name": "エアリアルアサルト",
+					"description": "滞空時に通常攻撃を行うと、スタミナを消費して空中で6回連続攻撃ができる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>\r\n5回目の攻撃後、フラッシュ発生時にタップすると6回目の攻撃が発動する。<shuzhi>ホーミングアロー</>を<shuzhi>5</>本発射してターゲットに攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>のダメージを与えるのと同時に、初回命中した場所に減速磁場を1つ生成する。減速磁場：範囲内にいる敵ターゲットの移動速度と攻撃速度-<shuzhi>40%</>、<shuzhi>3</>秒間持続。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+				},
+				{
+					"name": "バックステップアロー",
+					"description": "地上にいる時または滞空時、通常攻撃の1～5回目に通常攻撃を長押しするとバックステップアローを発動できる。\r\n後方にジャンプしながら前方に射撃を行い、攻撃が命中したターゲットに対し攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。\r\nバックステップアローの発動時に特殊エネルギーが<shuzhi>70</>Pt以上だった場合、<shuzhi>エネルギー消費</>状態が発動する。この状態に入ると雷攻撃力+<shuzhi>15%</>、氷攻撃力+<shuzhi>5%</>。\r\n<shuzhi>リリーフ</>がフロントにある時、0.5秒ごとに特殊エネルギーを<shuzhi>5</>Pt消費する。<shuzhi>リリーフ</>による与ダメージ+30%。さらに、通常攻撃を連続タップするか長押ししたままにすると<shuzhi>通常攻撃-シャイニングアロー</>が発動する。\r\n<shuzhi>リリーフ</>がバックグラウンドにある時、0.5秒ごとに特殊エネルギーを<shuzhi>3.3</>Pt消費する。<shuzhi>ホーミングアロー</>による与ダメージ+50%。さらに、爆発範囲が UPする。\r\n特殊エネルギーの上限は<shuzhi>100</>Pt。上限に達したあと、<shuzhi>リリーフ</>をフロントからバックグラウンドに切り替えるとただちにエネルギー消費状態に入る。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+				},
+				{
+					"name": "シャイニングアロー",
+					"description": "<shuzhi>エネルギー消費</>状態のとき、通常攻撃を行うと3回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+				},
+				{
+					"name": "エイミングスナイプ",
+					"description": "通常攻撃を長押しでチャージ攻撃状態に入り、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。チャージ時間が<shuzhi>0.1</>秒増えるごとにダメージ+<shuzhi>100%</>、ダメージ値はチャージ<shuzhi>2.3</>秒で最大になる。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAyanamiReiEvade_Evade"
+				},
+				{
+					"name": "トリプルショット",
+					"description": "任意の回避後すぐに通常攻撃を行うと、トリプルショットを発動する。初回命中したターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+				},
+				{
+					"name": "チャージショット",
+					"description": "回避後、適切なタイミングで通常攻撃をタップするとチャージショットを発動する。強力なエネルギーの矢を放ち、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与えるのと同時に、ホーミングアローを数本発射する。また、自身はブロックバリアを1回獲得する。<shuzhi>15</>秒間持続。ブロックバリアでブロック可能なダメージ量は自身の最大HPの<shuzhi>10%</>を超えず、同時に最大3回まで所有可能。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+				}
+			],
+			"skill": [
+				{
+					"name": "装甲重撃",
+					"description": "自身のメカを召喚して敵に強烈な一撃を与え、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。この間、自身は不屈効果を獲得するのと同時に特殊エネルギーを<shuzhi>35</>Pt獲得する。クールダウン<shuzhi>20</>秒(スキルのクールダウンのクリア、リセット、変化の影響を受けない)。",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+					"id": "GA_FPlayerAyanamiReiSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "心の壁",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解除</>する。自身のメカを召喚し、シールドで地面を砕いた際の衝撃波で付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。さらに特殊エネルギーを<shuzhi>30</>Pt獲得し、スキル発動中、被ダメージ無効が<shuzhi>1.5</>秒間持続する(トップリーグでは無効)。",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+					"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "フューチャーエコー",
+					"description": "時空の彼方からやってきた少女は、未来のシグナルに耳を傾ける",
+					"rarity": 5,
+					"source": "イベントで獲得",
+					"simulacrumId": "imitation_56",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_56"
+				},
+				"weapon": {
+					"name": "ミスティックエコー",
+					"description": "綾波レイからのフィードバックをもとに科学技術部が開発した、「リリーフ」の改良モデル",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_rei_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"ガチャイベント「フューチャーエコー」で獲得"
+					],
+					"id": "imitation_fashion_56_w"
+				}
+			}
+		],
+		"version": "3.7",
+		"limited": true,
+		"id": "ayanamirei_thunder"
 	},
 	"brush_fire": {
 		"name": "松慧",

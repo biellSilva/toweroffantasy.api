@@ -12762,7 +12762,7 @@
 			"skill": [
 				{
 					"name": "Arktische Kälte",
-					"description": "Schwingt die Lanze, um den Raum zu zerreißen. Währenddessen wird dem Wanderer „Hyperkörper“ und <shuzhi>2</> Sek. lang eine Schadensreduktion von <shuzhi>80%</> gewährt, was Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt und für <shuzhi>30</> Sek. einen Riss entstehen lässt, der Ziele in der Nähe heranzieht. Erzeugt außerdem <shuzhi>6</> Eiskerne (im Kampf können bis zu <shuzhi>45</> Eiskerne gleichzeitig existieren). Abklingzeit: <shuzhi>60</> Sek.\r\nNach erfolgreicher Verwendung von „Arktische Kälte“ erhöht sich der Frost- und Voltschaden des Wanderers um <shuzhi>9%</> und der Wanderer ignoriert <shuzhi>15%</> des Frost- und Voltwiderstands des Ziels. Hält <shuzhi>60</> Sek. an (der insgesamt ignorierte Widerstand jedes Elements kann <shuzhi>50%</> nicht übersteigen).",
+					"description": "Schwingt die Lanze, um den Raum zu zerreißen. Währenddessen wird dem Wanderer „Hyperkörper“ und <shuzhi>2</> Sek. lang eine Schadensreduktion von <shuzhi>80%</> gewährt, was Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt und für <shuzhi>30</> Sek. einen Riss entstehen lässt, der Ziele in der Nähe heranzieht. Erzeugt außerdem <shuzhi>6</> Eiskerne (auf dem Feld können bis zu <shuzhi>45</> Eiskerne gleichzeitig existieren). Abklingzeit: <shuzhi>60</> Sek.\r\nNach erfolgreicher Verwendung von „Arktische Kälte“ erhöht sich der Frost- und Voltschaden des Wanderers um <shuzhi>9%</> und der Wanderer ignoriert <shuzhi>15%</> des Frost- und Voltwiderstands des Ziels. Hält <shuzhi>60</> Sek. an (der insgesamt ignorierte Widerstand jedes Elements kann <shuzhi>50%</> nicht übersteigen).",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -13225,6 +13225,441 @@
 		"limited": true,
 		"id": "blevi_thunder"
 	},
+	"dfishchess_fire": {
+		"name": "Dualismus",
+		"description": "Eine lange Geschichte und eine weite, wilde Welt.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_DFishChess.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_DFishChess.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/jiyu.webp"
+		},
+		"rarity": 5,
+		"element": "Flame",
+		"type": "DFishChess",
+		"weaponUpgradeId": "Fire_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "DFishChess_fire_ssr_star",
+		"avatar": "imitation_57",
+		"stats": [
+			{
+				"stat": {
+					"name": "Angriff",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "LP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Krit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Masse- und Flammenfusion**",
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten physischen/Flammen-Basis-ANG, des höchsten ausgerüsteten physischen/Flammen-ANG-Prozentwerts und des höchsten ausgerüsteten physischen/Flammenschaden-Bonus berechnet, und die Waffe gilt sowohl als physische als auch als Flammenwaffe."
+			},
+			{
+				"title": "**Physische Resonanz**",
+				"description": "Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird."
+			},
+			{
+				"title": "**Flammenresonanz**",
+				"description": "Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird."
+			},
+			{
+				"title": "**Zentralnexus: Auf dem Feld**",
+				"description": "Beim Treffen eines Ziels mit **Dualismus** wird Zielen in der Nähe Schaden in Höhe von **256%** des Flammen-ANG + **3.6%** der max. LP + **133%** der Summe aller Widerstandsarten des Wanderers + **4.9%** des krit. Schadens zugefügt. Kann 1-mal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Zentralnexus“ zählt als normaler Angriffsschaden. Wenn **1** beliebige Frost- oder Voltwaffe ausgerüstet ist, wird der Schaden von „Zentralnexus“ mit **1.3** multipliziert. Außerdem wird der Schaden von „Zentralnexus“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+			}
+		],
+		"elementEffects": {
+			"title": "**Flamme**",
+			"description": "Wenn die Waffe voll geladen ist, entzündet sie das Ziel beim nächsten Angriff für **8**Sek. und verursacht jede Sekunde Schaden in Höhe von **58.00%** des ANG. Während Ziele entzündet sind, werden ihre Heileffekte um **50%** verringert."
+		},
+		"attributes": [
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "Erhöht die maximale Anzahl an Stapeln von **Entscheidende Aufstellung** auf **18**. Der Bonusschaden jedes Stapels **Entscheidende Aufstellung** wird auf **400%** des ANG erhöht.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Wenn **Dualismus** ausgerüstet ist, wird **15%** des Flammenwiderstands der Ziele in der Zone ignoriert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Der insgesamt ignorierte Widerstand jedes Elements kann 50% nicht übersteigen.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Wenn **Komm ins Spiel** aktiv ist, wird der erlittene Schaden um **30%** reduziert. Wenn der Anwender tödlichen Schaden erleidet, werden sofort **100%** seiner max. LP wiederhergestellt. Dieser Effekt kann nur **1**-mal pro Fähigkeitsaktivierung ausgelöst werden.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Erhöht den Flammenschaden pro Stapel **Glühende Sonne** auf **5%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Wandernde Sterne",
+					"description": "Verwende am Boden den normalen Angriff, um 5-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+					"id": "GA_FPlayerDFishChessMelee_Melee"
+				},
+				{
+					"name": "Eröffnungszug",
+					"description": "Setze in der Luft einen normalen Angriff ein, um 4-mal hintereinander in der Luft anzugreifen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_AirAttack"
+				},
+				{
+					"name": "Spielbrett prüfen",
+					"description": "Halte den normalen Angriff auf dem Boden, um „Spielbrett prüfen“ zu aktivieren. Sammelt bis zu 5 Figuren an, die fortgeschleudert werden und Ziele verfolgen, und jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursachen.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+				},
+				{
+					"name": "Generationensprung",
+					"description": "Tippe und halte in der Luft den normalen Angriff, um „Generationensprung“ auszulösen.\r\nEntfesselt die Zwillingsfische bei der Landung und fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und schleudert sie in die Luft.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDFishChessEvade_Evade"
+				},
+				{
+					"name": "Vorteil nutzen",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (tippe vor dem Ausweichen auf eine Pfeiltaste), um <shuzhi>1</> schwarzen Spielstein vor dir zu platzieren. Der Spielstein zieht Ziele in der Nähe kurz heran und verlangsamt sie, was Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Sternenfall",
+					"description": "Verwende während des kurzen Zeitraums nach dem Ausweichen nach hinten den normalen Angriff, um <shuzhi>3</> weiße Spielsteine vor dir zu platzieren. Jeder weiße Spielstein fügt Zielen in der Nähe beim Landen Flächenschaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Die Spielsteine platzieren außerdem Fallen, die in der Nähe von Gegnern explodieren, sie kurz verlangsamen und ihnen zusätzlich <shuzhi>57%</> Schaden zufügen.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Komm ins Spiel",
+					"description": "Springt und schwebt in der Luft (der Wanderer ist währenddessen bewegungsunfähig) und verwandelt das Schlachtfeld in ein Go-Brett. Gewährt für <shuzhi>10</> Sek. eine Sicht von oben. Währenddessen werden Angriffe mit Spielsteinen und Fähigkeiten durch <shuzhi>Spielstein-Vorteil</> ersetzt. Tippe auf das Go-Brett, um <shuzhi>18</> Spielsteine aufzustellen, die allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>250%</> des ANG zufügen und sie kurz verlangsamen. Abklingzeit: <shuzhi>40</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.\r\n<shuzhi>Entscheidende Aufstellung</>: Die Verwendung von <shuzhi>Spielbrett prüfen</>, <shuzhi>Vorteil nutzen</>, <shuzhi>Sternenfall</> und <shuzhi>Es endet hier</> oder das Erzeugen neuer Herbeirufungen (aber nicht das Auffrischen existierender) gewährt „Entscheidende Aufstellung“-Stapel. Bis zu <shuzhi>9</>-mal stapelbar. Während „Entscheidende Aufstellung“ aktiv ist, verbraucht jeder Spielstein <shuzhi>1</> Stapel, um allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>200%</> des ANG zusätzlich zuzufügen. Während die Fähigkeit aktiv ist, können keine Stapel erhalten werden.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+					"id": "GA_FPlayerDFishChess_Skill"
+				},
+				{
+					"name": "Spielstein-Vorteil",
+					"description": "Während <shuzhi>Komm ins Spiel</> aktiv ist, kann „Spielstein-Vorteil“ manuell ausgelöst werden, ansonsten wird es am Ende der Dauer automatisch ausgelöst. Der Anwender fällt vom Himmel und fügt allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Zusätzlich wird Schaden in Höhe der Anzahl der während der Dauer der Fähigkeit verbrauchten <shuzhi>Entscheidende Aufstellung</>-Stapel × 200% des ANG verursacht. Die Zwillingsfische kreisen dann nach außen, stoßen Ziele in der Nähe zurück und fügen ihnen Schaden in Höhe von <shuzhi>{2}%</> des ANG zu.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+					"id": "GA_FPlayerDFishChess_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Es endet hier",
+					"description": "N/A",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+					"id": "GA_FPlayerDFishChess_ChangeSkill"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Seiden-Ära",
+					"description": "Nimm die Vergangenheit mit unerschütterlicher Entschlossenheit an.",
+					"rarity": 5,
+					"source": "Aus Events",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57"
+				},
+				"weapon": {
+					"name": "Schimmer",
+					"description": "Mit den Geheimnissen des Universums in der Hand und der Welt im Herzen.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Erhältlich im Event „Seiden-Ära“"
+					],
+					"id": "imitation_fashion_57_w"
+				}
+			},
+			{
+				"outfit": {
+					"name": "Geschmeidige Eleganz",
+					"description": "„Meisterin Yu sieht in allem umwerfend aus“, heißt es. Aber dieses Stück aus Meisterin Yus Garderobe ist Yu Lans Favorit. Vielleicht liegt es daran, dass die beiden darin wirklich wie das perfekte Meister-Schüler-Paar aussehen.",
+					"rarity": 5,
+					"source": "Aus Events",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57_2"
+				},
+				"weapon": {
+					"name": "Epoche",
+					"description": "Sie begleitete sie durch turbulente und wechselhafte Jahre.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Erhältlich im Netzwerkverfolgung-Event"
+					],
+					"id": "imitation_fashion_57_w_2"
+				}
+			}
+		],
+		"version": "3.8",
+		"limited": true,
+		"id": "dfishchess_fire"
+	},
 	"snipe_fire": {
 		"name": "Klee-Kreuz",
 		"description": "Ein VR-Mehrspieler-Shooter, der in Mirroria wahnsinnig beliebt ist, hat diese exklusive Waffe für den besten Spieler einer Saison entwickelt. Das maßgefertigte echte Modell der Waffe wurde dem Spieler zugesendet. Niemand konnte ahnen, dass sie wie im Spiel funktioniert …",
@@ -13594,7 +14029,7 @@
 	},
 	"asuka_physic": {
 		"name": "Lanze des Longinus",
-		"description": "Die Legende besagt, dass dies die Wurzeln des Lebensbaums sind und sie Kräfte besitzen, denen niemand widerstehen kann.",
+		"description": "Die Legende besagt, dass dies Waffe aus den Wurzeln des Lebensbaums gefertigt wurde und sie Kräfte besitzt, denen niemand widerstehen kann.",
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_mingrixiang.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_mingrixiang.webp",
@@ -13744,7 +14179,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "Solange der Wanderer ein **AT-Feld** aktiviert hat, können Angriffe einen bestimmten Prozentsatz der Schadensreduktion des Schilds eines Ziels ignorieren. Dieser Prozentsatz entspricht **30%** des aktuellen **Haltbarkeit-Prozentwerts** des **AT-Felds** + **20%**. Wenn Standhaftigkeit-Resonanz aktiv ist, erhöht sich Zertrümmern des Wanderers um **100%** des **Haltbarkeit-Prozentwerts** des **AT-Felds**.",
+				"description": "Solange der Wanderer ein **AT-Feld** aktiviert hat, können Angriffe einen bestimmten Prozentsatz der Schadensreduktion des Schilds eines Ziels ignorieren. Dieser Prozentsatz entspricht **30%** des aktuellen **Haltbarkeit-Prozentwerts** des **AT-Felds** + **20%**. Wenn **Standhaftigkeit-Resonanz** aktiv ist, erhöht sich Zertrümmern des Wanderers um **100%** des **Haltbarkeit-Prozentwerts** des **AT-Felds**.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13937,7 +14372,7 @@
 			"skill": [
 				{
 					"name": "Wolkenstoß",
-					"description": "N/A",
+					"description": "Wirft eine Waffe in Richtung des Ziels und zieht Ziele in der Nähe heran, wodurch Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht wird und Ziele in der Nähe für kurze Zeit bewegungsunfähig werden. Abklingzeit: <shuzhi>20</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.\r\nNach erfolgreichem Einsatz dieser Fähigkeit werden <shuzhi>10</> Stapel „Rache“ gewährt. Wenn einem Gegner Schaden zugefügt wird, wird jeweils <shuzhi>1</> „Rache“-Stapel verbraucht. Wenn der Typ der ausgerüsteten Waffe <shuzhi>physisch</> oder <shuzhi>Flamme</> ist, wird Zielen in der Nähe entsprechend des Waffentyps zusätzlicher Schaden in Höhe von <shuzhi>600%</> des ANG zugefügt. Dieser Effekt kann bis zu <shuzhi>1</>-mal pro Sekunde ausgelöst werden.\r\nZusätzlich wird nach erfolgreicher Verwendung dieser Fähigkeit für <shuzhi>30</> Sek. ein AT-Feld mit einer Haltbarkeit von <shuzhi>50%</> der max. LP erzeugt. Während dieses aktiv ist, erhöht sich der physische Schaden des Wanderers um <shuzhi>18%</> und der Flammenschaden um <shuzhi>12%</> und ihm wird „Hyperkörper“ gewährt.\r\nWenn der Wanderer Schaden erleidet, verringert das AT-Feld diesen entsprechend seines verbleibenden Haltbarkeit-Prozentwerts, wobei seine Haltbarkeit entsprechend des verursachten Schadens abnimmt (bis zu einem Mindestwert von <shuzhi>10%</> Haltbarbkeit).\r\nWährend Standhaftigkeit-Resonanz aktiv ist und der Wanderer bei vorhandenen „Rache“-Stapeln Schaden erleidet, wird <shuzhi>1</> „Rache“-Stapel verbraucht und Schaden in Höhe von <shuzhi>8%</> der max. LP geblockt. Dieser Effekt kann bis zu <shuzhi>1</>-mal alle <shuzhi>0,5</> Sek. ausgelöst werden.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -13948,7 +14383,7 @@
 			],
 			"discharge": [
 				{
-					"name": "Envangelion-Angriff",
+					"name": "Waffenstart",
 					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und mit EVA-02 ein fliegender Tritt ausgeführt. Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
 					"tags": [
 						"Damage",
@@ -13990,6 +14425,422 @@
 		"version": "3.7",
 		"limited": true,
 		"id": "asuka_physic"
+	},
+	"ayanamirei_thunder": {
+		"name": "Erlösung",
+		"description": "Der Prototyp-Bogen, der vom Ministerium für Wissenschaft und Technologie von Mirroria speziell für Rei Ayanami gefertigt wurde. Orientiert sich am Aussehen und der Farbe von EVA-00. Kann Energiepfeile abfeuern.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_AyanamiRei.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_AyanamiRei.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"rarity": 5,
+		"element": "Thunder",
+		"type": "AyanamiRei",
+		"weaponUpgradeId": "thunder_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "AyanamiRei_thunder_ssr_star",
+		"stats": [
+			{
+				"stat": {
+					"name": "Angriff",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "LP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Krit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Volt- und Frostfusion**",
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Volt-/Frost-Basis-ANG, des höchsten ausgerüsteten Volt-/Frost-ANG-Prozentwerts und des höchsten ausgerüsteten Volt-/Frostschaden-Bonus berechnet, und die Waffe gilt sowohl als Volt- als auch als Frostwaffe."
+			},
+			{
+				"title": "**Voltresonanz**",
+				"description": "Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird."
+			},
+			{
+				"title": "**Frostresonanz**",
+				"description": "Erhöht den Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird."
+			},
+			{
+				"title": "**Blitz: Distanzierung**",
+				"description": "Nach dem Einsatz von **Mecha-Angriff** wird Zielen **30**Sek. lang pro Sek. Schaden in Höhe von **109,4%** des Volt-ANG + **15,6%** der max. LP + **56,3%** der Summe aller Widerstandsarten des Wanderers + **210,9%** des krit. Schadens zugefügt. Mehrfacher Schaden durch „Distanzierung“ wird nicht gestapelt und Schaden durch „Blitz“ zählt als Fähigkeitsschaden. Wenn **1** beliebige physische oder Flammenwaffe ausgerüstet ist, wird der Schaden von „Blitz“ mit **1,3** multipliziert. Außerdem wird der Schaden von „Blitz“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+			},
+			{
+				"title": "**Zielsuchender Pfeil**",
+				"description": "Schießt beim Verursachen von Schaden mit einer beliebigen Waffe **1** zielsuchenden Pfeil auf die Ziele und fügt dem ersten getroffenen Ziel Schaden in Höhe von **NaN%** des ANG zu. Gleichzeitig erhältst du **4** Spezialenergie. Der zielsuchende Pfeil verbleibt auf dem Ziel und wendet **30**Sek. lang „Überladung“ an. Wenn die Zahl der zielsuchenden Pfeile auf dem Ziel **3** erreicht, detonieren die Pfeile und fügen Zielen in der Nähe Schaden in Höhe von **NaN%** des ANG zu. „Zielsuchender Pfeil“ kann bis zu **1**-mal alle **0.5**Sek. ausgelöst werden."
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**",
+			"description": "Wenn die Waffe voll geladen ist, werden Ziele beim nächsten Angriff für **1**Sek. **stark gelähmt** und **6**Sek. lang elektrisiert. Die Buffs der Ziele werden entfernt und sie erleiden Schaden in Höhe von **144.00%** des ANG. Elektrisiere Ziele können für die nächsten **6**Sek. keine Buffs erhalten."
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "Wenn sich **Erlösung** im Nebenhand-Slot befindet, wird der Detonationsschaden von **Zielsuchender Pfeil** um **100%** erhöht.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Erhöht den Voltschaden, den Ziele durch **Zielsuchender Pfeil: Überladung** erleiden, um **10%** und den Frostschaden um **10%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Gewährt nach dem Einsatz von **Mecha-Angriff** zusätzlich **25** Spezialenergie.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Nach Aktivierung von **Energieverbrauch** werden der Voltschaden des Wanderers um **16%** und der Frostschaden um **10%** erhöht. Hält **20**Sek. lang an.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Schnellbogen",
+					"description": "Verwende am Boden den normalen Angriff, um 6 Angriffe hintereinander auszuführen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel eine kurze Strecke zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und stößt das Ziel eine kurze Strecke zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und stößt das Ziel eine kurze Strecke zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und stößt das Ziel eine kurze Strecke zurück.\r\nTippe, wenn nach dem fünften Angriff ein blinkendes Licht erscheint, um den sechsten Angriff auszulösen. Sechster Angriff: Schießt einen mächtigen Energiepfeil ab und entfesselt zielsuchende Pfeile, die Zielen Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</> zufügen und am Standort des ersten getroffenen Ziels für <shuzhi>3</> Sek. ein verlangsamendes Magnetfeld anwenden. Die Bewegungs- und Angriffsgeschwindigkeit von Gegnern in der Umgebung wird um <shuzhi>35%</> verringert.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Melee"
+				},
+				{
+					"name": "Luftangriff",
+					"description": "Verwende in der Luft den normalen Angriff, um 6 Angriffe hintereinander in der Luft auszuführen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</>.\r\nTippe, wenn nach dem fünften Angriff ein blinkendes Licht erscheint, um den sechsten Angriff auszulösen. Sechster Angriff: Schießt einen mächtigen Energiepfeil ab und entfesselt <shuzhi>5</> <shuzhi>zielsuchende Pfeile</>, die Zielen Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</> zufügen und am Standort des ersten getroffenen Ziels ein verlangsamendes Magnetfeld anwenden. Die Bewegungs- und Angriffsgeschwindigkeit von Gegnern in der Umgebung wird für <shuzhi>3</> Sek. um <shuzhi>40%</> verringert.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+				},
+				{
+					"name": "Rücksprung-Pfeil",
+					"description": "Tippe und halte während normaler Angriffe auf dem Boden oder in der Luft den normalen Angriff beim Ausführen des ersten bis fünften normalen Angriffs gedrückt, um „Rücksprung-Pfeil“ auszulösen.\r\nFeuert einen Schuss nach vorne ab, während du zurückspringst, und fügt dem getroffenen Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.\r\nWenn die Spezialenergie zu diesem Zeitpunkt mehr als <shuzhi>70</> beträgt, wird <shuzhi>Energieverbrauch</> ausgelöst: Erhöht den Volt-ANG um <shuzhi>15%</> und den Frost-ANG um <shuzhi>5%</>.\r\nWährend sich <shuzhi>Erlösung</> im Haupt-Slot befindet, werden alle 0,5 Sek. <shuzhi>5</> Spezialenergie verbraucht. Erhöht den von <shuzhi>Erlösung</> verursachten Schaden um 30%. Tippe kontinuierlich oder tippe und halte den normalen Angriff, um <shuzhi>Ausweichender Pfeilhagel</> auszulösen.\r\nWährend sich <shuzhi>Erlösung</> im Nebenhand-Slot befindet, wird alle 0,5 Sek. <shuzhi>3,3</> Spezialenergie verbraucht. Erhöht den Schaden von Zielsuchender Pfeil um <shuzhi>50%</> und vergrößert seinen Detonationsradius.\r\nDie maximale Menge an Spezialenergie beträgt <shuzhi>100</>. Wenn diese Menge erreicht ist, aktiviert der Wanderer sofort „Energieverbrauch“, sobald <shuzhi>Erlösung</> vom Haupt-Slot in den Nebenhand-Slot verschoben wird.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+				},
+				{
+					"name": "Ausweichender Pfeilhagel",
+					"description": "Setze bei aktivem <shuzhi>Energieverbrauch</> einen normalen Angriff ein, um 3-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+				},
+				{
+					"name": "Präzisionsschuss",
+					"description": "Tippe und halte den normalen Angriff, um einen Angriff aufzuladen. Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Pro <shuzhi>0,1</> Sek. Aufladen erhöht sich der Schaden um <shuzhi>100%</>. Der maximale Schaden ist nach <shuzhi>2,3</> Sek. Aufladen erreicht.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAyanamiReiEvade_Evade"
+				},
+				{
+					"name": "Dreifachschuss",
+					"description": "Verwende zum Auslösen von „Dreifachschuss“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, was dem ersten getroffenen Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+				},
+				{
+					"name": "Aufgeladener Schuss",
+					"description": "Führe nach dem Ausweichen im richtigen Moment einen normalen Angriff aus, um „Aufgeladener Schuss“ auszulösen. Dadurch werden mächtige Energiepfeile abgeschossen, die Zielen Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügen. Gleichzeitig werden zielsuchende Pfeile abgefeuert. Der Wanderer erhält für <shuzhi>15</> Sek. 1 „Blockbarriere“, die Schaden in Höhe von maximal <shuzhi>10%</> der max. LP des Wanderers blockt. Der Wanderer kann höchstens 3 „Blockbarrieren“ gleichzeitig einsetzen.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+				}
+			],
+			"skill": [
+				{
+					"name": "Mecha-Angriff",
+					"description": "Ruft einen Mecha herbei, um Gegner zu zermalmen und Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen. Währenddessen erhält der Wanderer „Hyperkörper“ und <shuzhi>35</> Spezialenergie. Abklingzeit: <shuzhi>20</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+					"id": "GA_FPlayerAyanamiReiSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Verteidigungsfeld",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>. Rufe einen Mecha herbei und verwende seinen Schild, um den Boden zu zerschmettern, woraufhin die dadurch ausgelöste Schockwelle allen Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Gewährt zudem <shuzhi>30</> Spezialenergie. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+					"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Zukunftsecho",
+					"description": "Ein Mädchen, das eine ferne Raumzeit durchreist hat und Signalen aus der Zukunft lauscht.",
+					"rarity": 5,
+					"source": "Aus Events",
+					"simulacrumId": "imitation_56",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_56"
+				},
+				"weapon": {
+					"name": "Reis Echo",
+					"description": "Die vom Ministerium für Wissenschaft und Technologie auf der Grundlage von Rei Ayanamis Feedback modifizierte Version von „Erlösung“.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_rei_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Erhältlich im „Zukunftsecho“-Gashapon-Event."
+					],
+					"id": "imitation_fashion_56_w"
+				}
+			}
+		],
+		"version": "3.7",
+		"limited": true,
+		"id": "ayanamirei_thunder"
 	},
 	"brush_fire": {
 		"name": "Kienkomet",

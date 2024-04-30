@@ -329,6 +329,16 @@
 		"description": "Aumenta o dano final em **0%**. Quando **Cometa Pinheiro** estiver no espaço secundário, a frequência de lançamento de **pena de pardal** aumenta para **1** por segundo.\r\nQuando **pena de pardal** atingir um alvo e acionar o efeito de propagação, ela propaga também **queima iônica** e **queimadura cruzada**.\r\nEm jogo em equipe, reduz o dano causado pelo alvo agredido em **1%**. Quando a ressonância de coragem for ativada, aumenta a redução de dano para **2%**.",
 		"id": "buff_imitation_brush_level2_damageup"
 	},
+	"buff_imitation_dfish_level1": {
+		"name": "Jogada astuta",
+		"description": "Aumenta o dano final em **0%**.",
+		"id": "buff_imitation_dfish_level1"
+	},
+	"buff_imitation_dfish_level2": {
+		"name": "Jogada estratégica",
+		"description": "Aumenta o dano final em **0%**.\r\nCom **Fluxolivre** equipada, se houver apenas **1** alvo na zona, aumenta o dano ígneo em **1%**. Se houver **2** ou mais alvos, aumenta o dano ígneo para **2%**.",
+		"id": "buff_imitation_dfish_level2"
+	},
 	"buff_thunder_ready_lv1": {
 		"name": "Raio",
 		"description": "Eletrocuta o alvo durante **3** segundos enquanto causa dano a ele, impossibilitando-o de usar armas.",
@@ -420,83 +430,83 @@
 		"id": "buff_tianlang_weaponcharged"
 	},
 	"buff_timerevert_addenergy": {
-		"name": "Descarga Carga",
-		"description": "Após usar uma habilidade de descarga, ganhe imediatamente uma carga de arma igual ao número de Contagens de Carga do Re-Tracker vezes **6**/**8**/**10**.",
+		"name": "Bateria Carregada",
+		"description": "Após usar uma habilidade de descarga, ganhe imediatamente uma carga de arma igual ao número de Contagens de Carga do Re-Rastreador vezes **6**/**8**/**10**.",
 		"id": "buff_timerevert_addenergy"
 	},
 	"buff_timerevert_attackdmgmaxhp": {
-		"name": "Ataque",
-		"description": "A cada 5 segundos, o próximo ataque causa dano adicional equivalente à contagem de cargas do Re-Tracker vezes **0,1%**/**0,15%**/**0,2%** da vida atual do alvo (ativado apenas durante a Ressonância de ataque).",
+		"name": "Aniquilação",
+		"description": "A cada **20** segundos, o próximo ataque causa dano adicional equivalente à contagem de Recargas do Re-rastreador vezes **0.02%**/**0.03%**/**0.05%** da vida máxima do chefe (ativado apenas durante a Ressonância de ataque).",
 		"id": "buff_timerevert_attackdmgmaxhp"
 	},
 	"buff_timerevert_bedmgdown": {
-		"name": "Redução de dano",
-		"description": "Reduz o dano recebido igual ao número de contagens de carga do Re-Tracker vezes **0.5%**/**0.75%**/**1%**.",
+		"name": "Inabalável",
+		"description": "Reduz o dano sofrido em número de recargas do Re-Rastreador × **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_bedmgdown"
 	},
 	"buff_timerevert_breakdefup": {
-		"name": "Despedaçar",
-		"description": "Aumenta o despedaçar para as contagens de carga de Re-rastreador × **1%**/**1,5%**/**2%**.",
+		"name": "Escudo Esmagar",
+		"description": "Aumenta o despedaçar em número de recargas do Re-Rastreador × **1%**/**1,5%**/**2%**.",
 		"id": "buff_timerevert_breakdefup"
 	},
 	"buff_timerevert_chargeup": {
-		"name": "Reforçador de carga",
-		"description": "Aumente a eficiência de carga igual ao número de cargas do Re-Tracker vezes **0,5%**/**0,75%**/**1%**.",
+		"name": "Amplificador de Carga",
+		"description": "Aumente a eficiência de carga em número de recargas do Re-Rastreador × **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_chargeup"
 	},
 	"buff_timerevert_defenfaddshield": {
-		"name": "Coragem",
-		"description": "Após a ativação, 1% do dano sofrido será transformado em um escudo, e ataques e habilidades causam dano adicional equivalente a **100%**/**200%**/**300%** do valor do escudo (somente acionado durante a ressonância de coragem).",
+		"name": "Ataque de Escudo",
+		"description": "Após a ativação, **40%**/**60%**/**80%** do dano sofrido dentro de **5** segundos será transformado em um escudo, com um mínimo de **5%** da Vida máxima do Executor. Ao possuir o escudo, ataques e habilidades causam dano adicional igual a **0.25%**/**0.5%**/**0.75%** da Vida máxima do Chefe. Pode apenas acionar 1 vez a cada 10 segundos (acionado apenas durante a ressonância de coragem).",
 		"id": "buff_timerevert_defenfaddshield"
 	},
 	"buff_timerevert_dmgup": {
-		"name": "Reforço de ataque",
-		"description": "Aumenta o dano causado igual ao número de cargas do Re-Tracker **0,5%**/**0,75%**/**1%**.",
+		"name": "Aumente o Calor",
+		"description": "Aumenta o dano causado em número de recargas do Re-Rastreador × **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_dmgup"
 	},
 	"buff_timerevert_dmgupinair": {
-		"name": "Reforço de Dano no Ar",
-		"description": "Aumenta o dano no ar igual ao número de contagens de carga do Re-Tracker vezes **0.6%**/**1%**/**1.5%**.",
+		"name": "Agilidade",
+		"description": "Aumenta o dano no ar em número de recargas do Re-Rastreador × **0,6%**/**1%**/**1,5%**.",
 		"id": "buff_timerevert_dmgupinair"
 	},
 	"buff_timerevert_exdmg": {
-		"name": "Aniquilação",
-		"description": "O próximo ataque consome todas as cargas e causa dano adicional equivalente à Vida máxima do alvo, que é igual à contagem de cargas do Re-Tracker vezes **0.05%**/**0.075%**/**0.1%**.",
+		"name": "Julgamento",
+		"description": "O próximo ataque consome todas as cargas e causa dano adicional equivalente à Vida máxima do alvo, que é igual à contagem de cargas do Re-Rastreador vezes **0.05%**/**0.075%**/**0.1%**.",
 		"id": "buff_timerevert_exdmg"
 	},
 	"buff_timerevert_gettimerevertstack": {
-		"name": "Rastreamento Rápido",
-		"description": "Aumente as Contagens de Carga acumuladas ao causar dano ao chefe de **1** para **2**.",
+		"name": "Redefinição Rápida Swift",
+		"description": "Após a ativação, ganhe adicionalmente **1** acúmulo de Contagem de Carga a cada **2** segundos.",
 		"id": "buff_timerevert_gettimerevertstack"
 	},
 	"buff_timerevert_healdmgaftertreatment": {
-		"name": "Bendição",
-		"description": "Após receber cura, o próximo ataque causa dano adicional igual à vida máxima do alvo, que é igual à contagem de cargas do Re-Tracker vezes **0.2%**/**0.3%**/**0.5%** (somente ativado durante a Ressonância de Bênção).",
+		"name": "Alívio",
+		"description": "Após receber cura, o próximo ataque causa dano adicional igual à Vida máxima do alvo, que é igual à contagem de Recargas do Re-rastreador vezes **0.01%**/**0.02%**/**0.03%**. Pode apenas ser acionado 1 vez a cada 10 segundos (acionado apenas durante a Ressonância de bendição).",
 		"id": "buff_timerevert_healdmgaftertreatment"
 	},
 	"buff_timerevert_healup": {
-		"name": "Cura",
-		"description": "Aumenta o efeito de cura igual ao número de cargas do Re-Tracker vezes **1%**/**1.5%**/**2%**.",
+		"name": "Orvalho Doce",
+		"description": "Aumenta o efeito de cura igual a **25%**/**50%**/**75%**.",
 		"id": "buff_timerevert_healup"
 	},
 	"buff_timerevert_ignoredef": {
-		"name": "Ignorar resistência",
-		"description": "Realize um ataque ignorando todas as resistências do chefe igual ao número de contagens de carga do Re-Tracker vezes **0,5%**/**0,75%**/**1%**.",
+		"name": "Desprezo",
+		"description": "Ignora uma porcentagem de todas as resistências do chefe para aumentar o dano causado. O aumento equivale ao número de recargas do Re-Rastreador × **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_ignoredef"
 	},
 	"buff_timerevert_periodshield": {
-		"name": "Escudo Regenerativo",
-		"description": "Ganhe um escudo a cada **30** segundos com seu valor igual à vida máxima do Executor, que é igual à contagem de cargas do Re-Tracker vezes **0.5%**/**1%**/**1.5%**.",
+		"name": "Escudo regenerativo",
+		"description": "Após a ativação, ganha um escudo, que é renovado a cada **30** segundos. O valor do escudo é igual ao número de Recargas do Re-rastreador vezes **0.5%**/**1%**/**1.5%** da vida máxima do Executor.",
 		"id": "buff_timerevert_periodshield"
 	},
 	"buff_timerevert_reducecd": {
-		"name": "Redução do Tempo de Recarga da Habilidade",
+		"name": "Tempestade Terrível",
 		"description": "Reduziu a recarga base das habilidades em **10%**/**20%**/**30%**.",
 		"id": "buff_timerevert_reducecd"
 	},
 	"buff_timerevert_suck": {
-		"name": "Roubo de vida",
-		"description": "Restaura vida igual ao número de cargas do Re-Tracker vezes **0,5%**/**0,75%**/**1%** com base no dano causado.",
+		"name": "Absorção de Vida",
+		"description": "Restaura vida igual a **10%**/**20%**/**30%** com base no dano causado.",
 		"id": "buff_timerevert_suck"
 	},
 	"attack_skill1": {
@@ -820,13 +830,13 @@
 		"id": "dieceng_boss_hum_057_nubukejie_-1_10"
 	},
 	"eventdes_boss044sp_common3": {
-		"name": "Defesa Absoluta",
-		"description": "Quando a vida de Harrah cai para uma certa porcentagem, ela entra em modo defensivo, não lançando ataques e ganhando invencibilidade. Durante seu período de invencibilidade, núcleos de energia aparecem no ar e descem lentamente, concedendo um efeito positivo ao entrar em contato com os Errantes, aumentando significativamente a altura do salto e a velocidade deles e reduzindo o consumo de VIG. Os núcleos de energia também interferem no modo defensivo de Harrah. Se os núcleos de energia forem apreendidos várias vezes, o estado de invencibilidade de Harrah termina prematuramente.",
+		"name": "Defesa absoluta",
+		"description": "Quando a vida de Harrah cai para uma certa porcentagem, ela entra em modo defensivo, no qual para de atacar e recebe invencibilidade. Durante a invencibilidade, núcleos de energia aparecem no ar e descem lentamente, conferindo um efeito positivo aos Errantes com que fazem contato antes de atingirem o solo. Esse efeito positivo aumenta drasticamente a altura do salto e a velocidade e reduz o consumo de vigor. Os núcleos de energia também interferem no modo defensivo de Harrah. Se eles forem aproveitados várias vezes, o estado de invencibilidade de Harrah termina antes do tempo.",
 		"id": "eventdes_boss044sp_common3"
 	},
 	"eventdes_boss044sp_fire1": {
 		"name": "Queimadura",
-		"description": "Harrah inflige marcas de Brasa nos Errantes ao redor, e quanto mais próximos eles estão de Harrah, mais rápido as marcas se acumulam. Errantes com mais de 50 acúmulos de marca de Brasa, quando danificados por Harrah, terão todas as suas marcas de Brasa limpas e receberão dano adicional baseado nos acúmulos de marcas de Brasa.",
+		"description": "Harrah inflige marcas de Brasa nos Errantes ao redor, e quanto mais próximos estiverem de Harrah, mais rápido as marcas se acumulam, até 100 acúmulos. Errantes com mais de 50 acúmulos de marca de Brasa, quando danificados por Harrah, terão todas as suas marcas de Brasa limpas e receberão dano adicional com base nos acúmulos de marcas de Brasa.",
 		"id": "eventdes_boss044sp_fire1"
 	},
 	"eventdes_boss044sp_fire2": {
@@ -836,7 +846,7 @@
 	},
 	"eventdes_boss044sp_ice1": {
 		"name": "Bloqueado por Gelo",
-		"description": "Harrah inflige marcas Geladinho nos Errantes ao redor, e quanto mais perto eles estão de Harrah, mais rápido as marcas se acumulam. Quando as marcas Geladinho atingem o máximo, o Errante alvo será congelado. Se for danificado por Harrah durante o congelamento, o estado de congelamento é suspenso, mas o alvo sofre um dano significativo de Quebra de Gelo 1 vez.",
+		"description": "Harrah inflige marcas Geladinho nos Errantes ao redor, até 25 pilhas. Quando as marcas Geladinho atingem pilhas completas, o Errante alvo será congelado. Se danificado por Harrah durante o Congelamento, o status de Congelamento é removido, mas o alvo sofre um dano de quebra de gelo significativo 1 vez.",
 		"id": "eventdes_boss044sp_ice1"
 	},
 	"eventdes_boss044sp_ice2": {
@@ -846,7 +856,7 @@
 	},
 	"eventdes_boss044sp_phy1": {
 		"name": "Desdém",
-		"description": "Errantes próximos a Harrah ou que sofram dano dela receberão marcas de Opressão. Cada marca de Opressão reduz a Vida máxima do Errante em 1%, até uma redução máxima de 50%.",
+		"description": "Errantes próximos a Harrah ou que sofram dano dela receberão marcas de Opressão, até 50 acúmulos. Cada marca de Opressão reduz a Vida máxima do Errante em 1%, até uma redução máxima de 50%.",
 		"id": "eventdes_boss044sp_phy1"
 	},
 	"eventdes_boss044sp_phy2": {
@@ -856,7 +866,7 @@
 	},
 	"eventdes_boss044sp_super1": {
 		"name": "Murchando",
-		"description": "Toda vez que um Errante sofre dano de Harrah, também são infligidos com as marcas de Distorção Temporal. Quando essas marcas atingem acúmulos máximos, o personagem é submetido ao Efeito Definhante, perdendo VIG periodicamente durante a duração.",
+		"description": "Toda vez que um Errante recebe dano de Harrah, também são infligidos com as marcas de Distorção Temporal, até 10 acúmulos. Quando essas marcas atingem acúmulos máximos, o personagem é submetido ao Efeito Murchando, perdendo VIG periodicamente durante a duração.",
 		"id": "eventdes_boss044sp_super1"
 	},
 	"eventdes_boss044sp_super2": {
@@ -865,8 +875,8 @@
 		"id": "eventdes_boss044sp_super2"
 	},
 	"eventdes_boss044sp_thu1": {
-		"name": "Trovão da Fúria",
-		"description": "Durante o combate, Harrah invoca periodicamente ataques de relâmpago para atingir posições aleatórias, causando dano elétrico aos alvos na área. Além disso, Errantes próximos a Harrah serão afetados com marcas de Eletrocussão. Cada pilha da marca amplifica o dano elétrico que o Errante recebe.",
+		"name": "Projétil-Tempestade",
+		"description": "Durante o combate, Harrah convoca periodicamente ataques de relâmpago. Quando um alvo atingido pelo relâmpago tem menos de 10 acumulações de Eletrocussão, ele receberá dano elétrico com base no número de acumulações de Eletrocussão, e então receberá 1 marca de Eletrocussão. Após atingir 10 acumulações de Eletrocussão, o alvo atingido pelo relâmpago é perfurado por alta voltagem, recebendo dano letal igual a 120% da Vida máxima.",
 		"id": "eventdes_boss044sp_thu1"
 	},
 	"eventdes_boss044sp_thu2": {
@@ -1225,15 +1235,18 @@
 		"id": "buff_spear_stun"
 	},
 	"buff_eleweakpoint_bigice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigice"
 	},
 	"buff_eleweakpoint_bigfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfire"
 	},
 	"buff_eleweakpoint_bigthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigthunder"
 	},
 	"buff_artifact11_getweapon": {
@@ -1956,6 +1969,16 @@
 		"description": "Aumenta muito o dano elétrico sofrido.",
 		"id": "buff_borderwar_weakthunder"
 	},
+	"buff_boss_002_4": {
+		"name": "Toxicichá",
+		"description": "A cura aplicada pelo Errante será convertida em uma quantidade equivalente de dano.",
+		"id": "buff_boss_002_4"
+	},
+	"buff_boss_002_5_ignore": {
+		"name": "Frágil",
+		"description": "Durante a duração, o corpo de aço do Errante é desabilitado e não pode entrar em um estado invencível.",
+		"id": "buff_boss_002_5_ignore"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Falha do Corpo de Aço",
 		"description": "Os Errantes não podem conceder o estado de corpo de aço a si mesmos.",
@@ -1963,7 +1986,7 @@
 	},
 	"buff_boss_044_sp_fire": {
 		"name": "Brasa",
-		"description": "Errantes que permanecem perto do Harrah mutado serão afligidos com Ember, que, ao atingir certos acúmulos, será detonado pelos ataques de Harrah, causando dano com base na Vida máxima do Errante alvo e no número de acúmulos.",
+		"description": "Máximo de acúmulos: 100. Errantes com mais de 50 acúmulos da marca Brasa, quando danificados por Harrah, terão todas as suas marcas Brasa limpas e receberão dano adicional com base nos acúmulos da marca Brasa.",
 		"id": "buff_boss_044_sp_fire"
 	},
 	"buff_boss_044_sp_fire_ignore": {
@@ -1973,31 +1996,31 @@
 	},
 	"buff_boss_044_sp_ice_frozen": {
 		"name": "Congelamento",
-		"description": "O alvo no estado congelado causado pelo Geladinho sofre dano adicional de Quebra de Gelo quando atacado por Harrah.",
+		"description": "O estado congelado causado pelo Geladinho. Errantes nesse estado sofrem dano adicional de quebra-gelo quando são atacados por Harrah.",
 		"id": "buff_boss_044_sp_ice_frozen"
 	},
 	"buff_boss_044_sp_ice_ignore": {
-		"name": "Imunidade Geladinho",
+		"name": "Imunidade a Geladinho",
 		"description": "O Geladinho não pode ser infligido no Errante alvo.",
 		"id": "buff_boss_044_sp_ice_ignore"
 	},
 	"buff_boss_044_sp_ice_stack": {
 		"name": "Geladinho",
-		"description": "Os Errantes que ficarem perto do Harrah mutado serão afetados pelo Geladinho, que, ao atingir certas pilhas, congelará o Errante e fará com que sofram dano adicional de Quebra de Gelo quando atacados pelo Harrah.",
+		"description": "Máximo de acúmulos: 25. Quando as marcas Geladinho atingem o máximo de acúmulos, o Errante alvo será congelado. Se for danificado por Harrah durante o congelamento, o estado de congelamento é removido, mas o alvo sofre um dano significativo de quebra de gelo 1 vez.",
 		"id": "buff_boss_044_sp_ice_stack"
 	},
 	"buff_boss_044_sp_phy_ignore": {
-		"name": "Imunidade à opressão",
+		"name": "Imunidade a Opressão",
 		"description": "A Opressão não pode ser infligida no Errante alvo.",
 		"id": "buff_boss_044_sp_phy_ignore"
 	},
 	"buff_boss_044_sp_phy_stack": {
 		"name": "Opressão",
-		"description": "Cada acúmulo reduz a vida máxima do Errante em 1%.",
+		"description": "Máximo de acúmulos: 50. Cada acúmulo reduz em 1% a vida máxima do Errante.",
 		"id": "buff_boss_044_sp_phy_stack"
 	},
 	"buff_boss_044_sp_reward_energyconsumedown": {
-		"name": "Reforço de Vigor",
+		"name": "Reforço de vigor",
 		"description": "Reduz o consumo de VIG do Errante.",
 		"id": "buff_boss_044_sp_reward_energyconsumedown"
 	},
@@ -2007,7 +2030,7 @@
 		"id": "buff_boss_044_sp_reward_jumphigh"
 	},
 	"buff_boss_044_sp_reward_speedup": {
-		"name": "Aprimoramento de Velocidade",
+		"name": "Aprimoramento de velocidade",
 		"description": "Aumenta a velocidade do Errante.",
 		"id": "buff_boss_044_sp_reward_speedup"
 	},
@@ -2017,22 +2040,22 @@
 		"id": "buff_boss_044_sp_superpower_energy_trigger"
 	},
 	"buff_boss_044_sp_superpower_ignore": {
-		"name": "Imunidade à Distorção Temporal",
+		"name": "Imunidade a Distorção Temporal",
 		"description": "A Distorção Temporal não pode ser infligida no Errante alvo.",
 		"id": "buff_boss_044_sp_superpower_ignore"
 	},
 	"buff_boss_044_sp_superpower_stack": {
 		"name": "Distorção Temporal",
-		"description": "Os ataques de Harrah infligem Distorção Temporal no alvo, que, ao atingir certas acumulações, aplica Definhamento ao alvo.",
+		"description": "A Distorção Temporal acumula até 10 vezes. Ao atingir o acúmulo máximo, o Murchando será aplicado ao alvo.",
 		"id": "buff_boss_044_sp_superpower_stack"
 	},
 	"buff_boss_044_sp_thu_stack": {
 		"name": "Eletrocussão",
-		"description": "Cada acúmulo de eletrocussão aumenta o dano elétrico que o Errante recebe.",
+		"description": "Máximo de acúmulos: 10. Quando você tem menos de 10 acúmulos de eletrocussão e um relâmpago atinge você, sofre uma pequena quantidade de dano baseada no número de acúmulos e recebe um acúmulo adicional de eletrocussão. Ao atingir 10 acúmulos, você sofre alta voltagem, que causa dano letal uma vez.",
 		"id": "buff_boss_044_sp_thu_stack"
 	},
 	"buff_boss_044_thu_ignore": {
-		"name": "Imunidade à Eletrocussão",
+		"name": "Imunidade a Eletrocussão",
 		"description": "A Eletrocussão não pode ser infligida no Errante alvo.",
 		"id": "buff_boss_044_thu_ignore"
 	},
@@ -2102,15 +2125,18 @@
 		"id": "buff_boss_hum_042_5"
 	},
 	"buff_eleweakpoint_smallfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfire"
 	},
 	"buff_eleweakpoint_smallice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallice"
 	},
 	"buff_eleweakpoint_smallthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallthunder"
 	},
 	"buff_emby_atkupdefdown": {
@@ -2189,42 +2215,52 @@
 		"id": "buff_evadeaddeffect_level2"
 	},
 	"buff_evajdfw_breakdefup": {
+		"name": "",
 		"description": "Aumenta o despedaçar da armadura em 20%.",
 		"id": "buff_evajdfw_breakdefup"
 	},
 	"buff_evajdfw_critup": {
+		"name": "",
 		"description": "Aumenta a taxa de crítico da armadura em 5%",
 		"id": "buff_evajdfw_critup"
 	},
 	"buff_evajdfw_finbedamedup": {
+		"name": "",
 		"description": "Redução de Dano de Armadura em 5%",
 		"id": "buff_evajdfw_finbedamedup"
 	},
 	"buff_evajdfw_findamup": {
+		"name": "",
 		"description": "Reforço de Dano de Armadura de 5%",
 		"id": "buff_evajdfw_findamup"
 	},
 	"buff_evajdfw_monsterhpdownandatkup": {
+		"name": "",
 		"description": "A vida do inimigo é reduzida em 20%, e o ATQ deles aumenta em 10%.",
 		"id": "buff_evajdfw_monsterhpdownandatkup"
 	},
 	"buff_evajdfw_monsterhpupandatkdown": {
+		"name": "",
 		"description": "A vida do inimigo aumenta em 20%, e o ATQ deles é reduzido em 20%.",
 		"id": "buff_evajdfw_monsterhpupandatkdown"
 	},
 	"buff_evajdfw_skill01cooldowncut": {
+		"name": "",
 		"description": "Reduz em 2 segundos o tempo de recarga da habilidade \"Chamado de Reforço-104\".",
 		"id": "buff_evajdfw_skill01cooldowncut"
 	},
 	"buff_evajdfw_skill02cooldowncut": {
-		"description": "Reduz em 2 segundos o tempo de recarga da Posição do Guardião.",
+		"name": "",
+		"description": "Reduz em 2 segundos o tempo de recarga da Postura do Guardião.",
 		"id": "buff_evajdfw_skill02cooldowncut"
 	},
 	"buff_evajdfw_skilldefendshieldex": {
+		"name": "",
 		"description": "Após uma defesa bem-sucedida, o mecha ganha um escudo equivalente a 5% da vida por 5 segundos. Tempo de recarga: 10 segundos.",
 		"id": "buff_evajdfw_skilldefendshieldex"
 	},
 	"buff_evajdfw_skilldefendup": {
+		"name": "",
 		"description": "Ao usar a habilidade Escudo de Coragem, aumenta a taxa de imunidade a dano em 10%.",
 		"id": "buff_evajdfw_skilldefendup"
 	},
@@ -2234,17 +2270,17 @@
 		"id": "buff_evapdzw_assistlevel1_real"
 	},
 	"buff_evapdzw_assistlevel1add": {
-		"name": "Posição do Guardião",
+		"name": "Postura do Guardião",
 		"description": "Desbloqueie a habilidade Postura do Guardião. Ao usar a habilidade, aumenta todas as resistências do Errante em **0%** e provoca o chefe, durando 3 segundos. Tempo de recarga: 25 segundos.",
 		"id": "buff_evapdzw_assistlevel1add"
 	},
 	"buff_evapdzw_assistlevel2add": {
-		"name": "Posição do Guardião",
+		"name": "Postura do Guardião",
 		"description": "Ao usar a habilidade, aumenta todas as resistências do Errante em {0%, provoca o Chefe e **restaura continuamente a Vida igual a {1% do ATQ do Errante para si mesmo e {2% do ATQ para todos os aliados**, com duração de 3 segundos. Tempo de recarga: 25 segundos.",
 		"id": "buff_evapdzw_assistlevel2add"
 	},
 	"buff_evapdzw_assistlevel3add": {
-		"name": "Posição do Guardião",
+		"name": "Postura do Guardião",
 		"description": "Ao usar a habilidade, aumenta todas as resistências do Errante em {0%, provoca o Chefe e restaura continuamente a Vida igual a {1% do ATQ do Errante para si mesmo e {2% do ATQ para todos os aliados, durando 3 segundos. Tempo de recarga: 25 segundos. **Ao pilotar o mecha, ganha um aumento permanente de {3% nos efeitos de cura**.",
 		"id": "buff_evapdzw_assistlevel3add"
 	},
@@ -2254,17 +2290,17 @@
 		"id": "buff_evapdzw_assistlevel4_real"
 	},
 	"buff_evapdzw_assistlevel4add": {
-		"name": "Posição do Guardião",
+		"name": "Postura do Guardião",
 		"description": "Ao usar a habilidade, aumenta todas as resistências do Errante em {0%, provoca o chefe, restaura continuamente a Vida igual a {1% do ATQ do Errante para si mesmo e {2% do ATQ para todos os aliados, e **oferece adicionalmente um reforço de dano de {3% para toda a equipe (esse efeito não se acumula)**, durando por 3 segundos. Tempo de recarga: 25 segundos. Ao pilotar o mecha, ganha um aumento permanente de {4% nos efeitos de cura.",
 		"id": "buff_evapdzw_assistlevel4add"
 	},
 	"buff_evapdzw_assistlevel5add": {
-		"name": "Posição do Guardião",
+		"name": "Postura do Guardião",
 		"description": "Ao usar a habilidade, aumenta todas as resistências do Errante em {0%, provoca o Chefe, restaura continuamente a Vida igual a {1% do ATQ do Errante para si mesmo e {2% do ATQ para todos os aliados, e oferece um reforço de dano de {3% para toda a equipe (esse efeito não se acumula), durando **5** segundos. Tempo de recarga: 25 segundos. Ao pilotar o mecha, ganha um aumento permanente de {4% nos efeitos de cura.",
 		"id": "buff_evapdzw_assistlevel5add"
 	},
 	"buff_evapdzw_assistlevel6add": {
-		"name": "Posição do Guardião",
+		"name": "Postura do Guardião",
 		"description": "Ao usar a habilidade, aumenta todas as resistências do Errante em {0%, provoca o chefe, restaura continuamente a Vida igual a {1% do ATQ do Errante para si mesmo e {2% do ATQ para todos os aliados, e ainda oferece um reforço de dano de {3% para toda a equipe (esse efeito não se acumula), durando 5 segundos. Tempo de recarga: **20** segundos. Ao pilotar o mecha, ganha um aumento permanente de {4% nos efeitos de cura.",
 		"id": "buff_evapdzw_assistlevel6add"
 	},
@@ -2305,7 +2341,7 @@
 	},
 	"buff_evapdzw_dpslevel1add": {
 		"name": "Chamado de Reforço-104",
-		"description": "Desbloqueie a habilidade Chamada de Reserva-104. Ao usar a habilidade, chame um ataque aéreo na localização do alvo, causando dano igual a **0%** do ATQ do Errante. Tempo de recarga: **1** seg.",
+		"description": "Desbloqueie a habilidade Chamado de Reforço-104. Ao usar a habilidade, chame um ataque aéreo na localização do alvo, causando dano igual a **0%** do ATQ do Errante. Tempo de recarga: **1** seg.",
 		"id": "buff_evapdzw_dpslevel1add"
 	},
 	"buff_evapdzw_dpslevel2add": {
@@ -2375,7 +2411,7 @@
 	},
 	"buff_hammerice_sr_level0_1": {
 		"name": "Ira I",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerice_sr_level0_1"
 	},
 	"buff_hammerice_sr_level0_2": {
@@ -2390,7 +2426,7 @@
 	},
 	"buff_hammerthu_ssr_level0_1": {
 		"name": "Ira I",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerthu_ssr_level0_1"
 	},
 	"buff_hammerthu_ssr_level0_4": {
@@ -2404,11 +2440,13 @@
 		"id": "buff_hammerthu_ssr_level0_5"
 	},
 	"buff_eleweakpoint_bigfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfhy"
 	},
 	"buff_eleweakpoint_smallfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfhy"
 	},
 	"buff_artifactssr006_display": {
@@ -2482,13 +2520,19 @@
 		"id": "wormhole_buff_smallthunder_phy"
 	},
 	"buff_cannonice_sr_level5_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_cannonice_sr_level5_1"
 	},
 	"buff_void_player_1001": {
 		"name": "Desejo",
 		"description": "Ao obter qualquer efeito especial de 3 acúmulos, aumenta a vida e o ATQ de todos os colegas em **25%**. Cada um só pode acionar o efeito uma vez.",
 		"id": "buff_void_player_1001"
+	},
+	"buff_wantedcriminal": {
+		"name": "Procurado!",
+		"description": "Você é procurado por cometer um crime. Fuja para um lugar seguro para evitar a captura!",
+		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
 		"name": "Tanque poderoso I",
@@ -4601,132 +4645,163 @@
 		"id": "wormhole_monsterbuff_019"
 	},
 	"hookclone_buff_immenergy": {
+		"name": "",
 		"description": "**Imunidade a dano energético**",
 		"id": "hookclone_buff_immenergy"
 	},
 	"hookclone_buff_immfire": {
+		"name": "",
 		"description": "**Imunidade a dano ígneo**",
 		"id": "hookclone_buff_immfire"
 	},
 	"hookclone_buff_immfirearms": {
+		"name": "",
 		"description": "**Imunidade a dano de arma de fogo**",
 		"id": "hookclone_buff_immfirearms"
 	},
 	"hookclone_buff_immice": {
+		"name": "",
 		"description": "**Imunidade a dano gélido**",
 		"id": "hookclone_buff_immice"
 	},
 	"hookclone_buff_immphy": {
+		"name": "",
 		"description": "**Imunidade a dano físico**",
 		"id": "hookclone_buff_immphy"
 	},
 	"hookclone_buff_immpuncture": {
+		"name": "",
 		"description": "**Imunidade a dano perfurante**",
 		"id": "hookclone_buff_immpuncture"
 	},
 	"hookclone_buff_immsharp": {
+		"name": "",
 		"description": "**Imunidade a dano de lâmina curta**",
 		"id": "hookclone_buff_immsharp"
 	},
 	"hookclone_buff_immstrength": {
+		"name": "",
 		"description": "**Imunidade a dano pesado**",
 		"id": "hookclone_buff_immstrength"
 	},
 	"hookclone_buff_immthunder": {
+		"name": "",
 		"description": "**Imunidade a dano elétrico**",
 		"id": "hookclone_buff_immthunder"
 	},
 	"hookclone_buff_smallenergy": {
+		"name": "",
 		"description": "**Resistência a 50% de dano energético**",
 		"id": "hookclone_buff_smallenergy"
 	},
 	"hookclone_buff_resistanceenergy": {
+		"name": "",
 		"description": "**Resistência a 50% de dano energético**",
 		"id": "hookclone_buff_resistanceenergy"
 	},
 	"hookclone_buff_smallfire": {
+		"name": "",
 		"description": "**Resistência a 50% de dano ígneo**",
 		"id": "hookclone_buff_smallfire"
 	},
 	"hookclone_buff_resistancefire": {
+		"name": "",
 		"description": "**Resistência a 50% de dano ígneo**",
 		"id": "hookclone_buff_resistancefire"
 	},
 	"hookclone_buff_smallfirearms": {
+		"name": "",
 		"description": "**Resistência a 50% de dano de arma de fogo**",
 		"id": "hookclone_buff_smallfirearms"
 	},
 	"hookclone_buff_resistancefirearms": {
+		"name": "",
 		"description": "**Resistência a 50% de dano de arma de fogo**",
 		"id": "hookclone_buff_resistancefirearms"
 	},
 	"hookclone_buff_smallice": {
+		"name": "",
 		"description": "**Resistência a 50% de dano gélido**",
 		"id": "hookclone_buff_smallice"
 	},
 	"hookclone_buff_resistanceice": {
+		"name": "",
 		"description": "**Resistência a 50% de dano gélido**",
 		"id": "hookclone_buff_resistanceice"
 	},
 	"hookclone_buff_smallphy": {
+		"name": "",
 		"description": "**Resistência a 50% de dano físico**",
 		"id": "hookclone_buff_smallphy"
 	},
 	"hookclone_buff_resistancephy": {
+		"name": "",
 		"description": "**Resistência a 50% de dano físico**",
 		"id": "hookclone_buff_resistancephy"
 	},
 	"hookclone_buff_smallpuncture": {
+		"name": "",
 		"description": "**Resistência a 50% de dano perfurante**",
 		"id": "hookclone_buff_smallpuncture"
 	},
 	"hookclone_buff_resistancepuncture": {
+		"name": "",
 		"description": "**Resistência a 50% de dano perfurante**",
 		"id": "hookclone_buff_resistancepuncture"
 	},
 	"hookclone_buff_smallsharp": {
+		"name": "",
 		"description": "**Resistência a 50% de dano de lâmina curta**",
 		"id": "hookclone_buff_smallsharp"
 	},
 	"hookclone_buff_resistancesharp": {
+		"name": "",
 		"description": "**Resistência a 50% de dano de lâmina curta**",
 		"id": "hookclone_buff_resistancesharp"
 	},
 	"hookclone_buff_smallstrength": {
+		"name": "",
 		"description": "**Resistência a 50% de dano pesado**",
 		"id": "hookclone_buff_smallstrength"
 	},
 	"hookclone_buff_resistancestrength": {
+		"name": "",
 		"description": "**Resistência a 50% de dano pesado**",
 		"id": "hookclone_buff_resistancestrength"
 	},
 	"hookclone_buff_smallthunder": {
+		"name": "",
 		"description": "**Resistência a 50% de dano elétrico**",
 		"id": "hookclone_buff_smallthunder"
 	},
 	"hookclone_buff_resistancethunder": {
+		"name": "",
 		"description": "**Resistência a 50% de dano elétrico**",
 		"id": "hookclone_buff_resistancethunder"
 	},
 	"hookclone_maxhp-20": {
+		"name": "",
 		"description": "**Vida do inimigo -20%**",
 		"id": "hookclone_maxhp-20"
 	},
 	"hookclone_maxhp100": {
+		"name": "",
 		"description": "**Vida do inimigo +100%**",
 		"id": "hookclone_maxhp100"
 	},
 	"hookclone_maxhp20": {
+		"name": "",
 		"description": "**Vida do inimigo +20%**",
 		"id": "hookclone_maxhp20"
 	},
 	"hookclone_maxhp50": {
+		"name": "",
 		"description": "**Vida do inimigo +50%**",
 		"id": "hookclone_maxhp50"
 	},
 	"buff_cubefire_ssr_level2def": {
 		"name": "Cada acúmulo reduz 1% do dano sofrido. Esse efeito se acumula até 15 vezes.",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_cubefire_ssr_level2def"
 	},
 	"buff_cubefire_ssr_level4dam": {
@@ -5155,7 +5230,8 @@
 		"id": "buff_frozen_3s"
 	},
 	"buff_artifactssr006_stun": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_artifactssr006_stun"
 	},
 	"buff_sword_001_ssr_damageup": {
@@ -5179,7 +5255,7 @@
 		"id": "ge_artifactssr020_superbubble_cooldown"
 	},
 	"buff_breakvalue_pvpstun": {
-		"name": "Despedaçar",
+		"name": "Despedaçado",
 		"description": "Seu escudo se partiu. Atordoamento durante 5 segundos.",
 		"id": "buff_breakvalue_pvpstun"
 	},
@@ -5394,7 +5470,7 @@
 		"id": "buff_asukaatkup_breakfate"
 	},
 	"buff_asukabreakdefup_breakfate": {
-		"name": "Neutralizador de Energia",
+		"name": "Neutralizador de energia",
 		"description": "Aumenta o despedaçar em 25%.",
 		"id": "buff_asukabreakdefup_breakfate"
 	},
@@ -5414,7 +5490,7 @@
 		"id": "buff_asukahpup_breakfate"
 	},
 	"buff_asukamiansi_breakfate": {
-		"name": "Escudo de Defesa Suprema",
+		"name": "Escudo de defesa suprema",
 		"description": "Concede imunidade a dano letal 1 vez e imunidade a dano por 2s (efetivo apenas 1 vez).",
 		"id": "buff_asukamiansi_breakfate"
 	},
@@ -5637,6 +5713,41 @@
 		"name": "Dança elétrica III",
 		"description": "Aciona-se com **9** armas elétricas: Após usar uma habilidade, recebe o efeito positivo eletrocutado durante **10** segundos. Enquanto estiver eletrocutado, o ataque normal do Errante pode acionar corrente elétrica a cada **1** segundo, causando dano elétrico equivalente a **800%** do ATQ, não afetado por aumentos ou reduções de dano. A corrente elétrica ricocheteia entre os inimigos até **5** vezes. Receber outra eletrocussão atualiza a duração desse efeito.",
 		"id": "buff_autochess_thunderlink_3"
+	},
+	"buff_ayanamirei_ice_ssr_resonance": {
+		"name": "Ressonância gélida",
+		"description": "**Ressonância gélida**: Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade.",
+		"id": "buff_ayanamirei_ice_ssr_resonance"
+	},
+	"buff_ayanamirei_level1": {
+		"name": "Lançar",
+		"description": "Aumenta o dano final em **12%**.",
+		"id": "buff_ayanamirei_level1"
+	},
+	"buff_ayanamirei_level2": {
+		"name": "Guarda",
+		"description": "Aumenta o dano final em **18%**. Com **ressonância de ataque** ativa, aumenta o dano elétrico em **8%**. Com **qualquer outra ressonância** ativa, aumenta o efeito de bloqueio de **Tiros Concentrados** para **0%** da sua vida máxima e a duração do **campo magnético desacelerador** de **Arco Rápido** e **Ataque Aéreo** para **4** segundos.",
+		"id": "buff_ayanamirei_level2"
+	},
+	"buff_ayanamirei_thunder_resonance": {
+		"name": "Ressonância Elétrica",
+		"description": "**Ressonância elétrica**: Aumenta o ATQ elétrico em **15%** e a resistência elétrica em **25%**. Ativa-se ao equipar **2** ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade.",
+		"id": "buff_ayanamirei_thunder_resonance"
+	},
+	"buff_ayanamireibedamagedown": {
+		"name": "Barreira de bloqueio",
+		"description": "Bloqueia dano equivalente a até **10%** da sua vida máxima durante **15** segundos. Você pode ter até 3 barreiras de bloqueio ao mesmo tempo.",
+		"id": "buff_ayanamireibedamagedown"
+	},
+	"buff_ayanamireibedamagedown_imitationfeature": {
+		"name": "Barreira de bloqueio",
+		"description": "Bloqueia dano equivalente a até **12%** da sua vida máxima durante **15** segundos. Você pode ter até 3 barreiras de bloqueio ao mesmo tempo.",
+		"id": "buff_ayanamireibedamagedown_imitationfeature"
+	},
+	"buff_ayanamireienergystate_damageup_level6": {
+		"name": "Reforço de dano",
+		"description": "Aumenta o dano elétrico em **0%** e o dano gélido em **1%** durante **2** segundos.",
+		"id": "buff_ayanamireienergystate_damageup_level6"
 	},
 	"buff_professioncommon": {
 		"name": "Ressonância: Equilíbrio",
@@ -6039,6 +6150,7 @@
 		"id": "buff_cannonice_sr_level3_damage"
 	},
 	"buff_dsthu_ssr_level6_1": {
+		"name": "",
 		"description": "Aumenta o dano elétrico sofrido em 20%.",
 		"id": "buff_dsthu_ssr_level6_1"
 	},
@@ -6088,10 +6200,12 @@
 		"id": "buff_matrix_n_2"
 	},
 	"buff_matrix_n_3": {
+		"name": "",
 		"description": "Aumenta em **4%** o dano físico causado.",
 		"id": "buff_matrix_n_3"
 	},
 	"buff_matrix_n_4": {
+		"name": "",
 		"description": "Aumenta em **4%** o dano elétrico causado.",
 		"id": "buff_matrix_n_4"
 	},
@@ -6116,6 +6230,7 @@
 		"id": "buff_matrix_r_4_level1"
 	},
 	"buff_matrix_r_5_level1": {
+		"name": "",
 		"description": "Aumenta em **6%** o dano causado por armas de fogo.",
 		"id": "buff_matrix_r_5_level1"
 	},
@@ -6250,14 +6365,17 @@
 		"id": "buff_matrix_sr_8_level3"
 	},
 	"buff_matrix_sr_9_level1": {
+		"name": "",
 		"description": "Ganha **30%** de roubo de vida durante Phantasia e recupera vida equivalente a até **60%** do ATQ a cada 0,5 segundo.",
 		"id": "buff_matrix_sr_9_level1"
 	},
 	"buff_matrix_sr_9_level2": {
+		"name": "",
 		"description": "Ganha **36%** de roubo de vida durante Phantasia e recupera vida equivalente a até **69%** do ATQ a cada 0,5 segundo.",
 		"id": "buff_matrix_sr_9_level2"
 	},
 	"buff_matrix_sr_9_level3": {
+		"name": "",
 		"description": "Ganha **39%** de roubo de vida durante Phantasia e recupera vida equivalente a até **73,5%** do ATQ a cada 0,5 segundo.",
 		"id": "buff_matrix_sr_9_level3"
 	},
@@ -6277,14 +6395,17 @@
 		"id": "buff_matrix_sr_10_level3"
 	},
 	"buff_matrix_sr_11_level1": {
+		"name": "",
 		"description": "Aumenta em **35%** o dano crítico causado a alvos com menos de **60%** da vida.",
 		"id": "buff_matrix_sr_11_level1"
 	},
 	"buff_matrix_sr_11_level2": {
+		"name": "",
 		"description": "Aumenta em **44%** o dano crítico causado a alvos com menos de **60%** da vida.",
 		"id": "buff_matrix_sr_11_level2"
 	},
 	"buff_matrix_sr_11_level3": {
+		"name": "",
 		"description": "Aumenta em **52,5%** o dano crítico causado a alvos com menos de **60%** da vida.",
 		"id": "buff_matrix_sr_11_level3"
 	},
@@ -6874,7 +6995,8 @@
 		"id": "ge_artifactr002_boom_level7"
 	},
 	"ge_commondeathbox": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "ge_commondeathbox"
 	},
 	"buff_matrix_ssr_1_level1_1": {
@@ -6993,7 +7115,8 @@
 		"id": "buff_gve_atk_level4"
 	},
 	"buff_gve_bedamage_dowm25": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_bedamage_dowm25"
 	},
 	"buff_gve_bedamageup_fire_l1": {
@@ -7187,11 +7310,13 @@
 		"id": "buff_gve_evadeattack_damup_level3"
 	},
 	"buff_gve_expup": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_expup"
 	},
 	"buff_gve_extradamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_extradamage_level1"
 	},
 	"buff_gve_finaldamagedown_20per": {
@@ -7205,11 +7330,13 @@
 		"id": "buff_gve_finaldamageup_20per"
 	},
 	"buff_gve_fireatk_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_fireatk_level1"
 	},
 	"buff_gve_firedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_firedamage_level1"
 	},
 	"buff_gve_firedamagelevel1": {
@@ -7268,15 +7395,18 @@
 		"id": "buff_gve_firstaid"
 	},
 	"buff_gve_halo": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_halo"
 	},
 	"buff_gve_iceatk_level1": {
+		"name": "",
 		"description": "Aumenta o ATQ gélido em 15%.",
 		"id": "buff_gve_iceatk_level1"
 	},
 	"buff_gve_icedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_icedamage_level1"
 	},
 	"buff_gve_icedamagelevel1": {
@@ -7370,11 +7500,13 @@
 		"id": "buff_gve_immdamage_thunder"
 	},
 	"buff_gve_immunedamagecd_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_immunedamagecd_level1"
 	},
 	"buff_gve_jinji_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_jinji_level1"
 	},
 	"buff_gve_kill_l1": {
@@ -7393,7 +7525,8 @@
 		"id": "buff_gve_kill_l3"
 	},
 	"buff_gve_kill_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_kill_level1"
 	},
 	"buff_gve_linktime_l1": {
@@ -7437,11 +7570,13 @@
 		"id": "buff_gve_miansi_level2"
 	},
 	"buff_gve_phyatk_level1": {
+		"name": "",
 		"description": "Aumenta o ATQ físico em 15%.",
 		"id": "buff_gve_phyatk_level1"
 	},
 	"buff_gve_phydamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_phydamage_level1"
 	},
 	"buff_gve_phydamagelevel1": {
@@ -7695,12 +7830,204 @@
 		"id": "buff_gve_thuextradam_level3"
 	},
 	"buff_gve_thunderatk_level1": {
+		"name": "",
 		"description": "Aumenta o ATQ elétrico em 15%.",
 		"id": "buff_gve_thunderatk_level1"
 	},
 	"buff_gve_thunderdamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_thunderdamage_level1"
+	},
+	"buff_gwzj_battlefield1": {
+		"name": "Efeito Positivo de Perigos Abissais",
+		"description": "Reduz o tempo de recarga da habilidade em 80%.",
+		"id": "buff_gwzj_battlefield1"
+	},
+	"buff_gwzj_levyclone3": {
+		"name": "Incursão",
+		"description": "Aumenta a vida do Errante em 100%, resistência em 50% e concede 60% de imunidade a dano.",
+		"id": "buff_gwzj_levyclone3"
+	},
+	"buff_gwzj_ordinal1_level1": {
+		"name": "Planta da Federação Nornas",
+		"description": "Aumenta a taxa de aparição do Super Chefe Oculto em 20%.",
+		"id": "buff_gwzj_ordinal1_level1"
+	},
+	"buff_gwzj_ordinal1_level2": {
+		"name": "Planta da Federação Nornas",
+		"description": "Aumenta a taxa de aparição do Super Chefe Oculto em 20%.",
+		"id": "buff_gwzj_ordinal1_level2"
+	},
+	"buff_gwzj_ordinal1_level3": {
+		"name": "Planta da Federação Nornas",
+		"description": "Aumenta a taxa de aparição do Super Chefe Oculto em 60%.",
+		"id": "buff_gwzj_ordinal1_level3"
+	},
+	"buff_gwzj_ordinal10_level1": {
+		"name": "Planta da Eletrônicos Schuder",
+		"description": "Ganhe 10% de taxa de crítico.",
+		"id": "buff_gwzj_ordinal10_level1"
+	},
+	"buff_gwzj_ordinal10_level2": {
+		"name": "Planta da Eletrônicos Schuder",
+		"description": "Aumenta o dano crítico em 20%.",
+		"id": "buff_gwzj_ordinal10_level2"
+	},
+	"buff_gwzj_ordinal10_level3": {
+		"name": "Planta da Eletrônicos Schuder",
+		"description": "Aumenta o dano crítico em 40%.",
+		"id": "buff_gwzj_ordinal10_level3"
+	},
+	"buff_gwzj_ordinal2_level1": {
+		"name": "Planta da Humanidade Futura",
+		"description": "Aumenta o dano final em 10%.",
+		"id": "buff_gwzj_ordinal2_level1"
+	},
+	"buff_gwzj_ordinal2_level2": {
+		"name": "Planta da Humanidade Futura",
+		"description": "Recebe corpo de aço.",
+		"id": "buff_gwzj_ordinal2_level2"
+	},
+	"buff_gwzj_ordinal2_level3": {
+		"name": "Planta da Humanidade Futura",
+		"description": "Aumenta o dano final em 12%.",
+		"id": "buff_gwzj_ordinal2_level3"
+	},
+	"buff_gwzj_ordinal3_level1": {
+		"name": "Planta da Aida Cerúlea",
+		"description": "ATQ +10%.",
+		"id": "buff_gwzj_ordinal3_level1"
+	},
+	"buff_gwzj_ordinal3_level2": {
+		"name": "Planta da Aida Cerúlea",
+		"description": "Os ataques causam dano adicional equivalente a 0,4% da vida máxima do alvo. Tempo de recarga: 5 segundos.",
+		"id": "buff_gwzj_ordinal3_level2"
+	},
+	"buff_gwzj_ordinal3_level3": {
+		"name": "Planta da Aida Cerúlea",
+		"description": "Os ataques causam dano adicional equivalente a 0,6% da vida máxima do alvo. Tempo de recarga: 5 segundos.",
+		"id": "buff_gwzj_ordinal3_level3"
+	},
+	"buff_gwzj_ordinal4_level1": {
+		"name": "Planta da Construção das Nove Arcas",
+		"description": "Aumenta a Vida do Errante em 16%.",
+		"id": "buff_gwzj_ordinal4_level1"
+	},
+	"buff_gwzj_ordinal4_level2": {
+		"name": "Planta da Construção das Nove Arcas",
+		"description": "O Errante recupera 20% da vida perdida a cada 5 segundos.",
+		"id": "buff_gwzj_ordinal4_level2"
+	},
+	"buff_gwzj_ordinal4_level3": {
+		"name": "Planta da Construção das Nove Arcas",
+		"description": "O Errante recupera 30% da vida perdida a cada 5 segundos.",
+		"id": "buff_gwzj_ordinal4_level3"
+	},
+	"buff_gwzj_ordinal5_level1": {
+		"name": "Planta de Aesperia",
+		"description": "Ganhe 250 cargas de arma após usar uma habilidade de descarga.",
+		"id": "buff_gwzj_ordinal5_level1"
+	},
+	"buff_gwzj_ordinal5_level2": {
+		"name": "Planta de Aesperia",
+		"description": "Ganhe 1.000 de carga de arma ao entrar na batalha.",
+		"id": "buff_gwzj_ordinal5_level2"
+	},
+	"buff_gwzj_ordinal5_level3": {
+		"name": "Planta de Aesperia",
+		"description": "Após usar uma habilidade de descarga, aumenta o dano final do Errante em 12% por 10 segundos.",
+		"id": "buff_gwzj_ordinal5_level3"
+	},
+	"buff_gwzj_ordinal6_level1": {
+		"name": "Plata da Arca de Algoritmo",
+		"description": "Reduz em 10% o ATQ de todos os alvos em um raio de 8 metros.",
+		"id": "buff_gwzj_ordinal6_level1"
+	},
+	"buff_gwzj_ordinal6_level2": {
+		"name": "Plata da Arca de Algoritmo",
+		"description": "Ganha um escudo equivalente a 20% da vida máxima a cada 5 segundos.",
+		"id": "buff_gwzj_ordinal6_level2"
+	},
+	"buff_gwzj_ordinal6_level3": {
+		"name": "Plata da Arca de Algoritmo",
+		"description": "Quando o Errante tem um Escudo ativo, o dano final é aumentado em 12%.",
+		"id": "buff_gwzj_ordinal6_level3"
+	},
+	"buff_gwzj_ordinal7_level1": {
+		"name": "Planta da Agência de Segurança Pública",
+		"description": "Aumenta todas as resistências em 20%.",
+		"id": "buff_gwzj_ordinal7_level1"
+	},
+	"buff_gwzj_ordinal7_level2": {
+		"name": "Planta da Agência de Segurança Pública",
+		"description": "Reduz o dano em 20%.",
+		"id": "buff_gwzj_ordinal7_level2"
+	},
+	"buff_gwzj_ordinal7_level3": {
+		"name": "Planta da Agência de Segurança Pública",
+		"description": "Reduz o dano em 30%.",
+		"id": "buff_gwzj_ordinal7_level3"
+	},
+	"buff_gwzj_ordinal8_level1": {
+		"name": "Planta da Força de Defesa",
+		"description": "Aumenta os efeitos de cura em 20%.",
+		"id": "buff_gwzj_ordinal8_level1"
+	},
+	"buff_gwzj_ordinal8_level2": {
+		"name": "Planta da Força de Defesa",
+		"description": "Após receber cura, aumenta o dano final em 6% durante 5 segundos.",
+		"id": "buff_gwzj_ordinal8_level2"
+	},
+	"buff_gwzj_ordinal8_level3": {
+		"name": "Planta da Força de Defesa",
+		"description": "Após receber cura, aumenta o dano final em 12% durante 5 segundos.",
+		"id": "buff_gwzj_ordinal8_level3"
+	},
+	"buff_gwzj_ordinal9_level1": {
+		"name": "Planta da Indústrias Alvorecer",
+		"description": "Aumenta o despedaçar em 30%.",
+		"id": "buff_gwzj_ordinal9_level1"
+	},
+	"buff_gwzj_ordinal9_level2": {
+		"name": "Planta da Indústrias Alvorecer",
+		"description": "Aumenta o dano final em 15% para alvos com um Escudo ativo.",
+		"id": "buff_gwzj_ordinal9_level2"
+	},
+	"buff_gwzj_ordinal9_level3": {
+		"name": "Planta da Indústrias Alvorecer",
+		"description": "Aumenta o dano final em 25% em alvos com um Escudo ativo.",
+		"id": "buff_gwzj_ordinal9_level3"
+	},
+	"buff_gwzj_ordinalsolo": {
+		"name": "Força do guerreiro",
+		"description": "Aumenta o dano final em 400% e a Vida em 200%.",
+		"id": "buff_gwzj_ordinalsolo"
+	},
+	"buff_gwzj_teamclone3": {
+		"name": "Efeito Positivo da Operação Conjunta",
+		"description": "Usar habilidades de descarga reinicia o tempo de recarga da habilidade (também eficaz no Modo Equilibrado).",
+		"id": "buff_gwzj_teamclone3"
+	},
+	"buff_gwzj_voidclone1": {
+		"name": "Efeito Positivo da Fenda do Vazio",
+		"description": "Aumenta a eficiência de carga da arma em 50% (também eficaz no Abismo Vazio).",
+		"id": "buff_gwzj_voidclone1"
+	},
+	"buff_gwzj_voidclone3": {
+		"name": "Efeito Positivo da Fenda do Vazio",
+		"description": "Dentro de 10 segundos, recupere 1 tentativa de esquiva a cada 2 esquivas (também efetivo no Abismo Vazio).",
+		"id": "buff_gwzj_voidclone3"
+	},
+	"buff_gwzj_worldboss3": {
+		"name": "Efeito Positivo do Embate Fronteiriço",
+		"description": "Reduz o tempo de recarga da habilidade em 80%.",
+		"id": "buff_gwzj_worldboss3"
+	},
+	"buff_gwzj_worldboss4": {
+		"name": "Efeito Positivo do Embate Fronteiriço",
+		"description": "Reduz o tempo de recarga da Relíquia em 90%.",
+		"id": "buff_gwzj_worldboss4"
 	},
 	"buff_bailing_level1": {
 		"name": "Bai Ling: Valentia",
@@ -8258,8 +8585,8 @@
 		"id": "buff_lancesice_ssr_level0_icespecial"
 	},
 	"time_revert_stack_count": {
-		"name": "Recarga do Re-rastreador",
-		"description": "Contagem de cargas do Re-Tracker. Ao atingir o acúmulo especificado, o efeito positivo do equipamento correspondente será ativado.",
+		"name": "Recarga do Re-Rastreador",
+		"description": "Contagem de cargas do Re-Rastreador. Ao atingir o acúmulo especificado, o efeito positivo do equipamento correspondente será ativado.",
 		"id": "time_revert_stack_count"
 	},
 	"buff_king_level1_kill": {
@@ -8406,6 +8733,11 @@
 		"name": "Sombratinta amarela",
 		"description": "Reveste-se de sombratinta amarela e aumenta em 170% o dano a raposas tricromáticas de escudo de sombratinta de cor diferente.",
 		"id": "buff_mon_186_yellow_flower_player"
+	},
+	"buff_mon_192_thunderlinkforplay": {
+		"name": "Eletrodo WL-6",
+		"description": "O efeito do Eletrodo é concedido pelo WL-6. Quando estiver a uma certa distância do WL-6, você receberá dano de choque elétrico em intervalos regulares.",
+		"id": "buff_mon_192_thunderlinkforplay"
 	},
 	"buff_shiro_atkup_level1": {
 		"name": "Reforço de dano",
@@ -8579,52 +8911,52 @@
 	},
 	"buff_lucktarrow_01": {
 		"name": "Carga suprema",
-		"description": "Aumenta a eficiência de carga em 100%.",
+		"description": "Aumenta a eficiência de carga em 30%.",
 		"id": "buff_lucktarrow_01"
 	},
 	"buff_lucktarrow_02": {
 		"name": "Cura",
-		"description": "Aumenta os efeitos de cura em 20%.",
+		"description": "Aumenta os efeitos de cura em 45%.",
 		"id": "buff_lucktarrow_02"
 	},
 	"buff_lucktarrow_03": {
 		"name": "Casca de Gelo",
-		"description": "Aumenta o dano gélido sofrido pelos inimigos em 20%.",
+		"description": "Aumenta o dano gélido sofrido pelos inimigos em 40%.",
 		"id": "buff_lucktarrow_03"
 	},
 	"buff_lucktarrow_04": {
 		"name": "Fogo",
-		"description": "Aumenta o dano ígneo sofrido pelos inimigos em 20%.",
+		"description": "Aumenta o dano ígneo sofrido pelos inimigos em 40%.",
 		"id": "buff_lucktarrow_04"
 	},
 	"buff_lucktarrow_05": {
 		"name": "Raio",
-		"description": "Aumenta o dano elétrico sofrido pelos inimigos em 20%.",
+		"description": "Aumenta o dano elétrico sofrido pelos inimigos em 40%.",
 		"id": "buff_lucktarrow_05"
 	},
 	"buff_lucktarrow_06": {
 		"name": "Físico",
-		"description": "Aumenta o dano físico sofrido pelos inimigos em 20%.",
+		"description": "Aumenta o dano físico sofrido pelos inimigos em 40%.",
 		"id": "buff_lucktarrow_06"
 	},
 	"buff_lucktarrow_07": {
 		"name": "Terror",
-		"description": "Aumenta o dano dos inimigos em 20%.",
+		"description": "モンスターの与ダメージ+40%",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "Susto",
-		"description": "Aumenta o ATQ dos inimigos em 20%.",
+		"description": "モンスターの攻撃力+40%",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
 		"name": "Tenaz",
-		"description": "Aumenta a resistência dos inimigos em 50%.",
+		"description": "Aumenta a resistência dos inimigos em 100%.",
 		"id": "buff_lucktarrow_09"
 	},
 	"buff_lucktarrow_10": {
 		"name": "Golpe Árduo",
-		"description": "Inimigos com escudo causam dano de 392% do ATQ a cada 10 segundos.",
+		"description": "Inimigos com escudo causam dano igual a 300% do ATQ 1 vez a cada 10 segundos.",
 		"id": "buff_lucktarrow_10"
 	},
 	"buff_bati_artifact_ssr_011_1star": {
@@ -8649,7 +8981,7 @@
 	},
 	"buff_chiji_effect": {
 		"name": "Radiação de Omnium",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_chiji_effect"
 	},
 	"buff_chiji_finaldmgup_40per": {
@@ -9401,6 +9733,16 @@
 		"name": "Bênção",
 		"description": "Quando a vida de qualquer fera de combate aliada cai abaixo de 30%, ela é curada em 35% da vida máxima. Pode ser acionado apenas 1 vez.",
 		"id": "mainbuff_fightmonster_replyhp_lowhp_level01"
+	},
+	"mainbuff_norncanteen_grill": {
+		"name": "Bênção do Peixe Grelhado",
+		"description": "Aumenta o dano físico em 15%. A cada 10 segundos, a próxima esquiva não consumirá uma contagem de esquiva. Este efeito pode ser armazenado até 1 vez. Dura 30 minutos.",
+		"id": "mainbuff_norncanteen_grill"
+	},
+	"mainbuff_norncanteen_sushi": {
+		"name": "Bênção do Sushi",
+		"description": "Aumenta o dano gélido em 15%. A cada 20 segundos, reduz o próximo dano recebido pelo Errante em 50%. Este efeito pode ser armazenado até 1 vez. Dura 30 minutos.",
+		"id": "mainbuff_norncanteen_sushi"
 	},
 	"buff_tfb_drop_2x": {
 		"name": "Sorte de Operação Conjunta I",
@@ -10157,6 +10499,71 @@
 		"description": "Aumenta em **20%** o dano causado a alvos sofrendo efeitos negativos.",
 		"id": "buff_matrix_ssr9_sea_level4"
 	},
+	"buff_matrix_ssr90_atkupcommon": {
+		"name": "Reforço de ataque elétrico-gélido",
+		"description": "Aumenta os ATQs elétrico e gélido em **0%** durante **1** segundos.",
+		"id": "buff_matrix_ssr90_atkupcommon"
+	},
+	"buff_matrix_ssr90_level1": {
+		"name": "Refrão da Rei",
+		"description": "Aumenta o dano final em **0%**. Causar dano com **Salvação** aumenta os ATQs elétrico e gélido em **1%** durante **2** segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr90_level1"
+	},
+	"buff_matrix_ssr90_level2": {
+		"name": "Refrão da Rei",
+		"description": "Aumenta o dano final em **0%**. Causar dano com **Salvação** aumenta os ATQs elétrico e gélido em **1%** durante **2** segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr90_level2"
+	},
+	"buff_matrix_ssr90_level3": {
+		"name": "Refrão da Rei",
+		"description": "Aumenta o dano final em **0%**. Causar dano com **Salvação** aumenta os ATQs elétrico e gélido em **1%** durante **2** segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr90_level3"
+	},
+	"buff_matrix_ssr90_level4": {
+		"name": "Refrão da Rei",
+		"description": "Aumenta o dano final em **0%**. Causar dano com **Salvação** aumenta os ATQs elétrico e gélido em **1%** durante **2** segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr90_level4"
+	},
+	"buff_matrix_ssr91_level1": {
+		"name": "Entendimento Profundo",
+		"description": "Aumenta o ATQ ígneo em **0%**. Com **Entre no Jogo** ativa, cada jogada causa dano adicional de **120%** do ATQ a todos os alvos no tabuleiro. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr91_level1"
+	},
+	"buff_matrix_ssr91_level2": {
+		"name": "Entendimento Profundo",
+		"description": "Aumenta o ATQ ígneo em **0%**. Com **Entre no Jogo** ativa, cada jogada causa dano adicional de **120%** do ATQ a todos os alvos no tabuleiro. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr91_level2"
+	},
+	"buff_matrix_ssr91_level3": {
+		"name": "Entendimento Profundo",
+		"description": "Aumenta o ATQ ígneo em **0%**. Com **Entre no Jogo** ativa, cada jogada causa dano adicional de **120%** do ATQ a todos os alvos no tabuleiro. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr91_level3"
+	},
+	"buff_matrix_ssr91_level4": {
+		"name": "Entendimento Profundo",
+		"description": "Aumenta o ATQ ígneo em **0%**. Com **Entre no Jogo** ativa, cada jogada causa dano adicional de **120%** do ATQ a todos os alvos no tabuleiro. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr91_level4"
+	},
+	"buff_matrix_ssr92_level1": {
+		"name": "Entendimento Profundo",
+		"description": "Aumenta o dano final em **0%**. Com **Fluxolivre** equipada, aumenta o dano crítico em **1%**. Ao entrar em combate, recebe **9** acúmulos adicionais de **posicionamento decisivo**. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr92_level1"
+	},
+	"buff_matrix_ssr92_level2": {
+		"name": "Entendimento Profundo",
+		"description": "Aumenta o dano final em **0%**. Com **Fluxolivre** equipada, aumenta o dano crítico em **1%**. Ao entrar em combate, recebe **9** acúmulos adicionais de **posicionamento decisivo**. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr92_level2"
+	},
+	"buff_matrix_ssr92_level3": {
+		"name": "Entendimento Profundo",
+		"description": "Aumenta o dano final em **0%**. Com **Fluxolivre** equipada, aumenta o dano crítico em **1%**. Ao entrar em combate, recebe **9** acúmulos adicionais de **posicionamento decisivo**. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr92_level3"
+	},
+	"buff_matrix_ssr92_level4": {
+		"name": "Entendimento Profundo",
+		"description": "Aumenta o dano final em **0%**. Com **Fluxolivre** equipada, aumenta o dano crítico em **1%**. Ao entrar em combate, recebe **9** acúmulos adicionais de **posicionamento decisivo**. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr92_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Intimidador Tipo II: Guarda",
 		"description": "Aumenta a defesa em **50%** do dano causado. Fica imune a interrupção pelo tempo a seguir.",
@@ -10313,27 +10720,27 @@
 		"id": "buff_jiuyu_fsr_smell"
 	},
 	"buff_jiuyu_mon_snowrabbit_card1": {
-		"name": "Dados de Simulacro de Coelho Exquisite",
-		"description": "Transforme-se em Coelho Exquisite por **180** segundos (use a habilidade novamente para cancelar o efeito).\r\nEnquanto o efeito estiver ativo, pode influenciar gradualmente até **3** Andarilhos próximos. Ineficaz em certas áreas.",
+		"name": "Dados do Simulacro Coelho Requintado",
+		"description": "Transforme-se no Coelho Requintado durante **180** segundos (use a habilidade novamente para cancelar o efeito).\r\nEste efeito, enquanto ativo, pode se alastrar gradualmente para até **3** Errantes próximos. Inválido em certas áreas.",
 		"id": "buff_jiuyu_mon_snowrabbit_card1"
 	},
 	"buff_jiuyu_mon_snowrabbit_card1_infect_mark": {
-		"name": "Dados Excepcionais de Simulacro de Coelho: Influência",
-		"description": "Dura **10** segundos e acumula até **5** vezes. Ao atingir o máximo de acúmulos, aciona a transformação do Coelho Exquisite.",
+		"name": "Dados do Simulacro Coelho Requintado: Influência",
+		"description": "Dura **10** segundos e se acumula até **5** vezes. Ao atingir o máximo de acúmulos, aciona a transformação do Coelho Requintado.",
 		"id": "buff_jiuyu_mon_snowrabbit_card1_infect_mark"
 	},
 	"buff_jiuyu_mon_snowrabbit_change": {
 		"name": "Atingido por muitas bolas de neve",
-		"description": "Transforme-se em Coelho Exquisite por **180** segundos. Você pode cancelar o efeito usando o botão de habilidade novamente **10** segundos após a transformação.",
+		"description": "Transforme-se no Coelho Requintado durante **180** segundos. Você pode cancelar o efeito usando o botão de habilidade novamente **10** segundos após a transformação.",
 		"id": "buff_jiuyu_mon_snowrabbit_change"
 	},
 	"buff_jiuyu_mon_snowrabbit_change_mark": {
 		"name": "Atingido por uma bola de neve",
-		"description": "Dura **10** segundos e acumula até **5** vezes. Ao atingir o máximo de acúmulos, aciona a transformação do Coelho Exquisite.",
+		"description": "Dura **10** segundos e se acumula até **5** vezes. Ao atingir o máximo de acúmulos, aciona a transformação do Coelho Requintado.",
 		"id": "buff_jiuyu_mon_snowrabbit_change_mark"
 	},
 	"buff_jiuyu_mon_snowrabbit_infect_change": {
-		"name": "Dados de Simulacro de Coelho Exquisite",
+		"name": "Dados do Simulacro Coelho Requintado",
 		"description": "Transforma-se no Coelho Requintado durante **10** segundos.",
 		"id": "buff_jiuyu_mon_snowrabbit_infect_change"
 	},
@@ -10816,6 +11223,71 @@
 		"name": "Redução de defesa",
 		"description": "Reduz a redução de defesa de todos os atributos em **20%**.",
 		"id": "buff_def_decrease"
+	},
+	"buff_dfishchess_arealevelstackcount": {
+		"name": "Mobilização tática",
+		"description": "Cada acúmulo aumenta o dano em **0%** na zona. Acumula até **8** vezes.",
+		"id": "buff_dfishchess_arealevelstackcount"
+	},
+	"buff_dfishchess_changeskilladdimmstatus": {
+		"name": "Núcleo ardente",
+		"description": "Ao usar a habilidade de descarga de qualquer arma ígnea, recebe corpo de aço durante **8** segundos.",
+		"id": "buff_dfishchess_changeskilladdimmstatus"
+	},
+	"buff_dfishchess_chessenhancestackcount": {
+		"name": "Posicionamento decisivo",
+		"description": "Cada lance gasta **1** acúmulo para aumentar o dano em mais **0%**.",
+		"id": "buff_dfishchess_chessenhancestackcount"
+	},
+	"buff_dfishchess_chessenhancestackcount_level1": {
+		"name": "Posicionamento decisivo",
+		"description": "Cada lance gasta **1** acúmulo para aumentar o dano em mais **0%**.",
+		"id": "buff_dfishchess_chessenhancestackcount_level1"
+	},
+	"buff_dfishchess_declinespeedcut_in1s": {
+		"name": "Veios de jade",
+		"description": "Reduz a velocidade em **100%** durante **1** segundo.",
+		"id": "buff_dfishchess_declinespeedcut_in1s"
+	},
+	"buff_dfishchess_declinespeedcut_in3s": {
+		"name": "Coração leal",
+		"description": "Reduz a velocidade em **100%** durante **3** segundos.",
+		"id": "buff_dfishchess_declinespeedcut_in3s"
+	},
+	"buff_dfishchess_firedmgup_level0": {
+		"name": "Sol Escaldante",
+		"description": "Aumenta o dano ígneo em **0%**. Acumula até **8** vezes.",
+		"id": "buff_dfishchess_firedmgup_level0"
+	},
+	"buff_dfishchess_firedmgup_level6": {
+		"name": "Sol Escaldante",
+		"description": "Aumenta o dano ígneo em **0%**. Acumula até **8** vezes.",
+		"id": "buff_dfishchess_firedmgup_level6"
+	},
+	"buff_dfishchess_flame_ssr_level0_resonance": {
+		"name": "Ressonância ígnea",
+		"description": "**Ressonância ígnea**: Aumenta o ATQ ígneo em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas ígneas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância ígnea ou reação ígnea, e a ressonância ígnea tem prioridade.",
+		"id": "buff_dfishchess_flame_ssr_level0_resonance"
+	},
+	"buff_dfishchess_immdeathandrecoverall": {
+		"name": "Brilho intenso",
+		"description": "Com Entre no Jogo ativa, o dano sofrido é reduzido em **0%**. Ao sofrer dano letal, bloqueia-o e restaura a vida para 100%. O efeito é removido após ser ativado.",
+		"id": "buff_dfishchess_immdeathandrecoverall"
+	},
+	"buff_dfishchess_level3": {
+		"name": "Ocaso róseo",
+		"description": "Ao causar dano, ignora **0%** da resistência ígnea dos inimigos na zona.",
+		"id": "buff_dfishchess_level3"
+	},
+	"buff_dfishchess_physic_ssr_level0_resonance": {
+		"name": "Ressonância física",
+		"description": "**Ressonância física**: Aumenta o ATQ físico em **15%** e a resistência física em **25%**. Ativa-se ao equipar **2** ou mais armas físicas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância física ou reação física, e a ressonância física tem prioridade.",
+		"id": "buff_dfishchess_physic_ssr_level0_resonance"
+	},
+	"buff_dfishchessfire_ssr_level0_firespecial": {
+		"name": "Conexão central",
+		"description": "**Conexão central: Em campo**: Ao acertar um golpe com **Fluxolivre**, causa dano equivalente a **0%** do ATQ ígneo + **1%** da vida máxima do Errante + **2%** da soma de todos os tipos de resistência do Errante + **3%** do crítico aos alvos próximos. Esse efeito pode ser acionado até 1 vez a cada **1,5** segundo. O dano de conexão central conta como dano de ataque normal. Se houver **1** arma gélida/elétrica de qualquer tipo equipada, o dano de conexão central é multiplicado por **4**. Além disso, o dano de conexão central não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.",
+		"id": "buff_dfishchessfire_ssr_level0_firespecial"
 	},
 	"buff_specialitem_003_speedcut": {
 		"name": "Arma Criogênica",
@@ -11533,7 +12005,8 @@
 		"id": "buff_void_boss_502"
 	},
 	"buff_void_boss_601": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_void_boss_601"
 	},
 	"buff_void_halohealdown": {
@@ -11832,18 +12305,22 @@
 		"id": "buff_banbigbubble_15s_artifact_ssr_020"
 	},
 	"buff_teamclone_smallice120": {
+		"name": "Vulnerabilidade gélida",
 		"description": "Aumenta o dano gélido causado a inimigos.",
 		"id": "buff_teamclone_smallice120"
 	},
 	"buff_teamclone_smallfire120": {
+		"name": "Vulnerabilidade ígnea",
 		"description": "Aumenta o dano ígneo causado a inimigos.",
 		"id": "buff_teamclone_smallfire120"
 	},
 	"buff_teamclone_smallphy120": {
+		"name": "Vulnerabilidade física",
 		"description": "Aumenta o dano físico causado a inimigos.",
 		"id": "buff_teamclone_smallphy120"
 	},
 	"buff_teamclone_smallthunder120": {
+		"name": "Vulnerabilidade elétrica",
 		"description": "Aumenta o dano elétrico causado a inimigos.",
 		"id": "buff_teamclone_smallthunder120"
 	},
@@ -12386,6 +12863,11 @@
 		"name": "Traquinagem",
 		"description": "Aumenta em **0%** o dano físico causado a alvos com menos de **80%** de vida.",
 		"id": "buff_chainsaw_ssr_level0damup"
+	},
+	"buff_changebodyscale": {
+		"name": "Megaforma",
+		"description": "Entre no estado Megaform, aumente o tamanho e a Vida máxima, ganhe corpo de aço. Ataques em alvos causam dano adicional significativo (eficaz apenas contra monstros). O dano adicional tem um tempo de recarga de **1 segundo**. Megaform dura **60** segundos (o efeito termina imediatamente após a morte, transmissão ou saída da área do Chefe).",
+		"id": "buff_changebodyscale"
 	},
 	"buff_matrix_ssr35_level1_attackup": {
 		"name": "A Cidade Noturna nunca dorme",
@@ -14032,6 +14514,31 @@
 		"description": "Aumenta o dano de todos os elementos em **0%**. Equipar a Lança de Longinus aumenta o dano final em **1%** e o dano de vingança para **2%**. Com **ressonância de coragem** ativa, a agressão gerada por ataques aumenta em {3%. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
 		"id": "buff_matrix_ssr88_level4"
 	},
+	"buff_matrix_ssr89_iceandthunderdefdown": {
+		"name": "Redução de resistência",
+		"description": "Reduz a resistência elétrica e a resistência gélida em **0%** durante **1** segundos.",
+		"id": "buff_matrix_ssr89_iceandthunderdefdown"
+	},
+	"buff_matrix_ssr89_level1": {
+		"name": "Refrão da Rei",
+		"description": "Aumenta os danos elétrico e gélido em **0%**. Com **Salvação** equipada, você ignora **1%** da resistência elétrica e da resistência gélida dos alvos (a resistência total ignorada para cada elemento não pode exceder **50%**). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr89_level1"
+	},
+	"buff_matrix_ssr89_level2": {
+		"name": "Refrão da Rei",
+		"description": "Aumenta os danos elétrico e gélido em **0%**. Com **Salvação** equipada, você ignora **1%** da resistência elétrica e da resistência gélida dos alvos (a resistência total ignorada para cada elemento não pode exceder **50%**). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr89_level2"
+	},
+	"buff_matrix_ssr89_level3": {
+		"name": "Refrão da Rei",
+		"description": "Aumenta os danos elétrico e gélido em **0%**. Com **Salvação** equipada, você ignora **1%** da resistência elétrica e da resistência gélida dos alvos (a resistência total ignorada para cada elemento não pode exceder **50%**). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr89_level3"
+	},
+	"buff_matrix_ssr89_level4": {
+		"name": "Refrão da Rei",
+		"description": "Aumenta os danos elétrico e gélido em **0%**. Com **Salvação** equipada, você ignora **1%** da resistência elétrica e da resistência gélida dos alvos (a resistência total ignorada para cada elemento não pode exceder **50%**). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr89_level4"
+	},
 	"buff_hammerice_sr_level3_reducedamage20_breakfate": {
 		"name": "Redução de dano",
 		"description": "Nos 6 segundos seguintes, reduz o dano sofrido em 10%.",
@@ -14508,35 +15015,43 @@
 		"id": "buff_lawplayer_main"
 	},
 	"buff_level_balance_mon_01": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_01"
 	},
 	"buff_level_balance_mon_02": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_02"
 	},
 	"buff_level_balance_mon_03": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_03"
 	},
 	"buff_level_balance_mon_04": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_04"
 	},
 	"buff_level_balance_mon_44": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_44"
 	},
 	"buff_level_balance_mon_45": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_45"
 	},
 	"buff_level_balance_mon_46": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_46"
 	},
 	"buff_level_balance_mon_47": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_47"
 	},
 	"buff_lawfriend_addsuceee": {
@@ -14649,6 +15164,11 @@
 		"description": "A cada acúmulo de efeito positivo ganho, a classificação estelar da arma aumenta em **1**. A classificação estelar excedente aplica um reforço de dano de **5%** à arma.",
 		"id": "buff_bigsecret_upstar_ssr_asuka_phy"
 	},
+	"buff_bigsecret_upstar_ssr_ayanamirei_thunder": {
+		"name": "Salvação",
+		"description": "A cada acúmulo de efeito positivo ganho, a classificação estelar da arma aumenta em **1**. A classificação estelar excedente aplica um reforço de dano de **5%** à arma.",
+		"id": "buff_bigsecret_upstar_ssr_ayanamirei_thunder"
+	},
 	"buff_bigsecret_upstar_ssr_bigsword_ice": {
 		"name": "Gume Róseo",
 		"description": "A cada acúmulo de efeito positivo ganho, a classificação estelar da arma aumenta em **1**. A classificação estelar excedente aplica um reforço de dano de **5%** à arma.",
@@ -14738,6 +15258,11 @@
 		"name": "Alaya",
 		"description": "A cada acúmulo de efeito positivo ganho, a classificação estelar da arma aumenta em **1**. A classificação estelar excedente aplica um reforço de dano de **5%** à arma.",
 		"id": "buff_bigsecret_upstar_ssr_immortal_thunder"
+	},
+	"buff_bigsecret_upstar_ssr_jiyu_fire": {
+		"name": "Fluxolivre",
+		"description": "A cada acúmulo de efeito positivo ganho, a classificação estelar da arma aumenta em **1**. A classificação estelar excedente aplica um reforço de dano de **5%** à arma.",
+		"id": "buff_bigsecret_upstar_ssr_jiyu_fire"
 	},
 	"buff_bigsecret_upstar_ssr_lances_ice": {
 		"name": "Malévola",
@@ -15484,6 +16009,21 @@
 		"description": "Somente danos elétrico e ígneo surtem efeito.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_nornbeach_star": {
+		"name": "Estrela Espuma do Mar",
+		"description": "O tempo está acabando! Vá encontrar a próxima estrela!",
+		"id": "buff_nornbeach_star"
+	},
+	"buff_norncanteen_baozi_thunderdamageup": {
+		"name": "Bênção do Bolinho de Sopa",
+		"description": "Aumenta o dano elétrico e a velocidade em 15%. Dura por 30 minutos.",
+		"id": "buff_norncanteen_baozi_thunderdamageup"
+	},
+	"buff_norncanteen_tofu_firedamageup": {
+		"name": "Bênção de Tofu",
+		"description": "Aumenta o dano ígneo em 15% e a altura do salto em 20%. Dura 30 minutos.",
+		"id": "buff_norncanteen_tofu_firedamageup"
+	},
 	"buff_origin_atkfire_level1": {
 		"name": "Fogo arrasador I",
 		"description": "Após acertar um golpe, causa dano ígneo adicional de **2.000%** do ATQ. Não é afetado por efeitos positivos ou negativos. Tempo de recarga: **2** seg.",
@@ -15560,35 +16100,43 @@
 		"id": "buff_origin_atkthu_level3"
 	},
 	"buff_origin_balance99_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1"
 	},
 	"buff_origin_balance99_1th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1th"
 	},
 	"buff_origin_balance99_2": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2"
 	},
 	"buff_origin_balance99_2th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2th"
 	},
 	"buff_origin_balance99_3": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3"
 	},
 	"buff_origin_balance99_3th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3th"
 	},
 	"buff_origin_balance99_4": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4"
 	},
 	"buff_origin_balance99_4th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4th"
 	},
 	"buff_origin_bedamdown_level1": {

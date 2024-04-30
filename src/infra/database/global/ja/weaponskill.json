@@ -4693,6 +4693,150 @@
 			}
 		]
 	},
+	"GA_FPlayerDFishChessChangeSkill": {
+		"skills": [
+			{
+				"name": "明定終局",
+				"description": "N/A",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_ChangeSkill"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessEvade": {
+		"skills": [
+			{
+				"name": "回避",
+				"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerDFishChessEvade_Evade"
+			},
+			{
+				"name": "転勢",
+				"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、前方に黒石を<shuzhi>1</>個放つ。一時的に狭い範囲のターゲットを引き寄せて減速させ、前方のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "星墜",
+				"description": "回避後すぐに通常攻撃を行うと、前方に向かって白石を<shuzhi>3</>個放つ。各白石は着地時に付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>の範囲ダメージを与え、同時に罠を張る。ターゲットが罠に接触すると爆発し、追加で<shuzhi>57%</>のダメージと一時的なスロウ効果を付与する。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessMelee": {
+		"skills": [
+			{
+				"name": "星月流転",
+				"description": "地上にいる時、通常攻撃を行うと5回連続攻撃できる。ターゲットに与えるダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_Melee"
+			},
+			{
+				"name": "起勢",
+				"description": "滞空時、通常攻撃を行うとスタミナを消費しながら空中で4回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_AirAttack"
+			},
+			{
+				"name": "判局",
+				"description": "地上にいる時、通常攻撃を長押しまたは通常攻撃の途中で長押しすると判局状態に入る。最大で碁石を5個集めてターゲットに向かって発射し、碁石1個につき攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+			},
+			{
+				"name": "浮玉遊歴",
+				"description": "滞空時、通常攻撃を長押しすると、浮玉遊歴を発動できる。\r\n空から降下したあと双魚を放ち、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与えてノックアップする。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessSkill": {
+		"skills": [
+			{
+				"name": "入神開局",
+				"description": "空中に飛び上がり、フィールドを碁盤に変えつつ宙に浮き続ける(この間、移動不可)。最大<shuzhi>10</>秒間持続。この間、攻撃は碁石を打つ落下攻撃になり、スキルは<shuzhi>半目勝負</>に置き換わる。碁盤をタップすると<shuzhi>18</>個の碁石を順番に配置し、各碁石は碁盤上にいるすべてのターゲットに攻撃力×<shuzhi>250%</>のダメージを与えて一時的なスロウ効果を付与する。クールダウン<shuzhi>40</>秒(クールダウンクリア、リセット、変化の影響を受けない)。\r\n<shuzhi>落子無悔</>：<shuzhi>通常攻撃-判局</>、<shuzhi>回避攻撃-転勢</>、<shuzhi>回避攻撃-星墜</>、<shuzhi>連携スキル-明定終局</>を発動するか、召喚物を召喚すると(既存の召喚物のリセットは除く)、対応する数の落子無悔(らくしむかい)を獲得する。最大で<shuzhi>9</>スタックまで獲得可能。空中に浮いている間、碁石を<shuzhi>1</>個打つごとに落子無悔を1スタック消費し、碁盤上のすべてのターゲットに攻撃力×<shuzhi>200%</>のダメージを与える。この間、落子無悔は獲得不可。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+				"operations": [],
+				"tags": [
+					"Damage",
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChess_Skill"
+			},
+			{
+				"name": "半目勝負",
+				"description": "<shuzhi>スキル-入神開局</>の持続中に手動で操作すると、もしくは持続時間が終了すると半目勝負(はんもくしょうぶ)が発動する。空から落下し、盤上のすべてのターゲットに攻撃力×<shuzhi>{0}％</>+<shuzhi>{1}</>のダメージを与える。さらに、スキル持続中に消費した<shuzhi>落子無悔</>のスタック数×攻撃力×200%のダメージを追加で与える。その後、双魚は外側に向かって円を描くように泳ぎながら付近のターゲットを押し退け、攻撃力×<shuzhi>{2}%</>のダメージを与える。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_Skill2"
+			}
+		]
+	},
 	"GA_FPlayerCubeMelee": {
 		"skills": [
 			{
@@ -7925,7 +8069,7 @@
 			},
 			{
 				"name": "エネルギーショット",
-				"description": "通常攻撃を長押し、または通常攻撃中に通常攻撃を長押しすると、ターゲットに連射でき、命中すると攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>Ptの基礎ダメージを与える",
+				"description": "通常攻撃を長押し、または通常攻撃中に通常攻撃を長押しするとターゲットに連射でき、命中すると攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>Ptの基礎ダメージを与える",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_dgun_changeskill.webp",
 				"operations": [
 					"Attack",
@@ -11039,7 +11183,7 @@
 			},
 			{
 				"name": "エネルギーショット",
-				"description": "通常攻撃を長押し、または通常攻撃中に通常攻撃を長押しすると、ターゲットに連射でき、命中すると攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>Ptの基礎ダメージを与える",
+				"description": "通常攻撃を長押し、または通常攻撃中に通常攻撃を長押しするとターゲットに連射でき、命中すると攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>Ptの基礎ダメージを与える",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_dgun_changeskill.webp",
 				"operations": [
 					"Attack",
@@ -11688,7 +11832,7 @@
 	"GA_FPlayerAsukaChangeSkill": {
 		"skills": [
 			{
-				"name": "エヴァ出撃！",
+				"name": "武装出撃！",
 				"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解除</>する。２号機が飛び蹴りを行い、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>の範囲ダメージを与える。その間、ダメージ無効が<shuzhi>1.5</>秒間持続する(トップリーグでは無効)。",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
 				"operations": [],
@@ -11809,13 +11953,161 @@
 		"skills": [
 			{
 				"name": "ニンバスの破撃",
-				"description": "N/A",
+				"description": "ターゲットに向かって武器を投げ、同時に付近のターゲットを引き寄せ、攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与えて付近のターゲットを一時的に動けなくする。クールダウン<shuzhi>20</>秒(このスキルはクールダウンクリア、リセット、変化の影響を受けない)。\r\n\r\nこのスキルの発動に成功すると、復讐を<shuzhi>10</>スタック獲得する。ターゲットにダメージを与えるたびに復讐を<shuzhi>1</>スタック消費し、その時点でフロントにある武器のダメージ属性が<shuzhi>物理</>または<shuzhi>炎</>の場合は付近のターゲットに攻撃力×<shuzhi>600%</>の武器属性ダメージを与える。1秒ごとに最大<shuzhi>1</>回発動可能。\r\n\r\nスキルの発動に成功したあと、自身の最大HP×<shuzhi>50%</>を耐久値上限とするＡ.Ｔ.フィールドを1つ生成する。<shuzhi>30</>秒間持続。この間、自身の物理ダメージ+<shuzhi>18%</>、炎ダメージ+<shuzhi>12%</>、さらに不屈効果を獲得する。\r\n自身がダメージを受けたとき、Ａ.Ｔ.フィールドは残りパーセンテージに応じてダメージを軽減し、同時に受けたダメージ量に応じてＡ.Ｔ.フィールドの耐久値を減らす(耐久値は最低でも上限の<shuzhi>10%</>の状態を維持する)。\r\n剛毅共鳴の発動中かつ復讐をスタックしているとき、自身がダメージを受けると復讐を<shuzhi>1</>スタック消費して自身の最大HP×<shuzhi>8%</>のダメージをブロックする。<shuzhi>0.5</>秒ごとに最大<shuzhi>1</>回発動可能。",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
 				"operations": [],
 				"tags": [
 					"Damage"
 				],
 				"id": "GA_FPlayerAsukaSkill_Skill"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiChangeSkill_Thu": {
+		"skills": [
+			{
+				"name": "心の壁",
+				"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解除</>する。自身のメカを召喚し、シールドで地面を砕いた際の衝撃波で付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。さらに特殊エネルギーを<shuzhi>30</>Pt獲得し、スキル発動中、被ダメージ無効が<shuzhi>1.5</>秒間持続する(トップリーグでは無効)。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiEvade_Thu": {
+		"skills": [
+			{
+				"name": "回避",
+				"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerAyanamiReiEvade_Evade"
+			},
+			{
+				"name": "トリプルショット",
+				"description": "任意の回避後すぐに通常攻撃を行うと、トリプルショットを発動する。初回命中したターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+			},
+			{
+				"name": "チャージショット",
+				"description": "回避後、適切なタイミングで通常攻撃をタップするとチャージショットを発動する。強力なエネルギーの矢を放ち、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与えるのと同時に、ホーミングアローを数本発射する。また、自身はブロックバリアを1回獲得する。<shuzhi>15</>秒間持続。ブロックバリアでブロック可能なダメージ量は自身の最大HPの<shuzhi>10%</>を超えず、同時に最大3回まで所有可能。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiMelee_Thu": {
+		"skills": [
+			{
+				"name": "ラピッドアロー",
+				"description": "地上にいる時、通常攻撃を行うと6回連続攻撃ができる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージと少しのノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージと少しのノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージと少しのノックバック\r\n4回目：最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージと少しのノックバック\r\n5回目の攻撃後、フラッシュ発生時にタップすると6回目の攻撃が発動する。強力なエネルギーの矢とホーミングアローを数本発射してターゲットに攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>のダメージを与えるのと同時に、初回命中した場所に減速磁場を1つ生成する。減速磁場：範囲内にいる敵ターゲットの移動速度と攻撃速度-<shuzhi>35%</>、<shuzhi>3</>秒間持続。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Melee"
+			},
+			{
+				"name": "エアリアルアサルト",
+				"description": "滞空時に通常攻撃を行うと、スタミナを消費して空中で6回連続攻撃ができる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>\r\n4回目：最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>\r\n5回目の攻撃後、フラッシュ発生時にタップすると6回目の攻撃が発動する。<shuzhi>ホーミングアロー</>を<shuzhi>5</>本発射してターゲットに攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>のダメージを与えるのと同時に、初回命中した場所に減速磁場を1つ生成する。減速磁場：範囲内にいる敵ターゲットの移動速度と攻撃速度-<shuzhi>40%</>、<shuzhi>3</>秒間持続。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+			},
+			{
+				"name": "バックステップアロー",
+				"description": "地上にいる時または滞空時、通常攻撃の1～5回目に通常攻撃を長押しするとバックステップアローを発動できる。\r\n後方にジャンプしながら前方に射撃を行い、攻撃が命中したターゲットに対し攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。\r\nバックステップアローの発動時に特殊エネルギーが<shuzhi>70</>Pt以上だった場合、<shuzhi>エネルギー消費</>状態が発動する。この状態に入ると雷攻撃力+<shuzhi>15%</>、氷攻撃力+<shuzhi>5%</>。\r\n<shuzhi>リリーフ</>がフロントにある時、0.5秒ごとに特殊エネルギーを<shuzhi>5</>Pt消費する。<shuzhi>リリーフ</>による与ダメージ+30%。さらに、通常攻撃を連続タップするか長押ししたままにすると<shuzhi>通常攻撃-シャイニングアロー</>が発動する。\r\n<shuzhi>リリーフ</>がバックグラウンドにある時、0.5秒ごとに特殊エネルギーを<shuzhi>3.3</>Pt消費する。<shuzhi>ホーミングアロー</>による与ダメージ+50%。さらに、爆発範囲が UPする。\r\n特殊エネルギーの上限は<shuzhi>100</>Pt。上限に達したあと、<shuzhi>リリーフ</>をフロントからバックグラウンドに切り替えるとただちにエネルギー消費状態に入る。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+			},
+			{
+				"name": "シャイニングアロー",
+				"description": "<shuzhi>エネルギー消費</>状態のとき、通常攻撃を行うと3回連続攻撃できる。ダメージは次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+			},
+			{
+				"name": "エイミングスナイプ",
+				"description": "通常攻撃を長押しでチャージ攻撃状態に入り、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。チャージ時間が<shuzhi>0.1</>秒増えるごとにダメージ+<shuzhi>100%</>、ダメージ値はチャージ<shuzhi>2.3</>秒で最大になる。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+				"operations": [
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiSkill_Thu": {
+		"skills": [
+			{
+				"name": "装甲重撃",
+				"description": "自身のメカを召喚して敵に強烈な一撃を与え、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。この間、自身は不屈効果を獲得するのと同時に特殊エネルギーを<shuzhi>35</>Pt獲得する。クールダウン<shuzhi>20</>秒(スキルのクールダウンのクリア、リセット、変化の影響を受けない)。",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiSkill_Skill"
 			}
 		]
 	},

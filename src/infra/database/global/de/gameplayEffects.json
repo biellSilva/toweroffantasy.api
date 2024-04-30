@@ -329,6 +329,16 @@
 		"description": "Der Endschaden erhöht sich um **0%**. Wenn sich **Kienkomet** im Nebenhand-Slot befindet, erhöht sich die Abwurffrequenz von **Sperlingsfeder** auf **1** pro Sek.\r\nWenn **Sperlingsfeder** einen Treffer landet und den Ausbreitungseffekt auslöst, breiten sich zusätzlich **Ionenversengung** und **Kreuzbrand** aus.\r\nIm Teamspiel wird dein durch das Ziel mit Aggro erlittener Schaden um **1%** verringert. Wenn Standhaftigkeit-Resonanz aktiviert ist, erhöht sich die Schadensreduktion auf **2%**.",
 		"id": "buff_imitation_brush_level2_damageup"
 	},
+	"buff_imitation_dfish_level1": {
+		"name": "Raffinierter Zug",
+		"description": "Erhöht den Endschaden um **0%**.",
+		"id": "buff_imitation_dfish_level1"
+	},
+	"buff_imitation_dfish_level2": {
+		"name": "Strategischer Spielzug",
+		"description": "Erhöht den Endschaden um **0%**.\r\nWenn **Dualismus** ausgerüstet und nur **1**Ziel in der Zone ist, wird der Flammenschaden um **1%** erhöht. Wenn **2** oder mehr Ziele vorhanden sind, wird der Flammenschaden auf **2%** erhöht.",
+		"id": "buff_imitation_dfish_level2"
+	},
 	"buff_thunder_ready_lv1": {
 		"name": "Volt",
 		"description": "Fügt dem Ziel Schaden zu und elektrisiert es für **3** Sek., sodass es keine Waffen benutzen kann.",
@@ -420,83 +430,83 @@
 		"id": "buff_tianlang_weaponcharged"
 	},
 	"buff_timerevert_addenergy": {
-		"name": "Entladung Ladung",
+		"name": "Geladene Batterie",
 		"description": "Nach der Verwendung einer Entladungsfähigkeit, erhalten Sie sofort eine Waffenladung, die den Re-Tracker-Ladungszählungen mal **6**/**8**/**10** entspricht.",
 		"id": "buff_timerevert_addenergy"
 	},
 	"buff_timerevert_attackdmgmaxhp": {
-		"name": "Angriff",
-		"description": "Alle 5 Sekunden verursacht der nächste Angriff zusätzlichen Schaden in Höhe der Re-Tracker-Ladungszähler mal **0,1%**/**0,15%**/**0,2%** der aktuellen LP des Ziels (wird nur während der Angriffsresonanz ausgelöst).",
+		"name": "Vernichtung",
+		"description": "Alle **20** Sekunden verursacht der nächste Angriff zusätzlichen Schaden, der den Rückverfolgung-Ladungszählungen mal **0,02%**/**0,03%**/**0,05%** der max. LP des Bosses entspricht (wird nur während der Angriffsresonanz ausgelöst).",
 		"id": "buff_timerevert_attackdmgmaxhp"
 	},
 	"buff_timerevert_bedmgdown": {
-		"name": "Schadensreduktion",
-		"description": "Verringert den erlittenen Schaden entsprechend der Anzahl der Re-Tracker-Ladungen mal **0,5%**/**0,75%**/**1%**.",
+		"name": "Unnachgiebig",
+		"description": "Verringert den erlittenen Schaden um die Rückverfolgung-Ladung × **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_bedmgdown"
 	},
 	"buff_timerevert_breakdefup": {
-		"name": "Zertrümmern",
-		"description": "Erhöht Zertrümmern um die Ladungsmenge von Rückverfolger × **1%**/**1,5%**/**2%**.",
+		"name": "Schild Zerschmettern",
+		"description": "Erhöht Zertrümmern um die Rückverfolgung-Ladung × **1%**/**1,5%**/**2%**.",
 		"id": "buff_timerevert_breakdefup"
 	},
 	"buff_timerevert_chargeup": {
-		"name": "Ladebooster",
-		"description": "Erhöht die Aufladeeffizienz entsprechend der Anzahl der Re-Tracker-Ladungen mal **0,5%**/**0,75%**/**1%**.",
+		"name": "Ladungsverstärker",
+		"description": "Erhöht die Aufladeeffizienz um die Rückverfolgung-Ladung × **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_chargeup"
 	},
 	"buff_timerevert_defenfaddshield": {
-		"name": "Standhaftigkeit",
-		"description": "Bei Aktivierung wird 1% des erlittenen Schadens in einen Schild umgewandelt und Angriffe und Fähigkeiten verursachen zusätzlichen Schaden in Höhe von **100%**/**200%**/**300%** des Schildwerts (nur während der Standhaftigkeit-Resonanz ausgelöst).",
+		"name": "Schildangriff",
+		"description": "Nach der Aktivierung werden **40%**/**60%**/**80%** des innerhalb von **5** Sekunden erlittenen Schadens in ein Schild umgewandelt, mindestens jedoch **5%** der max. LP des Vollstreckers. Während das Schild aktiv ist, verursachen Angriffe und Fähigkeiten zusätzlichen Schaden in Höhe von **0,25%**/**0,5%**/**0,75%** der max. LP des Bosses. Kann nur 1-mal alle 10 Sekunden ausgelöst werden (nur während der Standhaftigkeit-Resonanz ausgelöst).",
 		"id": "buff_timerevert_defenfaddshield"
 	},
 	"buff_timerevert_dmgup": {
-		"name": "Angriffsbonus",
-		"description": "Erhöht den verursachten Schaden entsprechend der Re-Tracker-Ladungszähler um **0,5%**/**0,75%**/**1%**.",
+		"name": "Erhöhe die Hitze",
+		"description": "Erhöht den verursachten Schaden um die Rückverfolgung-Ladung × **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_dmgup"
 	},
 	"buff_timerevert_dmgupinair": {
-		"name": "Schadensbonus in der Luft",
-		"description": "Erhöht den Schaden in der Luft entsprechend der Anzahl der Re-Tracker-Ladungen mal **0,6%**/**1%**/**1,5%**.",
+		"name": "Beweglichkeit",
+		"description": "Erhöht den Schaden in der Luft um die Rückverfolgung-Ladung × **0,6%**/**1%**/**1,5%**.",
 		"id": "buff_timerevert_dmgupinair"
 	},
 	"buff_timerevert_exdmg": {
-		"name": "Vernichtung",
+		"name": "Urteil",
 		"description": "Der nächste Angriff verbraucht alle Ladungen und fügt zusätzlich Schaden in Höhe der maximalen LP des Ziels zu, der gleich der Anzahl der Re-Tracker-Ladungen multipliziert mit **0,05%**/**0,075%**/**0,1%** ist.",
 		"id": "buff_timerevert_exdmg"
 	},
 	"buff_timerevert_gettimerevertstack": {
-		"name": "Schnelle Wiederverfolgung",
-		"description": "Erhöht die durch Schaden am Boss angesammelten Ladungszähler von **1** auf **2**.",
+		"name": "Swift Zurücksetzen",
+		"description": "Nach der Aktivierung erhalten Sie zusätzlich alle **2** Sekunden **1** Stapel Ladungsmenge.",
 		"id": "buff_timerevert_gettimerevertstack"
 	},
 	"buff_timerevert_healdmgaftertreatment": {
-		"name": "Segnung",
-		"description": "Nachdem Heilung empfangen wurde, verursacht der nächste Angriff zusätzlichen Schaden in Höhe der max. LP des Ziels, der den Wiederholungs-Ladungszählungen mal **0,2%**/**0,3%**/**0,5%** entspricht (wird nur während der Segnungsresonanz ausgelöst).",
+		"name": "Erleichterung",
+		"description": "Nach dem Erhalt einer Heilung verursacht der nächste Angriff zusätzlichen Schaden, der gleich der max. LP des Ziels ist, was gleich der Anzahl der Rückverfolgung-Ladungen mal **0,01%**/**0,02%**/**0,03%** ist. Kann nur 1-mal alle 10 Sekunden ausgelöst werden (wird nur während der Segnungsresonanz ausgelöst).",
 		"id": "buff_timerevert_healdmgaftertreatment"
 	},
 	"buff_timerevert_healup": {
-		"name": "Heilung",
-		"description": "Erhöht den Heilungseffekt entsprechend der Anzahl der Re-Tracker-Ladungen mal **1%**/**1,5%**/**2%**.",
+		"name": "Süßer Tau",
+		"description": "Erhöht den Heilungseffekt gleichwertig zu **25%**/**50%**/**75%**.",
 		"id": "buff_timerevert_healup"
 	},
 	"buff_timerevert_ignoredef": {
-		"name": "Widerstand ignorieren",
-		"description": "Führen Sie einen Angriff durch, der alle Widerstände des Bosses ignoriert und gleich der Anzahl der Re-Tracker-Ladungen mal **0,5%**/**0,75%**/**1%** entspricht.",
+		"name": "Verachtung",
+		"description": "Erhöht den verursachten Schaden durch Ignorieren eines Prozentsatzes aller Widerstände des Bosses. Die Erhöhung ist gleich der Rückverfolgung-Ladung × **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_ignoredef"
 	},
 	"buff_timerevert_periodshield": {
 		"name": "Regenerativer Schild",
-		"description": "Erhalte alle **30** Sekunden einen Schild, dessen Wert gleich der max. LP des Vollstreckers ist, der gleich der Anzahl der Re-Tracker-Ladungen mal **0,5%**/**1%**/**1,5%** ist.",
+		"description": "Nach der Aktivierung wird ein Schild gewährt, das alle **30** Sekunden erneuert wird. Der Wert des Schilds entspricht der Anzahl der Rückverfolgung-Ladungen multipliziert mit **0,5%**/**1%**/**1,5%** der max. LP des Vollstreckers.",
 		"id": "buff_timerevert_periodshield"
 	},
 	"buff_timerevert_reducecd": {
-		"name": "Reduzierung der Fähigkeits-Abklingzeit",
+		"name": "Schrecklicher Sturm",
 		"description": "Die Basisabklingzeiten von Fähigkeiten wurden um **10%**/**20%**/**30%** reduziert.",
 		"id": "buff_timerevert_reducecd"
 	},
 	"buff_timerevert_suck": {
-		"name": "Lebensraub",
-		"description": "Stellt LP in Höhe der Re-Tracker-Ladungszähler mal **0,5%**/**0,75%**/**1%** basierend auf dem verursachten Schaden wieder her.",
+		"name": "LP-Absorption",
+		"description": "Stelle LP in Höhe von **10%**/**20%**/**30%** des ausgeteilten Schadens wieder her.",
 		"id": "buff_timerevert_suck"
 	},
 	"attack_skill1": {
@@ -821,12 +831,12 @@
 	},
 	"eventdes_boss044sp_common3": {
 		"name": "Absolute Verteidigung",
-		"description": "Wenn Harrahs LP auf einen bestimmten Prozentsatz fallen, geht sie in einen Verteidigungsmodus über, startet keine Angriffe und wird unbesiegbar. Während ihrer Unbesiegbarkeitsphase erscheinen Energiekerne in der Luft und sinken langsam ab, was ihnen bei Kontakt mit Wanderern einen Buff verleiht, ihre Sprunghöhe und Geschwindigkeit erheblich erhöht und ihren ENDE-Verbrauch reduziert. Die Energiekerne stören auch Harrahs Verteidigungsmodus. Wenn die Energiekerne mehrmals ergriffen werden, endet Harrahs Unbesiegbarkeitszustand vorzeitig.",
+		"description": "Wenn Harrahs LP auf einen bestimmten Prozentsatz sinken, geht sie in einen Verteidigungsmodus über, in dem sie nicht angreift und unbesiegbar wird. Während ihrer Unbesiegbarkeit erscheinen Energiekerne in der Luft und sinken langsam herab. Wenn sie vor der Landung auf dem Boden mit Wanderern in Kontakt kommen, erhalten diese einen Buff, der ihre Sprunghöhe und Geschwindigkeit erhöht sowie ihren Ausdauerverbrauch verringert. Die Energiekerne beeinträchtigen zudem Harrahs Verteidigungsmodus. Wenn die Energiekerne mehrfach eingefangen werden, endet Harrahs Unbesiegbarkeit vorzeitig.",
 		"id": "eventdes_boss044sp_common3"
 	},
 	"eventdes_boss044sp_fire1": {
 		"name": "Versengen",
-		"description": "Harrah fügt den umgebenden Wanderern Glutmarkierungen zu, und je näher sie Harrah sind, desto schneller stapeln sich die Markierungen. Wanderer mit mehr als 50 Glutmarkierungsstapeln, die von Harrah beschädigt werden, haben alle ihre Glutmarkierungen gelöscht und erhalten zusätzlichen Schaden basierend auf den Stapeln von Glutmarkierungen.",
+		"description": "Harrah fügt den umgebenden Wanderern Glut-Markierungen zu, und je näher sie Harrah sind, desto schneller stapeln sich die Markierungen, bis zu 100 Stapel. Wanderer mit mehr als 50 Glut-Markierungsstapeln, die von Harrah beschädigt werden, haben alle ihre Glut-Markierungen gelöscht und erhalten zusätzlichen Schaden basierend auf den Stapeln von Glut-Markierungen.",
 		"id": "eventdes_boss044sp_fire1"
 	},
 	"eventdes_boss044sp_fire2": {
@@ -836,7 +846,7 @@
 	},
 	"eventdes_boss044sp_ice1": {
 		"name": "Vereisung",
-		"description": "Harrah fügt den umgebenden Wanderern Frostige Markierungen zu, und je näher sie Harrah sind, desto schneller stapeln sich die Markierungen. Wenn die Frostigen Markierungen vollständig gestapelt sind, wird der Ziel-Wanderer eingefroren. Wenn Harrah während des Einfrierens Schaden verursacht, wird der Einfrieren-Status aufgehoben, aber das Ziel erleidet 1-mal erheblichen Eisbruch-Schaden.",
+		"description": "Harrah fügt den umgebenden Wanderern Frostige Markierungen zu, bis zu 25 Stapel. Wenn die Frostigen Markierungen vollständig gestapelt sind, wird der Ziel-Wanderer eingefroren. Wenn Harrah während des Einfrierens Schaden verursacht, wird der Einfrierstatus aufgehoben, aber das Ziel erleidet 1-mal erheblichen Eisbrecherschaden.",
 		"id": "eventdes_boss044sp_ice1"
 	},
 	"eventdes_boss044sp_ice2": {
@@ -846,7 +856,7 @@
 	},
 	"eventdes_boss044sp_phy1": {
 		"name": "Verachten",
-		"description": "Wanderer in der Nähe von Harrah oder die Schaden von ihr erleiden, werden mit Unterdrückungsmarkierungen belegt. Jede Unterdrückungsmarkierung reduziert die max. LP des Wanderers um 1%, bis zu einer maximalen Reduzierung von 50%.",
+		"description": "Wanderer in der Nähe von Harrah oder die Schaden von ihr nehmen, werden mit Unterdrückungsmarkierungen belegt, bis zu 50 Stapeln. Jede Unterdrückungsmarkierung reduziert die max. LP des Wanderers um 1%, bis zu einer maximalen Reduzierung von 50%.",
 		"id": "eventdes_boss044sp_phy1"
 	},
 	"eventdes_boss044sp_phy2": {
@@ -855,8 +865,8 @@
 		"id": "eventdes_boss044sp_phy2"
 	},
 	"eventdes_boss044sp_super1": {
-		"name": "Verwelkend",
-		"description": "Jedes Mal, wenn ein Wanderer Schaden von Harrah nimmt, werden ihm auch die Markierungen der Zeitverzerrung zugefügt. Wenn diese Markierungen vollständig gestapelt sind, wird der Charakter dem Verwelkungseffekt ausgesetzt und verliert regelmäßig ENDE während der Dauer.",
+		"name": "Welkepunkt",
+		"description": "Jedes Mal, wenn ein Wanderer Schaden von Harrah nimmt, werden ihm auch Temporale Störung-Markierungen zugefügt, bis zu 10 Stapel. Wenn diese Markierungen volle Stapel erreichen, wird der Charakter dem Verwelkend-Effekt ausgesetzt und verliert regelmäßig ENDE während der Dauer.",
 		"id": "eventdes_boss044sp_super1"
 	},
 	"eventdes_boss044sp_super2": {
@@ -865,8 +875,8 @@
 		"id": "eventdes_boss044sp_super2"
 	},
 	"eventdes_boss044sp_thu1": {
-		"name": "Zorn Donner",
-		"description": "Während des Kampfes beschwört Harrah regelmäßig Blitzschläge, die zufällige Positionen treffen und Voltschaden bei Zielen im Wirkbereich verursachen. Zusätzlich werden Wanderer in der Nähe von Harrah mit Elektrisieren-Markierungen belegt. Jeder Stapel der Markierung verstärkt den Voltschaden, den der Wanderer erleidet.",
+		"name": "Sturmladung",
+		"description": "Während des Kampfes beschwört Harrah regelmäßig Blitzschläge. Wenn ein vom Blitz getroffenes Ziel weniger als 10 Elektrisieren-Stapel hat, erhält es Voltschaden basierend auf der Anzahl der Elektrisieren-Stapel und dann 1 Elektrisieren-Markierung. Nach Erreichen von 10 Elektrisieren-Stapeln wird das vom Blitz getroffene Ziel von Hochspannung durchbohrt und erhält tödlichen Schaden in Höhe von 120% der Max. LP.",
 		"id": "eventdes_boss044sp_thu1"
 	},
 	"eventdes_boss044sp_thu2": {
@@ -1225,15 +1235,18 @@
 		"id": "buff_spear_stun"
 	},
 	"buff_eleweakpoint_bigice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigice"
 	},
 	"buff_eleweakpoint_bigfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfire"
 	},
 	"buff_eleweakpoint_bigthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigthunder"
 	},
 	"buff_artifact11_getweapon": {
@@ -1956,6 +1969,16 @@
 		"description": "Erhöht erlittenen Voltschaden erheblich.",
 		"id": "buff_borderwar_weakthunder"
 	},
+	"buff_boss_002_4": {
+		"name": "Toxitee",
+		"description": "Die vom Wanderer angewendete Heilung wird in eine gleichwertige Menge an Schaden umgewandelt.",
+		"id": "buff_boss_002_4"
+	},
+	"buff_boss_002_5_ignore": {
+		"name": "Zerbrechlich",
+		"description": "Während der Dauer ist der Hyperkörper des Wanderers deaktiviert und kann keinen unbesiegbaren Zustand eingehen.",
+		"id": "buff_boss_002_5_ignore"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Hyperkörper-Fehler",
 		"description": "Wanderer können sich selbst keinen Hyperkörper-Sektor gewähren.",
@@ -1963,7 +1986,7 @@
 	},
 	"buff_boss_044_sp_fire": {
 		"name": "Glut",
-		"description": "Wanderer, die sich in der Nähe des mutierten Harrah aufhalten, werden mit Glut belegt, die bei Erreichen einer bestimmten Anzahl von Stapeln durch Harrahs Angriffe detoniert wird und Schaden basierend auf der max. LP des Ziel-Wanderers und der Anzahl der Stapel verursacht.",
+		"description": "Maximale Stapel: 100. Wanderer mit mehr als 50 Glutmarken, die von Harrah beschädigt werden, haben alle ihre Glutmarken gelöscht und erhalten zusätzlichen Schaden basierend auf den Stapeln der Glutmarken.",
 		"id": "buff_boss_044_sp_fire"
 	},
 	"buff_boss_044_sp_fire_ignore": {
@@ -1973,7 +1996,7 @@
 	},
 	"buff_boss_044_sp_ice_frozen": {
 		"name": "Einfrieren",
-		"description": "Das Ziel im gefrorenen Zustand, verursacht durch den Frostig, erleidet zusätzlichen Eisbruchschaden, wenn es von Harrah angegriffen wird.",
+		"description": "Der eingefrorene Zustand, der durch den Frost verursacht wird. Wanderer in diesem Zustand erleiden zusätzlichen Eisbrecher-Schaden, wenn sie von Harrah angegriffen werden.",
 		"id": "buff_boss_044_sp_ice_frozen"
 	},
 	"buff_boss_044_sp_ice_ignore": {
@@ -1983,7 +2006,7 @@
 	},
 	"buff_boss_044_sp_ice_stack": {
 		"name": "Frostig",
-		"description": "Wanderer, die sich in der Nähe des mutierten Harrah aufhalten, werden mit Frostig belegt, was bei Erreichen einer bestimmten Anzahl von Stapeln den Wanderer einfriert und ihn zusätzlichen Eisbruch-Schaden erleiden lässt, wenn er von Harrah angegriffen wird.",
+		"description": "Maximale Stapel: 25. Wenn Frostig-Markierungen volle Stapel erreichen, wird der Ziel-Wanderer eingefroren. Wenn er während des Einfrierens von Harrah beschädigt wird, wird der Einfrierstatus aufgehoben, aber das Ziel erleidet erheblichen Eisbrecherschaden 1-mal.",
 		"id": "buff_boss_044_sp_ice_stack"
 	},
 	"buff_boss_044_sp_phy_ignore": {
@@ -1993,7 +2016,7 @@
 	},
 	"buff_boss_044_sp_phy_stack": {
 		"name": "Unterdrückung",
-		"description": "Jeder Stapel verringert die max. LP des Wanderers um 1%.",
+		"description": "Maximale Stapel: 50. Jeder Stapel reduziert die max. LP des Wanderers um 1%.",
 		"id": "buff_boss_044_sp_phy_stack"
 	},
 	"buff_boss_044_sp_reward_energyconsumedown": {
@@ -2012,27 +2035,27 @@
 		"id": "buff_boss_044_sp_reward_speedup"
 	},
 	"buff_boss_044_sp_superpower_energy_trigger": {
-		"name": "Verwelkend",
+		"name": "Welkepunkt",
 		"description": "Zieht dem Wanderer alle 0,5 Sekunden innerhalb der Dauer 1-mal das ENDE ab.",
 		"id": "buff_boss_044_sp_superpower_energy_trigger"
 	},
 	"buff_boss_044_sp_superpower_ignore": {
-		"name": "Zeitverzerrungsimmunität",
+		"name": "Immunität gegen temporale Störung",
 		"description": "Die Zeitverzerrung kann nicht auf den Ziel-Wanderer angewendet werden.",
 		"id": "buff_boss_044_sp_superpower_ignore"
 	},
 	"buff_boss_044_sp_superpower_stack": {
 		"name": "Temporale Störung",
-		"description": "Harrahs Angriffe fügen dem Ziel eine Zeitverzerrung zu, die, sobald sie eine bestimmte Anzahl von Stapeln erreicht, das Ziel verwelkt.",
+		"description": "Temporale Störung kann bis zu 10 Mal gestapelt werden. Bei Erreichen der vollen Stapel wird Verwelkend auf das Ziel angewendet.",
 		"id": "buff_boss_044_sp_superpower_stack"
 	},
 	"buff_boss_044_sp_thu_stack": {
 		"name": "Elektrisieren",
-		"description": "Jeder Stapel Elektrisieren erhöht den Voltschaden, den der Wanderer erhält.",
+		"description": "Maximale Stapel: 10. Wenn der Wanderer mit weniger als 10 „Elektrisieren“-Stapeln vom Blitz getroffen wird, erleidet er entsprechend der Anzahl der Stapel eine geringfügige Menge Schaden und erhält einen zusätzlichen „Elektrisieren“-Stapel. Bei Erreichen von 10 „Elektrisieren“-Stapeln wird der Wanderer von Hochspannung durchdrungen, wodurch einmal tödlicher Schaden verursacht wird.",
 		"id": "buff_boss_044_sp_thu_stack"
 	},
 	"buff_boss_044_thu_ignore": {
-		"name": "Elektrisieren Immunität",
+		"name": "Immunität gegen Elektrisieren",
 		"description": "Der Zustand \"Elektrisieren\" kann nicht auf den Ziel-Wanderer angewendet werden.",
 		"id": "buff_boss_044_thu_ignore"
 	},
@@ -2102,15 +2125,18 @@
 		"id": "buff_boss_hum_042_5"
 	},
 	"buff_eleweakpoint_smallfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfire"
 	},
 	"buff_eleweakpoint_smallice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallice"
 	},
 	"buff_eleweakpoint_smallthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallthunder"
 	},
 	"buff_emby_atkupdefdown": {
@@ -2189,42 +2215,52 @@
 		"id": "buff_evadeaddeffect_level2"
 	},
 	"buff_evajdfw_breakdefup": {
+		"name": "",
 		"description": "Erhöht die „Zertrümmern“-Fähigkeit der Rüstung um 20%.",
 		"id": "buff_evajdfw_breakdefup"
 	},
 	"buff_evajdfw_critup": {
+		"name": "",
 		"description": "Erhöht die Rüstung Kritische Trefferrate um 5%",
 		"id": "buff_evajdfw_critup"
 	},
 	"buff_evajdfw_finbedamedup": {
+		"name": "",
 		"description": "5% Rüstungsschadensreduktion",
 		"id": "buff_evajdfw_finbedamedup"
 	},
 	"buff_evajdfw_findamup": {
+		"name": "",
 		"description": "5% Rüstung-Schadensbonus",
 		"id": "buff_evajdfw_findamup"
 	},
 	"buff_evajdfw_monsterhpdownandatkup": {
+		"name": "",
 		"description": "Die LP des Gegners werden um 20% reduziert und ihr ANG um 10% erhöht.",
 		"id": "buff_evajdfw_monsterhpdownandatkup"
 	},
 	"buff_evajdfw_monsterhpupandatkdown": {
+		"name": "",
 		"description": "Die LP des Gegners steigen um 20% und ihre ANG wird um 20% reduziert.",
 		"id": "buff_evajdfw_monsterhpupandatkdown"
 	},
 	"buff_evajdfw_skill01cooldowncut": {
-		"description": "Verringert die Abklingzeit der Fähigkeit \"Verstärkungsruf-104\" um 2 Sekunden.",
+		"name": "",
+		"description": "Reduziert die Abklingzeit der Fähigkeit „Verstärkungsanforderung-104“ um 2 Sekunden.",
 		"id": "buff_evajdfw_skill01cooldowncut"
 	},
 	"buff_evajdfw_skill02cooldowncut": {
+		"name": "",
 		"description": "Verringert die Abklingzeit der Wächterhaltung um 2 Sekunden.",
 		"id": "buff_evajdfw_skill02cooldowncut"
 	},
 	"buff_evajdfw_skilldefendshieldex": {
+		"name": "",
 		"description": "Nach einer erfolgreichen Verteidigung erhält das Mecha für 5 Sek. einen Schild in Höhe von 5% der LP. Abklingzeit: 10 Sek.",
 		"id": "buff_evajdfw_skilldefendshieldex"
 	},
 	"buff_evajdfw_skilldefendup": {
+		"name": "",
 		"description": "Die Verwendung der Fähigkeit Standhaftigkeit-Schild erhöht die Schadensimmunitätsrate um 10%.",
 		"id": "buff_evajdfw_skilldefendup"
 	},
@@ -2375,7 +2411,7 @@
 	},
 	"buff_hammerice_sr_level0_1": {
 		"name": "Zorn I",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerice_sr_level0_1"
 	},
 	"buff_hammerice_sr_level0_2": {
@@ -2390,7 +2426,7 @@
 	},
 	"buff_hammerthu_ssr_level0_1": {
 		"name": "Zorn I",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerthu_ssr_level0_1"
 	},
 	"buff_hammerthu_ssr_level0_4": {
@@ -2404,11 +2440,13 @@
 		"id": "buff_hammerthu_ssr_level0_5"
 	},
 	"buff_eleweakpoint_bigfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfhy"
 	},
 	"buff_eleweakpoint_smallfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfhy"
 	},
 	"buff_artifactssr006_display": {
@@ -2482,13 +2520,19 @@
 		"id": "wormhole_buff_smallthunder_phy"
 	},
 	"buff_cannonice_sr_level5_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_cannonice_sr_level5_1"
 	},
 	"buff_void_player_1001": {
 		"name": "Wunsch",
 		"description": "Nach einem 3-Stapel-Spezialeffekt werden die LP und der ANG aller Teammitglieder um **25%** erhöht. Der Effekt kann pro Teammitglied nur einmal ausgelöst werden.",
 		"id": "buff_void_player_1001"
+	},
+	"buff_wantedcriminal": {
+		"name": "Gesucht!",
+		"description": "Du wirst wegen eines Verbrechens gesucht. Fliehe an einen sicheren Ort, um der Festnahme zu entgehen!",
+		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
 		"name": "Starker Tank I",
@@ -4601,132 +4645,163 @@
 		"id": "wormhole_monsterbuff_019"
 	},
 	"hookclone_buff_immenergy": {
+		"name": "",
 		"description": "**Energieschaden-Immunität**",
 		"id": "hookclone_buff_immenergy"
 	},
 	"hookclone_buff_immfire": {
+		"name": "",
 		"description": "**Flammenschaden-Immunität**",
 		"id": "hookclone_buff_immfire"
 	},
 	"hookclone_buff_immfirearms": {
+		"name": "",
 		"description": "**Schusswaffenschaden-Immunität**",
 		"id": "hookclone_buff_immfirearms"
 	},
 	"hookclone_buff_immice": {
+		"name": "",
 		"description": "**Frostschaden-Immunität**",
 		"id": "hookclone_buff_immice"
 	},
 	"hookclone_buff_immphy": {
+		"name": "",
 		"description": "**Immunität gegen physischen Schaden**",
 		"id": "hookclone_buff_immphy"
 	},
 	"hookclone_buff_immpuncture": {
+		"name": "",
 		"description": "**Durchschlagschaden-Immunität**",
 		"id": "hookclone_buff_immpuncture"
 	},
 	"hookclone_buff_immsharp": {
+		"name": "",
 		"description": "**Kurzklingenschaden-Immunität**",
 		"id": "hookclone_buff_immsharp"
 	},
 	"hookclone_buff_immstrength": {
+		"name": "",
 		"description": "**Immunität gegen schweren Schaden**",
 		"id": "hookclone_buff_immstrength"
 	},
 	"hookclone_buff_immthunder": {
+		"name": "",
 		"description": "**Voltschaden-Immunität**",
 		"id": "hookclone_buff_immthunder"
 	},
 	"hookclone_buff_smallenergy": {
+		"name": "",
 		"description": "**50% Energieschaden-Widerstand**",
 		"id": "hookclone_buff_smallenergy"
 	},
 	"hookclone_buff_resistanceenergy": {
+		"name": "",
 		"description": "**50% Energieschaden-Widerstand**",
 		"id": "hookclone_buff_resistanceenergy"
 	},
 	"hookclone_buff_smallfire": {
+		"name": "",
 		"description": "**50% Flammenschaden-Widerstand**",
 		"id": "hookclone_buff_smallfire"
 	},
 	"hookclone_buff_resistancefire": {
+		"name": "",
 		"description": "**50% Flammenschaden-Widerstand**",
 		"id": "hookclone_buff_resistancefire"
 	},
 	"hookclone_buff_smallfirearms": {
+		"name": "",
 		"description": "**50% Schusswaffenschaden-Widerstand**",
 		"id": "hookclone_buff_smallfirearms"
 	},
 	"hookclone_buff_resistancefirearms": {
+		"name": "",
 		"description": "**50% Schusswaffenschaden-Widerstand**",
 		"id": "hookclone_buff_resistancefirearms"
 	},
 	"hookclone_buff_smallice": {
+		"name": "",
 		"description": "**50% Frostschaden-Widerstand**",
 		"id": "hookclone_buff_smallice"
 	},
 	"hookclone_buff_resistanceice": {
+		"name": "",
 		"description": "**50% Frostschaden-Widerstand**",
 		"id": "hookclone_buff_resistanceice"
 	},
 	"hookclone_buff_smallphy": {
+		"name": "",
 		"description": "**50% Widerstand gegen physischen Schaden**",
 		"id": "hookclone_buff_smallphy"
 	},
 	"hookclone_buff_resistancephy": {
+		"name": "",
 		"description": "**50% Widerstand gegen physischen Schaden**",
 		"id": "hookclone_buff_resistancephy"
 	},
 	"hookclone_buff_smallpuncture": {
+		"name": "",
 		"description": "**50% Durchschlagschaden-Widerstand**",
 		"id": "hookclone_buff_smallpuncture"
 	},
 	"hookclone_buff_resistancepuncture": {
+		"name": "",
 		"description": "**50% Durchschlagschaden-Widerstand**",
 		"id": "hookclone_buff_resistancepuncture"
 	},
 	"hookclone_buff_smallsharp": {
+		"name": "",
 		"description": "**50% Kurzklingenschaden-Widerstand**",
 		"id": "hookclone_buff_smallsharp"
 	},
 	"hookclone_buff_resistancesharp": {
+		"name": "",
 		"description": "**50% Kurzklingenschaden-Widerstand**",
 		"id": "hookclone_buff_resistancesharp"
 	},
 	"hookclone_buff_smallstrength": {
+		"name": "",
 		"description": "**50% Widerstand gegen schweren Schaden**",
 		"id": "hookclone_buff_smallstrength"
 	},
 	"hookclone_buff_resistancestrength": {
+		"name": "",
 		"description": "**50% Widerstand gegen schweren Schaden**",
 		"id": "hookclone_buff_resistancestrength"
 	},
 	"hookclone_buff_smallthunder": {
+		"name": "",
 		"description": "**50% Voltschaden-Widerstand**",
 		"id": "hookclone_buff_smallthunder"
 	},
 	"hookclone_buff_resistancethunder": {
+		"name": "",
 		"description": "**50% Voltschaden-Widerstand**",
 		"id": "hookclone_buff_resistancethunder"
 	},
 	"hookclone_maxhp-20": {
+		"name": "",
 		"description": "**Gegnerische LP -20%**",
 		"id": "hookclone_maxhp-20"
 	},
 	"hookclone_maxhp100": {
+		"name": "",
 		"description": "**Gegnerische LP +100%**",
 		"id": "hookclone_maxhp100"
 	},
 	"hookclone_maxhp20": {
+		"name": "",
 		"description": "**Gegnerische LP +20%**",
 		"id": "hookclone_maxhp20"
 	},
 	"hookclone_maxhp50": {
+		"name": "",
 		"description": "**Gegnerische LP +50%**",
 		"id": "hookclone_maxhp50"
 	},
 	"buff_cubefire_ssr_level2def": {
 		"name": "Jeder Stapel verringert den erlittenen Schaden um 1%. Der Effekt kann bis zu 15-mal gestapelt werden.",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_cubefire_ssr_level2def"
 	},
 	"buff_cubefire_ssr_level4dam": {
@@ -5155,7 +5230,8 @@
 		"id": "buff_frozen_3s"
 	},
 	"buff_artifactssr006_stun": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_artifactssr006_stun"
 	},
 	"buff_sword_001_ssr_damageup": {
@@ -5179,7 +5255,7 @@
 		"id": "ge_artifactssr020_superbubble_cooldown"
 	},
 	"buff_breakvalue_pvpstun": {
-		"name": "Zertrümmern",
+		"name": "Zertrümmert",
 		"description": "Der Schild des Ziels wird zerbrochen und es wird für 5 Sek. betäubt.",
 		"id": "buff_breakvalue_pvpstun"
 	},
@@ -5638,6 +5714,41 @@
 		"description": "Ausgelöst mit **9**Volt-Waffen: Nach dem Einsatz einer Fähigkeit erhältst du für **10**Sekunden einen Elektrisiert-Buff. Während der Elektrisierung kann der Wanderer mit seinem normalen Angriff alle **1**Sekunde einen Kettenblitz auslösen, der Voltschaden in Höhe von **800%** des ANG verursacht, unbeeinflusst von Schadensboni oder -reduktionen. Der Kettenblitz springt bis zu **5**-mal zwischen Gegnern hin und her. Das Wiedererlangen des Elektrisiert-Status setzt die Dauer dieses Effekts zurück.",
 		"id": "buff_autochess_thunderlink_3"
 	},
+	"buff_ayanamirei_ice_ssr_resonance": {
+		"name": "Frostresonanz",
+		"description": "**Frostresonanz**: Erhöht den Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird.",
+		"id": "buff_ayanamirei_ice_ssr_resonance"
+	},
+	"buff_ayanamirei_level1": {
+		"name": "Start",
+		"description": "Erhöht den Endschaden um **12%**.",
+		"id": "buff_ayanamirei_level1"
+	},
+	"buff_ayanamirei_level2": {
+		"name": "Wächter",
+		"description": "Erhöht den Endschaden um **18%**. Wenn **Angriffsresonanz** aktiviert ist, wird der Voltschaden um **8%** erhöht. Wenn **ein anderer Resonanztyp als Angriffsresonanz** aktiviert ist, wird der Blockeffekt von **Aufgeladener Schuss** auf **0%** der max. LP des Wanderers und die Dauer des **verlangsamenden Magnetfelds** von **Schnellbogen** und **Luftangriff** auf **4**Sek. erhöht.",
+		"id": "buff_ayanamirei_level2"
+	},
+	"buff_ayanamirei_thunder_resonance": {
+		"name": "Voltresonanz",
+		"description": "**Voltresonanz**: Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird.",
+		"id": "buff_ayanamirei_thunder_resonance"
+	},
+	"buff_ayanamireibedamagedown": {
+		"name": "Blockbarriere",
+		"description": "Blockt für **15**Sek. Schaden, der maximal **10%** der max. LP des Wanderers beträgt. Der Wanderer kann nur bis zu 3 „Blockbarrieren“ gleichzeitig einsetzen.",
+		"id": "buff_ayanamireibedamagedown"
+	},
+	"buff_ayanamireibedamagedown_imitationfeature": {
+		"name": "Blockbarriere",
+		"description": "Blockt für **15**Sek. Schaden, der maximal **12%** der max. LP des Wanderers beträgt. Der Wanderer kann nur bis zu 3 „Blockbarrieren“ gleichzeitig einsetzen.",
+		"id": "buff_ayanamireibedamagedown_imitationfeature"
+	},
+	"buff_ayanamireienergystate_damageup_level6": {
+		"name": "Schadensbonus",
+		"description": "Erhöht für **2**Sek. den Voltschaden um **0%** und den Frostschaden um **1%**.",
+		"id": "buff_ayanamireienergystate_damageup_level6"
+	},
 	"buff_professioncommon": {
 		"name": "Resonanz: Gleichgewicht",
 		"description": "Erhöht den Endschaden und die Endschaden-Reduktion um **5%** sowie Zertrümmern- und Heilungseffekte um **20%**. Im Teamspiel werden der Endschaden um **40%** und die Endschaden-Reduktion um **15%** erhöht.",
@@ -6039,6 +6150,7 @@
 		"id": "buff_cannonice_sr_level3_damage"
 	},
 	"buff_dsthu_ssr_level6_1": {
+		"name": "",
 		"description": "Erhöht den erlittenen Voltschaden um 20%.",
 		"id": "buff_dsthu_ssr_level6_1"
 	},
@@ -6088,10 +6200,12 @@
 		"id": "buff_matrix_n_2"
 	},
 	"buff_matrix_n_3": {
+		"name": "",
 		"description": "Erhöht verursachten physischen Schaden um **4%**.",
 		"id": "buff_matrix_n_3"
 	},
 	"buff_matrix_n_4": {
+		"name": "",
 		"description": "Erhöht den verursachten Voltschaden um **4%**.",
 		"id": "buff_matrix_n_4"
 	},
@@ -6116,6 +6230,7 @@
 		"id": "buff_matrix_r_4_level1"
 	},
 	"buff_matrix_r_5_level1": {
+		"name": "",
 		"description": "Erhöht den durch Feuerwaffen verursachten Schaden um **6%**.",
 		"id": "buff_matrix_r_5_level1"
 	},
@@ -6250,14 +6365,17 @@
 		"id": "buff_matrix_sr_8_level3"
 	},
 	"buff_matrix_sr_9_level1": {
+		"name": "",
 		"description": "Der Anwender erhält während der Anwendung von „Trugbild“ **30%** Lebensraub und stellt alle 0,5 Sek. LP in Höhe von **60%** des ANG wieder her.",
 		"id": "buff_matrix_sr_9_level1"
 	},
 	"buff_matrix_sr_9_level2": {
+		"name": "",
 		"description": "Der Anwender erhält während der Anwendung von „Trugbild“ **36%** Lebensraub und stellt alle 0,5 Sek. LP in Höhe von **69%** des ANG wieder her.",
 		"id": "buff_matrix_sr_9_level2"
 	},
 	"buff_matrix_sr_9_level3": {
+		"name": "",
 		"description": "Der Anwender erhält während der Anwendung von „Trugbild“ **39%** Lebensraub und stellt alle 0,5 Sek. LP in Höhe von **73,5%** des ANG wieder her.",
 		"id": "buff_matrix_sr_9_level3"
 	},
@@ -6277,14 +6395,17 @@
 		"id": "buff_matrix_sr_10_level3"
 	},
 	"buff_matrix_sr_11_level1": {
+		"name": "",
 		"description": "Erhöht den kritischen Schaden an Zielen mit weniger als **60%** LP um **35%**.",
 		"id": "buff_matrix_sr_11_level1"
 	},
 	"buff_matrix_sr_11_level2": {
+		"name": "",
 		"description": "Erhöht den kritischen Schaden an Zielen mit weniger als **60%** LP um **44%**.",
 		"id": "buff_matrix_sr_11_level2"
 	},
 	"buff_matrix_sr_11_level3": {
+		"name": "",
 		"description": "Erhöht den kritischen Schaden an Zielen mit weniger als **60%** LP um **52,5%**.",
 		"id": "buff_matrix_sr_11_level3"
 	},
@@ -6874,7 +6995,8 @@
 		"id": "ge_artifactr002_boom_level7"
 	},
 	"ge_commondeathbox": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "ge_commondeathbox"
 	},
 	"buff_matrix_ssr_1_level1_1": {
@@ -6993,7 +7115,8 @@
 		"id": "buff_gve_atk_level4"
 	},
 	"buff_gve_bedamage_dowm25": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_bedamage_dowm25"
 	},
 	"buff_gve_bedamageup_fire_l1": {
@@ -7187,11 +7310,13 @@
 		"id": "buff_gve_evadeattack_damup_level3"
 	},
 	"buff_gve_expup": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_expup"
 	},
 	"buff_gve_extradamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_extradamage_level1"
 	},
 	"buff_gve_finaldamagedown_20per": {
@@ -7205,11 +7330,13 @@
 		"id": "buff_gve_finaldamageup_20per"
 	},
 	"buff_gve_fireatk_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_fireatk_level1"
 	},
 	"buff_gve_firedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_firedamage_level1"
 	},
 	"buff_gve_firedamagelevel1": {
@@ -7268,15 +7395,18 @@
 		"id": "buff_gve_firstaid"
 	},
 	"buff_gve_halo": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_halo"
 	},
 	"buff_gve_iceatk_level1": {
+		"name": "",
 		"description": "Erhöht den Frost-ANG um 15%.",
 		"id": "buff_gve_iceatk_level1"
 	},
 	"buff_gve_icedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_icedamage_level1"
 	},
 	"buff_gve_icedamagelevel1": {
@@ -7370,11 +7500,13 @@
 		"id": "buff_gve_immdamage_thunder"
 	},
 	"buff_gve_immunedamagecd_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_immunedamagecd_level1"
 	},
 	"buff_gve_jinji_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_jinji_level1"
 	},
 	"buff_gve_kill_l1": {
@@ -7393,7 +7525,8 @@
 		"id": "buff_gve_kill_l3"
 	},
 	"buff_gve_kill_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_kill_level1"
 	},
 	"buff_gve_linktime_l1": {
@@ -7437,11 +7570,13 @@
 		"id": "buff_gve_miansi_level2"
 	},
 	"buff_gve_phyatk_level1": {
+		"name": "",
 		"description": "Erhöht den physischen ANG um 15%.",
 		"id": "buff_gve_phyatk_level1"
 	},
 	"buff_gve_phydamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_phydamage_level1"
 	},
 	"buff_gve_phydamagelevel1": {
@@ -7695,12 +7830,204 @@
 		"id": "buff_gve_thuextradam_level3"
 	},
 	"buff_gve_thunderatk_level1": {
+		"name": "",
 		"description": "Erhöht Volt-ANG um 15%.",
 		"id": "buff_gve_thunderatk_level1"
 	},
 	"buff_gve_thunderdamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_thunderdamage_level1"
+	},
+	"buff_gwzj_battlefield1": {
+		"name": "Der entscheidende Abgrund Buff",
+		"description": "Verringert die Abklingzeit der Fähigkeit um 80%.",
+		"id": "buff_gwzj_battlefield1"
+	},
+	"buff_gwzj_levyclone3": {
+		"name": "Raid",
+		"description": "Erhöht die LP des Wanderers um 100%, den Widerstand um 50% und gewährt eine Schadensimmunität von 60%.",
+		"id": "buff_gwzj_levyclone3"
+	},
+	"buff_gwzj_ordinal1_level1": {
+		"name": "Nornenföderation-Blaupause",
+		"description": "Erhöht die Erscheinungsrate des Super Versteckten Bosses um 20%.",
+		"id": "buff_gwzj_ordinal1_level1"
+	},
+	"buff_gwzj_ordinal1_level2": {
+		"name": "Nornenföderation-Blaupause",
+		"description": "Erhöht die Erscheinungsrate des Super Versteckten Bosses um 20%.",
+		"id": "buff_gwzj_ordinal1_level2"
+	},
+	"buff_gwzj_ordinal1_level3": {
+		"name": "Nornenföderation-Blaupause",
+		"description": "Erhöht die Erscheinungsrate des Super Versteckten Bosses um 60%.",
+		"id": "buff_gwzj_ordinal1_level3"
+	},
+	"buff_gwzj_ordinal10_level1": {
+		"name": "Schuder-Elektronik-Blaupause",
+		"description": "Erhöht die kritische Trefferrate um 10%.",
+		"id": "buff_gwzj_ordinal10_level1"
+	},
+	"buff_gwzj_ordinal10_level2": {
+		"name": "Schuder-Elektronik-Blaupause",
+		"description": "Erhöht den krit. Schaden um 20%.",
+		"id": "buff_gwzj_ordinal10_level2"
+	},
+	"buff_gwzj_ordinal10_level3": {
+		"name": "Schuder-Elektronik-Blaupause",
+		"description": "Erhöht den krit. Schaden um 40%.",
+		"id": "buff_gwzj_ordinal10_level3"
+	},
+	"buff_gwzj_ordinal2_level1": {
+		"name": "Zukünftige-Menschheit-Blaupause",
+		"description": "Erhöht den Endschaden um 10%.",
+		"id": "buff_gwzj_ordinal2_level1"
+	},
+	"buff_gwzj_ordinal2_level2": {
+		"name": "Zukünftige-Menschheit-Blaupause",
+		"description": "Erhalte Hyperkörper.",
+		"id": "buff_gwzj_ordinal2_level2"
+	},
+	"buff_gwzj_ordinal2_level3": {
+		"name": "Zukünftige-Menschheit-Blaupause",
+		"description": "Erhöht den Endschaden um 12%.",
+		"id": "buff_gwzj_ordinal2_level3"
+	},
+	"buff_gwzj_ordinal3_level1": {
+		"name": "Blaue-Aida-Blaupause",
+		"description": "ANG +10%.",
+		"id": "buff_gwzj_ordinal3_level1"
+	},
+	"buff_gwzj_ordinal3_level2": {
+		"name": "Blaue-Aida-Blaupause",
+		"description": "Angriffe verursachen zusätzlichen Schaden in Höhe von 0,4% der max. LP des Ziels. Abklingzeit: 5 Sek.",
+		"id": "buff_gwzj_ordinal3_level2"
+	},
+	"buff_gwzj_ordinal3_level3": {
+		"name": "Blaue-Aida-Blaupause",
+		"description": "Angriffe verursachen zusätzlichen Schaden in Höhe von 0,6% der max. LP des Ziels. Abklingzeit: 5 Sek.",
+		"id": "buff_gwzj_ordinal3_level3"
+	},
+	"buff_gwzj_ordinal4_level1": {
+		"name": "Neun-Archen-Bauwesen Blaupause",
+		"description": "Erhöht die LP des Wanderers um 16%.",
+		"id": "buff_gwzj_ordinal4_level1"
+	},
+	"buff_gwzj_ordinal4_level2": {
+		"name": "Neun-Archen-Bauwesen Blaupause",
+		"description": "Der Wanderer regeneriert alle 5 Sekunden 20% der verlorenen LP.",
+		"id": "buff_gwzj_ordinal4_level2"
+	},
+	"buff_gwzj_ordinal4_level3": {
+		"name": "Neun-Archen-Bauwesen Blaupause",
+		"description": "Der Wanderer regeneriert alle 5 Sekunden 30% der verlorenen LP.",
+		"id": "buff_gwzj_ordinal4_level3"
+	},
+	"buff_gwzj_ordinal5_level1": {
+		"name": "Aesperia-Blaupause",
+		"description": "Erhalte 250 Waffenladungspunkte nach der Verwendung einer Entladungsfähigkeit.",
+		"id": "buff_gwzj_ordinal5_level1"
+	},
+	"buff_gwzj_ordinal5_level2": {
+		"name": "Aesperia-Blaupause",
+		"description": "Erhalte 1.000 Waffenladungspunkte beim Betreten des Kampfes.",
+		"id": "buff_gwzj_ordinal5_level2"
+	},
+	"buff_gwzj_ordinal5_level3": {
+		"name": "Aesperia-Blaupause",
+		"description": "Nach dem Einsatz einer Entladungsfähigkeit wird der Endschaden des Wanderers für 10 Sek. um 12% erhöht.",
+		"id": "buff_gwzj_ordinal5_level3"
+	},
+	"buff_gwzj_ordinal6_level1": {
+		"name": "Algorithmus-Arche-Blaupause",
+		"description": "Verringert den ANG aller Ziele innerhalb von 8 Metern um 10%.",
+		"id": "buff_gwzj_ordinal6_level1"
+	},
+	"buff_gwzj_ordinal6_level2": {
+		"name": "Algorithmus-Arche-Blaupause",
+		"description": "Gewährt alle 5 Sek. einen Schild in Höhe von 20% der max. LP.",
+		"id": "buff_gwzj_ordinal6_level2"
+	},
+	"buff_gwzj_ordinal6_level3": {
+		"name": "Algorithmus-Arche-Blaupause",
+		"description": "Wenn der Wanderer einen aktiven Schild hat, erhöht sich der Endschaden um 12%.",
+		"id": "buff_gwzj_ordinal6_level3"
+	},
+	"buff_gwzj_ordinal7_level1": {
+		"name": "Büro-für-Öffentliche-Sicherheit-Blaupause",
+		"description": "Erhöht alle Widerstände um 20%.",
+		"id": "buff_gwzj_ordinal7_level1"
+	},
+	"buff_gwzj_ordinal7_level2": {
+		"name": "Büro-für-Öffentliche-Sicherheit-Blaupause",
+		"description": "Verringert den Schaden um 20%.",
+		"id": "buff_gwzj_ordinal7_level2"
+	},
+	"buff_gwzj_ordinal7_level3": {
+		"name": "Büro-für-Öffentliche-Sicherheit-Blaupause",
+		"description": "Verringert den Schaden um 30%.",
+		"id": "buff_gwzj_ordinal7_level3"
+	},
+	"buff_gwzj_ordinal8_level1": {
+		"name": "Verteidigungsmacht-Blaupause",
+		"description": "Erhöht Heilungseffekte um 20%.",
+		"id": "buff_gwzj_ordinal8_level1"
+	},
+	"buff_gwzj_ordinal8_level2": {
+		"name": "Verteidigungsmacht-Blaupause",
+		"description": "Nach dem Erhalt von Heilung wird der Endschaden für 5 Sek. um 6% erhöht.",
+		"id": "buff_gwzj_ordinal8_level2"
+	},
+	"buff_gwzj_ordinal8_level3": {
+		"name": "Verteidigungsmacht-Blaupause",
+		"description": "Nach dem Erhalt von Heilung, erhöht den Endschaden um 12% für 5 Sek.",
+		"id": "buff_gwzj_ordinal8_level3"
+	},
+	"buff_gwzj_ordinal9_level1": {
+		"name": "Aurora-Industries-Blaupause",
+		"description": "Erhöht „Zertrümmern“ um 30%.",
+		"id": "buff_gwzj_ordinal9_level1"
+	},
+	"buff_gwzj_ordinal9_level2": {
+		"name": "Aurora-Industries-Blaupause",
+		"description": "Erhöht den Endschaden um 15% gegen Ziele, bei denen ein Schild aktiv ist.",
+		"id": "buff_gwzj_ordinal9_level2"
+	},
+	"buff_gwzj_ordinal9_level3": {
+		"name": "Aurora-Industries-Blaupause",
+		"description": "Erhöht den Endschaden um 25% auf Ziele, bei denen ein Schild aktiv ist.",
+		"id": "buff_gwzj_ordinal9_level3"
+	},
+	"buff_gwzj_ordinalsolo": {
+		"name": "Macht des Kriegers",
+		"description": "Erhöht den Endschaden um 400% und die LP um 200%.",
+		"id": "buff_gwzj_ordinalsolo"
+	},
+	"buff_gwzj_teamclone3": {
+		"name": "Gemeinsame Operations-Buff",
+		"description": "Die Verwendung von Entladungsfähigkeiten setzt die Abklingzeit der Fähigkeit zurück (auch im Ausgeglichenen Modus wirksam).",
+		"id": "buff_gwzj_teamclone3"
+	},
+	"buff_gwzj_voidclone1": {
+		"name": "Kluft der Leere Buff",
+		"description": "Erhöht die Aufladeeffizienz der Waffe um 50% (auch wirksam im Abgrund der Leere).",
+		"id": "buff_gwzj_voidclone1"
+	},
+	"buff_gwzj_voidclone3": {
+		"name": "Kluft der Leere Buff",
+		"description": "Innerhalb von 10 Sekunden, stelle 1 Ausweichversuch nach jedem 2-maligen Ausweichen wieder her (auch im Abgrund der Leere wirksam).",
+		"id": "buff_gwzj_voidclone3"
+	},
+	"buff_gwzj_worldboss3": {
+		"name": "Grenzkampf Buff",
+		"description": "Verringert die Abklingzeit der Fähigkeit um 80%.",
+		"id": "buff_gwzj_worldboss3"
+	},
+	"buff_gwzj_worldboss4": {
+		"name": "Grenzkampf Buff",
+		"description": "Verringert die Abklingzeit von Relikten um 90%.",
+		"id": "buff_gwzj_worldboss4"
 	},
 	"buff_bailing_level1": {
 		"name": "Bai Ling: Tapferkeit",
@@ -8258,7 +8585,7 @@
 		"id": "buff_lancesice_ssr_level0_icespecial"
 	},
 	"time_revert_stack_count": {
-		"name": "Re-Tracker Ladung",
+		"name": "Rückverfolgung-Ladung",
 		"description": "Anzahl der Re-Tracker-Ladungen. Bei Erreichen des angegebenen Stapels wird der entsprechende Ausrüstungs-Buff aktiviert.",
 		"id": "time_revert_stack_count"
 	},
@@ -8406,6 +8733,11 @@
 		"name": "Gelbe Schattentinte",
 		"description": "Gewährt eine Schicht gelber Schattentinte und erhöht den Schaden gegen Trichromafüchse mit einem andersfarbigen Schattentinte-Schild um 170%.",
 		"id": "buff_mon_186_yellow_flower_player"
+	},
+	"buff_mon_192_thunderlinkforplay": {
+		"name": "WL-6 Elektrode",
+		"description": "Der Effekt der Elektrode wird durch WL-6 gewährt. Wenn Sie sich in einer bestimmten Entfernung von WL-6 befinden, erhalten Sie in regelmäßigen Abständen Elektroschockschaden.",
+		"id": "buff_mon_192_thunderlinkforplay"
 	},
 	"buff_shiro_atkup_level1": {
 		"name": "Schadensbonus",
@@ -8579,52 +8911,52 @@
 	},
 	"buff_lucktarrow_01": {
 		"name": "Ultimative Ladung",
-		"description": "Erhöhe die Aufladeeffizienz um 100%.",
+		"description": "Erhöhe die Aufladeeffizienz um 30%.",
 		"id": "buff_lucktarrow_01"
 	},
 	"buff_lucktarrow_02": {
 		"name": "Heilung",
-		"description": "Erhöht Heilungseffekte um 20%.",
+		"description": "Erhöht Heilungseffekte um 45%.",
 		"id": "buff_lucktarrow_02"
 	},
 	"buff_lucktarrow_03": {
 		"name": "Eispanzer",
-		"description": "Erhöht den von Gegnern erlittenen Frostschaden um 20%.",
+		"description": "Erhöht den von Gegnern erlittenen Frostschaden um 40%.",
 		"id": "buff_lucktarrow_03"
 	},
 	"buff_lucktarrow_04": {
 		"name": "Flamme",
-		"description": "Erhöht den von Gegnern erlittenen Flammenschaden um 20%.",
+		"description": "Erhöht den von Gegnern erlittenen Flammenschaden um 40%.",
 		"id": "buff_lucktarrow_04"
 	},
 	"buff_lucktarrow_05": {
 		"name": "Volt",
-		"description": "Erhöht den von Gegnern erlittenen Voltschaden um 20%.",
+		"description": "Erhöht den von Gegnern erlittenen Voltschaden um 40%.",
 		"id": "buff_lucktarrow_05"
 	},
 	"buff_lucktarrow_06": {
 		"name": "Physisch",
-		"description": "Erhöht den von Gegnern erlittenen physischen Schaden um 20%.",
+		"description": "Erhöht den von Gegnern erlittenen physischen Schaden um 40%.",
 		"id": "buff_lucktarrow_06"
 	},
 	"buff_lucktarrow_07": {
 		"name": "Erschrecken",
-		"description": "Erhöht den Schaden der Gegner um 20%.",
+		"description": "",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "Aufscheuchen",
-		"description": "Erhöht den ANG der Gegner um 20%.",
+		"description": "",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
 		"name": "Hartnäckig",
-		"description": "Erhöht den Widerstand der Gegner um 50%.",
+		"description": "Erhöht den Widerstand der Gegner um 100%.",
 		"id": "buff_lucktarrow_09"
 	},
 	"buff_lucktarrow_10": {
 		"name": "Harter Schlag",
-		"description": "Gegner mit Schild verursachen alle 10Sekunden Schaden in Höhe von 392% des ANG.",
+		"description": "Gegner mit Schild verursachen 1-mal alle 10 Sekunden Schaden in Höhe von 300% des ANG.",
 		"id": "buff_lucktarrow_10"
 	},
 	"buff_bati_artifact_ssr_011_1star": {
@@ -8649,7 +8981,7 @@
 	},
 	"buff_chiji_effect": {
 		"name": "Omnium-Strahlung",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_chiji_effect"
 	},
 	"buff_chiji_finaldmgup_40per": {
@@ -9401,6 +9733,16 @@
 		"name": "Segen",
 		"description": "Wenn die LP einer verbündeten Kampfbestie unter 30% fallen, wird sie um 35% ihrer max. LP geheilt. Kann nur 1-mal ausgelöst werden.",
 		"id": "mainbuff_fightmonster_replyhp_lowhp_level01"
+	},
+	"mainbuff_norncanteen_grill": {
+		"name": "Segen des gegrillten Fisches",
+		"description": "Erhöht den physischen Schaden um 15%. Alle 10 Sekunden wird das nächste Ausweichen keinen Ausweichzähler verbrauchen. Dieser Effekt kann bis zu 1-mal gespeichert werden. Hält 30 Minuten an.",
+		"id": "mainbuff_norncanteen_grill"
+	},
+	"mainbuff_norncanteen_sushi": {
+		"name": "Sushi-Segen",
+		"description": "Erhöht den Frostschaden um 15%. Alle 20 Sekunden wird der nächste vom Wanderer erhaltene Schaden um 50% reduziert. Dieser Effekt kann bis zu 1-mal gespeichert werden. Hält 30 Minuten an.",
+		"id": "mainbuff_norncanteen_sushi"
 	},
 	"buff_tfb_drop_2x": {
 		"name": "Glück für Gemeinsame Operationen I",
@@ -10157,6 +10499,71 @@
 		"description": "Erhöht den Schaden gegen Ziele mit Debuffs um **20%**.",
 		"id": "buff_matrix_ssr9_sea_level4"
 	},
+	"buff_matrix_ssr90_atkupcommon": {
+		"name": "Frost-Volt-Angriffsbonus",
+		"description": "Erhöht den Frost- und Volt-ANG für **1**Sek. um **0%**.",
+		"id": "buff_matrix_ssr90_atkupcommon"
+	},
+	"buff_matrix_ssr90_level1": {
+		"name": "Reis Refrain",
+		"description": "Erhöht den Endschaden um **0%**. Sobald **Erlösung** Schaden verursacht, werden der Volt- und Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr90_level1"
+	},
+	"buff_matrix_ssr90_level2": {
+		"name": "Reis Refrain",
+		"description": "Erhöht den Endschaden um **0%**. Sobald **Erlösung** Schaden verursacht, werden der Volt- und Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr90_level2"
+	},
+	"buff_matrix_ssr90_level3": {
+		"name": "Reis Refrain",
+		"description": "Erhöht den Endschaden um **0%**. Sobald **Erlösung** Schaden verursacht, werden der Volt- und Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr90_level3"
+	},
+	"buff_matrix_ssr90_level4": {
+		"name": "Reis Refrain",
+		"description": "Erhöht den Endschaden um **0%**. Sobald **Erlösung** Schaden verursacht, werden der Volt- und Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr90_level4"
+	},
+	"buff_matrix_ssr91_level1": {
+		"name": "Tiefgründige Einsicht",
+		"description": "Erhöht den Flammen-ANG um **0%**. Während **Komm ins Spiel** aktiv ist, fügt jeder Zug allen Zielen auf dem Brett zusätzlich Schaden in Höhe von **120%** des ANG zu. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr91_level1"
+	},
+	"buff_matrix_ssr91_level2": {
+		"name": "Tiefgründige Einsicht",
+		"description": "Erhöht den Flammen-ANG um **0%**. Während **Komm ins Spiel** aktiv ist, fügt jeder Zug allen Zielen auf dem Brett zusätzlich Schaden in Höhe von **120%** des ANG zu. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr91_level2"
+	},
+	"buff_matrix_ssr91_level3": {
+		"name": "Tiefgründige Einsicht",
+		"description": "Erhöht den Flammen-ANG um **0%**. Während **Komm ins Spiel** aktiv ist, fügt jeder Zug allen Zielen auf dem Brett zusätzlich Schaden in Höhe von **120%** des ANG zu. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr91_level3"
+	},
+	"buff_matrix_ssr91_level4": {
+		"name": "Tiefgründige Einsicht",
+		"description": "Erhöht den Flammen-ANG um **0%**. Während **Komm ins Spiel** aktiv ist, fügt jeder Zug allen Zielen auf dem Brett zusätzlich Schaden in Höhe von **120%** des ANG zu. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr91_level4"
+	},
+	"buff_matrix_ssr92_level1": {
+		"name": "Tiefgründige Einsicht",
+		"description": "Erhöht den Endschaden um **0%**. Wenn **Dualismus** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr92_level1"
+	},
+	"buff_matrix_ssr92_level2": {
+		"name": "Tiefgründige Einsicht",
+		"description": "Erhöht den Endschaden um **0%**. Wenn **Dualismus** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr92_level2"
+	},
+	"buff_matrix_ssr92_level3": {
+		"name": "Tiefgründige Einsicht",
+		"description": "Erhöht den Endschaden um **0%**. Wenn **Dualismus** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr92_level3"
+	},
+	"buff_matrix_ssr92_level4": {
+		"name": "Tiefgründige Einsicht",
+		"description": "Erhöht den Endschaden um **0%**. Wenn **Dualismus** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr92_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Typ-II-Couant: Wächter",
 		"description": "Erhöht die Verteidigung um **50%** des verursachten Schadens und gewährt Immunität gegen Trefferlähmung für einen bestimmten Zeitraum.",
@@ -10816,6 +11223,71 @@
 		"name": "Verteidigungsverringerung",
 		"description": "Reduziert Verteidigungsverringerung aller Werte um **20%**.",
 		"id": "buff_def_decrease"
+	},
+	"buff_dfishchess_arealevelstackcount": {
+		"name": "Taktische Aufstellung",
+		"description": "Jeder Stapel erhöht den Schaden in der Zone um zusätzlich **0%**. Bis zu **8**-mal stapelbar.",
+		"id": "buff_dfishchess_arealevelstackcount"
+	},
+	"buff_dfishchess_changeskilladdimmstatus": {
+		"name": "Brennender Kern",
+		"description": "Die Verwendung der Entladungsfähigkeit einer beliebigen Flammenwaffe gewährt für **8**Sek. „Hyperkörper“.",
+		"id": "buff_dfishchess_changeskilladdimmstatus"
+	},
+	"buff_dfishchess_chessenhancestackcount": {
+		"name": "Entscheidende Aufstellung",
+		"description": "Jeder Zug verbraucht **1**Stapel, um den Schaden um zusätzlich **0%** zu erhöhen.",
+		"id": "buff_dfishchess_chessenhancestackcount"
+	},
+	"buff_dfishchess_chessenhancestackcount_level1": {
+		"name": "Entscheidende Aufstellung",
+		"description": "Jeder Zug verbraucht **1**Stapel, um den Schaden um zusätzlich **0%** zu erhöhen.",
+		"id": "buff_dfishchess_chessenhancestackcount_level1"
+	},
+	"buff_dfishchess_declinespeedcut_in1s": {
+		"name": "Jadeadern",
+		"description": "Verringert die Geschwindigkeit für **1**Sek. um **100%**.",
+		"id": "buff_dfishchess_declinespeedcut_in1s"
+	},
+	"buff_dfishchess_declinespeedcut_in3s": {
+		"name": "Loyales Herz",
+		"description": "Verringert die Geschwindigkeit für **3**Sek. um **100%**.",
+		"id": "buff_dfishchess_declinespeedcut_in3s"
+	},
+	"buff_dfishchess_firedmgup_level0": {
+		"name": "Glühende Sonne",
+		"description": "Erhöht den Flammenschaden um **0%**. Bis zu **8**-mal stapelbar.",
+		"id": "buff_dfishchess_firedmgup_level0"
+	},
+	"buff_dfishchess_firedmgup_level6": {
+		"name": "Glühende Sonne",
+		"description": "Erhöht den Flammenschaden um **0%**. Bis zu **8**-mal stapelbar.",
+		"id": "buff_dfishchess_firedmgup_level6"
+	},
+	"buff_dfishchess_flame_ssr_level0_resonance": {
+		"name": "Flammenresonanz",
+		"description": "**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.",
+		"id": "buff_dfishchess_flame_ssr_level0_resonance"
+	},
+	"buff_dfishchess_immdeathandrecoverall": {
+		"name": "Glänze hervor",
+		"description": "Wenn „Komm ins Spiel“ aktiv ist, wird der erlittene Schaden um **0%** reduziert. Wenn der Anwender tödlichen Schaden erleidet, werden der tödliche Schaden geblockt und die LP auf 100% wiederhergestellt. Der Effekt wird nach der Aktivierung entfernt.",
+		"id": "buff_dfishchess_immdeathandrecoverall"
+	},
+	"buff_dfishchess_level3": {
+		"name": "Rosiger Sonnenuntergang",
+		"description": "Ignoriert beim Verursachen von Schaden **0%** des Flammenwiderstands von Gegnern in der Zone.",
+		"id": "buff_dfishchess_level3"
+	},
+	"buff_dfishchess_physic_ssr_level0_resonance": {
+		"name": "Physische Resonanz",
+		"description": "**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.",
+		"id": "buff_dfishchess_physic_ssr_level0_resonance"
+	},
+	"buff_dfishchessfire_ssr_level0_firespecial": {
+		"name": "Zentraler Nexus",
+		"description": "**Zentraler Nexus: Auf dem Feld**: Bei jedem Treffer mit **Freistil** wird Zielen in der Nähe Schaden in Höhe von **0%** des Flammen-ANG + **1%** der max. LP des Wanderers + **2%** der Summe aller Widerstandsarten des Wanderers + **3%** des krit. Schadens zugefügt. Dieser Effekt kann 1-mal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Zentraler Nexus“ zählt als normaler Angriffsschaden. Wenn **1** Frost- oder Voltwaffe jeglicher Art ausgerüstet ist, wird der Schaden von „Zentraler Nexus“ mit **4** multipliziert. Außerdem wird der Schaden von „Zentraler Nexus“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+		"id": "buff_dfishchessfire_ssr_level0_firespecial"
 	},
 	"buff_specialitem_003_speedcut": {
 		"name": "Kryopistole",
@@ -11533,7 +12005,8 @@
 		"id": "buff_void_boss_502"
 	},
 	"buff_void_boss_601": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_void_boss_601"
 	},
 	"buff_void_halohealdown": {
@@ -11832,18 +12305,22 @@
 		"id": "buff_banbigbubble_15s_artifact_ssr_020"
 	},
 	"buff_teamclone_smallice120": {
+		"name": "Frostanfälligkeit",
 		"description": "Erhöht Frostschaden an Gegnern.",
 		"id": "buff_teamclone_smallice120"
 	},
 	"buff_teamclone_smallfire120": {
+		"name": "Flammenanfälligkeit",
 		"description": "Erhöht Flammenschaden an Gegnern.",
 		"id": "buff_teamclone_smallfire120"
 	},
 	"buff_teamclone_smallphy120": {
+		"name": "Physische Anfälligkeit",
 		"description": "Erhöht physischen Schaden an Gegnern.",
 		"id": "buff_teamclone_smallphy120"
 	},
 	"buff_teamclone_smallthunder120": {
+		"name": "Voltanfälligkeit",
 		"description": "Erhöht Voltschaden an Gegnern.",
 		"id": "buff_teamclone_smallthunder120"
 	},
@@ -12386,6 +12863,11 @@
 		"name": "Spaßvögel",
 		"description": "Erhöht den physischen Schaden beim Angriff gegen Ziele mit weniger als **80%** LP um **0%**.",
 		"id": "buff_chainsaw_ssr_level0damup"
+	},
+	"buff_changebodyscale": {
+		"name": "Megaform",
+		"description": "Tritt in den Megaform-Zustand ein, erhöhe die Größe und max. LP, erhalte Hyperkörper. Angriffe auf Ziele verursachen erheblichen zusätzlichen Schaden (nur gegen Monster wirksam). Zusätzlicher Schaden hat eine **1-Sekunden** Abklingzeit. Megaform hält **60** Sekunden an (Effekt endet sofort bei Tod, Übertragung oder Verlassen des BOSS-Gebiets).",
+		"id": "buff_changebodyscale"
 	},
 	"buff_matrix_ssr35_level1_attackup": {
 		"name": "Die Nachtstadt schläft nie",
@@ -14032,6 +14514,31 @@
 		"description": "Erhöht allen Elementarschaden um **0%**. Nach dem Ausrüsten von „Lanze des Longinus“ erhöht sich der Endschaden um **1%** sowie der Schaden von „Rache“ auf **2%**. Wenn **Standhaftigkeit-Resonanz** aktiviert ist, wird die erzeugte Aggro um {3% erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
 		"id": "buff_matrix_ssr88_level4"
 	},
+	"buff_matrix_ssr89_iceandthunderdefdown": {
+		"name": "Widerstandsverringerung",
+		"description": "Verringert für **1**Sek. den Volt- und Frostwiderstand um **0%**.",
+		"id": "buff_matrix_ssr89_iceandthunderdefdown"
+	},
+	"buff_matrix_ssr89_level1": {
+		"name": "Reis Refrain",
+		"description": "Erhöht den Volt- und Frostschaden um **0%**. Nach dem Ausrüsten von **Erlösung** ignoriert der Wanderer **1%** des Volt- und Frostwiderstands des Ziels (der insgesamt ignorierte Widerstand jedes Elements kann **50%** nicht übersteigen). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr89_level1"
+	},
+	"buff_matrix_ssr89_level2": {
+		"name": "Reis Refrain",
+		"description": "Erhöht den Volt- und Frostschaden um **0%**. Nach dem Ausrüsten von **Erlösung** ignoriert der Wanderer **1%** des Volt- und Frostwiderstands des Ziels (der insgesamt ignorierte Widerstand jedes Elements kann **50%** nicht übersteigen). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr89_level2"
+	},
+	"buff_matrix_ssr89_level3": {
+		"name": "Reis Refrain",
+		"description": "Erhöht den Volt- und Frostschaden um **0%**. Nach dem Ausrüsten von **Erlösung** ignoriert der Wanderer **1%** des Volt- und Frostwiderstands des Ziels (der insgesamt ignorierte Widerstand jedes Elements kann **50%** nicht übersteigen). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr89_level3"
+	},
+	"buff_matrix_ssr89_level4": {
+		"name": "Reis Refrain",
+		"description": "Erhöht den Volt- und Frostschaden um **0%**. Nach dem Ausrüsten von **Erlösung** ignoriert der Wanderer **1%** des Volt- und Frostwiderstands des Ziels (der insgesamt ignorierte Widerstand jedes Elements kann **50%** nicht übersteigen). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr89_level4"
+	},
 	"buff_hammerice_sr_level3_reducedamage20_breakfate": {
 		"name": "Schadensreduktion",
 		"description": "Reduziert innerhalb der nächsten 6 Sek. den erlittenen Schaden um 10%.",
@@ -14508,35 +15015,43 @@
 		"id": "buff_lawplayer_main"
 	},
 	"buff_level_balance_mon_01": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_01"
 	},
 	"buff_level_balance_mon_02": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_02"
 	},
 	"buff_level_balance_mon_03": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_03"
 	},
 	"buff_level_balance_mon_04": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_04"
 	},
 	"buff_level_balance_mon_44": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_44"
 	},
 	"buff_level_balance_mon_45": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_45"
 	},
 	"buff_level_balance_mon_46": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_46"
 	},
 	"buff_level_balance_mon_47": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_47"
 	},
 	"buff_lawfriend_addsuceee": {
@@ -14649,6 +15164,11 @@
 		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
 		"id": "buff_bigsecret_upstar_ssr_asuka_phy"
 	},
+	"buff_bigsecret_upstar_ssr_ayanamirei_thunder": {
+		"name": "Erlösung",
+		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
+		"id": "buff_bigsecret_upstar_ssr_ayanamirei_thunder"
+	},
 	"buff_bigsecret_upstar_ssr_bigsword_ice": {
 		"name": "Rosenklinge",
 		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
@@ -14738,6 +15258,11 @@
 		"name": "Alaya",
 		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
 		"id": "buff_bigsecret_upstar_ssr_immortal_thunder"
+	},
+	"buff_bigsecret_upstar_ssr_jiyu_fire": {
+		"name": "Dualismus",
+		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
+		"id": "buff_bigsecret_upstar_ssr_jiyu_fire"
 	},
 	"buff_bigsecret_upstar_ssr_lances_ice": {
 		"name": "Fiesling",
@@ -15484,6 +16009,21 @@
 		"description": "Außer Volt- und Flammenschaden erzielen keine der Schadensarten Wirkung.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_nornbeach_star": {
+		"name": "Treibgutstern",
+		"description": "Die Zeit läuft uns davon! Finde den nächsten Stern!",
+		"id": "buff_nornbeach_star"
+	},
+	"buff_norncanteen_baozi_thunderdamageup": {
+		"name": "Suppenknödel-Segen",
+		"description": "Erhöht den Voltschaden und die Geschwindigkeit um 15%. Hält für 30 Minuten an.",
+		"id": "buff_norncanteen_baozi_thunderdamageup"
+	},
+	"buff_norncanteen_tofu_firedamageup": {
+		"name": "Tofu-Segen",
+		"description": "Erhöht den Flammenschaden um 15% und die Sprunghöhe um 20%. Hält für 30 Minuten an.",
+		"id": "buff_norncanteen_tofu_firedamageup"
+	},
 	"buff_origin_atkfire_level1": {
 		"name": "Pyroschlag I",
 		"description": "Verursacht nach erfolgreichen Treffern zusätzlichen Flammenschaden in Höhe von **2000%** des ANG, der nicht von Buffs oder Debuffs beeinflusst wird. Abklingzeit: **2**Sek.",
@@ -15560,35 +16100,43 @@
 		"id": "buff_origin_atkthu_level3"
 	},
 	"buff_origin_balance99_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1"
 	},
 	"buff_origin_balance99_1th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1th"
 	},
 	"buff_origin_balance99_2": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2"
 	},
 	"buff_origin_balance99_2th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2th"
 	},
 	"buff_origin_balance99_3": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3"
 	},
 	"buff_origin_balance99_3th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3th"
 	},
 	"buff_origin_balance99_4": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4"
 	},
 	"buff_origin_balance99_4th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4th"
 	},
 	"buff_origin_bedamdown_level1": {

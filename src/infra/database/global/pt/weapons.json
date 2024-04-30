@@ -12301,7 +12301,7 @@
 				},
 				{
 					"name": "Rasga-Nuvens",
-					"description": "Use o botão de ataque normal logo após se esquivar para trás a fim de acionar Rasga-Nuvens, arremessando <shuzhi>8</> pares de adagas teleguiadas que perseguem alvos aleatórios à frente, causando dano em área de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.",
+					"description": "Use o botão de ataque normal logo após se esquivar para trás para acionar Rasga-Nuvens, arremessando <shuzhi>8</> pares de adagas teleguiadas que perseguem alvos aleatórios à frente, causando dano em área de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.",
 					"operations": [
 						"Dash",
 						"Attack"
@@ -12762,7 +12762,7 @@
 			"skill": [
 				{
 					"name": "Mordida Gélida",
-					"description": "Brande a lança para rasgar o espaço, recebendo corpo de aço e <shuzhi>80%</> de redução de dano durante <shuzhi>2</> segundos. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e cria um rasgo que os puxa, com duração de <shuzhi>30</> segundos. Além disso, cria <shuzhi>6</> núcleos gélidos (pode haver até <shuzhi>45</> núcleos gélidos ao mesmo tempo na batalha). Tempo de recarga: <shuzhi>60</> seg.\r\nApós usar Mordida Gélida, você tem os danos gélido e elétrico aumentados em <shuzhi>9%</> e ignora <shuzhi>15%</> das resistências gélida e elétrica do alvo durante <shuzhi>60</> segundos. (A resistência total ignorada para cada elemento não pode exceder <shuzhi>50%</>.)",
+					"description": "Brande a lança para rasgar o espaço, recebendo corpo de aço e <shuzhi>80%</> de redução de dano durante <shuzhi>2</> segundos. Causa dano de <shuzhi>{0}%%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e cria um rasgo que os puxa, com duração de <shuzhi>30</> segundos. Além disso, cria <shuzhi>6</> núcleos gélidos (pode haver até <shuzhi>45</> núcleos gélidos ao mesmo tempo no campo). Tempo de recarga: <shuzhi>60</> seg.\r\nApós usar Mordida Gélida, você tem os danos gélido e elétrico aumentados em <shuzhi>9%</> e ignora <shuzhi>15%</> das resistências gélida e elétrica do alvo durante <shuzhi>60</> segundos. (A resistência total ignorada para cada elemento não pode exceder <shuzhi>50%</>.)",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -13225,6 +13225,441 @@
 		"limited": true,
 		"id": "blevi_thunder"
 	},
+	"dfishchess_fire": {
+		"name": "Fluxolivre",
+		"description": "Uma longa história e um vasto mundo selvagem.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_DFishChess.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_DFishChess.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/jiyu.webp"
+		},
+		"rarity": 5,
+		"element": "Flame",
+		"type": "DFishChess",
+		"weaponUpgradeId": "Fire_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "DFishChess_fire_ssr_star",
+		"avatar": "imitation_57",
+		"stats": [
+			{
+				"stat": {
+					"name": "Ataque",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "Vida",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crítico",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Fusão de massa e chama**",
+				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ físico/ígneo mínimo equipado, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea."
+			},
+			{
+				"title": "**Ressonância física**",
+				"description": "Aumenta o ATQ físico em **15%** e a resistência física em **25%**. Ativa-se ao equipar **2** ou mais armas físicas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância física ou reação física, e a ressonância física tem prioridade."
+			},
+			{
+				"title": "**Ressonância ígnea**",
+				"description": "Aumenta o ATQ ígneo em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas ígneas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância ígnea ou reação ígnea, e a ressonância ígnea tem prioridade."
+			},
+			{
+				"title": "**Nexo central: Em campo**",
+				"description": "Ao atingir qualquer alvo com **Fluxolivre**, causa dano equivalente a **256%** do ATQ ígneo + **3.6%** da vida máxima do Errante + **133%** da soma de todos os tipos de resistência do Errante + **4.9%** do crítico aos alvos próximos. Pode ser acionado até 1 vez a cada **1,5** segundo. O dano de nexo central conta como dano de ataque normal. Se houver **1** arma gélida ou elétrica equipada, o dano de nexo central é multiplicado por **1.3**. Além disso, o dano de nexo central não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
+			}
+		],
+		"elementEffects": {
+			"title": "**Fogo**",
+			"description": "Com carga completa, o ataque seguinte da arma incendeia o alvo durante **8** segundos, o que causa dano de **58.00%** do ATQ por segundo. Enquanto incendiados, o efeito da cura dos alvos diminui em **50%**."
+		},
+		"attributes": [
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "Aumenta o máximo de acúmulos de **posicionamento decisivo** para **18**. O dano adicional de cada acúmulo de **posicionamento decisivo** aumenta para **400%** do ATQ.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Aumenta o crescimento do ATQ mínimo da arma atual em **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Com **Fluxolivre** equipada, ignora **15%** da resistência ígnea dos alvos na área. O efeito funciona no espaço secundário. A resistência total ignorada para cada elemento não pode exceder 50%.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Aumenta o crescimento do ATQ mínimo da arma atual em **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Com **Entre no Jogo** ativa, o dano sofrido é reduzido em **30%**. Ao sofrer dano letal, recupera **100%** da vida máxima imediatamente. O efeito pode ser acionado apenas **1** vez por ativação de habilidade.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Aumenta o dano ígneo para **5%** por cada acúmulo de **sol escaldante**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Estrelas Móveis",
+					"description": "No chão, use o ataque normal para atacar 5 vezes seguidas.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>.\r\nQuarto ataque: Causa dano de <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</>.\r\nQuinto ataque: Causa dano de <shuzhi>{8}%</> do ATQ + <shuzhi>{9}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+					"id": "GA_FPlayerDFishChessMelee_Melee"
+				},
+				{
+					"name": "Movimento Inicial",
+					"description": "No ar, use o botão de ataque normal para atacar 4 vezes seguidas e consumir vigor.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>.\r\nQuarto ataque: Causa dano de <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_AirAttack"
+				},
+				{
+					"name": "Revisão do Tabuleiro",
+					"description": "No chão, segure o botão de ataque normal para acionar Revisão do Tabuleiro. Junta até 5 peças que perseguem os alvos após serem arremessadas. Cada peça causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+				},
+				{
+					"name": "Salto Geracional",
+					"description": "No ar, segure o botão de ataque normal para acionar Salto Geracional.\r\nAo aterrissar, solta os peixes gêmeos e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e os lança no ar.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Esquiva",
+					"description": "Esquive-se logo antes de sofrer um golpe para criar uma Phantasia, reduzindo a velocidade dos alvos dentro da área. Fica imune a interrupção enquanto se esquiva.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDFishChessEvade_Evade"
+				},
+				{
+					"name": "Posição Vantajosa",
+					"description": "Use o botão de ataque normal dentro do tempo de esquiva perfeita (use um botão direcional antes de se esquivar) para pôr <shuzhi>1</> peça preta na frente. A peça puxa e desacelera os alvos próximos brevemente, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Estrela Cadente",
+					"description": "Use o botão de ataque normal logo após se esquivar para trás para pôr <shuzhi>3</> peças brancas na frente. Ao aterrissar, cada peça branca causa dano em área de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. As peças também geram armadilhas que explodem quando um inimigo se aproxima, desacelerando-os brevemente e causando mais <shuzhi>57%</> de dano.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Entre no Jogo",
+					"description": "Salta no ar, transforma o campo de batalha em um tabuleiro de Go e levita (não é possível se mover nesse período). Recebe visão de cima por até <shuzhi>10</> segundos. Nesse período, seus ataques tornam-se peças de Go e suas habilidades são substituídas por <shuzhi>Vantagem de Meia Peça</>. Toque no tabuleiro de Go para pôr <shuzhi>18</> peças em ordem. Cada uma causa dano de <shuzhi>250%</> do ATQ a todos os alvos no tabuleiro e os desacelera brevemente. Tempo de recarga: <shuzhi>40</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga.\r\n<shuzhi>Posicionamento decisivo</>: Usar <shuzhi>Revisão do Tabuleiro</>, <shuzhi>Posição Vantajosa</>, <shuzhi>Estrela Cadente</> e <shuzhi>Isso Termina Aqui</> ou criar (não apenas atualizar) invocações confere acúmulos de posicionamento decisivo. Pode acumular até <shuzhi>9</> vezes. Com posicionamento decisivo ativo, cada peça de Go gasta <shuzhi>1</> acúmulo para causar dano adicional de <shuzhi>200%</> do ATQ a todos os alvos no tabuleiro. Nenhum acúmulo é recebido enquanto a habilidade está ativa.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+					"id": "GA_FPlayerDFishChess_Skill"
+				},
+				{
+					"name": "Vantagem de Meia Peça",
+					"description": "Com <shuzhi>Entre no Jogo</> ativa, use manualmente ou acione automaticamente Vantagem de Meia Peça no final da sua duração. Cai do céu e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> a todos os alvos no tabuleiro. Além disso, causa dano equivalente ao número de acúmulos de <shuzhi>posicionamento decisivo</> gastos durante a habilidade × 200% do ATQ. Então, os peixes gêmeos circulam para fora, afastando os alvos próximos e causando dano de <shuzhi>{2}%</> do ATQ.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+					"id": "GA_FPlayerDFishChess_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Isso Termina Aqui",
+					"description": "N/A",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+					"id": "GA_FPlayerDFishChess_ChangeSkill"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Era de Seda",
+					"description": "Acolha o passado com determinação inabalável.",
+					"rarity": 5,
+					"source": "Em eventos",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57"
+				},
+				"weapon": {
+					"name": "Cintilada",
+					"description": "Com os mistérios do universo na mão e o mundo no coração.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Obtido no evento Era de Seda"
+					],
+					"id": "imitation_fashion_57_w"
+				}
+			},
+			{
+				"outfit": {
+					"name": "Elegância Sofisticada",
+					"description": "Dizem que \"a Mestre Yu fica deslumbrante independentemente da roupa\", mas essa peça do guarda-roupa da Mestre Yu é a favorita de Yu Lan. Talvez seja porque, quando elas a vestem, realmente parecem a dupla perfeita de mestra e pupila.",
+					"rarity": 5,
+					"source": "Em eventos",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57_2"
+				},
+				"weapon": {
+					"name": "Era",
+					"description": "Ao longo de anos turbulentos e cheios de mudanças, ela caminhou ao lado deles.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Obtido no evento Rastreio de Rede"
+					],
+					"id": "imitation_fashion_57_w_2"
+				}
+			}
+		],
+		"version": "3.8",
+		"limited": true,
+		"id": "dfishchess_fire"
+	},
 	"snipe_fire": {
 		"name": "Cruz de Trevos",
 		"description": "Um jogo de tiro multijogador em RV muito popular em Reflexia criou esta arma exclusiva para o melhor jogador de uma temporada. Ele também recebeu o modelo físico personalizado da arma, mas ninguém se ligou que era utilizável como no jogo...",
@@ -13594,7 +14029,7 @@
 	},
 	"asuka_physic": {
 		"name": "Lança de Longinus",
-		"description": "Reza a lenda que estas raízes são da Árvore da Vida e possuem poderes inenarráveis.",
+		"description": "Reza a lenda que esta arma é formada pelas raízes da Árvore da Vida e possui poderes inenarráveis.",
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_mingrixiang.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_mingrixiang.webp",
@@ -13744,7 +14179,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "Com um **campo A.T.** ativo, os ataques podem ignorar uma certa porcentagem da redução de dano do escudo de um alvo. Essa porcentagem equivale a **30%** da **porcentagem da durabilidade** do **campo A.T.** atual + **20%**. Com ressonância de coragem ativa, aumenta o seu despedaçar em uma razão equivalente a **100%** da **porcentagem da durabilidade** do **campo A.T.**",
+				"description": "Com um **campo A.T.** ativo, os ataques podem ignorar uma certa porcentagem da redução de dano do escudo de um alvo. Essa porcentagem equivale a **30%** da **porcentagem da durabilidade** do **campo A.T.** atual + **20%**. Com **ressonância de coragem** ativa, aumenta o seu despedaçar em uma razão equivalente a **100%** da **porcentagem da durabilidade** do **campo A.T.**",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13937,7 +14372,7 @@
 			"skill": [
 				{
 					"name": "Corta-Nuvens",
-					"description": "N/A",
+					"description": "Arremessa a arma na direção do alvo e puxa os alvos próximos. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> e imobiliza os alvos próximos brevemente. Tempo de recarga: <shuzhi>20</> seg. Efeitos que zeram, atualizam ou mudam o tempo de recarga não afetam isso.\r\nUsar a habilidade com êxito confere <shuzhi>10</> acúmulos de vingança. Causar dano a um inimigo consome <shuzhi>1</> acúmulo de vingança. Se o tipo da arma equipada for <shuzhi>físico</> ou <shuzhi>ígneo</>, causa dano adicional correspondente ao tipo da arma de <shuzhi>600%</> do ATQ aos alvos próximos. Esse efeito pode se acionar até <shuzhi>1</> vez por segundo.\r\nAlém disso, usar a habilidade com êxito gera um campo A.T. com durabilidade equivalente a <shuzhi>50%</> da vida máxima durante <shuzhi>30</> segundos. Nesse período, o seu dano físico aumenta em <shuzhi>18%</>, o dano ígneo aumenta em <shuzhi>12%</>, e você recebe corpo de aço.\r\nQuando você sofrer dano, o campo A.T. vai reduzir o dano com base na porcentagem da durabilidade restante dele e subtrair sua durabilidade com base no dano causado (até no mínimo <shuzhi>10%</> da durabilidade).\r\nCom ressonância de coragem ativa, se você sofrer dano enquanto tem acúmulos de vingança, <shuzhi>1</> acúmulo de vingança será consumido e dano equivalente a <shuzhi>8%</> da vida máxima será bloqueado. Esse efeito pode ser acionado até <shuzhi>1</> vez a cada <shuzhi>0,5</> segundo.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -13948,7 +14383,7 @@
 			],
 			"discharge": [
 				{
-					"name": "Ataque de Evangelion",
+					"name": "Envio de Armas",
 					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e faz pilotar o EVA-02 para executar um chute aéreo. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, recebe imunidade a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).",
 					"tags": [
 						"Damage",
@@ -13990,6 +14425,422 @@
 		"version": "3.7",
 		"limited": true,
 		"id": "asuka_physic"
+	},
+	"ayanamirei_thunder": {
+		"name": "Salvação",
+		"description": "O arco prototípico feito pelo Departamento de Ciência e Tecnologia de Reflexia especialmente para Rei. Sua cor e aparência são inspiradas no EVA-00, e ele é capaz de atirar flechas de energia.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_AyanamiRei.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_AyanamiRei.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"rarity": 5,
+		"element": "Thunder",
+		"type": "AyanamiRei",
+		"weaponUpgradeId": "thunder_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "AyanamiRei_thunder_ssr_star",
+		"stats": [
+			{
+				"stat": {
+					"name": "Ataque",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "Vida",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crítico",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Fusão de raio e gelo**",
+				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ elétrico/gélido mínimo equipado, a maior porcentagem de ATQ elétrico/gélido equipada e o maior reforço de dano elétrico/gélido equipado, e a arma é considerada uma arma elétrica e gélida."
+			},
+			{
+				"title": "**Ressonância elétrica**",
+				"description": "Aumenta o ATQ elétrico em **15%** e a resistência elétrica em **25%**. Ativa-se ao equipar **2** ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade."
+			},
+			{
+				"title": "**Ressonância gélida**",
+				"description": "Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade."
+			},
+			{
+				"title": "**Flash: Separação**",
+				"description": "Após usar **Ataque Mecha**, causa dano equivalente a **109,4%** do ATQ elétrico + **15,6%** da vida máxima + **56,3%** da soma de todos os tipos de resistência do Errante + **210,9%** do crítico aos alvos atingidos por segundo durante **30** segundos. O dano de várias Separações não se acumula, e o dano de Flash conta como dano de habilidade. Se houver pelo menos **1** arma física ou ígnea equipada, o dano de Flash é multiplicado por **1,3**. Além disso, o dano de Flash não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
+			},
+			{
+				"title": "**Flecha Guiada**",
+				"description": "Ao causar dano com qualquer arma, atira **1** flecha guiada na direção dos alvos, que causa dano de **NaN%** do ATQ ao primeiro alvo atingido. Além disso, recebe **4** de energia especial. A flecha guiada permanece no alvo e aplica sobrecarga durante **30** segundos. Quando o alvo tiver **3** flechas guiadas, elas vão explodir e causar dano de **NaN%** do ATQ aos alvos próximos. Flecha Guiada pode ser acionada **1** vez a cada **0.5** segundos."
+			}
+		],
+		"elementEffects": {
+			"title": "**Raio**",
+			"description": "Com carga completa, o ataque seguinte da arma causa **paralisia forte** aos alvos durante **1** segundo e os eletrocuta durante **6** segundos, removendo todos os efeitos positivos deles e causando dano de **144.00%** do ATQ. Durante os próximos **6** segundos, os alvos eletrocutados não podem receber nenhum efeito positivo."
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "Com **Salvação** no espaço secundário, o dano da explosão de **Flecha Guiada** aumenta em **100%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Aumenta o crescimento do ATQ mínimo da arma atual em **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Aumenta o dano elétrico causado aos alvos com **flecha guiada: sobrecarga** em **10%** e o dano gélido em **10%**. O efeito funciona no espaço secundário.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Aumenta o crescimento do ATQ mínimo da arma atual em **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Após usar **Ataque Mecha**, recebe **25** de energia especial a mais.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Entrar em **consumo energético** aumenta o seu dano elétrico em **16%** e o dano gélido em **10%** durante **20** segundos.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Arco Rápido",
+					"description": "No chão, use o botão de ataque normal para executar 6 ataques consecutivos.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> e repele o alvo uma curta distância.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> e repele o alvo uma curta distância.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</> e repele o alvo uma curta distância.\r\nQuarto ataque: Causa dano de até <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</> e repele o alvo uma curta distância.\r\nApós o quinto ataque, quando uma luz piscar, use o botão para acionar o sexto ataque. Sexto ataque: Atira uma flecha de energia poderosa e flechas guiadas, que causam dano de <shuzhi>{10}%</> do ATQ + <shuzhi>{11}</> aos alvos e aplicam um campo magnético desacelerador na posição do primeiro alvo atingido durante <shuzhi>3</> segundos. A velocidade de movimento e de ataque dos inimigos dentro da área diminuem em <shuzhi>35%</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Melee"
+				},
+				{
+					"name": "Ataque Aéreo",
+					"description": "No ar, use o botão de ataque normal para atacar 6 vezes seguidas no ar e consumir vigor.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>.\r\nQuarto ataque: Causa dano de até <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</>.\r\nQuinto ataque: Causa dano de <shuzhi>{8}%</> do ATQ + <shuzhi>{9}</>.\r\nApós o quinto ataque, quando uma luz piscar, use o botão para acionar o sexto ataque. Sexto ataque: Atira uma flecha de energia poderosa e <shuzhi>5</> <shuzhi>flechas guiadas</> que causam dano de <shuzhi>{10}%</> do ATQ + <shuzhi>{11}</> aos alvos e aplicam um campo magnético desacelerador na posição do primeiro alvo atingido. A velocidade de movimento e de ataque dos inimigos dentro da área diminuem em <shuzhi>40%</> durante <shuzhi>3</> segundos.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+				},
+				{
+					"name": "Flecha com Mortal",
+					"description": "Do primeiro ao quinto ataque normal, no solo ou no ar, segure o botão de ataque normal para acionar Flecha com Mortal.\r\nAtira uma flecha adiante enquanto dá um salto mortal para trás, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> ao alvo atingido.\r\nNesse momento, se a energia especial estiver acima de <shuzhi>70</>, aciona <shuzhi>consumo energético</>: Aumenta o ATQ elétrico em <shuzhi>15%</> e o ATQ gélido em <shuzhi>5%</>.\r\nCom <shuzhi>Salvação</> no espaço principal, gasta <shuzhi>5</> de energia especial a cada 0,5 segundo. Aumenta o dano causado com <shuzhi>Salvação</> em 30%. Use várias vezes ou segure o botão de ataque normal para acionar <shuzhi>Rajada Evasiva</>.\r\nCom <shuzhi>Salvação</> no espaço secundário, gasta <shuzhi>3,3</> de energia especial a cada 0,5 segundo. Aumenta o dano de Flecha Guiada em <shuzhi>50%</> e o raio de explosão dela.\r\nO limite de energia especial é <shuzhi>100</>. Ao atingir essa quantidade, passar <shuzhi>Salvação</> para o espaço secundário faz você entrar em consumo energético imediatamente.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+				},
+				{
+					"name": "Rajada Evasiva",
+					"description": "Durante o <shuzhi>consumo energético</>, use o botão de ataque normal para atacar 3 vezes seguidas.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+				},
+				{
+					"name": "Tiro de Precisão",
+					"description": "Segure o botão de ataque normal para carregar um ataque. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>. Cada <shuzhi>0,1</> segundo de carga aumenta o dano em <shuzhi>100%</>, chegando ao limite após <shuzhi>2,3</> segundos.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Esquiva",
+					"description": "Esquive-se logo antes de sofrer um golpe para criar uma Phantasia, reduzindo a velocidade dos alvos dentro da área. Fica imune a interrupção enquanto se esquiva.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAyanamiReiEvade_Evade"
+				},
+				{
+					"name": "Tiro Triplo",
+					"description": "Use o botão de ataque normal logo após se esquivar para acionar Tiro Triplo. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> ao primeiro alvo atingido.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+				},
+				{
+					"name": "Tiros Concentrados",
+					"description": "Use o botão de ataque normal no momento certo para acionar Tiros Concentrados. Atira flechas de energia poderosas que causam dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos. Além disso, também atira flechas guiadas. Você recebe 1 barreira de bloqueio durante <shuzhi>15</> segundos, que bloqueia dano equivalente a até <shuzhi>10%</> da sua vida máxima. Você pode ter até 3 barreiras de bloqueio ao mesmo tempo.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+				}
+			],
+			"skill": [
+				{
+					"name": "Ataque Mecha",
+					"description": "Invoca um mecha para esmurrar os inimigos. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, você recebe corpo de aço e <shuzhi>35</> de energia especial. Tempo de recarga: <shuzhi>20</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+					"id": "GA_FPlayerAyanamiReiSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Campo Defensivo",
+					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</>. Invoca um mecha, que golpeia o chão com o escudo, provocando um abalo sísmico que causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Além disso, recebe <shuzhi>30</> de energia especial. Nesse período, recebe imunidade a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+					"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Eco do Futuro",
+					"description": "Uma garota que veio de um espaço-tempo distante, ouvindo sinais do futuro.",
+					"rarity": 5,
+					"source": "Em eventos",
+					"simulacrumId": "imitation_56",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_56"
+				},
+				"weapon": {
+					"name": "Eco da Rei",
+					"description": "A versão modificada da arma Redenção feita pelo Departamento de Ciência e Tecnologia, baseada nos comentários e sugestões de Rei Ayanami.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_rei_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Obtido no evento Gachapon do Eco do Futuro."
+					],
+					"id": "imitation_fashion_56_w"
+				}
+			}
+		],
+		"version": "3.7",
+		"limited": true,
+		"id": "ayanamirei_thunder"
 	},
 	"brush_fire": {
 		"name": "Cometa Pinheiro",

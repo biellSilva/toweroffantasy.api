@@ -4693,6 +4693,150 @@
 			}
 		]
 	},
+	"GA_FPlayerDFishChessChangeSkill": {
+		"skills": [
+			{
+				"name": "This Ends Here",
+				"description": "N/A",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_ChangeSkill"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessEvade": {
+		"skills": [
+			{
+				"name": "Dodge",
+				"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerDFishChessEvade_Evade"
+			},
+			{
+				"name": "Seize Advantage",
+				"description": "Use normal attack during the short perfect dodge window (tap an arrow button before dodging) to place <shuzhi>1</> black piece in front. The piece briefly draws in and slows nearby targets, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "Starfall",
+				"description": "Use normal attack during the short period after dodging backward to place <shuzhi>3</> white pieces in front. Each white piece deals area damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets upon landing. The pieces also set traps that explode when enemies come close, briefly slowing them and dealing an additional <shuzhi>57%</> damage.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessMelee": {
+		"skills": [
+			{
+				"name": "Shifting Stars",
+				"description": "While on the ground, use normal attack to attack 5 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_Melee"
+			},
+			{
+				"name": "Starting Move",
+				"description": "While airborne, use normal attack to attack 4 times in a row in the air, consuming endurance.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_AirAttack"
+			},
+			{
+				"name": "Review Board",
+				"description": "While on the ground, hold normal attack to activate Review Board. Gather up to 5 pieces that pursue targets after being launched out, with each piece dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+			},
+			{
+				"name": "Generational Leap",
+				"description": "While airborne, tap and hold normal attack to trigger Generational Leap.\r\nUnleash the twin fish upon landing and deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets and launch them.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessSkill": {
+		"skills": [
+			{
+				"name": "Step into the Game",
+				"description": "Leap into the air, transforming the battlefield into a Go board, and float in mid-air (unable to move during this time). Gain an elevated view for up to <shuzhi>10</> seconds. During this time, your attacks become Go pieces and your skills are replaced with <shuzhi>Half-Piece Advantage</>. Tap the Go board to place <shuzhi>18</> pieces in order, each dealing damage equal to <shuzhi>250%</> of ATK to all targets on the board and briefly slowing them down. Cooldown: <shuzhi>40</> seconds. This is not affected by other cooldown clearing, resetting, or changing effects.\r\n<shuzhi>Decisive Placement</>: Using <shuzhi>Review Board</>, <shuzhi>Seize Advantage</>, <shuzhi>Starfall</>, and <shuzhi>This Ends Here</> or creating (not just refreshing an existing one) summons grants Decisive Placement stacks, up to a maximum of <shuzhi>9</> stacks. While Decisive Placement is active, each Go piece consumes <shuzhi>1</> stack to deal additional damage equal to <shuzhi>200%</> of ATK to all targets on the board. No stacks can be gained while the skill is active.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+				"operations": [],
+				"tags": [
+					"Damage",
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChess_Skill"
+			},
+			{
+				"name": "Half-Piece Advantage",
+				"description": "While <shuzhi>Step into the Game</> is active, manually use or automatically trigger Half-Piece Advantage at the end of the duration. Fall from the sky, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to all targets on the board. Additionally, deal damage equal to the number of <shuzhi>Decisive Placement</> stacks consumed during the skill duration times 200% of ATK. The twin fish then circle outward, pushing away nearby targets and dealing damage equal to <shuzhi>{2}%</> of ATK.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_Skill2"
+			}
+		]
+	},
 	"GA_FPlayerCubeMelee": {
 		"skills": [
 			{
@@ -9642,7 +9786,7 @@
 			},
 			{
 				"name": "Fixate",
-				"description": "While on the ground, hold normal attack to trigger Fixate to charge. Within <shuzhi>6</> seconds, damage increases depending on the charge duration, during which the Wanderer gains hyperbody, then the weapon is tossed in the target's direction. After the weapon <shuzhi>lands a hit</>, deal damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. Aim assist is activated after aiming at a target within range for <shuzhi>2.5</> seconds during Fixate's charging. The tossed weapon automatically hits the target in the head (losing the target with aim assist does not affect charging).\nAfter Fixate tosses the weapon, a new skill button for<shuzhi>Shadow Execution</> becomes available.",
+				"description": "While on the ground, hold normal attack to trigger Fixate to charge. Within <shuzhi>6</> seconds, damage increases depending on the charge duration, during which the Wanderer gains hyperbody, then the weapon is tossed in the target's direction. After the weapon <shuzhi>lands a hit</>, deal damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. Aim assist is activated after aiming at a target within range for <shuzhi>2.5</> seconds during Fixate's charging. The tossed weapon automatically hits the target in the head (losing the target with aim assist does not affect charging).\nAfter Fixate tosses the weapon, a new skill button for <shuzhi>Shadow Execution</> becomes available.",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_Lances_PowerAttack.webp",
 				"operations": [
 					"Hold Attack"
@@ -9672,7 +9816,7 @@
 		"skills": [
 			{
 				"name": "Arctic Bite",
-				"description": "Swing the lance to tear through space, during which the Wanderer gains hyperbody and a <shuzhi>2</>-second <shuzhi>80%</> damage reduction, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets, and creating a tear to draw in nearby targets that lasts for <shuzhi>30</> seconds. This also creates <shuzhi>6</> ice cores (up to <shuzhi>45</> ice cores may exist in battle at any given time). Cooldown: <shuzhi>60</> seconds.\r\nAfter successfully using Arctic Bite, increase the Wanderer's frost and volt damage by <shuzhi>9%</>, and the Wanderer ignores <shuzhi>15%</> of the target's frost and volt resistance, lasting for <shuzhi>60</> seconds (each element's total resistance ignored cannot exceed <shuzhi>50%</>).",
+				"description": "Swing the lance to tear through space, during which the Wanderer gains hyperbody and a <shuzhi>2</>-second <shuzhi>80%</> damage reduction, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets, and creating a tear to draw in nearby targets that lasts for <shuzhi>30</> seconds. This also creates <shuzhi>6</> ice cores (up to <shuzhi>45</> ice cores may exist on the field at any given time). Cooldown: <shuzhi>60</> seconds.\r\nAfter successfully using Arctic Bite, increase the Wanderer's frost and volt damage by <shuzhi>9%</>, and the Wanderer ignores <shuzhi>15%</> of the target's frost and volt resistance, lasting for <shuzhi>60</> seconds (each element's total resistance ignored cannot exceed <shuzhi>50%</>).",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_Lances_RealSkill.webp",
 				"operations": [],
 				"tags": [
@@ -11688,7 +11832,7 @@
 	"GA_FPlayerAsukaChangeSkill": {
 		"skills": [
 			{
-				"name": "Evangelion Attack",
+				"name": "Weapons Lift-Off",
 				"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and pilot EVA-02 to execute a flying kick, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this period, gain damage immunity for <shuzhi>1.5</> seconds (unavailable in Apex League).",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
 				"operations": [],
@@ -11809,13 +11953,161 @@
 		"skills": [
 			{
 				"name": "Cloud-Piercer",
-				"description": "N/A",
+				"description": "Throw the weapon toward the target and draw in nearby targets, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>, then briefly immobilize nearby targets. Cooldown: <shuzhi>20</> seconds. This is not affected by other cooldown clearing, resetting, or changing effects.\r\nAfter successfully using this skill, gain <shuzhi>10</> stacks of Vengeance. Dealing damage to an enemy will consume <shuzhi>1</> Vengeance stack. If the equipped weapon's type is <shuzhi>physical</> or <shuzhi>flame</>, deal additional damage of the weapon's type equal to <shuzhi>600%</> of ATK to nearby targets. This effect can trigger up to <shuzhi>1</> time per second.\r\nAdditionally, after successfully using this skill, generate an A.T. Field with durability equal to <shuzhi>50%</> of Max HP for <shuzhi>30</> seconds. During this time, increase the Wanderer's physical damage by <shuzhi>18%</> and flame damage by <shuzhi>12%</>, and gain hyperbody.\r\nWhen the Wanderer receives damage, the A.T. Field will reduce damage based on its remaining durability percentage and deduct its durability based on the damage dealt (down to a minimum of <shuzhi>10%</> durability).\r\nWhile Fortitude Resonance is active, if the Wanderer receives damage while having Vengeance stacks, consume <shuzhi>1</> Vengeance stack and block damage equal to <shuzhi>8%</> of Max HP. This effect can trigger up to <shuzhi>1</> time every <shuzhi>0.5</> seconds.",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
 				"operations": [],
 				"tags": [
 					"Damage"
 				],
 				"id": "GA_FPlayerAsukaSkill_Skill"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiChangeSkill_Thu": {
+		"skills": [
+			{
+				"name": "Defense Field",
+				"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</>. Summon a mecha and use its shield to smash the ground, with the resulting shockwave dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. Also, gain <shuzhi>30</> special energy. During this period, gain damage immunity for <shuzhi>1.5</> seconds (unavailable in Apex League).",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiEvade_Thu": {
+		"skills": [
+			{
+				"name": "Dodge",
+				"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerAyanamiReiEvade_Evade"
+			},
+			{
+				"name": "Triple Shot",
+				"description": "Use normal attack during the short period after dodging to trigger Triple Shot, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to the first target hit.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+			},
+			{
+				"name": "Charged Shots",
+				"description": "After dodging, tap normal attack at the appropriate time to trigger Charged Shots, firing out powerful energy arrows that deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets. At the same time, fire Homing Arrows. The Wanderer receives 1 Blocking Barrier for <shuzhi>15</> seconds, which blocks damage that does not exceed <shuzhi>10%</> of the Wanderer's Max HP. The Wanderer can only have up to 3 Blocking Barriers simultaneously.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiMelee_Thu": {
+		"skills": [
+			{
+				"name": "Rapid Bow",
+				"description": "While on the ground, use normal attack to launch 6 consecutive attacks.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back a short distance.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back a short distance.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back a short distance.\r\nFourth Attack: Deal damage up to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back a short distance.\r\nAfter the fifth attack, when a flashing light appears, tap to trigger the sixth attack. Sixth Attack: Fire a powerful energy arrow and release Homing Arrows that deal damage equal to <shuzhi>{10}%</> of ATK plus <shuzhi>{11}</> to targets and apply a slowing magnetic field at the location of the first target hit for <shuzhi>3</> seconds. Enemies within the area have their movement and attack speed reduced by <shuzhi>35%</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Melee"
+			},
+			{
+				"name": "Aerial Assault",
+				"description": "While airborne, use normal attack to launch 6 consecutive attacks in mid-air, consuming endurance.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.\r\nFourth Attack: Deal damage up to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</>.\r\nAfter the fifth attack, when a flashing light appears, tap to trigger the sixth attack. Sixth Attack: Fire a powerful energy arrow and release <shuzhi>5</> <shuzhi>Homing Arrows</> that deal damage equal to <shuzhi>{10}%</> of ATK plus <shuzhi>{11}</> to targets and apply a slowing magnetic field at the location of the first target hit. Enemies within the area have their movement and attack speed reduced by <shuzhi>40%</> for <shuzhi>3</> seconds.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+			},
+			{
+				"name": "Backjump Arrow",
+				"description": "When using normal attack on the ground or in mid-air, while using the first to fifth normal attacks, tap and hold normal attack to trigger Backjump Arrow.\r\nFire a shot ahead while jumping backward, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to the target hit.\r\nIf special energy is greater than <shuzhi>70</> at that time, trigger <shuzhi>Energy Consumption</>: Increase volt ATK by <shuzhi>15%</> and frost ATK by <shuzhi>5%</>.\r\nWhile <shuzhi>Salvation</> is in the main slot, consume <shuzhi>5</> special energy every 0.5 seconds. Increase <shuzhi>Salvation's</> damage dealt by 30%. Continuously tap or tap and hold normal attack to trigger <shuzhi>Dodging Rapidfire</>.\r\nWhile <shuzhi>Salvation</> is in the off-hand slot, consume <shuzhi>3.3</> special energy every 0.5 seconds. Increase Homing Arrow's damage by <shuzhi>50%</> and increase its detonation radius.\r\nThe maximum amount of special energy is <shuzhi>100</>. When this amount is reached, switching <shuzhi>Salvation</> from the main slot to the off-hand slot will immediately cause the Wanderer to enter Energy Consumption.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+			},
+			{
+				"name": "Dodging Rapidfire",
+				"description": "While in <shuzhi>Energy Consumption</>, use normal attack to attack 3 times in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+			},
+			{
+				"name": "Precision Shot",
+				"description": "Tap and hold normal attack to charge an attack. Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. For every <shuzhi>0.1</> seconds spent charging, the damage increases by <shuzhi>100%</>, reaching maximum damage after <shuzhi>2.3</> seconds of charging.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+				"operations": [
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiSkill_Thu": {
+		"skills": [
+			{
+				"name": "Mecha Strike",
+				"description": "Summon a mecha to pummel enemies, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this time, the Wanderer gains hyperbody and receives <shuzhi>35</> special energy. Cooldown: <shuzhi>20</> seconds. This is not affected by other cooldown clearing, resetting, or changing effects.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiSkill_Skill"
 			}
 		]
 	},

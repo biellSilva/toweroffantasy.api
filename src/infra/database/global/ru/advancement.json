@@ -6890,7 +6890,7 @@
 		"id": "Asuka_physic_ssr_star_2"
 	},
 	"Asuka_physic_ssr_star_3": {
-		"advancement": "Пока <shuzhi>АТ-поле</> странника активно, атаки игнорируют определенный процент снижения урона от щита цели. Процент равен <shuzhi>{0}%</> от текущего <shuzhi>процента прочности</> <shuzhi>АТ-поля</> + <shuzhi>{1}%</>. Если резонанс силы духа активен, раскол странника увеличивается на <shuzhi>{2}%</> от <shuzhi>процента прочности</> <shuzhi>АТ-поля</>.",
+		"advancement": "Пока <shuzhi>АТ-поле</> странника активно, атаки игнорируют определенный процент снижения урона от щита цели. Процент равен <shuzhi>{0}%</> от текущего <shuzhi>процента прочности</> <shuzhi>АТ-поля</> + <shuzhi>{1}%</>. Если <shuzhi>резонанс силы духа</> активен, раскол странника увеличивается на <shuzhi>{2}%</> от <shuzhi>процента прочности</> <shuzhi>АТ-поля</>.",
 		"numbermap": "AsukaEffectFigure",
 		"multiplicators": [
 			{
@@ -7046,6 +7046,554 @@
 			"charge": 12
 		},
 		"id": "Asuka_physic_ssr_star_6"
+	},
+	"AyanamiRei_thunder_ssr_star_0": {
+		"advancement": "<shuzhi>Синтез электричества и холода</>: наносимый оружием урон высчитывается на основании самой высокой базовой АТК имеющегося в экипировке оружия электричества/холода, самого высокого процента АТК электричеством/холодом и самого мощного усиления урона от электричества/холода. Оружие считается одновременно оружием электричества и оружием холода.\r\n<shuzhi>Резонанс электричества</>: увеличивает АТК электричеством на <shuzhi>15%</> и сопротивление электричеству на <shuzhi>25%</>. Для активации добавьте в экипировку минимум <shuzhi>2</> предмета оружия электричества. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса электричества или реакции электричества, при этом резонанс электричества берет верх.\r\n<shuzhi>Резонанс холода</>: увеличивает АТК холодом на <shuzhi>15%</> и сопротивление холоду на <shuzhi>25%</>. Для активации добавьте в экипировку минимум <shuzhi>2</> предмета оружия холода. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса холода или реакции холода, при этом резонанс холода берет верх.\r\n<shuzhi>Вспышка: Отделение</>: после использования <shuzhi>Удара меха</> наносит пораженным целям урон в размере <shuzhi>109,4%</> от АТК электричеством + <shuzhi>15,6%</> от макс. ОЗ + <shuzhi>56,3%</> от суммы показателей всех типов сопротивления странника + <shuzhi>210,9%</> от крит. удара каждую секунду в течение <shuzhi>30</> сек. Урон от Отделений не складывается. Урон от Вспышки считается уроном от навыков. Если в экипировке есть <shuzhi>любое</> физическое оружие или оружие огня, урон от Вспышки умножается на <shuzhi>1,3</>. Кроме того, на урон от Вспышки не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.\r\n<shuzhi>Самонаводящаяся стрела</>: при нанесении урона оружием выпускает <shuzhi>1</> самонаводящуюся стрелу во врагов и наносит первой пораженной цели урон в размере <shuzhi>{4}%</> от АТК, а затем восстанавливает <shuzhi>{5}</> ед. особой энергии страннику. Самонаводящаяся стрела может оставаться на цели <shuzhi>{7}</> сек. и на это время наложить эффект «Перегрузка». Когда на цели собирается <shuzhi>3</> стрелы, они взрываются и наносят ближайшим целям урон в размере <shuzhi>{8}%</> от АТК. Самонаводящуюся стрелу можно запустить <shuzhi>1</> раз в <shuzhi>{9}</> сек.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillThunderATK",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillMaxHpRate",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillDefSum",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillCofficientCrit",
+				"value": 1
+			},
+			{
+				"key": "GA_FPlayerAyanamiRei_TraceArrow_1",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEnergyAdd_TraceArrow",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_Bleed_RatePerStack",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_Bleed_Duration",
+				"value": 1
+			},
+			{
+				"key": "GA_FPlayerAyanamiRei_TraceArrow_Boom_1",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_CD",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_0"
+	},
+	"AyanamiRei_thunder_ssr_star_1": {
+		"advancement": "Когда <shuzhi>Спасение</> находится в ячейке дополнительного оружия, увеличивает урон от взрыва <shuzhi>Самонаводящейся стрелы</> на <shuzhi>{0}%</>.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level1_DamageUp",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_1"
+	},
+	"AyanamiRei_thunder_ssr_star_2": {
+		"advancement": "Увеличивает рост базовой АТК текущего оружия на <shuzhi>16%</>.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_2"
+	},
+	"AyanamiRei_thunder_ssr_star_3": {
+		"advancement": "Увеличивает урон от электричества по целям от <shuzhi>Самонаводящейся стрелы: Перегрузка</> на <shuzhi>{0}%</> и урон от холода на <shuzhi>{1}%</>. Эффект действует в ячейке дополнительного оружия.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level3_ThunderDamageUp",
+				"value": 1
+			},
+			{
+				"key": "AyanamiRei_Level3_IceDamageUp",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_3"
+	},
+	"AyanamiRei_thunder_ssr_star_4": {
+		"advancement": "Увеличивает рост базовой АТК текущего оружия на <shuzhi>32%</>.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_4"
+	},
+	"AyanamiRei_thunder_ssr_star_5": {
+		"advancement": "После использования <shuzhi>Удара меха</> дополнительно дает <shuzhi>{0}</> ед. особой энергии.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level5_SkillExtraAyanamiReiEnergyAdd",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_5"
+	},
+	"AyanamiRei_thunder_ssr_star_6": {
+		"advancement": "В состоянии <shuzhi>Расхода энергии</> увеличивает наносимый странником урон от электричества на <shuzhi>{0}%</> и урон от холода на <shuzhi>{1}%</> на <shuzhi>20</> сек.",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level6_AyanamiReiState_ThunderDamageUp",
+				"value": 1
+			},
+			{
+				"key": "AyanamiRei_Level6_AyanamiReiState_IceDamageUp",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_6"
+	},
+	"DFishChess_fire_ssr_star_0": {
+		"advancement": "<shuzhi>Синтез массы и огня</>: наносимый оружием урон высчитывается на основании самой высокой базовой АТК имеющегося в экипировке физического оружия / оружия огня, самого высокого процента физической АТК / АТК огнем и самого мощного усиления физического урона / усиления урона от огня. Оружие считается одновременно физическим оружием и оружием огня.\r\n<shuzhi>Физический резонанс</>: увеличивает физическую АТК на <shuzhi>15%</> и сопротивление физическому урону на <shuzhi>25%</>. Для активации добавьте в экипировку минимум <shuzhi>2</> предмета физического оружия. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами физического резонанса или физической реакции, при этом физический резонанс берет верх.\r\n<shuzhi>Резонанс огня</>: увеличивает АТК огнем на <shuzhi>15%</> и сопротивление огню на <shuzhi>25%</>. Для активации добавьте в экипировку минимум <shuzhi>2</> предмета оружия огня. Эффект этого комплекта действует в ячейке дополнительного оружия. Он не складывается с другими эффектами резонанса огня или реакции огня, при этом резонанс огня берет верх.\r\n<shuzhi>Центральная точка: Постоянство</>: когда странник наносит любой цели удар <shuzhi>Вольным потоком</>, ближайшие цели получают урон в размере <shuzhi>{0}%</> от АТК огнем + <shuzhi>{1}%</> от макс. ОЗ + <shuzhi>{2}%</> от суммы показателей всех типов сопротивления странника + <shuzhi>{3}%</> от крит. удара. Эффект может срабатывать не чаще 1 раза каждые <shuzhi>1,5</> сек. Урон от Центральной точки считается уроном от обычной атаки. Если в экипировке есть <shuzhi>1</> оружие холода или электричества, урон от Центральной точки умножается на <shuzhi>{4}</>. Кроме того, на урон от Центральной точки не влияют никакие усиления урона, кроме редких параметров титанового снаряжения, и он не запускает дополнительные эффекты атаки.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "DFishChessSpecialATKCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialMaxHPCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialDEFCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialCritCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialFinCoefficient",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_0"
+	},
+	"DFishChess_fire_ssr_star_1": {
+		"advancement": "Увеличивает макс. количество экземпляров <shuzhi>Решительного хода</> до <shuzhi>{1}</>. Дополнительный урон от каждого экземпляра <shuzhi>Решительного хода</> увеличивается до <shuzhi>{0}%</> от АТК.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "GameTheory_PerChessDMGUp_Level1",
+				"value": 1
+			},
+			{
+				"key": "GameTheory_MaxChessCount_Level1",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_1"
+	},
+	"DFishChess_fire_ssr_star_2": {
+		"advancement": "Увеличивает рост базовой АТК текущего оружия на <shuzhi>16%</>.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_2"
+	},
+	"DFishChess_fire_ssr_star_3": {
+		"advancement": "Когда в экипировке есть <shuzhi>Вольный поток</>, странник игнорирует <shuzhi>{0}%</> сопротивления огню у врагов в зоне. Эффект действует в ячейке дополнительного оружия. Общий показатель проигнорированного сопротивления каждой стихии не может превышать 50%.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "IgnoreDef_Fire_Level3",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_3"
+	},
+	"DFishChess_fire_ssr_star_4": {
+		"advancement": "Увеличивает рост базовой АТК текущего оружия на <shuzhi>32%</>.",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_4"
+	},
+	"DFishChess_fire_ssr_star_5": {
+		"advancement": "Когда действует <shuzhi>Начало партии</>, получаемый урон снижается на <shuzhi>{0}%</>. При получении смертельного урона немедленно восстанавливает <shuzhi>{1}%</> от макс. ОЗ. Этот эффект может срабатывать не чаще <shuzhi>1</> раза после каждой активации навыка.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "BeDMGDown_InGameTheory_Level5",
+				"value": 1
+			},
+			{
+				"key": "FirstAid_Recover_InGameTheory_Level5",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_5"
+	},
+	"DFishChess_fire_ssr_star_6": {
+		"advancement": "Увеличивает урон от огня до <shuzhi>{0}%</> за каждый экземпляр <shuzhi>Палящего солнца</>.",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "FireDMGUp_PerAreaStackCount_Level6",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_6"
 	},
 	"tianlang_thunder_ssr_star_0": {
 		"advancement": "<shuzhi>Резонанс электричества</>: увеличивает АТК электричеством на <shuzhi>15%</> и сопротивление электричеству на <shuzhi>25%</>. Для активации добавьте в экипировку минимум <shuzhi>2</> предмета оружия электричества. Эффект этого комплекта действует в ячейке дополнительного оружия. Не складывается с эффектами такого же типа.",
