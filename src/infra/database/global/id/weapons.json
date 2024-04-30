@@ -12762,7 +12762,7 @@
 			"skill": [
 				{
 					"name": "Arctic Bite",
-					"description": "Mengayunkan tombak untuk membuat retakan ruang, membuat Wanderer terlindung dengan Hyperbody dan <shuzhi>80%</> DMG Reduction selama <shuzhi>2</> detik, lalu menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar. Ayunan ini memunculkan lubang retakan yang akan ada selama <shuzhi>30</> detik dan menarik target di dekatnya, serta menciptakan <shuzhi>6</> Ice Core (maksimal <shuzhi>45</> Ice Core bisa ada secara bersamaan di medan tempur). Cooldown: <shuzhi>60</> detik.\r\nSetelah berhasil menggunakan Arctic Bite, meningkatkan Frost DMG dan Volt DMG Wanderer sebesar <shuzhi>9%</>, dan Wanderer mengabaikan <shuzhi>15%</> Frost dan Volt Resistance, yang berlangsung selama <shuzhi>60</> detik (total resistance setiap elemen yang diabaikan tidak boleh melebihi <shuzhi>50%</>).",
+					"description": "Mengayunkan tombak untuk membuat retakan ruang, membuat Wanderer terlindung dengan Hyperbody dan <shuzhi>80%</> DMG Reduction selama <shuzhi>2</> detik, lalu menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar. Ayunan ini memunculkan lubang retakan yang akan ada selama <shuzhi>30</> detik dan menarik target di dekatnya, serta menciptakan <shuzhi>6</> Ice Core (maksimal <shuzhi>45</> Ice Core bisa ada secara bersamaan di medan tempur). Cooldown: <shuzhi>60</> detik.\r\nSetelah berhasil menggunakan Arctic Bite, Frost DMG dan Volt DMG Wanderer meningkat <shuzhi>9%</>, dan Wanderer mengabaikan <shuzhi>15%</> Frost dan Volt Resistance, yang berlangsung selama <shuzhi>60</> detik (Total Resistance dari tiap elemen yang diabaikan tidak akan melebihi <shuzhi>50%</>).",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -13225,6 +13225,441 @@
 		"limited": true,
 		"id": "blevi_thunder"
 	},
+	"dfishchess_fire": {
+		"name": "Freeflow",
+		"description": "Sejarah yang panjang dan dunia liar yang luas.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_DFishChess.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_DFishChess.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/jiyu.webp"
+		},
+		"rarity": 5,
+		"element": "Flame",
+		"type": "DFishChess",
+		"weaponUpgradeId": "Fire_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "DFishChess_fire_ssr_star",
+		"avatar": "imitation_57",
+		"stats": [
+			{
+				"stat": {
+					"name": "Attack",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Fusion of Mass and Flame**",
+				"description": "Saat menimpakan DMG dengan Senjata, DMG akan dihitung dengan ATK Dasar tertinggi Senjata Physical/Flame yang terpasang, persentase ATK tertinggi Senjata Physical/Flame yang terpasang, dan DMG Boost tertinggi Senjata Physical/Flame yang terpasang. Senjata akan dianggap Senjata Physical sekaligus Senjata Flame."
+			},
+			{
+				"title": "**Resonansi Physical**",
+				"description": "Physical ATK meningkat **15%** dan Physical RES meningkat **25%**. Aktifkan dengan memakai **2** Senjata Physical atau lebih. Efek set ini juga aktif saat senjata ada di slot sampingan. Tidak bertumpuk dengan efek Resonansi Physical atau efek Physical Reaction lainnya, dengan Resonansi Physical akan diutamakan."
+			},
+			{
+				"title": "**Resonansi Flame**",
+				"description": "Flame ATK meningkat **15%** dan Flame Resistance meningkat **25%**. Aktifkan dengan memakai **2** Senjata Flame atau lebih. Efek set ini juga aktif saat senjata ada di slot sampingan. Tidak bertumpuk dengan efek Resonansi Flame atau efek Flame Reaction lain, di mana Resonansi Flame akan diutamakan."
+			},
+			{
+				"title": "**Central Nexus: On-Field**",
+				"description": "Saat menghantam target dengan **Freeflow**, menimpakan DMG sebesar **256%** Flame ATK plus **3.6%** Max HP plus **133%** dari jumlah seluruh tipe Resistance Wanderer plus **4.9%** Crit ke target di sekitar. Bisa terpicu maksimal 1 kali setiap **1,5** detik. DMG dari Central Nexus dianggap sebagai DMG Serangan Biasa. Jika setidaknya ada **1** senjata Frost atau Volt yang sedang digunakan, DMG Central Nexus akan dikali **1.3**. Selain itu, DMG Central Nexus tidak terpengaruh oleh efek DMG Boost apa pun, kecuali dari stat langka Perlengkapan Titan, dan tidak akan memicu efek serangan tambahan."
+			}
+		],
+		"elementEffects": {
+			"title": "**Flame**",
+			"description": "Saat Charge Senjata penuh, serangan berikutnya akan membakar target selama **8** detik, menimpakan DMG sebesar **58.00%** ATK setiap detik. Efek penyembuhan target yang terbakar berkurang **50%**."
+		},
+		"attributes": [
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "Meningkatkan tumpukan maksimum **Decisive Placement** menjadi **18**. DMG tambahan dari masing-masing tumpukan **Decisive Placement** meningkat menjadi **400%** ATK.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Saat **Freeflow** digunakan, mengabaikan **15%** Flame Resistance target di dalam zona. Efek ini berfungsi saat senjata ada di slot sampingan. Resistansi total setiap elemen yang diabaikan tidak bisa melebihi 50%.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Saat **Step into the Game** aktif, DMG yang diterima berkurang **30%**. Saat menerima Damage Mematikan, langsung memulihkan **100%** Max HP. Efek ini hanya bisa terpicu **1** kali per pengaktifan skill.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "Meningkatkan Flame DMG menjadi **5%** untuk setiap tumpuk **Scorching Sun**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Shifting Star",
+					"description": "Saat di darat, gunakan Serangan Biasa untuk menyerang 5 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+					"id": "GA_FPlayerDFishChessMelee_Melee"
+				},
+				{
+					"name": "Gerakan Awal",
+					"description": "Saat di udara, gunakan Serangan Biasa untuk melakukan 4 serangan beruntun di udara sambil mengonsumsi Stamina.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_AirAttack"
+				},
+				{
+					"name": "Review Board",
+					"description": "Selama di darat, tahan serangan biasa untuk mengaktifkan Review Board. Menyiapkan hingga 5 keping yang akan melesat dan mengejar target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+				},
+				{
+					"name": "Generational Leap",
+					"description": "Saat di udara, tekan dan tahan serangan biasa untuk memicu Generational Leap.\r\nSetelah mendarat, melancarkan Dua Ikan dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar dan membuat mereka terpental ke atas.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, memperlambat target di dalam area tersebut. Saat menghindar, menjadi kebal terhadap Hitstun.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDFishChessEvade_Evade"
+				},
+				{
+					"name": "Kejar Keuntungan",
+					"description": "Gunakan Serangan Biasa dalam rentang waktu Menghindar Sempurna yang singkat (tekan tombol panah sebelum menghindar) untuk menempatkan <shuzhi>1</> kepingan hitam di depanmu. Selama durasi singkat, kepingan ini akan menarik dan memperlambat target di sekitar, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di depanmu.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Starfall",
+					"description": "Gunakan Serangan Biasa selama rentang waktu singkat setelah menghindar ke belakang untuk menempatkan <shuzhi>3</> kepingan putih di depanmu. Setiap kepingan putih menimpakan DMG area sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar saat ditempatkan. Kepingan ini juga menjadi jebakan yang meledak ketika musuh mendekat, memperlambat mereka dan menimpakan <shuzhi>57%</> DMG tambahan.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Step into the Game",
+					"description": "Melompat ke udara, mengubah medan tempur menjadi papan Go, lalu melayang di udara (tak bisa bergerak selama durasi ini). Selama <shuzhi>10</> detik, memandang dari sudut pandang yang lebih tinggi. Selama rentang waktu ini, seranganmu menjadi kepingan Go dan skill kamu digantikan dengan <shuzhi>Half-Piece Advantage</>. Tekan papan Go untuk menempatkan <shuzhi>18</> keping secara berurutan, masing-masing menimpakan DMG sebesar <shuzhi>250%</> ATK ke semua target di papan dan memperlambat mereka untuk sementara. Cooldown: <shuzhi>40</> detik. Ini tidak terpengaruh oleh efek penghapusan, reset, atau perubahan cooldown lainnya.\r\n<shuzhi>Decisive Placement</>: Menggunakan <shuzhi>Review Board</>, <shuzhi>Seize Advantage</>, <shuzhi>Starfall</>, dan <shuzhi>This Ends Here</> atau melakukan (bukan hanya memperbarui yang sudah ada) pemanggilan akan memberikan tumpukan Decisive Placement, maks <shuzhi>9</> tumpuk. Selama Decisive Placement aktif, setiap keping Go mengonsumsi <shuzhi>1</> tumpuk untuk menimpakan DMG tambahan sebesar <shuzhi>200%</> ATK ke semua target di papan. Selama skill ini aktif, tidak bisa mengakumulasi tumpukan.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+					"id": "GA_FPlayerDFishChess_Skill"
+				},
+				{
+					"name": "Half-Piece Advantage",
+					"description": "Selama <shuzhi>Step into the Game</> aktif, gunakan Half-Piece Advantage secara manual atau biarkan terpicu secara otomatis di akhir durasi. Melakukan serangan menukik dari atas, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke semua target di papan. Selain itu, menimpakan DMG sebesar jumlah <shuzhi>Decisive Placement</> yang dikonsumsi selama durasi skill ini dikalikan 200% ATK. Dua Ikan ini kemudian bergerak memutar ke luar, mendorong target di sekitar dan menimpakan DMG sebesar <shuzhi>{2}%</> ATK.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+					"id": "GA_FPlayerDFishChess_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "This Ends Here",
+					"description": "N/A",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+					"id": "GA_FPlayerDFishChess_ChangeSkill"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Zaman Sutra",
+					"description": "Hadapi masa lalu dengan tekad yang tak tergoyahkan.",
+					"rarity": 5,
+					"source": "Dari event",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57"
+				},
+				"weapon": {
+					"name": "Shimmer",
+					"description": "Dengan misteri alam semesta dalam genggaman dan dunia dalam lubuk hati.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Diperoleh dari event Zaman Sutra"
+					],
+					"id": "imitation_fashion_57_w"
+				}
+			},
+			{
+				"outfit": {
+					"name": "Sleek Elegance",
+					"description": "Orang bilang, \"Master Yu terlihat menawan, apa pun yang dia kenakan\". Namun, salah satu koleksi dari lemari pakaian Master Yu ini adalah favorit Yu Lan. Mungkin karena ketika mereka memakainya, mereka benar-benar terlihat seperti pasangan guru dan murid yang sempurna.",
+					"rarity": 5,
+					"source": "Dari event",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57_2"
+				},
+				"weapon": {
+					"name": "Epoch",
+					"description": "Melalui tahun-tahun penuh badai dan ketidakpastian, dia berjalan mengiringi mereka.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Dapatkan dari event Network Tracing"
+					],
+					"id": "imitation_fashion_57_w_2"
+				}
+			}
+		],
+		"version": "3.8",
+		"limited": true,
+		"id": "dfishchess_fire"
+	},
 	"snipe_fire": {
 		"name": "Clover Cross",
 		"description": "Sebuah pengembang game tembak-tembakan VR multiplayer yang sangat populer di Mirroria merancang senapan eksklusif ini sebagai hadiah untuk pemain terhebat mereka. Modelnya dibuat khusus dan juga sudah dikirimkan ke pemain yang bersangkutan, tapi tak ada yang menyadari bahwa senapan ini dapat digunakan secara persis seperti yang ada di dalam permainan...",
@@ -13594,7 +14029,7 @@
 	},
 	"asuka_physic": {
 		"name": "Spear of Longinus",
-		"description": "Legenda mengatakan bahwa ini adalah akar dari Pohon Kehidupan, memiliki kekuatan yang tidak bisa ditahan oleh siapa pun.",
+		"description": "Menurut legenda, senjata ini dibuat dari akar Pohon Kehidupan, memiliki kekuatan yang tidak bisa ditahan oleh siapa pun.",
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_mingrixiang.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_mingrixiang.webp",
@@ -13744,7 +14179,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "Selama Wanderer memiliki efek **A.T. Field** yang aktif, serangan Wanderer mengabaikan sejumlah persentase DMG Reduction dari perisai target. Besaran persentase ini adalah **30%** dari **persentase daya tahan** **A.T. Field** saat ini plus **20%**. Ketika Resonansi Fortitude aktif, nilai Shatter Wanderer meningkat sebesar **100%** dari **persentase daya tahan** **A.T. Field**.",
+				"description": "Selama Wanderer memiliki efek **A.T. Field** yang aktif, serangan Wanderer mengabaikan sejumlah persentase DMG Reduction dari perisai target. Besaran persentase ini adalah **30%** dari **persentase daya tahan** **A.T. Field** saat ini plus **20%**. Ketika **Resonansi Fortitude** aktif, nilai Shatter Wanderer meningkat sebesar **100%** dari **persentase daya tahan** **A.T. Field**.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13937,7 +14372,7 @@
 			"skill": [
 				{
 					"name": "Cloud-Piercer",
-					"description": "N/A",
+					"description": "Melemparkan senjata ke arah target dan menarik target lain di sekitarnya, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>, lalu membuat target di sekitar tak bisa bergerak untuk sementara. Cooldown: <shuzhi>20</> detik. Cooldown ini tidak terpengaruh oleh efek lain yang menghilangkan, mereset, atau mengubah durasi Cooldown.\r\nSetelah berhasil menggunakan skill ini, mendapatkan <shuzhi>10</> tumpuk Vengeance. Tiap kali menimpakan DMG kepada musuh, <shuzhi>1</> tumpuk Vengeance terpakai. Jika tipe senjata yang dipakai adalah <shuzhi>Physical</> atau <shuzhi>Flame</>, menimpakan DMG tambahan sesuai dengan tipe senjata tersebut sebesar <shuzhi>600%</> ATK kepada target di sekitar. Efek ini bisa terpicu hingga <shuzhi>1</> kali per detik.\r\nSelain itu, setelah berhasil menggunakan skill ini, menciptakan A.T. Field dengan ketahanan <shuzhi>50%</> Max HP yang aktif selama <shuzhi>30</> detik. Selama durasi ini, Physical DMG Wanderer meningkat <shuzhi>18%</>, sedangkan Flame DMG Wanderer meningkat <shuzhi>12%</>, serta mendapatkan Hyperbody.\r\nKetika Wanderer menerima DMG, A.T. Field akan mengurangi DMG yang diterima sesuai dengan persentase daya tahan yang tersisa dan daya tahan ini akan berkurang sesuai dengan DMG yang diterima tersebut (hingga paling sedikit <shuzhi>10%</> daya tahan).\r\nKetika Resonansi Fortitude aktif, jika Wanderer menerima DMG saat memiliki tumpukan Vengeance, <shuzhi>1</> tumpuk Vengeance akan terpakai untuk menahan DMG sebesar <shuzhi>8%</> Max HP. Efek ini bisa terpicu paling banyak <shuzhi>1</> kali setiap <shuzhi>0,5</> detik.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -13948,8 +14383,8 @@
 			],
 			"discharge": [
 				{
-					"name": "Evangelion Attack",
-					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke Senjata ini akan <shuzhi>melenyapkan semua debuff dari Wanderer</> dan pilot EVA-02 kemudian melancarkan Flying Kick, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar. Selama durasi ini, mendapatkan DMG Immunity selama <shuzhi>1,5</> detik (Tidak Tersedia Pada Apex League).",
+					"name": "Senjata Lepas Landas",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua debuff dari Wanderer</> dan pilot EVA-02 kemudian melancarkan Flying Kick, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar. Selama durasi ini, mendapatkan DMG Immunity selama <shuzhi>1,5</> detik (Tidak Tersedia Pada Apex League).",
 					"tags": [
 						"Damage",
 						"Control"
@@ -13990,6 +14425,422 @@
 		"version": "3.7",
 		"limited": true,
 		"id": "asuka_physic"
+	},
+	"ayanamirei_thunder": {
+		"name": "Salvation",
+		"description": "Busur prototipe yang dibuat khusus untuk Rei Ayanami oleh Departemen Sains dan Teknologi Mirroria. Penampilan dan warnanya merujuk pada EVA-00. Busur ini mampu menembakkan panah energi.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_AyanamiRei.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_AyanamiRei.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"rarity": 5,
+		"element": "Thunder",
+		"type": "AyanamiRei",
+		"weaponUpgradeId": "thunder_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "AyanamiRei_thunder_ssr_star",
+		"stats": [
+			{
+				"stat": {
+					"name": "Attack",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Volt-Frost Fusion**",
+				"description": "Saat senjata menimpakan DMG, DMG dihitung menggunakan ATK Dasar Volt/Frost tertinggi yang terpasang, persentase ATK Volt/Frost tertinggi yang terpasang, dan Volt/Frost DMG Boost tertinggi yang terpasang, dan senjata akan dianggap sebagai senjata Volt dan senjata Frost."
+			},
+			{
+				"title": "**Resonansi Volt**",
+				"description": "Meningkatkan Volt ATK sebesar **15%** dan Volt Resistance sebesar **25%**. Aktifkan dengan memakai **2** Senjata Volt atau lebih. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan Resonansi Volt atau efek Volt Reaction lainnya, dengan Resonansi Volt sebagai prioritas."
+			},
+			{
+				"title": "**Resonansi Frost**",
+				"description": "Meningkatkan Frost ATK sebesar **15%** dan Frost Resistance sebesar **25%**. Efek set ini berfungsi dengan memakai **2** Senjata Frost atau lebih. Efek ini juga aktif saat senjata ada di slot sampingan. Tidak bisa ditumpuk dengan Resonansi Frost atau efek Frost Reaction lainnya, dengan Resonansi Frost sebagai prioritas."
+			},
+			{
+				"title": "**Flash: Detachment**",
+				"description": "Setelah menggunakan **Mecha Strike**, menimpakan DMG sebesar **109,4%** Volt ATK plus **15,6%** Max HP plus **56,3%** dari jumlah seluruh tipe Resistance Wanderer plus **210,9%** Crit DMG tiap detik selama **30** detik kepada target yang terhantam. Jika DMG dari Detachment ditimpakan berkali-kali, DMG tersebut tidak akan bertumpuk dan DMG dari Flash akan dianggap sebagai DMG dari Skill. Jika sedang menggunakan setidaknya **1** senjata Physical atau Flame, DMG dari Flash meningkat **1,3** kali lipat. Selain itu, DMG dari Flash tidak terpengaruh oleh efek DMG Boost apa pun, kecuali dari stat langka Equipment Titan, dan tidak akan memicu efek serangan tambahan."
+			},
+			{
+				"title": "**Homing Arrow**",
+				"description": "Saat menggunakan senjata apa pun untuk menimpakan DMG, menembakkan **1** Homing Arrow ke target, yang menimpakan DMG sebesar **NaN%** ATK ke target pertama yang terhantam. Di waktu bersamaan, menerima **4** Energi Spesial. Homing Arrow ini akan terus tertancap pada target dan menimbulkan Overload selama **30** detik. Saat jumlah Homing Arrow yang tertancap pada suatu target mencapai **3**, anak panah yang tertancap tersebut akan meledak, menimpakan DMG sebesar **NaN%** ATK kepada target di sekitar. Homing Arrow bisa terpicu maksimal **1** kali setiap **0.5** detik."
+			}
+		],
+		"elementEffects": {
+			"title": "**Volt**",
+			"description": "Saat senjata terisi penuh, serangan berikutnya akan mengakibatkan**Paralyze Kuat**pada target selama **1** detik dan menerapkan Electrify selama **6** detik, menetralkan semua buff mereka dan menimpakan DMG sebesar **144.00%** ATK. Selama **6** detik berikutnya, target yang terkena Electrify tidak bisa menerima buff."
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "Saat **Salvation** ada di slot sampingan, DMG ledakan **Homing Arrow** meningkat **100%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Volt DMG yang ditimpakan kepada target yang tertancap anak panah **Homing Arrow: Overloaded** meningkat **10%** dan Frost DMG sebesar **10%**. Efek ini berfungsi saat senjata ada di slot sampingan.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Setelah menggunakan **Mecha Strike**, mendapatkan **25** Energi Spesial tambahan.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "Selama berada dalam fase **Pemakaian Energi**, Volt DMG Wanderer meningkat **16%** dan Frost DMG meningkat **10%** selama **20** detik.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Rapid Bow",
+					"description": "Saat di darat, gunakan Serangan Biasa untuk menyerang 6 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Keempat: Menimpakan DMG hingga <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan membuat target terpental sedikit ke belakang.\r\nSetelah serangan kelima, saat muncul kilatan cahaya, tekan untuk melakukan serangan keenam. Serangan Keenam: Menembakkan satu panah energi yang kuat dan Homing Arrow yang menimpakan DMG sebesar <shuzhi>{10}%</> ATK plus <shuzhi>{11}</> ke target serta menerapkan Slowing Magnetic Field selama <shuzhi>3</> detik di lokasi target pertama yang terhantam. Kecepatan gerak dan kecepatan serangan lawan yang ada di dalam zona ini berkurang <shuzhi>35%</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Melee"
+				},
+				{
+					"name": "Aerial Assault",
+					"description": "Saat di udara, gunakan Serangan Biasa untuk menyerang 6 kali berturut-turut sambil mengonsumsi Stamina.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG hingga maks <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</>.\r\nSetelah serangan kelima, saat muncul kilatan cahaya, tekan untuk melakukan serangan keenam. Serangan Keenam: Menembakkan satu panah energi yang kuat dan <shuzhi>5</> <shuzhi>Homing Arrow</> yang menimpakan DMG sebesar <shuzhi>{10}%</> ATK plus <shuzhi>{11}</> kepada target serta menerapkan Slowing Magnetic Field di lokasi target pertama yang terhantam. Kecepatan gerak dan kecepatan serangan lawan yang ada di dalam zona ini berkurang <shuzhi>40%</> selama <shuzhi>3</> detik.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+				},
+				{
+					"name": "Backjump Arrow",
+					"description": "Saat melakukan Serangan Biasa di darat atau di udara selagi menggunakan serangan pertama sampai kelima, tekan dan tahan Serangan Biasa untuk melakukan Backjump Arrow.\r\nMenembakkan panah ke depan sambil melompat ke belakang, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target yang terhantam.\r\nJika di saat tersebut Energi Spesial lebih dari <shuzhi>70</>, Wanderer akan memasuki keadaan <shuzhi>Pemakaian Energi</>: Volt ATK meningkat <shuzhi>15%</> dan Frost ATK meningkat <shuzhi>5%</>.\r\nSelama <shuzhi>Salvation</> ada di slot utama, <shuzhi>5</> energi spesial akan dikonsumsi setiap 0,5 detik. DMG <shuzhi>Salvation</> meningkat 30%. Tekan berulang kali atau tekan dan tahan Serangan Biasa untuk melakukan <shuzhi>Dodging Rapidfire</>.\r\nSelama <shuzhi>Salvation</> ada di slot sampingan, <shuzhi>3,3</> Energi Spesial akan digunakan setiap 0,5 detik. DMG Homing Arrow meningkat <shuzhi>50%</> dan radius ledakannya menjadi lebih luas.\r\nJumlah maksimum energi spesial adalah <shuzhi>100</>. Saat batas maksimum ini tercapai, mengalihkan <shuzhi>Salvation</> dari slot utama ke slot sampingan akan langsung membuat Wanderer memasuki keadaan Pemakaian Energi.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+				},
+				{
+					"name": "Dodging Rapidfire",
+					"description": "Selama dalam <shuzhi>Pemakaian Energi</>, gunakan Serangan Biasa untuk menyerang 3 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+				},
+				{
+					"name": "Precision Shot",
+					"description": "Tekan dan tahan serangan biasa untuk mengumpulkan tenaga. Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Untuk setiap <shuzhi>0,1</> detik pengumpulan tenaga, DMG meningkat <shuzhi>100%</>, dan mencapai DMG maksimum setelah mengumpulkan tenaga <shuzhi>2,3</> detik.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, memperlambat target di dalam area tersebut. Saat menghindar, menjadi kebal terhadap Hitstun.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAyanamiReiEvade_Evade"
+				},
+				{
+					"name": "Triple Shot",
+					"description": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah menghindar untuk melakukan Triple Shot, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target pertama yang terhantam.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+				},
+				{
+					"name": "Charged Shot",
+					"description": "Setelah menghindar, tekan serangan biasa di waktu yang tepat untuk melakukan Charged Shot, menembakkan panah energi kuat yang menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target. Di waktu yang sama, menembakkan Homing Arrow. Wanderer mendapatkan 1 Blocking Barrier yang aktif selama <shuzhi>15</> detik dan mengeblok DMG yang besarnya tidak melebihi <shuzhi>10%</> Max HP Wanderer. Wanderer bisa memiliki hingga 3 Blocking Barrier sekaligus.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+				}
+			],
+			"skill": [
+				{
+					"name": "Mecha Strike",
+					"description": "Memunculkan sebuah mecha untuk menghantam lawan, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar. Selama rentang waktu ini, Wanderer mendapatkan Hyperbody dan menerima <shuzhi>35</> Energi Spesial. Cooldown: <shuzhi>20</> detik. Cooldown ini tidak terpengaruh oleh efek lain yang menghilangkan, mereset, atau mengubah durasi Cooldown.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+					"id": "GA_FPlayerAyanamiReiSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Defense Field",
+					"description": "Saat <red>Charge Senjata penuh</> atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</>. Memunculkan sebuah mecha dan menggunakan perisainya untuk menghantam tanah, mengakibatkan gelombang kejut yang menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar, serta memberikan <shuzhi>30</> Energi Spesial. Selama rentang waktu ini, mendapatkan DMG Immunity selama <shuzhi>1,5</> detik (tak berlaku di Apex League).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+					"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Future's Echo",
+					"description": "Seorang gadis yang menyeberangi ruang dan waktu nun jauh, mendengarkan sinyal dari masa depan.",
+					"rarity": 5,
+					"source": "Dari event",
+					"simulacrumId": "imitation_56",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_56"
+				},
+				"weapon": {
+					"name": "Gema Rei",
+					"description": "Salvation yang dimodifikasi oleh Departemen Sains dan Teknologi berdasarkan respons dari Rei Ayanami.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_rei_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Diperoleh dari event gachapon Gema dari Masa Depan."
+					],
+					"id": "imitation_fashion_56_w"
+				}
+			}
+		],
+		"version": "3.7",
+		"limited": true,
+		"id": "ayanamirei_thunder"
 	},
 	"brush_fire": {
 		"name": "Pine Comet",

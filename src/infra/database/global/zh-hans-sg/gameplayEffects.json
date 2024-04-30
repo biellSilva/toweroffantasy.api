@@ -329,6 +329,16 @@
 		"description": "最终伤害提升**0%**，**松彗**处于后台时，**雀羽**发射频率提升至**1**秒/次。\r\n**雀羽**命中触发扩散效果时，额外扩散**离子灼烧**和**十字灼烧**。\r\n组队玩法中，自身受到来自仇恨目标的伤害减少**1%**，激活坚毅共鸣时，提升至**2%**。",
 		"id": "buff_imitation_brush_level2_damageup"
 	},
+	"buff_imitation_dfish_level1": {
+		"name": "促狭",
+		"description": "最终伤害提升**0%**。",
+		"id": "buff_imitation_dfish_level1"
+	},
+	"buff_imitation_dfish_level2": {
+		"name": "弈策",
+		"description": "最终伤害提升**0%**。\r\n装备**纵横**时，场域内仅存在**1**个目标时火焰伤害提升**1%**，存在**2**个及以上目标时火焰伤害提升至**2%**。",
+		"id": "buff_imitation_dfish_level2"
+	},
 	"buff_thunder_ready_lv1": {
 		"name": "雷电",
 		"description": "伤害目标时，给目标添加短路效果**3**秒，使目标无法使用武器",
@@ -420,83 +430,83 @@
 		"id": "buff_tianlang_weaponcharged"
 	},
 	"buff_timerevert_addenergy": {
-		"name": "连携充能",
+		"name": "蓄能电池",
 		"description": "释放连携后立刻获得复轨仪充能层数 * **6**/**8**/**10** 点充能值。",
 		"id": "buff_timerevert_addenergy"
 	},
 	"buff_timerevert_attackdmgmaxhp": {
-		"name": "强攻",
-		"description": "每间隔5秒，下一次攻击额外造成目标复轨仪计数 * **0.1%**/**0.15%**/**0.2%** 的当前生命值的伤害。（仅强攻共鸣触发）",
+		"name": "毁灭",
+		"description": "每间隔**20**秒，下一次攻击额外造成复轨仪计数 * **0.02%**/**0.03%**/**0.05%** BOSS最大生命值的伤害。（仅强攻共鸣触发）",
 		"id": "buff_timerevert_attackdmgmaxhp"
 	},
 	"buff_timerevert_bedmgdown": {
-		"name": "减伤",
+		"name": "不屈",
 		"description": "受到的伤害减少。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
 		"id": "buff_timerevert_bedmgdown"
 	},
 	"buff_timerevert_breakdefup": {
-		"name": "破盾",
+		"name": "护盾击碎",
 		"description": "提升破盾效率。数值为复轨仪充能层数 * **1%**/**1.5%**/**2%**。",
 		"id": "buff_timerevert_breakdefup"
 	},
 	"buff_timerevert_chargeup": {
-		"name": "充能加速",
+		"name": "充能增幅器",
 		"description": "提升充能效率。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
 		"id": "buff_timerevert_chargeup"
 	},
 	"buff_timerevert_defenfaddshield": {
-		"name": "坚毅",
-		"description": "激活后，所受伤害的1%转化为护盾值。攻击和技能额外造成造成护盾量**100%**/**200%**/**300%** 的伤害。（仅坚毅共鸣触发）",
+		"name": "盾击",
+		"description": "激活后，每**5**秒内所受伤害的**40%**/**60%**/**80%**转化为护盾值，最小为执行者最大生命值**5%**。拥有护盾时，攻击和技能额外造成BOSS最大生命值**0.25%**/**0.5%**/**0.75%** 的伤害。每10秒只能触发一次。（仅坚毅共鸣触发）",
 		"id": "buff_timerevert_defenfaddshield"
 	},
 	"buff_timerevert_dmgup": {
-		"name": "攻击提升",
+		"name": "灼热奋起",
 		"description": "造成伤害提升。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
 		"id": "buff_timerevert_dmgup"
 	},
 	"buff_timerevert_dmgupinair": {
-		"name": "空中增伤",
+		"name": "轻灵",
 		"description": "在空中造成的伤害提升。数值为复轨仪充能层数 * **0.6%**/**1%**/**1.5%**。",
 		"id": "buff_timerevert_dmgupinair"
 	},
 	"buff_timerevert_exdmg": {
-		"name": "毁灭",
+		"name": "审判",
 		"description": "下次攻击将消耗掉所有层数，额外造成目标最大生命值伤害。数值为复轨仪充能层数 ***0.05%**/**0.075%**/**0.1%**。",
 		"id": "buff_timerevert_exdmg"
 	},
 	"buff_timerevert_gettimerevertstack": {
-		"name": "快速复轨",
-		"description": "对BOSS造成伤害获得的充能层数，从**1**提高至**2**。",
+		"name": "极速复轨",
+		"description": "激活后，每**2**秒额外获得**1**层充能层数。",
 		"id": "buff_timerevert_gettimerevertstack"
 	},
 	"buff_timerevert_healdmgaftertreatment": {
-		"name": "恩赐",
-		"description": "受到治疗后，下次攻击造成额外伤害。数值为复轨仪充能层数 * **0.2%**/**0.3%**/**0.5%** 的目标最大生命值。（仅恩赐共鸣触发）",
+		"name": "解脱",
+		"description": "受到治疗后，下次攻击造成额外伤害。数值为复轨仪充能层数 * **0.01%**/**0.02%**/**0.03%** 的目标最大生命值。每10秒只能触发一次。（仅恩赐共鸣触发）",
 		"id": "buff_timerevert_healdmgaftertreatment"
 	},
 	"buff_timerevert_healup": {
-		"name": "治愈",
-		"description": "治疗效果提升。数值为复轨仪充能层数 * **1%**/**1.5%**/**2%**。",
+		"name": "甘露",
+		"description": "治疗效果提升。数值为/**25%**/**50%**/**75%**。",
 		"id": "buff_timerevert_healup"
 	},
 	"buff_timerevert_ignoredef": {
-		"name": "无视抗性",
+		"name": "蔑视",
 		"description": "攻击无视BOSS部分全抗。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
 		"id": "buff_timerevert_ignoredef"
 	},
 	"buff_timerevert_periodshield": {
 		"name": "再生护盾",
-		"description": "每**30**秒获得护盾。数值为复轨仪充能层数 * **0.5%**/**1%**/**1.5%** 执行者最大生命值。",
+		"description": "激活后获得护盾，每**30**秒刷新。数值为复轨仪充能层数 * **0.5%**/**1%**/**1.5%** 执行者最大生命值。",
 		"id": "buff_timerevert_periodshield"
 	},
 	"buff_timerevert_reducecd": {
-		"name": "减少技能CD",
+		"name": "疾风骤雨",
 		"description": "技能基础冷却时间减少。数值为/**10%**/**20%**/**30%**。",
 		"id": "buff_timerevert_reducecd"
 	},
 	"buff_timerevert_suck": {
-		"name": "生命偷取",
-		"description": "根据造成伤害恢复生命值。数值为复轨仪充能层数 * **0.5%**/**0.75%**/**1%**。",
+		"name": "生命汲取",
+		"description": "根据造成伤害恢复生命值。数值为/**20%**/**40%**/**60%**。",
 		"id": "buff_timerevert_suck"
 	},
 	"attack_skill1": {
@@ -826,7 +836,7 @@
 	},
 	"eventdes_boss044sp_fire1": {
 		"name": "灼热",
-		"description": "在海拉周围的角色会被叠加火种标记，距离海拉越近，火种标记叠加速度越快。被叠加超过50层火种标记的角色受到海拉造成的伤害时，会被清空所有火种标记层数，并受到一个基于火种层数的额外伤害。",
+		"description": "在海拉周围的角色会被叠加火种标记，距离海拉越近，火种标记叠加速度越快，标记最多叠加100层。被叠加超过50层火种标记的角色受到海拉造成的伤害时，会被清空所有火种标记层数，并受到一个基于火种层数的额外伤害。",
 		"id": "eventdes_boss044sp_fire1"
 	},
 	"eventdes_boss044sp_fire2": {
@@ -836,7 +846,7 @@
 	},
 	"eventdes_boss044sp_ice1": {
 		"name": "冰封",
-		"description": "在海拉周围的玩家会被叠加极寒标记，距离海拉越近，极寒标记叠加速度越快。当极寒标记叠加到满层时，目标角色将被冰冻。冰冻持续期间内若受到来自海拉造成的伤害将解除冰冻，但同时受到一次高额破冰伤害。",
+		"description": "在海拉周围的玩家会被叠加极寒标记，标记最多叠加25层。当极寒标记叠加到满层时，目标角色将被冰冻，冰冻持续期间内若受到来自海拉造成的伤害将提前解除冰冻，同时受到一次高额破冰伤害。",
 		"id": "eventdes_boss044sp_ice1"
 	},
 	"eventdes_boss044sp_ice2": {
@@ -846,7 +856,7 @@
 	},
 	"eventdes_boss044sp_phy1": {
 		"name": "睥睨",
-		"description": "角色处于海拉附近或受到来自海拉造成的伤害时，会被叠加威压标记，每层威压标记将减少角色1%的最大生命值，最多减少50%的最大生命值。",
+		"description": "角色处于海拉附近或受到来自海拉造成的伤害时，会被叠加威压标记，标记最多叠加50层。每层威压标记将减少角色1%的最大生命值上限，最多减少50%的最大生命值上限。",
 		"id": "eventdes_boss044sp_phy1"
 	},
 	"eventdes_boss044sp_phy2": {
@@ -856,7 +866,7 @@
 	},
 	"eventdes_boss044sp_super1": {
 		"name": "枯萎",
-		"description": "角色每次受到来自海拉的伤害时，将会被叠加时间扭曲标记，当时间扭曲标记达到满层时，角色将被施加枯萎效果：持续时间内周期性扣除耐力。",
+		"description": "角色每次受到来自海拉的伤害时，将会被叠加时间扭曲标记，标记最多叠加10层。当时间扭曲标记达到满层时，角色将被施加枯萎效果：持续时间内周期性扣除耐力。",
 		"id": "eventdes_boss044sp_super1"
 	},
 	"eventdes_boss044sp_super2": {
@@ -865,8 +875,8 @@
 		"id": "eventdes_boss044sp_super2"
 	},
 	"eventdes_boss044sp_thu1": {
-		"name": "怒雷",
-		"description": "战斗中，海拉将周期性地在随机位置降下落雷，落雷将对范围内目标造成雷属性伤害。同时，当角色处于海拉附近时，将被叠加感电标记，每层感电标记都会提升角色受到的雷属性伤害。",
+		"name": "雷暴",
+		"description": "战斗中，海拉将周期性地降下落雷。当被雷击的角色感电层数小于十层时，受到基于感电层数的雷电伤害，并在伤害后叠加一层感电标记。感电满十层后，被雷击角色将被高电压击穿，从而受到最大生命值120%的致命伤害。",
 		"id": "eventdes_boss044sp_thu1"
 	},
 	"eventdes_boss044sp_thu2": {
@@ -1225,15 +1235,18 @@
 		"id": "buff_spear_stun"
 	},
 	"buff_eleweakpoint_bigice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigice"
 	},
 	"buff_eleweakpoint_bigfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfire"
 	},
 	"buff_eleweakpoint_bigthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigthunder"
 	},
 	"buff_artifact11_getweapon": {
@@ -1956,6 +1969,16 @@
 		"description": "受到的雷伤大幅提升",
 		"id": "buff_borderwar_weakthunder"
 	},
+	"buff_boss_002_4": {
+		"name": "毒奶",
+		"description": "角色施加的治疗将会转变为等量伤害。",
+		"id": "buff_boss_002_4"
+	},
+	"buff_boss_002_5_ignore": {
+		"name": "脆弱",
+		"description": "持续时间内角色霸体失效，且无法进入无敌状态。",
+		"id": "buff_boss_002_5_ignore"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "霸体失效",
 		"description": "无法给自身添加霸体状态。",
@@ -1963,7 +1986,7 @@
 	},
 	"buff_boss_044_sp_fire": {
 		"name": "火种",
-		"description": "在异变的海拉附近逗留将被叠加火种，达到一定层数后，海拉的攻击将能够引爆火种，并根据火种层数对附加火种的目标造成基于该目标最大生命值的伤害。",
+		"description": "最多叠加100层。被叠加超过50层火种的角色受到海拉造成的伤害时，会被清空所有火种层数，并受到一个基于火种层数的额外伤害。",
 		"id": "buff_boss_044_sp_fire"
 	},
 	"buff_boss_044_sp_fire_ignore": {
@@ -1983,7 +2006,7 @@
 	},
 	"buff_boss_044_sp_ice_stack": {
 		"name": "极寒",
-		"description": "在异变的海拉附近逗留将被叠加极寒，达到一定层数后将被冰冻，冰冻状态下，海拉对该目标的攻击造成额外的破冰效果。",
+		"description": "最多叠加25层。当极寒标记叠加到满层时，目标角色将被冰冻，冰冻持续期间内若受到来自海拉造成的伤害将提前解除冰冻，同时受到一次高额破冰伤害。",
 		"id": "buff_boss_044_sp_ice_stack"
 	},
 	"buff_boss_044_sp_phy_ignore": {
@@ -1993,7 +2016,7 @@
 	},
 	"buff_boss_044_sp_phy_stack": {
 		"name": "威压",
-		"description": "每层叠加将减少当前角色1%最大生命值。",
+		"description": "最多叠加50层。每层叠加将减少当前角色1%最大生命值上限。",
 		"id": "buff_boss_044_sp_phy_stack"
 	},
 	"buff_boss_044_sp_reward_energyconsumedown": {
@@ -2023,12 +2046,12 @@
 	},
 	"buff_boss_044_sp_superpower_stack": {
 		"name": "时间扭曲",
-		"description": "被海拉的攻击命中将被叠加时间扭曲，时间扭曲达到一定层数后将对目标施加枯萎效果。",
+		"description": "时间扭曲效果最多叠加10层，达到满层后将对目标施加枯萎效果。",
 		"id": "buff_boss_044_sp_superpower_stack"
 	},
 	"buff_boss_044_sp_thu_stack": {
 		"name": "感电",
-		"description": "每层感电增加角色受到的雷属性伤害。",
+		"description": "最多叠加10层。角色受到雷击时，若感电低于10层，则受到一个基于层数的少量伤害，并叠加一层感电；若感电为10层，则该角色被高电压击穿，受到一次致命伤害。",
 		"id": "buff_boss_044_sp_thu_stack"
 	},
 	"buff_boss_044_thu_ignore": {
@@ -2102,15 +2125,18 @@
 		"id": "buff_boss_hum_042_5"
 	},
 	"buff_eleweakpoint_smallfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfire"
 	},
 	"buff_eleweakpoint_smallice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallice"
 	},
 	"buff_eleweakpoint_smallthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallthunder"
 	},
 	"buff_emby_atkupdefdown": {
@@ -2189,42 +2215,52 @@
 		"id": "buff_evadeaddeffect_level2"
 	},
 	"buff_evajdfw_breakdefup": {
+		"name": "",
 		"description": "机甲破盾效率提高20%",
 		"id": "buff_evajdfw_breakdefup"
 	},
 	"buff_evajdfw_critup": {
+		"name": "",
 		"description": "机甲暴击率提高5%",
 		"id": "buff_evajdfw_critup"
 	},
 	"buff_evajdfw_finbedamedup": {
+		"name": "",
 		"description": "机甲减伤5%",
 		"id": "buff_evajdfw_finbedamedup"
 	},
 	"buff_evajdfw_findamup": {
+		"name": "",
 		"description": "机甲增伤5%",
 		"id": "buff_evajdfw_findamup"
 	},
 	"buff_evajdfw_monsterhpdownandatkup": {
+		"name": "",
 		"description": "怪物生命值降低20%，攻击力提高10%",
 		"id": "buff_evajdfw_monsterhpdownandatkup"
 	},
 	"buff_evajdfw_monsterhpupandatkdown": {
+		"name": "",
 		"description": "怪物生命值提高20%，攻击力降低20%",
 		"id": "buff_evajdfw_monsterhpupandatkdown"
 	},
 	"buff_evajdfw_skill01cooldowncut": {
+		"name": "",
 		"description": "技能【呼叫支援-104】冷却减低2秒",
 		"id": "buff_evajdfw_skill01cooldowncut"
 	},
 	"buff_evajdfw_skill02cooldowncut": {
+		"name": "",
 		"description": "技能【御卫姿态】冷却减低2秒",
 		"id": "buff_evajdfw_skill02cooldowncut"
 	},
 	"buff_evajdfw_skilldefendshieldex": {
+		"name": "",
 		"description": "机甲防御成功后获得1个5秒护盾（护盾值5%生命值）,10秒CD",
 		"id": "buff_evajdfw_skilldefendshieldex"
 	},
 	"buff_evajdfw_skilldefendup": {
+		"name": "",
 		"description": "使用技能【辉毅之盾】免伤率提高10%",
 		"id": "buff_evajdfw_skilldefendup"
 	},
@@ -2375,7 +2411,7 @@
 	},
 	"buff_hammerice_sr_level0_1": {
 		"name": "狂怒Ⅰ",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerice_sr_level0_1"
 	},
 	"buff_hammerice_sr_level0_2": {
@@ -2390,7 +2426,7 @@
 	},
 	"buff_hammerthu_ssr_level0_1": {
 		"name": "狂怒Ⅰ",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerthu_ssr_level0_1"
 	},
 	"buff_hammerthu_ssr_level0_4": {
@@ -2404,11 +2440,13 @@
 		"id": "buff_hammerthu_ssr_level0_5"
 	},
 	"buff_eleweakpoint_bigfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfhy"
 	},
 	"buff_eleweakpoint_smallfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfhy"
 	},
 	"buff_artifactssr006_display": {
@@ -2482,13 +2520,19 @@
 		"id": "wormhole_buff_smallthunder_phy"
 	},
 	"buff_cannonice_sr_level5_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_cannonice_sr_level5_1"
 	},
 	"buff_void_player_1001": {
 		"name": "祈愿",
 		"description": "获得任意一个3层效果时触发，队伍所有成员攻击、生命提高**25%**，每人最多触发一次",
 		"id": "buff_void_player_1001"
+	},
+	"buff_wantedcriminal": {
+		"name": "通缉中！",
+		"description": "由于犯下罪行而被通缉，需要前往安全的地方逃离追捕！",
+		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
 		"name": "强力坦克Ⅰ",
@@ -4092,17 +4136,17 @@
 	},
 	"buff_wormhole_dps1_level1": {
 		"name": "物理超算Ⅰ",
-		"description": "全攻+**2500**/4500/8000；物理伤害提升**25%**/45%/65%",
+		"description": "全攻+**500**/1000/1800；物理伤害提升**25%**/45%/65%",
 		"id": "buff_wormhole_dps1_level1"
 	},
 	"buff_wormhole_dps1_level2": {
 		"name": "物理超算Ⅱ",
-		"description": "全攻+2500/**4500**/8000；物理伤害提升25%/**45%**/65%",
+		"description": "全攻+500/**1000**/1800；物理伤害提升25%/**45%**/65%",
 		"id": "buff_wormhole_dps1_level2"
 	},
 	"buff_wormhole_dps1_level3": {
 		"name": "物理超算Ⅲ",
-		"description": "全攻+2500/4500/**8000**；物理伤害提升25%/45%/**65%**",
+		"description": "全攻+500/1000/**1800**；物理伤害提升25%/45%/**65%**",
 		"id": "buff_wormhole_dps1_level3"
 	},
 	"buff_wormhole_dps10_level1": {
@@ -4137,17 +4181,17 @@
 	},
 	"buff_wormhole_dps12_level1": {
 		"name": "元素爆裂Ⅰ",
-		"description": "全攻+**3800**/7000/12000，装备3种不同元素武器时暴击伤害提升**60%**/80%/100%",
+		"description": "全攻+**800**/1500/3000，装备3种不同元素武器时暴击伤害提升**60%**/80%/100%",
 		"id": "buff_wormhole_dps12_level1"
 	},
 	"buff_wormhole_dps12_level2": {
 		"name": "元素爆裂Ⅱ",
-		"description": "全攻+3800/**7000**/12000，装备3种不同元素武器时暴击伤害提升60%/**80%**/100%",
+		"description": "全攻+800/**1500**/3000，装备3种不同元素武器时暴击伤害提升60%/**80%**/100%",
 		"id": "buff_wormhole_dps12_level2"
 	},
 	"buff_wormhole_dps12_level3": {
 		"name": "元素爆裂Ⅲ",
-		"description": "全攻+3800/7000/**12000**，装备3种不同元素武器时暴击伤害提升60%/80%/**100%**",
+		"description": "全攻+800/1500/**3000**，装备3种不同元素武器时暴击伤害提升60%/80%/**100%**",
 		"id": "buff_wormhole_dps12_level3"
 	},
 	"buff_wormhole_dps13_level1": {
@@ -4167,22 +4211,22 @@
 	},
 	"buff_wormhole_dps14_level1": {
 		"name": "元素聚变Ⅰ",
-		"description": "全攻+**3800**/7000/12000，装备3种不同元素武器时，每次攻击有10%概率可以斩杀生命低于（**10%**/15%/20%+电子光环层数*3%）的目标",
+		"description": "全攻+**800**/1500/3000，装备3种不同元素武器时，每次攻击有10%概率可以斩杀生命低于（**10%**/15%/20%+电子光环层数*3%）的目标",
 		"id": "buff_wormhole_dps14_level1"
 	},
 	"buff_wormhole_dps14_level2": {
 		"name": "元素聚变Ⅱ",
-		"description": "全攻+3800/**7000**/12000，装备3种不同元素武器时，每次攻击有10%概率可以斩杀生命低于（10%/**15%**/20%+电子光环层数*3%）的目标",
+		"description": "全攻+800/**1500**/3000，装备3种不同元素武器时，每次攻击有10%概率可以斩杀生命低于（10%/**15%**/20%+电子光环层数*3%）的目标",
 		"id": "buff_wormhole_dps14_level2"
 	},
 	"buff_wormhole_dps14_level3": {
 		"name": "元素聚变Ⅲ",
-		"description": "全攻+3800/7000/**12000**，装备3种不同元素武器时，每次攻击有10%概率可以斩杀生命低于（10%/15%/**20%**+电子光环层数*3%）的目标",
+		"description": "全攻+800/1500/**3000**，装备3种不同元素武器时，每次攻击有10%概率可以斩杀生命低于（10%/15%/**20%**+电子光环层数*3%）的目标",
 		"id": "buff_wormhole_dps14_level3"
 	},
 	"buff_wormhole_dps15": {
 		"name": "电子光环",
-		"description": "全攻+**7000**，电子光环：全队伤害提升**15%**，可叠加4层",
+		"description": "全攻+**2000**，电子光环：全队伤害提升**15%**，可叠加4层",
 		"id": "buff_wormhole_dps15"
 	},
 	"buff_wormhole_dps15_allfriend_damup": {
@@ -4192,132 +4236,132 @@
 	},
 	"buff_wormhole_dps16_level1": {
 		"name": "完美超算Ⅰ",
-		"description": "全攻+**3800**/7000/12000，生命值高于70%，伤害额外增加**25%**/45%/67%",
+		"description": "全攻+**800**/1500/3000，生命值高于70%，伤害额外增加**25%**/45%/67%",
 		"id": "buff_wormhole_dps16_level1"
 	},
 	"buff_wormhole_dps16_level2": {
 		"name": "完美超算Ⅱ",
-		"description": "全攻+3800/**7000**/12000，生命值高于70%，伤害额外增加25%/**45%**/67%",
+		"description": "全攻+800/**1500**/3000，生命值高于70%，伤害额外增加25%/**45%**/67%",
 		"id": "buff_wormhole_dps16_level2"
 	},
 	"buff_wormhole_dps16_level3": {
 		"name": "完美超算Ⅲ",
-		"description": "全攻+3800/7000/**12000**，生命值高于70%，伤害额外增加25%/45%/**67%**",
+		"description": "全攻+800/1500/**3000**，生命值高于70%，伤害额外增加25%/45%/**67%**",
 		"id": "buff_wormhole_dps16_level3"
 	},
 	"buff_wormhole_dps2_level1": {
 		"name": "热能超算Ⅰ",
-		"description": "全攻+**2500**/4500/8000；火焰伤害提升**25%**/45%/65%",
+		"description": "全攻+**500**/1000/1800；火焰伤害提升**25%**/45%/65%",
 		"id": "buff_wormhole_dps2_level1"
 	},
 	"buff_wormhole_dps2_level2": {
 		"name": "热能超算Ⅱ",
-		"description": "全攻+2500/**4500**/8000；火焰伤害提升25%/**45%**/65%",
+		"description": "全攻+500/**1000**/1800；火焰伤害提升25%/**45%**/65%",
 		"id": "buff_wormhole_dps2_level2"
 	},
 	"buff_wormhole_dps2_level3": {
 		"name": "热能超算Ⅲ",
-		"description": "全攻+2500/4500/**8000**；火焰伤害提升25%/45%/**65%**",
+		"description": "全攻+500/1000/**1800**；火焰伤害提升25%/45%/**65%**",
 		"id": "buff_wormhole_dps2_level3"
 	},
 	"buff_wormhole_dps3_level1": {
 		"name": "急冻超算Ⅰ",
-		"description": "全攻+**2500**/4500/8000；寒冰伤害提升**25%**/45%/65%",
+		"description": "全攻+**500**/1000/1800；寒冰伤害提升**25%**/45%/65%",
 		"id": "buff_wormhole_dps3_level1"
 	},
 	"buff_wormhole_dps3_level2": {
 		"name": "急冻超算Ⅱ",
-		"description": "全攻+2500/**4500**/8000；寒冰伤害提升25%/**45%**/65%",
+		"description": "全攻+500/**1000**/1800；寒冰伤害提升25%/**45%**/65%",
 		"id": "buff_wormhole_dps3_level2"
 	},
 	"buff_wormhole_dps3_level3": {
 		"name": "急冻超算Ⅲ",
-		"description": "全攻+2500/4500/**8000**；寒冰伤害提升25%/45%/**65%**",
+		"description": "全攻+500/1000/**1800**；寒冰伤害提升25%/45%/**65%**",
 		"id": "buff_wormhole_dps3_level3"
 	},
 	"buff_wormhole_dps4_level1": {
 		"name": "磁能超算Ⅰ",
-		"description": "全攻+**2500**/4500/8000；雷电伤害提升**25%**/45%/65%",
+		"description": "全攻+**500**/1000/1800；雷电伤害提升**25%**/45%/65%",
 		"id": "buff_wormhole_dps4_level1"
 	},
 	"buff_wormhole_dps4_level2": {
 		"name": "磁能超算Ⅱ",
-		"description": "全攻+2500/**4500**/8000；雷电伤害提升25%/**45%**/65%",
+		"description": "全攻+500/**1000**/1800；雷电伤害提升25%/**45%**/65%",
 		"id": "buff_wormhole_dps4_level2"
 	},
 	"buff_wormhole_dps4_level3": {
 		"name": "磁能超算Ⅲ",
-		"description": "全攻+2500/4500/**8000**；雷电伤害提升25%/45%/**65%**",
+		"description": "全攻+500/1000/**1800**；雷电伤害提升25%/45%/**65%**",
 		"id": "buff_wormhole_dps4_level3"
 	},
 	"buff_wormhole_dps5_level1": {
 		"name": "暗影爆发Ⅰ",
-		"description": "全攻+**3800**/7000/12000；最终暴击率+**20%**/30%/40%且暴击伤害提升**40%**/60%/80%",
+		"description": "全攻+**800**/1500/3000；最终暴击率+**20%**/30%/40%且暴击伤害提升**40%**/60%/80%",
 		"id": "buff_wormhole_dps5_level1"
 	},
 	"buff_wormhole_dps5_level2": {
 		"name": "暗影爆发Ⅱ",
-		"description": "全攻+3800/**7000**/12000；最终暴击率+20%/**30%**/40%且暴击伤害提升40%/**60%**/80%",
+		"description": "全攻+800/**1500**/3000；最终暴击率+20%/**30%**/40%且暴击伤害提升40%/**60%**/80%",
 		"id": "buff_wormhole_dps5_level2"
 	},
 	"buff_wormhole_dps5_level3": {
 		"name": "暗影爆发Ⅲ",
-		"description": "全攻+3800/7000/**12000**；最终暴击率+20%/30%/**40%**且暴击伤害提升40%/60%/**80%**",
+		"description": "全攻+800/1500/**3000**；最终暴击率+20%/30%/**40%**且暴击伤害提升40%/60%/**80%**",
 		"id": "buff_wormhole_dps5_level3"
 	},
 	"buff_wormhole_dps6_level1": {
 		"name": "荆棘之心Ⅰ",
-		"description": "全攻+**3800**/7000/12000；每击败一只怪物获得**2.5%**/4%/5.5%伤害提升，最多叠加15层",
+		"description": "全攻+**800**/1500/3000；每击败一只怪物获得**2.5%**/4%/5.5%伤害提升，最多叠加15层",
 		"id": "buff_wormhole_dps6_level1"
 	},
 	"buff_wormhole_dps6_level2": {
 		"name": "荆棘之心Ⅱ",
-		"description": "全攻+3800/**7000**/12000；每击败一只怪物获得2.5%/**4%**/5.5%伤害提升，最多叠加15层",
+		"description": "全攻+800/**1500**/3000；每击败一只怪物获得2.5%/**4%**/5.5%伤害提升，最多叠加15层",
 		"id": "buff_wormhole_dps6_level2"
 	},
 	"buff_wormhole_dps6_level3": {
 		"name": "荆棘之心Ⅲ",
-		"description": "全攻+3800/7000/**12000**；每击败一只怪物获得2.5%/4%/**5.5%**伤害提升，最多叠加15层",
+		"description": "全攻+800/1500/**3000**；每击败一只怪物获得2.5%/4%/**5.5%**伤害提升，最多叠加15层",
 		"id": "buff_wormhole_dps6_level3"
 	},
 	"buff_wormhole_dps7_level1": {
 		"name": "超频计算Ⅰ",
-		"description": "全攻+**3800**/7000/12000；受到伤害提升20%，造成的伤害提升**40%**/60%/80%",
+		"description": "全攻+**800**/1500/3000；受到伤害提升20%，造成的伤害提升**40%**/60%/80%",
 		"id": "buff_wormhole_dps7_level1"
 	},
 	"buff_wormhole_dps7_level2": {
 		"name": "超频计算Ⅱ",
-		"description": "全攻+3800/**7000**/12000；受到伤害提升20%，造成的伤害提升40%/**60%**/80%",
+		"description": "全攻+800/**1500**/3000；受到伤害提升20%，造成的伤害提升40%/**60%**/80%",
 		"id": "buff_wormhole_dps7_level2"
 	},
 	"buff_wormhole_dps7_level3": {
 		"name": "超频计算Ⅲ",
-		"description": "全攻+3800/7000/**12000**；受到伤害提升20%，造成的伤害提升40%/60%/**80%**",
+		"description": "全攻+800/1500/**3000**；受到伤害提升20%，造成的伤害提升40%/60%/**80%**",
 		"id": "buff_wormhole_dps7_level3"
 	},
 	"buff_wormhole_dps8_level1": {
 		"name": "歼灭崩解Ⅰ",
-		"description": "全攻+**3800**/7000/12000；目标当前生命值低于目标自身最大生命值的**12%**/20%/25%时，攻击有10%概率直接斩杀",
+		"description": "全攻+**800**/1500/3000；目标当前生命值低于目标自身最大生命值的**12%**/20%/25%时，攻击有10%概率直接斩杀",
 		"id": "buff_wormhole_dps8_level1"
 	},
 	"buff_wormhole_dps8_level2": {
 		"name": "歼灭崩解Ⅱ",
-		"description": "全攻+3800/**7000**/12000；目标当前生命值低于目标自身最大生命值的12%/**20%**/25%时，攻击有10%概率直接斩杀",
+		"description": "全攻+800/**1500**/3000；目标当前生命值低于目标自身最大生命值的12%/**20%**/25%时，攻击有10%概率直接斩杀",
 		"id": "buff_wormhole_dps8_level2"
 	},
 	"buff_wormhole_dps8_level3": {
 		"name": "歼灭崩解Ⅲ",
-		"description": "全攻+3800/7000/**12000**；目标当前生命值低于目标自身最大生命值的12%/20%/**25%**时，攻击有10%概率直接斩杀",
+		"description": "全攻+800/1500/**3000**；目标当前生命值低于目标自身最大生命值的12%/20%/**25%**时，攻击有10%概率直接斩杀",
 		"id": "buff_wormhole_dps8_level3"
 	},
 	"buff_wormhole_dps9_level1": {
 		"name": "进阶感应Ⅰ",
-		"description": "全攻+**2500**/4500；自身所有武器星级+**2**/4",
+		"description": "全攻+**500**/1000；自身所有武器星级+**2**/4",
 		"id": "buff_wormhole_dps9_level1"
 	},
 	"buff_wormhole_dps9_level2": {
 		"name": "进阶感应Ⅱ",
-		"description": "全攻+2500/**4500**；自身所有武器星级+2/**4**",
+		"description": "全攻+500/**1000**；自身所有武器星级+2/**4**",
 		"id": "buff_wormhole_dps9_level2"
 	},
 	"buff_wormhole_tank1_level1": {
@@ -4352,17 +4396,17 @@
 	},
 	"buff_wormhole_tank11_level1": {
 		"name": "坚毅不倒Ⅰ",
-		"description": "生命+**18%**/30%/47%，生命值低于50%时获得**2000**/3500/5000点全抗，低于25%时再额外获得**1200**/2100/3000点全抗",
+		"description": "生命+**18%**/30%/47%，生命值低于50%时获得**600**/1000/1500点全抗，低于25%时再额外获得**500**/800/1200点全抗",
 		"id": "buff_wormhole_tank11_level1"
 	},
 	"buff_wormhole_tank11_level2": {
 		"name": "坚毅不倒Ⅱ",
-		"description": "生命+18%/**30%**/47%，生命值低于50%时获得2000/**3500**/5000点全抗，低于25%时再额外获得1200/**2100**/3000点全抗",
+		"description": "生命+18%/**30%**/47%，生命值低于50%时获得600/**1000**/1500点全抗，低于25%时再额外获得500/**800**/1200点全抗",
 		"id": "buff_wormhole_tank11_level2"
 	},
 	"buff_wormhole_tank11_level3": {
 		"name": "坚毅不倒Ⅲ",
-		"description": "生命+18%/30%/**47%**，生命值低于50%时获得2000/3500/**5000**点全抗，低于25%时再额外获得1200/2100/**3000**点全抗",
+		"description": "生命+18%/30%/**47%**，生命值低于50%时获得600/1000/**1500**点全抗，低于25%时再额外获得500/800/**1200**点全抗",
 		"id": "buff_wormhole_tank11_level3"
 	},
 	"buff_wormhole_tank2_level1": {
@@ -4601,132 +4645,163 @@
 		"id": "wormhole_monsterbuff_019"
 	},
 	"hookclone_buff_immenergy": {
+		"name": "",
 		"description": "**能量伤害免疫**",
 		"id": "hookclone_buff_immenergy"
 	},
 	"hookclone_buff_immfire": {
+		"name": "",
 		"description": "**火焰伤害免疫**",
 		"id": "hookclone_buff_immfire"
 	},
 	"hookclone_buff_immfirearms": {
+		"name": "",
 		"description": "**枪械类伤害免疫**",
 		"id": "hookclone_buff_immfirearms"
 	},
 	"hookclone_buff_immice": {
+		"name": "",
 		"description": "**寒冰伤害免疫**",
 		"id": "hookclone_buff_immice"
 	},
 	"hookclone_buff_immphy": {
+		"name": "",
 		"description": "**物理伤害免疫**",
 		"id": "hookclone_buff_immphy"
 	},
 	"hookclone_buff_immpuncture": {
+		"name": "",
 		"description": "**穿刺伤害免疫**",
 		"id": "hookclone_buff_immpuncture"
 	},
 	"hookclone_buff_immsharp": {
+		"name": "",
 		"description": "**利刃伤害免疫**",
 		"id": "hookclone_buff_immsharp"
 	},
 	"hookclone_buff_immstrength": {
+		"name": "",
 		"description": "**力量伤害免疫**",
 		"id": "hookclone_buff_immstrength"
 	},
 	"hookclone_buff_immthunder": {
+		"name": "",
 		"description": "**雷电伤害免疫**",
 		"id": "hookclone_buff_immthunder"
 	},
 	"hookclone_buff_smallenergy": {
+		"name": "",
 		"description": "**能量伤害抵抗50%**",
 		"id": "hookclone_buff_smallenergy"
 	},
 	"hookclone_buff_resistanceenergy": {
+		"name": "",
 		"description": "**能量伤害抵抗50%**",
 		"id": "hookclone_buff_resistanceenergy"
 	},
 	"hookclone_buff_smallfire": {
+		"name": "",
 		"description": "**火焰伤害抵抗50%**",
 		"id": "hookclone_buff_smallfire"
 	},
 	"hookclone_buff_resistancefire": {
+		"name": "",
 		"description": "**火焰伤害抵抗50%**",
 		"id": "hookclone_buff_resistancefire"
 	},
 	"hookclone_buff_smallfirearms": {
+		"name": "",
 		"description": "**枪械类伤害抵抗50%**",
 		"id": "hookclone_buff_smallfirearms"
 	},
 	"hookclone_buff_resistancefirearms": {
+		"name": "",
 		"description": "**枪械类伤害抵抗50%**",
 		"id": "hookclone_buff_resistancefirearms"
 	},
 	"hookclone_buff_smallice": {
+		"name": "",
 		"description": "**寒冰伤害抵抗50%**",
 		"id": "hookclone_buff_smallice"
 	},
 	"hookclone_buff_resistanceice": {
+		"name": "",
 		"description": "**寒冰伤害抵抗50%**",
 		"id": "hookclone_buff_resistanceice"
 	},
 	"hookclone_buff_smallphy": {
+		"name": "",
 		"description": "**物理伤害抵抗50%**",
 		"id": "hookclone_buff_smallphy"
 	},
 	"hookclone_buff_resistancephy": {
+		"name": "",
 		"description": "**物理伤害抵抗50%**",
 		"id": "hookclone_buff_resistancephy"
 	},
 	"hookclone_buff_smallpuncture": {
+		"name": "",
 		"description": "**穿刺伤害抵抗50%**",
 		"id": "hookclone_buff_smallpuncture"
 	},
 	"hookclone_buff_resistancepuncture": {
+		"name": "",
 		"description": "**穿刺伤害抵抗50%**",
 		"id": "hookclone_buff_resistancepuncture"
 	},
 	"hookclone_buff_smallsharp": {
+		"name": "",
 		"description": "**利刃伤害抵抗50%**",
 		"id": "hookclone_buff_smallsharp"
 	},
 	"hookclone_buff_resistancesharp": {
+		"name": "",
 		"description": "**利刃伤害抵抗50%**",
 		"id": "hookclone_buff_resistancesharp"
 	},
 	"hookclone_buff_smallstrength": {
+		"name": "",
 		"description": "**力量伤害抵抗50%**",
 		"id": "hookclone_buff_smallstrength"
 	},
 	"hookclone_buff_resistancestrength": {
+		"name": "",
 		"description": "**力量伤害抵抗50%**",
 		"id": "hookclone_buff_resistancestrength"
 	},
 	"hookclone_buff_smallthunder": {
+		"name": "",
 		"description": "**雷电伤害抵抗50%**",
 		"id": "hookclone_buff_smallthunder"
 	},
 	"hookclone_buff_resistancethunder": {
+		"name": "",
 		"description": "**雷电伤害抵抗50%**",
 		"id": "hookclone_buff_resistancethunder"
 	},
 	"hookclone_maxhp-20": {
+		"name": "",
 		"description": "**怪物血量降低20%**",
 		"id": "hookclone_maxhp-20"
 	},
 	"hookclone_maxhp100": {
+		"name": "",
 		"description": "**怪物血量提高100%**",
 		"id": "hookclone_maxhp100"
 	},
 	"hookclone_maxhp20": {
+		"name": "",
 		"description": "**怪物血量提高20%**",
 		"id": "hookclone_maxhp20"
 	},
 	"hookclone_maxhp50": {
+		"name": "",
 		"description": "**怪物血量提高50%**",
 		"id": "hookclone_maxhp50"
 	},
 	"buff_cubefire_ssr_level2def": {
 		"name": "每层降低1%受到的伤害，最多叠加15层。",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_cubefire_ssr_level2def"
 	},
 	"buff_cubefire_ssr_level4dam": {
@@ -5155,7 +5230,8 @@
 		"id": "buff_frozen_3s"
 	},
 	"buff_artifactssr006_stun": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_artifactssr006_stun"
 	},
 	"buff_sword_001_ssr_damageup": {
@@ -5638,6 +5714,41 @@
 		"description": "**9**把雷属性武器触发：每次释放技能后，获得带电buff，持续**10**秒。带电buff存在时间内玩家的所有普通攻击将会触发一次闪电链，触发间隔为**1**秒，伤害为**800%**攻击力不受增减伤影响的雷电伤害。闪电链会在敌人之间进行弹跳，最多弹跳**5**次。重复获得带电buff时刷新带电buff时长。",
 		"id": "buff_autochess_thunderlink_3"
 	},
+	"buff_ayanamirei_ice_ssr_resonance": {
+		"name": "寒冰共鸣",
+		"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。",
+		"id": "buff_ayanamirei_ice_ssr_resonance"
+	},
+	"buff_ayanamirei_level1": {
+		"name": "出击",
+		"description": "提升**12%**最终伤害",
+		"id": "buff_ayanamirei_level1"
+	},
+	"buff_ayanamirei_level2": {
+		"name": "守护",
+		"description": "最终伤害提升**18%**，激活**强攻共鸣**时：雷电伤害提升**8%**；激活**非强攻共鸣**时：**普攻-蓄力连珠**格挡效果提升至自身**0%**最大生命值，**普攻-弓箭速射**、**普攻-空中连射**的**缓速磁场**持续时间提升至**4**秒。",
+		"id": "buff_ayanamirei_level2"
+	},
+	"buff_ayanamirei_thunder_resonance": {
+		"name": "雷电共鸣",
+		"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。",
+		"id": "buff_ayanamirei_thunder_resonance"
+	},
+	"buff_ayanamireibedamagedown": {
+		"name": "格挡能力",
+		"description": "能够格挡最大不超过自身最大生命值的**10%**的伤害，持续**15**秒，玩家至多同时拥有三次格挡能力。",
+		"id": "buff_ayanamireibedamagedown"
+	},
+	"buff_ayanamireibedamagedown_imitationfeature": {
+		"name": "格挡能力",
+		"description": "能够格挡最大不超过自身最大生命值的**12%**的伤害，持续**15**秒，玩家至多同时拥有三次格挡能力。",
+		"id": "buff_ayanamireibedamagedown_imitationfeature"
+	},
+	"buff_ayanamireienergystate_damageup_level6": {
+		"name": "伤害提升",
+		"description": "提升**0%**雷电伤害与**1%**寒冰伤害，持续**2**秒。",
+		"id": "buff_ayanamireienergystate_damageup_level6"
+	},
 	"buff_professioncommon": {
 		"name": "武器共鸣:均衡",
 		"description": "最终伤害和最终减伤提高**5%**，破盾效率和治疗效果提高**20%**，组队玩法中最终伤害提高至**40%**和最终减伤提高至**15%**",
@@ -6039,6 +6150,7 @@
 		"id": "buff_cannonice_sr_level3_damage"
 	},
 	"buff_dsthu_ssr_level6_1": {
+		"name": "",
 		"description": "所受到的雷电伤害提高20%",
 		"id": "buff_dsthu_ssr_level6_1"
 	},
@@ -6088,10 +6200,12 @@
 		"id": "buff_matrix_n_2"
 	},
 	"buff_matrix_n_3": {
+		"name": "",
 		"description": "物伤提升**4%**",
 		"id": "buff_matrix_n_3"
 	},
 	"buff_matrix_n_4": {
+		"name": "",
 		"description": "雷伤提升**4%**",
 		"id": "buff_matrix_n_4"
 	},
@@ -6116,6 +6230,7 @@
 		"id": "buff_matrix_r_4_level1"
 	},
 	"buff_matrix_r_5_level1": {
+		"name": "",
 		"description": "枪械类武器增伤**6%**",
 		"id": "buff_matrix_r_5_level1"
 	},
@@ -6250,14 +6365,17 @@
 		"id": "buff_matrix_sr_8_level3"
 	},
 	"buff_matrix_sr_9_level1": {
+		"name": "",
 		"description": "幻时中获得**30%**吸血，每0.5秒内的最高回血量不超过攻击力的**60%**",
 		"id": "buff_matrix_sr_9_level1"
 	},
 	"buff_matrix_sr_9_level2": {
+		"name": "",
 		"description": "幻时中获得**36%**吸血，每0.5秒内的最高回血量不超过攻击力的**69%**",
 		"id": "buff_matrix_sr_9_level2"
 	},
 	"buff_matrix_sr_9_level3": {
+		"name": "",
 		"description": "幻时中获得**39%**吸血，每0.5秒内的最高回血量不超过攻击力的**73.5%**",
 		"id": "buff_matrix_sr_9_level3"
 	},
@@ -6277,14 +6395,17 @@
 		"id": "buff_matrix_sr_10_level3"
 	},
 	"buff_matrix_sr_11_level1": {
+		"name": "",
 		"description": "对生命低于**60%**的目标，暴伤提高**35%**",
 		"id": "buff_matrix_sr_11_level1"
 	},
 	"buff_matrix_sr_11_level2": {
+		"name": "",
 		"description": "对生命低于**60%**的目标，暴伤提高**44%**",
 		"id": "buff_matrix_sr_11_level2"
 	},
 	"buff_matrix_sr_11_level3": {
+		"name": "",
 		"description": "对生命低于**60%**的目标，暴伤提高**52.5%**",
 		"id": "buff_matrix_sr_11_level3"
 	},
@@ -6874,7 +6995,8 @@
 		"id": "ge_artifactr002_boom_level7"
 	},
 	"ge_commondeathbox": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "ge_commondeathbox"
 	},
 	"buff_matrix_ssr_1_level1_1": {
@@ -6993,7 +7115,8 @@
 		"id": "buff_gve_atk_level4"
 	},
 	"buff_gve_bedamage_dowm25": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_bedamage_dowm25"
 	},
 	"buff_gve_bedamageup_fire_l1": {
@@ -7187,11 +7310,13 @@
 		"id": "buff_gve_evadeattack_damup_level3"
 	},
 	"buff_gve_expup": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_expup"
 	},
 	"buff_gve_extradamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_extradamage_level1"
 	},
 	"buff_gve_finaldamagedown_20per": {
@@ -7205,11 +7330,13 @@
 		"id": "buff_gve_finaldamageup_20per"
 	},
 	"buff_gve_fireatk_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_fireatk_level1"
 	},
 	"buff_gve_firedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_firedamage_level1"
 	},
 	"buff_gve_firedamagelevel1": {
@@ -7268,15 +7395,18 @@
 		"id": "buff_gve_firstaid"
 	},
 	"buff_gve_halo": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_halo"
 	},
 	"buff_gve_iceatk_level1": {
+		"name": "",
 		"description": "寒冰攻击提升15%",
 		"id": "buff_gve_iceatk_level1"
 	},
 	"buff_gve_icedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_icedamage_level1"
 	},
 	"buff_gve_icedamagelevel1": {
@@ -7370,11 +7500,13 @@
 		"id": "buff_gve_immdamage_thunder"
 	},
 	"buff_gve_immunedamagecd_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_immunedamagecd_level1"
 	},
 	"buff_gve_jinji_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_jinji_level1"
 	},
 	"buff_gve_kill_l1": {
@@ -7393,7 +7525,8 @@
 		"id": "buff_gve_kill_l3"
 	},
 	"buff_gve_kill_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_kill_level1"
 	},
 	"buff_gve_linktime_l1": {
@@ -7437,11 +7570,13 @@
 		"id": "buff_gve_miansi_level2"
 	},
 	"buff_gve_phyatk_level1": {
+		"name": "",
 		"description": "物理攻击提升15%",
 		"id": "buff_gve_phyatk_level1"
 	},
 	"buff_gve_phydamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_phydamage_level1"
 	},
 	"buff_gve_phydamagelevel1": {
@@ -7695,12 +7830,204 @@
 		"id": "buff_gve_thuextradam_level3"
 	},
 	"buff_gve_thunderatk_level1": {
+		"name": "",
 		"description": "雷电攻击提升15%",
 		"id": "buff_gve_thunderatk_level1"
 	},
 	"buff_gve_thunderdamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_thunderdamage_level1"
+	},
+	"buff_gwzj_battlefield1": {
+		"name": "临界之渊玩法加成",
+		"description": "技能冷却时间减少80%",
+		"id": "buff_gwzj_battlefield1"
+	},
+	"buff_gwzj_levyclone3": {
+		"name": "讨伐作战",
+		"description": "提高玩家血量100%、抗性50%，获得60%免伤率",
+		"id": "buff_gwzj_levyclone3"
+	},
+	"buff_gwzj_ordinal1_level1": {
+		"name": "诺恩联邦蓝图",
+		"description": "超级隐藏BOSS出现概率增加20%",
+		"id": "buff_gwzj_ordinal1_level1"
+	},
+	"buff_gwzj_ordinal1_level2": {
+		"name": "诺恩联邦蓝图",
+		"description": "超级隐藏BOSS出现概率增加20%",
+		"id": "buff_gwzj_ordinal1_level2"
+	},
+	"buff_gwzj_ordinal1_level3": {
+		"name": "诺恩联邦蓝图",
+		"description": "超级隐藏BOSS出现概率增加60%",
+		"id": "buff_gwzj_ordinal1_level3"
+	},
+	"buff_gwzj_ordinal10_level1": {
+		"name": "修德尔电子蓝图",
+		"description": "获得10%暴击率",
+		"id": "buff_gwzj_ordinal10_level1"
+	},
+	"buff_gwzj_ordinal10_level2": {
+		"name": "修德尔电子蓝图",
+		"description": "暴伤提升20%",
+		"id": "buff_gwzj_ordinal10_level2"
+	},
+	"buff_gwzj_ordinal10_level3": {
+		"name": "修德尔电子蓝图",
+		"description": "暴伤提升40%",
+		"id": "buff_gwzj_ordinal10_level3"
+	},
+	"buff_gwzj_ordinal2_level1": {
+		"name": "未来人类蓝图",
+		"description": "最终伤害提升10%",
+		"id": "buff_gwzj_ordinal2_level1"
+	},
+	"buff_gwzj_ordinal2_level2": {
+		"name": "未来人类蓝图",
+		"description": "获得霸体",
+		"id": "buff_gwzj_ordinal2_level2"
+	},
+	"buff_gwzj_ordinal2_level3": {
+		"name": "未来人类蓝图",
+		"description": "最终伤害提升12%",
+		"id": "buff_gwzj_ordinal2_level3"
+	},
+	"buff_gwzj_ordinal3_level1": {
+		"name": "蔚色艾达蓝图",
+		"description": "攻击提升10%",
+		"id": "buff_gwzj_ordinal3_level1"
+	},
+	"buff_gwzj_ordinal3_level2": {
+		"name": "蔚色艾达蓝图",
+		"description": "攻击附带目标0.4%最大生命值的伤害，冷却时间5秒",
+		"id": "buff_gwzj_ordinal3_level2"
+	},
+	"buff_gwzj_ordinal3_level3": {
+		"name": "蔚色艾达蓝图",
+		"description": "攻击附带目标0.6%最大生命值的伤害，冷却时间5秒",
+		"id": "buff_gwzj_ordinal3_level3"
+	},
+	"buff_gwzj_ordinal4_level1": {
+		"name": "九舟建造蓝图",
+		"description": "血量提升16%",
+		"id": "buff_gwzj_ordinal4_level1"
+	},
+	"buff_gwzj_ordinal4_level2": {
+		"name": "九舟建造蓝图",
+		"description": "每5秒恢复自身已损失血量的20%",
+		"id": "buff_gwzj_ordinal4_level2"
+	},
+	"buff_gwzj_ordinal4_level3": {
+		"name": "九舟建造蓝图",
+		"description": "每5秒恢复自身已损失血量的30%",
+		"id": "buff_gwzj_ordinal4_level3"
+	},
+	"buff_gwzj_ordinal5_level1": {
+		"name": "亚夏洲蓝图",
+		"description": "释放连携后获得250点充能值",
+		"id": "buff_gwzj_ordinal5_level1"
+	},
+	"buff_gwzj_ordinal5_level2": {
+		"name": "亚夏洲蓝图",
+		"description": "入战时获得1000点充能值",
+		"id": "buff_gwzj_ordinal5_level2"
+	},
+	"buff_gwzj_ordinal5_level3": {
+		"name": "亚夏洲蓝图",
+		"description": "释放连携后，玩家最终伤害提升12%，持续10秒",
+		"id": "buff_gwzj_ordinal5_level3"
+	},
+	"buff_gwzj_ordinal6_level1": {
+		"name": "演算方舟蓝图",
+		"description": "周围8米内目标的攻击力下降10%",
+		"id": "buff_gwzj_ordinal6_level1"
+	},
+	"buff_gwzj_ordinal6_level2": {
+		"name": "演算方舟蓝图",
+		"description": "每5秒获得自身生命值20%的护盾",
+		"id": "buff_gwzj_ordinal6_level2"
+	},
+	"buff_gwzj_ordinal6_level3": {
+		"name": "演算方舟蓝图",
+		"description": "护盾状态下玩家最终伤害提升12%",
+		"id": "buff_gwzj_ordinal6_level3"
+	},
+	"buff_gwzj_ordinal7_level1": {
+		"name": "治安管理局蓝图",
+		"description": "全抗提升20%",
+		"id": "buff_gwzj_ordinal7_level1"
+	},
+	"buff_gwzj_ordinal7_level2": {
+		"name": "治安管理局蓝图",
+		"description": "减免伤害20%",
+		"id": "buff_gwzj_ordinal7_level2"
+	},
+	"buff_gwzj_ordinal7_level3": {
+		"name": "治安管理局蓝图",
+		"description": "减免伤害30%",
+		"id": "buff_gwzj_ordinal7_level3"
+	},
+	"buff_gwzj_ordinal8_level1": {
+		"name": "防卫军蓝图",
+		"description": "治疗效果提升20%",
+		"id": "buff_gwzj_ordinal8_level1"
+	},
+	"buff_gwzj_ordinal8_level2": {
+		"name": "防卫军蓝图",
+		"description": "受到治疗后，最终伤害提升6%，持续5秒",
+		"id": "buff_gwzj_ordinal8_level2"
+	},
+	"buff_gwzj_ordinal8_level3": {
+		"name": "防卫军蓝图",
+		"description": "受到治疗后，最终伤害提升12%，持续5秒",
+		"id": "buff_gwzj_ordinal8_level3"
+	},
+	"buff_gwzj_ordinal9_level1": {
+		"name": "极光工业蓝图",
+		"description": "破盾效率提升30%",
+		"id": "buff_gwzj_ordinal9_level1"
+	},
+	"buff_gwzj_ordinal9_level2": {
+		"name": "极光工业蓝图",
+		"description": "对护盾状态下的目标最终伤害提升15%",
+		"id": "buff_gwzj_ordinal9_level2"
+	},
+	"buff_gwzj_ordinal9_level3": {
+		"name": "极光工业蓝图",
+		"description": "对护盾状态下的目标最终伤害提升25%",
+		"id": "buff_gwzj_ordinal9_level3"
+	},
+	"buff_gwzj_ordinalsolo": {
+		"name": "勇者之力",
+		"description": "最终伤害提升400%，血量提升200%",
+		"id": "buff_gwzj_ordinalsolo"
+	},
+	"buff_gwzj_teamclone3": {
+		"name": "联合作战玩法加成",
+		"description": "释放连携技重置技能CD（平衡模式也生效）",
+		"id": "buff_gwzj_teamclone3"
+	},
+	"buff_gwzj_voidclone1": {
+		"name": "虚空裂隙玩法加成",
+		"description": "提升武器充能效率50%（虚空深渊也生效）",
+		"id": "buff_gwzj_voidclone1"
+	},
+	"buff_gwzj_voidclone3": {
+		"name": "虚空裂隙玩法加成",
+		"description": "10秒内每闪避2次回复1次（虚空深渊也生效）",
+		"id": "buff_gwzj_voidclone3"
+	},
+	"buff_gwzj_worldboss3": {
+		"name": "边境战区玩法加成",
+		"description": "技能CD减少80%",
+		"id": "buff_gwzj_worldboss3"
+	},
+	"buff_gwzj_worldboss4": {
+		"name": "边境战区玩法加成",
+		"description": "源器CD减少90%",
+		"id": "buff_gwzj_worldboss4"
 	},
 	"buff_bailing_level1": {
 		"name": "白伶-勇气",
@@ -8407,6 +8734,11 @@
 		"description": "被黄色云墨缠身，对拥有异色云墨护盾的三色狐造成的伤害提升170%",
 		"id": "buff_mon_186_yellow_flower_player"
 	},
+	"buff_mon_192_thunderlinkforplay": {
+		"name": "WL-6电极",
+		"description": "被WL-6赋予电极效果，与WL-6处于一定距离内时每隔一段时间会收到电击伤害。",
+		"id": "buff_mon_192_thunderlinkforplay"
+	},
 	"buff_shiro_atkup_level1": {
 		"name": "伤害提升",
 		"description": "全攻提高**10%**，物攻额外提高**7%**，持续**8**秒，冷却**16**秒。",
@@ -8579,52 +8911,52 @@
 	},
 	"buff_lucktarrow_01": {
 		"name": "极致充能",
-		"description": "充能效率提升100%",
+		"description": "充能效率提升30%",
 		"id": "buff_lucktarrow_01"
 	},
 	"buff_lucktarrow_02": {
 		"name": "治疗",
-		"description": "治疗效果提升20%",
+		"description": "治疗效果提升45%",
 		"id": "buff_lucktarrow_02"
 	},
 	"buff_lucktarrow_03": {
 		"name": "寒冰",
-		"description": "怪物受到冰伤害提升20%",
+		"description": "怪物受到冰伤害提升40%",
 		"id": "buff_lucktarrow_03"
 	},
 	"buff_lucktarrow_04": {
 		"name": "火焰",
-		"description": "怪物受到火伤害提升20%",
+		"description": "怪物受到火伤害提升40%",
 		"id": "buff_lucktarrow_04"
 	},
 	"buff_lucktarrow_05": {
 		"name": "雷电",
-		"description": "怪物受到雷伤害提升20%",
+		"description": "怪物受到雷伤害提升40%",
 		"id": "buff_lucktarrow_05"
 	},
 	"buff_lucktarrow_06": {
 		"name": "物理",
-		"description": "怪物受到物理伤害提升20%",
+		"description": "怪物受到物理伤害提升40%",
 		"id": "buff_lucktarrow_06"
 	},
 	"buff_lucktarrow_07": {
 		"name": "恐惧",
-		"description": "怪物伤害提升20%",
+		"description": "怪物伤害提升40%",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "惊吓",
-		"description": "怪物攻击提升20%",
+		"description": "怪物攻击提升40%",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
 		"name": "坚韧",
-		"description": "怪物抗性提升50%",
+		"description": "怪物抗性提升100%",
 		"id": "buff_lucktarrow_09"
 	},
 	"buff_lucktarrow_10": {
 		"name": "强击",
-		"description": "怪物护盾状态下每10秒造成一次392%攻击力的伤害",
+		"description": "怪物护盾状态下每10秒造成一次300%攻击力的伤害",
 		"id": "buff_lucktarrow_10"
 	},
 	"buff_bati_artifact_ssr_011_1star": {
@@ -8649,7 +8981,7 @@
 	},
 	"buff_chiji_effect": {
 		"name": "原能辐射",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_chiji_effect"
 	},
 	"buff_chiji_finaldmgup_40per": {
@@ -9401,6 +9733,16 @@
 		"name": "福佑",
 		"description": "任意己方斗兽血量低于30%时，恢复其最大血量35%。仅可触发一次",
 		"id": "mainbuff_fightmonster_replyhp_lowhp_level01"
+	},
+	"mainbuff_norncanteen_grill": {
+		"name": "烤鱼祝福",
+		"description": "物伤增加15%，每10秒使下一次闪避不消耗次数，最多储存1次。持续30分钟",
+		"id": "mainbuff_norncanteen_grill"
+	},
+	"mainbuff_norncanteen_sushi": {
+		"name": "寿司祝福",
+		"description": "冰伤增加15%，每20秒使下一次自身受到的伤害降低50%，最多储存1次。持续30分钟",
+		"id": "mainbuff_norncanteen_sushi"
 	},
 	"buff_tfb_drop_2x": {
 		"name": "联合作战幸运Ⅰ",
@@ -10157,6 +10499,71 @@
 		"description": "对异常状态目标伤害提升**20%**",
 		"id": "buff_matrix_ssr9_sea_level4"
 	},
+	"buff_matrix_ssr90_atkupcommon": {
+		"name": "寒冰/雷电攻击提升",
+		"description": "寒冰攻击，雷电攻击提升**0%**，持续**1**秒",
+		"id": "buff_matrix_ssr90_atkupcommon"
+	},
+	"buff_matrix_ssr90_level1": {
+		"name": "零之轮回",
+		"description": "最终伤害提升**0%**，**救赎**造成伤害后，雷电和寒冰攻击提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr90_level1"
+	},
+	"buff_matrix_ssr90_level2": {
+		"name": "零之轮回",
+		"description": "最终伤害提升**0%**，**救赎**造成伤害后，雷电和寒冰攻击提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr90_level2"
+	},
+	"buff_matrix_ssr90_level3": {
+		"name": "零之轮回",
+		"description": "最终伤害提升**0%**，**救赎**造成伤害后，雷电和寒冰攻击提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr90_level3"
+	},
+	"buff_matrix_ssr90_level4": {
+		"name": "零之轮回",
+		"description": "最终伤害提升**0%**，**救赎**造成伤害后，雷电和寒冰攻击提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr90_level4"
+	},
+	"buff_matrix_ssr91_level1": {
+		"name": "洞微",
+		"description": "火焰攻击提升**0%**，**技能-以身入局**每次落子对棋盘内所有目标额外造成**120%***攻击力伤害。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr91_level1"
+	},
+	"buff_matrix_ssr91_level2": {
+		"name": "洞微",
+		"description": "火焰攻击提升**0%**，**技能-以身入局**每次落子对棋盘内所有目标额外造成**120%***攻击力伤害。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr91_level2"
+	},
+	"buff_matrix_ssr91_level3": {
+		"name": "洞微",
+		"description": "火焰攻击提升**0%**，**技能-以身入局**每次落子对棋盘内所有目标额外造成**120%***攻击力伤害。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr91_level3"
+	},
+	"buff_matrix_ssr91_level4": {
+		"name": "洞微",
+		"description": "火焰攻击提升**0%**，**技能-以身入局**每次落子对棋盘内所有目标额外造成**120%***攻击力伤害。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr91_level4"
+	},
+	"buff_matrix_ssr92_level1": {
+		"name": "洞微",
+		"description": "最终伤害提升**0%**，装备**纵横**时暴击伤害提升**1%**，进入战斗状态时额外获得**9**层**技能-落子无悔**效果。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr92_level1"
+	},
+	"buff_matrix_ssr92_level2": {
+		"name": "洞微",
+		"description": "最终伤害提升**0%**，装备**纵横**时暴击伤害提升**1%**，进入战斗状态时额外获得**9**层**技能-落子无悔**效果。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr92_level2"
+	},
+	"buff_matrix_ssr92_level3": {
+		"name": "洞微",
+		"description": "最终伤害提升**0%**，装备**纵横**时暴击伤害提升**1%**，进入战斗状态时额外获得**9**层**技能-落子无悔**效果。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr92_level3"
+	},
+	"buff_matrix_ssr92_level4": {
+		"name": "洞微",
+		"description": "最终伤害提升**0%**，装备**纵横**时暴击伤害提升**1%**，进入战斗状态时额外获得**9**层**技能-落子无悔**效果。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr92_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "考恩特Ⅱ型-守护",
 		"description": "获得增伤比例**50%**的防御值提升，并在接下来的时间内免疫硬直效果",
@@ -10816,6 +11223,71 @@
 		"name": "防御降低",
 		"description": "全属性防御降低**20%**",
 		"id": "buff_def_decrease"
+	},
+	"buff_dfishchess_arealevelstackcount": {
+		"name": "布阵",
+		"description": "每层提升场域额外**0%**伤害，最多叠加**8**层。",
+		"id": "buff_dfishchess_arealevelstackcount"
+	},
+	"buff_dfishchess_changeskilladdimmstatus": {
+		"name": "灼心",
+		"description": "释放火焰武器连携时，获得**8**秒的霸体效果。",
+		"id": "buff_dfishchess_changeskilladdimmstatus"
+	},
+	"buff_dfishchess_chessenhancestackcount": {
+		"name": "落子无悔",
+		"description": "落子时消耗**1**层，此次伤害额外增加**0%**伤害。",
+		"id": "buff_dfishchess_chessenhancestackcount"
+	},
+	"buff_dfishchess_chessenhancestackcount_level1": {
+		"name": "落子无悔",
+		"description": "落子时消耗**1**层，此次伤害额外增加**0%**伤害。",
+		"id": "buff_dfishchess_chessenhancestackcount_level1"
+	},
+	"buff_dfishchess_declinespeedcut_in1s": {
+		"name": "碧血",
+		"description": "速度降低**100%**，**1**秒内衰减。",
+		"id": "buff_dfishchess_declinespeedcut_in1s"
+	},
+	"buff_dfishchess_declinespeedcut_in3s": {
+		"name": "丹心",
+		"description": "速度降低**100%**，**3**秒内衰减。",
+		"id": "buff_dfishchess_declinespeedcut_in3s"
+	},
+	"buff_dfishchess_firedmgup_level0": {
+		"name": "焚阳",
+		"description": "提高**0%**的火焰伤害，最多叠加**8**层。",
+		"id": "buff_dfishchess_firedmgup_level0"
+	},
+	"buff_dfishchess_firedmgup_level6": {
+		"name": "焚阳",
+		"description": "提高**0%**的火焰伤害，最多叠加**8**层。",
+		"id": "buff_dfishchess_firedmgup_level6"
+	},
+	"buff_dfishchess_flame_ssr_level0_resonance": {
+		"name": "火焰共鸣",
+		"description": "**火焰共鸣**：装备**2**把及以上火焰武器触发，提升**15%**火攻和**25%**火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）",
+		"id": "buff_dfishchess_flame_ssr_level0_resonance"
+	},
+	"buff_dfishchess_immdeathandrecoverall": {
+		"name": "昭世",
+		"description": "以身入局期间，受到伤害减低**0%**，受到致命伤害时，抵挡该次伤害，立即生命恢复至上限，生效后移除。",
+		"id": "buff_dfishchess_immdeathandrecoverall"
+	},
+	"buff_dfishchess_level3": {
+		"name": "落霞",
+		"description": "造成伤害时，无视场域内怪物**0%**火焰抗性。",
+		"id": "buff_dfishchess_level3"
+	},
+	"buff_dfishchess_physic_ssr_level0_resonance": {
+		"name": "物理共鸣",
+		"description": "**物理共鸣**：装备**2**把及以上物理武器触发，提升**15%**物攻和**25%**物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。",
+		"id": "buff_dfishchess_physic_ssr_level0_resonance"
+	},
+	"buff_dfishchessfire_ssr_level0_firespecial": {
+		"name": "天元",
+		"description": "**天元-驻场**：**纵横**任意攻击命中时，对附近目标造成**0%***火攻+**1%***自身最大生命值+**2%***各元素抗性之和+**3%***暴击值点伤害，每**1.5**秒至多触发一次，天元伤害视为普攻伤害，若装备任意**1**把寒冰/雷电武器，则天元伤害提升至**4**倍。此外，天元伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
+		"id": "buff_dfishchessfire_ssr_level0_firespecial"
 	},
 	"buff_specialitem_003_speedcut": {
 		"name": "冷冻枪",
@@ -11533,7 +12005,8 @@
 		"id": "buff_void_boss_502"
 	},
 	"buff_void_boss_601": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_void_boss_601"
 	},
 	"buff_void_halohealdown": {
@@ -11832,18 +12305,22 @@
 		"id": "buff_banbigbubble_15s_artifact_ssr_020"
 	},
 	"buff_teamclone_smallice120": {
+		"name": "弱冰",
 		"description": "怪受到冰伤提高",
 		"id": "buff_teamclone_smallice120"
 	},
 	"buff_teamclone_smallfire120": {
+		"name": "弱火",
 		"description": "怪受到火伤提高",
 		"id": "buff_teamclone_smallfire120"
 	},
 	"buff_teamclone_smallphy120": {
+		"name": "弱物",
 		"description": "怪受到物伤提高",
 		"id": "buff_teamclone_smallphy120"
 	},
 	"buff_teamclone_smallthunder120": {
+		"name": "弱雷",
 		"description": "怪受到雷伤提高",
 		"id": "buff_teamclone_smallthunder120"
 	},
@@ -12386,6 +12863,11 @@
 		"name": "捣蛋鬼",
 		"description": "对生命值低于**80%**的目标造成伤害时，自身物理伤害提升**0%**",
 		"id": "buff_chainsaw_ssr_level0damup"
+	},
+	"buff_changebodyscale": {
+		"name": "菌菇巨化",
+		"description": "体型巨化，持续期间最大生命提升并获得霸体，攻击目标时附带大量额外伤害（只对怪物生效），额外伤害冷却**1**秒，巨化效果持续**60**秒（死亡、传送切场景、离开BOSS区域均立刻解除）。",
+		"id": "buff_changebodyscale"
 	},
 	"buff_matrix_ssr35_level1_attackup": {
 		"name": "不夜城之夜",
@@ -14032,6 +14514,31 @@
 		"description": "全元素伤害提升**0%**。上阵朗基努斯枪额外提升**1%**最终伤害，且复仇伤害提升至**2%**。激活**坚毅共鸣**时，造成仇恨值提升{3%装备后后台可生效，多套只生效最高星级。",
 		"id": "buff_matrix_ssr88_level4"
 	},
+	"buff_matrix_ssr89_iceandthunderdefdown": {
+		"name": "抗性降低",
+		"description": "雷抗/冰抗降低**0%**，持续**1**秒",
+		"id": "buff_matrix_ssr89_iceandthunderdefdown"
+	},
+	"buff_matrix_ssr89_level1": {
+		"name": "零之轮回",
+		"description": "雷电和寒冰伤害提升**0%**，装备**救赎**后，自身获得无视目标**1%**雷抗效果与冰抗效果（所有单个元素无视抗性总值不能超过**50%**）。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr89_level1"
+	},
+	"buff_matrix_ssr89_level2": {
+		"name": "零之轮回",
+		"description": "雷电和寒冰伤害提升**0%**，装备**救赎**后，自身获得无视目标**1%**雷抗效果与冰抗效果（所有单个元素无视抗性总值不能超过**50%**）。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr89_level2"
+	},
+	"buff_matrix_ssr89_level3": {
+		"name": "零之轮回",
+		"description": "雷电和寒冰伤害提升**0%**，装备**救赎**后，自身获得无视目标**1%**雷抗效果与冰抗效果（所有单个元素无视抗性总值不能超过**50%**）。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr89_level3"
+	},
+	"buff_matrix_ssr89_level4": {
+		"name": "零之轮回",
+		"description": "雷电和寒冰伤害提升**0%**，装备**救赎**后，自身获得无视目标**1%**雷抗效果与冰抗效果（所有单个元素无视抗性总值不能超过**50%**）。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr89_level4"
+	},
 	"buff_hammerice_sr_level3_reducedamage20_breakfate": {
 		"name": "减伤",
 		"description": "接下来的6秒内受到的伤害减少10%",
@@ -14508,35 +15015,43 @@
 		"id": "buff_lawplayer_main"
 	},
 	"buff_level_balance_mon_01": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_01"
 	},
 	"buff_level_balance_mon_02": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_02"
 	},
 	"buff_level_balance_mon_03": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_03"
 	},
 	"buff_level_balance_mon_04": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_04"
 	},
 	"buff_level_balance_mon_44": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_44"
 	},
 	"buff_level_balance_mon_45": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_45"
 	},
 	"buff_level_balance_mon_46": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_46"
 	},
 	"buff_level_balance_mon_47": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_47"
 	},
 	"buff_lawfriend_addsuceee": {
@@ -14649,6 +15164,11 @@
 		"description": "每层buff使该武器星级**+1**，如果星级溢出，溢出部分每层使该武器伤害提升**5%**。",
 		"id": "buff_bigsecret_upstar_ssr_asuka_phy"
 	},
+	"buff_bigsecret_upstar_ssr_ayanamirei_thunder": {
+		"name": "救赎",
+		"description": "每层buff使该武器星级**+1**，如果星级溢出，溢出部分每层使该武器伤害提升**5%**。",
+		"id": "buff_bigsecret_upstar_ssr_ayanamirei_thunder"
+	},
 	"buff_bigsecret_upstar_ssr_bigsword_ice": {
 		"name": "蔷薇之锋",
 		"description": "每层buff使该武器星级**+1**，如果星级溢出，溢出部分每层使该武器伤害提升**5%**。",
@@ -14738,6 +15258,11 @@
 		"name": "阿赖耶识",
 		"description": "每层buff使该武器星级**+1**，如果星级溢出，溢出部分每层使该武器伤害提升**5%**。",
 		"id": "buff_bigsecret_upstar_ssr_immortal_thunder"
+	},
+	"buff_bigsecret_upstar_ssr_jiyu_fire": {
+		"name": "纵横",
+		"description": "每层buff使该武器星级**+1**，如果星级溢出，溢出部分每层使该武器伤害提升**5%**。",
+		"id": "buff_bigsecret_upstar_ssr_jiyu_fire"
 	},
 	"buff_bigsecret_upstar_ssr_lances_ice": {
 		"name": "坏家伙",
@@ -15484,79 +16009,94 @@
 		"description": "玩家只能造成火焰或者雷电伤害，其他属性伤害无效",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_nornbeach_star": {
+		"name": "浪花之星",
+		"description": "时间不多啦！快去找下一颗星！",
+		"id": "buff_nornbeach_star"
+	},
+	"buff_norncanteen_baozi_thunderdamageup": {
+		"name": "汤包祝福",
+		"description": "雷伤增加15%，移动速度增加15%。持续30分钟",
+		"id": "buff_norncanteen_baozi_thunderdamageup"
+	},
+	"buff_norncanteen_tofu_firedamageup": {
+		"name": "豆腐祝福",
+		"description": "火伤增加15%，跳跃高度增加20%。持续30分钟",
+		"id": "buff_norncanteen_tofu_firedamageup"
+	},
 	"buff_origin_atkfire_level1": {
 		"name": "烈焰I",
-		"description": "攻击命中后附加攻击力**2000%**不受增减效果的火焰伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**10000%**不受增减效果的火焰伤害，冷却**2**秒",
 		"id": "buff_origin_atkfire_level1"
 	},
 	"buff_origin_atkfire_level2": {
 		"name": "烈焰II",
-		"description": "攻击命中后附加攻击力**3000%**不受增减效果的火焰伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**15000%**不受增减效果的火焰伤害，冷却**2**秒",
 		"id": "buff_origin_atkfire_level2"
 	},
 	"buff_origin_atkfire_level3": {
 		"name": "烈焰III",
-		"description": "攻击命中后附加攻击力**4000%**不受增减效果的火焰伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**20000%**不受增减效果的火焰伤害，冷却**2**秒",
 		"id": "buff_origin_atkfire_level3"
 	},
 	"buff_origin_atkice_level1": {
 		"name": "冰霜I",
-		"description": "攻击命中后附加攻击力**2000%**不受增减效果的寒冰伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**10000%**不受增减效果的寒冰伤害，冷却**2**秒",
 		"id": "buff_origin_atkice_level1"
 	},
 	"buff_origin_atkice_level2": {
 		"name": "冰霜II",
-		"description": "攻击命中后附加攻击力**3000%**不受增减效果的寒冰伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**15000%**不受增减效果的寒冰伤害，冷却**2**秒",
 		"id": "buff_origin_atkice_level2"
 	},
 	"buff_origin_atkice_level3": {
 		"name": "冰霜III",
-		"description": "攻击命中后附加攻击力**4000%**不受增减效果的寒冰伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**20000%**不受增减效果的寒冰伤害，冷却**2**秒",
 		"id": "buff_origin_atkice_level3"
 	},
 	"buff_origin_atkphy_level1": {
 		"name": "重击I",
-		"description": "攻击命中后附加攻击力**2000%**不受增减效果的物理伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**10000%**不受增减效果的物理伤害，冷却**2**秒",
 		"id": "buff_origin_atkphy_level1"
 	},
 	"buff_origin_atkphy_level2": {
 		"name": "重击II",
-		"description": "攻击命中后附加攻击力**3000%**不受增减效果的物理伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**15000%**不受增减效果的物理伤害，冷却**2**秒",
 		"id": "buff_origin_atkphy_level2"
 	},
 	"buff_origin_atkphy_level3": {
 		"name": "重击III",
-		"description": "攻击命中后附加攻击力**4000%**不受增减效果的物理伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**20000%**不受增减效果的物理伤害，冷却**2**秒",
 		"id": "buff_origin_atkphy_level3"
 	},
 	"buff_origin_atksuper_level1": {
 		"name": "聚能I",
-		"description": "攻击命中后附加攻击力**2000%**不受增减效果的异能伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**10000%**不受增减效果的异能伤害，冷却**2**秒",
 		"id": "buff_origin_atksuper_level1"
 	},
 	"buff_origin_atksuper_level2": {
 		"name": "聚能II",
-		"description": "攻击命中后附加攻击力**3000%**不受增减效果的异能伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**15000%**不受增减效果的异能伤害，冷却**2**秒",
 		"id": "buff_origin_atksuper_level2"
 	},
 	"buff_origin_atksuper_level3": {
 		"name": "聚能III",
-		"description": "攻击命中后附加攻击力**4000%**不受增减效果的异能伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**20000%**不受增减效果的异能伤害，冷却**2**秒",
 		"id": "buff_origin_atksuper_level3"
 	},
 	"buff_origin_atkthu_level1": {
 		"name": "电击I",
-		"description": "攻击命中后附加攻击力**2000%**不受增减效果的雷电伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**10000%**不受增减效果的雷电伤害，冷却**2**秒",
 		"id": "buff_origin_atkthu_level1"
 	},
 	"buff_origin_atkthu_level2": {
 		"name": "电击II",
-		"description": "攻击命中后附加攻击力**3000%**不受增减效果的雷电伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**15000%**不受增减效果的雷电伤害，冷却**2**秒",
 		"id": "buff_origin_atkthu_level2"
 	},
 	"buff_origin_atkthu_level3": {
 		"name": "电击III",
-		"description": "攻击命中后附加攻击力**4000%**不受增减效果的雷电伤害，冷却**2**秒",
+		"description": "攻击命中后附加攻击力**20000%**不受增减效果的雷电伤害，冷却**2**秒",
 		"id": "buff_origin_atkthu_level3"
 	},
 	"buff_origin_balance99_1": {
@@ -15651,27 +16191,27 @@
 	},
 	"buff_origin_firedam_level1": {
 		"name": "火伤增幅I",
-		"description": "造成火焰伤害时触发攻击力**800%**不受增减效果的火焰伤害，冷却**1**秒",
+		"description": "造成火焰伤害时触发攻击力**4000%**不受增减效果的火焰伤害，冷却**1**秒",
 		"id": "buff_origin_firedam_level1"
 	},
 	"buff_origin_firedam_level2": {
 		"name": "火伤增幅II",
-		"description": "造成火焰伤害时触发攻击力**1600%**不受增减效果的火焰伤害，冷却**1**秒",
+		"description": "造成火焰伤害时触发攻击力**8000%**不受增减效果的火焰伤害，冷却**1**秒",
 		"id": "buff_origin_firedam_level2"
 	},
 	"buff_origin_firedam_level3": {
 		"name": "火伤增幅III",
-		"description": "造成火焰伤害时触发攻击力**2400%**不受增减效果的火焰伤害，冷却**1**秒",
+		"description": "造成火焰伤害时触发攻击力**12000%**不受增减效果的火焰伤害，冷却**1**秒",
 		"id": "buff_origin_firedam_level3"
 	},
 	"buff_origin_firedam_level4": {
 		"name": "火伤增幅IV",
-		"description": "造成火焰伤害时触发攻击力**3200%**不受增减效果的火焰伤害，冷却**1**秒",
+		"description": "造成火焰伤害时触发攻击力**16000%**不受增减效果的火焰伤害，冷却**1**秒",
 		"id": "buff_origin_firedam_level4"
 	},
 	"buff_origin_firedam_level5": {
 		"name": "火伤增幅V",
-		"description": "造成火焰伤害时触发攻击力**4000%**不受增减效果的火焰伤害，冷却**1**秒",
+		"description": "造成火焰伤害时触发攻击力**20000%**不受增减效果的火焰伤害，冷却**1**秒",
 		"id": "buff_origin_firedam_level5"
 	},
 	"buff_origin_firedmgupforthunderice": {
@@ -15686,27 +16226,27 @@
 	},
 	"buff_origin_icedam_level1": {
 		"name": "冰伤增幅I",
-		"description": "造成寒冰伤害时触发攻击力**800%**不受增减效果的寒冰伤害，冷却**1**秒",
+		"description": "造成寒冰伤害时触发攻击力**4000%**不受增减效果的寒冰伤害，冷却**1**秒",
 		"id": "buff_origin_icedam_level1"
 	},
 	"buff_origin_icedam_level2": {
 		"name": "冰伤增幅II",
-		"description": "造成寒冰伤害时触发攻击力**1600%**不受增减效果的寒冰伤害，冷却**1**秒",
+		"description": "造成寒冰伤害时触发攻击力**8000%**不受增减效果的寒冰伤害，冷却**1**秒",
 		"id": "buff_origin_icedam_level2"
 	},
 	"buff_origin_icedam_level3": {
 		"name": "冰伤增幅III",
-		"description": "造成寒冰伤害时触发攻击力**2400%**不受增减效果的寒冰伤害，冷却**1**秒",
+		"description": "造成寒冰伤害时触发攻击力**12000%**不受增减效果的寒冰伤害，冷却**1**秒",
 		"id": "buff_origin_icedam_level3"
 	},
 	"buff_origin_icedam_level4": {
 		"name": "冰伤增幅IV",
-		"description": "造成寒冰伤害时触发攻击力**3200%**不受增减效果的寒冰伤害，冷却**1**秒",
+		"description": "造成寒冰伤害时触发攻击力**16000%**不受增减效果的寒冰伤害，冷却**1**秒",
 		"id": "buff_origin_icedam_level4"
 	},
 	"buff_origin_icedam_level5": {
 		"name": "冰伤增幅V",
-		"description": "造成寒冰伤害时触发攻击力**4000%**不受增减效果的寒冰伤害，冷却**1**秒",
+		"description": "造成寒冰伤害时触发攻击力**20000%**不受增减效果的寒冰伤害，冷却**1**秒",
 		"id": "buff_origin_icedam_level5"
 	},
 	"buff_origin_icedmgupforphysicflame": {
@@ -15731,27 +16271,27 @@
 	},
 	"buff_origin_phydam_level1": {
 		"name": "物伤增幅I",
-		"description": "造成物理伤害时触发攻击力**800%**不受增减效果的物理伤害，冷却**1**秒",
+		"description": "造成物理伤害时触发攻击力**4000%**不受增减效果的物理伤害，冷却**1**秒",
 		"id": "buff_origin_phydam_level1"
 	},
 	"buff_origin_phydam_level2": {
 		"name": "物伤增幅II",
-		"description": "造成物理伤害时触发攻击力**1600%**不受增减效果的物理伤害，冷却**1**秒",
+		"description": "造成物理伤害时触发攻击力**8000%**不受增减效果的物理伤害，冷却**1**秒",
 		"id": "buff_origin_phydam_level2"
 	},
 	"buff_origin_phydam_level3": {
 		"name": "物伤增幅III",
-		"description": "造成物理伤害时触发攻击力**2400%**不受增减效果的物理伤害，冷却**1**秒",
+		"description": "造成物理伤害时触发攻击力**12000%**不受增减效果的物理伤害，冷却**1**秒",
 		"id": "buff_origin_phydam_level3"
 	},
 	"buff_origin_phydam_level4": {
 		"name": "物伤增幅IV",
-		"description": "造成物理伤害时触发攻击力**3200%**不受增减效果的物理伤害，冷却**1**秒",
+		"description": "造成物理伤害时触发攻击力**16000%**不受增减效果的物理伤害，冷却**1**秒",
 		"id": "buff_origin_phydam_level4"
 	},
 	"buff_origin_phydam_level5": {
 		"name": "物伤增幅V",
-		"description": "造成物理伤害时触发攻击力**4000%**不受增减效果的物理伤害，冷却**1**秒",
+		"description": "造成物理伤害时触发攻击力**20000%**不受增减效果的物理伤害，冷却**1**秒",
 		"id": "buff_origin_phydam_level5"
 	},
 	"buff_origin_phydmgupforthunderice": {
@@ -15766,27 +16306,27 @@
 	},
 	"buff_origin_thudam_level1": {
 		"name": "雷伤增幅I",
-		"description": "造成雷电伤害时触发攻击力**800%**不受增减效果的雷电伤害，冷却**1**秒",
+		"description": "造成雷电伤害时触发攻击力**4000%**不受增减效果的雷电伤害，冷却**1**秒",
 		"id": "buff_origin_thudam_level1"
 	},
 	"buff_origin_thudam_level2": {
 		"name": "雷伤增幅II",
-		"description": "造成雷电伤害时触发攻击力**1600%**不受增减效果的雷电伤害，冷却**1**秒",
+		"description": "造成雷电伤害时触发攻击力**8000%**不受增减效果的雷电伤害，冷却**1**秒",
 		"id": "buff_origin_thudam_level2"
 	},
 	"buff_origin_thudam_level3": {
 		"name": "雷伤增幅III",
-		"description": "造成雷电伤害时触发攻击力**2400%**不受增减效果的雷电伤害，冷却**1**秒",
+		"description": "造成雷电伤害时触发攻击力**12000%**不受增减效果的雷电伤害，冷却**1**秒",
 		"id": "buff_origin_thudam_level3"
 	},
 	"buff_origin_thudam_level4": {
 		"name": "雷伤增幅IV",
-		"description": "造成雷电伤害时触发攻击力**3200%**不受增减效果的雷电伤害，冷却**1**秒",
+		"description": "造成雷电伤害时触发攻击力**16000%**不受增减效果的雷电伤害，冷却**1**秒",
 		"id": "buff_origin_thudam_level4"
 	},
 	"buff_origin_thudam_level5": {
 		"name": "雷伤增幅V",
-		"description": "造成雷电伤害时触发攻击力**4000%**不受增减效果的雷电伤害，冷却**1**秒",
+		"description": "造成雷电伤害时触发攻击力**20000%**不受增减效果的雷电伤害，冷却**1**秒",
 		"id": "buff_origin_thudam_level5"
 	},
 	"buff_origin_thudmgupforphysicflame": {

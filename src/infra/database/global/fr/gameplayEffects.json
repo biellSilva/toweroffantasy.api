@@ -329,6 +329,16 @@
 		"description": "Augmente les dégâts finaux de **0%**. Lorsque **Comète de pin** est dans l'emplacement main libre, la fréquence d'attaque de **Plume de moineau** passe à **1** par seconde.\r\nLorsque **Plume de moineau** frappe et déclenche l'effet de propagation, elle propage en plus **Brûlure ionique** et **Brûlure croisée**.\r\nEn jeu en équipe, les dégâts infligés à la cible aggro sont réduits de **1%**. Lorsque Résonance de fortitude est activée, la réduction des dégâts augmente jusqu'à **2%**.",
 		"id": "buff_imitation_brush_level2_damageup"
 	},
+	"buff_imitation_dfish_level1": {
+		"name": "Ruse",
+		"description": "Accroît les dégâts finaux de **0%**.",
+		"id": "buff_imitation_dfish_level1"
+	},
+	"buff_imitation_dfish_level2": {
+		"name": "Stratagème",
+		"description": "Accroît les dégâts finaux de **0%**.\r\nLorsque **Libreflux** est équipé, si **1**seule cible est dans la zone, accroît les dégâts de feu de **1%**. Si au moins **2**cibles sont présentes, les dégâts de feu passent à **2%**.",
+		"id": "buff_imitation_dfish_level2"
+	},
 	"buff_thunder_ready_lv1": {
 		"name": "Foudre",
 		"description": "Électrocute la cible pendant **3**secondes tout en lui infligeant des dégâts, la rendant incapable d'utiliser des armes.",
@@ -420,83 +430,83 @@
 		"id": "buff_tianlang_weaponcharged"
 	},
 	"buff_timerevert_addenergy": {
-		"name": "Décharge Charge",
+		"name": "Batterie chargée",
 		"description": "Après avoir utilisé une compétence de décharge, gagnez immédiatement une recharge d'arme équivalente au nombre de comptes de recharge Re-Tracker multiplié par **6**/**8**/**10**.",
 		"id": "buff_timerevert_addenergy"
 	},
 	"buff_timerevert_attackdmgmaxhp": {
-		"name": "Attaque",
-		"description": "Toutes les 5 secondes, la prochaine attaque inflige des dégâts supplémentaires équivalents au nombre de Comptes de charge de Re-Tracker fois **0,1%**/**0,15%**/**0,2%** des PV actuels de la cible (déclenché uniquement pendant la Résonance d'attaque).",
+		"name": "Annihilation",
+		"description": "Toutes les **20**secondes, la prochaine attaque inflige des dégâts supplémentaires équivalant au nombre de recharges du Re-Tracker multiplié par **0,02%**/**0,03%**/**0,05%** des PV max du boss (uniquement pendant Résonance d'attaque).",
 		"id": "buff_timerevert_attackdmgmaxhp"
 	},
 	"buff_timerevert_bedmgdown": {
-		"name": "Réduction des dégâts",
-		"description": "Réduit les dégâts reçus équivalents au nombre de charges de Re-Tracker fois **0.5%**/**0.75%**/**1%**.",
+		"name": "Inflexible",
+		"description": "Réduit les dégâts subis d'un montant équivalant au nombre de recharges du retraceur multiplié par **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_bedmgdown"
 	},
 	"buff_timerevert_breakdefup": {
-		"name": "Fracture",
-		"description": "Accroît la capacité de fracture d'un montant équivalant au nombre de charges du Re-Tracker multiplié par **1%**/**1,5%**/**2%**.",
+		"name": "Frappe de bouclier",
+		"description": "Accroît la capacité de fracture d'un montant équivalant au nombre de recharges du retraceur multiplié par **1%**/**1,5%**/**2%**.",
 		"id": "buff_timerevert_breakdefup"
 	},
 	"buff_timerevert_chargeup": {
-		"name": "Amplificateur de charge",
-		"description": "Augmentez l'efficacité de la charge équivalente aux comptes de charge Re-Tracker fois **0,5%**/**0,75%**/**1%**.",
+		"name": "Amplificateur de recharge",
+		"description": "Accroît l'efficacité de la charge d'un montant équivalant au nombre de recharges du retraceur multiplié par **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_chargeup"
 	},
 	"buff_timerevert_defenfaddshield": {
-		"name": "Fortitude",
-		"description": "Lors de l'activation, 1% des dégâts subis seront transformés en bouclier, et les attaques et compétences infligent des dégâts supplémentaires équivalant à **100%**/**200%**/**300%** de la valeur du bouclier (déclenché uniquement pendant la Résonance de fortitude).",
+		"name": "Attaque de bouclier",
+		"description": "Après activation, **40%**/**60%**/**80%** des dégâts subis en **5**secondes seront transformés en un bouclier, pour un minimum de **5%** des PV max de l'Exécutant. Lorsque vous avez le bouclier, les attaques et compétences infligent des dégâts supplémentaires équivalant à **0,25%**/**0,5%**/**0,75%** des PV max du boss. Ne peut être déclenché qu'une fois toutes les 10secondes (uniquement pendant Résonance de fortitude).",
 		"id": "buff_timerevert_defenfaddshield"
 	},
 	"buff_timerevert_dmgup": {
-		"name": "Bonus d'attaque",
-		"description": "Accroît les dégâts infligés équivalents aux comptes de charge Re-Tracker **0,5%**/**0,75%**/**1%**.",
+		"name": "Montez le chauffage",
+		"description": "Accroît les dégâts infligés d'un montant équivalant au nombre de recharges du retraceur multiplié par **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_dmgup"
 	},
 	"buff_timerevert_dmgupinair": {
-		"name": "Bonus de Dégâts en l'Air",
-		"description": "Accroît les dégâts en l'air équivalents au nombre de charges de Re-Tracker fois **0.6%**/**1%**/**1.5%**.",
+		"name": "Agilité",
+		"description": "Accroît les dégâts en l'air d'un montant équivalant au nombre de recharges du retraceur multiplié par **0,6%**/**1%**/**1,5%**.",
 		"id": "buff_timerevert_dmgupinair"
 	},
 	"buff_timerevert_exdmg": {
-		"name": "Annihilation",
+		"name": "Jugement",
 		"description": "La prochaine attaque consomme toutes les charges et inflige en plus des dégâts équivalant aux PV max de la cible, qui sont égaux au nombre de charges de Re-Tracker multiplié par **0.05%**/**0.075%**/**0.1%**.",
 		"id": "buff_timerevert_exdmg"
 	},
 	"buff_timerevert_gettimerevertstack": {
-		"name": "Re-suivi rapide",
-		"description": "Augmente les Comptes de Charge accumulés en infligeant des dégâts au Boss de **1** à **2**.",
+		"name": "Réinitialisation éclair",
+		"description": "Après activation, gagnez **1**cumul supplémentaire du nombre de recharges toutes les **2**secondes.",
 		"id": "buff_timerevert_gettimerevertstack"
 	},
 	"buff_timerevert_healdmgaftertreatment": {
-		"name": "Bénédiction",
-		"description": "Après avoir reçu des soins, la prochaine attaque inflige des dégâts supplémentaires équivalents aux PV max de la cible, qui sont égaux aux Comptes de charge de Re-Tracker fois **0,2%**/**0,3%**/**0,5%** (déclenché uniquement pendant la Résonance de Bénédiction).",
+		"name": "Soulagement",
+		"description": "Après avoir reçu des soins, la prochaine attaque inflige des dégâts supplémentaires équivalant aux PV max de la cible, qui sont égaux au nombre de recharges du Re-Tracker multiplié par **0,01%**/**0,02%**/**0,03%**. Ne peut être déclenché qu'une fois toutes les 10 secondes (uniquement pendant Résonance de Bénédiction).",
 		"id": "buff_timerevert_healdmgaftertreatment"
 	},
 	"buff_timerevert_healup": {
-		"name": "Soin",
-		"description": "Augmente l'effet de guérison équivalent au nombre de charges de Re-Tracker fois **1%**/**1.5%**/**2%**.",
+		"name": "Douce rosée",
+		"description": "Augmente l'effet de guérison équivalant à **25%**/**50%**/**75%**.",
 		"id": "buff_timerevert_healup"
 	},
 	"buff_timerevert_ignoredef": {
-		"name": "Ignorer la résistance",
-		"description": "Inflige une attaque ignorant toutes les résistances du boss équivalente au nombre de charges de Re-Tracker fois **0,5%**/**0,75%**/**1%**.",
+		"name": "Mépris",
+		"description": "Accroît les dégâts infligés en ignorant un pourcentage de toutes les résistances du boss pour un bonus équivalant au nombre de recharges du retraceur multiplié par **0,5%**/**0,75%**/**1%**.",
 		"id": "buff_timerevert_ignoredef"
 	},
 	"buff_timerevert_periodshield": {
 		"name": "Bouclier régénératif",
-		"description": "Obtenez un bouclier toutes les **30** secondes dont la valeur est égale aux PV max de l'Exécutant, qui est égal au nombre de charges de Re-Tracker fois **0.5%**/**1%**/**1.5%**.",
+		"description": "Après activation, obtenez un bouclier, actualisé toutes les **30**secondes. La valeur du bouclier est égale au nombre de recharges du Re-Tracker multiplié par **0,5%**/**1%**/**1,5%** des PV max de l'Exécutant.",
 		"id": "buff_timerevert_periodshield"
 	},
 	"buff_timerevert_reducecd": {
-		"name": "Réduction du temps de recharge des compétences",
+		"name": "Terrible tempête",
 		"description": "Réduit les temps de recharge de base des compétences de **10%**/**20%**/**30%**.",
 		"id": "buff_timerevert_reducecd"
 	},
 	"buff_timerevert_suck": {
-		"name": "Vol de vie",
-		"description": "Régénérez un nombre de PV égal au nombre de charges de Re-Tracker fois **0,5%**/**0,75%**/**1%** en fonction des dégâts infligés.",
+		"name": "Absorption de PV",
+		"description": "Régénère un nombre de PV équivalant à **10%**/**20%**/**30%** en fonction des dégâts infligés.",
 		"id": "buff_timerevert_suck"
 	},
 	"attack_skill1": {
@@ -821,22 +831,22 @@
 	},
 	"eventdes_boss044sp_common3": {
 		"name": "Défense absolue",
-		"description": "Lorsque les PV de Harrah tombent à un certain pourcentage, elle entre en mode défensif, ne lançant aucune attaque et devenant invincible. Pendant sa période d'invincibilité, des noyaux d'énergie apparaissent dans l'air et descendent lentement, ce qui leur confère un effet bénéfique lorsqu'ils entrent en contact avec les Explorateurs, améliorant considérablement leur hauteur des sauts et leur vitesse et réduisant leur consommation d'END. Les noyaux d'énergie interfèrent également avec le mode défensif de Harrah. Si les noyaux d'énergie sont saisis plusieurs fois, l'état d'invincibilité de Harrah se termine prématurément.",
+		"description": "Lorsque les PV d'Harrah tombent sous un certain pourcentage, elle passe en mode défensif, cesse d'attaquer et devient invincible. Tant qu'elle est invincible, des noyaux d'énergie apparaissent dans les airs et tombent lentement vers le sol, conférant au passage un effet bénéfique aux Explorateurs touchés, ce qui améliore considérablement la hauteur de leurs sauts et leur vitesse tout en réduisant leur consommation d'END. Les noyaux d'énergie interfèrent également avec le mode défensif d'Harrah. S'ils la touchent plusieurs fois, sa période d'invincibilité se termine prématurément.",
 		"id": "eventdes_boss044sp_common3"
 	},
 	"eventdes_boss044sp_fire1": {
 		"name": "Brûlure",
-		"description": "Harrah inflige des marques Ember aux Explorateurs environnants, et plus ils sont proches de Harrah, plus les marques s'accumulent rapidement. Les Explorateurs avec plus de 50 piles de marques Ember, lorsqu'ils sont endommagés par Harrah, verront toutes leurs marques Ember effacées et recevront des dégâts supplémentaires en fonction des piles de marques Ember.",
+		"description": "Harrah inflige des marques de Braise aux Explorateurs à proximité. Plus ils sont proches de Harrah, plus les marques s'accumulent rapidement (jusqu'à 100cumuls). Les Explorateurs possédant plus de 50cumuls de marques de Braise, lorsque Harrah leur inflige des dégâts, verront toutes leurs marques de Braise effacées et subiront des dégâts supplémentaires en fonction des cumuls de marques de Braise.",
 		"id": "eventdes_boss044sp_fire1"
 	},
 	"eventdes_boss044sp_fire2": {
 		"name": "Éclosion",
-		"description": "Au cours du combat, Harrah fait éclore périodiquement de petites entités de l'Entrespace et les expulse. Détruisez ces entités à temps pour retirer toutes les marques d'Ember des Wanderers environnants et leur conférer une immunité de 10s aux marques d'Ember.",
+		"description": "Au cours du combat, Harrah fait éclore périodiquement de petites entités de l'Entrespace et les expulse. Détruisez ces entités à temps pour retirer toutes les marques de braise des Explorateurs environnants et leur conférer une immunité de 10s aux marques de braise.",
 		"id": "eventdes_boss044sp_fire2"
 	},
 	"eventdes_boss044sp_ice1": {
 		"name": "Lien de glace",
-		"description": "Harrah inflige des marques Givrées aux Explorateurs environnants, et plus ils sont proches de Harrah, plus les marques s'accumulent rapidement. Lorsque les marques Givrées atteignent leur maximum, l'Explorateur cible sera gelé. Si Harrah inflige des dégâts pendant le gel, l'état de gel est levé, mais la cible subit des dégâts significatifs de Brise-glace 1 fois.",
+		"description": "Harrah inflige des marques de Givre aux Explorateurs à proximité (jusqu'à 25cumuls). Lorsque le cumul des marques de givre atteint son maximum, l'Explorateur cible sera gelé. Si Harrah lui inflige des dégâts pendant qu'il est gelé, l'état de gel est levé, mais la cible subit des dégâts significatifs de Brise-glace 1fois.",
 		"id": "eventdes_boss044sp_ice1"
 	},
 	"eventdes_boss044sp_ice2": {
@@ -846,7 +856,7 @@
 	},
 	"eventdes_boss044sp_phy1": {
 		"name": "Dédain",
-		"description": "Les Explorateurs près de Harrah ou subissant des dégâts de sa part seront affligés de marques d'Oppression. Chaque marque d'Oppression réduit les PV max de l'Explorateur de 1%, jusqu'à une réduction maximale de 50%.",
+		"description": "Les Explorateurs proches de Harrah ou qui subissent les dégâts qu'elle leur fait subir se verront infliger des marques d'Oppression (jusqu'à 50cumuls). Chaque marque d'Oppression réduit les PV max de l'Explorateur de 1%, jusqu'à une réduction maximale de 50%.",
 		"id": "eventdes_boss044sp_phy1"
 	},
 	"eventdes_boss044sp_phy2": {
@@ -856,7 +866,7 @@
 	},
 	"eventdes_boss044sp_super1": {
 		"name": "Flétrissement",
-		"description": "Chaque fois qu'un Explorateur subit des dégâts de Harrah, il est également affligé par les marques de Distorsion Temporelle. Lorsque ces marques atteignent leur maximum, le personnage est soumis à l'Effet de Flétrissement, perdant de l'END périodiquement tout au long de la durée.",
+		"description": "Chaque fois qu'un Explorateur subit des dégâts de Harrah, il se voit également infliger des marques de Distorsion temporelle (jusqu'à 10cumuls). Lorsque le cumul de ces marques atteint son maximum, le personnage est soumis à l'effet de Flétrissement, perdant périodiquement de l'END pendant toute la durée de l'effet.",
 		"id": "eventdes_boss044sp_super1"
 	},
 	"eventdes_boss044sp_super2": {
@@ -865,8 +875,8 @@
 		"id": "eventdes_boss044sp_super2"
 	},
 	"eventdes_boss044sp_thu1": {
-		"name": "Fureur Tonnerre",
-		"description": "Au cours du combat, Harrah invoque périodiquement des frappes de foudre qui touchent des positions aléatoires, causant des dégâts de foudre aux cibles dans la zone. De plus, les Explorateurs proches de Harrah seront affligés de marques d'Électrocution. Chaque pile de la marque amplifie les dégâts de foudre que l'Explorateur subit.",
+		"name": "Balle tempête",
+		"description": "Au cours du combat, Harrah invoque périodiquement des frappes de foudre. Lorsque le cumul d'Électrocution d'une cible frappée par la foudre est inférieur à 10, elle recevra des dégâts de foudre en fonction du nombre de cumuls d'Électrocution, puis 1marque d'Électrocution. Lorsqu'elle atteint 10cumuls d'Électrocution, la cible frappée par la foudre est transpercée par une haute tension, subissant des dégâts fatals équivalant à 120% des PV max.",
 		"id": "eventdes_boss044sp_thu1"
 	},
 	"eventdes_boss044sp_thu2": {
@@ -1225,15 +1235,18 @@
 		"id": "buff_spear_stun"
 	},
 	"buff_eleweakpoint_bigice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigice"
 	},
 	"buff_eleweakpoint_bigfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfire"
 	},
 	"buff_eleweakpoint_bigthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigthunder"
 	},
 	"buff_artifact11_getweapon": {
@@ -1956,6 +1969,16 @@
 		"description": "Accroît considérablement les dégâts de foudre reçus.",
 		"id": "buff_borderwar_weakthunder"
 	},
+	"buff_boss_002_4": {
+		"name": "Toxithé",
+		"description": "La guérison appliquée par l'Explorateur sera convertie en une quantité équivalente de dégâts.",
+		"id": "buff_boss_002_4"
+	},
+	"buff_boss_002_5_ignore": {
+		"name": "Fragile",
+		"description": "Pendant la durée, l'hypercorps de l'Explorateur est désactivé et ne peut pas entrer dans un état invincible.",
+		"id": "buff_boss_002_5_ignore"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Échec d'Hypercorps",
 		"description": "Les Explorateurs ne peuvent pas se conférer l'état d'hypercorps à eux-mêmes.",
@@ -1963,7 +1986,7 @@
 	},
 	"buff_boss_044_sp_fire": {
 		"name": "Braise",
-		"description": "Les Explorateurs restant près de Harrah muté seront affligés par la Braise, qui, une fois un certain nombre de cumuls atteint, sera détonée par les attaques de Harrah, infligeant des dégâts basés sur les PV max de l'Explorateur cible et le nombre de cumuls.",
+		"description": "Nombre maximum de cumuls : 100. Les Explorateurs avec plus de 50 cumuls de marques de Braise, lorsqu'ils sont endommagés par Harrah, verront toutes leurs marques de Braise effacées et recevront des dégâts supplémentaires basés sur le nombre de cumuls des marques de Braise.",
 		"id": "buff_boss_044_sp_fire"
 	},
 	"buff_boss_044_sp_fire_ignore": {
@@ -1973,17 +1996,17 @@
 	},
 	"buff_boss_044_sp_ice_frozen": {
 		"name": "Gel",
-		"description": "La cible dans l'état gelé causé par le Givré subit des dégâts de Brise-glace supplémentaires lorsqu'elle est attaquée par Harrah.",
+		"description": "L'état de gel causé par Givré. Les Explorateurs gelés subissent des dégâts de Brise-glace supplémentaires lorsque Harrah les attaque.",
 		"id": "buff_boss_044_sp_ice_frozen"
 	},
 	"buff_boss_044_sp_ice_ignore": {
-		"name": "Immunité Givrée",
+		"name": "Immunité au givre",
 		"description": "Le Givré ne peut pas être infligé à l'Explorateur cible.",
 		"id": "buff_boss_044_sp_ice_ignore"
 	},
 	"buff_boss_044_sp_ice_stack": {
 		"name": "Givré",
-		"description": "Les Explorateurs restant près de Harrah muté seront affectés par Givré, qui, une fois un certain nombre de piles atteint, gèlera l'Explorateur et le rendra susceptible de subir des dégâts supplémentaires de Brise-glace lorsqu'il est attaqué par Harrah.",
+		"description": "Nombre maximum de piles : 25. Lorsque les marques Givrées atteignent le maximum, l'Explorateur cible sera gelé. Si Harrah inflige des dégâts pendant le gel, l'état de gel est levé, mais la cible subit des dégâts de Brisure de glace importants 1 fois.",
 		"id": "buff_boss_044_sp_ice_stack"
 	},
 	"buff_boss_044_sp_phy_ignore": {
@@ -1993,7 +2016,7 @@
 	},
 	"buff_boss_044_sp_phy_stack": {
 		"name": "Oppression",
-		"description": "Chaque cumul réduit les PV max de l'Explorateur de 1%.",
+		"description": "Nombre maximum de cumuls : 50. Chaque cumul réduit les PV max de l'Explorateur de 1%.",
 		"id": "buff_boss_044_sp_phy_stack"
 	},
 	"buff_boss_044_sp_reward_energyconsumedown": {
@@ -2023,12 +2046,12 @@
 	},
 	"buff_boss_044_sp_superpower_stack": {
 		"name": "Distorsion temporelle",
-		"description": "Les attaques de Harrah infligent une Distorsion Temporelle à la cible, qui, une fois un certain nombre de cumuls atteint, applique un Flétrissement à la cible.",
+		"description": "La Distorsion temporelle peut se cumuler jusqu'à 10 fois. Lorsque les cumuls sont au maximum, le Flétrissement sera appliqué à la cible.",
 		"id": "buff_boss_044_sp_superpower_stack"
 	},
 	"buff_boss_044_sp_thu_stack": {
 		"name": "Électrocution",
-		"description": "Chaque cumul d'Électrocution augmente les dégâts de foudre que l'Explorateur reçoit.",
+		"description": "Nombre maximal de cumuls: 10. Lorsqu'un Explorateur possédant moins de 10cumuls d'Électrocution est frappé par la foudre, il subit des dégâts mineurs proportionnels au nombre de cumuls et reçoit un cumul d'Électrocution supplémentaire. Au bout de 10cumuls d'Électrocution, l'Explorateur est transpercé par une puissante charge électrique qui lui inflige une fois des dégâts fatals.",
 		"id": "buff_boss_044_sp_thu_stack"
 	},
 	"buff_boss_044_thu_ignore": {
@@ -2102,15 +2125,18 @@
 		"id": "buff_boss_hum_042_5"
 	},
 	"buff_eleweakpoint_smallfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfire"
 	},
 	"buff_eleweakpoint_smallice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallice"
 	},
 	"buff_eleweakpoint_smallthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallthunder"
 	},
 	"buff_emby_atkupdefdown": {
@@ -2189,42 +2215,52 @@
 		"id": "buff_evadeaddeffect_level2"
 	},
 	"buff_evajdfw_breakdefup": {
+		"name": "",
 		"description": "Accroît de 20% la capacité de fracture de l'armure.",
 		"id": "buff_evajdfw_breakdefup"
 	},
 	"buff_evajdfw_critup": {
+		"name": "",
 		"description": "Accroît le taux de crit de l'armure de 5%",
 		"id": "buff_evajdfw_critup"
 	},
 	"buff_evajdfw_finbedamedup": {
+		"name": "",
 		"description": "Réduction de 5% des dégâts sur l'armure",
 		"id": "buff_evajdfw_finbedamedup"
 	},
 	"buff_evajdfw_findamup": {
+		"name": "",
 		"description": "Bonus de dégâts de blindé de 5%",
 		"id": "buff_evajdfw_findamup"
 	},
 	"buff_evajdfw_monsterhpdownandatkup": {
+		"name": "",
 		"description": "Les PV des ennemis sont réduits de 20%, et leur ATQ est augmentée de 10%.",
 		"id": "buff_evajdfw_monsterhpdownandatkup"
 	},
 	"buff_evajdfw_monsterhpupandatkdown": {
+		"name": "",
 		"description": "Les PV des ennemis augmentent de 20% et leur ATQ est réduite de 20%.",
 		"id": "buff_evajdfw_monsterhpupandatkdown"
 	},
 	"buff_evajdfw_skill01cooldowncut": {
-		"description": "Réduit de 2 secondes le temps de recharge de la compétence \"Reinforcement Call-104\".",
+		"name": "",
+		"description": "Réduit le temps de recharge de la compétence \"Appel de renfort-104\" de 2secondes.",
 		"id": "buff_evajdfw_skill01cooldowncut"
 	},
 	"buff_evajdfw_skill02cooldowncut": {
+		"name": "",
 		"description": "Réduit de 2 secondes le temps de recharge de la Posture du Gardien.",
 		"id": "buff_evajdfw_skill02cooldowncut"
 	},
 	"buff_evajdfw_skilldefendshieldex": {
+		"name": "",
 		"description": "Après une défense réussie, le mecha gagne un bouclier équivalant à 5% des PV pendant 5 secondes. Temps de recharge : 10 secondes.",
 		"id": "buff_evajdfw_skilldefendshieldex"
 	},
 	"buff_evajdfw_skilldefendup": {
+		"name": "",
 		"description": "L'utilisation de la compétence Bouclier de Fortitude augmente le taux d'immunité aux dégâts de 10%.",
 		"id": "buff_evajdfw_skilldefendup"
 	},
@@ -2375,7 +2411,7 @@
 	},
 	"buff_hammerice_sr_level0_1": {
 		"name": "RageI",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerice_sr_level0_1"
 	},
 	"buff_hammerice_sr_level0_2": {
@@ -2390,7 +2426,7 @@
 	},
 	"buff_hammerthu_ssr_level0_1": {
 		"name": "RageI",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerthu_ssr_level0_1"
 	},
 	"buff_hammerthu_ssr_level0_4": {
@@ -2404,11 +2440,13 @@
 		"id": "buff_hammerthu_ssr_level0_5"
 	},
 	"buff_eleweakpoint_bigfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfhy"
 	},
 	"buff_eleweakpoint_smallfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfhy"
 	},
 	"buff_artifactssr006_display": {
@@ -2482,13 +2520,19 @@
 		"id": "wormhole_buff_smallthunder_phy"
 	},
 	"buff_cannonice_sr_level5_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_cannonice_sr_level5_1"
 	},
 	"buff_void_player_1001": {
 		"name": "Souhait",
 		"description": "À partir de trois cumuls, augmente de **25%** les PV et l'ATQ de tous les membres du groupe. Chacun ne peut déclencher cet effet qu'une seule fois.",
 		"id": "buff_void_player_1001"
+	},
+	"buff_wantedcriminal": {
+		"name": "Recherché!",
+		"description": "Vous êtes recherché pour avoir commis un crime. Fuyez vers un lieu sûr pour échapper à l'arrestation!",
+		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
 		"name": "Tank puissant I",
@@ -4601,132 +4645,163 @@
 		"id": "wormhole_monsterbuff_019"
 	},
 	"hookclone_buff_immenergy": {
+		"name": "",
 		"description": "**Immunité aux dégâts énergétiques**",
 		"id": "hookclone_buff_immenergy"
 	},
 	"hookclone_buff_immfire": {
+		"name": "",
 		"description": "**Immunité aux dégâts de feu**",
 		"id": "hookclone_buff_immfire"
 	},
 	"hookclone_buff_immfirearms": {
+		"name": "",
 		"description": "**Immunité aux dégâts des armes à feu**",
 		"id": "hookclone_buff_immfirearms"
 	},
 	"hookclone_buff_immice": {
+		"name": "",
 		"description": "**Immunité aux dégâts de givre**",
 		"id": "hookclone_buff_immice"
 	},
 	"hookclone_buff_immphy": {
+		"name": "",
 		"description": "**Immunité aux dégâts physiques**",
 		"id": "hookclone_buff_immphy"
 	},
 	"hookclone_buff_immpuncture": {
+		"name": "",
 		"description": "**Immunité aux dégâts des perforants**",
 		"id": "hookclone_buff_immpuncture"
 	},
 	"hookclone_buff_immsharp": {
+		"name": "",
 		"description": "**Immunité aux dégâts des lames courtes**",
 		"id": "hookclone_buff_immsharp"
 	},
 	"hookclone_buff_immstrength": {
+		"name": "",
 		"description": "**Immunité aux dégâts lourds**",
 		"id": "hookclone_buff_immstrength"
 	},
 	"hookclone_buff_immthunder": {
+		"name": "",
 		"description": "**Immunité aux dégâts de foudre**",
 		"id": "hookclone_buff_immthunder"
 	},
 	"hookclone_buff_smallenergy": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts énergétiques**",
 		"id": "hookclone_buff_smallenergy"
 	},
 	"hookclone_buff_resistanceenergy": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts énergétiques**",
 		"id": "hookclone_buff_resistanceenergy"
 	},
 	"hookclone_buff_smallfire": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts de feu**",
 		"id": "hookclone_buff_smallfire"
 	},
 	"hookclone_buff_resistancefire": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts de feu**",
 		"id": "hookclone_buff_resistancefire"
 	},
 	"hookclone_buff_smallfirearms": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts des armes à feu**",
 		"id": "hookclone_buff_smallfirearms"
 	},
 	"hookclone_buff_resistancefirearms": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts des armes à feu**",
 		"id": "hookclone_buff_resistancefirearms"
 	},
 	"hookclone_buff_smallice": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts de givre**",
 		"id": "hookclone_buff_smallice"
 	},
 	"hookclone_buff_resistanceice": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts de givre**",
 		"id": "hookclone_buff_resistanceice"
 	},
 	"hookclone_buff_smallphy": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts physiques**",
 		"id": "hookclone_buff_smallphy"
 	},
 	"hookclone_buff_resistancephy": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts physiques**",
 		"id": "hookclone_buff_resistancephy"
 	},
 	"hookclone_buff_smallpuncture": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts perforants**",
 		"id": "hookclone_buff_smallpuncture"
 	},
 	"hookclone_buff_resistancepuncture": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts perforants**",
 		"id": "hookclone_buff_resistancepuncture"
 	},
 	"hookclone_buff_smallsharp": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts des lames courtes**",
 		"id": "hookclone_buff_smallsharp"
 	},
 	"hookclone_buff_resistancesharp": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts des lames courtes**",
 		"id": "hookclone_buff_resistancesharp"
 	},
 	"hookclone_buff_smallstrength": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts lourds**",
 		"id": "hookclone_buff_smallstrength"
 	},
 	"hookclone_buff_resistancestrength": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts lourds**",
 		"id": "hookclone_buff_resistancestrength"
 	},
 	"hookclone_buff_smallthunder": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts de foudre**",
 		"id": "hookclone_buff_smallthunder"
 	},
 	"hookclone_buff_resistancethunder": {
+		"name": "",
 		"description": "**Résistance de 50% aux dégâts de foudre**",
 		"id": "hookclone_buff_resistancethunder"
 	},
 	"hookclone_maxhp-20": {
+		"name": "",
 		"description": "**PV ennemis -20%**",
 		"id": "hookclone_maxhp-20"
 	},
 	"hookclone_maxhp100": {
+		"name": "",
 		"description": "**PV ennemis +100%**",
 		"id": "hookclone_maxhp100"
 	},
 	"hookclone_maxhp20": {
+		"name": "",
 		"description": "**PV ennemis +20%**",
 		"id": "hookclone_maxhp20"
 	},
 	"hookclone_maxhp50": {
+		"name": "",
 		"description": "**PV ennemis +50%**",
 		"id": "hookclone_maxhp50"
 	},
 	"buff_cubefire_ssr_level2def": {
 		"name": "Chaque cumul réduit de 1% les dégâts reçus. Cet effet peut se cumuler jusqu'à 15fois.",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_cubefire_ssr_level2def"
 	},
 	"buff_cubefire_ssr_level4dam": {
@@ -5155,7 +5230,8 @@
 		"id": "buff_frozen_3s"
 	},
 	"buff_artifactssr006_stun": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_artifactssr006_stun"
 	},
 	"buff_sword_001_ssr_damageup": {
@@ -5638,6 +5714,41 @@
 		"description": "Se déclenche avec **9**armes de foudre: après avoir utilisé une compétence, confère l'effet bénéfique Électrifié pendant **10**secondes. Lorsque l'Explorateur est Électrifié, son attaque normale peut déclencher des éclairs en chaîne toutes les **1**seconde, infligeant des dégâts de foudre équivalant à **800%** de l'ATQ, non affectés par les bonus ou les réductions de dégâts. Les éclairs en chaîne rebondiront entre les ennemis jusqu'à **5**fois. Récupérer Électrifié réinitialisera la durée de cet effet.",
 		"id": "buff_autochess_thunderlink_3"
 	},
+	"buff_ayanamirei_ice_ssr_resonance": {
+		"name": "Résonance de givre",
+		"description": "**Résonance de givre**: accroît l'ATQ de givre de **15%** et la résistance au givre de **25%**. Activez-la en équipant au moins **2**armes de givre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de givre ou de Réaction de givre, et Résonance de givre prévaut.",
+		"id": "buff_ayanamirei_ice_ssr_resonance"
+	},
+	"buff_ayanamirei_level1": {
+		"name": "Décollage",
+		"description": "Accroît les dégâts finaux de **12%**.",
+		"id": "buff_ayanamirei_level1"
+	},
+	"buff_ayanamirei_level2": {
+		"name": "Garde",
+		"description": "Accroît les dégâts finaux de **18%**. Lorsque **Résonance d'attaque** est activée, accroît les dégâts de foudre de **8%**. Lorsque **tout type de Résonance autre que Résonance d'attaque** est activé, accroît l'effet de blocage de **Tirs chargés** à un niveau équivalant à **0%** des PV max de l'Explorateur, et porte la durée du **champ magnétique ralentissant** d'**Assaut aérien** et d'**Arc rapide** à **4**secondes.",
+		"id": "buff_ayanamirei_level2"
+	},
+	"buff_ayanamirei_thunder_resonance": {
+		"name": "Résonance de foudre",
+		"description": "**Résonance de foudre**: accroît l'ATQ de foudre de **15%** et la résistance à la foudre de **25%**. S'active en équipant au moins **2**armes de foudre. Les effets du kit fonctionnent dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, et Résonance de foudre prévaut.",
+		"id": "buff_ayanamirei_thunder_resonance"
+	},
+	"buff_ayanamireibedamagedown": {
+		"name": "Barrière de blocage",
+		"description": "Bloque les dégâts inférieurs à **10%** des PV max de l'Explorateur pendant **15**secondes. L'Explorateur ne peut avoir plus de 3barrières de blocage simultanément.",
+		"id": "buff_ayanamireibedamagedown"
+	},
+	"buff_ayanamireibedamagedown_imitationfeature": {
+		"name": "Barrière de blocage",
+		"description": "Bloque les dégâts inférieurs à **12%** des PV max de l'Explorateur pendant **15**secondes. L'Explorateur ne peut avoir plus de 3barrières de blocage simultanément.",
+		"id": "buff_ayanamireibedamagedown_imitationfeature"
+	},
+	"buff_ayanamireienergystate_damageup_level6": {
+		"name": "Bonus de dégâts",
+		"description": "Accroît les dégâts de foudre de **0%** et les dégâts de givre de **1%** pendant **2**secondes.",
+		"id": "buff_ayanamireienergystate_damageup_level6"
+	},
 	"buff_professioncommon": {
 		"name": "Résonance: Équilibre",
 		"description": "Accroît la réduction des dégâts finaux et les dégâts finaux de **5%**, augmente les effets de fracture et de soin de **20%**. Lorsque vous jouez en équipe, les dégâts finaux augmentent de **40%** et la réduction des dégâts finaux de **15%**.",
@@ -6039,6 +6150,7 @@
 		"id": "buff_cannonice_sr_level3_damage"
 	},
 	"buff_dsthu_ssr_level6_1": {
+		"name": "",
 		"description": "Accroît de 20% les dégâts de foudre reçus.",
 		"id": "buff_dsthu_ssr_level6_1"
 	},
@@ -6088,10 +6200,12 @@
 		"id": "buff_matrix_n_2"
 	},
 	"buff_matrix_n_3": {
+		"name": "",
 		"description": "Accroît de **4%** les dégâts physiques infligés.",
 		"id": "buff_matrix_n_3"
 	},
 	"buff_matrix_n_4": {
+		"name": "",
 		"description": "Accroît de **4%** les dégâts de foudre infligés.",
 		"id": "buff_matrix_n_4"
 	},
@@ -6116,6 +6230,7 @@
 		"id": "buff_matrix_r_4_level1"
 	},
 	"buff_matrix_r_5_level1": {
+		"name": "",
 		"description": "Accroît de **6%** les dégâts infligés par les armes à feu.",
 		"id": "buff_matrix_r_5_level1"
 	},
@@ -6250,14 +6365,17 @@
 		"id": "buff_matrix_sr_8_level3"
 	},
 	"buff_matrix_sr_9_level1": {
+		"name": "",
 		"description": "Confère un vol de vie de **30%** pendant Fantaisie et régénère des PV à hauteur de **60%** de l'ATQ toutes les 0,5seconde.",
 		"id": "buff_matrix_sr_9_level1"
 	},
 	"buff_matrix_sr_9_level2": {
+		"name": "",
 		"description": "Confère un vol de vie de **36%** pendant Fantaisie et régénère des PV à hauteur de **69%** de l'ATQ toutes les 0,5seconde.",
 		"id": "buff_matrix_sr_9_level2"
 	},
 	"buff_matrix_sr_9_level3": {
+		"name": "",
 		"description": "Confère un vol de vie de **39%** pendant Fantaisie et régénère des PV à hauteur de **73,5%** de l'ATQ toutes les 0,5seconde.",
 		"id": "buff_matrix_sr_9_level3"
 	},
@@ -6277,14 +6395,17 @@
 		"id": "buff_matrix_sr_10_level3"
 	},
 	"buff_matrix_sr_11_level1": {
+		"name": "",
 		"description": "Accroît de **35%** les dégâts critiques pour les cibles ayant moins de **60%** de PV.",
 		"id": "buff_matrix_sr_11_level1"
 	},
 	"buff_matrix_sr_11_level2": {
+		"name": "",
 		"description": "Accroît de **44%** les dégâts critiques pour les cibles ayant moins de **60%** de PV.",
 		"id": "buff_matrix_sr_11_level2"
 	},
 	"buff_matrix_sr_11_level3": {
+		"name": "",
 		"description": "Accroît de **52,5%** les dégâts critiques pour les cibles ayant moins de **60%** de PV.",
 		"id": "buff_matrix_sr_11_level3"
 	},
@@ -6874,7 +6995,8 @@
 		"id": "ge_artifactr002_boom_level7"
 	},
 	"ge_commondeathbox": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "ge_commondeathbox"
 	},
 	"buff_matrix_ssr_1_level1_1": {
@@ -6993,7 +7115,8 @@
 		"id": "buff_gve_atk_level4"
 	},
 	"buff_gve_bedamage_dowm25": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_bedamage_dowm25"
 	},
 	"buff_gve_bedamageup_fire_l1": {
@@ -7187,11 +7310,13 @@
 		"id": "buff_gve_evadeattack_damup_level3"
 	},
 	"buff_gve_expup": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_expup"
 	},
 	"buff_gve_extradamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_extradamage_level1"
 	},
 	"buff_gve_finaldamagedown_20per": {
@@ -7205,11 +7330,13 @@
 		"id": "buff_gve_finaldamageup_20per"
 	},
 	"buff_gve_fireatk_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_fireatk_level1"
 	},
 	"buff_gve_firedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_firedamage_level1"
 	},
 	"buff_gve_firedamagelevel1": {
@@ -7268,15 +7395,18 @@
 		"id": "buff_gve_firstaid"
 	},
 	"buff_gve_halo": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_halo"
 	},
 	"buff_gve_iceatk_level1": {
+		"name": "",
 		"description": "Accroît l'ATQ de givre de 15%.",
 		"id": "buff_gve_iceatk_level1"
 	},
 	"buff_gve_icedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_icedamage_level1"
 	},
 	"buff_gve_icedamagelevel1": {
@@ -7370,11 +7500,13 @@
 		"id": "buff_gve_immdamage_thunder"
 	},
 	"buff_gve_immunedamagecd_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_immunedamagecd_level1"
 	},
 	"buff_gve_jinji_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_jinji_level1"
 	},
 	"buff_gve_kill_l1": {
@@ -7393,7 +7525,8 @@
 		"id": "buff_gve_kill_l3"
 	},
 	"buff_gve_kill_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_kill_level1"
 	},
 	"buff_gve_linktime_l1": {
@@ -7437,11 +7570,13 @@
 		"id": "buff_gve_miansi_level2"
 	},
 	"buff_gve_phyatk_level1": {
+		"name": "",
 		"description": "Accroît l'ATQ physique de 15%.",
 		"id": "buff_gve_phyatk_level1"
 	},
 	"buff_gve_phydamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_phydamage_level1"
 	},
 	"buff_gve_phydamagelevel1": {
@@ -7695,12 +7830,204 @@
 		"id": "buff_gve_thuextradam_level3"
 	},
 	"buff_gve_thunderatk_level1": {
+		"name": "",
 		"description": "Accroît l'ATQ de foudre de 15%.",
 		"id": "buff_gve_thunderatk_level1"
 	},
 	"buff_gve_thunderdamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_thunderdamage_level1"
+	},
+	"buff_gwzj_battlefield1": {
+		"name": "L'effet bénéfique de l'Abîme critique",
+		"description": "Réduit le temps de recharge des compétences de 80%.",
+		"id": "buff_gwzj_battlefield1"
+	},
+	"buff_gwzj_levyclone3": {
+		"name": "Raid",
+		"description": "Augmente les PV de l'Explorateur de 100%, la résistance de 50% et confère une immunité aux dégâts de 60%.",
+		"id": "buff_gwzj_levyclone3"
+	},
+	"buff_gwzj_ordinal1_level1": {
+		"name": "Plan de la Fédération de Norns",
+		"description": "Accroît le taux d'apparition du Super Boss caché de 20%.",
+		"id": "buff_gwzj_ordinal1_level1"
+	},
+	"buff_gwzj_ordinal1_level2": {
+		"name": "Plan de la Fédération de Norns",
+		"description": "Accroît le taux d'apparition du Super Boss caché de 20%.",
+		"id": "buff_gwzj_ordinal1_level2"
+	},
+	"buff_gwzj_ordinal1_level3": {
+		"name": "Plan de la Fédération de Norns",
+		"description": "Accroît de 60% le taux d'apparition du Super Boss caché.",
+		"id": "buff_gwzj_ordinal1_level3"
+	},
+	"buff_gwzj_ordinal10_level1": {
+		"name": "Plan de Schuder Electronics",
+		"description": "Gagnez 10% de taux de crit.",
+		"id": "buff_gwzj_ordinal10_level1"
+	},
+	"buff_gwzj_ordinal10_level2": {
+		"name": "Plan de Schuder Electronics",
+		"description": "Accroît les dégâts critiques de 20%.",
+		"id": "buff_gwzj_ordinal10_level2"
+	},
+	"buff_gwzj_ordinal10_level3": {
+		"name": "Plan de Schuder Electronics",
+		"description": "Accroît les dégâts critiques de 40%.",
+		"id": "buff_gwzj_ordinal10_level3"
+	},
+	"buff_gwzj_ordinal2_level1": {
+		"name": "Plan d'Humanité future",
+		"description": "Augmente les dégâts finaux de 10%.",
+		"id": "buff_gwzj_ordinal2_level1"
+	},
+	"buff_gwzj_ordinal2_level2": {
+		"name": "Plan d'Humanité future",
+		"description": "Confère Hypercorps.",
+		"id": "buff_gwzj_ordinal2_level2"
+	},
+	"buff_gwzj_ordinal2_level3": {
+		"name": "Plan d'Humanité future",
+		"description": "Augmente les dégâts finaux de 12%.",
+		"id": "buff_gwzj_ordinal2_level3"
+	},
+	"buff_gwzj_ordinal3_level1": {
+		"name": "Plan de Céruléen d'Aida",
+		"description": "ATQ +10%.",
+		"id": "buff_gwzj_ordinal3_level1"
+	},
+	"buff_gwzj_ordinal3_level2": {
+		"name": "Plan de Céruléen d'Aida",
+		"description": "Les attaques infligent des dégâts supplémentaires équivalant à 0,4% des PV max de la cible. Temps de recharge: 5 secondes.",
+		"id": "buff_gwzj_ordinal3_level2"
+	},
+	"buff_gwzj_ordinal3_level3": {
+		"name": "Plan de Céruléen d'Aida",
+		"description": "Les attaques infligent des dégâts supplémentaires équivalant à 0,6% des PV max de la cible. Temps de recharge: 5 secondes.",
+		"id": "buff_gwzj_ordinal3_level3"
+	},
+	"buff_gwzj_ordinal4_level1": {
+		"name": "Plan de construction des Arches ennéennes",
+		"description": "Augmente les PV de l'Explorateur de 16%.",
+		"id": "buff_gwzj_ordinal4_level1"
+	},
+	"buff_gwzj_ordinal4_level2": {
+		"name": "Plan de construction des Arches ennéennes",
+		"description": "L'Explorateur récupère 20% des PV perdus toutes les 5 secondes.",
+		"id": "buff_gwzj_ordinal4_level2"
+	},
+	"buff_gwzj_ordinal4_level3": {
+		"name": "Plan de construction des Arches ennéennes",
+		"description": "L'Explorateur récupère 30% des PV perdus toutes les 5 secondes.",
+		"id": "buff_gwzj_ordinal4_level3"
+	},
+	"buff_gwzj_ordinal5_level1": {
+		"name": "Plan d'Aesperia",
+		"description": "Gagnez 250 points de recharge d'arme après avoir utilisé une compétence de décharge.",
+		"id": "buff_gwzj_ordinal5_level1"
+	},
+	"buff_gwzj_ordinal5_level2": {
+		"name": "Plan d'Aesperia",
+		"description": "Gagnez 1 000 points de recharge d'arme en entrant en combat.",
+		"id": "buff_gwzj_ordinal5_level2"
+	},
+	"buff_gwzj_ordinal5_level3": {
+		"name": "Plan d'Aesperia",
+		"description": "Après l'utilisation d'une compétence de décharge, accroît les dégâts finaux de l'Explorateur de 12% pendant 10 secondes.",
+		"id": "buff_gwzj_ordinal5_level3"
+	},
+	"buff_gwzj_ordinal6_level1": {
+		"name": "Plan de l'Arche de l'algorithme",
+		"description": "Réduit de 10% l'ATQ de toutes les cibles dans un rayon de 8 mètres.",
+		"id": "buff_gwzj_ordinal6_level1"
+	},
+	"buff_gwzj_ordinal6_level2": {
+		"name": "Plan de l'Arche de l'algorithme",
+		"description": "Gagnez un bouclier équivalant à 20% de vos PV max toutes les 5 secondes.",
+		"id": "buff_gwzj_ordinal6_level2"
+	},
+	"buff_gwzj_ordinal6_level3": {
+		"name": "Plan de l'Arche de l'algorithme",
+		"description": "Lorsque l'Explorateur a un Bouclier actif, les dégâts finaux augmentent de 12%.",
+		"id": "buff_gwzj_ordinal6_level3"
+	},
+	"buff_gwzj_ordinal7_level1": {
+		"name": "Plan du Service de la sécurité publique",
+		"description": "Accroît de 20% toutes les résistances.",
+		"id": "buff_gwzj_ordinal7_level1"
+	},
+	"buff_gwzj_ordinal7_level2": {
+		"name": "Plan du Service de la sécurité publique",
+		"description": "Réduit de 20% les dégâts.",
+		"id": "buff_gwzj_ordinal7_level2"
+	},
+	"buff_gwzj_ordinal7_level3": {
+		"name": "Plan du Service de la sécurité publique",
+		"description": "Réduit de 30% les dégâts.",
+		"id": "buff_gwzj_ordinal7_level3"
+	},
+	"buff_gwzj_ordinal8_level1": {
+		"name": "Plan des forces défensives",
+		"description": "Accroît les effets de soin de 20%.",
+		"id": "buff_gwzj_ordinal8_level1"
+	},
+	"buff_gwzj_ordinal8_level2": {
+		"name": "Plan des forces défensives",
+		"description": "Après avoir reçu des soins, accroît les dégâts finaux de 6% pendant 5 secondes.",
+		"id": "buff_gwzj_ordinal8_level2"
+	},
+	"buff_gwzj_ordinal8_level3": {
+		"name": "Plan des forces défensives",
+		"description": "Après avoir reçu des soins, augmente les dégâts finaux de 12% pendant 5 secondes.",
+		"id": "buff_gwzj_ordinal8_level3"
+	},
+	"buff_gwzj_ordinal9_level1": {
+		"name": "Plan d'Aurora Industries",
+		"description": "Accroît de 30% la capacité de fracture.",
+		"id": "buff_gwzj_ordinal9_level1"
+	},
+	"buff_gwzj_ordinal9_level2": {
+		"name": "Plan d'Aurora Industries",
+		"description": "Augmente les dégâts finaux de 15% sur les cibles avec un Bouclier actif.",
+		"id": "buff_gwzj_ordinal9_level2"
+	},
+	"buff_gwzj_ordinal9_level3": {
+		"name": "Plan d'Aurora Industries",
+		"description": "Augmente les dégâts finaux de 25% sur les cibles avec un Bouclier actif.",
+		"id": "buff_gwzj_ordinal9_level3"
+	},
+	"buff_gwzj_ordinalsolo": {
+		"name": "Puissance du guerrier",
+		"description": "Accroît les dégâts finaux de 400% et les PV de 200%.",
+		"id": "buff_gwzj_ordinalsolo"
+	},
+	"buff_gwzj_teamclone3": {
+		"name": "Effet bénéfique d'Opération conjointe",
+		"description": "L'utilisation des compétences de décharge réinitialise le temps de recharge des compétences (également efficace en mode équilibré).",
+		"id": "buff_gwzj_teamclone3"
+	},
+	"buff_gwzj_voidclone1": {
+		"name": "Effet bénéfique de la Faille du néant",
+		"description": "Augmente l'efficacité de la charge d'arme de 50% (également efficace dans l'Abîme du néant).",
+		"id": "buff_gwzj_voidclone1"
+	},
+	"buff_gwzj_voidclone3": {
+		"name": "Effet bénéfique de la Faille du néant",
+		"description": "Dans les 10 secondes, récupérez 1 tentative d'esquive toutes les 2 esquives (également efficace dans l'Abîme du néant).",
+		"id": "buff_gwzj_voidclone3"
+	},
+	"buff_gwzj_worldboss3": {
+		"name": "Effet bénéfique de Conflit frontalier",
+		"description": "Réduit le temps de recharge des compétences de 80%.",
+		"id": "buff_gwzj_worldboss3"
+	},
+	"buff_gwzj_worldboss4": {
+		"name": "Effet bénéfique de Conflit frontalier",
+		"description": "Réduit le temps de recharge de la relique de 90%.",
+		"id": "buff_gwzj_worldboss4"
 	},
 	"buff_bailing_level1": {
 		"name": "Bai Ling: Bravoure",
@@ -8258,7 +8585,7 @@
 		"id": "buff_lancesice_ssr_level0_icespecial"
 	},
 	"time_revert_stack_count": {
-		"name": "Recharge du Re-Tracker",
+		"name": "Recharge du retraceur",
 		"description": "Nombre de charges de Re-Tracker. Lorsque le cumul spécifié est atteint, l'effet bénéfique de l'équipement correspondant sera activé.",
 		"id": "time_revert_stack_count"
 	},
@@ -8406,6 +8733,11 @@
 		"name": "Ombrencre jaune",
 		"description": "Vous enduit d'ombrencre jaune et augmente les dégâts infligés aux renards trichromes avec un bouclier d'ombrencre colorée différent de 170%.",
 		"id": "buff_mon_186_yellow_flower_player"
+	},
+	"buff_mon_192_thunderlinkforplay": {
+		"name": "WL-6 Électrode",
+		"description": "L'effet Électrode est accordé par WL-6. Lorsque vous vous trouvez à une certaine distance de WL-6, vous recevrez des dégâts de choc électrique à intervalles réguliers.",
+		"id": "buff_mon_192_thunderlinkforplay"
 	},
 	"buff_shiro_atkup_level1": {
 		"name": "Bonus de dégâts",
@@ -8579,52 +8911,52 @@
 	},
 	"buff_lucktarrow_01": {
 		"name": "Charge ultime",
-		"description": "Augmentez l'efficacité de la charge de 100%.",
+		"description": "Augmentez l'efficacité de la charge de 30%.",
 		"id": "buff_lucktarrow_01"
 	},
 	"buff_lucktarrow_02": {
 		"name": "Guérison",
-		"description": "Accroît les effets de soin de 20%.",
+		"description": "Accroît les effets de soin de 45%.",
 		"id": "buff_lucktarrow_02"
 	},
 	"buff_lucktarrow_03": {
 		"name": "Coquille de glace",
-		"description": "Accroît les dégâts de givre subis par les ennemis de 20%.",
+		"description": "Accroît de 40% les dégâts de givre subis par les ennemis.",
 		"id": "buff_lucktarrow_03"
 	},
 	"buff_lucktarrow_04": {
 		"name": "Feu",
-		"description": "Accroît les dégâts de feu subis par les ennemis de 20%.",
+		"description": "Accroît les dégâts de feu subis par les ennemis de 40%.",
 		"id": "buff_lucktarrow_04"
 	},
 	"buff_lucktarrow_05": {
 		"name": "Foudre",
-		"description": "Accroît les dégâts de foudre subis par les ennemis de 20%.",
+		"description": "Accroît de 40% les dégâts de foudre reçus par les ennemis.",
 		"id": "buff_lucktarrow_05"
 	},
 	"buff_lucktarrow_06": {
 		"name": "Physique",
-		"description": "Accroît les dégâts physiques subis par les ennemis de 20%.",
+		"description": "Accroît de 40% les dégâts physiques subis par les ennemis.",
 		"id": "buff_lucktarrow_06"
 	},
 	"buff_lucktarrow_07": {
 		"name": "Terrifier",
-		"description": "Accroît les dégâts des ennemis de 20%.",
+		"description": "Increase enemies' damage by 40%.",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "Surprendre",
-		"description": "Accroît l'ATQ des ennemis de 20%.",
+		"description": "Increase enemies' ATK by 40%.",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
 		"name": "Tenace",
-		"description": "Accroît la résistance des ennemis de 50%.",
+		"description": "Accroît la résistance des ennemis de 100%.",
 		"id": "buff_lucktarrow_09"
 	},
 	"buff_lucktarrow_10": {
 		"name": "Rude frappe",
-		"description": "Les ennemis avec bouclier infligent des dégâts équivalant à 392% de l'ATQ toutes les 10secondes.",
+		"description": "Les ennemis avec bouclier infligent des dégâts équivalant à 300% de l'ATQ 1 fois toutes les 10 secondes.",
 		"id": "buff_lucktarrow_10"
 	},
 	"buff_bati_artifact_ssr_011_1star": {
@@ -8649,7 +8981,7 @@
 	},
 	"buff_chiji_effect": {
 		"name": "Radiations d'omnium",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_chiji_effect"
 	},
 	"buff_chiji_finaldmgup_40per": {
@@ -9401,6 +9733,16 @@
 		"name": "Bénédiction",
 		"description": "Lorsque les PV d'une bête de combat alliée tombent en dessous de 30%, restaure 35% de ses PV max. Peut être déclenché une seule fois.",
 		"id": "mainbuff_fightmonster_replyhp_lowhp_level01"
+	},
+	"mainbuff_norncanteen_grill": {
+		"name": "Bénédiction du Poisson Grillé",
+		"description": "Accroît les dégâts physiques de 15%. Toutes les 10 secondes, la prochaine esquive ne consommera pas de compte d'esquive. Cet effet peut être stocké jusqu'à 1 fois. Dure 30 minutes.",
+		"id": "mainbuff_norncanteen_grill"
+	},
+	"mainbuff_norncanteen_sushi": {
+		"name": "Bénédiction de sushi",
+		"description": "Accroît les dégâts de givre de 15%. Toutes les 20 secondes, réduit de 50% les prochains dégâts subis par l'Explorateur. Cet effet peut être stocké jusqu'à 1 fois. Dure 30 minutes.",
+		"id": "mainbuff_norncanteen_sushi"
 	},
 	"buff_tfb_drop_2x": {
 		"name": "Chance d'Opération conjointe I",
@@ -10157,6 +10499,71 @@
 		"description": "Accroît de **20%** les dégâts contre les cibles sous l'effet d'une altération.",
 		"id": "buff_matrix_ssr9_sea_level4"
 	},
+	"buff_matrix_ssr90_atkupcommon": {
+		"name": "Bonus d'attaque de givre-foudre",
+		"description": "Accroît l'ATQ de foudre et de givre de **0%** pendant **1**secondes.",
+		"id": "buff_matrix_ssr90_atkupcommon"
+	},
+	"buff_matrix_ssr90_level1": {
+		"name": "Refrain de Rei",
+		"description": "Accroît les dégâts finaux de **0%**. Quand **Rédemption** inflige des dégâts, accroît l'ATQ de foudre et de givre de **1%** pendant **2**secondes. Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr90_level1"
+	},
+	"buff_matrix_ssr90_level2": {
+		"name": "Refrain de Rei",
+		"description": "Accroît les dégâts finaux de **0%**. Quand **Rédemption** inflige des dégâts, accroît l'ATQ de foudre et de givre de **1%** pendant **2**secondes. Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr90_level2"
+	},
+	"buff_matrix_ssr90_level3": {
+		"name": "Refrain de Rei",
+		"description": "Accroît les dégâts finaux de **0%**. Quand **Rédemption** inflige des dégâts, accroît l'ATQ de foudre et de givre de **1%** pendant **2**secondes. Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr90_level3"
+	},
+	"buff_matrix_ssr90_level4": {
+		"name": "Refrain de Rei",
+		"description": "Accroît les dégâts finaux de **0%**. Quand **Rédemption** inflige des dégâts, accroît l'ATQ de foudre et de givre de **1%** pendant **2**secondes. Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr90_level4"
+	},
+	"buff_matrix_ssr91_level1": {
+		"name": "Vision profonde",
+		"description": "Accroît l'ATQ de feu de **0%**. Tant que **Mise à mal** est active, chaque coup inflige des dégâts supplémentaires équivalant à **120%** de l'ATQ à toutes les cibles sur le plateau. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr91_level1"
+	},
+	"buff_matrix_ssr91_level2": {
+		"name": "Vision profonde",
+		"description": "Accroît l'ATQ de feu de **0%**. Tant que **Mise à mal** est active, chaque coup inflige des dégâts supplémentaires équivalant à **120%** de l'ATQ à toutes les cibles sur le plateau. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr91_level2"
+	},
+	"buff_matrix_ssr91_level3": {
+		"name": "Vision profonde",
+		"description": "Accroît l'ATQ de feu de **0%**. Tant que **Mise à mal** est active, chaque coup inflige des dégâts supplémentaires équivalant à **120%** de l'ATQ à toutes les cibles sur le plateau. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr91_level3"
+	},
+	"buff_matrix_ssr91_level4": {
+		"name": "Vision profonde",
+		"description": "Accroît l'ATQ de feu de **0%**. Tant que **Mise à mal** est active, chaque coup inflige des dégâts supplémentaires équivalant à **120%** de l'ATQ à toutes les cibles sur le plateau. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr91_level4"
+	},
+	"buff_matrix_ssr92_level1": {
+		"name": "Vision profonde",
+		"description": "Accroît les dégâts finaux de **0%**. Lorsque **Libreflux** est équipé, accroît les dégâts critiques de **1%**. Au début du combat, confère **9**cumuls supplémentaires de **Placement décisif**. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr92_level1"
+	},
+	"buff_matrix_ssr92_level2": {
+		"name": "Vision profonde",
+		"description": "Accroît les dégâts finaux de **0%**. Lorsque **Libreflux** est équipé, accroît les dégâts critiques de **1%**. Au début du combat, confère **9**cumuls supplémentaires de **Placement décisif**. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr92_level2"
+	},
+	"buff_matrix_ssr92_level3": {
+		"name": "Vision profonde",
+		"description": "Accroît les dégâts finaux de **0%**. Lorsque **Libreflux** est équipé, accroît les dégâts critiques de **1%**. Au début du combat, confère **9**cumuls supplémentaires de **Placement décisif**. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr92_level3"
+	},
+	"buff_matrix_ssr92_level4": {
+		"name": "Vision profonde",
+		"description": "Accroît les dégâts finaux de **0%**. Lorsque **Libreflux** est équipé, accroît les dégâts critiques de **1%**. Au début du combat, confère **9**cumuls supplémentaires de **Placement décisif**. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr92_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Couant de type II: Garde",
 		"description": "Augmente la défense à hauteur de **50%** des dégâts accrus infligés puis est immunisé contre l'hébétement pendant un certain temps.",
@@ -10816,6 +11223,71 @@
 		"name": "Réduction de défense",
 		"description": "Réduit la réduction de la défense sur toutes les stats de **20%**.",
 		"id": "buff_def_decrease"
+	},
+	"buff_dfishchess_arealevelstackcount": {
+		"name": "Déploiement tactique",
+		"description": "Chaque cumul accroît les dégâts de **0%** supplémentaires dans la zone, cumulable jusqu'à **8**fois.",
+		"id": "buff_dfishchess_arealevelstackcount"
+	},
+	"buff_dfishchess_changeskilladdimmstatus": {
+		"name": "Noyau ardent",
+		"description": "Lorsque vous utilisez la compétence de décharge de n'importe quelle arme de feu, vous gagnez Hypercorps pendant **8**secondes.",
+		"id": "buff_dfishchess_changeskilladdimmstatus"
+	},
+	"buff_dfishchess_chessenhancestackcount": {
+		"name": "Placement décisif",
+		"description": "Chaque coup consomme **1**cumul pour accroître les dégâts de **0%** supplémentaires.",
+		"id": "buff_dfishchess_chessenhancestackcount"
+	},
+	"buff_dfishchess_chessenhancestackcount_level1": {
+		"name": "Placement décisif",
+		"description": "Chaque coup consomme **1**cumul pour accroître les dégâts de **0%** supplémentaires.",
+		"id": "buff_dfishchess_chessenhancestackcount_level1"
+	},
+	"buff_dfishchess_declinespeedcut_in1s": {
+		"name": "Veines de jade",
+		"description": "Réduit la vitesse de **100%** pendant **1**seconde.",
+		"id": "buff_dfishchess_declinespeedcut_in1s"
+	},
+	"buff_dfishchess_declinespeedcut_in3s": {
+		"name": "Cœur loyal",
+		"description": "Réduit la vitesse de **100%** pendant **3**secondes.",
+		"id": "buff_dfishchess_declinespeedcut_in3s"
+	},
+	"buff_dfishchess_firedmgup_level0": {
+		"name": "Soleil ardent",
+		"description": "Accroît les dégâts de feu de **0%**, cumulable jusqu'à **8**fois.",
+		"id": "buff_dfishchess_firedmgup_level0"
+	},
+	"buff_dfishchess_firedmgup_level6": {
+		"name": "Soleil ardent",
+		"description": "Accroît les dégâts de feu de **0%**, cumulable jusqu'à **8**fois.",
+		"id": "buff_dfishchess_firedmgup_level6"
+	},
+	"buff_dfishchess_flame_ssr_level0_resonance": {
+		"name": "Résonance de feu",
+		"description": "**Résonance de feu**: accroît l'ATQ de feu de **15%** et la résistance au feu de **25%**. Activez-la en équipant au moins **2**armes de feu. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de feu ou de Réaction de feu, et Résonance de feu prévaut.",
+		"id": "buff_dfishchess_flame_ssr_level0_resonance"
+	},
+	"buff_dfishchess_immdeathandrecoverall": {
+		"name": "Mille feux",
+		"description": "Lorsque Mise à mal est active, réduit les dégâts subis de **0%**. Lorsque vous subissez des dégâts fatals, bloque les dégâts fatals et restaure entièrement les PV. L'effet sera annulé après l'activation.",
+		"id": "buff_dfishchess_immdeathandrecoverall"
+	},
+	"buff_dfishchess_level3": {
+		"name": "Crépuscule teinté de rose",
+		"description": "Lorsque des dégâts sont infligés, ignore **0%** de la résistance au feu des ennemis dans la zone.",
+		"id": "buff_dfishchess_level3"
+	},
+	"buff_dfishchess_physic_ssr_level0_resonance": {
+		"name": "Résonance physique",
+		"description": "**Résonance physique**: accroît l'ATQ physique de **15%** et la résistance physique de **25%**. S'active en équipant au moins **2**armes physiques. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance physique et de Réaction physique, et Résonance physique prévaut.",
+		"id": "buff_dfishchess_physic_ssr_level0_resonance"
+	},
+	"buff_dfishchessfire_ssr_level0_firespecial": {
+		"name": "Nexus central",
+		"description": "**Nexus central: Sur le terrain**: quand un coup est réussi avec **Libreflux**, inflige des dégâts aux cibles proches équivalant à **0%** de l'ATQ de feu + **1%** des PV max de l'Explorateur + **2%** de la somme de tous les types de résistance de l'Explorateur + **3%** de crit. Cet effet peut être déclenché une fois toutes les **1,5**seconde. Les dégâts de Nexus central comptent comme des dégâts d'attaque normale. Si **1**arme de givre ou de foudre est équipée, les dégâts de Nexus central sont multipliés par **4**. Par ailleurs, les dégâts de Nexus central ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent pas d'effets d'attaque supplémentaires.",
+		"id": "buff_dfishchessfire_ssr_level0_firespecial"
 	},
 	"buff_specialitem_003_speedcut": {
 		"name": "Cryopistolet",
@@ -11533,7 +12005,8 @@
 		"id": "buff_void_boss_502"
 	},
 	"buff_void_boss_601": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_void_boss_601"
 	},
 	"buff_void_halohealdown": {
@@ -11832,18 +12305,22 @@
 		"id": "buff_banbigbubble_15s_artifact_ssr_020"
 	},
 	"buff_teamclone_smallice120": {
+		"name": "Vulnérabilité au givre",
 		"description": "Accroît les dégâts de givre infligés aux ennemis.",
 		"id": "buff_teamclone_smallice120"
 	},
 	"buff_teamclone_smallfire120": {
+		"name": "Vulnérabilité au feu",
 		"description": "Accroît les dégâts de feu infligés aux ennemis.",
 		"id": "buff_teamclone_smallfire120"
 	},
 	"buff_teamclone_smallphy120": {
+		"name": "Vulnérabilité physique",
 		"description": "Accroît les dégâts physiques infligés aux ennemis.",
 		"id": "buff_teamclone_smallphy120"
 	},
 	"buff_teamclone_smallthunder120": {
+		"name": "Vulnérabilité à la foudre",
 		"description": "Accroît les dégâts de foudre infligés aux ennemis.",
 		"id": "buff_teamclone_smallthunder120"
 	},
@@ -12386,6 +12863,11 @@
 		"name": "Fauteurs de troubles",
 		"description": "Augmente les dégâts physiques de **0%** en infligeant des dégâts à des cibles ayant moins de **80%** de PV.",
 		"id": "buff_chainsaw_ssr_level0damup"
+	},
+	"buff_changebodyscale": {
+		"name": "Megaforme",
+		"description": "Entrez dans l'état Megaform, augmentez la taille et les PV max, gagnez Hypercorps. Les attaques sur les cibles infligent des dégâts supplémentaires significatifs (efficace uniquement contre les monstres). Les dégâts supplémentaires ont un temps de recharge de **1 seconde**. Megaform dure **60** secondes (l'effet se termine immédiatement en cas de mort, de transmission ou de sortie de la zone du Boss).",
+		"id": "buff_changebodyscale"
 	},
 	"buff_matrix_ssr35_level1_attackup": {
 		"name": "Lin : Noctipolis ne dort jamais",
@@ -14032,6 +14514,31 @@
 		"description": "Accroît tous les dégâts élémentaires de **0%**. Après avoir équipé Lance de Longin, accroît les dégâts finaux de **1%** et les dégâts de Vengeance à **2%**. Quand **Résonance de fortitude** est activée, accroît l'aggro généré de {3%. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
 		"id": "buff_matrix_ssr88_level4"
 	},
+	"buff_matrix_ssr89_iceandthunderdefdown": {
+		"name": "Réduction de la résistance",
+		"description": "Réduit la résistance à la foudre et au givre de **0%** pendant **1**secondes.",
+		"id": "buff_matrix_ssr89_iceandthunderdefdown"
+	},
+	"buff_matrix_ssr89_level1": {
+		"name": "Refrain de Rei",
+		"description": "Accroît les dégâts de foudre et de givre de **0%**. Après avoir équipé **Rédemption**, l'Explorateur ignore **1%** de la résistance à la foudre et au givre des cibles (la résistance totale ignorée de chaque élément ne peut dépasser **50%**). Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr89_level1"
+	},
+	"buff_matrix_ssr89_level2": {
+		"name": "Refrain de Rei",
+		"description": "Accroît les dégâts de foudre et de givre de **0%**. Après avoir équipé **Rédemption**, l'Explorateur ignore **1%** de la résistance à la foudre et au givre des cibles (la résistance totale ignorée de chaque élément ne peut dépasser **50%**). Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr89_level2"
+	},
+	"buff_matrix_ssr89_level3": {
+		"name": "Refrain de Rei",
+		"description": "Accroît les dégâts de foudre et de givre de **0%**. Après avoir équipé **Rédemption**, l'Explorateur ignore **1%** de la résistance à la foudre et au givre des cibles (la résistance totale ignorée de chaque élément ne peut dépasser **50%**). Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr89_level3"
+	},
+	"buff_matrix_ssr89_level4": {
+		"name": "Refrain de Rei",
+		"description": "Accroît les dégâts de foudre et de givre de **0%**. Après avoir équipé **Rédemption**, l'Explorateur ignore **1%** de la résistance à la foudre et au givre des cibles (la résistance totale ignorée de chaque élément ne peut dépasser **50%**). Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr89_level4"
+	},
 	"buff_hammerice_sr_level3_reducedamage20_breakfate": {
 		"name": "Réduction des dégâts",
 		"description": "Réduit les dégâts reçus de 10% dans les 6prochaines secondes.",
@@ -14508,35 +15015,43 @@
 		"id": "buff_lawplayer_main"
 	},
 	"buff_level_balance_mon_01": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_01"
 	},
 	"buff_level_balance_mon_02": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_02"
 	},
 	"buff_level_balance_mon_03": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_03"
 	},
 	"buff_level_balance_mon_04": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_04"
 	},
 	"buff_level_balance_mon_44": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_44"
 	},
 	"buff_level_balance_mon_45": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_45"
 	},
 	"buff_level_balance_mon_46": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_46"
 	},
 	"buff_level_balance_mon_47": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_47"
 	},
 	"buff_lawfriend_addsuceee": {
@@ -14649,6 +15164,11 @@
 		"description": "Pour chaque cumul d'effet bénéfique obtenu, **+1** au niveau d'étoile de l'arme. Le surplus de niveaux d'étoile appliquera un bonus de dégâts de **5%** à l'arme.",
 		"id": "buff_bigsecret_upstar_ssr_asuka_phy"
 	},
+	"buff_bigsecret_upstar_ssr_ayanamirei_thunder": {
+		"name": "Rédemption",
+		"description": "Pour chaque cumul d'effet bénéfique obtenu, **+1** au niveau d'étoile de l'arme. Le surplus de niveaux d'étoile appliquera un bonus de dégâts de **5%** à l'arme.",
+		"id": "buff_bigsecret_upstar_ssr_ayanamirei_thunder"
+	},
 	"buff_bigsecret_upstar_ssr_bigsword_ice": {
 		"name": "Lame de la rose",
 		"description": "Pour chaque cumul d'effet bénéfique obtenu, **+1** au niveau d'étoile de l'arme. Le surplus de niveaux d'étoile appliquera un bonus de dégâts de **5%** à l'arme.",
@@ -14738,6 +15258,11 @@
 		"name": "Alaya",
 		"description": "Pour chaque cumul d'effet bénéfique obtenu, **+1** au niveau d'étoile de l'arme. Le surplus de niveaux d'étoile appliquera un bonus de dégâts de **5%** à l'arme.",
 		"id": "buff_bigsecret_upstar_ssr_immortal_thunder"
+	},
+	"buff_bigsecret_upstar_ssr_jiyu_fire": {
+		"name": "Flux Yin-Yang",
+		"description": "Pour chaque cumul d'effet bénéfique obtenu, **+1** au niveau d'étoile de l'arme. Le surplus de niveaux d'étoile appliquera un bonus de dégâts de **5%** à l'arme.",
+		"id": "buff_bigsecret_upstar_ssr_jiyu_fire"
 	},
 	"buff_bigsecret_upstar_ssr_lances_ice": {
 		"name": "Maléfique",
@@ -15484,6 +16009,21 @@
 		"description": "Seuls les dégâts de foudre et les dégâts de feu sont efficaces, pas les autres types de dégâts.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_nornbeach_star": {
+		"name": "Étoile Vagabonde",
+		"description": "Le temps presse! Allez trouver la prochaine étoile!",
+		"id": "buff_nornbeach_star"
+	},
+	"buff_norncanteen_baozi_thunderdamageup": {
+		"name": "Bénédiction de la soupe aux ravioles",
+		"description": "Augmente de 15% les dégâts de foudre et la vitesse de 15%. Dure 30 minutes.",
+		"id": "buff_norncanteen_baozi_thunderdamageup"
+	},
+	"buff_norncanteen_tofu_firedamageup": {
+		"name": "Bénédiction de Tofu",
+		"description": "Accroît de 15% les dégâts de feu et de 20% la hauteur des sauts. Dure 30 minutes.",
+		"id": "buff_norncanteen_tofu_firedamageup"
+	},
 	"buff_origin_atkfire_level1": {
 		"name": "Pyrobrasier I",
 		"description": "Après avoir touché une cible, inflige des dégâts de feu supplémentaires équivalant à **2000%** de l'ATQ, non affectés par les effets bénéfiques ou les altérations. Temps de recharge: **2**secondes.",
@@ -15560,35 +16100,43 @@
 		"id": "buff_origin_atkthu_level3"
 	},
 	"buff_origin_balance99_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1"
 	},
 	"buff_origin_balance99_1th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1th"
 	},
 	"buff_origin_balance99_2": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2"
 	},
 	"buff_origin_balance99_2th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2th"
 	},
 	"buff_origin_balance99_3": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3"
 	},
 	"buff_origin_balance99_3th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3th"
 	},
 	"buff_origin_balance99_4": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4"
 	},
 	"buff_origin_balance99_4th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4th"
 	},
 	"buff_origin_bedamdown_level1": {

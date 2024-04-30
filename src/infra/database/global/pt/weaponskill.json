@@ -4693,6 +4693,150 @@
 			}
 		]
 	},
+	"GA_FPlayerDFishChessChangeSkill": {
+		"skills": [
+			{
+				"name": "Isso Termina Aqui",
+				"description": "N/A",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_ChangeSkill"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessEvade": {
+		"skills": [
+			{
+				"name": "Esquiva",
+				"description": "Esquive-se logo antes de sofrer um golpe para criar uma Phantasia, reduzindo a velocidade dos alvos dentro da área. Fica imune a interrupção enquanto se esquiva.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerDFishChessEvade_Evade"
+			},
+			{
+				"name": "Posição Vantajosa",
+				"description": "Use o botão de ataque normal dentro do tempo de esquiva perfeita (use um botão direcional antes de se esquivar) para pôr <shuzhi>1</> peça preta na frente. A peça puxa e desacelera os alvos próximos brevemente, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "Estrela Cadente",
+				"description": "Use o botão de ataque normal logo após se esquivar para trás para pôr <shuzhi>3</> peças brancas na frente. Ao aterrissar, cada peça branca causa dano em área de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. As peças também geram armadilhas que explodem quando um inimigo se aproxima, desacelerando-os brevemente e causando mais <shuzhi>57%</> de dano.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessMelee": {
+		"skills": [
+			{
+				"name": "Estrelas Móveis",
+				"description": "No chão, use o ataque normal para atacar 5 vezes seguidas.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>.\r\nQuarto ataque: Causa dano de <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</>.\r\nQuinto ataque: Causa dano de <shuzhi>{8}%</> do ATQ + <shuzhi>{9}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_Melee"
+			},
+			{
+				"name": "Movimento Inicial",
+				"description": "No ar, use o botão de ataque normal para atacar 4 vezes seguidas e consumir vigor.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>.\r\nQuarto ataque: Causa dano de <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_AirAttack"
+			},
+			{
+				"name": "Revisão do Tabuleiro",
+				"description": "No chão, segure o botão de ataque normal para acionar Revisão do Tabuleiro. Junta até 5 peças que perseguem os alvos após serem arremessadas. Cada peça causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+			},
+			{
+				"name": "Salto Geracional",
+				"description": "No ar, segure o botão de ataque normal para acionar Salto Geracional.\r\nAo aterrissar, solta os peixes gêmeos e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e os lança no ar.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessSkill": {
+		"skills": [
+			{
+				"name": "Entre no Jogo",
+				"description": "Salta no ar, transforma o campo de batalha em um tabuleiro de Go e levita (não é possível se mover nesse período). Recebe visão de cima por até <shuzhi>10</> segundos. Nesse período, seus ataques tornam-se peças de Go e suas habilidades são substituídas por <shuzhi>Vantagem de Meia Peça</>. Toque no tabuleiro de Go para pôr <shuzhi>18</> peças em ordem. Cada uma causa dano de <shuzhi>250%</> do ATQ a todos os alvos no tabuleiro e os desacelera brevemente. Tempo de recarga: <shuzhi>40</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga.\r\n<shuzhi>Posicionamento decisivo</>: Usar <shuzhi>Revisão do Tabuleiro</>, <shuzhi>Posição Vantajosa</>, <shuzhi>Estrela Cadente</> e <shuzhi>Isso Termina Aqui</> ou criar (não apenas atualizar) invocações confere acúmulos de posicionamento decisivo. Pode acumular até <shuzhi>9</> vezes. Com posicionamento decisivo ativo, cada peça de Go gasta <shuzhi>1</> acúmulo para causar dano adicional de <shuzhi>200%</> do ATQ a todos os alvos no tabuleiro. Nenhum acúmulo é recebido enquanto a habilidade está ativa.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+				"operations": [],
+				"tags": [
+					"Damage",
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChess_Skill"
+			},
+			{
+				"name": "Vantagem de Meia Peça",
+				"description": "Com <shuzhi>Entre no Jogo</> ativa, use manualmente ou acione automaticamente Vantagem de Meia Peça no final da sua duração. Cai do céu e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> a todos os alvos no tabuleiro. Além disso, causa dano equivalente ao número de acúmulos de <shuzhi>posicionamento decisivo</> gastos durante a habilidade × 200% do ATQ. Então, os peixes gêmeos circulam para fora, afastando os alvos próximos e causando dano de <shuzhi>{2}%</> do ATQ.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_Skill2"
+			}
+		]
+	},
 	"GA_FPlayerCubeMelee": {
 		"skills": [
 			{
@@ -9382,7 +9526,7 @@
 			},
 			{
 				"name": "Rasga-Nuvens",
-				"description": "Use o botão de ataque normal logo após se esquivar para trás a fim de acionar Rasga-Nuvens, arremessando <shuzhi>8</> pares de adagas teleguiadas que perseguem alvos aleatórios à frente, causando dano em área de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.",
+				"description": "Use o botão de ataque normal logo após se esquivar para trás para acionar Rasga-Nuvens, arremessando <shuzhi>8</> pares de adagas teleguiadas que perseguem alvos aleatórios à frente, causando dano em área de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_killknife_bevadeattack.webp",
 				"operations": [
 					"Dash",
@@ -9672,7 +9816,7 @@
 		"skills": [
 			{
 				"name": "Mordida Gélida",
-				"description": "Brande a lança para rasgar o espaço, recebendo corpo de aço e <shuzhi>80%</> de redução de dano durante <shuzhi>2</> segundos. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e cria um rasgo que os puxa, com duração de <shuzhi>30</> segundos. Além disso, cria <shuzhi>6</> núcleos gélidos (pode haver até <shuzhi>45</> núcleos gélidos ao mesmo tempo na batalha). Tempo de recarga: <shuzhi>60</> seg.\r\nApós usar Mordida Gélida, você tem os danos gélido e elétrico aumentados em <shuzhi>9%</> e ignora <shuzhi>15%</> das resistências gélida e elétrica do alvo durante <shuzhi>60</> segundos. (A resistência total ignorada para cada elemento não pode exceder <shuzhi>50%</>.)",
+				"description": "Brande a lança para rasgar o espaço, recebendo corpo de aço e <shuzhi>80%</> de redução de dano durante <shuzhi>2</> segundos. Causa dano de <shuzhi>{0}%%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e cria um rasgo que os puxa, com duração de <shuzhi>30</> segundos. Além disso, cria <shuzhi>6</> núcleos gélidos (pode haver até <shuzhi>45</> núcleos gélidos ao mesmo tempo no campo). Tempo de recarga: <shuzhi>60</> seg.\r\nApós usar Mordida Gélida, você tem os danos gélido e elétrico aumentados em <shuzhi>9%</> e ignora <shuzhi>15%</> das resistências gélida e elétrica do alvo durante <shuzhi>60</> segundos. (A resistência total ignorada para cada elemento não pode exceder <shuzhi>50%</>.)",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_Lances_RealSkill.webp",
 				"operations": [],
 				"tags": [
@@ -11688,7 +11832,7 @@
 	"GA_FPlayerAsukaChangeSkill": {
 		"skills": [
 			{
-				"name": "Ataque de Evangelion",
+				"name": "Envio de Armas",
 				"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e faz pilotar o EVA-02 para executar um chute aéreo. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, recebe imunidade a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
 				"operations": [],
@@ -11809,13 +11953,161 @@
 		"skills": [
 			{
 				"name": "Corta-Nuvens",
-				"description": "N/A",
+				"description": "Arremessa a arma na direção do alvo e puxa os alvos próximos. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> e imobiliza os alvos próximos brevemente. Tempo de recarga: <shuzhi>20</> seg. Efeitos que zeram, atualizam ou mudam o tempo de recarga não afetam isso.\r\nUsar a habilidade com êxito confere <shuzhi>10</> acúmulos de vingança. Causar dano a um inimigo consome <shuzhi>1</> acúmulo de vingança. Se o tipo da arma equipada for <shuzhi>físico</> ou <shuzhi>ígneo</>, causa dano adicional correspondente ao tipo da arma de <shuzhi>600%</> do ATQ aos alvos próximos. Esse efeito pode se acionar até <shuzhi>1</> vez por segundo.\r\nAlém disso, usar a habilidade com êxito gera um campo A.T. com durabilidade equivalente a <shuzhi>50%</> da vida máxima durante <shuzhi>30</> segundos. Nesse período, o seu dano físico aumenta em <shuzhi>18%</>, o dano ígneo aumenta em <shuzhi>12%</>, e você recebe corpo de aço.\r\nQuando você sofrer dano, o campo A.T. vai reduzir o dano com base na porcentagem da durabilidade restante dele e subtrair sua durabilidade com base no dano causado (até no mínimo <shuzhi>10%</> da durabilidade).\r\nCom ressonância de coragem ativa, se você sofrer dano enquanto tem acúmulos de vingança, <shuzhi>1</> acúmulo de vingança será consumido e dano equivalente a <shuzhi>8%</> da vida máxima será bloqueado. Esse efeito pode ser acionado até <shuzhi>1</> vez a cada <shuzhi>0,5</> segundo.",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
 				"operations": [],
 				"tags": [
 					"Damage"
 				],
 				"id": "GA_FPlayerAsukaSkill_Skill"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiChangeSkill_Thu": {
+		"skills": [
+			{
+				"name": "Campo Defensivo",
+				"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</>. Invoca um mecha, que golpeia o chão com o escudo, provocando um abalo sísmico que causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Além disso, recebe <shuzhi>30</> de energia especial. Nesse período, recebe imunidade a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiEvade_Thu": {
+		"skills": [
+			{
+				"name": "Esquiva",
+				"description": "Esquive-se logo antes de sofrer um golpe para criar uma Phantasia, reduzindo a velocidade dos alvos dentro da área. Fica imune a interrupção enquanto se esquiva.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerAyanamiReiEvade_Evade"
+			},
+			{
+				"name": "Tiro Triplo",
+				"description": "Use o botão de ataque normal logo após se esquivar para acionar Tiro Triplo. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> ao primeiro alvo atingido.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+			},
+			{
+				"name": "Tiros Concentrados",
+				"description": "Use o botão de ataque normal no momento certo para acionar Tiros Concentrados. Atira flechas de energia poderosas que causam dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos. Além disso, também atira flechas guiadas. Você recebe 1 barreira de bloqueio durante <shuzhi>15</> segundos, que bloqueia dano equivalente a até <shuzhi>10%</> da sua vida máxima. Você pode ter até 3 barreiras de bloqueio ao mesmo tempo.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiMelee_Thu": {
+		"skills": [
+			{
+				"name": "Arco Rápido",
+				"description": "No chão, use o botão de ataque normal para executar 6 ataques consecutivos.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> e repele o alvo uma curta distância.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> e repele o alvo uma curta distância.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</> e repele o alvo uma curta distância.\r\nQuarto ataque: Causa dano de até <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</> e repele o alvo uma curta distância.\r\nApós o quinto ataque, quando uma luz piscar, use o botão para acionar o sexto ataque. Sexto ataque: Atira uma flecha de energia poderosa e flechas guiadas, que causam dano de <shuzhi>{10}%</> do ATQ + <shuzhi>{11}</> aos alvos e aplicam um campo magnético desacelerador na posição do primeiro alvo atingido durante <shuzhi>3</> segundos. A velocidade de movimento e de ataque dos inimigos dentro da área diminuem em <shuzhi>35%</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Melee"
+			},
+			{
+				"name": "Ataque Aéreo",
+				"description": "No ar, use o botão de ataque normal para atacar 6 vezes seguidas no ar e consumir vigor.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>.\r\nQuarto ataque: Causa dano de até <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</>.\r\nQuinto ataque: Causa dano de <shuzhi>{8}%</> do ATQ + <shuzhi>{9}</>.\r\nApós o quinto ataque, quando uma luz piscar, use o botão para acionar o sexto ataque. Sexto ataque: Atira uma flecha de energia poderosa e <shuzhi>5</> <shuzhi>flechas guiadas</> que causam dano de <shuzhi>{10}%</> do ATQ + <shuzhi>{11}</> aos alvos e aplicam um campo magnético desacelerador na posição do primeiro alvo atingido. A velocidade de movimento e de ataque dos inimigos dentro da área diminuem em <shuzhi>40%</> durante <shuzhi>3</> segundos.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+			},
+			{
+				"name": "Flecha com Mortal",
+				"description": "Do primeiro ao quinto ataque normal, no solo ou no ar, segure o botão de ataque normal para acionar Flecha com Mortal.\r\nAtira uma flecha adiante enquanto dá um salto mortal para trás, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> ao alvo atingido.\r\nNesse momento, se a energia especial estiver acima de <shuzhi>70</>, aciona <shuzhi>consumo energético</>: Aumenta o ATQ elétrico em <shuzhi>15%</> e o ATQ gélido em <shuzhi>5%</>.\r\nCom <shuzhi>Salvação</> no espaço principal, gasta <shuzhi>5</> de energia especial a cada 0,5 segundo. Aumenta o dano causado com <shuzhi>Salvação</> em 30%. Use várias vezes ou segure o botão de ataque normal para acionar <shuzhi>Rajada Evasiva</>.\r\nCom <shuzhi>Salvação</> no espaço secundário, gasta <shuzhi>3,3</> de energia especial a cada 0,5 segundo. Aumenta o dano de Flecha Guiada em <shuzhi>50%</> e o raio de explosão dela.\r\nO limite de energia especial é <shuzhi>100</>. Ao atingir essa quantidade, passar <shuzhi>Salvação</> para o espaço secundário faz você entrar em consumo energético imediatamente.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+			},
+			{
+				"name": "Rajada Evasiva",
+				"description": "Durante o <shuzhi>consumo energético</>, use o botão de ataque normal para atacar 3 vezes seguidas.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+			},
+			{
+				"name": "Tiro de Precisão",
+				"description": "Segure o botão de ataque normal para carregar um ataque. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>. Cada <shuzhi>0,1</> segundo de carga aumenta o dano em <shuzhi>100%</>, chegando ao limite após <shuzhi>2,3</> segundos.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+				"operations": [
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiSkill_Thu": {
+		"skills": [
+			{
+				"name": "Ataque Mecha",
+				"description": "Invoca um mecha para esmurrar os inimigos. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, você recebe corpo de aço e <shuzhi>35</> de energia especial. Tempo de recarga: <shuzhi>20</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiSkill_Skill"
 			}
 		]
 	},

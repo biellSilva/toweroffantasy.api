@@ -4693,6 +4693,150 @@
 			}
 		]
 	},
+	"GA_FPlayerDFishChessChangeSkill": {
+		"skills": [
+			{
+				"name": "รุกฆาต",
+				"description": "N/A",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_ChangeSkill"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessEvade": {
+		"skills": [
+			{
+				"name": "หลบหลีก",
+				"description": "หลบหลีกก่อนถูกโจมตี เพื่อเรียกใช้งานแฟนตาเซีย ซึ่งจะลดความเร็วของเป้าหมายในบริเวณ และจะไม่โดนติดสตันขณะหลบหลีก",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerDFishChessEvade_Evade"
+			},
+			{
+				"name": "ยึดอำนาจ",
+				"description": "แตะโจมตีปกติในช่วงเวลาสั้น ๆ ก่อนการหลบหลีกที่ถูกเรียกใช้โดยปุ่มทิศทางและปุ่มหลบหลีก ขว้างหมากดำออกไปด้านหน้า <shuzhi>1</> ตัว ดึงเป้าหมายและทำให้เป้าหมายในวงแคบเชื่องช้าลง สร้างดาเมจแก่เป้าหมายด้านหน้าเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "ดาวตก",
+				"description": "หลังจากหลบหลีกในช่วงสั้น ๆ แตะโจมตีปกติ วางหมากขาวลงด้านหน้า <shuzhi>3</> ตัว แต่ละตัวจะสร้างดาเมจวงกว้างแก่เป้าหมายที่อยู่ใกล้เคียงเท่ากับ<shuzhi>{0}%</> ของ ATK +<shuzhi>{1}</> แต้ม และจะวางกับดักเพิ่มเติม เมื่อเป้าหมายเข้าใกล้จะระเบิด ทำให้เชื่องช้าลงชั่วขณะและสร้างดาเมจเพิ่ม <shuzhi>57%</>",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessMelee": {
+		"skills": [
+			{
+				"name": "ดาวเคลื่อนคล้อย",
+				"description": "ขณะอยู่บนพื้น กดโจมตีปกติเพื่อโจมตี 5 ครั้งติดต่อกัน\r\nการโจมตีครั้งแรก: สร้างดาเมจต่อเป้าหมาย <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจต่อเป้าหมาย <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจต่อเป้าหมาย <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจต่อเป้าหมาย <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>\r\nการโจมตีครั้งที่ห้า: สร้างดาเมจต่อเป้าหมาย <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</>",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_Melee"
+			},
+			{
+				"name": "เริ่มเคลื่อนไหว",
+				"description": "เมื่อนักพเนจรลอยอยู่กลางอากาศ กดหรือแตะโจมตีปกติเพื่อโจมตีต่อเนื่อง 4 ครั้ง กลางอากาศ และใช้พลังกาย\r\nโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจต่อเป้าหมายเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> แต้ม",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_AirAttack"
+			},
+			{
+				"name": "คณะกรรมการพิจารณา",
+				"description": "เมื่ออยู่บนพื้น แตะโจมตีปกติและกดค้างไว้หรือกดค้างไว้ขณะโจมตีปกติ จะเข้าสู่สถานะพิพากษากระดาน รวบรวมตัวหมากอย่างต่อเนื่องสูงสุดถึง 5 ตัว หลังเรียกใช้ จะยิงหมากรุกทั้งหมดไปไล่ล่าเป้าหมาย ตัวหมากแต่ละตัวจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK +<shuzhi>{1}</> แต้ม",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+			},
+			{
+				"name": "เดินทางข้ามยุคสมัย",
+				"description": "เมื่อนักพเนจรลอยอยู่กลางอากาศ เมื่อแตะโจมตีปกติและกดค้างไว้ จะเรียกใช้เดินทางข้ามยุคสมัย\r\nตกลงมาจากด้านบน เมื่อลงถึงพื้นแล้วจะขว้างปลาคู่ใส่เป้าหมายที่อยู่ใกล้เคียงสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม และทำให้เป้าหมายกระเด็น",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessSkill": {
+		"skills": [
+			{
+				"name": "ลงสนามเอง",
+				"description": "ทะยานสู่ท้องฟ้า เปลี่ยนสนามรบให้เป็นกระดานหมากรุก ลอยอยู่กลางอากาศ (ขณะนี้ไม่สามารถเคลื่อนที่ได้) ได้รับมุมมองจากมุมสูง ต่อเนื่องสูงสุดถึง <shuzhi>10</> วินาที การโจมตีถูกแทนที่ด้วยวางหมากรุก สกิลถูกแทนที่ด้วย<shuzhi>สกิล: ไม่เกรงกลัวสิ่งใด</> แตะกระดานหมากรุกเพื่อวางตัวหมากรุก <shuzhi>18</> ตัวตามลำดับ ตัวหมากรุกแต่ละตัวจะสร้างดาเมจเท่ากับ <shuzhi>250%</> ของ ATK แก่เป้าหมายทั้งหมดบนกระดานหมากรุก และทำให้เป้าหมายเชื่องช้าชั่วขณะหนึ่ง คูลดาวน์ <shuzhi>40</> วินาที (ไม่ได้รับผลจากเอฟเฟกต์ล้าง, รีเซ็ต, เปลี่ยนแปลงเวลาคูลดาวน์ใด ๆ)\r\n<shuzhi>เดินหมากแล้วห้ามถอยกลับ</>: เรียกใช้<shuzhi>โจมตีปกติ: พิพากษากระดาน</>, <shuzhi>หลบหลีก: ยึดอำนาจ</>, <shuzhi>หลบหลีก: ดาวตก</>, <shuzhi>คอมโบ: รุกฆาต</> หรือสร้าง (แทนที่การรีเฟรช) ผู้ช่วยออกมาเพื่อจะได้รับจำนวนชั้นของเดินหมากแล้วห้ามถอยกลับที่สอดคล้อง สามารถได้รับสูงสุดถึง <shuzhi>9</> ชั้น ช่วงใช้สกิลเดินหมากแล้วห้ามถอยกลับ <shuzhi>1</> หน่วย (ระหว่างที่ใช้สกิลจะไม่ได้รับเดินหมากแล้วห้ามถอยกลับซ้ำ) สร้างดาเมจเพิ่มเติมให้กับเป้าหมายทั้งหมดบนกระดานหมากรุกเท่ากับ <shuzhi>200%</> ของ ATK",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+				"operations": [],
+				"tags": [
+					"Damage",
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChess_Skill"
+			},
+			{
+				"name": "ไม่เกรงกลัวสิ่งใด",
+				"description": "ระยะเวลาที่เรียกใช้<shuzhi>สกิล: ลงสนามเอง</>แบบแมนนวล หรือหลังจากสิ้นสุดระยะเวลา ไม่เกรงกลัวสิ่งใดจะถูกเรียกใช้โดยอัตโนมัติ เมื่อตกลงมาสู่พื้น จะสร้างดาเมจให้กับเป้าหมายทั้งหมดบนกระดานเท่ากับ <shuzhi>{0}%</> ของATK + <shuzhi>{1}</> นอกจากนี้ ระหว่างที่ใช้สกิลยังทำให้เกิดชั้น <shuzhi>เดินหมากแล้วห้ามถอยกลับ</> เพิ่มเติมเท่ากับ 200% ของ ATK ปลาคู่ว่ายออกไปด้านนอก ผลักเป้าหมายที่อยู่ใกล้เคียงตนเองออกไปและสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_Skill2"
+			}
+		]
+	},
 	"GA_FPlayerCubeMelee": {
 		"skills": [
 			{
@@ -11688,7 +11832,7 @@
 	"GA_FPlayerAsukaChangeSkill": {
 		"skills": [
 			{
-				"name": "อีวานเกเลียนจู่โจม",
+				"name": "จู่โจมด้วยอาวุธ",
 				"description": "เมื่อ<red>ชาร์จอาวุธเต็ม</> หรือเรียกใช้งาน<red>แฟนตาเซีย</>แล้ว การสลับมายังอาวุธนี้จะ<shuzhi>ลบดีบัฟทั้งหมดจากผู้ถือ</> ขึ้นขับ Unit-02 แล้วกระโดดถีบ สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมายใกล้เคียง ในช่วงระยะเวลานี้ จะไม่โดนดาเมจเป็นเวลา <shuzhi>1.5</> วินาที (ใช้ในลีกแข่งยอดฝีมือไม่ได้)",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
 				"operations": [],
@@ -11809,13 +11953,161 @@
 		"skills": [
 			{
 				"name": "ผ่าเมฆาสังหาร",
-				"description": "N/A",
+				"description": "ขว้างอาวุธใส่เป้าหมายด้านหน้าและทำการดูดเป้าหมายที่อยู่ใกล้ ๆ สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และหยุดเป้าหมายใกล้เคียงชั่วคราว คูลดาวน์ <shuzhi>20</> วินาที (จะไม่ได้รับผลกระทบจากเอฟเฟกต์ล้างเวลาคูลดาวน์ รีเซ็ต เปลี่ยนร่างใด ๆ)\r\nเมื่อเรียกปล่อยสำเร็จตนเองจะได้รับล้างแค้น <shuzhi>10</> ชั้น เมื่อสร้างดาเมจใส่เป้าหมายจะใช้ <shuzhi>1</> ชั้น หากประเภทธาตุของอาวุธปัจจุบันเป็น<shuzhi>กายภาพ</>หรือ<shuzhi>ไฟ</> จะสร้างดาเมจเพิ่มเติม <shuzhi>600%</> ของ ATK ตามประเภทธาตุดาเมจปัจจุบันใส่เป้าหมายใกล้เคียง เรียกใช้ได้สูงสุด <shuzhi>1</> ทุกวินาที\r\nหลังเรียกใช้สำเร็จ จะเปิดใช้งานสนามพลัง A.T ให้ตนเองที่มีขีดจำกัดค่าคงทนเท่ากับ <shuzhi>50%</> ของค่า HP สูงสุดของผู้ปฏิบัติการ เป็นเวลา <shuzhi>30</> วินาที ซึ่งในช่วงเวลานี้จะเพิ่มดาเมจกายภาพ <shuzhi>18%</> และดาเมจไฟ <shuzhi>12%</> ให้ตนเอง และจะได้รับไฮเปอร์บอดี้\r\nเมื่อตนเองได้รับดาเมจ สนามพลัง A.T จะลดดาเมจที่ตนเองได้รับตามเปอร์เซ็นต์ของค่าคงทนที่เหลือ ในขณะเดียวกันก็จะหักค่าคงทนของสนามพลัง A.T ตามค่าดาเมจในครั้งนี้ด้วย (ขั้นต่ำของค่าคงทนคือ <shuzhi>10%</> ของขีดจำกัด)\r\nเมื่อเปิดใช้งานเรโซแนนซ์ความอดทนและยังอยู่ในช่วงล้างแค้น หากตนเองโดนดาเมจ จะใช้ล้างแค้น <shuzhi>1</> ชั้น เพื่อบล็อกดาเมจเท่ากับ <shuzhi>8%</> ของค่า HP สูงสุด เรียกใช้ได้ <shuzhi>1</> ครั้งทุก ๆ <shuzhi>0.5</> วินาที",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
 				"operations": [],
 				"tags": [
 					"Damage"
 				],
 				"id": "GA_FPlayerAsukaSkill_Skill"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiChangeSkill_Thu": {
+		"skills": [
+			{
+				"name": "สนามป้องกัน",
+				"description": "เมื่อ<red>ชาร์จอาวุธเต็ม</> หรือเรียกใช้งาน<red>แฟนตาเซีย</>แล้ว การสลับมายังอาวุธนี้จะ<shuzhi>ลบดีบัฟทั้งหมดจากผู้ถือ</> เรียกหุ่นเกราะเพื่อใช้โล่กระแทกพื้น ปลดปล่อยคลื่นกระแทกสร้างดาเมจ <shuzhi>{0}%</> ของ ATK ใส่เป้าหมายใกล้เคียง + <shuzhi>{1}</> และได้รับพลังงานพิเศษ <shuzhi>30</> แต้ม ในช่วงระยะเวลานี้ จะไม่โดนดาเมจเป็นเวลา <shuzhi>1.5</> วินาที (ใช้ในลีกแข่งยอดฝีมือไม่ได้)",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiEvade_Thu": {
+		"skills": [
+			{
+				"name": "หลบหลีก",
+				"description": "หลบหลีกก่อนถูกโจมตี เพื่อเรียกใช้งานแฟนตาเซีย ซึ่งจะลดความเร็วของเป้าหมายในบริเวณ และจะไม่โดนติดสตันขณะหลบหลีก",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerAyanamiReiEvade_Evade"
+			},
+			{
+				"name": "ยิงสามครั้ง",
+				"description": "แตะโจมตีปกติในระหว่างช่วงระยะเวลาสั้น ๆ หลังหลบหลีกใดก็ได้ เพื่อเรียกใช้ยิงสามครั้ง จะสร้างดาเมจสูงสุด <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมายที่โดนครั้งแรก",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+			},
+			{
+				"name": "ชาร์จเรียงราย",
+				"description": "หลังหลบหลีกให้แตะโจมตีปกติให้ถูกเวลา เพื่อเรียกใช้ชาร์จเรียงราย จะยิงศรพลังงานอันทรงพลัง สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมาย ขณะเดียวกันจะยิงศรติดตามหลายดอกออกไป ตนเองจะได้รับการบล็อก 1 ครั้ง เป็นเวลา <shuzhi>15</> วินาที ค่าการบล็อกสูงสุดไม่เกิน <shuzhi>10%</> ของค่า HP สูงสุดของตนเอง ผู้เล่นสามารถบล็อกได้สามครั้งในเวลาเดียวกัน",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiMelee_Thu": {
+		"skills": [
+			{
+				"name": "ยิงศรรวดเร็ว",
+				"description": "ขณะอยู่บนพื้น แตะโจมตีปกติเพื่อโจมตีต่อเนื่อง 6 ครั้ง\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้กับเป้าหมาย และทำให้เป้าหมายกระเด็นเล็กน้อย\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> ให้กับเป้าหมาย และทำให้เป้าหมายกระเด็นเล็กน้อย\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> ให้กับเป้าหมาย และทำให้เป้าหมายกระเด็นเล็กน้อย\r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> ให้กับเป้าหมาย และทำให้เป้าหมายกระเด็นเล็กน้อย\r\nการโจมตีครั้งที่ห้า: หลังโจมตีครั้งที่ห้าแล้วแตะเมื่อมีแฟลชจะเรียกใช้การโจมตีครั้งที่หก การโจมตีครั้งที่หกจะยิงศรพลังงานอันทรงพลังและปล่อยศรติดตามจำนวนหนึ่งสร้างดาเมจ <shuzhi>{10}%</> ของ ATK + <shuzhi>{11}</> ใส่เป้าหมาย และสร้างสนามแม่เหล็กเชื่องช้า 1 อันใส่เป้าหมายที่โดนครั้งแรก เป็นเวลา <shuzhi>3</> วินาที [สนามแม่เหล็กเชื่องช้า: ความเร็วในเคลื่อนที่และโจมตีของเป้าหมายศัตรูจะลดลง <shuzhi>35%</>]",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Melee"
+			},
+			{
+				"name": "ยิงต่อเนื่องกลางอากาศ",
+				"description": "ขณะที่นักพเนจรลอยอยู่กลางอากาศ แตะโจมตีปกติเพื่อโจมตีกลางอากาศโดยใช้พลังกาย 6 ครั้งติดต่อกัน\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้กับเป้าหมาย\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> ให้กับเป้าหมาย\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> ให้กับเป้าหมาย\r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> ให้กับเป้าหมาย\r\nการโจมตีครั้งที่ห้า: สร้างดาเมจเท่ากับ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> ให้กับเป้าหมาย\r\nหลังโจมตีครั้งที่ห้าแล้วแตะเมื่อมีแฟลชจะเรียกใช้การโจมตีครั้งที่หก การโจมตีครั้งที่หกจะยิงศรพลังงานอันทรงพลังและปล่อย<shuzhi>ศรติดตาม</> <shuzhi>5</> อัน สร้างดาเมจ <shuzhi>{10}%</> ของ ATK ใส่เป้าหมาย + <shuzhi>{11}</> และสร้างสนามแม่เหล็กเชื่องช้าลงที่เป้าหมาย 1 อัน: ความเร็วในเคลื่อนที่และโจมตีของเป้าหมายศัตรูจะลดลง <shuzhi>40%</> เป็นเวลา <shuzhi>3</> วินาที",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+			},
+			{
+				"name": "ศรกระโดดกลับหลัง",
+				"description": "โจมตีปกติเมื่ออยู่บนพื้นหรือกลางอากาศ ใช้การโจมตีครั้งที่ 1 - 5 แล้วและโจมตีปกติค้างเพื่อเรียกใช้ศรกระโดดกลับหลัง\r\nขณะที่กระโดดกลับหลังจะยิงไปข้างหน้า สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมาย\r\nหากในครั้งนี้พลังงานพิเศษสูงกว่า <shuzhi>70</> จะปล่อยสถานะ<shuzhi>ใช้พลังงาน</>: ATK ไฟฟ้าเพิ่มขึ้น <shuzhi>15%</>, ATK น้ำแข็งเพิ่มขึ้น <shuzhi>5%</>\r\nและเมื่อ<shuzhi>ไถ่บาป</>อยู่ในช่องอาวุธหลัก ทุก 0.5 วินาทีจะใช้พลังงานพิเศษ <shuzhi>5</> แต้ม <shuzhi>ไถ่บาป</>สร้างดาเมจเพิ่มขึ้น 30% ทำการแตะต่อเนื่องหรือแตะโจมตีปกติค้างเพื่อเรียกใช้<shuzhi>โจมตีปกติ: ยิงอย่างรวดเร็ว</>\r\nเมื่อ<shuzhi>ไถ่บาป</>อยู่ในช่องอาวุธรอง ทุก 0.5 วินาทีจะใช้พลังงานพิเศษ <shuzhi>3.3</> แต้ม ดาเมจศรติดตามจะเพิ่มขึ้น <shuzhi>50%</> และระยะการระเบิดเมื่อจำนวนที่ติดอยู่ครบจะเพิ่มขึ้น\r\nพลังงานพิเศษมีได้สูงสุด <shuzhi>100</> แต้ม หลังเติมจนเต็มแล้วสลับ<shuzhi>ไถ่บาป</>จากช่องหลักไปช่องอาวุธรอง ก็สามารถเข้าสู่สถานะใช้พลังงานได้โดยตรง",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+			},
+			{
+				"name": "หลบยิงด่วน",
+				"description": "เมื่ออยู่ในสถานะ<shuzhi>ใช้พลังงาน</> กดโจมตีปกติสามารถโจมตีได้ต่อเนื่อง 3 ครั้ง\r\nโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+			},
+			{
+				"name": "นักแม่นปืน",
+				"description": "แตะโจมตีปกติและกดค้างไว้เพื่อชาร์จโจมตี สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และจะเพิ่มขึ้น <shuzhi>100%</> ในทุก <shuzhi>0.1</> วินาทีที่ชาร์จ สูงสุดไม่เกิน <shuzhi>2.3</> วินาที",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+				"operations": [
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiSkill_Thu": {
+		"skills": [
+			{
+				"name": "หุ่นเกราะจู่โจม",
+				"description": "เรียกหุ่นเกราะมาโจมตีหนักใส่ศัตรู สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมายใกล้เคียง ในช่วงเวลานี้จะไฮเปอร์บอดี้ และได้รับพลังงานพิเศษ <shuzhi>35</> แต้ม คูลดาวน์ <shuzhi>20</> วินาที (ไม่ได้รับผลจากเอฟเฟกต์ล้าง, รีเซ็ต, เปลี่ยนแปลงเวลาคูลดาวน์ใด ๆ)",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiSkill_Skill"
 			}
 		]
 	},

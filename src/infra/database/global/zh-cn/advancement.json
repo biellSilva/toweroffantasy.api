@@ -7047,6 +7047,554 @@
 		},
 		"id": "Asuka_physic_ssr_star_6"
 	},
+	"AyanamiRei_thunder_ssr_star_0": {
+		"advancement": "<shuzhi>雷冰融合</>：该武器计算伤害时取装备最高的雷电/寒冰基础攻击，装备最高的雷电/寒冰百分比攻击，装备最高的雷电/寒冰增伤。且该武器能同时视为雷电元素武器和寒冰元素武器。\r\n<shuzhi>雷电共鸣</>：装备<shuzhi>2</>把及以上雷电武器触发，提升<shuzhi>15%</>雷攻和<shuzhi>25%</>雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。\r\n<shuzhi>寒冰共鸣</>：装备<shuzhi>2</>把及以上寒冰武器触发，提升<shuzhi>15%</>冰攻和<shuzhi>25%</>冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n<shuzhi>疾电-脱手</>：释放技能<shuzhi>零号机出击</>后，每秒对命中目标造成<shuzhi>109.4%</>*雷攻+<shuzhi>15.6%</>*自身最大生命值+<shuzhi>56.3%</>*各元素抗性之和+<shuzhi>210.9%</>*暴击点伤害，持续<shuzhi>30</>秒，多个脱手伤害不叠加，疾电伤害视为技能伤害，若装备任意<shuzhi>1</>把物理/火焰武器，则疾电伤害提升至<shuzhi>1.3</>倍。此外，疾电伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。\r\n<shuzhi>追踪箭</>：使用任意武器造成伤害时，向目标释放<shuzhi>1</>根追踪箭，对首个命中目标造成<shuzhi>{4}%</>*攻击力伤害，同时获得<shuzhi>{5}</>点特殊能量，追踪箭残留于目标并添加过载效果，持续<shuzhi>{7}</>秒，目标残留追踪箭数量达到<shuzhi>3</>根将引发爆炸，销毁目标身体上残留的追踪箭并对附近目标造成<shuzhi>{8}%</>*攻击力伤害，追踪箭每<shuzhi>{9}</>秒至多触发<shuzhi>1</>次。",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillThunderATK",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillMaxHpRate",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillDefSum",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEXChangeWeaponSkillCofficientCrit",
+				"value": 1
+			},
+			{
+				"key": "GA_FPlayerAyanamiRei_TraceArrow_1",
+				"value": 1
+			},
+			{
+				"key": "AyanamiReiEnergyAdd_TraceArrow",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_Bleed_RatePerStack",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_Bleed_Duration",
+				"value": 1
+			},
+			{
+				"key": "GA_FPlayerAyanamiRei_TraceArrow_Boom_1",
+				"value": 1
+			},
+			{
+				"key": "Buff_AyanamiRei_TraceArrow_CD",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_0"
+	},
+	"AyanamiRei_thunder_ssr_star_1": {
+		"advancement": "<shuzhi>救赎</>处于后台时，<shuzhi>追踪箭</>爆炸伤害提升<shuzhi>{0}%</>。",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level1_DamageUp",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_1"
+	},
+	"AyanamiRei_thunder_ssr_star_2": {
+		"advancement": "当前武器的基础攻击成长+<shuzhi>16%</>",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_2"
+	},
+	"AyanamiRei_thunder_ssr_star_3": {
+		"advancement": "自身对<shuzhi>追踪箭-过载</>效果下的目标造成的雷电伤害提升<shuzhi>{0}%</>，寒冰伤害提升<shuzhi>{1}%</>，装备后后台也可生效",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level3_ThunderDamageUp",
+				"value": 1
+			},
+			{
+				"key": "AyanamiRei_Level3_IceDamageUp",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_3"
+	},
+	"AyanamiRei_thunder_ssr_star_4": {
+		"advancement": "当前武器的基础攻击成长+<shuzhi>32%</>",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_4"
+	},
+	"AyanamiRei_thunder_ssr_star_5": {
+		"advancement": "释放<shuzhi>技能-零号机出击</>后额外获得<shuzhi>{0}</>点特殊能量。",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level5_SkillExtraAyanamiReiEnergyAdd",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_5"
+	},
+	"AyanamiRei_thunder_ssr_star_6": {
+		"advancement": "进入<shuzhi>能量消耗</>状态后，自身提升<shuzhi>{0}%</>雷电伤害与<shuzhi>{1}%</>寒冰伤害，持续<shuzhi>20</>秒。",
+		"numbermap": "AyanamiReiEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "AyanamiRei_Level6_AyanamiReiState_ThunderDamageUp",
+				"value": 1
+			},
+			{
+				"key": "AyanamiRei_Level6_AyanamiReiState_IceDamageUp",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "AyanamiRei_thunder_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 14,
+			"charge": 14
+		},
+		"id": "AyanamiRei_thunder_ssr_star_6"
+	},
+	"DFishChess_fire_ssr_star_0": {
+		"advancement": "<shuzhi>物火融合</>：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。\r\n<shuzhi>物理共鸣</>：装备<shuzhi>2</>把及以上物理武器触发，提升<shuzhi>15%</>物攻和<shuzhi>25%</>物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n<shuzhi>火焰共鸣</>：装备<shuzhi>2</>把及以上火焰武器触发，提升<shuzhi>15%</>火攻和<shuzhi>25%</>火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n<shuzhi>天元-驻场</>：<shuzhi>纵横</>任意攻击命中时，对附近目标造成<shuzhi>{0}%</>*火攻+<shuzhi>{1}%</>*自身最大生命值+<shuzhi>{2}%</>*各元素抗性之和+<shuzhi>{3}%</>*暴击值点伤害，每<shuzhi>1.5</>秒至多触发一次，天元伤害视为普攻伤害，若装备任意<shuzhi>1</>把寒冰/雷电武器，则天元伤害提升至<shuzhi>{4}</>倍。此外，天元伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "DFishChessSpecialATKCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialMaxHPCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialDEFCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialCritCoefficient",
+				"value": 1
+			},
+			{
+				"key": "DFishChessSpecialFinCoefficient",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_0"
+	},
+	"DFishChess_fire_ssr_star_1": {
+		"advancement": "<shuzhi>技能-落子无悔</>层数上限提升至<shuzhi>{1}</>层，消耗每层<shuzhi>落子无悔</>层数造成的额外伤害提升至<shuzhi>{0}%</>*攻击力伤害。",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "GameTheory_PerChessDMGUp_Level1",
+				"value": 1
+			},
+			{
+				"key": "GameTheory_MaxChessCount_Level1",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_1"
+	},
+	"DFishChess_fire_ssr_star_2": {
+		"advancement": "当前武器的基础攻击成长+<shuzhi>16%</>",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_2"
+	},
+	"DFishChess_fire_ssr_star_3": {
+		"advancement": "装备<shuzhi>纵横</>时，自身造成的伤害无视场域内目标<shuzhi>{0}%</>火焰抗性，装备后后台可生效。（所有单个元素无视抗性总值不能超过50%）",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "IgnoreDef_Fire_Level3",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_3"
+	},
+	"DFishChess_fire_ssr_star_4": {
+		"advancement": "当前武器的基础攻击成长+<shuzhi>32%</>",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_4"
+	},
+	"DFishChess_fire_ssr_star_5": {
+		"advancement": "<shuzhi>技能-以身入局</>期间自身获得<shuzhi>{0}%</>减伤，并且自身受到致命伤害时立即回复自身<shuzhi>{1}%</>最大生命值，每次技能期间至多触发<shuzhi>1</>次。",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "BeDMGDown_InGameTheory_Level5",
+				"value": 1
+			},
+			{
+				"key": "FirstAid_Recover_InGameTheory_Level5",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_5"
+	},
+	"DFishChess_fire_ssr_star_6": {
+		"advancement": "每层<shuzhi>连携-焚阳</>的火焰伤害提升至<shuzhi>{0}%</>。",
+		"numbermap": "DFishChessEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "FireDMGUp_PerAreaStackCount_Level6",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "DFishChess_Fire_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 12
+		},
+		"id": "DFishChess_fire_ssr_star_6"
+	},
 	"tianlang_thunder_ssr_star_0": {
 		"advancement": "<shuzhi>雷电共鸣</>：装备<shuzhi>2</>把及以上雷电武器触发，提升<shuzhi>15%</>雷攻和<shuzhi>25%</>雷抗，装备后后台可生效，同类效果不叠加。",
 		"multiplicators": [

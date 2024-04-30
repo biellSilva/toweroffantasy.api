@@ -4693,6 +4693,150 @@
 			}
 		]
 	},
+	"GA_FPlayerDFishChessChangeSkill": {
+		"skills": [
+			{
+				"name": "Es endet hier",
+				"description": "N/A",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_ChangeSkill"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessEvade": {
+		"skills": [
+			{
+				"name": "Ausweichen",
+				"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerDFishChessEvade_Evade"
+			},
+			{
+				"name": "Vorteil nutzen",
+				"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (tippe vor dem Ausweichen auf eine Pfeiltaste), um <shuzhi>1</> schwarzen Spielstein vor dir zu platzieren. Der Spielstein zieht Ziele in der Nähe kurz heran und verlangsamt sie, was Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "Sternenfall",
+				"description": "Verwende während des kurzen Zeitraums nach dem Ausweichen nach hinten den normalen Angriff, um <shuzhi>3</> weiße Spielsteine vor dir zu platzieren. Jeder weiße Spielstein fügt Zielen in der Nähe beim Landen Flächenschaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Die Spielsteine platzieren außerdem Fallen, die in der Nähe von Gegnern explodieren, sie kurz verlangsamen und ihnen zusätzlich <shuzhi>57%</> Schaden zufügen.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessMelee": {
+		"skills": [
+			{
+				"name": "Wandernde Sterne",
+				"description": "Verwende am Boden den normalen Angriff, um 5-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_Melee"
+			},
+			{
+				"name": "Eröffnungszug",
+				"description": "Setze in der Luft einen normalen Angriff ein, um 4-mal hintereinander in der Luft anzugreifen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_AirAttack"
+			},
+			{
+				"name": "Spielbrett prüfen",
+				"description": "Halte den normalen Angriff auf dem Boden, um „Spielbrett prüfen“ zu aktivieren. Sammelt bis zu 5 Figuren an, die fortgeschleudert werden und Ziele verfolgen, und jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursachen.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+			},
+			{
+				"name": "Generationensprung",
+				"description": "Tippe und halte in der Luft den normalen Angriff, um „Generationensprung“ auszulösen.\r\nEntfesselt die Zwillingsfische bei der Landung und fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und schleudert sie in die Luft.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessSkill": {
+		"skills": [
+			{
+				"name": "Komm ins Spiel",
+				"description": "Springt und schwebt in der Luft (der Wanderer ist währenddessen bewegungsunfähig) und verwandelt das Schlachtfeld in ein Go-Brett. Gewährt für <shuzhi>10</> Sek. eine Sicht von oben. Währenddessen werden Angriffe mit Spielsteinen und Fähigkeiten durch <shuzhi>Spielstein-Vorteil</> ersetzt. Tippe auf das Go-Brett, um <shuzhi>18</> Spielsteine aufzustellen, die allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>250%</> des ANG zufügen und sie kurz verlangsamen. Abklingzeit: <shuzhi>40</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.\r\n<shuzhi>Entscheidende Aufstellung</>: Die Verwendung von <shuzhi>Spielbrett prüfen</>, <shuzhi>Vorteil nutzen</>, <shuzhi>Sternenfall</> und <shuzhi>Es endet hier</> oder das Erzeugen neuer Herbeirufungen (aber nicht das Auffrischen existierender) gewährt „Entscheidende Aufstellung“-Stapel. Bis zu <shuzhi>9</>-mal stapelbar. Während „Entscheidende Aufstellung“ aktiv ist, verbraucht jeder Spielstein <shuzhi>1</> Stapel, um allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>200%</> des ANG zusätzlich zuzufügen. Während die Fähigkeit aktiv ist, können keine Stapel erhalten werden.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+				"operations": [],
+				"tags": [
+					"Damage",
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChess_Skill"
+			},
+			{
+				"name": "Spielstein-Vorteil",
+				"description": "Während <shuzhi>Komm ins Spiel</> aktiv ist, kann „Spielstein-Vorteil“ manuell ausgelöst werden, ansonsten wird es am Ende der Dauer automatisch ausgelöst. Der Anwender fällt vom Himmel und fügt allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Zusätzlich wird Schaden in Höhe der Anzahl der während der Dauer der Fähigkeit verbrauchten <shuzhi>Entscheidende Aufstellung</>-Stapel × 200% des ANG verursacht. Die Zwillingsfische kreisen dann nach außen, stoßen Ziele in der Nähe zurück und fügen ihnen Schaden in Höhe von <shuzhi>{2}%</> des ANG zu.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_Skill2"
+			}
+		]
+	},
 	"GA_FPlayerCubeMelee": {
 		"skills": [
 			{
@@ -9672,7 +9816,7 @@
 		"skills": [
 			{
 				"name": "Arktische Kälte",
-				"description": "Schwingt die Lanze, um den Raum zu zerreißen. Währenddessen wird dem Wanderer „Hyperkörper“ und <shuzhi>2</> Sek. lang eine Schadensreduktion von <shuzhi>80%</> gewährt, was Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt und für <shuzhi>30</> Sek. einen Riss entstehen lässt, der Ziele in der Nähe heranzieht. Erzeugt außerdem <shuzhi>6</> Eiskerne (im Kampf können bis zu <shuzhi>45</> Eiskerne gleichzeitig existieren). Abklingzeit: <shuzhi>60</> Sek.\r\nNach erfolgreicher Verwendung von „Arktische Kälte“ erhöht sich der Frost- und Voltschaden des Wanderers um <shuzhi>9%</> und der Wanderer ignoriert <shuzhi>15%</> des Frost- und Voltwiderstands des Ziels. Hält <shuzhi>60</> Sek. an (der insgesamt ignorierte Widerstand jedes Elements kann <shuzhi>50%</> nicht übersteigen).",
+				"description": "Schwingt die Lanze, um den Raum zu zerreißen. Währenddessen wird dem Wanderer „Hyperkörper“ und <shuzhi>2</> Sek. lang eine Schadensreduktion von <shuzhi>80%</> gewährt, was Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt und für <shuzhi>30</> Sek. einen Riss entstehen lässt, der Ziele in der Nähe heranzieht. Erzeugt außerdem <shuzhi>6</> Eiskerne (auf dem Feld können bis zu <shuzhi>45</> Eiskerne gleichzeitig existieren). Abklingzeit: <shuzhi>60</> Sek.\r\nNach erfolgreicher Verwendung von „Arktische Kälte“ erhöht sich der Frost- und Voltschaden des Wanderers um <shuzhi>9%</> und der Wanderer ignoriert <shuzhi>15%</> des Frost- und Voltwiderstands des Ziels. Hält <shuzhi>60</> Sek. an (der insgesamt ignorierte Widerstand jedes Elements kann <shuzhi>50%</> nicht übersteigen).",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_Lances_RealSkill.webp",
 				"operations": [],
 				"tags": [
@@ -11688,7 +11832,7 @@
 	"GA_FPlayerAsukaChangeSkill": {
 		"skills": [
 			{
-				"name": "Envangelion-Angriff",
+				"name": "Waffenstart",
 				"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und mit EVA-02 ein fliegender Tritt ausgeführt. Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
 				"operations": [],
@@ -11809,13 +11953,161 @@
 		"skills": [
 			{
 				"name": "Wolkenstoß",
-				"description": "N/A",
+				"description": "Wirft eine Waffe in Richtung des Ziels und zieht Ziele in der Nähe heran, wodurch Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht wird und Ziele in der Nähe für kurze Zeit bewegungsunfähig werden. Abklingzeit: <shuzhi>20</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.\r\nNach erfolgreichem Einsatz dieser Fähigkeit werden <shuzhi>10</> Stapel „Rache“ gewährt. Wenn einem Gegner Schaden zugefügt wird, wird jeweils <shuzhi>1</> „Rache“-Stapel verbraucht. Wenn der Typ der ausgerüsteten Waffe <shuzhi>physisch</> oder <shuzhi>Flamme</> ist, wird Zielen in der Nähe entsprechend des Waffentyps zusätzlicher Schaden in Höhe von <shuzhi>600%</> des ANG zugefügt. Dieser Effekt kann bis zu <shuzhi>1</>-mal pro Sekunde ausgelöst werden.\r\nZusätzlich wird nach erfolgreicher Verwendung dieser Fähigkeit für <shuzhi>30</> Sek. ein AT-Feld mit einer Haltbarkeit von <shuzhi>50%</> der max. LP erzeugt. Während dieses aktiv ist, erhöht sich der physische Schaden des Wanderers um <shuzhi>18%</> und der Flammenschaden um <shuzhi>12%</> und ihm wird „Hyperkörper“ gewährt.\r\nWenn der Wanderer Schaden erleidet, verringert das AT-Feld diesen entsprechend seines verbleibenden Haltbarkeit-Prozentwerts, wobei seine Haltbarkeit entsprechend des verursachten Schadens abnimmt (bis zu einem Mindestwert von <shuzhi>10%</> Haltbarbkeit).\r\nWährend Standhaftigkeit-Resonanz aktiv ist und der Wanderer bei vorhandenen „Rache“-Stapeln Schaden erleidet, wird <shuzhi>1</> „Rache“-Stapel verbraucht und Schaden in Höhe von <shuzhi>8%</> der max. LP geblockt. Dieser Effekt kann bis zu <shuzhi>1</>-mal alle <shuzhi>0,5</> Sek. ausgelöst werden.",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
 				"operations": [],
 				"tags": [
 					"Damage"
 				],
 				"id": "GA_FPlayerAsukaSkill_Skill"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiChangeSkill_Thu": {
+		"skills": [
+			{
+				"name": "Verteidigungsfeld",
+				"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>. Rufe einen Mecha herbei und verwende seinen Schild, um den Boden zu zerschmettern, woraufhin die dadurch ausgelöste Schockwelle allen Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Gewährt zudem <shuzhi>30</> Spezialenergie. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiEvade_Thu": {
+		"skills": [
+			{
+				"name": "Ausweichen",
+				"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerAyanamiReiEvade_Evade"
+			},
+			{
+				"name": "Dreifachschuss",
+				"description": "Verwende zum Auslösen von „Dreifachschuss“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, was dem ersten getroffenen Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+			},
+			{
+				"name": "Aufgeladener Schuss",
+				"description": "Führe nach dem Ausweichen im richtigen Moment einen normalen Angriff aus, um „Aufgeladener Schuss“ auszulösen. Dadurch werden mächtige Energiepfeile abgeschossen, die Zielen Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügen. Gleichzeitig werden zielsuchende Pfeile abgefeuert. Der Wanderer erhält für <shuzhi>15</> Sek. 1 „Blockbarriere“, die Schaden in Höhe von maximal <shuzhi>10%</> der max. LP des Wanderers blockt. Der Wanderer kann höchstens 3 „Blockbarrieren“ gleichzeitig einsetzen.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiMelee_Thu": {
+		"skills": [
+			{
+				"name": "Schnellbogen",
+				"description": "Verwende am Boden den normalen Angriff, um 6 Angriffe hintereinander auszuführen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel eine kurze Strecke zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und stößt das Ziel eine kurze Strecke zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und stößt das Ziel eine kurze Strecke zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und stößt das Ziel eine kurze Strecke zurück.\r\nTippe, wenn nach dem fünften Angriff ein blinkendes Licht erscheint, um den sechsten Angriff auszulösen. Sechster Angriff: Schießt einen mächtigen Energiepfeil ab und entfesselt zielsuchende Pfeile, die Zielen Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</> zufügen und am Standort des ersten getroffenen Ziels für <shuzhi>3</> Sek. ein verlangsamendes Magnetfeld anwenden. Die Bewegungs- und Angriffsgeschwindigkeit von Gegnern in der Umgebung wird um <shuzhi>35%</> verringert.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Melee"
+			},
+			{
+				"name": "Luftangriff",
+				"description": "Verwende in der Luft den normalen Angriff, um 6 Angriffe hintereinander in der Luft auszuführen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</>.\r\nTippe, wenn nach dem fünften Angriff ein blinkendes Licht erscheint, um den sechsten Angriff auszulösen. Sechster Angriff: Schießt einen mächtigen Energiepfeil ab und entfesselt <shuzhi>5</> <shuzhi>zielsuchende Pfeile</>, die Zielen Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</> zufügen und am Standort des ersten getroffenen Ziels ein verlangsamendes Magnetfeld anwenden. Die Bewegungs- und Angriffsgeschwindigkeit von Gegnern in der Umgebung wird für <shuzhi>3</> Sek. um <shuzhi>40%</> verringert.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+			},
+			{
+				"name": "Rücksprung-Pfeil",
+				"description": "Tippe und halte während normaler Angriffe auf dem Boden oder in der Luft den normalen Angriff beim Ausführen des ersten bis fünften normalen Angriffs gedrückt, um „Rücksprung-Pfeil“ auszulösen.\r\nFeuert einen Schuss nach vorne ab, während du zurückspringst, und fügt dem getroffenen Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.\r\nWenn die Spezialenergie zu diesem Zeitpunkt mehr als <shuzhi>70</> beträgt, wird <shuzhi>Energieverbrauch</> ausgelöst: Erhöht den Volt-ANG um <shuzhi>15%</> und den Frost-ANG um <shuzhi>5%</>.\r\nWährend sich <shuzhi>Erlösung</> im Haupt-Slot befindet, werden alle 0,5 Sek. <shuzhi>5</> Spezialenergie verbraucht. Erhöht den von <shuzhi>Erlösung</> verursachten Schaden um 30%. Tippe kontinuierlich oder tippe und halte den normalen Angriff, um <shuzhi>Ausweichender Pfeilhagel</> auszulösen.\r\nWährend sich <shuzhi>Erlösung</> im Nebenhand-Slot befindet, wird alle 0,5 Sek. <shuzhi>3,3</> Spezialenergie verbraucht. Erhöht den Schaden von Zielsuchender Pfeil um <shuzhi>50%</> und vergrößert seinen Detonationsradius.\r\nDie maximale Menge an Spezialenergie beträgt <shuzhi>100</>. Wenn diese Menge erreicht ist, aktiviert der Wanderer sofort „Energieverbrauch“, sobald <shuzhi>Erlösung</> vom Haupt-Slot in den Nebenhand-Slot verschoben wird.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+			},
+			{
+				"name": "Ausweichender Pfeilhagel",
+				"description": "Setze bei aktivem <shuzhi>Energieverbrauch</> einen normalen Angriff ein, um 3-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+			},
+			{
+				"name": "Präzisionsschuss",
+				"description": "Tippe und halte den normalen Angriff, um einen Angriff aufzuladen. Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Pro <shuzhi>0,1</> Sek. Aufladen erhöht sich der Schaden um <shuzhi>100%</>. Der maximale Schaden ist nach <shuzhi>2,3</> Sek. Aufladen erreicht.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+				"operations": [
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiSkill_Thu": {
+		"skills": [
+			{
+				"name": "Mecha-Angriff",
+				"description": "Ruft einen Mecha herbei, um Gegner zu zermalmen und Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen. Währenddessen erhält der Wanderer „Hyperkörper“ und <shuzhi>35</> Spezialenergie. Abklingzeit: <shuzhi>20</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiSkill_Skill"
 			}
 		]
 	},

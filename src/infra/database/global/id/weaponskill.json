@@ -4693,6 +4693,150 @@
 			}
 		]
 	},
+	"GA_FPlayerDFishChessChangeSkill": {
+		"skills": [
+			{
+				"name": "This Ends Here",
+				"description": "N/A",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_ChangeSkill"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessEvade": {
+		"skills": [
+			{
+				"name": "Menghindar",
+				"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, memperlambat target di dalam area tersebut. Saat menghindar, menjadi kebal terhadap Hitstun.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerDFishChessEvade_Evade"
+			},
+			{
+				"name": "Kejar Keuntungan",
+				"description": "Gunakan Serangan Biasa dalam rentang waktu Menghindar Sempurna yang singkat (tekan tombol panah sebelum menghindar) untuk menempatkan <shuzhi>1</> kepingan hitam di depanmu. Selama durasi singkat, kepingan ini akan menarik dan memperlambat target di sekitar, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di depanmu.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "Starfall",
+				"description": "Gunakan Serangan Biasa selama rentang waktu singkat setelah menghindar ke belakang untuk menempatkan <shuzhi>3</> kepingan putih di depanmu. Setiap kepingan putih menimpakan DMG area sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar saat ditempatkan. Kepingan ini juga menjadi jebakan yang meledak ketika musuh mendekat, memperlambat mereka dan menimpakan <shuzhi>57%</> DMG tambahan.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessMelee": {
+		"skills": [
+			{
+				"name": "Shifting Star",
+				"description": "Saat di darat, gunakan Serangan Biasa untuk menyerang 5 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_Melee"
+			},
+			{
+				"name": "Gerakan Awal",
+				"description": "Saat di udara, gunakan Serangan Biasa untuk melakukan 4 serangan beruntun di udara sambil mengonsumsi Stamina.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_AirAttack"
+			},
+			{
+				"name": "Review Board",
+				"description": "Selama di darat, tahan serangan biasa untuk mengaktifkan Review Board. Menyiapkan hingga 5 keping yang akan melesat dan mengejar target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+			},
+			{
+				"name": "Generational Leap",
+				"description": "Saat di udara, tekan dan tahan serangan biasa untuk memicu Generational Leap.\r\nSetelah mendarat, melancarkan Dua Ikan dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar dan membuat mereka terpental ke atas.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerDFishChessSkill": {
+		"skills": [
+			{
+				"name": "Step into the Game",
+				"description": "Melompat ke udara, mengubah medan tempur menjadi papan Go, lalu melayang di udara (tak bisa bergerak selama durasi ini). Selama <shuzhi>10</> detik, memandang dari sudut pandang yang lebih tinggi. Selama rentang waktu ini, seranganmu menjadi kepingan Go dan skill kamu digantikan dengan <shuzhi>Half-Piece Advantage</>. Tekan papan Go untuk menempatkan <shuzhi>18</> keping secara berurutan, masing-masing menimpakan DMG sebesar <shuzhi>250%</> ATK ke semua target di papan dan memperlambat mereka untuk sementara. Cooldown: <shuzhi>40</> detik. Ini tidak terpengaruh oleh efek penghapusan, reset, atau perubahan cooldown lainnya.\r\n<shuzhi>Decisive Placement</>: Menggunakan <shuzhi>Review Board</>, <shuzhi>Seize Advantage</>, <shuzhi>Starfall</>, dan <shuzhi>This Ends Here</> atau melakukan (bukan hanya memperbarui yang sudah ada) pemanggilan akan memberikan tumpukan Decisive Placement, maks <shuzhi>9</> tumpuk. Selama Decisive Placement aktif, setiap keping Go mengonsumsi <shuzhi>1</> tumpuk untuk menimpakan DMG tambahan sebesar <shuzhi>200%</> ATK ke semua target di papan. Selama skill ini aktif, tidak bisa mengakumulasi tumpukan.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+				"operations": [],
+				"tags": [
+					"Damage",
+					"Control"
+				],
+				"id": "GA_FPlayerDFishChess_Skill"
+			},
+			{
+				"name": "Half-Piece Advantage",
+				"description": "Selama <shuzhi>Step into the Game</> aktif, gunakan Half-Piece Advantage secara manual atau biarkan terpicu secara otomatis di akhir durasi. Melakukan serangan menukik dari atas, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke semua target di papan. Selain itu, menimpakan DMG sebesar jumlah <shuzhi>Decisive Placement</> yang dikonsumsi selama durasi skill ini dikalikan 200% ATK. Dua Ikan ini kemudian bergerak memutar ke luar, mendorong target di sekitar dan menimpakan DMG sebesar <shuzhi>{2}%</> ATK.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerDFishChess_Skill2"
+			}
+		]
+	},
 	"GA_FPlayerCubeMelee": {
 		"skills": [
 			{
@@ -9672,7 +9816,7 @@
 		"skills": [
 			{
 				"name": "Arctic Bite",
-				"description": "Mengayunkan tombak untuk membuat retakan ruang, membuat Wanderer terlindung dengan Hyperbody dan <shuzhi>80%</> DMG Reduction selama <shuzhi>2</> detik, lalu menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar. Ayunan ini memunculkan lubang retakan yang akan ada selama <shuzhi>30</> detik dan menarik target di dekatnya, serta menciptakan <shuzhi>6</> Ice Core (maksimal <shuzhi>45</> Ice Core bisa ada secara bersamaan di medan tempur). Cooldown: <shuzhi>60</> detik.\r\nSetelah berhasil menggunakan Arctic Bite, meningkatkan Frost DMG dan Volt DMG Wanderer sebesar <shuzhi>9%</>, dan Wanderer mengabaikan <shuzhi>15%</> Frost dan Volt Resistance, yang berlangsung selama <shuzhi>60</> detik (total resistance setiap elemen yang diabaikan tidak boleh melebihi <shuzhi>50%</>).",
+				"description": "Mengayunkan tombak untuk membuat retakan ruang, membuat Wanderer terlindung dengan Hyperbody dan <shuzhi>80%</> DMG Reduction selama <shuzhi>2</> detik, lalu menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar. Ayunan ini memunculkan lubang retakan yang akan ada selama <shuzhi>30</> detik dan menarik target di dekatnya, serta menciptakan <shuzhi>6</> Ice Core (maksimal <shuzhi>45</> Ice Core bisa ada secara bersamaan di medan tempur). Cooldown: <shuzhi>60</> detik.\r\nSetelah berhasil menggunakan Arctic Bite, Frost DMG dan Volt DMG Wanderer meningkat <shuzhi>9%</>, dan Wanderer mengabaikan <shuzhi>15%</> Frost dan Volt Resistance, yang berlangsung selama <shuzhi>60</> detik (Total Resistance dari tiap elemen yang diabaikan tidak akan melebihi <shuzhi>50%</>).",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_Lances_RealSkill.webp",
 				"operations": [],
 				"tags": [
@@ -11688,8 +11832,8 @@
 	"GA_FPlayerAsukaChangeSkill": {
 		"skills": [
 			{
-				"name": "Evangelion Attack",
-				"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke Senjata ini akan <shuzhi>melenyapkan semua debuff dari Wanderer</> dan pilot EVA-02 kemudian melancarkan Flying Kick, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar. Selama durasi ini, mendapatkan DMG Immunity selama <shuzhi>1,5</> detik (Tidak Tersedia Pada Apex League).",
+				"name": "Senjata Lepas Landas",
+				"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua debuff dari Wanderer</> dan pilot EVA-02 kemudian melancarkan Flying Kick, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar. Selama durasi ini, mendapatkan DMG Immunity selama <shuzhi>1,5</> detik (Tidak Tersedia Pada Apex League).",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_changeskill.webp",
 				"operations": [],
 				"tags": [
@@ -11809,13 +11953,161 @@
 		"skills": [
 			{
 				"name": "Cloud-Piercer",
-				"description": "N/A",
+				"description": "Melemparkan senjata ke arah target dan menarik target lain di sekitarnya, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>, lalu membuat target di sekitar tak bisa bergerak untuk sementara. Cooldown: <shuzhi>20</> detik. Cooldown ini tidak terpengaruh oleh efek lain yang menghilangkan, mereset, atau mengubah durasi Cooldown.\r\nSetelah berhasil menggunakan skill ini, mendapatkan <shuzhi>10</> tumpuk Vengeance. Tiap kali menimpakan DMG kepada musuh, <shuzhi>1</> tumpuk Vengeance terpakai. Jika tipe senjata yang dipakai adalah <shuzhi>Physical</> atau <shuzhi>Flame</>, menimpakan DMG tambahan sesuai dengan tipe senjata tersebut sebesar <shuzhi>600%</> ATK kepada target di sekitar. Efek ini bisa terpicu hingga <shuzhi>1</> kali per detik.\r\nSelain itu, setelah berhasil menggunakan skill ini, menciptakan A.T. Field dengan ketahanan <shuzhi>50%</> Max HP yang aktif selama <shuzhi>30</> detik. Selama durasi ini, Physical DMG Wanderer meningkat <shuzhi>18%</>, sedangkan Flame DMG Wanderer meningkat <shuzhi>12%</>, serta mendapatkan Hyperbody.\r\nKetika Wanderer menerima DMG, A.T. Field akan mengurangi DMG yang diterima sesuai dengan persentase daya tahan yang tersisa dan daya tahan ini akan berkurang sesuai dengan DMG yang diterima tersebut (hingga paling sedikit <shuzhi>10%</> daya tahan).\r\nKetika Resonansi Fortitude aktif, jika Wanderer menerima DMG saat memiliki tumpukan Vengeance, <shuzhi>1</> tumpuk Vengeance akan terpakai untuk menahan DMG sebesar <shuzhi>8%</> Max HP. Efek ini bisa terpicu paling banyak <shuzhi>1</> kali setiap <shuzhi>0,5</> detik.",
 				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_asuka_skill.webp",
 				"operations": [],
 				"tags": [
 					"Damage"
 				],
 				"id": "GA_FPlayerAsukaSkill_Skill"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiChangeSkill_Thu": {
+		"skills": [
+			{
+				"name": "Defense Field",
+				"description": "Saat <red>Charge Senjata penuh</> atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</>. Memunculkan sebuah mecha dan menggunakan perisainya untuk menghantam tanah, mengakibatkan gelombang kejut yang menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar, serta memberikan <shuzhi>30</> Energi Spesial. Selama rentang waktu ini, mendapatkan DMG Immunity selama <shuzhi>1,5</> detik (tak berlaku di Apex League).",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiEvade_Thu": {
+		"skills": [
+			{
+				"name": "Menghindar",
+				"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, memperlambat target di dalam area tersebut. Saat menghindar, menjadi kebal terhadap Hitstun.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerAyanamiReiEvade_Evade"
+			},
+			{
+				"name": "Triple Shot",
+				"description": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah menghindar untuk melakukan Triple Shot, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target pertama yang terhantam.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+			},
+			{
+				"name": "Charged Shot",
+				"description": "Setelah menghindar, tekan serangan biasa di waktu yang tepat untuk melakukan Charged Shot, menembakkan panah energi kuat yang menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target. Di waktu yang sama, menembakkan Homing Arrow. Wanderer mendapatkan 1 Blocking Barrier yang aktif selama <shuzhi>15</> detik dan mengeblok DMG yang besarnya tidak melebihi <shuzhi>10%</> Max HP Wanderer. Wanderer bisa memiliki hingga 3 Blocking Barrier sekaligus.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiMelee_Thu": {
+		"skills": [
+			{
+				"name": "Rapid Bow",
+				"description": "Saat di darat, gunakan Serangan Biasa untuk menyerang 6 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan membuat target terpental sedikit ke belakang.\r\nSerangan Keempat: Menimpakan DMG hingga <shuzhi>{6}%</> ATK plus <shuzhi>{7}</> dan membuat target terpental sedikit ke belakang.\r\nSetelah serangan kelima, saat muncul kilatan cahaya, tekan untuk melakukan serangan keenam. Serangan Keenam: Menembakkan satu panah energi yang kuat dan Homing Arrow yang menimpakan DMG sebesar <shuzhi>{10}%</> ATK plus <shuzhi>{11}</> ke target serta menerapkan Slowing Magnetic Field selama <shuzhi>3</> detik di lokasi target pertama yang terhantam. Kecepatan gerak dan kecepatan serangan lawan yang ada di dalam zona ini berkurang <shuzhi>35%</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Melee"
+			},
+			{
+				"name": "Aerial Assault",
+				"description": "Saat di udara, gunakan Serangan Biasa untuk menyerang 6 kali berturut-turut sambil mengonsumsi Stamina.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.\r\nSerangan Keempat: Menimpakan DMG hingga maks <shuzhi>{6}%</> ATK plus <shuzhi>{7}</>.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</>.\r\nSetelah serangan kelima, saat muncul kilatan cahaya, tekan untuk melakukan serangan keenam. Serangan Keenam: Menembakkan satu panah energi yang kuat dan <shuzhi>5</> <shuzhi>Homing Arrow</> yang menimpakan DMG sebesar <shuzhi>{10}%</> ATK plus <shuzhi>{11}</> kepada target serta menerapkan Slowing Magnetic Field di lokasi target pertama yang terhantam. Kecepatan gerak dan kecepatan serangan lawan yang ada di dalam zona ini berkurang <shuzhi>40%</> selama <shuzhi>3</> detik.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+			},
+			{
+				"name": "Backjump Arrow",
+				"description": "Saat melakukan Serangan Biasa di darat atau di udara selagi menggunakan serangan pertama sampai kelima, tekan dan tahan Serangan Biasa untuk melakukan Backjump Arrow.\r\nMenembakkan panah ke depan sambil melompat ke belakang, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target yang terhantam.\r\nJika di saat tersebut Energi Spesial lebih dari <shuzhi>70</>, Wanderer akan memasuki keadaan <shuzhi>Pemakaian Energi</>: Volt ATK meningkat <shuzhi>15%</> dan Frost ATK meningkat <shuzhi>5%</>.\r\nSelama <shuzhi>Salvation</> ada di slot utama, <shuzhi>5</> energi spesial akan dikonsumsi setiap 0,5 detik. DMG <shuzhi>Salvation</> meningkat 30%. Tekan berulang kali atau tekan dan tahan Serangan Biasa untuk melakukan <shuzhi>Dodging Rapidfire</>.\r\nSelama <shuzhi>Salvation</> ada di slot sampingan, <shuzhi>3,3</> Energi Spesial akan digunakan setiap 0,5 detik. DMG Homing Arrow meningkat <shuzhi>50%</> dan radius ledakannya menjadi lebih luas.\r\nJumlah maksimum energi spesial adalah <shuzhi>100</>. Saat batas maksimum ini tercapai, mengalihkan <shuzhi>Salvation</> dari slot utama ke slot sampingan akan langsung membuat Wanderer memasuki keadaan Pemakaian Energi.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+			},
+			{
+				"name": "Dodging Rapidfire",
+				"description": "Selama dalam <shuzhi>Pemakaian Energi</>, gunakan Serangan Biasa untuk menyerang 3 kali berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</>.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</>.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+			},
+			{
+				"name": "Precision Shot",
+				"description": "Tekan dan tahan serangan biasa untuk mengumpulkan tenaga. Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Untuk setiap <shuzhi>0,1</> detik pengumpulan tenaga, DMG meningkat <shuzhi>100%</>, dan mencapai DMG maksimum setelah mengumpulkan tenaga <shuzhi>2,3</> detik.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+				"operations": [
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+			}
+		]
+	},
+	"GA_FPlayerAyanamiReiSkill_Thu": {
+		"skills": [
+			{
+				"name": "Mecha Strike",
+				"description": "Memunculkan sebuah mecha untuk menghantam lawan, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar. Selama rentang waktu ini, Wanderer mendapatkan Hyperbody dan menerima <shuzhi>35</> Energi Spesial. Cooldown: <shuzhi>20</> detik. Cooldown ini tidak terpengaruh oleh efek lain yang menghilangkan, mereset, atau mengubah durasi Cooldown.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerAyanamiReiSkill_Skill"
 			}
 		]
 	},

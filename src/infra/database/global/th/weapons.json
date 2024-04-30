@@ -13225,6 +13225,441 @@
 		"limited": true,
 		"id": "blevi_thunder"
 	},
+	"dfishchess_fire": {
+		"name": "ทุกสารทิศ",
+		"description": "ทุกที่มีพันเรื่องราว ทุกทิศช่างกว้างไกล",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_DFishChess.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_DFishChess.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/jiyu.webp"
+		},
+		"rarity": 5,
+		"element": "Flame",
+		"type": "DFishChess",
+		"weaponUpgradeId": "Fire_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "DFishChess_fire_ssr_star",
+		"avatar": "imitation_57",
+		"stats": [
+			{
+				"stat": {
+					"name": "โจมตี",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "คริติคอล",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**ฟิวชันกายภาพไฟ**",
+				"description": "เมื่อคำนวณดาเมจของอุปกรณ์นี้ จะคำนวณ ATK พื้นฐานกายภาพ/ไฟสูงสุด, เปอร์เซ็นต์ ATK กายภาพ/ไฟสูงสุด, เพิ่มดาเมจกายภาพ/ไฟสูงสุดของอาวุธที่ติดตั้ง อีกทั้ง ในขณะเดียวกัน อาวุธนี้จะถือว่าเป็นอาวุธกายภาพและอาวุธธาตุไฟ"
+			},
+			{
+				"title": "**เรโซแนนซ์กายภาพ**",
+				"description": "เปิดใช้งานเมื่อติดตั้งอาวุธกายภาพ **2** ชิ้นขึ้นไป จะเพิ่ม ATK กายภาพ **15%** และค่าต้านทานกายภาพ **25%** เอฟเฟกต์เซตนี้ยังมีผลในช่องอาวุธรองด้วย (ไม่สามารถซ้อนทับกับเรโซแนนซ์กายภาพ/ปฏิกิริยากายภาพอื่นได้ ซึ่งเรโซแนนซ์กายภาพจะมีผลก่อน)"
+			},
+			{
+				"title": "**เรโซแนนซ์ไฟ**",
+				"description": "เปิดใช้งานเมื่อติดตั้งอาวุธไฟ **2** ชิ้นขึ้นไป จะเพิ่ม ATK ไฟ **15%** และค่าต้านทานไฟ **25%** เอฟเฟกต์เซตนี้ยังมีผลในช่องอาวุธรองด้วย (ไม่สามารถซ้อนทับกับเรโซแนนซ์ไฟ/ปฏิกิริยาไฟอื่นได้ ซึ่งเรโซแนนซ์ไฟจะมีผลก่อน)"
+			},
+			{
+				"title": "**รัศมีสุริยา: อยู่ในสนาม**",
+				"description": "เมื่อ**ไร้ทิศ**โจมตีโดนอะไรก็ได้ จะสร้างดาเมจแก่เป้าหมายที่อยู่ใกล้เคียง **256%** ของ ATK ไฟ + **3.6%** ของค่า HP สูงสุดของตนเอง + **133%** ของผลรวมของค่าต้านทานทุกธาตุ + **4.9%** ของค่าคริติคอล เรียกใช้ได้สูงสุดถึง 1 ครั้ง ทุก **1.5** วินาที ดาเมจรัศมีสุริยาจะถือว่าเป็นดาเมจโจมตีปกติ หากติดตั้งอาวุธธาตุน้ำแข็ง/ไฟฟ้าใดก็ได้ **1** ชิ้น ดาเมจรัศมีสุริยาจะเพิ่มขึ้นถึง **1.3** เท่า นอกจากนี้ ดาเมจรัศมีสุริยาจะไม่ได้รับผลกระทบเพิ่มเติมจากเอฟเฟกต์เพิ่มดาเมจของค่าสถานะหายากจากอุปกรณ์ไททัน และจะไม่ปล่อยเอฟเฟกต์โจมตีเพิ่มเติมด้วย"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟ**",
+			"description": "เมื่ออาวุธชาร์จเต็ม การโจมตีครั้งต่อไปจะทำให้เป้าหมายลุกไหม้ เป็นเวลา **8** วินาที ทุกวินาทีสร้างดาเมจเท่ากับ **58.00%** ของ ATK ขณะลุกไหม้เอฟเฟกต์รักษาของเป้าหมายจะลดลง **50%**"
+		},
+		"attributes": [
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			},
+			{
+				"charge": 12,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "**สกิล: เดินหมากแล้วห้ามถอยกลับ** จำนวนชั้นสูงสุดเพิ่มขึ้นถึง **18** ชั้น ดาเมจเพิ่มเติมที่เกิดจากการใช้**เดินหมากแล้วห้ามถอยกลับ**แต่ละชั้นจะเพิ่มดาเมจ **400%**ของ ATK",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **16%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "เมื่อติดตั้ง**ไร้ทิศ** ดาเมจที่ตนเองสร้างจะเพิกเฉยต่อค่าต้านทานไฟของเป้าหมายที่อยู่ในสนาม **15%** เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง (ค่ารวมของการเพิกเฉยต่อค่าต้านทานของแต่ละธาตุทั้งหมดห้ามเกิน 50%)",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **32%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "ช่วง**สกิล: ลงสนามเอง** ลดดาเมจที่ตนเองได้รับลง **30%** และเมื่อได้รับดาเมจถึงตาย จะฟื้นฟู HP สูงสุดให้ตนเองสูงสุด **100%** ระหว่างที่ใช้สกิลแต่ละครั้ง จะเรียกใช้ได้สูงสุดถึง **1** ครั้ง",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			},
+			{
+				"description": "แต่ละชั้นของ**คอมโบ: อาทิตย์แผดเผา**จะเพิ่มดาเมจไฟถึง **5%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "DFishChess_Fire_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "ดาวเคลื่อนคล้อย",
+					"description": "ขณะอยู่บนพื้น กดโจมตีปกติเพื่อโจมตี 5 ครั้งติดต่อกัน\r\nการโจมตีครั้งแรก: สร้างดาเมจต่อเป้าหมาย <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nการโจมตีครั้งที่สอง: สร้างดาเมจต่อเป้าหมาย <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nการโจมตีครั้งที่สาม: สร้างดาเมจต่อเป้าหมาย <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจต่อเป้าหมาย <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</>\r\nการโจมตีครั้งที่ห้า: สร้างดาเมจต่อเป้าหมาย <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_Melee.webp",
+					"id": "GA_FPlayerDFishChessMelee_Melee"
+				},
+				{
+					"name": "เริ่มเคลื่อนไหว",
+					"description": "เมื่อนักพเนจรลอยอยู่กลางอากาศ กดหรือแตะโจมตีปกติเพื่อโจมตีต่อเนื่อง 4 ครั้ง กลางอากาศ และใช้พลังกาย\r\nโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>\r\nการโจมตีครั้งที่สี่: สร้างดาเมจต่อเป้าหมายเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> แต้ม",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_AirAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_AirAttack"
+				},
+				{
+					"name": "คณะกรรมการพิจารณา",
+					"description": "เมื่ออยู่บนพื้น แตะโจมตีปกติและกดค้างไว้หรือกดค้างไว้ขณะโจมตีปกติ จะเข้าสู่สถานะพิพากษากระดาน รวบรวมตัวหมากอย่างต่อเนื่องสูงสุดถึง 5 ตัว หลังเรียกใช้ จะยิงหมากรุกทั้งหมดไปไล่ล่าเป้าหมาย ตัวหมากแต่ละตัวจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK +<shuzhi>{1}</> แต้ม",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_PowerAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_PowerAttack"
+				},
+				{
+					"name": "เดินทางข้ามยุคสมัย",
+					"description": "เมื่อนักพเนจรลอยอยู่กลางอากาศ เมื่อแตะโจมตีปกติและกดค้างไว้ จะเรียกใช้เดินทางข้ามยุคสมัย\r\nตกลงมาจากด้านบน เมื่อลงถึงพื้นแล้วจะขว้างปลาคู่ใส่เป้าหมายที่อยู่ใกล้เคียงสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม และทำให้เป้าหมายกระเด็น",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_JumpAttack.webp",
+					"id": "GA_FPlayerDFishChessMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตี เพื่อเรียกใช้งานแฟนตาเซีย ซึ่งจะลดความเร็วของเป้าหมายในบริเวณ และจะไม่โดนติดสตันขณะหลบหลีก",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerDFishChessEvade_Evade"
+				},
+				{
+					"name": "ยึดอำนาจ",
+					"description": "แตะโจมตีปกติในช่วงเวลาสั้น ๆ ก่อนการหลบหลีกที่ถูกเรียกใช้โดยปุ่มทิศทางและปุ่มหลบหลีก ขว้างหมากดำออกไปด้านหน้า <shuzhi>1</> ตัว ดึงเป้าหมายและทำให้เป้าหมายในวงแคบเชื่องช้าลง สร้างดาเมจแก่เป้าหมายด้านหน้าเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackFront.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "ดาวตก",
+					"description": "หลังจากหลบหลีกในช่วงสั้น ๆ แตะโจมตีปกติ วางหมากขาวลงด้านหน้า <shuzhi>3</> ตัว แต่ละตัวจะสร้างดาเมจวงกว้างแก่เป้าหมายที่อยู่ใกล้เคียงเท่ากับ<shuzhi>{0}%</> ของ ATK +<shuzhi>{1}</> แต้ม และจะวางกับดักเพิ่มเติม เมื่อเป้าหมายเข้าใกล้จะระเบิด ทำให้เชื่องช้าลงชั่วขณะและสร้างดาเมจเพิ่ม <shuzhi>57%</>",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_EvadeAttackBack.webp",
+					"id": "GA_FPlayerDFishChessEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "ลงสนามเอง",
+					"description": "ทะยานสู่ท้องฟ้า เปลี่ยนสนามรบให้เป็นกระดานหมากรุก ลอยอยู่กลางอากาศ (ขณะนี้ไม่สามารถเคลื่อนที่ได้) ได้รับมุมมองจากมุมสูง ต่อเนื่องสูงสุดถึง <shuzhi>10</> วินาที การโจมตีถูกแทนที่ด้วยวางหมากรุก สกิลถูกแทนที่ด้วย<shuzhi>สกิล: ไม่เกรงกลัวสิ่งใด</> แตะกระดานหมากรุกเพื่อวางตัวหมากรุก <shuzhi>18</> ตัวตามลำดับ ตัวหมากรุกแต่ละตัวจะสร้างดาเมจเท่ากับ <shuzhi>250%</> ของ ATK แก่เป้าหมายทั้งหมดบนกระดานหมากรุก และทำให้เป้าหมายเชื่องช้าชั่วขณะหนึ่ง คูลดาวน์ <shuzhi>40</> วินาที (ไม่ได้รับผลจากเอฟเฟกต์ล้าง, รีเซ็ต, เปลี่ยนแปลงเวลาคูลดาวน์ใด ๆ)\r\n<shuzhi>เดินหมากแล้วห้ามถอยกลับ</>: เรียกใช้<shuzhi>โจมตีปกติ: พิพากษากระดาน</>, <shuzhi>หลบหลีก: ยึดอำนาจ</>, <shuzhi>หลบหลีก: ดาวตก</>, <shuzhi>คอมโบ: รุกฆาต</> หรือสร้าง (แทนที่การรีเฟรช) ผู้ช่วยออกมาเพื่อจะได้รับจำนวนชั้นของเดินหมากแล้วห้ามถอยกลับที่สอดคล้อง สามารถได้รับสูงสุดถึง <shuzhi>9</> ชั้น ช่วงใช้สกิลเดินหมากแล้วห้ามถอยกลับ <shuzhi>1</> หน่วย (ระหว่างที่ใช้สกิลจะไม่ได้รับเดินหมากแล้วห้ามถอยกลับซ้ำ) สร้างดาเมจเพิ่มเติมให้กับเป้าหมายทั้งหมดบนกระดานหมากรุกเท่ากับ <shuzhi>200%</> ของ ATK",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill1.webp",
+					"id": "GA_FPlayerDFishChess_Skill"
+				},
+				{
+					"name": "ไม่เกรงกลัวสิ่งใด",
+					"description": "ระยะเวลาที่เรียกใช้<shuzhi>สกิล: ลงสนามเอง</>แบบแมนนวล หรือหลังจากสิ้นสุดระยะเวลา ไม่เกรงกลัวสิ่งใดจะถูกเรียกใช้โดยอัตโนมัติ เมื่อตกลงมาสู่พื้น จะสร้างดาเมจให้กับเป้าหมายทั้งหมดบนกระดานเท่ากับ <shuzhi>{0}%</> ของATK + <shuzhi>{1}</> นอกจากนี้ ระหว่างที่ใช้สกิลยังทำให้เกิดชั้น <shuzhi>เดินหมากแล้วห้ามถอยกลับ</> เพิ่มเติมเท่ากับ 200% ของ ATK ปลาคู่ว่ายออกไปด้านนอก ผลักเป้าหมายที่อยู่ใกล้เคียงตนเองออกไปและสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/DFishChess_Skill2.webp",
+					"id": "GA_FPlayerDFishChess_Skill2"
+				}
+			],
+			"discharge": [
+				{
+					"name": "รุกฆาต",
+					"description": "N/A",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill_DFishChess_ChangeSkill.webp",
+					"id": "GA_FPlayerDFishChess_ChangeSkill"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "ยุคเส้นไหม",
+					"description": "ชุดที่แบกรับสายใยมิตรภาพ ความมุ่งมั่นเพียงหนึ่งเดียว",
+					"rarity": 5,
+					"source": "จากกิจกรรม",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57"
+				},
+				"weapon": {
+					"name": "แสงริบหรี่",
+					"description": "มือถือครองความลึกลับ คิดคำนึงถึงใต้หล้า",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"ได้รับจากกิจกรรมกาชาปองยุคเส้นไหม"
+					],
+					"id": "imitation_fashion_57_w"
+				}
+			},
+			{
+				"outfit": {
+					"name": "ดอกตูม",
+					"description": "แม้ว่า \"อาจารย์หยู่จะใส่อะไรก็ดูดีไปหมด\" แต่นี่คือชุดในตู้เสื้อผ้าของอาจารย์หยู่ที่หยู่หลานชอบที่สุด อาจเป็นเพราะเมื่อทั้งสองคนยืนข้างกัน จะได้ดูเหมือนคู่อาจารย์-ลูกศิษย์มากขึ้นหรือเปล่านะ?",
+					"rarity": 5,
+					"source": "จากกิจกรรม",
+					"simulacrumId": "imitation_57",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_JY02_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_57_2"
+				},
+				"weapon": {
+					"name": "ยอดเขาสูงชัน",
+					"description": "ความเปลี่ยนแปลงและความยากลำบาก วันเดือนปีที่ข้นแค้น เธอและพวกเขาเคยเดินทางผ่านมาด้วยกัน",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"ได้รับจากกิจกรรมติดตามเครือข่าย"
+					],
+					"id": "imitation_fashion_57_w_2"
+				}
+			}
+		],
+		"version": "3.8",
+		"limited": true,
+		"id": "dfishchess_fire"
+	},
 	"snipe_fire": {
 		"name": "โคลเวอร์ครอส",
 		"description": "เกมยิงออนไลน์แบบผู้เล่นหลายคน VR ยอดนิยมเปิดตัวอย่างเป็นทางการแล้ว โดยได้ออกแบบปืนพิเศษนี้ขึ้นโดยเฉพาะสำหรับผู้เล่นอันดับต้น ๆ ของซีซั่น โมเดลทางกายภาพของปืนจะถูกส่งไปยังผู้เล่นด้วย แต่สิ่งที่คาดไม่ถึงก็คือ มันสามารถใช้งานได้จริงเหมือนในเกม...",
@@ -13937,7 +14372,7 @@
 			"skill": [
 				{
 					"name": "ผ่าเมฆาสังหาร",
-					"description": "N/A",
+					"description": "ขว้างอาวุธใส่เป้าหมายด้านหน้าและทำการดูดเป้าหมายที่อยู่ใกล้ ๆ สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และหยุดเป้าหมายใกล้เคียงชั่วคราว คูลดาวน์ <shuzhi>20</> วินาที (จะไม่ได้รับผลกระทบจากเอฟเฟกต์ล้างเวลาคูลดาวน์ รีเซ็ต เปลี่ยนร่างใด ๆ)\r\nเมื่อเรียกปล่อยสำเร็จตนเองจะได้รับล้างแค้น <shuzhi>10</> ชั้น เมื่อสร้างดาเมจใส่เป้าหมายจะใช้ <shuzhi>1</> ชั้น หากประเภทธาตุของอาวุธปัจจุบันเป็น<shuzhi>กายภาพ</>หรือ<shuzhi>ไฟ</> จะสร้างดาเมจเพิ่มเติม <shuzhi>600%</> ของ ATK ตามประเภทธาตุดาเมจปัจจุบันใส่เป้าหมายใกล้เคียง เรียกใช้ได้สูงสุด <shuzhi>1</> ทุกวินาที\r\nหลังเรียกใช้สำเร็จ จะเปิดใช้งานสนามพลัง A.T ให้ตนเองที่มีขีดจำกัดค่าคงทนเท่ากับ <shuzhi>50%</> ของค่า HP สูงสุดของผู้ปฏิบัติการ เป็นเวลา <shuzhi>30</> วินาที ซึ่งในช่วงเวลานี้จะเพิ่มดาเมจกายภาพ <shuzhi>18%</> และดาเมจไฟ <shuzhi>12%</> ให้ตนเอง และจะได้รับไฮเปอร์บอดี้\r\nเมื่อตนเองได้รับดาเมจ สนามพลัง A.T จะลดดาเมจที่ตนเองได้รับตามเปอร์เซ็นต์ของค่าคงทนที่เหลือ ในขณะเดียวกันก็จะหักค่าคงทนของสนามพลัง A.T ตามค่าดาเมจในครั้งนี้ด้วย (ขั้นต่ำของค่าคงทนคือ <shuzhi>10%</> ของขีดจำกัด)\r\nเมื่อเปิดใช้งานเรโซแนนซ์ความอดทนและยังอยู่ในช่วงล้างแค้น หากตนเองโดนดาเมจ จะใช้ล้างแค้น <shuzhi>1</> ชั้น เพื่อบล็อกดาเมจเท่ากับ <shuzhi>8%</> ของค่า HP สูงสุด เรียกใช้ได้ <shuzhi>1</> ครั้งทุก ๆ <shuzhi>0.5</> วินาที",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -13948,7 +14383,7 @@
 			],
 			"discharge": [
 				{
-					"name": "อีวานเกเลียนจู่โจม",
+					"name": "จู่โจมด้วยอาวุธ",
 					"description": "เมื่อ<red>ชาร์จอาวุธเต็ม</> หรือเรียกใช้งาน<red>แฟนตาเซีย</>แล้ว การสลับมายังอาวุธนี้จะ<shuzhi>ลบดีบัฟทั้งหมดจากผู้ถือ</> ขึ้นขับ Unit-02 แล้วกระโดดถีบ สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมายใกล้เคียง ในช่วงระยะเวลานี้ จะไม่โดนดาเมจเป็นเวลา <shuzhi>1.5</> วินาที (ใช้ในลีกแข่งยอดฝีมือไม่ได้)",
 					"tags": [
 						"Damage",
@@ -13990,6 +14425,422 @@
 		"version": "3.7",
 		"limited": true,
 		"id": "asuka_physic"
+	},
+	"ayanamirei_thunder": {
+		"name": "ไถ่บาป",
+		"description": "ธนูทดลองที่แผนกวิทยาศาสตร์และเทคโนโลยีมิเรอเรียสร้างขึ้นเฉพาะสำหรับอายานามิ เรย์ โดยอ้างอิงจากลักษณะและสีของ Unit-00 สามารถยิงลูกธนูที่มีพลังงานออกไปได้",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_AyanamiRei.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/yizhi_SSR_AyanamiRei.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/Attention/image_MI-A.webp"
+		},
+		"rarity": 5,
+		"element": "Thunder",
+		"type": "AyanamiRei",
+		"weaponUpgradeId": "thunder_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "AyanamiRei_thunder_ssr_star",
+		"stats": [
+			{
+				"stat": {
+					"name": "โจมตี",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "คริติคอล",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**ฟิวชันไฟฟ้าน้ำแข็ง**",
+				"description": "เมื่อคำนวณดาเมจของอาวุธนี้ จะคำนวณ ATK พื้นฐานไฟฟ้า/น้ำแข็งสูงสุด, เปอร์เซ็นต์ ATK ไฟฟ้า/น้ำแข็งสูงสุด, เพิ่มดาเมจไฟฟ้า/น้ำแข็งสูงสุดของอาวุธที่ติดตั้ง อีกทั้งในขณะเดียวกันอาวุธนี้จะถือว่าเป็นอาวุธธาตุไฟฟ้าและอาวุธธาตุน้ำแข็ง"
+			},
+			{
+				"title": "**เรโซแนนซ์ไฟฟ้า**",
+				"description": "เปิดใช้งานเมื่อติดตั้งอาวุธไฟฟ้า **2** ชิ้นขึ้นไป จะเพิ่ม ATK ไฟฟ้า **15%** และค่าต้านทานไฟฟ้า **25%** เอฟเฟกต์เซตนี้ยังมีผลในช่องอาวุธรองด้วย (ไม่สามารถซ้อนทับกับเรโซแนนซ์ไฟฟ้า/ปฏิกิริยาไฟฟ้าอื่นได้ ซึ่งเรโซแนนซ์ไฟฟ้าจะมีผลก่อน)"
+			},
+			{
+				"title": " **เรโซแนนซ์น้ำแข็ง**",
+				"description": "เปิดใช้งานเมื่อติดตั้งอาวุธน้ำแข็ง **2** ชิ้นขึ้นไป จะเพิ่ม ATK น้ำแข็ง **15%** และค่าต้านทานน้ำแข็ง **25%** เอฟเฟกต์เซตนี้ยังมีผลในช่องอาวุธรองด้วย (ไม่สามารถซ้อนทับกับเรโซแนนซ์น้ำแข็ง/ปฏิกิริยาน้ำแข็งอื่นได้ ซึ่งเรโซแนนซ์น้ำแข็งจะมีผลก่อน)"
+			},
+			{
+				"title": "**แฟลช: ปล่อยมือ**",
+				"description": "หลังปล่อยสกิล**หุ่นเกราะจู่โจม** ทุกวินาทีจะสร้างดาเมจ **109.4%** ของ ATK ไฟฟ้าใส่เป้าหมาย + **15.6%** ของค่า HP สูงสุดของตนเอง + **56.3%** ของผลรวมของค่าต้านทานทุกธาตุ + **210.9%** ของดาเมจคริติคอล เป็นเวลา **30** วินาที ดาเมจปล่อยมือหลายอันทับซ้อนกันไม่ได้ ดาเมจแฟลชจะถือเป็นดาเมจสกิล หากติดตั้งอาวุธกายภาพ/ไฟใดก็ได้ **1** ชิ้น ดาเมจแฟลชจะเพิ่มขึ้น **1.3** เท่า นอกจากนี้ ดาเมจแฟลชจะไม่ได้รับผลกระทบเพิ่มเติมจากเอฟเฟกต์เพิ่มดาเมจของค่าสถานะหายากของอุปกรณ์ไททัน และจะไม่ปล่อยเอฟเฟกต์โจมตีเพิ่มเติมด้วย"
+			},
+			{
+				"title": "**ศรติดตาม**",
+				"description": "เมื่อใช้อาวุธใดก็ได้สร้างดาเมจ ปล่อยศรติดตาม **1** อันใส่เป้าหมาย จะสร้างดาเมจใส่เป้าหมายแรก **NaN%** ของ ATK ในขณะเดียวกันจะได้รับพลังงานพิเศษ **4** แต้ม ศรติดตามจะยังคงอยู่บนเป้าหมายและเพิ่มเอฟเฟกต์โอเวอร์โหลด เป็นเวลา **30** วินาที เมื่อเป้าหมายติดศรติดตามถึง **3** อันแล้วจะระเบิด ทำลายศรติดตามที่เหลืออยู่บนร่างเป้าหมาย และสร้างดาเมจ **NaN%** ของ ATK ศรติดตามจะเรียกใช้ได้ **1** ครั้ง ทุก ๆ **0.5** วินาที"
+			}
+		],
+		"elementEffects": {
+			"title": "**ไฟฟ้า**",
+			"description": "เมื่ออาวุธชาร์จเต็ม ในการโจมตีครั้งต่อไปจะทำให้เป้าหมายเป็น **อัมพาตรุนแรง** เป็นเวลา **1** วินาที และไฟฟ้าช็อตเป็นเวลา ** 6** วินาที โดยจะล้างบัฟทั้งหมดของเป้าหมายและสร้างดาเมจเท่ากับ **144.00%** ของ ATK ซึ่งเป้าหมายจะไม่สามารถรับบัฟได้อีกเป็นระยะเวลา **6** วินาที"
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			},
+			{
+				"charge": 14,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "เมื่อ**ไถ่บาป**อยู่ในช่องมือรอง ดาเมจระเบิดของ**ศรติดตาม**จะเพิ่มขึ้น **100%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **16%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "ตนเองจะสร้างดาเมจไฟฟ้าเพิ่มขึ้น **10%** ต่อเป้าหมายที่อยู่ภายใต้เอฟเฟกต์**ศรติดตาม: โอเวอร์โหลด** และดาเมจน้ำแข็งเพิ่มขึ้น **10%** นอกจากนี้ยังมีผลในช่องมือรองอีกด้วย",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **32%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "หลังปล่อย**สกิล-หุ่นเกราะจู่โจม**จะได้รับพลังงานพิเศษเพิ่ม **25** แต้ม",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			},
+			{
+				"description": "เมื่ออยู่ในสถานะ**ใช้พลังงาน** จะเพิ่มดาเมจไฟฟ้า **16%** และดาเมจน้ำแข็ง **10%** เป็นเวลา **20** วินาที",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "AyanamiRei_thunder_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "ยิงศรรวดเร็ว",
+					"description": "ขณะอยู่บนพื้น แตะโจมตีปกติเพื่อโจมตีต่อเนื่อง 6 ครั้ง\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้กับเป้าหมาย และทำให้เป้าหมายกระเด็นเล็กน้อย\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> ให้กับเป้าหมาย และทำให้เป้าหมายกระเด็นเล็กน้อย\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> ให้กับเป้าหมาย และทำให้เป้าหมายกระเด็นเล็กน้อย\r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> ให้กับเป้าหมาย และทำให้เป้าหมายกระเด็นเล็กน้อย\r\nการโจมตีครั้งที่ห้า: หลังโจมตีครั้งที่ห้าแล้วแตะเมื่อมีแฟลชจะเรียกใช้การโจมตีครั้งที่หก การโจมตีครั้งที่หกจะยิงศรพลังงานอันทรงพลังและปล่อยศรติดตามจำนวนหนึ่งสร้างดาเมจ <shuzhi>{10}%</> ของ ATK + <shuzhi>{11}</> ใส่เป้าหมาย และสร้างสนามแม่เหล็กเชื่องช้า 1 อันใส่เป้าหมายที่โดนครั้งแรก เป็นเวลา <shuzhi>3</> วินาที [สนามแม่เหล็กเชื่องช้า: ความเร็วในเคลื่อนที่และโจมตีของเป้าหมายศัตรูจะลดลง <shuzhi>35%</>]",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Melee.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Melee"
+				},
+				{
+					"name": "ยิงต่อเนื่องกลางอากาศ",
+					"description": "ขณะที่นักพเนจรลอยอยู่กลางอากาศ แตะโจมตีปกติเพื่อโจมตีกลางอากาศโดยใช้พลังกาย 6 ครั้งติดต่อกัน\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ให้กับเป้าหมาย\r\nการโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> ให้กับเป้าหมาย\r\nการโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> ให้กับเป้าหมาย\r\nการโจมตีครั้งที่สี่: สร้างดาเมจเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> ให้กับเป้าหมาย\r\nการโจมตีครั้งที่ห้า: สร้างดาเมจเท่ากับ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> ให้กับเป้าหมาย\r\nหลังโจมตีครั้งที่ห้าแล้วแตะเมื่อมีแฟลชจะเรียกใช้การโจมตีครั้งที่หก การโจมตีครั้งที่หกจะยิงศรพลังงานอันทรงพลังและปล่อย<shuzhi>ศรติดตาม</> <shuzhi>5</> อัน สร้างดาเมจ <shuzhi>{10}%</> ของ ATK ใส่เป้าหมาย + <shuzhi>{11}</> และสร้างสนามแม่เหล็กเชื่องช้าลงที่เป้าหมาย 1 อัน: ความเร็วในเคลื่อนที่และโจมตีของเป้าหมายศัตรูจะลดลง <shuzhi>40%</> เป็นเวลา <shuzhi>3</> วินาที",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-AirAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_AirAttack"
+				},
+				{
+					"name": "ศรกระโดดกลับหลัง",
+					"description": "โจมตีปกติเมื่ออยู่บนพื้นหรือกลางอากาศ ใช้การโจมตีครั้งที่ 1 - 5 แล้วและโจมตีปกติค้างเพื่อเรียกใช้ศรกระโดดกลับหลัง\r\nขณะที่กระโดดกลับหลังจะยิงไปข้างหน้า สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมาย\r\nหากในครั้งนี้พลังงานพิเศษสูงกว่า <shuzhi>70</> จะปล่อยสถานะ<shuzhi>ใช้พลังงาน</>: ATK ไฟฟ้าเพิ่มขึ้น <shuzhi>15%</>, ATK น้ำแข็งเพิ่มขึ้น <shuzhi>5%</>\r\nและเมื่อ<shuzhi>ไถ่บาป</>อยู่ในช่องอาวุธหลัก ทุก 0.5 วินาทีจะใช้พลังงานพิเศษ <shuzhi>5</> แต้ม <shuzhi>ไถ่บาป</>สร้างดาเมจเพิ่มขึ้น 30% ทำการแตะต่อเนื่องหรือแตะโจมตีปกติค้างเพื่อเรียกใช้<shuzhi>โจมตีปกติ: ยิงอย่างรวดเร็ว</>\r\nเมื่อ<shuzhi>ไถ่บาป</>อยู่ในช่องอาวุธรอง ทุก 0.5 วินาทีจะใช้พลังงานพิเศษ <shuzhi>3.3</> แต้ม ดาเมจศรติดตามจะเพิ่มขึ้น <shuzhi>50%</> และระยะการระเบิดเมื่อจำนวนที่ติดอยู่ครบจะเพิ่มขึ้น\r\nพลังงานพิเศษมีได้สูงสุด <shuzhi>100</> แต้ม หลังเติมจนเต็มแล้วสลับ<shuzhi>ไถ่บาป</>จากช่องหลักไปช่องอาวุธรอง ก็สามารถเข้าสู่สถานะใช้พลังงานได้โดยตรง",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch1.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch1"
+				},
+				{
+					"name": "หลบยิงด่วน",
+					"description": "เมื่ออยู่ในสถานะ<shuzhi>ใช้พลังงาน</> กดโจมตีปกติสามารถโจมตีได้ต่อเนื่อง 3 ครั้ง\r\nโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</>\r\nโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</>\r\nโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</>",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Branch2.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_Branch2"
+				},
+				{
+					"name": "นักแม่นปืน",
+					"description": "แตะโจมตีปกติและกดค้างไว้เพื่อชาร์จโจมตี สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และจะเพิ่มขึ้น <shuzhi>100%</> ในทุก <shuzhi>0.1</> วินาทีที่ชาร์จ สูงสุดไม่เกิน <shuzhi>2.3</> วินาที",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-PowerAttack.webp",
+					"id": "GA_FPlayerAyanamiReiMelee_PowerAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "หลบหลีก",
+					"description": "หลบหลีกก่อนถูกโจมตี เพื่อเรียกใช้งานแฟนตาเซีย ซึ่งจะลดความเร็วของเป้าหมายในบริเวณ และจะไม่โดนติดสตันขณะหลบหลีก",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerAyanamiReiEvade_Evade"
+				},
+				{
+					"name": "ยิงสามครั้ง",
+					"description": "แตะโจมตีปกติในระหว่างช่วงระยะเวลาสั้น ๆ หลังหลบหลีกใดก็ได้ เพื่อเรียกใช้ยิงสามครั้ง จะสร้างดาเมจสูงสุด <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมายที่โดนครั้งแรก",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackNormal"
+				},
+				{
+					"name": "ชาร์จเรียงราย",
+					"description": "หลังหลบหลีกให้แตะโจมตีปกติให้ถูกเวลา เพื่อเรียกใช้ชาร์จเรียงราย จะยิงศรพลังงานอันทรงพลัง สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมาย ขณะเดียวกันจะยิงศรติดตามหลายดอกออกไป ตนเองจะได้รับการบล็อก 1 ครั้ง เป็นเวลา <shuzhi>15</> วินาที ค่าการบล็อกสูงสุดไม่เกิน <shuzhi>10%</> ของค่า HP สูงสุดของตนเอง ผู้เล่นสามารถบล็อกได้สามครั้งในเวลาเดียวกัน",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-EnchancedEvadeAttack.webp",
+					"id": "GA_FPlayerAyanamiReiEvadeAttackEnhanced"
+				}
+			],
+			"skill": [
+				{
+					"name": "หุ่นเกราะจู่โจม",
+					"description": "เรียกหุ่นเกราะมาโจมตีหนักใส่ศัตรู สร้างดาเมจ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ใส่เป้าหมายใกล้เคียง ในช่วงเวลานี้จะไฮเปอร์บอดี้ และได้รับพลังงานพิเศษ <shuzhi>35</> แต้ม คูลดาวน์ <shuzhi>20</> วินาที (ไม่ได้รับผลจากเอฟเฟกต์ล้าง, รีเซ็ต, เปลี่ยนแปลงเวลาคูลดาวน์ใด ๆ)",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-Skill.webp",
+					"id": "GA_FPlayerAyanamiReiSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "สนามป้องกัน",
+					"description": "เมื่อ<red>ชาร์จอาวุธเต็ม</> หรือเรียกใช้งาน<red>แฟนตาเซีย</>แล้ว การสลับมายังอาวุธนี้จะ<shuzhi>ลบดีบัฟทั้งหมดจากผู้ถือ</> เรียกหุ่นเกราะเพื่อใช้โล่กระแทกพื้น ปลดปล่อยคลื่นกระแทกสร้างดาเมจ <shuzhi>{0}%</> ของ ATK ใส่เป้าหมายใกล้เคียง + <shuzhi>{1}</> และได้รับพลังงานพิเศษ <shuzhi>30</> แต้ม ในช่วงระยะเวลานี้ จะไม่โดนดาเมจเป็นเวลา <shuzhi>1.5</> วินาที (ใช้ในลีกแข่งยอดฝีมือไม่ได้)",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Skill-AyanamiRei-ChangeSkill.webp",
+					"id": "GA_FPlayerAyanamiReiChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "เรโซแนนซ์แห่งอนาคต",
+					"description": "เด็กสาวจากกาลอวกาศที่ห่างไกล กำลังฟังสัญญาณที่มาจากอนาคต",
+					"rarity": 5,
+					"source": "จากกิจกรรม",
+					"simulacrumId": "imitation_56",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LBL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_56"
+				},
+				"weapon": {
+					"name": "เสียงสะท้อนของเรย์",
+					"description": "ตามการรายงานจากการใช้งานของอายานามิ เรย์ แผนกวิทยาศาสตร์และเทคโนโลยีได้พัฒนารุ่นปรับปรุงของ \"ไถ่บาป\"",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_rei_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"ได้รับจากกิจกรรมกาชาเรโซแนนซ์แห่งอนาคต"
+					],
+					"id": "imitation_fashion_56_w"
+				}
+			}
+		],
+		"version": "3.7",
+		"limited": true,
+		"id": "ayanamirei_thunder"
 	},
 	"brush_fire": {
 		"name": "ไพน์โคเม็ต",

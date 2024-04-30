@@ -11981,5 +11981,152 @@
 				"id": "GA_FPlayerDFishChess_ChangeSkill"
 			}
 		]
+	},
+	"GA_FPlayerLoslynMelee": {
+		"skills": [
+			{
+				"name": "冰封锚击",
+				"description": "在地面时，点击普攻可连续进行六次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第四次攻击对目标至多造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>14</>层寒袭。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>10</>层寒袭。\r\n第六次攻击对目标造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害，并击倒目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>20</>层寒袭。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_melee.png",
+				"operations": [
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynMelee_Melee"
+			},
+			{
+				"name": "滞空飞锚",
+				"description": "当拓荒者滞空时，点击普攻可在空中连续进行6次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>14</>层寒袭。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>10</>层寒袭。\r\n第六次攻击对目标造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害并击倒目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>20</>层寒袭。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_airattack.png",
+				"operations": [
+					"Jump",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynMelee_AirAttack"
+			},
+			{
+				"name": "凝滞朔风",
+				"description": "在地面普攻时，使用第一次至第四次普攻中，长按普攻可触发凝滞朔风。\r\n抡动静澜掀起冰霜旋风，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>15</>层寒袭。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_branch.png",
+				"operations": [
+					"Attack",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynMelee_Branch"
+			},
+			{
+				"name": "雪暴飓风",
+				"description": "在地面时，长按普攻可触发雪暴飓风。\r\n自身伴随静澜旋转攻击，并消耗耐力，每次命中对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_powerattack.png",
+				"operations": [
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynMelee_PowerAttack"
+			},
+			{
+				"name": "凌空落锚",
+				"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发凌空落锚。\r\n从空中下落，落地过程中对命中的敌人每次造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，落地后对附近目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>8</>层寒袭。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_jumpattack.png",
+				"operations": [
+					"Jump",
+					"Hold Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynMelee_JumpAttack"
+			}
+		]
+	},
+	"GA_FPlayerLoslynEvade": {
+		"skills": [
+			{
+				"name": "闪避",
+				"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/common_evade.png",
+				"operations": [
+					"Movement",
+					"Dash"
+				],
+				"tags": [],
+				"id": "GA_FPlayerLoslynEvade_Evade"
+			},
+			{
+				"name": "GA_FPlayerLoslynEvadeAttack_ForwardAttack_name",
+				"description": "GA_FPlayerLoslynEvadeAttack_ForwardAttack_des",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_fevadeattack.png",
+				"operations": [
+					"Movement",
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynEvadeAttack_ForwardAttack"
+			},
+			{
+				"name": "GA_FPlayerLoslynEvadeAttack_BackAttack_name",
+				"description": "GA_FPlayerLoslynEvadeAttack_BackAttack_des",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_bevadeattack.png",
+				"operations": [
+					"Dash",
+					"Attack"
+				],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynEvadeAttack_BackAttack"
+			}
+		]
+	},
+	"GA_FPlayerLoslynSkill": {
+		"skills": [
+			{
+				"name": "霜寒链域",
+				"description": "将静澜两端分别甩出攻击，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>52</>层寒袭，冷却<shuzhi>30</>秒（不受任何冷却时间清除、重置、变化效果的影响）。释放技能时获得持续<shuzhi>20</>秒的霸体效果，\r\n为命中的目标添加持续<shuzhi>15</>秒的急冻状态，攻击力下降<shuzhi>5%</>。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_skill.png",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynSkill_Skill"
+			}
+		]
+	},
+	"GA_FPlayerLoslynChangeSkill": {
+		"skills": [
+			{
+				"name": "凛冽冲击",
+				"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，向前方投出静澜，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>2.6</>秒（巅峰联赛不生效）释放。\r\n释放凛冽冲击后进入持续<shuzhi>14</>秒的凛冽状态，<shuzhi>静澜</>特定攻击会为命中的目标添加对应层数的寒袭效果，目标寒袭累计至<shuzhi>100</>层上限后会重置层数，并进入持续<shuzhi>4</>秒的冰封状态（同时<shuzhi>强控冰冻</>，<shuzhi>强控冰冻</>对boss不生效）。\r\n附带寒袭效果的普攻命中目标时，回复自身<shuzhi>3%</>最大生命值。",
+				"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_loslyn_changeskill.png",
+				"operations": [],
+				"tags": [
+					"Damage"
+				],
+				"id": "GA_FPlayerLoslynChangeSkill_Success"
+			}
+		]
 	}
 }

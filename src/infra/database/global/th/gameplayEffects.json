@@ -329,6 +329,16 @@
 		"description": "ดาเมจสุดท้ายเพิ่มขึ้น **0%** และเมื่อ**ไพน์โคเม็ต**อยู่ในช่องอาวุธรอง ความถี่ในการยิงของ**ขนปักษี**จะเพิ่มขึ้นถึง **1** ครั้ง/วินาที\r\n**เมื่อขนปักษี**โจมตีโดนและทำให้เกิดเอฟเฟกต์กระจาย จะกระจาย**เพลิงอัคคีไอออน**และ**ครอสเบิร์น**เพิ่มเติม\r\nเมื่อเล่นเป็นทีม ตนเองได้รับดาเมจจากเป้าหมายที่มีความโกรธจะลดลง **1%** เมื่อเปิดใช้งานเรโซแนนซ์ความอดทน จะเพิ่มขึ้นถึง **2%**",
 		"id": "buff_imitation_brush_level2_damageup"
 	},
+	"buff_imitation_dfish_level1": {
+		"name": "เจ้าเล่ห์",
+		"description": "เพิ่มดาเมจสุดท้าย **0%**",
+		"id": "buff_imitation_dfish_level1"
+	},
+	"buff_imitation_dfish_level2": {
+		"name": "กลยุทธ์หมากรุก",
+		"description": "เพิ่มดาเมจสุดท้าย **0%**\r\nเมื่อติดตั้ง**ไร้ทิศ** และในสนามมีเป้าหมายเพียง **1** เป้าหมาย จะเพิ่มดาเมจไฟขึ้น **1%** หากมีเป้าหมาย **2** เป้าหมายขึ้นไป จะเพิ่มดาเมจไฟขึ้นถึง **2%**",
+		"id": "buff_imitation_dfish_level2"
+	},
 	"buff_thunder_ready_lv1": {
 		"name": "ไฟฟ้า",
 		"description": "ทำให้เป้าหมายติดสถานะไฟฟ้าช็อตเป็นเวลา **3** วินาทีในขณะที่สร้างดาเมจแก่เป้าหมาย ทำให้เป้าหมายไม่สามารถใช้อาวุธได้",
@@ -420,83 +430,83 @@
 		"id": "buff_tianlang_weaponcharged"
 	},
 	"buff_timerevert_addenergy": {
-		"name": "ชาร์จคอมโบ",
+		"name": "แบตเตอรี่เก็บพลังงาน",
 		"description": "หลังจากใช้สกิลคอมโบ จะได้รับการชาร์จของเครื่องมือติดตามทันที * **6**/**8**/**10** หน่วยการชาร์จ",
 		"id": "buff_timerevert_addenergy"
 	},
 	"buff_timerevert_attackdmgmaxhp": {
-		"name": "โจมตี",
-		"description": "ทุกๆ 5 วินาที การโจมตีครั้งต่อไปจะสร้างดาเมจเพิ่มเติมเท่ากับจำนวนของเคาน์เตอร์เป้าหมาย * **0.1%**/**0.15%**/**0.2%** ของ HP ปัจจุบัน (เฉพาะเมื่อเรียกใช้เรโซแนนซ์โจมตี)",
+		"name": "ทำลายล้าง",
+		"description": "ทุกๆ **20** วินาที, การโจมตีครั้งต่อไปจะสร้างดาเมจเพิ่มเติมตามจำนวนการนับของเครื่องมือติดตาม * **0.02%**/**0.03%**/**0.05%** ของ HP สูงสุดของบอส (เฉพาะเมื่อเรียกใช้เรโซแนนซ์โจมตี)",
 		"id": "buff_timerevert_attackdmgmaxhp"
 	},
 	"buff_timerevert_bedmgdown": {
-		"name": "ลดดาเมจ",
+		"name": "ไร้จำนน",
 		"description": "ลดดาเมจที่ได้รับ ค่าที่ได้คือ รอบการชาร์จของเครื่องมือติดตาม * **0.5%**/**0.75%**/**1%**",
 		"id": "buff_timerevert_bedmgdown"
 	},
 	"buff_timerevert_breakdefup": {
-		"name": "ทำลายโล่",
+		"name": "โล่ถูกทำลาย",
 		"description": "เพิ่มทำลายโล่ ค่าที่ได้จะเท่ากับรอบการชาร์จของเครื่องมือติดตาม x **1%**/**1.5%**/**2%**",
 		"id": "buff_timerevert_breakdefup"
 	},
 	"buff_timerevert_chargeup": {
-		"name": "เพิ่มความเร็วในการชาร์จ",
+		"name": "ชาร์จเครื่องขยายสัญญาณ",
 		"description": "เพิ่มประสิทธิภาพการชาร์จ ค่าคือ รอบการชาร์จของเครื่องมือติดตาม * **0.5%**/**0.75%**/**1%**",
 		"id": "buff_timerevert_chargeup"
 	},
 	"buff_timerevert_defenfaddshield": {
-		"name": "ความอดทน",
-		"description": "เมื่อเปิดใช้งานแล้ว ดาเมจที่ได้รับ 1% จะถูกเปลี่ยนเป็นค่าโล่ การโจมตีและสกิลจะสร้างดาเมจเพิ่มเติมเท่ากับค่าโล่ **100%**/**200%**/**300%** (เฉพาะเมื่อเรียกใช้เรโซแนนซ์ความอดทน)",
+		"name": "โจมตีโล่",
+		"description": "เมื่อเปิดใช้งาน ทุก **5** วินาที ความเสียหายที่ได้รับ **40%**/**60%**/**80%** จะถูกแปลงเป็นค่าโล่ โดยต่ำสุดเท่ากับ **5%** ของ HP สูงสุดของผู้ปฏิบัติการ ในขณะที่มีโล่ การโจมตีและสกิลจะสร้างความเสียหายเพิ่มเติมเท่ากับ HP สูงสุดของบอส **0.25%**/**0.5%**/**0.75%** สามารถเรียกใช้ได้เพียงครั้งเดียวทุก 10 วินาที (เฉพาะเรโซแนนซ์ความอดทนที่สามารถเรียกใช้)",
 		"id": "buff_timerevert_defenfaddshield"
 	},
 	"buff_timerevert_dmgup": {
-		"name": "เพิ่มพลังโจมตี",
+		"name": "แผดเผาลุกโชน",
 		"description": "เพิ่มดาเมจที่สร้าง ค่าคือ รอบการชาร์จของเครื่องมือติดตาม * **0.5%**/**0.75%**/**1%**",
 		"id": "buff_timerevert_dmgup"
 	},
 	"buff_timerevert_dmgupinair": {
-		"name": "เพิ่มดาเมจกลางอากาศ",
+		"name": "ไลท์สปิริต",
 		"description": "เพิ่มดาเมจที่สร้างขึ้นในอากาศ ค่าเพิ่มเติมคือจำนวนรอบการชาร์จของเครื่องมือติดตาม * **0.6%**/**1%**/**1.5%**",
 		"id": "buff_timerevert_dmgupinair"
 	},
 	"buff_timerevert_exdmg": {
-		"name": "ทำลายล้าง",
+		"name": "พิพากษา",
 		"description": "การโจมตีครั้งถัดไปจะใช้บัฟทั้งหมดและสร้างดาเมจเพิ่มเติมตาม HP สูงสุดของเป้าหมาย ค่าดาเมจนั้นจะเท่ากับจำนวนรอบการชาร์จของเครื่องมือติดตาม * **0.05%**/**0.075%**/**0.1%**",
 		"id": "buff_timerevert_exdmg"
 	},
 	"buff_timerevert_gettimerevertstack": {
 		"name": "กลับสู่เส้นทางอย่างรวดเร็ว",
-		"description": "รอบการชาร์จของดาเมจที่สะสมต่อบอส เพิ่มจาก **1** ชั้นเป็น **2** ชั้น",
+		"description": "หลังจากเปิดใช้งานแล้ว ทุก **2** วินาทีจะได้รับ **1** รอบการชาร์จเพิ่มเติม",
 		"id": "buff_timerevert_gettimerevertstack"
 	},
 	"buff_timerevert_healdmgaftertreatment": {
-		"name": "ประทานพร",
-		"description": "หลังจากได้รับเอฟเฟกต์การรักษา การโจมตีครั้งต่อไปจะสร้างดาเมจเพิ่มเติม ค่าดาเมจนั้นเท่ากับรอบการชาร์จของเครื่องมือฟื้นฟู * **0.2%**/**0.3%**/**0.5%** ของ HP สูงสุดของเป้าหมาย (เฉพาะเมื่อเรียกใช้เรโซแนนซ์ประทานพร)",
+		"name": "ปลดปล่อย",
+		"description": "หลังจากได้รับเอฟเฟกต์การรักษา การโจมตีครั้งต่อไปจะสร้างดาเมจเพิ่มเติม ค่าดาเมจเท่ากับรอบการชาร์จของเครื่องมือติดตาม * **0.01%**/**0.02%**/**0.03%** ของ HP สูงสุดของเป้าหมาย สามารถเรียกใช้ได้เพียงหนึ่งครั้งทุก 10 วินาที (เฉพาะเมื่อเรโซแนนซ์ประทานพรถูกใช้งาน)",
 		"id": "buff_timerevert_healdmgaftertreatment"
 	},
 	"buff_timerevert_healup": {
-		"name": "รักษา",
-		"description": "เพิ่มผลของการรักษา ค่าที่ได้คือ รอบการชาร์จของเครื่องมือฟื้นฟู * **1%**/**1.5%**/**2%**",
+		"name": "น้ำหวาน",
+		"description": "เพิ่มเอฟเฟกต์การรักษา ค่าที่ได้คือ /**25%**/**50%**/**75%**",
 		"id": "buff_timerevert_healup"
 	},
 	"buff_timerevert_ignoredef": {
-		"name": "มองข้ามการต้านทาน",
+		"name": "กดขี่",
 		"description": "การโจมตีเพิกเฉยต่อค่าต้านทานทั้งหมดบางส่วนของบอส ค่านี้เท่ากับรอบการชาร์จของเครื่องมือติดตาม * **0.5%**/**0.75%**/**1%**",
 		"id": "buff_timerevert_ignoredef"
 	},
 	"buff_timerevert_periodshield": {
 		"name": "โล่การฟื้นฟู",
-		"description": "ทุก **30** วินาที จะได้รับโล่ ค่าโล่เท่ากับ จำนวนรอบการชาร์จของเครื่องมือติดตาม * **0.5%**/**1%**/**1.5%** ของ HP สูงสุดของผู้ปฏิบัติการ",
+		"description": "เมื่อเปิดใช้งานจะได้รับโล่ ซึ่งจะรีเฟรชทุก **30** วินาที ค่าเท่ากับจำนวนรอบการชาร์จของเครื่องมือติดตาม * **0.5%**/**1%**/**1.5%** ของ HP สูงสุดของผู้ปฏิบัติการ",
 		"id": "buff_timerevert_periodshield"
 	},
 	"buff_timerevert_reducecd": {
-		"name": "ลดคูลดาวน์สกิล",
+		"name": "พายุลมแรง",
 		"description": "ลดระยะเวลาคูลดาวน์ขั้นต้นของสกิล ค่าที่ลดลงคือ /**10%**/**20%**/**30%**",
 		"id": "buff_timerevert_reducecd"
 	},
 	"buff_timerevert_suck": {
-		"name": "การขโมย HP",
-		"description": "ฟื้นฟู HP ตามค่าดาเมจที่สร้าง ค่าที่ได้จะเท่ากับจำนวนรอบการชาร์จของเครื่องมือฟื้นฟู * **0.5%**/**0.75%**/**1%**",
+		"name": "ดูดซับ HP",
+		"description": "ฟื้นฟูพลังชีวิตตามดาเมจที่ทำให้ได้ ค่าคือ /**10%**/**20%**/**30%**",
 		"id": "buff_timerevert_suck"
 	},
 	"attack_skill1": {
@@ -820,13 +830,13 @@
 		"id": "dieceng_boss_hum_057_nubukejie_-1_10"
 	},
 	"eventdes_boss044sp_common3": {
-		"name": "การป้องกันอย่างสิ้นเชิง",
+		"name": "การป้องกันที่สมบูรณ์",
 		"description": "เมื่อค่า HP ของฮาร์ราห์ลดลงจนถึงระดับที่กำหนด ฮาร์ราห์จะเริ่มเข้าสู่โหมดป้องกัน ในช่วงนี้ ฮาร์ราห์จะไม่โจมตี แต่จะมีเอฟเฟกต์คงกระพันในระหว่างที่เอฟเฟกต์คงกระพันยังคงอยู่ แกนหลักพลังงานจะปรากฏขึ้นกลางอากาศและตกลงมาอย่างช้า ๆ ก่อนที่แกนหลักพลังงานจะตกลงมาถึงพื้น ถ้านักพเนจรสัมผัสกับแกนหลักพลังงาน นักพเนจรจะได้รับเอฟเฟกต์บัฟจากแกนหลักพลังงาน ซึ่งจะเพิ่มความสูงการกระโดดและความเร็วของนักพเนจรอย่างมาก และลดการใช้พลังกายของนักพเนจรพร้อมกันนั้น ยังจะทำให้โหมดการป้องกันของฮาร์ราห์ขัดขวาง หลังจากแกนหลักพลังงานถูกยึดครองหลายครั้ง สถานะคงกระพันของฮาร์ราห์จะถูกยุติล่วงหน้า",
 		"id": "eventdes_boss044sp_common3"
 	},
 	"eventdes_boss044sp_fire1": {
 		"name": "ความร้อนแผดเผา",
-		"description": "นักพเนจรที่อยู่รอบ ๆ ฮาร์ราห์จะได้รับเครื่องหมายไฟที่สะสมขึ้น ยิ่งอยู่ใกล้ฮาร์ราห์เครื่องหมายไฟจะสะสมขึ้นเร็วขึ้นตัวละครที่มีเครื่องหมายไฟซ้อนทับมากกว่า 50 ชั้น จะถูกลบทุกชั้นของเครื่องหมายไฟเมื่อได้รับดาเมจจากฮาร์ราห์ และจะได้รับดาเมจเพิ่มเติมที่ขึ้นอยู่กับจำนวนชั้นของเครื่องหมายไฟ",
+		"description": "ตัวละครที่อยู่รอบ ๆ ฮาร์ราห์จะได้รับเครื่องหมายไฟฟ้าที่ซ้อนทับกัน ยิ่งอยู่ใกล้ฮาร์ราห์มากเท่าไหร่ ความเร็วในการซ้อนทับเครื่องหมายไฟฟ้าก็จะเร็วขึ้น สามารถซ้อนทับได้สูงสุด 100 ชั้นเมื่อตัวละครที่มีเครื่องหมายไฟสะสมมากกว่า 50 ชั้นถูกทำดาเมจโดยฮาร์ราห์ จะถูกเคลียร์เครื่องหมายไฟทั้งหมดและได้รับดาเมจเพิ่มเติมที่ขึ้นอยู่กับจำนวนชั้นของเครื่องหมายไฟ",
 		"id": "eventdes_boss044sp_fire1"
 	},
 	"eventdes_boss044sp_fire2": {
@@ -836,7 +846,7 @@
 	},
 	"eventdes_boss044sp_ice1": {
 		"name": "หนาวยะเยือก",
-		"description": "ผู้เล่นที่อยู่รอบ ๆ ฮาร์ราห์จะได้รับเครื่องหมายแดนหนาวสุดขั้วที่สะสมขึ้น ยิ่งอยู่ใกล้ฮาร์ราห์เครื่องหมายแดนหนาวสุดขั้วจะสะสมขึ้นเร็วขึ้น เมื่อเครื่องหมายแดนหนาวสุดขั้วสะสมเต็มแล้ว นักพเนจรเป้าหมายจะถูกแช่แข็งถ้าได้รับดาเมจจากฮาร์ราห์ในระหว่างที่เอฟเฟกต์แช่แข็งยังคงอยู่ การแช่แข็งจะถูกยกเลิก แต่ในเวลาเดียวกันจะได้รับดาเมจน้ำค้างแข็งครั้งหนึ่งที่สูง",
+		"description": "ผู้เล่นที่อยู่รอบ ๆ ฮาร์ราห์จะได้รับเครื่องหมายคริสตัลจำลอง ไทป์ II ซ้อนทับกัน สูงสุดได้ถึง 25 ชั้นเมื่อเครื่องหมายแดนหนาวสุดขั้วสะสมเต็มชั้น นักพเนจรเป้าหมายจะถูกแช่แข็ง ระหว่างที่แช่แข็งถ้าได้รับดาเมจจากฮาร์ราห์ การแช่แข็งจะถูกยกเลิกล่วงหน้า พร้อมรับดาเมจน้ำค้างแข็งสูงครั้งหนึ่ง",
 		"id": "eventdes_boss044sp_ice1"
 	},
 	"eventdes_boss044sp_ice2": {
@@ -846,7 +856,7 @@
 	},
 	"eventdes_boss044sp_phy1": {
 		"name": "มองด้วยสายตาเย็นชา",
-		"description": "เมื่อนักพเนจรอยู่ใกล้ฮาร์ราห์หรือได้รับดาเมจจากฮาร์ราห์ จะได้รับเครื่องหมายความกดดันที่สะสมขึ้น ทุกๆ เครื่องหมายความกดดันจะลดค่า HP สูงสุดของนักพเนจร 1% สามารถลดได้สูงสุดถึง 50% ของค่า HP สูงสุด",
+		"description": "เมื่อนักพเนจรอยู่ใกล้ฮาร์ราห์หรือได้รับดาเมจจากฮาร์ราห์ จะได้รับเครื่องหมายความกดดันซ้อนทับ สามารถซ้อนทับได้สูงสุด 50 ระดับ แต่ละระดับของเครื่องหมายความกดดันจะลดค่า HP สูงสุดของนักพเนจร 1% สูงสุดสามารถลดค่า HP สูงสุดได้ถึง 50%",
 		"id": "eventdes_boss044sp_phy1"
 	},
 	"eventdes_boss044sp_phy2": {
@@ -856,7 +866,7 @@
 	},
 	"eventdes_boss044sp_super1": {
 		"name": "เหี่ยวเฉา",
-		"description": "ทุกครั้งที่นักพเนจรได้รับดาเมจจากฮาร์ราห์ จะได้รับเครื่องหมายการบิดเวลาที่สะสมขึ้น และเมื่อเครื่องหมายการบิดเวลาสะสมเต็มแล้ว นักพเนจรจะได้รับเอฟเฟกต์การสึกหรอ: ในระยะเวลาที่กำหนดจะลดพลังกายเป็นระยะ ๆ",
+		"description": "ทุกครั้งที่นักพเนจรได้รับดาเมจจากฮาร์ราห์ จะได้รับเครื่องหมายเวลาบิดเบี้ยวซ้อนทับ สามารถซ้อนทับได้สูงสุด 10 ชั้น เมื่อเครื่องหมายเวลาบิดเบี้ยวสะสมเต็ม นักพเนจรจะได้รับเอฟเฟกต์เหี่ยวเฉา: จะมีการหักค่าพลังกายออกเป็นระยะ ๆ ในระยะเวลาที่เอฟเฟกต์ยังคงอยู่",
 		"id": "eventdes_boss044sp_super1"
 	},
 	"eventdes_boss044sp_super2": {
@@ -865,8 +875,8 @@
 		"id": "eventdes_boss044sp_super2"
 	},
 	"eventdes_boss044sp_thu1": {
-		"name": "ฟ้าผ่าโกรธ",
-		"description": "ในระหว่างการต่อสู้ ฮาร์ราห์จะปล่อยสายฟ้าฟาดลงบนพื้นที่สุ่มเป็นระยะ ๆ ซึ่งสายฟ้าฟาดจะสร้างดาเมจไฟฟ้าใส่เป้าหมายในพื้นที่ ในขณะเดียวกัน เมื่อนักพเนจรอยู่ใกล้ฮาร์ราห์ จะได้รับเอฟเฟกต์ไฟฟ้าช็อตที่สะสมขึ้นเรื่อย ๆ และเอฟเฟกต์ไฟฟ้าช็อตแต่ละครั้งจะเพิ่มดาเมจไฟฟ้าที่นักพเนจรได้รับ",
+		"name": "ฟ้าคะนอง",
+		"description": "ในการต่อสู้ ฮาร์ราห์จะปล่อยสายฟ้าลงมาเป็นระยะ ๆ ถ้านักพเนจรที่ถูกสายฟ้ามีสถานะไฟฟ้าช็อตน้อยกว่า 10 สแต็ก จะได้รับดาเมจไฟฟ้าที่ขึ้นอยู่กับจำนวนสแต็กไฟฟ้าช็อต และหลังจากที่ได้รับดาเมจจะได้รับสแต็กไฟฟ้าช็อตเพิ่มขึ้น 1 สแต็กหลังจากไฟฟ้าช็อตสะสมถึง 10 ชั้น นักพเนจรที่ถูกสายฟ้าจะถูกทะลุด้วยแรงดันสูง ทำให้ได้รับดาเมจถึงตาย 120% ของ HP สูงสุด",
 		"id": "eventdes_boss044sp_thu1"
 	},
 	"eventdes_boss044sp_thu2": {
@@ -1225,15 +1235,18 @@
 		"id": "buff_spear_stun"
 	},
 	"buff_eleweakpoint_bigice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigice"
 	},
 	"buff_eleweakpoint_bigfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfire"
 	},
 	"buff_eleweakpoint_bigthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigthunder"
 	},
 	"buff_artifact11_getweapon": {
@@ -1956,6 +1969,16 @@
 		"description": "เพิ่มดาเมจจากไฟฟ้าขึ้นอย่างมาก",
 		"id": "buff_borderwar_weakthunder"
 	},
+	"buff_boss_002_4": {
+		"name": "นมพิษ",
+		"description": "การรักษาที่นักพเนจรให้จะถูกเปลี่ยนเป็นดาเมจเท่ากับจำนวนที่รักษา",
+		"id": "buff_boss_002_4"
+	},
+	"buff_boss_002_5_ignore": {
+		"name": "เปราะบาง",
+		"description": "ในระยะเวลานักพเนจรจะไม่สามารถใช้ไฮเปอร์บอดี้และไม่สามารถเข้าสู่สถานะคงกระพัน",
+		"id": "buff_boss_002_5_ignore"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "ไฮเปอร์บอดี้ไร้ผล",
 		"description": "ไม่สามารถเพิ่มสถานะไฮเปอร์บอดี้ให้กับตนเองได้",
@@ -1963,11 +1986,11 @@
 	},
 	"buff_boss_044_sp_fire": {
 		"name": "เมล็ดไฟ",
-		"description": "ถ้าอยู่ใกล้ฮาร์ราห์ที่กำลังเปลี่ยนแปลงอยู่ จะทำให้ไฟฟ้าสะสมขึ้น หากสะสมไปถึงจำนวนที่กำหนด การโจมตีของฮาร์ราห์จะสามารถระเบิดไฟฟ้า และสร้างดาเมจตามจำนวนไฟฟ้าที่สะสมอยู่ให้กับเป้าหมายที่ได้รับไฟฟ้า ดาเมจที่สร้างขึ้นจะขึ้นอยู่กับ HP สูงสุดของเป้าหมาย",
+		"description": "สามารถซ้อนทับได้สูงสุด 100 ชั้น นักพเนจรที่ถูกซ้อนทับเกิน 50 ชั้นของเมล็ดไฟจะถูกลบทิ้งทั้งหมดเมื่อได้รับดาเมจจากฮาร์ราห์ และจะได้รับดาเมจเพิ่มเติมที่ขึ้นอยู่กับจำนวนชั้นของเมล็ดไฟ",
 		"id": "buff_boss_044_sp_fire"
 	},
 	"buff_boss_044_sp_fire_ignore": {
-		"name": "ทนต่อเมล็ดไฟ",
+		"name": "ภูมิคุ้มกันไฟ",
 		"description": "ไม่สามารถใช้เอฟเฟกต์เมล็ดไฟกับนักพเนจรปัจจุบันได้",
 		"id": "buff_boss_044_sp_fire_ignore"
 	},
@@ -1977,32 +2000,32 @@
 		"id": "buff_boss_044_sp_ice_frozen"
 	},
 	"buff_boss_044_sp_ice_ignore": {
-		"name": "ทนแดนหนาวสุดขั้ว",
+		"name": "ภูมิคุ้มกันหนาวสุดขั้ว",
 		"description": "ไม่สามารถใช้เอฟเฟกต์แดนหนาวสุดขั้วกับนักพเนจรปัจจุบันได้",
 		"id": "buff_boss_044_sp_ice_ignore"
 	},
 	"buff_boss_044_sp_ice_stack": {
 		"name": "เยือกเย็น",
-		"description": "การที่คุณอยู่ใกล้ฮาร์ราห์ที่กำลังเปลี่ยนแปลงจะทำให้คุณได้รับเอฟเฟกต์แดนหนาวสุดขั้วที่สะสมขึ้น หากสะสมถึงจำนวนที่กำหนดแล้ว คุณจะถูกแช่แข็ง ในสถานะแช่แข็ง การโจมตีจากฮาร์ราห์จะสร้างเอฟเฟกต์น้ำค้างแข็งเพิ่มเติมใส่เป้าหมายของคุณ",
+		"description": "ซ้อนทับได้สูงสุด 25 ชั้น หากทำเครื่องหมายแดนหนาวสุดขั้วซ้อนทับเต็ม นักพเนจรเป้าหมายจะถูกแช่แข็ง หากในระหว่างที่ถูกแช่แข็งแล้วได้รับดาเมจจากฮาร์ราห์ จะทำให้สถานะแช่แข็งหมดลงเร็วขึ้น พร้อมทั้งได้รับดาเมจจากน้ำค้างแข็งครั้งหนึ่งที่สูงมาก",
 		"id": "buff_boss_044_sp_ice_stack"
 	},
 	"buff_boss_044_sp_phy_ignore": {
-		"name": "ทนต่อความกดดัน",
+		"name": "ภูมิคุ้มกันความกดดัน",
 		"description": "ไม่สามารถใช้เอฟเฟกต์ความกดดันกับนักพเนจรปัจจุบันได้",
 		"id": "buff_boss_044_sp_phy_ignore"
 	},
 	"buff_boss_044_sp_phy_stack": {
 		"name": "ความกดดันอันมากมาย",
-		"description": "การซ้อนทับแต่ละชั้นจะลด HP สูงสุดของนักพเนจรปัจจุบัน 1%",
+		"description": "สามารถซ้อนทับได้สูงสุด 50 ชั้น การซ้อนทับแต่ละชั้นจะลด HP สูงสุดของนักพเนจรปัจจุบัน 1%",
 		"id": "buff_boss_044_sp_phy_stack"
 	},
 	"buff_boss_044_sp_reward_energyconsumedown": {
-		"name": "ปรับสภาวะ",
+		"name": "เสริมพลังกาย",
 		"description": "การใช้พลังกายของนักพเนจรลดลง",
 		"id": "buff_boss_044_sp_reward_energyconsumedown"
 	},
 	"buff_boss_044_sp_reward_jumphigh": {
-		"name": "เพิ่มการกระโดด",
+		"name": "เสริมกระโดด",
 		"description": "เพิ่มประสิทธิภาพการกระโดดของนักพเนจร",
 		"id": "buff_boss_044_sp_reward_jumphigh"
 	},
@@ -2017,22 +2040,22 @@
 		"id": "buff_boss_044_sp_superpower_energy_trigger"
 	},
 	"buff_boss_044_sp_superpower_ignore": {
-		"name": "ไม่ได้รับผลกระทบจากการบิดเวลา",
+		"name": "ภูมิคุ้มกันเวลาบิดเบี้ยว",
 		"description": "ไม่สามารถใช้เอฟเฟกต์การบิดเวลากับนักพเนจรปัจจุบัน",
 		"id": "buff_boss_044_sp_superpower_ignore"
 	},
 	"buff_boss_044_sp_superpower_stack": {
 		"name": "การบิดเวลา",
-		"description": "ถ้าถูกโจมตีโดยฮาร์ราห์ จะทำให้เกิดเอฟเฟกต์การซ้อนทับเวลา หากเวลาที่ซ้อนทับสะสมถึงจำนวนที่กำหนด จะทำให้เป้าหมายได้รับเอฟเฟกต์การหมดแรง",
+		"description": "เอฟเฟกต์การบิดเวลาสามารถซ้อนทับได้สูงสุด 10 ชั้น หลังจากซ้อนทับถึงชั้นสูงสุดแล้ว จะใช้เอฟเฟกต์การหมดแรงต่อเป้าหมาย",
 		"id": "buff_boss_044_sp_superpower_stack"
 	},
 	"buff_boss_044_sp_thu_stack": {
 		"name": "ไฟฟ้าช็อต",
-		"description": "ทุกชั้นของไฟฟ้าช็อตเพิ่มดาเมจไฟฟ้าที่นักพเนจรได้รับ",
+		"description": "สามารถซ้อนทับได้สูงสุด 10 ชั้น หากนักพเนจรถูกสายฟ้าโจมตีและไฟฟ้าช็อตน้อยกว่า 10 ชั้น จะได้รับดาเมจเล็กน้อยที่ขึ้นอยู่กับจำนวนชั้น และเพิ่มไฟฟ้าช็อตอีก 1 ชั้น หากไฟฟ้าช็อตครบ 10 ชั้น นักพเนจรนั้นจะถูกทะลุด้วยแรงดันไฟฟ้าสูง และได้รับดาเมจถึงตาย 1 ครั้ง",
 		"id": "buff_boss_044_sp_thu_stack"
 	},
 	"buff_boss_044_thu_ignore": {
-		"name": "ไม่โดนไฟฟ้าช็อต",
+		"name": "ภูมิคุ้มกันไฟฟ้าช็อต",
 		"description": "ไม่สามารถใช้เอฟเฟกต์ไฟฟ้าช็อตกับนักพเนจรปัจจุบันได้",
 		"id": "buff_boss_044_thu_ignore"
 	},
@@ -2102,15 +2125,18 @@
 		"id": "buff_boss_hum_042_5"
 	},
 	"buff_eleweakpoint_smallfire": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfire"
 	},
 	"buff_eleweakpoint_smallice": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallice"
 	},
 	"buff_eleweakpoint_smallthunder": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallthunder"
 	},
 	"buff_emby_atkupdefdown": {
@@ -2189,42 +2215,52 @@
 		"id": "buff_evadeaddeffect_level2"
 	},
 	"buff_evajdfw_breakdefup": {
+		"name": "",
 		"description": "เกราะเพิ่มทำลายโล่ 20%",
 		"id": "buff_evajdfw_breakdefup"
 	},
 	"buff_evajdfw_critup": {
+		"name": "",
 		"description": "เกราะอัตราคริติคอลเพิ่ม 5%",
 		"id": "buff_evajdfw_critup"
 	},
 	"buff_evajdfw_finbedamedup": {
+		"name": "",
 		"description": "เกราะลดดาเมจ 5%",
 		"id": "buff_evajdfw_finbedamedup"
 	},
 	"buff_evajdfw_findamup": {
+		"name": "",
 		"description": "เกราะเพิ่มดาเมจ 5%",
 		"id": "buff_evajdfw_findamup"
 	},
 	"buff_evajdfw_monsterhpdownandatkup": {
+		"name": "",
 		"description": "HP ของมอนสเตอร์ลดลง 20% และ ATK เพิ่มขึ้น 10%",
 		"id": "buff_evajdfw_monsterhpdownandatkup"
 	},
 	"buff_evajdfw_monsterhpupandatkdown": {
+		"name": "",
 		"description": "HP ของมอนสเตอร์เพิ่มขึ้น 20% และ ATK ลดลง 20%",
 		"id": "buff_evajdfw_monsterhpupandatkdown"
 	},
 	"buff_evajdfw_skill01cooldowncut": {
+		"name": "",
 		"description": "คูลดาวน์ของสกิล[เรียกขอความช่วยเหลือ-104]ลดลง 2 วินาที",
 		"id": "buff_evajdfw_skill01cooldowncut"
 	},
 	"buff_evajdfw_skill02cooldowncut": {
+		"name": "",
 		"description": "คูลดาวน์ของสกิล \"ท่าทางอารักขา\" ลดลง 2 วินาที",
 		"id": "buff_evajdfw_skill02cooldowncut"
 	},
 	"buff_evajdfw_skilldefendshieldex": {
+		"name": "",
 		"description": "หลังจากการป้องกันด้วยเกราะสำเร็จ จะได้รับโล่ 1 ชิ้นเป็นเวลา 5 วินาที (ค่าโล่เท่ากับ 5% ของ HP) คูลดาวน์ 10 วินาที",
 		"id": "buff_evajdfw_skilldefendshieldex"
 	},
 	"buff_evajdfw_skilldefendup": {
+		"name": "",
 		"description": "การใช้สกิล[โล่แห่งความสดใส]เพิ่มอัตราการไม่โดนดาเมจ 10%",
 		"id": "buff_evajdfw_skilldefendup"
 	},
@@ -2240,7 +2276,7 @@
 	},
 	"buff_evapdzw_assistlevel2add": {
 		"name": "ท่าทางอารักขา",
-		"description": "เมื่อใช้สกิลนี้ นักพเนจร/ตนเองจะเพิ่มค่าต้านทานทุกอย่างขึ้น {0% และยั่วยุบอส **นักพเนจร/ตนเองจะฟื้นฟู HP ตาม {1% ของ ATK และทุกคนในทีมจะฟื้นฟู HP ตาม {2% ของ ATK** ในระยะเวลา 3 วินาที คูลดาวน์: 25 วินาที",
+		"description": "เมื่อใช้สกิลนี้ ตนเองจะเพิ่มค่าต้านทานทุกอย่างขึ้น {0% และยั่วยุบอส **ตนเองจะฟื้นฟู HP ตาม {1% ของ ATK และทุกคนในทีมจะฟื้นฟู HP ตาม {2% ของ ATK** ในระยะเวลา 3 วินาที คูลดาวน์: 25 วินาที",
 		"id": "buff_evapdzw_assistlevel2add"
 	},
 	"buff_evapdzw_assistlevel3add": {
@@ -2269,33 +2305,33 @@
 		"id": "buff_evapdzw_assistlevel6add"
 	},
 	"buff_evapdzw_defendlevel1add": {
-		"name": "โล่แห่งความสดใส",
+		"name": "โล่แห่งความรุ่งโรจน์",
 		"description": "อัตราการป้องกันเมื่อใช้สกิลการป้องกันเพิ่มจาก **0%** ขึ้นเป็น **1%**",
 		"id": "buff_evapdzw_defendlevel1add"
 	},
 	"buff_evapdzw_defendlevel2add": {
-		"name": "โล่แห่งความสดใส",
+		"name": "โล่แห่งความรุ่งโรจน์",
 		"description": "เมื่อใช้สกิลป้องกัน อัตราการไม่โดนดาเมจจะเพิ่มจาก {0% ขึ้นเป็น {1% หลังจาก**บล็อกสำเร็จ จะฟื้นฟู HP ที่สูญเสียไป {2% คูลดาวน์ {3 วินาที**",
 		"id": "buff_evapdzw_defendlevel2add"
 	},
 	"buff_evapdzw_defendlevel3add": {
-		"name": "โล่แห่งความสดใส",
+		"name": "โล่แห่งความรุ่งโรจน์",
 		"description": "เมื่อใช้สกิลป้องกัน อัตราการไม่โดนดาเมจจะเพิ่มจาก {0% ขึ้นเป็น {1% หลังจากบล็อกสำเร็จ จะฟื้นฟู {2% ของ HP ที่สูญเสียไป คูลดาวน์ {3 วินาที **เมื่อขับเกราะ จะได้รับลดดาเมจ {4% อย่างถาวร**",
 		"id": "buff_evapdzw_defendlevel3add"
 	},
 	"buff_evapdzw_defendlevel4add": {
-		"name": "โล่แห่งความสดใส",
+		"name": "โล่แห่งความรุ่งโรจน์",
 		"description": "เมื่อใช้สกิลป้องกัน อัตราการไม่โดนดาเมจจะเพิ่มจาก {0% ขึ้นเป็น {1% หลังจากบล็อกสำเร็จ จะฟื้นฟู HP ที่สูญเสียไป {2% คูลดาวน์ {3 วินาที ในขณะที่ขับเกราะ จะได้รับการลดดาเมจ {4% อย่างถาวร **ทำลายโล่เพิ่มเติม {5%**",
 		"id": "buff_evapdzw_defendlevel4add"
 	},
 	"buff_evapdzw_defendlevel5add": {
-		"name": "โล่แห่งความสดใส",
+		"name": "โล่แห่งความรุ่งโรจน์",
 		"description": "เมื่อใช้สกิลป้องกัน อัตราการไม่โดนดาเมจจะเพิ่มจาก {0% ขึ้นเป็น {1% หลังจากบล็อกสำเร็จ จะฟื้นฟู HP ที่สูญเสียไปของตนเอง {2% คูลดาวน์ {3 วินาที ขณะขับเกราะ จะได้รับลดดาเมจถาวร {4% และทำลายโล่เพิ่มขึ้นเพิ่มเติม {5% **ดาเมจสกิลและเอฟเฟกต์การรักษาของตนเองเพิ่มขึ้นเพิ่มเติม {6%**",
 		"id": "buff_evapdzw_defendlevel5add"
 	},
 	"buff_evapdzw_defendlevel6add": {
-		"name": "โล่แห่งความสดใส",
-		"description": "เมื่อใช้สกิลป้องกัน อัตราการไม่โดนดาเมจจะเพิ่มจาก {0% ขึ้นเป็น {1% หลังจากบล็อกสำเร็จ จะฟื้นฟู HP ที่สูญเสียไป {2% คูลดาวน์ {3 วินาที **และดาเมจของการทุบเน้นเป้าหมายครั้งถัดไปจะเพิ่มขึ้น {7% ทำลายโล่เพิ่มขึ้น {8% เอฟเฟกต์มีอายุ {9 วินาที (หากทำการรัวไม่ยั้ง 1 ครั้ง เอฟเฟกต์จะหมดสิ้น)/> เมื่อขับเกราะ จะได้รับการลดดาเมจถาวร **4%** ทำลายโล่เพิ่มขึ้นเพิ่มเติม **5%** และดาเมจสกิลและเอฟเฟกต์รักษาของตนเองเพิ่มขึ้นเพิ่มเติม **6%**",
+		"name": "โล่แห่งความรุ่งโรจน์",
+		"description": "เมื่อใช้สกิลป้องกัน อัตราการไม่โดนดาเมจจะเพิ่มจาก {0% ขึ้นเป็น {1% หลังจากบล็อกสำเร็จ จะฟื้นฟู HP ที่สูญเสียไป {2% คูลดาวน์ {3 วินาที **และดาเมจของการทุบเน้นเป้าหมายครั้งถัดไปจะเพิ่มขึ้น {7% ทำลายโล่เพิ่มขึ้น {8% เอฟเฟกต์มีอายุ {9 วินาที (หากโจมตีหนัก 1 ครั้ง เอฟเฟกต์จะหมดสิ้น)** เมื่อขับเกราะ จะได้รับการลดดาเมจถาวร {4% ทำลายโล่เพิ่มขึ้นเพิ่มเติม {5% และดาเมจสกิลและเอฟเฟกต์รักษาของตนเองเพิ่มขึ้นเพิ่มเติม {6%",
 		"id": "buff_evapdzw_defendlevel6add"
 	},
 	"buff_evapdzw_defendlevel6real": {
@@ -2375,7 +2411,7 @@
 	},
 	"buff_hammerice_sr_level0_1": {
 		"name": "คลั่ง I",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerice_sr_level0_1"
 	},
 	"buff_hammerice_sr_level0_2": {
@@ -2390,7 +2426,7 @@
 	},
 	"buff_hammerthu_ssr_level0_1": {
 		"name": "คลั่ง I",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_hammerthu_ssr_level0_1"
 	},
 	"buff_hammerthu_ssr_level0_4": {
@@ -2404,11 +2440,13 @@
 		"id": "buff_hammerthu_ssr_level0_5"
 	},
 	"buff_eleweakpoint_bigfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_bigfhy"
 	},
 	"buff_eleweakpoint_smallfhy": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_eleweakpoint_smallfhy"
 	},
 	"buff_artifactssr006_display": {
@@ -2482,13 +2520,19 @@
 		"id": "wormhole_buff_smallthunder_phy"
 	},
 	"buff_cannonice_sr_level5_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_cannonice_sr_level5_1"
 	},
 	"buff_void_player_1001": {
 		"name": "อธิษฐาน",
 		"description": "เมื่อได้รับการซ้อนทับของเอฟเฟกต์พิเศษใดๆ 3 ชั้น จะเพิ่ม HP และ ATK ของเพื่อนร่วมทีมทั้งหมด **25%** เพื่อนร่วมทีมแต่ละคนสามารถใช้งานเอฟเฟกต์ได้เพียงอย่างเดียวเท่านั้น",
 		"id": "buff_void_player_1001"
+	},
+	"buff_wantedcriminal": {
+		"name": "อยู่ระหว่างการตามจับ!",
+		"description": "เนื่องจากได้กระทำความผิดและถูกสั่งตามจับ คุณจำเป็นต้องหนีไปยังสถานที่ที่ปลอดภัยจากการตามล่า!",
+		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
 		"name": "แทงก์ทรงพลัง I",
@@ -4601,132 +4645,163 @@
 		"id": "wormhole_monsterbuff_019"
 	},
 	"hookclone_buff_immenergy": {
+		"name": "",
 		"description": "**ทนต่อดาเมจพลังงาน**",
 		"id": "hookclone_buff_immenergy"
 	},
 	"hookclone_buff_immfire": {
+		"name": "",
 		"description": "**ทนต่อดาเมจจากไฟ**",
 		"id": "hookclone_buff_immfire"
 	},
 	"hookclone_buff_immfirearms": {
+		"name": "",
 		"description": "**ความทนต่อดาเมจอาวุธปืน**",
 		"id": "hookclone_buff_immfirearms"
 	},
 	"hookclone_buff_immice": {
+		"name": "",
 		"description": "**ทนต่อดาเมจจากน้ำแข็ง**",
 		"id": "hookclone_buff_immice"
 	},
 	"hookclone_buff_immphy": {
+		"name": "",
 		"description": "**ทนต่อดาเมจกายภาพ**",
 		"id": "hookclone_buff_immphy"
 	},
 	"hookclone_buff_immpuncture": {
+		"name": "",
 		"description": "**ทนต่อดาเมจทะลุทะลวง**",
 		"id": "hookclone_buff_immpuncture"
 	},
 	"hookclone_buff_immsharp": {
+		"name": "",
 		"description": "**ทนต่อดาเมจดาบสั้น**",
 		"id": "hookclone_buff_immsharp"
 	},
 	"hookclone_buff_immstrength": {
+		"name": "",
 		"description": "**ทนต่อดาเมจจากอาวุธหนัก**",
 		"id": "hookclone_buff_immstrength"
 	},
 	"hookclone_buff_immthunder": {
+		"name": "",
 		"description": "**ทนต่อดาเมจไฟฟ้า**",
 		"id": "hookclone_buff_immthunder"
 	},
 	"hookclone_buff_smallenergy": {
+		"name": "",
 		"description": "**ต้านทานดาเมจพลังงาน 50%**",
 		"id": "hookclone_buff_smallenergy"
 	},
 	"hookclone_buff_resistanceenergy": {
+		"name": "",
 		"description": "**ต้านทานดาเมจพลังงาน 50%**",
 		"id": "hookclone_buff_resistanceenergy"
 	},
 	"hookclone_buff_smallfire": {
+		"name": "",
 		"description": "**ต้านทานดาเมจไฟ 50%**",
 		"id": "hookclone_buff_smallfire"
 	},
 	"hookclone_buff_resistancefire": {
+		"name": "",
 		"description": "**ต้านทานดาเมจไฟ 50%**",
 		"id": "hookclone_buff_resistancefire"
 	},
 	"hookclone_buff_smallfirearms": {
+		"name": "",
 		"description": "**ต้านทานดาเมจจากอาวุธปืน 50%**",
 		"id": "hookclone_buff_smallfirearms"
 	},
 	"hookclone_buff_resistancefirearms": {
+		"name": "",
 		"description": "**ต้านทานดาเมจจากอาวุธปืน 50%**",
 		"id": "hookclone_buff_resistancefirearms"
 	},
 	"hookclone_buff_smallice": {
+		"name": "",
 		"description": "**ต้านทานดาเมจน้ำแข็ง 50%**",
 		"id": "hookclone_buff_smallice"
 	},
 	"hookclone_buff_resistanceice": {
+		"name": "",
 		"description": "**ต้านทานดาเมจน้ำแข็ง 50%**",
 		"id": "hookclone_buff_resistanceice"
 	},
 	"hookclone_buff_smallphy": {
+		"name": "",
 		"description": "**ต้านทานดาเมจกายภาพ 50%**",
 		"id": "hookclone_buff_smallphy"
 	},
 	"hookclone_buff_resistancephy": {
+		"name": "",
 		"description": "**ต้านทานดาเมจกายภาพ 50%**",
 		"id": "hookclone_buff_resistancephy"
 	},
 	"hookclone_buff_smallpuncture": {
+		"name": "",
 		"description": "**ต้านทานดาเมจทะลุทะลวง 50%**",
 		"id": "hookclone_buff_smallpuncture"
 	},
 	"hookclone_buff_resistancepuncture": {
+		"name": "",
 		"description": "**ต้านทานดาเมจทะลุทะลวง 50%**",
 		"id": "hookclone_buff_resistancepuncture"
 	},
 	"hookclone_buff_smallsharp": {
+		"name": "",
 		"description": "**ต้านทานดาเมจจากดาบสั้น 50%**",
 		"id": "hookclone_buff_smallsharp"
 	},
 	"hookclone_buff_resistancesharp": {
+		"name": "",
 		"description": "**ต้านทานดาเมจจากดาบสั้น 50%**",
 		"id": "hookclone_buff_resistancesharp"
 	},
 	"hookclone_buff_smallstrength": {
+		"name": "",
 		"description": "**ต้านทานดาเมจจากอาวุธหนัก 50%**",
 		"id": "hookclone_buff_smallstrength"
 	},
 	"hookclone_buff_resistancestrength": {
+		"name": "",
 		"description": "**ต้านทานดาเมจจากอาวุธหนัก 50%**",
 		"id": "hookclone_buff_resistancestrength"
 	},
 	"hookclone_buff_smallthunder": {
+		"name": "",
 		"description": "**ต้านทานดาเมจไฟฟ้า 50%**",
 		"id": "hookclone_buff_smallthunder"
 	},
 	"hookclone_buff_resistancethunder": {
+		"name": "",
 		"description": "**ต้านทานดาเมจไฟฟ้า 50%**",
 		"id": "hookclone_buff_resistancethunder"
 	},
 	"hookclone_maxhp-20": {
+		"name": "",
 		"description": "**HP ของศัตรู -20%**",
 		"id": "hookclone_maxhp-20"
 	},
 	"hookclone_maxhp100": {
+		"name": "",
 		"description": "**HP ของศัตรู +100%**",
 		"id": "hookclone_maxhp100"
 	},
 	"hookclone_maxhp20": {
+		"name": "",
 		"description": "**HP ของศัตรู +20%**",
 		"id": "hookclone_maxhp20"
 	},
 	"hookclone_maxhp50": {
+		"name": "",
 		"description": "**HP ของศัตรู +50%**",
 		"id": "hookclone_maxhp50"
 	},
 	"buff_cubefire_ssr_level2def": {
 		"name": "การซ้อนทับแต่ละชั้นลดดาเมจที่ได้รับ 1% เอฟเฟกต์สามารถซ้อนทับได้สูงสุด 15 ชั้น",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_cubefire_ssr_level2def"
 	},
 	"buff_cubefire_ssr_level4dam": {
@@ -5155,7 +5230,8 @@
 		"id": "buff_frozen_3s"
 	},
 	"buff_artifactssr006_stun": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_artifactssr006_stun"
 	},
 	"buff_sword_001_ssr_damageup": {
@@ -5399,22 +5475,22 @@
 		"id": "buff_asukabreakdefup_breakfate"
 	},
 	"buff_asukadefup_breakfate": {
-		"name": "ยาแก้ปวดสูตรเข้มข้น",
+		"name": "ยาแก้ปวด",
 		"description": "ค่าต้านทานทุกอย่าง +15%",
 		"id": "buff_asukadefup_breakfate"
 	},
 	"buff_asukahealup_breakfate": {
-		"name": "สารละลายบำบัด",
+		"name": "ยารักษา",
 		"description": "เพิ่มเอฟเฟกต์การรักษา 15%",
 		"id": "buff_asukahealup_breakfate"
 	},
 	"buff_asukahpup_breakfate": {
-		"name": "สารละลายเพิ่มพลัง",
+		"name": "ยาเพิ่มพลัง",
 		"description": "เพิ่ม HP 15%",
 		"id": "buff_asukahpup_breakfate"
 	},
 	"buff_asukamiansi_breakfate": {
-		"name": "โล่การป้องกันสุดขีดขั้น",
+		"name": "โล่การป้องกันขั้นสุด",
 		"description": "ทนต่อดาเมจถึงตายหนึ่งครั้งและทนต่อดาเมจ 2 วินาที (มีผลเพียงครั้งเดียว)",
 		"id": "buff_asukamiansi_breakfate"
 	},
@@ -5637,6 +5713,41 @@
 		"name": "ระบำอัสนี III",
 		"description": "ใช้อาวุธสายฟ้า **9** ชิ้นจะเปิดใช้: ทุกครั้งหลังปล่อยสกิล จะได้รับบัฟประจุไฟฟ้า เป็นเวลา **10** วินาที ซึ่งในช่วงที่มีบัฟประจุไฟฟ้าอยู่ การโจมตีปกติทั้งหมดของผู้เล่นจะปล่อยโซ่สายฟ้า 1 ครั้ง ทุก ๆ **1** วินาที สร้างดาเมจไฟฟ้า **800%** ของ ATK แบบไม่ได้รับผลกระทบจากบัฟหรือดีบัฟ และโซ่สายฟ้าจะชิ่งไปมาระหว่างศัตรู สูงสุด **5** ครั้ง หากได้รับบัฟประจุไฟฟ้าซ้ำ จะรีเฟรชช่วงเวลาของบัฟ",
 		"id": "buff_autochess_thunderlink_3"
+	},
+	"buff_ayanamirei_ice_ssr_resonance": {
+		"name": "เรโซแนนซ์น้ำแข็ง",
+		"description": "**เรโซแนนซ์น้ำแข็ง**: เพิ่ม ATK น้ำแข็ง **15%** และค่าต้านทานน้ำแข็ง **25%** เปิดการใช้งานโดยติดตั้งอาวุธน้ำแข็ง **2** ชิ้นหรือมากกว่า เอฟเฟกต์เซตนี้สามารถใช้งานได้กับอาวุธในช่องอาวุธรอง (ไม่สามารถซ้อนทับกับเรโซแนนซ์น้ำแข็งหรือปฏิกิริยาน้ำแข็งอื่นได้ ซึ่งเรโซแนนซ์น้ำแข็งจะมีผลก่อน)",
+		"id": "buff_ayanamirei_ice_ssr_resonance"
+	},
+	"buff_ayanamirei_level1": {
+		"name": "จู่โจม",
+		"description": "เพิ่มดาเมจสุดท้าย **12%**",
+		"id": "buff_ayanamirei_level1"
+	},
+	"buff_ayanamirei_level2": {
+		"name": "ผู้พิทักษ์",
+		"description": "เพิ่มดาเมจสุดท้าย **18%** เมื่อเปิดใช้งาน**เรโซแนนซ์โจมตี**: ดาเมจไฟฟ้าจะเพิ่มขึ้น **8%** เมื่อเปิดใช้งาน**ที่ไม่ใช่เรโซแนนซ์โจมตี**: **โจมตีปกติ: ชาร์จเรียงราย**เอฟเฟกต์การบล็อกจะเพิ่มขึ้นเป็น **0%** ของค่า HP สูงสุดของตนเอง ระยะเวลาต่อเนื่องของ**สนามแม่เหล็กเชื่องช้า**ของ**โจมตีปกติ: ยิงศรรวดเร็ว**และ**โจมตีปกติ: ยิงต่อเนื่องกลางอากาศ**เพิ่มขึ้นเป็น **4** วินาที",
+		"id": "buff_ayanamirei_level2"
+	},
+	"buff_ayanamirei_thunder_resonance": {
+		"name": "เรโซแนนซ์ไฟฟ้า",
+		"description": "**เรโซแนนซ์ไฟฟ้า**: เพิ่ม ATK ธาตุไฟฟ้า **15%** และค่าต้านทานไฟฟ้า **25%** เปิดการใช้งานโดยติดตั้งอาวุธไฟฟ้า **2** ชิ้นหรือมากกว่า เอฟเฟกต์เซตนี้สามารถใช้งานได้กับอาวุธในช่องอาวุธรอง (ไม่สามารถซ้อนทับกับเอฟเฟกต์เรโซแนนซ์ไฟฟ้าหรือปฏิกิริยาไฟฟ้า ซึ่งเรโซแนนซ์ไฟฟ้าจะมีผลก่อน)",
+		"id": "buff_ayanamirei_thunder_resonance"
+	},
+	"buff_ayanamireibedamagedown": {
+		"name": "ทักษะการบล็อก",
+		"description": "สามารถบล็อกดาเมจได้สูงสุดถึง **10%** ของค่า HP สูงสุดของตนเอง เป็นเวลา **15** วินาที ผู้เล่นสามารถบล็อกได้สูงสุด 3 ครั้งในเวลาเดียวกัน",
+		"id": "buff_ayanamireibedamagedown"
+	},
+	"buff_ayanamireibedamagedown_imitationfeature": {
+		"name": "ทักษะการบล็อก",
+		"description": "สามารถบล็อกดาเมจได้สูงสุดถึง **12%** ของค่า HP สูงสุดของตนเอง เป็นเวลา **15** วินาที ผู้เล่นสามารถบล็อกได้สูงสุด 3 ครั้งในเวลาเดียวกัน",
+		"id": "buff_ayanamireibedamagedown_imitationfeature"
+	},
+	"buff_ayanamireienergystate_damageup_level6": {
+		"name": "เพิ่มดาเมจ",
+		"description": "เพิ่มดาเมจไฟฟ้า **0%** และดาเมจน้ำแข็ง **1%** เป็นเวลา **2** วินาที",
+		"id": "buff_ayanamireienergystate_damageup_level6"
 	},
 	"buff_professioncommon": {
 		"name": "เรโซแนนซ์: สมดุล",
@@ -6039,6 +6150,7 @@
 		"id": "buff_cannonice_sr_level3_damage"
 	},
 	"buff_dsthu_ssr_level6_1": {
+		"name": "",
 		"description": "ลดดาเมจไฟฟ้าที่ได้รับ 20%",
 		"id": "buff_dsthu_ssr_level6_1"
 	},
@@ -6088,10 +6200,12 @@
 		"id": "buff_matrix_n_2"
 	},
 	"buff_matrix_n_3": {
+		"name": "",
 		"description": "สร้างดาเมจกายภาพเพิ่ม **4%**",
 		"id": "buff_matrix_n_3"
 	},
 	"buff_matrix_n_4": {
+		"name": "",
 		"description": "สร้างดาเมจไฟฟ้าเพิ่ม **4%**",
 		"id": "buff_matrix_n_4"
 	},
@@ -6116,6 +6230,7 @@
 		"id": "buff_matrix_r_4_level1"
 	},
 	"buff_matrix_r_5_level1": {
+		"name": "",
 		"description": "สร้างดาเมจด้วยอาวุธปืนเพิ่ม **6%**",
 		"id": "buff_matrix_r_5_level1"
 	},
@@ -6250,14 +6365,17 @@
 		"id": "buff_matrix_sr_8_level3"
 	},
 	"buff_matrix_sr_9_level1": {
+		"name": "",
 		"description": "ได้รับดูดเลือด **30%** ในหว่างที่สถานะแฟนตาเซียทำงานและฟื้นฟู HP สูงสุด **60%** ของ ATK ทุก 0.5 วินาที",
 		"id": "buff_matrix_sr_9_level1"
 	},
 	"buff_matrix_sr_9_level2": {
+		"name": "",
 		"description": "ได้รับดูดเลือด **36%** ในหว่างที่สถานะแฟนตาเซียทำงานและฟื้นฟู HP สูงสุด **69%** ของ ATK ทุก 0.5 วินาที",
 		"id": "buff_matrix_sr_9_level2"
 	},
 	"buff_matrix_sr_9_level3": {
+		"name": "",
 		"description": "ได้รับดูดเลือด **39%** ในหว่างที่สถานะแฟนตาเซียทำงานและฟื้นฟู HP สูงสุด **73.5%** ของ ATK ทุก 0.5 วินาที",
 		"id": "buff_matrix_sr_9_level3"
 	},
@@ -6277,14 +6395,17 @@
 		"id": "buff_matrix_sr_10_level3"
 	},
 	"buff_matrix_sr_11_level1": {
+		"name": "",
 		"description": "สร้างดาเมจคริติคอลต่อเป้าหมายที่ HP เหลือไม่ถึง **60%** เพิ่ม** 35%**",
 		"id": "buff_matrix_sr_11_level1"
 	},
 	"buff_matrix_sr_11_level2": {
+		"name": "",
 		"description": "สร้างดาเมจคริติคอลต่อเป้าหมายที่ HP เหลือไม่ถึง **60%** เพิ่ม** 44%**",
 		"id": "buff_matrix_sr_11_level2"
 	},
 	"buff_matrix_sr_11_level3": {
+		"name": "",
 		"description": "สร้างดาเมจคริติคอลต่อเป้าหมายที่ HP เหลือไม่ถึง **60%** เพิ่ม** 52.5%**",
 		"id": "buff_matrix_sr_11_level3"
 	},
@@ -6874,7 +6995,8 @@
 		"id": "ge_artifactr002_boom_level7"
 	},
 	"ge_commondeathbox": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "ge_commondeathbox"
 	},
 	"buff_matrix_ssr_1_level1_1": {
@@ -6993,7 +7115,8 @@
 		"id": "buff_gve_atk_level4"
 	},
 	"buff_gve_bedamage_dowm25": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_bedamage_dowm25"
 	},
 	"buff_gve_bedamageup_fire_l1": {
@@ -7187,11 +7310,13 @@
 		"id": "buff_gve_evadeattack_damup_level3"
 	},
 	"buff_gve_expup": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_expup"
 	},
 	"buff_gve_extradamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_extradamage_level1"
 	},
 	"buff_gve_finaldamagedown_20per": {
@@ -7205,11 +7330,13 @@
 		"id": "buff_gve_finaldamageup_20per"
 	},
 	"buff_gve_fireatk_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_fireatk_level1"
 	},
 	"buff_gve_firedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_firedamage_level1"
 	},
 	"buff_gve_firedamagelevel1": {
@@ -7268,15 +7395,18 @@
 		"id": "buff_gve_firstaid"
 	},
 	"buff_gve_halo": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_halo"
 	},
 	"buff_gve_iceatk_level1": {
+		"name": "",
 		"description": "ATK น้ำแข็ง +15%",
 		"id": "buff_gve_iceatk_level1"
 	},
 	"buff_gve_icedamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_icedamage_level1"
 	},
 	"buff_gve_icedamagelevel1": {
@@ -7370,11 +7500,13 @@
 		"id": "buff_gve_immdamage_thunder"
 	},
 	"buff_gve_immunedamagecd_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_immunedamagecd_level1"
 	},
 	"buff_gve_jinji_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_jinji_level1"
 	},
 	"buff_gve_kill_l1": {
@@ -7393,7 +7525,8 @@
 		"id": "buff_gve_kill_l3"
 	},
 	"buff_gve_kill_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_kill_level1"
 	},
 	"buff_gve_linktime_l1": {
@@ -7437,11 +7570,13 @@
 		"id": "buff_gve_miansi_level2"
 	},
 	"buff_gve_phyatk_level1": {
+		"name": "",
 		"description": "ATK กายภาพ +15%",
 		"id": "buff_gve_phyatk_level1"
 	},
 	"buff_gve_phydamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_phydamage_level1"
 	},
 	"buff_gve_phydamagelevel1": {
@@ -7695,12 +7830,204 @@
 		"id": "buff_gve_thuextradam_level3"
 	},
 	"buff_gve_thunderatk_level1": {
+		"name": "",
 		"description": "ATK ไฟฟ้า +15%",
 		"id": "buff_gve_thunderatk_level1"
 	},
 	"buff_gve_thunderdamage_level1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_gve_thunderdamage_level1"
+	},
+	"buff_gwzj_battlefield1": {
+		"name": "โบนัสเกมเพลย์วิกฤติห้วงนรก",
+		"description": "ลดเวลาคูลดาวน์ของสกิลลง 80%",
+		"id": "buff_gwzj_battlefield1"
+	},
+	"buff_gwzj_levyclone3": {
+		"name": "เรด",
+		"description": "เพิ่มพลังชีวิตของผู้เล่น 100% และความต้านทาน 50% รับอัตราการไม่โดนดาเมจ 60%",
+		"id": "buff_gwzj_levyclone3"
+	},
+	"buff_gwzj_ordinal1_level1": {
+		"name": "แบบแปลนสหพันธ์นอร์ส",
+		"description": "ความน่าจะเป็นที่จะพบบอสลับขั้นสูงเพิ่มขึ้น 20%",
+		"id": "buff_gwzj_ordinal1_level1"
+	},
+	"buff_gwzj_ordinal1_level2": {
+		"name": "แบบแปลนสหพันธ์นอร์ส",
+		"description": "ความน่าจะเป็นที่จะพบบอสลับขั้นสูงเพิ่มขึ้น 20%",
+		"id": "buff_gwzj_ordinal1_level2"
+	},
+	"buff_gwzj_ordinal1_level3": {
+		"name": "แบบแปลนสหพันธ์นอร์ส",
+		"description": "ความน่าจะเป็นในการปรากฏของบอสลับขั้นสูงเพิ่มขึ้น 60%",
+		"id": "buff_gwzj_ordinal1_level3"
+	},
+	"buff_gwzj_ordinal10_level1": {
+		"name": "แบบแปลนชูเดอร์อิเล็คทรอนิกส์สีน้ำเงิน",
+		"description": "รับอัตราคริติคอล 10%",
+		"id": "buff_gwzj_ordinal10_level1"
+	},
+	"buff_gwzj_ordinal10_level2": {
+		"name": "แบบแปลนชูเดอร์อิเล็คทรอนิกส์สีน้ำเงิน",
+		"description": "เพิ่มดาเมจคริติคอล 20%",
+		"id": "buff_gwzj_ordinal10_level2"
+	},
+	"buff_gwzj_ordinal10_level3": {
+		"name": "แบบแปลนชูเดอร์อิเล็คทรอนิกส์สีน้ำเงิน",
+		"description": "เพิ่มดาเมจคริติคอล 40%",
+		"id": "buff_gwzj_ordinal10_level3"
+	},
+	"buff_gwzj_ordinal2_level1": {
+		"name": "แผนภาพมนุษย์ในอนาคตสีน้ำเงิน",
+		"description": "เพิ่มดาเมจสุดท้าย 10%",
+		"id": "buff_gwzj_ordinal2_level1"
+	},
+	"buff_gwzj_ordinal2_level2": {
+		"name": "แผนภาพมนุษย์ในอนาคตสีน้ำเงิน",
+		"description": "ได้รับไฮเปอร์บอดี้",
+		"id": "buff_gwzj_ordinal2_level2"
+	},
+	"buff_gwzj_ordinal2_level3": {
+		"name": "แผนภาพมนุษย์ในอนาคตสีน้ำเงิน",
+		"description": "เพิ่มดาเมจสุดท้าย 12%",
+		"id": "buff_gwzj_ordinal2_level3"
+	},
+	"buff_gwzj_ordinal3_level1": {
+		"name": "แผนที่ไอดาสีคราม",
+		"description": "ATK +10%",
+		"id": "buff_gwzj_ordinal3_level1"
+	},
+	"buff_gwzj_ordinal3_level2": {
+		"name": "แผนที่ไอดาสีคราม",
+		"description": "โจมตีจะสร้างดาเมจเพิ่มเติมเท่ากับ 0.4% ของ HP สูงสุดของเป้าหมาย คูลดาวน์ 5 วินาที",
+		"id": "buff_gwzj_ordinal3_level2"
+	},
+	"buff_gwzj_ordinal3_level3": {
+		"name": "แผนที่ไอดาสีคราม",
+		"description": "โจมตีจะสร้างดาเมจเท่ากับ 0.6% ของ HP สูงสุดของเป้าหมาย คูลดาวน์ 5 วินาที",
+		"id": "buff_gwzj_ordinal3_level3"
+	},
+	"buff_gwzj_ordinal4_level1": {
+		"name": "พิมพ์เขียวการสร้างของอาณาเขตที่ 9",
+		"description": "เพิ่มจำนวนเลือด 16%",
+		"id": "buff_gwzj_ordinal4_level1"
+	},
+	"buff_gwzj_ordinal4_level2": {
+		"name": "พิมพ์เขียวการสร้างของอาณาเขตที่ 9",
+		"description": "ฟื้นฟู HP ที่เสียไปของตนเอง 20% ทุก 5 วินาที",
+		"id": "buff_gwzj_ordinal4_level2"
+	},
+	"buff_gwzj_ordinal4_level3": {
+		"name": "พิมพ์เขียวการสร้างของอาณาเขตที่ 9",
+		"description": "ฟื้นฟู HP ที่เสียไป 30% ของตนเองทุก 5 วินาที",
+		"id": "buff_gwzj_ordinal4_level3"
+	},
+	"buff_gwzj_ordinal5_level1": {
+		"name": "แผนที่แอสเพอเรีย",
+		"description": "หลังจากใช้สกิลคอมโบ ได้รับการชาร์จ **250** หน่วย",
+		"id": "buff_gwzj_ordinal5_level1"
+	},
+	"buff_gwzj_ordinal5_level2": {
+		"name": "แผนที่แอสเพอเรีย",
+		"description": "เข้าร่วมการต่อสู้และได้รับค่าชาร์จ 1,000 คะแนน",
+		"id": "buff_gwzj_ordinal5_level2"
+	},
+	"buff_gwzj_ordinal5_level3": {
+		"name": "แผนที่แอสเพอเรีย",
+		"description": "หลังจากใช้สกิลคอมโบ ผู้เล่นจะได้รับดาเมจสุดท้ายเพิ่มขึ้น 12% เป็นเวลา 10 วินาที",
+		"id": "buff_gwzj_ordinal5_level3"
+	},
+	"buff_gwzj_ordinal6_level1": {
+		"name": "แบบแผนยานโดยสารอัลกอริทึมสีน้ำเงิน",
+		"description": "ลด ATK ของเป้าหมายทั้งหมดในระยะ 8 เมตรลง 10%",
+		"id": "buff_gwzj_ordinal6_level1"
+	},
+	"buff_gwzj_ordinal6_level2": {
+		"name": "แบบแผนยานโดยสารอัลกอริทึมสีน้ำเงิน",
+		"description": "ทุก 5 วินาทีจะได้รับโล่เท่ากับ 20% ของค่า HP ตนเอง",
+		"id": "buff_gwzj_ordinal6_level2"
+	},
+	"buff_gwzj_ordinal6_level3": {
+		"name": "แบบแผนยานโดยสารอัลกอริทึมสีน้ำเงิน",
+		"description": "เมื่ออยู่ในสถานะโล่ ผู้เล่นจะสร้างดาเมจสุดท้ายเพิ่มขึ้น 12%",
+		"id": "buff_gwzj_ordinal6_level3"
+	},
+	"buff_gwzj_ordinal7_level1": {
+		"name": "แบบผังสำนักงานจัดการความมั่นคง",
+		"description": "เพิ่มค่าต้านทาน +20%",
+		"id": "buff_gwzj_ordinal7_level1"
+	},
+	"buff_gwzj_ordinal7_level2": {
+		"name": "แบบผังสำนักงานจัดการความมั่นคง",
+		"description": "ลดความเสียหาย 20%",
+		"id": "buff_gwzj_ordinal7_level2"
+	},
+	"buff_gwzj_ordinal7_level3": {
+		"name": "แบบผังสำนักงานจัดการความมั่นคง",
+		"description": "ลดความเสียหาย 30%",
+		"id": "buff_gwzj_ordinal7_level3"
+	},
+	"buff_gwzj_ordinal8_level1": {
+		"name": "แบบแผนกองทหารป้องกัน",
+		"description": "เอฟเฟกต์รักษาเพิ่มขึ้น 20%",
+		"id": "buff_gwzj_ordinal8_level1"
+	},
+	"buff_gwzj_ordinal8_level2": {
+		"name": "แบบแผนกองทหารป้องกัน",
+		"description": "หลังจากได้รับการรักษา ดาเมจสุดท้ายเพิ่มขึ้น 6% เป็นเวลา 5 วินาที",
+		"id": "buff_gwzj_ordinal8_level2"
+	},
+	"buff_gwzj_ordinal8_level3": {
+		"name": "แบบแผนกองทหารป้องกัน",
+		"description": "หลังจากได้รับเอฟเฟกต์การรักษา ดาเมจสุดท้ายจะเพิ่มขึ้น 12% เป็นเวลา 5 วินาที",
+		"id": "buff_gwzj_ordinal8_level3"
+	},
+	"buff_gwzj_ordinal9_level1": {
+		"name": "แบบแปลนอุตสาหกรรมออโรร่า",
+		"description": "เพิ่มทำลายโล่ 30%",
+		"id": "buff_gwzj_ordinal9_level1"
+	},
+	"buff_gwzj_ordinal9_level2": {
+		"name": "แบบแปลนอุตสาหกรรมออโรร่า",
+		"description": "เพิ่มดาเมจสุดท้ายต่อเป้าหมายที่อยู่ในสถานะโล่ 15%",
+		"id": "buff_gwzj_ordinal9_level2"
+	},
+	"buff_gwzj_ordinal9_level3": {
+		"name": "แบบแปลนอุตสาหกรรมออโรร่า",
+		"description": "เพิ่มดาเมจสุดท้ายต่อเป้าหมายที่อยู่ในสถานะโล่ 25%",
+		"id": "buff_gwzj_ordinal9_level3"
+	},
+	"buff_gwzj_ordinalsolo": {
+		"name": "พลังของนักรบ",
+		"description": "ดาเมจสุดท้ายเพิ่มขึ้น 400% และ HP เพิ่มขึ้น 200%",
+		"id": "buff_gwzj_ordinalsolo"
+	},
+	"buff_gwzj_teamclone3": {
+		"name": "โบนัสเกมเพลย์ปฏิบัติการร่วม",
+		"description": "การใช้สกิลคอมโบจะรีเซ็ตคูลดาวน์สกิล (โหมดสมดุลย์ก็มีผล)",
+		"id": "buff_gwzj_teamclone3"
+	},
+	"buff_gwzj_voidclone1": {
+		"name": "เพิ่มค่าสถานะในการเล่นร่องมิติเวิ้งว้าง",
+		"description": "เพิ่มประสิทธิภาพการชาร์จอาวุธ 50% (ยังมีผลในห้วงนรกเวิ้งว้าง)",
+		"id": "buff_gwzj_voidclone1"
+	},
+	"buff_gwzj_voidclone3": {
+		"name": "เพิ่มค่าสถานะในการเล่นร่องมิติเวิ้งว้าง",
+		"description": "ฟื้นฟู 1 ครั้งทุกครั้งที่หลบหลีก 2 ครั้งภายใน 10 วินาที (ยังมีผลในห้วงนรกเวิ้งว้าง)",
+		"id": "buff_gwzj_voidclone3"
+	},
+	"buff_gwzj_worldboss3": {
+		"name": "เพิ่มค่าสถานะในเกมเพลย์ปะทะสุดเขตแดน",
+		"description": "ลดคูลดาวน์ของสกิล 80%",
+		"id": "buff_gwzj_worldboss3"
+	},
+	"buff_gwzj_worldboss4": {
+		"name": "เพิ่มค่าสถานะในเกมเพลย์ปะทะสุดเขตแดน",
+		"description": "คูลดาวน์ของรีลิคลดลง 90%",
+		"id": "buff_gwzj_worldboss4"
 	},
 	"buff_bailing_level1": {
 		"name": "ไป่หลิง: วีรบุรุษ",
@@ -8407,6 +8734,11 @@
 		"description": "เมฆหมึกสีเหลืองห่อหุ้ม ดาเมจที่เกิดกับจิ้งจอกสามสีที่มีโล่เมฆหมึกสีต่างกันเพิ่มขึ้น 170%",
 		"id": "buff_mon_186_yellow_flower_player"
 	},
+	"buff_mon_192_thunderlinkforplay": {
+		"name": "อิเล็กโทรด WL-6",
+		"description": "ได้รับเอฟเฟกต์อิเล็กโทรดจาก WL-6 หากอยู่ในระยะทางที่กำหนดกับ WL-6 จะได้รับดาเมจจากไฟฟ้าช็อตเป็นระยะเวลา",
+		"id": "buff_mon_192_thunderlinkforplay"
+	},
 	"buff_shiro_atkup_level1": {
 		"name": "เพิ่มดาเมจ",
 		"description": "เพิ่มการโจมตีทุกประเภท **10%** และ ATK กายภาพอีก **7%** เป็นเวลา **8** วินาที คูลดาวน์: **16** วินาที",
@@ -8579,52 +8911,52 @@
 	},
 	"buff_lucktarrow_01": {
 		"name": "ชาร์จขั้นสุด",
-		"description": "ประสิทธิภาพการชาร์จเพิ่มขึ้น 100%",
+		"description": "Увеличивает эффективность заряда на 30%.",
 		"id": "buff_lucktarrow_01"
 	},
 	"buff_lucktarrow_02": {
 		"name": "รักษา",
-		"description": "เอฟเฟกต์รักษาเพิ่มขึ้น 20%",
+		"description": "Увеличивает эффекты лечения на 45%.",
 		"id": "buff_lucktarrow_02"
 	},
 	"buff_lucktarrow_03": {
 		"name": "น้ำแข็ง",
-		"description": "ศัตรูได้รับดาเมจน้ำแข็งเพิ่มขึ้น 20%",
+		"description": "Увеличивает получаемый врагами урон от холода на 40%.",
 		"id": "buff_lucktarrow_03"
 	},
 	"buff_lucktarrow_04": {
 		"name": "ไฟ",
-		"description": "ศัตรูได้รับดาเมจไฟเพิ่มขึ้น 20%",
+		"description": "Увеличивает получаемый врагами урон от огня на 40%.",
 		"id": "buff_lucktarrow_04"
 	},
 	"buff_lucktarrow_05": {
 		"name": "ไฟฟ้า",
-		"description": "ศัตรูได้รับดาเมจไฟฟ้าเพิ่มขึ้น 20%",
+		"description": "Увеличивает получаемый врагами урон от электричества на 40%.",
 		"id": "buff_lucktarrow_05"
 	},
 	"buff_lucktarrow_06": {
 		"name": "กายภาพ",
-		"description": "ศัตรูได้รับดาเมจกายภาพเพิ่มขึ้น 20%",
+		"description": "Увеличивает получаемый врагами физический урон на 40%.",
 		"id": "buff_lucktarrow_06"
 	},
 	"buff_lucktarrow_07": {
 		"name": "หวาดกลัว",
-		"description": "ดาเมจศัตรูเพิ่มขึ้น 20%",
+		"description": "ดาเมจศัตรูเพิ่มขึ้น 40%",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "ตระหนก",
-		"description": "ATK ศัตรูเพิ่มขึ้น 20%",
+		"description": "ATK ศัตรูเพิ่มขึ้น 40%",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
 		"name": "ยืนหยัด",
-		"description": "ค่าต้านทานของศัตรูเพิ่มขึ้น 50%",
+		"description": "Увеличивает сопротивление врагов на 100%.",
 		"id": "buff_lucktarrow_09"
 	},
 	"buff_lucktarrow_10": {
 		"name": "จู่โจมหนักหน่วง",
-		"description": "เมื่อศัตรูอยู่ในสถานะโล่ ทุก 10 วินาที จะสร้างดาเมจ 392% ของ ATK 1 ครั้ง",
+		"description": "เมื่อศัตรูอยู่ในสถานะโล่ ทุก 10 วินาที จะสร้างดาเมจ 300% ของ ATK 1 ครั้ง",
 		"id": "buff_lucktarrow_10"
 	},
 	"buff_bati_artifact_ssr_011_1star": {
@@ -8649,7 +8981,7 @@
 	},
 	"buff_chiji_effect": {
 		"name": "รังสีออมเนียม",
-		"description": "N/A",
+		"description": "",
 		"id": "buff_chiji_effect"
 	},
 	"buff_chiji_finaldmgup_40per": {
@@ -9401,6 +9733,16 @@
 		"name": "พร",
 		"description": "เมื่อ HP สัตว์ต่อสู้ใดก็ได้ฝ่ายเราต่ำกว่า 30% จะฟื้นฟู HP ให้ 35% เปิดใช้ได้เพียงครั้งเดียว",
 		"id": "mainbuff_fightmonster_replyhp_lowhp_level01"
+	},
+	"mainbuff_norncanteen_grill": {
+		"name": "อวยพรปลาย่าง",
+		"description": "เพิ่มดาเมจกายภาพ 15% ทุก 10 วินาทีจะทำให้การหลบหลีกครั้งถัดไปไม่สูญเสียจำนวนครั้ง สามารถเก็บไว้ได้สูงสุด 1 ครั้ง ยังคงอยู่เป็นเวลา 30 นาที",
+		"id": "mainbuff_norncanteen_grill"
+	},
+	"mainbuff_norncanteen_sushi": {
+		"name": "อวยพรซูชิ",
+		"description": "เพิ่มดาเมจน้ำแข็ง 15% ทุก 20 วินาทีจะทำให้ดาเมจที่นักพเนจรได้รับในครั้งถัดไปลดลง 50% สามารถเก็บไว้ได้สูงสุด 1 ครั้ง มีผลต่อเนื่อง 30 นาที",
+		"id": "mainbuff_norncanteen_sushi"
 	},
 	"buff_tfb_drop_2x": {
 		"name": "โชคของปฏิบัติการร่วม I",
@@ -10157,6 +10499,71 @@
 		"description": "เพิ่มดาเมจต่อเป้าหมายที่ถูกดีบัฟขึ้น **20%**",
 		"id": "buff_matrix_ssr9_sea_level4"
 	},
+	"buff_matrix_ssr90_atkupcommon": {
+		"name": "ATK น้ำแข็ง/ไฟฟ้าเพิ่มขึ้น",
+		"description": "ATK น้ำแข็งและ ATK ไฟฟ้าเพิ่มขึ้น **0%** เป็นเวลา **1** วินาที",
+		"id": "buff_matrix_ssr90_atkupcommon"
+	},
+	"buff_matrix_ssr90_level1": {
+		"name": "เรย์หวนคืน",
+		"description": "เพิ่มดาเมจสุดท้าย **0%** หลังจาก**ไถ่บาป**สร้างดาเมจ ATK ไฟฟ้าและน้ำแข็งจะเพิ่มขึ้น **1%** เป็นเวลา **2** วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr90_level1"
+	},
+	"buff_matrix_ssr90_level2": {
+		"name": "เรย์หวนคืน",
+		"description": "เพิ่มดาเมจสุดท้าย **0%** หลังจาก**ไถ่บาป**สร้างดาเมจ ATK ไฟฟ้าและน้ำแข็งจะเพิ่มขึ้น **1%** เป็นเวลา **2** วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr90_level2"
+	},
+	"buff_matrix_ssr90_level3": {
+		"name": "เรย์หวนคืน",
+		"description": "เพิ่มดาเมจสุดท้าย **0%** หลังจาก**ไถ่บาป**สร้างดาเมจ ATK ไฟฟ้าและน้ำแข็งจะเพิ่มขึ้น **1%** เป็นเวลา **2** วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr90_level3"
+	},
+	"buff_matrix_ssr90_level4": {
+		"name": "เรย์หวนคืน",
+		"description": "เพิ่มดาเมจสุดท้าย **0%** หลังจาก**ไถ่บาป**สร้างดาเมจ ATK ไฟฟ้าและน้ำแข็งจะเพิ่มขึ้น **1%** เป็นเวลา **2** วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr90_level4"
+	},
+	"buff_matrix_ssr91_level1": {
+		"name": "ข้อมูลเชิงลึก",
+		"description": "ATK ไฟเพิ่มขึ้น **0%** **สกิล: ลงสนามเอง** ทุกครั้งที่วางหมากรุกในกระดาน จะสร้างดาเมจให้กับเป้าหมายทั้งหมดเพิ่มเติม **120%** ของ ATK เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr91_level1"
+	},
+	"buff_matrix_ssr91_level2": {
+		"name": "ข้อมูลเชิงลึก",
+		"description": "ATK ไฟเพิ่มขึ้น **0%** **สกิล: ลงสนามเอง** ทุกครั้งที่วางหมากรุกในกระดาน จะสร้างดาเมจให้กับเป้าหมายทั้งหมดเพิ่มเติม **120%** ของ ATK เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr91_level2"
+	},
+	"buff_matrix_ssr91_level3": {
+		"name": "ข้อมูลเชิงลึก",
+		"description": "ATK ไฟเพิ่มขึ้น **0%** **สกิล: ลงสนามเอง** ทุกครั้งที่วางหมากรุกในกระดาน จะสร้างดาเมจให้กับเป้าหมายทั้งหมดเพิ่มเติม **120%** ของ ATK เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr91_level3"
+	},
+	"buff_matrix_ssr91_level4": {
+		"name": "ข้อมูลเชิงลึก",
+		"description": "ATK ไฟเพิ่มขึ้น **0%** **สกิล: ลงสนามเอง** ทุกครั้งที่วางหมากรุกในกระดาน จะสร้างดาเมจให้กับเป้าหมายทั้งหมดเพิ่มเติม **120%** ของ ATK เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr91_level4"
+	},
+	"buff_matrix_ssr92_level1": {
+		"name": "ข้อมูลเชิงลึก",
+		"description": "เพิ่มดาเมจสุดท้าย**0%** เมื่อติดตั้ง**ไร้ทิศ**เพิ่มดาเมจคริติคอล **1%** เมื่อเข้าสู่สถานะต่อสู้ จะได้รับเอฟเฟกต์**สกิล: เดินหมากแล้วห้ามถอยกลับ** **9**ชั้น เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr92_level1"
+	},
+	"buff_matrix_ssr92_level2": {
+		"name": "ข้อมูลเชิงลึก",
+		"description": "เพิ่มดาเมจสุดท้าย**0%** เมื่อติดตั้ง**ไร้ทิศ**เพิ่มดาเมจคริติคอล **1%** เมื่อเข้าสู่สถานะต่อสู้ จะได้รับเอฟเฟกต์**สกิล: เดินหมากแล้วห้ามถอยกลับ** **9**ชั้น เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr92_level2"
+	},
+	"buff_matrix_ssr92_level3": {
+		"name": "ข้อมูลเชิงลึก",
+		"description": "เพิ่มดาเมจสุดท้าย**0%** เมื่อติดตั้ง**ไร้ทิศ**เพิ่มดาเมจคริติคอล **1%** เมื่อเข้าสู่สถานะต่อสู้ จะได้รับเอฟเฟกต์**สกิล: เดินหมากแล้วห้ามถอยกลับ** **9**ชั้น เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr92_level3"
+	},
+	"buff_matrix_ssr92_level4": {
+		"name": "ข้อมูลเชิงลึก",
+		"description": "เพิ่มดาเมจสุดท้าย**0%** เมื่อติดตั้ง**ไร้ทิศ**เพิ่มดาเมจคริติคอล **1%** เมื่อเข้าสู่สถานะต่อสู้ จะได้รับเอฟเฟกต์**สกิล: เดินหมากแล้วห้ามถอยกลับ** **9**ชั้น เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr92_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "โคเวนท์ไทป์ II: ยาม",
 		"description": "เพิ่มพลังป้องกันจากดาเมจที่เพิ่มขึ้นได้ **50%** และไม่โดนการติดสตันในระหว่างนี้",
@@ -10816,6 +11223,71 @@
 		"name": "ลดป้องกัน",
 		"description": "ลดการลดการป้องกันในทุกค่าสถานะ **20%**",
 		"id": "buff_def_decrease"
+	},
+	"buff_dfishchess_arealevelstackcount": {
+		"name": "จัดขบวนรบ",
+		"description": "แต่ละชั้นจะเพิ่มดาเมจในสนามเพิ่มเติม **0%** ซ้อนทับได้สูงสุด **8** ชั้น",
+		"id": "buff_dfishchess_arealevelstackcount"
+	},
+	"buff_dfishchess_changeskilladdimmstatus": {
+		"name": "แกนลุกโชติ",
+		"description": "เมื่อเรียกใช้อาวุธไฟคอมโบ ได้รับเอฟเฟกต์ไฮเปอร์บอดี้ **8** วินาที",
+		"id": "buff_dfishchess_changeskilladdimmstatus"
+	},
+	"buff_dfishchess_chessenhancestackcount": {
+		"name": "เดินหมากแล้วห้ามถอยกลับ",
+		"description": "ขณะวางหมากจะใช้ **1** ชั้น ดาเมจครั้งนี้จะเพิ่มขึ้น **0%**",
+		"id": "buff_dfishchess_chessenhancestackcount"
+	},
+	"buff_dfishchess_chessenhancestackcount_level1": {
+		"name": "เดินหมากแล้วห้ามถอยกลับ",
+		"description": "ขณะวางหมากจะใช้ **1** ชั้น ดาเมจครั้งนี้จะเพิ่มขึ้น **0%**",
+		"id": "buff_dfishchess_chessenhancestackcount_level1"
+	},
+	"buff_dfishchess_declinespeedcut_in1s": {
+		"name": "โลหิตมรกต",
+		"description": "ลดความเร็ว **100%** หายไปภายใน **1** วินาที",
+		"id": "buff_dfishchess_declinespeedcut_in1s"
+	},
+	"buff_dfishchess_declinespeedcut_in3s": {
+		"name": "จงรักภักดี",
+		"description": "ลดความเร็ว **100%** หายไปภายใน **3** วินาที",
+		"id": "buff_dfishchess_declinespeedcut_in3s"
+	},
+	"buff_dfishchess_firedmgup_level0": {
+		"name": "อาทิตย์แผดเผา",
+		"description": "เพิ่มดาเมจไฟ **0%** ซ้อนทับได้สูงสุด **8** ชั้น",
+		"id": "buff_dfishchess_firedmgup_level0"
+	},
+	"buff_dfishchess_firedmgup_level6": {
+		"name": "อาทิตย์แผดเผา",
+		"description": "เพิ่มดาเมจไฟ **0%** ซ้อนทับได้สูงสุด **8** ชั้น",
+		"id": "buff_dfishchess_firedmgup_level6"
+	},
+	"buff_dfishchess_flame_ssr_level0_resonance": {
+		"name": "เรโซแนนซ์ไฟ",
+		"description": "**เรโซแนนซ์ไฟ**: เพิ่ม ATK ไฟ **15%** และค่าต้านทานไฟ **25%** เปิดการใช้งานโดยติดตั้งอาวุธไฟ **2** ชิ้นหรือมากกว่า เอฟเฟกต์เซตนี้สามารถใช้งานได้กับอาวุธในช่องอาวุธรอง (ไม่สามารถซ้อนทับกับเอฟเฟกต์เรโซแนนซ์ไฟหรือปฏิกิริยาไฟ ซึ่งเรโซแนนซ์ไฟจะมีผลก่อน)",
+		"id": "buff_dfishchess_flame_ssr_level0_resonance"
+	},
+	"buff_dfishchess_immdeathandrecoverall": {
+		"name": "ยอดฝีมือ",
+		"description": "ช่วงลงสนามเอง ดาเมจที่ได้รับลดลง **0%** เมื่อได้รับดาเมจถึงตาย จะบล็อกดาเมจครั้งนี้ และจะฟื้นฟู HP จนถึงสูงสุด หลังจากมีผลแล้วจะหายไป",
+		"id": "buff_dfishchess_immdeathandrecoverall"
+	},
+	"buff_dfishchess_level3": {
+		"name": "เมฆาตะวันลับขอบฟ้า",
+		"description": "ขณะสร้างดาเมจ จะเพิกเฉยต่อค่าต้านทานไฟของร่างศัตรูที่อยู่ในสนาม **0%**",
+		"id": "buff_dfishchess_level3"
+	},
+	"buff_dfishchess_physic_ssr_level0_resonance": {
+		"name": "เรโซแนนซ์กายภาพ",
+		"description": "**เรโซแนนซ์กายภาพ**: เพิ่ม ATK กายภาพ **15%** และค่าต้านทานกายภาพ **25%** เปิดการใช้งานโดยติดตั้งอาวุธกายภาพ **2** ชิ้นหรือมากกว่า เอฟเฟกต์เซตนี้สามารถใช้งานได้กับอาวุธในช่องอาวุธรอง (ไม่สามารถซ้อนทับกับเรโซแนนซ์กายภาพหรือปฏิกิริยากายภาพอื่นได้ ซึ่งเรโซแนนซ์กายภาพจะมีผลก่อน)",
+		"id": "buff_dfishchess_physic_ssr_level0_resonance"
+	},
+	"buff_dfishchessfire_ssr_level0_firespecial": {
+		"name": "รัศมีสุริยา",
+		"description": "**รัศมีสุริยา: อยู่ในสนาม**: เมื่อ**ไร้ทิศ**โจมตีโดนอะไรก็ได้ จะสร้างดาเมจแก่เป้าหมายที่อยู่ใกล้เคียง **0%** ของ ATK ไฟ + **1%** ของค่า HP สูงสุดของตนเอง + **2%** ของผลรวมของค่าต้านทานทุกธาตุ + **3%** ของค่าคริติคอล เรียกใช้ได้สูงสุดถึง 1 ครั้ง ทุก **1.5** วินาที ดาเมจรัศมีสุริยาจะถือว่าเป็นดาเมจโจมตีปกติ หากติดตั้งอาวุธธาตุน้ำแข็ง/ไฟฟ้าใดก็ได้ **1** ชิ้น ดาเมจรัศมีสุริยาจะเพิ่มขึ้นถึง **4** เท่า นอกจากนี้ ดาเมจรัศมีสุริยาจะไม่ได้รับผลกระทบเพิ่มเติมจากเอฟเฟกต์เพิ่มดาเมจของค่าสถานะหายากจากอุปกรณ์ไททัน และจะไม่ปล่อยเอฟเฟกต์โจมตีเพิ่มเติมด้วย",
+		"id": "buff_dfishchessfire_ssr_level0_firespecial"
 	},
 	"buff_specialitem_003_speedcut": {
 		"name": "ปืนแช่แข็ง",
@@ -11533,7 +12005,8 @@
 		"id": "buff_void_boss_502"
 	},
 	"buff_void_boss_601": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_void_boss_601"
 	},
 	"buff_void_halohealdown": {
@@ -11832,18 +12305,22 @@
 		"id": "buff_banbigbubble_15s_artifact_ssr_020"
 	},
 	"buff_teamclone_smallice120": {
+		"name": "เปราะบางต่อน้ำแข็ง",
 		"description": "เพิ่มดาเมจน้ำแข็งต่อศัตรู",
 		"id": "buff_teamclone_smallice120"
 	},
 	"buff_teamclone_smallfire120": {
+		"name": "เปราะบางต่อไฟ",
 		"description": "มอนสเตอร์ได้รับดาเมจไฟเพิ่มขึ้น",
 		"id": "buff_teamclone_smallfire120"
 	},
 	"buff_teamclone_smallphy120": {
+		"name": "เปราะบางต่อกายภาพ",
 		"description": "มอนสเตอร์ได้รับดาเมจกายภาพเพิ่มขึ้น",
 		"id": "buff_teamclone_smallphy120"
 	},
 	"buff_teamclone_smallthunder120": {
+		"name": "เปราะบางต่อไฟฟ้า",
 		"description": "มอนสเตอร์ได้รับดาเมจไฟฟ้าเพิ่มขึ้น",
 		"id": "buff_teamclone_smallthunder120"
 	},
@@ -12386,6 +12863,11 @@
 		"name": "เล่ห์ลวงหลอก",
 		"description": "เมื่อสร้างดาเมจใส่เป้าหมายที่มี HP ต่ำกว่า **80%** ดาเมจกายภาพของตนเองจะเพิ่มขึ้น **0%**",
 		"id": "buff_chainsaw_ssr_level0damup"
+	},
+	"buff_changebodyscale": {
+		"name": "เห็ดยักษ์",
+		"description": "เพิ่มขนาดร่างกาย ในระหว่างนี้ ค่า HP สูงสุดจะเพิ่มขึ้นและได้รับไฮเปอร์บอดี้ การโจมตีเป้าหมายจะสร้างดาเมจเพิ่มเติมมากขึ้น (เฉพาะกับร่างจักรกล) ดาเมจเพิ่มเติมมีระยะเวลาคูลดาวน์ **1** วินาที และเอฟเฟกต์ขยายขนาดร่างกายจะคงอยู่เป็นเวลา **60** วินาที (เมื่อตาย, ส่งสัญญาณ, หรือออกจากพื้นที่บอส จะทำให้เอฟเฟกต์สิ้นสุดทันที)",
+		"id": "buff_changebodyscale"
 	},
 	"buff_matrix_ssr35_level1_attackup": {
 		"name": "นครราตรีไม่เคยหลับ",
@@ -14032,6 +14514,31 @@
 		"description": "ดาเมจทุกธาตุเพิ่มขึ้น **0%** เมื่อหอกลองกินุสอยู่ในสนามจะเพิ่มดาเมจสุดท้าย **1%** และดาเมจล้างแค้นเพิ่มขึ้น **2%** เมื่อเปิดใช้งาน**เรโซแนนซ์ความอดทน** จะสร้างค่าล้างแค้นเพิ่มขึ้น {3% เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
 		"id": "buff_matrix_ssr88_level4"
 	},
+	"buff_matrix_ssr89_iceandthunderdefdown": {
+		"name": "ต้านทานลดลง",
+		"description": "ต้านไฟฟ้า/ต้านน้ำแข็งลดลง **0%** เป็นเวลา **1** วินาที",
+		"id": "buff_matrix_ssr89_iceandthunderdefdown"
+	},
+	"buff_matrix_ssr89_level1": {
+		"name": "เรย์หวนคืน",
+		"description": "ดาเมจไฟฟ้าและน้ำแข็งเพิ่มขึ้น **0%** เมื่อติดตั้ง**ไถ่บาป**แล้ว ตนเองจะได้รับเอฟเฟกต์เพิกเฉยต่อต้านไฟฟ้าและต้านน้ำแข็งของเป้าหมาย **1%** (ค่ารวมทั้งหมดของการเพิกเฉยค่าต้านทานของแต่ละธาตุจะไม่เกิน **50%**) เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr89_level1"
+	},
+	"buff_matrix_ssr89_level2": {
+		"name": "เรย์หวนคืน",
+		"description": "ดาเมจไฟฟ้าและน้ำแข็งเพิ่มขึ้น **0%** เมื่อติดตั้ง**ไถ่บาป**แล้ว ตนเองจะได้รับเอฟเฟกต์เพิกเฉยต่อต้านไฟฟ้าและต้านน้ำแข็งของเป้าหมาย **1%** (ค่ารวมทั้งหมดของการเพิกเฉยค่าต้านทานของแต่ละธาตุจะไม่เกิน **50%**) เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr89_level2"
+	},
+	"buff_matrix_ssr89_level3": {
+		"name": "เรย์หวนคืน",
+		"description": "ดาเมจไฟฟ้าและน้ำแข็งเพิ่มขึ้น **0%** เมื่อติดตั้ง**ไถ่บาป**แล้ว ตนเองจะได้รับเอฟเฟกต์เพิกเฉยต่อต้านไฟฟ้าและต้านน้ำแข็งของเป้าหมาย **1%** (ค่ารวมทั้งหมดของการเพิกเฉยค่าต้านทานของแต่ละธาตุจะไม่เกิน **50%**) เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr89_level3"
+	},
+	"buff_matrix_ssr89_level4": {
+		"name": "เรย์หวนคืน",
+		"description": "ดาเมจไฟฟ้าและน้ำแข็งเพิ่มขึ้น **0%** เมื่อติดตั้ง**ไถ่บาป**แล้ว ตนเองจะได้รับเอฟเฟกต์เพิกเฉยต่อต้านไฟฟ้าและต้านน้ำแข็งของเป้าหมาย **1%** (ค่ารวมทั้งหมดของการเพิกเฉยค่าต้านทานของแต่ละธาตุจะไม่เกิน **50%**) เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+		"id": "buff_matrix_ssr89_level4"
+	},
 	"buff_hammerice_sr_level3_reducedamage20_breakfate": {
 		"name": "ลดดาเมจ",
 		"description": "ภายในระยะเวลา 6 วินาทีถัดไป จะลดดาเมจที่ได้รับ 10%",
@@ -14508,35 +15015,43 @@
 		"id": "buff_lawplayer_main"
 	},
 	"buff_level_balance_mon_01": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_01"
 	},
 	"buff_level_balance_mon_02": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_02"
 	},
 	"buff_level_balance_mon_03": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_03"
 	},
 	"buff_level_balance_mon_04": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_04"
 	},
 	"buff_level_balance_mon_44": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_44"
 	},
 	"buff_level_balance_mon_45": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_45"
 	},
 	"buff_level_balance_mon_46": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_46"
 	},
 	"buff_level_balance_mon_47": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_level_balance_mon_47"
 	},
 	"buff_lawfriend_addsuceee": {
@@ -14649,6 +15164,11 @@
 		"description": "ทุก ๆ การซ้อนทับของบัฟหนึ่งชั้น อาวุธจะได้รับระดับดาว **+1** ส่วนระดับดาวที่เพิ่มเกินมาจะเพิ่มดาเมจของอาวุธ **5%**",
 		"id": "buff_bigsecret_upstar_ssr_asuka_phy"
 	},
+	"buff_bigsecret_upstar_ssr_ayanamirei_thunder": {
+		"name": "ไถ่บาป",
+		"description": "ทุก ๆ การซ้อนทับของบัฟหนึ่งชั้น อาวุธจะได้รับระดับดาว **+1** ส่วนระดับดาวที่เพิ่มเกินมาจะเพิ่มดาเมจของอาวุธ **5%**",
+		"id": "buff_bigsecret_upstar_ssr_ayanamirei_thunder"
+	},
 	"buff_bigsecret_upstar_ssr_bigsword_ice": {
 		"name": "ดาบโรซี่เอดจ์",
 		"description": "ทุก ๆ การซ้อนทับของบัฟหนึ่งชั้น อาวุธจะได้รับระดับดาว **+1** ส่วนระดับดาวที่เพิ่มเกินมาจะเพิ่มดาเมจของอาวุธ **5%**",
@@ -14738,6 +15258,11 @@
 		"name": "อลายา",
 		"description": "ทุก ๆ การซ้อนทับของบัฟหนึ่งชั้น อาวุธจะได้รับระดับดาว **+1** ส่วนระดับดาวที่เพิ่มเกินมาจะเพิ่มดาเมจของอาวุธ **5%**",
 		"id": "buff_bigsecret_upstar_ssr_immortal_thunder"
+	},
+	"buff_bigsecret_upstar_ssr_jiyu_fire": {
+		"name": "ทุกสารทิศ",
+		"description": "ทุก ๆ การซ้อนทับของบัฟหนึ่งชั้น อาวุธจะได้รับระดับดาว **+1** ส่วนระดับดาวที่เพิ่มเกินมาจะเพิ่มดาเมจของอาวุธ **5%**",
+		"id": "buff_bigsecret_upstar_ssr_jiyu_fire"
 	},
 	"buff_bigsecret_upstar_ssr_lances_ice": {
 		"name": "วิกเกต",
@@ -15484,6 +16009,21 @@
 		"description": "มีเพียงดาเมจไฟฟ้าและไฟเท่านั้นที่ใช้ได้ผล ดาเมจประเภทอื่น ๆ จะใช้ไม่ได้ผลแต่อย่างใด",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_nornbeach_star": {
+		"name": "ดาวของเม็ดฝนทะเล",
+		"description": "เวลาเหลือไม่มากแล้ว! ไปหาดวงดาวถัดไปเร็ว!",
+		"id": "buff_nornbeach_star"
+	},
+	"buff_norncanteen_baozi_thunderdamageup": {
+		"name": "อวยพรซาลาเปาน้ำซุป",
+		"description": "เพิ่มดาเมจไฟฟ้า 15% และเพิ่มความเร็ว 15% เป็นเวลา 30 นาที",
+		"id": "buff_norncanteen_baozi_thunderdamageup"
+	},
+	"buff_norncanteen_tofu_firedamageup": {
+		"name": "อวยพรเต้าหู้",
+		"description": "เพิ่มดาเมจไฟ 15% และความสูงการกระโดดเพิ่มขึ้น 20% เป็นเวลา 30 นาที",
+		"id": "buff_norncanteen_tofu_firedamageup"
+	},
 	"buff_origin_atkfire_level1": {
 		"name": "เปลวไฟ I",
 		"description": "เมื่อโจมตีโดนจะโจมตีเพิ่มอีกเท่ากับ **2,000%** ของ ATK โดยไม่ได้รับเอฟเฟกต์จากบัฟหรือดีบัฟใด ๆ คูลดาวน์ **2** วินาที",
@@ -15560,35 +16100,43 @@
 		"id": "buff_origin_atkthu_level3"
 	},
 	"buff_origin_balance99_1": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1"
 	},
 	"buff_origin_balance99_1th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_1th"
 	},
 	"buff_origin_balance99_2": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2"
 	},
 	"buff_origin_balance99_2th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_2th"
 	},
 	"buff_origin_balance99_3": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3"
 	},
 	"buff_origin_balance99_3th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_3th"
 	},
 	"buff_origin_balance99_4": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4"
 	},
 	"buff_origin_balance99_4th": {
-		"description": "N/A",
+		"name": "",
+		"description": "",
 		"id": "buff_origin_balance99_4th"
 	},
 	"buff_origin_bedamdown_level1": {
