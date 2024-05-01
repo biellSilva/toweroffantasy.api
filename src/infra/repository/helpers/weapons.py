@@ -23,7 +23,7 @@ def weapon_fix_minor_issues(dict_: RawWeapon) -> RawWeapon:
     if dict_["id"].lower() in ("lances_ice"):
         dict_["element"] = "ThunderIce"
 
-    elif dict_["id"].lower() in ("blevi_thunder"):
+    elif dict_["id"].lower() in ("blevi_thunder", "ayanamirei_thunder"):
         dict_["element"] = "IceThunder"
 
     elif dict_["id"].lower() in ("paradox_fire", "dfishchess_fire"):
