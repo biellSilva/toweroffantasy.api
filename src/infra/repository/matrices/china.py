@@ -63,4 +63,4 @@ class MatricesChinaRepository:
                 {key_id.lower(): Matrix(**value_dict)}  # type: ignore
             )
 
-        self.__cache[lang] = sort_matrices(self.__cache[lang])
+        self.__cache[lang] = sort_matrices(self.__cache[lang], china=True)

@@ -2,6 +2,7 @@ from typing import TYPE_CHECKING
 
 from src.config.sorter import SIMULACRA_SORT_ORDER
 from src.infra.models.simulacra_v2 import RawSimulacraV2
+from src.utils import version_to_float
 
 if TYPE_CHECKING:
     from src.domain.models.simulacra_v2 import SimulacraV2
@@ -19,27 +20,16 @@ def ignore_simulacra(dict_: RawSimulacraV2) -> bool:
 
 def sort_simulacra(simulacra: dict[str, "SimulacraV2"]) -> dict[str, "SimulacraV2"]:
     def __sort(simulacrum: "SimulacraV2") -> tuple[float, float]:
-        if simulacrum.rarity == 5:
-            if simulacrum.banners:
-                return -1, -simulacrum.banners[-1].bannerNumber
-            elif simulacrum.id == "imitation_33":
-                return -1, -70.9
-            else:
-                if simulacrum.id in SIMULACRA_SORT_ORDER:
-                    return -1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
-                else:
-                    return -1, 0
+        if simulacrum.banners:
+            return -simulacrum.rarity, -simulacrum.banners[-1].bannerNumber
 
-        elif simulacrum.rarity == 4:
-            if simulacrum.banners:
-                return 1, -simulacrum.banners[-1].bannerNumber
-            else:
-                if simulacrum.id in SIMULACRA_SORT_ORDER:
-                    return 1, SIMULACRA_SORT_ORDER.index(simulacrum.id)
-                else:
-                    return 1, 0
+        if simulacrum.id in SIMULACRA_SORT_ORDER:
+            return -simulacrum.rarity, SIMULACRA_SORT_ORDER.index(simulacrum.id)
 
-        return 2, 0
+        if simulacrum.version and "only" not in simulacrum.version.lower():
+            return -simulacrum.rarity, -version_to_float(simulacrum.version)
+
+        return -simulacrum.rarity, 0
 
     return {
         simulacrum.id: simulacrum
