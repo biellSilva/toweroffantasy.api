@@ -1,6 +1,7 @@
 from typing import TYPE_CHECKING
 
 from src.infra.models.mounts import RawMount
+from src.utils import version_to_float
 
 if TYPE_CHECKING:
     from src.domain.models.mounts import Mount
@@ -14,9 +15,9 @@ def ignore_mounts(dict_: RawMount) -> bool:
 
 def sort_mounts(mounts: dict[str, "Mount"]) -> dict[str, "Mount"]:
     def __sort(mount: "Mount") -> tuple[float, float, str]:
-        if mount.version.lower() in ("cn-only", "ps-only"):
-            return -mount.rarity, 0, mount.name
+        if mount.version and "only" not in mount.version.lower():
+            return -mount.rarity, -version_to_float(mount.version), mount.name
 
-        return -mount.rarity, -float(mount.version), mount.name
+        return -mount.rarity, 0, mount.name
 
     return {mount.id: mount for mount in sorted(list(mounts.values()), key=__sort)}

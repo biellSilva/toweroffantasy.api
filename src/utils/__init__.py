@@ -73,3 +73,11 @@ def meta_timestamp_to_iso(timestamp: float) -> str:
     return datetime.fromtimestamp(
         float(timestamp) / 1000, tz=timezone("UTC")
     ).isoformat()
+
+
+def version_to_float(version: str) -> float:
+    main_version = version.split(".", 1)[0]
+    normalized_version = (
+        main_version + "." + "".join(version.split(".")[1:]).replace(".", "")
+    )
+    return float(normalized_version)

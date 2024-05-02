@@ -1,6 +1,7 @@
 from typing import TYPE_CHECKING
 
 from src.infra.models.relics import RawRelic
+from src.utils import version_to_float
 
 if TYPE_CHECKING:
     from src.domain.models.relics import Relic
@@ -18,13 +19,10 @@ def relic_advanc_rework(advanc: list[dict[str, str]]) -> list[str]:
 
 def sort_relics(relics: dict[str, "Relic"]) -> dict[str, "Relic"]:
     def __sort(relic: "Relic") -> tuple[float, float, str]:
-        if not relic.version:
-            # sorting CN relics
-            return -float(relic.rarity), 0, relic.name
 
-        if "only" in relic.version.lower():
-            return -float(relic.rarity), 0, relic.name
+        if relic.version and "only" not in relic.version.lower():
+            return -relic.rarity, -version_to_float(relic.version), relic.name
 
-        return -float(relic.rarity), -float(relic.version), relic.name
+        return -relic.rarity, 0, relic.name
 
     return {relic.id: relic for relic in sorted(list(relics.values()), key=__sort)}

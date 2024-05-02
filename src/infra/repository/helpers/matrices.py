@@ -2,6 +2,7 @@ from typing import TYPE_CHECKING
 
 from src.config.sorter import MATRIX_SORT_ORDER
 from src.infra.models.matrices import RawMatrix
+from src.utils import version_to_float
 
 if TYPE_CHECKING:
     from src.domain.models.matrices import Matrix
@@ -35,47 +36,24 @@ def matrix_set_rework(dict_: RawMatrix) -> RawMatrix:
     return dict_
 
 
-def sort_matrices(matrices: dict[str, "Matrix"]) -> dict[str, "Matrix"]:
+def sort_matrices(
+    matrices: dict[str, "Matrix"], china: bool = False
+) -> dict[str, "Matrix"]:
     def __sort(matrix: "Matrix") -> tuple[float, float]:
-        if matrix.rarity == 5:
-            if matrix.banners:
-                return -1, -matrix.banners[-1].bannerNumber
-            else:
-                if matrix.id == "matrix_ssr25" or matrix.id == "matrix_ssr26":
-                    return -1, -25.5
+        if matrix.banners:
+            return -matrix.rarity, -matrix.banners[-1].bannerNumber
 
-                if matrix.id in MATRIX_SORT_ORDER:
-                    return -1, MATRIX_SORT_ORDER.index(matrix.id)
-                else:
-                    return -1, 0
+        if matrix.id in MATRIX_SORT_ORDER:
+            return -matrix.rarity, MATRIX_SORT_ORDER.index(matrix.id)
 
-        elif matrix.rarity == 4:
-            if matrix.banners:
-                return 1, -matrix.banners[-1].bannerNumber
-            else:
-                if matrix.id in MATRIX_SORT_ORDER:
-                    return 1, MATRIX_SORT_ORDER.index(matrix.id)
-                else:
-                    return 1, 0
+        if matrix.id in ("matrix_ssr25", "matrix_ssr26"):
+            if china:
+                return -matrix.rarity, -2.39
+            return -matrix.rarity, -24.9
 
-        elif matrix.rarity == 3:
-            if matrix.banners:
-                return 2, -matrix.banners[-1].bannerNumber
-            else:
-                if matrix.id in MATRIX_SORT_ORDER:
-                    return 2, MATRIX_SORT_ORDER.index(matrix.id)
-                else:
-                    return 2, 0
+        if matrix.version and "only" not in matrix.version.lower():
+            return -matrix.rarity, -version_to_float(matrix.version)
 
-        elif matrix.rarity == 2:
-            if matrix.banners:
-                return 3, -matrix.banners[-1].bannerNumber
-            else:
-                if matrix.id in MATRIX_SORT_ORDER:
-                    return 3, MATRIX_SORT_ORDER.index(matrix.id)
-                else:
-                    return 3, 0
-
-        return 4, 0
+        return -matrix.rarity, 0
 
     return {matrix.id: matrix for matrix in sorted(list(matrices.values()), key=__sort)}

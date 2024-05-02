@@ -6,6 +6,7 @@ from src.infra.models.weapons import RawWeapon
 from src.infra.models.weapons.extra import RawStatConverted
 from src.infra.repository.items.china import ItemsChinaRepository
 from src.infra.repository.items.global_ import ItemsGlobalRepository
+from src.utils import version_to_float
 
 if TYPE_CHECKING:
     from src.domain.models.weapons import Weapon
@@ -136,34 +137,17 @@ def weapon_skill_values(dict_: RawWeapon, DESC_VALUES: dict[str, Any]) -> RawWea
 
 
 def sort_weapons(weapons: dict[str, "Weapon"]) -> dict[str, "Weapon"]:
-    def __sort(weapon: "Weapon") -> tuple[int, int]:
-        if weapon.rarity == 5:
-            if weapon.banners:
-                return -1, -weapon.banners[-1].bannerNumber
-            else:
-                if weapon.id in WEAPON_SORT_ORDER:
-                    return -1, WEAPON_SORT_ORDER.index(weapon.id)
-                else:
-                    return -1, 0
+    def __sort(weapon: "Weapon") -> tuple[float, float]:
 
-        elif weapon.rarity == 4:
-            if weapon.banners:
-                return 1, -weapon.banners[-1].bannerNumber
-            else:
-                if weapon.id in WEAPON_SORT_ORDER:
-                    return 1, WEAPON_SORT_ORDER.index(weapon.id)
-                else:
-                    return 1, 0
+        if weapon.banners:
+            return -weapon.rarity, -weapon.banners[-1].bannerNumber
 
-        elif weapon.rarity == 3:
-            if weapon.banners:
-                return 2, -weapon.banners[-1].bannerNumber
-            else:
-                if weapon.id in WEAPON_SORT_ORDER:
-                    return 2, WEAPON_SORT_ORDER.index(weapon.id)
-                else:
-                    return 2, 0
+        if weapon.id in WEAPON_SORT_ORDER:
+            return -weapon.rarity, WEAPON_SORT_ORDER.index(weapon.id)
 
-        return 3, 0
+        if weapon.version and "only" not in weapon.version.lower():
+            return -weapon.rarity, -version_to_float(weapon.version)
+
+        return -weapon.rarity, 0
 
     return {weapon.id: weapon for weapon in sorted(list(weapons.values()), key=__sort)}
