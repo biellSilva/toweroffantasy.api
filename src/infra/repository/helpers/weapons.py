@@ -21,11 +21,14 @@ def ignore_weapon(dict_: RawWeapon) -> bool:
 
 def weapon_fix_minor_issues(dict_: RawWeapon) -> RawWeapon:
 
-    if dict_["id"].lower() in ("lances_ice"):
-        dict_["element"] = "ThunderIce"
+    if dict_["id"].lower() in ("lances_ice", "loslyn_ice"):
+        dict_["element"] = "ThunderIce"  # Ice-Volt
 
-    elif dict_["id"].lower() in ("blevi_thunder", "ayanamirei_thunder", "loslyn_ice"):
-        dict_["element"] = "IceThunder"
+    elif dict_["id"].lower() in (
+        "blevi_thunder",
+        "ayanamirei_thunder",
+    ):
+        dict_["element"] = "IceThunder"  # Volt-Ice
 
     elif dict_["id"].lower() in ("paradox_fire", "dfishchess_fire"):
         dict_["element"] = "FlamePhysics"
