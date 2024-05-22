@@ -22,7 +22,7 @@ class FindSimulacraUseCase(IFindSimulacraUseCase):
             raise NotFoundErr
 
         elif params.version == "china":
-            if data := await self.repository.find_by_id(**params.model_dump()):
+            if data := await self.china_repository.find_by_id(**params.model_dump()):
                 return data
             raise NotFoundErr
 
