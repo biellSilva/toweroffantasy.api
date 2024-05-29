@@ -1979,6 +1979,16 @@
 		"description": "持続時間中、プレイヤーは不屈無効となり、無敵状態に入れなくなる。",
 		"id": "buff_boss_002_5_ignore"
 	},
+	"buff_boss_010_4_punish": {
+		"name": "Hukuman",
+		"description": "セラーフの攻撃が剛毅共鳴以外のプレイヤーに命中すると制裁が付与される。制裁は5秒ごとに1スタック減少する。10スタックに達すると不屈と無敵状態が解除され、90秒間は付与することもできない",
+		"id": "buff_boss_010_4_punish"
+	},
+	"buff_boss_010_4_punishment": {
+		"name": "懲戒",
+		"description": "不屈と無敵状態は付与できません",
+		"id": "buff_boss_010_4_punishment"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "不屈無効",
 		"description": "自身に不屈状態を付与できない",
@@ -2531,7 +2541,7 @@
 	},
 	"buff_wantedcriminal": {
 		"name": "指名手配中！",
-		"description": "罪を犯して指名手配されたため、追跡から逃れるために安全な場所へ逃げる必要があります！",
+		"description": "犯罪者として指名手配されてしまった。警備隊から追加の大ダメージを受けてしまう。捕まらないように安全な場所に逃げ、手配を取り消さなくては！",
 		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
@@ -7851,12 +7861,12 @@
 	},
 	"buff_gwzj_ordinal1_level1": {
 		"name": "ノルン連邦の設計図",
-		"description": "超秘密ボスの出現率+20%",
+		"description": "超級秘密ボスの出現率+20%",
 		"id": "buff_gwzj_ordinal1_level1"
 	},
 	"buff_gwzj_ordinal1_level2": {
 		"name": "ノルン連邦の設計図",
-		"description": "超秘密ボスの出現率+20%",
+		"description": "超級秘密ボスの出現率+20%",
 		"id": "buff_gwzj_ordinal1_level2"
 	},
 	"buff_gwzj_ordinal1_level3": {
@@ -7901,42 +7911,42 @@
 	},
 	"buff_gwzj_ordinal3_level2": {
 		"name": "青きアイダの設計図",
-		"description": "攻撃が追加でターゲットの最大HPの0.4%のダメージを付与する、クールダウン5秒",
+		"description": "攻撃時に追加でターゲットの最大HP×0.4%のダメージを与える。クールダウン5秒",
 		"id": "buff_gwzj_ordinal3_level2"
 	},
 	"buff_gwzj_ordinal3_level3": {
 		"name": "青きアイダの設計図",
-		"description": "攻撃が命中すると、ターゲットの最大HPの0.6%分のダメージを追加で与える。クールダウン5秒",
+		"description": "攻撃時に追加でターゲットの最大HP×0.6%のダメージを与える。クールダウン5秒",
 		"id": "buff_gwzj_ordinal3_level3"
 	},
 	"buff_gwzj_ordinal4_level1": {
-		"name": "九舟の設計図",
+		"name": "九舟建設の設計図",
 		"description": "HP+16%",
 		"id": "buff_gwzj_ordinal4_level1"
 	},
 	"buff_gwzj_ordinal4_level2": {
-		"name": "九舟の設計図",
+		"name": "九舟建設の設計図",
 		"description": "5秒ごとに自身の失ったHPの20%を回復する",
 		"id": "buff_gwzj_ordinal4_level2"
 	},
 	"buff_gwzj_ordinal4_level3": {
-		"name": "九舟の設計図",
+		"name": "九舟建設の設計図",
 		"description": "5秒ごとに自身の失ったHPの30%を回復する",
 		"id": "buff_gwzj_ordinal4_level3"
 	},
 	"buff_gwzj_ordinal5_level1": {
-		"name": "アーシャ大陸の設計図",
-		"description": "連携スキル発動後、エナジー値+250",
+		"name": "アーシャ州の設計図",
+		"description": "連携スキル発動後、エナジー値を250獲得する",
 		"id": "buff_gwzj_ordinal5_level1"
 	},
 	"buff_gwzj_ordinal5_level2": {
-		"name": "アーシャ大陸の設計図",
-		"description": "戦闘開始時に1000Ptのエナジー値を獲得する",
+		"name": "アーシャ州の設計図",
+		"description": "戦闘開始時にエナジー値を1000獲得する",
 		"id": "buff_gwzj_ordinal5_level2"
 	},
 	"buff_gwzj_ordinal5_level3": {
-		"name": "アーシャ大陸の設計図",
-		"description": "連携スキルを発動すると、プレイヤーの最終ダメージ+12%、10秒間持続",
+		"name": "アーシャ州の設計図",
+		"description": "連携スキルを発動すると、プレイヤーの最終ダメージ+12%。10秒間持続",
 		"id": "buff_gwzj_ordinal5_level3"
 	},
 	"buff_gwzj_ordinal6_level1": {
@@ -7956,46 +7966,46 @@
 	},
 	"buff_gwzj_ordinal7_level1": {
 		"name": "治安管理局の設計図",
-		"description": "全耐性+20%",
+		"description": "全属性耐性+20%",
 		"id": "buff_gwzj_ordinal7_level1"
 	},
 	"buff_gwzj_ordinal7_level2": {
 		"name": "治安管理局の設計図",
-		"description": "ダメージ-20%",
+		"description": "被ダメージ-20%",
 		"id": "buff_gwzj_ordinal7_level2"
 	},
 	"buff_gwzj_ordinal7_level3": {
 		"name": "治安管理局の設計図",
-		"description": "ダメージ-30%",
+		"description": "被ダメージ-30%",
 		"id": "buff_gwzj_ordinal7_level3"
 	},
 	"buff_gwzj_ordinal8_level1": {
-		"name": "防衛軍の氷図面",
+		"name": "防衛軍の設計図",
 		"description": "回復効果+20%",
 		"id": "buff_gwzj_ordinal8_level1"
 	},
 	"buff_gwzj_ordinal8_level2": {
-		"name": "防衛軍の氷図面",
-		"description": "回復後、最終ダメージ+6%、5秒間持続",
+		"name": "防衛軍の設計図",
+		"description": "回復後、最終ダメージ+6%。5秒間持続",
 		"id": "buff_gwzj_ordinal8_level2"
 	},
 	"buff_gwzj_ordinal8_level3": {
-		"name": "防衛軍の氷図面",
-		"description": "回復後、最終ダメージ+12%、5秒間持続",
+		"name": "防衛軍の設計図",
+		"description": "回復後、最終ダメージ+12%。5秒間持続",
 		"id": "buff_gwzj_ordinal8_level3"
 	},
 	"buff_gwzj_ordinal9_level1": {
-		"name": "オーロラ工業設計図",
+		"name": "オーロラ産業の設計図",
 		"description": "シールドブレイク率+30%",
 		"id": "buff_gwzj_ordinal9_level1"
 	},
 	"buff_gwzj_ordinal9_level2": {
-		"name": "オーロラ工業設計図",
+		"name": "オーロラ産業の設計図",
 		"description": "シールド状態のターゲットへの最終ダメージ+15%",
 		"id": "buff_gwzj_ordinal9_level2"
 	},
 	"buff_gwzj_ordinal9_level3": {
-		"name": "オーロラ工業設計図",
+		"name": "オーロラ産業の設計図",
 		"description": "シールド状態のターゲットへの最終ダメージ+25%",
 		"id": "buff_gwzj_ordinal9_level3"
 	},
@@ -8028,6 +8038,11 @@
 		"name": "「辺境戦闘地帯」モードバフ",
 		"description": "アルケークールダウン時間-90%",
 		"id": "buff_gwzj_worldboss4"
+	},
+	"buff_hackterminal_charge": {
+		"name": "演算力UP",
+		"description": "効果範囲内にいるとき、権限者端末の演算力が上がり続け、最高値まで回復する",
+		"id": "buff_hackterminal_charge"
 	},
 	"buff_bailing_level1": {
 		"name": "バイリン・勇気",
@@ -8736,7 +8751,7 @@
 	},
 	"buff_mon_192_thunderlinkforplay": {
 		"name": "WL-6電極",
-		"description": "WL-6から電極効果を付与され、WL-6と一定距離以内にいると、短時間ごとに電撃ダメージを受ける。",
+		"description": "WL-6から電極効果を付与されたあと、WL-6と一定距離以内にいると一定の間隔で電撃ダメージを受ける",
 		"id": "buff_mon_192_thunderlinkforplay"
 	},
 	"buff_shiro_atkup_level1": {
@@ -8893,6 +8908,76 @@
 		"name": "ダメージを無効化する",
 		"description": "被ダメージ時のHPが20%以下にならない",
 		"id": "buff_lockhp_less20_overlap"
+	},
+	"buff_loslyn_hpshield": {
+		"name": "ヴィントシュティレ・シールド",
+		"description": "自身は最大HP×**0%**のシールドを獲得する。**1**秒間持続。",
+		"id": "buff_loslyn_hpshield"
+	},
+	"buff_loslyn_ice_resonance": {
+		"name": "氷共鳴",
+		"description": "**氷共鳴**：氷属性武器を**2**つ以上装備すると発動。氷攻撃力+**15%**、氷耐性+**25%**。装備すると常時有効(複数の氷共鳴/氷反応効果はスタック不可、氷共鳴が優先して発動)",
+		"id": "buff_loslyn_ice_resonance"
+	},
+	"buff_loslyn_level1": {
+		"name": "アンカー",
+		"description": "最終ダメージ+**0%**。",
+		"id": "buff_loslyn_level1"
+	},
+	"buff_loslyn_level2": {
+		"name": "接続",
+		"description": "最終ダメージ+**0%**。**通常攻撃-スノーハリケーン**でスタミナを消費しなくなる。また、**連携スキル-フリージング・ストライク**を発動すると会心ダメージ+**1%**、**2**秒間持続。",
+		"id": "buff_loslyn_level2"
+	},
+	"buff_loslyn_level2_critdmgup": {
+		"name": "アンカー",
+		"description": "会心ダメージ+**0%**、**1**秒間持続。",
+		"id": "buff_loslyn_level2_critdmgup"
+	},
+	"buff_loslyn_skill_dmgup": {
+		"name": "フロストリンク",
+		"description": "フロストリンクの発動後、自身は敵の氷耐性を**0%**無視する効果を獲得する。さらに、最終ダメージ+**1%**。**2**秒間持続。",
+		"id": "buff_loslyn_skill_dmgup"
+	},
+	"buff_loslyn_skillbati": {
+		"name": "不屈",
+		"description": "**0**秒間持続。",
+		"id": "buff_loslyn_skillbati"
+	},
+	"buff_loslyn_skilldebuff": {
+		"name": "急凍",
+		"description": "ターゲットの攻撃力ダウン、**0**秒間持続。",
+		"id": "buff_loslyn_skilldebuff"
+	},
+	"buff_loslyn_skillstate": {
+		"name": "ヘルフリージング",
+		"description": "不屈効果を獲得する。さらに、ヴィントシュティレによるすべての攻撃は**チルストライク**を付与する。**0**秒間持続。",
+		"id": "buff_loslyn_skillstate"
+	},
+	"buff_loslyn_skillstate_iceatkup": {
+		"name": "ハートカービング",
+		"description": "ヘルフリージング状態に入ると氷攻撃力が UPする、**0**秒間持続。",
+		"id": "buff_loslyn_skillstate_iceatkup"
+	},
+	"buff_loslyn_specblock": {
+		"name": "アイススウィフト",
+		"description": "攻撃を受けたときに発動し、ダメージをブロックする。",
+		"id": "buff_loslyn_specblock"
+	},
+	"buff_loslyn_specfrozenstate": {
+		"name": "フリーズ",
+		"description": "フリーズ",
+		"id": "buff_loslyn_specfrozenstate"
+	},
+	"buff_loslyn_specfrozenstate_enddot": {
+		"name": "ハートメルティング",
+		"description": "毎秒、失っているHP×**0%**のHPが減少する、**1**秒間持続。",
+		"id": "buff_loslyn_specfrozenstate_enddot"
+	},
+	"buff_loslyn_thunder_resonance": {
+		"name": "雷共鳴",
+		"description": "**雷共鳴**：雷属性武器を**2**つ以上装備すると発動。雷攻撃力+**15%**、雷耐性+**25%**。装備すると常時有効(複数の雷共鳴/雷反応はスタック不可、雷共鳴が優先して発動)",
+		"id": "buff_loslyn_thunder_resonance"
 	},
 	"buff_ls_sqqs": {
 		"name": "気分爽快",
@@ -9736,12 +9821,12 @@
 	},
 	"mainbuff_norncanteen_grill": {
 		"name": "焼き魚の祝福",
-		"description": "物理ダメージUP+15%、10秒ごとに次の回避が回数を消費しない。最大で1回まで蓄積可能。30分間持続",
+		"description": "物理ダメージ+15%、10秒ごとに次の回避で回避回数を消費しなくなる。最大で1回まで累積可能、30分間持続",
 		"id": "mainbuff_norncanteen_grill"
 	},
 	"mainbuff_norncanteen_sushi": {
 		"name": "寿司の祝福",
-		"description": "氷ダメージ+15%、20秒ごとに次の自身の被ダメージ-50%、最大1回蓄積可能、30分間持続",
+		"description": "氷ダメージ+15%、20秒ごとに次の自身の被ダメージ-50%。最大1回まで累積可能、30分間持続",
 		"id": "mainbuff_norncanteen_sushi"
 	},
 	"buff_tfb_drop_2x": {
@@ -10564,6 +10649,46 @@
 		"description": "最終ダメージ+**0%**。**陰陽双魚**の装備時、会心ダメージ+**1%**。戦闘状態に入ったとき、**落子無悔(らくしむかい)**を追加で**9**スタック獲得する。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
 		"id": "buff_matrix_ssr92_level4"
 	},
+	"buff_matrix_ssr93_level1": {
+		"name": "ハートカービング",
+		"description": "氷ダメージ+**0%**。ターゲットの**連携スキル-アイスロック**状態が解除されると、毎秒、失っているHP×**1%**の流血ダメージを受ける(このダメージはプレイヤーの攻撃力×**3**倍まで、かつダメージ UP効果の影響を受けない)。**2**秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+		"id": "buff_matrix_ssr93_level1"
+	},
+	"buff_matrix_ssr93_level2": {
+		"name": "ハートカービング",
+		"description": "氷ダメージ+**0%**。ターゲットの**連携スキル-アイスロック**状態が解除されると、毎秒、失っているHP×**1%**の流血ダメージを受ける(このダメージはプレイヤーの攻撃力×**3**倍まで、かつダメージ UP効果の影響を受けない)。**2**秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+		"id": "buff_matrix_ssr93_level2"
+	},
+	"buff_matrix_ssr93_level3": {
+		"name": "ハートカービング",
+		"description": "氷ダメージ+**0%**。ターゲットの**連携スキル-アイスロック**状態が解除されると、毎秒、失っているHP×**1%**の流血ダメージを受ける(このダメージはプレイヤーの攻撃力×**3**倍まで、かつダメージ UP効果の影響を受けない)。**2**秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+		"id": "buff_matrix_ssr93_level3"
+	},
+	"buff_matrix_ssr93_level4": {
+		"name": "ハートカービング",
+		"description": "氷ダメージ+**0%**。ターゲットの**連携スキル-アイスロック**状態が解除されると、毎秒、失っているHP×**1%**の流血ダメージを受ける(このダメージはプレイヤーの攻撃力×**3**倍まで、かつダメージ UP効果の影響を受けない)。**2**秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+		"id": "buff_matrix_ssr93_level4"
+	},
+	"buff_matrix_ssr94_level1": {
+		"name": "ハートカービング",
+		"description": "氷属性武器を**1**つ装備するごとに最終ダメージ+**0%**。**連携スキル-ヘルフリージング**状態に入ると氷攻撃力+**1%**、**2**秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+		"id": "buff_matrix_ssr94_level1"
+	},
+	"buff_matrix_ssr94_level2": {
+		"name": "ハートカービング",
+		"description": "氷属性武器を**1**つ装備するごとに最終ダメージ+**0%**。**連携スキル-ヘルフリージング**状態に入ると氷攻撃力+**1%**、**2**秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+		"id": "buff_matrix_ssr94_level2"
+	},
+	"buff_matrix_ssr94_level3": {
+		"name": "ハートカービング",
+		"description": "氷属性武器を**1**つ装備するごとに最終ダメージ+**0%**。**連携スキル-ヘルフリージング**状態に入ると氷攻撃力+**1%**、**2**秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+		"id": "buff_matrix_ssr94_level3"
+	},
+	"buff_matrix_ssr94_level4": {
+		"name": "ハートカービング",
+		"description": "氷属性武器を**1**つ装備するごとに最終ダメージ+**0%**。**連携スキル-ヘルフリージング**状態に入ると氷攻撃力+**1%**、**2**秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+		"id": "buff_matrix_ssr94_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "クーラントⅡ型・守護",
 		"description": "ダメージ UP率+防御値×**50%**を獲得し、時間内は硬直効果が無効化される",
@@ -11084,6 +11209,11 @@
 		"description": "ウィーバーが特定の時間にマークを起爆する。マークのスタック数が多いほどダメージも増える。ただし、このマークは安定しない",
 		"id": "buff_boss_hum_072_skill09_stack"
 	},
+	"buff_boss_hum_076_delayspawnbullet": {
+		"name": "虚空エナジー",
+		"description": "持続時間が終了すると、周囲に破壊可能な虚空結晶を生成する",
+		"id": "buff_boss_hum_076_delayspawnbullet"
+	},
 	"buff_boss037_skill04_cantcharge": {
 		"name": "次元分離",
 		"description": "幻像の持続中は武器エナジー値が獲得できず、ダメージを受け続ける",
@@ -11226,7 +11356,7 @@
 	},
 	"buff_dfishchess_arealevelstackcount": {
 		"name": "布陣",
-		"description": "1スタックにつき盤上領域内での与ダメージが追加で+**0%**、最大**8**スタックまで可能。",
+		"description": "1スタックにつき盤上領域内での毎秒持続するダメージが追加で攻撃力×**0%** UPする、最大**8**スタックまで可能。",
 		"id": "buff_dfishchess_arealevelstackcount"
 	},
 	"buff_dfishchess_changeskilladdimmstatus": {
@@ -15274,6 +15404,11 @@
 		"description": "バフ1スタックにつきこの武器の★ランク**+1**、★ランクがオーバーした場合、オーバーした分に対し1スタックにつきこの武器のダメージ+**5%**",
 		"id": "buff_bigsecret_upstar_ssr_linghan_ice"
 	},
+	"buff_bigsecret_upstar_ssr_loslyn_ice": {
+		"name": "ヴィントシュティレ",
+		"description": "バフ1スタックにつきこの武器の★ランク**+1**、★ランクがオーバーした場合、オーバーした分に対し1スタックにつきこの武器のダメージ+**5%**",
+		"id": "buff_bigsecret_upstar_ssr_loslyn_ice"
+	},
 	"buff_bigsecret_upstar_ssr_mark_physic": {
 		"name": "暁",
 		"description": "バフ1スタックにつきこの武器の★ランク**+1**、★ランクがオーバーした場合、オーバーした分に対し1スタックにつきこの武器のダメージ+**5%**",
@@ -16009,13 +16144,18 @@
 		"description": "炎または雷ダメージしか与えられず、他の属性ダメージは無効となる",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_norn_vipservice": {
+		"name": "グレンコー-スタンダード会員",
+		"description": "グレンコー健康促進サービス。備えあれば憂いなし、健康と命のリカバリサービス：\r\n最大HP+**15%**、乗り物移動速度+**20%**、スタミナ消費値-**15%**、**30**分間持続。",
+		"id": "buff_norn_vipservice"
+	},
 	"buff_nornbeach_star": {
-		"name": "波の花の星",
-		"description": "時間がないよ！早く次の星を探して！",
+		"name": "波花の星",
+		"description": "時間は有限だ！早く次の星を探そう！",
 		"id": "buff_nornbeach_star"
 	},
 	"buff_norncanteen_baozi_thunderdamageup": {
-		"name": "餃子の祝福",
+		"name": "湯包の祝福",
 		"description": "雷ダメージ+15%、移動速度+15%。30分間持続",
 		"id": "buff_norncanteen_baozi_thunderdamageup"
 	},
@@ -16648,5 +16788,10 @@
 		"name": "煙渺・記憶の欠片Ⅱ",
 		"description": "自身と仲間に、各プレイヤーの最大HP×10%のシールドを付与する",
 		"id": "buff_jmhz_yanmiao_02"
+	},
+	"newrow": {
+		"name": "",
+		"description": "",
+		"id": "newrow"
 	}
 }

@@ -1979,6 +1979,16 @@
 		"description": "持续时间内角色霸体失效，且无法进入无敌状态。",
 		"id": "buff_boss_002_5_ignore"
 	},
+	"buff_boss_010_4_punish": {
+		"name": "制裁",
+		"description": "赛拉芙命中非坚毅目标后添加制裁，制裁5秒会减少一层，若制裁达到10层则去除霸体和无敌状态并在90秒内无法添加霸体和无敌状态。",
+		"id": "buff_boss_010_4_punish"
+	},
+	"buff_boss_010_4_punishment": {
+		"name": "惩戒",
+		"description": "无法添加霸体和无敌状态。",
+		"id": "buff_boss_010_4_punishment"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "霸体失效",
 		"description": "无法给自身添加霸体状态。",
@@ -2531,7 +2541,7 @@
 	},
 	"buff_wantedcriminal": {
 		"name": "通缉中！",
-		"description": "由于犯下罪行而被通缉，需要前往安全的地方逃离追捕！",
+		"description": "由于犯下罪行而被通缉，巡逻队会根据罪行造成额外伤害。需要前往安全的地方逃离追捕，消除通缉！",
 		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
@@ -8029,6 +8039,11 @@
 		"description": "源器CD减少90%",
 		"id": "buff_gwzj_worldboss4"
 	},
+	"buff_hackterminal_charge": {
+		"name": "算力提升",
+		"description": "范围内，授权者终端的算力将会持续提升，直至回复最高值。",
+		"id": "buff_hackterminal_charge"
+	},
 	"buff_bailing_level1": {
 		"name": "白伶-勇气",
 		"description": "白伶收起滑翔伞或者滑板时，移速提升**8%**，持续**12**秒，冷却**60**秒。",
@@ -8893,6 +8908,76 @@
 		"name": "免疫伤害",
 		"description": "受到伤害时血量不会低于20%",
 		"id": "buff_lockhp_less20_overlap"
+	},
+	"buff_loslyn_hpshield": {
+		"name": "静澜-护盾",
+		"description": "自身**0%**最大生命值的护盾，持续**1**秒",
+		"id": "buff_loslyn_hpshield"
+	},
+	"buff_loslyn_ice_resonance": {
+		"name": "寒冰共鸣",
+		"description": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。",
+		"id": "buff_loslyn_ice_resonance"
+	},
+	"buff_loslyn_level1": {
+		"name": "锚定",
+		"description": "最终伤害提升**0%**",
+		"id": "buff_loslyn_level1"
+	},
+	"buff_loslyn_level2": {
+		"name": "链接",
+		"description": "最终伤害提升**0%**，**普攻-雪暴飓风**不消耗耐力；释放**连携-凛冽冲击**后，暴击伤害提升**1%**，持续**2**秒。",
+		"id": "buff_loslyn_level2"
+	},
+	"buff_loslyn_level2_critdmgup": {
+		"name": "锚定",
+		"description": "暴击伤害提升**0%**，持续**1**秒",
+		"id": "buff_loslyn_level2_critdmgup"
+	},
+	"buff_loslyn_skill_dmgup": {
+		"name": "霜寒链域",
+		"description": "释放霜寒链域后，自身无视怪物**0%**寒冰抗性，最终伤害提升**1%**，持续**2**秒",
+		"id": "buff_loslyn_skill_dmgup"
+	},
+	"buff_loslyn_skillbati": {
+		"name": "霸体",
+		"description": "持续**0**秒",
+		"id": "buff_loslyn_skillbati"
+	},
+	"buff_loslyn_skilldebuff": {
+		"name": "急冻",
+		"description": "攻击力下降，持续**0**秒",
+		"id": "buff_loslyn_skilldebuff"
+	},
+	"buff_loslyn_skillstate": {
+		"name": "凛冽",
+		"description": "霸体且静澜所有攻击附带**寒袭**效果，持续**0**秒。",
+		"id": "buff_loslyn_skillstate"
+	},
+	"buff_loslyn_skillstate_iceatkup": {
+		"name": "铭心",
+		"description": "进入凛冽状态后，冰攻增加，持续**0**秒。",
+		"id": "buff_loslyn_skillstate_iceatkup"
+	},
+	"buff_loslyn_specblock": {
+		"name": "疾闪",
+		"description": "疾闪：受到攻击触发，躲避本次伤害",
+		"id": "buff_loslyn_specblock"
+	},
+	"buff_loslyn_specfrozenstate": {
+		"name": "冰封",
+		"description": "冰封",
+		"id": "buff_loslyn_specfrozenstate"
+	},
+	"buff_loslyn_specfrozenstate_enddot": {
+		"name": "铭心损血",
+		"description": "每秒流失已损失血量**0%**的生命值，持续**1**秒。",
+		"id": "buff_loslyn_specfrozenstate_enddot"
+	},
+	"buff_loslyn_thunder_resonance": {
+		"name": "雷电共鸣",
+		"description": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。",
+		"id": "buff_loslyn_thunder_resonance"
 	},
 	"buff_ls_sqqs": {
 		"name": "神清气爽",
@@ -10564,6 +10649,46 @@
 		"description": "最终伤害提升**0%**，装备**纵横**时暴击伤害提升**1%**，进入战斗状态时额外获得**9**层**技能-落子无悔**效果。装备后后台可生效，多套只生效最高星级",
 		"id": "buff_matrix_ssr92_level4"
 	},
+	"buff_matrix_ssr93_level1": {
+		"name": "铭心",
+		"description": "寒冰伤害提升**0%**，目标**连携-冰封**状态解除后，每秒受到**1%**已损失生命值的流血伤害（该伤害不超过玩家**3**倍攻击力，且不受任何增伤效果影响），持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr93_level1"
+	},
+	"buff_matrix_ssr93_level2": {
+		"name": "铭心",
+		"description": "寒冰伤害提升**0%**，目标**连携-冰封**状态解除后，每秒受到**1%**已损失生命值的流血伤害（该伤害不超过玩家**3**倍攻击力，且不受任何增伤效果影响），持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr93_level2"
+	},
+	"buff_matrix_ssr93_level3": {
+		"name": "铭心",
+		"description": "寒冰伤害提升**0%**，目标**连携-冰封**状态解除后，每秒受到**1%**已损失生命值的流血伤害（该伤害不超过玩家**3**倍攻击力，且不受任何增伤效果影响），持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr93_level3"
+	},
+	"buff_matrix_ssr93_level4": {
+		"name": "铭心",
+		"description": "寒冰伤害提升**0%**，目标**连携-冰封**状态解除后，每秒受到**1%**已损失生命值的流血伤害（该伤害不超过玩家**3**倍攻击力，且不受任何增伤效果影响），持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr93_level4"
+	},
+	"buff_matrix_ssr94_level1": {
+		"name": "铭心",
+		"description": "每装备**1**把冰武器，提升**0%**最终伤害。进入**连携-凛冽**状态后，冰攻提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr94_level1"
+	},
+	"buff_matrix_ssr94_level2": {
+		"name": "铭心",
+		"description": "每装备**1**把冰武器，提升**0%**最终伤害。进入**连携-凛冽**状态后，冰攻提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr94_level2"
+	},
+	"buff_matrix_ssr94_level3": {
+		"name": "铭心",
+		"description": "每装备**1**把冰武器，提升**0%**最终伤害。进入**连携-凛冽**状态后，冰攻提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr94_level3"
+	},
+	"buff_matrix_ssr94_level4": {
+		"name": "铭心",
+		"description": "每装备**1**把冰武器，提升**0%**最终伤害。进入**连携-凛冽**状态后，冰攻提升**1%**，持续**2**秒。装备后后台可生效，多套只生效最高星级",
+		"id": "buff_matrix_ssr94_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "考恩特Ⅱ型-守护",
 		"description": "获得增伤比例**50%**的防御值提升，并在接下来的时间内免疫硬直效果",
@@ -11084,6 +11209,11 @@
 		"description": "编织者在特定时机会引爆该标记，标记层数越多，伤害越高，但该标记较为不稳定。",
 		"id": "buff_boss_hum_072_skill09_stack"
 	},
+	"buff_boss_hum_076_delayspawnbullet": {
+		"name": "虚空能量",
+		"description": "持续时间结束时，周身生成可破坏的虚空能晶",
+		"id": "buff_boss_hum_076_delayspawnbullet"
+	},
 	"buff_boss037_skill04_cantcharge": {
 		"name": "次元分离",
 		"description": "幻象持续期间内，无法获得武器充能且持续受到伤害。",
@@ -11226,7 +11356,7 @@
 	},
 	"buff_dfishchess_arealevelstackcount": {
 		"name": "布阵",
-		"description": "每层提升场域额外**0%**伤害，最多叠加**8**层。",
+		"description": "每层额外提升场域**0%***攻击力的每秒持续伤害，最多叠加**8**层。",
 		"id": "buff_dfishchess_arealevelstackcount"
 	},
 	"buff_dfishchess_changeskilladdimmstatus": {
@@ -15274,6 +15404,11 @@
 		"description": "每层buff使该武器星级**+1**，如果星级溢出，溢出部分每层使该武器伤害提升**5%**。",
 		"id": "buff_bigsecret_upstar_ssr_linghan_ice"
 	},
+	"buff_bigsecret_upstar_ssr_loslyn_ice": {
+		"name": "静澜",
+		"description": "每层buff使该武器星级**+1**，如果星级溢出，溢出部分每层使该武器伤害提升**5%**。",
+		"id": "buff_bigsecret_upstar_ssr_loslyn_ice"
+	},
 	"buff_bigsecret_upstar_ssr_mark_physic": {
 		"name": "破晓",
 		"description": "每层buff使该武器星级**+1**，如果星级溢出，溢出部分每层使该武器伤害提升**5%**。",
@@ -15576,12 +15711,12 @@
 	},
 	"buff_fan_skill_002_10scd": {
 		"name": "映月之境闪烁冷却",
-		"description": "冷却10秒",
+		"description": "冷却**0**秒",
 		"id": "buff_fan_skill_002_10scd"
 	},
 	"ge_fanevadecooldown": {
 		"name": "徒留翠意解控冷却",
-		"description": "冷却20秒",
+		"description": "冷却**20**秒",
 		"id": "ge_fanevadecooldown"
 	},
 	"ge_fenrir_branch_cantbedamage": {
@@ -16008,6 +16143,11 @@
 		"name": "火焰/雷电专属",
 		"description": "玩家只能造成火焰或者雷电伤害，其他属性伤害无效",
 		"id": "buff_newtower_xulie005"
+	},
+	"buff_norn_vipservice": {
+		"name": "格伦科-优质会员",
+		"description": "格伦科健康增益服务，「重」启健康，「构」筑生命，「重构」为您的冒险护航：\r\n提升**15%**最大生命值与**20%**载具移动速度，降低**15%**耐力消耗值，持续**30**分钟。",
+		"id": "buff_norn_vipservice"
 	},
 	"buff_nornbeach_star": {
 		"name": "浪花之星",
@@ -16648,5 +16788,10 @@
 		"name": "烟渺**•** 记忆碎片Ⅱ",
 		"description": "使用技能为自身和队友提供队友最大生命值10%护盾",
 		"id": "buff_jmhz_yanmiao_02"
+	},
+	"newrow": {
+		"name": "飞花-驻场",
+		"description": "**飞花-驻场**：**织影**任意攻击命中时，对附近目标造成**0%***异能攻击+**1%***自身最大生命值+**2%***各元素抗性之和+**3%***暴击值点伤害，每**1.5**秒至多触发一次，飞花伤害视为普攻伤害，若装备任意**1**把雷电/寒冰/物理/火焰武器，则飞花伤害提升至**4**倍。此外，飞花伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
+		"id": "newrow"
 	}
 }

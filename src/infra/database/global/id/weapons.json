@@ -1791,7 +1791,7 @@
 		},
 		"fashion": [],
 		"version": "2.5",
-		"limited": true,
+		"limited": false,
 		"id": "chainsaw_physic"
 	},
 	"hammer_ice": {
@@ -5764,7 +5764,7 @@
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Cube_Fire01.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Cube_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/ling.webp"
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/lingboling.webp"
 		},
 		"rarity": 5,
 		"element": "Flame",
@@ -8484,6 +8484,422 @@
 		"limited": true,
 		"id": "linghan_ice"
 	},
+	"loslyn_ice": {
+		"name": "Calm Waters",
+		"description": "Jangkar yang dilepas dari kapal tua bernama \"Calm Waters\" milik kakeknya. Jangkar itu dimodifikasi, kemudian menjadi senjata Roslyn.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_luosilin.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_luosilin.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/luosilin.webp"
+		},
+		"rarity": 5,
+		"element": "ThunderIce",
+		"type": "Loslyn",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Loslyn_ice_ssr_star",
+		"avatar": "imitation_58",
+		"stats": [
+			{
+				"stat": {
+					"name": "Attack",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Frost-Volt Fusion**",
+				"description": "Saat senjata menimpakan DMG, DMG dihitung menggunakan ATK Dasar Frost/Volt tertinggi yang terpasang, persentase ATK Frost/Volt tertinggi yang terpasang, dan Frost/Volt DMG Boost tertinggi yang terpasang, dan senjata akan dianggap sebagai senjata Frost dan senjata Volt."
+			},
+			{
+				"title": "**Resonansi Frost**",
+				"description": "Meningkatkan Frost ATK sebesar **15%** dan Frost Resistance sebesar **25%**. Efek set ini berfungsi dengan memakai **2** Senjata Frost atau lebih. Efek ini juga aktif saat senjata ada di slot sampingan. Tidak bisa ditumpuk dengan Resonansi Frost atau efek Frost Reaction lainnya, dengan Resonansi Frost sebagai prioritas."
+			},
+			{
+				"title": "**Resonansi Volt**",
+				"description": "Volt ATK meningkat **15%** dan Volt Resistance meningkat **25%**. Aktifkan dengan memakai **2** Senjata Volt atau lebih. Efek set ini berfungsi saat senjata ada di slot sampingan. Tidak bertumpuk dengan efek Resonansi Volt atau efek Volt Reaction lain, di mana Resonansi Volt akan diutamakan."
+			},
+			{
+				"title": "**Frost Edge: Swift Cut**",
+				"description": "Saat **Calm Waters** digunakan, skill Discharge senjata apa pun akan menimpakan DMG setara dengan **0.97%** dari Max HP Wanderer plus **73.2%** dari Frost ATK plus **36.6%** dari jumlah seluruh tipe Resistance Wanderer plus **134.3%** dari crit ke target di sekitar. Saat dalam pertempuran, setelah setiap **0,5** detik, DMG Swift Cut berikutnya akan bertambah dengan serangan **1** kali lagi, hingga maks sebanyak **30** kali. Saat beberapa DMG Swift Cut diberikan, nilai awal tertinggilah yang digunakan dalam perhitungan. DMG Swift Cut juga digolongkan sebagai DMG Skill Discharge. Jika terdapat 1 senjata physical/flame jenis apa pun yang digunakan, DMG Frost Edge bertambah hingga **1,3** kali. Sebagai tambahan, DMG Frost Edge tidak terpengaruh oleh efek DMG Boost apa pun kecuali dari stat langka Perlengkapan Titan, dan tidak akan memicu efek serangan tambahan."
+			},
+			{
+				"title": "Setelah Calm Waters dipindahkan ke slot sampingan, menimpakan Burst DMG 1 kali. Jika ada musuh yang memiliki Flashfreeze, serangan ini akan menghapus efek tersebut dan menimpakan DMG slot sampingan terus-menerus selama **12** detik.**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**Force Impact**",
+			"description": "Saat Charge Senjata penuh, serangan berikutnya akan mengakibatkan Force Impact pada musuh selama **45** detik sehingga meningkatkan Frost dan Volt DMG yang diterima sebesar **10%** (dan tambahan **15%** dalam permainan tim). Force Impact akan menggantikan status Grievous target, dan target dengan Force Impact tidak bisa mengalami status Grievous. Serangan Frost akan mengunci target dengan Force Impact selama **2** detik, dan serangan Volt akan menghilangkan buff pada target dengan Force Impact. Efek ini hanya bisa terpicu **1** kali setiap **15** detik pada target yang sama."
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "Setelah menggunakan **Frostlink Aura**, Wanderer akan menerima perisai setara **60%** dari Max HP selama **30** detik.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Saat serangan dengan **Chilling Strike** mengenai target, menimpakan DMG tambahan sebesar tumpukan **Chilling Strike** dikali **40%** ATK.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Memperpanjang durasi **Icebound** menjadi **6** detik. Meningkatkan efek ATK Reduction pada target yang terkena **Flashfrozen** menjadi **1000%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Setelah menggunakan **Frostlink Aura**, Wanderer akan mengabaikan **15%** dari Frost Resistance target (Resistansi total setiap elemen yang diabaikan tidak boleh melebihi **50%**). Sekaligus, meningkatkan Final DMG sebesar **14%** selama **40** detik.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Icebound Anchor Strike",
+					"description": "Saat di darat, gunakan serangan biasa untuk melancarkan 6 serangan berturut-turut.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</> dan memukul mundur target. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>6</> tumpukan Chilling Strike.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> dari ATK plus <shuzhi>{3}</> dan memukul mundur target. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>6</> tumpukan Chilling Strike.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> dari ATK plus <shuzhi>{5}</> dan memukul mundur target. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>6</> tumpukan Chilling Strike.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> dari ATK plus <shuzhi>{7}</> dan memukul mundur target. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>14</> tumpukan Chilling Strike.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> dari ATK plus <shuzhi>{9}</> dan memukul mundur target. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>10</> tumpukan Chilling Strike.\r\nSerangan Keenam: Menimpakan DMG sebesar <shuzhi>{10}%</> dari ATK plus <shuzhi>{11}</> dan memukul mundur target. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>20</> tumpukan Chilling Strike.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_melee.webp",
+					"id": "GA_FPlayerLoslynMelee_Melee"
+				},
+				{
+					"name": "Flying Anchor",
+					"description": "Saat di udara, gunakan Serangan Biasa untuk menyerang 6 kali berturut-turut sambil mengonsumsi Stamina.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</>. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>6</> tumpukan Chilling Strike.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> dari ATK plus <shuzhi>{3}</>. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>6</> tumpukan Chilling Strike.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> dari ATK plus <shuzhi>{5}</>. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>6</> tumpukan Chilling Strike.\r\nSerangan Keempat: Menimpakan DMG sebesar <shuzhi>{6}%</> dari ATK plus <shuzhi>{7}</>. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>14</> tumpukan Chilling Strike.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> dari ATK plus <shuzhi>{9}</>. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>10</> tumpukan Chilling Strike.\r\nSerangan Keenam: Menimpakan DMG sebesar <shuzhi>{10}%</> dari ATK plus <shuzhi>{11}</>. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>20</> tumpukan Chilling Strike.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_airattack.webp",
+					"id": "GA_FPlayerLoslynMelee_AirAttack"
+				},
+				{
+					"name": "Still North Wind",
+					"description": "Saat melakukan Serangan Biasa di darat, teka dan tahan Serangan Biasa ketika menggunakan Serangan Biasa pertama sampai keempat untuk mengaktifkan Still North Wind.\r\nMengayunkan Calm Waters ke arah depan untuk menciptakan pusaran angin es, menimpakan DMG sebesar <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</> kepada target di sekitar. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>15</> tumpukan Chilling Strike.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_branch.webp",
+					"id": "GA_FPlayerLoslynMelee_Branch"
+				},
+				{
+					"name": "Snowstorm Hurricane",
+					"description": "Saat di darat, tekan dan tahan Serangan Biasa untuk memicu Snowstorm Hurricane.\r\nWanderer mengikuti Calm Waters kemudian melancarkan serangan memutar, mengonsumsi Stamina dan menimpakan DMG sebesar <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</> kepada target-target di sekitar tiap kali mereka terkena serangan.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_powerattack.webp",
+					"id": "GA_FPlayerLoslynMelee_PowerAttack"
+				},
+				{
+					"name": "Skyfall Anchor",
+					"description": "Saat di udara, tekan dan tahan Serangan Biasa (tekan saat ada musuh yang bisa ditarget), atau tekan Serangan Biasa saat memanjat, melompat ke belakang, atau menggunakan Jetpack untuk mengaktifkan Skyfall Anchor.\r\nJatuh dari udara. Saat mendarat, tiap serangan yang mengenai musuh akan menimpakan DMG sebesar <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</>. Setelah mendarat, menimpakan DMG sebesar <shuzhi>{2}%</> dari ATK plus <shuzhi>{3}</> kepada target di sekitar. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>8</> tumpukan Chilling Strike.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_jumpattack.webp",
+					"id": "GA_FPlayerLoslynMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Menghindar",
+					"description": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, memperlambat target di dalam area tersebut. Saat menghindar, menjadi kebal terhadap Hitstun.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerLoslynEvade_Evade"
+				},
+				{
+					"name": "Anchor of Cyclicity",
+					"description": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah Menghindar Sempurna (tekan tombol arah sebelum menghindar) untuk memicu Anchor of Cyclicity, menimpakan DMG hingga <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</> kepada target di depan. Serangan yang mengenai target bisa menghancurkan efek <shuzhi>Icebound</> dan menimpakan DMG tambahan sebesar <shuzhi>{2}%</> dari ATK plus <shuzhi>{3}</>. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>15</> tumpukan Chilling Strike.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_fevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Cold Anchor Meteor",
+					"description": "Gunakan Serangan Biasa selama durasi singkat setelah menghindar untuk mengaktifkan Cold Anchor Meteor, menimpakan DMG hingga <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</> kepada target di depan. Serangan yang mengenai target bisa menghancurkan efek <shuzhi>Icebound</> dan menimpakan DMG tambahan sebesar <shuzhi>{2}%</> dari ATK plus <shuzhi>{3}</>. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>10</> tumpukan Chilling Strike.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_bevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Frostlink Aura",
+					"description": "Mengayunkan kedua ujung Calm Waters untuk menyerang secara terpisah, menimpakan DMG sebesar <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</> kepada target-target di sekitar. Selama dalam keadaan <shuzhi>Bitter Cold</>, menambahkan <shuzhi>52</> tumpukan Chilling Strike. Cooldown: <shuzhi>30</> detik. Serangan ini tidak dipengaruhi efek penghapusan, pengaturan ulang, atau perubahan cooldown lainnya. Saat menggunakan skill ini, mendapatkan efek Hyperbody selama <shuzhi>20</> detik.\r\nMenerapkan Flashfreeze selama <shuzhi>15</> detik pada target yang terkena serangan, dan mengurangi ATK-nya sebesar <shuzhi>5%</>.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_skill.webp",
+					"id": "GA_FPlayerLoslynSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Bitter Strike",
+					"description": "Saat <red>Charge Senjata penuh</> atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan melemparkan Calm Waters ke arah depan, menimpakan DMG setara sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> pada target di sekitar. Selama periode ini, DMG Immunity bertahan selama <shuzhi>1,5</> detik (tidak tersedia pada Apex League).\r\nSetelah menggunakan Bitter Strike, memasuki keadaan Bitter Cold selama <shuzhi>14</> detik. Serangan spesial <shuzhi>Calm Waters</> akan menerapkan tumpukan Chilling Strike saat ini kepada target yang terkena serangan. Jumlah maks tumpukan Chilling Strike pada target adalah <shuzhi>100</>. Setelah mencapai jumlah maks tumpukan, jumlah tumpukan akan direset dan target akan terkena Icebound selama <shuzhi>4</> detik dan terkena <shuzhi>Freeze kuat</> (<shuzhi>Freeze kuat</> tidak efektif melawan boss).\r\nSaat serangan dengan Chilling Strike mengenai target, memulihkan <shuzhi>3%</> dari Max HP Wanderer.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_changeskill.webp",
+					"id": "GA_FPlayerLoslynChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Undercover Attire",
+					"description": "Operasi penyamaran Keamanan Publik sedang berlangsung. Kalau kamu mengenali salah satu petugas, tolong tutup mulut dan jangan mengganggu tugas mereka.",
+					"rarity": 5,
+					"source": "Dari event",
+					"simulacrumId": "imitation_58",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_58"
+				},
+				"weapon": {
+					"name": "Clear Waves",
+					"description": "Replika Calm Waters yang sudah disempurnakan. Lebih ringan dan mudah dibawa, jadi cocok sebagai perlengkapan lapangan.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_loslyn_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Diperoleh dari event gachapon Undercover Attire"
+					],
+					"id": "imitation_fashion_58_w"
+				}
+			}
+		],
+		"version": "4.0",
+		"limited": true,
+		"id": "loslyn_ice"
+	},
 	"suspension_thunder": {
 		"name": "Venus",
 		"description": "Perancangnya tak diketahui. Cetak biru prototipe EM Blaster khusus yang bisa melayang ini sudah hilang. Prototipe ini berisi proses penghematan listrik yang unik di bagian dalamnya. Kalau sampai rusak, proses perbaikannya sangat rumit, tapi Cobalt-B dari Banges Tech sepertinya bisa melakukannya. ",
@@ -10057,7 +10473,7 @@
 		"effects": [
 			{
 				"title": "Elemental Resonance",
-				"description": "Saat memasangkan Shadoweave dengan senjata lain, efek **Weapons Master** akan tercipta.\r\nEpiphyllum akan muncul di sekitar target secara acak dan meledak dalam waktu **1–3** detik, sehingga menimpakan **37,5%** DMG area."
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
@@ -13281,20 +13697,20 @@
 		],
 		"effects": [
 			{
-				"title": "**Fusion of Mass and Flame**",
-				"description": "Saat menimpakan DMG dengan Senjata, DMG akan dihitung dengan ATK Dasar tertinggi Senjata Physical/Flame yang terpasang, persentase ATK tertinggi Senjata Physical/Flame yang terpasang, dan DMG Boost tertinggi Senjata Physical/Flame yang terpasang. Senjata akan dianggap Senjata Physical sekaligus Senjata Flame."
+				"title": "**Fusion of Flame and Mass**",
+				"description": "Saat senjata Plotti menimpakan DMG, DMG yang diberikan dikalkulasi menggunakan Base ATK tertinggi dari senjata Physical/Flame yang dipakai, persentase tertinggi Physical/Flame ATK yang dipakai, dan DMG Boost tertinggi Physical/Flame yang dipakai, dan senjatanya dianggap senjata Physical dan Flame."
 			},
 			{
 				"title": "**Resonansi Physical**",
-				"description": "Physical ATK meningkat **15%** dan Physical RES meningkat **25%**. Aktifkan dengan memakai **2** Senjata Physical atau lebih. Efek set ini juga aktif saat senjata ada di slot sampingan. Tidak bertumpuk dengan efek Resonansi Physical atau efek Physical Reaction lainnya, dengan Resonansi Physical akan diutamakan."
+				"description": "Meningkatkan Physical ATK **15%** dan Physical RES **25%**. Aktifkan dengan memakai **2** atau lebih senjata Physical. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan efek Resonansi Physical atau Physical Reaction lain, dengan Resonansi Physical sebagai prioritas."
 			},
 			{
 				"title": "**Resonansi Flame**",
-				"description": "Flame ATK meningkat **15%** dan Flame Resistance meningkat **25%**. Aktifkan dengan memakai **2** Senjata Flame atau lebih. Efek set ini juga aktif saat senjata ada di slot sampingan. Tidak bertumpuk dengan efek Resonansi Flame atau efek Flame Reaction lain, di mana Resonansi Flame akan diutamakan."
+				"description": "Meningkatkan Flame ATK **15%** dan Flame RES **25%**. Aktifkan dengan memakai **2** atau lebih senjata Flame. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan Resonansi Flame atau efek Flame Reaction lainnya, dengan Resonansi Flame sebagai prioritas."
 			},
 			{
 				"title": "**Central Nexus: On-Field**",
-				"description": "Saat menghantam target dengan **Freeflow**, menimpakan DMG sebesar **256%** Flame ATK plus **3.6%** Max HP plus **133%** dari jumlah seluruh tipe Resistance Wanderer plus **4.9%** Crit ke target di sekitar. Bisa terpicu maksimal 1 kali setiap **1,5** detik. DMG dari Central Nexus dianggap sebagai DMG Serangan Biasa. Jika setidaknya ada **1** senjata Frost atau Volt yang sedang digunakan, DMG Central Nexus akan dikali **1.3**. Selain itu, DMG Central Nexus tidak terpengaruh oleh efek DMG Boost apa pun, kecuali dari stat langka Perlengkapan Titan, dan tidak akan memicu efek serangan tambahan."
+				"description": "Saat menyerang target menggunakan **Freeflow**, menimpakan DMG setara **256%** dari Flame ATK plus **3.6%** dari Max HP Wanderer plus **133%** dari jumlah seluruh tipe Resistance Wanderer plus **4.9%** dari Crit kepada target di sekitar. Bisa terpicu maksimal 1 kali tiap **1,5** detik. DMG Central Nexus dianggap sebagai DMG serangan biasa. Jika ada **1** senjata Frost atau Volt yang dipakai, DMG Central Nexus dikali **1.3**. Selain itu, DMG Central Nexus tidak terpengaruh oleh efek DMG Boost apa pun kecuali dari stat langka Equipment Titan, dan tidak akan memicu efek serangan tambahan."
 			}
 		],
 		"elementEffects": {
@@ -13570,7 +13986,7 @@
 			"skill": [
 				{
 					"name": "Step into the Game",
-					"description": "Melompat ke udara, mengubah medan tempur menjadi papan Go, lalu melayang di udara (tak bisa bergerak selama durasi ini). Selama <shuzhi>10</> detik, memandang dari sudut pandang yang lebih tinggi. Selama rentang waktu ini, seranganmu menjadi kepingan Go dan skill kamu digantikan dengan <shuzhi>Half-Piece Advantage</>. Tekan papan Go untuk menempatkan <shuzhi>18</> keping secara berurutan, masing-masing menimpakan DMG sebesar <shuzhi>250%</> ATK ke semua target di papan dan memperlambat mereka untuk sementara. Cooldown: <shuzhi>40</> detik. Ini tidak terpengaruh oleh efek penghapusan, reset, atau perubahan cooldown lainnya.\r\n<shuzhi>Decisive Placement</>: Menggunakan <shuzhi>Review Board</>, <shuzhi>Seize Advantage</>, <shuzhi>Starfall</>, dan <shuzhi>This Ends Here</> atau melakukan (bukan hanya memperbarui yang sudah ada) pemanggilan akan memberikan tumpukan Decisive Placement, maks <shuzhi>9</> tumpuk. Selama Decisive Placement aktif, setiap keping Go mengonsumsi <shuzhi>1</> tumpuk untuk menimpakan DMG tambahan sebesar <shuzhi>200%</> ATK ke semua target di papan. Selama skill ini aktif, tidak bisa mengakumulasi tumpukan.",
+					"description": "Melompat ke udara, mengubah medan tempur menjadi papan Go, lalu melayang di udara (tak bisa bergerak selama durasi ini). Selama <shuzhi>10</> detik, memandang dari sudut pandang yang lebih tinggi. Selama rentang waktu ini, seranganmu menjadi kepingan Go dan skill kamu digantikan dengan <shuzhi>Half-Piece Advantage</>. Tekan papan Go untuk menempatkan <shuzhi>18</> keping secara berurutan, masing-masing menimpakan DMG sebesar <shuzhi>250%</> ATK ke semua target di papan dan memperlambat mereka untuk sementara. Cooldown: <shuzhi>40</> detik. Ini tidak dipengaruhi efek penghapusan, pengaturan ulang, atau perubahan cooldown lainnya.\r\n<shuzhi>Decisive Placement</>: Menggunakan <shuzhi>Review Board</>, <shuzhi>Seize Advantage</>, <shuzhi>Starfall</>, dan <shuzhi>This Ends Here</> atau melakukan (bukan hanya memperbarui yang sudah ada) pemanggilan akan memberikan tumpukan Decisive Placement, maks <shuzhi>9</> tumpuk. Selama Decisive Placement aktif, setiap keping Go mengonsumsi <shuzhi>1</> tumpuk untuk menimpakan DMG tambahan sebesar <shuzhi>200%</> ATK ke semua target di papan. Selama skill ini aktif, tidak bisa mengakumulasi tumpukan.",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -13593,7 +14009,7 @@
 			"discharge": [
 				{
 					"name": "This Ends Here",
-					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</>. Menciptakan sebuah zona dan menempatkan <shuzhi>1</> keping di depanmu yang menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar. Selama rentang waktu ini, Wanderer kebal terhadap DMG selama <shuzhi>2,6</> detik (tak berlaku di Apex League).\r\nMengaktifkan zona untuk menimpakan <shuzhi>400%</> DMG per detik ke area luar di sekitar Wanderer. Zona ini akan ada selama <shuzhi>30</> detik atau menghilang <shuzhi>5</> detik setelah keluar dari pertempuran. Setiap pemanggilan yang dilakukan akan memperpanjang durasi zona selama <shuzhi>3</> detik.\r\n<shuzhi>Tactical Deployment</>: Setiap pemanggilan menambahkan <shuzhi>1</> tumpuk Tactical Deployment, meningkatkan DMG zona sebesar <shuzhi>120%</> ATK per detik, maks <shuzhi>8</> tumpuk.\r\n<shuzhi>Scorching Sun</>: Ketika mendapat tumpukan Tactical Deployment, mendapatkan tumpukan Scorching Sun dengan jumlah yang sama, di mana setiap tumpukan meningkatkan Flame DMG sebesar <shuzhi>2%</>, maks <shuzhi>8</> tumpuk.\r\n<shuzhi>Blazing Core</>: Saat menggunakan Skill Discharge dengan senjata Flame apa pun, mendapatkan Hyperbody selama <shuzhi>8</> detik.",
+					"description": "Saat <red>Charge Senjata</> penuh atau <red>Phantasia</> terpicu, beralih ke senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</>. Menciptakan sebuah zona dan menempatkan <shuzhi>1</> keping di depanmu yang menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> ke target di sekitar. Selama rentang waktu ini, Wanderer kebal terhadap DMG selama <shuzhi>1,5</> detik (tak berlaku di Apex League).\r\nMengaktifkan zona untuk menimpakan <shuzhi>200%</> DMG per detik ke area luar di sekitar Wanderer. Zona ini akan ada selama <shuzhi>30</> detik atau menghilang <shuzhi>5</> detik setelah keluar dari pertempuran. Setiap pemanggilan yang dilakukan akan memperpanjang durasi zona selama <shuzhi>3</> detik.\r\n<shuzhi>Tactical Deployment</>: Setiap pemanggilan menambahkan <shuzhi>1</> tumpuk Tactical Deployment, meningkatkan DMG zona sebesar <shuzhi>50%</> ATK per detik, maks <shuzhi>8</> tumpuk.\r\n<shuzhi>Scorching Sun</>: Ketika mendapat tumpukan Tactical Deployment, mendapatkan tumpukan Scorching Sun dengan jumlah yang sama, di mana setiap tumpukan meningkatkan Flame DMG sebesar <shuzhi>2,5%</>, maks <shuzhi>8</> tumpuk.\r\n<shuzhi>Blazing Core</>: Saat menggunakan Skill Discharge dengan senjata Flame apa pun, mendapatkan Hyperbody selama <shuzhi>8</> detik.",
 					"tags": [
 						"Damage"
 					],
@@ -13650,7 +14066,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Dapatkan dari event Network Tracing"
+						"Diperoleh dari event Network Tracing"
 					],
 					"id": "imitation_fashion_57_w_2"
 				}
@@ -16938,7 +17354,7 @@
 			}
 		],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "umbrella_fire"
 	},
 	"yoyo_ice": {
@@ -17312,7 +17728,7 @@
 		},
 		"fashion": [],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "yoyo_ice"
 	},
 	"yulan_ice": {

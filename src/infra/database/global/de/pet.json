@@ -2410,5 +2410,221 @@
 			}
 		],
 		"id": "FightPet_11"
+	},
+	"FightPet_12": {
+		"name": "Kleiner Cubby",
+		"description": "Ein neugieriger kleiner Spielzeugbär mit Katzenohren, von Zeke als Geschenk für Shirli gemacht. Unter der Ungeschicklichkeit des Spielzeugs verbirgt sich die echte Liebe eines Bruders zu seiner Schwester.",
+		"PetElementType": "Thunder",
+		"PetPropertyType": "Attack",
+		"PetRarity": 5,
+		"assets": {
+			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_010.webp",
+			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_010.webp",
+			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_010.webp"
+		},
+		"skills": [
+			{
+				"name": "EMP-Bombe",
+				"description": "Cubby findet und wirft eine EMP-Bombe, die Gegnern in Reichweite Flächenschaden in Höhe von **1621% / 1621% / 2431%** des ANG zufügt.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act01.webp"
+			},
+			{
+				"name": "Elektrisches Pulsfeld",
+				"description": "Cubby beginnt, einen Angriff aufzuladen und fügt dann allen Gegnern in einem großen Gebiet vor ihm Schaden in Höhe von **1361% / 2041% / 2041%** des ANG zu.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act02.webp"
+			},
+			{
+				"name": "Magnetischer Donnerspeer",
+				"description": "Cubby wirft 2 Donnerspeere nach dem Gegner, die jeweils Schaden in Höhe von **876% / 876% / 876%** des ANG verursachen, gefolgt von 1 gewaltigen Donnerspeer, der Schaden in Höhe von **876% / 876% / 876%** des ANG verursacht.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act03.webp"
+			}
+		],
+		"properties": "Übernimmt **12%** der durchschnittlichen Werte für Flammen-, Frost-, Volt- und physischen Basisangriff des Meisters.\r\n**1** Modulsteckplatz und **5** Ladung.",
+		"advancements": [
+			{
+				"description": "ANG-Vererbung wird auf **18%** erhöht.\r\nErhöht den Schaden von „Elektrisches Pulsfeld“ auf **2041%**.\r\n**2**Modul-Slots und **8**Ladung.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 30
+					}
+				]
+			},
+			{
+				"description": "ANG-Vererbung wird auf **24%** erhöht.\r\nDer Schaden von „EMP-Bombe“ wird auf **2431%** erhöht.\r\n**3**Modul-Slots und **11**Ladung.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 40
+					}
+				]
+			},
+			{
+				"description": "ANG-Vererbung wird auf **30%** erhöht.\r\nDer Schaden jedes Treffers von „Magnetischer Donnerspeer“ wird auf **1314%** und der Schaden des gewaltigen „Magnetischer Donnerspeer“ auf **2146%** erhöht.\r\n**4**Modul-Slots und **15**Ladung.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 60
+					}
+				]
+			}
+		],
+		"PetUpgradeItemMap": [
+			{
+				"material": {
+					"name": "Tablette aus Taotie-Essenz",
+					"description": "Der angehängte Energiekörper soll aus der Restenergie des zerfressenen Organismus gebildet worden sein.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
+					"type": "GIFT",
+					"source": [
+						"Donnerstadt: Besiege Taotie"
+					],
+					"id": "Item_Jiuyu_Harvest_029"
+				},
+				"exp": 40
+			},
+			{
+				"material": {
+					"name": "Waffenschein",
+					"description": "Ein Kernsystem, das Befugnis erteilt, Waffen einzusetzen.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
+					"type": "GIFT",
+					"source": [
+						"Donnerstadt: Besiege das dunkle Scheusal: Longxiang",
+						"Donnerstadt: Besiege die verfluchte Rüstung",
+						"Aquastadt: Besiege dunkle Scheusale: Tie Yuan"
+					],
+					"id": "Item_Jiuyu_Harvest_028"
+				},
+				"exp": 20
+			},
+			{
+				"material": {
+					"name": "Standard-Lamellenrüstung",
+					"description": "Eine kleine, standardmäßige Lamellenrüstung, die recht guten Schutz bietet.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammenstadt: Besiege Dunkles Scheusal: Sperlingsschwanz",
+						"Flammenstadt: Besiege das dunkle Scheusal: Flammenstadt-Gebietswächter",
+						"Flammenstadt: Besiege das dunkle Scheusal: Donnerstadt-Gebietswächter",
+						"Aquastadt: Besiege das dunkle Scheusal: Aquastadt-Gebietswächter"
+					],
+					"id": "Item_Jiuyu_Harvest_011"
+				},
+				"exp": 20
+			},
+			{
+				"material": {
+					"name": "Schwarze Krähenfeder",
+					"description": "Wenn man sie so ansieht, glaubt man, das Pfeifen zu hören, mit dem sie durch den Wind schneidet.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammenstadt: Besiege Dunkelheit: Schwarze Krähe"
+					],
+					"id": "Item_Jiuyu_Harvest_005"
+				},
+				"exp": 10
+			},
+			{
+				"material": {
+					"name": "Zhuyan-Schuppenpanzer",
+					"description": "Die Muster auf dem Schuppenpanzer machen deutlich, dass hinter seiner Herstellung keine gewöhnliche Zivilisation steckt.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammenstadt: Besiege Zhuyan"
+					],
+					"id": "Item_Jiuyu_Harvest_006"
+				},
+				"exp": 10
+			},
+			{
+				"material": {
+					"name": "Graustein",
+					"description": "Dieses eigenartige Erz aus Gebiet 9 ist ein unverzichtbares Material für die Produktion bestimmter Legierungsgeräte.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammenstadt: Besiege Dunkelheit: Sternennexus",
+						"Flammenstadt: Besiege Dunkelheit: Hornmähne",
+						"Flammenstadt: Besiege Dunkelheit: Soldat",
+						"Flammenstadt: Besiege Dunkelheit: Offizier",
+						"Flammenstadt: Besiege Dunkelheit: Felsenhund",
+						"Flammenstadt – Besiege Dunkelheit: Schreckenswolf"
+					],
+					"id": "Item_Jiuyu_Harvest_007"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Himmelskristall",
+					"description": "Dieses eigenartige Erz aus Gebiet 9 funkelt dank seiner kristallklaren Erscheinung hell im Sonnenlicht.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammenstadt: Besiege Königsadler"
+					],
+					"id": "Item_Jiuyu_Harvest_009"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Umbrastein",
+					"description": "Dieses eigenartige Erz aus Gebiet 9 besitzt eine ungewöhnliche Textur, die ihm eine seltsame Farbe verleiht.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammenstadt: Besiege Schreckensfüchse",
+						"Flammenstadt: Besiege Schwingenantilopen",
+						"Flammenstadt: Besiege Furchtbären"
+					],
+					"id": "Item_Jiuyu_Harvest_010"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Dunkelessenz",
+					"description": "Diese Kristalle entstanden durch Energie, die durch die Erdadern an die Oberfläche gelangte. Sie sind durch ihre Umwelt beeinflussbar und bilden Gitter, die mehr lila Licht reflektieren, woher auch ihr Name stammt. Sie sind eine Niedrigenergiequelle.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammenstadt: Seelenfall-Anhöhe",
+						"Flammenstadt – Besiege Albtraumgeißel"
+					],
+					"id": "Item_Jiuyu_Mine_01"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Ingweressenz",
+					"description": "Diese Kristalle entstehen durch Energie, die durch die Erdadern an die Oberfläche gelangt. Sie sind stark durch ihre Umwelt beeinflussbar und bilden Gitter, die mehr gelbes Licht reflektieren, woher auch ihr Name stammt. Sie sind eine Hochenergiequelle.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammenstadt: Seelenfall-Anhöhe",
+						"Flammenstadt – Besiege Hornfedern"
+					],
+					"id": "Item_Jiuyu_Mine_02"
+				},
+				"exp": 5
+			}
+		],
+		"id": "FightPet_12"
 	}
 }

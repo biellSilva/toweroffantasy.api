@@ -1791,7 +1791,7 @@
 		},
 		"fashion": [],
 		"version": "2.5",
-		"limited": true,
+		"limited": false,
 		"id": "chainsaw_physic"
 	},
 	"hammer_ice": {
@@ -5764,7 +5764,7 @@
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Cube_Fire01.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Cube_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/ling.webp"
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/lingboling.webp"
 		},
 		"rarity": 5,
 		"element": "Flame",
@@ -8484,6 +8484,422 @@
 		"limited": true,
 		"id": "linghan_ice"
 	},
+	"loslyn_ice": {
+		"name": "ヴィントシュティレ",
+		"description": "ロズリンの祖父の古い船「ヴィントシュティレ号」から取り外された錨に改造を施し、ロズリンの武器となったもの",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_luosilin.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_luosilin.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/luosilin.webp"
+		},
+		"rarity": 5,
+		"element": "ThunderIce",
+		"type": "Loslyn",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Loslyn_ice_ssr_star",
+		"avatar": "imitation_58",
+		"stats": [
+			{
+				"stat": {
+					"name": "攻撃",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "会心",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**氷・雷融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(氷/雷属性)、攻撃力パーセンテージ(氷/雷属性)、氷/雷バフ(氷/雷属性)の最高値をそれぞれ参照する。また、この武器属性は氷と雷の両属性と見なされる。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**氷共鳴**：氷属性武器を**2**つ以上装備すると発動。氷攻撃力+**15%**、氷耐性+**25%**。装備すると常時有効(複数の氷共鳴/氷反応はスタック不可、氷共鳴が優先して発動)。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**雷共鳴**：雷属性武器を**2**つ以上装備すると発動。雷攻撃力+**15%**、雷耐性+**25%**。装備すると常時有効(複数の雷共鳴/雷反応はスタック不可、雷共鳴が優先して発動)。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**霜刃・速斬り**：**ヴィントシュティレ**の装備時、任意武器による連携スキルを命中させると付近のターゲットに対し自身の最大HP×**0.97%**+氷攻撃力×**73.2%**+各属性耐性の合計値×**36.6%**+会心の値×**134.3%**のダメージを与える。その後、戦闘状態が継続する間、次回以降の速斬りは**0.5**秒間隔でダメージが上昇し、1回目の速斬りダメージ×**100％**ずつ加算されていく(この加算は最大**30**回まで)。1回目の速斬りダメージが複数発生した場合は、各攻撃が最初に与えたダメージのうちの最大値を基準にする。また、速斬りダメージは連携ダメージと見なされる。物理/炎属性武器のいずれかを1つ以上装備している場合、霜刃ダメージが**1.3**倍まで UPする。なお、霜刃ダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない。**",
+				"description": "N/A"
+			},
+			{
+				"title": "ヴィントシュティレをバックグラウンドに切り替えたとき、バーストダメージを1回与える。敵が急凍状態の場合はこれを解除し、バックグラウンドダメージを**12**秒間与える。**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**高圧貫通**",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると**45**秒間、高圧貫通状態にする。この状態下でターゲットが受ける氷ダメージおよび雷ダメージ+**10%**、チームプレイ時は追加で+**15%**(ターゲットが重傷状態の場合、重傷状態から高圧貫通状態に置換される。くわえて、高圧貫通状態下では重傷状態にならない)。また、高圧貫通状態のターゲットが氷属性攻撃を受けると**2**秒間凍結状態になり、雷属性攻撃を受けるとターゲットのバフ効果がクリアされる。同一ターゲットに対し**15**秒ごとに最大**1**回まで発動可能。"
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "**スキル-フロストリンク**の発動後、自身は最大HP×**60%**のシールドを獲得する。**30**秒間持続。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**16%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "**連携スキル-チルストライク**を付与する攻撃がターゲットに命中するとき、追加で**チルストライク**のスタック数×攻撃力×**40%**のダメージを与える。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**32%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "**連携スキル-アイスロック**状態の持続時間が**6**まで UPする。さらに、**スキル-急凍**状態になったターゲットの攻撃力ダウン効果が**1000%**まで UPする。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "**スキル-フロストリンク**の発動後、自身は敵の氷耐性を**15%**無視する効果を獲得する(無視する属性耐性の合計値はそれぞれ**50%**を超えない)。さらに、最終ダメージ+**14%**。**40**秒間持続。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "アイスストライク",
+					"description": "地上にいる時に通常攻撃を行うと、6回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージとノックバック。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>6</>スタック付与\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージとノックバック。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>6</>スタック付与\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージとノックバック。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>6</>スタック付与\r\n4回目：最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージとノックバック。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>14</>スタック付与\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージとノックバック。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>10</>スタック付与\r\n6回目：攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>のダメージとノックダウン。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>20</>スタック付与",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_melee.webp",
+					"id": "GA_FPlayerLoslynMelee_Melee"
+				},
+				{
+					"name": "フライング・アンカー",
+					"description": "滞空時に通常攻撃を行うと、スタミナを消費して空中で6回連続攻撃ができる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>6</>スタック付与\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>6</>スタック付与\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>6</>スタック付与\r\n4回目：攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>14</>スタック付与\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>10</>スタック付与\r\n6回目：攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>のダメージとノックダウン。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>20</>スタック付与",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_airattack.webp",
+					"id": "GA_FPlayerLoslynMelee_AirAttack"
+				},
+				{
+					"name": "ノースウインド",
+					"description": "地上での通常攻撃時、1～4回目で通常攻撃を長押しするとノースウインドを発動できる。\r\nヴィントシュティレを振り回して氷の旋風を巻き起こし、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>15</>スタック付与する。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_branch.webp",
+					"id": "GA_FPlayerLoslynMelee_Branch"
+				},
+				{
+					"name": "スノーハリケーン",
+					"description": "地上にいる時、通常攻撃を長押しするとスノーハリケーンを発動できる。\r\nスタミナを消費しながらヴィントシュティレに沿って自身を回転させて攻撃し、命中するごとに付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_powerattack.webp",
+					"id": "GA_FPlayerLoslynMelee_PowerAttack"
+				},
+				{
+					"name": "スカイフォール・アンカー",
+					"description": "滞空時に通常攻撃を長押し(敵ターゲットがいるときにタップ)、またはクライミング時、反転ジャンプ攻撃時、ジェットパック使用時に通常攻撃をするとスカイフォール・アンカーを発動できる。\r\n空中から落下して着地するまでの間、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを命中するたびに与える。さらに着地後、付近のターゲットに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>8</>スタック付与する。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_jumpattack.webp",
+					"id": "GA_FPlayerLoslynMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "回避",
+					"description": "ジャスト回避を成功させると幻想タイムが発動し、一定範囲内にいるターゲットの行動速度が低下する。回避中は硬直効果を無効化する。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerLoslynEvade_Evade"
+				},
+				{
+					"name": "ロンド・オブ・アンカー",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、ロンド・オブ・アンカーを発動できる。前方のターゲットに最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。また、この攻撃が命中するとターゲットの<shuzhi>連携スキル-アイスロック</>状態を解除し、同時に攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを追加で与える。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>15</>スタック付与する。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_fevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "メテオブリザード",
+					"description": "回避後すぐに通常攻撃を行うとメテオブリザードを発動できる。前方のターゲットに最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。また、この攻撃が命中するとターゲットの<shuzhi>連携スキル-アイスロック</>状態を解除し、同時に攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを追加で与える。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>10</>スタック付与する。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_bevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "フロストリンク",
+					"description": "ヴィントシュティレの両端を振って別々に攻撃し、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。<shuzhi>連携スキル-ヘルフリージング</>状態のとき、チルストライクを<shuzhi>52</>スタック付与する。クールダウン<shuzhi>30</>秒(クールダウンクリア、リセット、変化の影響を受けない)。スキル発動時、<shuzhi>20</>秒間の不屈効果を獲得する。\r\n攻撃が命中したターゲットに<shuzhi>15</>秒間の急凍状態を付与し、攻撃力を<shuzhi>5%</>減少させる。",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_skill.webp",
+					"id": "GA_FPlayerLoslynSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "フリージング・ストライク",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。ヴィントシュティレを前方に投げ、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。スキル発動中、被ダメージ無効が<shuzhi>1.5</>秒間持続する(トップリーグでは無効)。\r\nフリージング・ストライクを発動すると、ヘルフリージング状態になる。<shuzhi>14</>秒間持続。これにより、<shuzhi>ヴィントシュティレ</>による特定の攻撃がターゲットに命中するとチルストライク﻿を一定数付与する。最大<shuzhi>100</>スタックまで可能。最大スタックに達するとスタック数はリセットされ、ターゲットを<shuzhi>4</>秒間アイスロック状態にする(同時に<shuzhi>強制凍結</>にする、<shuzhi>強制凍結</>はボスには無効)。\r\nさらに攻撃が命中してチルストライク﻿を付与すると、プレイヤーのHPを最大HP×<shuzhi>3%</>回復する。",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_changeskill.webp",
+					"id": "GA_FPlayerLoslynChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "出勤タイム",
+					"description": "治安管理局は私服勤務中。もし知り合いの警察官を偶然見かけた場合は、勤務の邪魔にならないように気を付けよう",
+					"rarity": 5,
+					"source": "イベントで獲得",
+					"simulacrumId": "imitation_58",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_58"
+				},
+				"weapon": {
+					"name": "クラレヴェーレ",
+					"description": "「ヴィントシュティレ」の改良型レプリカ。より軽量で持ち運びやすくなっており、外勤での携帯に適している",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_loslyn_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"ガチャイベント「出勤タイム」で獲得"
+					],
+					"id": "imitation_fashion_58_w"
+				}
+			}
+		],
+		"version": "4.0",
+		"limited": true,
+		"id": "loslyn_ice"
+	},
 	"suspension_thunder": {
 		"name": "明けの明星",
 		"description": "設計者不明の特製浮遊レールガン。プロトタイプの設計図は既に失われている。内部には独特の蓄電システムが備えられ、一旦壊れると修復は難しい。ただし、ベンジス重工のコバルトならできるようだ",
@@ -10057,7 +10473,7 @@
 		"effects": [
 			{
 				"title": "専用",
-				"description": "シャドーウィーブをその他の武器と組み合わせて使用すると、**「武器マスター」**効果が発生する\r\n月下美人の花はランダムにターゲット周囲に出現し、**1-3**秒以内に爆発して**37.5%**の範囲ダメージを与える"
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
@@ -13227,7 +13643,7 @@
 	},
 	"dfishchess_fire": {
 		"name": "陰陽双魚",
-		"description": "古来より陰陽は双極の和を織りなす　",
+		"description": "古来より、陰陽は双極の和を織りなす",
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_DFishChess.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_DFishChess.webp",
@@ -13281,7 +13697,7 @@
 		],
 		"effects": [
 			{
-				"title": "**物理・炎融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(物理/炎属性)、攻撃力パーセンテージ(物理/炎属性)、物理/炎バフ(物理/炎属性)の最高値をそれぞれ参照する。また、この武器属性は物理と炎の両属性と見なされる。**",
+				"title": "**炎・物理融合**：この武器のダメージを計算するとき、全装備の基礎攻撃力(物理/炎属性)、攻撃力パーセンテージ(物理/炎属性)、物理/炎バフ(物理/炎属性)の最高値をそれぞれ参照する。また、この武器属性は物理と炎の両属性と見なされる。**",
 				"description": "N/A"
 			},
 			{
@@ -13443,7 +13859,7 @@
 				"need": "DFishChess_Fire_plasm"
 			},
 			{
-				"description": "**連携スキル-焚陽**1スタックにつき炎ダメージ+**5%**。",
+				"description": "**連携スキル-焚陽**1スタックにつき炎ダメージが**5%**まで UP。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13581,7 +13997,7 @@
 				},
 				{
 					"name": "半目勝負",
-					"description": "<shuzhi>スキル-入神開局</>の持続中に手動で操作すると、もしくは持続時間が終了すると半目勝負(はんもくしょうぶ)が発動する。空から落下し、盤上のすべてのターゲットに攻撃力×<shuzhi>{0}％</>+<shuzhi>{1}</>のダメージを与える。さらに、スキル持続中に消費した<shuzhi>落子無悔</>のスタック数×攻撃力×200%のダメージを追加で与える。その後、双魚は外側に向かって円を描くように泳ぎながら付近のターゲットを押し退け、攻撃力×<shuzhi>{2}%</>のダメージを与える。",
+					"description": "<shuzhi>スキル-入神開局</>の持続中に手動で操作すると、もしくは持続時間が終了すると半目勝負(はんもくしょうぶ)が発動する。空から落下し、盤上のすべてのターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。さらに、スキル持続中に消費した<shuzhi>落子無悔</>のスタック数×攻撃力×200%のダメージを追加で与える。その後、双魚は外側に向かって円を描くように泳ぎながら付近のターゲットを押し退け、攻撃力×<shuzhi>{2}%</>のダメージを与える。",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -13593,7 +14009,7 @@
 			"discharge": [
 				{
 					"name": "明定終局",
-					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。盤上領域を発動し、前方に碁石を<shuzhi>1</>個落下させ、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。スキル発動中、被ダメージ無効が<shuzhi>2.6</>秒間持続する(トップリーグでは無効)。\r\n盤上領域を展開し、毎秒、自身の付近かつ広範囲のターゲットに<shuzhi>400%</>の持続ダメージを与える。盤上領域は<shuzhi>30</>秒間持続(もしくは、戦闘終了から<shuzhi>5</>秒後に消失する)。また、召喚物を1個生成するごとに盤上領域の持続時間+<shuzhi>3</>秒。\r\n<shuzhi>布陣</>：召喚物を1個生成するごとに布陣を<shuzhi>1</>スタック獲得する。また、布陣1スタックにつき、盤上領域内における持続ダメージが攻撃力×<shuzhi>120%</> UPする。最大<shuzhi>8</>スタックまで可能。\r\n<shuzhi>焚陽</>：布陣を獲得するごとに、対応する数の焚陽(ふんよう)を獲得する。焚陽1スタックにつき炎ダメージが追加で+<shuzhi>2%</>。最大<shuzhi>8</>スタックまで可能。\r\n<shuzhi>灼心</>：炎属性武器の連携スキルを発動すると、<shuzhi>8</>秒間の不屈効果を獲得する。",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解消</>する。盤上領域を発動し、前方に碁石を<shuzhi>1</>個落下させ、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。スキル発動中、被ダメージ無効が<shuzhi>1.5</>秒間持続する(トップリーグでは無効)。\r\n盤上領域を展開し、毎秒、自身の付近かつ広範囲のターゲットに<shuzhi>200%</>の持続ダメージを与える。盤上領域は<shuzhi>30</>秒間持続(もしくは、戦闘終了から<shuzhi>5</>秒後に消失する)。また、召喚物を1個生成するごとに盤上領域の持続時間+<shuzhi>3</>秒。\r\n<shuzhi>布陣</>：召喚物を1個生成するごとに布陣を<shuzhi>1</>スタック獲得する。また、布陣1スタックにつき、盤上領域内における持続ダメージが攻撃力×<shuzhi>50%</> UPする。最大<shuzhi>8</>スタックまで可能。\r\n<shuzhi>焚陽</>：布陣を獲得するごとに、対応する数の焚陽(ふんよう)を獲得する。焚陽1スタックにつき炎ダメージが追加で+<shuzhi>2.5%</>。最大<shuzhi>8</>スタックまで可能。\r\n<shuzhi>灼心</>：炎属性武器の連携スキルを発動すると、<shuzhi>8</>秒間の不屈効果を獲得する。",
 					"tags": [
 						"Damage"
 					],
@@ -13650,7 +14066,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"イベント「グリッド追跡」で獲得"
+						"イベント「ネット追跡」で獲得"
 					],
 					"id": "imitation_fashion_57_w_2"
 				}
@@ -16938,7 +17354,7 @@
 			}
 		],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "umbrella_fire"
 	},
 	"yoyo_ice": {
@@ -17312,7 +17728,7 @@
 		},
 		"fashion": [],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "yoyo_ice"
 	},
 	"yulan_ice": {

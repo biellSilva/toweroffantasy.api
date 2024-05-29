@@ -1791,7 +1791,7 @@
 		},
 		"fashion": [],
 		"version": "2.5",
-		"limited": true,
+		"limited": false,
 		"id": "chainsaw_physic"
 	},
 	"hammer_ice": {
@@ -5764,7 +5764,7 @@
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Cube_Fire01.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Cube_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/ling.webp"
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/lingboling.webp"
 		},
 		"rarity": 5,
 		"element": "Flame",
@@ -8484,6 +8484,422 @@
 		"limited": true,
 		"id": "linghan_ice"
 	},
+	"loslyn_ice": {
+		"name": "Aguas Tranquilas",
+		"description": "El ancla fue removida del viejo barco de su abuelo \"Aguas Tranquilas\". Fue modificada y luego se convirtió en el arma de Roslyn.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_luosilin.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_luosilin.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/luosilin.webp"
+		},
+		"rarity": 5,
+		"element": "ThunderIce",
+		"type": "Loslyn",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Loslyn_ice_ssr_star",
+		"avatar": "imitation_58",
+		"stats": [
+			{
+				"stat": {
+					"name": "Ataque",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "PS",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crít",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Fusión de Escarcha y Electricidad**",
+				"description": "Cuando el arma inflige daño, el daño se calcula según el ATQ base de escarcha/eléctrico más alto equipado, el porcentaje de ATQ de escarcha/eléctrico más alto equipado y el refuerzo de daño de escarcha/eléctrico más alto equipado. El arma se considera tanto de escarcha como eléctrica."
+			},
+			{
+				"title": "**Resonancia de Escarcha**",
+				"description": "Aumenta el ATQ de escarcha en un **15%** y la resistencia a la escarcha en un **25%**. Se activa equipando **2** o más armas de escarcha. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia de Escarcha o Reacción de Escarcha; Resonancia de Escarcha tiene prioridad."
+			},
+			{
+				"title": "**Resonancia Eléctrica**",
+				"description": "Aumenta el ATQ eléctrico en un **15%** y la resistencia al fuego en un **25%**. Se activa al equipar **2** o más armas eléctricas. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia Eléctrica o Reacción Eléctrica; Resonancia Eléctrica tiene prioridad."
+			},
+			{
+				"title": "**Filo de Escarcha: Corte Veloz**",
+				"description": "Cuando **Aguas Tranquilas** está equipada, la habilidad de descarga de cualquier arma infligirá un daño igual al **0.97%** de los PS Máx. del nómada más **73.2%** del ATQ de escarcha más **36.6%** de la suma de todos los tipos de resistencias del nómada más **134.3%** del crítico a los objetivos cercanos. Al estar en combate, el daño del próximo Corte Veloz aumentará **1** vez adicional cada **0.5** seg, hasta un máximo de **30** veces. Cuando existen múltiples instancias de Corte Veloz, se usará el valor inicial más alto para el cálculo. El daño de Corte Veloz cuenta como daño de habilidad de descarga. Si hay 1 arma física/de fuego de cualquier tipo equipada, el daño de Filo de Escarcha aumenta **1.3** veces. Además, este daño no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales."
+			},
+			{
+				"title": "Cuando Aguas Tranquilas se cambia a la ranura secundaria, inflige daño de ráfaga 1 vez. Si un enemigo tiene Ultrafrío, se eliminará este efecto del enemigo para infligir un daño de mano secundaria continuo por **12** seg.**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**Impacto de Fuerza**",
+			"description": "Cuando el arma está totalmente cargada, el siguiente ataque aplica Impacto de Fuerza al enemigo durante **45** seg, lo cual aumenta el daño eléctrico y de escarcha recibidos en un **10%** (y un **15%** adicional en las partidas en equipo). Impacto de Fuerza remplaza el estado grave del objetivo, y los objetivos con Impacto de Fuerza no pueden volverse graves. Los ataques de escarcha congelarán a los objetivos con Impacto de Fuerza durante **2** seg y los ataques eléctricos eliminarán las ventajas de los objetivos con Impacto de Fuerza. Este efecto solo se puede activar **1** vez cada **15** seg en el mismo objetivo."
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "Tras usar **Aura de Enlace de Escarcha**, el nómada recibirá un escudo igual al **60%** de los PS Máx. por **30** seg.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Aumenta el crecimiento de ATQ base del arma actual un **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Si un ataque con **Golpe de Escarcha** impacta a un objetivo, inflige un daño adicional igual a las acumulaciones de **Golpe de Escarcha** multiplicadas por el **40%** del ATQ.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Aumenta el crecimiento de ATQ base del arma actual un **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Aumenta la duración de **Helado** a **6** seg. Aumenta el efecto de reducción de ATQ de los objetivos **Ultrafrío** a **1000%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Tras usar **Aura de Enlace de Escarcha**, el nómada ignorará un **15%** de la resistencia a la escarcha de los objetivos (la resistencia total ignorada de cada elemento no puede superar el **50%**). Además, aumenta el daño final en un **14%** por **40** seg.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Golpe con Ancla Helada",
+					"description": "Mientras estás en el suelo, usa tu ataque normal para lanzar 6 ataques seguidos.\r\nPrimer ataque: inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder al objetivo. Si <shuzhi>Frío Inclemente</>está activo, añade <shuzhi>6</> acumulaciones de Golpe de Escarcha.\r\nSegundo ataque: inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y hace retroceder al objetivo. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>6</> acumulaciones de Golpe de Escarcha.\r\nTercer ataque: inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y hace retroceder al objetivo. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>6</> acumulaciones de Golpe de Escarcha.\r\nCuarto ataque: inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y hace retroceder al objetivo. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>14</> acumulaciones de Golpe de Escarcha.\r\nQuinto ataque: inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y hace retroceder al objetivo. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>10</> acumulaciones de Golpe de Escarcha.\r\nSexto ataque: inflige daño igual a <shuzhi>{10}%</> del ATQ más <shuzhi>{11}</> y derriba al objetivo. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>20</> acumulaciones de Golpe de Escarcha.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_melee.webp",
+					"id": "GA_FPlayerLoslynMelee_Melee"
+				},
+				{
+					"name": "Ancla Voladora",
+					"description": "Mientras estás en el aire, usa el ataque normal para lanzar 6 ataques consecutivos; esto consume resistencia.\r\nPrimer ataque: inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Si <shuzhi>Frío Inclemente</>está activo, añade <shuzhi>6</> acumulaciones de Golpe de Escarcha.\r\nSegundo ataque: inflige daño igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>6</> acumulaciones de Golpe de Escarcha.\r\nTercer ataque: inflige daño igual a <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>6</> acumulaciones de Golpe de Escarcha.\r\nCuarto ataque: inflige daño igual a <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>14</> acumulaciones de Golpe de Escarcha.\r\nQuinto ataque: inflige daño igual a <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>10</> acumulaciones de Golpe de Escarcha.\r\nSexto ataque: inflige daño igual a <shuzhi>{10}%</> del ATQ más <shuzhi>{11}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>20</> acumulaciones de Golpe de Escarcha.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_airattack.webp",
+					"id": "GA_FPlayerLoslynMelee_AirAttack"
+				},
+				{
+					"name": "Viento Quieto del Norte",
+					"description": "Mientras usas el ataque normal en el suelo, pulsa y mantén pulsado el ataque normal entre el primer y cuarto ataque normal para activar Viento Quieto del Norte.\r\nBlande Aguas Tranquilas para crear un torbellino congelante que inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>15</> acumulaciones de Golpe de Escarcha.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_branch.webp",
+					"id": "GA_FPlayerLoslynMelee_Branch"
+				},
+				{
+					"name": "Huracán de Nieve",
+					"description": "Mientras estás en el suelo, pulsa y mantén pulsado el ataque normal para activar Huracán de Nieve.\r\nEl nómada usa a Aguas Tranquilas para hacer un ataque giratorio, lo que consume resistencia e inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos cada vez que reciben un impacto.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_powerattack.webp",
+					"id": "GA_FPlayerLoslynMelee_PowerAttack"
+				},
+				{
+					"name": "Ancla de Caída Celestial",
+					"description": "Pulsa y mantén pulsado el ataque normal mientras estás en el aire (pulsa cuando haya un objetivo disponible), o usa el ataque normal mientras escalas, saltas hacia atrás o utilizas el propulsor para activar Ancla de Caída Celestial.\r\nCae desde el aire. Mientras caes, cada impacto a un enemigo inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Al aterrizar, inflige daño igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> a los objetivos cercanos. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>8</> acumulaciones de Golpe de Escarcha.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_jumpattack.webp",
+					"id": "GA_FPlayerLoslynMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Evasión",
+					"description": "Evade justo antes de recibir un impacto para activar Phantasia, lo que reduce la velocidad de los objetivos dentro del área. Te vuelves inmune a la conmoción mientras evades.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerLoslynEvade_Evade"
+				},
+				{
+					"name": "Ancla de la Ciclicidad",
+					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Ancla de Ciclicidad, la cual inflige un daño de hasta <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos adelante. Asestar un golpe puede romper a un objetivo <shuzhi>Helado</>, lo que inflige un daño adicional igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>15</> acumulaciones de Golpe de Escarcha.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_fevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Meteorito de Anclaje Frío",
+					"description": "Usa tu ataque normal durante el breve periodo tras evadir para activar Meteorito de Anclaje Frío, el cual inflige un daño de hasta <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos adelante. Asestar un golpe puede romper a un objetivo <shuzhi>Helado</>, lo que inflige un daño adicional igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>10</> acumulaciones de Golpe de Escarcha.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_bevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Aura de Enlace de Escarcha",
+					"description": "Blande ambos extremos de Aguas Tranquilas por separado para atacar e infligir un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>52</> acumulaciones de Golpe de Escarcha. Enfriamiento: <shuzhi>30</> seg. No se ve afectado por efectos de eliminación, restablecimiento o alteración de enfriamiento. Al usar la habilidad, obtienes <shuzhi>20</> seg de hipercuerpo.\r\nAplica <shuzhi>15</> seg de Ultrafrío a los objetivos impactados y reduce su ATQ en un <shuzhi>5%</>.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_skill.webp",
+					"id": "GA_FPlayerLoslynSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Golpe Inclemente",
+					"description": "Cuando <red>la carga de arma está completa</> o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y lanza a Aguas Tranquilas hacia adelante para infligir un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Durante este periodo, la inmunidad al daño dura <shuzhi>1.5</> seg (no disponible en la Liga Ápex).\r\nTras usar Golpe Inclemente, activa Frío Inclemente por <shuzhi>14</> seg. El ataque especial de <shuzhi>Aguas Tranquilas</> aplicará la cantidad de acumulaciones de Golpe de Escarcha actual al objetivo impactado. El objetivo no puede tener más de <shuzhi>100</> acumulaciones de Golpe de Escarcha. Al alcanzar el máximo de acumulaciones, el contador se reiniciará y el objetivo quedará Helado por <shuzhi>4</> seg y también quedará <shuzhi>fuertemente congelado</> (<shuzhi>la congelación fuerte</> es ineficaz contra los jefes).\r\nSi un ataque con Golpe de Escarcha impacta a un objetivo, restaura <shuzhi>3%</> de los PS Máx. del nómada.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_changeskill.webp",
+					"id": "GA_FPlayerLoslynChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Atuendo Encubierto",
+					"description": "La operación encubierta de la Seguridad Pública está en marcha. Si reconoces a algún oficial, por favor mantén la discreción y evita interferir con sus deberes.",
+					"rarity": 5,
+					"source": "De los eventos",
+					"simulacrumId": "imitation_58",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_58"
+				},
+				"weapon": {
+					"name": "Olas Claras",
+					"description": "Una réplica mejorada de Aguas Tranquilas. Es más ligera y fácil de llevar, lo que la hace ideal como equipo de campo.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_loslyn_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Se obtiene en el evento gachapon de Atuendo Encubierto"
+					],
+					"id": "imitation_fashion_58_w"
+				}
+			}
+		],
+		"version": "4.0",
+		"limited": true,
+		"id": "loslyn_ice"
+	},
 	"suspension_thunder": {
 		"name": "Venus",
 		"description": "Su diseñador es desconocido. Se perdió el plano del prototipo del Cañón Magnético especial flotante. Contiene un proceso de ahorro eléctrico único en su interior. Es muy difícil de reparar cuando se desgasta, pero Cobalt-B de Tecnología Banges parece ser capaz de hacerlo. ",
@@ -10057,7 +10473,7 @@
 		"effects": [
 			{
 				"title": "Resonancia elemental",
-				"description": "Al emparejar Tejesombras con otras armas, se puede crear el efecto **Maestre de Armas**.\r\nEl epífilo aparecerá alrededor del objetivo de forma aleatoria y explotará dentro de **1 a 3**seg, lo que inflige un **37.5%** de daño de área."
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
@@ -13282,19 +13698,19 @@
 		"effects": [
 			{
 				"title": "**Fusión de Masa y Fuego**",
-				"description": "Cuando el arma inflige daño, dicho daño se calcula usando el ATQ base físico/de fuego equipado más alto, el porcentaje de ATQ físico/de fuego equipado más alto y el refuerzo de daño físico/de fuego equipado más alto; además, el arma se considerará como arma física y de fuego."
+				"description": "Cuando el arma inflige daño, dicho daño se calcula usando el ATQ físico/de fuego base más alto equipado, el porcentaje de ATQ físico/de fuego más alto equipado y el refuerzo de daño físico/de fuego más alto equipado; además, el arma se considera tanto un arma física como de fuego."
 			},
 			{
 				"title": "**Resonancia Física**",
-				"description": "Aumenta el ATQ físico un **15%** y la resistencia física un **25%**. Se activa al equipar **2** o más armas físicas. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia Física o Reacción Física; Resonancia Física tiene prioridad."
+				"description": "Aumenta el ATQ físico en un **15%** y la resistencia física en un **25%**. Se activa al equipar **2** o más armas físicas. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia Física o Reacción Física; Resonancia Física tiene prioridad."
 			},
 			{
 				"title": "**Resonancia de Fuego**",
-				"description": "aumenta tu ATQ de fuego un **15%** y tu resistencia al fuego un **25%**. Se activa equipando **2** o más armas de fuego. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia de Fuego o Reacción al Fuego; Resonancia de Fuego tiene prioridad."
+				"description": "Aumenta el ATQ de fuego en un **15%** y la resistencia al fuego en un **25%**. Se activa al equipar **2** o más armas de fuego. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia de Fuego o Reacción al Fuego; Resonancia de Fuego tiene prioridad."
 			},
 			{
-				"title": "**Nexo Central: En el Campo**",
-				"description": "Al golpear a un objetivo con **Libretorrente**, inflige daño igual al **256%** del ATQ de fuego más **3.6%** de tus PS Máx. más **133%** de la suma de todos los tipos de resistencias del nómada más **4.9%** del crítico a los objetivos cercanos. Se puede activar hasta 1 vez cada **1.5** seg. El daño de Nexo Central cuenta como daño de ataque normal. Si tienes **1** arma de escarcha o electricidad equipada, el daño de Nexo Central se multiplica por **1.3**. Además, este daño no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales."
+				"title": "**Nexo Central: En Campo**",
+				"description": "Al impactar cualquier objetivo con **Libretorrente**, inflige un daño igual al **256%** del ATQ de fuego más el **3.6%** de los PS Máx. del nómada más el **133%** de la suma de todos los tipos de resistencias del nómada más el **4.9%** del crítico a los objetivos cercanos. Puede activarse hasta 1 vez cada **1.5** seg. El daño de Nexo Central cuenta como daño de ataque normal. Si hay **1** arma de escarcha o electricidad equipada, el daño de Nexo Central se multiplica por **1.3**. Además, el daño de Nexo Central no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales."
 			}
 		],
 		"elementEffects": {
@@ -13501,7 +13917,7 @@
 				},
 				{
 					"name": "Repaso del tablero",
-					"description": "Mientras estás en el suelo, mantén presionado el ataque normal para activar Repaso del Tablero. Junta hasta 5 piezas que luego salen disparadas y persiguen a los objetivos. Cada pieza inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
+					"description": "Mientras estás en el suelo, mantén pulsado el ataque normal para activar Repaso del Tablero. Junta hasta 5 piezas que persiguen a los objetivos luego de ser lanzadas. Cada pieza inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>.",
 					"operations": [
 						"Attack",
 						"Hold Attack"
@@ -13570,7 +13986,7 @@
 			"skill": [
 				{
 					"name": "Entra al Juego",
-					"description": "Salta, transforma el campo de batalla en un tablero de Go, y flota en el aire (no podrás moverte). Observa el campo desde arriba por hasta <shuzhi>10</> seg. Durante este periodo, tus ataques se vuelven piezas de Go y tus habilidades son reemplazadas con <shuzhi>Ventaja de Media Pieza</>. Pulsa el tablero de Go para colocar <shuzhi>18</> piezas en orden. Cada una inflige un daño igual al <shuzhi>250%</> del ATQ a todos los objetivos en el tablero y los ralentiza brevemente. Enfriamiento: <shuzhi>40</> seg. No se ve afectado por efectos de eliminación, restablecimiento o alteración de enfriamiento.\r\n<shuzhi>Posicionamiento Decisivo</>: Usar <shuzhi>Repaso del Tablero</>, <shuzhi>Toma de Poder</>, <shuzhi>Caída de Estrellas</> y <shuzhi>Esto Termina Aquí</> o crear una invocación (no solo actualizar una ya existente) otorga acumulaciones de Posicionamiento Decisivo, hasta un máximo de <shuzhi>9</> acumulaciones. Si Posicionamiento Decisivo está activo, cada pieza de Go consume <shuzhi>1</> acumulación para infligir un daño adicional igual al <shuzhi>200%</> del ATQ a todos los objetivos en el tablero. No ganarás acumulaciones mientras esta habilidad esté activa.",
+					"description": "Salta, transforma el campo de batalla en un tablero de Go y flota en el aire (no podrás moverte durante este tiempo). Mira el campo desde arriba por hasta <shuzhi>10</> seg. Durante este periodo, tus ataques se vuelven piezas de Go y tus habilidades son reemplazadas con <shuzhi>Ventaja de Media Pieza</>. Pulsa el tablero de Go para colocar <shuzhi>18</> piezas en orden. Cada una inflige un daño igual al <shuzhi>250%</> del ATQ a todos los objetivos en el tablero y los ralentiza brevemente. Enfriamiento: <shuzhi>40</> seg. No se ve afectado por efectos de eliminación, restablecimiento o alteración de enfriamiento.\r\n<shuzhi>Posicionamiento Decisivo</>: Usar <shuzhi>Repaso del Tablero</>, <shuzhi>Toma de Poder</>, <shuzhi>Caída de Estrellas</> y <shuzhi>Esto Termina Aquí</> o crear una invocación (no solo actualizar una ya existente) otorga acumulaciones de Posicionamiento Decisivo, hasta un máximo de <shuzhi>9</> acumulaciones. Si Posicionamiento Decisivo está activo, cada pieza de Go consume <shuzhi>1</> acumulación para infligir un daño adicional igual al <shuzhi>200%</> del ATQ a todos los objetivos en el tablero. No ganarás acumulaciones mientras esta habilidad esté activa.",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -13593,7 +14009,7 @@
 			"discharge": [
 				{
 					"name": "Esto Termina Aquí",
-					"description": "Cuando la <red>carga de arma está completa</> o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</>. Despliega una zona y coloca <shuzhi>1</> pieza al frente que inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Durante este periodo, el nómada obtiene inmunidad al daño por <shuzhi>2.6</> seg (no disponible en la Liga Ápex).\r\nActiva una zona que inflige <shuzhi>400%</> de daño por seg en un área extensa alrededor del nómada. La zona dura <shuzhi>30</> seg y desaparece <shuzhi>5</> seg luego de salir del combate. Cada invocación extiende la duración de la zona en <shuzhi>3</> seg.\r\n<shuzhi>Despliegue Táctico</>: Cada invocación otorga <shuzhi>1</> acumulación de Despliegue Táctico, la cual aumenta el daño de la zona en un <shuzhi>120%</> del ATQ adicional por seg, hasta <shuzhi>8</> acumulaciones.\r\n<shuzhi>Sol Abrasador</>: Obtener acumulaciones de Despliegue Táctico otorga una cantidad igual de acumulaciones de Sol Abrasador. Cada acumulación aumenta el daño de fuego en un <shuzhi>2%</> adicional, hasta <shuzhi>8</> acumulaciones.\r\n<shuzhi>Núcleo Abrasador</>: Obtén hipercuerpo por <shuzhi>8</> seg al usar la habilidad de descarga de cualquier arma de fuego.",
+					"description": "Cuando la <red>carga de arma está completa</> o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</>. Despliega una zona y coloca <shuzhi>1</> pieza al frente que inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Durante este periodo, el nómada obtiene inmunidad al daño por <shuzhi>1.5</> seg (no disponible en la Liga Ápex).\r\nActiva una zona que inflige<shuzhi>200%</> de daño por seg en un área extensa alrededor del nómada. La zona dura <shuzhi>30</> seg, pero desaparece <shuzhi>5</> seg luego de salir del combate. Cada invocación extiende la duración de la zona en <shuzhi>3</> seg.\r\n<shuzhi>Despliegue Táctico</>: Cada invocación otorga <shuzhi>1</> acumulación de Despliegue Táctico, la cual aumenta el daño de la zona en un <shuzhi>50%</> del ATQ adicional por segundo, hasta <shuzhi>8</> acumulaciones.\r\n<shuzhi>Sol Abrasador</>: Obtener acumulaciones de Despliegue Táctico otorga una cantidad igual de acumulaciones de Sol Abrasador. Cada acumulación aumenta el daño de fuego en un <shuzhi>2.5%</> adicional, hasta <shuzhi>8</> acumulaciones.\r\n<shuzhi>Núcleo Abrasador</>: Obtén hipercuerpo por <shuzhi>8</> seg al usar la habilidad de descarga de cualquier arma de fuego.",
 					"tags": [
 						"Damage"
 					],
@@ -16938,7 +17354,7 @@
 			}
 		],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "umbrella_fire"
 	},
 	"yoyo_ice": {
@@ -17312,7 +17728,7 @@
 		},
 		"fashion": [],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "yoyo_ice"
 	},
 	"yulan_ice": {

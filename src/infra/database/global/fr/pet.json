@@ -2410,5 +2410,221 @@
 			}
 		],
 		"id": "FightPet_11"
+	},
+	"FightPet_12": {
+		"name": "P'tit Nourson",
+		"description": "Un petit ours en peluche curieux portant des oreilles de chat, fabriqué par Zeke comme cadeau pour Shirli. Sous la maladresse de l'extérieur du jouet se cache l'amour sincère d'un frère pour sa sœur.",
+		"PetElementType": "Thunder",
+		"PetPropertyType": "Attack",
+		"PetRarity": 5,
+		"assets": {
+			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_010.webp",
+			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_010.webp",
+			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_010.webp"
+		},
+		"skills": [
+			{
+				"name": "Bombe IEM",
+				"description": "Nourson trouve et lance une bombe IEM, infligeant des dégâts de zone équivalant à **1621% / 1621% / 2431%** de l'ATQ aux ennemis à portée.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act01.webp"
+			},
+			{
+				"name": "Champ électrique à impulsion",
+				"description": "Nourson se met à charger puis inflige des dégâts équivalant à **1361% / 2041% / 2041%** de l'ATQ à tous les ennemis dans une large zone devant lui.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act02.webp"
+			},
+			{
+				"name": "Lance du tonnerre magnétique",
+				"description": "Nourson lance 2 lances du tonnerre sur l'ennemi, chacune infligeant des dégâts équivalant à **876% / 876% / 876%** de l'ATQ, suivies d'une lance du tonnerre énorme infligeant des dégâts équivalant à **876% / 876% / 876%** de l'ATQ.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act03.webp"
+			}
+		],
+		"properties": "Hérite de **12%** de la valeur moyenne des attaques de feu, de givre, de foudre et physiques de base de son maître.\r\n**1**emplacement de module et **5**charges.",
+		"advancements": [
+			{
+				"description": "La succession d'ATQ atteint **18%**.\r\nLes dégâts de Champ électrique à impulsion atteignent **2041%**.\r\n**2**emplacements de module et **8**charges.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 30
+					}
+				]
+			},
+			{
+				"description": "La succession d'ATQ atteint **24%**.\r\nLes dégâts de Bombe IEM atteignent **2431%**.\r\n**3**emplacements de module et **11**charges.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 40
+					}
+				]
+			},
+			{
+				"description": "La succession d'ATQ atteint **30%**.\r\nLes dégâts de chaque coup de Lance du tonnerre magnétique atteignent **1314%** et les dégâts de Lance du tonnerre magnétique énorme atteignent **2146%**.\r\n**4**emplacements de module et **15**charges.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 60
+					}
+				]
+			}
+		],
+		"PetUpgradeItemMap": [
+			{
+				"material": {
+					"name": "Pastille d'essence de Taotie",
+					"description": "Le corps énergétique qui y est attaché aurait été formé à partir de l'énergie résiduelle de l'organisme consommé.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
+					"type": "GIFT",
+					"source": [
+						"Tonnerreville : Vaincre Taotie"
+					],
+					"id": "Item_Jiuyu_Harvest_029"
+				},
+				"exp": 40
+			},
+			{
+				"material": {
+					"name": "Permis de port d'arme",
+					"description": "Un système clé qui accorde l'autorisation d'utiliser des armes.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
+					"type": "GIFT",
+					"source": [
+						"Tonnerreville : Vaincre le traine-misère Longxiang",
+						"Tonnerreville : Vaincre l'armure maudite",
+						"Aquaville : Terrassez les traine-misères Tie Yuan"
+					],
+					"id": "Item_Jiuyu_Harvest_028"
+				},
+				"exp": 20
+			},
+			{
+				"material": {
+					"name": "Armure lamellaire standard",
+					"description": "Une petite armure lamellaire standard qui offre d'assez bonnes performances défensives.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammeville : Vaincre le Traine-misère Queue-de-moineau",
+						"Flammeville : Vaincre le Traine-misère de garde du domaine de Flammeville",
+						"Flammeville : Vaindre le Traine-misère de garde du domaine de Tonnerreville",
+						"Aquaville : terrassez des traine-misères de gardes du domaine d'Aquaville"
+					],
+					"id": "Item_Jiuyu_Harvest_011"
+				},
+				"exp": 20
+			},
+			{
+				"material": {
+					"name": "Plume de Corbeau noir",
+					"description": "Vous avez l'impression d'entendre le sifflement qu'elle émet en fendant le vent lorsque vous la contemplez.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammeville : Vaincre l'Obscurité : Corbeau noir"
+					],
+					"id": "Item_Jiuyu_Harvest_005"
+				},
+				"exp": 10
+			},
+			{
+				"material": {
+					"name": "Armure à écailles de Zhuyan",
+					"description": "Les motifs des écailles révèlent que sa création n'est pas le fruit d'une civilisation ordinaire.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammeville : Vaincre Zhuyan"
+					],
+					"id": "Item_Jiuyu_Harvest_006"
+				},
+				"exp": 10
+			},
+			{
+				"material": {
+					"name": "Pierre grise",
+					"description": "Minerai spécial provenant du domaine9. Matériau essentiel dans la fabrication de certains appareils en alliage.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammeville : Vaincre l'Obscurité : étoilien",
+						"Flammeville : Vaincre l'Obscurité : liocorne",
+						"Flammeville : Vaincre l'Obscurité : soldat",
+						"Flammeville : Vaincre l'Obscurité : chef",
+						"Flammeville : Vaincre l'Obscurité : Molosse de pierre",
+						"Flammeville : Vaincre l'Obscurité : Effraieloup"
+					],
+					"id": "Item_Jiuyu_Harvest_007"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Cristal du ciel",
+					"description": "Minerai spécial provenant du domaine9. Son apparence aussi transparente que le cristal scintille sous les rayons du soleil.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammeville : Vaincre les archaigles"
+					],
+					"id": "Item_Jiuyu_Harvest_009"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Roche des ombres",
+					"description": "Un minerai particulier du domaine 9, dont la texture inhabituelle lui confère une couleur étrange.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammeville : Vaincre les triloups",
+						"Flammeville : Vaincre les antilopailés",
+						"Flammeville : Vaincre les terriblours"
+					],
+					"id": "Item_Jiuyu_Harvest_010"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Essence obscure",
+					"description": "Un cristal formé à partir de l'énergie qui s'échappe des lignes telluriques vers la surface. Affectés par l'environnement, ces cristaux produisent un réseau qui a tendance à refléter davantage la lumière violette, d'où son nom. C'est une source de faible énergie.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammeville : Hauteurs de Chutesprit",
+						"Flammeville : Vaincre le fléau de cauchemar"
+					],
+					"id": "Item_Jiuyu_Mine_01"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Essence de gingembre",
+					"description": "Un cristal formé à partir de l'énergie qui s'échappe des lignes telluriques vers la surface. Facilement affectés par l'environnement, ces cristaux produisent un réseau qui reflète davantage la lumière jaune, d'où son nom. C'est une source d'énergie importante.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
+					"type": "GIFT",
+					"source": [
+						"Flammeville : Hauteurs de Chutesprit",
+						"Flammeville : Vaincre les plumecornes"
+					],
+					"id": "Item_Jiuyu_Mine_02"
+				},
+				"exp": 5
+			}
+		],
+		"id": "FightPet_12"
 	}
 }

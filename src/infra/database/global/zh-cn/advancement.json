@@ -5377,6 +5377,278 @@
 		},
 		"id": "Linghan_ice_ssr_star_6"
 	},
+	"Loslyn_ice_ssr_star_0": {
+		"advancement": "<shuzhi>冰雷融合</>：该武器计算伤害时取装备最高的寒冰/雷电基础攻击，装备最高的寒冰/雷电百分比攻击，装备最高的寒冰/雷电增伤。且该武器能同时视为寒冰元素武器和雷电元素武器。\r\n<shuzhi>寒冰共鸣</>：装备<shuzhi>2</>把及以上寒冰武器触发，提升<shuzhi>15%</>冰攻和<shuzhi>25%</>冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。\r\n<shuzhi>雷电共鸣</>：装备<shuzhi>2</>把及以上雷电武器触发，提升<shuzhi>15%</>雷攻和<shuzhi>25%</>雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。\r\n<shuzhi>霜刃-速切</>：装备<shuzhi>静澜</>时，任意武器连携技对附近目标初始造成<shuzhi>{0}%</>*自身最大生命值+<shuzhi>{1}%</>*冰攻+<shuzhi>{2}%</>*各元素抗性之和+<shuzhi>{3}%</>*暴击值点伤害，战斗状态下每间隔<shuzhi>0.5</>秒，下次速切伤害额外提升<shuzhi>1</>倍，至多提升<shuzhi>30</>次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把物理/火焰武器，则霜刃伤害提升至<shuzhi>1.3</>倍。此外，霜刃伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。\r\n静澜切至后台后，造成一次崩裂伤害,若敌人身上有急冻则清除敌人身上的急冻并对其造成持续<shuzhi>{4}</>秒的后台伤害。",
+		"numbermap": "LoslynEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "LoslynEXChangeWeaponCoefficientMaxHp",
+				"value": 1
+			},
+			{
+				"key": "LoslynEXChangeWeaponCoefficientIceAttack",
+				"value": 1
+			},
+			{
+				"key": "LoslynEXChangeWeaponCoefficientDef",
+				"value": 1
+			},
+			{
+				"key": "LoslynEXChangeWeaponCoefficientCrit",
+				"value": 1
+			},
+			{
+				"key": "LoslynSpecChangeWeaponDotDuration",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 16,
+			"charge": 14
+		},
+		"id": "Loslyn_ice_ssr_star_0"
+	},
+	"Loslyn_ice_ssr_star_1": {
+		"advancement": "释放<shuzhi>技能-霜寒链域</>后获得自身<shuzhi>{0}%</>最大生命值的护盾，持续<shuzhi>{1}</>秒。",
+		"numbermap": "LoslynEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "LoslynShieldMaxHp",
+				"value": 1
+			},
+			{
+				"key": "LoslynShieldDuration",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "Loslyn_ice_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 14
+		},
+		"id": "Loslyn_ice_ssr_star_1"
+	},
+	"Loslyn_ice_ssr_star_2": {
+		"advancement": "当前武器的基础攻击成长+<shuzhi>16%</>",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [],
+		"cost": 2000,
+		"need": "Loslyn_ice_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 14
+		},
+		"id": "Loslyn_ice_ssr_star_2"
+	},
+	"Loslyn_ice_ssr_star_3": {
+		"advancement": "附带<shuzhi>连携-寒袭</>效果的攻击命中目标时，额外造成本次攻击附带的<shuzhi>寒袭</>层数*<shuzhi>{0}%</>攻击力伤害。",
+		"numbermap": "LoslynEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "LoslynFrozenAddStackDmgMult",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "Loslyn_ice_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 14
+		},
+		"id": "Loslyn_ice_ssr_star_3"
+	},
+	"Loslyn_ice_ssr_star_4": {
+		"advancement": "当前武器的基础攻击成长+<shuzhi>32%</>",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [],
+		"cost": 6000,
+		"need": "Loslyn_ice_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 14
+		},
+		"id": "Loslyn_ice_ssr_star_4"
+	},
+	"Loslyn_ice_ssr_star_5": {
+		"advancement": "<shuzhi>连携-冰封</>状态持续时间提升至<shuzhi>{0}</>秒，<shuzhi>技能-急冻</>状态目标攻击力降低效果提升至<shuzhi>{1}%</>。",
+		"numbermap": "LoslynEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "Buff_Loslyn_SpecFrozenL1",
+				"value": 1
+			},
+			{
+				"key": "LoslynSkillDebuffAtkDownL5",
+				"value": -100
+			}
+		],
+		"cost": 9000,
+		"need": "Loslyn_ice_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 14
+		},
+		"id": "Loslyn_ice_ssr_star_5"
+	},
+	"Loslyn_ice_ssr_star_6": {
+		"advancement": "释放<shuzhi>技能-霜寒链域</>后，自身获得无视目标<shuzhi>{0}%</>冰抗效果（所有单个元素无视抗性总值不能超过<shuzhi>50%</>），同时最终伤害提升<shuzhi>{1}%</>，持续<shuzhi>{2}</>秒。",
+		"numbermap": "LoslynEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "Buff_Loslyn_Skill_DmgUp_IgnoreIceDef",
+				"value": 1
+			},
+			{
+				"key": "Buff_Loslyn_Skill_DmgUp",
+				"value": 1
+			},
+			{
+				"key": "Buff_Loslyn_Skill_DmgUp_Duration",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "Loslyn_ice_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 14
+		},
+		"id": "Loslyn_ice_ssr_star_6"
+	},
 	"Suspension_thunder_ssr_star_0": {
 		"advancement": "<shuzhi>雷电共鸣</>：装备<shuzhi>2</>把及以上雷电武器触发，提升<shuzhi>15%</>雷攻和<shuzhi>25%</>雷抗，装备后后台可生效，同类效果不叠加。\r\n<shuzhi>雷电恩赐</>：自身激活恩赐共鸣时，提升全队<shuzhi>5%</>雷攻。",
 		"multiplicators": [
@@ -6276,7 +6548,8 @@
 		"id": "dkatana_ice_ssr_star_6"
 	},
 	"fan_superpower_ssr_star_0": {
-		"advancement": "影织与其他武器搭配时，可构成<shuzhi>“武器大师”</>效果。\r\n昙花会随机出现在目标周围，并在<shuzhi>1-3</>秒内爆炸，造成<shuzhi>37.5%</>范围伤害。",
+		"advancement": "影织与其他武器搭配时，可构成<shuzhi>“武器大师”</>效果。\r\n昙花会随机出现在目标周围，并在<shuzhi>1-3</>秒内爆炸，造成<shuzhi>37.5%</>范围伤害。<shuzhi>飞花-驻场</>：<shuzhi>织影</>任意攻击命中时，对附近目标造成<shuzhi>{0}%</>*异能攻击+<shuzhi>{1}%</>*自身最大生命值+<shuzhi>{2}%</>*各元素抗性之和+<shuzhi>{3}%</>*暴击值点伤害，每<shuzhi>1.5</>秒至多触发一次，飞花伤害视为普攻伤害，若装备任意<shuzhi>1</>把雷电/寒冰/物理/火焰武器，则飞花伤害提升至<shuzhi>{4}</>倍。此外，飞花伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
+		"numbermap": "FanEffectFigure",
 		"multiplicators": [
 			{
 				"PropName": "CommonAtkAdded",
@@ -6295,7 +6568,28 @@
 				"PropCoefficient": 1
 			}
 		],
-		"numbers": [],
+		"numbers": [
+			{
+				"key": "None",
+				"value": 1
+			},
+			{
+				"key": "None",
+				"value": 1
+			},
+			{
+				"key": "None",
+				"value": 1
+			},
+			{
+				"key": "None",
+				"value": 1
+			},
+			{
+				"key": "None",
+				"value": 1
+			}
+		],
 		"cost": 0,
 		"need": "None",
 		"needamt": null,
@@ -6306,7 +6600,7 @@
 		"id": "fan_superpower_ssr_star_0"
 	},
 	"fan_superpower_ssr_star_1": {
-		"advancement": "普攻命中变为范围伤害。\r\n昙花引爆范围内存在其他昙花时，会使后续的昙花爆炸伤害提高（每个<shuzhi>{0}%</>，最多<shuzhi>{1}%</>）。\r\n<shuzhi>技能“映月之境”</>生成昙花间隔缩短至<shuzhi>0.5</>秒。",
+		"advancement": "普攻命中变为范围伤害。\r\n昙花引爆范围内存在其他昙花时，会使后续的昙花爆炸伤害提高（每个<shuzhi>6%</>，最多<shuzhi>30%</>）。\r\n<shuzhi>技能“映月之境”</>生成昙花间隔缩短至<shuzhi>0.7</>秒。",
 		"numbermap": "FanEffectFigure",
 		"multiplicators": [
 			{
@@ -6376,7 +6670,7 @@
 		"id": "fan_superpower_ssr_star_2"
 	},
 	"fan_superpower_ssr_star_3": {
-		"advancement": "<shuzhi>技能“映月之境”</>生成昙花间隔缩短至<shuzhi>0.3</>秒。\r\n昙花会附着于敌方目标。\r\n<shuzhi>技能“映月之境”</>持续时间延长至<shuzhi>20</>秒。",
+		"advancement": "<shuzhi>技能“映月之境”</>生成昙花间隔缩短至<shuzhi>0.6</>秒。\r\n昙花会附着于敌方目标。\r\n<shuzhi>技能“映月之境”</>持续时间延长至<shuzhi>12</>秒。释放<shuzhi>技能“映月之境”</>后增伤<shuzhi>{0}%</>，持续<shuzhi>{1}</>秒。",
 		"multiplicators": [
 			{
 				"PropName": "CommonAtkAdded",
@@ -6436,7 +6730,7 @@
 		"id": "fan_superpower_ssr_star_4"
 	},
 	"fan_superpower_ssr_star_5": {
-		"advancement": "自身处于<shuzhi>技能“映月之境”</>内时，每秒获得<shuzhi>30</>点武器充能值，同时连携技造成伤害提高<shuzhi>{0}%</>。",
+		"advancement": "自身处于<shuzhi>技能“映月之境”</>内时，所有武器的技能伤害提升<shuzhi>{0}%</>，持续<shuzhi>{1}</>秒。",
 		"numbermap": "FanEffectFigure",
 		"multiplicators": [
 			{
@@ -7332,7 +7626,7 @@
 		"id": "AyanamiRei_thunder_ssr_star_6"
 	},
 	"DFishChess_fire_ssr_star_0": {
-		"advancement": "<shuzhi>物火融合</>：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。\r\n<shuzhi>物理共鸣</>：装备<shuzhi>2</>把及以上物理武器触发，提升<shuzhi>15%</>物攻和<shuzhi>25%</>物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n<shuzhi>火焰共鸣</>：装备<shuzhi>2</>把及以上火焰武器触发，提升<shuzhi>15%</>火攻和<shuzhi>25%</>火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n<shuzhi>天元-驻场</>：<shuzhi>纵横</>任意攻击命中时，对附近目标造成<shuzhi>{0}%</>*火攻+<shuzhi>{1}%</>*自身最大生命值+<shuzhi>{2}%</>*各元素抗性之和+<shuzhi>{3}%</>*暴击值点伤害，每<shuzhi>1.5</>秒至多触发一次，天元伤害视为普攻伤害，若装备任意<shuzhi>1</>把寒冰/雷电武器，则天元伤害提升至<shuzhi>{4}</>倍。此外，天元伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
+		"advancement": "<shuzhi>火物融合</>：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。\r\n<shuzhi>物理共鸣</>：装备<shuzhi>2</>把及以上物理武器触发，提升<shuzhi>15%</>物攻和<shuzhi>25%</>物抗，装备后后台可生效（多个物理共鸣/物理反应不叠加，优先生效物理共鸣）。\r\n<shuzhi>火焰共鸣</>：装备<shuzhi>2</>把及以上火焰武器触发，提升<shuzhi>15%</>火攻和<shuzhi>25%</>火抗，装备后后台可生效（多个火焰共鸣/火焰反应不叠加，优先生效火焰共鸣）。\r\n<shuzhi>天元-驻场</>：<shuzhi>纵横</>任意攻击命中时，对附近目标造成<shuzhi>{0}%</>*火攻+<shuzhi>{1}%</>*自身最大生命值+<shuzhi>{2}%</>*各元素抗性之和+<shuzhi>{3}%</>*暴击值点伤害，每<shuzhi>1.5</>秒至多触发一次，天元伤害视为普攻伤害，若装备任意<shuzhi>1</>把寒冰/雷电武器，则天元伤害提升至<shuzhi>{4}</>倍。此外，天元伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。",
 		"numbermap": "DFishChessEffectFigure",
 		"multiplicators": [
 			{

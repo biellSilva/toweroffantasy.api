@@ -1791,7 +1791,7 @@
 		},
 		"fashion": [],
 		"version": "2.5",
-		"limited": true,
+		"limited": false,
 		"id": "chainsaw_physic"
 	},
 	"hammer_ice": {
@@ -5764,7 +5764,7 @@
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Cube_Fire01.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Cube_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/ling.webp"
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/lingboling.webp"
 		},
 		"rarity": 5,
 		"element": "Flame",
@@ -8484,6 +8484,422 @@
 		"limited": true,
 		"id": "linghan_ice"
 	},
+	"loslyn_ice": {
+		"name": "Stille Wasser",
+		"description": "Der Anker des alten Schiffs von Roslyns Großvater, die „Stille Wasser“. Er wurde modifiziert und später zu ihrer Waffe.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_luosilin.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_luosilin.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/luosilin.webp"
+		},
+		"rarity": 5,
+		"element": "ThunderIce",
+		"type": "Loslyn",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Loslyn_ice_ssr_star",
+		"avatar": "imitation_58",
+		"stats": [
+			{
+				"stat": {
+					"name": "Angriff",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "LP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Krit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Frost- und Voltfusion**",
+				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Frost-/Volt-Basis-ANG, des höchsten ausgerüsteten Frost-/Volt-ANG-Prozentwerts und des höchsten ausgerüsteten Frost-/Volt-Schadensbonus berechnet, und die Waffe gilt sowohl als Frost- als auch als Voltwaffe."
+			},
+			{
+				"title": "**Frostresonanz**",
+				"description": "Erhöht den Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird."
+			},
+			{
+				"title": "**Voltresonanz**",
+				"description": "Erhöht den Volt-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird."
+			},
+			{
+				"title": "**Frostschneide: Schneller Hieb**",
+				"description": "Wenn **Stille Wasser** ausgerüstet ist, fügen Entladungsfähigkeiten beliebiger Waffen Zielen in der Nähe Schaden in Höhe von **0.97%** der max. LP des Wanderers + **73.2%** des Frost-ANG + **36.6%** der Summe aller Widerstandsarten des Wanderers + **134.3%** des krit. Schadens zu. Nach Kampfbeginn wird der Schaden des nächsten Einsatzes von „Schneller Hieb“ alle **0,5**Sek. zusätzlich um das **1**-fache erhöht, bis zu einem Maximum von **30**-mal. Falls „Schneller Hieb“ mehrmals Schaden verursacht, wird der höchste anfängliche Wert für die Berechnung verwendet. Der Schaden von „Schneller Hieb“ zählt als Entladungsfähigkeitsschaden. Wenn 1 physische/Flammenwaffe jeglicher Art ausgerüstet ist, wird der Schaden von „Frostschneide“ um das **1,3**-fache erhöht. Außerdem wird der Schaden von „Frostschneide“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und er löst keine zusätzlichen Angriffseffekte aus."
+			},
+			{
+				"title": "Wenn Stille Wasser in den Nebenhand-Slot wechselt, wird 1-mal Burst-Schaden verursacht. Wenn ein Gegner von „Blitzeinfrieren“ betroffen ist, entfernt Stille Wasser das „Blitzeinfrieren“ vom Gegner und verursacht für **12**Sek. kontinuierlichen Nebenhand-Schaden.**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**Kraftaufprall**",
+			"description": "Wenn die Waffe voll geladen ist, fügt der nächste Angriff dem Gegner für **45**Sek. „Kraftaufprall“ zu, wodurch sein erlittener Frost- und Voltschaden um **10%** erhöht wird (und um weitere **15%** im Teamspiel). Kraftaufprall ersetzt den Verwunden-Status des Ziels, und Ziele mit Kraftaufprall können nicht verwundet werden. Frostangriffe frieren Ziele mit Kraftaufprall für **2**Sek. ein und Voltangriffe entfernen die Buffs von Zielen mit Kraftaufprall. Kann **1**-mal alle **15**Sek. auf dem gleichen Ziel ausgelöst werden."
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "Der Wanderer erhält nach der Verwendung von **Frostkettenaura** für **30**Sek. einen Schild in Höhe von **60%** der max. LP.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Wenn ein Angriff mit **Eishieb** ein Ziel trifft, wird zusätzlich Schaden in Höhe der Anzahl der **Eishieb**-Stapel × **40%** des ANG verursacht.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Erhöht die Dauer von **Vereisung** auf **6**Sek. Erhöht den Effekt der ANG-Reduktion auf von **Vereisung** betroffenen Zielen auf **1000%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Der Wanderer ignoriert nach Verwendung von **Frostkettenaura** **15%** des Frostwiderstands der Ziele (der insgesamt ignorierte Widerstand jedes Elements kann **50%** nicht übersteigen.) Außerdem wird der verursachte Endschaden für **40**Sek. um **14%** erhöht.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Vereisungsanker-Schlag",
+					"description": "Verwende am Boden den normalen Angriff, um 6 Angriffe hintereinander auszuführen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel zurück. Während <shuzhi>Bittere Kälte</> werden <shuzhi>6</> Stapel „Eishieb“ hinzugefügt.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und stößt das Ziel zurück. Während <shuzhi>Bittere Kälte</> werden <shuzhi>6</> Stapel „Eishieb“ hinzugefügt.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und stößt das Ziel zurück. Während <shuzhi>Bittere Kälte</> werden <shuzhi>6</> Stapel „Eishieb“ hinzugefügt.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und stößt das Ziel zurück. Während <shuzhi>Bittere Kälte</> werden <shuzhi>14</> Stapel „Eishieb“ hinzugefügt.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und stößt das Ziel zurück. Während <shuzhi>Bittere Kälte</> werden <shuzhi>10</> Stapel „Eishieb“ hinzugefügt.\r\nSechster Angriff: Verursacht Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</> und bringt das Ziel zu Fall. Während <shuzhi>Bittere Kälte</> werden <shuzhi>20</> Stapel „Eishieb“ hinzugefügt.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_melee.webp",
+					"id": "GA_FPlayerLoslynMelee_Melee"
+				},
+				{
+					"name": "Fliegender Anker",
+					"description": "Verwende in der Luft den normalen Angriff, um 6 Angriffe hintereinander in der Luft auszuführen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</>. Während <shuzhi>Bittere Kälte</> werden <shuzhi>6</> Stapel „Eishieb“ hinzugefügt.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>. Während <shuzhi>Bittere Kälte</> werden <shuzhi>6</> Stapel „Eishieb“ hinzugefügt.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</>. Während <shuzhi>Bittere Kälte</> werden <shuzhi>6</> Stapel „Eishieb“ hinzugefügt.\r\nVierter Angriff: Verursacht Schaden in Höhe von <shuzhi>{6}%</> des ANG + <shuzhi>{7}</>. Während <shuzhi>Bittere Kälte</> werden <shuzhi>14</> Stapel „Eishieb“ hinzugefügt.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</>. Während <shuzhi>Bittere Kälte</> werden <shuzhi>10</> Stapel „Eishieb“ hinzugefügt.\r\nSechster Angriff: Verursacht Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</>. Während <shuzhi>Bittere Kälte</> werden <shuzhi>20</> Stapel „Eishieb“ hinzugefügt.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_airattack.webp",
+					"id": "GA_FPlayerLoslynMelee_AirAttack"
+				},
+				{
+					"name": "Stiller Nordwind",
+					"description": "Tippe und halte während normaler Angriffe auf dem Boden den normalen Angriff beim Verwenden des ersten bis vierten normalen Angriffs gedrückt, um „Stiller Nordwind“ auszulösen.\r\nWirbelt Stille Wasser herum, um einen eisigen Wirbelsturm zu erzeugen, der Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Während <shuzhi>Bittere Kälte</> werden <shuzhi>15</> Stapel „Eishieb“ hinzugefügt.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_branch.webp",
+					"id": "GA_FPlayerLoslynMelee_Branch"
+				},
+				{
+					"name": "Schneewirbelsturm",
+					"description": "Tippe und halte den normalen Angriff auf dem Boden, um „Schneewirbelsturm“ auszulösen.\r\nDer Wanderer folgt Stille Wasser und führt einen Wirbelangriff aus, wobei Ausdauer verbraucht wird. Fügt Zielen in der Nähe mit jedem Treffer Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_powerattack.webp",
+					"id": "GA_FPlayerLoslynMelee_PowerAttack"
+				},
+				{
+					"name": "Himmelssturz-Anker",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist (oder tippe, wenn ein Ziel verfügbar ist), oder setze einen normalen Angriff ein, während du kletterst, rückwärts springst oder das Jetpack benutzt, um „Himmelsanker“ auszulösen.\r\nStürzt aus der Luft herunter. Bei der Landung fügen Treffer Gegnern Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Nach der Landung erleiden Ziele in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>. Während <shuzhi>Bittere Kälte</> werden <shuzhi>8</> Stapel „Eishieb“ hinzugefügt.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_jumpattack.webp",
+					"id": "GA_FPlayerLoslynMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Ausweichen",
+					"description": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerLoslynEvade_Evade"
+				},
+				{
+					"name": "Zyklischer Anker",
+					"description": "Verwende zum Auslösen von „Ankerpirouette“ während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Pfeiltaste), um Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen. Treffer können den <shuzhi>Vereisung</>-Effekt von Zielen durchbrechen und zusätzlichen Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursachen. Während <shuzhi>Bittere Kälte</> werden <shuzhi>15</> Stapel „Eishieb“ hinzugefügt.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_fevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Eisanker-Meteor",
+					"description": "Verwende zum Auslösen von „Frostankermeteor“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, um Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen. Treffer können den <shuzhi>Vereisung</>-Effekt von Zielen durchbrechen und zusätzlichen Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursachen. Während <shuzhi>Bittere Kälte</> werden <shuzhi>10</> Stapel „Eishieb“ hinzugefügt.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_bevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Frostkettenaura",
+					"description": "Wirbelt beide Enden von Stille Wasser herum, um damit getrennt voneinander anzugreifen, wobei Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zugefügt wird. Während <shuzhi>Bittere Kälte</> werden <shuzhi>52</> Stapel „Eishieb“ hinzugefügt. Abklingzeit: <shuzhi>30</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst. Gewährt bei Verwendung der Fähigkeit für <shuzhi>20</> Sek. „Hyperkörper“.\r\nBelegt getroffene Ziele für <shuzhi>15</> Sek. mit „Blitzeinfrieren“ und verringert ihren ANG um <shuzhi>5%</>.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_skill.webp",
+					"id": "GA_FPlayerLoslynSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Bitterkalter Schlag",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und Stille Wasser nach vorne geschleudert. Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).\r\nNach der Verwendung von „Bitterkalter Schlag“ wird für <shuzhi>14</> Sek. „Bittere Kälte“ aktiviert. Der Spezialangriff von <shuzhi>Stille Wasser</> fügt dem getroffenen Ziel die aktuelle Stapelanzahl von „Eishieb“ zu. Die maximale Anzahl „Eishieb“-Stapel beträgt <shuzhi>100</>. Wenn das Maximum an Stapeln erreicht wurde, wird die Stapelanzahl zurückgesetzt und das Ziel für <shuzhi>4</> Sek. mit „Vereisung“ und einem <shuzhi>starken Einfrieren-Effekt</> belegt (<shuzhi>starkes Einfrieren</> ist unwirksam gegen Bosse).\r\nWenn ein Angriff mit „Eishieb“ ein Ziel trifft, werden <shuzhi>3%</> der max. LP des Wanderers wiederhergestellt.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_changeskill.webp",
+					"id": "GA_FPlayerLoslynChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Undercover-Outfit",
+					"description": "Die verdeckten Ermittlungen der öffentlichen Sicherheit laufen noch. Solltest du Kommissare erkennen, wahre bitte die Diskretion und störe sie nicht bei der Arbeit.",
+					"rarity": 5,
+					"source": "Aus Events",
+					"simulacrumId": "imitation_58",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_58"
+				},
+				"weapon": {
+					"name": "Sanfte Wellen",
+					"description": "Eine verbesserte Nachbildung von „Stille Wasser“. Es ist leichter und handlicher und eignet sich damit für den Einsatz im Feld.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_loslyn_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Erhältlich im „Undercover-Outfit“-Gashapon-Event."
+					],
+					"id": "imitation_fashion_58_w"
+				}
+			}
+		],
+		"version": "4.0",
+		"limited": true,
+		"id": "loslyn_ice"
+	},
 	"suspension_thunder": {
 		"name": "Venus",
 		"description": "Sein Entwickler ist unbekannt und die Prototyp-Blaupause des EM-Schwebeblasters ist verloren gegangen. Er enthält in seinem Inneren einzigartige elektrische Speicherprozesse. Es ist außerordentlich aufwendig, ihn zu reparieren, wenn er verschlissen ist, aber Cobalt-B von Banges Tech scheint dazu in der Lage zu sein. ",
@@ -10057,7 +10473,7 @@
 		"effects": [
 			{
 				"title": "Elementarresonanz",
-				"description": "Die Kombination von „Schattenweben“ mit anderen Waffen kann den Effekt **Waffenmeister** erzeugen.\r\nEpiphyllum erscheint zufällig beim Ziel und explodiert innerhalb von **1–3** Sek. und verursacht dabei **37.5%** Flächenschaden."
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
@@ -13281,7 +13697,7 @@
 		],
 		"effects": [
 			{
-				"title": "**Masse- und Flammenfusion**",
+				"title": "**Flammen- und Massefusion**",
 				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten physischen/Flammen-Basis-ANG, des höchsten ausgerüsteten physischen/Flammen-ANG-Prozentwerts und des höchsten ausgerüsteten physischen/Flammenschaden-Bonus berechnet, und die Waffe gilt sowohl als physische als auch als Flammenwaffe."
 			},
 			{
@@ -13294,7 +13710,7 @@
 			},
 			{
 				"title": "**Zentralnexus: Auf dem Feld**",
-				"description": "Beim Treffen eines Ziels mit **Dualismus** wird Zielen in der Nähe Schaden in Höhe von **256%** des Flammen-ANG + **3.6%** der max. LP + **133%** der Summe aller Widerstandsarten des Wanderers + **4.9%** des krit. Schadens zugefügt. Kann 1-mal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Zentralnexus“ zählt als normaler Angriffsschaden. Wenn **1** beliebige Frost- oder Voltwaffe ausgerüstet ist, wird der Schaden von „Zentralnexus“ mit **1.3** multipliziert. Außerdem wird der Schaden von „Zentralnexus“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+				"description": "Beim Treffen eines Ziels mit **Dualismus** wird Zielen in der Nähe Schaden in Höhe von **256%** des Flammen-ANG + **3.6%** der max. LP des Wanderers + **133%** der Summe aller Widerstandsarten des Wanderers + **4.9%** des krit. Schadens zugefügt. Kann 1-mal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Zentralnexus“ zählt als normaler Angriffsschaden. Wenn **1** beliebige Frost- oder Voltwaffe ausgerüstet ist, wird der Schaden von „Zentralnexus“ mit **1.3** multipliziert. Außerdem wird der Schaden von „Zentralnexus“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
 			}
 		],
 		"elementEffects": {
@@ -13377,7 +13793,7 @@
 				"need": "DFishChess_Fire_plasm"
 			},
 			{
-				"description": "Wenn **Dualismus** ausgerüstet ist, wird **15%** des Flammenwiderstands der Ziele in der Zone ignoriert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Der insgesamt ignorierte Widerstand jedes Elements kann 50% nicht übersteigen.",
+				"description": "Wenn **Freistil** ausgerüstet ist, wird **15%** des Flammenwiderstands der Ziele in der Zone ignoriert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Der insgesamt ignorierte Widerstand jedes Elements kann 50% nicht übersteigen.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13501,7 +13917,7 @@
 				},
 				{
 					"name": "Spielbrett prüfen",
-					"description": "Halte den normalen Angriff auf dem Boden, um „Spielbrett prüfen“ zu aktivieren. Sammelt bis zu 5 Figuren an, die fortgeschleudert werden und Ziele verfolgen, und jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursachen.",
+					"description": "Halte den normalen Angriff auf dem Boden, um „Spielbrett prüfen“ zu aktivieren. Sammelt bis zu 5 Spielsteine an, die Ziele verfolgen, nachdem die fortgeschleudert wurden, und jeweils Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursachen.",
 					"operations": [
 						"Attack",
 						"Hold Attack"
@@ -13541,7 +13957,7 @@
 				},
 				{
 					"name": "Vorteil nutzen",
-					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (tippe vor dem Ausweichen auf eine Pfeiltaste), um <shuzhi>1</> schwarzen Spielstein vor dir zu platzieren. Der Spielstein zieht Ziele in der Nähe kurz heran und verlangsamt sie, was Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (tippe vor dem Ausweichen auf eine Pfeiltaste), um <shuzhi>1</> schwarze Figur vor dir zu platzieren. Die Figur zieht Ziele in der Nähe kurz heran und verlangsamt sie, was Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
 					"operations": [
 						"Movement",
 						"Dash",
@@ -13570,7 +13986,7 @@
 			"skill": [
 				{
 					"name": "Komm ins Spiel",
-					"description": "Springt und schwebt in der Luft (der Wanderer ist währenddessen bewegungsunfähig) und verwandelt das Schlachtfeld in ein Go-Brett. Gewährt für <shuzhi>10</> Sek. eine Sicht von oben. Währenddessen werden Angriffe mit Spielsteinen und Fähigkeiten durch <shuzhi>Spielstein-Vorteil</> ersetzt. Tippe auf das Go-Brett, um <shuzhi>18</> Spielsteine aufzustellen, die allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>250%</> des ANG zufügen und sie kurz verlangsamen. Abklingzeit: <shuzhi>40</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.\r\n<shuzhi>Entscheidende Aufstellung</>: Die Verwendung von <shuzhi>Spielbrett prüfen</>, <shuzhi>Vorteil nutzen</>, <shuzhi>Sternenfall</> und <shuzhi>Es endet hier</> oder das Erzeugen neuer Herbeirufungen (aber nicht das Auffrischen existierender) gewährt „Entscheidende Aufstellung“-Stapel. Bis zu <shuzhi>9</>-mal stapelbar. Während „Entscheidende Aufstellung“ aktiv ist, verbraucht jeder Spielstein <shuzhi>1</> Stapel, um allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>200%</> des ANG zusätzlich zuzufügen. Während die Fähigkeit aktiv ist, können keine Stapel erhalten werden.",
+					"description": "Springt und schwebt in der Luft (der Wanderer ist währenddessen bewegungsunfähig) und verwandelt das Schlachtfeld in ein Go-Brett. Gewährt für bis zu <shuzhi>10</> Sek. eine Sicht von oben. Währenddessen werden Angriffe mit Spielsteinen und Fähigkeiten durch <shuzhi>Spielstein-Vorteil</> ersetzt. Tippe auf das Go-Brett, um <shuzhi>18</> Spielsteine aufzustellen, die allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>250%</> des ANG zufügen und sie kurz verlangsamen. Abklingzeit: <shuzhi>40</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.\r\n<shuzhi>Entscheidende Aufstellung</>: Die Verwendung von <shuzhi>Spielbrett prüfen</>, <shuzhi>Vorteil nutzen</>, <shuzhi>Sternenfall</> und <shuzhi>Es endet hier</> oder das Erzeugen neuer Herbeirufungen (aber nicht das Auffrischen existierender) gewährt „Entscheidende Aufstellung“-Stapel. Bis zu <shuzhi>9</>-mal stapelbar. Während „Entscheidende Aufstellung“ aktiv ist, verbraucht jeder Spielstein <shuzhi>1</> Stapel, um allen Zielen auf dem Brett Schaden in Höhe von <shuzhi>200%</> des ANG zusätzlich zuzufügen. Während die Fähigkeit aktiv ist, können keine Stapel erhalten werden.",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -13593,7 +14009,7 @@
 			"discharge": [
 				{
 					"name": "Es endet hier",
-					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>. Erzeugt eine Zone und platziert <shuzhi>1</> Figur vor dem Wanderer, die Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Währenddessen ist der Wanderer für <shuzhi>2,6</> Sek. Immun gegen Schaden (nicht in der Apex-Liga verfügbar).\r\nAktiviere die Zone, um <shuzhi>400%</> Schaden pro Sek. in einem großen Bereich um den Wanderer zu verursachen. Die Zone bleibt für <shuzhi>30</> Sek. bestehen oder verschwindet <shuzhi>5</> Sek. nach Kampfende. Jede Herbeirufung verlängert die Dauer der Zone um <shuzhi>3</> Sek.\r\n<shuzhi>Taktische Aufstellung</>: Jede Herbeirufung fügt <shuzhi>1</> Stapel „Taktische Aufstellung“ hinzu und erhöht so den Schaden der Zone um <shuzhi>120%</> des ANG pro Sek. zusätzlich. Bis zu <shuzhi>8</>-mal stapelbar.\r\n<shuzhi>Glühende Sonne</>: „Taktische Aufstellung“-Stapel gewähren außerdem die gleiche Anzahl „Glühende Sonne“-Stapel, die den Flammenschaden um jeweils <shuzhi>2%</> erhöhen. Bis zu <shuzhi>8</>-mal stapelbar.\r\n<shuzhi>Brennender Kern</>: Die Verwendung der Entladungsfähigkeit einer beliebigen Flammenwaffe gewährt für <shuzhi>8</> Sek. „Hyperkörper“.",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>. Erzeugt eine Zone und platziert <shuzhi>1</> Spielstein vor dem Wanderer, der Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt. Währenddessen ist der Wanderer für <shuzhi>1,5</> Sek. immun gegen Schaden (nicht in der Apex-Liga verfügbar).\r\nAktiviere die Zone, um <shuzhi>200%</> Schaden pro Sek. in einem großen Bereich um den Wanderer zu verursachen. Die Zone bleibt für <shuzhi>30</> Sek. bestehen oder verschwindet <shuzhi>5</> Sek. nach Kampfende. Jede Herbeirufung verlängert die Dauer der Zone um <shuzhi>3</> Sek.\r\n<shuzhi>Taktische Aufstellung</>: Jede Herbeirufung fügt <shuzhi>1</> Stapel „Taktische Aufstellung“ hinzu und erhöht so den Schaden der Zone um <shuzhi>50%</> des ANG pro Sek. zusätzlich. Bis zu <shuzhi>8</>-mal stapelbar.\r\n<shuzhi>Glühende Sonne</>: „Taktische Aufstellung“-Stapel gewähren außerdem die gleiche Anzahl „Glühende Sonne“-Stapel, die den Flammenschaden um jeweils <shuzhi>2,5%</> erhöhen. Bis zu <shuzhi>8</>-mal stapelbar.\r\n<shuzhi>Brennender Kern</>: Die Verwendung der Entladungsfähigkeit einer beliebigen Flammenwaffe gewährt für <shuzhi>8</> Sek. „Hyperkörper“.",
 					"tags": [
 						"Damage"
 					],
@@ -13650,7 +14066,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Erhältlich im Netzwerkverfolgung-Event"
+						"Erhältlich im Event „Netzwerkverfolgung“"
 					],
 					"id": "imitation_fashion_57_w_2"
 				}
@@ -16938,7 +17354,7 @@
 			}
 		],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "umbrella_fire"
 	},
 	"yoyo_ice": {
@@ -17312,7 +17728,7 @@
 		},
 		"fashion": [],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "yoyo_ice"
 	},
 	"yulan_ice": {
