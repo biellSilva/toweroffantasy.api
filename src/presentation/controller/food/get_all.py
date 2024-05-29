@@ -8,8 +8,12 @@ class GetAllFoodController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str | None = None
+        self,
+        version: str = "global",
+        lang: str = "en",
+        filter: str | None = None,
+        limit: int | None = None,
     ) -> list[Food]:
         return await self.usecase.execute(
-            GetAllParams(version=version, lang=lang, filter=filter)
+            GetAllParams(version=version, lang=lang, filter=filter, limit=limit)
         )

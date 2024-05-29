@@ -62,6 +62,7 @@ class GetAllParams(BaseModel):
             examples=['{"element": "Flame"}', '{"voiceActors.en": "Keanu Reeves"}'],
         ),
     ]
+    limit: int | None = None
 
 
 BMI = TypeVar("BMI", bound=BaseModel)
