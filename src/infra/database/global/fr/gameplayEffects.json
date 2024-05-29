@@ -1979,6 +1979,16 @@
 		"description": "Pendant la durée, l'hypercorps de l'Explorateur est désactivé et ne peut pas entrer dans un état invincible.",
 		"id": "buff_boss_002_5_ignore"
 	},
+	"buff_boss_010_4_punish": {
+		"name": "Châtiment",
+		"description": "Après que Seraph a frappé une cible non-Fortitude, des Châtiments seront ajoutés. Les Châtiments seront réduits de 1 pile toutes les 5 secondes. Si les piles de Châtiment atteignent 10, cet Explorateur perdra son hypercorps et son invincibilité et ne pourra pas récupérer l'hypercorps ou l'invincibilité pendant 90 secondes.",
+		"id": "buff_boss_010_4_punish"
+	},
+	"buff_boss_010_4_punishment": {
+		"name": "Discipline",
+		"description": "Impossible de conférer Hypercorps ou invincibilité.",
+		"id": "buff_boss_010_4_punishment"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Échec d'Hypercorps",
 		"description": "Les Explorateurs ne peuvent pas se conférer l'état d'hypercorps à eux-mêmes.",
@@ -2531,7 +2541,7 @@
 	},
 	"buff_wantedcriminal": {
 		"name": "Recherché!",
-		"description": "Vous êtes recherché pour avoir commis un crime. Fuyez vers un lieu sûr pour échapper à l'arrestation!",
+		"description": "Vous êtes recherché pour avoir commis un crime. Les patrouilles infligeront des dégâts supplémentaires en fonction de la gravité de votre infraction. Fuyez vers un lieu sûr pour échapper à la capture et retirer votre statut de recherché!",
 		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
@@ -8029,6 +8039,11 @@
 		"description": "Réduit le temps de recharge de la relique de 90%.",
 		"id": "buff_gwzj_worldboss4"
 	},
+	"buff_hackterminal_charge": {
+		"name": "Augmentation de la puissance de calcul",
+		"description": "À portée, la puissance de calcul du terminal de l'Autorisateur augmentera en continu jusqu'à atteindre sa valeur maximale.",
+		"id": "buff_hackterminal_charge"
+	},
 	"buff_bailing_level1": {
 		"name": "Bai Ling: Bravoure",
 		"description": "Accroît de **8%** la vitesse pendant **12**secondes lorsque Bai Ling dépose le planeur ou le jetboard. Temps de recharge: **60**secondes.",
@@ -8894,6 +8909,76 @@
 		"description": "Les PV ne chutent pas sous les 20% en cas de dégâts",
 		"id": "buff_lockhp_less20_overlap"
 	},
+	"buff_loslyn_hpshield": {
+		"name": "Eaux calmes: bouclier",
+		"description": "L'Explorateur gagne un bouclier équivalant à **0%** des PV max pendant **1**secondes.",
+		"id": "buff_loslyn_hpshield"
+	},
+	"buff_loslyn_ice_resonance": {
+		"name": "Résonance de givre",
+		"description": "**Résonance de givre**: accroît l'ATQ de givre de **15%** et la résistance au givre de **25%**. Activez-la en équipant au moins **2**armes de givre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de givre ou de Réaction de givre, et Résonance de givre prévaut.",
+		"id": "buff_loslyn_ice_resonance"
+	},
+	"buff_loslyn_level1": {
+		"name": "Ancre",
+		"description": "Accroît les dégâts finaux de **0%**.",
+		"id": "buff_loslyn_level1"
+	},
+	"buff_loslyn_level2": {
+		"name": "Se connecter",
+		"description": "Accroît les dégâts finaux de **0%**. **Tempête de neige** ne consomme pas d'endurance. Après avoir utilisé **Frappe cinglante**, accroît les dégâts critiques de **1%** pendant **2** secondes.",
+		"id": "buff_loslyn_level2"
+	},
+	"buff_loslyn_level2_critdmgup": {
+		"name": "Ancre",
+		"description": "Accroît les dégâts critiques de **0%** pendant **1**secondes.",
+		"id": "buff_loslyn_level2_critdmgup"
+	},
+	"buff_loslyn_skill_dmgup": {
+		"name": "Aura de givre",
+		"description": "Après avoir utilisé Aura de givre, l'Explorateur ignore **0%** de la résistance au givre des ennemis, augmentant les dégâts finaux de **1%** pendant **2**secondes.",
+		"id": "buff_loslyn_skill_dmgup"
+	},
+	"buff_loslyn_skillbati": {
+		"name": "Hypercorps",
+		"description": "Dure **0**secondes.",
+		"id": "buff_loslyn_skillbati"
+	},
+	"buff_loslyn_skilldebuff": {
+		"name": "Gel rapide",
+		"description": "Réduit l'attaque pendant **0**secondes.",
+		"id": "buff_loslyn_skilldebuff"
+	},
+	"buff_loslyn_skillstate": {
+		"name": "Froid cinglant",
+		"description": "Confère Hypercorps. Les attaques d'Eaux calmes ont un effet supplémentaire de **Frappe glaçante**. Dure **0** secondes.",
+		"id": "buff_loslyn_skillstate"
+	},
+	"buff_loslyn_skillstate_iceatkup": {
+		"name": "Cœur glacial",
+		"description": "Après le début de Froid cinglant, accroît l'ATQ de givre pendant **0** secondes.",
+		"id": "buff_loslyn_skillstate_iceatkup"
+	},
+	"buff_loslyn_specblock": {
+		"name": "Évasion rapide",
+		"description": "Évasion rapide: évite les dégâts d'une attaque à l'impact.",
+		"id": "buff_loslyn_specblock"
+	},
+	"buff_loslyn_specfrozenstate": {
+		"name": "Lien de glace",
+		"description": "Lien de glace",
+		"id": "buff_loslyn_specfrozenstate"
+	},
+	"buff_loslyn_specfrozenstate_enddot": {
+		"name": "Perte sincère",
+		"description": "Réduit les PV perdus de **0%** chaque seconde pendant **1**secondes.",
+		"id": "buff_loslyn_specfrozenstate_enddot"
+	},
+	"buff_loslyn_thunder_resonance": {
+		"name": "Résonance de foudre",
+		"description": "**Résonance de foudre**: accroît l'ATQ de foudre de **15%** et la résistance à la foudre de **25%**. S'active en équipant au moins **2**armes de foudre. Les effets du kit fonctionnent dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, et Résonance de foudre prévaut.",
+		"id": "buff_loslyn_thunder_resonance"
+	},
 	"buff_ls_sqqs": {
 		"name": "Actualisé",
 		"description": "Accroît la capacité de satiété de **20%** pendant **30**minutes.",
@@ -8941,12 +9026,12 @@
 	},
 	"buff_lucktarrow_07": {
 		"name": "Terrifier",
-		"description": "Increase enemies' damage by 40%.",
+		"description": "Accroît les dégâts des ennemis de 40%.",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "Surprendre",
-		"description": "Increase enemies' ATK by 40%.",
+		"description": "Accroît l'ATQ des ennemis de 40%.",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
@@ -9521,7 +9606,7 @@
 	},
 	"buff_maska": {
 		"name": "Masque du néant",
-		"description": "Tout le monde s'est transformé en ennemis. Mais attention, le boss peut toujours vous repérer. Tout combat avec d'autres ennemis est vu comme une interaction ennemie normale.",
+		"description": "Vous voilà du côté des ennemis! Mais attention, le boss peut toujours vous repérer. Tout combat avec d'autres ennemis est vu comme une interaction ennemie normale.",
 		"id": "buff_maska"
 	},
 	"buff_maskb": {
@@ -10564,6 +10649,46 @@
 		"description": "Accroît les dégâts finaux de **0%**. Lorsque **Libreflux** est équipé, accroît les dégâts critiques de **1%**. Au début du combat, confère **9**cumuls supplémentaires de **Placement décisif**. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
 		"id": "buff_matrix_ssr92_level4"
 	},
+	"buff_matrix_ssr93_level1": {
+		"name": "Cœur glacial",
+		"description": "Accroît les dégâts de givre de **0%**. Quand **Lien de glace** est retiré de la cible, subit des dégâts d'hémorragie équivalant à **1%** des PV perdus chaque seconde pendant **2** secondes (ces dégâts ne peuvent pas dépasser **3** fois l'ATQ de l'Explorateur et ne sont pas affectés par les effets de bonus de dégâts). Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr93_level1"
+	},
+	"buff_matrix_ssr93_level2": {
+		"name": "Cœur glacial",
+		"description": "Accroît les dégâts de givre de **0%**. Quand **Lien de glace** est retiré de la cible, subit des dégâts d'hémorragie équivalant à **1%** des PV perdus chaque seconde pendant **2** secondes (ces dégâts ne peuvent pas dépasser **3** fois l'ATQ de l'Explorateur et ne sont pas affectés par les effets de bonus de dégâts). Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr93_level2"
+	},
+	"buff_matrix_ssr93_level3": {
+		"name": "Cœur glacial",
+		"description": "Accroît les dégâts de givre de **0%**. Quand **Lien de glace** est retiré de la cible, subit des dégâts d'hémorragie équivalant à **1%** des PV perdus chaque seconde pendant **2** secondes (ces dégâts ne peuvent pas dépasser **3** fois l'ATQ de l'Explorateur et ne sont pas affectés par les effets de bonus de dégâts). Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr93_level3"
+	},
+	"buff_matrix_ssr93_level4": {
+		"name": "Cœur glacial",
+		"description": "Accroît les dégâts de givre de **0%**. Quand **Lien de glace** est retiré de la cible, subit des dégâts d'hémorragie équivalant à **1%** des PV perdus chaque seconde pendant **2** secondes (ces dégâts ne peuvent pas dépasser **3** fois l'ATQ de l'Explorateur et ne sont pas affectés par les effets de bonus de dégâts). Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr93_level4"
+	},
+	"buff_matrix_ssr94_level1": {
+		"name": "Cœur glacial",
+		"description": "Pour **chaque** arme de givre équipée, accroît les dégâts finaux de **0%**. Après le début de **Froid cinglant**, accroît l'ATQ de givre de **1%** pendant **2**secondes. Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr94_level1"
+	},
+	"buff_matrix_ssr94_level2": {
+		"name": "Cœur glacial",
+		"description": "Pour **chaque** arme de givre équipée, accroît les dégâts finaux de **0%**. Après le début de **Froid cinglant**, accroît l'ATQ de givre de **1%** pendant **2**secondes. Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr94_level2"
+	},
+	"buff_matrix_ssr94_level3": {
+		"name": "Cœur glacial",
+		"description": "Pour **chaque** arme de givre équipée, accroît les dégâts finaux de **0%**. Après le début de **Froid cinglant**, accroît l'ATQ de givre de **1%** pendant **2**secondes. Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr94_level3"
+	},
+	"buff_matrix_ssr94_level4": {
+		"name": "Cœur glacial",
+		"description": "Pour **chaque** arme de givre équipée, accroît les dégâts finaux de **0%**. Après le début de **Froid cinglant**, accroît l'ATQ de givre de **1%** pendant **2**secondes. Les effets du kit fonctionnent également dans l'emplacement main libre et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+		"id": "buff_matrix_ssr94_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Couant de type II: Garde",
 		"description": "Augmente la défense à hauteur de **50%** des dégâts accrus infligés puis est immunisé contre l'hébétement pendant un certain temps.",
@@ -11084,6 +11209,11 @@
 		"description": "Le Tisserand fera exploser la marque à un moment précis. Plus il y a de cumuls, plus les dégâts sont élevés. Les marques sont instables.",
 		"id": "buff_boss_hum_072_skill09_stack"
 	},
+	"buff_boss_hum_076_delayspawnbullet": {
+		"name": "Énergie du néant",
+		"description": "À la fin de la durée, des cristaux d'énergie du néant destructibles sont générés autour du boss.",
+		"id": "buff_boss_hum_076_delayspawnbullet"
+	},
 	"buff_boss037_skill04_cantcharge": {
 		"name": "Séparation dimensionnelle",
 		"description": "Impossible d'obtenir une recharge d'arme ou de subir des dégâts sur la durée lorsque Fantaisie est déclenchée.",
@@ -11226,7 +11356,7 @@
 	},
 	"buff_dfishchess_arealevelstackcount": {
 		"name": "Déploiement tactique",
-		"description": "Chaque cumul accroît les dégâts de **0%** supplémentaires dans la zone, cumulable jusqu'à **8**fois.",
+		"description": "Each stack additionally increases zone's DoT every second by **0%** of ATK, stacking up to **8** times.",
 		"id": "buff_dfishchess_arealevelstackcount"
 	},
 	"buff_dfishchess_changeskilladdimmstatus": {
@@ -15274,6 +15404,11 @@
 		"description": "Pour chaque cumul d'effet bénéfique obtenu, **+1** au niveau d'étoile de l'arme. Le surplus de niveaux d'étoile appliquera un bonus de dégâts de **5%** à l'arme.",
 		"id": "buff_bigsecret_upstar_ssr_linghan_ice"
 	},
+	"buff_bigsecret_upstar_ssr_loslyn_ice": {
+		"name": "Eaux calmes",
+		"description": "Pour chaque cumul d'effet bénéfique obtenu, **+1** au niveau d'étoile de l'arme. Le surplus de niveaux d'étoile appliquera un bonus de dégâts de **5%** à l'arme.",
+		"id": "buff_bigsecret_upstar_ssr_loslyn_ice"
+	},
 	"buff_bigsecret_upstar_ssr_mark_physic": {
 		"name": "Aube",
 		"description": "Pour chaque cumul d'effet bénéfique obtenu, **+1** au niveau d'étoile de l'arme. Le surplus de niveaux d'étoile appliquera un bonus de dégâts de **5%** à l'arme.",
@@ -16009,13 +16144,18 @@
 		"description": "Seuls les dégâts de foudre et les dégâts de feu sont efficaces, pas les autres types de dégâts.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_norn_vipservice": {
+		"name": "Glenco: membre standard",
+		"description": "Glenco Biomedical Inc. RÉgénérer le bien-être, CONSTRUIRE la vie, RECONSTRUIRE votre aventure:\r\nAugmente les PV max de **15%**, accroît la vitesse de déplacement du véhicule de **20%** et réduit la consommation d'endurance de **15**. Dure **30**minutes.",
+		"id": "buff_norn_vipservice"
+	},
 	"buff_nornbeach_star": {
 		"name": "Étoile Vagabonde",
 		"description": "Le temps presse! Allez trouver la prochaine étoile!",
 		"id": "buff_nornbeach_star"
 	},
 	"buff_norncanteen_baozi_thunderdamageup": {
-		"name": "Bénédiction de la soupe aux ravioles",
+		"name": "Bénédiction du xiaolongbao",
 		"description": "Augmente de 15% les dégâts de foudre et la vitesse de 15%. Dure 30 minutes.",
 		"id": "buff_norncanteen_baozi_thunderdamageup"
 	},
@@ -16648,5 +16788,10 @@
 		"name": "Yan Miao : Éclat de mémoire II",
 		"description": "Confère un bouclier pour vous-même et vos coéquipiers équivalant à 10% des PV max du coéquipier.",
 		"id": "buff_jmhz_yanmiao_02"
+	},
+	"newrow": {
+		"name": "",
+		"description": "",
+		"id": "newrow"
 	}
 }

@@ -1979,6 +1979,16 @@
 		"description": "During the duration, the Wanderer's hyperbody is disabled, and cannot enter an invincible state.",
 		"id": "buff_boss_002_5_ignore"
 	},
+	"buff_boss_010_4_punish": {
+		"name": "Punishment",
+		"description": "After Seraph hits a non-Fortitude target, Punishments will be added. Punishments will be reduced by 1 stack every 5 seconds. If Punishment stacks reach 10, that Wanderer will lose their hyperbody and invincibility and will be unable to regain hyperbody or invincibility for 90 seconds.",
+		"id": "buff_boss_010_4_punish"
+	},
+	"buff_boss_010_4_punishment": {
+		"name": "Discipline",
+		"description": "Unable to gain hyperbody or invincibility.",
+		"id": "buff_boss_010_4_punishment"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Hyperbody Failure",
 		"description": "Wanderers cannot grant hyperbody state to themselves.",
@@ -2071,7 +2081,7 @@
 	},
 	"buff_boss_065_4_frozen": {
 		"name": "Flashfreeze",
-		"description": "Merbelle's damage gains the Flashfreeze. When Flashfreeze stacks 15 times, this unit is greatly Phantasia Slowed.",
+		"description": "Merbelle's damage gains Flashfreeze. When Flashfreeze stacks 15 times, this unit is greatly Phantasia Slowed.",
 		"id": "buff_boss_065_4_frozen"
 	},
 	"buff_boss_065_4_frozen20": {
@@ -2531,7 +2541,7 @@
 	},
 	"buff_wantedcriminal": {
 		"name": "Wanted!",
-		"description": "You are wanted for committing a crime. Flee to a safe place to evade capture!",
+		"description": "You are wanted for committing a crime. Patrols will deal additional damage based on the severity of your offense. Flee to a safe place to evade capture and remove your wanted status!",
 		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
@@ -8029,6 +8039,11 @@
 		"description": "Reduce Relic cooldown by 90%.",
 		"id": "buff_gwzj_worldboss4"
 	},
+	"buff_hackterminal_charge": {
+		"name": "Computing Power Up",
+		"description": "Within range, the Authorizer's Terminal's computing power will continuously increase until it reaches the maximum value.",
+		"id": "buff_hackterminal_charge"
+	},
 	"buff_bailing_level1": {
 		"name": "Bai Ling: Valor",
 		"description": "When Bai Ling puts the Glider or the Jetboard away, increase speed by **8%** for **12** seconds. Cooldown: **60** seconds.",
@@ -8894,6 +8909,76 @@
 		"description": "HP will not fall below 20% when taking damage",
 		"id": "buff_lockhp_less20_overlap"
 	},
+	"buff_loslyn_hpshield": {
+		"name": "Calm Waters: Shield",
+		"description": "The Wanderer gains a shield equal to **0%** of Max HP for **1** seconds.",
+		"id": "buff_loslyn_hpshield"
+	},
+	"buff_loslyn_ice_resonance": {
+		"name": "Frost Resonance",
+		"description": "**Frost Resonance**: Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect works in the off-hand slot. Cannot stack with other Frost Resonance or Frost Reaction effects, with Frost Resonance taking precedence.",
+		"id": "buff_loslyn_ice_resonance"
+	},
+	"buff_loslyn_level1": {
+		"name": "Anchor",
+		"description": "Increase final damage by **0%**.",
+		"id": "buff_loslyn_level1"
+	},
+	"buff_loslyn_level2": {
+		"name": "Connect",
+		"description": "Increase final damage by **0%**. **Snowstorm Hurricane** does not consume endurance. After using **Bitter Strike**, increase crit damage by **1%** for **2** seconds.",
+		"id": "buff_loslyn_level2"
+	},
+	"buff_loslyn_level2_critdmgup": {
+		"name": "Anchor",
+		"description": "Increase crit damage by **0%** for **1** seconds.",
+		"id": "buff_loslyn_level2_critdmgup"
+	},
+	"buff_loslyn_skill_dmgup": {
+		"name": "Frostlink Aura",
+		"description": "After using Frostlink Aura, the Wanderer will ignore **0%** of enemies' frost resistance, increasing final damage by **1%** for **2** seconds.",
+		"id": "buff_loslyn_skill_dmgup"
+	},
+	"buff_loslyn_skillbati": {
+		"name": "Hyperbody",
+		"description": "Lasts for **0** seconds.",
+		"id": "buff_loslyn_skillbati"
+	},
+	"buff_loslyn_skilldebuff": {
+		"name": "Flashfreeze",
+		"description": "Reduce attack for **0** seconds.",
+		"id": "buff_loslyn_skilldebuff"
+	},
+	"buff_loslyn_skillstate": {
+		"name": "Bitter Cold",
+		"description": "Gain hyperbody. Calm Waters' attacks have an additional **Chilling Strike** effect. Lasts for **0** seconds.",
+		"id": "buff_loslyn_skillstate"
+	},
+	"buff_loslyn_skillstate_iceatkup": {
+		"name": "Heartetched",
+		"description": "After entering Bitter Cold, increase frost ATK for **0** seconds.",
+		"id": "buff_loslyn_skillstate_iceatkup"
+	},
+	"buff_loslyn_specblock": {
+		"name": "Swift Evasion",
+		"description": "Swift Evasion: Upon being hit by an attack, avoid the damage from the attack.",
+		"id": "buff_loslyn_specblock"
+	},
+	"buff_loslyn_specfrozenstate": {
+		"name": "Icebound",
+		"description": "Icebound",
+		"id": "buff_loslyn_specfrozenstate"
+	},
+	"buff_loslyn_specfrozenstate_enddot": {
+		"name": "Heartfelt Loss",
+		"description": "Lose **0%** of lost HP every second for **1** seconds.",
+		"id": "buff_loslyn_specfrozenstate_enddot"
+	},
+	"buff_loslyn_thunder_resonance": {
+		"name": "Volt Resonance",
+		"description": "**Volt Resonance**: Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence.",
+		"id": "buff_loslyn_thunder_resonance"
+	},
 	"buff_ls_sqqs": {
 		"name": "Refreshed",
 		"description": "Increase satiety capacity by **20%** for **30** minutes.",
@@ -9521,7 +9606,7 @@
 	},
 	"buff_maska": {
 		"name": "Mask of the Void",
-		"description": "Everyone's transformed into enemies. But beware, the boss can still spot you. Any combat with other enemies is viewed as normal enemy interactions.",
+		"description": "You've turned into one of the enemies! But beware, the boss can still spot you. Any combat with other enemies is viewed as normal enemy interactions.",
 		"id": "buff_maska"
 	},
 	"buff_maskb": {
@@ -10564,6 +10649,46 @@
 		"description": "Increase final damage by **0%**. When **Freeflow** is equipped, increase crit damage by **1%**. Upon entering combat, gain an additional **9** stacks of **Decisive Placement**. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
 		"id": "buff_matrix_ssr92_level4"
 	},
+	"buff_matrix_ssr93_level1": {
+		"name": "Heartetched",
+		"description": "Increase frost damage by **0%**. After a target's **Icebound** is removed, receive bleed damage equal to **1%** of lost HP every second for **2** seconds (this damage cannot exceed **3** times of the Wanderer's ATK and is not affected by any damage-boosting effects). This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+		"id": "buff_matrix_ssr93_level1"
+	},
+	"buff_matrix_ssr93_level2": {
+		"name": "Heartetched",
+		"description": "Increase frost damage by **0%**. After a target's **Icebound** is removed, receive bleed damage equal to **1%** of lost HP every second for **2** seconds (this damage cannot exceed **3** times of the Wanderer's ATK and is not affected by any damage-boosting effects). This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+		"id": "buff_matrix_ssr93_level2"
+	},
+	"buff_matrix_ssr93_level3": {
+		"name": "Heartetched",
+		"description": "Increase frost damage by **0%**. After a target's **Icebound** is removed, receive bleed damage equal to **1%** of lost HP every second for **2** seconds (this damage cannot exceed **3** times of the Wanderer's ATK and is not affected by any damage-boosting effects). This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+		"id": "buff_matrix_ssr93_level3"
+	},
+	"buff_matrix_ssr93_level4": {
+		"name": "Heartetched",
+		"description": "Increase frost damage by **0%**. After a target's **Icebound** is removed, receive bleed damage equal to **1%** of lost HP every second for **2** seconds (this damage cannot exceed **3** times of the Wanderer's ATK and is not affected by any damage-boosting effects). This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+		"id": "buff_matrix_ssr93_level4"
+	},
+	"buff_matrix_ssr94_level1": {
+		"name": "Heartetched",
+		"description": "For every **1** frost weapon equipped, increase final damage by **0%**. After entering **Bitter Cold**, increase frost ATK by **1%** for **2** seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+		"id": "buff_matrix_ssr94_level1"
+	},
+	"buff_matrix_ssr94_level2": {
+		"name": "Heartetched",
+		"description": "For every **1** frost weapon equipped, increase final damage by **0%**. After entering **Bitter Cold**, increase frost ATK by **1%** for **2** seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+		"id": "buff_matrix_ssr94_level2"
+	},
+	"buff_matrix_ssr94_level3": {
+		"name": "Heartetched",
+		"description": "For every **1** frost weapon equipped, increase final damage by **0%**. After entering **Bitter Cold**, increase frost ATK by **1%** for **2** seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+		"id": "buff_matrix_ssr94_level3"
+	},
+	"buff_matrix_ssr94_level4": {
+		"name": "Heartetched",
+		"description": "For every **1** frost weapon equipped, increase final damage by **0%**. After entering **Bitter Cold**, increase frost ATK by **1%** for **2** seconds. This set effect works in the off-hand slot, and only the set with the highest star rating will take effect.",
+		"id": "buff_matrix_ssr94_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Type II Couant: Guard",
 		"description": "Increase defense that is **50%** of the increased damage dealt, and immune to hitstun during the following period of time.",
@@ -11084,6 +11209,11 @@
 		"description": "The Weaver will detonate the mark at a specific time. The more the stacks, the higher the damage. The marks are unstable.",
 		"id": "buff_boss_hum_072_skill09_stack"
 	},
+	"buff_boss_hum_076_delayspawnbullet": {
+		"name": "Void Energy",
+		"description": "At the end of the duration, destructible void energy crystals are generated around the boss.",
+		"id": "buff_boss_hum_076_delayspawnbullet"
+	},
 	"buff_boss037_skill04_cantcharge": {
 		"name": "Dimensional Split",
 		"description": "Unable to gain weapon charge or receive DoT during Phantasia.",
@@ -11226,7 +11356,7 @@
 	},
 	"buff_dfishchess_arealevelstackcount": {
 		"name": "Tactical Deployment",
-		"description": "Each stack increases damage by an additional **0%** in the zone, stacking up to **8** times.",
+		"description": "Each stack additionally increases zone's DoT every second by **0%** of ATK, stacking up to **8** times.",
 		"id": "buff_dfishchess_arealevelstackcount"
 	},
 	"buff_dfishchess_changeskilladdimmstatus": {
@@ -14645,7 +14775,7 @@
 		"id": "buff_imitation_nanyin_level2"
 	},
 	"buff_imitation_paradox_level1": {
-		"name": "Titi & Poppa",
+		"name": "Polo & Poppa",
 		"description": "Increase final damage by **0%**.",
 		"id": "buff_imitation_paradox_level1"
 	},
@@ -15273,6 +15403,11 @@
 		"name": "Alabaster Tiger",
 		"description": "For every stack of buff gained, **+1** on the star rating of the weapon. The surplus of the star rating will apply a **5%** damage boost on the weapon.",
 		"id": "buff_bigsecret_upstar_ssr_linghan_ice"
+	},
+	"buff_bigsecret_upstar_ssr_loslyn_ice": {
+		"name": "Calm Waters",
+		"description": "For every stack of buff gained, **+1** on the star rating of the weapon. The surplus of the star rating will apply a **5%** damage boost on the weapon.",
+		"id": "buff_bigsecret_upstar_ssr_loslyn_ice"
 	},
 	"buff_bigsecret_upstar_ssr_mark_physic": {
 		"name": "Dawn",
@@ -16009,6 +16144,11 @@
 		"description": "Only volt and flame damage are effective, but not any other types of damage.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_norn_vipservice": {
+		"name": "Glenco: Standard Member",
+		"description": "Glenco Biomedical Inc. REjuvenate Wellness, CONSTRUCT Life, RECONSTRUCT Your Adventure:\r\nIncrease Max HP by **15%** and vehicle movement speed by **20%**, reduce endurance consumption by **15**. Lasts for **30** minutes.",
+		"id": "buff_norn_vipservice"
+	},
 	"buff_nornbeach_star": {
 		"name": "Spindrift Star",
 		"description": "Time's running out! Go find the next star!",
@@ -16648,5 +16788,10 @@
 		"name": "Yan Miao: Memory Shard II",
 		"description": "Provide a shield for yourself and teammates equal to 10% of the teammate's Max HP.",
 		"id": "buff_jmhz_yanmiao_02"
+	},
+	"newrow": {
+		"name": "",
+		"description": "",
+		"id": "newrow"
 	}
 }

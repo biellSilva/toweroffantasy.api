@@ -1979,6 +1979,16 @@
 		"description": "Durante la duración, el hipercuerpo del nómada se desactiva y no puede entrar en un estado invencible.",
 		"id": "buff_boss_002_5_ignore"
 	},
+	"buff_boss_010_4_punish": {
+		"name": "Castigo",
+		"description": "Después de que Seraph golpee a un objetivo que no tenga Fortaleza, se agregarán Castigos. Los Castigos se reducirán en 1 acumulación cada 5 segundos. Si las acumulaciones de Castigo llegan a 10, ese Nómada perderá su hipercuerpo e invencibilidad y no podrá recuperar el hipercuerpo o la invencibilidad durante 90 segundos.",
+		"id": "buff_boss_010_4_punish"
+	},
+	"buff_boss_010_4_punishment": {
+		"name": "Disciplina",
+		"description": "No se puede obtener hipercuerpo o invencibilidad.",
+		"id": "buff_boss_010_4_punishment"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Fallo de hipercuerpo",
 		"description": "Los nómadas no pueden otorgarse a sí mismos el estado de hipercuerpo.",
@@ -2531,7 +2541,7 @@
 	},
 	"buff_wantedcriminal": {
 		"name": "¡Se busca!",
-		"description": "Eres buscado por cometer un delito. ¡Huye a un lugar seguro para evitar ser capturado!",
+		"description": "Eres buscado por cometer un delito. Las patrullas infligirán daño adicional basado en la gravedad de tu ofensa. ¡Huye a un lugar seguro para evadir la captura y eliminar tu estado de buscado!",
 		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
@@ -8029,6 +8039,11 @@
 		"description": "Reduce el enfriamiento de la reliquia en un 90%.",
 		"id": "buff_gwzj_worldboss4"
 	},
+	"buff_hackterminal_charge": {
+		"name": "Potencia de Procesamiento Aumentada",
+		"description": "Dentro del rango, la potencia de procesamiento del Terminal del Autorizador aumentará continuamente hasta que alcance el valor máximo.",
+		"id": "buff_hackterminal_charge"
+	},
 	"buff_bailing_level1": {
 		"name": "Bai Ling: Valor",
 		"description": "Después de que Bai Ling guarde el Planeador o el Deslizador, aumenta la velocidad un **8%** por **12** segundos. Enfriamiento: **60** segundos.",
@@ -8894,6 +8909,76 @@
 		"description": "Los PS no caerán por debajo del 20% al recibir daño",
 		"id": "buff_lockhp_less20_overlap"
 	},
+	"buff_loslyn_hpshield": {
+		"name": "Aguas Tranquilas: Escudo",
+		"description": "El nómada obtiene un escudo igual al **0%** de los PS Máx. por **1**seg.",
+		"id": "buff_loslyn_hpshield"
+	},
+	"buff_loslyn_ice_resonance": {
+		"name": "Resonancia de Escarcha",
+		"description": "**Resonancia de Escarcha**: Aumenta el ATQ de escarcha un **15%** y la resistencia a la escarcha un **25%**. Se activa equipando **2** o más armas de escarcha. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia de Escarcha o Reacción de Escarcha; Resonancia de Escarcha tiene prioridad.",
+		"id": "buff_loslyn_ice_resonance"
+	},
+	"buff_loslyn_level1": {
+		"name": "Ancla",
+		"description": "Aumenta el daño final en un **0%**.",
+		"id": "buff_loslyn_level1"
+	},
+	"buff_loslyn_level2": {
+		"name": "Conectar",
+		"description": "Aumenta el daño final en un **0%**. **Huracán de Nieve** no consume resistencia. Tras usar **Golpe Inclemente**, aumenta el daño crítico en un **1%** por **2** seg.",
+		"id": "buff_loslyn_level2"
+	},
+	"buff_loslyn_level2_critdmgup": {
+		"name": "Ancla",
+		"description": "Aumenta el daño crítico en un **0%** por **1**seg.",
+		"id": "buff_loslyn_level2_critdmgup"
+	},
+	"buff_loslyn_skill_dmgup": {
+		"name": "Aura de Enlace de Escarcha",
+		"description": "Tras usar Aura de Enlace de Escarcha, el nómada ignorará un **0%** de la resistencia a la escarcha de los enemigos y aumentará el daño final en un **1%** por **2** seg.",
+		"id": "buff_loslyn_skill_dmgup"
+	},
+	"buff_loslyn_skillbati": {
+		"name": "Hipercuerpo",
+		"description": "Dura **0** seg.",
+		"id": "buff_loslyn_skillbati"
+	},
+	"buff_loslyn_skilldebuff": {
+		"name": "Ultrafrío",
+		"description": "Reduce el ataque por **0** seg.",
+		"id": "buff_loslyn_skilldebuff"
+	},
+	"buff_loslyn_skillstate": {
+		"name": "Frío Inclemente",
+		"description": "Gana hipercuerpo. Los ataques de Aguas Tranquilas obtienen un efecto de **Golpe de Escarcha** adicional. Dura **0** seg.",
+		"id": "buff_loslyn_skillstate"
+	},
+	"buff_loslyn_skillstate_iceatkup": {
+		"name": "Inolvidable",
+		"description": "Si Frío Inclemente está activo, aumenta el ATQ de escarcha por **0** seg.",
+		"id": "buff_loslyn_skillstate_iceatkup"
+	},
+	"buff_loslyn_specblock": {
+		"name": "Evasión Veloz",
+		"description": "Evasión Veloz: Al recibir un ataque, evita el daño de dicho ataque.",
+		"id": "buff_loslyn_specblock"
+	},
+	"buff_loslyn_specfrozenstate": {
+		"name": "Helado",
+		"description": "Helado",
+		"id": "buff_loslyn_specfrozenstate"
+	},
+	"buff_loslyn_specfrozenstate_enddot": {
+		"name": "Pérdida Sincera",
+		"description": "Pierde **0%** de los PS perdidos cada seg por **1** seg.",
+		"id": "buff_loslyn_specfrozenstate_enddot"
+	},
+	"buff_loslyn_thunder_resonance": {
+		"name": "Resonancia Eléctrica",
+		"description": "**Resonancia Eléctrica**: Aumenta el ATQ eléctrico un **15%** y la resistencia eléctrica un **25%**. Se activa al equipar **2** o más armas eléctricas. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia Eléctrica o Reacción Eléctrica; Resonancia Eléctrica tiene preferencia.",
+		"id": "buff_loslyn_thunder_resonance"
+	},
 	"buff_ls_sqqs": {
 		"name": "Actualizado",
 		"description": "Aumenta la capacidad de saciedad en un **20%** por **30** minutos.",
@@ -8941,12 +9026,12 @@
 	},
 	"buff_lucktarrow_07": {
 		"name": "Aterrorizar",
-		"description": "Increase enemies' damage by 40%.",
+		"description": "Aumenta el daño de los enemigos en un 40%.",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "Sorprender",
-		"description": "Increase enemies' ATK by 40%.",
+		"description": "Aumenta el ATQ de los enemigos en un 40%.",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
@@ -9521,7 +9606,7 @@
 	},
 	"buff_maska": {
 		"name": "Máscara del Vacío",
-		"description": "Todos se transformaron en enemigos. Pero, cuidado, el jefe aún puede descubrirte. Cualquier combate con otros enemigos se considera una interacción enemiga normal.",
+		"description": "¡Te transformaste en uno de los enemigos! Pero, cuidado, el jefe aún puede descubrirte. Cualquier combate con otros enemigos se considera una interacción enemiga normal.",
 		"id": "buff_maska"
 	},
 	"buff_maskb": {
@@ -10564,6 +10649,46 @@
 		"description": "Aumenta el daño final en un **0%**. Si **Libretorrente** está equipada, aumenta el daño crítico en un **1%**. Al entrar en combate, ganas **9** acumulaciones adicionales de **Posicionamiento Decisivo**. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
 		"id": "buff_matrix_ssr92_level4"
 	},
+	"buff_matrix_ssr93_level1": {
+		"name": "Inolvidable",
+		"description": "Aumenta el daño de escarcha en un **0%**. Tras eliminar el estado **Helado** del objetivo, este recibe un daño de sangrado igual al **1%** de los PS perdidos cada segundo por **2** seg (este daño no puede excederse de **3** multiplicado por el ATQ del nómada y no es afectado por ningún efecto de refuerzo de daño). Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+		"id": "buff_matrix_ssr93_level1"
+	},
+	"buff_matrix_ssr93_level2": {
+		"name": "Inolvidable",
+		"description": "Aumenta el daño de escarcha en un **0%**. Tras eliminar el estado **Helado** del objetivo, este recibe un daño de sangrado igual al **1%** de los PS perdidos cada segundo por **2** seg (este daño no puede excederse de **3** multiplicado por el ATQ del nómada y no es afectado por ningún efecto de refuerzo de daño). Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+		"id": "buff_matrix_ssr93_level2"
+	},
+	"buff_matrix_ssr93_level3": {
+		"name": "Inolvidable",
+		"description": "Aumenta el daño de escarcha en un **0%**. Tras eliminar el estado **Helado** del objetivo, este recibe un daño de sangrado igual al **1%** de los PS perdidos cada segundo por **2** seg (este daño no puede excederse de **3** multiplicado por el ATQ del nómada y no es afectado por ningún efecto de refuerzo de daño). Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+		"id": "buff_matrix_ssr93_level3"
+	},
+	"buff_matrix_ssr93_level4": {
+		"name": "Inolvidable",
+		"description": "Aumenta el daño de escarcha en un **0%**. Tras eliminar el estado **Helado** del objetivo, este recibe un daño de sangrado igual al **1%** de los PS perdidos cada segundo por **2** seg (este daño no puede excederse de **3** multiplicado por el ATQ del nómada y no es afectado por ningún efecto de refuerzo de daño). Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+		"id": "buff_matrix_ssr93_level4"
+	},
+	"buff_matrix_ssr94_level1": {
+		"name": "Inolvidable",
+		"description": "Por cada **1** arma de escarcha equipada, aumenta el daño final en un **0%**. Si **Frío Inclemente** está activo, aumenta el ATQ de escarcha en un **1%** por **2** seg. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+		"id": "buff_matrix_ssr94_level1"
+	},
+	"buff_matrix_ssr94_level2": {
+		"name": "Inolvidable",
+		"description": "Por cada **1** arma de escarcha equipada, aumenta el daño final en un **0%**. Si **Frío Inclemente** está activo, aumenta el ATQ de escarcha en un **1%** por **2** seg. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+		"id": "buff_matrix_ssr94_level2"
+	},
+	"buff_matrix_ssr94_level3": {
+		"name": "Inolvidable",
+		"description": "Por cada **1** arma de escarcha equipada, aumenta el daño final en un **0%**. Si **Frío Inclemente** está activo, aumenta el ATQ de escarcha en un **1%** por **2** seg. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+		"id": "buff_matrix_ssr94_level3"
+	},
+	"buff_matrix_ssr94_level4": {
+		"name": "Inolvidable",
+		"description": "Por cada **1** arma de escarcha equipada, aumenta el daño final en un **0%**. Si **Frío Inclemente** está activo, aumenta el ATQ de escarcha en un **1%** por **2** seg. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+		"id": "buff_matrix_ssr94_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Couant Tipo II: Guardia",
 		"description": "Aumenta la defensa que es un **50%** del daño aumentado infligido, y otorga inmunidad a la conmoción durante el siguiente periodo de tiempo.",
@@ -11084,6 +11209,11 @@
 		"description": "El Tejedor detonará la marca en un momento específico. Cuanto más se acumule, mayor será el daño. Las marcas son inestables.",
 		"id": "buff_boss_hum_072_skill09_stack"
 	},
+	"buff_boss_hum_076_delayspawnbullet": {
+		"name": "Energía Abisal",
+		"description": "Al final de la duración, se generan cristales de energía abisal destructibles alrededor del jefe.",
+		"id": "buff_boss_hum_076_delayspawnbullet"
+	},
 	"buff_boss037_skill04_cantcharge": {
 		"name": "Separación Dimensional",
 		"description": "No se puede ganar carga de arma o recibir daño prolongado durante Phantasia.",
@@ -11226,7 +11356,7 @@
 	},
 	"buff_dfishchess_arealevelstackcount": {
 		"name": "Despliegue Táctico",
-		"description": "Cada acumulación aumenta el daño en un **0%** adicional mientras estés en el área, se acumula hasta **8** veces.",
+		"description": "Each stack additionally increases zone's DoT every second by **0%** of ATK, stacking up to **8** times.",
 		"id": "buff_dfishchess_arealevelstackcount"
 	},
 	"buff_dfishchess_changeskilladdimmstatus": {
@@ -11256,12 +11386,12 @@
 	},
 	"buff_dfishchess_firedmgup_level0": {
 		"name": "Sol Abrasador",
-		"description": "Aumenta el daño de fuego en un **0%**, se acumula hasta **8** veces.",
+		"description": "Aumenta el daño de fuego en un **0%** y se acumula hasta **8** veces.",
 		"id": "buff_dfishchess_firedmgup_level0"
 	},
 	"buff_dfishchess_firedmgup_level6": {
 		"name": "Sol Abrasador",
-		"description": "Aumenta el daño de fuego en un **0%**, se acumula hasta **8** veces.",
+		"description": "Aumenta el daño de fuego en un **0%** y se acumula hasta **8** veces.",
 		"id": "buff_dfishchess_firedmgup_level6"
 	},
 	"buff_dfishchess_flame_ssr_level0_resonance": {
@@ -15274,6 +15404,11 @@
 		"description": "Por cada acumulación de mejora obtenida, **+1** a la clasificación de estrellas del arma. El excedente de clasificación de estrellas aplicará un **5%** de refuerzo de daño al arma.",
 		"id": "buff_bigsecret_upstar_ssr_linghan_ice"
 	},
+	"buff_bigsecret_upstar_ssr_loslyn_ice": {
+		"name": "Aguas Tranquilas",
+		"description": "Por cada acumulación de mejora obtenida, **+1** a la clasificación de estrellas del arma. El excedente de clasificación de estrellas aplicará un **5%** de refuerzo de daño al arma.",
+		"id": "buff_bigsecret_upstar_ssr_loslyn_ice"
+	},
 	"buff_bigsecret_upstar_ssr_mark_physic": {
 		"name": "Amanecer",
 		"description": "Por cada acumulación de mejora obtenida, **+1** a la clasificación de estrellas del arma. El excedente de clasificación de estrellas aplicará un **5%** de refuerzo de daño al arma.",
@@ -16009,6 +16144,11 @@
 		"description": "Solo son efectivos el daño eléctrico y de fuego, evita usar cualquier otro tipo de daño.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_norn_vipservice": {
+		"name": "Glenco: Integrante Estándar",
+		"description": "Glenco Biomedical Inc. REjuvenece tu Bienestar, CONSTRUYE Vida, RECONSTRUYE Tu Aventura:\r\nAumenta los PS Máx. en un **15%** y la velocidad de movimiento del vehículo un **20%** y reduce el consumo de resistencia en **15**. Dura **30** minutos.",
+		"id": "buff_norn_vipservice"
+	},
 	"buff_nornbeach_star": {
 		"name": "Estrella Espuma de Mar",
 		"description": "¡Se acaba el tiempo! ¡Ve a encontrar la próxima estrella!",
@@ -16648,5 +16788,10 @@
 		"name": "Yan Miao: Fragmento de Recuerdo II",
 		"description": "Proporciona un escudo para ti y tus compañeros, equivalente al 10% de los PS Máx. del compañero.",
 		"id": "buff_jmhz_yanmiao_02"
+	},
+	"newrow": {
+		"name": "",
+		"description": "",
+		"id": "newrow"
 	}
 }

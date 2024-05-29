@@ -1791,7 +1791,7 @@
 		},
 		"fashion": [],
 		"version": "2.5",
-		"limited": true,
+		"limited": false,
 		"id": "chainsaw_physic"
 	},
 	"hammer_ice": {
@@ -8484,6 +8484,422 @@
 		"limited": true,
 		"id": "linghan_ice"
 	},
+	"loslyn_ice": {
+		"name": "静澜",
+		"description": "从爷爷的旧船「静澜号」上拆下来的船锚，在经过改造后作为洛斯琳的武器。",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_luosilin.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_luosilin.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/luosilin.webp"
+		},
+		"rarity": 5,
+		"element": "ThunderIce",
+		"type": "Loslyn",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Loslyn_ice_ssr_star",
+		"avatar": "imitation_58",
+		"stats": [
+			{
+				"stat": {
+					"name": "攻击",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "生命",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "暴击",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**冰雷融合**：该武器计算伤害时取装备最高的寒冰/雷电基础攻击，装备最高的寒冰/雷电百分比攻击，装备最高的寒冰/雷电增伤。且该武器能同时视为寒冰元素武器和雷电元素武器。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**寒冰共鸣**：装备**2**把及以上寒冰武器触发，提升**15%**冰攻和**25%**冰抗，装备后后台可生效（多个寒冰共鸣/寒冰反应不叠加，优先生效寒冰共鸣）。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**雷电共鸣**：装备**2**把及以上雷电武器触发，提升**15%**雷攻和**25%**雷抗，装备后后台可生效（多个雷电共鸣/雷电反应不叠加，优先生效雷电共鸣）。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**霜刃-速切**：装备**静澜**时，任意武器连携技对附近目标初始造成**0.97%***自身最大生命值+**73.2%***冰攻+**36.6%***各元素抗性之和+**134.3%***暴击值点伤害，战斗状态下每间隔**0.5**秒，下次速切伤害额外提升**1**倍，至多提升**30**次，存在多个速切伤害时取最大初始值计算，速切伤害为连携伤害，若装备任意1把物理/火焰武器，则霜刃伤害提升至**1.3**倍。此外，霜刃伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。**",
+				"description": "N/A"
+			},
+			{
+				"title": "静澜切至后台后，造成一次崩裂伤害,若敌人身上有急冻则清除敌人身上的急冻并对其造成持续**12**秒的后台伤害。**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**高压彻骨**",
+			"description": "武器充能值充满后下次攻击使敌人进入**45**秒高压彻骨状态，受到的寒冰和雷电伤害增加**10%**，组队玩法中额外提升**15%**（该效果会替换掉目标的重伤，并且目标拥有该效果无法被添加重伤）。高压彻骨状态受到冰元素攻击会冰冻目标**2**秒，受到雷元素攻击会清除目标的增益效果，相同目标**15**秒内最多触发**1**次"
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "释放**技能-霜寒链域**后获得自身**60%**最大生命值的护盾，持续**30**秒。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**16%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "附带**连携-寒袭**效果的攻击命中目标时，额外造成本次攻击附带的**寒袭**层数***40%**攻击力伤害。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "当前武器的基础攻击成长+**32%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "**连携-冰封**状态持续时间提升至**6**秒，**技能-急冻**状态目标攻击力降低效果提升至**1000%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "释放**技能-霜寒链域**后，自身获得无视目标**15%**冰抗效果（所有单个元素无视抗性总值不能超过**50%**），同时最终伤害提升**14%**，持续**40**秒。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "冰封锚击",
+					"description": "在地面时，点击普攻可连续进行六次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第四次攻击对目标至多造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>14</>层寒袭。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并击退目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>10</>层寒袭。\r\n第六次攻击对目标造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害，并击倒目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>20</>层寒袭。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_melee.webp",
+					"id": "GA_FPlayerLoslynMelee_Melee"
+				},
+				{
+					"name": "滞空飞锚",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行6次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>6</>层寒袭。\r\n第四次攻击对目标造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>14</>层寒袭。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>10</>层寒袭。\r\n第六次攻击对目标造成<shuzhi>{10}%</>*攻击力+<shuzhi>{11}</>点伤害并击倒目标，<shuzhi>连携-凛冽</>状态下添加<shuzhi>20</>层寒袭。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_airattack.webp",
+					"id": "GA_FPlayerLoslynMelee_AirAttack"
+				},
+				{
+					"name": "凝滞朔风",
+					"description": "在地面普攻时，使用第一次至第四次普攻中，长按普攻可触发凝滞朔风。\r\n抡动静澜掀起冰霜旋风，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>15</>层寒袭。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_branch.webp",
+					"id": "GA_FPlayerLoslynMelee_Branch"
+				},
+				{
+					"name": "雪暴飓风",
+					"description": "在地面时，长按普攻可触发雪暴飓风。\r\n自身伴随静澜旋转攻击，并消耗耐力，每次命中对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_powerattack.webp",
+					"id": "GA_FPlayerLoslynMelee_PowerAttack"
+				},
+				{
+					"name": "凌空落锚",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发凌空落锚。\r\n从空中下落，落地过程中对命中的敌人每次造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，落地后对附近目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>8</>层寒袭。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_jumpattack.webp",
+					"id": "GA_FPlayerLoslynMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerLoslynEvade_Evade"
+				},
+				{
+					"name": "轮舞之锚",
+					"description": "方向键加闪避键触发的前闪避短暂时间内，点击普攻，可触发轮舞之锚，对前方目标至多造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。命中可打破目标<shuzhi>连携-冰封</>状态并额外造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>15</>层寒袭。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_fevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "霜碇流星",
+					"description": "闪避之后的短暂时间内，点击普攻，可触发霜碇流星，对前方目标至多造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害。命中可打破目标<shuzhi>连携-冰封</>状态并额外造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>10</>层寒袭。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_bevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "霜寒链域",
+					"description": "将静澜两端分别甩出攻击，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，<shuzhi>连携-凛冽</>状态下添加<shuzhi>52</>层寒袭，冷却<shuzhi>30</>秒（不受任何冷却时间清除、重置、变化效果的影响）。释放技能时获得持续<shuzhi>20</>秒的霸体效果，\r\n为命中的目标添加持续<shuzhi>15</>秒的急冻状态，攻击力下降<shuzhi>5%</>。",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_skill.webp",
+					"id": "GA_FPlayerLoslynSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "凛冽冲击",
+					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，向前方投出静澜，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>1.5</>秒（巅峰联赛不生效）释放。\r\n释放凛冽冲击后进入持续<shuzhi>14</>秒的凛冽状态，<shuzhi>静澜</>特定攻击会为命中的目标添加对应层数的寒袭效果，目标寒袭累计至<shuzhi>100</>层上限后会重置层数，并进入持续<shuzhi>4</>秒的冰封状态（同时<shuzhi>强控冰冻</>，<shuzhi>强控冰冻</>对boss不生效）。\r\n附带寒袭效果的普攻命中目标时，回复自身<shuzhi>3%</>最大生命值。",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_changeskill.webp",
+					"id": "GA_FPlayerLoslynChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "出勤时刻",
+					"description": "治安管理局便衣执勤任务正在进行中，如果偶然看到相识的警官，请务必保持低调，不要干扰执勤人员。",
+					"rarity": 5,
+					"source": "活动获取",
+					"simulacrumId": "imitation_58",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_58"
+				},
+				"weapon": {
+					"name": "澄浪",
+					"description": "「静澜」的改进复制品，更加轻便易携带，适合作为外勤配套装备。",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_loslyn_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"出勤时刻扭蛋活动获取"
+					],
+					"id": "imitation_fashion_58_w"
+				}
+			}
+		],
+		"version": "4.0",
+		"limited": true,
+		"id": "loslyn_ice"
+	},
 	"suspension_thunder": {
 		"name": "启明星",
 		"description": "设计者不明，原型蓝图已流失的特制悬浮电磁炮，内部有独特的电气储蓄工艺，一旦用坏维修起来极其麻烦，但班吉斯重工的钴蓝似乎能做到。",
@@ -10057,7 +10473,7 @@
 		"effects": [
 			{
 				"title": "专属",
-				"description": "影织与其他武器搭配时，可构成**“武器大师”**效果。\r\n昙花会随机出现在目标周围，并在**1-3**秒内爆炸，造成**37.5%**范围伤害。"
+				"description": "影织与其他武器搭配时，可构成**“武器大师”**效果。\r\n昙花会随机出现在目标周围，并在**1-3**秒内爆炸，造成**37.5%**范围伤害。**飞花-驻场**：**织影**任意攻击命中时，对附近目标造成**NaN%***异能攻击+**NaN%***自身最大生命值+**NaN%***各元素抗性之和+**NaN%***暴击值点伤害，每**1.5**秒至多触发一次，飞花伤害视为普攻伤害，若装备任意**1**把雷电/寒冰/物理/火焰武器，则飞花伤害提升至**NaN**倍。此外，飞花伤害不受除泰坦装备稀有属性以外的增伤效果影响，也不会触发额外攻击效果。"
 			}
 		],
 		"elementEffects": {
@@ -10096,7 +10512,7 @@
 		],
 		"advancements": [
 			{
-				"description": "普攻命中变为范围伤害。\r\n昙花引爆范围内存在其他昙花时，会使后续的昙花爆炸伤害提高（每个**1000%**，最多**5000%**）。\r\n**技能“映月之境”**生成昙花间隔缩短至**0.5**秒。",
+				"description": "普攻命中变为范围伤害。\r\n昙花引爆范围内存在其他昙花时，会使后续的昙花爆炸伤害提高（每个**6%**，最多**30%**）。\r\n**技能“映月之境”**生成昙花间隔缩短至**0.7**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10140,7 +10556,7 @@
 				"need": "fan_superpower_plasm"
 			},
 			{
-				"description": "**技能“映月之境”**生成昙花间隔缩短至**0.3**秒。\r\n昙花会附着于敌方目标。\r\n**技能“映月之境”**持续时间延长至**20**秒。",
+				"description": "**技能“映月之境”**生成昙花间隔缩短至**0.6**秒。\r\n昙花会附着于敌方目标。\r\n**技能“映月之境”**持续时间延长至**12**秒。释放**技能“映月之境”**后增伤**NaN%**，持续**NaN**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -10184,7 +10600,7 @@
 				"need": "fan_superpower_plasm"
 			},
 			{
-				"description": "自身处于**技能“映月之境”**内时，每秒获得**30**点武器充能值，同时连携技造成伤害提高**15%**。",
+				"description": "自身处于**技能“映月之境”**内时，所有武器的技能伤害提升**15%**，持续**NaN**秒。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -13281,7 +13697,7 @@
 		],
 		"effects": [
 			{
-				"title": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。**",
+				"title": "**火物融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。**",
 				"description": "N/A"
 			},
 			{
@@ -14074,13 +14490,7 @@
 				"value": 13.652913
 			}
 		],
-		"upgradeProps": [
-			[
-				3.15534,
-				194.17476,
-				2.427185
-			]
-		],
+		"upgradeProps": [],
 		"effects": [
 			{
 				"title": "**物火融合**：该武器计算伤害时取装备最高的物理/火焰基础攻击，装备最高的物理/火焰百分比攻击，装备最高的物理/火焰增伤。且该武器能同时视为物理元素武器和火焰元素武器。**",
@@ -16938,7 +17348,7 @@
 			}
 		],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "umbrella_fire"
 	},
 	"yoyo_ice": {
@@ -17312,7 +17722,7 @@
 		},
 		"fashion": [],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "yoyo_ice"
 	},
 	"yulan_ice": {

@@ -2410,5 +2410,221 @@
 			}
 		],
 		"id": "FightPet_11"
+	},
+	"FightPet_12": {
+		"name": "Pequeño Cubby",
+		"description": "Un curioso osito de juguete con orejas de gato, hecho por Zeke como regalo para Shirli. Bajo la torpeza exterior del juguete se encuentra el amor genuino de un hermano hacia su hermana.",
+		"PetElementType": "Thunder",
+		"PetPropertyType": "Attack",
+		"PetRarity": 5,
+		"assets": {
+			"PetIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/BP_Preview_BattleRobot_010.webp",
+			"PetActivatedIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/PetFight/icon/LH_FightPet_010.webp",
+			"ItemIcon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/pet/FightPet/FightPet_010.webp"
+		},
+		"skills": [
+			{
+				"name": "Bomba de PEM",
+				"description": "Cubby encuentra y lanza una bomba de PEM que inflige daño de área igual al **1621% / 1621% / 2431%** del ATQ a los enemigos dentro del rango.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act01.webp"
+			},
+			{
+				"name": "Campo de Pulso Eléctrico",
+				"description": "Cubby comienza a cargar y luego inflige daño igual al **1361% / 2041% / 2041%** del ATQ a todos los enemigos en un área amplia hacia el frente.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act02.webp"
+			},
+			{
+				"name": "Lanza Relámpago Magnética",
+				"description": "Cubby lanza 2 lanzas relámpago al enemigo, cada una inflige daño igual al **876% / 876% / 876%** del ATQ, seguidas de 1 lanza relámpago enorme que inflige daño igual al **876% / 876% / 876%** del ATQ.",
+				"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/BattleRobotSkill/BattleRobot_010_act03.webp"
+			}
+		],
+		"properties": "Hereda **12%** del valor promedio de los valores de ataque base de fuego, escarcha, eléctrico y físico del maestre.\r\n**1** ranura de módulo y **5** de carga.",
+		"advancements": [
+			{
+				"description": "Aumenta la herencia de ATQ a **18%**.\r\nAumenta el daño de Campo de Pulso Eléctrico a **2041%**.\r\n**2** ranuras de módulo y **8** de carga.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 30
+					}
+				]
+			},
+			{
+				"description": "Aumenta la herencia de ATQ a **24%**.\r\nAumenta el daño de Bomba de PEM a **2431%**.\r\n**3** ranuras de módulo y **11** de carga.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 40
+					}
+				]
+			},
+			{
+				"description": "Aumenta la herencia de ATQ a **30%**.\r\nEl daño de cada impacto de Lanza Relámpago Magnética aumenta a **1314%** y el daño de la Lanza Relámpago Magnética enorme aumenta a **2146%**.\r\n**4** ranuras de módulo y **15** de carga.",
+				"mats": [
+					{
+						"mat_id": "fragment_FightPet_12",
+						"mat_amount": 60
+					}
+				]
+			}
+		],
+		"PetUpgradeItemMap": [
+			{
+				"material": {
+					"name": "Bolita de Esencia Taotie",
+					"description": "Se dice que el cuerpo energético unido se formó a partir de la energía residual del organismo comido.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_029.webp",
+					"type": "GIFT",
+					"source": [
+						"Truenovilla: Derrota a Taotie"
+					],
+					"id": "Item_Jiuyu_Harvest_029"
+				},
+				"exp": 40
+			},
+			{
+				"material": {
+					"name": "Licencia de Armas",
+					"description": "Un sistema de llaves que otorga permiso para usar armas.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_028.webp",
+					"type": "GIFT",
+					"source": [
+						"Truenovilla: Derrota a Longxiang Ruin",
+						"Truenovilla: Derrota a la armadura maldita",
+						"Acuavilla: Derrota a los ruines oscuros Tie Yuan"
+					],
+					"id": "Item_Jiuyu_Harvest_028"
+				},
+				"exp": 20
+			},
+			{
+				"material": {
+					"name": "Armadura Laminar Normal",
+					"description": "Una armadura laminar pequeña y normal que ofrece una defensa bastante buena.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_011.webp",
+					"type": "GIFT",
+					"source": [
+						"Fuegovilla: Derrota a Ruin Oscuro Cola de Ave",
+						"Fuegovilla: Guardia Ruin de Fuegovilla",
+						"Fuegovilla: Derrota a Guardia Ruin de Truenovilla",
+						"Acuavilla: Derrota a los Guardias Ruines del Dominio de Acuavilla"
+					],
+					"id": "Item_Jiuyu_Harvest_011"
+				},
+				"exp": 20
+			},
+			{
+				"material": {
+					"name": "Pluma de Cuervo Negro",
+					"description": "El silbido que emite cortando el viento parece audible mientras lo contemplas.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_005.webp",
+					"type": "GIFT",
+					"source": [
+						"Fuegovilla: Vence a la Oscuridad: Cuervo Negro"
+					],
+					"id": "Item_Jiuyu_Harvest_005"
+				},
+				"exp": 10
+			},
+			{
+				"material": {
+					"name": "Armadura de Malla de Zhuyan",
+					"description": "Los patrones de malla hacen evidente que no fue una civilización ordinaria la que estuvo detrás de su creación.",
+					"rarity": 4,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_006.webp",
+					"type": "GIFT",
+					"source": [
+						"Fuegovilla: Derrota a Zhuyan"
+					],
+					"id": "Item_Jiuyu_Harvest_006"
+				},
+				"exp": 10
+			},
+			{
+				"material": {
+					"name": "Piedra Gris",
+					"description": "Un mineral peculiar del Dominio9. Material esencial utilizado en la fabricación de determinados dispositivos de aleación.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_007.webp",
+					"type": "GIFT",
+					"source": [
+						"Fuegovilla: Vence a la Oscuridad: Vínculo Astral",
+						"Fuegovilla: Vence a la Oscuridad: Cuernomelena",
+						"Fuegovilla: Vence a la Oscuridad: Tropa",
+						"Fuegovilla: Vence a la Oscuridad: Líder",
+						"Fuegovilla: derrota a Oscuridad: Rocán",
+						"Fuegovilla: Derrota a Oscuridad: Terrolobo"
+					],
+					"id": "Item_Jiuyu_Harvest_007"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Cristal del Cielo",
+					"description": "Un mineral peculiar del Dominio9. Su apariencia cristalina brilla intensamente a la luz del sol.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_009.webp",
+					"type": "GIFT",
+					"source": [
+						"Fuegovilla: Derrota arcáguilas"
+					],
+					"id": "Item_Jiuyu_Harvest_009"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Roca Umbra",
+					"description": "Un mineral peculiar del Dominio9. Su textura inusual le otorga un color extraño.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Harvest_010.webp",
+					"type": "GIFT",
+					"source": [
+						"Fuegovilla: Derrota lobos de tres colas",
+						"Fuegovilla: Derrota antealas",
+						"Fuegovilla: Derrota fierosos"
+					],
+					"id": "Item_Jiuyu_Harvest_010"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Esencia Oscura",
+					"description": "Se formó un cristal en la superficie por la fuga de energía de la corriente telúrica. Afectado por el medio ambiente, produce un entramado que tiende a reflejar más la luz púrpura, de donde viene su nombre. Es una fuente de baja energía.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_01.webp",
+					"type": "GIFT",
+					"source": [
+						"Fuegovilla: Cumbre Espiritual",
+						"Fuegovilla: derrota al Azote de Pesadilla"
+					],
+					"id": "Item_Jiuyu_Mine_01"
+				},
+				"exp": 5
+			},
+			{
+				"material": {
+					"name": "Esencia de Jengibre",
+					"description": "Cristal formado por la energía que se filtra a la superficie desde las corrientes telúricas. Fácilmente afectados por el medio ambiente, producen un entramado que refleja más luz amarilla, de donde le viene el nombre. Es una fuente de alta energía.",
+					"rarity": 3,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/shicai/Jiuyu_Mine_02.webp",
+					"type": "GIFT",
+					"source": [
+						"Fuegovilla: Cumbre Espiritual",
+						"Fuegovilla: Derrota a los Plumacuernos"
+					],
+					"id": "Item_Jiuyu_Mine_02"
+				},
+				"exp": 5
+			}
+		],
+		"id": "FightPet_12"
 	}
 }

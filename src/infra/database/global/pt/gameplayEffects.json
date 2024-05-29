@@ -1979,6 +1979,16 @@
 		"description": "Durante a duração, o corpo de aço do Errante é desabilitado e não pode entrar em um estado invencível.",
 		"id": "buff_boss_002_5_ignore"
 	},
+	"buff_boss_010_4_punish": {
+		"name": "Castigo",
+		"description": "Após o Serafim atingir um alvo que não seja Coragem, Castigos serão adicionados. Os Castigos serão reduzidos em 1 acúmulo a cada 5 segundos. Se os acúmulos de Castigo atingirem 10, aquele Errante perderá seu corpo de aço e invencibilidade e não poderá recuperar o corpo de aço ou a invencibilidade por 90 segundos.",
+		"id": "buff_boss_010_4_punish"
+	},
+	"buff_boss_010_4_punishment": {
+		"name": "Disciplina",
+		"description": "Incapaz de ganhar corpo de aço ou invencibilidade.",
+		"id": "buff_boss_010_4_punishment"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Falha do Corpo de Aço",
 		"description": "Os Errantes não podem conceder o estado de corpo de aço a si mesmos.",
@@ -2531,7 +2541,7 @@
 	},
 	"buff_wantedcriminal": {
 		"name": "Procurado!",
-		"description": "Você é procurado por cometer um crime. Fuja para um lugar seguro para evitar a captura!",
+		"description": "Você é procurado por cometer um crime. As patrulhas causarão danos adicionais com base na gravidade da sua ofensa. Fuja para um lugar seguro para evitar a captura e remover seu status de procurado!",
 		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
@@ -8029,6 +8039,11 @@
 		"description": "Reduz o tempo de recarga da Relíquia em 90%.",
 		"id": "buff_gwzj_worldboss4"
 	},
+	"buff_hackterminal_charge": {
+		"name": "Capacidade de processamento aumentada",
+		"description": "Dentro do alcance, a capacidade de processamento do Terminal do Autorizador aumentará continuamente até atingir o valor máximo.",
+		"id": "buff_hackterminal_charge"
+	},
 	"buff_bailing_level1": {
 		"name": "Bai Ling: Valentia",
 		"description": "Quando Bai Ling guarda o Planador ou a Prancha a Jato, a velocidade aumenta em **8%** durante **12** seg. Tempo de recarga: **60** seg.",
@@ -8894,6 +8909,76 @@
 		"description": "A vida não ficará abaixo de 20% ao sofrer dano.",
 		"id": "buff_lockhp_less20_overlap"
 	},
+	"buff_loslyn_hpshield": {
+		"name": "Águas Calmas: Escudo",
+		"description": "Você recebe um escudo equivalente a **0%** da vida máxima durante **1** segundos.",
+		"id": "buff_loslyn_hpshield"
+	},
+	"buff_loslyn_ice_resonance": {
+		"name": "Ressonância gélida",
+		"description": "**Ressonância gélida**: Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade.",
+		"id": "buff_loslyn_ice_resonance"
+	},
+	"buff_loslyn_level1": {
+		"name": "Âncora",
+		"description": "Aumenta o dano final em **0%**.",
+		"id": "buff_loslyn_level1"
+	},
+	"buff_loslyn_level2": {
+		"name": "Conecte",
+		"description": "Aumenta o dano final em **0%**. **Furacão de Neve** não consome vigor. Após usar **Golpe Lancinante**, aumenta o dano crítico em **1%** durante **2** segundos.",
+		"id": "buff_loslyn_level2"
+	},
+	"buff_loslyn_level2_critdmgup": {
+		"name": "Âncora",
+		"description": "Aumenta o dano crítico em **0%** durante **1** segundos.",
+		"id": "buff_loslyn_level2_critdmgup"
+	},
+	"buff_loslyn_skill_dmgup": {
+		"name": "Aura de geada",
+		"description": "Após usar aura de geada, você ignora **0%** da resistência gélida dos inimigos e seu dano final aumenta em **1%** durante **2** segundos.",
+		"id": "buff_loslyn_skill_dmgup"
+	},
+	"buff_loslyn_skillbati": {
+		"name": "Corpo de aço",
+		"description": "Dura **0** segundos.",
+		"id": "buff_loslyn_skillbati"
+	},
+	"buff_loslyn_skilldebuff": {
+		"name": "Instagelo",
+		"description": "Reduz o ataque durante **0** segundos.",
+		"id": "buff_loslyn_skilldebuff"
+	},
+	"buff_loslyn_skillstate": {
+		"name": "Frio lancinante",
+		"description": "Recebe corpo de aço. Os ataques de Águas Calmas têm um efeito de **golpe congelante** adicional. Dura **0** segundos.",
+		"id": "buff_loslyn_skillstate"
+	},
+	"buff_loslyn_skillstate_iceatkup": {
+		"name": "Inesquecível",
+		"description": "Após entrar em frio lancinante, o ATQ gélido aumenta durante **0** segundos.",
+		"id": "buff_loslyn_skillstate_iceatkup"
+	},
+	"buff_loslyn_specblock": {
+		"name": "Evasão veloz",
+		"description": "Evasão veloz: Ao sofrer um ataque, anula o dano dele.",
+		"id": "buff_loslyn_specblock"
+	},
+	"buff_loslyn_specfrozenstate": {
+		"name": "Bloqueado por Gelo",
+		"description": "Bloqueado por Gelo",
+		"id": "buff_loslyn_specfrozenstate"
+	},
+	"buff_loslyn_specfrozenstate_enddot": {
+		"name": "Perda sofrida",
+		"description": "Perde **0%** da vida perdida por segundo durante **1** segundos.",
+		"id": "buff_loslyn_specfrozenstate_enddot"
+	},
+	"buff_loslyn_thunder_resonance": {
+		"name": "Ressonância Elétrica",
+		"description": "**Ressonância elétrica**: Aumenta o ATQ elétrico em **15%** e a resistência elétrica em **25%**. Ativa-se ao equipar **2** ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade.",
+		"id": "buff_loslyn_thunder_resonance"
+	},
 	"buff_ls_sqqs": {
 		"name": "Atualizado",
 		"description": "Aumenta a capacidade de saciedade em **20%** durante **30** minutos.",
@@ -8941,12 +9026,12 @@
 	},
 	"buff_lucktarrow_07": {
 		"name": "Terror",
-		"description": "モンスターの与ダメージ+40%",
+		"description": "Aumenta o dano dos inimigos em 40%.",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "Susto",
-		"description": "モンスターの攻撃力+40%",
+		"description": "Aumenta o ATQ dos inimigos em 40%.",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
@@ -9521,7 +9606,7 @@
 	},
 	"buff_maska": {
 		"name": "Máscara do vazio",
-		"description": "Todos se transformaram em inimigos, mas cuidado, o chefe ainda consegue te reconhecer. Qualquer combate com outros inimigos será visto como uma interação normal entre inimigos.",
+		"description": "Você se transformou em um dos inimigos! Mas cuidado, o chefe ainda consegue te reconhecer. Qualquer combate com outros inimigos será visto como uma interação normal entre inimigos.",
 		"id": "buff_maska"
 	},
 	"buff_maskb": {
@@ -10564,6 +10649,46 @@
 		"description": "Aumenta o dano final em **0%**. Com **Fluxolivre** equipada, aumenta o dano crítico em **1%**. Ao entrar em combate, recebe **9** acúmulos adicionais de **posicionamento decisivo**. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
 		"id": "buff_matrix_ssr92_level4"
 	},
+	"buff_matrix_ssr93_level1": {
+		"name": "Inesquecível",
+		"description": "Aumenta o dano gélido em **0%**. Após o **bloqueado por gelo** de um alvo ser removido, sofre dano de hemorragia equivalente a **1%** da vida perdida por segundo durante **2** segundos (esse dano não pode exceder **3** × ATQ do Errante e não é afetado por nenhum efeito de reforço de dano). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr93_level1"
+	},
+	"buff_matrix_ssr93_level2": {
+		"name": "Inesquecível",
+		"description": "Aumenta o dano gélido em **0%**. Após o **bloqueado por gelo** de um alvo ser removido, sofre dano de hemorragia equivalente a **1%** da vida perdida por segundo durante **2** segundos (esse dano não pode exceder **3** × ATQ do Errante e não é afetado por nenhum efeito de reforço de dano). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr93_level2"
+	},
+	"buff_matrix_ssr93_level3": {
+		"name": "Inesquecível",
+		"description": "Aumenta o dano gélido em **0%**. Após o **bloqueado por gelo** de um alvo ser removido, sofre dano de hemorragia equivalente a **1%** da vida perdida por segundo durante **2** segundos (esse dano não pode exceder **3** × ATQ do Errante e não é afetado por nenhum efeito de reforço de dano). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr93_level3"
+	},
+	"buff_matrix_ssr93_level4": {
+		"name": "Inesquecível",
+		"description": "Aumenta o dano gélido em **0%**. Após o **bloqueado por gelo** de um alvo ser removido, sofre dano de hemorragia equivalente a **1%** da vida perdida por segundo durante **2** segundos (esse dano não pode exceder **3** × ATQ do Errante e não é afetado por nenhum efeito de reforço de dano). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr93_level4"
+	},
+	"buff_matrix_ssr94_level1": {
+		"name": "Inesquecível",
+		"description": "O dano final aumenta em **0%** para cada **1** arma gélida equipada. Após entrar em **frio lancinante**, o ATQ gélido aumenta em **1%** durante **2** segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr94_level1"
+	},
+	"buff_matrix_ssr94_level2": {
+		"name": "Inesquecível",
+		"description": "O dano final aumenta em **0%** para cada **1** arma gélida equipada. Após entrar em **frio lancinante**, o ATQ gélido aumenta em **1%** durante **2** segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr94_level2"
+	},
+	"buff_matrix_ssr94_level3": {
+		"name": "Inesquecível",
+		"description": "O dano final aumenta em **0%** para cada **1** arma gélida equipada. Após entrar em **frio lancinante**, o ATQ gélido aumenta em **1%** durante **2** segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr94_level3"
+	},
+	"buff_matrix_ssr94_level4": {
+		"name": "Inesquecível",
+		"description": "O dano final aumenta em **0%** para cada **1** arma gélida equipada. Após entrar em **frio lancinante**, o ATQ gélido aumenta em **1%** durante **2** segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+		"id": "buff_matrix_ssr94_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Intimidador Tipo II: Guarda",
 		"description": "Aumenta a defesa em **50%** do dano causado. Fica imune a interrupção pelo tempo a seguir.",
@@ -11084,6 +11209,11 @@
 		"description": "O Tecelão vai explodir a marca em um momento específico. Quanto mais acúmulos, maior o dano. As marcas são instáveis.",
 		"id": "buff_boss_hum_072_skill09_stack"
 	},
+	"buff_boss_hum_076_delayspawnbullet": {
+		"name": "Energia do vazio",
+		"description": "No final da duração, cristais de energia do vazio destrutíveis são gerados ao redor do chefe.",
+		"id": "buff_boss_hum_076_delayspawnbullet"
+	},
 	"buff_boss037_skill04_cantcharge": {
 		"name": "Divisão dimensional",
 		"description": "Não recebe carga de arma nem sofre dano prolongado durante Phantasia.",
@@ -11226,7 +11356,7 @@
 	},
 	"buff_dfishchess_arealevelstackcount": {
 		"name": "Mobilização tática",
-		"description": "Cada acúmulo aumenta o dano em **0%** na zona. Acumula até **8** vezes.",
+		"description": "Cada acúmulo aumenta o dano prolongado da área por segundo em mais **0%** do ATQ. Acumula até **8** vezes.",
 		"id": "buff_dfishchess_arealevelstackcount"
 	},
 	"buff_dfishchess_changeskilladdimmstatus": {
@@ -14645,7 +14775,7 @@
 		"id": "buff_imitation_nanyin_level2"
 	},
 	"buff_imitation_paradox_level1": {
-		"name": "Titi e Poppa",
+		"name": "Polo e Poppa",
 		"description": "Aumenta o dano final em **0%**.",
 		"id": "buff_imitation_paradox_level1"
 	},
@@ -15273,6 +15403,11 @@
 		"name": "Tigre Alabastro",
 		"description": "A cada acúmulo de efeito positivo ganho, a classificação estelar da arma aumenta em **1**. A classificação estelar excedente aplica um reforço de dano de **5%** à arma.",
 		"id": "buff_bigsecret_upstar_ssr_linghan_ice"
+	},
+	"buff_bigsecret_upstar_ssr_loslyn_ice": {
+		"name": "Águas Calmas",
+		"description": "A cada acúmulo de efeito positivo ganho, a classificação estelar da arma aumenta em **1**. A classificação estelar excedente aplica um reforço de dano de **5%** à arma.",
+		"id": "buff_bigsecret_upstar_ssr_loslyn_ice"
 	},
 	"buff_bigsecret_upstar_ssr_mark_physic": {
 		"name": "Alvorada",
@@ -16009,6 +16144,11 @@
 		"description": "Somente danos elétrico e ígneo surtem efeito.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_norn_vipservice": {
+		"name": "Glenco: membro padrão",
+		"description": "Glenco Biomédica Ltda. REcriar o bem-estar, CONSTRUIR a vida, RECONSTRUIR a aventura:\r\nAumenta a vida máxima em **15%** e a velocidade de movimento do veículo em **20%** e diminui o consumo de vigor em **15**. Dura **30** minutos.",
+		"id": "buff_norn_vipservice"
+	},
 	"buff_nornbeach_star": {
 		"name": "Estrela Espuma do Mar",
 		"description": "O tempo está acabando! Vá encontrar a próxima estrela!",
@@ -16648,5 +16788,10 @@
 		"name": "Yan Miao: fragmento de lembrança II",
 		"description": "Fornece a você e aos colegas um escudo equivalente a 10% da vida máxima de cada um.",
 		"id": "buff_jmhz_yanmiao_02"
+	},
+	"newrow": {
+		"name": "",
+		"description": "",
+		"id": "newrow"
 	}
 }

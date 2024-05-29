@@ -1791,7 +1791,7 @@
 		},
 		"fashion": [],
 		"version": "2.5",
-		"limited": true,
+		"limited": false,
 		"id": "chainsaw_physic"
 	},
 	"hammer_ice": {
@@ -5764,7 +5764,7 @@
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Cube_Fire01.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Cube_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/ling.webp"
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/lingboling.webp"
 		},
 		"rarity": 5,
 		"element": "Flame",
@@ -8484,6 +8484,422 @@
 		"limited": true,
 		"id": "linghan_ice"
 	},
+	"loslyn_ice": {
+		"name": "Águas Calmas",
+		"description": "A âncora retirada do antigo navio do avô de Roslyn. Foi modificada e posteriormente se tornou sua arma.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_luosilin.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_luosilin.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/luosilin.webp"
+		},
+		"rarity": 5,
+		"element": "ThunderIce",
+		"type": "Loslyn",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Loslyn_ice_ssr_star",
+		"avatar": "imitation_58",
+		"stats": [
+			{
+				"stat": {
+					"name": "Ataque",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "Vida",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crítico",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Fusão de gelo e raio**",
+				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ gélido/elétrico mínimo equipado, a maior porcentagem de ATQ gélido/elétrico equipada e o maior reforço de dano gélido/elétrico equipado, e a arma é considerada uma arma gélida e elétrica."
+			},
+			{
+				"title": "**Ressonância gélida**",
+				"description": "Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade."
+			},
+			{
+				"title": "**Ressonância elétrica**",
+				"description": "Aumenta o ATQ elétrico em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade."
+			},
+			{
+				"title": "**Gume gelado: Corte ligeiro**",
+				"description": "Com **Águas Calmas** equipada, a habilidade de descarga de qualquer arma causa dano equivalente a **0.97%** da vida máxima do Errante + **73.2%** do ATQ gélido + **36.6%** da soma de todos os tipos de resistência do Errante + **134.3%** do crítico aos alvos próximos. A cada **0,5** segundo em combate, o dano do próximo corte ligeiro aumenta **1** vez, limitado a **30** vezes. Quando há o dano de vários cortes ligeiros juntos, o cálculo é feito sobre o valor inicial mais alto. O dano de corte ligeiro conta como dano de habilidade de descarga. Se houver 1 arma física/ígnea de qualquer tipo equipada, o dano de gume gelado é multiplicado por **1,3**. Além disso, o dano de gume gelado não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
+			},
+			{
+				"title": "Após trocar Águas Calmas para o espaço secundário, causa dano explosivo 1 vez. Se um inimigo tiver instagelo, o instagelo será removido e o inimigo sofrerá dano passivo contínuo durante **12** segundos.**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**Impacto de força**",
+			"description": "Com carga completa, o ataque seguinte da arma aplica impacto de força no inimigo durante **45** segundos, o que aumenta os danos gélido e elétrico sofridos pelo alvo em **10%** (e mais **15%** em jogo em equipe). Impacto de força substitui o status de lesão do alvo, e os alvos com impacto de força não podem sofrer lesão. Os ataques gélidos congelam os alvos infligidos por impacto de força durante **2** segundos, e os ataques elétricos removem os efeitos positivos dos alvos com impacto de força. O efeito se aciona apenas **1** vez a cada **15** segundos no mesmo alvo."
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "Após usar **aura de geada**, você recebe um escudo equivalente a **60%** da vida máxima durante **30** segundos.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Aumenta o crescimento do ATQ mínimo da arma atual em **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Quando um alvo sofre um ataque com **golpe congelante**, ele sofre também dano equivalente aos acúmulos de **golpe congelante** × **40%** do ATQ.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Aumenta o crescimento do ATQ mínimo da arma atual em **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Aumenta a duração de **bloqueado por gelo** para **6** segundos. Aumenta o efeito de redução de ATQ em alvos com **instagelo** para **1000%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Após usar **aura de geada**, você ignora **15%** da resistência gélida dos alvos (a resistência total ignorada para cada elemento não pode exceder **50%**). Ao mesmo tempo, aumenta o dano final em **14%** durante **40** segundos.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Âncora Congelada",
+					"description": "No chão, use o botão de ataque normal para executar 6 ataques seguidos.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> e repele o alvo. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>6</> acúmulos de golpe congelante.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> e repele o alvo. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>6</> acúmulos de golpe congelante.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</> e repele o alvo. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>6</> acúmulos de golpe congelante.\r\nQuarto ataque: Causa dano de <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</> e repele o alvo. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>14</> acúmulos de golpe congelante.\r\nQuinto ataque: Causa dano de <shuzhi>{8}%</> do ATQ + <shuzhi>{9}</> e repele o alvo. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>10</> acúmulos de golpe congelante.\r\nSexto ataque: Causa dano de <shuzhi>{10}%</> do ATQ + <shuzhi>{11}</> e derruba o alvo. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>20</> acúmulos de golpe congelante.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_melee.webp",
+					"id": "GA_FPlayerLoslynMelee_Melee"
+				},
+				{
+					"name": "Âncora Voadora",
+					"description": "No ar, use o botão de ataque normal para atacar 6 vezes seguidas no ar e consumir vigor.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>6</> acúmulos de golpe congelante.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>6</> acúmulos de golpe congelante.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>6</> acúmulos de golpe congelante.\r\nQuarto ataque: Causa dano de <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>14</> acúmulos de golpe congelante.\r\nQuinto ataque: Causa dano de <shuzhi>{8}%</> do ATQ + <shuzhi>{9}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>10</> acúmulos de golpe congelante.\r\nSexto ataque: Causa dano de <shuzhi>{10}%</> do ATQ + <shuzhi>{11}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>20</> acúmulos de golpe congelante.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_airattack.webp",
+					"id": "GA_FPlayerLoslynMelee_AirAttack"
+				},
+				{
+					"name": "Vento Setentrional",
+					"description": "No chão, segure o botão de ataque normal do primeiro ao quarto ataque normal para acionar Vento Setentrional.\r\nBalança Águas Calmas à frente para criar um redemoinho gelado, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>15</> acúmulos de golpe congelante.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_branch.webp",
+					"id": "GA_FPlayerLoslynMelee_Branch"
+				},
+				{
+					"name": "Furacão de Neve",
+					"description": "No chão, segure o botão de ataque normal para acionar Furacão de Neve.\r\nVocê segue Águas Calmas para executar um ataque giratório, consumindo vigor e causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos a cada golpe que eles sofrem.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_powerattack.webp",
+					"id": "GA_FPlayerLoslynMelee_PowerAttack"
+				},
+				{
+					"name": "Âncora Celeste",
+					"description": "Segure o botão de ataque normal enquanto estiver no ar (quando houver um alvo), ou use um ataque normal ao escalar, pular para trás ou usar a Mochila a Jato para acionar Âncora Cadente.\r\nDespenca do ar. Durante a aterrissagem, cada golpe causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>. Ao aterrissar, causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> aos alvos próximos. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>8</> acúmulos de golpe congelante.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_jumpattack.webp",
+					"id": "GA_FPlayerLoslynMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Esquiva",
+					"description": "Esquive-se logo antes de sofrer um golpe para criar uma Phantasia, reduzindo a velocidade dos alvos dentro da área. Fica imune a interrupção enquanto se esquiva.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerLoslynEvade_Evade"
+				},
+				{
+					"name": "Âncora Cíclica",
+					"description": "Use o botão de ataque normal dentro do tempo de esquiva perfeita (use um botão direcional antes de se esquivar) para acionar Âncora Cíclica. Causa dano de até <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente. Acertar um golpe pode remover o efeito <shuzhi>bloqueado por gelo</> de um alvo e causar dano adicional de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>15</> acúmulos de golpe congelante.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_fevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Âncora Meteórica",
+					"description": "Use o botão de ataque normal logo após se esquivar para acionar Âncora Meteórica. Causa dano de até <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente. Acertar um golpe pode remover o efeito <shuzhi>bloqueado por gelo</> de um alvo e causar dano adicional de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>10</> acúmulos de golpe congelante.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_bevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Aura de geada",
+					"description": "Balança as duas extremidades de Águas Calmas para atacar separadamente, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>52</> acúmulos de golpe congelante. Tempo de recarga: <shuzhi>30</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga. Ao usar a habilidade, recebe corpo de aço durante <shuzhi>20</> segundos.\r\nAplica <shuzhi>15</> segundos de instagelo aos alvos atingidos e reduz o ATQ deles em <shuzhi>5%</>.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_skill.webp",
+					"id": "GA_FPlayerLoslynSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Golpe Lancinante",
+					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e faz lançar Águas Calmas à frente. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, a imunidade a dano dura <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).\r\nApós usar Golpe Lancinante, entra em frio lancinante durante <shuzhi>14</> segundos. O ataque especial de <shuzhi>Águas Calmas</> vai aplicar o número atual de acúmulos de golpe congelante ao alvo atingido. Cada alvo pode ter até <shuzhi>100</> acúmulos de golpe congelante. Ao atingir o máximo de acúmulos, o número de acúmulos é zerado e o alvo fica bloqueado por gelo durante <shuzhi>4</> segundos e sofre <shuzhi>congelamento forte</> (<shuzhi>congelamento forte</> é ineficaz contra chefes).\r\nQuando um alvo sofre um ataque com golpe congelante, você recupera <shuzhi>3%</> da vida máxima.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_changeskill.webp",
+					"id": "GA_FPlayerLoslynChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Disfarce",
+					"description": "A operação secreta da Segurança Pública está em andamento. Se você reconhecer algum agente, mantenha a discrição e evite interferir em seu trabalho.",
+					"rarity": 5,
+					"source": "Em eventos",
+					"simulacrumId": "imitation_58",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_58"
+				},
+				"weapon": {
+					"name": "Ondas Límpidas",
+					"description": "Uma réplica aprimorada de Águas Calmas. É mais leve e fácil de transportar, tornando-a adequada como equipamento de campo.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_loslyn_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Obtido no evento Gachapon Disfarce"
+					],
+					"id": "imitation_fashion_58_w"
+				}
+			}
+		],
+		"version": "4.0",
+		"limited": true,
+		"id": "loslyn_ice"
+	},
 	"suspension_thunder": {
 		"name": "Vênus",
 		"description": "Não se sabe quem criou. O esquema do protótipo do detonador eletromagnético flutuante especial se perdeu. Ele conta com um processo de economia elétrica único. É muito trabalhoso consertá-lo quando estraga por uso excessivo, mas Cobalt-B da Banges Tech parece saber como se faz. ",
@@ -10057,7 +10473,7 @@
 		"effects": [
 			{
 				"title": "Ressonância elemental",
-				"description": "Combinar a Malhasombria com outras armas cria o efeito **mestre das armas**.\r\nDamas-da-noite aparecem aleatoriamente ao redor do alvo e explodem dentro de **1 a 3** segundos, causando **37.5%** de dano em área."
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
@@ -13293,8 +13709,8 @@
 				"description": "Aumenta o ATQ ígneo em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas ígneas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância ígnea ou reação ígnea, e a ressonância ígnea tem prioridade."
 			},
 			{
-				"title": "**Nexo central: Em campo**",
-				"description": "Ao atingir qualquer alvo com **Fluxolivre**, causa dano equivalente a **256%** do ATQ ígneo + **3.6%** da vida máxima do Errante + **133%** da soma de todos os tipos de resistência do Errante + **4.9%** do crítico aos alvos próximos. Pode ser acionado até 1 vez a cada **1,5** segundo. O dano de nexo central conta como dano de ataque normal. Se houver **1** arma gélida ou elétrica equipada, o dano de nexo central é multiplicado por **1.3**. Além disso, o dano de nexo central não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
+				"title": "**Conexão central: Em campo**",
+				"description": "Ao atingir qualquer alvo com **Fluxolivre**, causa dano equivalente a **256%** do ATQ ígneo + **3.6%** da vida máxima do Errante + **133%** da soma de todos os tipos de resistência do Errante + **4.9%** do crítico aos alvos próximos. Pode ser acionado até 1 vez a cada **1,5** segundo. O dano de conexão central conta como dano de ataque normal. Se houver **1** arma gélida ou elétrica equipada, o dano de conexão central é multiplicado por **1.3**. Além disso, o dano de conexão central não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
 			}
 		],
 		"elementEffects": {
@@ -13570,7 +13986,7 @@
 			"skill": [
 				{
 					"name": "Entre no Jogo",
-					"description": "Salta no ar, transforma o campo de batalha em um tabuleiro de Go e levita (não é possível se mover nesse período). Recebe visão de cima por até <shuzhi>10</> segundos. Nesse período, seus ataques tornam-se peças de Go e suas habilidades são substituídas por <shuzhi>Vantagem de Meia Peça</>. Toque no tabuleiro de Go para pôr <shuzhi>18</> peças em ordem. Cada uma causa dano de <shuzhi>250%</> do ATQ a todos os alvos no tabuleiro e os desacelera brevemente. Tempo de recarga: <shuzhi>40</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga.\r\n<shuzhi>Posicionamento decisivo</>: Usar <shuzhi>Revisão do Tabuleiro</>, <shuzhi>Posição Vantajosa</>, <shuzhi>Estrela Cadente</> e <shuzhi>Isso Termina Aqui</> ou criar (não apenas atualizar) invocações confere acúmulos de posicionamento decisivo. Pode acumular até <shuzhi>9</> vezes. Com posicionamento decisivo ativo, cada peça de Go gasta <shuzhi>1</> acúmulo para causar dano adicional de <shuzhi>200%</> do ATQ a todos os alvos no tabuleiro. Nenhum acúmulo é recebido enquanto a habilidade está ativa.",
+					"description": "Salta no ar, transforma o campo de batalha em um tabuleiro de Go e levita (não é possível se mover nesse período). Recebe visão de cima por até <shuzhi>10</> segundos. Nesse período, seus ataques tornam-se peças de Go e suas habilidades são substituídas por <shuzhi>Vantagens de Meia Peça</>. Toque no tabuleiro de Go para pôr <shuzhi>18</> peças em ordem. Cada uma causa dano de <shuzhi>250%</> do ATQ a todos os alvos no tabuleiro e os desacelera brevemente. Tempo de recarga: <shuzhi>40</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga.\r\n<shuzhi>Posicionamento decisivo</>: Usar <shuzhi>Revisão do Tabuleiro</>, <shuzhi>Posição Vantajosa</>, <shuzhi>Estrela Cadente</> e <shuzhi>Isso Termina Aqui</> ou criar (não atualizar) invocações confere acúmulos de posicionamento decisivo. Pode acumular até <shuzhi>9</> vezes. Com posicionamento decisivo ativo, cada peça de Go gasta <shuzhi>1</> acúmulo para causar dano adicional de <shuzhi>200%</> do ATQ a todos os alvos no tabuleiro. Nenhum acúmulo é recebido enquanto a habilidade está ativa.",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -13593,7 +14009,7 @@
 			"discharge": [
 				{
 					"name": "Isso Termina Aqui",
-					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</>. Abre uma zona e põe <shuzhi>1</> peça na frente, que causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, você fica imune a dano durante <shuzhi>2,6</> segundos (indisponível na Liga do Apogeu).\r\nAtive a zona para causar dano de <shuzhi>400%</> por segundo em uma área ampla ao seu redor. A zona dura <shuzhi>30</> segundos ou desaparece <shuzhi>5</> segundos após sair do combate. Cada invocação prolonga a duração da zona em <shuzhi>3</> segundos.\r\n<shuzhi>Mobilização tática</>: Cada invocação confere <shuzhi>1</> acúmulo de mobilização tática, aumentando o dano da zona em mais <shuzhi>120%</> do ATQ por segundo, limitado a <shuzhi>8</> segundos.\r\n<shuzhi>Sol escaldante</>: Receber acúmulos de mobilização tática confere também o mesmo número de acúmulos de sol escaldante. Cada acúmulo aumenta o dano ígneo em mais <shuzhi>2%</>, limitado a <shuzhi>8</> acúmulos.\r\n<shuzhi>Núcleo abrasador</>: Ao usar a habilidade de descarga de qualquer arma ígnea, recebe corpo de aço durante <shuzhi>8</> segundos.",
+					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</>. Abre uma zona e põe <shuzhi>1</> peça na frente, que causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, você fica imune a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).\r\nAtive a zona para causar dano de <shuzhi>200%</> por segundo em uma área ampla ao seu redor. A zona dura <shuzhi>30</> segundos ou desaparece <shuzhi>5</> segundos após sair do combate. Cada invocação prolonga a duração da zona em <shuzhi>3</> segundos.\r\n<shuzhi>Mobilização tática</>: Cada invocação confere <shuzhi>1</> acúmulo de mobilização tática, aumentando o dano da zona em mais <shuzhi>50%</> do ATQ por segundo, limitado a <shuzhi>8</> segundos.\r\n<shuzhi>Sol escaldante</>: Receber acúmulos de mobilização tática confere também o mesmo número de acúmulos de sol escaldante. Cada acúmulo aumenta o dano ígneo em mais <shuzhi>2,5%</>, limitado a <shuzhi>8</> acúmulos.\r\n<shuzhi>Núcleo ardente</>: Ao usar a habilidade de descarga de qualquer arma ígnea, recebe corpo de aço durante <shuzhi>8</> segundos.",
 					"tags": [
 						"Damage"
 					],
@@ -14074,13 +14490,7 @@
 				"value": 13.652913
 			}
 		],
-		"upgradeProps": [
-			[
-				3.15534,
-				194.17476,
-				2.427185
-			]
-		],
+		"upgradeProps": [],
 		"effects": [
 			{
 				"title": "**Fusão de massa e chama**",
@@ -16938,7 +17348,7 @@
 			}
 		],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "umbrella_fire"
 	},
 	"yoyo_ice": {
@@ -17312,7 +17722,7 @@
 		},
 		"fashion": [],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "yoyo_ice"
 	},
 	"yulan_ice": {

@@ -336,7 +336,7 @@
 	},
 	"buff_imitation_dfish_level2": {
 		"name": "Strategischer Spielzug",
-		"description": "Erhöht den Endschaden um **0%**.\r\nWenn **Dualismus** ausgerüstet und nur **1**Ziel in der Zone ist, wird der Flammenschaden um **1%** erhöht. Wenn **2** oder mehr Ziele vorhanden sind, wird der Flammenschaden auf **2%** erhöht.",
+		"description": "Erhöht den Endschaden um **0%**.\r\nWenn **Freistil** ausgerüstet und nur **1**Ziel in der Zone ist, wird der Flammenschaden um **1%** erhöht. Wenn **2** oder mehr Ziele vorhanden sind, wird der Flammenschaden auf **2%** erhöht.",
 		"id": "buff_imitation_dfish_level2"
 	},
 	"buff_thunder_ready_lv1": {
@@ -1979,6 +1979,16 @@
 		"description": "Während der Dauer ist der Hyperkörper des Wanderers deaktiviert und kann keinen unbesiegbaren Zustand eingehen.",
 		"id": "buff_boss_002_5_ignore"
 	},
+	"buff_boss_010_4_punish": {
+		"name": "Bestrafung",
+		"description": "Nachdem Seraph ein Ziel ohne Standhaftigkeit getroffen hat, werden Bestrafungen hinzugefügt. Bestrafungen werden alle 5 Sekunden um 1 Stapel reduziert. Wenn die Bestrafungsstapel 10 erreichen, verliert der Wanderer seinen Hyperkörper und Unverwundbarkeit und kann für 90 Sekunden keinen Hyperkörper oder Unverwundbarkeit wiedererlangen.",
+		"id": "buff_boss_010_4_punish"
+	},
+	"buff_boss_010_4_punishment": {
+		"name": "Jünger",
+		"description": "Es ist nicht möglich, Hyperkörper oder Unbesiegbarkeit zu erlangen.",
+		"id": "buff_boss_010_4_punishment"
+	},
 	"buff_boss_014_5_ignorebati": {
 		"name": "Hyperkörper-Fehler",
 		"description": "Wanderer können sich selbst keinen Hyperkörper-Sektor gewähren.",
@@ -2531,7 +2541,7 @@
 	},
 	"buff_wantedcriminal": {
 		"name": "Gesucht!",
-		"description": "Du wirst wegen eines Verbrechens gesucht. Fliehe an einen sicheren Ort, um der Festnahme zu entgehen!",
+		"description": "Du wirst wegen eines Verbrechens gesucht. Patrouillen werden zusätzlichen Schaden basierend auf der Schwere deines Vergehens verursachen. Fliehe an einen sicheren Ort, um der Gefangennahme zu entgehen und deinen gesuchten Status zu entfernen!",
 		"id": "buff_wantedcriminal"
 	},
 	"buff_war_addmaxhp_level1": {
@@ -8029,6 +8039,11 @@
 		"description": "Verringert die Abklingzeit von Relikten um 90%.",
 		"id": "buff_gwzj_worldboss4"
 	},
+	"buff_hackterminal_charge": {
+		"name": "Mehr Rechenleistung",
+		"description": "Innerhalb der Reichweite steigt die Rechenleistung des Autorisierer-Terminals kontinuierlich an, bis sie den Maximalwert erreicht.",
+		"id": "buff_hackterminal_charge"
+	},
 	"buff_bailing_level1": {
 		"name": "Bai Ling: Tapferkeit",
 		"description": "Wenn Bai Ling den Gleiter oder das „Jetboard“ ablegt, erhöht sich die Geschwindigkeit für **12** Sek. um **8%**. Abklingzeit: **60** Sek.",
@@ -8894,6 +8909,76 @@
 		"description": "Die LP des Ziels können nicht unter 20% fallen, wenn es Schaden erleidet.",
 		"id": "buff_lockhp_less20_overlap"
 	},
+	"buff_loslyn_hpshield": {
+		"name": "Stille Wasser: Schild",
+		"description": "Der Wanderer erhält für **1**Sek. einen Schild in Höhe von **0%** der max. LP.",
+		"id": "buff_loslyn_hpshield"
+	},
+	"buff_loslyn_ice_resonance": {
+		"name": "Frostresonanz",
+		"description": "**Frostresonanz**: Erhöht den Frost-ANG um **15%** und den Frostwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird.",
+		"id": "buff_loslyn_ice_resonance"
+	},
+	"buff_loslyn_level1": {
+		"name": "Anker",
+		"description": "Erhöht den Endschaden um **0%**.",
+		"id": "buff_loslyn_level1"
+	},
+	"buff_loslyn_level2": {
+		"name": "Verbinden",
+		"description": "Erhöht den Endschaden um **0%**. **Schneewirbelsturm** verbraucht keine Ausdauer. Nach Verwendung von **Bitterkalter Schlag** wird der krit. Schaden für **2**Sek. um **1%** erhöht.",
+		"id": "buff_loslyn_level2"
+	},
+	"buff_loslyn_level2_critdmgup": {
+		"name": "Anker",
+		"description": "Erhöht den krit. Schaden für **1**Sek. um **0%**.",
+		"id": "buff_loslyn_level2_critdmgup"
+	},
+	"buff_loslyn_skill_dmgup": {
+		"name": "Frostkettenaura",
+		"description": "Der Wanderer ignoriert nach Verwendung von „Frostkettenaura“ **0%** des gegnerischen Frostwiderstands und erhöht den verursachten Endschaden für **2**Sek. um **1%**.",
+		"id": "buff_loslyn_skill_dmgup"
+	},
+	"buff_loslyn_skillbati": {
+		"name": "Hyperkörper",
+		"description": "Hält für **0**Sek. an.",
+		"id": "buff_loslyn_skillbati"
+	},
+	"buff_loslyn_skilldebuff": {
+		"name": "Blitzeinfrieren",
+		"description": "Verringert den Angriff für **0**Sek.",
+		"id": "buff_loslyn_skilldebuff"
+	},
+	"buff_loslyn_skillstate": {
+		"name": "Bittere Kälte",
+		"description": "Gewährt „Hyperkörper“. Die Angriffe von Stille Wasser haben einen zusätzlichen **Eishieb**-Effekt. Hält für **0**Sek. an.",
+		"id": "buff_loslyn_skillstate"
+	},
+	"buff_loslyn_skillstate_iceatkup": {
+		"name": "Herzenssache",
+		"description": "Nach Aktivierung von „Bittere Kälte“ wird der Frost-ANG für **0**Sek. erhöht.",
+		"id": "buff_loslyn_skillstate_iceatkup"
+	},
+	"buff_loslyn_specblock": {
+		"name": "Schnelles Ausweichen",
+		"description": "Schnelles Ausweichen: Wenn der Wanderer von einem Angriff getroffen wird, vermeidet er den Schaden dieses Angriffs.",
+		"id": "buff_loslyn_specblock"
+	},
+	"buff_loslyn_specfrozenstate": {
+		"name": "Vereisung",
+		"description": "Vereisung",
+		"id": "buff_loslyn_specfrozenstate"
+	},
+	"buff_loslyn_specfrozenstate_enddot": {
+		"name": "Stich ins Herz",
+		"description": "Verliert für **1**Sek. pro Sekunde **0%** der verlorenen LP.",
+		"id": "buff_loslyn_specfrozenstate_enddot"
+	},
+	"buff_loslyn_thunder_resonance": {
+		"name": "Voltresonanz",
+		"description": "**Voltresonanz**: Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird.",
+		"id": "buff_loslyn_thunder_resonance"
+	},
 	"buff_ls_sqqs": {
 		"name": "Aktualisiert",
 		"description": "Erhöht die Sättigungskapazität **30** Minuten um **20%**.",
@@ -8941,12 +9026,12 @@
 	},
 	"buff_lucktarrow_07": {
 		"name": "Erschrecken",
-		"description": "",
+		"description": "Erhöht den Schaden der Gegner um 40%.",
 		"id": "buff_lucktarrow_07"
 	},
 	"buff_lucktarrow_08": {
 		"name": "Aufscheuchen",
-		"description": "",
+		"description": "Erhöht den ANG der Gegner um 40%.",
 		"id": "buff_lucktarrow_08"
 	},
 	"buff_lucktarrow_09": {
@@ -9521,7 +9606,7 @@
 	},
 	"buff_maska": {
 		"name": "Maske der Leere",
-		"description": "Alle werden in Gegner verwandelt. Aber Vorsicht, der Boss kann dich immer noch sehen. Jegliche Kampfhandlungen mit anderen Gegnern werden als normale Gegnerinteraktionen gewertet.",
+		"description": "Du wurdest in einen Gegner verwandelt! Aber Vorsicht, der Boss kann dich immer noch sehen. Jegliche Kampfhandlungen mit anderen Gegnern werden als normale Gegnerinteraktionen gewertet.",
 		"id": "buff_maska"
 	},
 	"buff_maskb": {
@@ -10546,23 +10631,63 @@
 	},
 	"buff_matrix_ssr92_level1": {
 		"name": "Tiefgründige Einsicht",
-		"description": "Erhöht den Endschaden um **0%**. Wenn **Dualismus** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"description": "Erhöht den Endschaden um **0%**. Wenn **Freistil** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
 		"id": "buff_matrix_ssr92_level1"
 	},
 	"buff_matrix_ssr92_level2": {
 		"name": "Tiefgründige Einsicht",
-		"description": "Erhöht den Endschaden um **0%**. Wenn **Dualismus** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"description": "Erhöht den Endschaden um **0%**. Wenn **Freistil** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
 		"id": "buff_matrix_ssr92_level2"
 	},
 	"buff_matrix_ssr92_level3": {
 		"name": "Tiefgründige Einsicht",
-		"description": "Erhöht den Endschaden um **0%**. Wenn **Dualismus** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"description": "Erhöht den Endschaden um **0%**. Wenn **Freistil** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
 		"id": "buff_matrix_ssr92_level3"
 	},
 	"buff_matrix_ssr92_level4": {
 		"name": "Tiefgründige Einsicht",
-		"description": "Erhöht den Endschaden um **0%**. Wenn **Dualismus** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"description": "Erhöht den Endschaden um **0%**. Wenn **Freistil** ausgerüstet ist, wird der krit. Schaden um **1%** erhöht. Gewährt beim Kampfeintritt **9**Stapel **Entscheidende Aufstellung** zusätzlich. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
 		"id": "buff_matrix_ssr92_level4"
+	},
+	"buff_matrix_ssr93_level1": {
+		"name": "Herzenssache",
+		"description": "Erhöht den Frostschaden um **0%**. Wenn **Vereisung** von einem Ziel entfernt wurde, erleidet der Wanderer für **2**Sek. pro Sekunde Blutungsschaden in Höhe von **1%** der verlorenen LP (dieser Schaden kann das **3**-fache des ANG des Wanderers nicht übersteigen und wird nicht von Schadensbonus-Effekten beeinflusst). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr93_level1"
+	},
+	"buff_matrix_ssr93_level2": {
+		"name": "Herzenssache",
+		"description": "Erhöht den Frostschaden um **0%**. Wenn **Vereisung** von einem Ziel entfernt wurde, erleidet der Wanderer für **2**Sek. pro Sekunde Blutungsschaden in Höhe von **1%** der verlorenen LP (dieser Schaden kann das **3**-fache des ANG des Wanderers nicht übersteigen und wird nicht von Schadensbonus-Effekten beeinflusst). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr93_level2"
+	},
+	"buff_matrix_ssr93_level3": {
+		"name": "Herzenssache",
+		"description": "Erhöht den Frostschaden um **0%**. Wenn **Vereisung** von einem Ziel entfernt wurde, erleidet der Wanderer für **2**Sek. pro Sekunde Blutungsschaden in Höhe von **1%** der verlorenen LP (dieser Schaden kann das **3**-fache des ANG des Wanderers nicht übersteigen und wird nicht von Schadensbonus-Effekten beeinflusst). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr93_level3"
+	},
+	"buff_matrix_ssr93_level4": {
+		"name": "Herzenssache",
+		"description": "Erhöht den Frostschaden um **0%**. Wenn **Vereisung** von einem Ziel entfernt wurde, erleidet der Wanderer für **2**Sek. pro Sekunde Blutungsschaden in Höhe von **1%** der verlorenen LP (dieser Schaden kann das **3**-fache des ANG des Wanderers nicht übersteigen und wird nicht von Schadensbonus-Effekten beeinflusst). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr93_level4"
+	},
+	"buff_matrix_ssr94_level1": {
+		"name": "Herzenssache",
+		"description": "Erhöht den Endschaden pro **1** ausgerüsteter Frostwaffe um **0%**. Sobald **Bittere Kälte** aktiviert wurde, wird der Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr94_level1"
+	},
+	"buff_matrix_ssr94_level2": {
+		"name": "Herzenssache",
+		"description": "Erhöht den Endschaden pro **1** ausgerüsteter Frostwaffe um **0%**. Sobald **Bittere Kälte** aktiviert wurde, wird der Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr94_level2"
+	},
+	"buff_matrix_ssr94_level3": {
+		"name": "Herzenssache",
+		"description": "Erhöht den Endschaden pro **1** ausgerüsteter Frostwaffe um **0%**. Sobald **Bittere Kälte** aktiviert wurde, wird der Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr94_level3"
+	},
+	"buff_matrix_ssr94_level4": {
+		"name": "Herzenssache",
+		"description": "Erhöht den Endschaden pro **1** ausgerüsteter Frostwaffe um **0%**. Sobald **Bittere Kälte** aktiviert wurde, wird der Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr94_level4"
 	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Typ-II-Couant: Wächter",
@@ -11084,6 +11209,11 @@
 		"description": "Der Schattenspringer zündet diese Markierung zu einem bestimmten Zeitpunkt. Je höher die Stapel, desto höher auch der Schaden. Die Markierungen sind instabil.",
 		"id": "buff_boss_hum_072_skill09_stack"
 	},
+	"buff_boss_hum_076_delayspawnbullet": {
+		"name": "Leerenenergie",
+		"description": "Am Ende der Dauer werden um den Boss herum zerstörbare Leerenenergiekristalle erzeugt.",
+		"id": "buff_boss_hum_076_delayspawnbullet"
+	},
 	"buff_boss037_skill04_cantcharge": {
 		"name": "Dimensionskluft",
 		"description": "Verhindert den Erhalt von Waffenladung und erlittenem DoT während „Trugbild“.",
@@ -11226,7 +11356,7 @@
 	},
 	"buff_dfishchess_arealevelstackcount": {
 		"name": "Taktische Aufstellung",
-		"description": "Jeder Stapel erhöht den Schaden in der Zone um zusätzlich **0%**. Bis zu **8**-mal stapelbar.",
+		"description": "",
 		"id": "buff_dfishchess_arealevelstackcount"
 	},
 	"buff_dfishchess_changeskilladdimmstatus": {
@@ -15274,6 +15404,11 @@
 		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
 		"id": "buff_bigsecret_upstar_ssr_linghan_ice"
 	},
+	"buff_bigsecret_upstar_ssr_loslyn_ice": {
+		"name": "Stille Wasser",
+		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
+		"id": "buff_bigsecret_upstar_ssr_loslyn_ice"
+	},
 	"buff_bigsecret_upstar_ssr_mark_physic": {
 		"name": "Dawn",
 		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
@@ -16009,6 +16144,11 @@
 		"description": "Außer Volt- und Flammenschaden erzielen keine der Schadensarten Wirkung.",
 		"id": "buff_newtower_xulie005"
 	},
+	"buff_norn_vipservice": {
+		"name": "Glenco: Standard-Mitglied",
+		"description": "Glenco Biomedical Inc. REgeneriere Wohlbefinden, KONSTRUIERE Leben, REKONSTRUIERE dein Abenteuer:\r\nErhöht max. LP um **15%** und die Bewegungsgeschwindigkeit der Fahrzeuge um **20%**, reduziert den Ausdauerverbrauch um **15**. Hält für **30** Minuten an.",
+		"id": "buff_norn_vipservice"
+	},
 	"buff_nornbeach_star": {
 		"name": "Treibgutstern",
 		"description": "Die Zeit läuft uns davon! Finde den nächsten Stern!",
@@ -16648,5 +16788,10 @@
 		"name": "Yan Miao: Erinnerungsscherbe II",
 		"description": "Gewährt dir und Teammitgliedern einen Schild in Höhe von 10% der max. LP des Teammitglieds.",
 		"id": "buff_jmhz_yanmiao_02"
+	},
+	"newrow": {
+		"name": "",
+		"description": "",
+		"id": "newrow"
 	}
 }

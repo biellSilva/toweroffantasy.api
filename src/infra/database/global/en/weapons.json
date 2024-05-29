@@ -1791,7 +1791,7 @@
 		},
 		"fashion": [],
 		"version": "2.5",
-		"limited": true,
+		"limited": false,
 		"id": "chainsaw_physic"
 	},
 	"hammer_ice": {
@@ -5764,7 +5764,7 @@
 		"assets": {
 			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_Cube_Fire01.webp",
 			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_Cube_Fire01.webp",
-			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/ling.webp"
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/lingboling.webp"
 		},
 		"rarity": 5,
 		"element": "Flame",
@@ -8484,6 +8484,422 @@
 		"limited": true,
 		"id": "linghan_ice"
 	},
+	"loslyn_ice": {
+		"name": "Calm Waters",
+		"description": "The anchor removed from her grandpa's old ship \"Calm Waters.\" It was modified and later became Roslyn's weapon.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_luosilin.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_luosilin.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/luosilin.webp"
+		},
+		"rarity": 5,
+		"element": "ThunderIce",
+		"type": "Loslyn",
+		"weaponUpgradeId": "ice_ssr_tupo_BD",
+		"wc": "DPS",
+		"advanceID": "Loslyn_ice_ssr_star",
+		"avatar": "imitation_58",
+		"stats": [
+			{
+				"stat": {
+					"name": "Attack",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Fusion of Frost and Volt**",
+				"description": "When the weapon deals damage, damage is calculated using the highest equipped frost/volt base ATK, the highest equipped frost/volt ATK percentage, and the highest equipped frost/volt damage boost, and the weapon is considered both a frost and volt weapon."
+			},
+			{
+				"title": "**Frost Resonance**",
+				"description": "Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set effect works in the off-hand slot. Cannot stack with other Frost Resonance or Frost Reaction effects, with Frost Resonance taking precedence."
+			},
+			{
+				"title": "**Volt Resonance**",
+				"description": "Increase volt ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence."
+			},
+			{
+				"title": "**Frost Edge: Swift Cut**",
+				"description": "When **Calm Waters** is equipped, any weapon's discharge skill will deal damage equal to **0.97%** of the Wanderer's Max HP plus **73.2%** of frost ATK plus **36.6%** of the sum of all the Wanderer's resistance types plus **134.3%** of crit to nearby targets. While in combat, after every **0.5** seconds, the next Swift Cut damage will be increased by an additional **1** time, up to a maximum of **30** times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is 1 physical/flame weapon of any kind equipped, Frost Edge damage is increased to **1.3** times. In addition, Frost Edge damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+			},
+			{
+				"title": "After Calm Waters is switched to the off-hand slot, deal burst damage 1 time. If an enemy has Flashfreeze, it will remove the Flashfreeze from the enemy and deal continuous off-hand damage for **12** seconds.**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**Force Impact**",
+			"description": "When the weapon is fully charged, the next attack applies Force Impact on the enemy for **45** seconds, increasing their frost and volt damage taken by **10%** (and an additional **15%** in team play). Force Impact replaces the target's grievous status, and targets with Force Impact cannot become grievous. Frost attacks will freeze targets with Force Impact for **2** seconds, and volt attacks will remove the buffs on targets with Force Impact. This effect can only trigger **1** time every **15** seconds on the same target."
+		},
+		"attributes": [
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			},
+			{
+				"charge": 14,
+				"shatter": 16
+			}
+		],
+		"advancements": [
+			{
+				"description": "After using **Frostlink Aura**, the Wanderer will receive a shield equal to **60%** of Max HP for **30** seconds.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "When an attack with **Chilling Strike** lands a hit on a target, additionally deal damage equal to **Chilling Strike** stacks times **40%** of ATK.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "Increase the duration for **Icebound** to **6** seconds. Increase the ATK reduction effect on **Flashfrozen** targets to **1000%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			},
+			{
+				"description": "After using **Frostlink Aura**, the Wanderer will ignore **15%** of targets' frost resistance (each element's total resistance ignored cannot exceed **50%**). At the same time, increase final damage by **14%** for **40** seconds.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Loslyn_ice_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Icebound Anchor Strike",
+					"description": "While on the ground, use normal attack to launch 6 attacks in a row.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back. While in <shuzhi>Bitter Cold</>, add <shuzhi>6</> stacks of Chilling Strike.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back. While in <shuzhi>Bitter Cold</>, add <shuzhi>6</> stacks of Chilling Strike.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back. While in <shuzhi>Bitter Cold</>, add <shuzhi>6</> stacks of Chilling Strike.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back. While in <shuzhi>Bitter Cold</>, add <shuzhi>14</> stacks of Chilling Strike.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and knock the target back. While in <shuzhi>Bitter Cold</>, add <shuzhi>10</> stacks of Chilling Strike.\r\nSixth Attack: Deal damage equal to <shuzhi>{10}%</> of ATK plus <shuzhi>{11}</> and knock the target down. While in <shuzhi>Bitter Cold</>, add <shuzhi>20</> stacks of Chilling Strike.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_melee.webp",
+					"id": "GA_FPlayerLoslynMelee_Melee"
+				},
+				{
+					"name": "Flying Anchor",
+					"description": "While airborne, use normal attack to launch 6 consecutive attacks in mid-air, consuming endurance.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>6</> stacks of Chilling Strike.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>6</> stacks of Chilling Strike.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>6</> stacks of Chilling Strike.\r\nFourth Attack: Deal damage equal to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>14</> stacks of Chilling Strike.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>10</> stacks of Chilling Strike.\r\nSixth Attack: Deal damage equal to <shuzhi>{10}%</> of ATK plus <shuzhi>{11}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>20</> stacks of Chilling Strike.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_airattack.webp",
+					"id": "GA_FPlayerLoslynMelee_AirAttack"
+				},
+				{
+					"name": "Still North Wind",
+					"description": "While using normal attack on the ground, tap and hold normal attack when using the first to fourth normal attacks to trigger Still North Wind.\r\nSwing forth Calm Waters to stir up a frosty whirlwind, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. While in <shuzhi>Bitter Cold</>, add <shuzhi>15</> stacks of Chilling Strike.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_branch.webp",
+					"id": "GA_FPlayerLoslynMelee_Branch"
+				},
+				{
+					"name": "Snowstorm Hurricane",
+					"description": "While on the ground, tap and hold normal attack to trigger Snowstorm Hurricane.\r\nThe Wanderer follows Calm Waters for a spinning attack, consuming endurance and dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets each time they are hit.",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_powerattack.webp",
+					"id": "GA_FPlayerLoslynMelee_PowerAttack"
+				},
+				{
+					"name": "Skyfall Anchor",
+					"description": "Tap and hold normal attack while airborne (tap when a target is available), or use normal attack while climbing, jumping backward, or using a Jetpack to trigger Skyfall Anchor.\r\nFall down from mid-air. During the course of landing, each hit on an enemy deals damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. After landing, deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> to nearby targets. While in <shuzhi>Bitter Cold</>, add <shuzhi>8</> stacks of Chilling Strike.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_jumpattack.webp",
+					"id": "GA_FPlayerLoslynMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Dodge",
+					"description": "Dodge right before getting hit to trigger Phantasia, reducing the speed of targets within the area. Become immune to hitstun while dodging.",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/common_evade.webp",
+					"id": "GA_FPlayerLoslynEvade_Evade"
+				},
+				{
+					"name": "Anchor of Cyclicity",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Anchor of Cyclicity, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead. Landing a hit can break a target's <shuzhi>Icebound</> effect and deal additional damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>15</> stacks of Chilling Strike.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_fevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Cold Anchor Meteor",
+					"description": "Use normal attack during the short period after dodging to trigger Cold Anchor Meteor, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead. Landing a hit can break a target's <shuzhi>Icebound</> effect and deal additional damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>10</> stacks of Chilling Strike.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_bevadeattack.webp",
+					"id": "GA_FPlayerLoslynEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "Frostlink Aura",
+					"description": "Swing both ends of Calm Waters to attack separately, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. While in <shuzhi>Bitter Cold</>, add <shuzhi>52</> stacks of Chilling Strike. Cooldown: <shuzhi>30</> seconds. This is not affected by other cooldown clearing, resetting, or changing effects. When using the skill, receive <shuzhi>20</> seconds of hyperbody.\r\nApply <shuzhi>15</> seconds of Flashfreeze to targets hit and reduce their ATK by <shuzhi>5%</>.",
+					"operations": [],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_skill.webp",
+					"id": "GA_FPlayerLoslynSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Bitter Strike",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and toss Calm Waters ahead, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this period, damage immunity lasts for <shuzhi>1.5</> seconds (unavailable in Apex League).\r\nAfter using Bitter Strike, enter Bitter Cold for <shuzhi>14</> seconds. <shuzhi>Calm Waters'</> special attack will apply the current number of Chilling Strike stacks to the target hit. The target's maximum Chilling Strike stacks is <shuzhi>100</>. Upon reaching the max number of stacks, the stack count will reset and the target will be Icebound for <shuzhi>4</> seconds and also become <shuzhi>strongly frozen</> (<shuzhi>strong freeze</> is ineffective against bosses).\r\nWhen an attack with Chilling Strike lands a hit on a target, recover <shuzhi>3%</> of the Wanderer's Max HP.",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/skill_loslyn_changeskill.webp",
+					"id": "GA_FPlayerLoslynChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Undercover Attire",
+					"description": "The Public Security's undercover operation is ongoing. If you recognize any officers, please remain discreet and avoid interfering with their duties.",
+					"rarity": 5,
+					"source": "From events",
+					"simulacrumId": "imitation_58",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_LSL_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_58"
+				},
+				"weapon": {
+					"name": "Clear Waves",
+					"description": "An improved replica of Calm Waters. It's more lightweight and easy to carry, making it suitable as field equipment.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_loslyn_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Obtained from the Undercover Attire gachapon event"
+					],
+					"id": "imitation_fashion_58_w"
+				}
+			}
+		],
+		"version": "4.0",
+		"limited": true,
+		"id": "loslyn_ice"
+	},
 	"suspension_thunder": {
 		"name": "Venus",
 		"description": "Its designer is unknown. The special hovering EM Blaster's prototype's blueprint has been lost. It contains a unique electrical saving process in its interior. It's extremely troublesome to repair when it gets worn out, but Cobalt-B of Banges Tech seems to be able to do it. ",
@@ -10057,7 +10473,7 @@
 		"effects": [
 			{
 				"title": "Elemental Resonance",
-				"description": "When pairing Shadoweave with other weapons, the **Weapons Master** effect can be created.\r\nEpiphyllum will appear around the target randomly and explode within **1–3** seconds, dealing **37.5%** area damage."
+				"description": "N/A"
 			}
 		],
 		"elementEffects": {
@@ -13281,7 +13697,7 @@
 		],
 		"effects": [
 			{
-				"title": "**Fusion of Mass and Flame**",
+				"title": "**Fusion of Flame and Mass**",
 				"description": "When the weapon deals damage, damage is calculated using the highest equipped physical/flame base ATK, the highest equipped physical/flame ATK percentage, and the highest equipped physical/flame damage boost, and the weapon is considered both a physical and flame weapon."
 			},
 			{
@@ -13570,7 +13986,7 @@
 			"skill": [
 				{
 					"name": "Step into the Game",
-					"description": "Leap into the air, transforming the battlefield into a Go board, and float in mid-air (unable to move during this time). Gain an elevated view for up to <shuzhi>10</> seconds. During this time, your attacks become Go pieces and your skills are replaced with <shuzhi>Half-Piece Advantage</>. Tap the Go board to place <shuzhi>18</> pieces in order, each dealing damage equal to <shuzhi>250%</> of ATK to all targets on the board and briefly slowing them down. Cooldown: <shuzhi>40</> seconds. This is not affected by other cooldown clearing, resetting, or changing effects.\r\n<shuzhi>Decisive Placement</>: Using <shuzhi>Review Board</>, <shuzhi>Seize Advantage</>, <shuzhi>Starfall</>, and <shuzhi>This Ends Here</> or creating (not just refreshing an existing one) summons grants Decisive Placement stacks, up to a maximum of <shuzhi>9</> stacks. While Decisive Placement is active, each Go piece consumes <shuzhi>1</> stack to deal additional damage equal to <shuzhi>200%</> of ATK to all targets on the board. No stacks can be gained while the skill is active.",
+					"description": "Leap into the air, transforming the battlefield into a Go board, and float in mid-air (unable to move during this time). Gain an elevated view for up to <shuzhi>10</> seconds. During this time, your attacks become Go pieces and your skills are replaced with <shuzhi>Half-Piece Advantage</>. Tap the Go board to place <shuzhi>18</> pieces in order, each dealing damage equal to <shuzhi>250%</> of ATK to all targets on the board and briefly slowing them down. Cooldown: <shuzhi>40</> seconds. This is not affected by other cooldown clearing, resetting, or changing effects.\r\n<shuzhi>Decisive Placement</>: Using <shuzhi>Review Board</>, <shuzhi>Seize Advantage</>, <shuzhi>Starfall</>, and <shuzhi>This Ends Here</> or creating (not refreshing an existing one) summons grants Decisive Placement stacks, up to a maximum of <shuzhi>9</> stacks. While Decisive Placement is active, each Go piece consumes <shuzhi>1</> stack to deal additional damage equal to <shuzhi>200%</> of ATK to all targets on the board. No stacks can be gained while the skill is active.",
 					"operations": [],
 					"tags": [
 						"Damage",
@@ -13593,7 +14009,7 @@
 			"discharge": [
 				{
 					"name": "This Ends Here",
-					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</>. Deploy a zone and place <shuzhi>1</> piece in front that deals damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this time, the Wanderer is immune to damage for <shuzhi>2.6</> seconds (not available in Apex League).\r\nActivate the zone to deal <shuzhi>400%</> damage per second to a wide area around theWanderer. The zone exists for <shuzhi>30</> seconds or disappears <shuzhi>5</> seconds after leaving combat. Each summon extends the zone's duration by <shuzhi>3</> seconds.\r\n<shuzhi>Tactical Deployment</>: Each summon adds <shuzhi>1</> stack of Tactical Deployment, increasing the zone's damage by an additional <shuzhi>120%</> of ATK per second, up to <shuzhi>8</> stacks.\r\n<shuzhi>Scorching Sun</>: Gaining Tactical Deployment stacks also grants equivalent stacks of Scorching Sun, with each stack increasing flame damage by an additional <shuzhi>2%</>, up to <shuzhi>8</> stacks.\r\n<shuzhi>Blazing Core</>: When using any flame weapon's discharge skill, gain hyperbody for <shuzhi>8</> seconds.",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</>. Deploy a zone and place <shuzhi>1</> piece in front that deals damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this time, the Wanderer is immune to damage for <shuzhi>1.5</> seconds (not available in Apex League).\r\nActivate the zone to deal <shuzhi>200%</> damage per second to a wide area around theWanderer. The zone exists for <shuzhi>30</> seconds or disappears <shuzhi>5</> seconds after leaving combat. Each summon extends the zone's duration by <shuzhi>3</> seconds.\r\n<shuzhi>Tactical Deployment</>: Each summon adds <shuzhi>1</> stack of Tactical Deployment, increasing the zone's damage by an additional <shuzhi>50%</> of ATK per second, up to <shuzhi>8</> stacks.\r\n<shuzhi>Scorching Sun</>: Gaining Tactical Deployment stacks also grants equivalent stacks of Scorching Sun, with each stack increasing flame damage by an additional <shuzhi>2.5%</>, up to <shuzhi>8</> stacks.\r\n<shuzhi>Blazing Core</>: When using any flame weapon's discharge skill, gain hyperbody for <shuzhi>8</> seconds.",
 					"tags": [
 						"Damage"
 					],
@@ -13650,7 +14066,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_jiyu_2_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Obtain from the Network Tracing event"
+						"Obtained from the Network Tracing event"
 					],
 					"id": "imitation_fashion_57_w_2"
 				}
@@ -14074,13 +14490,7 @@
 				"value": 13.652913
 			}
 		],
-		"upgradeProps": [
-			[
-				3.15534,
-				194.17476,
-				2.427185
-			]
-		],
+		"upgradeProps": [],
 		"effects": [
 			{
 				"title": "**Fusion of Mass and Flame**",
@@ -16938,7 +17348,7 @@
 			}
 		],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "umbrella_fire"
 	},
 	"yoyo_ice": {
@@ -17312,7 +17722,7 @@
 		},
 		"fashion": [],
 		"version": "2.4",
-		"limited": true,
+		"limited": false,
 		"id": "yoyo_ice"
 	},
 	"yulan_ice": {
