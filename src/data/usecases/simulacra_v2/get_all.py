@@ -8,7 +8,11 @@ from src.infra.repository.simulacra_v2.global_ import SimulacraV2GlobalRepositor
 
 
 class GetAllSimulacraV2UseCase(IGetAllSimulacraV2UseCase):
-    def __init__(self, repository: SimulacraV2GlobalRepository, china_repository: SimulacraV2ChinaRepository) -> None:
+    def __init__(
+        self,
+        repository: SimulacraV2GlobalRepository,
+        china_repository: SimulacraV2ChinaRepository,
+    ) -> None:
         self.repository = repository
         self.china_repository = china_repository
 
@@ -22,4 +26,5 @@ class GetAllSimulacraV2UseCase(IGetAllSimulacraV2UseCase):
         else:
             raise VersionNotFoundErr
 
-        return await filter_models(models, params.filter)
+        models = await filter_models(models=models, filter_str=params.filter)
+        return models[: params.limit] if params.limit else models
