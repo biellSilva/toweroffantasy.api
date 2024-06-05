@@ -12,10 +12,14 @@ class GetallSimulacraController:
         self.usecase = usecase
 
     async def handle(
-        self, version: str = "global", lang: str = "en", filter: str | None = None
+        self,
+        version: str = "global",
+        lang: str = "en",
+        filter: str | None = None,
+        limit: int | None = None,
     ) -> list[Simulacra] | list[dict[str, Any]]:
         return await self.usecase.execute(
-            GetAllParams(version=version, lang=lang, filter=filter)
+            GetAllParams(version=version, lang=lang, filter=filter, limit=limit)
         )
 
     async def rest_handle(self, params: GetAllParams = Depends()) -> list[Simulacra]:

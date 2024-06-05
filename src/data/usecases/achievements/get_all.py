@@ -20,4 +20,5 @@ class GetAllAchievementsUseCase(IGetAllAchievementsUseCase):
         else:
             raise VersionNotFoundErr
 
-        return await filter_models(models=models, filter_str=params.filter)
+        models = await filter_models(models=models, filter_str=params.filter)
+        return models[: params.limit] if params.limit else models
