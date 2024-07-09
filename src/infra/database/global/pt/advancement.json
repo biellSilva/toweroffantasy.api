@@ -1,4 +1,396 @@
 {
+	"Ace_physic_ssr_star_0": {
+		"advancement": "<shuzhi>Fusão de massa e chama</>: Quando a arma causa dano, o dano é calculado usando o maior ATQ físico/ígneo mínimo equipado, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea.\r\n<shuzhi>Ressonância física</>: Aumenta o ATQ físico em <shuzhi>15%</> e a resistência física em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas físicas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância física ou reação física, e a ressonância física tem prioridade.\r\n<shuzhi>Ressonância ígnea</>: Aumenta o ATQ ígneo em <shuzhi>15%</> e a resistência ígnea em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas ígneas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância ígnea ou reação ígnea, e a ressonância ígnea tem prioridade.\r\n<shuzhi>Festival do Bastão Detonador: Separação</>: Após usar a <shuzhi>habilidade</>, causa dano equivalente a <shuzhi>137%</> do ATQ físico + <shuzhi>19,5%</> da vida máxima do Errante + <shuzhi>70%</> da soma de todos os tipos de resistência do Errante + <shuzhi>264%</> do crítico ao alvo atingido por segundo durante <shuzhi>30</> segundos. O dano de mais de um festival do Bastão Detonador não se acumula. O dano de festival do Bastão Detonador conta como dano de habilidade. Se houver <shuzhi>1</> arma elétrica ou gélida equipada, o dano de festival do Bastão Detonador é multiplicado por <shuzhi>1,3</>. Além disso, o dano de festival do Bastão Detonador não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_0"
+	},
+	"Ace_physic_ssr_star_1": {
+		"advancement": "Aumenta a chance de acionar <shuzhi>ataque severo</> para <shuzhi>100%</> e reduz o intervalo de acionamento para <shuzhi>4</> segundos.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_1"
+	},
+	"Ace_physic_ssr_star_2": {
+		"advancement": "Aumenta o crescimento do ATQ mínimo da arma atual em <shuzhi>16%</>.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 2000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_2"
+	},
+	"Ace_physic_ssr_star_3": {
+		"advancement": "Use ou solte durante a fase de carregamento de uma habilidade para acionar a segunda fase de <shuzhi>Ataque Doce Ametista</>.\r\nVocê passa a ignorar <shuzhi>15%</> da resistência física do alvo (a resistência total ignorada para cada elemento não pode exceder <shuzhi>50%</>).",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_3"
+	},
+	"Ace_physic_ssr_star_4": {
+		"advancement": "Aumenta o crescimento do ATQ mínimo da arma atual em <shuzhi>32%</>.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 6000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_4"
+	},
+	"Ace_physic_ssr_star_5": {
+		"advancement": "Alvos <shuzhi>desorientados</> causam <shuzhi>25%</> menos dano, e acionar ataque severo reduz muito a agressão do inimigo a você.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_5"
+	},
+	"Ace_physic_ssr_star_6": {
+		"advancement": "O reforço de dano final de <shuzhi>Ataque Doce Ametista</> aumenta para <shuzhi>35%</>.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_6"
+	},
 	"stave_thunder_sr_star_0": {
 		"advancement": "N/A",
 		"multiplicators": [
@@ -5378,7 +5770,7 @@
 		"id": "Linghan_ice_ssr_star_6"
 	},
 	"Loslyn_ice_ssr_star_0": {
-		"advancement": "<shuzhi>Fusão de gelo e raio</>: Quando a arma causa dano, o dano é calculado usando o maior ATQ gélido/elétrico mínimo equipado, a maior porcentagem de ATQ gélido/elétrico equipada e o maior reforço de dano gélido/elétrico equipado, e a arma é considerada uma arma gélida e elétrica.\r\n<shuzhi>Ressonância gélida</>: Aumenta o ATQ gélido em <shuzhi>15%</> e a resistência gélida em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade.\r\n<shuzhi>Ressonância elétrica</>: Aumenta o ATQ elétrico em <shuzhi>15%</> e a resistência ígnea em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade.\r\n<shuzhi>Gume gelado: Corte ligeiro</>: Com <shuzhi>Águas Calmas</> equipada, a habilidade de descarga de qualquer arma causa dano equivalente a <shuzhi>{0}%</> da vida máxima do Errante + <shuzhi>{1}%</> do ATQ gélido + <shuzhi>{2}%</> da soma de todos os tipos de resistência do Errante + <shuzhi>{3}%</> do crítico aos alvos próximos. A cada <shuzhi>0,5</> segundo em combate, o dano do próximo corte ligeiro aumenta <shuzhi>1</> vez, limitado a <shuzhi>30</> vezes. Quando há o dano de vários cortes ligeiros juntos, o cálculo é feito sobre o valor inicial mais alto. O dano de corte ligeiro conta como dano de habilidade de descarga. Se houver 1 arma física/ígnea de qualquer tipo equipada, o dano de gume gelado é multiplicado por <shuzhi>1,3</>. Além disso, o dano de gume gelado não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.\r\nApós trocar Águas Calmas para o espaço secundário, causa dano explosivo 1 vez. Se um inimigo tiver instagelo, o instagelo será removido e o inimigo sofrerá dano passivo contínuo durante <shuzhi>{4}</> segundos.",
+		"advancement": "<shuzhi>Fusão de gelo e raio</>: Quando a arma causa dano, o dano é calculado usando o maior ATQ gélido/elétrico mínimo equipado, a maior porcentagem de ATQ gélido/elétrico equipada e o maior reforço de dano gélido/elétrico equipado, e a arma é considerada uma arma gélida e elétrica.\r\n<shuzhi>Ressonância gélida</>: Aumenta o ATQ gélido em <shuzhi>15%</> e a resistência gélida em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade.\r\n<shuzhi>Ressonância elétrica</>: Aumenta o ATQ elétrico em <shuzhi>15%</> e a resistência elétrica em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade.\r\n<shuzhi>Gume Gelado: Corte ligeiro</>: Com <shuzhi>Águas Calmas</> equipada, a habilidade de descarga de qualquer arma causa dano equivalente a <shuzhi>{0}%</> da vida máxima do Errante + <shuzhi>{1}%</> do ATQ gélido + <shuzhi>{2}%</> da soma de todos os tipos de resistência do Errante + <shuzhi>{3}%</> do crítico aos alvos próximos. A cada <shuzhi>0,5</> segundo em combate, o dano do próximo corte ligeiro aumenta <shuzhi>1</> vez, limitado a <shuzhi>30</> vezes. Quando há o dano de vários cortes ligeiros juntos, o cálculo é feito sobre o valor inicial mais alto. O dano de corte ligeiro conta como dano de habilidade de descarga. Se houver 1 arma física/ígnea de qualquer tipo equipada, o dano de Gume Gelado é multiplicado por <shuzhi>1,3</>. Além disso, o dano de Gume Gelado não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.\r\nApós trocar Águas Calmas para o espaço secundário, causa dano explosivo equivalente a <shuzhi>400%</> do ATQ 1 vez. Se um inimigo tiver instagelo, o instagelo será removido e o inimigo sofrerá dano da arma secundária contínuo equivalente a <shuzhi>700%</> do ATQ por segundo durante <shuzhi>{4}</> segundos.",
 		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
@@ -5500,7 +5892,7 @@
 		"id": "Loslyn_ice_ssr_star_2"
 	},
 	"Loslyn_ice_ssr_star_3": {
-		"advancement": "Quando um alvo sofre um ataque com <shuzhi>golpe congelante</>, ele sofre também dano equivalente aos acúmulos de <shuzhi>golpe congelante</> × <shuzhi>{0}%</> do ATQ.",
+		"advancement": "Quando um ataque com <shuzhi>golpe congelante</> acerta o alvo, ele sofre também dano equivalente à quantidade de acúmulos de <shuzhi>golpe congelante</> × <shuzhi>{0}%</> do ATQ.",
 		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
@@ -6548,7 +6940,7 @@
 		"id": "dkatana_ice_ssr_star_6"
 	},
 	"fan_superpower_ssr_star_0": {
-		"advancement": "N/A",
+		"advancement": "Combinar a Malhasombria com outras armas pode criar o efeito <shuzhi>mestre das armas</>.\r\nDamas-da-noite aparecem aleatoriamente ao redor do alvo e explodem dentro de <shuzhi>1 a 3</> segundos, causando <shuzhi>37,5%</> de dano em área. <shuzhi>Pétalas Voadoras: Em campo</>: Acertar um golpe com a <shuzhi>Malhasombria</> causa aos alvos próximos dano equivalente a <shuzhi>{0}%</> do ATQ alterado + <shuzhi>{1}%</> da vida máxima do Errante + <shuzhi>{2}%</> da soma de todos os tipos de resistência do Errante + <shuzhi>{3}%</> do crítico. Esse efeito pode ser acionado até 1 vez a cada <shuzhi>1,5</> segundo. O dano de Pétalas Voadoras conta como dano de ataque normal. Se houver <shuzhi>1</> arma elétrica/gélida/física/ígnea de qualquer tipo equipada, o dano de Pétalas Voadoras é multiplicado por <shuzhi>{4}</>. Além disso, o dano de Pétalas Voadoras não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.",
 		"numbermap": "FanEffectFigure",
 		"multiplicators": [
 			{
@@ -6570,23 +6962,23 @@
 		],
 		"numbers": [
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialATKCoefficient",
 				"value": 1
 			},
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialMaxHPCoefficient",
 				"value": 1
 			},
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialDEFCoefficient",
 				"value": 1
 			},
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialCritCoefficient",
 				"value": 1
 			},
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialFinCoefficient",
 				"value": 1
 			}
 		],
@@ -7342,7 +7734,7 @@
 		"id": "Asuka_physic_ssr_star_6"
 	},
 	"AyanamiRei_thunder_ssr_star_0": {
-		"advancement": "<shuzhi>Fusão de raio e gelo</>: Quando a arma causa dano, o dano é calculado usando o maior ATQ elétrico/gélido mínimo equipado, a maior porcentagem de ATQ elétrico/gélido equipada e o maior reforço de dano elétrico/gélido equipado, e a arma é considerada uma arma elétrica e gélida.\r\n<shuzhi>Ressonância elétrica</>: Aumenta o ATQ elétrico em <shuzhi>15%</> e a resistência elétrica em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade.\r\n<shuzhi>Ressonância gélida</>: Aumenta o ATQ gélido em <shuzhi>15%</> e a resistência gélida em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade.\r\n<shuzhi>Flash: Separação</>: Após usar <shuzhi>Ataque Mecha</>, causa dano equivalente a <shuzhi>109,4%</> do ATQ elétrico + <shuzhi>15,6%</> da vida máxima + <shuzhi>56,3%</> da soma de todos os tipos de resistência do Errante + <shuzhi>210,9%</> do crítico aos alvos atingidos por segundo durante <shuzhi>30</> segundos. O dano de várias Separações não se acumula, e o dano de Flash conta como dano de habilidade. Se houver pelo menos <shuzhi>1</> arma física ou ígnea equipada, o dano de Flash é multiplicado por <shuzhi>1,3</>. Além disso, o dano de Flash não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.\r\n<shuzhi>Flecha Guiada</>: Ao causar dano com qualquer arma, atira <shuzhi>1</> flecha guiada na direção dos alvos, que causa dano de <shuzhi>{4}%</> do ATQ ao primeiro alvo atingido. Além disso, recebe <shuzhi>{5}</> de energia especial. A flecha guiada permanece no alvo e aplica sobrecarga durante <shuzhi>{7}</> segundos. Quando o alvo tiver <shuzhi>3</> flechas guiadas, elas vão explodir e causar dano de <shuzhi>{8}%</> do ATQ aos alvos próximos. Flecha Guiada pode ser acionada <shuzhi>1</> vez a cada <shuzhi>{9}</> segundos.",
+		"advancement": "<shuzhi>Fusão de raio e gelo</>: Quando a arma causa dano, o dano é calculado usando o maior ATQ elétrico/gélido mínimo equipado, a maior porcentagem de ATQ elétrico/gélido equipada e o maior reforço de dano elétrico/gélido equipado, e a arma é considerada uma arma elétrica e gélida.\r\n<shuzhi>Ressonância elétrica</>: Aumenta o ATQ elétrico em <shuzhi>15%</> e a resistência elétrica em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade.\r\n<shuzhi>Ressonância gélida</>: Aumenta o ATQ gélido em <shuzhi>15%</> e a resistência gélida em <shuzhi>25%</>. Ativa-se ao equipar <shuzhi>2</> ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade.\r\n<shuzhi>Flash: Separação</>: Após usar <shuzhi>Ataque Mecha</>, causa dano equivalente a <shuzhi>109,4%</> do ATQ elétrico + <shuzhi>15,6%</> da vida máxima + <shuzhi>56,3%</> da soma de todos os tipos de resistência do Errante + <shuzhi>210,9%</> do crítico aos alvos atingidos por segundo durante <shuzhi>30</> segundos. O dano de várias Separações não se acumula, e o dano de Flash conta como dano de habilidade. Se houver pelo menos <shuzhi>1</> arma física ou ígnea equipada, o dano de Flash é multiplicado por <shuzhi>1,3</>. Além disso, o dano de Flash não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.\r\n<shuzhi>Flecha Guiada</>: Ao causar dano com qualquer arma, atira <shuzhi>1</> flecha guiada na direção dos alvos, que causa dano de <shuzhi>{4}%</> do ATQ ao primeiro alvo atingido. Além disso, recebe <shuzhi>{5}</> de energia especial. A flecha guiada permanece no alvo e aplica sobrecarga durante <shuzhi>{7}</> segundos. Quando o alvo tiver <shuzhi>3</> flechas guiadas, elas vão explodir e causar dano de <shuzhi>{8}%</> do ATQ aos alvos próximos. Flecha Guiada pode ser acionada <shuzhi>1</> vez a cada <shuzhi>{9}</> segundos.",
 		"numbermap": "AyanamiReiEffectFigure",
 		"multiplicators": [
 			{

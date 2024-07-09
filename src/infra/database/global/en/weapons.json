@@ -8549,11 +8549,11 @@
 			},
 			{
 				"title": "**Volt Resonance**",
-				"description": "Increase volt ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence."
+				"description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence."
 			},
 			{
 				"title": "**Frost Edge: Swift Cut**",
-				"description": "When **Calm Waters** is equipped, any weapon's discharge skill will deal damage equal to **0.97%** of the Wanderer's Max HP plus **73.2%** of frost ATK plus **36.6%** of the sum of all the Wanderer's resistance types plus **134.3%** of crit to nearby targets. While in combat, after every **0.5** seconds, the next Swift Cut damage will be increased by an additional **1** time, up to a maximum of **30** times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is 1 physical/flame weapon of any kind equipped, Frost Edge damage is increased to **1.3** times. In addition, Frost Edge damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.\r\nAfter Calm Waters is switched to the off-hand slot, deal burst damage 1 time. If an enemy has Flashfreeze, it will remove the Flashfreeze from the enemy and deal continuous off-hand damage for **12** seconds."
+				"description": "When **Calm Waters** is equipped, any weapon's discharge skill will deal damage equal to **0.97%** of the Wanderer's Max HP plus **73.2%** of frost ATK plus **36.6%** of the sum of all the Wanderer's resistance types plus **134.3%** of crit to nearby targets. While in combat, after every **0.5** seconds, the next Swift Cut damage will be increased by an additional **1** time, up to a maximum of **30** times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is 1 physical/flame weapon of any kind equipped, Frost Edge damage is increased to **1.3** times. In addition, Frost Edge damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.\r\nAfter Calm Waters is switched to the off-hand slot, deal burst damage equal to **400%** of ATK 1 time. If an enemy has Flashfreeze, it will remove the Flashfreeze from the enemy and deal continuous off-hand damage equal to **700%** of ATK each second for **12** seconds."
 			}
 		],
 		"elementEffects": {
@@ -8636,7 +8636,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "When an attack with **Chilling Strike** lands a hit on a target, additionally deal damage equal to **Chilling Strike** stacks times **40%** of ATK.",
+				"description": "When an attack with **Chilling Strike** hits a target, additionally deal damage equal to the number of **Chilling Strike** stacks times **40%** of ATK.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8702,7 +8702,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "After using **Frostlink Aura**, the Wanderer will ignore **15%** of targets' frost resistance (each element's total resistance ignored cannot exceed **50%**). At the same time, increase final damage by **14%** for **40** seconds.",
+				"description": "After using **Frostlink Aura**, the Wanderer will ignore **15%** of targets' frost resistance (each element's total resistance ignored cannot exceed **50%**). At the same time, increase final damage by **18%** for **40** seconds.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8814,7 +8814,7 @@
 				},
 				{
 					"name": "Anchor of Cyclicity",
-					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Anchor of Cyclicity, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead. Landing a hit can break a target's <shuzhi>Icebound</> effect and deal additional damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>15</> stacks of Chilling Strike.",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger Anchor of Cyclicity, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead. Landing a hit breaks a target's <shuzhi>Icebound</> effect and deal additional damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>15</> stacks of Chilling Strike.",
 					"operations": [
 						"Movement",
 						"Dash",
@@ -8828,7 +8828,7 @@
 				},
 				{
 					"name": "Cold Anchor Meteor",
-					"description": "Use normal attack during the short period after dodging to trigger Cold Anchor Meteor, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead. Landing a hit can break a target's <shuzhi>Icebound</> effect and deal additional damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>10</> stacks of Chilling Strike.",
+					"description": "Use normal attack during the short period after dodging to trigger Cold Anchor Meteor, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead. Landing a hit breaks a target's <shuzhi>Icebound</> effect and deal additional damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</>. While in <shuzhi>Bitter Cold</>, add <shuzhi>10</> stacks of Chilling Strike.",
 					"operations": [
 						"Dash",
 						"Attack"
@@ -8843,7 +8843,7 @@
 			"skill": [
 				{
 					"name": "Frostlink Aura",
-					"description": "Swing both ends of Calm Waters to attack separately, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. While in <shuzhi>Bitter Cold</>, add <shuzhi>52</> stacks of Chilling Strike. Cooldown: <shuzhi>30</> seconds. This is not affected by other cooldown clearing, resetting, or changing effects. When using the skill, receive <shuzhi>20</> seconds of hyperbody.\r\nApply <shuzhi>15</> seconds of Flashfreeze to targets hit and reduce their ATK by <shuzhi>5%</>.",
+					"description": "Swing both ends of Calm Waters to attack separately, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. When using the skill, receive <shuzhi>20</> seconds of hyperbody. While in <shuzhi>Bitter Cold</>, add <shuzhi>52</> stacks of Chilling Strike. Cooldown: <shuzhi>30</> seconds. This is not affected by other cooldown clearing, resetting, or changing effects.\r\nApply <shuzhi>15</> seconds of Flashfreeze to targets hit and reduce their ATK by <shuzhi>5%</>.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -8855,7 +8855,7 @@
 			"discharge": [
 				{
 					"name": "Bitter Strike",
-					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and toss Calm Waters ahead, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this period, damage immunity lasts for <shuzhi>1.5</> seconds (unavailable in Apex League).\r\nAfter using Bitter Strike, enter Bitter Cold for <shuzhi>14</> seconds. <shuzhi>Calm Waters'</> special attack will apply the current number of Chilling Strike stacks to the target hit. The target's maximum Chilling Strike stacks is <shuzhi>100</>. Upon reaching the max number of stacks, the stack count will reset and the target will be Icebound for <shuzhi>4</> seconds and also become <shuzhi>strongly frozen</> (<shuzhi>strong freeze</> is ineffective against bosses).\r\nWhen an attack with Chilling Strike lands a hit on a target, recover <shuzhi>3%</> of the Wanderer's Max HP.",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and toss Calm Waters ahead, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this period, damage immunity lasts for <shuzhi>1.5</> seconds (unavailable in Apex League).\r\nAfter using Bitter Strike, enter Bitter Cold for <shuzhi>14</> seconds. During this state, certain attacks with <shuzhi>Calm Waters</> will apply Chilling Strike stacks to the target hit. The target's maximum Chilling Strike stacks is <shuzhi>100</>. Upon reaching the maximum number of stacks, the stack count will reset, and the target will be Icebound for <shuzhi>4</> seconds and also become <shuzhi>strongly frozen</> (<shuzhi>strong freeze</> is ineffective against bosses).\r\nWhen an attack with Chilling Strike lands a hit on a target, recover <shuzhi>3%</> of the Wanderer's Max HP.",
 					"tags": [
 						"Damage"
 					],
@@ -10469,7 +10469,7 @@
 		"effects": [
 			{
 				"title": "Elemental Resonance",
-				"description": "N/A"
+				"description": "When pairing Shadoweave with other weapons, the **Weapons Master** effect can be created.\r\nEpiphyllum will appear around the target randomly and explode within **1–3** seconds, dealing **37.5%** area damage. **Flying Petals: On-Field**: When landing any hit with **Shadoweave**, it deals damage to nearby targets equal to **320%** of altered ATK plus **4.5%** of the Wanderer's Max HP plus **166%** of the sum of all the Wanderer's resistance types plus **6.1%** of crit. This effect can be triggered up to 1 time every **1.5** seconds. The Flying Petals damage counts as normal attack damage. If there is **1** volt/frost/physical/flame weapon of any kind equipped, Flying Petals damage is multiplied by **1.3**. In addition, Flying Petals damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
 			}
 		],
 		"elementEffects": {
@@ -17712,7 +17712,7 @@
 			],
 			"discharge": [
 				{
-					"name": "Yubing",
+					"name": "Capped Knowledge",
 					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</>, dealing damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets, and launching the target. During this period, gain damage immunity for <shuzhi>1.5</> seconds (unavailable in Apex League).",
 					"tags": [
 						"Damage"
@@ -18570,7 +18570,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_mingjing01.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Obtained from the Brilliant Eclipse gachapon event."
+						"Obtained from the Phantom Thief Boot Camp event"
 					],
 					"id": "imitation_fashion_50_w"
 				}

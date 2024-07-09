@@ -1,4 +1,396 @@
 {
+	"Ace_physic_ssr_star_0": {
+		"advancement": "<shuzhi>Fusion of Mass and Flame</>: When the weapon deals damage, damage is calculated using the highest equipped physical/flame base ATK, the highest equipped physical/flame ATK percentage, and the highest equipped physical/flame damage boost. The weapon is considered both a physical and flame weapon.\r\n<shuzhi>Physical Resonance</>: Increase physical ATK by <shuzhi>15%</> and physical resistance by <shuzhi>25%</>. Activate by equipping <shuzhi>2</> or more physical weapons. This set effect works in the off-hand slot. Cannot stack with other Physical Resonance or Physical Reaction effects, with Physical Resonance taking precedence.\r\n<shuzhi>Flame Resonance</>: Increase flame ATK by <shuzhi>15%</> and flame resistance by <shuzhi>25%</>. Activate by equipping <shuzhi>2</> or more flame weapons. This set effect works in the off-hand slot. Cannot stack with other Flame Resonance or Flame Reaction effects, with Flame Resonance taking precedence.\r\n<shuzhi>Poppin' Stick Carnival: Detatchment</>: After using the <shuzhi>skill</>, deal damage equal to <shuzhi>137%</> of physical ATK plus <shuzhi>19.5%</> of the Wanderer's Max HP plus <shuzhi>70%</> of the sum of all the Wanderer's resistance types plus <shuzhi>264%</> of crit to the target hit every second for <shuzhi>30</> seconds. Multiple Poppin' Stick Carnival damage cannot be stacked. Poppin' Stick Carnival damage counts as skill damage. If any <shuzhi>1</> volt or frost weapon is equipped, Poppin' Stick Carnival damage is increased to <shuzhi>1.3</> times. In addition, Poppin' Stick Carnival damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 0,
+		"need": "None",
+		"needamt": null,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_0"
+	},
+	"Ace_physic_ssr_star_1": {
+		"advancement": "Increase the chance of triggering <shuzhi>heavy attack</> to <shuzhi>100%</> and reduce the trigger interval to <shuzhi>4</> seconds.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.166667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.166667
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 1000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_1"
+	},
+	"Ace_physic_ssr_star_2": {
+		"advancement": "Increase the current weapon's base ATK growth by <shuzhi>16%</>.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.493333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.333333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.333333
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 2000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_2"
+	},
+	"Ace_physic_ssr_star_3": {
+		"advancement": "Tap or release during a skill's charging phase to trigger the second phase of <shuzhi>Amethyst Candy Assault</>.\r\nThe Wanderer will gain <shuzhi>15%</> ignore of the target's physical resistance (each element's total resistance ignored cannot exceed <shuzhi>50%</>).",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 1.66
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.5
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.5
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 4000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_3"
+	},
+	"Ace_physic_ssr_star_4": {
+		"advancement": "Increase the current weapon's base ATK growth by <shuzhi>32%</>.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.146667
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.666667
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.666667
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 6000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_4"
+	},
+	"Ace_physic_ssr_star_5": {
+		"advancement": "<shuzhi>Disoriented</> targets will deal <shuzhi>25%</> less damage, and triggering heavy attack will greatly reduce the enemy's aggro toward the Wanderer.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.313333
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 1.833333
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 1.833333
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 9000,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_5"
+	},
+	"Ace_physic_ssr_star_6": {
+		"advancement": "The final damage boost from <shuzhi>Amethyst Candy Assault</> is increased to <shuzhi>35%</>.",
+		"numbermap": "LinghanEffectFigure",
+		"multiplicators": [
+			{
+				"PropName": "CommonAtkAdded",
+				"PropCoefficient": 2.48
+			},
+			{
+				"PropName": "ElementDef",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "MaxHealthAdded",
+				"PropCoefficient": 2
+			},
+			{
+				"PropName": "CritAdded",
+				"PropCoefficient": 2
+			}
+		],
+		"numbers": [
+			{
+				"key": "LinghanJiHanDamageCoeffIceATK",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffMaxHP",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffDefSum",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffCrit",
+				"value": 1
+			},
+			{
+				"key": "Buff_LinghanSkillPoJiaDamageAdd_Duration",
+				"value": 1
+			},
+			{
+				"key": "LinghanJiHanDamageCoeffAdv",
+				"value": 1
+			}
+		],
+		"cost": 13500,
+		"need": "ACE_Physic_plasm",
+		"needamt": 1,
+		"stats": {
+			"shatter": 16,
+			"charge": 8
+		},
+		"id": "Ace_physic_ssr_star_6"
+	},
 	"stave_thunder_sr_star_0": {
 		"advancement": "N/A",
 		"multiplicators": [
@@ -5378,7 +5770,7 @@
 		"id": "Linghan_ice_ssr_star_6"
 	},
 	"Loslyn_ice_ssr_star_0": {
-		"advancement": "<shuzhi>Fusion of Frost and Volt</>: When the weapon deals damage, damage is calculated using the highest equipped frost/volt base ATK, the highest equipped frost/volt ATK percentage, and the highest equipped frost/volt damage boost, and the weapon is considered both a frost and volt weapon.\r\n<shuzhi>Frost Resonance</>: Increase frost ATK by <shuzhi>15%</> and frost resistance by <shuzhi>25%</>. Activate by equipping <shuzhi>2</> or more frost weapons. This set effect works in the off-hand slot. Cannot stack with other Frost Resonance or Frost Reaction effects, with Frost Resonance taking precedence.\r\n<shuzhi>Volt Resonance</>: Increase volt ATK by <shuzhi>15%</> and flame resistance by <shuzhi>25%</>. Activate by equipping <shuzhi>2</> or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence.\r\n<shuzhi>Frost Edge: Swift Cut</>: When <shuzhi>Calm Waters</> is equipped, any weapon's discharge skill will deal damage equal to <shuzhi>{0}%</> of the Wanderer's Max HP plus <shuzhi>{1}%</> of frost ATK plus <shuzhi>{2}%</> of the sum of all the Wanderer's resistance types plus <shuzhi>{3}%</> of crit to nearby targets. While in combat, after every <shuzhi>0.5</> seconds, the next Swift Cut damage will be increased by an additional <shuzhi>1</> time, up to a maximum of <shuzhi>30</> times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is 1 physical/flame weapon of any kind equipped, Frost Edge damage is increased to <shuzhi>1.3</> times. In addition, Frost Edge damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.\r\nAfter Calm Waters is switched to the off-hand slot, deal burst damage 1 time. If an enemy has Flashfreeze, it will remove the Flashfreeze from the enemy and deal continuous off-hand damage for <shuzhi>{4}</> seconds.",
+		"advancement": "<shuzhi>Fusion of Frost and Volt</>: When the weapon deals damage, damage is calculated using the highest equipped frost/volt base ATK, the highest equipped frost/volt ATK percentage, and the highest equipped frost/volt damage boost, and the weapon is considered both a frost and volt weapon.\r\n<shuzhi>Frost Resonance</>: Increase frost ATK by <shuzhi>15%</> and frost resistance by <shuzhi>25%</>. Activate by equipping <shuzhi>2</> or more frost weapons. This set effect works in the off-hand slot. Cannot stack with other Frost Resonance or Frost Reaction effects, with Frost Resonance taking precedence.\r\n<shuzhi>Volt Resonance</>: Increase volt ATK by <shuzhi>15%</> and volt resistance by <shuzhi>25%</>. Activate by equipping <shuzhi>2</> or more volt weapons. This set effect works in the off-hand slot. Cannot stack with other Volt Resonance or Volt Reaction effects, with Volt Resonance taking precedence.\r\n<shuzhi>Frost Edge: Swift Cut</>: When <shuzhi>Calm Waters</> is equipped, any weapon's discharge skill will deal damage equal to <shuzhi>{0}%</> of the Wanderer's Max HP plus <shuzhi>{1}%</> of frost ATK plus <shuzhi>{2}%</> of the sum of all the Wanderer's resistance types plus <shuzhi>{3}%</> of crit to nearby targets. While in combat, after every <shuzhi>0.5</> seconds, the next Swift Cut damage will be increased by an additional <shuzhi>1</> time, up to a maximum of <shuzhi>30</> times. When multiple Swift Cut damages exist, the highest initial value is used for calculation. Swift Cut damage is counted as discharge skill damage. If there is 1 physical/flame weapon of any kind equipped, Frost Edge damage is increased to <shuzhi>1.3</> times. In addition, Frost Edge damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.\r\nAfter Calm Waters is switched to the off-hand slot, deal burst damage equal to <shuzhi>400%</> of ATK 1 time. If an enemy has Flashfreeze, it will remove the Flashfreeze from the enemy and deal continuous off-hand damage equal to <shuzhi>700%</> of ATK each second for <shuzhi>{4}</> seconds.",
 		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
@@ -5500,7 +5892,7 @@
 		"id": "Loslyn_ice_ssr_star_2"
 	},
 	"Loslyn_ice_ssr_star_3": {
-		"advancement": "When an attack with <shuzhi>Chilling Strike</> lands a hit on a target, additionally deal damage equal to <shuzhi>Chilling Strike</> stacks times <shuzhi>{0}%</> of ATK.",
+		"advancement": "When an attack with <shuzhi>Chilling Strike</> hits a target, additionally deal damage equal to the number of <shuzhi>Chilling Strike</> stacks times <shuzhi>{0}%</> of ATK.",
 		"numbermap": "LoslynEffectFigure",
 		"multiplicators": [
 			{
@@ -6548,7 +6940,7 @@
 		"id": "dkatana_ice_ssr_star_6"
 	},
 	"fan_superpower_ssr_star_0": {
-		"advancement": "N/A",
+		"advancement": "When pairing Shadoweave with other weapons, the <shuzhi>Weapons Master</> effect can be created.\r\nEpiphyllum will appear around the target randomly and explode within <shuzhi>1–3</> seconds, dealing <shuzhi>37.5%</> area damage. <shuzhi>Flying Petals: On-Field</>: When landing any hit with <shuzhi>Shadoweave</>, it deals damage to nearby targets equal to <shuzhi>{0}%</> of altered ATK plus <shuzhi>{1}%</> of the Wanderer's Max HP plus <shuzhi>{2}%</> of the sum of all the Wanderer's resistance types plus <shuzhi>{3}%</> of crit. This effect can be triggered up to 1 time every <shuzhi>1.5</> seconds. The Flying Petals damage counts as normal attack damage. If there is <shuzhi>1</> volt/frost/physical/flame weapon of any kind equipped, Flying Petals damage is multiplied by <shuzhi>{4}</>. In addition, Flying Petals damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects.",
 		"numbermap": "FanEffectFigure",
 		"multiplicators": [
 			{
@@ -6570,23 +6962,23 @@
 		],
 		"numbers": [
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialATKCoefficient",
 				"value": 1
 			},
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialMaxHPCoefficient",
 				"value": 1
 			},
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialDEFCoefficient",
 				"value": 1
 			},
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialCritCoefficient",
 				"value": 1
 			},
 			{
-				"key": "None",
+				"key": "FanSuperPowerSpecialFinCoefficient",
 				"value": 1
 			}
 		],

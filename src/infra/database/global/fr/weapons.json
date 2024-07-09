@@ -8549,11 +8549,11 @@
 			},
 			{
 				"title": "**Résonance de foudre**",
-				"description": "accroît l'ATQ de foudre de **15%** et la résistance au feu de **25%**. S'active en équipant au moins **2**armes de foudre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, et Résonance de foudre prévaut."
+				"description": "accroît l'ATQ de foudre de **15%** et la résistance au givre de **25%**. S'active en équipant au moins **2**armes de foudre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, et Résonance de foudre prévaut."
 			},
 			{
 				"title": "**Limite de givre: Coupe rapide**",
-				"description": "quand **Eaux calmes** est équipé, toute compétence de décharge d'arme infligera des dégâts équivalant à **0.97%** des PV max de l'Explorateur + **73.2%** de l'ATQ de givre + **36.6%** de la somme de tous les types de résistance de l'Explorateur + **134.3%** de crit aux cibles proches. En combat, toutes les **0,5**seconde, les prochains dégâts infligés par Coupe rapide seront augmentés d'**une** fois supplémentaire, jusqu'à un maximum de **30**fois. Lorsque plusieurs dégâts de Coupe rapide existent en même temps, la valeur initiale la plus élevée est utilisée pour le calcul. Les dégâts de Coupe rapide sont comptabilisés comme des dégâts de compétence de décharge. Si 1arme physique ou de feu est équipée, les dégâts de Limite de givre sont multipliés par **1,3**. Par ailleurs, les dégâts de Limite de givre ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire.\r\nQuand Eaux calmes passe dans l'emplacement main libre, inflige des dégâts d'explosion 1 fois. Si un ennemi a Gel rapide, retire Gel rapide de l'ennemi et inflige des dégâts continus de l'emplacement main libre pendant **12** secondes."
+				"description": "quand **Eaux calmes** est équipé, toute compétence de décharge d'arme infligera des dégâts équivalant à **0.97%** des PV max de l'Explorateur + **73.2%** de l'ATQ de givre + **36.6%** de la somme de tous les types de résistance de l'Explorateur + **134.3%** de crit aux cibles proches. En combat, toutes les **0,5**seconde, les prochains dégâts infligés par Coupe rapide seront augmentés d'**une** fois supplémentaire, jusqu'à un maximum de **30**fois. Lorsque plusieurs dégâts de Coupe rapide existent en même temps, la valeur initiale la plus élevée est utilisée pour le calcul. Les dégâts de Coupe rapide sont comptabilisés comme des dégâts de compétence de décharge. Si 1arme physique ou de feu est équipée, les dégâts de Limite de givre sont multipliés par **1,3**. Par ailleurs, les dégâts de Limite de givre ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire.\r\nQuand Eaux calmes passe dans l'emplacement main libre, inflige des dégâts d'explosion équivalant à **400%** de l'ATQ 1 fois. Si un ennemi a Gel rapide, retire Gel rapide de l'ennemi et inflige des dégâts continus de l'emplacement main libre équivalant à **700%** de l'ATQ chaque seconde pendant **12** secondes."
 			}
 		],
 		"elementEffects": {
@@ -8636,7 +8636,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "Quand une attaque avec **Frappe glaçante** touche une cible, inflige des dégâts supplémentaires équivalant aux cumuls de **Frappe glaçante** fois **40%** de l'ATQ.",
+				"description": "Quand une attaque avec **Frappe glaçante** touche une cible, inflige des dégâts supplémentaires équivalant au nombre de cumuls de **Frappe glaçante** fois **40%** de l'ATQ.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8702,7 +8702,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "Après avoir utilisé **Aura de givre**, l'Explorateur ignore **15%** de la résistance au givre des cibles (la résistance totale ignorée de chaque élément ne peut pas dépasser **50%**). Accroît également les dégâts finaux de **14%** pendant **40**secondes.",
+				"description": "Après avoir utilisé **Aura de givre**, l'Explorateur ignore **15%** de la résistance au givre des cibles (la résistance totale ignorée de chaque élément ne peut pas dépasser **50%**). Accroît également les dégâts finaux de **18%** pendant **40**secondes.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8728,7 +8728,7 @@
 			"normals": [
 				{
 					"name": "Grève de l'ancre de Lien de glace",
-					"description": "Lorsque vous êtes dans les airs, utilisez l'attaque normale pour lancer 6 attaques d'affilée.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>6</> cumuls de Frappe glaçante.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>6</> cumuls de Frappe glaçante.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>6</> cumuls de Frappe glaçante.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>14</> cumuls de Frappe glaçante.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>10</> cumuls de Frappe glaçante.\r\nSixième attaque : inflige des dégâts équivalant à <shuzhi>{10}%</> de l'ATQ + <shuzhi>{11}</> et renverse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>20</> cumuls de Frappe glaçante.",
+					"description": "Lorsque vous êtes au sol, utilisez l'attaque normale pour lancer 6 attaques d'affilée.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>6</> cumuls de Frappe glaçante.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>6</> cumuls de Frappe glaçante.\r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>6</> cumuls de Frappe glaçante.\r\nQuatrième attaque : inflige des dégâts équivalant à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>14</> cumuls de Frappe glaçante.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et repousse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>10</> cumuls de Frappe glaçante.\r\nSixième attaque : inflige des dégâts équivalant à <shuzhi>{10}%</> de l'ATQ + <shuzhi>{11}</> et renverse la cible. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>20</> cumuls de Frappe glaçante.",
 					"operations": [
 						"Attack",
 						"Attack",
@@ -8814,7 +8814,7 @@
 				},
 				{
 					"name": "Ancre de Cycliville",
-					"description": "Utilisez l'attaque normale pendant la courte fenêtre d'esquive parfaite (utilisez un bouton directionnel avant d'esquiver) pour déclencher Ancre de Cycliville, infligeant des dégâts jusqu'à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles en vue. Toucher une cible permet de briser son effet de <shuzhi>Lien de glace</> et inflige des dégâts supplémentaires équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>15</> cumuls de Frappe glaçante.",
+					"description": "Utilisez l'attaque normale pendant la courte fenêtre d'esquive parfaite (utilisez un bouton directionnel avant d'esquiver) pour déclencher Ancre de Cycliville, infligeant des dégâts jusqu'à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles en vue. Toucher une cible permet de briser son effet de <shuzhi>Lien de glace</> et inflige des dégâts supplémentaires équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>15</> cumuls de Frappe glaçante.",
 					"operations": [
 						"Movement",
 						"Dash",
@@ -8828,7 +8828,7 @@
 				},
 				{
 					"name": "Meteor Ancre froide",
-					"description": "Utilisez l'attaque normale rapidement après une esquive pour déclencher Meteor Ancre froide, infligeant des dégâts jusqu'à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles en vue. Toucher une cible permet de briser son effet de <shuzhi>Lien de glace</> et inflige des dégâts supplémentaires équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>10</> cumuls de Frappe glaçante.",
+					"description": "Utilisez l'attaque normale rapidement après une esquive pour déclencher Meteor Ancre froide, infligeant des dégâts jusqu'à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles en vue. Toucher une cible permet de briser son effet de <shuzhi>Lien de glace</> et inflige des dégâts supplémentaires équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</>. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>10</> cumuls de Frappe glaçante.",
 					"operations": [
 						"Dash",
 						"Attack"
@@ -8843,7 +8843,7 @@
 			"skill": [
 				{
 					"name": "Aura de givre",
-					"description": "Manie les deux extrémités d'Eaux calmes pour attaquer séparément, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>52</> cumuls de Frappe glaçante. Temps de recharge : <shuzhi>30</> secondes. Cet effet n'est pas affecté par d'autres effets de réduction, de réinitialisation ou de modification du temps de recharge. Lors de l'utilisation de la compétence, confère Hypercorps pendant <shuzhi>20</> secondes.\r\nApplique <shuzhi>15</> secondes de Gel rapide aux cibles touchées et réduit leur ATQ de <shuzhi>5%</>.",
+					"description": "Manie les deux extrémités d'Eaux calmes pour attaquer séparément, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Lors de l'utilisation de la compétence, confère Hypercorps pendant <shuzhi>20</> secondes. Pendant <shuzhi>Froid cinglant</>, ajoute <shuzhi>52</> cumuls de Frappe glaçante. Temps de recharge : <shuzhi>30</> secondes. Cet effet n'est pas affecté par d'autres effets de réduction, de réinitialisation ou de modification du temps de recharge.\r\nApplique <shuzhi>15</> secondes de Gel rapide aux cibles touchées et réduit leur ATQ de <shuzhi>5%</>.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -8855,7 +8855,7 @@
 			"discharge": [
 				{
 					"name": "Frappe cinglante",
-					"description": "Lorsque la <red>recharge d'arme est pleine</> ou que <red>Fantaisie</> est déclenchée, au moment où vous changez d'arme pour passer à celle-ci, <shuzhi>élimine toutes les altérations sur l'Explorateur</> et lance Eaux calmes, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Durant cette période, l'immunité aux dégâts dure <shuzhi>1,5</> seconde (non disponible en Ligue ultime).\r\nAprès avoir utilisé Frappe cinglante, entre en Froid cinglant pendant <shuzhi>14</> secondes. L'attaque spéciale d'<shuzhi>Eaux calmes</> appliquera le nombre actuel de cumuls de Frappe glaçante. Le nombre de cumuls maximum de la cible est de <shuzhi>100</>. En atteignant le nombre max de cumuls, celui-ci est réinitialisé et inflige Lien de glace à la cible pendant <shuzhi>4</> secondes ainsi qu'un <shuzhi>effet de gel long</> (l'<shuzhi>effet de gel long</> ne fonctionne pas contre les boss).\r\nQuand une attaque avec Frappe glaçante touche une cible, restaure <shuzhi>3%</> des PV max de l'Explorateur.",
+					"description": "Lorsque la <red>recharge d'arme est pleine</> ou que <red>Fantaisie</> est déclenchée, au moment où vous changez d'arme pour passer à celle-ci, <shuzhi>élimine toutes les altérations sur l'Explorateur</> et lance Eaux calmes, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Durant cette période, l'immunité aux dégâts dure <shuzhi>1,5</> seconde (non disponible en Ligue ultime).\r\nAprès avoir utilisé Frappe cinglante, entre en Froid cinglant pendant <shuzhi>14</> secondes. Pendant la durée de cet état, certaines attaques avec <shuzhi>Eaux calmes</> appliqueront des cumuls de Frappe glaçante. Le nombre de cumuls maximum de la cible est de <shuzhi>100</>. En atteignant le nombre maximum de cumuls, celui-ci est réinitialisé et inflige Lien de glace à la cible pendant <shuzhi>4</> secondes ainsi qu'un <shuzhi>effet de gel long</> (l'<shuzhi>effet de gel long</> ne fonctionne pas contre les boss).\r\nQuand une attaque avec Frappe glaçante touche une cible, restaure <shuzhi>3%</> des PV max de l'Explorateur.",
 					"tags": [
 						"Damage"
 					],
@@ -10469,7 +10469,7 @@
 		"effects": [
 			{
 				"title": "Résonance élémentaire",
-				"description": "N/A"
+				"description": "Combiner Tissombre avec d'autres armes permet de déclencher l'effet **Maître d'armes**.\r\nDes épicactus apparaîtront aléatoirement autour de la cible et exploseront dans un délai de **1à3**secondes en infligeant des dégâts de zone équivalant à **37,5%**.**Pétales volants: Sur le terrain**: quand un coup est réussi avec **Tissombre**, inflige des dégâts aux cibles proches équivalant à **320%** de l'ATQ altérée + **4.5%** des PV max de l'Explorateur + **166%** de la somme de tous les types de résistance de l'Explorateur + **6.1%** de crit. Cet effet peut être déclenché une fois toutes les **1,5**seconde. Les dégâts de Pétales volants sont comptabilisés comme des dégâts d'attaque normale. Si **1**arme de foudre, de givre, physique, ou de feu est équipée, les dégâts de Pétales volants sont multipliés par **1.3**. Par ailleurs, les dégâts de Pétales volants ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan et ne déclenchent aucun effet d'attaque supplémentaire."
 			}
 		],
 		"elementEffects": {
@@ -17712,7 +17712,7 @@
 			],
 			"discharge": [
 				{
-					"name": "Yubing",
+					"name": "Savoir limité",
 					"description": "Lorsque la <red>recharge d'arme est pleine</> ou que <red>Fantaisie</> est déclenchée, au moment où vous changez d'arme pour passer à celle-ci, <shuzhi>supprime toutes les altérations sur l'Explorateur</>, inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches, et projette la cible. Durant cette période, octroie une immunité aux dégâts pendant <shuzhi>1,5</> secondes (non disponible en Ligue ultime).",
 					"tags": [
 						"Damage"
@@ -18570,7 +18570,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_mingjing01.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"S'obtient lors de l'événement gachapon Éclipse brillante."
+						"S'obtient lors de l'événement Camp d'entraînement de la voleuse fantôme"
 					],
 					"id": "imitation_fashion_50_w"
 				}
