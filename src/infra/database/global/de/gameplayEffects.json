@@ -309,6 +309,16 @@
 		"description": "Erhöht Frostschaden um **10%**. Wird beim Verlassen des Kampfs deaktiviert.",
 		"id": "buff_iceup"
 	},
+	"buff_imitation_ace_level1": {
+		"name": "Umformung",
+		"description": "Erhöht den Endschaden um **14%**.",
+		"id": "buff_imitation_ace_level1"
+	},
+	"buff_imitation_ace_level2": {
+		"name": "Neustart",
+		"description": "",
+		"id": "buff_imitation_ace_level2"
+	},
 	"buff_imitation_brush_level1": {
 		"name": "Zählende Tinte",
 		"description": "Der Endschaden erhöht sich um **0%**. Wenn sich **Kienkomet** im Nebenhand-Slot befindet, erhöht sich die Abwurffrequenz von **Sperlingsfeder** auf **1** pro Sek.",
@@ -1949,6 +1959,16 @@
 		"description": "**Voltresonanz**: Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden.",
 		"id": "buff_blevi_thunder_resonance"
 	},
+	"buff_border_015_2_critdown": {
+		"name": "Krit wird reduziert",
+		"description": "Die kritische Trefferrate wird um 100% reduziert.",
+		"id": "buff_border_015_2_critdown"
+	},
+	"buff_border_015_4_weak": {
+		"name": "Anfälligkeit",
+		"description": "Hält 10 Sek. an, maximal 10 Stapel. Der erlittene Schaden wird um 15% erhöht.",
+		"id": "buff_border_015_4_weak"
+	},
 	"buff_borderwar_weakfire": {
 		"name": "Flammenanfälligkeit",
 		"description": "Erhöht erlittenen Flammenschaden erheblich.",
@@ -1981,7 +2001,7 @@
 	},
 	"buff_boss_010_4_punish": {
 		"name": "Bestrafung",
-		"description": "Nachdem Seraph ein Ziel ohne Standhaftigkeit getroffen hat, werden Bestrafungen hinzugefügt. Bestrafungen werden alle 5 Sekunden um 1 Stapel reduziert. Wenn die Bestrafungsstapel 10 erreichen, verliert der Wanderer seinen Hyperkörper und Unverwundbarkeit und kann für 90 Sekunden keinen Hyperkörper oder Unverwundbarkeit wiedererlangen.",
+		"description": "Nachdem Seraph ein Ziel ohne Standhaftigkeit trifft, werden Bestrafungen hinzugefügt. Bestrafungen werden alle 5 Sekunden um 1 Stapel reduziert. Wenn die Bestrafungsstapel 10 erreichen, verliert der Wanderer seinen Hyperkörper und Unverwundbarkeit und kann für 90 Sekunden keinen Hyperkörper oder Unverwundbarkeit wiedererlangen.",
 		"id": "buff_boss_010_4_punish"
 	},
 	"buff_boss_010_4_punishment": {
@@ -2081,7 +2101,7 @@
 	},
 	"buff_boss_065_4_frozen": {
 		"name": "Blitzeinfrieren",
-		"description": "Merbelles Schaden erhält das Blitzeinfrieren. Wenn Blitzeinfrieren 15 Mal gestapelt wird, wird diese Einheit stark durch Trugbild verlangsamt.",
+		"description": "Merbelles Schaden erhält Blitzeinfrieren. Wenn Blitzeinfrieren 15-mal gestapelt wird, wird diese Einheit stark durch Trugbild verlangsamt.",
 		"id": "buff_boss_065_4_frozen"
 	},
 	"buff_boss_065_4_frozen20": {
@@ -8951,7 +8971,7 @@
 	},
 	"buff_loslyn_skillstate": {
 		"name": "Bittere Kälte",
-		"description": "Gewährt „Hyperkörper“. Die Angriffe von Stille Wasser haben einen zusätzlichen **Eishieb**-Effekt. Hält für **0**Sek. an.",
+		"description": "Die Angriffe von Stille Wasser haben einen zusätzlichen **Eishieb**-Effekt. Hält für **0**Sek. an.",
 		"id": "buff_loslyn_skillstate"
 	},
 	"buff_loslyn_skillstate_iceatkup": {
@@ -10689,6 +10709,46 @@
 		"description": "Erhöht den Endschaden pro **1** ausgerüsteter Frostwaffe um **0%**. Sobald **Bittere Kälte** aktiviert wurde, wird der Frost-ANG für **2**Sek. um **1%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
 		"id": "buff_matrix_ssr94_level4"
 	},
+	"buff_matrix_ssr95_level1": {
+		"name": "Mittwoch",
+		"description": "Erhöht den physischen ANG um **0%** und den Schaden des **schweren Angriffs** um **1%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr95_level1"
+	},
+	"buff_matrix_ssr95_level2": {
+		"name": "Mittwoch",
+		"description": "Erhöht den physischen ANG um **0%** und den Schaden des **schweren Angriffs** um **1%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr95_level2"
+	},
+	"buff_matrix_ssr95_level3": {
+		"name": "Mittwoch",
+		"description": "Erhöht den physischen ANG um **0%** und den Schaden des **schweren Angriffs** um **1%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr95_level3"
+	},
+	"buff_matrix_ssr95_level4": {
+		"name": "Mittwoch",
+		"description": "Erhöht den physischen ANG um **0%** und den Schaden des **schweren Angriffs** um **1%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr95_level4"
+	},
+	"buff_matrix_ssr96_level1": {
+		"name": "Mittwoch",
+		"description": "Das Schadensintervall des **„Chaos“-Effekts** wird auf **0**Sek. verringert. Erhöht den Endschaden um **1%**. Nachdem **Spaß am Stiel** ausgerüstet wurde, erhöht sich der krit. Schaden um **2%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr96_level1"
+	},
+	"buff_matrix_ssr96_level2": {
+		"name": "Mittwoch",
+		"description": "Das Schadensintervall des **„Chaos“-Effekts** wird auf **0**Sek. verringert. Erhöht den Endschaden um **1%**. Nachdem **Spaß am Stiel** ausgerüstet wurde, erhöht sich der krit. Schaden um **2%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr96_level2"
+	},
+	"buff_matrix_ssr96_level3": {
+		"name": "Mittwoch",
+		"description": "Das Schadensintervall des **„Chaos“-Effekts** wird auf **0**Sek. verringert. Erhöht den Endschaden um **1%**. Nachdem **Spaß am Stiel** ausgerüstet wurde, erhöht sich der krit. Schaden um **2%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr96_level3"
+	},
+	"buff_matrix_ssr96_level4": {
+		"name": "Mittwoch",
+		"description": "Das Schadensintervall des **„Chaos“-Effekts** wird auf **0**Sek. verringert. Erhöht den Endschaden um **1%**. Nachdem **Spaß am Stiel** ausgerüstet wurde, erhöht sich der krit. Schaden um **2%**. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+		"id": "buff_matrix_ssr96_level4"
+	},
 	"buff_artifact_ssr012_defup_level5": {
 		"name": "Typ-II-Couant: Wächter",
 		"description": "Erhöht die Verteidigung um **50%** des verursachten Schadens und gewährt Immunität gegen Trefferlähmung für einen bestimmten Zeitraum.",
@@ -11211,7 +11271,7 @@
 	},
 	"buff_boss_hum_076_delayspawnbullet": {
 		"name": "Leerenenergie",
-		"description": "Am Ende der Dauer werden um den Boss herum zerstörbare Leerenenergiekristalle erzeugt.",
+		"description": "Am Ende der Dauer werden zerstörbare Leerenenergiekristalle um den Boss herum erzeugt.",
 		"id": "buff_boss_hum_076_delayspawnbullet"
 	},
 	"buff_boss037_skill04_cantcharge": {
@@ -11356,7 +11416,7 @@
 	},
 	"buff_dfishchess_arealevelstackcount": {
 		"name": "Taktische Aufstellung",
-		"description": "",
+		"description": "Jeder Stapel erhöht den DoT der Zone pro Sek. um **0%** des ANG. Bis zu **8**-mal stapelbar.",
 		"id": "buff_dfishchess_arealevelstackcount"
 	},
 	"buff_dfishchess_changeskilladdimmstatus": {
@@ -11888,6 +11948,26 @@
 		"name": "Überlegene Entwicklung",
 		"description": "Erhöht die Geschwindigkeit der Punktegewinnung an deinen Energiestationen um 50% und friert die Energiestationen des Gegners ein, sodass sie 60 Sekunden lang keine Punkte gewähren.",
 		"id": "buff_8v8_wy_cjkf"
+	},
+	"buff_ace_fire_resonance": {
+		"name": "Flammenresonanz",
+		"description": "**Flammenresonanz**: Erhöht den Flammen-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.",
+		"id": "buff_ace_fire_resonance"
+	},
+	"buff_ace_physic_resonance": {
+		"name": "Physische Resonanz",
+		"description": "**Physische Resonanz**: Erhöht den physischen ANG um **15%** und den physischen Widerstand um **25%**. Wird durch Ausrüsten von **2** oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.",
+		"id": "buff_ace_physic_resonance"
+	},
+	"buff_ace_skilldamageup_level0display": {
+		"name": "Schadensbonus",
+		"description": "Erhöht den Endschaden für **30**Sek. um **0%**.",
+		"id": "buff_ace_skilldamageup_level0display"
+	},
+	"buff_ace_skilldamageup_level6display": {
+		"name": "Schadensbonus",
+		"description": "Erhöht den Endschaden für **30**Sek. um **0%**.",
+		"id": "buff_ace_skilldamageup_level6display"
 	},
 	"buff_3stone_fireweak": {
 		"name": "Flammenanfälligkeit",
@@ -14775,7 +14855,7 @@
 		"id": "buff_imitation_nanyin_level2"
 	},
 	"buff_imitation_paradox_level1": {
-		"name": "Titi & Poppa",
+		"name": "Polo & Poppa",
 		"description": "Erhöht den Endschaden um **0%**.",
 		"id": "buff_imitation_paradox_level1"
 	},
@@ -15283,6 +15363,11 @@
 		"name": "Stab der Narben",
 		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
 		"id": "buff_bigsecret_upstar_sr_stave_thunder"
+	},
+	"buff_bigsecret_upstar_ssr_ace_physic": {
+		"name": "Spaß am Stiel",
+		"description": "Für jeden erhaltenen Buffstapel wird die Sternebewertung der Waffe um **+1** erhöht. Überzählige Sternebewertungen gewähren einen Schadensbonus in Höhe von **5%** für die Waffe.",
+		"id": "buff_bigsecret_upstar_ssr_ace_physic"
 	},
 	"buff_bigsecret_upstar_ssr_arm_physic": {
 		"name": "Vesper",
@@ -16789,9 +16874,9 @@
 		"description": "Gewährt dir und Teammitgliedern einen Schild in Höhe von 10% der max. LP des Teammitglieds.",
 		"id": "buff_jmhz_yanmiao_02"
 	},
-	"newrow": {
-		"name": "",
-		"description": "",
-		"id": "newrow"
+	"buff_fansuperpower_ssr_level0_superpowerspecial": {
+		"name": "Blütentanz: Auf dem Feld",
+		"description": "**Blütentanz: Auf dem Feld**: Bei jedem Treffer mit **Schattenweben** wird Zielen in der Nähe Schaden in Höhe von **0%** des veränderten ANG + **1%** der max. LP des Wanderers + **2%** der Summe aller Widerstandsarten des Wanderers + **3%** des krit. Schadens zugefügt. Dieser Effekt kann einmal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Blütentanz“ zählt als normaler Angriffsschaden. Wenn **1** Volt-, Frost-, physische oder Flammenwaffe jeglicher Art ausgerüstet ist, wird der Schaden von „Blütentanz“ mit **4** multipliziert. Außerdem wird der Schaden von „Blütentanz“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+		"id": "buff_fansuperpower_ssr_level0_superpowerspecial"
 	}
 }

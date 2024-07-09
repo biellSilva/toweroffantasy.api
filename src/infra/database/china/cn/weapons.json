@@ -7536,7 +7536,8 @@
 					"type": "CONSUMABLE",
 					"source": [
 						"限时任务“昨日重现”获取",
-						"暖冬煦曲活动获取"
+						"暖冬煦曲活动获取",
+						"怪盗训练营活动获取"
 					],
 					"id": "imitation_fashion_17_w"
 				}
@@ -14800,7 +14801,7 @@
 					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/item/icon_mingjing01.png",
 					"type": "CONSUMABLE",
 					"source": [
-						"灿星蚀日扭蛋活动获取"
+						"怪盗训练营活动获取"
 					],
 					"id": "imitation_fashion_50_w"
 				}
@@ -18961,6 +18962,247 @@
 		"version": "4.0",
 		"limited": true,
 		"id": "loslyn_ice"
+	},
+	"ace_physic": {
+		"name": "跳跳糖",
+		"description": "若是被它砸一闷棍，脑瓜会立刻嗡嗡低鸣，耳边开始噼啪作响。随后眼冒金星，后脑勺鼓起一个高耸的包。",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/weapon/Icon/item_Weapon_SSR_ACE_Phy01.png",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/weapon/icon_yizhi/yizhi_SSR_ACE_Phy01.png",
+			"characterArtwork": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/huanxing/lihui/anke.png"
+		},
+		"rarity": 5,
+		"element": "Physics",
+		"type": "Ace",
+		"weaponUpgradeId": "physic_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Ace_Physic_ssr_star",
+		"avatar": "imitation_59",
+		"stats": [
+			{
+				"stat": {
+					"name": "攻击",
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/AttributeIcon/icon_atk.png",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 16.571905
+			},
+			{
+				"stat": {
+					"name": "生命",
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/AttributeIcon/icon_hp.png",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1010.0971
+			},
+			{
+				"stat": {
+					"name": "暴击",
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/AttributeIcon/icon_baoji.png",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 11.837075
+			}
+		],
+		"upgradeProps": [
+			[
+				2.761984,
+				168.34952,
+				1.972846
+			]
+		],
+		"elementEffects": {
+			"title": "**重伤**",
+			"description": "武器充能值充满后下次攻击使敌人进入**7**秒重伤状态，受到伤害增加**20%**，并造成**137.00%***攻击力伤害。**[组队玩法]**中，重伤状态目标受到物理伤害额外增加**20%**。"
+		},
+		"attributes": [
+			{
+				"charge": 8,
+				"shatter": 16
+			},
+			{
+				"charge": 8,
+				"shatter": 16
+			}
+		],
+		"advancements": [],
+		"skills": {
+			"normals": [
+				{
+					"name": "巧克力狂打",
+					"description": "在地面时，点击普攻可连续进行五次攻击。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击退目标。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并击退目标。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并击退目标。\r\n第四次攻击对目标至多造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并击退目标。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并击飞目标。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_melee.png",
+					"id": "GA_FPlayerAceMelee_Melee"
+				},
+				{
+					"name": "糖粒喷发",
+					"description": "当拓荒者滞空时，点击普攻可在空中连续进行五次攻击，并消耗耐力。\r\n第一次攻击对目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，并击退目标。\r\n第二次攻击对目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并击退目标。\r\n第三次攻击对目标造成<shuzhi>{4}%</>*攻击力+<shuzhi>{5}</>点伤害，并击退目标。\r\n第四次攻击对目标至多造成<shuzhi>{6}%</>*攻击力+<shuzhi>{7}</>点伤害，并击退目标。\r\n第五次攻击对目标造成<shuzhi>{8}%</>*攻击力+<shuzhi>{9}</>点伤害，并击飞目标。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_airattack.png",
+					"id": "GA_FPlayerAceMelee_AirAttack"
+				},
+				{
+					"name": "巨型糖果连击",
+					"description": "在地面普攻时，使用第一次至第三次普攻中，长按普攻可触发巨型糖果连击。\r\n持续挥动棒球棍大力砸地，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，结束后打出终结一击，对附近目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并击飞敌人。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_branch.png",
+					"id": "GA_FPlayerAceMelee_Branch"
+				},
+				{
+					"name": "拜拜喽！",
+					"description": "在地面时，长按普攻可触发蓄力攻击。\r\n抬起棒球棍，在原地蓄力，并消耗耐力，随着蓄力时长的增长，伤害与命中效果均获得提升，随后向前挥动棒球棍，命中后对至多附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害并击飞目标。",
+					"operations": [
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage",
+						"Control"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_powerattack.png",
+					"id": "GA_FPlayerAceMelee_PowerAttack"
+				},
+				{
+					"name": "焦糖脆片旋风",
+					"description": "滞空时长按普攻（存在敌方目标时点按），攀爬，反向跳攻击或使用喷气背包普攻，可触发下落攻击。\r\n从空中下落，落地过程中对命中的敌人每次造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，落地后对附近目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_jumpattack.png",
+					"id": "GA_FPlayerAceMelee_JumpAttack"
+				}
+			],
+			"dodge": [
+				{
+					"name": "闪避",
+					"description": "在被命中前闪避，可触发幻时，使一定范围内的目标动作速率变缓；闪避过程中，免疫硬直效果。",
+					"operations": [
+						"Movement",
+						"Dash"
+					],
+					"tags": [],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/common_evade.png",
+					"id": "GA_FPlayerAceEvade_Evade"
+				},
+				{
+					"name": "GA_FPlayerAceEvadeAttack_ForwardEvadeAttack_name",
+					"description": "GA_FPlayerAceEvadeAttack_ForwardAttack_des",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_fevadeattack.png",
+					"id": "GA_FPlayerAceEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "GA_FPlayerAceEvadeAttack_BackAttack_name",
+					"description": "GA_FPlayerAceEvadeAttack_BackAttack_des",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_bevadeattack.png",
+					"id": "GA_FPlayerAceEvadeAttack_BackAttack"
+				}
+			],
+			"skill": [
+				{
+					"name": "紫钻宝石糖突袭",
+					"description": "长按技能进入蓄力状态，期间自身获得<shuzhi>50%</>减伤，松手时触发不同短时效果，冷却<shuzhi>20</>秒（不受任何冷却时间清除、重置、变化效果的影响），根据蓄力时间，至多触发二段技能：\r\n一段技能：对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害；\r\n二段技能：对附近目标造成<shuzhi>{2}%</>*攻击力+<shuzhi>{3}</>点伤害，并获得<shuzhi>15%</>最终伤害提升，持续<shuzhi>30</>秒，同时为命中目标添加混乱效果，每秒造成<shuzhi>1500%</>*攻击力伤害，持续<shuzhi>16</>秒，<shuzhi>武器-跳跳糖</>任意普攻或闪避攻击命中混乱目标时有<shuzhi>30%</>几率对其造成<shuzhi>3000%</>*攻击力的重击伤害，混乱状态下每名目标每<shuzhi>6</>秒至多触发<shuzhi>1</>次。",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_skill.png",
+					"id": "GA_FPlayerAceSkill_Skill"
+				}
+			],
+			"discharge": [
+				{
+					"name": "以「星期三」的名义！",
+					"description": "当<red>武器充能满</>或触发<red>幻时</>时，从其他武器切换到该武器时<shuzhi>清除自身负面状态</>，向前方挥动棒球棍，对附近目标造成<shuzhi>{0}%</>*攻击力+<shuzhi>{1}</>点伤害，期间免疫伤害持续<shuzhi>2.6</>秒（巅峰联赛不生效）释放。",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/skill/WeaponSkill/skill_Ace_changeskill.png",
+					"id": "GA_FPlayerAceChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "遐想韶光",
+					"description": "想重温校园时代？你只需挖出掩埋在衣柜深处的校服。",
+					"rarity": 5,
+					"source": "活动获取",
+					"simulacrumId": "imitation_59",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/shizhuang/nitai/UI_NT_SZ_ACE.png",
+						"prayPainting": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/UI/shizhuang/nitai/UI_NT_SZ_ACE_Lock.png"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_59"
+				},
+				"weapon": {
+					"name": "扭扭糖",
+					"description": "甜蜜又随性地将那些校园霸凌的家伙锤得满头包！",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/Silyky/Icon_CN/main/Icon/item/fashion_ace_weapon.png",
+					"type": "CONSUMABLE",
+					"source": [
+						"遐想韶光扭蛋活动获取"
+					],
+					"id": "imitation_fashion_59_w"
+				}
+			}
+		],
+		"version": null,
+		"limited": true,
+		"id": "ace_physic"
 	},
 	"paradox_fire": {
 		"name": "EP-7000天火",

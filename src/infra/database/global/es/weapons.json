@@ -8541,19 +8541,19 @@
 		"effects": [
 			{
 				"title": "**Fusión de Escarcha y Electricidad**",
-				"description": "Cuando el arma inflige daño, el daño se calcula según el ATQ base de escarcha/eléctrico más alto equipado, el porcentaje de ATQ de escarcha/eléctrico más alto equipado y el refuerzo de daño de escarcha/eléctrico más alto equipado. El arma se considera tanto de escarcha como eléctrica."
+				"description": "cuando el arma inflige daño, el daño se calcula utilizando el ATQ base de escarcha/eléctrico más alto equipado, el porcentaje de ATQ de escarcha/eléctrico más alto equipado y el refuerzo de daño de escarcha/eléctrico más alto equipado, y el arma se considera tanto un arma de escarcha como eléctrica."
 			},
 			{
 				"title": "**Resonancia de Escarcha**",
-				"description": "Aumenta el ATQ de escarcha en un **15%** y la resistencia a la escarcha en un **25%**. Se activa equipando **2** o más armas de escarcha. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia de Escarcha o Reacción de Escarcha; Resonancia de Escarcha tiene prioridad."
+				"description": "aumenta el ATQ de escarcha un **15%** y la resistencia a la escarcha un **25%**. Se activa equipando **2** o más armas de escarcha. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia de Escarcha o Reacción de Escarcha; Resonancia de Escarcha tiene prioridad."
 			},
 			{
 				"title": "**Resonancia Eléctrica**",
-				"description": "Aumenta el ATQ eléctrico en un **15%** y la resistencia al fuego en un **25%**. Se activa al equipar **2** o más armas eléctricas. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia Eléctrica o Reacción Eléctrica; Resonancia Eléctrica tiene prioridad."
+				"description": "aumenta el ATQ eléctrico un **15%** y la resistencia a la electricidad un **25%**. Se activa equipando **2** o más armas eléctricas. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos de Resonancia Eléctrica o Reacción Eléctrica; Resonancia Eléctrica tiene prioridad."
 			},
 			{
 				"title": "**Filo de Escarcha: Corte Veloz**",
-				"description": "Cuando **Aguas Tranquilas** está equipada, la habilidad de descarga de cualquier arma infligirá un daño igual al **0.97%** de los PS Máx. del nómada más **73.2%** del ATQ de escarcha más **36.6%** de la suma de todos los tipos de resistencias del nómada más **134.3%** del crítico a los objetivos cercanos. Al estar en combate, el daño del próximo Corte Veloz aumentará **1** vez adicional cada **0.5** seg, hasta un máximo de **30** veces. Cuando existen múltiples instancias de Corte Veloz, se usará el valor inicial más alto para el cálculo. El daño de Corte Veloz cuenta como daño de habilidad de descarga. Si hay 1 arma física/de fuego de cualquier tipo equipada, el daño de Filo de Escarcha aumenta **1.3** veces. Además, este daño no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales.\r\nCuando Aguas Tranquilas se cambia a la ranura secundaria, inflige daño de ráfaga 1 vez. Si un enemigo tiene Ultrafrío, se eliminará este efecto del enemigo para infligir un daño de mano secundaria continuo por **12** seg."
+				"description": "cuando **Aguas Tranquilas** está equipada, la habilidad de descarga de cualquier arma infligirá daño igual a **0.97%** de los PS Máx. del nómada más **73.2%** del ATQ de escarcha, más **36.6%** de la suma de todos los tipos de resistencia del nómada, más **134.3%** del ATQ de escarcha a los objetivos cercanos. Mientras estés en combate, después de cada **0.5**seg, el daño del siguiente Corte Veloz aumentará **1** vez adicional, hasta un máximo de **30** veces. Cuando existen múltiples daños de Corte Veloz, se usa para el cálculo el valor inicial más alto. El daño de Corte Veloz cuenta como daño de habilidad de descarga. Si hay 1 arma física/de fuego de cualquier tipo equipada, el daño de Filo de Escarcha aumenta a **1.3** veces. Además, el daño de Filo de Escarcha no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales.\r\nTras cambiar Aguas Tranquilas a la ranura secundaria, infliges daño de ráfaga igual a **400%** del ATQ 1 vez. Si un enemigo tiene Ultrafrío, eliminará el Ultrafrío del enemigo y le infligirá daño de arma secundaria continuo igual a **700%** del ATQ cada segundo durante **12**seg."
 			}
 		],
 		"elementEffects": {
@@ -8636,7 +8636,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "Si un ataque con **Golpe de Escarcha** impacta a un objetivo, inflige un daño adicional igual a las acumulaciones de **Golpe de Escarcha** multiplicadas por el **40%** del ATQ.",
+				"description": "Cuando un ataque con **Golpe de Escarcha** golpea a un objetivo, inflige adicionalmente daño igual al número de acumulaciones de **Golpe de Escarcha** multiplicado por **40%** del ATQ.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8702,7 +8702,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "Tras usar **Aura de Enlace de Escarcha**, el nómada ignorará un **15%** de la resistencia a la escarcha de los objetivos (la resistencia total ignorada de cada elemento no puede superar el **50%**). Además, aumenta el daño final en un **14%** por **40** seg.",
+				"description": "Tras usar **Aura de Enlace de Escarcha**, el nómada ignorará un **15%** de la resistencia a la escarcha de los objetivos (la resistencia total ignorada de cada elemento no puede superar el **50%**). Además, aumenta el daño final en un **18%** por **40** seg.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8814,7 +8814,7 @@
 				},
 				{
 					"name": "Ancla de la Ciclicidad",
-					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Ancla de Ciclicidad, la cual inflige un daño de hasta <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos adelante. Asestar un golpe puede romper a un objetivo <shuzhi>Helado</>, lo que inflige un daño adicional igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>15</> acumulaciones de Golpe de Escarcha.",
+					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar Ancla de la Ciclicidad, lo que inflige daño de hasta <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos adelante. Al impactar, se rompe el efecto <shuzhi>Helado</> del objetivo y le infliges daño adicional igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>. Con <shuzhi>Frío Inclemente</>, añades <shuzhi>15</> acumulaciones de Golpe de Escarcha.",
 					"operations": [
 						"Movement",
 						"Dash",
@@ -8828,7 +8828,7 @@
 				},
 				{
 					"name": "Meteorito de Anclaje Frío",
-					"description": "Usa tu ataque normal durante el breve periodo tras evadir para activar Meteorito de Anclaje Frío, el cual inflige un daño de hasta <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos adelante. Asestar un golpe puede romper a un objetivo <shuzhi>Helado</>, lo que inflige un daño adicional igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>10</> acumulaciones de Golpe de Escarcha.",
+					"description": "Usa tu ataque normal durante el breve periodo tras evadir para activar Meteoro de Anclaje Frío, lo que inflige daño de hasta <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos adelante. Al impactar, se rompe el efecto <shuzhi>Helado</> del objetivo y le infliges daño adicional igual a <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</>. Con <shuzhi>Frío Inclemente</>, añades <shuzhi>10</> acumulaciones de Golpe de Escarcha.",
 					"operations": [
 						"Dash",
 						"Attack"
@@ -8843,7 +8843,7 @@
 			"skill": [
 				{
 					"name": "Aura de Enlace de Escarcha",
-					"description": "Blande ambos extremos de Aguas Tranquilas por separado para atacar e infligir un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Si <shuzhi>Frío Inclemente</> está activo, añade <shuzhi>52</> acumulaciones de Golpe de Escarcha. Enfriamiento: <shuzhi>30</> seg. No se ve afectado por efectos de eliminación, restablecimiento o alteración de enfriamiento. Al usar la habilidad, obtienes <shuzhi>20</> seg de hipercuerpo.\r\nAplica <shuzhi>15</> seg de Ultrafrío a los objetivos impactados y reduce su ATQ en un <shuzhi>5%</>.",
+					"description": "Columpia ambos extremos de Aguas Tranquilas para atacar por separado, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Al usar la habilidad, recibes <shuzhi>20</> segundos de hipercuerpo. Con <shuzhi>Frío Inclemente</>, añades <shuzhi>52</> acumulaciones de Golpe de Escarcha. Enfriamiento: <shuzhi>30</> seg. No se ve afectado por efectos de eliminación, restablecimiento o alteración de enfriamiento.\r\nAplica <shuzhi>15</> segundos de Ultrafrío a los objetivos golpeados y reduce su ATQ en <shuzhi>5%</>.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -8855,7 +8855,7 @@
 			"discharge": [
 				{
 					"name": "Golpe Inclemente",
-					"description": "Cuando <red>la carga de arma está completa</> o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y lanza a Aguas Tranquilas hacia adelante para infligir un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Durante este periodo, la inmunidad al daño dura <shuzhi>1.5</> seg (no disponible en la Liga Ápex).\r\nTras usar Golpe Inclemente, activa Frío Inclemente por <shuzhi>14</> seg. El ataque especial de <shuzhi>Aguas Tranquilas</> aplicará la cantidad de acumulaciones de Golpe de Escarcha actual al objetivo impactado. El objetivo no puede tener más de <shuzhi>100</> acumulaciones de Golpe de Escarcha. Al alcanzar el máximo de acumulaciones, el contador se reiniciará y el objetivo quedará Helado por <shuzhi>4</> seg y también quedará <shuzhi>fuertemente congelado</> (<shuzhi>la congelación fuerte</> es ineficaz contra los jefes).\r\nSi un ataque con Golpe de Escarcha impacta a un objetivo, restaura <shuzhi>3%</> de los PS Máx. del nómada.",
+					"description": "Cuando la <red>carga de arma está completa</> o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> y lanzas Aguas Tranquilas adelante, lo que inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Durante este periodo, la inmunidad al daño dura <shuzhi>1.5</> seg (no disponible en la Liga Ápex).\r\nDespués de usar Golpe Inclemente, entras en Frío Inclemente durante <shuzhi>14</> seg. En este estado, ciertos ataques con <shuzhi>Aguas Tranquilas</> aplicarán acumulaciones de Golpe de Escarcha al objetivo alcanzado. El objetivo puede tener hasta <shuzhi>100</> acumulaciones de Golpe de Escarcha. Al alcanzar el número máximo de acumulaciones, la cuenta de acumulaciones se reiniciará y el objetivo quedará congelado durante <shuzhi>4</> seg y también quedará <shuzhi>fuertemente congelado</> (la <shuzhi>congelación fuerte</> no es eficaz contra jefes).\r\nCuando un ataque con Golpe de Escarcha impacta en un objetivo, restaura <shuzhi>3%</> de los PS Máx. del nómada.",
 					"tags": [
 						"Damage"
 					],
@@ -10469,7 +10469,7 @@
 		"effects": [
 			{
 				"title": "Resonancia elemental",
-				"description": "N/A"
+				"description": "Al emparejar Tejesombras con otras armas, se puede crear el efecto **Maestre de Armas**.\r\nUn epífilo aparecerá alrededor del objetivo de forma aleatoria y explotará luego de **1–3** seg, por lo que infligirá un daño de área de **37.5%**. **Pétalos Voladores: En el Campo**: Al golpear con **Tejesombras**, infliges daño a los objetivos cercanos igual al **320%** del ATQ alterado más **4.5%** de los PSMáx. del nómada más **166%** de la suma de todos los tipos de resistencias del nómada más **6.1%** del crítico. Este efecto se puede activar hasta 1 vez cada **1.5**seg. El daño de Pétalos Voladores cuenta como daño de ataque normal. Si tienes **1** arma de electricidad/escarcha/físico/fuego de cualquier tipo equipada, multiplica el daño de Pétalos Voladores por **1.3**. Además, este daño no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales."
 			}
 		],
 		"elementEffects": {
@@ -17712,7 +17712,7 @@
 			],
 			"discharge": [
 				{
-					"name": "Yubing",
+					"name": "Conocimiento Limitado",
 					"description": "Cuando la <red>carga de arma</> está completa o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</>, inflige daño igual a <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos y lanza al objetivo. Durante este periodo, ganas inmunidad al daño por <shuzhi>1.5</> seg (no disponible en la Liga Ápex).",
 					"tags": [
 						"Damage"
@@ -18570,7 +18570,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_mingjing01.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Se obtiene en el evento gachapon Eclipse Luminoso."
+						"Se obtiene del evento Campo de Entrenamiento de Ladrón Fantasma"
 					],
 					"id": "imitation_fashion_50_w"
 				}

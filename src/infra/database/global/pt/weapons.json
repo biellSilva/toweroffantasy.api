@@ -8545,15 +8545,15 @@
 			},
 			{
 				"title": "**Ressonância gélida**",
-				"description": "Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade."
+				"description": "Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade."
 			},
 			{
 				"title": "**Ressonância elétrica**",
-				"description": "Aumenta o ATQ elétrico em **15%** e a resistência ígnea em **25%**. Ativa-se ao equipar **2** ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade."
+				"description": "Aumenta o ATQ elétrico em **15%** e a resistência elétrica em **25%**. Ativa-se ao equipar **2** ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância elétrica ou reação elétrica, e a ressonância elétrica tem prioridade."
 			},
 			{
-				"title": "**Gume gelado: Corte ligeiro**",
-				"description": "Com **Águas Calmas** equipada, a habilidade de descarga de qualquer arma causa dano equivalente a **0.97%** da vida máxima do Errante + **73.2%** do ATQ gélido + **36.6%** da soma de todos os tipos de resistência do Errante + **134.3%** do crítico aos alvos próximos. A cada **0,5** segundo em combate, o dano do próximo corte ligeiro aumenta **1** vez, limitado a **30** vezes. Quando há o dano de vários cortes ligeiros juntos, o cálculo é feito sobre o valor inicial mais alto. O dano de corte ligeiro conta como dano de habilidade de descarga. Se houver 1 arma física/ígnea de qualquer tipo equipada, o dano de gume gelado é multiplicado por **1,3**. Além disso, o dano de gume gelado não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.\r\nApós trocar Águas Calmas para o espaço secundário, causa dano explosivo 1 vez. Se um inimigo tiver instagelo, o instagelo será removido e o inimigo sofrerá dano passivo contínuo durante **12** segundos."
+				"title": "**Gume Gelado: Corte ligeiro**",
+				"description": "Com **Águas Calmas** equipada, a habilidade de descarga de qualquer arma causa dano equivalente a **0.97%** da vida máxima do Errante + **73.2%** do ATQ gélido + **36.6%** da soma de todos os tipos de resistência do Errante + **134.3%** do crítico aos alvos próximos. A cada **0,5** segundo em combate, o dano do próximo corte ligeiro aumenta **1** vez, limitado a **30** vezes. Quando há o dano de vários cortes ligeiros juntos, o cálculo é feito sobre o valor inicial mais alto. O dano de corte ligeiro conta como dano de habilidade de descarga. Se houver 1 arma física/ígnea de qualquer tipo equipada, o dano de Gume Gelado é multiplicado por **1,3**. Além disso, o dano de Gume Gelado não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional.\r\nApós trocar Águas Calmas para o espaço secundário, causa dano explosivo equivalente a **400%** do ATQ 1 vez. Se um inimigo tiver instagelo, o instagelo será removido e o inimigo sofrerá dano da arma secundária contínuo equivalente a **700%** do ATQ por segundo durante **12** segundos."
 			}
 		],
 		"elementEffects": {
@@ -8636,7 +8636,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "Quando um alvo sofre um ataque com **golpe congelante**, ele sofre também dano equivalente aos acúmulos de **golpe congelante** × **40%** do ATQ.",
+				"description": "Quando um ataque com **golpe congelante** acerta o alvo, ele sofre também dano equivalente à quantidade de acúmulos de **golpe congelante** × **40%** do ATQ.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8702,7 +8702,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "Após usar **aura de geada**, você ignora **15%** da resistência gélida dos alvos (a resistência total ignorada para cada elemento não pode exceder **50%**). Ao mesmo tempo, aumenta o dano final em **14%** durante **40** segundos.",
+				"description": "Após usar **aura de geada**, você ignora **15%** da resistência gélida dos alvos (a resistência total ignorada para cada elemento não pode exceder **50%**). Ao mesmo tempo, aumenta o dano final em **18%** durante **40** segundos.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8814,7 +8814,7 @@
 				},
 				{
 					"name": "Âncora Cíclica",
-					"description": "Use o botão de ataque normal dentro do tempo de esquiva perfeita (use um botão direcional antes de se esquivar) para acionar Âncora Cíclica. Causa dano de até <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente. Acertar um golpe pode remover o efeito <shuzhi>bloqueado por gelo</> de um alvo e causar dano adicional de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>15</> acúmulos de golpe congelante.",
+					"description": "Use o botão de ataque normal dentro do tempo de esquiva perfeita (use um botão direcional antes de se esquivar) para acionar Âncora Cíclica. Causa dano de até <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente. Acertar um golpe remove o efeito <shuzhi>bloqueado por gelo</> do alvo e causa dano adicional de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>15</> acúmulos de golpe congelante.",
 					"operations": [
 						"Movement",
 						"Dash",
@@ -8828,7 +8828,7 @@
 				},
 				{
 					"name": "Âncora Meteórica",
-					"description": "Use o botão de ataque normal logo após se esquivar para acionar Âncora Meteórica. Causa dano de até <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente. Acertar um golpe pode remover o efeito <shuzhi>bloqueado por gelo</> de um alvo e causar dano adicional de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>10</> acúmulos de golpe congelante.",
+					"description": "Use o botão de ataque normal logo após se esquivar para acionar Âncora Meteórica. Causa dano de até <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente. Acertar um golpe remove o efeito <shuzhi>bloqueado por gelo</> do alvo e causa dano adicional de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</>. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>10</> acúmulos de golpe congelante.",
 					"operations": [
 						"Dash",
 						"Attack"
@@ -8843,7 +8843,7 @@
 			"skill": [
 				{
 					"name": "Aura de geada",
-					"description": "Balança as duas extremidades de Águas Calmas para atacar separadamente, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>52</> acúmulos de golpe congelante. Tempo de recarga: <shuzhi>30</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga. Ao usar a habilidade, recebe corpo de aço durante <shuzhi>20</> segundos.\r\nAplica <shuzhi>15</> segundos de instagelo aos alvos atingidos e reduz o ATQ deles em <shuzhi>5%</>.",
+					"description": "Balança as duas extremidades de Águas Calmas para atacar separadamente, causando dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Ao usar a habilidade, recebe corpo de aço durante <shuzhi>20</> segundos. Durante <shuzhi>frio lancinante</>, adiciona <shuzhi>52</> acúmulos de golpe congelante. Tempo de recarga: <shuzhi>30</> seg. Isso não é afetado por outros efeitos de redução, redefinição ou mudança de tempo de recarga.\r\nAplica <shuzhi>15</> segundos de instagelo aos alvos atingidos e reduz o ATQ deles em <shuzhi>5%</>.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -8855,7 +8855,7 @@
 			"discharge": [
 				{
 					"name": "Golpe Lancinante",
-					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e faz lançar Águas Calmas à frente. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, a imunidade a dano dura <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).\r\nApós usar Golpe Lancinante, entra em frio lancinante durante <shuzhi>14</> segundos. O ataque especial de <shuzhi>Águas Calmas</> vai aplicar o número atual de acúmulos de golpe congelante ao alvo atingido. Cada alvo pode ter até <shuzhi>100</> acúmulos de golpe congelante. Ao atingir o máximo de acúmulos, o número de acúmulos é zerado e o alvo fica bloqueado por gelo durante <shuzhi>4</> segundos e sofre <shuzhi>congelamento forte</> (<shuzhi>congelamento forte</> é ineficaz contra chefes).\r\nQuando um alvo sofre um ataque com golpe congelante, você recupera <shuzhi>3%</> da vida máxima.",
+					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e faz lançar Águas Calmas à frente. Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, a imunidade a dano dura <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).\r\nApós usar Golpe Lancinante, entra em frio lancinante durante <shuzhi>14</> segundos. Durante esse estado, alguns ataques com <shuzhi>Águas Calmas</> aplicarão acúmulos de golpe congelante ao alvo atingido. Cada alvo pode ter até <shuzhi>100</> acúmulos de golpe congelante. Ao atingir o máximo de acúmulos, o número de acúmulos é zerado e o alvo fica bloqueado por gelo durante <shuzhi>4</> segundos e sofre <shuzhi>congelamento forte</> (<shuzhi>congelamento forte</> é ineficaz contra chefes).\r\nQuando um alvo sofre um ataque com golpe congelante, você recupera <shuzhi>3%</> da vida máxima.",
 					"tags": [
 						"Damage"
 					],
@@ -10469,7 +10469,7 @@
 		"effects": [
 			{
 				"title": "Ressonância elemental",
-				"description": "N/A"
+				"description": "Combinar a Malhasombria com outras armas pode criar o efeito **mestre das armas**.\r\nDamas-da-noite aparecem aleatoriamente ao redor do alvo e explodem dentro de **1 a 3** segundos, causando **37,5%** de dano em área. **Pétalas Voadoras: Em campo**: Acertar um golpe com a **Malhasombria** causa aos alvos próximos dano equivalente a **320%** do ATQ alterado + **4.5%** da vida máxima do Errante + **166%** da soma de todos os tipos de resistência do Errante + **6.1%** do crítico. Esse efeito pode ser acionado até 1 vez a cada **1,5** segundo. O dano de Pétalas Voadoras conta como dano de ataque normal. Se houver **1** arma elétrica/gélida/física/ígnea de qualquer tipo equipada, o dano de Pétalas Voadoras é multiplicado por **1.3**. Além disso, o dano de Pétalas Voadoras não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
 			}
 		],
 		"elementEffects": {
@@ -14903,7 +14903,7 @@
 			},
 			{
 				"title": "**Ressonância gélida**",
-				"description": "Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não se acumula com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade."
+				"description": "Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com outros efeitos de ressonância gélida ou reação gélida, e a ressonância gélida tem prioridade."
 			},
 			{
 				"title": "**Flash: Separação**",
@@ -17712,7 +17712,7 @@
 			],
 			"discharge": [
 				{
-					"name": "Yubing",
+					"name": "Teto de Conhecimento",
 					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, ao trocar para esta arma, <shuzhi>remove todos os efeitos negativos de você</> e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e os lança no ar. Nesse período, recebe imunidade a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).",
 					"tags": [
 						"Damage"
@@ -18570,7 +18570,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_mingjing01.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Obtido no evento Gachapon do Eclipse Brilhante."
+						"Obtido no evento Campo de Treinamento do Ladrão Fantasma"
 					],
 					"id": "imitation_fashion_50_w"
 				}

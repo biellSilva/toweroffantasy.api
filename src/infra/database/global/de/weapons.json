@@ -8549,11 +8549,11 @@
 			},
 			{
 				"title": "**Voltresonanz**",
-				"description": "Erhöht den Volt-ANG um **15%** und den Flammenwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird."
+				"description": "Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird."
 			},
 			{
-				"title": "**Frostschneide: Schneller Hieb**",
-				"description": "Wenn **Stille Wasser** ausgerüstet ist, fügen Entladungsfähigkeiten beliebiger Waffen Zielen in der Nähe Schaden in Höhe von **0.97%** der max. LP des Wanderers + **73.2%** des Frost-ANG + **36.6%** der Summe aller Widerstandsarten des Wanderers + **134.3%** des krit. Schadens zu. Nach Kampfbeginn wird der Schaden des nächsten Einsatzes von „Schneller Hieb“ alle **0,5**Sek. zusätzlich um das **1**-fache erhöht, bis zu einem Maximum von **30**-mal. Falls „Schneller Hieb“ mehrmals Schaden verursacht, wird der höchste anfängliche Wert für die Berechnung verwendet. Der Schaden von „Schneller Hieb“ zählt als Entladungsfähigkeitsschaden. Wenn 1 physische/Flammenwaffe jeglicher Art ausgerüstet ist, wird der Schaden von „Frostschneide“ um das **1,3**-fache erhöht. Außerdem wird der Schaden von „Frostschneide“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und er löst keine zusätzlichen Angriffseffekte aus.\r\nWenn Stille Wasser in den Nebenhand-Slot wechselt, wird 1-mal Burst-Schaden verursacht. Wenn ein Gegner von „Blitzeinfrieren“ betroffen ist, entfernt Stille Wasser das „Blitzeinfrieren“ vom Gegner und verursacht für **12**Sek. kontinuierlichen Nebenhand-Schaden."
+				"title": "**Frostklinge Schneller Hieb**",
+				"description": "Wenn **Stille Wasser** ausgerüstet ist, fügen Entladungsfähigkeiten beliebiger Waffen Zielen in der Nähe Schaden in Höhe von **0.97%** der max. LP des Wanderers + **73.2%** des Frost-ANG + **36.6%** der Summe aller Widerstandsarten des Wanderers + **134.3%** des krit. Schadens zu. Nach Kampfbeginn wird der Schaden des nächsten schnellen Hiebs alle **0,5**Sekunden zusätzlich um das **1**-fache erhöht, bis zu einem Maximum von **30**-mal. Falls „Schneller Hieb“ mehrmals Schaden verursacht, wird der höchste anfängliche Wert für die Berechnung verwendet. Der Schaden von „Schneller Hieb“ zählt als Entladungsfähigkeitsschaden. Wenn 1 physische/Flammenwaffe jeglicher Art ausgerüstet ist, wird der Schaden von „Frostklinge“ um das **1,3**-fache erhöht. Außerdem wird der Schaden von „Frostklinge“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und er löst keine zusätzlichen Angriffseffekte aus.\r\nWenn Stille Wasser in den Nebenhand-Slot wechselt, wird 1-mal Burst-Schaden in Höhe von **400%** des ANG verursacht. Wenn ein Gegner von „Blitzeinfrieren“ betroffen ist, entfernt Stille Wasser das „Blitzeinfrieren“ vom Gegner und verursacht für **12**Sekunden jede Sekunde kontinuierlich Schaden in Höhe von **700%** ANG."
 			}
 		],
 		"elementEffects": {
@@ -8636,7 +8636,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "Wenn ein Angriff mit **Eishieb** ein Ziel trifft, wird zusätzlich Schaden in Höhe der Anzahl der **Eishieb**-Stapel × **40%** des ANG verursacht.",
+				"description": "Trifft ein Angriff mit **Eishieb** ein Ziel, wird zusätzlicher Schaden in Höhe der Anzahl der Stapel von **Eishieb** multipliziert mit **40%** des ANG verursacht.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8702,7 +8702,7 @@
 				"need": "Loslyn_ice_plasm"
 			},
 			{
-				"description": "Der Wanderer ignoriert nach Verwendung von **Frostkettenaura** **15%** des Frostwiderstands der Ziele (der insgesamt ignorierte Widerstand jedes Elements kann **50%** nicht übersteigen.) Außerdem wird der verursachte Endschaden für **40**Sek. um **14%** erhöht.",
+				"description": "Der Wanderer ignoriert nach Verwendung von **Frostkettenaura** **15%** des Frostwiderstands der Ziele (der insgesamt ignorierte Widerstand jedes Elements kann **50%** nicht übersteigen.) Außerdem wird der verursachte Endschaden für **40**Sek. um **18%** erhöht.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -8814,7 +8814,7 @@
 				},
 				{
 					"name": "Zyklischer Anker",
-					"description": "Verwende zum Auslösen von „Ankerpirouette“ während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Pfeiltaste), um Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen. Treffer können den <shuzhi>Vereisung</>-Effekt von Zielen durchbrechen und zusätzlichen Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursachen. Während <shuzhi>Bittere Kälte</> werden <shuzhi>15</> Stapel „Eishieb“ hinzugefügt.",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Pfeiltaste), um „Zyklischer Anker“ auszulösen. Du verursachst damit bis zu <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> Schaden an Zielen voraus. Bei einem erfolgreichen Treffer zerbricht der <shuzhi>Vereisung-</>Effekt und das Ziel erleidet zusätzlichen Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</>. Wenn <shuzhi>Eisige Kälte</> aktiv ist, werden <shuzhi>15</> Stapel von „Eishieb“ hinzugefügt.",
 					"operations": [
 						"Movement",
 						"Dash",
@@ -8828,7 +8828,7 @@
 				},
 				{
 					"name": "Eisanker-Meteor",
-					"description": "Verwende zum Auslösen von „Frostankermeteor“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, um Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zuzufügen. Treffer können den <shuzhi>Vereisung</>-Effekt von Zielen durchbrechen und zusätzlichen Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursachen. Während <shuzhi>Bittere Kälte</> werden <shuzhi>10</> Stapel „Eishieb“ hinzugefügt.",
+					"description": "Verwende zum Auslösen von „Eisanker-Meteor“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, um Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG +<shuzhi>{1}</> zuzufügen. Treffer können den <shuzhi>Vereisung</>-Effekt von Zielen durchbrechen und zusätzlichen Schaden in Höhe von <shuzhi>{2}%</> des ANG +<shuzhi>{3}</> verursachen. Während <shuzhi>Bittere Kälte</> werden <shuzhi>10</> Stapel „Eishieb“ hinzugefügt.",
 					"operations": [
 						"Dash",
 						"Attack"
@@ -8843,7 +8843,7 @@
 			"skill": [
 				{
 					"name": "Frostkettenaura",
-					"description": "Wirbelt beide Enden von Stille Wasser herum, um damit getrennt voneinander anzugreifen, wobei Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zugefügt wird. Während <shuzhi>Bittere Kälte</> werden <shuzhi>52</> Stapel „Eishieb“ hinzugefügt. Abklingzeit: <shuzhi>30</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst. Gewährt bei Verwendung der Fähigkeit für <shuzhi>20</> Sek. „Hyperkörper“.\r\nBelegt getroffene Ziele für <shuzhi>15</> Sek. mit „Blitzeinfrieren“ und verringert ihren ANG um <shuzhi>5%</>.",
+					"description": "Wirbelt beide Enden von Stille Wasser herum, um damit getrennt voneinander anzugreifen, wobei Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zugefügt wird. Gewährt bei Verwendung der Fähigkeit für <shuzhi>20</> Sek. „Hyperkörper“. Während <shuzhi>Eisige Kälte</> werden <shuzhi>52</> Stapel „Eishieb“ hinzugefügt. Abklingzeit: <shuzhi>30</> Sek. Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.\r\nBelegt getroffene Ziele für <shuzhi>15</> Sek. mit „Blitzeinfrieren“ und verringert ihren ANG um <shuzhi>5%</>.",
 					"operations": [],
 					"tags": [
 						"Damage"
@@ -8855,7 +8855,7 @@
 			"discharge": [
 				{
 					"name": "Bitterkalter Schlag",
-					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und Stille Wasser nach vorne geschleudert. Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).\r\nNach der Verwendung von „Bitterkalter Schlag“ wird für <shuzhi>14</> Sek. „Bittere Kälte“ aktiviert. Der Spezialangriff von <shuzhi>Stille Wasser</> fügt dem getroffenen Ziel die aktuelle Stapelanzahl von „Eishieb“ zu. Die maximale Anzahl „Eishieb“-Stapel beträgt <shuzhi>100</>. Wenn das Maximum an Stapeln erreicht wurde, wird die Stapelanzahl zurückgesetzt und das Ziel für <shuzhi>4</> Sek. mit „Vereisung“ und einem <shuzhi>starken Einfrieren-Effekt</> belegt (<shuzhi>starkes Einfrieren</> ist unwirksam gegen Bosse).\r\nWenn ein Angriff mit „Eishieb“ ein Ziel trifft, werden <shuzhi>3%</> der max. LP des Wanderers wiederhergestellt.",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und Stille Wasser nach vorne geschleudert. Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).\r\nNach der Verwendung von „Bitterer Schlag“ wird für <shuzhi>14</> Sek. „Bittere Kälte“ aktiviert. In dieser Zeit fügen bestimmte Angriffe mit <shuzhi>Stille Wasser</> dem getroffenen Ziel Stapel von „Eishieb“ zu. Die maximale Anzahl „Eishieb“-Stapel beträgt <shuzhi>100</>. Wenn das Maximum an Stapeln erreicht wurde, wird die Stapelanzahl zurückgesetzt und das Ziel für <shuzhi>4</> Sek. mit „Vereisung“ und einem <shuzhi>starken Einfrieren-Effekt</> belegt (<shuzhi>starkes Einfrieren</> ist unwirksam gegen Bosse).\r\nWenn ein Angriff mit „Eishieb“ ein Ziel trifft, werden <shuzhi>3%</> der max. LP des Wanderers wiederhergestellt.",
 					"tags": [
 						"Damage"
 					],
@@ -10469,7 +10469,7 @@
 		"effects": [
 			{
 				"title": "Elementarresonanz",
-				"description": "N/A"
+				"description": "Die Kombination von „Schattenweben“ mit anderen Waffen kann den Effekt **Waffenmeister** erzeugen.\r\nEin Epiphyllum erscheint zufällig beim Ziel und explodiert innerhalb von **1–3**Sek. und verursacht dabei **37,5%** Flächenschaden. **Blütentanz: Auf dem Feld**: Bei jedem Treffer mit **Schattenweben** wird Zielen in der Nähe Schaden in Höhe von **320%** des veränderten ANG + **4.5%** der max. LP des Wanderers + **166%** der Summe aller Widerstandsarten des Wanderers + **6.1%** des krit. Schadens zugefügt. Dieser Effekt kann einmal alle **1,5**Sek. ausgelöst werden. Der Schaden von „Blütentanz“ zählt als normaler Angriffsschaden. Wenn **1** Volt-, Frost-, physische oder Flammenwaffe jeglicher Art ausgerüstet ist, wird der Schaden von „Blütentanz“ mit **1.3** multipliziert. Außerdem wird der Schaden von „Blütentanz“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
 			}
 		],
 		"elementEffects": {
@@ -17712,7 +17712,7 @@
 			],
 			"discharge": [
 				{
-					"name": "Yubing",
+					"name": "Begrenztes Wissen",
 					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</>. Dies fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und schleudert das Ziel hoch. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
 					"tags": [
 						"Damage"
@@ -18570,7 +18570,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/icon_mingjing01.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Erhältlich im „Strahlende Finsternis“-Gashapon-Event."
+						"Erhältlich im Event „Phantom-Dieb-Trainingslager“"
 					],
 					"id": "imitation_fashion_50_w"
 				}
