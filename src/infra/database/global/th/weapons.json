@@ -5038,7 +5038,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"ได้รับจากกิจกรรมเพลงขับกล่อมฤดูหนาวอันอบอุ่น"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_10_w"
 				}
@@ -7629,6 +7629,456 @@
 		"version": "3.4",
 		"limited": true,
 		"id": "nanyin_superpower"
+	},
+	"nora_superpower": {
+		"name": "รัมเบิล",
+		"description": "มอเตอร์ไซค์และดาบใหญ่ ควรเรียกความผสมผสานนี้ว่าอะไรดีนะ? แต่เธอที่ไม่ค่อยมีความสามารถในการจำชื่อ ก็ตั้งชื่อมันว่า \"รัมเบิล\" ในที่สุด",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_nuola.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_nuola.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/nuola2.webp"
+		},
+		"rarity": 5,
+		"element": "Superpower",
+		"type": "Nora",
+		"weaponUpgradeId": "superpower_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Nora_superpower_ssr_star",
+		"avatar": "imitation_62",
+		"stats": [
+			{
+				"stat": {
+					"name": "โจมตี",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "คริติคอล",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**ชิพท์ติง**",
+				"description": "เมื่อติดตั้งอาวุธเหนือมนุษย์ **3** ชิ้น เพิ่มดาเมจทุกธาตุ **256%** เอฟเฟกต์เซตนี้ใช้งานได้ในช่องอาวุธรอง"
+			},
+			{
+				"title": "**เครื่องยนต์ธาตุ**",
+				"description": "**รัมเบิล** สามารถสลับประเภทธาตุได้ (ในขณะที่อยู่ในสถานการณ์ที่ไม่ได้ต่อสู้) โดยการไปที่สกิล > การตั้งค่า เพื่อสลับธาตุ"
+			},
+			{
+				"title": "**ระเบิดพลังงาน: บนสนาม**",
+				"description": "เมื่อ **รัมเบิล** เมื่อโจมตีปกติ จะสร้างดาเมจเท่ากับ ** 3.6%** ของ ATK เหนือมนุษย์+**133%** ของ HP สูงสุดของนักพเนจร+**4.9%** ของผลรวมของค่าต้านทานทุกธาตุ+** 130%** ของคริติคอลต่อเป้าหมายใกล้เคียง เอฟเฟกต์นี้สามารถใช้ได้สูงสุด 1 ครั้งทุก ๆ **1.5** วินาที ดาเมจจากระเบิดพลังงานจะนับเป็นดาเมจจากการโจมตีปกติ หากมีอาวุธประเภทใดก็ตาม **1** ชิ้นที่เป็นธาตุไฟฟ้า/น้ำแข็ง/กายภาพ/ไฟ ดาเมจจากระเบิดพลังงานจะเพิ่มขึ้นเป็น **NaN** เท่า นอกจากนี้ ดาเมจจากระเบิดพลังงานจะไม่ได้รับผลกระทบเพิ่มเติมจากเอฟเฟกต์เพิ่มดาเมจของค่าสถานะหายากของอุปกรณ์ไททัน และจะไม่ปล่อยเอฟเฟกต์โจมตีเพิ่มเติมด้วย"
+			}
+		],
+		"elementEffects": {
+			"title": "**ดาเมจเหนือมนุษย์**",
+			"description": "เมื่ออาวุธถูกชาร์จเต็มแล้ว การโจมตีครั้งถัดไปจะทำเครื่องหมายใส่ศัตรู ซึ่งจะระเบิดหลังจากผ่านไป **5** วินาที สร้างดาเมจเพิ่มเติม **25%** ของดาเมจทั้งหมดที่เป้าหมายได้รับในขณะที่เครื่องหมายยังคงอยู่ สูงสุดไม่เกิน **560%** ของ ATK ตนเอง สามารถทำเครื่องหมายใส่ศัตรูได้เพียง 1 เป้าหมาย"
+		},
+		"attributes": [
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "ตัวคูณดาเมจ**ซุปเปอร์ซาวด์**จะเพิ่มขึ้น**20%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **16%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "เพิกเฉยต่อ **15%** ค่าต้านทานทั้งหมดของเป้าหมาย (ค่ารวมของการเพิกเฉยต่อค่าต้านทานของแต่ละธาตุทั้งหมดห้ามเกิน 50%) เมื่อตนเองได้รับดาเมจร้ายแรง จะบล็อกดาเมจร้ายแรง 1 ครั้ง และจะต้านทานต่อดาเมจในช่วงเวลาสั้น ๆ เอฟเฟกต์นี้สามารถใช้ได้ 1 ครั้งทุก ๆ **60** วินาที เอฟเฟกต์เซตนี้ใช้งานได้ในช่องอาวุธรอง",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "เพิ่ม ATK พื้นฐานของอาวุธปัจจุบัน **32%**",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "หลังจากใช้งาน**ระเบิดพลังงาน** จะฟื้นฟู **6%** ของค่า HP สูงสุดทุก ๆ วินาที (ไม่ได้รับผลจากเอฟเฟกต์การฟื้นฟู) เป็นเวลา **10** วินาที หลังจากโหมดซุปเปอร์สปีดจบลง เอฟเฟกต์การฟื้นฟู HP จะหายไป เอฟเฟกต์เซตนี้ใช้งานได้ในช่องอาวุธรอง",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "ดาเมจสุดท้ายเพิ่มขึ้น **30%** เอฟเฟกต์เซตนี้ใช้งานได้ในช่องอาวุธรอง",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "วินด์ไรเดอร์",
+					"description": "ขณะอยู่บนพื้น ใช้โจมตีปกติเพื่อโจมตีต่อกัน 5 ครั้ง\r\nโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และกระแทกเป้าหมายให้ถอย\r\nโจมตีครั้งที่สอง: สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และกระแทกเป้าหมายให้ถอย\r\nโจมตีครั้งที่สาม: สร้างดาเมจเท่ากับ <shuzhi>{4}%</> ของ ATK + <shuzhi>{5}</> และทำให้เป้าหมายกระเด็น\r\nโจมตีครั้งที่สี่: สร้างดาเมจสูงสุดเท่ากับ <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และกระแทกเป้าหมายกลับไป\r\nโจมตีครั้งที่ห้า: สร้างดาเมจเท่ากับ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และทำให้เป้าหมายกระเด็น\r\nในขณะที่อยู่ในโหมด<shuzhi>โหมดซุปเปอร์สปีด</>ให้แตะโจมตีปกติค้างเอาไว้ในการโจมตีครั้งที่ห้า เพื่อเชื่อมโยงกับการโจมตีครั้งแรก",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Melee.webp",
+					"id": "GA_FPlayerNoraMelee_Melee"
+				},
+				{
+					"name": "คลาวด์ไรดิ้ง",
+					"description": "ขณะลอยอยู่ในอากาศ ใช้การโจมตีปกติเพื่อทำการโจมตี 5 ครั้งติดต่อกันกลางอากาศ ซึ่งต้องใช้พลังกาย\r\nการโจมตีครั้งแรก: สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> และและทำให้เป้าหมายกระเด็นขึ้นไปในอากาศ\r\nการโจมตีครั้งที่สอง: สร้างสร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> และกระแทกเป้าหมายกลับไป\r\nการโจมตีครั้งที่สาม: สร้างความเสียหายเท่ากับ <shuzhi>{4}%</> ของ ATK บวกกับ <shuzhi>{5}</> แล้วกระแทกเป้าหมายกลับ\r\nการโจมตีครั้งที่สี่: สร้างความเสียหายสูงสุด <shuzhi>{6}%</> ของ ATK + <shuzhi>{7}</> และกระแทกเป้าหมายกลับ\r\nการโจมตีครั้งที่ห้า: สร้างความเสียหายเท่ากับ <shuzhi>{8}%</> ของ ATK + <shuzhi>{9}</> และกระแทกเป้าหมายกลับ\r\n<shuzhi>ไซเลนท์สแลช</>: เมื่อศัตรูถูกโจมตีระหว่างการโจมตีครั้งที่สองและสาม จะเรียกใช้เอฟเฟกต์การตัด ขยายระยะเวลาการโจมตีและเพิ่มดาเมจ\r\nเมื่อศัตรูถูกโจมตีโดยการโจมตีครั้งที่สอง สร้างดาเมจเท่ากับ <shuzhi>{10}%</> ของ ATK + <shuzhi>{11}</> และกระแทกเป้าหมายให้เป้าหมายถอย\r\nเมื่อศัตรูถูกโจมตีด้วยการโจมตีครั้งที่สาม สร้างดาเมจเท่ากับ <shuzhi>{12}%</> ของ ATK + <shuzhi>{13}</> กระแทกเป้าหมายให้ถอย",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_AirAttack.webp",
+					"id": "GA_FPlayerNoraMelee_AirAttack"
+				},
+				{
+					"name": "ทวินสแลช",
+					"description": "ในขณะที่อยู่ในโหมดซุปเปอร์สปีด ขณะใช้การโจมตีปกติบนพื้น ให้แตะการโจมตีปกติค้างไว้เมื่อใช้การโจมตีปกติครั้งแรกและครั้งที่สองเพื่อทำการใช้ <shuzhi>ทวินสแลช</>\r\nสร้างดาเมจเท่ากับ <shuzhi>{0}% </> ของ ATK + <shuzhi>{1}</> ต่อเป้าหมายใกล้เคียง และกระแทกเป้าหมายให้ถอย",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch1.webp",
+					"id": "GA_FPlayerNoraMelee_Branch1"
+				},
+				{
+					"name": "ลิงก์สแลช",
+					"description": "ในขณะที่อยู่ใน <shuzhi>โหมดซุปเปอร์สปีด</> เมื่อใช้ <shuzhi>ทวินสแลช</> ให้แตะการโจมตีปกติค้างไว้เพื่อใช้ลิงก์สแลช\r\nสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ไปยังเป้าหมายใกล้เคียง ในเวลาเดียวกัน ใช้สแต็กของ <shuzhi>โอเวอร์โหลด</> ทั้งหมด และสำหรับทุก ๆ <shuzhi>1</> สแต็กที่ใช้ไป จะสร้างดาเมจเพิ่มเติมเท่ากับ <shuzhi>50%</> ของ ATK หาก <shuzhi>โอเวอร์โหลด</> ถึง <shuzhi>6</> สแต็ก จะสามารถใช้<shuzhi>เอ็กซ์ตรีมชาร์จ</>เพื่อสร้างดาเมจเท่ากับ <shuzhi>300%</> ของ ATK",
+					"operations": [
+						"Attack",
+						"Hold Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch2.webp",
+					"id": "GA_FPlayerNoraMelee_Branch2"
+				},
+				{
+					"name": "เวิร์ลพูลไรเดอร์",
+					"description": "ขณะที่ใช้การโจมตีปกติบนพื้น แตะการโจมตีปกติค้างไว้เมื่อใช้การโจมตีปกติครั้งที่สามและสี่เพื่อเรียกใช้เวิร์ลพูลไรเดอร์\r\nสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ไปยังเป้าหมายใกล้เคียง",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch3.webp",
+					"id": "GA_FPlayerNoraMelee_Branch3"
+				},
+				{
+					"name": "วอเตอร์ฟอลไรเดอร์",
+					"description": "ขณะลอยอยู่กลางอากาศ ในขณะที่ใช้คลาวด์ไรดิ้ง แตะการโจมตีปกติค้างไว้ (หรือแตะเมื่อมีเป้าหมาย) เพื่อเรียกใช้โจมตีพุ่งลง วอเตอร์ฟอลไรเดอร์\r\nในระหว่างที่พุ่งลงมาจากกลางอากาศ หากโจมตีโดนศัตรูแต่ละครั้งจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> หลังจากลงสู่พื้น สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK บวกกับ <shuzhi>{3}</> ไปยังเป้าหมายใกล้เคียง",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack"
+				},
+				{
+					"name": "ไรเดอร์นักเดินทาง",
+					"description": "แตะการโจมตีปกติค้างไว้ขณะลอยอยู่กลางอากาศ หรือใช้การโจมตีปกติขณะปีนเขา กระโดดไปด้านหลัง หรือใช้เจ็ตแพ็กเพื่อโจมตีพุ่งลง ไรเดอร์นักเดินทาง\r\nในระหว่างที่พุ่งลงมาจากกลางอากาศ หากโจมตีโดนศัตรูแต่ละครั้งจะสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> หลังจากลงสู่พื้น สร้างดาเมจเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> ไปยังเป้าหมายใกล้เคียง",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack_Special.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack_Special"
+				}
+			],
+			"dodge": [
+				{
+					"name": "สวิฟต์สแลช",
+					"description": "แตะโจมตีปกติในช่วงเวลาสั้น ๆ ก่อนการหลบหลีกที่ถูกเรียกใช้โดยปุ่มทิศทางและปุ่มหลบหลีก เพื่อเรียกใช้หลบโจมตีไปข้างหน้า จะสร้างดาเมจสูงสุดเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม ใส่เป้าหมายข้างหน้า",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ForwardAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "ซับโซนิคสแลช",
+					"description": "แตะโจมตีปกติในระหว่างช่วงสั้น ๆ หลังหลบหลีก เพื่อเรียกใช้งานหลบโจมตีไปข้างหลัง จะสร้างดาเมจสูงสุด <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> แต้ม ใส่เป้าหมายข้างหน้า",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_BackAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_BackAttack"
+				},
+				{
+					"name": "โซนิคสกายไรเดอร์",
+					"description": "กดค้างไว้เพื่อหลบและเข้าสู่เสียงโซนิคสกายไรเดอร์ ความเร็วในการเคลื่อนที่จะเพิ่มขึ้น และพลังกายจะถูกใช้อย่างต่อเนื่องเพื่อโจมตีไปด้านหน้า ทุกครั้งที่โจมตีโดน สร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ไปยังเป้าหมายใกล้เคียง\r\nในระหว่างที่ใช้ซับโซนิคไรเดอร์ ทำการกระโดดเพื่อใช้พลังกายในการเพิ่มความเร็วชั่วคราว ในโลกหลัก หลังจากเข้าสู่ซับโซนิคไรเดอร์เป็นเวลา <shuzhi>10</> วินาที ดาเมจที่สร้างโดยโซนิคสกายไรเดอร์สามารถใช้จัดการกับศัตรูที่ไม่ใช่บอสได้ (ไม่มีผลในลีกแข่งยอดฝีมือ)",
+					"operations": [
+						"Movement"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_EvadeOn.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_EvadeOn"
+				}
+			],
+			"skill": [
+				{
+					"name": "เสียงทรงพลัง",
+					"description": "เข้าสู่โหมดซุปเปอร์สปีดเพื่อเป็นอมตะชั่วขณะ และสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ต่อเป้าหมายใกล้เคียง และทำให้เป้าหมายเชื่องช้า <shuzhi>65%</> ขึ้น <shuzhi>3</> วินาที (เมื่อเล่นเป็นทีม เอฟเฟกต์นี้จะไม่ส่งผลต่อบอส)\r\nในระหว่างที่อยู่ในโหมดซุปเปอร์สปีด จะได้รับไฮเปอร์บอดี้ และในเวลาเดียวกัน ทุก ๆ การโจมตีของ <shuzhi>วินด์ไรเดอร์</> และ <shuzhi>คลาวด์ไรดิ้ง</> จะได้รับเอฟเฟกต์ซุปเปอร์ซาวด์ ซึ่งจะสร้างดาเมจเพิ่มเติมเท่ากับ <shuzhi>{2}%</> ของ ATK + <shuzhi>{3}</> (นับเป็นดาเมจพาสซีฟ) ในขณะเดียวกัน การโจมตีแต่ละครั้งจะได้รับสแต็กของโอเวอร์โหลด <shuzhi>1</> สแต็ก ซึ่งซ้อนทับได้สูงสุด <shuzhi>6</> สแต็ก (มากถึง <shuzhi>1</> สแต็กทุก ๆ <shuzhi>0.65</> วินาที )\r\nหลังจากเข้าสู่โหมดซุปเปอร์สปีดเป็นเวลา <shuzhi>5</> วินาที จะได้รับสกิล <shuzhi>แฟลชไรเดอร์</> (สามารถใช้ได้ระหว่างที่อยู่ในโหมดซุปเปอร์สปีด) ซึ่งหากสับเปลี่ยนอาวุธในช่วงเวลานี้จะทำให้ไม่สามารถใช้<shuzhi>แฟลชไรเดอร์</>ได้\r\n\r\n<shuzhi>พาสซีฟ: ซุปเปอร์สปีดรีฟอร์ม</>\r\n<shuzhi>รัมเบิล</> มีธาตุทั้งหมด 5 ธาตุ ซึ่งจะสามารถเปิดใช้งานได้สูงสุด 1 ธาตุ โดยสามารถเปิดการใช้งานได้ที่หน้าสกิล > การตั้งค่า แต่จะไม่สามารถสลับประเภทของธาตุได้ในขณะที่อยู่ในการต่อสู้\r\nเมื่อใช้<shuzhi>รัมเบิล</>โจมตีด้วยเสียงทรงพลัง เป้าหมายจะได้รับเอฟเฟกต์แตกต่างกันไปตาม<shuzhi>ประเภทธาตุของอาวุธ</> \r\n\r\n<red>น้ำแข็งไฟฟ้า</>: เข้าสู่โหมดซุปเปอร์สปีดเป็นเวลา <shuzhi>28</> วินาที ซึ่งในระหว่างนี้ ทุก ๆ ครั้งที่ <shuzhi>รัมเบิล</>โจมตีหรือนักพเนจรไม่ได้รับการฟื้นฟูมากจนเกินไป จะได้รับเอฟเฟกต์<shuzhi>เธอเมิลคอนเวอเจนซ์</> 1 สแต็ก ซ้อนทับได้สูงสุด <shuzhi>10</> สแต็ก และเมื่อโหมดซุปเปอร์สปีดสิ้นสุดในระยะเวลา <shuzhi>3</> วินาที เอฟเฟกต์เธอเมิลคอนเวอเจนซ์จะถูกล้าง และมีระยะเวลาคูลดาวน์ <shuzhi>30</> วินาที (จะไม่ได้รับผลเอฟเฟกต์ลบล้างคูลดาวน์, รีเซ็ต, เปลี่ยนแปลงใด ๆ)\r\n\r\n<red>ไฟกายภาพ</>: จะเข้าสู่โหมดซุปเปอร์สปีดและจะคงอยู่เป็นเวลา <shuzhi>23</> วินาที เมื่อเข้าสู่โหมดซุปเปอร์สปีดและใช้ <shuzhi>ประกายไฟ</> ทุก ๆ <shuzhi>1</> สแต็กที่ใช้ไปจะเปลี่ยนเป็น <shuzhi>2,200</> พลังโจมตีไฟพื้นฐาน (ATK ไฟนี้จะไม่ส่งผลต่อค่าสถานะของนักพเนจร และไม่สามารถใช้ได้ในลีกแข่งยอดฝีมือ) และเพิ่มความดาเมจสุดท้ายของนอร่าขึ้น <shuzhi>18%</> เป็นเวลา <shuzhi>25</> วินาที ในขณะที่อยู่ในโหมดซุปเปอร์สปีด จะได้รับ<shuzhi>เปลวไฟแห่งการไล่ล่า</>เมื่อสร้างดาเมจด้วยไฟ จะทำดาเมจไฟเท่ากับ <shuzhi>1,520%</> ของ ATK สามารถใช้ได้มากสุด 1 ครั้งทุก <shuzhi>2</> วินาที คูลดาวน์ <shuzhi>25</> วินาที (จะไม่ได้รับผลเอฟเฟกต์ลบล้างคูลดาวน์, รีเซ็ต, เปลี่ยนแปลงใด ๆ)\r\n\r\n<red>ไฟฟ้าน้ำแข็ง</>: จะเข้าสู่โหมดซุปเปอร์สปีดและจะคงอยู่เป็นเวลา <shuzhi>18</> วินาที ในขณะที่อยู่ในโหมดซุปเปอร์สปีด ดาเมจไฟฟ้าจะเพิ่มขึ้น <shuzhi>30%</> เมื่อโจมตีปกติในขณะที่<shuzhi>รัมเบิล</>อยู่ในช่องอาวุธหลัก จะได้รับ<shuzhi>1</> สแต็กของฟ้าคำราม ซ้อนทับได้สูงสุด <shuzhi>18</> สแต็ก เมื่อสแต็กเต็ม ใช้สแต็กทั้งหมดเพื่อสร้างดาเมจเพิ่มเติมเท่ากับ <shuzhi>6,000%</> ของ ATK ต่อเป้าหมายใกล้เคียง (นับเป็นความดาเมจสกิล) ในขณะเดียวกัน จะได้รับโล่เท่ากับ <shuzhi>30%</> ของ HP สูงสุด เป็นเวลา <shuzhi>10</> วินาที (เอฟเฟกต์นี้จะไม่ซ้อนทับกัน) เอฟเฟกต์เพิ่มเติมของฟ้าคำรามสามารถใช้ได้สูงสุด <shuzhi>5</> ครั้งในขณะที่นักพเนจรเข้าสู่โหมดซุปเปอร์สปีด หาก <shuzhi>ลิงก์สแลช</> ใช้ <shuzhi>6</> สแต็กของ <shuzhi>โอเวอร์โหลด</> จะสร้างดาเมจเพิ่มเติมเท่ากับ <shuzhi>11,000%</> ของ ATK ต่อเป้าหมายใกล้เคียง นับเป็นสกิลดาเมจ คูลดาวน์: <shuzhi>20</> วินาที (จะไม่ได้รับผลเอฟเฟกต์ลบล้างคูลดาวน์หรือ รีเซ็ต)\r\n\r\n<red>กายภาพไฟ</>: จะเข้าสู่โหมดซุปเปอร์สปีดและจะคงอยู่เป็นเวลา <shuzhi>19</> วินาที ในขณะที่อยู่ในโหมดซุปเปอร์สปีด จะสร้างดาเมจเท่ากับ <shuzhi>2,900%</> ของ ATK กายภาพ ต่อเป้าหมายใกล้เคียงทุก ๆ วินาที ทุกครั้งที่ดาเมจกระทบ <shuzhi>1</> เป้าหมาย นักพเนจรจะได้รับโล่ <shuzhi>5%</> ของ HP สูงสุด เป็นเวลา <shuzhi>10</> วินาที โดยจะเพิ่มสูงสุดถึง <shuzhi>10%</> โดยจะไม่เกิน <shuzhi>50%</> ของ HP ของนักพเนจร คูลดาวน์ <shuzhi>21</> วินาที (จะไม่ได้รับผลเอฟเฟกต์ลบล้างคูลดาวน์, รีเซ็ต, เปลี่ยนแปลงใด ๆ)\r\n\r\n<red>เหนือมนุษย์</>จะเข้าสู่โหมดซุปเปอร์สปีดและจะคงอยู่เป็นเวลา <shuzhi>23</> วินาที ในขณะที่อยู่ในโหมดซุปเปอร์สปีดจะเพิ่ม HP สูงสุดขึ้น <shuzhi>100%</> ในขณะเดียวกัน การโจมตีแต่ละครั้งโดย <shuzhi>วินด์ไรเดอร์</> และ <shuzhi>คลาวด์ไรดิ้ง</> จะสร้างดาเมจเพิ่มเติมเท่ากับ <shuzhi>1,400%</> ของ HP สูงสุด (ไม่เกิน <shuzhi>240</> เท่าของ ATK ของนักพเนจร ดาเมจนี้นับเป็นดาเมจสกิล และจะไม่ได้รับผลจากเอฟเฟกต์เพิ่มดาเมจ) คูลดาวน์ <shuzhi>25</> วินาที (จะไม่ได้รับผลเอฟเฟกต์ลบล้างคูลดาวน์, รีเซ็ต, เปลี่ยนแปลงใด ๆ)",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill01.webp",
+					"id": "GA_FPlayerNoraSkill_Skill01"
+				},
+				{
+					"name": "แฟลชไรเดอร์",
+					"description": "สามารถเปิดใช้งานได้ในระหว่างที่อยู่ในโหมดซุปเปอร์สปีด เพื่อโจมตีโจมตีต่อเนื่องติดต่อกันกับเป้าหมายใกล้เคียง สร้างความเสียหายรวม <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> โหมดซุปเปอร์สปีดจะสิ้นสุดลงหลังจากใช้สกิลนี้\r\n\r\n<shuzhi>สกิลติดตัว: ความเฉื่อยแรงสูง</>\r\nรับเอฟเฟกต์เพิ่มเติมตามธาตุของ<shuzhi>รัมเบิล</>: \r\n\r\n<red>น้ำแข็งไฟฟ้า</>: ใช้สแต็กทั้งหมดของ<shuzhi>เธอเมิลคอนเวอเจนซ์</> เพื่อรับเอฟเฟกต์เยือกแข็ง ซึ่งจะเพิ่มดาเมจน้ำแข็งขึ้น <shuzhi>1.4%</> ตามจำนวนสแต็กของ<shuzhi>เธอเมิลคอนเวอเจนซ์</> ในขณะเดียวกันก็สร้างดาเมจน้ำแข็งเท่ากับ <shuzhi>1400%</> ของ ATK + สแต็กของ<shuzhi>เธอเมิลคอนเวอเจนซ์</> * <shuzhi>240%</> ของ ATK (นับเป็นดาเมจพาสซีฟ) เป็นเวลา <shuzhi>30</> วินาที\r\n\r\n<red>เหนือมนุษย์</>: สร้างดาเมจเท่ากับ <shuzhi>50000%</>*ค่า HP สูงสุดของตนเอง (ไม่เกิน <shuzhi>8000</> เท่ของ ATK ของนักพเนจร นับเป็นความดาเมจสกิล และไม่ได้รับผลจากเอฟเฟกต์เพิ่มดาเมจ",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill02.webp",
+					"id": "GA_FPlayerNoraSkill_Skill02"
+				}
+			],
+			"discharge": [
+				{
+					"name": "สกายไรดิ้งสแลช",
+					"description": "เมื่อ <red>ชาร์จอาวุธเต็ม</> หรือ <red>แฟนตาเซีย</> ทำงาน แล้วสลับจากอาวุธอื่นเป็นอาวุธนี้ จะทำการ<shuzhi>จะล้างสถานะดีบัฟของตนเอง</> และสร้างดาเมจเท่ากับ <shuzhi>{0}%</> ของ ATK + <shuzhi>{1}</> ไปยังเป้าหมายใกล้เคียง ในระยะเวลานี้ จะไม่โดนดาเมจเป็นเวลา <shuzhi>1.5</> วินาที (ไม่มีผลในลีกแข่งยอดฝีมือ)",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ChangeSkill.webp",
+					"id": "GA_FPlayerNoraChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "ลมพัดชายฝั่งทะเล",
+					"description": "ผมยาวของเธอสะบัดอย่างเบาๆในลมทะเล ผ้าบางๆที่เธอสวมอยู่ก็สะบัดตามลม ในขณะนี้ เธอเหมือนกับกำลังรำวงกับคลื่นทะเล",
+					"rarity": 5,
+					"source": "จากกิจกรรม",
+					"simulacrumId": "imitation_62",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_62"
+				},
+				"weapon": {
+					"name": "เสียงคลื่น",
+					"description": "มอเตอร์ไซค์และดาบใหญ่, คลื่นทะเลและเสียงรบกวน",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nora_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"ได้รับจากกิจกรรมกาชาปองลมพัดชายฝั่งทะเล"
+					],
+					"id": "imitation_fashion_62_w"
+				}
+			}
+		],
+		"version": "4.2",
+		"limited": true,
+		"id": "nora_superpower"
 	},
 	"paradox_fire": {
 		"name": "EP-7000 สกายไฟเออร์",
@@ -14575,7 +15025,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "ในช่วงเวลา**สนามพลัง A.T** เมื่อสร้างดาเมจใส่เป้าหมายจะเพิกเฉยต่อโล่ลดดาเมจของเป้าหมายเท่ากับ**เปอร์เซ็นต์ปัจจุบัน**ของค่าคงทนของ**สนามพลัง A.T** ***30%** + **20%**; เมื่อเปิดใช้งาน**เรโซแนนซ์ความอดทน** การทำลายโล่ของตนเองจะเพิ่มขึ้นตาม**เปอร์เซ็นต์ปัจจุบัน**ของค่าคงทนของ**สนามพลัง A.T** ***100%**",
+				"description": "ในช่วงเวลา**สนามพลัง A.T** เมื่อสร้างดาเมจใส่เป้าหมายจะเพิกเฉยต่อโล่ลดดาเมจของเป้าหมายเท่ากับ**เปอร์เซ็นต์ปัจจุบัน**ของค่าคงทนของ**สนามพลัง A.T** ***30%** + **20%**(ใช้ในลีกแข่งยอดฝีมือไม่ได้); เมื่อเปิดใช้งาน**เรโซแนนซ์ความอดทน** การทำลายโล่ของตนเองจะเพิ่มขึ้นตาม**เปอร์เซ็นต์ปัจจุบัน**ของค่าคงทนของ**สนามพลัง A.T** ***100%** (ใช้ในลีกแข่งยอดฝีมือไม่ได้)",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16917,7 +17367,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"ได้รับจากกิจกรรมเพลงขับกล่อมฤดูหนาวอันอบอุ่น"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_32_w"
 				}

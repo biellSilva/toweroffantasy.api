@@ -5038,7 +5038,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Obtained from the Warm Winter Serenade event"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_10_w"
 				}
@@ -7629,6 +7629,456 @@
 		"version": "3.4",
 		"limited": true,
 		"id": "nanyin_superpower"
+	},
+	"nora_superpower": {
+		"name": "Rumble",
+		"description": "A motorcycle and a great sword. What a peculiar combination! But since she was never good at remembering names, she eventually decided to simply call both of them Rumble.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_nuola.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_nuola.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/nuola2.webp"
+		},
+		"rarity": 5,
+		"element": "Superpower",
+		"type": "Nora",
+		"weaponUpgradeId": "superpower_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Nora_superpower_ssr_star",
+		"avatar": "imitation_62",
+		"stats": [
+			{
+				"stat": {
+					"name": "Attack",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Shifting**",
+				"description": "When **3** altered weapons are equipped, increase all elemental damage by **256%**. This set effect works in the off-hand slot."
+			},
+			{
+				"title": "**Elemental Engine**",
+				"description": "**Rumble** can actively switch its elemental type (while in the non-combat state). Go to the Skills > Settings page to switch elements."
+			},
+			{
+				"title": "**Explosive Energy: On-Field**",
+				"description": "When **Rumble** lands any hit with normal attack, it deals damage equal to **3.6%** of altered ATK plus **133%** of the Wanderer's Max HP plus **4.9%** of the sum of all the Wanderer's resistance types plus **130%** of crit to nearby targets. This effect can trigger up to 1 time every **1.5** seconds. Explosive Energy damage is counted as normal attack damage. If there is **1** volt/frost/physical/flame weapon of any kind equipped, Explosive Energy damage is increased to **NaN** times. In addition, Explosive Energy damage is not affected by any damage boost effects except from titan equipment's rare stats, and won't trigger additional attack effects."
+			}
+		],
+		"elementEffects": {
+			"title": "**Altered Damage**",
+			"description": "When the weapon is fully charged, the next attack will mark the target, causing an explosion after **5** seconds. Additionally, inflict damage equal to **25%** of all damage received by the target during the duration of the mark, up to a total of **560%** of the Wanderer's ATK. Only 1 mark can exist on a target at a time."
+		},
+		"attributes": [
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "**Supersound's** damage multiplier is increased to **20%** of ATK.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Ignore **15%** of the target's all resistance (each element's total resistance ignored cannot exceed 50%). When taking lethal damage, block the lethal damage 1 time and become immune to damage for a short period of time. This effect can only be triggered 1 time every **60** seconds. This effect works in the off-hand slot.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Increase the current weapon's base ATK growth by **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "After using **Violent Energy**, recover **6%** Max HP every second for **10** seconds (unaffected by healing boost effects). After Superspeed Mode ends, this HP recovery effect will be removed. This effect works in the off-hand slot.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Increase final damage by **30%**. This effect works in the off-hand slot.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Windrider",
+					"description": "While on the ground, use normal attack to launch 5 consecutive attacks.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and knock the target back.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back. \r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back.\r\nFourth Attack: Deal damage up to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and launch the target.\r\nIn <shuzhi>Superspeed Mode</>, during the Fifth Attack, tap and hold normal attack to chain it with the First Attack.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Melee.webp",
+					"id": "GA_FPlayerNoraMelee_Melee"
+				},
+				{
+					"name": "Cloud Riding",
+					"description": "While airborne, use normal attack to launch 5 consecutive attacks in mid-air, consuming endurance.\r\nFirst Attack: Deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> and launch the target.\r\nSecond Attack: Deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> and knock the target back.\r\nThird Attack: Deal damage equal to <shuzhi>{4}%</> of ATK plus <shuzhi>{5}</> and knock the target back.\r\nFourth Attack: Deal damage up to <shuzhi>{6}%</> of ATK plus <shuzhi>{7}</> and knock the target back.\r\nFifth Attack: Deal damage equal to <shuzhi>{8}%</> of ATK plus <shuzhi>{9}</> and knock the target back.\r\n<shuzhi>Silent Slash</>: When enemies are hit during the Second and Third Attacks, trigger the Cut effect, extending attack duration and increasing damage.\r\nWhen enemies are hit by the Second Attack, deal damage equal to <shuzhi>{10}%</> of ATK plus <shuzhi>{11}</> and knock the target sback.\r\nWhen enemies are hit by the Third Attack, deal damage equal to <shuzhi>{12}%</> of ATK plus <shuzhi>{13}</> and knock the target back.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_AirAttack.webp",
+					"id": "GA_FPlayerNoraMelee_AirAttack"
+				},
+				{
+					"name": "Twin Slashes",
+					"description": "During Superspeed Mode, while using normal attack on the ground, tap and hold normal attack when using the first to second normal attacks to trigger <shuzhi>Twin Slashes</>.\r\nDeal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets and knock the targets back.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch1.webp",
+					"id": "GA_FPlayerNoraMelee_Branch1"
+				},
+				{
+					"name": "Linked Slashes",
+					"description": "During <shuzhi>Superspeed Mode</>, when triggering <shuzhi>Twin Slashes</>, continue to tap and hold normal attack to trigger Linked Slashes.\r\nDeal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. At the same time, consume all <shuzhi>Overload</> stacks and for every <shuzhi>1</> stack consumed, additionally deal damage equal to <shuzhi>50%</> of ATK. If <shuzhi>Overload</> is at <shuzhi>6</> stacks, trigger <shuzhi>Extreme Charge</> instead and deal damage equal to <shuzhi>300%</> of ATK.",
+					"operations": [
+						"Attack",
+						"Hold Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch2.webp",
+					"id": "GA_FPlayerNoraMelee_Branch2"
+				},
+				{
+					"name": "Whirlpool Rider",
+					"description": "While using normal attack on the ground, tap and hold normal attack when using the third to fourth normal attacks to trigger Whirlpool Rider.\r\nDeal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch3.webp",
+					"id": "GA_FPlayerNoraMelee_Branch3"
+				},
+				{
+					"name": "Waterfall Rider",
+					"description": "While airborne, when using Cloud Riding, tap and hold normal attack (or tap when a target is available) to trigger the diving attack, Waterfall Rider.\r\nDive down from mid-air. During the course of landing, each hit on an enemy deals damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. After landing, deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> to nearby targets.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack"
+				},
+				{
+					"name": "Traveling Rider",
+					"description": "Tap and hold normal attack while airborne, or use normal attack while climbing, jumping backward, or using a Jetpack to trigger the diving attack, Traveling Rider.\r\nDive down from mid-air. During the course of landing, each hit on an enemy deals damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. After landing, deal damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> to nearby targets.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack_Special.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack_Special"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Swift Slash",
+					"description": "Use normal attack during the short perfect dodge window (use a directional button before dodging) to trigger a pre-dodge attack, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ForwardAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Subsonic Slash",
+					"description": "Use normal attack during the short period after dodging to trigger a post-dodge attack, dealing damage up to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to targets ahead.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_BackAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_BackAttack"
+				},
+				{
+					"name": "Sonic Skyrider",
+					"description": "Dodge before holding to enter Sonic Skyrider during which speed is increased and endurance is constantly consumed to attack ahead. Every time the Wanderer lands a hit, deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets.\r\nDuring Sonic Skyrider, jump and land to consume endurance and receive a temporary speed boost. In the Overworld, after entering Sonic Skyrider for <shuzhi>10</> seconds, damage dealt by Sonic Skyrider can execute non-boss enemies (unavailable in Apex League).",
+					"operations": [
+						"Movement"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_EvadeOn.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_EvadeOn"
+				}
+			],
+			"skill": [
+				{
+					"name": "Explosive Energy",
+					"description": "Enter Superspeed Mode for the Wanderer to gain temporary invincibility and deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets, and apply a <shuzhi>3</>-second <shuzhi>65%</> delay to the targets (ineffective against bosses in team play).\r\nDuring Superspeed Mode, gain hyperbody, and at the same time, each attack of <shuzhi>Windrider</> and <shuzhi>Cloud Riding</> has Supersound, additionally dealing damage equal to <shuzhi>{2}%</> of ATK plus <shuzhi>{3}</> (counts as passive damage). At the same time, each attack landed grants <shuzhi>1</> stack of Overload, up to <shuzhi>6</> stacks (up to <shuzhi>1</> stack every <shuzhi>0.65</> seconds).\r\nAfter entering Superspeed Mode for <shuzhi>5</> seconds, gain the new skill <shuzhi>Flash Rider</> (can be used during Superspeed Mode). Switching weapons during this time will prevent the Wanderer from using <shuzhi>Flash Rider</>.\r\n\r\n<shuzhi>Passive: Superspeed Reform</>\r\n<shuzhi>Rumble</> has 5 elemental types. Activate up to <shuzhi>1</> of them via the Skills - Settings page. Unable to switch types while in combat.\r\nBased on <shuzhi>Rumble's</> elemental type, using Violent Energy to land a hit on a target will carry a different corresponding <shuzhi>weapon trait</> and provide a different effect.\r\n\r\n<red>Frost-Volt</>: Receive <shuzhi>28</> seconds of Superspeed Mode. During that time, every time <shuzhi>Rumble</> lands a hit with normal attack or every time the Wanderer receives non-excess healing, receive 1 stack of <shuzhi>Thermal Convergence</>, stacking up to <shuzhi>10</> stacks. After Superspeed Mode has ended for <shuzhi>3</> seconds, remove all Thermal Convergence that has not been transformed. Cooldown: <shuzhi>30</> seconds (this is not affected by other cooldown clearing, resetting, or changing effects).\r\n\r\n<red>Flame-Physical</>: Receive <shuzhi>23/> seconds of Superspeed Mode. When entering Superspeed Mode, consume all <shuzhi>Sparks</>. For every stack consumed, receive <shuzhi>2,200</> base flame ATK (this flame ATK will not be reflected on the Wanderer's stats and is unavailable in Apex League) and increase <shuzhi>Rumble's</> final damage by <shuzhi>22%</>. During Superspeed Mode, gain Flame Pursuit. When dealing flame damage, deal damage equal to <shuzhi>1,520%</> of ATK to nearby targets, triggering up to <shuzhi>1</> time every <shuzhi>2</> seconds. Cooldown: <shuzhi>25</> seconds (unaffected by cooldown resetting or reduction effects).\r\n\r\n<red>Volt-Frost</>: Receive <shuzhi>18</> seconds of Superspeed Mode. During Superspeed Mode, increase volt damage by <shuzhi>30%</>. When landing a hit with normal attack while <shuzhi>Rumble</> is in the main slot, receive <shuzhi>1</> stack of <shuzhi>Thunderclap</>, up to <shuzhi>18</> stacks. At full stacks, consume all stacks and deal additional damage equal to <shuzhi>6,000%</> of ATK to nearby targets (counts as skill damage). At the same time, receive a <shuzhi>10</>-second Shield equal to <shuzhi>30%</> of Max HP (this effect does not stack). The Thunderclap additional effect can trigger up to <shuzhi>5</> times each time the Wanderer enters Superspeed Mode. If <shuzhi>Linked Slashes</> consumes <shuzhi>6</> stacks of <shuzhi>Overload</>, additionally deal damage equal to <shuzhi>11,000%</> of ATK to nearby targets. This damage counts as skill damage. Cooldown: <shuzhi>20</> seconds (unaffected by cooldown resetting or reduction effects).\r\n\r\n<red>Physical-Flame</>: Receive <shuzhi>19</> seconds of Superspeed Mode. During Superspeed Mode, deal damage equal to <shuzhi>2,900%</> of physical ATK to nearby targets every second. Every time this damage hits a target, it grants the Wanderer a <shuzhi>10</>-second Shield equal to <shuzhi>5%</> of Max HP, up to <shuzhi>10%</> being added at a time. This Shield's maximum will not exceed <shuzhi>50%</> of the Wanderer's HP. Cooldown: <shuzhi>21</> seconds (unaffected by cooldown resetting or reduction effects).\r\n\r\n<red>Altered</>: Receive <shuzhi>23</> seconds of Superspeed Mode. During Superspeed Mode, increase Max HP by <shuzhi>100%</>. At the same time, each attack landed by <shuzhi>Windrider</> and <shuzhi>Cloud Riding</> additionally deals damage equal to <shuzhi>1,400%</> of Max HP, not exceeding <shuzhi>240</> times of the Wanderer's ATK. This damage counts as skill damage and is unaffected by damage-boosting effects. Cooldown: <shuzhi>25</> seconds (unaffected by cooldown resetting or reduction effects).",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill01.webp",
+					"id": "GA_FPlayerNoraSkill_Skill01"
+				},
+				{
+					"name": "Flash Rider",
+					"description": "Can be triggered during Superspeed Mode to deal multiple-phased linked slashes to nearby targets, dealing damage totalling to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</>. Superspeed Mode ends after using this skill.\r\n\r\n<shuzhi>Passive: Superspeed Inertia</>\r\nBased on <shuzhi>Rumble's</> element, use <shuzhi>Flash Rider</> to provide an additional effect.\r\n\r\n<red>Frost-Volt</>: Consume all <shuzhi>Thermal Convergence</> stacks and gain Deepfreeze, which increases frost damage boost by <shuzhi>1.4%</> of <shuzhi>Thermal Convergence</> stack count. At the same time, deal frost damage equal to <shuzhi>1,400%</> of ATK plus <shuzhi>Thermal Convergence</> stack count times <shuzhi>240%</> of ATK to nearby targets. This damage counts as passive damage and lasts for <shuzhi>30</> seconds.\r\n\r\n<red>Altered</>: Deal damage equal to <shuzhi>50,000%</> of the Wanderer's Max HP to nearby targets. This damage does not exceed <shuzhi>8,000</> times of the Wanderer's ATK, counts as skill damage, and is unaffected by damage-boosting effects.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill02.webp",
+					"id": "GA_FPlayerNoraSkill_Skill02"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Skyriding Slash",
+					"description": "When <red>weapon charge is full</> or <red>Phantasia</> is triggered, upon switching to this weapon, <shuzhi>remove all debuffs from the Wanderer</> and deal damage equal to <shuzhi>{0}%</> of ATK plus <shuzhi>{1}</> to nearby targets. During this period, gain damage immunity for <shuzhi>1.5</> seconds (unavailable in Apex League).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ChangeSkill.webp",
+					"id": "GA_FPlayerNoraChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Windswept Coast",
+					"description": "Her hair gracefully sways in the ocean breeze, while her flowing veil dances in the wind. She seems to be in sync with the waves.",
+					"rarity": 5,
+					"source": "From events",
+					"simulacrumId": "imitation_62",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_62"
+				},
+				"weapon": {
+					"name": "Surfing Tunes",
+					"description": "A motorcycle, a great sword mark the sound of the raging waves.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nora_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Obtained from the Windswept Coast Gachapon event"
+					],
+					"id": "imitation_fashion_62_w"
+				}
+			}
+		],
+		"version": "4.2",
+		"limited": true,
+		"id": "nora_superpower"
 	},
 	"paradox_fire": {
 		"name": "EP-7000 Skyfire",
@@ -13277,7 +13727,7 @@
 		],
 		"effects": [
 			{
-				"title": "**Volt-Frost Fusion**",
+				"title": "**Fusion of Volt and Frost**",
 				"description": "When the weapon deals damage, damage is calculated using the highest equipped volt/frost base ATK, the highest equipped volt/frost ATK percentage, and the highest equipped volt/frost damage boost, and the weapon is considered both a volt and frost weapon."
 			},
 			{
@@ -14591,7 +15041,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "While the Wanderer has an **A.T. Field** active, attacks can ignore a certain percentage of the damage reduction from a target's shield. This percentage is equal to **30%** of the current **A.T. Field's** **durability percentage** plus **20%**. When **Fortitude Resonance** is active, increase the Wanderer's shatter at a rate equal to **100%** of the **A.T. Field's** **durability percentage**.",
+				"description": "While the Wanderer has an **A.T. Field** active, attacks can ignore a certain percentage of the damage reduction from a target's shield. This percentage is equal to **30%** of the current **A.T. Field's** **durability percentage** plus **20%** (unavailable in Apex League). When **Fortitude Resonance** is active, increase the Wanderer's shatter at a rate equal to **100%** of the **A.T. Field's** **durability percentage** (unavailable in Apex League).",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16937,7 +17387,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Obtained from the Warm Winter Serenade event"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_32_w"
 				}

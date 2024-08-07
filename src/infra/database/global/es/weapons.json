@@ -5038,7 +5038,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Se obtiene en el evento Serenata de un Invierno Cálido"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_10_w"
 				}
@@ -7629,6 +7629,456 @@
 		"version": "3.4",
 		"limited": true,
 		"id": "nanyin_superpower"
+	},
+	"nora_superpower": {
+		"name": "Estruendo",
+		"description": "Una motocicleta y una gran espada. ¡Qué combinación tan peculiar! Pero como nunca fue buena recordando nombres, finalmente decidió llamar a ambos Estruendo.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_nuola.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_nuola.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/nuola2.webp"
+		},
+		"rarity": 5,
+		"element": "Superpower",
+		"type": "Nora",
+		"weaponUpgradeId": "superpower_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Nora_superpower_ssr_star",
+		"avatar": "imitation_62",
+		"stats": [
+			{
+				"stat": {
+					"name": "Ataque",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "PS",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crít",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Transmutación**",
+				"description": "Cuando hay **3** armas alteradas equipadas, aumenta todo el daño elemental en un **256%**. Este efecto de set funciona en la ranura secundaria."
+			},
+			{
+				"title": "**Motor Elemental**",
+				"description": "**Estruendo** puede cambiar su elemento (mientras está en estado pacífico). Ve a la página de Habilidades > Opciones para cambiar de elemento."
+			},
+			{
+				"title": "**Energía Explosiva: En el Campo**",
+				"description": "Cuando **Estruendo** conecta un golpe con un ataque normal, inflige daño igual al **3.6%** del ATQ alterado más **133%** de los PS Máx. del nómada más **4.9%** de la suma de todos los tipos de resistencias del nómada más **130%** del crítico a los objetivos cercanos. Este efecto puede activarse hasta 1 vez cada **1.5** seg. El daño de Energía Explosiva cuenta como daño de ataque normal. Si hay **1** arma de electricidad/escarcha/física/fuego de cualquier tipo equipada, el daño de Energía Explosiva aumenta **NaN** veces. Además, este daño no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales."
+			}
+		],
+		"elementEffects": {
+			"title": "**Daño alterado**",
+			"description": "Cuando el arma esté completamente cargada, el siguiente ataque marcará al objetivo, lo que provocará una explosión después de **5**seg. Además, inflige daño igual a **25%** de todo el daño recibido por el objetivo durante el efecto de la marca, hasta un total de **560%** del ATQ del nómada. Solo puede existir 1 marca en un objetivo a la vez."
+		},
+		"attributes": [
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "Aumenta el multiplicador de daño de **Supersónico ** a **20%** del ATQ.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Aumenta el crecimiento de ATQ base del arma actual un **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Ignora **15%** de todas las resistencias del objetivo (la resistencia total ignorada de cada elemento no puede superar el 50%). Al recibir daño letal, bloquea el daño letal 1 vez y vuélvete inmune al daño por un breve periodo. Este efecto solo puede activarse 1 vez cada **60** seg. Este efecto funciona en la ranura secundaria.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Aumenta el crecimiento de ATQ base del arma actual un **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Luego de usar **Energía Violenta**, restaura **6%** de los PS Máx. cada seg por **10** seg (no es afectado por efectos de refuerzo de curación). Al terminar el Modo de Supervelocidad, este efecto de recuperación de PS se eliminará. Este efecto funciona en la ranura secundaria.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Aumenta el daño final en un **30%**. Este efecto funciona en la ranura secundaria.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Surcavientos",
+					"description": "Mientras estás en el suelo, usa el ataque normal para lanzar 5 ataques consecutivos.\r\nPrimer ataque: Inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y hace retroceder al objetivo.\r\nSegundo ataque: Inflige daño igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y hace retroceder al objetivo. \r\nTercer ataque: Inflige daño igual al <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y hace retroceder al objetivo.\r\nCuarto ataque: Inflige un daño de hasta <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y hace retroceder al objetivo.\r\nQuinto ataque: Inflige daño igual al <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y lanza al objetivo.\r\nEn <shuzhi>Modo de Supervelocidad</>, durante el Quinto Ataque, pulsa y mantén pulsado el ataque normal para enlazarlo con el Primer Ataque.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Melee.webp",
+					"id": "GA_FPlayerNoraMelee_Melee"
+				},
+				{
+					"name": "Viaje Celestial",
+					"description": "Mientras estás en el aire, usa el ataque normal para lanzar 5 ataques consecutivos; esto consume resistencia.\r\nPrimer ataque: inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> y lanza al objetivo.\r\nSegundo ataque: Inflige daño igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> y hace retroceder al objetivo.\r\nTercer ataque: Inflige daño igual al <shuzhi>{4}%</> del ATQ más <shuzhi>{5}</> y hace retroceder al objetivo.\r\nCuarto ataque: Inflige un daño de hasta <shuzhi>{6}%</> del ATQ más <shuzhi>{7}</> y hace retroceder al objetivo.\r\nQuinto ataque: inflige daño igual al <shuzhi>{8}%</> del ATQ más <shuzhi>{9}</> y hace retroceder al objetivo.\r\n<shuzhi>Tajo Silencioso</>: Cuando los enemigos son golpeados con los Ataques Segundo y Tercero, activa el efecto de Corte, el cual extiende la duración del ataque y aumenta el daño.\r\nCuando los enemigos son golpeados por el Segundo Ataque, inflige daño igual al <shuzhi>{10}%</> del ATQ más <shuzhi>{11}</> y hace retroceder al objetivo.\r\nCuando los enemigos son golpeados por el Tercer Ataque, inflige daño igual al <shuzhi>{12}%</> del ATQ más <shuzhi>{13}</> y hace retroceder al objetivo.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_AirAttack.webp",
+					"id": "GA_FPlayerNoraMelee_AirAttack"
+				},
+				{
+					"name": "Tajos Gemelos",
+					"description": "Mientras usas el ataque normal en el suelo con el Modo de Supervelocidad activo, pulsa y mantén pulsado el ataque normal entre el primer y segundo ataque normal para activar <shuzhi>Tajos Gemelos</>.\r\nInflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos y hace retroceder a los objetivos.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch1.webp",
+					"id": "GA_FPlayerNoraMelee_Branch1"
+				},
+				{
+					"name": "Tajos Enlazados",
+					"description": "En <shuzhi>Modo de Supervelocidad</>, luego de activar <shuzhi>Tajos Gemelos</>, pulsa y mantén pulsado el ataque normal para activar Tajos Enlazados.\r\nInflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Además, consume todas las acumulaciones de <shuzhi>Sobrecarga</> e inflige un daño adicional igual al <shuzhi>50%</> del ATQ por cada <shuzhi>1</> de las acumulaciones consumidas. Si tienes <shuzhi>6</> acumulaciones de <shuzhi>Sobrecarga</>, activa <shuzhi>Carga Extrema</> en su lugar e inflige un daño igual al <shuzhi>300%</> del ATQ.",
+					"operations": [
+						"Attack",
+						"Hold Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch2.webp",
+					"id": "GA_FPlayerNoraMelee_Branch2"
+				},
+				{
+					"name": "Jinete del Remolino",
+					"description": "Mientras usas el ataque normal en el suelo, pulsa y mantén pulsado el ataque normal entre el primer y cuarto ataque normal para activar Jinete del Remolino.\r\nInflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch3.webp",
+					"id": "GA_FPlayerNoraMelee_Branch3"
+				},
+				{
+					"name": "Jinete de la Cascada",
+					"description": "Mientras estás en el aire, con Viaje Celestial activado,pulsa y mantén pulsado el ataque normal (o pulsa cuando haya un objetivo disponible) para activar el ataque de caída, Jinete de la Cascada.\r\nCae desde el aire. Mientras caes, cada impacto a un enemigo inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Al aterrizar, inflige daño igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> a los objetivos cercanos.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack"
+				},
+				{
+					"name": "Jinete Errante",
+					"description": "Pulsa y mantén pulsado el ataque normal en el aire, o usa el ataque normal al escalar, saltar hacia atrás o usar el Propulsor para activar el ataque de caída, Jinete Errante.\r\nCae desde el aire. Mientras caes, cada impacto a un enemigo inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. Al aterrizar, inflige daño igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> a los objetivos cercanos.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack_Special.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack_Special"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Tajo Veloz",
+					"description": "Usa tu ataque normal durante la breve oportunidad de evasión perfecta (pulsa un botón de dirección antes de evadir) para activar un ataque de preevasión e infligir daño de hasta <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos adelante.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ForwardAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Corte Subsónico",
+					"description": "Usa tu ataque normal durante el breve periodo tras evadir para activar un ataque de postevasión e infligir daño de hasta <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos adelante.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_BackAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_BackAttack"
+				},
+				{
+					"name": "Jinete Aéreo Sónico",
+					"description": "Evade antes de mantener pulsado para activar Jinete Aéreo Sónico, lo cual aumenta la velocidad y consume resistencia continuamente para atacar hacia adelante. Cada vez que el nómada conecta un golpe, inflige daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos.\r\nAl activar Jinete Aéreo Sónico, salta y aterriza para consumir resistencia y obtener un refuerzo de velocidad temporal. En el Mundo Exterior, luego de tener Jinete Aéreo Sónico activo por <shuzhi>10</> seg, el daño infligido por Jinete Aéreo Sónico puede ejecutar a los enemigos que no sean jefes (no disponible en la Liga Ápex).",
+					"operations": [
+						"Movement"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_EvadeOn.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_EvadeOn"
+				}
+			],
+			"skill": [
+				{
+					"name": "Energía Explosiva",
+					"description": "Entra al Modo de Supervelocidad para que el nómada gane invencibilidad temporal e inflija un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. También aplicará un retraso del <shuzhi>65%</> por <shuzhi>3</> seg a los objetivos (ineficaz contra jefes en partidas en equipo).\r\nAl entrar al Modo de Supervelocidad, gana hipercuerpo y, al mismo tiempo, cada ataque de <shuzhi>Surcavientos</> y <shuzhi>Viaje Celestial</> gana Supersónico, lo que inflige un daño adicional igual al <shuzhi>{2}%</> del ATQ más <shuzhi>{3}</> (cuenta como daño pasivo). Además, cada ataque conectado otorga <shuzhi>1</> acumulación de Sobrecarga, hasta <shuzhi>6</> acumulaciones (puedes obtener hasta <shuzhi>1</> acumulación cada <shuzhi>0.65</> seg).\r\nLuego de estar en Modo de Supervelocidad por <shuzhi>5</> seg, gana la habilidad <shuzhi>Jinete Relámpago</> (puede usarse durante el Modo de Supervelocidad). Cambiar de armas durante este periodo evitará que el nómada use <shuzhi>Jinete Relámpago</>.\r\n\r\n<shuzhi>Pasiva: Reforma de Supervelocidad</>\r\n<shuzhi>Estruendo</> tiene 5 tipos elementales. Activa <shuzhi>1</> de ellos en la página de Habilidades - Opciones. No puedes cambiar de elemento si estás en combate.\r\nDependiendo del elemento de <shuzhi>Estruendo</>, conectar un golpe a un objetivo con Energía Violenta causará el <shuzhi>rasgo de arma</> correspondiente y otorgará un efecto diferente.\r\n\r\n<red>Escarcha-Eléctrico</>: Recibe <shuzhi>28</> seg de Modo de Supervelocidad. Durante este periodo, cada vez que <shuzhi>Estruendo</> conecte un golpe con un ataque normal o cada vez que el nómada reciba curación no excesiva, obtén 1 acumulación de <shuzhi>Convergencia Térmica</>, hasta <shuzhi>10</> acumulaciones. <shuzhi>3</> seg luego de salir del Modo de Supervelocidad, elimina todas las acumulaciones de Convergencia Térmica no transformadas. Enfriamiento: <shuzhi>30</> seg (no se ve afectado por otros efectos de eliminación, restablecimiento o alteración de enfriamiento).\r\n\r\n<red>Fuego-Físico</>: Recibe <shuzhi>23/> seg de Modo de Supervelocidad. Al entrar en el Modo de Supervelocidad, consume todas las acumulaciones de <shuzhi>Chispas</>. Por cada acumulación consumida, obtén <shuzhi>2200</> de ATQ de fuego base (este ATQ de fuego no se reflejará en las estadísticas del nómada y no está disponible en la Liga Ápex) y aumenta el daño final de <shuzhi>Estruendo</> en un <shuzhi>22%</>. Durante el Modo de Supervelocidad, obtén Persecución de Fuego. Cuando infliges daño de fuego, inflige daño igual al <shuzhi>1520%</> del ATQ a los objetivos cercanos, se puede activar hasta <shuzhi>1</> vez cada <shuzhi>2</> seg. Enfriamiento: <shuzhi>25</> seg (no se ve afectado por efectos de restablecimiento o reducción de enfriamiento).\r\n\r\n<red>Electricidad-Escarcha</>: Recibe <shuzhi>18</> seg de Modo de Supervelocidad. Durante el Modo de Supervelocidad, aumenta el daño eléctrico en <shuzhi>30%</>. Al conectar un golpe con un ataque normal mientras <shuzhi>Estruendo</> está en la ranura principal, obtén <shuzhi>1</> acumulación de <shuzhi>Trueno</>, hasta <shuzhi>18</> acumulaciones. Al llegar al máximo de acumulaciones, consúmelas todas e inflige daño adicional igual al <shuzhi>6000%</> del ATQ a los objetivos cercanos (cuenta como daño de habilidad). Además, obtén un Escudo de <shuzhi>10</> seg igual al <shuzhi>30%</> de los PS Máx. (este efecto no se acumula). El efecto adicional de Trueno puede activarse hasta <shuzhi>5</> veces cada vez que el nómada entra en el Modo de Supervelocidad. Si <shuzhi>Tajos Enlazados</> consume <shuzhi>6</> acumulaciones de <shuzhi>Sobrecarga</>, inflige un daño adicional igual al <shuzhi>11 000%</> del ATQ a los objetivos cercanos. Este daño cuenta como daño de habilidad. Enfriamiento: <shuzhi>20</> seg (no se ve afectado por efectos de restablecimiento o reducción de enfriamiento).\r\n\r\n<red>Física-Fuego</>: Recibe <shuzhi>19</> seg de Modo de Supervelocidad. Durante el Modo de Supervelocidad, inflige daño igual al <shuzhi>2900%</> del ATQ físico a los objetivos cercanos cada segundo. Cada vez que este daño golpea a un objetivo, otorga al nómada un Escudo de <shuzhi>10</> seg igual al <shuzhi>5%</> de los PS Máx. Puede ganar hasta <shuzhi>10%</> cada vez. Este Escudo no excede el <shuzhi>50%</> de los PS del nómada. Enfriamiento: <shuzhi>21</> seg (no se ve afectado por efectos de restablecimiento o reducción de enfriamiento).\r\n\r\n<red>Alterado</>: Recibe <shuzhi>23</> seg de Modo de Supervelocidad. Durante el Modo de Supervelocidad, aumenta los PS Máx. en un <shuzhi>100%</>. Además, cada ataque conectado por <shuzhi>Surcavientos</> y <shuzhi>Viaje Celestial</> inflige un daño adicional igual al <shuzhi>1400%</> de los PS Máx., pero no puede exceder <shuzhi>240</> veces el ATQ del nómada. Este daño cuenta como daño de habilidad y no se ve afectado por efectos de refuerzo de daño. Enfriamiento: <shuzhi>25</> seg (no se ve afectado por efectos de restablecimiento o reducción de enfriamiento).",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill01.webp",
+					"id": "GA_FPlayerNoraSkill_Skill01"
+				},
+				{
+					"name": "Jinete Relámpago",
+					"description": "Puede activarse durante el Modo de Supervelocidad para infligir tajos enlazados de varias fases a los objetivos cercanos con un daño total igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</>. El Modo de Supervelocidad termina luego de usar esta habilidad.\r\n\r\n<shuzhi>Pasiva: Inercia de Supervelocidad</>\r\nDependiendo del elemento de <shuzhi>Estruendo</>, usar <shuzhi>Jinete Relámpago</> causa un efecto adicional.\r\n\r\n<red>Escarcha-Eléctrico</>: Consume todas las acumulaciones de <shuzhi>Convergencia Térmica</> y gana Congelación Total, la cual aumenta el refuerzo de daño de escarcha en un <shuzhi>1.4%</> por cada acumulación de <shuzhi>Convergencia Térmica</>. Además, inflige daño de escarcha igual al <shuzhi>1400%</> del ATQ más el número de acumulaciones de <shuzhi>Convergencia Térmica</> multiplicado por el <shuzhi>240%</> del ATQ a los objetivos cercanos. Este daño cuenta como daño pasivo y dura <shuzhi>30</> seg.\r\n\r\n<red>Alterado</>: Inflige daño igual al <shuzhi>50 000%</> de los PS Máx. del nómada a los objetivos cercanos. Este daño no puede exceder <shuzhi>8000</> veces el ATQ del nómada, cuenta como daño de habilidad y no se ve afectado por efectos de refuerzo de daño.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill02.webp",
+					"id": "GA_FPlayerNoraSkill_Skill02"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Tajo Aéreo",
+					"description": "Cuando la <red>carga de arma está completa</> o se activa <red>Phantasia</>, al cambiar a esta arma, <shuzhi>elimina todas las desventajas del nómada</> e inflige un daño igual al <shuzhi>{0}%</> del ATQ más <shuzhi>{1}</> a los objetivos cercanos. Durante este periodo, ganas inmunidad al daño por <shuzhi>1.5</> seg (no disponible en la Liga Ápex).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ChangeSkill.webp",
+					"id": "GA_FPlayerNoraChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Costa Ventosa",
+					"description": "Su cabello se balancea con gracia en la brisa del océano, mientras su velo fluye danzando en el viento. Parece estar en sincronía con las olas.",
+					"rarity": 5,
+					"source": "De los eventos",
+					"simulacrumId": "imitation_62",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_62"
+				},
+				"weapon": {
+					"name": "Melodías de Surf",
+					"description": "Una motocicleta, una gran marca de espada marcan el sonido de las olas furiosas.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nora_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Se obtiene en el evento gachapon de Costa Ventosa"
+					],
+					"id": "imitation_fashion_62_w"
+				}
+			}
+		],
+		"version": "4.2",
+		"limited": true,
+		"id": "nora_superpower"
 	},
 	"paradox_fire": {
 		"name": "Fuego celestial EP-7000",
@@ -13277,24 +13727,24 @@
 		],
 		"effects": [
 			{
-				"title": "**Fusión Electro-Escarcha**",
-				"description": "Cuando el arma inflige daño, el daño se calcula según el ATQ base de electricidad o escarcha más alto equipado, el porcentaje de ATQ de electricidad o escarcha más alto equipado y el porcentaje de refuerzo de daño eléctrico o de escarcha más alto equipado. El arma se considera tanto de escarcha como de electricidad."
+				"title": "**Fusión de Electricidad y Escarcha**",
+				"description": "Cuando el arma causa daño, el daño se calcula utilizando el ATQ base de electricidad/escarcha más alto equipado, el porcentaje de ATQ de electricidad/escarcha más alto equipado, y el refuerzo de daño de electricidad/escarcha más alto equipado, y el arma se considera tanto un arma de electricidad como de escarcha."
 			},
 			{
 				"title": "**Resonancia Eléctrica**",
-				"description": "Aumenta el ATQ eléctrico un **15%** y la resistencia eléctrica un **25%**. Se activa al equipar **2** o más armas eléctricas. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos del mismo tipo."
+				"description": "Aumenta el ATQ eléctrico en **15%** y la resistencia a la electricidad en **25%**. Se activa equipando **2** o más armas de electricidad. Este efecto de set funciona en la ranura secundaria. No se puede acumular con efectos del mismo tipo."
 			},
 			{
 				"title": "**Resonancia de Escarcha**",
-				"description": "Aumenta el ATQ de escarcha un **15%** y la resistencia a la escarcha un **25%**. Se activa al equipar **2** o más armas de escarcha. Este efecto de set funciona en la ranura secundaria. No se puede acumular con otros efectos del mismo tipo."
+				"description": "Aumenta el ATQ de escarcha un **15%** y la resistencia a la escarcha un **25%**. Se activa equipando **2** o más armas de escarcha. Este efecto de set funciona en la ranura secundaria. No se puede acumular con efectos del mismo tipo."
 			},
 			{
 				"title": "**Relámpago: Corte Veloz**",
-				"description": "Al equipar **Pactala ☆ Metz**, las habilidades de descarga de arma infligen daño inicial igual al **46.87%** del ATQ eléctrico más **0.62%** de los PS Máx. del nómada más **23.43%** de la suma de todos los tipos de resistencias más **85.93%** del crítico a los objetivos cercanos. Durante el estado de combate, después de cada **0.5** seg, el siguiente daño de Corte Veloz aumentará **1** vez más, hasta un máximo de **30** veces. De haber varios daños de Corte Veloz, se usará el valor inicial más alto para el cálculo. El daño de Corte Veloz cuenta como daño de descarga. Si hay algún arma física o de fuego equipada, el daño de relámpago se multiplicará por **1.3**. Adicionalmente, el daño de relámpago no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales."
+				"description": "Cuando está equipado con **Pactala ☆ Metz**, las habilidades de descarga de armas causan daño inicial igual a **46.87%** de ATQ eléctrico más **0.62%** del PS Máx. del nómada más **23.43%** de la suma de todos los tipos de resistencias del nómada más **85.93%** de crítico a objetivos cercanos. Mientras se encuentra en el estado de combate, después de cada **0.5** segundos, el daño del siguiente Corte Veloz se incrementará **1** vez adicional, hasta un máximo de **30** veces. Cuando existen múltiples daños de Corte Veloz, se utiliza el valor inicial más alto para el cálculo. El daño de Corte Veloz cuenta como daño de descarga. Si se equipa cualquier arma de fuego o física, el daño de Relámpago se multiplica por **1.3**. Además, este daño de Relámpago no se ve afectado por ningún efecto de refuerzo de daño, excepto por las estadísticas raras del equipo titán, y no activará efectos de ataque adicionales."
 			},
 			{
 				"title": "**Rotación Milagrosa**",
-				"description": "al desafiar Fantasma del Pasado y Fantasma Secuencial con **Pactala ☆ Metz** equipado, gana **15** seg adicionales en la duración del desafío. Al desafiar **Origen de la Guerra**, por cada **1** **Pactala ☆ Metz** equipada por el equipo, el equipo gana **25** seg adicionales en la duración del desafío, máximo **50** seg."
+				"description": "Al desafiar al Fantasma del Pasado y al Fantasma Secuencial con **Pactala ☆ Metz** equipada, obtienes **15** segundos adicionales para la duración del desafío. Al desafiar al **Origen de la Guerra**, por cada **1** **Pactala ☆ Metz** equipada por el equipo, el equipo obtiene **25** segundos adicionales para la duración del desafío, hasta **50** segundos."
 			}
 		],
 		"elementEffects": {
@@ -13443,7 +13893,7 @@
 				"need": "Blevi_thunder_plasm"
 			},
 			{
-				"description": "Mientras Amplificación del Pacto esté activa, aumenta los efectos de refuerzo de daño de escarcha y electricidad en un **10%** y **4%** respectivamente. El Halo de Metz aumenta el daño final de los enemigos en un **20%** y la destrucción en un **25%**. Este efecto no se acumula.",
+				"description": "Mientras Amplificación del Pacto esté activa, aumenta los efectos de refuerzo de daño de electricidad y de escarcha en un **10%** y **4%** respectivamente. El Halo de Metz aumenta el daño final de los enemigos en un **20%** y la destrucción en un **25%**. Este efecto no se acumula.",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14591,7 +15041,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "Mientras el nómada tenga un **Escudo AT** activo, los ataques pueden ignorar un porcentaje de la reducción de daño del escudo del objetivo. El porcentaje será igual al **30%** del **porcentaje de durabilidad** del **Escudo AT** activo, más **20%**. Si **Resonancia de Fortaleza** está activa, aumenta la destrucción del nómada en un **100%** del **porcentaje de durabilidad** del **Escudo AT**.",
+				"description": "Mientras el nómada tenga un **Escudo AT** activo, los ataques pueden ignorar un porcentaje de la reducción de daño del escudo del objetivo. El porcentaje será igual al **30%** del **porcentaje de durabilidad** del **Escudo AT** activo, más **20%** (no disponible en la Liga Ápex). Si **Resonancia de Fortaleza** está activa, aumenta la destrucción del nómada en una cantidad igual al **100%** del **porcentaje de durabilidad** del **Escudo AT** (no disponible en la Liga Ápex).",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16937,7 +17387,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Se obtiene en el evento Serenata de un Invierno Cálido"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_32_w"
 				}

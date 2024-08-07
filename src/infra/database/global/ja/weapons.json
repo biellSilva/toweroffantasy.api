@@ -5038,7 +5038,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"イベント「暖冬萌曲」で獲得"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_10_w"
 				}
@@ -7629,6 +7629,456 @@
 		"version": "3.4",
 		"limited": true,
 		"id": "nanyin_superpower"
+	},
+	"nora_superpower": {
+		"name": "ノイズ",
+		"description": "バイクと大剣、この不思議な組み合わせは何と呼ぶべきだろう。名前を覚えるのが苦手な彼女は、結局ノイズという名前を付けた。",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_nuola.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_nuola.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/nuola2.webp"
+		},
+		"rarity": 5,
+		"element": "Superpower",
+		"type": "Nora",
+		"weaponUpgradeId": "superpower_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Nora_superpower_ssr_star",
+		"avatar": "imitation_62",
+		"stats": [
+			{
+				"stat": {
+					"name": "攻撃",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "会心",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**異常**：異能属性武器を**3**つ以上装備しているとき、全属性ダメージ+**256%**。装備すると常時有効。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**属性エンジン**：**ノイズ**の属性タイプを変えられる(非戦闘状態時)。スキルリスト->設定画面から変更できる。**",
+				"description": "N/A"
+			},
+			{
+				"title": "**爆乱・顕在**：**ノイズ**による攻撃が命中した時、付近のターゲットに異能攻撃力×**3.6%**+自身の最大HP×**133%**+各属性耐性の合計値×**4.9%**+会心の値×**130%**のダメージを与える。**1.5**秒間に1回のみ発動。このダメージは通常攻撃によるダメージと見なされる。任意の雷/氷/物理/炎属性武器を**1**つ装備している場合、爆乱ダメージが**NaN**倍まで UPする。なお、爆乱ダメージはこの装備条件以外によるダメージ UP効果を受けず(タイタン装備のレアステータスを除く)、攻撃効果の追加発動を誘発しない。**",
+				"description": "N/A"
+			}
+		],
+		"elementEffects": {
+			"title": "**異能**",
+			"description": "武器エナジー値がMAXの状態で敵を攻撃すると敵をマークし、**5**秒後に爆発する。マークが付与されている間、敵は全ダメージの**25%**を追加で受ける(追加ダメージは最大でも自身の攻撃力×**560%**まで)。同一ターゲットに同時に与えられるマークは1つのみ。"
+		},
+		"attributes": [
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "**スキル・超音**のダメージ倍率が攻撃力×**20%**まで UP。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**16%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "ターゲットの全属性耐性を**15%**無視(無視する属性耐性の合計値はそれぞれ50%を超えない)する。自身が致命的ダメージを受けると死亡を1回防ぎ、短時間無効化する。この効果は**60**秒間に1回のみ発動可能。装備すると常時有効。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "現在の武器の攻撃力基本成長率+**32%**。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "**スキル・バーサクエンジン**を発動すると、毎秒最大HPの**6%**を回復する(回復バフ無視)、**10**秒間持続。爆速モードが終了すると、この回復効果は解除される。装備すると常時有効。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "最終ダメージ+**30%**。装備すると常時有効。",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "ウィンドライド",
+					"description": "地上にいる時、通常攻撃を行うと5回連続攻撃できる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージとノックバック\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージとノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージとノックバック\r\n4回目：最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージとノックバック\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージとノックアップ\r\n<shuzhi>スキル・爆速モード</>発動中に、5回目の攻撃時に通常攻撃を長押しすると、再び1回目の攻撃から継続できる",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Melee.webp",
+					"id": "GA_FPlayerNoraMelee_Melee"
+				},
+				{
+					"name": "アズールライド",
+					"description": "滞空時、通常攻撃を行うとスタミナを消費して空中で5回連続攻撃ができる。ターゲットに与えるダメージと効果は次の通り。\r\n1回目：攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージとノックアップ\r\n2回目：攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージとノックバック\r\n3回目：攻撃力×<shuzhi>{4}%</>+<shuzhi>{5}</>のダメージとノックバック\r\n4回目：最大で攻撃力×<shuzhi>{6}%</>+<shuzhi>{7}</>のダメージとノックバック\r\n5回目：攻撃力×<shuzhi>{8}%</>+<shuzhi>{9}</>のダメージとノックバック\r\n<shuzhi>スカイブレード</>：2回目と3回目の攻撃が敵に命中すると、切断効果が発動することで攻撃時間が長くなりダメージ回数も増える\r\n2回目の攻撃が敵に命中すると、ターゲットに攻撃力×<shuzhi>{10}%</>+<shuzhi>{11}</>のダメージを与え、ノックバックする\r\n3回目の攻撃が敵に命中すると、ターゲットに攻撃力×<shuzhi>{12}%</>+<shuzhi>{13}</>ののダメージを与え、ノックバックする",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_AirAttack.webp",
+					"id": "GA_FPlayerNoraMelee_AirAttack"
+				},
+				{
+					"name": "ツインスラッシュ",
+					"description": "爆速モード発動中に地上で通常攻撃を行う時、1～2回目で通常攻撃を長押しすると、<shuzhi>ツインスラッシュ</>を発動できる。\r\n付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、ノックバックする。",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch1.webp",
+					"id": "GA_FPlayerNoraMelee_Branch1"
+				},
+				{
+					"name": "スラッシュ・インナロウ",
+					"description": "<shuzhi>スキル・爆速モード</>発動中に<shuzhi>通常攻撃・ツインスラッシュ</>を発動するとき、通常攻撃を長押ししたままにすると、スラッシュ・インナロウを発動できる。\r\n付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与え、また、<shuzhi>スキル・オーバーロード</>をすべて消費して、<shuzhi>1</>スタックごとに攻撃力×<shuzhi>50%</>のダメージを追加で与える。もし<shuzhi>スキル・オーバーロード</>を<shuzhi>6</>スタック消費した場合は、<shuzhi>超負荷</>効果の発動に変更され、攻撃力×<shuzhi>300%</>のダメージを与える。",
+					"operations": [
+						"Attack",
+						"Hold Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch2.webp",
+					"id": "GA_FPlayerNoraMelee_Branch2"
+				},
+				{
+					"name": "トルネードライド",
+					"description": "地上での通常攻撃時、3～4回目で通常攻撃を長押しすると、トルネードライドを発動できる。\r\n付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch3.webp",
+					"id": "GA_FPlayerNoraMelee_Branch3"
+				},
+				{
+					"name": "カスケードライド",
+					"description": "滞空時、アズールライド発動中に通常攻撃を長押し(または敵ターゲットがいるときにタップ)すると、落下攻撃・カスケードライドを発動できる。\r\n空中から落下して着地するまでの間、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを命中するたびに与える。さらに着地後、付近のターゲットに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える。",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack"
+				},
+				{
+					"name": "フォールライド",
+					"description": "滞空時に通常攻撃を長押し、またはクライミング時、反転ジャンプ攻撃時、ジェットパック使用時に通常攻撃をすると落下攻撃・フォールライドを発動できる。\r\n空中から落下して着地するまでの間、ターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを命中するたびに与える。さらに着地後、付近のターゲットに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを与える。",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack_Special.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack_Special"
+				}
+			],
+			"dodge": [
+				{
+					"name": "スウィフトスラッシュ",
+					"description": "前方回避(方向キー+回避ボタン)を発動してすぐに通常攻撃を行うと、回避攻撃が発動する。前方のターゲットに対し最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ForwardAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "ア・スラッシュ",
+					"description": "回避後すぐに通常攻撃を行うと、後方回避攻撃を発動できる。前方のターゲットに最大で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_BackAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_BackAttack"
+				},
+				{
+					"name": "飛音疾走",
+					"description": "前方回避を長押しすると飛音疾走状態になり、移動速度がUPし、スタミナを消費しながら前方を攻撃する。命中するたびに、付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。\r\n飛音疾走状態のときにジャンプするとスタミナを消費するが、着地した後一時的に加速する。ワールドで飛音疾走状態を開始し<shuzhi>10</>秒経過すると、ボス以外の敵を飛音疾走により即座に倒すことができる(トップリーグでは無効)",
+					"operations": [
+						"Movement"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_EvadeOn.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_EvadeOn"
+				}
+			],
+			"skill": [
+				{
+					"name": "バーサクエンジン",
+					"description": "爆速モードを発動すると自身は一時的に無敵になり、さらに付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージ、また<shuzhi>65%</>のスロウ効果を<shuzhi>3</>秒間与える(チームプレイ時のボスには無効)。\r\n爆速モード中は不屈効果を獲得し、<shuzhi>通常攻撃・ウィンドライド</>と<shuzhi>通常攻撃・アズールライド</>の全攻撃に超音効果が付与され、さらに攻撃力×<shuzhi>{2}%</>+<shuzhi>{3}</>のダメージを追加で与え(パッシブダメージと見なされる)、また、攻撃がターゲットに命中するとオーバーロード効果を<shuzhi>1</>スタック獲得する。スタック上限<shuzhi>6</>(<shuzhi>0.65</>秒ごとのスタック獲得上限<shuzhi>1</>)\r\n爆速モード発動から<shuzhi>5</>秒経過すると、新スキル<shuzhi>フラッシュライド</>を獲得し（爆速モード中に発動可能）、獲得後武器を切り替えると<shuzhi>フラッシュライド</>を獲得/使用できなくなる。\r\n\r\n<shuzhi>パッシブ：爆速レストア</>\r\n<shuzhi>ノイズ</>は5種類の属性を持ち、スキルリスト->設定から属性を有効化できるが1種類までで、戦闘状態時は変更できない。\r\nバーサクエンジンが命中すると、ターゲットに<shuzhi>ノイズ</>の属性に応じた属性の<shuzhi>武器特質</>の付与され、さらに追加で異なる効果を発動する。\r\n\r\n<red>氷・雷</>：<shuzhi>28</>秒間の爆速モードを獲得し、その間<shuzhi>ノイズ</>の通常攻撃が命中するか、自身が治療を受ける(治療過多を除く)たび、凝華効果を<shuzhi>1</>スタック獲得する。スタック上限<shuzhi>10</>。爆速モード終了から<shuzhi>3</>秒後、変換されていないすべての凝華効果が解除される。クールダウン<shuzhi>30</>秒(クールダウンクリア、リセット、変化の影響を受けない)\r\n\r\n<red>炎・物理</>：<shuzhi>23</>秒間持続する爆速モードを獲得、爆速モードを発動すると、<shuzhi>限定・火花</>をすべて消費して、<shuzhi>1</>スタックごとに基礎炎攻撃力<shuzhi>2200</>(この炎攻撃力はプレイヤーのステータス画面で表示されない。トップリーグでは無効)と、<shuzhi>ノイズ</>限定で最終ダメージが<shuzhi>22%</>UP する。爆速モード発動中は炎追撃効果を獲得し、炎ダメージを与えるとき付近のターゲットに攻撃力×<shuzhi>1520%</>のダメージを与える。<shuzhi>2</>秒間に<shuzhi>1</>回のみ発動。クールダウン<shuzhi>25</>秒(クールダウンクリア、リセット、変化の影響を受けない)。\r\n\r\n<red>雷・氷</>：<shuzhi>18</>秒間持続する爆速モードを獲得。発動中は雷ダメージ+<shuzhi>30%</>。<shuzhi>ノイズ</>がフロントのとき任意の通常攻撃が命中すると、雷鳴効果を<shuzhi>1</>スタック獲得する。スタック上限<shuzhi>18</>。フルスタックに達するとスタックをすべて消費して、付近のターゲットに攻撃力×<shuzhi>6000%</>の追加ダメージを与え(スキルダメージと見なされる)、さらに<shuzhi>10</>秒間持続する最大HP×<shuzhi>30%</>のシールド(スタック不可)を獲得する。雷鳴の追加効果は1回の爆速モード発動中に<shuzhi>5</>回まで発動できる。もし<shuzhi>通常攻撃・スラッシュ・インナロウ</><shuzhi>スキル・オーバーロード</>を<shuzhi>6</>スタック消費したら、付近のターゲットに攻撃力×<shuzhi>11000%</>の追加ダメージを与える(スキルダメージと見なされる)。クールダウン<shuzhi>20</>秒(クールダウンクリア、リセット、変化の影響を受けない)。\r\n\r\n<red>物理・炎</>：<shuzhi>19</>秒間持続する爆速モードを獲得。発動中は毎秒付近のターゲットに攻撃力×<shuzhi>2900%</>のダメージを与え、かつターゲット<shuzhi>1</>体に命中するたびに<shuzhi>10</>秒間持続する最大HP×<shuzhi>5%</>のシールドを獲得する。1回で最大でも自身の最大HP×<shuzhi>10%</>までで、シールド上限が自身のHPの<shuzhi>50%</>は超えない。クールダウン<shuzhi>21</>秒(クールダウンクリア、リセット、変化の影響を受けない)。\r\n\r\n<red>異能</>：<shuzhi>23</>秒間持続する爆速モードを獲得。発動中は自身最大HPが<shuzhi>100%</>増え、<shuzhi>通常攻撃・ウィンドライド</>と<shuzhi>通常攻撃・アズールライド</>1撃命中するごとに自身の最大HP×<shuzhi>1400%</>のダメージを追加で与える(自身の攻撃力の<shuzhi>240</>倍まで。スキルダメージと見なされ、ダメージ UP効果の影響を受けない)。クールダウン<shuzhi>25</>秒(クールダウンクリア、リセット、変化の影響を受けない)",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill01.webp",
+					"id": "GA_FPlayerNoraSkill_Skill01"
+				},
+				{
+					"name": "フラッシュライド",
+					"description": "爆速モード中に発動できる。付近のターゲットを連続で斬りつけ、合計で攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>のダメージを与える。発動後爆速モードが終了する。\r\n\r\n<shuzhi>パッシブ：爆速慣性</>\r\n<shuzhi>ノイズ</>が特定の属性の場合、フラッシュライド発動後に追加で異なる効果を発動する。\r\n\r\n<red>氷・雷</>：<shuzhi>スキル・凝華</>のスタックをすべて消費して、凝凍効果を獲得する。氷ダメージが<shuzhi>スキル・凝華</>のスタック数×<shuzhi>1.4%</>UP する。また、毎秒付近のターゲットに攻撃力×<shuzhi>1400%</>+攻撃力の<shuzhi>240%</>×<shuzhi>スキル・凝華</>のスタック数のダメージを与える(ダメージはパッシブダメージと見なされる)。<shuzhi>30</>秒間持続。\r\n\r\n<red>異能</>：付近のターゲットに自身の最大HP×<shuzhi>50000%</>のダメージを与える(自身の攻撃力の<shuzhi>8000</>倍まで。このダメージはスキルダメージと見なされ、ダメージ UP効果の影響を受けない)",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill02.webp",
+					"id": "GA_FPlayerNoraSkill_Skill02"
+				}
+			],
+			"discharge": [
+				{
+					"name": "スカイスラッシュ",
+					"description": "<red>武器エナジー値がMAX</>の時または<red>幻想タイム</>発動時、他の武器からこの武器に変更すると、<shuzhi>自身のステータス異常を解除</>する。付近のターゲットに攻撃力×<shuzhi>{0}%</>+<shuzhi>{1}</>の範囲ダメージを与える。その間、ダメージ無効が<shuzhi>1.5</>秒間持続する(トップリーグでは無効)。",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ChangeSkill.webp",
+					"id": "GA_FPlayerNoraChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "海岸の風",
+					"description": "彼女の長い髪と体に纏った生絹が海風になびく。彼女自身も波と踊っているかのようだ。",
+					"rarity": 5,
+					"source": "イベントで獲得",
+					"simulacrumId": "imitation_62",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_62"
+				},
+				"weapon": {
+					"name": "波音",
+					"description": "バイクと大剣、波と騒音。",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nora_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"ガチャイベント「海岸の風」で獲得"
+					],
+					"id": "imitation_fashion_62_w"
+				}
+			}
+		],
+		"version": "4.2",
+		"limited": true,
+		"id": "nora_superpower"
 	},
 	"paradox_fire": {
 		"name": "EP-7000スカイファイア",
@@ -14591,7 +15041,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "**Ａ.Ｔ.フィールド**が存在しているとき、攻撃時にターゲットのシールドが持つダメージ軽減効果を一定値無視できる：現在の**Ａ.Ｔ.フィールド**の耐久値**パーセンテージ**×**30%**+**20%**。さらに**剛毅共鳴**の発動中は、自身のシールドブレイク率が UPする：現在の**Ａ.Ｔ.フィールド**の耐久値**パーセンテージ**×**100%**。",
+				"description": "**Ａ.Ｔ.フィールド**が存在しているとき、攻撃時にターゲットのシールドが持つダメージ軽減効果を一定値無視できる(トップリーグでは無効)：現在の**Ａ.Ｔ.フィールド**の耐久値**パーセンテージ**×**30%**+**20%**。さらに**剛毅共鳴**の発動中は、自身のシールドブレイク率が UPする：現在の**Ａ.Ｔ.フィールド**の耐久値**パーセンテージ**×**100%**(トップリーグでは無効)。",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16937,7 +17387,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"イベント「暖冬萌曲」で獲得"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_32_w"
 				}

@@ -5038,7 +5038,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Obtido no evento Serenata Inverno Aquecido"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_10_w"
 				}
@@ -7630,6 +7630,456 @@
 		"limited": true,
 		"id": "nanyin_superpower"
 	},
+	"nora_superpower": {
+		"name": "Estrondo",
+		"description": "Uma moto e um montante. Que combinação peculiar! Mas como ela nunca foi boa em se lembrar de nomes, acabou decidindo chamar ambos de Estrondo.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_nuola.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_nuola.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/nuola2.webp"
+		},
+		"rarity": 5,
+		"element": "Superpower",
+		"type": "Nora",
+		"weaponUpgradeId": "superpower_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Nora_superpower_ssr_star",
+		"avatar": "imitation_62",
+		"stats": [
+			{
+				"stat": {
+					"name": "Ataque",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "Vida",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crítico",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Oscilação**",
+				"description": "Com **três** armas alteradas equipadas, aumenta o dano de todos os elementos em **256%**. O efeito deste conjunto funciona no espaço secundário."
+			},
+			{
+				"title": "**Motor elemental**",
+				"description": "É possível mudar o tipo elemental de **Estrondo** ativamente (fora de combate). Acesse Habilidades - Configurações para mudar o elemento."
+			},
+			{
+				"title": "**Energia explosiva: Em campo**",
+				"description": "Acertar um golpe de ataque normal com **Estrondo** causa dano equivalente a **3.6%** do ATQ alterado + **133%** da vida máxima do Errante + **4.9%** da soma de todos os tipos de resistência do Errante + **130%** do crítico aos alvos próximos. Esse efeito pode ser acionado até 1 vez a cada **1,5** segundo. O dano de energia explosiva conta como dano de ataque normal. Se houver **1** arma elétrica/gélida/física/ígnea de qualquer tipo equipada, o dano de energia explosiva é multiplicado por **NaN**. Além disso, o dano de energia explosiva não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
+			}
+		],
+		"elementEffects": {
+			"title": "**Dano alterado**",
+			"description": "Com carga completa, o ataque seguinte da arma marca o alvo, provocando uma explosão após **5** segundos. Além disso, causa dano equivalente a **25%** de todo o dano sofrido pelo alvo durante a marca, limitado a **560%** do ATQ do usuário. Pode haver apenas uma marca por vez em cada alvo."
+		},
+		"attributes": [
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "O multiplicador de dano de **supersônico** aumenta para **20%** do ATQ.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Aumenta o crescimento do ATQ mínimo da arma atual em **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Ignora **15%** de todas as resistências do alvo. (A resistência total ignorada para cada elemento não pode exceder 50%.) Ao sofrer dano letal, bloqueia dano letal 1 vez e torna-se imune a dano por um curto período de tempo. O efeito se aciona apenas 1 vez a cada **60** segundos. O efeito funciona no espaço secundário.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Aumenta o crescimento do ATQ mínimo da arma atual em **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Após usar **Energia Violenta**, recupera **6%** da vida máxima por segundo durante **10** segundos (não afetado por efeitos de reforço de cura). O efeito de recuperação de vida termina junto com o modo superveloz. O efeito funciona no espaço secundário.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Aumenta o dano final em **30%**. O efeito funciona no espaço secundário.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Integrante do Vendaval",
+					"description": "No chão, use o botão de ataque normal para desferir 5 ataques consecutivos.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> e repele o alvo.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> e repele o alvo.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</> e repele o alvo.\r\nQuarto ataque: Causa dano de até <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</> e repele o alvo.\r\nQuinto ataque: Causa dano de <shuzhi>{8}%</> do ATQ + <shuzhi>{9}</> e lança o alvo no ar.\r\n\r\nNo <shuzhi>modo superveloz</>, durante o quinto ataque, segure o botão de ataque normal para conectá-lo com o primeiro ataque.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Melee.webp",
+					"id": "GA_FPlayerNoraMelee_Melee"
+				},
+				{
+					"name": "Viagem nas Nuvens",
+					"description": "No ar, use o botão de ataque normal para atacar 5 vezes seguidas no ar e consumir vigor.\r\nPrimeiro ataque: Causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> e lança o alvo no ar.\r\nSegundo ataque: Causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> e repele o alvo.\r\nTerceiro ataque: Causa dano de <shuzhi>{4}%</> do ATQ + <shuzhi>{5}</> e repele o alvo.\r\nQuarto ataque: Causa dano de até <shuzhi>{6}%</> do ATQ + <shuzhi>{7}</> e repele o alvo.\r\nQuinto ataque: Causa dano de <shuzhi>{8}%</> do ATQ + <shuzhi>{9}</> e repele o alvo.\r\nCorte silencioso: Atingir um inimigo com o segundo ou terceiro ataque aciona o efeito de corte, que prolonga a duração do ataque e aumenta o dano.\r\nAtingir um inimigo com o segundo ataque causa dano de <shuzhi>{10}%</> do ATQ + <shuzhi>{11}</> e o repele.\r\nAtingir um inimigo com o terceiro ataque causa dano de <shuzhi>{12}%</> do ATQ + <shuzhi>{13}</> e repele o alvo.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_AirAttack.webp",
+					"id": "GA_FPlayerNoraMelee_AirAttack"
+				},
+				{
+					"name": "Cortes Gêmeos",
+					"description": "No modo superveloz, ao usar o ataque normal no chão, segure o botão de ataque normal do primeiro ao segundo ataque normal para acionar <shuzhi>Cortes Gêmeos</>.\r\nCausa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e os repele.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch1.webp",
+					"id": "GA_FPlayerNoraMelee_Branch1"
+				},
+				{
+					"name": "Cortes Vinculados",
+					"description": "No <shuzhi>modo superveloz</>, continue segurando o botão de ataque normal ao acionar <shuzhi>Cortes Gêmeos</> para acionar Cortes Vinculados.\r\nCausa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Ao mesmo tempo, gasta todos os acúmulos de <shuzhi>sobrecarga</>, e para cada <shuzhi>1</> acúmulo gasto também causa dano de <shuzhi>50%</> do ATQ. Com <shuzhi>6</> acúmulos de <shuzhi>sobrecarga</>, aciona <shuzhi>carga extrema</> e causa dano de <shuzhi>300%</> do ATQ.",
+					"operations": [
+						"Attack",
+						"Hold Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch2.webp",
+					"id": "GA_FPlayerNoraMelee_Branch2"
+				},
+				{
+					"name": "Cavaleiro dos Vórtices",
+					"description": "No chão, segure o botão de ataque normal do terceiro ao quarto ataque normal para acionar Cavaleiro dos Vórtices.\r\nCausa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch3.webp",
+					"id": "GA_FPlayerNoraMelee_Branch3"
+				},
+				{
+					"name": "Cavaleiro das Cachoeiras",
+					"description": "No ar, ao usar Viagem nas Nuvens, segure o botão de ataque normal (ou use quando houver um alvo) para acionar Cavaleiro das Cachoeiras.\r\nDespenca do ar. No caminho até a aterrissagem, cada golpe causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>. Ao aterrissar, causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> aos alvos próximos.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack"
+				},
+				{
+					"name": "Cavaleiro Errante",
+					"description": "Segure o botão de ataque normal enquanto estiver no ar, ou use um ataque normal ao escalar, pular para trás ou usar a Mochila a Jato para acionar Cavaleiro Errante.\r\nDespenca do ar. No caminho até a aterrissagem, cada golpe causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>. Ao aterrissar, causa dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> aos alvos próximos.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack_Special.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack_Special"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Corte Ágil",
+					"description": "Use o botão de ataque normal dentro do tempo de esquiva perfeita (use um botão direcional antes de se esquivar) para acionar um ataque pré-esquiva. Causa dano de até <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ForwardAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Corte Subsônico",
+					"description": "Use o botão de ataque normal logo após se esquivar para acionar um ataque pós-esquiva. Causa dano de até <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos à frente.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_BackAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_BackAttack"
+				},
+				{
+					"name": "Cavaleiro Celeste Sônico",
+					"description": "Esquive-se antes de segurar para entrar em Cavaleiro Celeste Sônico, durante o qual a velocidade aumenta e gasta-se vigor constantemente para atacar em frente. Cada vez que você acerta um golpe, causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos.\r\nDurante Cavaleiro Celeste Sônico, salte e aterrisse para gastar vigor e receber um reforço de velocidade temporário. No Mundo Geral, após <shuzhi>10</> segundos de duração de Cavaleiro Celeste Sônico, o dano causado por essa habilidade pode executar inimigos que não sejam chefes (indisponível na Liga do Apogeu).",
+					"operations": [
+						"Movement"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_EvadeOn.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_EvadeOn"
+				}
+			],
+			"skill": [
+				{
+					"name": "Energia Explosiva",
+					"description": "Ativa o modo superveloz para você receber invencibilidade temporária e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos e inflige <shuzhi>65%</> de atraso aos alvos durante <shuzhi>3</> segundos (ineficaz contra chefes ao estar em equipe).\r\nNo modo superveloz, recebe corpo de aço e cada ataque de <shuzhi>Integrante do Vendaval</> e <shuzhi>Viagem nas Nuvens</> tem supersônico, também causando dano de <shuzhi>{2}%</> do ATQ + <shuzhi>{3}</> (conta como dano passivo). Ao mesmo tempo, cada ataque acertado confere <shuzhi>1</> acúmulo de sobrecarga, limitado a <shuzhi>6</> acúmulos (até <shuzhi>1</> acúmulo a cada <shuzhi>0,65</> segundo).\r\nApós <shuzhi>5</> segundos no modo superveloz, recebe a habilidade <shuzhi>Cavaleiro da Luz</> (pode ser usada durante o modo superveloz). Trocar de arma nesse período impede que você use <shuzhi>Cavaleiro da Luz</>.\r\n\r\n<shuzhi>Passiva: Reforma de supervelocidade</>\r\n<shuzhi>Estrondo</> tem cinco tipos elementais. Ative <shuzhi>um</> deles na página Habilidades - Configurações. Não é possível trocar de tipo durante o combate.\r\nCada tipo elemental de <shuzhi>Estrondo</> tem uma determinada <shuzhi>característica de arma</> ao usar Energia Violenta para golpear um alvo.\r\n\r\n<red>Gélido-elétrica</>: Recebe modo superveloz durante <shuzhi>28</> segundos. Nesse período, a cada golpe acertado com o ataque normal de <shuzhi>Estrondo</> ou a cada vez que você recebe cura não excessiva, recebe 1 acúmulo de <shuzhi>convergência térmica</>. Acumula até <shuzhi>10</> vezes. <shuzhi>3</> segundos após o fim do modo superveloz, toda a convergência térmica que não tenha sido transformada é removida. Tempo de recarga: <shuzhi>30</> seg. Efeitos que zeram, atualizam ou mudam o tempo de recarga não afetam isso.\r\n\r\n<red>Ígneo-física</>: Ativa o modo superveloz durante <shuzhi>23 segundos. Ao entrar no modo superveloz, gasta todas as <shuzhi>centelhas</>. A cada acúmulo gasto, recebe <shuzhi>2.200</> de ATQ ígneo mínimo (esse ATQ ígneo não se reflete nos seus atributos e está indisponível na Liga do Apogeu) e aumenta o dano final de <shuzhi>Estrondo</> em <shuzhi>22%</>. No modo superveloz, recebe perseguição flamejante. Ao causar dano ígneo, causa dano de <shuzhi>1.520%</> do ATQ aos alvos próximos; aciona-se até <shuzhi>uma</> vez a cada <shuzhi>2</> segundos. Tempo de recarga: <shuzhi>25</> seg. Efeitos que zeram ou reduzem o tempo de recarga não afetam isso.\r\n\r\n<red>Elétrico-gélida</>: Recebe modo superveloz durante <shuzhi>18</> segundos. No modo superveloz, aumenta o dano elétrico em <shuzhi>30%</>. Ao acertar um golpe de ataque normal com <shuzhi>Estrondo</> no espaço principal, recebe <shuzhi>1</> acúmulo de <shuzhi>lança relampejante</>, limitado a <shuzhi>18</> acúmulos. Com o limite de acúmulos, gasta todos eles e causa dano adicional equivalente a <shuzhi>6.000%</> do ATQ aos alvos próximos (conta como dano de habilidade). Ao mesmo tempo, recebe um escudo equivalente a <shuzhi>30%</> da vida máxima durante <shuzhi>10</> segundos (esse efeito não se acumula). O efeito adicional de lança relampejante pode se acionar até <shuzhi>cinco</> vezes a cada vez que você entra no modo superveloz. Quando <shuzhi>Cortes Vinculados</> gasta <shuzhi>6</> acúmulos de <shuzhi>sobrecarga</>, também causa dano de <shuzhi>11.000%</> do ATQ aos alvos próximos. Esse dano conta como dano de habilidade. Tempo de recarga: <shuzhi>20</> seg. Efeitos que zeram ou reduzem o tempo de recarga não afetam isso.\r\n\r\n<red>Físico-ígnea</>: Recebe modo superveloz durante <shuzhi>19</> segundos. No modo superveloz, causa dano de <shuzhi>2.900%</> do ATQ físico por segundo aos alvos próximos. Cada vez que um alvo sofre esse dano, você recebe um escudo equivalente a <shuzhi>5%</> da vida máxima durante <shuzhi>10</> segundos, limitado a <shuzhi>10%</> por vez. O valor máximo do escudo não excede <shuzhi>50%</> da sua vida. Tempo de recarga: <shuzhi>21</> seg. Efeitos que zeram ou reduzem o tempo de recarga não afetam isso.\r\n\r\n<red>Alterada</>: Recebe modo superveloz durante <shuzhi>23</> segundos. No modo superveloz, aumenta a vida máxima em <shuzhi>100%</>. Além disso, cada ataque acertado de <shuzhi>Integrante do Vendaval</> e <shuzhi>Viagem nas Nuvens</> também causa dano equivalente a <shuzhi>1.400%</> da vida máxima, limitado a <shuzhi>240</> vezes o seu ATQ. Esse dano conta como dano de habilidade e não é afetado por efeitos de reforço de dano. Tempo de recarga: <shuzhi>25</> seg. Efeitos que zeram ou reduzem o tempo de recarga não afetam isso.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill01.webp",
+					"id": "GA_FPlayerNoraSkill_Skill01"
+				},
+				{
+					"name": "Cavaleiro da Luz",
+					"description": "Pode ser acionado durante o modo superveloz para desferir cortes vinculados multifásicos contra os alvos próximos e causar dano total de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</>. O modo superveloz termina após usar essa habilidade.\r\n\r\n<shuzhi>Passiva: Inércia superveloz</>\r\nUse <shuzhi>Cavaleiro da Luz</> para receber um efeito adicional correspondente ao elemento de <shuzhi>Estrondo</>.\r\n\r\n<red>Gélido-elétrica</>: Gasta todos os acúmulos de <shuzhi>convergência térmica</> e recebe congelamento total, que aumenta o reforço de dano gélido em <shuzhi>1,4%</> da quantidade de acúmulos de <shuzhi>convergência térmica</>. Além disso, causa dano gélido equivalente a <shuzhi>1.400%</> do ATQ + a quantidade de acúmulos de <shuzhi>convergência térmica</> × <shuzhi>240%</> do ATQ aos alvos próximos. Esse dano conta como dano passivo e dura <shuzhi>30</> segundos.\r\n\r\n<red>Alterada</>: Causa dano equivalente a <shuzhi>50.000%</> da sua vida máxima aos alvos próximos. Esse dano não excede <shuzhi>8.000</> vezes o seu ATQ, conta como dano de habilidade e não é afetado por efeitos de reforço de dano.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill02.webp",
+					"id": "GA_FPlayerNoraSkill_Skill02"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Corte Celestial",
+					"description": "Quando a <red>carga da arma estiver completa</> ou <red>Phantasia</> for desencadeada, trocar para esta arma <shuzhi>remove todos os efeitos negativos de você</> e causa dano de <shuzhi>{0}%</> do ATQ + <shuzhi>{1}</> aos alvos próximos. Nesse período, recebe imunidade a dano durante <shuzhi>1,5</> segundo (indisponível na Liga do Apogeu).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ChangeSkill.webp",
+					"id": "GA_FPlayerNoraChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Costa Adventos",
+					"description": "Os cabelos dela balançam graciosamente na brisa do oceano, enquanto seu véu flutuante dança ao vento. Ela parece estar em sincronia com as ondas.",
+					"rarity": 5,
+					"source": "Em eventos",
+					"simulacrumId": "imitation_62",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_62"
+				},
+				"weapon": {
+					"name": "Músicas para Surfar",
+					"description": "Uma motocicleta, uma grande marca de espada marcam o som das ondas furiosas.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nora_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Obtido no evento Gachapon Costa Adventos"
+					],
+					"id": "imitation_fashion_62_w"
+				}
+			}
+		],
+		"version": "4.2",
+		"limited": true,
+		"id": "nora_superpower"
+	},
 	"paradox_fire": {
 		"name": "EP-7000 Firmachama",
 		"description": "Produzida pelo primeiro escritório de fabricação da Arca de Defesa do QG da Hykros, esta arma especial foi feita sob medida para a autorizadora em serviço, Plotti, a fim de atender às suas necessidades de combate. Até mesmo o exigente Poppa ficou muito satisfeito.",
@@ -7686,7 +8136,7 @@
 		],
 		"effects": [
 			{
-				"title": "**Fusão de massa e chama**",
+				"title": "**Fusão de chama e massa**",
 				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ físico/ígneo mínimo equipado, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea."
 			},
 			{
@@ -13277,24 +13727,24 @@
 		],
 		"effects": [
 			{
-				"title": "**Fusão elétrica-gélida**",
-				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ mínimo elétrico/gélido equipado, a maior porcentagem de ATQ elétrico/gélido equipada, o maior reforço de dano elétrico/gélido equipado, e a arma é considerada uma arma elétrica e gélida."
+				"title": "**Fusão de Raio e Gelo**",
+				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ base de raio/gelo equipado, a maior porcentagem de ATQ de raio/gelo equipado, e o maior reforço de dano de raio/gelo equipado, e a arma é considerada tanto uma arma de raio quanto de gelo."
 			},
 			{
-				"title": "**Ressonância elétrica**",
-				"description": "Aumenta o ATQ elétrico em **15%** e a resistência elétrica em **25%**. Ativa-se ao equipar **2** ou mais armas elétricas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com efeitos do mesmo tipo."
+				"title": "**Ressonância Elétrica**",
+				"description": "Aumenta o ATQ elétrico em **15%** e a resistência elétrica em **25%**. Ativa-se ao equipar **2** ou mais armas de raio. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com efeitos do mesmo tipo."
 			},
 			{
 				"title": "**Ressonância gélida**",
 				"description": "Aumenta o ATQ gélido em **15%** e a resistência gélida em **25%**. Ativa-se ao equipar **2** ou mais armas gélidas. O efeito deste conjunto funciona no espaço secundário. Não é possível acumular com efeitos do mesmo tipo."
 			},
 			{
-				"title": "**Relâmpago: Corte ligeiro**",
-				"description": "Com **Metz ☆ Pactalha** equipada, as habilidades de descarga da arma causam dano inicial equivalente a **46.87%** do ATQ elétrico + **0.62%** da vida máxima do Errante + **23.43%** da soma de todos os tipos de resistência do Errante + **85.93%** do crítico aos alvos próximos. A cada **0,5** segundo no estado de combate, o dano do próximo corte ligeiro aumenta em **1** vez, limitado a **30** vezes. Quando há o dano de vários cortes ligeiros juntos, o cálculo é feito sobre o valor inicial mais alto. O dano de corte ligeiro conta como dano de habilidade de descarga. Se houver **1** arma ígnea ou física de qualquer tipo equipada, o dano de Relâmpago aumenta **1,3** vez. Além disso, o dano de Relâmpago não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
+				"title": "**Relâmpago: Corte Ligeiro**",
+				"description": "Quando equipado com **Metz ☆ Pactalha**, habilidades de descarga de arma causam dano inicial igual a **46.87%** do ATQ elétrico mais **0.62%** da Vida máxima do Errante mais **23.43%** da soma de todos os tipos de resistência do Errante mais **85.93%** de crítico para alvos próximos. Enquanto estiver em estado de combate, a cada **0,5** segundos, o dano do próximo Corte Ligeiro será aumentado em **1** vez adicional, até um máximo de **30** vezes. Quando existem múltiplos danos de Corte Ligeiro, o valor inicial mais alto é usado para o cálculo. O dano do Corte Ligeiro conta como dano de descarga. Se qualquer arma de fogo ou física estiver equipada, o dano do Relâmpago é multiplicado por **1.3**. Além disso, o dano do Relâmpago não é afetado por nenhum efeito de reforço de dano, com a exceção dos atributos raros de equipamentos Titânicos, e não aciona nenhum efeito de ataque adicional."
 			},
 			{
-				"title": "**Virada milagrosa**",
-				"description": "Ao jogar Fantasma do Passado e Fantasma Sequencial com **Metz ☆ Pactalha** equipada, recebe **15** segundos adicionais no desafio. Ao jogar **Origem da Guerra**, para cada **Metz ☆ Pactalha** equipada na equipe, recebe **25** segundos adicionais no desafio, limitado a **50** segundos."
+				"title": "**Virada Milagrosa**",
+				"description": "Ao desafiar o Fantasma do Passado e o Fantasma Sequencial com **Metz ☆ Pactalha** equipado, ganhe **15** segundos adicionais para a duração do desafio. Ao desafiar a **Origem da Guerra**, para cada **1** **Metz ☆ Pactalha** equipado pela equipe, a equipe ganha **25** segundos adicionais para a duração do desafio, até **50** segundos."
 			}
 		],
 		"elementEffects": {
@@ -13693,7 +14143,7 @@
 		],
 		"effects": [
 			{
-				"title": "**Fusão de massa e chama**",
+				"title": "**Fusão de chama e massa**",
 				"description": "Quando a arma causa dano, o dano é calculado usando o maior ATQ físico/ígneo mínimo equipado, a maior porcentagem de ATQ físico/ígneo equipada e o maior reforço de dano físico/ígneo equipado, e a arma é considerada uma arma física e ígnea."
 			},
 			{
@@ -14591,7 +15041,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "Com um **campo A.T.** ativo, os ataques podem ignorar uma certa porcentagem da redução de dano do escudo de um alvo. Essa porcentagem equivale a **30%** da **porcentagem da durabilidade** do **campo A.T.** atual + **20%**. Com **ressonância de coragem** ativa, aumenta o seu despedaçar em uma razão equivalente a **100%** da **porcentagem da durabilidade** do **campo A.T.**",
+				"description": "Com um **campo A.T.** ativo, os ataques podem ignorar uma certa porcentagem da redução de dano do escudo de um alvo. Essa porcentagem equivale a **30%** da **porcentagem da durabilidade** do **campo A.T.** atual + **20%** (indisponível na Liga do Apogeu). Com **ressonância de coragem** ativa, aumenta o seu despedaçar em uma razão equivalente a **100%** da **porcentagem da durabilidade** do **campo A.T.** (indisponível na Liga do Apogeu).",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16937,7 +17387,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Obtido no evento Serenata Inverno Aquecido"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_32_w"
 				}

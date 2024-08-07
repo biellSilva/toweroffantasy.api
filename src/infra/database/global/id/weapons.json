@@ -5038,7 +5038,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Diperoleh dari event Alunan Kehangatan Musim Dingin"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_10_w"
 				}
@@ -7629,6 +7629,456 @@
 		"version": "3.4",
 		"limited": true,
 		"id": "nanyin_superpower"
+	},
+	"nora_superpower": {
+		"name": "Rumble",
+		"description": "Sebuah motor dan pedang besar. Sungguh kombinasi yang aneh! Tapi karena dia tidak pernah pandai mengingat nama, akhirnya dia memutuskan untuk memanggil keduanya Rumble.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_nuola.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_nuola.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/nuola2.webp"
+		},
+		"rarity": 5,
+		"element": "Superpower",
+		"type": "Nora",
+		"weaponUpgradeId": "superpower_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Nora_superpower_ssr_star",
+		"avatar": "imitation_62",
+		"stats": [
+			{
+				"stat": {
+					"name": "Attack",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "HP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Crit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Shifting**",
+				"description": "Saat memasang **3** senjata Altered, Semua DMG Elemental meningkat **256%**. Efek set ini berfungsi pada slot sampingan."
+			},
+			{
+				"title": "**Elemental Engine**",
+				"description": "Jenis elemen **Rumble** bisa diganti (selagi dalam keadaan non-tempur). Buka halaman Skill > Pengaturan untuk mengganti elemen."
+			},
+			{
+				"title": "**Explosive Energy: On-Field**",
+				"description": "Saat menghantam lawan dengan Serangan Biasa **Rumble**, ia akan menimpakan damage kepada target di sekitar sebesar **3.6%** Altered ATK plus **133%** Max HP Wanderer plus **4.9%** dari jumlah seluruh tipe Resistance Wanderer plus **130%** Crit. Efek ini dapat terpicu maks 1 kali setiap **1,5** detik. DMG Explosive Energy dianggap sebagai DMG Serangan Biasa. Jika ada **1** Senjata Frost/Volt/Physical/Flame jenis apa pun yang terpasang, DMG Explosive Energy akan dikalikan **NaN**. Sebagai tambahan, DMG Explosive Energy tidak terpengaruh oleh peningkatan DMG, kecuali untuk Stat Langka dari Equipment Titan, dan tidak akan memicu efek serangan tambahan."
+			}
+		],
+		"elementEffects": {
+			"title": "**Altered DMG**",
+			"description": "Saat senjata terisi penuh, serangan berikutnya akan menandai target, mengakibatkan ledakan setelah **5** detik. Selain itu, menimpakan DMG sebesar **25%** dari semua DMG yang diterima target selama tanda itu aktif, maks **560%** ATK Wanderer. Hanya 1 tanda yang bisa aktif pada target dalam satu waktu."
+		},
+		"attributes": [
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "Pengganda damage **Supersound** meningkat **20%** dari ATK.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Mengabaikan **15%** Semua Resistance target (resistansi total setiap elemen yang diabaikan tidak boleh melebihi 50%). Jika menerima Damage Mematikan, memblokir Damage Mematikan 1 kali kemudian menjadi kebal terhadap DMG selama beberapa saat. Efek ini hanya bisa dipicu 1 kali tiap **60** detik. Efek ini berfungsi di slot sampingan.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Setelah menggunakan **Violent Energy**, memulihkan **6%** Max HP tiap detik selama **10** detik (tidak terpengaruh efek Boost Penyembuhan). Setelah Superspeed Mode berakhir, efek pemulihan HP ini akan menghilang. Efek ini berfungsi di slot sampingan.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Final DMG meningkat **30%**. Efek ini berfungsi di slot sampingan.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Penunggang Angin",
+					"description": "Saat di darat, gunakan Serangan Biasa untuk melakukan 5 serangan beruntun.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan memukul mundur target.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan memukul mundur target. \r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan memukul mundur target.\r\nSerangan Keempat: Menimpakan DMG sebesar hingga <shuzhi>{6}%</> dari ATK plus <shuzhi>{7}</> dan memukul mundur target.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus <shuzhi>{9}</> dan membuat target terpental ke atas.\r\nSelama <shuzhi>Superspeed Mode</>, sat Serangan Kelima, tekan dan tahan Serangan Biasa untuk menyambungkannya dengan Serangan Pertama.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Melee.webp",
+					"id": "GA_FPlayerNoraMelee_Melee"
+				},
+				{
+					"name": "Cloud Riding",
+					"description": "Saat di udara, gunakan Serangan Biasa untuk menyerang 5 kali berturut-turut sambil mengonsumsi Stamina.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan membuat target terpental ke atas.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan memukul mundur target.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan memukul mundur target.\r\nSerangan Keempat: Menimpakan DMG sebesar hingga <shuzhi>{6}%</> dari ATK plus <shuzhi>{7}</> dan memukul mundur target.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus<shuzhi>{9}</> dan memukul mundur target.\r\n<shuzhi>Silent Slash</>: Saat musuh-musuh terkena Serangan Kedua dan Ketiga, Cut Effect terpicu, sehingga durasi serangan diperpanjang dan damage yang ditimpakan meningkat.\r\nSaat musuh terkena Serangan Kedua, menimpakan damage sebesar <shuzhi>{10}%</> ATK plus <shuzhi>{11}</> dan memukul mundur target.\r\nSaat musuh terkena Serangan Ketiga, menimpakan damage sebesar <shuzhi>{12}%</> ATK plus <shuzhi>{13}</> dan memukul mundur target.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_AirAttack.webp",
+					"id": "GA_FPlayerNoraMelee_AirAttack"
+				},
+				{
+					"name": "Twin Slashes",
+					"description": "Selama Superspeed Mode, saat melakukan Serangan Biasa di darat, tekan dan tahan Serangan Biasa ketika menggunakan Serangan Biasa pertama sampai kedua untuk mengaktifkan <shuzhi>Twin Slashes</>.\r\nMenimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan memukul mundur target di sekitar.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch1.webp",
+					"id": "GA_FPlayerNoraMelee_Branch1"
+				},
+				{
+					"name": "Linked Slashes",
+					"description": "Selama <shuzhi>Superspeed Mode</>, saat <shuzhi>Twin Slashes</> terpicu, terus tekan dan tahan serangan biasa untuk memicu Linked Slashes.\r\nMenimpakan damage kepada target di sekitar sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Mengonsumsi semua tumpukan <shuzhi>Overload</> sekaligus dan tiap <shuzhi>1</> tumpukan yang dikonsumsi akan menimpakan damage tambahan sebesar <shuzhi>50%</> ATK. Jika <shuzhi>Overload</> ada <shuzhi>6</> tumpukan, yang terpicu adalah <shuzhi>Extreme Charge</> dan menimpakan damage sebesar <shuzhi>300%</> ATK.",
+					"operations": [
+						"Attack",
+						"Hold Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch2.webp",
+					"id": "GA_FPlayerNoraMelee_Branch2"
+				},
+				{
+					"name": "Whirlpool Rider",
+					"description": "Saat melakukan Serangan Biasa di darat, tekan dan tahan Serangan Biasa ketika menggunakan Serangan Biasa pertama sampai keempat untuk mengaktifkan Whirlpool Rider.\r\nMenimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch3.webp",
+					"id": "GA_FPlayerNoraMelee_Branch3"
+				},
+				{
+					"name": "Waterfall Rider",
+					"description": "Selama di udara, saat menggunakan Cloud Riding, tekan dan tahan Serangan Biasa (atau tekan saat target terpilih) untuk memicu serangan menukik, Waterfall Rider.\r\nMenukik ke bawah. Saat mendarat, tiap musuh yang terkena akan menerima DMG sebesar <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</>. Setelah mendarat, menimpakan DMG sebesar <shuzhi>{2}%</> dari ATK plus <shuzhi>{3}</> kepada target di sekitar.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack"
+				},
+				{
+					"name": "Traveling Rider",
+					"description": "Tekan dan tahan Serangan Biasa saat di udara, atau gunakan Serangan Biasa saat memanjat, melompat ke belakang, atau menggunakan Jetpack untuk mengaktifkan serangan menukik, Traveling Rider.\r\nMenukik ke bawah. Saat mendarat, tiap musuh yang terkena akan menerima DMG sebesar <shuzhi>{0}%</> dari ATK plus <shuzhi>{1}</>. Setelah mendarat, menimpakan DMG sebesar <shuzhi>{2}%</> dari ATK plus <shuzhi>{3}</> kepada target di sekitar.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack_Special.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack_Special"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Swift Slash",
+					"description": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah Menghindar Sempurna (tekan tombol arah sebelum menghindar) untuk memicu serangan sebelum menghindar yang menimpakan DMG hingga <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di depan.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ForwardAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Subsonic Slash",
+					"description": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah menghindar untuk memicu serangan setelah menghindar, menimpakan DMG sebesar hingga <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di depan.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_BackAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_BackAttack"
+				},
+				{
+					"name": "Sonic Skyrider",
+					"description": "Masuki mode Sonic Skyrider dengan cara menghindar sebelum menahan. Dalam mode ini, kecepatan meningkat dan stamina terus terkuras untuk menyerang ke arah depan. Tiap kali Wanderer menyerang, menimpakan damage kepada target di sekitar sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>.\r\nSelama Sonic Skyrider, dapatkan Speed Boost temporer dengan melompat kemudian mendarat. Di Overworld, setelah memasuki mode Sonic Skyrider selama <shuzhi>10</> detik, damage yang ditimpakan Sonic Skyrider bisa meng-Execute musuh non-boss (tidak tersedia di Apex League).",
+					"operations": [
+						"Movement"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_EvadeOn.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_EvadeOn"
+				}
+			],
+			"skill": [
+				{
+					"name": "Explosive Energy",
+					"description": "Masuki Superspeed Mode agar Wanderer menjadi kebal untuk sementara dan menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar, dan menerapkan <shuzhi>3</>detik delay sebesar <shuzhi>65%</> pada target (tidak efektif saat menghadapi bos dalam permainan tim).\r\nSelama Superspeed Mode, mendapatkan status hyperbody sekaligus Supersound untuk tiap serangan <shuzhi>Penunggang Angin</> dan <shuzhi>Cloud Riding</>. Selain itu, menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> (dianggap sebagai DMG Pasif). Sekaligus, tiap serangan yang mengenai target memberikan <shuzhi>1</> tumpukan Overload, maks <shuzhi>6</> tumpukan (maks <shuzhi>1</> tumpukan tiap <shuzhi>0,65</> detik).\r\nSetelah memasuki Superspeed Mode selama <shuzhi>5</> detik, mendapatkan skill baru <shuzhi>Flash Rider</> (bisa digunakan hanya selama Superspeed Mode). Beralih senjata selama periode ini akan membuat Wanderer tidak bisa menggunakan <shuzhi>Flash Rider</>.\r\n\r\n<shuzhi>Passive: Superspeed Reform</>\r\n<shuzhi>Rumble</> memiliki 5 jenis elemen. Kamu bisa mengaktifkan maks <shuzhi>1</> jenis lewat halaman Skill - Pengaturan. Jenis elemen tidak bisa diubah di tengah pertempuran.\r\nBerdasarkan jenis elemen <shuzhi>Rumble</>, serangan Violent Energy pada target akan membawa <shuzhi>trait senjata</> yang berbeda-beda serta menimbulkan efek yang berbeda pula.\r\n\r\n<red>Frost-Volt</>: Mendapatkan <shuzhi>28</> detik Superspeed Mode. Selama durasi tersebut, tiap kali menyerang dengan serangan biasa <shuzhi>Rumble</> atau Wanderer menerima Healing tidak berlebih, mendapatkan 1 tumpukan <shuzhi>Thermal Convergence</>, maks <shuzhi>10</> tumpukan. Setelah Superspeed Mode berakhir selama <shuzhi>3</> detik, semua Thermal Convergence yang belum diubah akan dihapus. Cooldown: <shuzhi>30</> detik (efek ini tidak terpengaruh oleh efek lain yang menghapus, mereset, atau mengubah CD).\r\n\r\n<red>Flame-Physical</>: Menerima <shuzhi>23/> detik Superspeed Mode. Saat memasuki Superspeed Mode, mengonsumsi semua tumpukan <shuzhi>Spark</>. Tiap tumpukan yang dikonsumsi akan menimpakan <shuzhi>2.200</> Flame ATK dasar (Flame ATK ini tidak akan terlihat di statistik Wanderer dan tidak tersedia di Apex League) dan Final DMG <shuzhi>Rumble</> meningkat <shuzhi>22%</>. Selama Superspeed Mode, mendapat Flame Pursuit. Saat menimpakan Flame DMG, menimpakan damage sebesar <shuzhi>1.520%</> ATK ke target di sekitar, terpicu maks <shuzhi>1</> kali tiap <shuzhi>2</> detik. Cooldown: <shuzhi>25</> detik (tidak terpengaruh efek reset atau pengurangan cooldown).\r\n\r\n<red>Volt-Frost</>: Menerima <shuzhi>18</> detik Superspeed Mode. Selama Superspeed Mode, Volt DMG meningkat <shuzhi>30%</>. Saat melancarkan serangan biasa saat memasang <shuzhi>Rumble</> di slot utama, menerima <shuzhi>1</> tumpukan <shuzhi>Thunderclap</>, maks <shuzhi>18</> tumpukan. Saat tumpukan sudah maksimal, semua tumpukan dikonsumsi untuk menimpakan damage tambahan sebesar <shuzhi>6.000%</> ATK kepada musuh di sekitar (dianggap sebagai DMG Skill). Selain itu, menerima Shield berdurasi <shuzhi>10</> detik senilai <shuzhi>30%</> Max HP (efek ini tidak dapat ditumpuk). Efek tambahan Thunderclap dapat dipicu maks <shuzhi>5</> kali tiap Wanderer memasuki Superspeed Mode. Jika <shuzhi>Linked Slashes</> mengonsumsi <shuzhi>6</> tumpukan <shuzhi>Overload</>, menimpakan damage tambahan sebesar <shuzhi>11.000%</> ATK kepada target di sekitar. Damage ini dianggap sebagai DMG Skill. Cooldown: <shuzhi>20</> detik (tidak terpengaruh efek reset atau pengurangan cooldown).\r\n\r\n<red>Physical-Flame</>: Menerima <shuzhi>19</> detik Superspeed Mode. Selama Superspeed Mode, menimpakan damage <shuzhi>2.900%</> Physical ATK kepada target di sekitar tiap detik. Tiap kali damage ini mengenai target, Wanderer mendapatkan Shield berdurasi <shuzhi>10</> detik senilai <shuzhi>5%</> Max HP, maks <shuzhi>10%</> ditambahkan dalam satu waktu. Nilai maks Shield ini adalah <shuzhi>50%</> dari HP Wanderer. Cooldown: <shuzhi>21</> detik (tidak terpengaruh efek reset atau pengurangan cooldown).\r\n\r\n<red>Altered</>: Menerima <shuzhi>23</> detik Superspeed Mode. Selama Superspeed Mode, Max HP meningkat <shuzhi>100%</>. Selain itu, tiap serangan dari <shuzhi>Penunggang Angin</> dan <shuzhi>Cloud Riding</> memberikan damage tambahan sebesar <shuzhi>1.400%</> Max HP, maks <shuzhi>240</> kali dari ATK Wanderer. Damage ini dianggap sebagai DMG Skill dan tidak terpengaruh efek peningkat damage. Cooldown: <shuzhi>25</> detik (tidak terpengaruh efek reset dan pengurangan cooldown).",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill01.webp",
+					"id": "GA_FPlayerNoraSkill_Skill01"
+				},
+				{
+					"name": "Flash Rider",
+					"description": "Bisa dipicu selama Superspeed Mode untuk menyerang target di sekitar dengan tebasan beruntun multi-fase, menimpakan DMG dengan total <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Superspeed Mode berakhir setelah skill ini digunakan.\r\n\r\n<shuzhi>Passive: Superspeed Inertia</>\r\nTergantung elemen <shuzhi>Rumble</>, gunakan <shuzhi>Flash Rider</> untuk memberikan efek tambahan.\r\n\r\n<red>Frost-Volt</>: Menggunakan semua tumpukan <shuzhi>Thermal Convergence</> dan mendapatkan Deepfreeze, yang meningkatkan Frost DMG <shuzhi>1,4%</> tiap tumpukan <shuzhi>Thermal Convergence</>. Selain itu, memberikan Frost DMG sebesar <shuzhi>1.400%</> ATK plus <shuzhi>Thermal Convergence</> tiap tumpuk dikali <shuzhi>240%</> ATK kepada target di sekitar. Damage ini dianggap sebagai DMG Pasif selama <shuzhi>30</> detik.\r\n\r\n<red>Altered</>: Menimpakan damage sebesar <shuzhi>50.000%</> dari Max HP Wanderer kepada target di sekitar. Damage ini maks <shuzhi>8.000</> kali ATK Wanderer, dianggap sebagai DMG Skill, dan tidak terpengaruh efek peningkat damage.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill02.webp",
+					"id": "GA_FPlayerNoraSkill_Skill02"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Skyriding Slash",
+					"description": "Saat <red>Charge Senjata penuh</> atau <red>Phantasia</> terpicu, beralih ke Senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan menimpakan damage kepada target di sekitar sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Selama durasi ini, mendapatkan DMG Immunity selama <shuzhi>1,5</> detik (tidak tersedia di Apex League).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ChangeSkill.webp",
+					"id": "GA_FPlayerNoraChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Embusan Angin Pesisir",
+					"description": "Rambutnya berayun anggun diterpa angin laut, sementara veilnya menari dihembus angin. Ia tampak seirama dengan ombak.",
+					"rarity": 5,
+					"source": "Dari event",
+					"simulacrumId": "imitation_62",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_62"
+				},
+				"weapon": {
+					"name": "Melodi Berselancar",
+					"description": "Sebuah motor, tanda pedang besar menandai suara dari Raging Waves.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nora_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Diperoleh dari event Gachapon Embusan Angin Pesisir"
+					],
+					"id": "imitation_fashion_62_w"
+				}
+			}
+		],
+		"version": "4.2",
+		"limited": true,
+		"id": "nora_superpower"
 	},
 	"paradox_fire": {
 		"name": "EP-7000 Skyfire",
@@ -12833,7 +13283,7 @@
 		],
 		"effects": [
 			{
-				"title": "**Volt-Frost Fusion**",
+				"title": "**Fusion of Volt and Frost**",
 				"description": "Saat senjata menimpakan DMG, DMG dihitung menggunakan ATK Dasar Volt/Frost tertinggi yang terpasang, persentase ATK Volt/Frost tertinggi yang terpasang, dan Volt/Frost DMG Boost tertinggi yang terpasang, dan senjata akan dianggap sebagai senjata Volt dan senjata Frost."
 			},
 			{
@@ -13277,24 +13727,24 @@
 		],
 		"effects": [
 			{
-				"title": "**Volt-Frost Fusion**",
-				"description": "Saat senjata menimpakan DMG, DMG dihitung menggunakan ATK Dasar Volt/Frost tertinggi yang terpasang, persentase ATK Volt/Frost tertinggi yang terpasang, dan Volt/Frost DMG Boost tertinggi yang terpasang, dan senjata akan dianggap sebagai senjata Volt dan senjata Frost."
+				"title": "**Fusion of Volt and Frost**",
+				"description": "Ketika senjata menimbulkan damage, damage dihitung menggunakan volt/frost base ATK tertinggi, volt/frost ATK persentase tertinggi, dan volt/frost damage boost tertinggi, dan senjata dianggap sebagai senjata volt dan frost."
 			},
 			{
 				"title": "**Resonansi Volt**",
-				"description": "Meningkatkan Volt ATK sebesar **15%** dan Volt Resistance sebesar **25%**. Aktifkan dengan memakai **2** senjata Volt atau lebih. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan efek yang tipenya sama."
+				"description": "Volt ATK meningkat **15%** dan Volt Resistance meningkat **25%**. Aktifkan dengan cara memakai **2** Senjata Volt atau lebih. Efek set ini juga aktif saat senjata ada di slot sampingan. Tak bisa bertumpuk dengan efek dari tipe yang sama."
 			},
 			{
 				"title": "**Resonansi Frost**",
-				"description": "Meningkatkan Frost ATK sebesar **15%** dan Frost Resistance sebesar **25%**. Aktifkan dengan memakai **2** senjata Frost atau lebih. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan efek yang tipenya sama."
+				"description": "Meningkatkan Frost ATK sebesar **15%** dan Frost Resistance sebesar **25%**. Aktifkan dengan cara memakai **2** Senjata Frost atau lebih. Efek set ini juga aktif saat senjata ada di slot sampingan. Tidak bisa ditumpuk dengan efek yang tipenya sama."
 			},
 			{
 				"title": "**Thunderbolt: Swift Cut**",
-				"description": "Saat menggunakan **Pactcrest ☆ Metz**, Skill Discharge senjata akan menimpakan DMG awal sebesar **46.87%** Volt ATK plus **0.62%** Max HP Wanderer plus **23.43%** total semua tipe Resistance Wanderer plus **85.93%** Crit pada target di sekitar. Saat bertempur, setiap **0,5** detik, DMG Swift Cut berikutnya akan meningkat **1** kali lagi, hingga maks **30** kali. Jika terdapat beberapa DMG Swift Cut, nilai awal tertinggi akan digunakan untuk perhitungan DMG. DMG Swift Cut dihitung sebagai DMG Discharge. Jika ada Senjata Flame atau Senjata Physical yang terpasang, DMG Thunderbolt akan dikalikan **1,3**. Selain itu, DMG Thunderbolt tidak terpengaruh oleh efek DMG Boost apa pun kecuali dari stat langka Equipment Titan, dan tidak akan memicu efek serangan tambahan."
+				"description": "Saat dipersenjatai dengan **Pactcrest ☆ Metz**, skill pelepasan senjata memberikan damage awal sebesar **46.87%** dari Volt ATK ditambah **0.62%** dari Max HP Wanderer ditambah **23.43%** dari jumlah seluruh tipe Resistance Wanderer ditambah **85.93%** dari Crit ke Target Di Sekitar. Saat dalam Kondisi Tempur, setiap **0,5** detik, DMG Swift Cut berikutnya akan bertambah **1** kali lipat, maksimal hingga **30** kali lipat. Ketika ada beberapa DMG Swift Cut, nilai awal tertinggi yang digunakan untuk perhitungan. DMG Swift Cut dianggap sebagai Discharge Damage. Jika senjata Flame atau Senjata Physical dipasang, DMG Thunderbolt dikalikan dengan **1.3**. Selain itu, DMG Thunderbolt tidak terpengaruh oleh efek DMG Boost apa pun kecuali dari stat langka Equipment Titan, dan tidak akan memicu efek serangan tambahan."
 			},
 			{
 				"title": "**Miraculous Turnaround**",
-				"description": "Saat menantang Bygone Phantasm dan Sequential Phantasm menggunakan **Pactcrest ☆ Metz**, mendapatkan tambahan durasi tantangan sebanyak **15** detik. Saat menantang **Awal Peperangan**, untuk setiap **1** **Pactcrest ☆ Metz** yang digunakan oleh tim, tim akan mendapatkan tambahan durasi tantangan sebanyak **25** detik, maks **50** detik."
+				"description": "Saat menantang Bygone Phantasm dan Sequential Phantasm dengan **Pactcrest ☆ Metz** terpasang, dapatkan tambahan **15** detik untuk durasi tantangan. Saat menantang **Origin of War**, untuk setiap **1** **Pactcrest ☆ Metz** yang dipasang oleh tim, tim mendapatkan tambahan **25** detik untuk durasi tantangan, hingga **50** detik."
 			}
 		],
 		"elementEffects": {
@@ -14591,7 +15041,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "Selama Wanderer memiliki efek **A.T. Field** yang aktif, serangan Wanderer mengabaikan sejumlah persentase DMG Reduction dari perisai target. Besaran persentase ini adalah **30%** dari **persentase daya tahan** **A.T. Field** saat ini plus **20%**. Ketika **Resonansi Fortitude** aktif, nilai Shatter Wanderer meningkat sebesar **100%** dari **persentase daya tahan** **A.T. Field**.",
+				"description": "Selama Wanderer mengaktifkan **A.T. Field**, serangan bisa mengabaikan persentase DMG Reduction tertentu dari shield target. Persentase ini setara dengan **30%** dari **persentase daya tahan** **A.T. Field** saat ini plus **20%** (tidak tersedia di Apex League). Jika **Resonansi Fortitude** aktif, nilai Shatter Wanderer meningkat dengan nilai setara **100%** dari **persentase daya tahan** **A.T. Field** (tidak tersedia di Apex League).",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -14894,7 +15344,7 @@
 		],
 		"effects": [
 			{
-				"title": "**Volt-Frost Fusion**",
+				"title": "**Fusion of Volt and Frost**",
 				"description": "Saat senjata menimpakan DMG, DMG dihitung menggunakan ATK Dasar Volt/Frost tertinggi yang terpasang, persentase ATK Volt/Frost tertinggi yang terpasang, dan Volt/Frost DMG Boost tertinggi yang terpasang, dan senjata akan dianggap sebagai senjata Volt dan senjata Frost."
 			},
 			{
@@ -16937,7 +17387,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Diperoleh dari event Alunan Kehangatan Musim Dingin"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_32_w"
 				}

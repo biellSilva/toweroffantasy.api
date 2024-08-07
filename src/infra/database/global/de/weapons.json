@@ -5038,7 +5038,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_GL_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Erhältlich im Event „Warme Winterserenade“"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_10_w"
 				}
@@ -7629,6 +7629,456 @@
 		"version": "3.4",
 		"limited": true,
 		"id": "nanyin_superpower"
+	},
+	"nora_superpower": {
+		"name": "Grollen",
+		"description": "Ein Motorrad und ein Großschwert. Was für eine eigenartige Kombination! Aber da sie nie gut darin war, sich Namen zu merken, beschloss sie schließlich, beide einfach \"Grollen\" zu nennen.",
+		"assets": {
+			"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/Icon/item_Weapon_SSR_nuola.webp",
+			"weaponIconForMatrix": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/weapon/icon_yizhi/yizhi_SSR_nuola.webp",
+			"characterArtwork": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/huanxing/lihui/nuola2.webp"
+		},
+		"rarity": 5,
+		"element": "Superpower",
+		"type": "Nora",
+		"weaponUpgradeId": "superpower_ssr_tupo_AC",
+		"wc": "DPS",
+		"advanceID": "Nora_superpower_ssr_star",
+		"avatar": "imitation_62",
+		"stats": [
+			{
+				"stat": {
+					"name": "Angriff",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_atk.webp",
+					"multiplier": 2,
+					"flat": false,
+					"id": "CommonAtkAdded"
+				},
+				"value": 19.114079
+			},
+			{
+				"stat": {
+					"name": "LP",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_hp.webp",
+					"multiplier": 0.025,
+					"flat": false,
+					"id": "MaxHealthAdded"
+				},
+				"value": 1165.0486
+			},
+			{
+				"stat": {
+					"name": "Krit",
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/AttributeIcon/icon_baoji.webp",
+					"multiplier": 0.4,
+					"flat": false,
+					"id": "CritAdded"
+				},
+				"value": 13.652913
+			}
+		],
+		"upgradeProps": [
+			[
+				3.15534,
+				194.17476,
+				2.427185
+			]
+		],
+		"effects": [
+			{
+				"title": "**Verschiebung**",
+				"description": "Wenn **3** veränderte Waffen ausgerüstet sind, wird aller Elementarschaden um **256%** erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot."
+			},
+			{
+				"title": "**Elementarantrieb**",
+				"description": "**Grollen** kann seinen Elementtyp wechseln (außerhalb des Kampfes). Das Element kann unter Fähigkeiten > Einstellungen gewechselt werden."
+			},
+			{
+				"title": "**Explosivenergie: Auf dem Feld**",
+				"description": "Wenn **Grollen** einen Treffer mit einem normalen Angriff landet, wird Zielen in der Nähe Schaden in Höhe vom **3.6%** des veränderten ANG + **133%** der max. LP des Wanderers + **4.9%** der Summe aller Widerstandsarten des Wanderers + **130%** des krit. Schadens zugefügt. Dieser Effekt kann bis zu 1-mal alle **1,5**Sek. ausgelöst werden. Explosivenergie-Schaden zählt als normaler Angriffsschaden. Wenn **1** Volt-, Frost-, physische oder Flammenwaffe jeglicher Art ausgerüstet ist, erhöht sich der Explosivenergie-Schaden auf das **NaN**-fache. Außerdem wird Explosivenergie-Schaden nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+			}
+		],
+		"elementEffects": {
+			"title": "**Veränderter Schaden**",
+			"description": "Wenn die Waffe voll geladen ist, markiert der nächste Angriff das Ziel und verursacht nach **5**Sek. eine Explosion. Verursacht zusätzlichen Schaden in Höhe von **25%** des gesamten vom Ziel während der Markierung erlittenen Schadens (bis zu **560%** des ANG des Wanderers). Es kann immer nur 1Markierung auf einem Ziel bestehen."
+		},
+		"attributes": [
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			},
+			{
+				"charge": 15,
+				"shatter": 14
+			}
+		],
+		"advancements": [
+			{
+				"description": "Der Schadensmultiplikator von **Supersound** wird auf **20%** des ANG erhöht.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.166667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.166667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **16%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.493333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.333333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.333333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Ignoriert **15%** aller Widerstände des Ziels (der insgesamt ignorierte Widerstand jedes Elements kann 50% nicht übersteigen). Beim Erleiden von tödlichem Schaden wird tödlicher Schaden 1-mal blockiert und für kurze Zeit Schadensimmunität gewährt. Dieser Effekt kann nur 1-mal alle **60**Sek. ausgelöst werden. Der Set-Effekt funktioniert auch im Nebenhand-Slot.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 1.66
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.5
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.5
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um **32%**.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.146667
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.666667
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.666667
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Nach der Verwendung von **Gewalttätige Energie** werden für **10**Sek. pro Sek. **6%** der max. LP wiederhergestellt (nicht von Heilungsbonuseffekten beeinflusst). Dieser LP-Wiederherstellungseffekt geht mit dem Ende des Supergeschwindigkeitsmodus verloren. Der Set-Effekt funktioniert auch im Nebenhand-Slot.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.313333
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 1.833333
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 1.833333
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			},
+			{
+				"description": "Erhöht den Endschaden um **30%**. Der Effekt funktioniert auch im Nebenhand-Slot.",
+				"multiplier": [
+					{
+						"PropName": "CommonAtkAdded",
+						"PropCoefficient": 2.48
+					},
+					{
+						"PropName": "ElementDef",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "MaxHealthAdded",
+						"PropCoefficient": 2
+					},
+					{
+						"PropName": "CritAdded",
+						"PropCoefficient": 2
+					}
+				],
+				"need": "Nora_superpower_plasm"
+			}
+		],
+		"skills": {
+			"normals": [
+				{
+					"name": "Windreiter",
+					"description": "Nutze den normalen Angriff auf dem Boden, um 5-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und stößt das Ziel zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und stößt das Ziel zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und stößt das Ziel zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und schleudert das Ziel hoch.\r\nTippe und halte im <shuzhi>Supergeschwindigkeitsmodus</> während des fünften Angriffs den normalen Angriff, um eine Verbindung zum ersten Angriff herzustellen.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Melee.webp",
+					"id": "GA_FPlayerNoraMelee_Melee"
+				},
+				{
+					"name": "Wolkenreiten",
+					"description": "Verwende in der Luft den normalen Angriff, um 5 Angriffe hintereinander in der Luft auszuführen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und schleudert das Ziel hoch.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und stößt das Ziel zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und stößt das Ziel zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und stößt das Ziel zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und stößt das Ziel zurück.\r\n<shuzhi>Stiller Schlag</>: Treffer gegen Gegner mit dem zweiten und dritten Angriff lösen den Schnitteffekt aus, der Angriffsdauer und Schaden erhöht.\r\nWenn Gegner vom zweiten Angriff getroffen werden, wird Schaden in Höhe von <shuzhi>{10}%</> des ANG + <shuzhi>{11}</> verursacht und das Ziel zurückgestoßen.\r\nWenn Gegner vom dritten Angriff getroffen werden, wird Schaden in Höhe von <shuzhi>{12}%</> des ANG + <shuzhi>{13}</> verursacht und das Ziel zurückgestoßen.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_AirAttack.webp",
+					"id": "GA_FPlayerNoraMelee_AirAttack"
+				},
+				{
+					"name": "Zwillingsschlag",
+					"description": "Tippe und halte im Supergeschwindigkeitsmodus während normaler Angriffe auf dem Boden den normalen Angriff beim Verwenden des ersten bis zweiten normalen Angriffs, um <shuzhi>Zwillingsschlag</> auszulösen.\r\nFügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu und stößt sie zurück.",
+					"operations": [
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch1.webp",
+					"id": "GA_FPlayerNoraMelee_Branch1"
+				},
+				{
+					"name": "Verbundene Schläge",
+					"description": "Tippe und halte im <shuzhi>Supergeschwindigkeitsmodus</> beim Auslösen von <shuzhi>Zwillingsschlag</> weiterhin den normalen Angriff, um „Verbundene Schläge“ auszulösen.\r\nFügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Verbraucht gleichzeitig alle <shuzhi>Überladung</>-Stapel und verursacht pro <shuzhi>1</> verbrauchten Stapel zusätzlich Schaden in Höhe von <shuzhi>50%</> des ANG. Bei <shuzhi>6</> Stapeln <shuzhi>Überladung</> wird stattdessen <shuzhi>Extreme Ladung</> ausgelöst und so Schaden in Höhe von <shuzhi>300%</> des ANG verursacht.",
+					"operations": [
+						"Attack",
+						"Hold Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch2.webp",
+					"id": "GA_FPlayerNoraMelee_Branch2"
+				},
+				{
+					"name": "Wirbel-Reiter",
+					"description": "Tippe und halte während normaler Angriffe auf dem Boden den normalen Angriff beim Verwenden des dritten bis vierten normalen Angriffs, um „Wirbel-Reiter“ auszulösen.\r\nFügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+					"operations": [
+						"Attack",
+						"Attack",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Branch3.webp",
+					"id": "GA_FPlayerNoraMelee_Branch3"
+				},
+				{
+					"name": "Wasserfall-Reiter",
+					"description": "Tippe und halte in der Luft während „Wolkenreiten“ den normalen Angriff (oder tippe, wenn ein Ziel verfügbar ist), um den Sturzangriff „Wasserfall-Reiter“ auszulösen.\r\nStürzt aus der Luft herunter. Bei der Landung fügen Treffer Gegnern Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Nach der Landung erleiden Ziele in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.",
+					"operations": [
+						"Jump",
+						"Attack",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack"
+				},
+				{
+					"name": "Reisender Reiter",
+					"description": "Tippe und halte den normalen Angriff, während du in der Luft bist, oder setze einen normalen Angriff ein, während du kletterst, rückwärts springst oder das Jetpack benutzt, um den Sturzangriff „Reisender Reiter“ auszulösen.\r\nStürzt aus der Luft herunter. Bei der Landung fügen Treffer Gegnern Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Nach der Landung erleiden Ziele in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.",
+					"operations": [
+						"Jump",
+						"Hold Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_JumpAttack_Special.webp",
+					"id": "GA_FPlayerNoraMelee_JumpAttack_Special"
+				}
+			],
+			"dodge": [
+				{
+					"name": "Schneller Schlag",
+					"description": "Verwende während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Pfeiltaste), um einen Vor-Ausweichangriff auszulösen, was bei Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursacht.",
+					"operations": [
+						"Movement",
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ForwardAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_ForwardAttack"
+				},
+				{
+					"name": "Überschallschlag",
+					"description": "Verwende zum Auslösen eines Nach-Ausweichangriffs während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, was allen Zielen voraus Schaden in Höhe von bis zu <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+					"operations": [
+						"Dash",
+						"Attack"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_BackAttack.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_BackAttack"
+				},
+				{
+					"name": "Schall-Himmelsreiter",
+					"description": "Weiche aus und halte gedrückt, um „Schall-Himmelsreiter“ zu aktivieren. Währenddessen wird ein Angriff nach vorn ausgeführt, durchgehend Ausdauer verbraucht und die Geschwindigkeit erhöht. Wenn der Wanderer einen Treffer landet, fügt er Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.\r\nSpringe und lande während „Schall-Himmelsreiter“, um Ausdauer zu verbrauchen und einen vorübergehenden Geschwindigkeitsschub zu erhalten. Wenn „Schall-Himmelsreiter“ in der Oberwelt <shuzhi>10</> Sek. lang aktiv war, kann der von „Schall-Himmelsreiter“ verursachte Schaden Gegner, die keine Bosse sind, hinrichten (nicht in der Apex-Liga verfügbar).",
+					"operations": [
+						"Movement"
+					],
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_EvadeOn.webp",
+					"id": "GA_FPlayerNoraEvadeAttack_EvadeOn"
+				}
+			],
+			"skill": [
+				{
+					"name": "Explosive Energie",
+					"description": "Der Wanderer geht in den Supergeschwindigkeitsmodus über, erhält vorübergehend Unbesiegbarkeit und fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und für <shuzhi>3</> Sek. eine Verzögerung in Höhe von <shuzhi>65%</> zu (unwirksam gegen Bosse im Teamspiel).\r\nDer Supergeschwindigkeitsmodus gewährt „Hyperkörper“ und gleichzeitig erhält jeder Angriff mit <shuzhi>Windreiter</> und <shuzhi>Wolkenreiten</> „Supersound“, wodurch zusätzlicher Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> verursacht wird (zählt als passiver Schaden). Gleichzeitig gewährt jeder Treffer <shuzhi>1</> Stapel „Überladung“. Bis zu <shuzhi>6</>-mal stapelbar (bis zu <shuzhi>1</> Stapel alle <shuzhi>0,65</> Sek).\r\nNach <shuzhi>5</> Sek. im Supergeschwindigkeitsmodus wird die neue Fähigkeit <shuzhi>Blitz-Reiter</> verfügbar (kann während des Supergeschwindigkeitsmodus verwendet werden). Ein Waffenwechsel zu diesem Zeitpunkt verhindert die Verwendung von <shuzhi>Blitz-Reiter</>.\r\n\r\n<shuzhi>Passiv: Supergeschwindigkeitsverwandlung</>\r\n<shuzhi>Grollen</> verfügt über 5 Elementtypen. Unter Fähigkeiten – Einstellungen kann jeweils <shuzhi>1</> aktiviert werden. Elementtypen können nicht im Kampf gewechselt werden.\r\nAbhängig vom Elementtyp von <shuzhi>Grollen</> haben Treffer mit „Gewalttätige Energie“ gegen Ziele unterschiedliche entsprechende <shuzhi>Waffeneigenschaften</> und verschiedene Effekte zur Folge.\r\n\r\n<red>Frost-Volt</>: Gewährt <shuzhi>28</> Sek. lang den Supergeschwindigkeitsmodus. Währenddessen gewährt jeder Treffer eines normalen Angriffs mit <shuzhi>Grollen</> oder der Erhalt von Nicht-Überschussheilung 1 Stapel <shuzhi>Thermale Konvergenz</>. Bis zu <shuzhi>10</>-mal stapelbar. <shuzhi>3</> Sek. nach dem Ende des Supergeschwindigkeitsmodus gehen alle nicht verwandelten „Thermale Konvergenz“-Stapel verloren. Abklingzeit: <shuzhi>30</> Sek. (wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst).\r\n\r\n<red>Flammen-Physisch</>: Gewährt <shuzhi>23</> Sek. lang den Supergeschwindigkeitsmodus. Beim Eintritt in den Supergeschwindigkeitsmodus werden alle <shuzhi>Funken</>-Stapel verbraucht. Jeder verbrauchte Stapel gewährt <shuzhi>2200</> Basis-Flammen-ANG (dieser Flammen-ANG ist in den Werten des Wanderers nicht sichtbar und ist nicht in der Apex-Liga verfügbar) und erhöht den Endschaden von <shuzhi>Grollen</> um <shuzhi>22%</>. Der Supergeschwindigkeitsmodus gewährt „Flammenverfolgung“. Das Verursachen von Flammenschaden fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>1520%</> des ANG zu. Wird bis zu <shuzhi>1</>-mal alle <shuzhi>2</> Sek. ausgelöst. Abklingzeit: <shuzhi>25</> Sek. (wird von Effekten, die die Abklingzeit zurücksetzen oder verringern, nicht beeinflusst).\r\n\r\n<red>Volt-Frost</>: Gewährt <shuzhi>18</> Sek. lang den Supergeschwindigkeitsmodus. Während des Supergeschwindigkeitsmodus wird der Voltschaden um <shuzhi>30%</> erhöht. Wenn sich <shuzhi>Grollen</> im Haupt-Slot befindet, gewähren Treffer mit normalen Angriffen <shuzhi>1</> Stapel <shuzhi>Donnerschlag</>. Bis zu <shuzhi>18</>-mal stapelbar. Bei max. Stapelanzahl werden alle Stapel verbraucht, um Zielen in der Nähe zusätzlichen Schaden in Höhe von <shuzhi>6000%</> des ANG zuzufügen (zählt als Fähigkeitsschaden). Gewährt gleichzeitig für <shuzhi>10</> Sek. einen Schild in Höhe von <shuzhi>30%</> der max. LP (dieser Effekt kann nicht gestapelt werden). Der zusätzliche Effekt von „Donnerschlag“ kann mit jedem Eintritt in den Supergeschwindigkeitsmodus bis zu <shuzhi>5</>-mal ausgelöst werden. Wenn <shuzhi>Verbundene Schläge</> <shuzhi>6</> Stapel <shuzhi>Überladung</> verbraucht, wird Zielen in der Nähe Schaden in Höhe von <shuzhi>11000%</> des ANG zusätzlich zugefügt. Dieser Schaden zählt als Fähigkeitsschaden. Abklingzeit: <shuzhi>20</> Sek. (wird von Effekten, die die Abklingzeit zurücksetzen oder verringern, nicht beeinflusst).\r\n\r\n<red>Physisch-Flammen</>: Gewährt <shuzhi>19</> Sek. lang den Supergeschwindigkeitsmodus. Fügt während des Supergeschwindigkeitsmodus Zielen in der Nähe für pro Sek. Schaden in Höhe von <shuzhi>2900%</> des physischen ANG zu. Mit jedem Treffer dieses Schadens gegen ein Ziel erhält der Wanderer für <shuzhi>10</> Sek. einen Schild in Höhe von <shuzhi>5%</> der max. LP, wobei bis zu <shuzhi>10%</> auf einmal erhalten werden können. Der Maximalwert des Schilds kann nicht mehr als <shuzhi>50%</> der LP des Wanderers betragen. Abklingzeit: <shuzhi>21</> Sek. (wird von Effekten, die die Abklingzeit zurücksetzen oder verringern, nicht beeinflusst).\r\n\r\n<red>Verändert</>: Gewährt <shuzhi>23</> Sek. lang den Supergeschwindigkeitsmodus. Im Supergeschwindigkeitsmodus werden die max. LP um <shuzhi>100%</> erhöht. Gleichzeitig verursacht jeder Treffer mit mit <shuzhi>Windreiter</> und <shuzhi>Wolkenreiten</> zusätzlichen Schaden in Höhe von <shuzhi>1400%</> der max. LP, wobei das <shuzhi>240</>-Fache des ANG des Wanderers nicht überschritten werden kann. Dieser Schaden zählt als Fähigkeitsschaden und wird nicht von Schadensbonus-Effekten beeinflusst. Abklingzeit: <shuzhi>25</> Sek. (wird von Effekten, die die Abklingzeit zurücksetzen oder verringern, nicht beeinflusst).",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill01.webp",
+					"id": "GA_FPlayerNoraSkill_Skill01"
+				},
+				{
+					"name": "Blitz-Reiter",
+					"description": "Kann während des Supergeschwindigkeitsmodus ausgelöst werden, um mehrphasige „Verbundene Schläge“ gegen Ziele in der Nähe auszuführen, die insgesamt Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> verursachen. Der Supergeschwindigkeitsmodus endet nach der Verwendung dieser Fähigkeit.\r\n\r\n<shuzhi>Passiv: Supergeschwindigkeitsträgheit</>\r\nJe nach Element von <shuzhi>Grollen</> löst <shuzhi>Blitz-Reiter</> zusätzliche Effekte aus.\r\n\r\n<red>Frost-Volt</>: Verbraucht alle <shuzhi>Thermale Konvergenz</>-Stapel und wandelt sie in Einfrieren um, wodurch pro <shuzhi>Thermale Konvergenz</>-Stapel ein Frostschaden-Bonus in Höhe von <shuzhi>1,4%</> gewährt wird. Gleichzeitig wird Zielen in der Nähe Frostschaden in Höhe von <shuzhi>1400%</> des ANG + <shuzhi>Thermale Konvergenz</>-Stapelanzahl × <shuzhi>240%</> des ANG zugefügt. Dieser Schaden zählt als passiver Schaden und hält <shuzhi>30</> Sek. an.\r\n\r\n<red>Verändert</>: Fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>50000%</> der max. LP des Wanderers zu. Dieser Schaden kann maximal das <shuzhi>8000</>-Fache des ANG des Wanderers betragen, zählt als Fähigkeitsschaden und wird nicht von Schadensbonus-Effekten beeinflusst.",
+					"operations": [],
+					"tags": [
+						"Damage",
+						"Hyperbody"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_Skill02.webp",
+					"id": "GA_FPlayerNoraSkill_Skill02"
+				}
+			],
+			"discharge": [
+				{
+					"name": "Himmelsreiterschlag",
+					"description": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und Zielen in der Nähe wird Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zugefügt. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
+					"tags": [
+						"Damage"
+					],
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/skill/WeaponSkill/Nora_ChangeSkill.webp",
+					"id": "GA_FPlayerNoraChangeSkill_Success"
+				}
+			]
+		},
+		"fashion": [
+			{
+				"outfit": {
+					"name": "Windige Küste",
+					"description": "Ihr Haar weht anmutig in der Meeresbrise, während ihr fließender Schleier im Wind tanzt. Sie scheint im Einklang mit den Wellen zu sein.",
+					"rarity": 5,
+					"source": "Aus Events",
+					"simulacrumId": "imitation_62",
+					"assets": {
+						"painting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA.webp",
+						"prayPainting": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/UI/shizhuang/nitai/UI_NT_SZ_NORA_Lock.webp"
+					},
+					"weaponId": "Paradox_fire_fashion_imitationUI",
+					"id": "imitation_fashion_62"
+				},
+				"weapon": {
+					"name": "Surf-Melodien",
+					"description": "Ein Motorrad, ein großes Schwert markieren das Geräusch der wogenden Wellen.",
+					"rarity": 5,
+					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_nora_weapon.webp",
+					"type": "CONSUMABLE",
+					"source": [
+						"Erhältlich im „Windige Küste“-Gashapon-Event."
+					],
+					"id": "imitation_fashion_62_w"
+				}
+			}
+		],
+		"version": "4.2",
+		"limited": true,
+		"id": "nora_superpower"
 	},
 	"paradox_fire": {
 		"name": "EP-7000-Himmelsfeuer",
@@ -13277,12 +13727,12 @@
 		],
 		"effects": [
 			{
-				"title": "**Volt-Frost-Fusion**",
-				"description": "Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Volt-/Frost-Basis-ANG, des höchsten ausgerüsteten Volt-/Frost-ANG-Prozentwerts und des höchsten ausgerüsteten Volt-/Frostschaden-Bonus berechnet, und die Waffe gilt sowohl als Volt- als auch als Frostwaffe."
+				"title": "**Fusion von Volt und Frost**",
+				"description": "Wenn die Waffe Schaden verursacht, wird der Schaden mit der höchsten ausgerüsteten Volt/Frost-Basis-ANG, dem höchsten ausgerüsteten Volt/Frost-ANG-Prozentsatz und dem höchsten ausgerüsteten Volt/Frostschaden-Bonus berechnet, und die Waffe gilt sowohl als Volt- als auch als Frostwaffe."
 			},
 			{
 				"title": "**Voltresonanz**",
-				"description": "Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden."
+				"description": "Erhöht den Volt-ANG um **15%** und den Voltwiderstand um **25%**. Wird durch Ausrüsten von **2** oder mehr Volt-Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit Effekten desselben Typs gestapelt werden."
 			},
 			{
 				"title": "**Frostresonanz**",
@@ -13290,11 +13740,11 @@
 			},
 			{
 				"title": "**Donnerkeil: Schneller Hieb**",
-				"description": "Wenn **Bündniswappen-Metz☆** ausgerüstet ist, fügen Waffenentladungsfähigkeiten Zielen in der Nähe anfänglichen Schaden in Höhe von **46.87%** des Volt-ANG + **0.62%** der max. LP des Wanderers + **23.43%** der Summe aller Widerstandsarten des Wanderers + **85.93%** des krit. Schadens zu. Im Kampf wird der nächste „Schneller Hieb“-Schaden alle **0,5**Sek. um **1** weiteres Mal bis maximal **30**-mal erhöht. Bei mehreren „Schneller Hieb“-Schäden wird der höchste Ausgangswert für die Berechnung verwendet. „Schneller Hieb“-Schaden zählt als Entladungsschaden. Wenn eine Flammen- oder physische Waffe ausgerüstet ist, wird der Donnerkeilschaden mit **1,3** multipliziert. Außerdem wird Donnerkeilschaden nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
+				"description": "Bei Ausstattung mit **Bündniswappen-Metz ☆**, verursachen Waffenentladungsfähigkeiten anfänglichen Schaden gleich **46.87%** der Volt-ANG plus **0.62%** der max. LP des Wanderers plus **23.43%** der Summe aller Widerstandsarten des Wanderers plus **85.93%** des Krit an Ziele in der Nähe. Im Kampfstatus wird nach jeder **0,5** Sek. der Schaden des nächsten schnellen Hiebs um **1**-mal erhöht, bis zu einem Maximum von **30**-mal. Wenn mehrere Schäden durch schnelle Hiebe vorhanden sind, wird der höchste Anfangswert für die Berechnung verwendet. Der Schaden durch schnelle Hiebe zählt als Entladungsschaden. Wenn eine Flamme oder physische Waffe ausgerüstet ist, wird der Donnerkeil-Schaden mit **1.3** multipliziert. Darüber hinaus wird der Donnerkeil-Schaden nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus."
 			},
 			{
 				"title": "**Wundersame Wendung**",
-				"description": "Wenn beim Antritt in „Vergessene Sinnestäuschung” und „Sequenz-Sinnestäuschung” **Bündniswappen-Metz☆** ausgerüstet ist, verlängert sich die Dauer der Herausforderung um **15**Sek. Beim Antritt in **Ursprung des Krieges** erhält das Team für **jedes** ausgerüstete **Bündniswappen-Metz☆** zusätzliche **25**Sek. auf die Dauer der Herausforderung, bis zu **50**Sek."
+				"description": "Bei Herausforderungen von Vergessene Sinnestäuschung und Sequenz-Sinnestäuschung mit ausgerüstetem **Bündniswappen-Metz ☆**, erhält man zusätzliche **15** Sekunden für die Herausforderungsdauer. Bei Herausforderungen von **Ursprung des Krieges**, erhält das Team für jedes **1** vom Team ausgerüstete **Bündniswappen-Metz ☆** zusätzliche **25** Sekunden für die Herausforderungsdauer, bis zu **50** Sekunden."
 			}
 		],
 		"elementEffects": {
@@ -14591,7 +15041,7 @@
 				"need": "Asuka_physic_plasm"
 			},
 			{
-				"description": "Solange der Wanderer ein **AT-Feld** aktiviert hat, können Angriffe einen bestimmten Prozentsatz der Schadensreduktion des Schilds eines Ziels ignorieren. Dieser Prozentsatz entspricht **30%** des aktuellen **Haltbarkeit-Prozentwerts** des **AT-Felds** + **20%**. Wenn **Standhaftigkeit-Resonanz** aktiv ist, erhöht sich Zertrümmern des Wanderers um **100%** des **Haltbarkeit-Prozentwerts** des **AT-Felds**.",
+				"description": "Solange der Wanderer ein **AT-Feld** aktiviert hat, können Angriffe einen bestimmten Prozentsatz der Schadensreduktion des Schilds eines Ziels ignorieren. Dieser Prozentsatz entspricht **30%** des aktuellen **Haltbarkeit-Prozentwerts** des **AT-Felds** + **20%** (nicht in der Apex-Liga verfügbar). Wenn **Standhaftigkeit-Resonanz** aktiv ist, erhöht sich das Zertrümmern des Wanderers um **100%** des **Haltbarkeit-Prozentwerts** des **AT-Felds** (nicht in der Apex-Liga verfügbar).",
 				"multiplier": [
 					{
 						"PropName": "CommonAtkAdded",
@@ -16937,7 +17387,7 @@
 					"icon": "https://raw.githubusercontent.com/FortOfFans/ToF.github.io/webp/Icon/item/fashion_fenlier_weapon.webp",
 					"type": "CONSUMABLE",
 					"source": [
-						"Erhältlich im Event „Warme Winterserenade“"
+						"Obtained from the 2nd anniversary"
 					],
 					"id": "imitation_fashion_32_w"
 				}
