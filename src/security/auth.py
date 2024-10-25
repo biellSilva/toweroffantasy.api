@@ -40,7 +40,7 @@ class AuthSecurity(APIKeyHeader):
         """Validate token."""
         token = self._get_token(request)
         try:
-            payload = Payload(**self._crypt_helper.decode(token))
+            payload = Payload(**self._crypt_helper.decode_access(token))
         except (ValidationError, DecodeError):
             raise InvalidTokenError from None
         request.state.user = payload

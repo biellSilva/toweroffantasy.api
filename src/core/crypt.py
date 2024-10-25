@@ -9,21 +9,38 @@ from src._utils import current_datetime
 
 
 class CryptHelper:
-    """Crypt helper."""
+    """Crypt helper.
+
+    This class is responsible for encoding and decoding tokens,
+    hashing and checking passwords.
+    """
+
+    _AccessToken = str
+    _RefreshToken = str
 
     @classmethod
-    def encode(cls, payload: dict[str, Any], *, stay_logged_in: bool = False) -> str:
+    def encode(cls, payload: dict[str, Any]) -> "tuple[ _AccessToken, _RefreshToken ]":
         """Encode payload."""
-        if stay_logged_in:
-            return str(encode(payload, key=config.JWT_SECRET, algorithm="HS256"))
+
+        payload["exp"] = current_datetime() + timedelta(hours=1)
+        access_token = str(encode(payload, key=config.ACCESS_SECRET, algorithm="HS256"))
 
         payload["exp"] = current_datetime() + timedelta(days=1)
-        return str(encode(payload, key=config.JWT_SECRET, algorithm="HS256"))
+        refresh_token = str(
+            encode(payload, key=config.REFRESH_SECRET, algorithm="HS256"),
+        )
+
+        return access_token, refresh_token
 
     @classmethod
-    def decode(cls, token: str) -> dict[str, Any]:
-        """Decode token."""
-        return dict(decode(token, key=config.JWT_SECRET, algorithms=["HS256"]))
+    def decode_access(cls, token: str) -> dict[str, Any]:
+        """Decodes access token."""
+        return dict(decode(token, key=config.ACCESS_SECRET, algorithms=["HS256"]))
+
+    @classmethod
+    def decode_refresh(cls, token: str) -> dict[str, Any]:
+        """Decodes refresh token."""
+        return dict(decode(token, key=config.REFRESH_SECRET, algorithms=["HS256"]))
 
     @classmethod
     def hash_password(cls, password: str) -> str:

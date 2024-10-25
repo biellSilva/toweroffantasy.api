@@ -14,7 +14,8 @@ class _BaseSettings(BaseSettings):
 
     DB_URL: str
 
-    JWT_SECRET: str = "secret"
+    ACCESS_SECRET: str = "secret"
+    REFRESH_SECRET: str = "secret"
 
     EMAIL_MIN_LENGTH: int = 4
     EMAIL_MAX_LENGTH: int = 256

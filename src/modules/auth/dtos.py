@@ -23,6 +23,7 @@ class LoginResponse(BaseModel):
     """Login response."""
 
     access_token: str
+    refresh_token: str
     user: User
 
 
@@ -45,4 +46,3 @@ class Payload(BaseModel):
     id: int
     email: str
     username: str
-    stay_logged_in: bool
