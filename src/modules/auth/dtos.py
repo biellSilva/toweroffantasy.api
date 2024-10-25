@@ -8,7 +8,6 @@ class LoginParams(BaseModel):
 
     email: str
     password: str
-    stay_logged_in: bool = False
 
 
 class RegisterParams(BaseModel):
