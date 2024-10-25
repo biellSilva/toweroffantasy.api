@@ -11,8 +11,8 @@ dependencies = [
     "pydantic-settings>=2.6.0",
     "pyjwt>=2.9.0",
     "bcrypt>=4.2.0",
-    "psycopg>=3.2.3",
     "sqlalchemy>=2.0.36",
+    "psycopg[binary]>=3.2.3",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
@@ -30,11 +30,7 @@ dev.cmd = "uvicorn src.main:create_app --factory --reload --reload-dir src"
 dev.env_file = ".env"
 
 [tool.pdm.dev-dependencies]
-dev = [
-    "mypy>=1.13.0",
-    "ruff>=0.7.1",
-    "types-pyjwt>=1.7.1",
-]
+dev = ["mypy>=1.13.0", "ruff>=0.7.1", "types-pyjwt>=1.7.1"]
 
 
 [tool.mypy]
