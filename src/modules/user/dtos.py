@@ -15,4 +15,3 @@ class User(BaseModel):
     id: int
     created_at: datetime
     username: str
-    email: str
