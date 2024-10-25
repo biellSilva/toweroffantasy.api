@@ -74,7 +74,7 @@ class ApiRouter(APIRouter):
         include_in_schema: bool = True,
         generate_unique_id_function: Callable[[APIRoute], str] = generate_unique_id,
         requires_login: bool = False,
-        exceptions: Sequence[ApiError] | None = None,
+        exceptions: Sequence[ApiError | type[ApiError]] | None = None,
     ) -> None:
         super().__init__(
             prefix=prefix,
@@ -100,7 +100,7 @@ class ApiRouter(APIRouter):
 
     def handle_exceptions(
         self,
-        *exceptions: ApiError,
+        *exceptions: ApiError | type[ApiError],
         responses: dict[int | str, dict[str, Any]] | None,
     ) -> dict[int | str, dict[str, Any]]:
         """Generate a schema for the given exception class.
@@ -115,23 +115,25 @@ class ApiRouter(APIRouter):
             responses = {}
 
         for exception in exceptions:
-            if exception.status_code not in responses:
-                responses[exception.status_code] = {
+            exc = exception() if isinstance(exception, type) else exception
+
+            if exc.status_code not in responses:
+                responses[exc.status_code] = {
                     "content": {
                         "application/json": {
                             "examples": {
-                                exception.__class__.__name__: {
-                                    "value": exception.__dict__,
+                                exc.__class__.__name__: {
+                                    "value": exc.__dict__,
                                 },
                             },
                         },
                     },
                 }
             else:
-                responses[exception.status_code]["content"]["application/json"][
-                    "examples"
-                ][exception.__class__.__name__] = {
-                    "value": exception.__dict__,
+                responses[exc.status_code]["content"]["application/json"]["examples"][
+                    exc.__class__.__name__
+                ] = {
+                    "value": exc.__dict__,
                 }
 
         return responses
@@ -183,7 +185,7 @@ class ApiRouter(APIRouter):
         openapi_extra: dict[str, Any] | None = None,
         generate_unique_id_function: Callable[[APIRoute], str] = generate_unique_id,
         requires_login: bool = False,
-        exceptions: Sequence[ApiError] | None = None,
+        exceptions: Sequence[ApiError | type[ApiError]] | None = None,
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         dependencies, responses = self.handle_requires_login(
             requires_login=requires_login,
@@ -258,7 +260,7 @@ class ApiRouter(APIRouter):
         openapi_extra: dict[str, Any] | None = None,
         generate_unique_id_function: Callable[[APIRoute], str] = generate_unique_id,
         requires_login: bool = False,
-        exceptions: Sequence[ApiError] | None = None,
+        exceptions: Sequence[ApiError | type[ApiError]] | None = None,
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
@@ -323,7 +325,7 @@ class ApiRouter(APIRouter):
         openapi_extra: dict[str, Any] | None = None,
         generate_unique_id_function: Callable[[APIRoute], str] = generate_unique_id,
         requires_login: bool = False,
-        exceptions: Sequence[ApiError] | None = None,
+        exceptions: Sequence[ApiError | type[ApiError]] | None = None,
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
@@ -388,7 +390,7 @@ class ApiRouter(APIRouter):
         openapi_extra: dict[str, Any] | None = None,
         generate_unique_id_function: Callable[[APIRoute], str] = generate_unique_id,
         requires_login: bool = False,
-        exceptions: Sequence[ApiError] | None = None,
+        exceptions: Sequence[ApiError | type[ApiError]] | None = None,
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
@@ -453,7 +455,7 @@ class ApiRouter(APIRouter):
         openapi_extra: dict[str, Any] | None = None,
         generate_unique_id_function: Callable[[APIRoute], str] = generate_unique_id,
         requires_login: bool = False,
-        exceptions: Sequence[ApiError] | None = None,
+        exceptions: Sequence[ApiError | type[ApiError]] | None = None,
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
@@ -518,7 +520,7 @@ class ApiRouter(APIRouter):
         openapi_extra: dict[str, Any] | None = None,
         generate_unique_id_function: Callable[[APIRoute], str] = generate_unique_id,
         requires_login: bool = False,
-        exceptions: Sequence[ApiError] | None = None,
+        exceptions: Sequence[ApiError | type[ApiError]] | None = None,
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
