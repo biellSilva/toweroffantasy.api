@@ -43,13 +43,14 @@ class AuthService:
         if not self.crypt_helper.check_password(params.password, user.password):
             raise EmailOrPasswordError
 
-        access_token, refresh_token = self.crypt_helper.encode(
+        access_token, access_timestamp, refresh_token = self.crypt_helper.encode(
             Payload(**user.model_dump()).model_dump(),
         )
 
         return LoginResponse(
             user=User(**user.model_dump()),
             access_token=access_token,
+            access_expire=access_timestamp,
             refresh_token=refresh_token,
         )
 
@@ -88,13 +89,14 @@ class AuthService:
 
         user = await self.repository.create_user(params)
 
-        access_token, refresh_token = self.crypt_helper.encode(
+        access_token, access_expire, refresh_token = self.crypt_helper.encode(
             Payload(**user.model_dump()).model_dump(),
         )
 
         return LoginResponse(
             user=User(**user.model_dump()),
             access_token=access_token,
+            access_expire=access_expire,
             refresh_token=refresh_token,
         )
 

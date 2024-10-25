@@ -5,8 +5,13 @@ from fastapi.security import APIKeyHeader
 from jwt import DecodeError
 from pydantic import ValidationError
 
+from src._utils import current_datetime
 from src.core.crypt import CryptHelper
-from src.exceptions.unauthorized import InvalidTokenError, MissingTokenError
+from src.exceptions.unauthorized import (
+    ExpiredTokenError,
+    InvalidTokenError,
+    MissingTokenError,
+)
 from src.modules.auth.dtos import Payload
 
 
@@ -43,6 +48,10 @@ class AuthSecurity(APIKeyHeader):
             payload = Payload(**self._crypt_helper.decode_access(token))
         except (ValidationError, DecodeError):
             raise InvalidTokenError from None
+
+        if payload.exp < current_datetime():
+            raise ExpiredTokenError
+
         request.state.user = payload
         return True
 

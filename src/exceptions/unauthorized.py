@@ -36,6 +36,17 @@ class InvalidTokenError(UnauthorizedError):
         super().__init__(message=message, **metadata)
 
 
+class ExpiredTokenError(UnauthorizedError):
+    """Expired token exception."""
+
+    def __init__(
+        self,
+        message: str = "Expired Token",
+        **metadata: str | float | dict[str, Any] | list[Any],
+    ) -> None:
+        super().__init__(message=message, **metadata)
+
+
 class EmailOrPasswordError(UnauthorizedError):
     """Email or password error exception."""
 

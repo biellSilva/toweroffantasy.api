@@ -1,4 +1,4 @@
-from datetime import timedelta
+from datetime import datetime, timedelta
 from typing import Any
 
 from bcrypt import checkpw, gensalt, hashpw
@@ -19,10 +19,14 @@ class CryptHelper:
     _RefreshToken = str
 
     @classmethod
-    def encode(cls, payload: dict[str, Any]) -> "tuple[ _AccessToken, _RefreshToken ]":
+    def encode(
+        cls,
+        payload: dict[str, Any],
+    ) -> "tuple[ _AccessToken, datetime, _RefreshToken ]":
         """Encode payload."""
 
-        payload["exp"] = current_datetime() + timedelta(hours=1)
+        access_expire = current_datetime() + timedelta(hours=1)
+        payload["exp"] = access_expire
         access_token = str(encode(payload, key=config.ACCESS_SECRET, algorithm="HS256"))
 
         payload["exp"] = current_datetime() + timedelta(days=1)
@@ -30,7 +34,7 @@ class CryptHelper:
             encode(payload, key=config.REFRESH_SECRET, algorithm="HS256"),
         )
 
-        return access_token, refresh_token
+        return access_token, access_expire, refresh_token
 
     @classmethod
     def decode_access(cls, token: str) -> dict[str, Any]:

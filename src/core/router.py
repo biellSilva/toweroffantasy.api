@@ -12,7 +12,11 @@ from fastapi.utils import generate_unique_id
 from starlette.routing import BaseRoute
 
 from src.exceptions.base import ApiError
-from src.exceptions.unauthorized import InvalidTokenError, MissingTokenError
+from src.exceptions.unauthorized import (
+    ExpiredTokenError,
+    InvalidTokenError,
+    MissingTokenError,
+)
 from src.security.auth import AuthSecurity
 
 
@@ -153,6 +157,7 @@ class ApiRouter(APIRouter):
             responses = self.handle_exceptions(
                 MissingTokenError(),
                 InvalidTokenError(),
+                ExpiredTokenError(),
                 responses=responses,
             )
         return dependencies, responses

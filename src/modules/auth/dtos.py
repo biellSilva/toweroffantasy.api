@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from pydantic import BaseModel
 
 from src.modules.user.dtos import User
@@ -22,6 +24,7 @@ class LoginResponse(BaseModel):
     """Login response."""
 
     access_token: str
+    access_expire: datetime
     refresh_token: str
     user: User
 
@@ -45,3 +48,4 @@ class Payload(BaseModel):
     id: int
     email: str
     username: str
+    exp: datetime
