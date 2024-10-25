@@ -6,6 +6,9 @@ authors = [
     { name = "Gabriel Nobrega", email = "gabrieltkdnobrega63@gmail.com" },
 ]
 dependencies = [
+"fastapi[standard]>=0.115.3",
+    "pydantic>=2.9.2",
+    "pydantic-settings>=2.6.0",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
@@ -14,3 +17,10 @@ license = { file = "LICENSE" }
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.scripts]
+start.cmd = "uvicorn src.main:create_app --factory --host 0.0.0.0 --port 8000"
+start.env_file = ".env"
+
+dev.cmd = "uvicorn src.main:create_app --factory --reload --reload-dir src"
+dev.env_file = ".env"
