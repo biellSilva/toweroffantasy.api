@@ -16,7 +16,7 @@ SERVICE = UserService(UserRepository())
 @router.get(
     path="/{user_id}",
     response_model=User,
-    exceptions=[UserNotFoundError(userId=1234)],
+    exceptions=[UserNotFoundError],
 )
 async def get_user_by_id(
     user_id: Annotated[int, Path()],

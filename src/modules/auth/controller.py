@@ -33,7 +33,7 @@ SERVICE = AuthService(AuthRepository(), CryptHelper())
     path="/login",
     response_model=LoginResponse,
     status_code=status.HTTP_200_OK,
-    exceptions=[EmailOrPasswordError()],
+    exceptions=[EmailOrPasswordError],
 )
 async def login(params: Annotated[LoginParams, Body()]) -> LoginResponse:
     """Login with email and password."""
@@ -45,11 +45,11 @@ async def login(params: Annotated[LoginParams, Body()]) -> LoginResponse:
     response_model=LoginResponse,
     status_code=status.HTTP_201_CREATED,
     exceptions=[
-        EmailOrPasswordError(),
-        InvalidUsernameError(),
-        InvalidEmailError(),
-        InvalidPasswordError(),
-        UsernameAlreadyExistsError(),
+        EmailOrPasswordError,
+        InvalidUsernameError,
+        InvalidEmailError,
+        InvalidPasswordError,
+        UsernameAlreadyExistsError,
     ],
 )
 async def register(params: Annotated[RegisterParams, Body()]) -> LoginResponse:
@@ -63,10 +63,10 @@ async def register(params: Annotated[RegisterParams, Body()]) -> LoginResponse:
     status_code=status.HTTP_200_OK,
     response_model=ChangePasswordResponse,
     exceptions=[
-        UserNotFoundError(),
-        PasswordAlreadyUsedError(),
-        PasswordsDoNotMatchError(),
-        InvalidPasswordError(),
+        UserNotFoundError,
+        PasswordAlreadyUsedError,
+        PasswordsDoNotMatchError,
+        InvalidPasswordError,
     ],
 )
 async def change_password(
