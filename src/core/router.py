@@ -269,6 +269,7 @@ class ApiRouter(APIRouter):
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
+            methods=["GET"],
             response_model=response_model,
             status_code=status_code,
             tags=tags,
@@ -334,6 +335,7 @@ class ApiRouter(APIRouter):
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
+            methods=["POST"],
             response_model=response_model,
             status_code=status_code,
             tags=tags,
@@ -399,6 +401,7 @@ class ApiRouter(APIRouter):
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
+            methods=["PUT"],
             response_model=response_model,
             status_code=status_code,
             tags=tags,
@@ -464,6 +467,7 @@ class ApiRouter(APIRouter):
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
+            methods=["PATCH"],
             response_model=response_model,
             status_code=status_code,
             tags=tags,
@@ -529,6 +533,7 @@ class ApiRouter(APIRouter):
     ) -> Callable[[DecoratedCallable], DecoratedCallable]:
         return self.api_route(
             path,
+            methods=["DELETE"],
             response_model=response_model,
             status_code=status_code,
             tags=tags,
