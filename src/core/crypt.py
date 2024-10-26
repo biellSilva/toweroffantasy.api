@@ -25,11 +25,11 @@ class CryptHelper:
     ) -> "tuple[ _AccessToken, datetime, _RefreshToken ]":
         """Encode payload."""
 
-        access_expire = current_datetime() + timedelta(hours=1)
+        access_expire = current_datetime() + timedelta(minutes=30)
         payload["exp"] = access_expire
         access_token = str(encode(payload, key=config.ACCESS_SECRET, algorithm="HS256"))
 
-        payload["exp"] = current_datetime() + timedelta(days=1)
+        payload["exp"] = current_datetime() + timedelta(hours=24)
         refresh_token = str(
             encode(payload, key=config.REFRESH_SECRET, algorithm="HS256"),
         )
