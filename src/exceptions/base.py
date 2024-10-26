@@ -22,7 +22,7 @@ class ApiError(Exception):
         super().__init__(f"STATUS CODE: {status_code} - MESSAGE: {message}")
 
     @staticmethod
-    def handle_error(_: "Request", exc: "ApiError") -> JSONResponse:
+    async def handle_error(_: "Request", exc: "ApiError") -> JSONResponse:
         return JSONResponse(
             {
                 "className": exc.__class__.__name__,
