@@ -2,10 +2,9 @@ from typing import Literal
 
 from fastapi import Request
 from fastapi.security import APIKeyHeader
-from jwt import DecodeError
+from jwt import DecodeError, ExpiredSignatureError
 from pydantic import ValidationError
 
-from src._utils import current_datetime
 from src.core.crypt import CryptHelper
 from src.exceptions.unauthorized import (
     ExpiredTokenError,
@@ -49,8 +48,8 @@ class AuthSecurity(APIKeyHeader):
         except (ValidationError, DecodeError):
             raise InvalidTokenError from None
 
-        if payload.exp < current_datetime():
-            raise ExpiredTokenError
+        except ExpiredSignatureError:
+            raise ExpiredTokenError from None
 
         request.state.user = payload
         return True
