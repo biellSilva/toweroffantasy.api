@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from fastapi import Body, Request, status
+from fastapi import Body, Header, Request, status
 
 from src.core.crypt import CryptHelper
 from src.core.router import ApiRouter
@@ -12,17 +12,19 @@ from src.exceptions.bad_request import (
 )
 from src.exceptions.conflict import PasswordAlreadyUsedError, UsernameAlreadyExistsError
 from src.exceptions.not_found import UserNotFoundError
-from src.exceptions.unauthorized import EmailOrPasswordError
+from src.exceptions.unauthorized import (
+    EmailOrPasswordError,
+    ExpiredTokenError,
+    InvalidTokenError,
+)
 from src.modules.auth.dtos import (
     ChangePasswordParams,
-    ChangePasswordResponse,
     LoginParams,
     LoginResponse,
     RegisterParams,
 )
 from src.modules.auth.repository import AuthRepository
 from src.modules.auth.service import AuthService
-from src.modules.user.dtos import User
 
 router = ApiRouter(prefix="/auth", tags=["auth"])
 
@@ -60,8 +62,7 @@ async def register(params: Annotated[RegisterParams, Body()]) -> LoginResponse:
 @router.patch(
     path="/change-password",
     requires_login=True,
-    status_code=status.HTTP_200_OK,
-    response_model=ChangePasswordResponse,
+    status_code=status.HTTP_204_NO_CONTENT,
     exceptions=[
         UserNotFoundError,
         PasswordAlreadyUsedError,
@@ -72,6 +73,17 @@ async def register(params: Annotated[RegisterParams, Body()]) -> LoginResponse:
 async def change_password(
     request: Request,
     params: Annotated[ChangePasswordParams, Body()],
-) -> User:
+) -> None:
     """Change the password of the current user."""
-    return await SERVICE.change_password(request.state.user.id, params)
+    await SERVICE.change_password(request.state.user.id, params)
+
+
+@router.get(
+    "/check",
+    status_code=status.HTTP_204_NO_CONTENT,
+    exceptions=[InvalidTokenError, ExpiredTokenError],
+)
+async def check_access_token(
+    authorization: str = Header(alias="Authorization"),
+) -> None:
+    await SERVICE.check_access_token(token=authorization)

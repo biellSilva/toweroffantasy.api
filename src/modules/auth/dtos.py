@@ -36,16 +36,9 @@ class ChangePasswordParams(BaseModel):
     new_password: str
 
 
-class ChangePasswordResponse(BaseModel):
-    """Change password parameters."""
-
-    message: str = "Password changed successfully"
-
-
 class Payload(BaseModel):
     """Payload model."""
 
     id: int
     email: str
     username: str
-    exp: datetime

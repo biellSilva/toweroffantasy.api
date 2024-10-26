@@ -1,5 +1,8 @@
 from typing import TYPE_CHECKING
 
+from jwt import DecodeError, ExpiredSignatureError
+from pydantic import ValidationError
+
 from src._settings import config
 from src.exceptions.bad_request import (
     InvalidEmailError,
@@ -9,7 +12,11 @@ from src.exceptions.bad_request import (
 )
 from src.exceptions.conflict import PasswordAlreadyUsedError, UsernameAlreadyExistsError
 from src.exceptions.not_found import UserNotFoundError
-from src.exceptions.unauthorized import EmailOrPasswordError
+from src.exceptions.unauthorized import (
+    EmailOrPasswordError,
+    ExpiredTokenError,
+    InvalidTokenError,
+)
 from src.modules.auth.dtos import (
     ChangePasswordParams,
     LoginParams,
@@ -125,3 +132,12 @@ class AuthService:
 
         user = await self.repository.update_user_password(user, new_password)
         return User(**user.__dict__)
+
+    async def check_access_token(self, token: str) -> None:
+        try:
+            self.crypt_helper.decode_access(token)
+        except (ValidationError, DecodeError):
+            raise InvalidTokenError from None
+
+        except ExpiredSignatureError:
+            raise ExpiredTokenError from None
