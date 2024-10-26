@@ -21,3 +21,9 @@ def add_routes(app: FastAPI) -> None:
     from src.modules.router import router
 
     app.include_router(router)
+
+
+def add_middlewares(app: FastAPI) -> None:
+    from src.middlewares.timeit import ProcessTime
+
+    app.add_middleware(ProcessTime)
