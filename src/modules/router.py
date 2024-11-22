@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
 from src.modules.auth.controller import router as auth_router
-from src.modules.matrice.controller import router as matrice_router
+from src.modules.matrices.controller import router as matrice_router
 from src.modules.user.controller import router as user_router
 
 router = APIRouter()

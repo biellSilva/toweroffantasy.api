@@ -6,12 +6,12 @@ from src._types import LangsEnum
 from src.core.router import ApiRouter
 from src.exceptions.not_found import MatrixSuiteNotFoundError
 from src.modules.base.dtos import BaseDataDto
-from src.modules.matrice.dtos import GetMatrix
-from src.modules.matrice.model import Suit
-from src.modules.matrice.repository import MatriceRepository
-from src.modules.matrice.service import MatriceService
+from src.modules.matrices.dtos import GetMatrix
+from src.modules.matrices.model import Suit
+from src.modules.matrices.repository import MatriceRepository
+from src.modules.matrices.service import MatriceService
 
-router = ApiRouter(prefix="/matrice", tags=["matrice"])
+router = ApiRouter(prefix="/matrices", tags=["matrices"])
 
 SERVICE = MatriceService(MatriceRepository())
 

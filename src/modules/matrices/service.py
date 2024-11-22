@@ -2,10 +2,10 @@ from typing import TYPE_CHECKING
 
 from src._types import LangsEnum
 from src.exceptions.not_found import MatrixSuiteNotFoundError
-from src.modules.matrice.model import Suit
+from src.modules.matrices.model import Suit
 
 if TYPE_CHECKING:
-    from src.modules.matrice.repository import MatriceRepository
+    from src.modules.matrices.repository import MatriceRepository
 
 
 class MatriceService:
