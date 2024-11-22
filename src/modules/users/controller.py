@@ -4,11 +4,11 @@ from fastapi import Path, Request
 
 from src.core.router import ApiRouter
 from src.exceptions.not_found import UserNotFoundError
-from src.modules.user.dtos import User
-from src.modules.user.repository import UserRepository
-from src.modules.user.service import UserService
+from src.modules.users.dtos import User
+from src.modules.users.repository import UserRepository
+from src.modules.users.service import UserService
 
-router = ApiRouter(prefix="/user", tags=["user"])
+router = ApiRouter(prefix="/users", tags=["users"])
 
 SERVICE = UserService(UserRepository())
 

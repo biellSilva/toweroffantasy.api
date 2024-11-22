@@ -2,7 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel
 
-from src.modules.user.dtos import User
+from src.modules.users.dtos import User
 
 
 class LoginParams(BaseModel):

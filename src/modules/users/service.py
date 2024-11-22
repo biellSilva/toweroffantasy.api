@@ -1,10 +1,10 @@
 from typing import TYPE_CHECKING
 
 from src.exceptions.not_found import UserNotFoundError
-from src.modules.user.dtos import User
+from src.modules.users.dtos import User
 
 if TYPE_CHECKING:
-    from src.modules.user.repository import UserRepository
+    from src.modules.users.repository import UserRepository
 
 
 class UserService:

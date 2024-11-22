@@ -6,8 +6,8 @@ from sqlalchemy import select
 from src.modules.auth.dtos import RegisterParams
 from src.modules.auth.table import OldHashTable
 from src.modules.base.repository import BaseRepository
-from src.modules.user.dtos import UpdateUser
-from src.modules.user.table import UserTable
+from src.modules.users.dtos import UpdateUser
+from src.modules.users.table import UserTable
 
 
 class AuthRepository(BaseRepository):

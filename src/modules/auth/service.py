@@ -24,7 +24,7 @@ from src.modules.auth.dtos import (
     Payload,
     RegisterParams,
 )
-from src.modules.user.dtos import User
+from src.modules.users.dtos import User
 from src.validators.regex import RegexValidator
 
 if TYPE_CHECKING:
