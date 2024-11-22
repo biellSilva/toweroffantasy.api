@@ -13,9 +13,12 @@ class _BaseSettings(BaseSettings):
     PROJECT_NAME: str = "Tower of Fantasy API"
 
     DB_URL: str
+    REDIS_URL: str
 
     ACCESS_SECRET: str = "secret"
     REFRESH_SECRET: str = "secret"
+
+    CACHE_EXPIRE: int = 60 * 60
 
     EMAIL_MIN_LENGTH: int = 4
     EMAIL_MAX_LENGTH: int = 256
