@@ -46,12 +46,8 @@ class RedisCache:
             await self._client.set(
                 name=f"{self.module}:{lang}:{key}",
                 value=dumps(value),
+                ex=config.CACHE_EXPIRE,
             )
-
-        await self._client.expire(
-            name=f"{self.module}:{lang}:*",
-            time=config.CACHE_EXPIRE,
-        )
 
     async def set_value(
         self,
@@ -61,9 +57,8 @@ class RedisCache:
         value: dict[str, Any],
     ) -> None:
         """Set a value in the cache."""
-        await self._client.set(name=f"{self.module}:{lang}:{key}", value=dumps(value))
-
-        await self._client.expire(
+        await self._client.set(
             name=f"{self.module}:{lang}:{key}",
-            time=config.CACHE_EXPIRE,
+            value=dumps(value),
+            ex=config.CACHE_EXPIRE,
         )
