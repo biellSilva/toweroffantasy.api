@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 from src._types import LangsEnum
-from src.exceptions.not_found import MatriceNotFoundError
+from src.exceptions.not_found import MatrixSuiteNotFoundError
 from src.modules.matrice.model import Suit
 
 if TYPE_CHECKING:
@@ -15,7 +15,7 @@ class MatriceService:
     async def get(self, *, lang: LangsEnum, _id: str) -> Suit:
         if data := await self.matrice_repository.get_id(lang=lang, _id=_id):
             return Suit(**data)
-        raise MatriceNotFoundError(lang=lang, id=_id)
+        raise MatrixSuiteNotFoundError(lang=lang, id=_id)
 
     async def get_all(self, *, lang: LangsEnum) -> list[Suit]:
         return [
