@@ -25,12 +25,12 @@ class UserNotFoundError(NotFoundError):
         super().__init__(message=message, **metadata)
 
 
-class MatriceNotFoundError(NotFoundError):
-    """Matrice not found error."""
+class MatrixSuiteNotFoundError(NotFoundError):
+    """Matrix suite not found error."""
 
     def __init__(
         self,
-        message: str = "Matrice not found.",
+        message: str = "Matrix suite not found.",
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
         super().__init__(message=message, **metadata)
