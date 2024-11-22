@@ -1,19 +1,11 @@
 from json import dumps, loads
-from typing import Any, Self
+from typing import Any
 
 from src._settings import config
 from src.context.redis_conn import RedisConnection
 
 
 class RedisCache:
-    __instance: Self | None = None
-
-    def __new__(cls, name: str) -> Self:
-        if cls.__instance is None:
-            cls.__instance = super().__new__(cls)
-            cls.__instance.__init__(name)
-        return cls.__instance
-
     def __init__(self, name: str) -> None:
         self.module = name
 
