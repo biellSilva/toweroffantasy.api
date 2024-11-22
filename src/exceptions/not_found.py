@@ -34,3 +34,14 @@ class MatrixSuiteNotFoundError(NotFoundError):
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
         super().__init__(message=message, **metadata)
+
+
+class SimulacrumNotFoundError(NotFoundError):
+    """Simulacrum not found error."""
+
+    def __init__(
+        self,
+        message: str = "Simulacrum not found.",
+        **metadata: str | float | dict[str, Any] | list[Any],
+    ) -> None:
+        super().__init__(message=message, **metadata)
