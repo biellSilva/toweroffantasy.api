@@ -127,7 +127,7 @@ class ApiRouter(APIRouter):
                         "application/json": {
                             "examples": {
                                 exc.__class__.__name__: {
-                                    "value": exc.__dict__,
+                                    "value": exc.example(),
                                 },
                             },
                         },
@@ -137,7 +137,7 @@ class ApiRouter(APIRouter):
                 responses[exc.status_code]["content"]["application/json"]["examples"][
                     exc.__class__.__name__
                 ] = {
-                    "value": exc.__dict__,
+                    "value": exc.example(),
                 }
 
         return responses

@@ -32,3 +32,11 @@ class ApiError(Exception):
             },
             status_code=exc.status_code,
         )
+
+    def example(self) -> dict[str, Any]:
+        return {
+            "className": self.__class__.__name__,
+            "message": self.message,
+            "statusCode": self.status_code,
+            "metadata": self.metadata,
+        }
