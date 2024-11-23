@@ -18,6 +18,6 @@ jobs:
           port: ${{ secrets.PORT }}
 
           script: |
-            cd code && docker compose up -d --build
+            cd code && docker compose up -d api --build
 
           debug: true
