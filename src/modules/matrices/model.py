@@ -1,10 +1,12 @@
 from pydantic import BaseModel
 
+from src._types import AssetPath
+
 
 class _SuitAssets(BaseModel):
-    icon: str
-    remould_icon: str
-    icon_temp: str
+    icon: AssetPath
+    remould_icon: AssetPath
+    icon_temp: AssetPath
 
 
 class _SuitSet(BaseModel):
@@ -15,9 +17,9 @@ class _SuitSet(BaseModel):
 
 
 class _ModifierAssets(BaseModel):
-    icon: str
-    add_icon: str | None
-    dec_icon: str | None
+    icon: AssetPath
+    add_icon: AssetPath | None
+    dec_icon: AssetPath | None
 
 
 class _MatriceModifier(BaseModel):
@@ -34,8 +36,8 @@ class _MatriceModifier(BaseModel):
 
 
 class _MatriceAssets(BaseModel):
-    large_icon: str
-    icon: str
+    large_icon: AssetPath
+    icon: AssetPath
 
 
 class _SuitMatrice(BaseModel):

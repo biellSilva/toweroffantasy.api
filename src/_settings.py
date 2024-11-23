@@ -20,6 +20,8 @@ class _BaseSettings(BaseSettings):
 
     CACHE_EXPIRE: int = 60 * 60
 
+    ASSETS_PREFIX: str = "https://raw.githubusercontent.com/biellSilva/toweroffantasy.images/refs/heads/main"
+
     EMAIL_MIN_LENGTH: int = 4
     EMAIL_MAX_LENGTH: int = 256
     EMAIL_REGEX: str = r"^(?=.{4,256}$)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"

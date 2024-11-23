@@ -2,12 +2,13 @@ from typing import Annotated
 
 from pydantic import BaseModel, Field
 
+from src._types import AssetPath
 from src.modules.base.model import BackgroundColor
 
 
 class _FashionAssets(BaseModel):
-    painting: str
-    gray_painting: str
+    painting: AssetPath
+    gray_painting: AssetPath
 
 
 class _ImitationFashion(BaseModel):
@@ -55,28 +56,28 @@ class _ImitationExtras(BaseModel):
 
 
 class _ImitationAssets(BaseModel):
-    name_picture: str | None
-    name_2_picture: str | None
-    name_3_picture: str | None
-    desc_painting: str | None
-    painting: str | None
-    gray_painting: str | None
-    thumb_painting: str | None
-    weapon_show_picture: str | None
-    has_got_awaken_entrance: str | None
-    not_got_awaken_entrance: str | None
-    card_adv_page: str | None
-    advance_painting: str | None
-    advance_gray_painting: str | None
-    back_photo: str | None
-    rarity_icon: str | None
-    job_back: str | None
-    motto_picture: str | None
-    motto_2_picture: str | None
-    title_picture: str | None
-    imitation_virtual_shadow: str | None
-    awaken_name_picture: str | None
-    awaken_photo: str | None
+    name_picture: AssetPath | None
+    name_2_picture: AssetPath | None
+    name_3_picture: AssetPath | None
+    desc_painting: AssetPath | None
+    painting: AssetPath | None
+    gray_painting: AssetPath | None
+    thumb_painting: AssetPath | None
+    weapon_show_picture: AssetPath | None
+    has_got_awaken_entrance: AssetPath | None
+    not_got_awaken_entrance: AssetPath | None
+    card_adv_page: AssetPath | None
+    advance_painting: AssetPath | None
+    advance_gray_painting: AssetPath | None
+    back_photo: AssetPath | None
+    rarity_icon: AssetPath | None
+    job_back: AssetPath | None
+    motto_picture: AssetPath | None
+    motto_2_picture: AssetPath | None
+    title_picture: AssetPath | None
+    imitation_virtual_shadow: AssetPath | None
+    awaken_name_picture: AssetPath | None
+    awaken_photo: AssetPath | None
 
 
 class Imitation(BaseModel):
