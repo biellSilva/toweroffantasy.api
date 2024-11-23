@@ -7,6 +7,8 @@ RUN pip install pdm
 
 RUN pdm install
 
+EXPOSE 8000
+
 COPY . /app
 
 CMD ["pdm", "run", "start"]
