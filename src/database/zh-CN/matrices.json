@@ -1,4 +1,230 @@
 {
+  "suit_SSR51": {
+    "id": "suit_SSR51",
+    "name": "魔力之源",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR51_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_huihu.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR51.webp"
+    },
+    "sets": [
+      {
+        "description": "激活非恩赐共鸣时,冰攻提升24%/26%/28%/30%,激活恩赐共鸣时,全攻提升24%/26%/28%/30%;自身治疗效果提升20%,战斗状态下第一次造成伤害时,自身获得1000点武器充能值,15秒内最多触发一次,装备后后台可生效,多套只生效最高星级。",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "连携-时空火花释放成功后,最终伤害提升11%/15%/19%/23%,若处于非恩赐共鸣时释放,冰元素伤害额外提升20%,若处于恩赐共鸣时释放,自身和附近队友暴击率额外提升20%,暴击伤害额外提升与12%,以上效果均持续40秒,装备后后台可生效,多套只生效最高星级。",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR51_1",
+        "name": "灰狐·独行自立",
+        "description": "魔女的成长,源于独自成行。",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "生命",
+            "description": "提高拓荒者的最大生命值",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "暴击",
+            "description": "攻击同等级对手时,增加暴击概率{0}%,也可提高技能进行治疗时的暴击率。",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_2",
+        "name": "灰狐·寒泉在浚",
+        "description": "时间会消逝,亲情却是永恒。",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻击",
+            "description": "提高玩家的攻击力",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "生命",
+            "description": "提高拓荒者的最大生命值",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_3",
+        "name": "灰狐·反叛路线",
+        "description": "真理的坚持,需要付出代价。",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻击",
+            "description": "提高玩家的攻击力",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "生命",
+            "description": "提高拓荒者的最大生命值",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_4",
+        "name": "灰狐·同理共情",
+        "description": "伙伴的意义,在于共同感受。",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻击",
+            "description": "提高玩家的攻击力",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "全抗",
+            "description": "提高拓荒者的所有元素属性抗性",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR50": {
     "id": "suit_SSR50",
     "name": "演绎",
@@ -914,7 +1140,7 @@
     },
     "sets": [
       {
-        "description": "寒冰伤害提升12%/14%/16%/18%,目标<shuzhi>连携-冰封</>状态解除后,每秒受到0.5%已损失生命值的流血伤害(该伤害不超过玩家200倍攻击力,且不受任何增伤效果影响),持续10秒。装备后后台可生效,多套只生效最高星级。",
+        "description": "寒冰伤害提升12%/14%/16%/18%,目标<shuzhi>连携-冰封</>状态解除后,每秒受到玩家200倍攻击力的流血伤害(该伤害不受任何增伤效果影响),持续10秒。装备后后台可生效,多套只生效最高星级。",
         "needs": 2,
         "is_global": true,
         "add_score": 80.0
@@ -3632,7 +3858,7 @@
         "add_score": 80.0
       },
       {
-        "description": "添加蛇噬效果后,物攻和火攻提升9%,持续30秒,后台生效。入战最终伤害提升14%/17%/20%/23%",
+        "description": "添加蛇噬效果后,物攻和火攻提升9%,持续30秒。战斗状态下,最终伤害增加14%/17%/20%/23%。装备后后台可生效,多套只生效最高星级。",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0

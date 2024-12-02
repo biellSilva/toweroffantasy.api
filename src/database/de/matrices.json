@@ -1,4 +1,230 @@
 {
+  "suit_SSR51": {
+    "id": "suit_SSR51",
+    "name": "Quelle der Magie",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR51_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_huihu.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR51.webp"
+    },
+    "sets": [
+      {
+        "description": "Wenn eine Resonanz (mit Ausnahme von Segnungsresonanz) aktiv ist, erhöht sich der Frost-ANG um 24%/26%/28%/30%. Wenn Segnungsresonanz aktiv ist, werden alle Angriffe um 24%/26%/28%/30% erhöht. Erhöht die Heilung um 20%. Gewährt 1000 Waffenladung, wenn zum ersten Mal im Kampf Schaden verursacht wird. Kann nur alle 15 Sek. ausgelöst werden. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Nach der Verwendung von „Raumzeit-Funken“ erhöht sich der Endschaden um 11%/15%/19%/23%. Wenn bei Verwendung eine Resonanz (mit Ausnahme von Segnungsresonanz) aktiv ist, erhöht sich der Frostschaden zusätzlich um 20%. Wenn bei Verwendung Segnungsresonanz aktiv ist, erhöht sich die kritische Trefferrate des Wanderers und von Teammitgliedern in der Nähe zusätzlich um 20% sowie der krit. Schaden um zusätzliche 12%. Diese Effekte halten 40 Sek. lang an. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR51_1",
+        "name": "Graufuchs: Unabhängigkeit",
+        "description": "Die einsame Reise bestimmt das Wachstum der Hexe.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "LP",
+            "description": "Erhöht die max. LP der Wanderer.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Krit",
+            "description": "Erhöht die kritische Trefferrate um {0}% beim Angriff eines Gegners der gleichen Stufe; erhöht auch die kritische Trefferrate bei der Verwendung von Heilfähigkeiten.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_2",
+        "name": "Graufuchs: Fleisch & Blut",
+        "description": "Zeit kommt und vergeht, doch Familie währt ewig.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Angriff",
+            "description": "Erhöht den ANG des Wanderers.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "LP",
+            "description": "Erhöht die max. LP der Wanderer.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_3",
+        "name": "Graufuchs: Preis des Wachstums",
+        "description": "Der Wahrheit zu folgen, hat einen Preis.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Angriff",
+            "description": "Erhöht den ANG des Wanderers.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "LP",
+            "description": "Erhöht die max. LP der Wanderer.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_4",
+        "name": "Graufuchs: Gegenseitige Gefühle",
+        "description": "Die Bedeutung von Freundschaft liegt in geteilten Gefühlen.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Angriff",
+            "description": "Erhöht den ANG des Wanderers.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Widerstand",
+            "description": "Erhöht den Widerstand der Wanderer gegen alle Elemente.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR50": {
     "id": "suit_SSR50",
     "name": "Interpretation",
@@ -914,7 +1140,7 @@
     },
     "sets": [
       {
-        "description": "Erhöht den Frostschaden um 12%/14%/16%/18%. Wenn <shuzhi>Vereisung</> von einem Ziel entfernt wurde, erleidet der Wanderer für 10 Sek. pro Sekunde Blutungsschaden in Höhe von 0.5% der verlorenen LP (dieser Schaden kann das 200-fache des ANG des Wanderers nicht übersteigen und wird nicht von Schadensbonus-Effekten beeinflusst). Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+        "description": "Erhöht den Frostschaden um 12%/14%/16%/18% Wenn <shuzhi>Vereisung</> von einem Ziel entfernt wurde, erleidet der Wanderer für 10 Sek. pro Sekunde Blutungsschaden in Höhe von 200 multipliziert mit dem ANG des Wanderers (dieser Schaden wird nicht von Schadensbonus-Effekten beeinflusst). Der Set-Effekt funktioniert auch im Nebenhand-Slot, und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
         "needs": 2,
         "is_global": true,
         "add_score": 80.0
@@ -3632,7 +3858,7 @@
         "add_score": 80.0
       },
       {
-        "description": "Nach Verursachen des „Schlangenbiss“-Effekts wird der physische und Flammen-ANG für 30 Sek. um 9% erhöht. Funktioniert auch im Nebenhand-Slot. Im Kampfstatus wird der Endschaden um 14%/17%/20%/23% erhöht.",
+        "description": "Nach Verursachen des „Schlangenbiss“-Effekts werden der physische ANG und Flammen-ANG für 30 Sek. um 9% erhöht. Im Kampfstatus wird der Endschaden um 14%/17%/20%/23% erhöht. Der Set-Effekt funktioniert auch im Nebenhand-Slot, und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0

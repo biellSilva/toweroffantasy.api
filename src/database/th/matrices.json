@@ -1,4 +1,230 @@
 {
+  "suit_SSR51": {
+    "id": "suit_SSR51",
+    "name": "แหล่งที่มาของเวทมนตร์",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR51_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_huihu.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR51.webp"
+    },
+    "sets": [
+      {
+        "description": "เมื่อเปิดใช้งานเรโซแนนซ์ไร้พร ATK น้ําแข็งเพิ่ม 24%/26%/28%/30% เมื่อเปิดใช้งานเรโซแนนซ์ประทานพร โจมตีทุกประเภทเพิ่ม 24%/26%/28%/30%; เอฟเฟกต์รักษานักพเนจรเพิ่ม 20% เมื่ออยู่ในสถานะต่อสู้ การสร้างดาเมจครั้งที่หนึ่ง จะทําให้นักพเนจรได้รับแต้มชาร์จอาวุธ 1000 แต้ม ซึ่งจะปลดปล่อยได้สูงสุดเพียงหนึ่งครั้งภายใน 15 วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "หลังคอมโบ: ประกายแห่งกาลอวกาศปลดปล่อยสําเร็จ ดาเมจสุดท้ายเพิ่ม 11%/15%/19%/23% หากอยู่ในช่วงปลดปล่อยเรโซแนนซ์ไร้พร ดาเมจน้ําแข็งเพิ่มเติมจะเพิ่ม 20% หากอยู่ในช่วงปลดปล่อยเรโซแนนซ์ประทานพร อัตราคริติคอลของนักพเนจรและเพื่อนร่วมทีมที่อยู่ใกล้เคียงเพิ่ม 20% ดาเมจคริติคอลเพิ่มเติมจะเพิ่ม 12% เอฟเฟกต์ข้างต้นจะคงอยู่ 40 วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR51_1",
+        "name": "เกรย์ฟ็อกซ์: ผู้ไม่พึ่งพึงใคร",
+        "description": "การเติบโตของแม่มด จุดกําเนิดของผู้ไม่พึ่งพึงใคร",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "เพิ่ม HP สูงสุดของนักพเนจร",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "คริติคอล",
+            "description": "เมื่อโจมตีคู่ต่อสู้ที่มีเลเวลเดียวกัน อัตราคริติคอลจะเพิ่มขึ้น {0}% และยังสามารถเพิ่มอัตราคริติคอลเมื่อใช้สกิลรักษาได้",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_2",
+        "name": "เกรย์ฟ็อกซ์: ความจริงแห่งโลก",
+        "description": "เวลาจะเลือนหาย แต่ความรักของครอบครัวจะคงอยู่ตลอดไป",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "โจมตี",
+            "description": "เพิ่ม ATK ของผู้เล่น",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "เพิ่ม HP สูงสุดของนักพเนจร",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_3",
+        "name": "เกรย์ฟ็อกซ์: ราคาแห่งการเติบโต",
+        "description": "การยืนหยัดต่อความจริงนั้นมีราคาที่ต้องจ่าย",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "โจมตี",
+            "description": "เพิ่ม ATK ของผู้เล่น",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "เพิ่ม HP สูงสุดของนักพเนจร",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_4",
+        "name": "เกรย์ฟ็อกซ์: ความรู้สึกร่วม",
+        "description": "ความหมายของพวกพ้องอยู่ในความรู้สึกที่มีร่วมกัน",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "โจมตี",
+            "description": "เพิ่ม ATK ของผู้เล่น",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "ค่าต้านทาน",
+            "description": "เพิ่มความต้านทานธาตุทั้งหมดของนักพเนจร",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR50": {
     "id": "suit_SSR50",
     "name": "การตีความ",
@@ -914,7 +1140,7 @@
     },
     "sets": [
       {
-        "description": "เพิ่มดาเมจน้ําแข็ง 12%/14%/16%/18% เมื่อเป้าหมายลบล้างสถานะ<shuzhi>คอมโบ: หนาวยะเยือก</>แล้ว ทุกวินาทีจะได้รับดาเมจหลั่งเลือดเท่ากับ 0.5% ของ HP ที่เสียไป (ดาเมจนี้จะไม่เกิน 200 เท่าของ ATK ของผู้เล่น และจะไม่ได้รับผลเอฟเฟกต์เพิ่มดาเมจใด ๆ) เป็นเวลา 10 วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+        "description": "เพิ่มดาเมจน้ําแข็ง 12%/14%/16%/18% เมื่อเป้าหมายลบล้างสถานะ<shuzhi>คอมโบ: หนาวยะเยือก</>แล้ว ทุก ๆ วินาทีจะได้รับดาเมจหลั่งเลือดเท่ากับ 200 เท่าของ ATK ของผู้เล่น (ดาเมจนี้จะไม่ได้รับผลเอฟเฟกต์เพิ่มดาเมจใด ๆ) เป็นเวลา 10 วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
         "needs": 2,
         "is_global": true,
         "add_score": 80.0
@@ -3632,7 +3858,7 @@
         "add_score": 80.0
       },
       {
-        "description": "หลังจากเพิ่มเอฟเฟกต์อสรพิษเขมือบแล้ว ATK กายภาพและ ATK ไฟจะเพิ่มขึ้น 9% เป็นเวลา 30 วินาที มีผลกับช่องอาวุธรอง เมื่อเข้าต่อสู้ดาเมจสุดท้ายจะเพิ่มขึ้น 14%/17%/20%/23%",
+        "description": "หลังเพิ่มเอฟเฟกต์อสรพิษเขมือบ ATK กายภาพและ ATK ไฟจะเพิ่มขึ้น 9% เป็นเวลา 30 วินาที เมื่ออยู่ภายใต้สถานะต่อสู้ ดาเมจสุดท้ายเพิ่ม 14%/17%/20%/23% เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0

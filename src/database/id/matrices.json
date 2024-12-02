@@ -1,4 +1,230 @@
 {
+  "suit_SSR51": {
+    "id": "suit_SSR51",
+    "name": "Sumber Keajaiban",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR51_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_huihu.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR51.webp"
+    },
+    "sets": [
+      {
+        "description": "Saat Resonansi yang aktif bukan Benediction, Frost ATK meningkat 24%/26%/28%/30%. Saat Resonansi Benediction aktif, semua ATK meningkat 24%/26%/28%/30%. Pemulihan meningkat 20%. Saat menimpakan DMG pertama kali dalam pertempuran, mendapat 1000 charge senjata. Efek ini hanya bisa terpicu satu kali tiap 15 detik. Efek set ini berfungsi pada slot sampingan, dan yang akan berlaku hanyalah set yang rating bintangnya paling tinggi.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Setelah menggunakan Spacetime Spark, Final DMG meningkat 11%/15%/19%/23%. Jika digunakan saat Resonansi yang aktif bukan Benediction, Frost DMG meningkat lagi 20%. Jika digunakan saat Resonansi Benediction aktif, Crit Rate Wanderer dan rekan tim di sekitar meningkat lagi 20% dan Crit DMG meningkat lagi 12%. Efek ini bertahan selama 40 detik. Efek set ini berfungsi pada slot sampingan, dan yang akan berlaku hanyalah set yang rating bintangnya paling tinggi.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR51_1",
+        "name": "Gray Fox: Kemandirian",
+        "description": "Gadis penyihir tumbuh dan berangkat dalam perjalanan solonya.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "Meningkatkan Max HP Wanderer.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Crit",
+            "description": "Meningkatkan Crit Rate sebesar {0}% saat menyerang lawan dengan level yang sama; juga meningkatkan Crit Rate saat menggunakan skill untuk penyembuhan.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_2",
+        "name": "Gray Fox: Daging & Darah",
+        "description": "Waktu terus berlalu, tetapi keluarga bersama selalu.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Attack",
+            "description": "Meningkatkan ATK Wanderer.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "Meningkatkan Max HP Wanderer.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_3",
+        "name": "Gray Fox: Harga Pertumbuhan",
+        "description": "Memihak kebenaran selalu memerlukan pengorbanan besar.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Attack",
+            "description": "Meningkatkan ATK Wanderer.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "Meningkatkan Max HP Wanderer.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_4",
+        "name": "Gray Fox: Saling Rasa",
+        "description": "Sahabat sejati adalah mereka yang saling rasa dan menemani.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Attack",
+            "description": "Meningkatkan ATK Wanderer.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Resistance",
+            "description": "Meningkatkan resistansi Wanderer terhadap semua elemen.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR50": {
     "id": "suit_SSR50",
     "name": "Interpretasi",
@@ -914,7 +1140,7 @@
     },
     "sets": [
       {
-        "description": "Meningkatkan Frost DMG sebesar 12%/14%/16%/18%. Setelah <shuzhi>Icebound</> target dihapus, target menerima DMG Bleed setara 0.5% dari HP yang hilang tiap detik selama 10 detik (DMG ini tidak bisa melebihi 200 kali dari ATK Wanderer dan tidak terpengaruh efek DMG Boost apa pun). Efek set ini berfungsi pada slot sampingan, tapi yang akan berlaku hanyalah set yang rating bintangnya paling tinggi.",
+        "description": "Meningkatkan Frost DMG sebesar 12%/14%/16%/18%. Setelah <shuzhi>Icebound</> target dihapus, target menerima DMG Bleed sebesar 200 kali ATK Wanderer tiap detik selama 10 detik (DMG ini tidak terpengaruh efek DMG Boost apa pun). Efek set ini berfungsi pada slot sampingan, tetapi yang akan berlaku hanyalah set yang rating bintangnya paling tinggi.",
         "needs": 2,
         "is_global": true,
         "add_score": 80.0
@@ -3632,7 +3858,7 @@
         "add_score": 80.0
       },
       {
-        "description": "Setelah menimpakan efek Snake Bite, Physical ATK dan Flame ATK meningkat 9% selama 30 detik. Efek ini juga aktif saat senjata ada di slot sampingan. Saat dalam mode tempur, Final DMG meningkat sebesar 14%/17%/20%/23%.",
+        "description": "Setelah menimpakan efek Snake Bite, Physical ATK dan Flame ATK meningkat 9% selama 30 detik. Saat dalam mode tempur, Final DMG meningkat 14%/17%/20%/23%. Efek set ini juga aktif saat senjata ada di slot sampingan, tapi yang akan berlaku hanyalah set yang rating bintangnya paling tinggi.",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0

@@ -1,4 +1,230 @@
 {
+  "suit_SSR51": {
+    "id": "suit_SSR51",
+    "name": "Источник магии",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR51_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_huihu.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR51.webp"
+    },
+    "sets": [
+      {
+        "description": "Если активен любой резонанс, кроме посвящения, АТК холодом увеличивается на 24%/26%/28%/30%. Если активен резонанс посвящения, все типы атаки увеличиваются на 24%/26%/28%/30%. Лечение усиливается на 20%. Нанося урон впервые за бой, вы получаете 1000 ед. заряда оружия. Этот эффект срабатывает не чаще 1 раза каждые 15 сек. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "После применения Искры пространства и времени конечный урон увеличивается на 11%/15%/19%/23%. Если на момент использования активен любой резонанс, кроме посвящения, урон от холода увеличивается еще на 20%. Если на момент использования активен резонанс посвящения, шанс крит. удара странника и ближайших товарищей по команде увеличивается еще на 20%, а критический урон — еще на 12%. Эти эффекты действуют 40 сек. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR51_1",
+        "name": "Серая Лиса: Независимость",
+        "description": "Ведьма растет над собой, странствуя в одиночестве.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "ОЗ",
+            "description": "Увеличивает макс. ОЗ странников.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Крит. удар",
+            "description": "Увеличивает шанс крит. удара на {0}% при нападении на противника того же уровня; также повышает шанс крит. удара при использовании навыков для лечения.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_2",
+        "name": "Серая Лиса: Плоть и кровь",
+        "description": "Время приходит и уходит, но семья вечна.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Атака",
+            "description": "Увеличивает АТК странника.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "ОЗ",
+            "description": "Увеличивает макс. ОЗ странников.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_3",
+        "name": "Серая Лиса: Цена развития",
+        "description": "За приверженность правде приходится платить.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Атака",
+            "description": "Увеличивает АТК странника.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "ОЗ",
+            "description": "Увеличивает макс. ОЗ странников.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_4",
+        "name": "Серая Лиса: Взаимные чувства",
+        "description": "Суть дружбы заключена в разделенных чувствах.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Атака",
+            "description": "Увеличивает АТК странника.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Сопротивление",
+            "description": "Увеличивает сопротивление странников ко всем элементам.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR50": {
     "id": "suit_SSR50",
     "name": "Интерпретация",
@@ -914,7 +1140,7 @@
     },
     "sets": [
       {
-        "description": "Увеличивает урон от холода на 12%/14%/16%/18%. После того как эффект <shuzhi>«Скованный льдом»</> снимается с цели, наносит урон от кровопотери в размере 0.5% от потерянных ОЗ каждую секунду в течение 10 сек. Этот урон не может превышать (АТК странника × 200), и на него не влияют эффекты усиления урона. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+        "description": "Увеличивает урон от холода на 12%/14%/16%/18%. После того как эффект <shuzhi>«Скованный льдом»</> снимается с цели, наносит урон от кровопотери в размере (200 × АТК странника) каждую секунду в течение 10 сек. На этот урон не влияют эффекты усиления урона. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
         "needs": 2,
         "is_global": true,
         "add_score": 80.0
@@ -3632,7 +3858,7 @@
         "add_score": 80.0
       },
       {
-        "description": "После применения змеиного укуса увеличивает физическую АТК и АТК огнем на 9% на 30 сек. Также действует в ячейке дополнительного оружия. В бою увеличивает конечный урон на 14%/17%/20%/23%.",
+        "description": "После применения змеиного укуса увеличивает физическую АТК и АТК огнем на 9% на 30 сек. В бою увеличивает конечный урон на 14%/17%/20%/23%. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0

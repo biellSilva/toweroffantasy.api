@@ -1,4 +1,230 @@
 {
+  "suit_SSR51": {
+    "id": "suit_SSR51",
+    "name": "魔力の源",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR51_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_huihu.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR51.webp"
+    },
+    "sets": [
+      {
+        "description": "恩恵共鳴以外の発動中は氷攻撃力+24%/26%/28%/30%、恩恵共鳴の発動中は全属性の攻撃力+24%/26%/28%/30%。自身の回復効果+20%、戦闘状態で初めてダメージを与えた時、自身が武器エナジー値を1000獲得する。この効果は15秒ごとに最大1回のみ発動可能。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "連携スキル-タイムスパークの発動に成功すると、最終ダメージ+11%/15%/19%/23%。恩恵共鳴以外の時に発動すると、追加で氷ダメージ+20%。恩恵共鳴の時に発動すると、追加で自身と付近にいる仲間の会心率+20%、会心ダメージ+12%。これらの効果はいずれも40秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR51_1",
+        "name": "グレイフォックス・独立",
+        "description": "魔女は孤独の中で成長する",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "プレイヤーの最大HP UP",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "会心",
+            "description": "同レベルの相手を攻撃した時、会心率+{0}%。また、回復スキルを使用した際の会心率も UPする。",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_2",
+        "name": "グレイフォックス・純粋",
+        "description": "いくら時が過ぎても、家族愛は変わらずそこにある",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻撃",
+            "description": "プレイヤーの攻撃力 UP",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "プレイヤーの最大HP UP",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_3",
+        "name": "グレイフォックス・反逆",
+        "description": "犠牲を払わないと真理は貫けない",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻撃",
+            "description": "プレイヤーの攻撃力 UP",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "プレイヤーの最大HP UP",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_4",
+        "name": "グレイフォックス・共感",
+        "description": "気持ちを共有できる間柄...「仲間」",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻撃",
+            "description": "プレイヤーの攻撃力 UP",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "全属性耐性",
+            "description": "プレイヤーの全属性耐性 UP",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR50": {
     "id": "suit_SSR50",
     "name": "表現",
@@ -914,7 +1140,7 @@
     },
     "sets": [
       {
-        "description": "氷ダメージ+12%/14%/16%/18%。ターゲットの<shuzhi>連携スキル-アイスロック</>状態が解除されると、毎秒、失っているHP×0.5%の流血ダメージを受ける(このダメージはプレイヤーの攻撃力×200倍まで、かつダメージ UP効果の影響を受けない)。10秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+        "description": "氷ダメージ+12%/14%/16%/18%。ターゲットの<shuzhi>連携スキル-アイスロック</>状態が解除されると、毎秒、攻撃力の200倍の流血ダメージを受ける(このダメージはダメージ UP効果の影響を受けない)。10秒間持続。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
         "needs": 2,
         "is_global": true,
         "add_score": 80.0
@@ -3632,7 +3858,7 @@
         "add_score": 80.0
       },
       {
-        "description": "ターゲットに蛇咬を付与すると、自身の物理攻撃力と炎攻撃力+9%、30秒間持続。装備すると常時有効。戦闘状態時、最終与ダメージ+14%/17%/20%/23%。",
+        "description": "ターゲットに蛇咬を付与すると、自身の物理攻撃力と炎攻撃力+9%、30秒間持続。戦闘状態時、最終与ダメージ+14%/17%/20%/23%。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0

@@ -1,4 +1,230 @@
 {
+  "suit_SSR51": {
+    "id": "suit_SSR51",
+    "name": "Fuente de Magia",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR51_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_huihu.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR51.webp"
+    },
+    "sets": [
+      {
+        "description": "Cuando una resonancia diferente a Sacramento está activa, aumenta el ATQ de escarcha en 24%/26%/28%/30%. Cuando Resonancia de Sacramento está activa, aumenta el ataque conjunto en 24%/26%/28%/30%. Aumenta la curación en 20%. Al infligir daño por primera vez en el combate, otorga 1000 de carga de arma. Solo puede activarse una vez cada 15 seg. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Tras usar Chispa Espaciotemporal, aumenta el daño final en 11%/15%/19%/23%. Si se usa cuando una resonancia diferente a Sacramento está activa, aumenta el DAÑO de escarcha en un 20% adicional. Si se usa cuando Resonancia de Sacramento está activa, aumenta la tasa crítica del nómada y los compañeros cercanos en un 20% adicional y el daño crítico en un 12% adicional. Estos efectos duran 40 seg. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR51_1",
+        "name": "Vulpina Gris: Independencia",
+        "description": "El crecimiento de una bruja proviene de su solitario viaje.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "PS",
+            "description": "Aumenta los PS Máx. de los nómadas.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Crít",
+            "description": "Aumenta la Tasa Crítica en un {0}% al atacar a un oponente del mismo nivel; también aumenta la Tasa Crítica al usar habilidades de curación.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_2",
+        "name": "Vulpina Gris: Sangre y Carne",
+        "description": "El tiempo va y viene, pero la familia es para siempre.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta el ATQ del nómada.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "PS",
+            "description": "Aumenta los PS Máx. de los nómadas.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_3",
+        "name": "Vulpina Gris: Precio del Crecimiento",
+        "description": "Apegarse a la verdad tiene un precio.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta el ATQ del nómada.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "PS",
+            "description": "Aumenta los PS Máx. de los nómadas.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_4",
+        "name": "Vulpina Gris: Sentimientos Mutuos",
+        "description": "El significado de la amistad está en los sentimientos compartidos.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta el ATQ del nómada.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Resistencia",
+            "description": "Aumenta la resistencia de los nómadas a todos los elementos.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR50": {
     "id": "suit_SSR50",
     "name": "Actuación",
@@ -914,7 +1140,7 @@
     },
     "sets": [
       {
-        "description": "Aumenta el daño de escarcha en un 12%/14%/16%/18%. Tras eliminar el estado <shuzhi>Helado</> del objetivo, este recibe un daño de sangrado igual al 0.5% de los PS perdidos cada segundo por 10 seg (este daño no puede excederse de 200 multiplicado por el ATQ del nómada y no es afectado por ningún efecto de refuerzo de daño). Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+        "description": "Aumenta el daño de escarcha en 12%/14%/16%/18%. Tras eliminar el estado <shuzhi>Helado</> del objetivo, este recibe un daño de sangrado igual al ATQ del nómada multiplicado por 200 cada seg por 10 seg (este daño no es afectado por ningún efecto de refuerzo de daño). Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
         "needs": 2,
         "is_global": true,
         "add_score": 80.0
@@ -3632,7 +3858,7 @@
         "add_score": 80.0
       },
       {
-        "description": "Tras aplicar el efecto de mordida de serpiente, aumenta el ATQ físico y el ATQ de fuego un 9% durante 30 seg. Esto también tiene efecto mientras está en la ranura secundaria. Mientras estás en estado de combate, aumenta el daño final un 14%/17%/20%/23%.",
+        "description": "Tras aplicar el efecto de mordida de serpiente, aumenta el ATQ físico y el ATQ de fuego un 9% durante 30 seg. Mientras estás en estado de combate, aumenta el daño final un 14%/17%/20%/23%. Este efecto de set funciona en la ranura secundaria, y solo tendrá efecto el set con la clasificación de estrellas más alta.",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0

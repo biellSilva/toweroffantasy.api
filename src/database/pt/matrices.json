@@ -1,4 +1,230 @@
 {
+  "suit_SSR51": {
+    "id": "suit_SSR51",
+    "name": "Fonte de Magia",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR51_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_huihu.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR51.webp"
+    },
+    "sets": [
+      {
+        "description": "Com ressonância que não seja de bendição ativa, aumenta o ATQ gélido em 24%/26%/28%/30%. Com ressonância de bendição ativa, aumenta todos os ataques em 24%/26%/28%/30%. Aumenta a cura em 20%. Ao causar dano pela primeira vez em combate, recebe 1000 cargas de arma. Só pode ser acionado uma vez a cada 15 segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Usar Faísca do Espaço-Tempo aumenta o dano final em 11%/15%/19%/23%. Se for usada com ressonância que não seja de bendição ativa, aumenta o dano gélido em mais 20%. Se for usada com ressonância de bendição ativa, aumenta a sua taxa de crítico e a dos colegas próximos em mais 20% e o dano crítico em mais 12%. Os efeitos duram 40 segundos. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR51_1",
+        "name": "Raposa Cinzenta: Independência",
+        "description": "Uma bruxa cresce a partir da sua jornada solitária.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "Vida",
+            "description": "Aumenta a vida máxima dos Errantes.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Crítico",
+            "description": "Aumenta a Taxa de crítico em {0}% ao atacar um oponente de mesmo nível; também aumenta a Taxa de crítico ao usar habilidades de cura.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_2",
+        "name": "Raposa Cinzenta: Carne e Sangue",
+        "description": "O tempo vai e vem, mas família é para sempre.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta o ATQ do Errante.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "Vida",
+            "description": "Aumenta a vida máxima dos Errantes.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_3",
+        "name": "Raposa Cinzenta: Preço do Crescimento",
+        "description": "Ater-se à verdade custa caro.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta o ATQ do Errante.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "Vida",
+            "description": "Aumenta a vida máxima dos Errantes.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR51_4",
+        "name": "Raposa Cinzenta: Reciprocidade",
+        "description": "O significado da amizade está nos sentimentos recíprocos.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR51",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta o ATQ do Errante.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Resistência",
+            "description": "Aumenta a resistência dos Errantes a todos os elementos.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR51_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR51_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR50": {
     "id": "suit_SSR50",
     "name": "Interpretação",
@@ -914,7 +1140,7 @@
     },
     "sets": [
       {
-        "description": "Aumenta o dano gélido em 12%/14%/16%/18%. Após o <shuzhi>bloqueado por gelo</> de um alvo ser removido, sofre dano de hemorragia equivalente a 0.5% da vida perdida por segundo durante 10 segundos (esse dano não pode exceder 200 × ATQ do Errante e não é afetado por nenhum efeito de reforço de dano). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+        "description": "Aumenta o dano gélido em 12%/14%/16%/18%. Após o <shuzhi>bloqueado por gelo</> de um alvo ser removido, sofre dano de hemorragia equivalente a 200 do seu ATQ por segundo durante 10 segundos (esse dano não é afetado por nenhum efeito de reforço de dano). O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
         "needs": 2,
         "is_global": true,
         "add_score": 80.0
@@ -3632,7 +3858,7 @@
         "add_score": 80.0
       },
       {
-        "description": "Após aplicar o efeito da picada de cobra, aumenta os ATQs físico e ígneo em 9% durante 30 segundos. Também surte efeito no espaço secundário. Em estado de combate, aumenta o dano final em 14%/17%/20%/23%.",
+        "description": "Após aplicar o efeito da picada de cobra, aumenta os ATQs físico e ígneo em 9% durante 30 segundos. Em estado de combate, aumenta o dano final em 14%/17%/20%/23%. O efeito deste conjunto funciona no espaço secundário, mas somente o conjunto de classificação estelar mais alta surtirá efeito.",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0
