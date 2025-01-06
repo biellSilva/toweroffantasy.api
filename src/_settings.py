@@ -39,4 +39,4 @@ class _BaseSettings(BaseSettings):
     USERNAME_REGEX: str = r"^[a-zA-Z0-9_\.]{4,30}$"
 
 
-config = _BaseSettings()  # type: ignore[call-arg]
+config = _BaseSettings()  # type: ignore
