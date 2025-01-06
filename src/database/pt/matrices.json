@@ -1,4 +1,230 @@
 {
+  "suit_SSR52": {
+    "id": "suit_SSR52",
+    "name": "Lótus Ardente",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_SwordX_big.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_SwordX.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR52.webp"
+    },
+    "sets": [
+      {
+        "description": "Aumenta o ATQ físico em 24%/26%/28%/30% e o dano de <shuzhi>Lâmina da União</> para <shuzhi>4800%</>. O efeito deste conjunto funciona no espaço secundário, mas somente o conjunto de classificação estelar mais alta surtirá efeito.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Aumenta o dano de todos os elementos em 10%/14%/18%/22%. Com <shuzhi>Ventania Escarlate</> equipada, aumenta o dano final em <shuzhi>22%</>. O efeito deste conjunto funciona no espaço secundário, e somente o conjunto de classificação estelar mais alta surtirá efeito.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR52_1",
+        "name": "Cláudia: Dia do Julgamento",
+        "description": "Com esta espada afiada, eu corto o mal pela raiz.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "Vida",
+            "description": "Aumenta a vida máxima dos Errantes.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Crítico",
+            "description": "Aumenta a Taxa de crítico em {0}% ao atacar um oponente de mesmo nível; também aumenta a Taxa de crítico ao usar habilidades de cura.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_2",
+        "name": "Cláudia: Abraço da Tempestade",
+        "description": "Ein tobender Sturm kann sogar die Vergangenheit mit sich reißen.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta o ATQ do Errante.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "Vida",
+            "description": "Aumenta a vida máxima dos Errantes.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_3",
+        "name": "Cláudia: Banho de Fogo",
+        "description": "Fé inabalável.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta o ATQ do Errante.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "Vida",
+            "description": "Aumenta a vida máxima dos Errantes.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_4",
+        "name": "Cláudia: Abrigo da Alma",
+        "description": "Pelo amanhã que desejo.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta o ATQ do Errante.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Resistência",
+            "description": "Aumenta a resistência dos Errantes a todos os elementos.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR51": {
     "id": "suit_SSR51",
     "name": "Fonte de Magia",

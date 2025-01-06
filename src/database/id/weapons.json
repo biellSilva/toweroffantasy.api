@@ -4388,6 +4388,1374 @@
       "lottery_card_image": "/UI/chouka/Card/Weapon/Weapon_R_Sword_Thunder01.webp"
     }
   },
+  "SwordX_physic": {
+    "id": "SwordX_physic",
+    "name": "Scarlet Gale",
+    "desc": "Senjata kembar yang dibuat untuk pertempuran yang lincah dan mobile, luar biasa baik dalam kualitas dan berat. \"Peluru menembus bayangan, pedang mengukir malam\"—sebuah refleksi dari tekad penggunanya yang membara.",
+    "brief": "Senjata SSR",
+    "lottery_desc": "Senjata kembar yang dibuat untuk pertempuran yang lincah dan mobile, luar biasa baik dalam kualitas dan berat. \"Peluru menembus bayangan, pedang mengukir malam\"—sebuah refleksi dari tekad penggunanya yang membara.",
+    "rarity": "SSR",
+    "quality": "LEGENDRY",
+    "is_fate": false,
+    "is_limited": true,
+    "is_warehouse": true,
+    "element": {
+      "id": "Physics-Flame",
+      "name": "Armor Dissolve",
+      "desc": "Saat Charge Senjata penuh, serangan berikutnya akan mengakibatkan Armor Dissolve pada musuh selama <shuzhi>45</> detik sehingga meningkatkan Flame dan Physical DMG yang diterima sebesar <shuzhi>10%</> (dan tambahan <shuzhi>15%</> dalam permainan tim). Efek ini akan menggantikan status Grievous target, dan target dengan efek ini tidak bisa mengalami status Grievous. Serangan Physical akan membuat target mengalami Stun dengan efek Dissolve selama <shuzhi>2</> detik, dan serangan Flame akan mengurangi kecepatan target sebesar <shuzhi>50%</> selama <shuzhi>5</> detik. Efek ini hanya bisa terpicu <shuzhi>1</> kali setiap <shuzhi>15</> detik pada target yang sama.",
+      "icon": "/Resources/UI/wuqi/icon_element_wuhuo.webp"
+    },
+    "category": {
+      "id": "DPS",
+      "name": "Serangan",
+      "icon": "/Resources/UI/wuqi/icon_qianggong.webp",
+      "icon_gray": "/Resources/UI/wuqi/icon_qianggong_0.webp"
+    },
+    "shatter": {
+      "value": 16.0,
+      "tier": "SS"
+    },
+    "charge": {
+      "value": 14.0,
+      "tier": "S"
+    },
+    "skills": [
+      {
+        "name": "Serangan Biasa",
+        "desc": null,
+        "type": "Normal",
+        "icon": "/Icon/skill/Melee/pugong_swordx.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXMelee_Melee",
+            "name": "Rapid Sweep",
+            "desc": "Saat di darat, Wanderer menggunakan Serangan Biasa untuk melakukan 5 serangan beruntun.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan memukul mundur target.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan memukul mundur target.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan memukul mundur target.\r\nSerangan Keempat: Menimpakan DMG sebesar hingga <shuzhi>{6}%</> dari ATK plus <shuzhi>{7}</> dan memukul mundur target.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus<shuzhi>{9}</> dan memukul mundur target.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_melee.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0
+              ],
+              [
+                4.0,
+                25.0,
+                51.0,
+                77.0,
+                103.0,
+                129.0,
+                155.0,
+                181.0,
+                207.0,
+                233.0,
+                259.0,
+                284.0,
+                310.0,
+                336.0,
+                362.0,
+                388.0,
+                414.0,
+                440.0,
+                466.0,
+                492.0,
+                518.0
+              ],
+              [
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0
+              ],
+              [
+                9.0,
+                53.0,
+                108.0,
+                162.0,
+                217.0,
+                272.0,
+                327.0,
+                381.0,
+                436.0,
+                491.0,
+                545.0,
+                600.0,
+                655.0,
+                710.0,
+                764.0,
+                819.0,
+                874.0,
+                928.0,
+                983.0,
+                1038.0,
+                1093.0
+              ],
+              [
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0
+              ],
+              [
+                12.0,
+                72.0,
+                146.0,
+                221.0,
+                295.0,
+                369.0,
+                444.0,
+                518.0,
+                592.0,
+                667.0,
+                741.0,
+                815.0,
+                890.0,
+                964.0,
+                1038.0,
+                1113.0,
+                1187.0,
+                1261.0,
+                1336.0,
+                1410.0,
+                1484.0
+              ],
+              [
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0
+              ],
+              [
+                17.0,
+                97.0,
+                197.0,
+                297.0,
+                396.0,
+                496.0,
+                596.0,
+                696.0,
+                796.0,
+                896.0,
+                996.0,
+                1096.0,
+                1196.0,
+                1296.0,
+                1396.0,
+                1496.0,
+                1596.0,
+                1696.0,
+                1796.0,
+                1896.0,
+                1996.0
+              ],
+              [
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0
+              ],
+              [
+                18.0,
+                103.0,
+                209.0,
+                315.0,
+                422.0,
+                528.0,
+                634.0,
+                740.0,
+                847.0,
+                953.0,
+                1059.0,
+                1166.0,
+                1272.0,
+                1378.0,
+                1484.0,
+                1591.0,
+                1697.0,
+                1803.0,
+                1910.0,
+                2016.0,
+                2122.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_AirAttack",
+            "name": "Cyclone Blade",
+            "desc": "Saat Wanderer di udara, dia menggunakan Serangan Biasa untuk menyerang 5 kali berturut-turut, mengonsumsi Stamina.\r\nSerangan Pertama: Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> dan memukul mundur target.\r\nSerangan Kedua: Menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> dan memukul mundur target.\r\nSerangan Ketiga: Menimpakan DMG sebesar <shuzhi>{4}%</> ATK plus <shuzhi>{5}</> dan memukul mundur target.\r\nSerangan Keempat: Menimpakan DMG sebesar hingga <shuzhi>{6}%</> dari ATK plus <shuzhi>{7}</> dan memukul mundur target.\r\nSerangan Kelima: Menimpakan DMG sebesar <shuzhi>{8}%</> ATK plus<shuzhi>{9}</> dan memukul mundur target.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_airattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "JUMP",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0
+              ],
+              [
+                4.0,
+                25.0,
+                51.0,
+                77.0,
+                103.0,
+                129.0,
+                155.0,
+                181.0,
+                207.0,
+                233.0,
+                259.0,
+                284.0,
+                310.0,
+                336.0,
+                362.0,
+                388.0,
+                414.0,
+                440.0,
+                466.0,
+                492.0,
+                518.0
+              ],
+              [
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0
+              ],
+              [
+                9.0,
+                53.0,
+                108.0,
+                162.0,
+                217.0,
+                272.0,
+                327.0,
+                381.0,
+                436.0,
+                491.0,
+                545.0,
+                600.0,
+                655.0,
+                710.0,
+                764.0,
+                819.0,
+                874.0,
+                928.0,
+                983.0,
+                1038.0,
+                1093.0
+              ],
+              [
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0
+              ],
+              [
+                12.0,
+                72.0,
+                146.0,
+                221.0,
+                295.0,
+                369.0,
+                444.0,
+                518.0,
+                592.0,
+                667.0,
+                741.0,
+                815.0,
+                890.0,
+                964.0,
+                1038.0,
+                1113.0,
+                1187.0,
+                1261.0,
+                1336.0,
+                1410.0,
+                1484.0
+              ],
+              [
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0
+              ],
+              [
+                17.0,
+                97.0,
+                197.0,
+                297.0,
+                396.0,
+                496.0,
+                596.0,
+                696.0,
+                796.0,
+                896.0,
+                996.0,
+                1096.0,
+                1196.0,
+                1296.0,
+                1396.0,
+                1496.0,
+                1596.0,
+                1696.0,
+                1796.0,
+                1896.0,
+                1996.0
+              ],
+              [
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0
+              ],
+              [
+                18.0,
+                103.0,
+                209.0,
+                315.0,
+                422.0,
+                528.0,
+                634.0,
+                740.0,
+                847.0,
+                953.0,
+                1059.0,
+                1166.0,
+                1272.0,
+                1378.0,
+                1484.0,
+                1591.0,
+                1697.0,
+                1803.0,
+                1910.0,
+                2016.0,
+                2122.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_Branch",
+            "name": "Furious Flurry",
+            "desc": "Saat menggunakan serangan biasa di darat, tekan dan tahan serangan biasa saat menggunakan serangan biasa pertama hingga keempat untuk memicu Furious Flurry.\r\nWanderer mengayunkan Scarlet Gale, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_branch.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "ATTACK",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0
+              ],
+              [
+                16.0,
+                94.0,
+                192.0,
+                290.0,
+                388.0,
+                485.0,
+                583.0,
+                681.0,
+                779.0,
+                876.0,
+                974.0,
+                1072.0,
+                1170.0,
+                1267.0,
+                1365.0,
+                1463.0,
+                1561.0,
+                1658.0,
+                1756.0,
+                1854.0,
+                1952.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_AimAttack",
+            "name": "Gust Hunter",
+            "desc": "Saat di darat, tekan dan tahan serangan biasa untuk memicu Gust Hunter.\r\nWanderer menembak ke arah target, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus<shuzhi>{1}</> kepada target di sekitar setelah kena.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_aimattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0
+              ],
+              [
+                4.0,
+                24.0,
+                49.0,
+                73.0,
+                98.0,
+                123.0,
+                147.0,
+                172.0,
+                197.0,
+                221.0,
+                246.0,
+                271.0,
+                295.0,
+                320.0,
+                345.0,
+                369.0,
+                394.0,
+                419.0,
+                443.0,
+                468.0,
+                493.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_JumpAttack",
+            "name": "Thousand-Ton Slam",
+            "desc": "Saat di udara, tekan dan tahan Serangan Biasa (tekan saat ada musuh yang bisa ditarget), atau tekan Serangan Biasa saat memanjat, melompat ke belakang, atau menggunakan Jetpack untuk memicu Thousand-Ton Slam.\r\nWanderer jatuh dari udara. Saat mendarat, tiap musuh yang terkena akan menerima DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</>. Setelah mendarat, Wanderer menimpakan DMG sebesar <shuzhi>{2}%</> ATK plus <shuzhi>{3}</> kepada target di sekitar.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_jumpattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "JUMP",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0
+              ],
+              [
+                10.0,
+                57.0,
+                116.0,
+                175.0,
+                233.0,
+                292.0,
+                351.0,
+                410.0,
+                469.0,
+                528.0,
+                586.0,
+                645.0,
+                704.0,
+                763.0,
+                822.0,
+                881.0,
+                939.0,
+                998.0,
+                1057.0,
+                1116.0,
+                1175.0
+              ],
+              [
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0
+              ],
+              [
+                10.0,
+                57.0,
+                116.0,
+                175.0,
+                233.0,
+                292.0,
+                351.0,
+                410.0,
+                469.0,
+                528.0,
+                586.0,
+                645.0,
+                704.0,
+                763.0,
+                822.0,
+                881.0,
+                939.0,
+                998.0,
+                1057.0,
+                1116.0,
+                1175.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Menghindar",
+        "desc": null,
+        "type": "Dodge",
+        "icon": "/UI/main/shanbi.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXEvade_Evade",
+            "name": "Menghindar",
+            "desc": "Menghindar tepat sebelum terkena serangan untuk memicu Phantasia, memperlambat target di dalam area tersebut. Saat menghindar, menjadi kebal terhadap Hitstun.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/common_evade.webp",
+            "tags": [],
+            "operations": [
+              "MOVEMENT",
+              "DODGE"
+            ],
+            "values": []
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_ForwardAttack",
+            "name": "Glimmering Kick",
+            "desc": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah Menghindar Sempurna (tekan tombol arah sebelum menghindar) untuk memicu Glimmering Kick, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di depan.\r\nWanderer memasuki status Invincible dalam waktu singkat selama durasi Glimmering Kick.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_fevadeattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "MOVEMENT",
+              "DODGE",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0
+              ],
+              [
+                12.0,
+                68.0,
+                139.0,
+                209.0,
+                280.0,
+                350.0,
+                421.0,
+                491.0,
+                562.0,
+                632.0,
+                703.0,
+                774.0,
+                844.0,
+                915.0,
+                985.0,
+                1056.0,
+                1126.0,
+                1197.0,
+                1267.0,
+                1338.0,
+                1408.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_BackAttack",
+            "name": "Hail of Shadows",
+            "desc": "Gunakan Serangan Biasa dalam rentang waktu singkat setelah menghindar untuk memicu Hail of Shadows, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target yang terhantam.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_bevadeattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "DODGE",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0
+              ],
+              [
+                8.0,
+                45.0,
+                91.0,
+                137.0,
+                183.0,
+                229.0,
+                276.0,
+                322.0,
+                368.0,
+                414.0,
+                460.0,
+                506.0,
+                553.0,
+                599.0,
+                645.0,
+                691.0,
+                737.0,
+                784.0,
+                830.0,
+                876.0,
+                922.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_PowerAttack",
+            "name": "Unseen Shadows",
+            "desc": "Tekan dan tahan Serangan Biasa setelah menghindar untuk memicu Unseen Shadows, menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di depan.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_bevadepowerattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "DODGE",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0
+              ],
+              [
+                15.0,
+                89.0,
+                181.0,
+                273.0,
+                365.0,
+                457.0,
+                549.0,
+                641.0,
+                733.0,
+                825.0,
+                917.0,
+                1009.0,
+                1102.0,
+                1194.0,
+                1286.0,
+                1378.0,
+                1470.0,
+                1562.0,
+                1654.0,
+                1746.0,
+                1838.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skill",
+        "desc": null,
+        "type": "Skill",
+        "icon": "/Icon/skill/WeaponSkill/skill_swordx_skill.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXSkill_Skill",
+            "name": "Radiant Halo",
+            "desc": "Menimpakan DMG sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di sekitar. Cooldown <shuzhi>21</> detik (Efek ini tidak terpengaruh oleh efek lain yang menghapus, mereset, atau mengubah CD).\r\nSetelah menggunakan Radiant Halo, Physical DMG Wanderer meningkat <shuzhi>12%</> selama <shuzhi>30</> detik. Blade of Unity terpicu <shuzhi>6</> detik dan <shuzhi>12</> detik setelah Wanderer menggunakan Radiant Halo, menimpakan DMG area sebesar <shuzhi>3.800%</> ATK kepada target yang dipilih.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_skill.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [],
+            "values": [
+              [
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0
+              ],
+              [
+                57.0,
+                329.0,
+                669.0,
+                1009.0,
+                1349.0,
+                1689.0,
+                2029.0,
+                2369.0,
+                2709.0,
+                3049.0,
+                3389.0,
+                3729.0,
+                4069.0,
+                4409.0,
+                4749.0,
+                5089.0,
+                5429.0,
+                5769.0,
+                6109.0,
+                6449.0,
+                6789.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Discharge",
+        "desc": null,
+        "type": "Discharge",
+        "icon": "/Icon/skill/WeaponSkill/skill_swordx_changeskill.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXChangeSkill_Success",
+            "name": "Windcutting Thunder",
+            "desc": "Saat <red>Charge Senjata penuh</> atau <red>Phantasia</> terpicu, beralih ke Senjata ini akan <shuzhi>melenyapkan semua Debuff dari Wanderer</> dan menimpakan damage kepada target di sekitar sebesar <shuzhi>{0}%</> ATK plus <shuzhi>{1}</> kepada target di depan. Selama durasi ini, Wanderer mendapatkan DMG Immunity selama <shuzhi>1,5</> detik (tidak tersedia di Apex League).",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_changeskill.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [],
+            "values": [
+              [
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0
+              ],
+              [
+                59.0,
+                341.0,
+                694.0,
+                1047.0,
+                1400.0,
+                1753.0,
+                2106.0,
+                2459.0,
+                2812.0,
+                3165.0,
+                3518.0,
+                3871.0,
+                4224.0,
+                4577.0,
+                4930.0,
+                5283.0,
+                5636.0,
+                5989.0,
+                6342.0,
+                6695.0,
+                7048.0
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "advancements": [
+      {
+        "desc": "<shuzhi>Blade of Unity</> terpicu pada <shuzhi>{0}</>, <shuzhi>{1}</>, dan <shuzhi>{2}</> detik.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.166667
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.166667
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.166667
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.166667
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 1000,
+        "star_skill_score": 350,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar <shuzhi>16%</>.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.493333
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.333333
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.333333
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.333333
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 2000,
+        "star_skill_score": 500,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Saat <shuzhi>Blade of Unity</> mengenai target, ia menerapkan efek Suppress selama <shuzhi>{0}</> detik pada target, membuat kecepatan gerakan target berkurang <shuzhi>{1}%</>, dan menimpakan DMG sebesar <shuzhi>{2}%</> ATK tiap detik kepada target.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.66
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.5
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.5
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.5
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 4000,
+        "star_skill_score": 750,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Meningkatkan pertumbuhan ATK dasar senjata saat ini sebesar <shuzhi>32%</>.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.146667
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.666667
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.666667
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.666667
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 6000,
+        "star_skill_score": 1000,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Saat <shuzhi>Blade of Unity</> terpicu, Wanderer memulihkan <shuzhi>{0}%</> HP. Jika HP saat ini kurang dari <shuzhi>{1}%</> max HP, pemulihan yang diterima meningkat <shuzhi>{2}%</> (tidak terpengaruh efek bonus pemulihan, dan tidak tersedia di Apex League).",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.313333
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.833333
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.833333
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.833333
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 9000,
+        "star_skill_score": 1350,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Physical Damage Boost dari <shuzhi>Radiant Halo</> ditingkatkan menjadi <shuzhi>{0}%</> selama <shuzhi>{1}</> detik.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.48
+          },
+          {
+            "id": "ElementDef",
+            "value": 2.0
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 2.0
+          },
+          {
+            "id": "CritAdded",
+            "value": 2.0
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 13500,
+        "star_skill_score": 1850,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      }
+    ],
+    "passives": [
+      "<shuzhi>Fusion of Mass and Flame</>: Saat menimpakan DMG dengan Senjata, DMG akan dihitung dengan ATK Dasar tertinggi Senjata Physical/Flame yang terpasang, persentase ATK tertinggi Senjata Physical/Flame yang terpasang, dan DMG Boost tertinggi Senjata Physical/Flame yang terpasang, dan senjata tersebut akan dianggap Senjata Physical sekaligus Senjata Flame.",
+      "<shuzhi>Resonansi Physical</>: Physical ATK meningkat <shuzhi>15%</> dan Physical RES meningkat <shuzhi>25%</>. Aktifkan resonansi ini dengan memasang <shuzhi>2</> Senjata Physical atau lebih. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan Resonansi Physical atau efek Physical Reaction lainnya, dengan Resonansi Physical sebagai prioritas.",
+      "<shuzhi>Resonansi Flame</>: Flame ATK meningkat <shuzhi>15%</> dan Flame RES meningkat <shuzhi>25%</>. Aktifkan resonansi ini dengan memasang <shuzhi>2</> Senjata Flame atau lebih. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan Resonansi Flame atau efek Flame Reaction lainnya, dengan Resonansi Flame sebagai prioritas.",
+      "<shuzhi>Scarlet Blade: Swift Cut</>: Saat <shuzhi>Scarlet Gale</> terpasang, Skill Discharge senjata apa pun akan menimpakan DMG sebesar <shuzhi>{0}%</> Physical ATK plus <shuzhi>{1}%</> Max HP plus <shuzhi>{2}%</> jumlah seluruh tipe Resistance Wanderer plus <shuzhi>{3}%</> Crit kepada target di sekitar. Saat dalam pertempuran, setiap <shuzhi>0,5</> detik, DMG Swift Cut berikutnya akan bertambah <shuzhi>1</> kali lipat, hingga <shuzhi>30</> kali lipat. Saat ada lebih dari satu DMG Swift Cut, nilai awal tertinggi akan digunakan untuk menghitung. DMG Swift Cut dianggap sebagai DMG Skill Discharge. Jika ada 1 Senjata Frost/Volt jenis apa pun yang terpasang, DMG Scarlet Blade ditingkatkan menjadi <shuzhi>1,3</> kali lipat. Selain itu, DMG Scarlet Blade tidak terpengaruh oleh efek DMG Boost apa pun kecuali dari stat langka Equipment Titan, dan tidak akan memicu efek serangan tambahan.",
+      "Saat Scarlet Gale terpasang di slot utama dan Wanderer menerima Damage Mematikan, dia akan melakukan Swift Lightning. Selama durasi ini, Wanderer kebal terhadap DMG. Interval aktivasi minimum adalah <shuzhi>{4}</> detik."
+    ],
+    "multi_element": [],
+    "fashions": [],
+    "recommended_matrices": [
+      {
+        "id": "suit_SSR52",
+        "reason": "Bonus 2 set memberikan Physical ATK dan Flame ATK, sedangkan bonus 4 set memberikan Boost Semua DMG Elemental dan peningkatan Final DMG."
+      },
+      {
+        "id": "suit_SSR25",
+        "reason": "Bonus 2 set meningkatkan DMG slot utama. Bonus 4 set memberikan kemampuan slot sampingan universal."
+      },
+      {
+        "id": "suit_SSR26",
+        "reason": "Bonus 2 set meningkatkan DMG slot utama. Bonus 4 set memberikan kemampuan slot sampingan universal."
+      },
+      {
+        "id": "suit_SR5",
+        "reason": "Pakai ini untuk sementara jika tidak ada Matrix yang bagus."
+      }
+    ],
+    "assets": {
+      "item_icon": "/Icon/weapon/Icon/item_Weapon_SSR_SwordX.webp",
+      "item_large_icon": "/Icon/weapon/Icon/item_Weapon_SSR_SwordX.webp",
+      "weapon_icon_for_matrix": "/Icon/weapon/icon_yizhi/yizhi_SSR_SwordX.webp",
+      "solo_league_ban_pick_banner": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_SwordX_big.webp",
+      "item_name_image": "/L10N/id/Resources/Icon/weapon/Name/name_SwordX.webp",
+      "lottery_drawing": "/UI/shizhuang/nitai/xiangqing/imitation_65.webp",
+      "lottery_card_image": "/UI/chouka/Card/Weapon/UI_SwordX.webp"
+    }
+  },
   "bow_fire": {
     "id": "bow_fire",
     "name": "Composite Bow",
@@ -70042,10 +71410,10 @@
       }
     ],
     "passives": [
-      "<shuzhi>Fusion of Frost and Volt</>: Saat menimpakan DMG dengan senjata, DMG akan dihitung menggunakan Frost/Volt ATK dasar tertinggi yang terpasang, persentase Frost/Volt ATK tertinggi yang terpasang, dan Frost/Volt DMG Boost tertinggi yang terpasang. Senjata akan dianggap sebagai senjata Frost dan senjata Volt.",
-      "<shuzhi>Resonansi Frost</>: Meningkatkan Frost ATK sebesar <shuzhi>15%</> dan Frost Resistance sebesar <shuzhi>25%</>. Aktifkan dengan memakai <shuzhi>2</> Senjata Frost atau lebih. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan Resonansi Frost atau efek Frost Reaction lainnya, dengan Resonansi Frost sebagai prioritas.",
-      "<shuzhi>Resonansi Volt</>: Meningkatkan Volt ATK sebesar <shuzhi>15%</> dan Volt Resistance sebesar <shuzhi>25%</>. Aktifkan dengan memakai <shuzhi>2</> Senjata Volt atau lebih. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan Resonansi Volt atau efek Volt Reaction lainnya, dengan Resonansi Volt sebagai prioritas.<shuzhi>Chrono Coil: Release</>: Setelah menggunakan <shuzhi>Magic Transmutation</>, menimpakan DMG sebesar <shuzhi>{0}%</> dari Frost ATK plus <shuzhi>{1}%</> dari Max HP Wanderer plus <shuzhi>{2}%</> dari jumlah seluruh tipe Resistance Wanderer plus <shuzhi>{3}%</> dari Crit kepada target yang terkena serangan tiap detik selama <shuzhi>{4}</> detik. DMG Release tidak bisa ditumpuk dan DMG dari Chrono Coil dianggap sebagai DMG Skill. Jika ada <shuzhi>1</> Senjata Flame/Physical jenis apa pun yang terpasang, DMG dari Chrono Coil dikalikan <shuzhi>{5}</>. Selain itu, DMG Chrono Coil tidak terpengaruh oleh efek DMG Boost apa pun kecuali dari stat langka Equipment Titan, dan tidak akan memicu efek serangan tambahan.",
-      "<shuzhi>Mana Reserve</>: Saat <shuzhi>The Witch's Key</> berada di dalam slot utama, Wanderer bisa mendapatkan <shuzhi>Power Scale</> untuk mempercepat progres waktu pada <shuzhi>The Witch's Key</> sehingga memperkuat efek sihir atau melepaskan sihir yang lebih kuat. <shuzhi>Power Scale</> bisa ditumpuk hingga <shuzhi>12</> kali, bertahan selama <shuzhi>60</> detik, dan akan dihapus <shuzhi>15</> detik setelah keluar dari pertempuran."
+      "<shuzhi>Fusion of Frost and Volt</>: Ketika senjata menimbulkan kerusakan, kerusakan dihitung menggunakan ATK dasar frost/volt tertinggi yang dipasang, persentase ATK frost/volt tertinggi yang dipasang, dan peningkatan kerusakan frost/volt tertinggi yang dipasang, dan senjata dianggap sebagai senjata frost dan volt.",
+      "<shuzhi>Frost Resonance</>: Meningkatkan ATK frost sebesar <shuzhi>15%</> dan resistensi frost sebesar <shuzhi>25%</>. Aktifkan dengan memasang <shuzhi>2</> atau lebih senjata frost. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan efek Resonansi Frost atau Frost Reaction lainnya, dengan Resonansi Frost sebagai prioritas.",
+      "<shuzhi>Resonansi Volt</>: Meningkatkan ATK Volt sebesar <shuzhi>15%</> dan resistensi volt sebesar <shuzhi>25%</>. Aktifkan dengan memasang <shuzhi>2</> atau lebih senjata volt. Efek set ini berfungsi pada slot sampingan. Tidak bisa ditumpuk dengan efek Resonansi Volt atau Volt Reaction lainnya, dengan Resonansi Volt sebagai prioritas. <shuzhi>Chrono Coil: Release</>: Setelah menggunakan <shuzhi>Magic Transmutation</>, berikan DMG sebesar <shuzhi>{0}%</> dari Frost ATK ditambah <shuzhi>{1}%</> dari Max HP Wanderer ditambah <shuzhi>{2}%</> dari jumlah seluruh tipe Resistance Wanderer ditambah <shuzhi>{3}%</> dari Crit ke target yang terkena setiap detik selama <shuzhi>{4}</> detik. DMG Release tidak dapat ditumpuk dan DMG Chrono Coil dihitung sebagai DMG Skill. Jika ada <shuzhi>1</> senjata api/fisik dari jenis apa pun yang dipasang, DMG Chrono Coil dikalikan <shuzhi>{5}</> kali. Selain itu, DMG Chrono Coil tidak terpengaruh oleh efek DMG Boost apa pun kecuali dari stat langka Equipment Titan, dan tidak akan memicu efek serangan tambahan.",
+      "<shuzhi>Mana Reserve</>: Ketika <shuzhi>The Witch's Key</> berada di slot utama, bisa mendapatkan <shuzhi>Power Scale</> untuk memajukan progres jam dari <shuzhi>The Witch's Key</>, meningkatkan efek sihir atau melepaskan sihir yang lebih kuat. <shuzhi>Power Scale</> dapat ditumpuk hingga <shuzhi>12</> kali, bertahan selama <shuzhi>60</> detik, dan akan dihapus <shuzhi>15</> detik setelah keluar dari pertempuran."
     ],
     "multi_element": [],
     "fashions": [

@@ -4388,6 +4388,1374 @@
       "lottery_card_image": "/UI/chouka/Card/Weapon/Weapon_R_Sword_Thunder01.webp"
     }
   },
+  "SwordX_physic": {
+    "id": "SwordX_physic",
+    "name": "Scharlachroter Sturm",
+    "desc": "Zwillingswaffen, gefertigt für agilen und mobilen Kampf, außergewöhnlich in Qualität und Gewicht. \"Kugeln durchdringen Schatten, Klingen schnitzen die Nacht\" - ein Spiegelbild der brennenden Entschlossenheit des Trägers.",
+    "brief": "SSR-Waffe",
+    "lottery_desc": "Zwillingswaffen, gefertigt für agilen und mobilen Kampf, außergewöhnlich in Qualität und Gewicht. \"Kugeln durchdringen Schatten, Klingen schnitzen die Nacht\" - ein Spiegelbild der brennenden Entschlossenheit des Trägers.",
+    "rarity": "SSR",
+    "quality": "LEGENDRY",
+    "is_fate": false,
+    "is_limited": true,
+    "is_warehouse": true,
+    "element": {
+      "id": "Physics-Flame",
+      "name": "Rüstungsauflösung",
+      "desc": "Wenn die Waffe voll geladen ist, verursacht der nächste Angriff für <shuzhi>45</> Sek. „Rüstungsauflösung“, wodurch der erlittene Flammen- und physische Schaden um <shuzhi>10%</> erhöht wird (und um weitere <shuzhi>15%</> im Teamspiel). Auflösungseffekte ersetzen den Verwunden-Status des Ziels, und von Auflösung betroffene Ziele können nicht verwundet werden. Physische Angriffe betäuben vom Auflösungseffekt betroffene Ziele für <shuzhi>2</> Sek. und Flammenangriffe reduzieren für <shuzhi>5</> Sek. ihre Geschwindigkeit um <shuzhi>50%</>. Kann <shuzhi>1</>-mal alle <shuzhi>15</> Sek. auf dem gleichen Ziel ausgelöst werden.",
+      "icon": "/Resources/UI/wuqi/icon_element_wuhuo.webp"
+    },
+    "category": {
+      "id": "DPS",
+      "name": "Angriff",
+      "icon": "/Resources/UI/wuqi/icon_qianggong.webp",
+      "icon_gray": "/Resources/UI/wuqi/icon_qianggong_0.webp"
+    },
+    "shatter": {
+      "value": 16.0,
+      "tier": "SS"
+    },
+    "charge": {
+      "value": 14.0,
+      "tier": "S"
+    },
+    "skills": [
+      {
+        "name": "Normaler Angriff",
+        "desc": null,
+        "type": "Normal",
+        "icon": "/Icon/skill/Melee/pugong_swordx.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXMelee_Melee",
+            "name": "Blitzschneller Hieb",
+            "desc": "Nutze den normalen Angriff auf dem Boden, um 5-mal hintereinander anzugreifen.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und stößt das Ziel zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und stößt das Ziel zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und stößt das Ziel zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und stößt das Ziel zurück.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_melee.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0
+              ],
+              [
+                4.0,
+                25.0,
+                51.0,
+                77.0,
+                103.0,
+                129.0,
+                155.0,
+                181.0,
+                207.0,
+                233.0,
+                259.0,
+                284.0,
+                310.0,
+                336.0,
+                362.0,
+                388.0,
+                414.0,
+                440.0,
+                466.0,
+                492.0,
+                518.0
+              ],
+              [
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0
+              ],
+              [
+                9.0,
+                53.0,
+                108.0,
+                162.0,
+                217.0,
+                272.0,
+                327.0,
+                381.0,
+                436.0,
+                491.0,
+                545.0,
+                600.0,
+                655.0,
+                710.0,
+                764.0,
+                819.0,
+                874.0,
+                928.0,
+                983.0,
+                1038.0,
+                1093.0
+              ],
+              [
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0
+              ],
+              [
+                12.0,
+                72.0,
+                146.0,
+                221.0,
+                295.0,
+                369.0,
+                444.0,
+                518.0,
+                592.0,
+                667.0,
+                741.0,
+                815.0,
+                890.0,
+                964.0,
+                1038.0,
+                1113.0,
+                1187.0,
+                1261.0,
+                1336.0,
+                1410.0,
+                1484.0
+              ],
+              [
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0
+              ],
+              [
+                17.0,
+                97.0,
+                197.0,
+                297.0,
+                396.0,
+                496.0,
+                596.0,
+                696.0,
+                796.0,
+                896.0,
+                996.0,
+                1096.0,
+                1196.0,
+                1296.0,
+                1396.0,
+                1496.0,
+                1596.0,
+                1696.0,
+                1796.0,
+                1896.0,
+                1996.0
+              ],
+              [
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0
+              ],
+              [
+                18.0,
+                103.0,
+                209.0,
+                315.0,
+                422.0,
+                528.0,
+                634.0,
+                740.0,
+                847.0,
+                953.0,
+                1059.0,
+                1166.0,
+                1272.0,
+                1378.0,
+                1484.0,
+                1591.0,
+                1697.0,
+                1803.0,
+                1910.0,
+                2016.0,
+                2122.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_AirAttack",
+            "name": "Zyklon-Klinge",
+            "desc": "Verwende den normalen Angriff, wenn der Wanderer in der Luft ist, um 5 Angriffe hintereinander in der Luft auszuführen, wobei Ausdauer verbraucht wird.\r\nErster Angriff: Verursacht Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> und stößt das Ziel zurück.\r\nZweiter Angriff: Verursacht Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</> und stößt das Ziel zurück.\r\nDritter Angriff: Verursacht Schaden in Höhe von <shuzhi>{4}%</> des ANG + <shuzhi>{5}</> und stößt das Ziel zurück.\r\nVierter Angriff: Verursacht Schaden in Höhe von bis zu <shuzhi>{6}%</> des ANG + <shuzhi>{7}</> und stößt das Ziel zurück.\r\nFünfter Angriff: Verursacht Schaden in Höhe von <shuzhi>{8}%</> des ANG + <shuzhi>{9}</> und stößt das Ziel zurück.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_airattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "JUMP",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0
+              ],
+              [
+                4.0,
+                25.0,
+                51.0,
+                77.0,
+                103.0,
+                129.0,
+                155.0,
+                181.0,
+                207.0,
+                233.0,
+                259.0,
+                284.0,
+                310.0,
+                336.0,
+                362.0,
+                388.0,
+                414.0,
+                440.0,
+                466.0,
+                492.0,
+                518.0
+              ],
+              [
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0
+              ],
+              [
+                9.0,
+                53.0,
+                108.0,
+                162.0,
+                217.0,
+                272.0,
+                327.0,
+                381.0,
+                436.0,
+                491.0,
+                545.0,
+                600.0,
+                655.0,
+                710.0,
+                764.0,
+                819.0,
+                874.0,
+                928.0,
+                983.0,
+                1038.0,
+                1093.0
+              ],
+              [
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0
+              ],
+              [
+                12.0,
+                72.0,
+                146.0,
+                221.0,
+                295.0,
+                369.0,
+                444.0,
+                518.0,
+                592.0,
+                667.0,
+                741.0,
+                815.0,
+                890.0,
+                964.0,
+                1038.0,
+                1113.0,
+                1187.0,
+                1261.0,
+                1336.0,
+                1410.0,
+                1484.0
+              ],
+              [
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0
+              ],
+              [
+                17.0,
+                97.0,
+                197.0,
+                297.0,
+                396.0,
+                496.0,
+                596.0,
+                696.0,
+                796.0,
+                896.0,
+                996.0,
+                1096.0,
+                1196.0,
+                1296.0,
+                1396.0,
+                1496.0,
+                1596.0,
+                1696.0,
+                1796.0,
+                1896.0,
+                1996.0
+              ],
+              [
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0
+              ],
+              [
+                18.0,
+                103.0,
+                209.0,
+                315.0,
+                422.0,
+                528.0,
+                634.0,
+                740.0,
+                847.0,
+                953.0,
+                1059.0,
+                1166.0,
+                1272.0,
+                1378.0,
+                1484.0,
+                1591.0,
+                1697.0,
+                1803.0,
+                1910.0,
+                2016.0,
+                2122.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_Branch",
+            "name": "Rasender Wirbelwind",
+            "desc": "Tippe und halte während normaler Angriffe auf dem Boden den normalen Angriff beim Ausführen des ersten bis vierten normalen Angriffs gedrückt, um „Rasender Wirbelwind“ auszulösen.\r\nSchwingt Scharlachroter Sturm und fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_branch.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "ATTACK",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0
+              ],
+              [
+                16.0,
+                94.0,
+                192.0,
+                290.0,
+                388.0,
+                485.0,
+                583.0,
+                681.0,
+                779.0,
+                876.0,
+                974.0,
+                1072.0,
+                1170.0,
+                1267.0,
+                1365.0,
+                1463.0,
+                1561.0,
+                1658.0,
+                1756.0,
+                1854.0,
+                1952.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_AimAttack",
+            "name": "Windböen-Jäger",
+            "desc": "Tippe und halte den normalen Angriff auf dem Boden, um „Windböen-Jäger“ auszulösen.\r\nFeuert einen Schuss auf das Ziel ab, was dem getroffenen Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_aimattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0
+              ],
+              [
+                4.0,
+                24.0,
+                49.0,
+                73.0,
+                98.0,
+                123.0,
+                147.0,
+                172.0,
+                197.0,
+                221.0,
+                246.0,
+                271.0,
+                295.0,
+                320.0,
+                345.0,
+                369.0,
+                394.0,
+                419.0,
+                443.0,
+                468.0,
+                493.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_JumpAttack",
+            "name": "Tausendtonnenschlag",
+            "desc": "Tippe und halte den normalen Angriff, während du in der Luft bist (oder tippe, wenn ein Ziel verfügbar ist), oder setze einen normalen Angriff ein, während du kletterst, rückwärts springst oder das Jetpack benutzt, um „Tausendtonnenschlag“ auszulösen.\r\nStürzt aus der Luft herunter. Bei der Landung fügen Treffer Gegnern Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Nach der Landung erleiden Ziele in der Nähe Schaden in Höhe von <shuzhi>{2}%</> des ANG + <shuzhi>{3}</>.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_jumpattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "JUMP",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0
+              ],
+              [
+                10.0,
+                57.0,
+                116.0,
+                175.0,
+                233.0,
+                292.0,
+                351.0,
+                410.0,
+                469.0,
+                528.0,
+                586.0,
+                645.0,
+                704.0,
+                763.0,
+                822.0,
+                881.0,
+                939.0,
+                998.0,
+                1057.0,
+                1116.0,
+                1175.0
+              ],
+              [
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0
+              ],
+              [
+                10.0,
+                57.0,
+                116.0,
+                175.0,
+                233.0,
+                292.0,
+                351.0,
+                410.0,
+                469.0,
+                528.0,
+                586.0,
+                645.0,
+                704.0,
+                763.0,
+                822.0,
+                881.0,
+                939.0,
+                998.0,
+                1057.0,
+                1116.0,
+                1175.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ausweichen",
+        "desc": null,
+        "type": "Dodge",
+        "icon": "/UI/main/shanbi.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXEvade_Evade",
+            "name": "Ausweichen",
+            "desc": "Wenn du einem Angriff ausweichst, kurz bevor er trifft, löst du „Trugbild“ aus, was die Geschwindigkeit von Zielen im umliegenden Bereich reduziert. Werde immun gegen Trefferlähmung, während du ausweichst.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/common_evade.webp",
+            "tags": [],
+            "operations": [
+              "MOVEMENT",
+              "DODGE"
+            ],
+            "values": []
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_ForwardAttack",
+            "name": "Glänzender Tritt",
+            "desc": "Verwende zum Auslösen von „Glänzender Tritt“ während des kurzen Zeitraums zum perfekten Ausweichen den normalen Angriff (verwende vor dem Ausweichen eine Richtungstaste). Dies fügt Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu.\r\nWird während „Glänzender Tritt“ für kurze Zeit unbesiegbar.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_fevadeattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "MOVEMENT",
+              "DODGE",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0
+              ],
+              [
+                12.0,
+                68.0,
+                139.0,
+                209.0,
+                280.0,
+                350.0,
+                421.0,
+                491.0,
+                562.0,
+                632.0,
+                703.0,
+                774.0,
+                844.0,
+                915.0,
+                985.0,
+                1056.0,
+                1126.0,
+                1197.0,
+                1267.0,
+                1338.0,
+                1408.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_BackAttack",
+            "name": "Schattenhagel",
+            "desc": "Verwende zum Auslösen von „Schattenhagel“ während des kurzen Zeitraums nach dem Ausweichen den normalen Angriff, was dem getroffenen Ziel Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_bevadeattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "DODGE",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0
+              ],
+              [
+                8.0,
+                45.0,
+                91.0,
+                137.0,
+                183.0,
+                229.0,
+                276.0,
+                322.0,
+                368.0,
+                414.0,
+                460.0,
+                506.0,
+                553.0,
+                599.0,
+                645.0,
+                691.0,
+                737.0,
+                784.0,
+                830.0,
+                876.0,
+                922.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_PowerAttack",
+            "name": "Unsichtbare Schatten",
+            "desc": "Tippe und halte den normalen Angriff direkt nach dem Ausweichen, um „Unsichtbare Schatten“ auszulösen, was Zielen voraus Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zufügt.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_bevadepowerattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "DODGE",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0
+              ],
+              [
+                15.0,
+                89.0,
+                181.0,
+                273.0,
+                365.0,
+                457.0,
+                549.0,
+                641.0,
+                733.0,
+                825.0,
+                917.0,
+                1009.0,
+                1102.0,
+                1194.0,
+                1286.0,
+                1378.0,
+                1470.0,
+                1562.0,
+                1654.0,
+                1746.0,
+                1838.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fähigkeit",
+        "desc": null,
+        "type": "Skill",
+        "icon": "/Icon/skill/WeaponSkill/skill_swordx_skill.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXSkill_Skill",
+            "name": "Strahlender Heiligenschein",
+            "desc": "Fügt Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zu. Die Abklingzeit beträgt <shuzhi>21</> Sek. (Dies wird von anderen Effekten, die die Abklingzeit zurücksetzen, verringern oder anpassen, nicht beeinflusst.)\r\nNach der Verwendung von „Strahlender Heiligenschein“ wird der physische Schaden für <shuzhi>30</> Sek. um <shuzhi>12%</> erhöht. <shuzhi>6</> Sek. sowie <shuzhi>12</> Sek. nach der Verwendung von „Strahlender Heiligenschein“ wird „Klinge der Einheit“ ausgelöst, wodurch dem ausgewählten Ziel Flächenschaden in Höhe von <shuzhi>3800%</> des ANG zugefügt wird.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_skill.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [],
+            "values": [
+              [
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0
+              ],
+              [
+                57.0,
+                329.0,
+                669.0,
+                1009.0,
+                1349.0,
+                1689.0,
+                2029.0,
+                2369.0,
+                2709.0,
+                3049.0,
+                3389.0,
+                3729.0,
+                4069.0,
+                4409.0,
+                4749.0,
+                5089.0,
+                5429.0,
+                5769.0,
+                6109.0,
+                6449.0,
+                6789.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Entladung",
+        "desc": null,
+        "type": "Discharge",
+        "icon": "/Icon/skill/WeaponSkill/skill_swordx_changeskill.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXChangeSkill_Success",
+            "name": "Tosender Donner",
+            "desc": "Wenn die <red>Waffenladung voll ist</> oder <red>Trugbild</> ausgelöst wird, werden beim Wechsel zu dieser Waffe <shuzhi>alle Debuffs vom Wanderer entfernt</> und Zielen voraus wird Schaden in Höhe von <shuzhi>{0}%</> des ANG + <shuzhi>{1}</> zugefügt. Währenddessen erhältst du für <shuzhi>1,5</> Sek. Schadensimmunität (nicht in der Apex-Liga verfügbar).",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_changeskill.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [],
+            "values": [
+              [
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0
+              ],
+              [
+                59.0,
+                341.0,
+                694.0,
+                1047.0,
+                1400.0,
+                1753.0,
+                2106.0,
+                2459.0,
+                2812.0,
+                3165.0,
+                3518.0,
+                3871.0,
+                4224.0,
+                4577.0,
+                4930.0,
+                5283.0,
+                5636.0,
+                5989.0,
+                6342.0,
+                6695.0,
+                7048.0
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "advancements": [
+      {
+        "desc": "<shuzhi>Klinge der Einheit</> wird nach <shuzhi>{0}</>, <shuzhi>{1}</> und <shuzhi>{2}</> Sek. ausgelöst.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.166667
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.166667
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.166667
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.166667
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 1000,
+        "star_skill_score": 350,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um <shuzhi>16%</>.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.493333
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.333333
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.333333
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.333333
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 2000,
+        "star_skill_score": 500,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Wenn <shuzhi>Klinge der Einheit</> ein Ziel trifft, wird für <shuzhi>{0}</> Sek. ein „Unterdrücken“-Effekt verursacht, der die Bewegungsgeschwindigkeit des Ziels um <shuzhi>{1}%</> verringert und pro Sekunde Schaden in Höhe von <shuzhi>{2}%</> des ANG verursacht.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.66
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.5
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.5
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.5
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 4000,
+        "star_skill_score": 750,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Erhöht das Basis-ANG-Wachstum der aktuellen Waffe um <shuzhi>32%</>.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.146667
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.666667
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.666667
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.666667
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 6000,
+        "star_skill_score": 1000,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Wenn <shuzhi>Klinge der Einheit</> ausgelöst wird, werden <shuzhi>{0}%</> der LP wiederhergestellt. Wenn die aktuellen LP unter <shuzhi>{1}%</> der max. LP liegen, wird die Wiederherstellung auf <shuzhi>{2}%</> erhöht (wird nicht von Heilbonuseffekten beeinflusst und ist nicht in der Apex-Liga verfügbar).",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.313333
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.833333
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.833333
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.833333
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 9000,
+        "star_skill_score": 1350,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Erhöht den physischen Schadensbonus von <shuzhi>Strahlender Heiligenschein</> für <shuzhi>{1}</> Sek. auf <shuzhi>{0}%</>.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.48
+          },
+          {
+            "id": "ElementDef",
+            "value": 2.0
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 2.0
+          },
+          {
+            "id": "CritAdded",
+            "value": 2.0
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 13500,
+        "star_skill_score": 1850,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      }
+    ],
+    "passives": [
+      "<shuzhi>Fusion von Masse und Flamme</>: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten physischen/Flammen-Basis-ANG, des höchsten ausgerüsteten physischen/Flammen-ANG-Prozentwerts und des höchsten ausgerüsteten physischen/Flammenschaden-Bonus berechnet, und die Waffe gilt sowohl als physische als auch als Flammenwaffe.",
+      "<shuzhi>Physische Resonanz</>: Erhöht den physischen ANG um <shuzhi>15%</> und den physischen Widerstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr physischen Waffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen physischen Resonanz- oder Reaktionseffekten gestapelt werden, wobei physische Resonanz priorisiert wird.",
+      "<shuzhi>Flammenresonanz</>: Erhöht den Flammen-ANG um <shuzhi>15%</> und den Flammenwiderstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr Flammenwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Flammenresonanz- oder Flammenreaktion-Effekten gestapelt werden, wobei Flammenresonanz priorisiert wird.",
+      "<shuzhi>Scharlachrote Klinge: Schneller Hieb</>: Wenn <shuzhi>Scharlachroter Sturm</> ausgerüstet ist, fügt die Entladungsfähigkeit jeder Waffe Zielen in der Nähe Schaden in Höhe von <shuzhi>{0}%</> des physischen ANG + <shuzhi>{1}%</> der max. LP + <shuzhi>{2}%</> der Summe aller Widerstandsarten des Wanderers + <shuzhi>{3}%</> des krit. Schadens zu. Nach Kampfbeginn wird der nächste Schneller-Hieb-Schaden alle <shuzhi>0,5</> Sek. zusätzlich um das <shuzhi>1</>-Fache erhöht, bis zu einem Maximum von <shuzhi>30</>-mal. Falls „Schneller Hieb“ mehrmals Schaden verursacht, wird der höchste anfängliche Wert für die Berechnung verwendet. Schneller-Hieb-Schaden zählt als Entladungsfähigkeitsschaden. Wenn 1 Frost- oder Voltwaffe jeglicher Art ausgerüstet ist, wird der Schaden von Scharlachrote Klinge auf das <shuzhi>1,3</>-Fache erhöht. Außerdem wird Schaden von Scharlachrote Klinge nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
+      "Wenn Scharlachroter Sturm im Haupt-Slot ausgerüstet ist und der Wanderer tödlichen Schaden erleidet, wird „Flinker Blitz“ ausgeführt. Währenddessen ist der Wanderer immun gegen Schaden. Das minimale Auslöse-Intervall beträgt <shuzhi>{4}</> Sek."
+    ],
+    "multi_element": [],
+    "fashions": [],
+    "recommended_matrices": [
+      {
+        "id": "suit_SSR52",
+        "reason": "Der Zweierset-Bonus gewährt einen Bonus für den physischen und Flammen-ANG, während der Viererset-Bonus einen Bonus für allen Elementarschaden und einen Endschadensbonus gewährt."
+      },
+      {
+        "id": "suit_SSR25",
+        "reason": "Der Zweierset-Bonus erhöht den Schaden des Haupt-Slots. Der Viererset-Bonus gewährt allgemeine Nebenhand-Slot-Fähigkeiten."
+      },
+      {
+        "id": "suit_SSR26",
+        "reason": "Der Zweierset-Bonus erhöht den Schaden des Haupt-Slots. Der Viererset-Bonus gewährt allgemeine Nebenhand-Slot-Fähigkeiten."
+      },
+      {
+        "id": "suit_SR5",
+        "reason": "Wenn es keine besseren Matrizen gibt, verwende diese hier."
+      }
+    ],
+    "assets": {
+      "item_icon": "/Icon/weapon/Icon/item_Weapon_SSR_SwordX.webp",
+      "item_large_icon": "/Icon/weapon/Icon/item_Weapon_SSR_SwordX.webp",
+      "weapon_icon_for_matrix": "/Icon/weapon/icon_yizhi/yizhi_SSR_SwordX.webp",
+      "solo_league_ban_pick_banner": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_SwordX_big.webp",
+      "item_name_image": "/L10N/de/Resources/Icon/weapon/Name/name_SwordX.webp",
+      "lottery_drawing": "/UI/shizhuang/nitai/xiangqing/imitation_65.webp",
+      "lottery_card_image": "/UI/chouka/Card/Weapon/UI_SwordX.webp"
+    }
+  },
   "bow_fire": {
     "id": "bow_fire",
     "name": "Kompositbogen",
@@ -70042,10 +71410,10 @@
       }
     ],
     "passives": [
-      "<shuzhi>Fusion von Frost und Volt</>: Wenn die Waffe Schaden verursacht, wird dieser anhand des höchsten ausgerüsteten Frost-/Volt-Basis-ANG, des höchsten ausgerüsteten Frost-/Volt-ANG-Prozentwerts und des höchsten ausgerüsteten Frost-/Volt-Schadensbonus berechnet, und die Waffe gilt sowohl als Frost- als auch als Voltwaffe.",
-      "<shuzhi>Frostresonanz</>: Erhöht den Frost-ANG um <shuzhi>15%</> und den Frostwiderstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr Frostwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird.",
-      "<shuzhi>Voltresonanz</>: Erhöht den Volt-ANG um <shuzhi>15%</> und den Voltwiderstand um <shuzhi>25%</>. Wird durch Ausrüsten von <shuzhi>2</> oder mehr Voltwaffen aktiviert. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird.<shuzhi>Chronospule: Freigabe</>: Fügt nach Verwendung von <shuzhi>Magische Transmutation</> getroffenen Zielen <shuzhi>{4}</> Sek. lang jede Sekunde Schaden in Höhe von <shuzhi>{0}%</> des Frost-ANG + <shuzhi>{1}%</> der max. LP des Wanderers + <shuzhi>{2}%</> der Summe aller Widerstandsarten des Wanderers + <shuzhi>{3}%</> des krit. Schadens zu. Freigabeschaden kann nicht gestapelt werden und der Schaden von „Chronospule“ zählt als Fähigkeitsschaden. Wenn <shuzhi>1</> Flammen-/physische Waffe ausgerüstet ist, wird der Schaden von „Chronospule“ um das <shuzhi>{5}</>-fache multipliziert. Außerdem wird der Schaden von „Chronospule“ nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten von Titanausrüstung, und löst keine zusätzlichen Angriffseffekte aus.",
-      "<shuzhi>Mana-Reserve</>: Wenn sich <shuzhi>Der Hexenschlüssel</> im Haupt-Slot befindet, kann <shuzhi>Kraft-Skala</> erhalten werden, um den Fortschritt der Uhr von <shuzhi>Der Hexenschlüssel</> voranzutreiben und so magische Effekte zu verstärken oder mächtigere Magie freizusetzen. <shuzhi>Kraft-Skala</> kann bis zu <shuzhi>12</>-mal gestapelt werden, hält <shuzhi>60</> Sek. lang an und wird <shuzhi>15</> Sek. nach Verlassen des Kampfes entfernt."
+      "<shuzhi>Fusion von Frost und Volt</>: Wenn die Waffe Schaden verursacht, wird der Schaden anhand des höchsten ausgerüsteten Frost/Volt Basis-ANG, des höchsten ausgerüsteten Frost/Volt ANG-Prozentsatzes und des höchsten ausgerüsteten Frost/Volt Schadensbonus berechnet, und die Waffe gilt sowohl als Frost- als auch als Volt-Waffe.",
+      "<shuzhi>Frostresonanz</>: Erhöht den Frost-ANG um <shuzhi>15%</> und den Frostwiderstand um <shuzhi>25%</>. Aktivieren Sie es, indem Sie <shuzhi>2</> oder mehr Frostwaffen ausrüsten. Dieser Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Frostresonanz- oder Frostreaktion-Effekten gestapelt werden, wobei Frostresonanz priorisiert wird.",
+      "<shuzhi>Voltresonanz</>: Erhöht den Volt-ANG um <shuzhi>15%</> und den Voltwiderstand um <shuzhi>25%</>. Aktivieren durch Ausrüsten von <shuzhi>2</> oder mehr Volt-Waffen. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Kann nicht mit anderen Voltresonanz- oder Voltreaktion-Effekten gestapelt werden, wobei Voltresonanz priorisiert wird. <shuzhi>Chronospule: Freigabe</>: Nach der Verwendung von <shuzhi>Magischer Transmutation</>, verursache Schaden gleich <shuzhi>{0}%</> der Frost-ANG plus <shuzhi>{1}%</> der max. LP des Wanderers plus <shuzhi>{2}%</> der Summe aller Widerstandsarten des Wanderers plus <shuzhi>{3}%</> von Krit an getroffenen Zielen jede Sekunde für <shuzhi>{4}</> Sekunden. Freigesetzter Schaden stapelt sich nicht und Chronospulenschaden wird als Fähigkeitsschaden gezählt. Wenn irgendeine Art von Flamme/physischer Waffe ausgerüstet ist, wird der Schaden der Chronospule um das <shuzhi>{5}</>fache multipliziert. Darüber hinaus wird der Schaden der Chronospule nicht von Schadensbonus-Effekten beeinflusst, außer von den seltenen Werten der Titan-Ausrüstung, und löst keine zusätzlichen Angriffseffekte aus. ",
+      "<shuzhi>Mana-Reserve</>: Wenn der <shuzhi>Hexenschlüssel</> im Haupt-Slot ist, kann man <shuzhi>Kraft-Skala</> gewinnen, um den Fortschritt der Uhr des <shuzhi>Hexenschlüssels</> voranzutreiben, wodurch magische Effekte verstärkt oder mächtigere Magie freigesetzt wird. Die <shuzhi>Kraft-Skala</> kann bis zu <shuzhi>12</> Mal gestapelt werden, hält <shuzhi>60</> Sekunden an und wird <shuzhi>15</> Sekunden nach dem Verlassen des Kampfes entfernt."
     ],
     "multi_element": [],
     "fashions": [

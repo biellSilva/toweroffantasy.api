@@ -1,4 +1,230 @@
 {
+  "suit_SSR52": {
+    "id": "suit_SSR52",
+    "name": "Loto Ardiente",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_SwordX_big.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_SwordX.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR52.webp"
+    },
+    "sets": [
+      {
+        "description": "Aumenta el ATQ físico en 24%/26%/28%/30% y el daño de <shuzhi>Filo de Unidad</> a <shuzhi>4800%</>. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Aumenta todo el daño elemental en un 10%/14%/18%/22%. Al equiparte a <shuzhi>Viento Escarlata</>, aumenta el daño final en <shuzhi>22%</>. Este efecto de set funciona en la ranura secundaria y solo tendrá efecto el set con la clasificación de estrellas más alta.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR52_1",
+        "name": "Claudia: Hora de la verdad",
+        "description": "Con esta filosa cuchilla, cortaré las raíces del mal.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "PS",
+            "description": "Aumenta los PS Máx. de los nómadas.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Crít",
+            "description": "Aumenta la Tasa Crítica en un {0}% al atacar a un oponente del mismo nivel; también aumenta la Tasa Crítica al usar habilidades de curación.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_2",
+        "name": "Claudia: Cobijo de la Tormenta",
+        "description": "Una furiosa tormenta puede incluso llevarse el pasado.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta el ATQ del nómada.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "PS",
+            "description": "Aumenta los PS Máx. de los nómadas.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_3",
+        "name": "Claudia: Bañada en Llamas",
+        "description": "Fe eterna.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta el ATQ del nómada.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "PS",
+            "description": "Aumenta los PS Máx. de los nómadas.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_4",
+        "name": "Claudia: Refugio del Corazón",
+        "description": "Por el futuro que anhelo.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Ataque",
+            "description": "Aumenta el ATQ del nómada.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Resistencia",
+            "description": "Aumenta la resistencia de los nómadas a todos los elementos.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR51": {
     "id": "suit_SSR51",
     "name": "Fuente de Magia",

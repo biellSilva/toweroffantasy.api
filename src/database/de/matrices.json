@@ -1,4 +1,230 @@
 {
+  "suit_SSR52": {
+    "id": "suit_SSR52",
+    "name": "Flammender Lotus",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_SwordX_big.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_SwordX.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR52.webp"
+    },
+    "sets": [
+      {
+        "description": "Erhöht den physischen ANG um 24%/26%/28%/30% und den Schaden von <shuzhi>Klinge der Einheit</> um <shuzhi>4800%</>. Der Set-Effekt funktioniert auch im Nebenhand-Slot und nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Erhöht allen Elementarschaden um 10%/14%/18%/22%. Erhöht den Endschaden um <shuzhi>22%</>, wenn <shuzhi>Scharlachroter Sturm</> ausgerüstet ist. Der Set-Effekt funktioniert auch im Nebenhand-Slot. Nur das Set mit der höchsten Sternenbewertung tritt in Kraft.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR52_1",
+        "name": "Claudia: Tag der Abrechnung",
+        "description": "Mit dieser scharfen Klinge durchtrenne ich die Wurzeln des Bösen.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "LP",
+            "description": "Erhöht die max. LP der Wanderer.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Krit",
+            "description": "Erhöht die kritische Trefferrate um {0}% beim Angriff eines Gegners der gleichen Stufe; erhöht auch die kritische Trefferrate bei der Verwendung von Heilfähigkeiten.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_2",
+        "name": "Claudia: Umarmung des Sturms",
+        "description": "Ein tobender Sturm kann sogar die Vergangenheit mit sich reißen.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Angriff",
+            "description": "Erhöht den ANG des Wanderers.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "LP",
+            "description": "Erhöht die max. LP der Wanderer.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_3",
+        "name": "Claudia: In Flammen getaucht",
+        "description": "Unerschütterlicher Glaube.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Angriff",
+            "description": "Erhöht den ANG des Wanderers.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "LP",
+            "description": "Erhöht die max. LP der Wanderer.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_4",
+        "name": "Claudia: Refugium des Herzens",
+        "description": "Für die Zukunft, nach der ich mich sehne.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Angriff",
+            "description": "Erhöht den ANG des Wanderers.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Widerstand",
+            "description": "Erhöht den Widerstand der Wanderer gegen alle Elemente.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR51": {
     "id": "suit_SSR51",
     "name": "Quelle der Magie",

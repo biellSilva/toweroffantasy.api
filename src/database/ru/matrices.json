@@ -1,4 +1,230 @@
 {
+  "suit_SSR52": {
+    "id": "suit_SSR52",
+    "name": "Огненный лотос",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_SwordX_big.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_SwordX.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR52.webp"
+    },
+    "sets": [
+      {
+        "description": "Увеличивает физическую АТК на 24%/26%/28%/30% и урон от <shuzhi>Меча единства</> до <shuzhi>4800%</>. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Увеличивает весь стихийный урон на 10%/14%/18%/22%. Когда в экипировке <shuzhi>Алый ветер</>, увеличивает конечный урон на <shuzhi>22%</>. Эффект этого комплекта действует в ячейке дополнительного оружия, применяется только эффект комплекта с наивысшим звездным уровнем.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR52_1",
+        "name": "Клаудия: День расплаты",
+        "description": "Этим острым клинком я выкорчую корни зла.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "ОЗ",
+            "description": "Увеличивает макс. ОЗ странников.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Крит. удар",
+            "description": "Увеличивает шанс крит. удара на {0}% при нападении на противника того же уровня; также повышает шанс крит. удара при использовании навыков для лечения.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_2",
+        "name": "Клаудия: Объятия бури",
+        "description": "Ярость бури способна смести даже прошлое.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Атака",
+            "description": "Увеличивает АТК странника.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "ОЗ",
+            "description": "Увеличивает макс. ОЗ странников.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_3",
+        "name": "Клаудия: Бушующее пламя",
+        "description": "Неугасимая вера.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Атака",
+            "description": "Увеличивает АТК странника.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "ОЗ",
+            "description": "Увеличивает макс. ОЗ странников.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_4",
+        "name": "Клаудия: Покой в сердце",
+        "description": "Ради будущего, которого я желаю.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "Атака",
+            "description": "Увеличивает АТК странника.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Сопротивление",
+            "description": "Увеличивает сопротивление странников ко всем элементам.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR51": {
     "id": "suit_SSR51",
     "name": "Источник магии",

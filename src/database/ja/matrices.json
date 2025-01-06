@@ -1,4 +1,230 @@
 {
+  "suit_SSR52": {
+    "id": "suit_SSR52",
+    "name": "紅蓮轟轟",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_SwordX_big.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_SwordX.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR52.webp"
+    },
+    "sets": [
+      {
+        "description": "物理攻撃+24%/26%/28%/30%、<shuzhi>スキル-シンクドスラッシュ</>のダメージが<shuzhi>4800%</>まで UP。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "全属性ダメージ+10%/14%/18%/22%、<shuzhi>武器-レッドウィンド</>の装備時、最終ダメージ+<shuzhi>22%</>。装備すると常時有効、複数セット装着している場合は★ランクが一番高いセットのみ有効。",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR52_1",
+        "name": "クローディア・X-day",
+        "description": "この刃で悪を断ち切る",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "プレイヤーの最大HP UP",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "会心",
+            "description": "同レベルの相手を攻撃した時、会心率+{0}%。また、回復スキルを使用した際の会心率も UPする。",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_2",
+        "name": "クローディア・ストーミー",
+        "description": "嵐に見舞われた私の過去",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻撃",
+            "description": "プレイヤーの攻撃力 UP",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "プレイヤーの最大HP UP",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_3",
+        "name": "クローディア・ラヴァ",
+        "description": "信念という名の炎が消えることはない",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻撃",
+            "description": "プレイヤーの攻撃力 UP",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "プレイヤーの最大HP UP",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR52_4",
+        "name": "クローディア・ピースフル",
+        "description": "私が望む未来のために",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR52",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻撃",
+            "description": "プレイヤーの攻撃力 UP",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "全属性耐性",
+            "description": "プレイヤーの全属性耐性 UP",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR52_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR52_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR51": {
     "id": "suit_SSR51",
     "name": "魔力の源",

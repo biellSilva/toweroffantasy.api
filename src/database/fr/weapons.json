@@ -4388,6 +4388,1374 @@
       "lottery_card_image": "/UI/chouka/Card/Weapon/Weapon_R_Sword_Thunder01.webp"
     }
   },
+  "SwordX_physic": {
+    "id": "SwordX_physic",
+    "name": "Bourrasque écarlate",
+    "desc": "Armes jumelles conçues pour un combat agile et mobile, exceptionnelles tant en qualité qu'en poids. \"Les balles transpercent les ombres, les lames sculptent la nuit\" - un reflet de la détermination ardente du porteur.",
+    "brief": "Arme SSR",
+    "lottery_desc": "Armes jumelles conçues pour un combat agile et mobile, exceptionnelles tant en qualité qu'en poids. \"Les balles transpercent les ombres, les lames sculptent la nuit\" - un reflet de la détermination ardente du porteur.",
+    "rarity": "SSR",
+    "quality": "LEGENDRY",
+    "is_fate": false,
+    "is_limited": true,
+    "is_warehouse": true,
+    "element": {
+      "id": "Physics-Flame",
+      "name": "Dissolution d'armure",
+      "desc": "Lorsque l'arme est entièrement chargée, la prochaine attaque inflige Dissolution d'armure pendant <shuzhi>45</> secondes, augmentant les dégâts de feu et physiques subis par la cible de <shuzhi>10%</> (et de <shuzhi>15%</> supplémentaires en jeu en équipe). Cet effet remplace le statut blessure grave de la cible, et les cibles subissant cet effet ne peuvent pas subir de blessures graves. Les attaques physiques étourdissent les cibles subissant l'effet de dissolution pendant <shuzhi>2</> secondes, et les attaques de feu réduisent leur vitesse de <shuzhi>50%</> pendant <shuzhi>5</> secondes. Cet effet ne peut être déclenché <shuzhi>qu'une</> fois toutes les <shuzhi>15</> secondes sur la même cible.",
+      "icon": "/Resources/UI/wuqi/icon_element_wuhuo.webp"
+    },
+    "category": {
+      "id": "DPS",
+      "name": "Attaque",
+      "icon": "/Resources/UI/wuqi/icon_qianggong.webp",
+      "icon_gray": "/Resources/UI/wuqi/icon_qianggong_0.webp"
+    },
+    "shatter": {
+      "value": 16.0,
+      "tier": "SS"
+    },
+    "charge": {
+      "value": 14.0,
+      "tier": "S"
+    },
+    "skills": [
+      {
+        "name": "Attaque normale",
+        "desc": null,
+        "type": "Normal",
+        "icon": "/Icon/skill/Melee/pugong_swordx.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXMelee_Melee",
+            "name": "Balayage rapide",
+            "desc": "Lorsque vous êtes au sol, utilisez l'Attaque normale pour lancer 5 attaques consécutives.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et repousse la cible.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et repousse la cible. \r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et repousse la cible.\r\nQuatrième attaque : inflige des dégâts jusqu'à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et repousse la cible.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et repousse la cible.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_melee.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0
+              ],
+              [
+                4.0,
+                25.0,
+                51.0,
+                77.0,
+                103.0,
+                129.0,
+                155.0,
+                181.0,
+                207.0,
+                233.0,
+                259.0,
+                284.0,
+                310.0,
+                336.0,
+                362.0,
+                388.0,
+                414.0,
+                440.0,
+                466.0,
+                492.0,
+                518.0
+              ],
+              [
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0
+              ],
+              [
+                9.0,
+                53.0,
+                108.0,
+                162.0,
+                217.0,
+                272.0,
+                327.0,
+                381.0,
+                436.0,
+                491.0,
+                545.0,
+                600.0,
+                655.0,
+                710.0,
+                764.0,
+                819.0,
+                874.0,
+                928.0,
+                983.0,
+                1038.0,
+                1093.0
+              ],
+              [
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0
+              ],
+              [
+                12.0,
+                72.0,
+                146.0,
+                221.0,
+                295.0,
+                369.0,
+                444.0,
+                518.0,
+                592.0,
+                667.0,
+                741.0,
+                815.0,
+                890.0,
+                964.0,
+                1038.0,
+                1113.0,
+                1187.0,
+                1261.0,
+                1336.0,
+                1410.0,
+                1484.0
+              ],
+              [
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0
+              ],
+              [
+                17.0,
+                97.0,
+                197.0,
+                297.0,
+                396.0,
+                496.0,
+                596.0,
+                696.0,
+                796.0,
+                896.0,
+                996.0,
+                1096.0,
+                1196.0,
+                1296.0,
+                1396.0,
+                1496.0,
+                1596.0,
+                1696.0,
+                1796.0,
+                1896.0,
+                1996.0
+              ],
+              [
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0
+              ],
+              [
+                18.0,
+                103.0,
+                209.0,
+                315.0,
+                422.0,
+                528.0,
+                634.0,
+                740.0,
+                847.0,
+                953.0,
+                1059.0,
+                1166.0,
+                1272.0,
+                1378.0,
+                1484.0,
+                1591.0,
+                1697.0,
+                1803.0,
+                1910.0,
+                2016.0,
+                2122.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_AirAttack",
+            "name": "Lame du cyclone",
+            "desc": "Lorsque l'Explorateur est dans les airs, utilisez l'Attaque normale pour lancer 5 attaques consécutives dans les airs consommant de l'endurance.\r\nPremière attaque : inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> et repousse la cible.\r\nDeuxième attaque : inflige des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> et repousse la cible. \r\nTroisième attaque : inflige des dégâts équivalant à <shuzhi>{4}%</> de l'ATQ + <shuzhi>{5}</> et repousse la cible.\r\nQuatrième attaque : inflige des dégâts jusqu'à <shuzhi>{6}%</> de l'ATQ + <shuzhi>{7}</> et repousse la cible.\r\nCinquième attaque : inflige des dégâts équivalant à <shuzhi>{8}%</> de l'ATQ + <shuzhi>{9}</> et repousse la cible.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_airattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "JUMP",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0,
+                82.0
+              ],
+              [
+                4.0,
+                25.0,
+                51.0,
+                77.0,
+                103.0,
+                129.0,
+                155.0,
+                181.0,
+                207.0,
+                233.0,
+                259.0,
+                284.0,
+                310.0,
+                336.0,
+                362.0,
+                388.0,
+                414.0,
+                440.0,
+                466.0,
+                492.0,
+                518.0
+              ],
+              [
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0,
+                173.0
+              ],
+              [
+                9.0,
+                53.0,
+                108.0,
+                162.0,
+                217.0,
+                272.0,
+                327.0,
+                381.0,
+                436.0,
+                491.0,
+                545.0,
+                600.0,
+                655.0,
+                710.0,
+                764.0,
+                819.0,
+                874.0,
+                928.0,
+                983.0,
+                1038.0,
+                1093.0
+              ],
+              [
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0,
+                235.0
+              ],
+              [
+                12.0,
+                72.0,
+                146.0,
+                221.0,
+                295.0,
+                369.0,
+                444.0,
+                518.0,
+                592.0,
+                667.0,
+                741.0,
+                815.0,
+                890.0,
+                964.0,
+                1038.0,
+                1113.0,
+                1187.0,
+                1261.0,
+                1336.0,
+                1410.0,
+                1484.0
+              ],
+              [
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0,
+                316.0
+              ],
+              [
+                17.0,
+                97.0,
+                197.0,
+                297.0,
+                396.0,
+                496.0,
+                596.0,
+                696.0,
+                796.0,
+                896.0,
+                996.0,
+                1096.0,
+                1196.0,
+                1296.0,
+                1396.0,
+                1496.0,
+                1596.0,
+                1696.0,
+                1796.0,
+                1896.0,
+                1996.0
+              ],
+              [
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0,
+                336.0
+              ],
+              [
+                18.0,
+                103.0,
+                209.0,
+                315.0,
+                422.0,
+                528.0,
+                634.0,
+                740.0,
+                847.0,
+                953.0,
+                1059.0,
+                1166.0,
+                1272.0,
+                1378.0,
+                1484.0,
+                1591.0,
+                1697.0,
+                1803.0,
+                1910.0,
+                2016.0,
+                2122.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_Branch",
+            "name": "Souffle féroce",
+            "desc": "Lors de l'utilisation d'attaque normale au sol, appuyez et maintenez Attaque normale lors de l'utilisation des quatre premières attaques normales pour déclencher Souffle féroce.\r\nManiez Bourrasque écarlate pour infliger des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_branch.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "ATTACK",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0,
+                309.0
+              ],
+              [
+                16.0,
+                94.0,
+                192.0,
+                290.0,
+                388.0,
+                485.0,
+                583.0,
+                681.0,
+                779.0,
+                876.0,
+                974.0,
+                1072.0,
+                1170.0,
+                1267.0,
+                1365.0,
+                1463.0,
+                1561.0,
+                1658.0,
+                1756.0,
+                1854.0,
+                1952.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_AimAttack",
+            "name": "Chasse-rafales",
+            "desc": "Lorsque vous êtes au sol, appuyez et maintenez Attaque normale pour déclencher Chasse-rafales.\r\nTire sur la cible, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à la cible à l'impact.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_aimattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0,
+                78.0
+              ],
+              [
+                4.0,
+                24.0,
+                49.0,
+                73.0,
+                98.0,
+                123.0,
+                147.0,
+                172.0,
+                197.0,
+                221.0,
+                246.0,
+                271.0,
+                295.0,
+                320.0,
+                345.0,
+                369.0,
+                394.0,
+                419.0,
+                443.0,
+                468.0,
+                493.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXMelee_JumpAttack",
+            "name": "Choc des mille tonnes",
+            "desc": "Appuyez et maintenez Attaque normale dans les airs (appuyez quand une cible est disponible), ou utilisez l'attaque normale lorsque vous escaladez, sautez en arrière ou utilisez un jetpack pour déclencher Choc des mille tonnes.\r\nVous tombez et lors de la descente, chaque coup porté à l'ennemi inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</>. À l'atterrissage, vous infligez des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ + <shuzhi>{3}</> aux cibles proches.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_jumpattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "JUMP",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0
+              ],
+              [
+                10.0,
+                57.0,
+                116.0,
+                175.0,
+                233.0,
+                292.0,
+                351.0,
+                410.0,
+                469.0,
+                528.0,
+                586.0,
+                645.0,
+                704.0,
+                763.0,
+                822.0,
+                881.0,
+                939.0,
+                998.0,
+                1057.0,
+                1116.0,
+                1175.0
+              ],
+              [
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0,
+                186.0
+              ],
+              [
+                10.0,
+                57.0,
+                116.0,
+                175.0,
+                233.0,
+                292.0,
+                351.0,
+                410.0,
+                469.0,
+                528.0,
+                586.0,
+                645.0,
+                704.0,
+                763.0,
+                822.0,
+                881.0,
+                939.0,
+                998.0,
+                1057.0,
+                1116.0,
+                1175.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Esquiver",
+        "desc": null,
+        "type": "Dodge",
+        "icon": "/UI/main/shanbi.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXEvade_Evade",
+            "name": "Esquiver",
+            "desc": "Esquivez juste avant de recevoir un coup pour déclencher Fantaisie, réduisant la vitesse des cibles dans la zone. Immunise contre l'effet d'hébétement lors d'une esquive.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/common_evade.webp",
+            "tags": [],
+            "operations": [
+              "MOVEMENT",
+              "DODGE"
+            ],
+            "values": []
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_ForwardAttack",
+            "name": "Frappe scintillante",
+            "desc": "Utilisez l'attaque normale pendant la courte fenêtre d'esquive parfaite (utilisez un bouton directionnel avant d'esquiver) pour déclencher Frappe scintillante, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles en vue.\r\nDevient invincible pendant une courte durée pendant Frappe scintillante.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_fevadeattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "MOVEMENT",
+              "DODGE",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0,
+                223.0
+              ],
+              [
+                12.0,
+                68.0,
+                139.0,
+                209.0,
+                280.0,
+                350.0,
+                421.0,
+                491.0,
+                562.0,
+                632.0,
+                703.0,
+                774.0,
+                844.0,
+                915.0,
+                985.0,
+                1056.0,
+                1126.0,
+                1197.0,
+                1267.0,
+                1338.0,
+                1408.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_BackAttack",
+            "name": "Déluge d'ombres",
+            "desc": "Utilisez l'attaque normale rapidement après une esquive pour déclencher Déluge d'ombres, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> à la cible touchée.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_bevadeattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "DODGE",
+              "ATTACK"
+            ],
+            "values": [
+              [
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0,
+                146.0
+              ],
+              [
+                8.0,
+                45.0,
+                91.0,
+                137.0,
+                183.0,
+                229.0,
+                276.0,
+                322.0,
+                368.0,
+                414.0,
+                460.0,
+                506.0,
+                553.0,
+                599.0,
+                645.0,
+                691.0,
+                737.0,
+                784.0,
+                830.0,
+                876.0,
+                922.0
+              ]
+            ]
+          },
+          {
+            "id": "GA_FPlayerSwordXEvadeAttack_PowerAttack",
+            "name": "Ombres latentes",
+            "desc": "Appuyez et maintenez Attaque normale après une esquive pour déclencher Ombres latentes, infligeant des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles en vue.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_bevadepowerattack.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [
+              "DODGE",
+              "HOLD ATTACK"
+            ],
+            "values": [
+              [
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0,
+                291.0
+              ],
+              [
+                15.0,
+                89.0,
+                181.0,
+                273.0,
+                365.0,
+                457.0,
+                549.0,
+                641.0,
+                733.0,
+                825.0,
+                917.0,
+                1009.0,
+                1102.0,
+                1194.0,
+                1286.0,
+                1378.0,
+                1470.0,
+                1562.0,
+                1654.0,
+                1746.0,
+                1838.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Comp.",
+        "desc": null,
+        "type": "Skill",
+        "icon": "/Icon/skill/WeaponSkill/skill_swordx_skill.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXSkill_Skill",
+            "name": "Halo radiant",
+            "desc": "Inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles proches. Temps de recharge de <shuzhi>21</> secondes (cette durée n'est pas affectée par d'autres effets qui annulent, réinitialisent ou modifient le temps de recharge).\r\nAprès avoir activé Halo radiant, accroît les dégâts physiques de <shuzhi>12%</> pendant <shuzhi>30</> secondes et déclenche Lame d'Unité après <shuzhi>6</> et <shuzhi>12</> secondes, infligeant <shuzhi>3 800%</> de l'ATQ en dégâts de zone à la cible sélectionnée.",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_skill.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [],
+            "values": [
+              [
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0,
+                1075.0
+              ],
+              [
+                57.0,
+                329.0,
+                669.0,
+                1009.0,
+                1349.0,
+                1689.0,
+                2029.0,
+                2369.0,
+                2709.0,
+                3049.0,
+                3389.0,
+                3729.0,
+                4069.0,
+                4409.0,
+                4749.0,
+                5089.0,
+                5429.0,
+                5769.0,
+                6109.0,
+                6449.0,
+                6789.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Décharge",
+        "desc": null,
+        "type": "Discharge",
+        "icon": "/Icon/skill/WeaponSkill/skill_swordx_changeskill.webp",
+        "attacks": [
+          {
+            "id": "GA_FPlayerSwordXChangeSkill_Success",
+            "name": "Tonnerre coupe-vent",
+            "desc": "Lorsque la <red>recharge d'arme est pleine</> ou que <red>Fantaisie</> est déclenchée, au moment où vous changez d'arme pour passer à celle-ci, <shuzhi>élimine toutes les altérations sur l'Explorateur</> et inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ + <shuzhi>{1}</> aux cibles en vue. Durant cette période, octroie une immunité aux dégâts pendant <shuzhi>1,5</> seconde (non disponible en Ligue ultime).",
+            "short_desc": null,
+            "icon": "/Icon/skill/WeaponSkill/skill_swordx_changeskill.webp",
+            "tags": [
+              "DAMAGE"
+            ],
+            "operations": [],
+            "values": [
+              [
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0,
+                1116.0
+              ],
+              [
+                59.0,
+                341.0,
+                694.0,
+                1047.0,
+                1400.0,
+                1753.0,
+                2106.0,
+                2459.0,
+                2812.0,
+                3165.0,
+                3518.0,
+                3871.0,
+                4224.0,
+                4577.0,
+                4930.0,
+                5283.0,
+                5636.0,
+                5989.0,
+                6342.0,
+                6695.0,
+                7048.0
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "advancements": [
+      {
+        "desc": "<shuzhi>Lame d'unité</> se déclenche au bout de <shuzhi>{0}</>, <shuzhi>{1}</>, et <shuzhi>{2}</> secondes.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.166667
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.166667
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.166667
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.166667
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 1000,
+        "star_skill_score": 350,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Accroît de <shuzhi>16%</> la croissance d'ATQ de base de l'arme actuelle.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.493333
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.333333
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.333333
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.333333
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 2000,
+        "star_skill_score": 500,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Lorsque <shuzhi>Lame d'unité</> touche une cible, applique l'effet Suppression pendant <shuzhi>{0}</> secondes, réduisant la vitesse de déplacement de la cible de <shuzhi>{1}%</> et lui infligeant des dégâts équivalant à <shuzhi>{2}%</> de l'ATQ chaque seconde.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 1.66
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.5
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.5
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.5
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 4000,
+        "star_skill_score": 750,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Accroît de <shuzhi>32%</> la croissance d'ATQ de base de l'arme actuelle.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.146667
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.666667
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.666667
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.666667
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 6000,
+        "star_skill_score": 1000,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Lorsque <shuzhi>Lame d'unité</> est activée, restaure <shuzhi>{0}%</> des PV. Si les PV sont inférieurs à <shuzhi>{1}%</> des PV max, accroît la récupération à <shuzhi>{2}%</> (non affecté par les effets de soins bonus et non disponible en Ligue ultime).",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.313333
+          },
+          {
+            "id": "ElementDef",
+            "value": 1.833333
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 1.833333
+          },
+          {
+            "id": "CritAdded",
+            "value": 1.833333
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 9000,
+        "star_skill_score": 1350,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      },
+      {
+        "desc": "Accroît le bonus de dégâts physiques de <shuzhi>Halo radiant</> de <shuzhi>{0}%</> pendant <shuzhi>{1}</> secondes.",
+        "attributes": [
+          {
+            "id": "CommonAtkAdded",
+            "value": 2.48
+          },
+          {
+            "id": "ElementDef",
+            "value": 2.0
+          },
+          {
+            "id": "MaxHealthAdded",
+            "value": 2.0
+          },
+          {
+            "id": "CritAdded",
+            "value": 2.0
+          }
+        ],
+        "need_item": {
+          "id": "SwordX_physic_plasm",
+          "count": 1
+        },
+        "cost_type": "Gold",
+        "need_golds": 13500,
+        "star_skill_score": 1850,
+        "shatter": {
+          "value": 16.0,
+          "tier": "SS"
+        },
+        "charge": {
+          "value": 14.0,
+          "tier": "S"
+        }
+      }
+    ],
+    "passives": [
+      "<shuzhi>Fusion de la matière et du feu</> : lorsque l'arme inflige des dégâts, ces derniers sont calculés en fonction de l'ATQ de base physique ou de feu équipée la plus élevée, du pourcentage d'ATQ physique ou de feu équipée le plus élevé, et du bonus de dégâts physiques ou de feu équipé le plus élevé. L'arme est considérée à la fois comme une arme physique et de feu.",
+      "<shuzhi>Résonance physique</> : accroît l'ATQ physique de <shuzhi>15%</> et la résistance physique de <shuzhi>25%</>. S'active en équipant au moins <shuzhi>2</> armes physiques. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance physique et de Réaction physique, et Résonance physique prévaut.",
+      "<shuzhi>Résonance de feu</> : accroît l'ATQ de feu de <shuzhi>15%</> et la résistance au feu de <shuzhi>25%</>. S'active en équipant au moins <shuzhi>2</> armes de feu. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de feu ou de Réaction de feu, et Résonance de feu prévaut.",
+      "<shuzhi>Lame écarlate : Coupe rapide</> : lorsque la <shuzhi>Bourrasque écarlate</> est équipée, toute compétence de décharge d'arme infligera des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ physique + <shuzhi>{1}%</> des PV max + <shuzhi>{2}%</> de la somme de tous les types de résistance de l'Explorateur + <shuzhi>{3}%</> de crit aux cibles proches. En combat, toutes les <shuzhi>0,5</> secondes, les prochains dégâts infligés par Coupe rapide seront augmentés d'<shuzhi>une</> fois supplémentaire, jusqu'à un maximum de <shuzhi>30</> fois. Lorsque plusieurs dégâts de Coupe rapide existent en même temps, la valeur initiale la plus élevée est utilisée pour le calcul. Les dégâts de Coupe rapide sont comptabilisés comme des dégâts de compétence de décharge. Si 1 arme de foudre ou de givre est équipée, les dégâts de Lame écarlate sont multipliés par <shuzhi>1,3</>. Par ailleurs, les dégâts de Lame écarlate ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire.",
+      "Lorsque Bourrasque écarlate est équipée dans l'emplacement principal et que l'Explorateur subit des dégâts fatals, Éclair preste est activé et immunise l'Explorateur contre les dégâts. L'intervalle de déclenchement est au minimum de <shuzhi>{4}</> secondes."
+    ],
+    "multi_element": [],
+    "fashions": [],
+    "recommended_matrices": [
+      {
+        "id": "suit_SSR52",
+        "reason": "Le bonus deux pièces fournit un bonus d'ATQ physique et de feu, tandis que le bonus quatre pièces fournit un bonus à tous les dégâts élémentaires et un bonus de dégâts finaux."
+      },
+      {
+        "id": "suit_SSR25",
+        "reason": "Le bonus deux pièces accroît les dégâts de l'emplacement principal. Le bonus quatre pièces confère des capacités d'emplacement main libre universelles."
+      },
+      {
+        "id": "suit_SSR26",
+        "reason": "Le bonus deux pièces accroît les dégâts de l'emplacement principal. Le bonus quatre pièces confère des capacités d'emplacement main libre universelles."
+      },
+      {
+        "id": "suit_SR5",
+        "reason": "En l'absence de meilleures matrices, utilisez celle-là pour le moment."
+      }
+    ],
+    "assets": {
+      "item_icon": "/Icon/weapon/Icon/item_Weapon_SSR_SwordX.webp",
+      "item_large_icon": "/Icon/weapon/Icon/item_Weapon_SSR_SwordX.webp",
+      "weapon_icon_for_matrix": "/Icon/weapon/icon_yizhi/yizhi_SSR_SwordX.webp",
+      "solo_league_ban_pick_banner": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_SwordX_big.webp",
+      "item_name_image": "/L10N/fr/Resources/Icon/weapon/Name/name_SwordX.webp",
+      "lottery_drawing": "/UI/shizhuang/nitai/xiangqing/imitation_65.webp",
+      "lottery_card_image": "/UI/chouka/Card/Weapon/UI_SwordX.webp"
+    }
+  },
   "bow_fire": {
     "id": "bow_fire",
     "name": "Arc composite",
@@ -70042,10 +71410,9 @@
       }
     ],
     "passives": [
-      "<shuzhi>Fusion du givre et de la foudre</> : lorsque l'arme inflige des dégâts, ces derniers sont calculés en fonction de l'ATQ de base de foudre ou de givre équipée la plus élevée, du pourcentage d'ATQ de foudre et de givre équipée le plus élevé, et du bonus de dégâts de foudre ou de givre équipé le plus élevé. L'arme est considérée à la fois comme une arme de foudre ou de givre.",
-      "<shuzhi>Résonance de givre</> : accroît l'ATQ de givre de <shuzhi>15%</> et la résistance au givre de <shuzhi>25%</>. S'active en équipant au moins <shuzhi>2</> armes de givre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de givre ou de Réaction de givre, et Résonance de givre prévaut.",
-      "<shuzhi>Résonance de foudre</> : accroît l'ATQ de foudre de <shuzhi>15%</> et la résistance à la foudre de <shuzhi>25%</>. S'active en équipant au moins <shuzhi>2</> armes de foudre. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, et Résonance de foudre prévaut.<shuzhi>Cercle temporel : Libération</> : après <shuzhi>Transmutation magique</>, inflige des dégâts équivalant à <shuzhi>{0}%</> de l'ATQ de givre + <shuzhi>{1}%</> des PV max de l'Explorateur + <shuzhi>{2}%</> de la somme de tous les types de résistance de l'Explorateur + <shuzhi>{3}%</> de crit aux cibles touchées toutes les secondes pendant <shuzhi>{4}</> secondes. Les dégâts de Libération ne se cumulent pas et les dégâts de Cercle temporel sont comptabilisés comme des dégâts de compétence. Si <shuzhi>1</> arme physique ou de feu est équipée, les dégâts de Cercle temporel sont multipliés par <shuzhi>{5}</>. Par ailleurs, les dégâts de Cercle temporel ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent aucun effet d'attaque supplémentaire.",
-      "<shuzhi>Réserve de mana</> : Quand la <shuzhi>Clé de la sorcière</> est dans l'emplacement principal, peut obtenir <shuzhi>Échelle de puissance</> pour avancer la progression du chronomètre de la <shuzhi>Clé de la sorcière</>, renforçant les effets magiques ou libérant une magie plus puissante. <shuzhi>Échelle de puissance</> est cumulable jusqu'à <shuzhi>12</> fois, dure <shuzhi>60</> secondes et sera supprimé <shuzhi>15</> secondes après la fin de la bataille."
+      "<shuzhi>Fusion du givre et de la foudre</>: Lorsque l'arme inflige des dégâts, les dégâts sont calculés en utilisant l'ATQ de base de givre/foudre la plus élevée équipée, le pourcentage d'ATQ de givre/foudre le plus élevé équipé, et le bonus de dégâts de givre/foudre le plus élevé équipé, et l'arme est considérée à la fois comme une arme de givre et de foudre.\n<shuzhi>Résonance de givre</>: Augmente l'ATQ de givre de <shuzhi>15%</> et la résistance au givre de <shuzhi>25%</>. Activez en équipant <shuzhi>2</> armes de givre ou plus. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de givre ou de Réaction de givre, la Résonance de givre prévaut.",
+      "<shuzhi>Résonance de foudre</>: Augmente l'ATQ de foudre de <shuzhi>15%</> et la résistance à la foudre de <shuzhi>25%</>. Activez en équipant <shuzhi>2</> armes de foudre ou plus. Les effets du kit fonctionnent également dans l'emplacement main libre. Non cumulable avec les effets de Résonance de foudre ou de Réaction de foudre, la Résonance de foudre prévaut. <shuzhi>Cercle temporel : Libération</>: Après avoir utilisé la <shuzhi>Transmutation magique</>, infligez des dégâts équivalents à <shuzhi>{0}%</> de l'ATQ de givre plus <shuzhi>{1}%</> des PV max de l'Explorateur plus <shuzhi>{2}%</> de la somme de tous les types de résistance de l'Explorateur plus <shuzhi>{3}%</> de crit aux cibles touchées chaque seconde pendant <shuzhi>{4}</> secondes. Les dégâts de libération ne se cumulent pas et les dégâts du Cercle temporel sont comptés comme des dégâts de compétence. Si vous avez équipé <shuzhi>1</> arme de feu/physique de n'importe quel type, les dégâts du Cercle temporel sont multipliés par <shuzhi>{5}</> fois. De plus, les dégâts du Cercle temporel ne sont affectés par aucun effet de bonus de dégâts, à l'exception des stats rares de l'équipement de Titan, et ne déclenchent pas d'effets d'attaque supplémentaires.",
+      "<shuzhi>Réserve de mana</>: Lorsque <shuzhi>la Clé de la sorcière</> est dans l'emplacement principal, vous pouvez gagner <shuzhi>l'Échelle de puissance</> pour faire avancer la progression de l'horloge de <shuzhi>la Clé de la sorcière</>, améliorant les effets magiques ou libérant une magie plus puissante. L'<shuzhi>Échelle de puissance</> peut être <shuzhi>cumulable jusqu'à</> <shuzhi>12</> fois, durant <shuzhi>60</> secondes, et sera supprimée <shuzhi>15</> secondes après avoir quitté le combat."
     ],
     "multi_element": [],
     "fashions": [
