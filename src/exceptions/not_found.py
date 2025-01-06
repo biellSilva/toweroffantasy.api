@@ -45,3 +45,14 @@ class SimulacrumNotFoundError(NotFoundError):
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
         super().__init__(message=message, **metadata)
+
+
+class WeaponNotFoundError(NotFoundError):
+    """Weapon not found error."""
+
+    def __init__(
+        self,
+        message: str = "Weapon not found.",
+        **metadata: str | float | dict[str, Any] | list[Any],
+    ) -> None:
+        super().__init__(message=message, **metadata)
