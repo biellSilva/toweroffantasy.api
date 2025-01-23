@@ -1,4 +1,230 @@
 {
+  "Suit_SSR53": {
+    "id": "Suit_SSR53",
+    "name": "人之心",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_matrix_SSR_53_256.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_naimeixisiLK.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR53.webp"
+    },
+    "sets": [
+      {
+        "description": "全元素攻击提升26%/28%/30%/32%,装备湮灭之星时攻击无视目标35%护盾。装备后后台可生效,多套只生效最高星级",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "最终伤害提升10%/14%/18%/22%,装备湮灭之星时,最终伤害提升8%,暴击伤害提升15%。装备后后台可生效,多套只生效最高星级",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR53_1",
+        "name": "裂空·幻想之心",
+        "description": "希望源自于对未来的展望,亦或叫幻想。",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR53",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "生命",
+            "description": "提高拓荒者的最大生命值",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "暴击",
+            "description": "攻击同等级对手时,增加暴击概率{0}%,也可提高技能进行治疗时的暴击率。",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR53_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR53_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR53_2",
+        "name": "裂空·冒险之心",
+        "description": "过往与你们的旅程,是她的所有。",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR53",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻击",
+            "description": "提高玩家的攻击力",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "生命",
+            "description": "提高拓荒者的最大生命值",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR53_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR53_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR53_3",
+        "name": "裂空·羁绊之心",
+        "description": "她对莎莉的愧疚一直存在。",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR53",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻击",
+            "description": "提高玩家的攻击力",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "生命",
+            "description": "提高拓荒者的最大生命值",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR53_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR53_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR53_4",
+        "name": "裂空·执手之心",
+        "description": "希望与你执手的心永远不会改变。",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR53",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "攻击",
+            "description": "提高玩家的攻击力",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "全抗",
+            "description": "提高拓荒者的所有元素属性抗性",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR53_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR53_256.webp"
+        }
+      }
+    ]
+  },
   "suit_SSR52": {
     "id": "suit_SSR52",
     "name": "烈烈红莲",
