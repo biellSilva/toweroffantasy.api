@@ -80,6 +80,32 @@ class _ImitationAssets(BaseModel):
     awaken_photo: AssetPath | None
 
 
+class _AttributeCondition(BaseModel):
+    name: str
+    desc: str
+    use_desc: str
+    icon: str
+    quality: str
+
+
+class _AttributeModifier(BaseModel):
+    name: str
+    value: float
+
+
+class _Likeability2(BaseModel):
+    condition: int
+    type: str
+    name: str | None
+    context: str | None
+    desc: str | None
+    unlock_desc: str | None
+    icon: str | None
+    big_icon: str | None
+    conditions: list[_AttributeCondition]
+    modifiers: list[_AttributeModifier]
+
+
 class Imitation(BaseModel):
     id: str
     name: str
@@ -97,3 +123,4 @@ class Imitation(BaseModel):
 
     assets: _ImitationAssets
     assets_a3: Annotated[_ImitationAssets, Field(validation_alias="assetsA3")]
+    likeabilities: list[_Likeability2]
