@@ -89,11 +89,15 @@ class _AttributeCondition(BaseModel):
 
 
 class _AttributeModifier(BaseModel):
+    id: str
     name: str
-    value: float
+    desc: str
+    icon: str
+    value: str
+    operator: str
 
 
-class _Likeability2(BaseModel):
+class _Likeability(BaseModel):
     condition: int
     type: str
     name: str | None
@@ -123,4 +127,4 @@ class Imitation(BaseModel):
 
     assets: _ImitationAssets
     assets_a3: Annotated[_ImitationAssets, Field(validation_alias="assetsA3")]
-    likeabilities: list[_Likeability2]
+    likeabilities: list[_Likeability]
