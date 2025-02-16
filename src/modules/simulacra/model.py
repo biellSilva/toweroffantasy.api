@@ -93,7 +93,7 @@ class _AttributeModifier(BaseModel):
     name: str
     desc: str
     icon: str
-    value: str
+    value: float
     operator: str
 
 
