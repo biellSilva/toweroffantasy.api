@@ -56,6 +56,8 @@ class _ImitationExtras(BaseModel):
 
 
 class _ImitationAssets(BaseModel):
+    icon: AssetPath | None
+    big_icon: AssetPath | None
     name_picture: AssetPath | None
     name_2_picture: AssetPath | None
     name_3_picture: AssetPath | None
