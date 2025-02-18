@@ -1,4 +1,6 @@
+from datetime import datetime
 from typing import Literal
+from zoneinfo import ZoneInfo
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -37,6 +39,14 @@ class _BaseSettings(BaseSettings):
     USERNAME_MAX_LENGTH: int = 30
     USERNAME_SPECIAL_CHARS: str = "_."
     USERNAME_REGEX: str = r"^[a-zA-Z0-9_\.]{4,30}$"
+
+    @property
+    def last_restart(self) -> datetime:
+        return datetime.now(tz=ZoneInfo("UTC"))
+
+    @property
+    def project_summary(self) -> str:
+        return f"Last restart: {self.last_restart}"
 
 
 config = _BaseSettings()  # type: ignore
