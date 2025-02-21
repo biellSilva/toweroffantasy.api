@@ -16,6 +16,11 @@ router = ApiRouter(prefix="/gifts", tags=["gifts"])
 SERVICE = GiftsService(GiftsRepository())
 
 
+@router.get("", response_model=list[Gift])
+async def get_all_gifts(params: Annotated[BaseDataDto, Depends()]) -> list[Gift]:
+    return await SERVICE.get_all(lang=params.lang)
+
+
 @router.get(
     "/{_id}",
     response_model=Gift,
@@ -23,8 +28,3 @@ SERVICE = GiftsService(GiftsRepository())
 )
 async def get_gift(params: Annotated[GetGift, Depends()]) -> Gift:
     return await SERVICE.get(lang=params.lang, _id=params.gift_id)
-
-
-@router.get("", response_model=list[Gift])
-async def get_all_gifts(params: Annotated[BaseDataDto, Depends()]) -> list[Gift]:
-    return await SERVICE.get_all(lang=params.lang)
