@@ -11,7 +11,7 @@ from src.modules.gifts.model import Gift
 from src.modules.gifts.repository import GiftsRepository
 from src.modules.gifts.service import GiftsService
 
-router = ApiRouter(prefix="gifts", tags=["gifts"])
+router = ApiRouter(prefix="/gifts", tags=["gifts"])
 
 SERVICE = GiftsService(GiftsRepository())
 
