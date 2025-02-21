@@ -56,3 +56,14 @@ class WeaponNotFoundError(NotFoundError):
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
         super().__init__(message=message, **metadata)
+
+
+class GiftNotFoundError(NotFoundError):
+    """Gift not found error."""
+
+    def __init__(
+        self,
+        message: str = "Gift not found.",
+        **metadata: str | float | dict[str, Any] | list[Any],
+    ) -> None:
+        super().__init__(message=message, **metadata)

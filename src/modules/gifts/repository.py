@@ -1,0 +1,6 @@
+from src.modules.base.json_repository import JsonRepository
+
+
+class GiftsRepository(JsonRepository):
+    def __init__(self) -> None:
+        super().__init__(name="gifts")
