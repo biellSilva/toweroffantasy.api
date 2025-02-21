@@ -22,7 +22,7 @@ async def get_all_gifts(params: Annotated[BaseDataDto, Depends()]) -> list[Gift]
 
 
 @router.get(
-    "/{_id}",
+    "/{gift_id}",
     response_model=Gift,
     exceptions=[GiftNotFoundError(lang=LangsEnum.EN, id="gift_id")],
 )
