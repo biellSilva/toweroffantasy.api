@@ -39,12 +39,12 @@ class CryptHelper:
     @classmethod
     def decode_access(cls, token: str) -> dict[str, Any]:
         """Decodes access token."""
-        return dict(decode(token, key=config.ACCESS_SECRET, algorithms=["HS256"]))
+        return decode(token, key=config.ACCESS_SECRET, algorithms=["HS256"])
 
     @classmethod
     def decode_refresh(cls, token: str) -> dict[str, Any]:
         """Decodes refresh token."""
-        return dict(decode(token, key=config.REFRESH_SECRET, algorithms=["HS256"]))
+        return decode(token, key=config.REFRESH_SECRET, algorithms=["HS256"])
 
     @classmethod
     def hash_password(cls, password: str) -> str:
