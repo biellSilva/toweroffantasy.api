@@ -5,7 +5,7 @@ from fastapi import Depends
 from src._types import LangsEnum
 from src.core.router import ApiRouter
 from src.exceptions.not_found import GiftNotFoundError
-from src.modules.base.dtos import BaseDataDto
+from src.modules.base.dtos import BaseSearchDto
 from src.modules.gifts.dtos import GetGift
 from src.modules.gifts.model import Gift
 from src.modules.gifts.repository import GiftsRepository
@@ -17,7 +17,7 @@ SERVICE = GiftsService(GiftsRepository())
 
 
 @router.get("", response_model=list[Gift])
-async def get_all_gifts(params: Annotated[BaseDataDto, Depends()]) -> list[Gift]:
+async def get_all_gifts(params: Annotated[BaseSearchDto, Depends()]) -> list[Gift]:
     return await SERVICE.get_all(lang=params.lang)
 
 

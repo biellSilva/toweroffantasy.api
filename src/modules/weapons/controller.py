@@ -2,7 +2,7 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends
 
-from src.modules.base.dtos import BaseDataDto
+from src.modules.base.dtos import BaseSearchDto
 from src.modules.weapons.dtos import GetWeapon
 from src.modules.weapons.model import Weapon, WeaponSimple
 from src.modules.weapons.repository import WeaponRepository
@@ -19,7 +19,7 @@ SERVICE = WeaponService(WeaponRepository())
     response_model=list[WeaponSimple],
 )
 async def get_all_weapons(
-    params: Annotated[BaseDataDto, Depends()],
+    params: Annotated[BaseSearchDto, Depends()],
 ) -> list[Weapon]:
     return await SERVICE.get_all(lang=params.lang)
 

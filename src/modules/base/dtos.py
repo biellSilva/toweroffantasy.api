@@ -12,5 +12,5 @@ class BaseDto(BaseModel):
     created_at: datetime
 
 
-class BaseDataDto(BaseModel):
+class BaseSearchDto(BaseModel):
     lang: Annotated[LangsEnum, Query(LangsEnum.EN, description="Language code")]
