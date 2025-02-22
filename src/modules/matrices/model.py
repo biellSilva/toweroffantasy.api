@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, computed_field
 
 from src._types import AssetPath
 
@@ -62,3 +62,18 @@ class Suit(BaseModel):
     assets: _SuitAssets
     sets: list[_SuitSet]
     matrices: list[_SuitMatrice]
+
+    @computed_field
+    @property
+    def matrice_name(self) -> str:
+        name = self.matrices[0].name
+        if ":" in name:
+            return name.split(":", 1)[0]
+        if "・" in name:
+            return name.split("・", 1)[0]
+        return name
+
+    @computed_field
+    @property
+    def rarity(self) -> str:
+        return self.matrices[0].rarity
