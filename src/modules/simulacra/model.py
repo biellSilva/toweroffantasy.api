@@ -112,21 +112,23 @@ class _Likeability(BaseModel):
     modifiers: list[_AttributeModifier]
 
 
-class Imitation(BaseModel):
+class SimulacrumSimple(BaseModel):
     id: str
     name: str
-    desc: str
-    unlock_info: str
     sex: str
     rarity: str
-    weapon_id: str | None
-    avatar_id: str
     is_limited: bool
     no_weapon: bool
 
-    fashions: list[_ImitationFashion]
-    extras: _ImitationExtras
-
     assets: _ImitationAssets
+
+
+class Simulacrum(SimulacrumSimple):
+    desc: str
+    unlock_info: str
+    weapon_id: str | None
+    avatar_id: str
     assets_a3: Annotated[_ImitationAssets, Field(validation_alias="assetsA3")]
+    extras: _ImitationExtras
+    fashions: list[_ImitationFashion]
     likeabilities: list[_Likeability]
