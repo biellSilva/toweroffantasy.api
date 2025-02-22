@@ -1,13 +1,12 @@
 from typing import Annotated
 
-from fastapi import Depends
+from fastapi import Depends, Query
 
 from src._types import LangsEnum
 from src.core.router import ApiRouter
 from src.exceptions.not_found import SimulacrumNotFoundError
-from src.modules.base.dtos import BaseDataDto
-from src.modules.simulacra.dtos import GetImitation
-from src.modules.simulacra.model import Imitation
+from src.modules.simulacra.dtos import GetSimulacra, GetSimulacrum
+from src.modules.simulacra.model import Simulacrum, SimulacrumSimple
 from src.modules.simulacra.repository import ImitationRepository
 from src.modules.simulacra.service import ImitationService
 
@@ -16,17 +15,59 @@ router = ApiRouter(prefix="/simulacra", tags=["simulacra"])
 SERVICE = ImitationService(ImitationRepository())
 
 
-@router.get("", response_model=list[Imitation])
-async def get_all_simulacra(
-    params: Annotated[BaseDataDto, Depends()],
-) -> list[Imitation]:
-    return await SERVICE.get_all(lang=params.lang)
+@router.get("", response_model=list[SimulacrumSimple])
+async def get_simulacra(
+    params: Annotated[GetSimulacra, Depends()],
+    include_id: Annotated[
+        list[str] | None,
+        Query(description="Id should be one of"),
+    ] = None,
+    exclude_id: Annotated[
+        list[str] | None,
+        Query(description="Id should not be one of"),
+    ] = None,
+    include_name: Annotated[
+        list[str] | None,
+        Query(description="Name should include one of"),
+    ] = None,
+    exclude_name: Annotated[
+        list[str] | None,
+        Query(description="Name should exclude one of"),
+    ] = None,
+    include_sex: Annotated[
+        list[str] | None,
+        Query(description="Sex should include one of"),
+    ] = None,
+    exclude_sex: Annotated[
+        list[str] | None,
+        Query(description="Sex should exclude one of"),
+    ] = None,
+    include_rarity: Annotated[
+        list[str] | None,
+        Query(description="Rarity should include one of"),
+    ] = None,
+    exclude_rarity: Annotated[
+        list[str] | None,
+        Query(description="Rarity should exclude one of"),
+    ] = None,
+) -> list[SimulacrumSimple]:
+    return await SERVICE.get_all(
+        params=params,
+        include_id=include_id,
+        exclude_id=exclude_id,
+        include_name=include_name,
+        exclude_name=exclude_name,
+        include_sex=include_sex,
+        include_rarity=include_rarity,
+        exclude_rarity=exclude_rarity,
+        exclude_sex=exclude_sex,
+    )
 
 
 @router.get(
-    "/{imitation_id}",
-    response_model=Imitation,
+    "/{simulacrum_id}",
+    response_model=Simulacrum,
     exceptions=[SimulacrumNotFoundError(lang=LangsEnum.EN, id="imitation_10")],
 )
-async def get_simulacrum(params: Annotated[GetImitation, Depends()]) -> Imitation:
-    return await SERVICE.get(lang=params.lang, _id=params.imitation_id)
+async def get_simulacrum(params: Annotated[GetSimulacrum, Depends()]) -> Simulacrum:
+    return await SERVICE.get(lang=params.lang, _id=params.simulacrum_id)
