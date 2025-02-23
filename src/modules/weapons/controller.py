@@ -22,27 +22,27 @@ async def get_all_weapons(
     params: Annotated[GetWeapons, Depends()],
     include_ids: Annotated[
         list[str] | None,
-        Query(description="Id should be one of"),
+        Query(description="ID should be one of"),
     ] = None,
     exclude_ids: Annotated[
         list[str] | None,
-        Query(description="Id should not be one of"),
+        Query(description="ID should not be one of"),
     ] = None,
     include_elements: Annotated[
         list[str] | None,
-        Query(description="Element should include one of"),
+        Query(description="Element ID should include one of"),
     ] = None,
     exclude_elements: Annotated[
         list[str] | None,
-        Query(description="Element should exclude one of"),
+        Query(description="Element ID should exclude one of"),
     ] = None,
     include_categories: Annotated[
         list[str] | None,
-        Query(description="Category should include one of"),
+        Query(description="Category ID should include one of"),
     ] = None,
     exclude_categories: Annotated[
         list[str] | None,
-        Query(description="Category should exclude one of"),
+        Query(description="Category ID should exclude one of"),
     ] = None,
     include_rarities: Annotated[
         list[str] | None,
