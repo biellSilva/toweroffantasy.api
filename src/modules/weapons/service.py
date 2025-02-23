@@ -62,7 +62,7 @@ class WeaponService:
 
         return paginate_items(filtered, params.page, params.limit)
 
-    def _filter(
+    def _filter(  # noqa: C901
         self,
         data: "WeaponSimple",
         /,
@@ -86,6 +86,30 @@ class WeaponService:
             return False
 
         if params.is_warehouse is not None and data.is_warehouse != params.is_warehouse:
+            return False
+
+        if (
+            params.charge_tier is not None
+            and data.charge.tier.lower() != params.charge_tier.lower()
+        ):
+            return False
+
+        if (
+            params.charge_value is not None
+            and int(data.charge.value) != params.charge_value
+        ):
+            return False
+
+        if (
+            params.shatter_tier is not None
+            and data.shatter.tier.lower() != params.shatter_tier.lower()
+        ):
+            return False
+
+        if (
+            params.shatter_value is not None
+            and int(data.shatter.value) != params.shatter_value
+        ):
             return False
 
         if (
