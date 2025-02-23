@@ -14,3 +14,8 @@ class BaseDto(BaseModel):
 
 class BaseSearchDto(BaseModel):
     lang: Annotated[LangsEnum, Query(LangsEnum.EN, description="Language code")]
+
+
+class BaseSearchAllDto(BaseSearchDto):
+    page: Annotated[int, Query(1, description="Page number", ge=1)] = 1
+    limit: Annotated[int, Query(10, description="Items per page", ge=1)] = 10
