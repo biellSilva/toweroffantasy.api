@@ -18,21 +18,13 @@ SERVICE = ImitationService(ImitationRepository())
 @router.get("", response_model=list[SimulacrumSimple])
 async def get_simulacra(
     params: Annotated[GetSimulacra, Depends()],
-    include_id: Annotated[
+    include_ids: Annotated[
         list[str] | None,
         Query(description="Id should be one of"),
     ] = None,
-    exclude_id: Annotated[
+    exclude_ids: Annotated[
         list[str] | None,
         Query(description="Id should not be one of"),
-    ] = None,
-    include_name: Annotated[
-        list[str] | None,
-        Query(description="Name should include one of"),
-    ] = None,
-    exclude_name: Annotated[
-        list[str] | None,
-        Query(description="Name should exclude one of"),
     ] = None,
     include_sex: Annotated[
         list[str] | None,
@@ -42,24 +34,22 @@ async def get_simulacra(
         list[str] | None,
         Query(description="Sex should exclude one of"),
     ] = None,
-    include_rarity: Annotated[
+    include_rarities: Annotated[
         list[str] | None,
         Query(description="Rarity should include one of"),
     ] = None,
-    exclude_rarity: Annotated[
+    exclude_rarities: Annotated[
         list[str] | None,
         Query(description="Rarity should exclude one of"),
     ] = None,
 ) -> list[SimulacrumSimple]:
     return await SERVICE.get_all(
         params=params,
-        include_id=include_id,
-        exclude_id=exclude_id,
-        include_name=include_name,
-        exclude_name=exclude_name,
+        include_id=include_ids,
+        exclude_id=exclude_ids,
         include_sex=include_sex,
-        include_rarity=include_rarity,
-        exclude_rarity=exclude_rarity,
+        include_rarity=include_rarities,
+        exclude_rarity=exclude_rarities,
         exclude_sex=exclude_sex,
     )
 
