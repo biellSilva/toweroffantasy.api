@@ -101,9 +101,6 @@ class MultiElement(BaseModel):
 class WeaponSimple(BaseModel):
     id: str
     name: str
-    desc: str
-    brief: str
-    lottery_desc: str
     rarity: str
     quality: str
 
@@ -120,6 +117,9 @@ class WeaponSimple(BaseModel):
 
 
 class Weapon(WeaponSimple):
+    desc: str
+    brief: str
+    lottery_desc: str
     skills: list[Skill] = []
     advancements: list[Advancement] = []
     passives: list[str] = []
