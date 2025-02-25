@@ -1,14 +1,16 @@
 from json import loads
-from typing import Any
 
 import aiofiles
+from pydantic import BaseModel
 
 from src.modules.base.cache import RedisCache
 
 
-class JsonRepository:
-    def __init__(self, name: str) -> None:
+class JsonRepository[T: BaseModel, B: BaseModel]:
+    def __init__(self, name: str, model: type[T], simple_model: type[B]) -> None:
         self._name = name
+        self._model = model
+        self._list_model = simple_model
         self._cache = RedisCache(name=self._name)
 
     async def _loads_json(self, *, lang: str) -> None:
@@ -19,16 +21,18 @@ class JsonRepository:
 
         await self._cache.set_values(lang=lang, value_dict=data)
 
-    async def get_id(self, *, lang: str, _id: str) -> dict[str, Any] | None:
+    async def get_id(self, *, lang: str, _id: str) -> T | None:
         """Get a item by id."""
         cache = await self._cache.get(lang=lang, key=_id)
 
         if not cache:
             await self._loads_json(lang=lang)
 
-        return await self._cache.get(lang=lang, key=_id)
+        if data := await self._cache.get(lang=lang, key=_id):
+            return self._model(**data)
+        return None
 
-    async def get_all(self, *, lang: str) -> list[dict[str, Any]]:
+    async def get_all(self, *, lang: str) -> list[B]:
         """Get all items."""
 
         cache = await self._cache.get_all(lang=lang)
@@ -36,4 +40,7 @@ class JsonRepository:
         if not cache:
             await self._loads_json(lang=lang)
 
-        return list((await self._cache.get_all(lang=lang)).values())
+        return [
+            self._list_model(**data)
+            for data in (await self._cache.get_all(lang=lang)).values()
+        ]
