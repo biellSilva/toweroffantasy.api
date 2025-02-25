@@ -1,4 +1,230 @@
 {
+  "Suit_SSR54": {
+    "id": "Suit_SSR54",
+    "name": "Garde",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_antuoliya_big.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_Antoria.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR54.webp"
+    },
+    "sets": [
+      {
+        "description": "Augmente les dégâts de foudre de 24%/26%/28%/30%. Augmente les dégâts de la Frappe de soutien des S.A.S. de 2 700 % de l'ATQ. Réduit la consommation d'endurance pour Esquive - Mode Croisière à haute vitesse - Nuage de 20%. Cet effet fonctionne également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "Augmente les dégâts de foudre de 18%/22%/26%/30%. Au moment d'équiper Requiem, octroie 12% dégâts finaux supplémentaires. Cet effet de kit fonctionne également dans l'emplacement main libre, seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR54_1",
+        "name": "Antoria (Force de défense)",
+        "description": "Une brave héroïne qui se bat pour le peuple.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR54",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "PV",
+            "description": "Augmente les PV max des Explorateurs.",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "Crit",
+            "description": "Augmente le taux de crit de {0}% lors de l'attaque d'un adversaire de même niveau ; augmente également le taux de crit lors de l'utilisation de compétences de soin.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR54_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR54_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR54_2",
+        "name": "Antoria (L'Exécutante)",
+        "description": "Le gardien d’Aida qui exécute le plan.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR54",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "ATQ",
+            "description": "Augmente l'ATQ de l'Explorateur.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "PV",
+            "description": "Augmente les PV max des Explorateurs.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR54_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR54_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR54_3",
+        "name": "Antoria (L'Autorisatrice)",
+        "description": "Le gardien de la clé du futur.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR54",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "ATQ",
+            "description": "Augmente l'ATQ de l'Explorateur.",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "PV",
+            "description": "Augmente les PV max des Explorateurs.",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR54_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR54_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR54_4",
+        "name": "Antoria (commandante)",
+        "description": "La maîtresse de la stratégie qui guide les troupes.",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR54",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "ATQ",
+            "description": "Augmente l'ATQ de l'Explorateur.",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "Résistance",
+            "description": "Augmente la résistance de l'Explorateur à tous les éléments.",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR54_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR54_256.webp"
+        }
+      }
+    ]
+  },
   "Suit_SSR53": {
     "id": "Suit_SSR53",
     "name": "Cœur de l'humanité",
@@ -468,7 +694,7 @@
         "add_score": 80.0
       },
       {
-        "description": "Après avoir utilisé Étincelle spatio-temporelle, augmente les dégâts finaux de 11%/15%/19%/23%. En cas d'utilisation lorsqu'une Résonance autre que Bénédiction est active, accroît encore les dégâts de givre de 20% supplémentaires. En cas d'utilisation lorsque Résonance de Bénédiction est active, augmente le taux de crit de l'Explorateur et de ses coéquipiers de 20% supplémentaires et les dégâts critiques de 12% supplémentaires. Ces effets durent 40 secondes. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
+        "description": "Après avoir utilisé Étincelle spatio-temporelle, augmente les dégâts finaux de 11%/15%/19%/23%. Si Résonance de Bénédiction est inactive, augmente les dégâts de givre de 20%. Si Résonance de Bénédiction est active, augmente le Taux de crit de l'Explorateur et de ses alliés à proximité de 20% et les dégâts critiques de 12%. Ces effets durent pendant 40 secondes. Les effets du kit fonctionnent également dans l'emplacement main libre, et seul le kit avec le nombre d'étoiles le plus élevé fait effet.",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0

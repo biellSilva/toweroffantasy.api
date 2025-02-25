@@ -1,4 +1,230 @@
 {
+  "Suit_SSR54": {
+    "id": "Suit_SSR54",
+    "name": "ผู้สังเกต",
+    "quality": "LEGENDRY",
+    "assets": {
+      "icon": "/Icon/yizhi/SuitAvatar/avatar_yizhitips_antuoliya_big.webp",
+      "remould_icon": "/UI/equiptips/weapon_imitation/tips_avatar_ssr_Antoria.webp",
+      "icon_temp": "/UI/yizhi/suit_icon/tips_icon_SSR54.webp"
+    },
+    "sets": [
+      {
+        "description": "เพิ่มดาเมจไฟฟ้า 24%/26%/28%/30% เพิ่มดาเมจของ จู่โจมสนับสนุน S.A.S. เป็น 2,700% ของ ATK ลดการใช้ค่าพลังกายสําหรับ หลบหลีก - โหมดครูสความเร็วสูง - เมฆา ลง 20% เอฟเฟกต์นี้มีผลในช่องอาวุธรอง และทํางานเฉพาะเซ็ตที่มีระดับดาวสูงสุดเท่านั้น",
+        "needs": 2,
+        "is_global": true,
+        "add_score": 80.0
+      },
+      {
+        "description": "เพิ่มดาเมจไฟฟ้า 18%/22%/26%/30% การสวมใส่เรเควียมจะมอบดาเมจสุดท้ายเพิ่มเติม 12% เอฟเฟกต์เซ็ตนี้มีผลในช่องอาวุธรอง และทํางานเฉพาะเซ็ตที่มีระดับดาวสูงสุดเท่านั้น",
+        "needs": 4,
+        "is_global": true,
+        "add_score": 160.0
+      }
+    ],
+    "matrices": [
+      {
+        "id": "matrix_SSR54_1",
+        "name": "แอนโทเรีย (กองกําลังป้องกัน)",
+        "description": "วีรสตรีผู้กล้าหาญ ยืนหยัดตั้งมั่นเพื่อผู้คน",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR54",
+        "slot_index": 1,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "เพิ่ม HP สูงสุดของนักพเนจร",
+            "initial_value": 1019.4175,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 339.80582,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "CritAdded",
+            "name": "คริติคอล",
+            "description": "เมื่อโจมตีคู่ต่อสู้ที่มีเลเวลเดียวกัน อัตราคริติคอลจะเพิ่มขึ้น {0}% และยังสามารถเพิ่มอัตราคริติคอลเมื่อใช้สกิลรักษาได้",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_baoji.webp",
+              "add_icon": "/UI/shuxingpiaozi/+bj.webp",
+              "dec_icon": "/UI/shuxingpiaozi/-bj.webp"
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR54_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR54_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR54_2",
+        "name": "แอนโทเรีย (ผู้ปฏิบัติการ)",
+        "description": "ผู้พิทักษ์และผู้รับผิดชอบดําเนินแผนการเพื่อปกป้องไอดา",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR54",
+        "slot_index": 2,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "โจมตี",
+            "description": "เพิ่ม ATK ของผู้เล่น",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "เพิ่ม HP สูงสุดของนักพเนจร",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR54_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR54_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR54_3",
+        "name": "แอนโทเรีย (ผู้อนุมัติ)",
+        "description": "ผู้ปกป้องกุญแจสู่อนาคต",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR54",
+        "slot_index": 3,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "โจมตี",
+            "description": "เพิ่ม ATK ของผู้เล่น",
+            "initial_value": 9.40534,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 3.135113,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "MaxHealthAdded",
+            "name": "HP",
+            "description": "เพิ่ม HP สูงสุดของนักพเนจร",
+            "initial_value": 461.16504,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 153.72168,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_hp.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR54_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR54_256.webp"
+        }
+      },
+      {
+        "id": "matrix_SSR54_4",
+        "name": "แอนโทเรีย (ผู้บัญชาการ)",
+        "description": "เจ้าแห่งกลยุทธ์ผู้สั่งการชี้นําเหล่าทหาร",
+        "rarity": "SSR",
+        "quality": "LEGENDRY",
+        "suit_id": "suit_SSR54",
+        "slot_index": 4,
+        "max_level": 100,
+        "max_star": 3,
+        "base_exp": 12000,
+        "modifiers": [
+          {
+            "id": "CommonAtkAdded",
+            "name": "โจมตี",
+            "description": "เพิ่ม ATK ของผู้เล่น",
+            "initial_value": 5.461165,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 1.820388,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_atk.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          },
+          {
+            "id": "ElementDef",
+            "name": "ค่าต้านทาน",
+            "description": "เพิ่มความต้านทานธาตุทั้งหมดของนักพเนจร",
+            "initial_value": 12.135922,
+            "modifier_op": "MODIFY_MODOP_ADDITIVE",
+            "modifier_value": 4.045308,
+            "is_percentage": false,
+            "is_uncommon": false,
+            "is_tag": false,
+            "assets": {
+              "icon": "/UI/AttributeIcon/icon_resist_all.webp",
+              "add_icon": null,
+              "dec_icon": null
+            }
+          }
+        ],
+        "assets": {
+          "large_icon": "/Icon/yizhi/512/icon_matrix_SSR54_512.webp",
+          "icon": "/Icon/yizhi/256/icon_matrix_SSR54_256.webp"
+        }
+      }
+    ]
+  },
   "Suit_SSR53": {
     "id": "Suit_SSR53",
     "name": "หัวใจของผู้คน",
@@ -468,7 +694,7 @@
         "add_score": 80.0
       },
       {
-        "description": "หลังคอมโบ: ประกายแห่งกาลอวกาศปลดปล่อยสําเร็จ ดาเมจสุดท้ายเพิ่ม 11%/15%/19%/23% หากอยู่ในช่วงปลดปล่อยเรโซแนนซ์ไร้พร ดาเมจน้ําแข็งเพิ่มเติมจะเพิ่ม 20% หากอยู่ในช่วงปลดปล่อยเรโซแนนซ์ประทานพร อัตราคริติคอลของนักพเนจรและเพื่อนร่วมทีมที่อยู่ใกล้เคียงเพิ่ม 20% ดาเมจคริติคอลเพิ่มเติมจะเพิ่ม 12% เอฟเฟกต์ข้างต้นจะคงอยู่ 40 วินาที เอฟเฟกต์เซตนี้ใช้ได้กับช่องอาวุธรอง และจะส่งผลเฉพาะเอฟเฟกต์ที่มีระดับดาวสูงสุดเท่านั้น",
+        "description": "หลังจากใช้ประกายแห่งกาลอวกาศ จะเพิ่มดาเมจสุดท้าย 11%/15%/19%/23% ถ้าเรโซแนนซ์ประทานพรไม่ทํางาน จะเพิ่มดาเมจน้ําแข็ง 20% ถ้าเรโซแนนซ์ประทานพรทํางาน จะเพิ่มอัตราคริติคอล 20% และเพิ่มดาเมจคริติคอล 12% ให้นักพเนจรและพันธมิตรใกล้เคียง เอฟเฟกต์เหล่านี้มีผล 40 วินาที เอฟเฟกต์เซ็ตนี้มีผลในช่องอาวุธรอง และทํางานเฉพาะเซ็ตที่มีระดับดาวสูงสุดเท่านั้น",
         "needs": 4,
         "is_global": true,
         "add_score": 160.0
