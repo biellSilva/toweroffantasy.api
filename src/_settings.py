@@ -45,20 +45,15 @@ class _BaseSettings(BaseSettings):
         return datetime.now(tz=ZoneInfo("UTC"))
 
     @property
-    def project_summary(self) -> str:
-        return f"Last restart: {self.last_restart}"
+    def project_desc(self) -> str:
+        return (
+            f"**Game Version: *`{self.in_game_version}`***\r\t\n"
+            f"**Last restart: *`{self.last_restart.strftime('%Y-%m-%d %H:%M:%S %:z')}`***"  # noqa: E501
+        )
 
     @property
     def in_game_version(self) -> str:
         return "4.7.3"
-
-    @property
-    def project_description(self) -> str:
-        return f"""
-        This API is used to provide data for the Tower of Fantasy game.
-
-        In-game version: {self.in_game_version}
-        """
 
 
 config = _BaseSettings()  # type: ignore

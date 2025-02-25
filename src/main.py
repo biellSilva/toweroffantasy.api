@@ -9,8 +9,7 @@ from src.exceptions.base import ApiError
 def create_app() -> FastAPI:
     app = FastAPI(
         title=config.PROJECT_NAME,
-        summary=config.project_summary,
-        description=config.project_description,
+        description=config.project_desc,
         lifespan=lifespan,
         exception_handlers={ApiError: ApiError.handle_error},
         version=get_version(),
