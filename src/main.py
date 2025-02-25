@@ -10,6 +10,7 @@ def create_app() -> FastAPI:
     app = FastAPI(
         title=config.PROJECT_NAME,
         summary=config.project_summary,
+        description=config.project_description,
         lifespan=lifespan,
         exception_handlers={ApiError: ApiError.handle_error},
         version=get_version(),
