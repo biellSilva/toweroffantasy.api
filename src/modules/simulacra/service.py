@@ -6,9 +6,9 @@ from src._types import LangsEnum
 from src._utils import is_str_in_list, paginate_items
 from src.exceptions.not_found import SimulacrumNotFoundError
 from src.modules.simulacra.dtos import GetSimulacra
-from src.modules.simulacra.model import Simulacrum, SimulacrumSimple
 
 if TYPE_CHECKING:
+    from src.modules.simulacra.model import Simulacrum, SimulacrumSimple
     from src.modules.simulacra.repository import ImitationRepository
 
 
@@ -16,9 +16,9 @@ class ImitationService:
     def __init__(self, repository: "ImitationRepository") -> None:
         self.repository = repository
 
-    async def get(self, *, lang: LangsEnum, _id: str) -> Simulacrum:
+    async def get(self, *, lang: LangsEnum, _id: str) -> "Simulacrum":
         if data := await self.repository.get_id(lang=lang, _id=_id):
-            return Simulacrum(**data)
+            return data
         raise SimulacrumNotFoundError(lang=lang, id=_id)
 
     async def get_all(
@@ -31,11 +31,8 @@ class ImitationService:
         exclude_sex: list[str] | None,
         include_rarity: list[str] | None,
         exclude_rarity: list[str] | None,
-    ) -> list[SimulacrumSimple]:
-        simulacra = [
-            SimulacrumSimple(**data)
-            for data in await self.repository.get_all(lang=params.lang)
-        ]
+    ) -> "list[SimulacrumSimple]":
+        simulacra = await self.repository.get_all(lang=params.lang)
 
         filtered = [
             data

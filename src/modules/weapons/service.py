@@ -6,9 +6,9 @@ from src._types import LangsEnum
 from src._utils import is_str_in_list, paginate_items
 from src.exceptions.not_found import WeaponNotFoundError
 from src.modules.weapons.dtos import GetWeapons
-from src.modules.weapons.model import Weapon, WeaponSimple
 
 if TYPE_CHECKING:
+    from src.modules.weapons.model import Weapon, WeaponSimple
     from src.modules.weapons.repository import WeaponRepository
 
 
@@ -16,9 +16,9 @@ class WeaponService:
     def __init__(self, repository: "WeaponRepository") -> None:
         self.repository = repository
 
-    async def get(self, *, lang: LangsEnum, _id: str) -> Weapon:
+    async def get(self, *, lang: LangsEnum, _id: str) -> "Weapon":
         if data := await self.repository.get_id(lang=lang, _id=_id):
-            return Weapon(**data)
+            return data
         raise WeaponNotFoundError(lang=lang, id=_id)
 
     async def get_all(
@@ -35,11 +35,8 @@ class WeaponService:
         exclude_rarities: list[str] | None,
         include_quality: list[str] | None,
         exclude_quality: list[str] | None,
-    ) -> list[WeaponSimple]:
-        weapons = [
-            WeaponSimple(**data)
-            for data in await self.repository.get_all(lang=params.lang)
-        ]
+    ) -> "list[WeaponSimple]":
+        weapons = await self.repository.get_all(lang=params.lang)
 
         filtered = [
             data
