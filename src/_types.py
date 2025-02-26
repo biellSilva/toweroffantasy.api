@@ -5,6 +5,8 @@ from pydantic import AfterValidator
 
 from src._settings import config
 
+__all__ = ("AssetPath", "LangsEnum")
+
 
 class LangsEnum(StrEnum):
     DE = "de"
