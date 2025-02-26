@@ -1,8 +1,10 @@
 from pydantic import BaseModel
 
+from src._types import AssetPath
+
 
 class _GiftAssets(BaseModel):
-    icon: str
+    icon: AssetPath
 
 
 class Gift(BaseModel):
