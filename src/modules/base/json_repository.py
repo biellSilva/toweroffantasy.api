@@ -7,7 +7,7 @@ from src.modules.base.cache import RedisCache
 
 
 class JsonRepository[T: BaseModel, B: BaseModel]:
-    def __init__(self, name: str, model: type[T], simple_model: type[B]) -> None:
+    def __init__(self, *, name: str, model: type[T], simple_model: type[B]) -> None:
         self._name = name
         self._model = model
         self._list_model = simple_model
