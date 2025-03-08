@@ -3,6 +3,7 @@ from typing import Annotated
 from fastapi import Depends, Query
 
 from src.core.router import ApiRouter
+from src.modules._paginator import Pagination
 from src.modules.weapons.dtos import GetWeapon, GetWeapons
 from src.modules.weapons.model import Weapon, WeaponSimple
 from src.modules.weapons.repository import WeaponRepository
@@ -16,7 +17,7 @@ SERVICE = WeaponService(WeaponRepository())
 
 @router.get(
     "",
-    response_model=list[WeaponSimple],
+    response_model=Pagination[WeaponSimple],
 )
 async def get_all_weapons(
     params: Annotated[GetWeapons, Depends()],
@@ -60,7 +61,7 @@ async def get_all_weapons(
         list[str] | None,
         Query(description="Quality should exclude one of"),
     ] = None,
-) -> list[WeaponSimple]:
+) -> Pagination[WeaponSimple]:
     return await SERVICE.get_all(
         params=params,
         include_ids=include_ids,
