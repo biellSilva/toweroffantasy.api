@@ -1,12 +1,14 @@
 from typing import TYPE_CHECKING
 
 from src._types import LangsEnum
-from src._utils import paginate_items, quality_to_int
 from src.exceptions.not_found import SimulacrumNotFoundError
+from src.modules._paginator import paginate_items
+from src.modules._utils import quality_to_int
 from src.modules.simulacra.dtos import GetSimulacra
 from src.modules.simulacra.utils import filter_simulacra
 
 if TYPE_CHECKING:
+    from src.modules._paginator import Pagination
     from src.modules.gifts.model import Gift
     from src.modules.gifts.repository import GiftsRepository
     from src.modules.simulacra.model import Simulacrum, SimulacrumSimple
@@ -37,7 +39,7 @@ class ImitationService:
         exclude_sex: list[str] | None,
         include_rarity: list[str] | None,
         exclude_rarity: list[str] | None,
-    ) -> "list[SimulacrumSimple]":
+    ) -> "Pagination[SimulacrumSimple]":
         simulacra = await self.imitation_repository.get_all(lang=params.lang)
 
         filtered = [
