@@ -2,7 +2,7 @@ from typing import TYPE_CHECKING
 
 from unidecode import unidecode
 
-from src._utils import is_str_in_list
+from src.modules._utils import is_str_in_list
 
 if TYPE_CHECKING:
     from src.modules.simulacra.dtos import GetSimulacra
