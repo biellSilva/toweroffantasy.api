@@ -4,8 +4,8 @@ from src._types import LangsEnum
 from src.exceptions.not_found import SimulacrumNotFoundError
 from src.modules._paginator import paginate_items
 from src.modules._utils import quality_to_int
+from src.modules.simulacra._utils import filter_simulacra
 from src.modules.simulacra.dtos import GetSimulacra
-from src.modules.simulacra.utils import filter_simulacra
 
 if TYPE_CHECKING:
     from src.modules._paginator import Pagination
