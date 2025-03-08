@@ -5,6 +5,7 @@ from fastapi import Depends, Query
 from src._types import LangsEnum
 from src.core.router import ApiRouter
 from src.exceptions.not_found import SimulacrumNotFoundError
+from src.modules._paginator import Pagination
 from src.modules.gifts.model import Gift
 from src.modules.gifts.repository import GiftsRepository
 from src.modules.simulacra.dtos import GetSimulacra, GetSimulacrum
@@ -17,7 +18,7 @@ router = ApiRouter(prefix="/simulacra", tags=["simulacra"])
 SERVICE = ImitationService(ImitationRepository(), GiftsRepository())
 
 
-@router.get("", response_model=list[SimulacrumSimple])
+@router.get("", response_model=Pagination[SimulacrumSimple])
 async def get_simulacra(
     params: Annotated[GetSimulacra, Depends()],
     include_ids: Annotated[
@@ -44,7 +45,7 @@ async def get_simulacra(
         list[str] | None,
         Query(description="Rarity should exclude one of"),
     ] = None,
-) -> list[SimulacrumSimple]:
+) -> Pagination[SimulacrumSimple]:
     return await SERVICE.get_all(
         params=params,
         include_id=include_ids,
