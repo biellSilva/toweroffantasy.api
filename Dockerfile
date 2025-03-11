@@ -5,7 +5,7 @@ COPY pyproject.toml pdm.lock* /app/
 
 RUN pip install pdm
 
-RUN pdm install
+RUN pdm install  --prod
 
 EXPOSE 8000
 
