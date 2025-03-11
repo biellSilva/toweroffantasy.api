@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import Annotated
 
 from fastapi import Query
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from src._types import LangsEnum
 
@@ -16,6 +16,7 @@ class BaseSearchDto(BaseModel):
     lang: Annotated[LangsEnum, Query(LangsEnum.EN, description="Language code")]
 
 
-class BaseSearchAllDto(BaseSearchDto):
-    page: Annotated[int, Query(1, description="Page number", ge=1)] = 1
-    limit: Annotated[int, Query(10, description="Items per page", ge=1)] = 10
+class BaseSearchAllDto(BaseModel):
+    lang: LangsEnum = Field(LangsEnum.EN, description="Language code")
+    page: int = Field(1, description="Page number", ge=1)
+    limit: int = Field(10, description="Items per page", ge=1)
