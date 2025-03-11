@@ -5,8 +5,10 @@ on:
     branches: [v3]
 
 jobs:
-  build:
+  publish-main:
     runs-on: ubuntu-latest
+
+    if: startsWith(github.ref, 'refs/tags/')
 
     steps:
       - name: Deploy using ssh
@@ -19,5 +21,3 @@ jobs:
 
           script: |
             cd code && docker compose up -d api --build
-
-          debug: true
