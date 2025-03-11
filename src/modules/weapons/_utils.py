@@ -9,22 +9,7 @@ if TYPE_CHECKING:
     from src.modules.weapons.model import WeaponSimple
 
 
-def filter_weapons(  # noqa: C901
-    data: "WeaponSimple",
-    /,
-    *,
-    params: "GetWeapons",
-    include_ids: list[str] | None,
-    exclude_ids: list[str] | None,
-    include_elements: list[str] | None,
-    exclude_elements: list[str] | None,
-    include_categories: list[str] | None,
-    exclude_categories: list[str] | None,
-    include_rarities: list[str] | None,
-    exclude_rarities: list[str] | None,
-    include_quality: list[str] | None,
-    exclude_quality: list[str] | None,
-) -> bool:
+def filter_weapons(data: "WeaponSimple", /, *, params: "GetWeapons") -> bool:  # noqa: C901
     if params.is_limited is not None and data.is_limited != params.is_limited:
         return False
 
@@ -65,18 +50,18 @@ def filter_weapons(  # noqa: C901
         return False
 
     includes = [
-        (include_ids, data.id, True),
-        (include_elements, data.element.id, True),
-        (include_categories, data.category.id, True),
-        (include_rarities, data.rarity, True),
-        (include_quality, data.quality, True),
+        (params.include_ids, data.id, True),
+        (params.include_elements, data.element.id, True),
+        (params.include_categories, data.category.id, True),
+        (params.include_rarities, data.rarity, True),
+        (params.include_qualities, data.quality, True),
     ]
     excludes = [
-        (exclude_ids, data.id, True),
-        (exclude_elements, data.element.id, True),
-        (exclude_categories, data.category.id, True),
-        (exclude_rarities, data.rarity, True),
-        (exclude_quality, data.quality, True),
+        (params.exclude_ids, data.id, True),
+        (params.exclude_elements, data.element.id, True),
+        (params.exclude_categories, data.category.id, True),
+        (params.exclude_rarities, data.rarity, True),
+        (params.exclude_qualities, data.quality, True),
     ]
 
     for inc, param, equals in includes:
