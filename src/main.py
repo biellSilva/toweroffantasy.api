@@ -16,6 +16,7 @@ def create_app() -> FastAPI:
     )
 
     add_routes(app)
+    add_middlewares(app)
 
     return app
 
@@ -27,6 +28,15 @@ def add_routes(app: FastAPI) -> None:
 
 
 def add_middlewares(app: FastAPI) -> None:
+    from fastapi.middleware.cors import CORSMiddleware
+
     from src.middlewares.timeit import ProcessTime
 
     app.add_middleware(ProcessTime)
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["http://localhost:5173"],
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
