@@ -1,6 +1,7 @@
 from typing import Annotated
 
-from fastapi import Path, Query
+from fastapi import Path
+from pydantic import Field
 
 from src.modules.base.dtos import BaseSearchAllDto, BaseSearchDto
 
@@ -10,9 +11,22 @@ class GetSimulacrum(BaseSearchDto):
 
 
 class GetSimulacra(BaseSearchAllDto):
-    name: Annotated[str | None, Query(description="Name should be part of")] = None
-    is_limited: Annotated[
-        bool | None,
-        Query(description="Is limited weapon (Red Nucleous)"),
-    ] = None
-    no_weapon: Annotated[bool | None, Query(description="No weapon (Polymorph)")] = None
+    name: str | None = Field(None, description="Name should be part of")
+    is_limited: bool | None = Field(
+        None,
+        description="Is limited weapon (Red Nucleous)",
+    )
+
+    no_weapon: bool | None = Field(None, description="No weapon (Polymorph)")
+    include_ids: list[str] | None = Field(None, description="Id should be one of")
+    exclude_ids: list[str] | None = Field(None, description="Id should not be one of")
+    include_sex: list[str] | None = Field(None, description="Sex should include one of")
+    exclude_sex: list[str] | None = Field(None, description="Sex should exclude one of")
+    include_rarities: list[str] | None = Field(
+        None,
+        description="Rarity should include one of",
+    )
+    exclude_rarities: list[str] | None = Field(
+        None,
+        description="Rarity should exclude one of",
+    )

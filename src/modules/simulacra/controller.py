@@ -20,41 +20,9 @@ SERVICE = ImitationService(ImitationRepository(), GiftsRepository())
 
 @router.get("", response_model=Pagination[SimulacrumSimple])
 async def get_simulacra(
-    params: Annotated[GetSimulacra, Depends()],
-    include_ids: Annotated[
-        list[str] | None,
-        Query(description="Id should be one of"),
-    ] = None,
-    exclude_ids: Annotated[
-        list[str] | None,
-        Query(description="Id should not be one of"),
-    ] = None,
-    include_sex: Annotated[
-        list[str] | None,
-        Query(description="Sex should include one of"),
-    ] = None,
-    exclude_sex: Annotated[
-        list[str] | None,
-        Query(description="Sex should exclude one of"),
-    ] = None,
-    include_rarities: Annotated[
-        list[str] | None,
-        Query(description="Rarity should include one of"),
-    ] = None,
-    exclude_rarities: Annotated[
-        list[str] | None,
-        Query(description="Rarity should exclude one of"),
-    ] = None,
+    params: Annotated[GetSimulacra, Query()],
 ) -> Pagination[SimulacrumSimple]:
-    return await SERVICE.get_all(
-        params=params,
-        include_id=include_ids,
-        exclude_id=exclude_ids,
-        include_sex=include_sex,
-        include_rarity=include_rarities,
-        exclude_rarity=exclude_rarities,
-        exclude_sex=exclude_sex,
-    )
+    return await SERVICE.get_all(params=params)
 
 
 @router.get(

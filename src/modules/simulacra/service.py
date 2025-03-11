@@ -29,33 +29,10 @@ class ImitationService:
             return data
         raise SimulacrumNotFoundError(lang=lang, id=_id)
 
-    async def get_all(
-        self,
-        *,
-        params: GetSimulacra,
-        include_id: list[str] | None,
-        exclude_id: list[str] | None,
-        include_sex: list[str] | None,
-        exclude_sex: list[str] | None,
-        include_rarity: list[str] | None,
-        exclude_rarity: list[str] | None,
-    ) -> "Pagination[SimulacrumSimple]":
+    async def get_all(self, *, params: GetSimulacra) -> "Pagination[SimulacrumSimple]":
         simulacra = await self.imitation_repository.get_all(lang=params.lang)
 
-        filtered = [
-            data
-            for data in simulacra
-            if filter_simulacra(
-                data,
-                params=params,
-                include_id=include_id,
-                exclude_id=exclude_id,
-                include_sex=include_sex,
-                exclude_sex=exclude_sex,
-                include_rarity=include_rarity,
-                exclude_rarity=exclude_rarity,
-            )
-        ]
+        filtered = [data for data in simulacra if filter_simulacra(data, params=params)]
 
         return paginate_items(filtered, params.page, params.limit)
 
