@@ -3,11 +3,15 @@ from typing import Annotated
 from fastapi import Path
 from pydantic import BaseModel
 
-from src.modules.base.dtos import BaseSearchDto
+from src.modules.base.dtos import BaseSearchAllDto, BaseSearchDto
 
 
 class GetMatrix(BaseSearchDto):
     matrix_id: Annotated[str, Path(description="Matrix id")]
+
+
+class GetMatrices(BaseSearchAllDto):
+    pass
 
 
 class _SuitAssets(BaseModel):

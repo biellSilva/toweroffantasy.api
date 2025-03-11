@@ -5,8 +5,8 @@ from fastapi import Depends
 from src._types import LangsEnum
 from src.core.router import ApiRouter
 from src.exceptions.not_found import MatrixSuiteNotFoundError
-from src.modules.base.dtos import BaseSearchDto
-from src.modules.matrices.dtos import ExposeSuit, GetMatrix
+from src.modules._paginator import Pagination
+from src.modules.matrices.dtos import ExposeSuit, GetMatrices, GetMatrix
 from src.modules.matrices.model import Suit
 from src.modules.matrices.repository import MatriceRepository
 from src.modules.matrices.service import MatriceService
@@ -16,9 +16,11 @@ router = ApiRouter(prefix="/matrices", tags=["matrices"])
 SERVICE = MatriceService(MatriceRepository())
 
 
-@router.get("", response_model=list[ExposeSuit])
-async def get_all_matrice(params: Annotated[BaseSearchDto, Depends()]) -> list[Suit]:
-    return await SERVICE.get_all(lang=params.lang)
+@router.get("", response_model=Pagination[ExposeSuit])
+async def get_all_matrice(
+    params: Annotated[GetMatrices, Depends()],
+) -> Pagination[Suit]:
+    return await SERVICE.get_all(params=params)
 
 
 @router.get(
