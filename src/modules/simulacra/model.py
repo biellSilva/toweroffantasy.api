@@ -86,7 +86,7 @@ class _AttributeCondition(BaseModel):
     name: str
     desc: str
     use_desc: str
-    icon: str
+    icon: AssetPath
     quality: str
 
 
@@ -94,7 +94,7 @@ class _AttributeModifier(BaseModel):
     id: str
     name: str
     desc: str
-    icon: str
+    icon: AssetPath
     value: float
     operator: str
 
@@ -106,8 +106,8 @@ class _Likeability(BaseModel):
     context: str | None
     desc: str | None
     unlock_desc: str | None
-    icon: str | None
-    big_icon: str | None
+    icon: AssetPath | None
+    big_icon: AssetPath | None
     conditions: list[_AttributeCondition]
     modifiers: list[_AttributeModifier]
 
