@@ -37,7 +37,7 @@ def add_middlewares(app: FastAPI) -> None:
         CORSMiddleware,
         allow_origins=[
             "http://localhost:5173",
-            "https://toweroffantasy-website.vercel.app",
+            "https://toweroffantasy.vercel.app/",
         ],
         allow_credentials=True,
         allow_methods=["*"],
