@@ -53,7 +53,7 @@ class _BaseSettings(BaseSettings):
 
     @property
     def in_game_version(self) -> str:
-        return "4.7.3"
+        return "4.7"
 
 
 config = _BaseSettings()  # type: ignore
