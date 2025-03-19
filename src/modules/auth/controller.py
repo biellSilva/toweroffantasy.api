@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from fastapi import Body, Header, Request, status
+from fastapi import Body, Request, status
 
 from src.core.crypt import CryptHelper
 from src.core.router import ApiRouter
@@ -82,8 +82,8 @@ async def change_password(
     "/check",
     status_code=status.HTTP_204_NO_CONTENT,
     exceptions=[InvalidTokenError, ExpiredTokenError],
+    requires_login=True,
 )
-async def check_access_token(
-    authorization: str = Header(alias="Authorization"),
-) -> None:
-    await SERVICE.check_access_token(token=authorization)
+async def check_access_token(request: Request) -> None:
+    """Check if the access token is valid."""
+    await SERVICE.check_access_token(request)

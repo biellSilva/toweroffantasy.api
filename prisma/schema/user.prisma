@@ -1,0 +1,14 @@
+model User {
+    id         Int      @id @default(autoincrement())
+    created_at DateTime @default(now())
+    updated_at DateTime @updatedAt
+    banned     Boolean  @default(false)
+
+    email      String  @unique
+    password   String
+    username   String  @unique
+    discord_id String? @unique
+
+    accounts Account[]
+    presets  Preset[]
+}

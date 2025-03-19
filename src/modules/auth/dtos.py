@@ -2,7 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel
 
-from src.modules.users.dtos import User
+from src.modules.users.dtos import UserMe
 
 
 class LoginParams(BaseModel):
@@ -26,7 +26,7 @@ class LoginResponse(BaseModel):
     access_token: str
     access_expire: datetime
     refresh_token: str
-    user: User
+    user: UserMe
 
 
 class ChangePasswordParams(BaseModel):

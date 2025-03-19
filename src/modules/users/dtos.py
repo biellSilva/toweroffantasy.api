@@ -15,3 +15,9 @@ class User(BaseModel):
     id: int
     created_at: datetime
     username: str
+
+
+class UserMe(User):
+    """Data Transfer Object for exporting a user."""
+
+    email: str

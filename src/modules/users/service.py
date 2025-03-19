@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 from src.exceptions.not_found import UserNotFoundError
-from src.modules.users.dtos import User
+from src.modules.users.dtos import User, UserMe
 
 if TYPE_CHECKING:
     from src.modules.users.repository import UserRepository
@@ -18,4 +18,11 @@ class UserService:
         user_ = await self.user_repository.get_user_by_id(user_id)
         if user_ is None:
             raise UserNotFoundError(userId=user_id)
-        return User(**user_.__dict__)
+        return User(**user_.model_dump())
+
+    async def get_user_me(self, user_id: int) -> UserMe:
+        """Get the current user."""
+        user_ = await self.user_repository.get_user_by_id(user_id)
+        if user_ is None:
+            raise UserNotFoundError(userId=user_id)
+        return UserMe(**user_.model_dump())
