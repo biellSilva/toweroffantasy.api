@@ -11,4 +11,6 @@ EXPOSE 8000
 
 COPY . /app
 
+RUN pdm generate
+
 CMD ["pdm", "run", "start"]
