@@ -67,3 +67,14 @@ class GiftNotFoundError(NotFoundError):
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
         super().__init__(message=message, **metadata)
+
+
+class MountNotFoundError(NotFoundError):
+    """Mount not found error."""
+
+    def __init__(
+        self,
+        message: str = "Mount not found.",
+        **metadata: str | float | dict[str, Any] | list[Any],
+    ) -> None:
+        super().__init__(message=message, **metadata)
