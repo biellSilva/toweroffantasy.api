@@ -36,4 +36,9 @@ migrate = { cmd = "prisma migrate dev", env_file = ".env" }
 generate = { cmd = "prisma generate", env_file = ".env" }
 
 [dependency-groups]
-dev = ["ruff>=0.8.4", "types-pyjwt>=1.7.1", "pre-commit>=4.0.1"]
+dev = [
+    "ruff>=0.8.4",
+    "types-pyjwt>=1.7.1",
+    "pre-commit>=4.0.1",
+    "requests>=2.32.3",
+]
