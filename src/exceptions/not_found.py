@@ -78,3 +78,14 @@ class MountNotFoundError(NotFoundError):
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
         super().__init__(message=message, **metadata)
+
+
+class BannerNotFoundError(NotFoundError):
+    """Banner not found error."""
+
+    def __init__(
+        self,
+        message: str = "Banner not found.",
+        **metadata: str | float | dict[str, Any] | list[Any],
+    ) -> None:
+        super().__init__(message=message, **metadata)
