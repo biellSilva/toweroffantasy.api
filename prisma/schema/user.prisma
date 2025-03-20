@@ -1,7 +1,7 @@
 model User {
     id         Int      @id @default(autoincrement())
-    created_at DateTime @default(now())
-    updated_at DateTime @updatedAt
+    created_at DateTime @default(now()) @db.Timestamptz()
+    updated_at DateTime @updatedAt @db.Timestamptz()
     banned     Boolean  @default(false)
 
     email      String  @unique
