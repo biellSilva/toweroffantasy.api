@@ -3,6 +3,7 @@ model User {
     created_at DateTime @default(now()) @db.Timestamptz()
     updated_at DateTime @updatedAt @db.Timestamptz()
     banned     Boolean  @default(false)
+    roles      Roles[]  @default([USER])
 
     email      String  @unique
     password   String
