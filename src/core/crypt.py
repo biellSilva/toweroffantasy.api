@@ -25,11 +25,11 @@ class CryptHelper:
     ) -> "tuple[ _AccessToken, datetime, _RefreshToken ]":
         """Encode payload."""
 
-        access_expire = current_datetime() + timedelta(minutes=30)
+        access_expire = current_datetime() + timedelta(seconds=config.ACCESS_EXPIRE)
         payload["exp"] = access_expire
         access_token = str(encode(payload, key=config.ACCESS_SECRET, algorithm="HS256"))
 
-        payload["exp"] = current_datetime() + timedelta(hours=24)
+        payload["exp"] = current_datetime() + timedelta(seconds=config.REFRESH_EXPIRE)
         refresh_token = str(
             encode(payload, key=config.REFRESH_SECRET, algorithm="HS256"),
         )
@@ -37,12 +37,12 @@ class CryptHelper:
         return access_token, access_expire, refresh_token
 
     @classmethod
-    def decode_access(cls, token: str) -> dict[str, Any]:
+    def decode_access(cls, token: _AccessToken) -> dict[str, Any]:
         """Decodes access token."""
         return decode(token, key=config.ACCESS_SECRET, algorithms=["HS256"])
 
     @classmethod
-    def decode_refresh(cls, token: str) -> dict[str, Any]:
+    def decode_refresh(cls, token: _RefreshToken) -> dict[str, Any]:
         """Decodes refresh token."""
         return decode(token, key=config.REFRESH_SECRET, algorithms=["HS256"])
 
