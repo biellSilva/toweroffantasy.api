@@ -3,10 +3,13 @@ model Banner {
     created_at DateTime @default(now()) @db.Timestamptz()
     updated_at DateTime @updatedAt @db.Timestamptz()
 
-    object_id String
-    start_at  DateTime @db.Timestamptz()
-    end_at    DateTime @db.Timestamptz()
-    link      String
+    imitation_id String
+    weapon_id    String
+    suit_id      String
+
+    start_at DateTime @db.Timestamptz()
+    end_at   DateTime @db.Timestamptz()
+    link     String
 
     limited_only Boolean @default(false)
     is_rerun     Boolean @default(false)
