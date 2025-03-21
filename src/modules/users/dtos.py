@@ -19,7 +19,7 @@ class User(BaseModel):
 
 
 class UserMe(User):
-    """Data Transfer Object for exporting a user."""
+    """Data Transfer Object for exporting the current user."""
 
     email: str
     roles: list[Roles]
