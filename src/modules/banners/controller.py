@@ -21,7 +21,7 @@ async def get_versions(params: Annotated[GetBanners, Query()]) -> list[Banner]:
     return await SERVICE.get_banners(params)
 
 
-@router.post("", responses=generate_docs(InvalidRoleError))
+@router.post("", responses=generate_docs(InvalidRoleError, auth=True))
 async def create_version(
     _: Annotated[Payload, Security(RoleSecurity(role="admin"))],
     params: Annotated[CreateBanner, Body()],
