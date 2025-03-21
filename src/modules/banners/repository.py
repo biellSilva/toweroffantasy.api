@@ -20,7 +20,15 @@ class BannerRepository:
     async def get_id(self, banner_id: str) -> "Banner | None":
         """Get a banner by ID."""
 
-        return await self._client.banner.find_first(where={"object_id": banner_id})
+        return await self._client.banner.find_first(
+            where=BannerWhereInput(
+                OR=[
+                    {"imitation_id": banner_id},
+                    {"suit_id": banner_id},
+                    {"weapon_id": banner_id},
+                ],
+            ),
+        )
 
     async def get_banners(self, params: "GetBanners") -> list["Banner"]:  # noqa: C901
         """Get all banners."""
@@ -28,10 +36,14 @@ class BannerRepository:
         _filter = BannerWhereInput()
 
         if params.include_ids:
-            _filter["object_id"] = {"in": params.include_ids}
+            _filter["imitation_id"] = {"in": params.include_ids}
+            _filter["weapon_id"] = {"in": params.include_ids}
+            _filter["suit_id"] = {"in": params.include_ids}
 
         if params.exclude_ids:
-            _filter["object_id"] = {"not_in": params.exclude_ids}
+            _filter["imitation_id"] = {"not_in": params.exclude_ids}
+            _filter["weapon_id"] = {"not_in": params.exclude_ids}
+            _filter["suit_id"] = {"not_in": params.exclude_ids}
 
         if params.final_rerun:
             _filter["final_rerun"] = params.final_rerun
@@ -59,7 +71,7 @@ class BannerRepository:
 
         return await self._client.banner.find_many(
             where=_filter,
-            order={"start_at": "desc"},
+            order=[{"start_at": "desc"}, {"is_rerun": "desc"}],
         )
 
     async def create(self, data: "CreateBanner") -> "Banner":

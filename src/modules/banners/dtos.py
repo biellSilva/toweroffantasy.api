@@ -5,7 +5,10 @@ from pydantic import BaseModel, Field
 
 
 class CreateBanner(BaseModel):
-    object_id: str
+    imitation_id: str
+    weapon_id: str
+    suit_id: str
+
     start_at: datetime
     end_at: datetime
     link: str
