@@ -3,7 +3,6 @@ from typing import Annotated
 from pydantic import BaseModel, Field
 
 from src._types import AssetPath
-from src.modules.banners.dtos import Banner
 from src.modules.base.model import BackgroundColor
 
 
@@ -133,4 +132,3 @@ class Simulacrum(SimulacrumSimple):
     extras: _ImitationExtras
     fashions: list[_ImitationFashion]
     likeabilities: list[_Likeability]
-    banners: list[Banner] = []

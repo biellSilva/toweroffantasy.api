@@ -2,32 +2,11 @@ from typing import TYPE_CHECKING
 
 from unidecode import unidecode
 
-from src.modules._utils import is_str_in_list, rarity_to_int
+from src.modules._utils import is_str_in_list
 
 if TYPE_CHECKING:
     from src.modules.simulacra.dtos import GetSimulacra
-    from src.modules.simulacra.model import Simulacrum, SimulacrumSimple
-
-
-def sort_simulacra(
-    data: "Simulacrum",
-) -> tuple[int, int, bool, int, str]:
-    if not data.banners:
-        return (
-            0,
-            0,
-            data.is_limited or data.no_weapon,
-            -rarity_to_int(data.rarity),
-            data.name,
-        )
-
-    return (
-        -int(data.banners[-1].start_at.timestamp()),
-        -int(data.banners[-1].end_at.timestamp()),
-        data.is_limited or data.no_weapon,
-        -rarity_to_int(data.rarity),
-        data.name,
-    )
+    from src.modules.simulacra.model import SimulacrumSimple
 
 
 def filter_simulacra(data: "SimulacrumSimple", /, *, params: "GetSimulacra") -> bool:
