@@ -23,11 +23,11 @@ class GetBanner(BaseModel):
 class GetBanners(BaseModel):
     include_ids: Annotated[
         list[str] | None,
-        Field(description="ID should be one of"),
+        Field(description="Object ID should be one of"),
     ] = None
     exclude_ids: Annotated[
         list[str] | None,
-        Field(description="ID should not be one of"),
+        Field(description="Object ID should not be one of"),
     ] = None
 
     limited_only: Annotated[
@@ -68,6 +68,8 @@ class GetBanners(BaseModel):
 
 class Banner(BaseModel):
     id: int
+    created_at: datetime
+    updated_at: datetime
     object_id: str
     start_at: datetime
     end_at: datetime
