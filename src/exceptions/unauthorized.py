@@ -56,3 +56,14 @@ class EmailOrPasswordError(UnauthorizedError):
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
         super().__init__(message=message, **metadata)
+
+
+class InvalidRoleError(UnauthorizedError):
+    """Invalid role exception."""
+
+    def __init__(
+        self,
+        message: str = "Invalid role",
+        **metadata: str | float | dict[str, Any] | list[Any],
+    ) -> None:
+        super().__init__(message=message, **metadata)
