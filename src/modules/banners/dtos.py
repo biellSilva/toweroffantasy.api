@@ -64,3 +64,15 @@ class GetBanners(BaseModel):
         datetime | None,
         Field(description="Filter banners that end before this date"),
     ] = None
+
+
+class Banner(BaseModel):
+    id: int
+    object_id: str
+    start_at: datetime
+    end_at: datetime
+    link: str
+    is_collab: bool
+    is_rerun: bool
+    final_rerun: bool
+    limited_only: bool
