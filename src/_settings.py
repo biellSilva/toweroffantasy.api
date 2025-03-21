@@ -18,7 +18,10 @@ class _BaseSettings(BaseSettings):
     REDIS_URL: str
 
     ACCESS_SECRET: str = "secret"
+    ACCESS_EXPIRE: int = 60 * 15
+
     REFRESH_SECRET: str = "secret"
+    REFRESH_EXPIRE: int = 60 * 60 * 24
 
     CACHE_EXPIRE: int = 60 * 60
 
