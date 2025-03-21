@@ -7,10 +7,12 @@ RUN pip install pdm
 
 RUN pdm install  --prod
 
+COPY prisma /app/prisma
+
+RUN pdm generate
+
 EXPOSE 8000
 
 COPY . /app
-
-RUN pdm generate
 
 CMD ["pdm", "run", "start"]
