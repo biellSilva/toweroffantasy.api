@@ -1,5 +1,6 @@
 from datetime import datetime
 
+from prisma.enums import Roles
 from pydantic import BaseModel
 
 
@@ -21,3 +22,4 @@ class UserMe(User):
     """Data Transfer Object for exporting a user."""
 
     email: str
+    roles: list[Roles]

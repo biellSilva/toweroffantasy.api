@@ -1,14 +1,13 @@
 from typing import TYPE_CHECKING
 
+from prisma.types import BannerCreateInput, BannerWhereInput
+
 from src.context.prisma_conn import PrismaContext
 
-from prisma.types import BannerCreateInput, BannerWhereInput  # isort:skip
-
-
 if TYPE_CHECKING:
-    from src.modules.banners.dtos import CreateBanner, GetBanners
+    from prisma.models import Banner
 
-    from prisma.models import Banner  # isort:skip
+    from src.modules.banners.dtos import CreateBanner, GetBanners
 
 
 class BannerRepository:
@@ -30,20 +29,34 @@ class BannerRepository:
             ),
         )
 
-    async def get_banners(self, params: "GetBanners") -> list["Banner"]:  # noqa: C901
+    async def get_banners(self, params: "GetBanners") -> list["Banner"]:  # noqa: C901, PLR0912
         """Get all banners."""
 
         _filter = BannerWhereInput()
 
+        _filter["AND"] = []
+
         if params.include_ids:
-            _filter["imitation_id"] = {"in": params.include_ids}
-            _filter["weapon_id"] = {"in": params.include_ids}
-            _filter["suit_id"] = {"in": params.include_ids}
+            _filter["AND"].append(
+                {
+                    "OR": [
+                        {"imitation_id": {"in": params.include_ids}},
+                        {"weapon_id": {"in": params.include_ids}},
+                        {"suit_id": {"in": params.include_ids}},
+                    ],
+                },
+            )
 
         if params.exclude_ids:
-            _filter["imitation_id"] = {"not_in": params.exclude_ids}
-            _filter["weapon_id"] = {"not_in": params.exclude_ids}
-            _filter["suit_id"] = {"not_in": params.exclude_ids}
+            _filter["AND"].append(
+                {
+                    "OR": [
+                        {"imitation_id": {"not_in": params.exclude_ids}},
+                        {"weapon_id": {"not_in": params.exclude_ids}},
+                        {"suit_id": {"not_in": params.exclude_ids}},
+                    ],
+                },
+            )
 
         if params.final_rerun:
             _filter["final_rerun"] = params.final_rerun
@@ -64,10 +77,22 @@ class BannerRepository:
             _filter["end_at"] = {"gte": params.end_at_after}
 
         if params.start_at_before:
-            _filter["start_at"] = {"lte": params.start_at_before}
+            if not params.start_at_after:
+                _filter["start_at"] = {"lte": params.start_at_before}
+            else:
+                _filter["start_at"] = {
+                    "lte": params.start_at_before,
+                    "gte": params.start_at_after,
+                }
 
         if params.end_at_before:
-            _filter["end_at"] = {"lte": params.end_at_before}
+            if not params.end_at_after:
+                _filter["end_at"] = {"lte": params.end_at_before}
+            else:
+                _filter["end_at"] = {
+                    "lte": params.end_at_before,
+                    "gte": params.end_at_after,
+                }
 
         return await self._client.banner.find_many(
             where=_filter,

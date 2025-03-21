@@ -42,3 +42,4 @@ class Payload(BaseModel):
     id: int
     email: str
     username: str
+    roles: list[str]
