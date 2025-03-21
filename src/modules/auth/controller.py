@@ -56,6 +56,7 @@ async def register(params: Annotated[RegisterParams, Body()]) -> LoginResponse:
         UserNotFoundError,
         PasswordsDoNotMatchError,
         InvalidPasswordError,
+        auth=True,
     ),
     status_code=status.HTTP_204_NO_CONTENT,
 )
