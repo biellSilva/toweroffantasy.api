@@ -1,5 +1,6 @@
 from typing import Any
 
+from src._settings import config
 from src.exceptions.base import ApiError
 
 
@@ -18,7 +19,13 @@ class InvalidEmailError(BadRequestError):
         message: str = "Invalid email",
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
-        super().__init__(message=message, **metadata)
+        super().__init__(
+            message=message,
+            pattern=config.EMAIL_REGEX,
+            min_len=config.EMAIL_MIN_LENGTH,
+            max_len=config.EMAIL_MAX_LENGTH,
+            **metadata,
+        )
 
 
 class InvalidPasswordError(BadRequestError):
@@ -27,7 +34,14 @@ class InvalidPasswordError(BadRequestError):
         message: str = "Invalid password",
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
-        super().__init__(message=message, **metadata)
+        super().__init__(
+            message=message,
+            pattern=config.PASSWORD_REGEX,
+            special_chars=config.PASSWORD_SPECIAL_CHARS,
+            min_len=config.PASSWORD_MIN_LENGTH,
+            max_len=config.PASSWORD_MAX_LENGTH,
+            **metadata,
+        )
 
 
 class InvalidUsernameError(BadRequestError):
@@ -36,7 +50,14 @@ class InvalidUsernameError(BadRequestError):
         message: str = "Invalid username",
         **metadata: str | float | dict[str, Any] | list[Any],
     ) -> None:
-        super().__init__(message=message, **metadata)
+        super().__init__(
+            message=message,
+            pattern=config.USERNAME_REGEX,
+            special_chars=config.USERNAME_SPECIAL_CHARS,
+            min_len=config.USERNAME_MIN_LENGTH,
+            max_len=config.USERNAME_MAX_LENGTH,
+            **metadata,
+        )
 
 
 class PasswordsDoNotMatchError(BadRequestError):
