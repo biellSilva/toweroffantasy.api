@@ -22,8 +22,12 @@ class LangsEnum(StrEnum):
 
 
 def _modify_asset_path(value: str) -> str:
+    if config.ASSETS_PREFIX in value:
+        return value
+
     if "L10N" in value:
         return f"{config.ASSETS_PREFIX}/Hotta/Content{value}"
+
     return f"{config.ASSETS_PREFIX}/Hotta/Content/Resources{value}"
 
 
