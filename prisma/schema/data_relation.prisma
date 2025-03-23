@@ -1,0 +1,7 @@
+model DataRelation {
+  imitation_id String @unique
+  weapon_id    String @unique
+  suit_id      String @unique
+
+  @@id([imitation_id, weapon_id, suit_id])
+}
