@@ -1,11 +1,15 @@
 from typing import TYPE_CHECKING
 
-from prisma.types import BannerCreateInput, BannerWhereInput
+from prisma.types import (
+    BannerCreateInput,
+    BannerOrderedViewWhereInput,
+    BannerWhereInput,
+)
 
 from src.context.prisma_conn import PrismaContext
 
 if TYPE_CHECKING:
-    from prisma.models import Banner
+    from prisma.models import Banner, BannerOrderedView
 
     from src.modules.banners.dtos import CreateBanner, GetBanners
 
@@ -16,23 +20,8 @@ class BannerRepository:
     def __init__(self) -> None:
         self._client = PrismaContext.get_client()
 
-    async def get_id(self, banner_id: str) -> "Banner | None":
-        """Get a banner by ID."""
-
-        return await self._client.banner.find_first(
-            where=BannerWhereInput(
-                OR=[
-                    {"imitation_id": banner_id},
-                    {"suit_id": banner_id},
-                    {"weapon_id": banner_id},
-                ],
-            ),
-        )
-
-    async def get_banners(self, params: "GetBanners") -> list["Banner"]:  # noqa: C901, PLR0912
-        """Get all banners."""
-
-        _filter = BannerWhereInput()
+    def _filter(self, params: "GetBanners") -> BannerOrderedViewWhereInput:  # noqa: C901, PLR0912
+        _filter = BannerOrderedViewWhereInput()
 
         _filter["AND"] = []
 
@@ -94,9 +83,33 @@ class BannerRepository:
                     "gte": params.end_at_after,
                 }
 
-        return await self._client.banner.find_many(
-            where=_filter,
-            order=[{"start_at": "desc"}, {"is_rerun": "desc"}],
+        return _filter
+
+    async def get_id(self, banner_id: str) -> "Banner | None":
+        """Get a banner by ID."""
+
+        return await self._client.banner.find_first(
+            where=BannerWhereInput(
+                OR=[
+                    {"imitation_id": banner_id},
+                    {"suit_id": banner_id},
+                    {"weapon_id": banner_id},
+                ],
+            ),
+        )
+
+    async def count(self, params: "GetBanners") -> int:
+        """Count all banners."""
+
+        return await self._client.bannerorderedview.count(where=self._filter(params))
+
+    async def get_banners(self, params: "GetBanners") -> list["BannerOrderedView"]:
+        """Get all banners."""
+
+        return await self._client.bannerorderedview.find_many(
+            where=self._filter(params),
+            skip=(params.page - 1) * params.limit,
+            take=params.limit,
         )
 
     async def create(self, data: "CreateBanner") -> "Banner":

@@ -24,6 +24,8 @@ class GetBanner(BaseModel):
 
 
 class GetBanners(BaseModel):
+    page: int = Field(1, description="Page number", ge=1)
+    limit: int = Field(10, description="Items per page", ge=1)
     include_ids: Annotated[
         list[str] | None,
         Field(description="Object ID should be one of"),
@@ -54,14 +56,14 @@ class GetBanners(BaseModel):
         datetime | None,
         Field(description="Filter banners that start after this date"),
     ] = None
-    end_at_after: Annotated[
-        datetime | None,
-        Field(description="Filter banners that end after this date"),
-    ] = None
-
     start_at_before: Annotated[
         datetime | None,
         Field(description="Filter banners that start before this date"),
+    ] = None
+
+    end_at_after: Annotated[
+        datetime | None,
+        Field(description="Filter banners that end after this date"),
     ] = None
     end_at_before: Annotated[
         datetime | None,
