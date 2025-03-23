@@ -39,9 +39,9 @@ class _BaseSettings(BaseSettings):
     )
 
     USERNAME_MIN_LENGTH: int = 4
-    USERNAME_MAX_LENGTH: int = 30
+    USERNAME_MAX_LENGTH: int = 32
     USERNAME_SPECIAL_CHARS: str = "_."
-    USERNAME_REGEX: str = r"^[a-zA-Z0-9_\.]{4,30}$"
+    USERNAME_REGEX: str = r"^[a-zA-Z0-9_\.]{4,32}$"
 
     @property
     def last_restart(self) -> datetime:
