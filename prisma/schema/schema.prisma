@@ -1,10 +1,10 @@
 generator client {
-    provider             = "prisma-client-py"
-    recursive_type_depth = 5
-    previewFeatures      = ["prismaSchemaFolder"]
+  provider             = "prisma-client-py"
+  previewFeatures      = ["prismaSchemaFolder", "views"]
+  recursive_type_depth = "5"
 }
 
 datasource db {
-    provider = "postgresql"
-    url      = env("DB_URL")
+  provider = "postgresql"
+  url      = env("DB_URL")
 }

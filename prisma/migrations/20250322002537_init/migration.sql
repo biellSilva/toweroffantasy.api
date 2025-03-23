@@ -1,16 +1,37 @@
 -- CreateEnum
 CREATE TYPE "Regions" AS ENUM ('ASIA', 'EU', 'NA', 'SA', 'SEA');
 
+-- CreateEnum
+CREATE TYPE "Roles" AS ENUM ('ADMIN', 'MODERATOR', 'USER');
+
 -- CreateTable
 CREATE TABLE "Account" (
     "id" SERIAL NOT NULL,
     "acc_id" INTEGER NOT NULL,
     "acc_name" TEXT NOT NULL,
     "user_id" INTEGER NOT NULL,
-    "region" "Regions" NOT NULL,
     "server_id" INTEGER NOT NULL,
 
     CONSTRAINT "Account_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "Banner" (
+    "id" SERIAL NOT NULL,
+    "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL,
+    "imitation_id" TEXT NOT NULL,
+    "weapon_id" TEXT NOT NULL,
+    "suit_id" TEXT NOT NULL,
+    "start_at" TIMESTAMPTZ NOT NULL,
+    "end_at" TIMESTAMPTZ NOT NULL,
+    "link" TEXT NOT NULL,
+    "limited_only" BOOLEAN NOT NULL DEFAULT false,
+    "is_rerun" BOOLEAN NOT NULL DEFAULT false,
+    "is_collab" BOOLEAN NOT NULL DEFAULT false,
+    "final_rerun" BOOLEAN NOT NULL DEFAULT false,
+
+    CONSTRAINT "Banner_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateTable
@@ -32,9 +53,10 @@ CREATE TABLE "Server" (
 -- CreateTable
 CREATE TABLE "User" (
     "id" SERIAL NOT NULL,
-    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updated_at" TIMESTAMP(3) NOT NULL,
+    "created_at" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL,
     "banned" BOOLEAN NOT NULL DEFAULT false,
+    "roles" "Roles"[] DEFAULT ARRAY['USER']::"Roles"[],
     "email" TEXT NOT NULL,
     "password" TEXT NOT NULL,
     "username" TEXT NOT NULL,
