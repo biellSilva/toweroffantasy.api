@@ -108,7 +108,6 @@ class BannerRepository:
 
         return await self._client.bannerorderedview.find_many(
             where=self._filter(params),
-            order=[{"start_at": "desc"}, {"is_rerun": "desc"}],
             skip=(params.page - 1) * params.limit,
             take=params.limit,
         )
