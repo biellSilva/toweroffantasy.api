@@ -1,63 +1,66 @@
-from pydantic import BaseModel
+from typing import Annotated
 
-from src._types import AssetPath
+from pydantic import Field
+
+from src._types import AssetPath, Translate, TranslateSplitBreakLine
+from src.common.base_model import ModelBase
 
 
-class Element(BaseModel):
+class Element(ModelBase):
     id: str
-    name: str
-    desc: str
+    name: Translate
+    desc: Translate
     icon: AssetPath
 
 
-class Category(BaseModel):
+class Category(ModelBase):
     id: str
-    name: str
+    name: Translate
     icon: AssetPath
     icon_gray: AssetPath
 
 
-class ShatterOrCharge(BaseModel):
+class ShatterOrCharge(ModelBase):
     value: float
     tier: str
 
 
-class Charge(BaseModel):
+class Charge(ModelBase):
     value: float
     tier: str
 
 
-class Attack(BaseModel):
+class Attack(ModelBase):
     id: str
-    name: str
-    desc: str
-    short_desc: str | None
+    name: Translate
+    desc: Translate
+    short_desc: Translate | None
     icon: AssetPath
     tags: list[str]
     operations: list[str]
     values: list[list[float]]
 
 
-class Skill(BaseModel):
-    name: str | None
-    desc: str | None
+class Skill(ModelBase):
+    name: Translate | None
+    desc: Translate | None
     type: str
     icon: AssetPath
     attacks: list[Attack]
 
 
-class Attribute(BaseModel):
+class Attribute(ModelBase):
     id: str
     value: float
 
 
-class NeedItem(BaseModel):
+class NeedItem(ModelBase):
     id: str
     count: int
 
 
-class Advancement(BaseModel):
-    desc: str
+class Advancement(ModelBase):
+    desc: Translate
     attributes: list[Attribute]
     need_item: NeedItem
     cost_type: str
@@ -67,23 +70,23 @@ class Advancement(BaseModel):
     charge: ShatterOrCharge
 
 
-class Fashion(BaseModel):
+class Fashion(ModelBase):
     id: str
-    name: str
-    desc: str
-    use_desc: str
-    brief: str
+    name: Translate
+    desc: Translate
+    use_desc: Translate
+    brief: Translate
     icon: AssetPath
     quality: str
-    display_type_text: str
+    display_type_text: Translate
 
 
-class RecommendedMatrice(BaseModel):
+class RecommendedMatrice(ModelBase):
     id: str
-    reason: str
+    reason: Translate
 
 
-class Assets(BaseModel):
+class Assets(ModelBase):
     item_icon: AssetPath
     item_large_icon: AssetPath
     weapon_icon_for_matrix: AssetPath
@@ -93,14 +96,14 @@ class Assets(BaseModel):
     lottery_card_image: AssetPath
 
 
-class MultiElement(BaseModel):
+class MultiElement(ModelBase):
     element: str
-    passives: list[str]
+    passives: list[TranslateSplitBreakLine]
 
 
-class WeaponSimple(BaseModel):
+class WeaponSimple(ModelBase):
     id: str
-    name: str
+    name: Translate
     rarity: str
     quality: str
 
@@ -117,12 +120,15 @@ class WeaponSimple(BaseModel):
 
 
 class Weapon(WeaponSimple):
-    desc: str
-    brief: str
-    lottery_desc: str
-    skills: list[Skill] = []
-    advancements: list[Advancement] = []
-    passives: list[str] = []
-    multi_element: list[MultiElement] = []
-    fashions: list[Fashion] = []
-    recommended_matrices: list[RecommendedMatrice] = []
+    desc: Translate
+    brief: Translate
+    lottery_desc: Translate
+    skills: Annotated[list[Skill], Field(default_factory=list)]
+    advancements: Annotated[list[Advancement], Field(default_factory=list)]
+    passives: Annotated[list[TranslateSplitBreakLine], Field(default_factory=list)]
+    multi_element: Annotated[list[MultiElement], Field(default_factory=list)]
+    fashions: Annotated[list[Fashion], Field(default_factory=list)]
+    recommended_matrices: Annotated[
+        list[RecommendedMatrice],
+        Field(default_factory=list),
+    ]

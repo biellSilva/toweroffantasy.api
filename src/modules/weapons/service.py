@@ -17,7 +17,7 @@ class WeaponService:
         self.repository = repository
 
     async def get(self, *, lang: LangsEnum, _id: str) -> "Weapon":
-        if data := await self.repository.get_id(lang=lang, _id=_id):
+        if data := await self.repository.get_id(lang=lang, id_=_id):
             return data
         raise WeaponNotFoundError(lang=lang, id=_id)
 

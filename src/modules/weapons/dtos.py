@@ -3,7 +3,7 @@ from typing import Annotated
 from fastapi import Path
 from pydantic import Field
 
-from src.modules.base.dtos import BaseSearchAllDto, BaseSearchDto
+from src.common.dtos import BaseSearchAllDto, BaseSearchDto
 
 
 class GetWeapon(BaseSearchDto):
