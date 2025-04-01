@@ -1,31 +1,32 @@
-from pydantic import BaseModel, computed_field
+from pydantic import computed_field
 
-from src._types import AssetPath
+from src._types import AssetPath, Translate, TranslateWithValues
+from src.common.base_model import ModelBase
 
 
-class _SuitAssets(BaseModel):
+class _SuitAssets(ModelBase):
     icon: AssetPath
     remould_icon: AssetPath
     icon_temp: AssetPath
 
 
-class _SuitSet(BaseModel):
-    description: str
+class _SuitSet(ModelBase):
+    description: TranslateWithValues
     needs: int
     is_global: bool
     add_score: float
 
 
-class _ModifierAssets(BaseModel):
+class _ModifierAssets(ModelBase):
     icon: AssetPath
     add_icon: AssetPath | None
     dec_icon: AssetPath | None
 
 
-class _MatriceModifier(BaseModel):
+class _MatriceModifier(ModelBase):
     id: str
-    name: str
-    description: str
+    name: Translate
+    description: Translate
     initial_value: float
     modifier_op: str
     modifier_value: float
@@ -35,16 +36,16 @@ class _MatriceModifier(BaseModel):
     assets: _ModifierAssets
 
 
-class _MatriceAssets(BaseModel):
+class _MatriceAssets(ModelBase):
     large_icon: AssetPath
     icon: AssetPath
 
 
-class _SuitMatrice(BaseModel):
+class _SuitMatrice(ModelBase):
     id: str
     suit_id: str
-    name: str
-    description: str
+    name: Translate
+    description: Translate
     rarity: str
     quality: str
     slot_index: int
@@ -55,9 +56,9 @@ class _SuitMatrice(BaseModel):
     assets: _MatriceAssets
 
 
-class Suit(BaseModel):
+class Suit(ModelBase):
     id: str
-    name: str
+    name: Translate
     quality: str
     assets: _SuitAssets
     sets: list[_SuitSet]

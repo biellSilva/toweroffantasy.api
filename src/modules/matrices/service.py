@@ -15,7 +15,7 @@ class MatriceService:
         self.matrice_repository = matrice_repository
 
     async def get(self, *, lang: "LangsEnum", _id: str) -> "Suit":
-        if data := await self.matrice_repository.get_id(lang=lang, _id=_id):
+        if data := await self.matrice_repository.get_id(lang=lang, id_=_id):
             return data
         raise MatrixSuiteNotFoundError(lang=lang, id=_id)
 
