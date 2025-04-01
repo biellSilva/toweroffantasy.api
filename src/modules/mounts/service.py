@@ -17,7 +17,7 @@ class MountService:
         self.mount_repository = mount_repository
 
     async def get(self, *, lang: "LangsEnum", _id: str) -> "Mount":
-        if data := await self.mount_repository.get_id(lang=lang, _id=_id):
+        if data := await self.mount_repository.get_id(lang=lang, id_=_id):
             return data
         raise MountNotFoundError(lang=lang, id=_id)
 

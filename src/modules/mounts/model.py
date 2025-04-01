@@ -1,29 +1,30 @@
-from pydantic import BaseModel
+from src._types import AssetPath, Translate
+from src.common.base_model import ModelBase
 
 
-class _MountAssets(BaseModel):
-    icon: str
-    big_icon: str
+class _MountAssets(ModelBase):
+    icon: AssetPath | None
+    big_icon: AssetPath | None
 
 
-class _MountSkin(BaseModel):
+class _MountSkin(ModelBase):
     id: str
-    name: str
-    desc: str
-    unlock_desc: str
+    name: Translate
+    desc: Translate
+    unlock_desc: Translate
     owner_mount_id: str
     assets: _MountAssets
 
 
-class MountSimple(BaseModel):
+class MountSimple(ModelBase):
     id: str
-    name: str
+    name: Translate
     quality: str
     mount_type: str
     assets: _MountAssets
 
 
 class Mount(MountSimple):
-    desc: str
-    unlock_desc: str
+    desc: Translate
+    unlock_desc: Translate
     skins: list[_MountSkin]
