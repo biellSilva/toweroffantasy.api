@@ -62,7 +62,7 @@ def load_data(path: str | Path) -> list[Banner]:
 
 def fix_imitations_ids(banners: list[Banner]) -> None:
     simulacras: dict[str, dict[str, Any]] = json.loads(
-        Path("src/database/en/simulacra.json").read_bytes().decode("utf-8"),
+        Path("src/database/simulacra.json").read_bytes().decode("utf-8"),
     )
 
     def find_imitation_id(imitation_id: str) -> str:
@@ -80,7 +80,7 @@ def fix_imitations_ids(banners: list[Banner]) -> None:
 
 def fix_weapons_ids(banners: list[Banner]) -> None:
     weapons: dict[str, dict[str, Any]] = json.loads(
-        Path("src/database/en/weapons.json").read_bytes().decode("utf-8"),
+        Path("src/database/weapons.json").read_bytes().decode("utf-8"),
     )
 
     def find_weapon_id(weapon_id: str) -> str:
@@ -98,7 +98,7 @@ def fix_weapons_ids(banners: list[Banner]) -> None:
 
 def fix_suits_ids(banners: list[Banner]) -> None:
     suits: dict[str, dict[str, Any]] = json.loads(
-        Path("src/database/en/matrices.json").read_bytes().decode("utf-8"),
+        Path("src/database/matrices.json").read_bytes().decode("utf-8"),
     )
 
     def find_suit_id(suit_id: str) -> str:
