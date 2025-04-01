@@ -5,8 +5,8 @@ from src.modules._paginator import paginate_items
 
 if TYPE_CHECKING:
     from src._types import LangsEnum
+    from src.common.dtos import BaseSearchAllDto
     from src.modules._paginator import Pagination
-    from src.modules.base.dtos import BaseSearchAllDto
     from src.modules.gifts.model import Gift
     from src.modules.gifts.repository import GiftsRepository
 
@@ -16,7 +16,7 @@ class GiftsService:
         self.repository = repository
 
     async def get(self, *, lang: "LangsEnum", _id: str) -> "Gift":
-        if data := await self.repository.get_id(lang=lang, _id=_id):
+        if data := await self.repository.get_id(lang=lang, id_=_id):
             return data
         raise GiftNotFoundError(lang=lang, id=_id)
 

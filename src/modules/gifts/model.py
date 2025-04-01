@@ -1,16 +1,15 @@
-from pydantic import BaseModel
+from src._types import AssetPath, Translate
+from src.common.base_model import ModelBase
 
-from src._types import AssetPath
 
-
-class _GiftAssets(BaseModel):
+class _GiftAssets(ModelBase):
     icon: AssetPath
 
 
-class Gift(BaseModel):
+class Gift(ModelBase):
     id: str
-    name: str
-    desc: str
+    name: Translate
+    desc: Translate
     quality: str
     hobby_flag: list[str]
     value: int

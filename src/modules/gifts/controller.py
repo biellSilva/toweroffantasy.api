@@ -2,8 +2,8 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends, Query
 
+from src.common.dtos import BaseSearchAllDto
 from src.modules._paginator import Pagination
-from src.modules.base.dtos import BaseSearchAllDto
 from src.modules.gifts.dtos import GetGift
 from src.modules.gifts.model import Gift
 from src.modules.gifts.repository import GiftsRepository
