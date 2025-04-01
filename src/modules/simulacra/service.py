@@ -25,7 +25,7 @@ class ImitationService:
         self.gift_repository = gift_repository
 
     async def get(self, *, lang: LangsEnum, _id: str) -> "Simulacrum":
-        if data := await self.imitation_repository.get_id(lang=lang, _id=_id):
+        if data := await self.imitation_repository.get_id(lang=lang, id_=_id):
             return data
         raise SimulacrumNotFoundError(lang=lang, id=_id)
 

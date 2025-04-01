@@ -1,11 +1,11 @@
-from src.modules.base.json_repository import JsonRepository
+from src.common.json_repository import JsonRepository
 from src.modules.simulacra.model import Simulacrum, SimulacrumSimple
 
 
-class ImitationRepository(JsonRepository[Simulacrum, SimulacrumSimple]):
+class ImitationRepository(JsonRepository[SimulacrumSimple, Simulacrum]):
     def __init__(self) -> None:
         super().__init__(
-            name="simulacra",
-            model=Simulacrum,
+            filename="simulacra",
             simple_model=SimulacrumSimple,
+            model=Simulacrum,
         )

@@ -1,34 +1,35 @@
 from typing import Annotated
 
-from pydantic import BaseModel, Field
+from pydantic import AliasChoices, Field
 
-from src._types import AssetPath
-from src.modules.base.model import BackgroundColor
+from src._types import AssetPath, Translate, TranslateWithValues
+from src.common.base_model import ModelBase
+from src.common.model import BackgroundColor
 
 
-class _FashionAssets(BaseModel):
+class _FashionAssets(ModelBase):
     painting: AssetPath
     gray_painting: AssetPath
 
 
-class _ImitationFashion(BaseModel):
+class _ImitationFashion(ModelBase):
     id: str
-    name: str
-    desc: str
-    source: str
+    name: Translate
+    desc: Translate
+    source: Translate
     imitation_id: str
     quality: str
     only_weapon: bool
     assets: _FashionAssets
 
 
-class _SimulacrumGift(BaseModel):
+class _SimulacrumGift(ModelBase):
     id: str
-    name: str
+    name: Translate
     background_color: BackgroundColor
 
 
-class _SimulacrumVoiceActors(BaseModel):
+class _SimulacrumVoiceActors(ModelBase):
     chinese: str | None
     japanese: str | None
     english: str | None
@@ -36,18 +37,18 @@ class _SimulacrumVoiceActors(BaseModel):
     portuguese: str | None
 
 
-class _ImitationExtras(BaseModel):
-    gender: str | None
-    birthday: str | None
-    age: str
-    height: str | None
-    title: str
-    job: str
-    belong_to: str | None
-    hometown: str | None
+class _ImitationExtras(ModelBase):
+    gender: Translate | None
+    birthday: Translate | None
+    age: Translate
+    height: Translate | None
+    title: Translate
+    job: Translate
+    belong_to: Translate | None
+    hometown: Translate | None
     hometown_map: str | None
-    experience_record: str | None
-    character: str | None
+    experience_record: Translate | None
+    character: Translate | None
 
     like: list[_SimulacrumGift]
     dislike: list[_SimulacrumGift]
@@ -55,7 +56,7 @@ class _ImitationExtras(BaseModel):
     voice_actors: _SimulacrumVoiceActors
 
 
-class _ImitationAssets(BaseModel):
+class _ImitationAssets(ModelBase):
     icon: AssetPath | None
     big_icon: AssetPath | None
     name_picture: AssetPath | None
@@ -82,39 +83,39 @@ class _ImitationAssets(BaseModel):
     awaken_photo: AssetPath | None
 
 
-class _AttributeCondition(BaseModel):
-    name: str
-    desc: str
-    use_desc: str
+class _AttributeCondition(ModelBase):
+    name: Translate
+    desc: Translate
+    use_desc: Translate
     icon: AssetPath
     quality: str
 
 
-class _AttributeModifier(BaseModel):
+class _AttributeModifier(ModelBase):
     id: str
-    name: str
-    desc: str
+    name: Translate
+    desc: Translate
     icon: AssetPath
     value: float
     operator: str
 
 
-class _Likeability(BaseModel):
+class _Likeability(ModelBase):
     condition: int
     type: str
-    name: str | None
-    context: str | None
-    desc: str | None
-    unlock_desc: str | None
+    name: Translate | None
+    context: Translate | None
+    desc: TranslateWithValues | None
+    unlock_desc: Translate | None
     icon: AssetPath | None
     big_icon: AssetPath | None
     conditions: list[_AttributeCondition]
     modifiers: list[_AttributeModifier]
 
 
-class SimulacrumSimple(BaseModel):
+class SimulacrumSimple(ModelBase):
     id: str
-    name: str
+    name: Translate
     sex: str
     rarity: str
     is_limited: bool
@@ -124,11 +125,14 @@ class SimulacrumSimple(BaseModel):
 
 
 class Simulacrum(SimulacrumSimple):
-    desc: str
-    unlock_info: str
+    desc: Translate
+    unlock_info: Translate
     weapon_id: str | None
     avatar_id: str
-    assets_a3: Annotated[_ImitationAssets, Field(validation_alias="assetsA3")]
+    assets_a3: Annotated[
+        _ImitationAssets,
+        Field(validation_alias=AliasChoices("assets_a3", "assetsA3")),
+    ]
     extras: _ImitationExtras
     fashions: list[_ImitationFashion]
     likeabilities: list[_Likeability]
