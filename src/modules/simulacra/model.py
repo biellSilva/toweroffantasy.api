@@ -120,6 +120,7 @@ class SimulacrumSimple(ModelBase):
     rarity: str
     is_limited: bool
     no_weapon: bool
+    banners_count: int
 
     assets: _ImitationAssets
 

@@ -1,49 +1,49 @@
 from typing import TYPE_CHECKING
 
-from src._types import LangsEnum
 from src.exceptions.not_found import SimulacrumNotFoundError
-from src.modules._paginator import paginate_items
+from src.modules._paginator import Pagination
 from src.modules._utils import quality_to_int
-from src.modules.simulacra._utils import filter_simulacra
-from src.modules.simulacra.dtos import GetSimulacra
 
 if TYPE_CHECKING:
-    from src.modules._paginator import Pagination
     from src.modules.gifts.model import Gift
     from src.modules.gifts.repository import GiftsRepository
+    from src.modules.simulacra.dtos import GetSimulacra, GetSimulacrum
     from src.modules.simulacra.model import Simulacrum, SimulacrumSimple
-    from src.modules.simulacra.repository import ImitationRepository
+    from src.modules.simulacra.repository import SimulacraRepository
 
 
 class ImitationService:
     def __init__(
         self,
-        imitation_repository: "ImitationRepository",
+        imitation_repository: "SimulacraRepository",
         gift_repository: "GiftsRepository",
     ) -> None:
         self.imitation_repository = imitation_repository
         self.gift_repository = gift_repository
 
-    async def get(self, *, lang: LangsEnum, _id: str) -> "Simulacrum":
-        if data := await self.imitation_repository.get_id(lang=lang, id_=_id):
+    async def get(self, *, params: "GetSimulacrum") -> "Simulacrum":
+        if data := await self.imitation_repository.get_simulacrum(params):
             return data
-        raise SimulacrumNotFoundError(lang=lang, id=_id)
+        raise SimulacrumNotFoundError(id=params.simulacrum_id)
 
-    async def get_all(self, *, params: GetSimulacra) -> "Pagination[SimulacrumSimple]":
-        simulacra = await self.imitation_repository.get_all(lang=params.lang)
-
-        filtered = [data for data in simulacra if filter_simulacra(data, params=params)]
-
-        return paginate_items(filtered, params.page, params.limit)
-
-    async def get_simulacrum_gifts(
+    async def get_all(
         self,
         *,
-        lang: LangsEnum,
-        _id: str,
-    ) -> "list[Gift]":
-        simulacrum = await self.get(lang=lang, _id=_id)
-        gifts = await self.gift_repository.get_all(lang=lang)
+        params: "GetSimulacra",
+    ) -> "Pagination[SimulacrumSimple]":
+        simulacra = await self.imitation_repository.get_simulacra(params)
+        count = await self.imitation_repository.count_simulacra(params)
+        return Pagination(
+            data=simulacra,
+            page=params.page,
+            limit=params.limit,
+            max_page=count // params.limit + 1,
+            total_items=count,
+        )
+
+    async def get_simulacrum_gifts(self, *, params: "GetSimulacrum") -> "list[Gift]":
+        simulacrum = await self.get(params=params)
+        gifts = await self.gift_repository.get_all(lang=params.lang)
 
         liked_flags = {like.id for like in simulacrum.extras.like}
         disliked_flags = {dislike.id for dislike in simulacrum.extras.dislike}

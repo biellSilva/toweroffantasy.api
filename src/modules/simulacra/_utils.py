@@ -1,52 +1,45 @@
-from typing import TYPE_CHECKING
-
-from unidecode import unidecode
-
-from src.modules._utils import is_str_in_list
+from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
     from src.modules.simulacra.dtos import GetSimulacra
-    from src.modules.simulacra.model import SimulacrumSimple
 
 
-def filter_simulacra(data: "SimulacrumSimple", /, *, params: "GetSimulacra") -> bool:
-    if params.is_limited is not None and data.is_limited != params.is_limited:
-        return False
+def filter_simulacra(params: "GetSimulacra") -> dict[str, Any]:  # noqa: PLR0912 C901
+    """Mongo filter for Simulacra."""
 
-    if params.no_weapon is not None and data.no_weapon != params.no_weapon:
-        return False
+    filters: dict[str, Any] = {}
 
-    if (
-        params.name
-        and unidecode(params.name).lower() not in unidecode(data.name).lower()
-    ):
-        return False
+    if params.is_limited is not None:
+        filters["is_limited"] = params.is_limited
 
-    includes = [
-        (params.include_ids, data.id, True),
-        (params.include_rarities, data.rarity, True),
-        (params.include_sex, data.sex, True),
-    ]
-    excludes = [
-        (params.exclude_ids, data.id, True),
-        (params.exclude_rarities, data.rarity, True),
-        (params.exclude_sex, data.sex, True),
-    ]
+    if params.no_weapon is not None:
+        filters["no_weapon"] = params.no_weapon
 
-    for include, value, equals in includes:
-        if include and not is_str_in_list(
-            value,
-            include,
-            equals=equals,
-        ):
-            return False
+    if params.include_ids:
+        filters["id"] = {"$in": params.include_ids}
 
-    for exclude, value, equals in excludes:
-        if exclude and is_str_in_list(
-            value,
-            exclude,
-            equals=equals,
-        ):
-            return False
+    if params.exclude_ids:
+        if "id" in filters:
+            filters["id"]["$nin"] = params.exclude_ids
+        else:
+            filters["id"] = {"$nin": params.exclude_ids}
 
-    return True
+    if params.include_sex:
+        filters["sex"] = {"$in": params.include_sex}
+
+    if params.exclude_sex:
+        if "sex" in filters:
+            filters["sex"]["$nin"] = params.exclude_sex
+        else:
+            filters["sex"] = {"$nin": params.exclude_sex}
+
+    if params.include_rarities:
+        filters["rarity"] = {"$in": params.include_rarities}
+
+    if params.exclude_rarities:
+        if "rarity" in filters:
+            filters["rarity"]["$nin"] = params.exclude_rarities
+        else:
+            filters["rarity"] = {"$nin": params.exclude_rarities}
+
+    return filters
