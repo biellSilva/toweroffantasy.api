@@ -14,8 +14,11 @@ class _BaseSettings(BaseSettings):
 
     PROJECT_NAME: str = "Tower of Fantasy API"
 
-    DB_URL: str
-    REDIS_URL: str
+    POSTGRE_URI: str
+    REDIS_URI: str
+
+    MONGO_URI: str
+    MONGO_DB: str = "dev"
 
     ACCESS_SECRET: str = "secret"
     ACCESS_EXPIRE: int = 60 * 15
