@@ -24,7 +24,7 @@ class RedisConnection:
             )
             raise ValueError(err_msg)
 
-        RedisConnection._pool = redis.ConnectionPool.from_url(url=config.REDIS_URL)  # type: ignore[assignment]
+        RedisConnection._pool = redis.ConnectionPool.from_url(url=config.REDIS_URI)  # type: ignore[assignment]
         return RedisConnection._pool
 
     @staticmethod
