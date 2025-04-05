@@ -2,7 +2,14 @@ from collections.abc import Callable, Generator
 from enum import StrEnum
 from typing import Annotated, Any
 
-from pydantic import AfterValidator, GetCoreSchemaHandler, ValidationInfo
+from pydantic import (
+    AfterValidator,
+    AliasChoices,
+    BeforeValidator,
+    Field,
+    GetCoreSchemaHandler,
+    ValidationInfo,
+)
 from pydantic_core import core_schema
 
 from src._settings import config
@@ -40,6 +47,12 @@ def _modify_asset_path(value: str, info: ValidationInfo) -> str:
 AssetPath = Annotated[
     str,
     AfterValidator(_modify_asset_path),
+]
+
+ObjectIdType = Annotated[
+    str,
+    Field(validation_alias=AliasChoices("_id", "object_id")),
+    BeforeValidator(lambda x: str(x)),
 ]
 
 
