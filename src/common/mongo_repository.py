@@ -1,12 +1,14 @@
 from collections.abc import Mapping, Sequence
 from typing import Any, Generic, Literal, Self, TypeVar, overload
 
+from pydantic import BaseModel
+
 from src._settings import config
 from src.common.base_model import ModelBase
 from src.context.mongo_conn import MongoContext
 
-SimpleModel = TypeVar("SimpleModel", bound=ModelBase)
-ComplexModel = TypeVar("ComplexModel", bound=ModelBase)
+SimpleModel = TypeVar("SimpleModel", bound=ModelBase | BaseModel)
+ComplexModel = TypeVar("ComplexModel", bound=ModelBase | BaseModel)
 
 
 class MongoRepository(Generic[SimpleModel, ComplexModel]):

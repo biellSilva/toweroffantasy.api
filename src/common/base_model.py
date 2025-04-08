@@ -15,7 +15,7 @@ class ModelBase(BaseModel):
 
     @model_validator(mode="before")
     @classmethod
-    def validate_translation(
+    def validate_translation(  # noqa: C901
         cls,
         data: dict[str, Any],
         info: ValidationInfo,
@@ -86,5 +86,4 @@ class ModelBase(BaseModel):
                     items = [line for item in items for line in item.split("\r\n")]
 
                 data[key] = items
-
         return data

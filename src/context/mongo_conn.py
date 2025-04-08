@@ -34,3 +34,7 @@ class MongoContext:
     async def close_client() -> None:
         if MongoContext._client:
             MongoContext._client.close()
+
+    @staticmethod
+    async def ping() -> None:
+        await MongoContext.get_client().get_database("admin").command("ping")
