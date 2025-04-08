@@ -2,8 +2,14 @@ from typing import Annotated
 
 from pydantic import Field
 
-from src._types import AssetPath, Translate, TranslateSplitBreakLine
+from src._types import (
+    AssetPath,
+    Translate,
+    TranslateSplitBreakLine,
+    TranslateWithValues,
+)
 from src.common.base_model import ModelBase
+from src.modules.banners.dtos import Banner
 
 
 class Element(ModelBase):
@@ -30,13 +36,18 @@ class Charge(ModelBase):
     tier: str
 
 
+class _AttackTag(ModelBase):
+    id: str
+    name: Translate
+
+
 class Attack(ModelBase):
     id: str
     name: Translate
     desc: Translate
     short_desc: Translate | None
     icon: AssetPath
-    tags: list[str]
+    tags: list[_AttackTag]
     operations: list[str]
     values: list[list[float]]
 
@@ -60,7 +71,7 @@ class NeedItem(ModelBase):
 
 
 class Advancement(ModelBase):
-    desc: Translate
+    desc: TranslateWithValues
     attributes: list[Attribute]
     need_item: NeedItem
     cost_type: str
@@ -117,6 +128,9 @@ class WeaponSimple(ModelBase):
     shatter: ShatterOrCharge
     charge: ShatterOrCharge
     assets: Assets
+
+    banners_count: int
+    banners: list[Banner]
 
 
 class Weapon(WeaponSimple):

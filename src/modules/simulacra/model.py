@@ -5,6 +5,7 @@ from pydantic import AliasChoices, Field
 from src._types import AssetPath, Translate, TranslateWithValues
 from src.common.base_model import ModelBase
 from src.common.model import BackgroundColor
+from src.modules.banners.dtos import Banner
 
 
 class _FashionAssets(ModelBase):
@@ -60,8 +61,8 @@ class _ImitationAssets(ModelBase):
     icon: AssetPath | None
     big_icon: AssetPath | None
     name_picture: AssetPath | None
-    name_2_picture: AssetPath | None
-    name_3_picture: AssetPath | None
+    # name_2_picture: AssetPath | None # noqa: ERA001
+    # name_3_picture: AssetPath | None # noqa: ERA001
     desc_painting: AssetPath | None
     painting: AssetPath | None
     gray_painting: AssetPath | None
@@ -79,7 +80,7 @@ class _ImitationAssets(ModelBase):
     motto_2_picture: AssetPath | None
     title_picture: AssetPath | None
     imitation_virtual_shadow: AssetPath | None
-    awaken_name_picture: AssetPath | None
+    # awaken_name_picture: AssetPath | None  # noqa: ERA001
     awaken_photo: AssetPath | None
 
 
@@ -123,6 +124,7 @@ class SimulacrumSimple(ModelBase):
     banners_count: int
 
     assets: _ImitationAssets
+    banners: list[Banner]
 
 
 class Simulacrum(SimulacrumSimple):

@@ -22,4 +22,4 @@ async def get_all_matrice(
 
 @router.get("/{matrix_id}")
 async def get_matrice(params: Annotated[GetMatrix, Depends()]) -> Suit:
-    return await SERVICE.get(lang=params.lang, _id=params.matrix_id)
+    return await SERVICE.get(params)

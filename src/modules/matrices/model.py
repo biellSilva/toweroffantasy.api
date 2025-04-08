@@ -78,3 +78,8 @@ class Suit(ModelBase):
     @property
     def rarity(self) -> str:
         return self.matrices[0].rarity
+
+    @computed_field
+    @property
+    def matrice_assets(self) -> _MatriceAssets:
+        return self.matrices[0].assets

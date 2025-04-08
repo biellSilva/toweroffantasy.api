@@ -3,15 +3,17 @@ from typing import Annotated
 
 from pydantic import BaseModel, Field
 
+from src._types import ObjectIdType
+
 
 class CreateBanner(BaseModel):
     imitation_id: str
     weapon_id: str
-    suit_id: str
+    suit_id: str | None = None
 
     start_at: datetime
     end_at: datetime
-    link: str
+    link: str | None = None
 
     limited_only: bool = False
     is_rerun: bool = False
@@ -72,14 +74,15 @@ class GetBanners(BaseModel):
 
 
 class Banner(BaseModel):
-    id: int
-    created_at: datetime
-    updated_at: datetime
-    object_id: str
+    id: ObjectIdType
+    imitation_id: str
+    weapon_id: str
+    suit_id: str | None
     start_at: datetime
     end_at: datetime
-    link: str
+    link: str | None
     is_collab: bool
     is_rerun: bool
     final_rerun: bool
     limited_only: bool
+    position: int

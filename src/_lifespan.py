@@ -15,7 +15,7 @@ async def lifespan(_: "FastAPI") -> AsyncGenerator[None, None]:
     """Application lifespan event."""
 
     await PrismaContext.connect_client()
-    MongoContext.get_client()
+    await MongoContext.ping()
     RedisConnection.get_pool()
 
     yield

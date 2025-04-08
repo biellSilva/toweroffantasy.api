@@ -1,10 +1,8 @@
 from typing import TYPE_CHECKING
 
-from prisma.models import Banner
-from prisma.models import BannerOrderedView as BannerOrdered
-
-from src.exceptions.not_found import BannerNotFoundError
+from src.exceptions.internal_error import FailedToCreateBannerError
 from src.modules._paginator import Pagination
+from src.modules.banners.dtos import Banner
 
 if TYPE_CHECKING:
     from src.modules.banners.dtos import CreateBanner, GetBanners
@@ -15,11 +13,11 @@ class BannerService:
     def __init__(self, banner_repository: "BannerRepository") -> None:
         self.banner_repository = banner_repository
 
-    async def get_banners(self, params: "GetBanners") -> Pagination["BannerOrdered"]:
-        count = await self.banner_repository.count(params)
+    async def get_banners(self, params: "GetBanners") -> Pagination["Banner"]:
+        count = await self.banner_repository.count_banners(params)
         banners = await self.banner_repository.get_banners(params)
 
-        return Pagination[BannerOrdered](
+        return Pagination[Banner](
             data=banners,
             total_items=count,
             page=params.page,
@@ -27,10 +25,7 @@ class BannerService:
             max_page=count // params.limit + 1,
         )
 
-    async def get_banner_by_id(self, banner_id: str) -> "Banner":
-        if data := await self.banner_repository.get_id(banner_id):
-            return data
-        raise BannerNotFoundError(id=banner_id)
-
     async def create_banner(self, *, data: "CreateBanner") -> "Banner":
-        return await self.banner_repository.create(data)
+        if resp := await self.banner_repository.create_banner(data):
+            return resp
+        raise FailedToCreateBannerError

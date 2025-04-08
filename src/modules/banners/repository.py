@@ -1,120 +1,83 @@
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
-from prisma.types import (
-    BannerCreateInput,
-    BannerOrderedViewWhereInput,
-    BannerWhereInput,
-)
-
-from src.context.prisma_conn import PrismaContext
+from src.common.mongo_repository import MongoRepository
+from src.modules.banners.dtos import Banner, CreateBanner
 
 if TYPE_CHECKING:
-    from prisma.models import Banner, BannerOrderedView
-
-    from src.modules.banners.dtos import CreateBanner, GetBanners
+    from src.modules.banners.dtos import GetBanners
 
 
-class BannerRepository:
+class BannerRepository(MongoRepository[Banner, Banner]):
     """Banner repository."""
 
     def __init__(self) -> None:
-        self._client = PrismaContext.get_client()
+        super().__init__(
+            collection_name="banners",
+            simple_model=Banner,
+            complex_model=Banner,
+        )
+        self.view = self._db.get_collection("BannersView")
 
-    def _filter(self, params: "GetBanners") -> BannerOrderedViewWhereInput:  # noqa: C901, PLR0912
-        _filter = BannerOrderedViewWhereInput()
+    async def get_banners(self, params: "GetBanners") -> list[Banner]:
+        """Get banners based on the given parameters."""
 
-        _filter["AND"] = []
-
-        if params.include_ids:
-            _filter["AND"].append(
-                {
-                    "OR": [
-                        {"imitation_id": {"in": params.include_ids}},
-                        {"weapon_id": {"in": params.include_ids}},
-                        {"suit_id": {"in": params.include_ids}},
-                    ],
-                },
+        return [
+            Banner(**document)
+            async for document in self.view.find(
+                self._filter(params),
+                skip=(params.page - 1) * params.limit,
+                limit=params.limit,
             )
+        ]
 
-        if params.exclude_ids:
-            _filter["AND"].append(
-                {
-                    "OR": [
-                        {"imitation_id": {"not_in": params.exclude_ids}},
-                        {"weapon_id": {"not_in": params.exclude_ids}},
-                        {"suit_id": {"not_in": params.exclude_ids}},
-                    ],
-                },
-            )
+    async def count_banners(self, params: "GetBanners") -> int:
+        """Count banners based on the given parameters."""
 
-        if params.final_rerun:
-            _filter["final_rerun"] = params.final_rerun
+        return await self.view.count_documents(self._filter(params))
 
-        if params.is_collab:
-            _filter["is_collab"] = params.is_collab
+    async def create_banner(self, data: "CreateBanner") -> Banner | None:
+        """Create a new banner."""
+        await self._collection.insert_one(data.model_dump(mode="json"))
+        if resp := await self.view.find_one({"imitation_id": data.imitation_id}):
+            return Banner(**resp)
+        return None
 
-        if params.is_rerun:
-            _filter["is_rerun"] = params.is_rerun
+    def _filter(self, params: "GetBanners") -> dict[str, Any]:  # noqa: C901, PLR0912
+        """Filter banners based on the given parameters."""
+        query: dict[str, Any] = {}
 
-        if params.limited_only:
-            _filter["limited_only"] = params.limited_only
+        if params.limited_only is not None:
+            query["limited_only"] = params.limited_only
+        if params.is_rerun is not None:
+            query["is_rerun"] = params.is_rerun
+        if params.is_collab is not None:
+            query["is_collab"] = params.is_collab
+        if params.final_rerun is not None:
+            query["final_rerun"] = params.final_rerun
 
-        if params.start_at_after:
-            _filter["start_at"] = {"gte": params.start_at_after}
-
-        if params.end_at_after:
-            _filter["end_at"] = {"gte": params.end_at_after}
-
-        if params.start_at_before:
-            if not params.start_at_after:
-                _filter["start_at"] = {"lte": params.start_at_before}
+        if params.start_at_after is not None:
+            query["start_at"] = {"$gte": str(params.start_at_after)}
+        if params.start_at_before is not None:
+            if "start_at" in query:
+                query["start_at"]["$lte"] = str(params.start_at_before)
             else:
-                _filter["start_at"] = {
-                    "lte": params.start_at_before,
-                    "gte": params.start_at_after,
-                }
+                query["start_at"] = {"$lte": str(params.start_at_before)}
 
-        if params.end_at_before:
-            if not params.end_at_after:
-                _filter["end_at"] = {"lte": params.end_at_before}
+        if params.end_at_after is not None:
+            query["end_at"] = {"$gte": str(params.end_at_after)}
+        if params.end_at_before is not None:
+            if "end_at" in query:
+                query["end_at"]["$lte"] = str(params.end_at_before)
             else:
-                _filter["end_at"] = {
-                    "lte": params.end_at_before,
-                    "gte": params.end_at_after,
-                }
+                query["end_at"] = {"$lte": str(params.end_at_before)}
 
-        return _filter
+        if params.include_ids is not None:
+            query["object_id"] = {"$in": params.include_ids}
 
-    async def get_id(self, banner_id: str) -> "Banner | None":
-        """Get a banner by ID."""
+        if params.exclude_ids is not None:
+            if "object_id" in query:
+                query["object_id"]["$nin"] = params.exclude_ids
+            else:
+                query["object_id"] = {"$nin": params.exclude_ids}
 
-        return await self._client.banner.find_first(
-            where=BannerWhereInput(
-                OR=[
-                    {"imitation_id": banner_id},
-                    {"suit_id": banner_id},
-                    {"weapon_id": banner_id},
-                ],
-            ),
-        )
-
-    async def count(self, params: "GetBanners") -> int:
-        """Count all banners."""
-
-        return await self._client.bannerorderedview.count(where=self._filter(params))
-
-    async def get_banners(self, params: "GetBanners") -> list["BannerOrderedView"]:
-        """Get all banners."""
-
-        return await self._client.bannerorderedview.find_many(
-            where=self._filter(params),
-            skip=(params.page - 1) * params.limit,
-            take=params.limit,
-        )
-
-    async def create(self, data: "CreateBanner") -> "Banner":
-        """Create a banner."""
-
-        return await self._client.banner.create(
-            data=BannerCreateInput(**data.model_dump()),
-        )
+        return query

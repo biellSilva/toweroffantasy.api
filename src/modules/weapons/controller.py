@@ -23,4 +23,4 @@ async def get_all_weapons(
 
 @router.get("/{weapon_id}")
 async def get_weapon(params: Annotated[GetWeapon, Depends()]) -> Weapon:
-    return await SERVICE.get(lang=params.lang, _id=params.weapon_id)
+    return await SERVICE.get(params=params)
