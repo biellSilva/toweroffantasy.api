@@ -39,7 +39,4 @@ def add_middlewares(app: FastAPI) -> None:
             "http://localhost:5173",
             "https://toweroffantasy.vercel.app",
         ],
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
     )
