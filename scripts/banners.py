@@ -1,13 +1,23 @@
-# type: ignore
-
 import json
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
-import requests
 from pydantic import BaseModel, field_validator
+
+
+class ExportBanner(BaseModel):
+    link: str
+    start_at: datetime
+    end_at: datetime
+    imitation_id: str
+    weapon_id: str
+    suit_id: str
+    limited_only: bool
+    is_rerun: bool
+    final_rerun: bool
+    is_collab: bool
 
 
 class Banner(BaseModel):
@@ -114,7 +124,13 @@ def fix_suits_ids(banners: list[Banner]) -> None:
         banner.matrix_id = find_suit_id(banner.matrix_id)
 
 
-def main() -> None:
+async def main() -> None:
+    from prisma import Prisma
+    from prisma.types import BannerCreateInput
+
+    client = Prisma()
+    await client.connect()
+
     banners = load_data("banners.json")
 
     fix_imitations_ids(banners)
@@ -123,31 +139,57 @@ def main() -> None:
 
     print(f"Loaded {len(banners)} banners.")  # noqa: T201
 
-    for ind, banner in enumerate(banners):
-        _data = {
-            "imitation_id": banner.imitation_id,
-            "weapon_id": banner.weapon_id,
-            "suit_id": banner.matrix_id,
-            "start_at": banner.start.isoformat(),
-            "end_at": banner.end.isoformat(),
-            "link": banner.details_link,
-            "limited_only": banner.limited_banner_only,
-            "is_rerun": banner.is_rerun,
-            "is_collab": banner.is_collab,
-            "final_rerun": banner.final_rerun,
-        }
-
-        resp = requests.post(
-            "http://localhost:8000/banners",
-            json=_data,
-            timeout=5,
+    for banner in banners:
+        await client.banner.create(
+            data=BannerCreateInput(
+                link=banner.details_link,
+                start_at=banner.start,
+                end_at=banner.end,
+                imitation_id=banner.imitation_id,
+                weapon_id=banner.weapon_id,
+                suit_id=banner.matrix_id,
+                limited_only=banner.limited_banner_only,
+                is_rerun=banner.is_rerun,
+                final_rerun=banner.final_rerun,
+                is_collab=banner.is_collab,
+            ),
         )
-        resp.raise_for_status()
 
-        print(f"Banner {ind + 1} created successfully.")  # noqa: T201
+    print("All banners created successfully.")  # noqa: T201
+
+
+def main2() -> None:
+    banners = load_data("banners.json")
+
+    fix_imitations_ids(banners)
+    fix_weapons_ids(banners)
+    fix_suits_ids(banners)
+
+    print(f"Loaded {len(banners)} banners.")  # noqa: T201
+
+    Path("banners_export.json").write_text(
+        json.dumps(
+            [
+                ExportBanner(
+                    link=banner.details_link,
+                    start_at=banner.start,
+                    end_at=banner.end,
+                    imitation_id=banner.imitation_id,
+                    weapon_id=banner.weapon_id,
+                    suit_id=banner.matrix_id,
+                    limited_only=banner.limited_banner_only,
+                    is_rerun=banner.is_rerun,
+                    final_rerun=banner.final_rerun,
+                    is_collab=banner.is_collab,
+                ).model_dump(mode="json")
+                for banner in banners
+            ],
+            indent=2,
+        ),
+    )
 
     print("All banners created successfully.")  # noqa: T201
 
 
 if __name__ == "__main__":
-    main()
+    main2()
