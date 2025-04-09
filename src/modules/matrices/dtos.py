@@ -40,3 +40,6 @@ class ExposeSuit(BaseModel):
     matrice_name: str
     assets: _SuitAssets
     matrice_assets: _MatriceAssets
+
+    weapon_id: str | None
+    suit_id: str | None

@@ -64,6 +64,9 @@ class Suit(ModelBase):
     sets: list[_SuitSet]
     matrices: list[_SuitMatrice]
 
+    imitation_id: str | None = None
+    weapon_id: str | None = None
+
     @computed_field
     @property
     def matrice_name(self) -> str:
