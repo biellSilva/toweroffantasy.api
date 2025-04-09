@@ -131,6 +131,8 @@ class WeaponSimple(ModelBase):
 
     banners_count: int
     banners: list[Banner]
+    imitation_id: str | None = None
+    suit_id: str | None = None
 
 
 class Weapon(WeaponSimple):

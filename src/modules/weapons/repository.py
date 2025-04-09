@@ -14,7 +14,9 @@ class WeaponRepository(MongoRepository[WeaponSimple, Weapon]):
 
     async def get_weapon(self, params: "GetWeapon") -> Weapon | None:
         """Get a Weapon by ID."""
-        if data := await self.view.find_one(filter={"id": params.weapon_id}):
+        if data := await self.view.find_one(
+            filter={"id": {"$regex": params.weapon_id, "$options": "i"}},
+        ):
             return self._complex_model.model_validate(
                 data,
                 context={"lang": params.lang},
