@@ -121,16 +121,18 @@ class SimulacrumSimple(ModelBase):
     rarity: str
     is_limited: bool
     no_weapon: bool
-    banners_count: int
 
     assets: _ImitationAssets
+
+    banners_count: int
     banners: list[Banner]
+    weapon_id: str | None
+    suit_id: str | None
 
 
 class Simulacrum(SimulacrumSimple):
     desc: Translate
     unlock_info: Translate
-    weapon_id: str | None
     avatar_id: str
     assets_a3: Annotated[
         _ImitationAssets,
