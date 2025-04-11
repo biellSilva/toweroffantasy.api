@@ -32,7 +32,7 @@ class MatriceRepository(MongoRepository[Suit, Suit]):
     async def get_matrix(self, params: "GetMatrix") -> Suit | None:
         """Get a matrix by its ID."""
         if document := await self.view.find_one(
-            {"id": {"$regex": params.matrix_id, "$options": "i"}},
+            filter={"id": {"$regex": f"^{params.matrix_id}$", "$options": "i"}},
         ):
             return self._complex_model.model_validate(
                 document,
