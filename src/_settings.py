@@ -13,6 +13,7 @@ class _BaseSettings(BaseSettings):
     ENV: Literal["prod", "dev", "test"] = "dev"
 
     PROJECT_NAME: str = "Tower of Fantasy API"
+    GAME_VERSION: str = "v4.8.3"
 
     POSTGRE_URI: str
     REDIS_URI: str
@@ -53,13 +54,9 @@ class _BaseSettings(BaseSettings):
     @property
     def project_desc(self) -> str:
         return (
-            f"**Game Version: *`{self.in_game_version}`***\r\t\n"
+            f"**Game Version: *`{self.GAME_VERSION}`***\r\t\n"
             f"**Last restart: *`{self.last_restart.strftime('%Y-%m-%d %H:%M:%S %:z')}`***"  # noqa: E501
         )
-
-    @property
-    def in_game_version(self) -> str:
-        return "4.7"
 
 
 config = _BaseSettings()  # type: ignore
