@@ -21,7 +21,9 @@ class SimulacraRepository(MongoRepository[SimulacrumSimple, Simulacrum]):
 
     async def get_simulacrum(self, params: "GetSimulacrum") -> Simulacrum | None:
         """Get a Simulacrum by ID."""
-        if data := await self.view.find_one(filter={"id": params.simulacrum_id}):
+        if data := await self.view.find_one(
+            filter={"id": {"$regex": f"^{params.simulacrum_id}$", "$options": "i"}},
+        ):
             return self._complex_model.model_validate(
                 data,
                 context={"lang": params.lang},
