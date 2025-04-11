@@ -26,6 +26,7 @@ class BaseSecurityScheme(APIKeyHeader):
     """Base security scheme."""
 
     _crypt_helper = CryptHelper()
+    _user_repo = UserRepository()
 
     def __init__(
         self,
@@ -41,8 +42,6 @@ class BaseSecurityScheme(APIKeyHeader):
             description=description,
             auto_error=auto_error,
         )
-
-        self.user_repo = UserRepository()
         self._checks: list[
             tuple[Callable[[User], bool], ApiError | type[ApiError]]
         ] = []
@@ -50,12 +49,12 @@ class BaseSecurityScheme(APIKeyHeader):
     def _get_token(self, request: Request) -> str:
         """Get token from request."""
         if token := request.headers.get(self.model.name):
-            return token
+            return token.replace("Bearer ", "", 1)
         raise MissingTokenError
 
     async def _get_user(self, payload: Payload) -> "User | None":
         """Get user from payload."""
-        return await self.user_repo.get_user_by_id(payload.id)
+        return await self._user_repo.get_user_by_id(payload.id)
 
     async def _validate(self, request: Request) -> Payload:
         """Validate token."""
