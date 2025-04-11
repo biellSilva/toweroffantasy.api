@@ -26,10 +26,10 @@ class CryptHelper:
         """Encode payload."""
 
         access_expire = current_datetime() + timedelta(seconds=config.ACCESS_EXPIRE)
-        payload["exp"] = access_expire
+        # payload["exp"] = access_expire
         access_token = str(encode(payload, key=config.ACCESS_SECRET, algorithm="HS256"))
 
-        payload["exp"] = current_datetime() + timedelta(seconds=config.REFRESH_EXPIRE)
+        # payload["exp"] = current_datetime() + timedelta(seconds=config.REFRESH_EXPIRE)
         refresh_token = str(
             encode(payload, key=config.REFRESH_SECRET, algorithm="HS256"),
         )
