@@ -27,14 +27,21 @@ async def main() -> None:
             ):
                 relation["weapon_id"] = weapon["id"]
 
-                if weapon["id"].lower() == "digger_thunder":
+                if any(
+                    weapon["id"].lower() == x.lower()
+                    for x in [
+                        "stave_thunder",
+                        "digger_thunder",
+                    ]
+                ):
                     relation["suit_id"] = weapon["recommended_matrices"][1]["id"]
+
                 else:
                     relation["suit_id"] = weapon["recommended_matrices"][0]["id"]
                 break
 
         await relations.find_one_and_update(
-            filter=relation,
+            filter={"imitation_id": simulacrum["id"]},
             update={"$set": relation},
             upsert=True,
         )
