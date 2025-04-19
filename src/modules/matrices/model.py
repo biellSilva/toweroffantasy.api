@@ -66,16 +66,19 @@ class Suit(ModelBase):
 
     imitation_id: str | None = None
     weapon_id: str | None = None
+    banners_count: int = 0
 
     @computed_field
     @property
     def matrice_name(self) -> str:
-        name = self.matrices[0].name
+        name = self.matrices[-1].name
         if ":" in name:
-            return name.split(":", 1)[0]
+            return name.split(":", 1)[0].strip()
         if "・" in name:
-            return name.split("・", 1)[0]
-        return name
+            return name.split("・", 1)[0].strip()
+        if "(" in name:
+            return name.split("(", 1)[0].strip()
+        return name.strip()
 
     @computed_field
     @property
