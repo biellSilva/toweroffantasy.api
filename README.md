@@ -65,7 +65,7 @@ Then access the interactive API docs:
 For the complete list of available routes, check out the interactive API documentation:
 
 - **Local environment**: http://localhost:8000/docs
-- **Production environment**: https://tof-api.ftae5p.easypanel.host/docs _(replace with your actual production URL when available)_
+- **Production environment**: https://tof-api.ftae5p.easypanel.host/docs
 
 ## 🗄️ Databases
 
