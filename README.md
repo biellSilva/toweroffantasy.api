@@ -2,15 +2,16 @@
 
 A RESTful API that provides data related to the game **Tower of Fantasy**, such as simulacra, weapons, matrices, events, and more. The goal is to centralize and serve updated information in a structured and accessible way.
 
-[**Tower of Fantasy**](https://tof.perfectworld.com/en-us/index.html) is a free-to-play open-world action RPG developed by Hotta Studio and published by Level Infinite. Set in a futuristic sci-fi universe filled with exploration, fast-paced combat, and a gacha system for acquiring characters and weapons, the game features both single-player and multiplayer (MMO) elements. Players explore the world of Aida, fight enemies, complete quests, and unlock powerful Simulacra—characters that come with unique weapons and abilities.
+[**Tower of Fantasy**](https://tof.perfectworld.com/en-us/index.html) is a free-to-play open-world action RPG developed by **Hotta Studio** and published by **Level Infinite** and **Perfect World Games** in certain regions. Set in a futuristic sci-fi universe filled with exploration, fast-paced combat, and a gacha system for acquiring characters and weapons, the game features both single-player and multiplayer (MMO) elements. Players explore the world of Aida, fight enemies, complete quests, and unlock powerful Simulacra—characters that come with unique weapons and abilities.
 
 This project is not affiliated with the official game. It is intended for fan use, data aggregation, and community-driven tools.
 
 ## 🛠️ Data Collection
 
-This API depends on a private CLI tool responsible for extracting and transforming game-related data directly from *Tower of Fantasy* assets.
+This API depends on a private CLI tool responsible for extracting and transforming game-related data directly from _Tower of Fantasy_ assets.
 
 The data is processed and saved before the API runs, and may be stored in:
+
 - **Databases** (MongoDB or PostgreSQL), or
 - **Local JSON files** (for development or backups).
 
@@ -49,22 +50,22 @@ Then access the interactive API docs:
 
 ## 📚 Main Endpoints
 
-| Method | Route                       | Description                                      |
-|--------|-----------------------------|--------------------------------------------------|
-| GET    | `/simulacra`                 | List all simulacra (paginated)                   |
-| GET    | `/simulacra/{simulacrumId}`  | Get details of a specific simulacrum             |
-| GET    | `/weapons`                   | List all weapons (paginated)                     |
-| GET    | `/weapons/{weaponId}`        | Get details of a specific weapon                 |
-| GET    | `/matrices`                  | List all matrices (paginated)                    |
-| GET    | `/matrices/{matrixId}`       | Get details of a specific matrix                 |
-| GET    | `/banners`                   | List all active banners (paginated)              |
+| Method | Route                       | Description                          |
+| ------ | --------------------------- | ------------------------------------ |
+| GET    | `/simulacra`                | List all simulacra (paginated)       |
+| GET    | `/simulacra/{simulacrumId}` | Get details of a specific simulacrum |
+| GET    | `/weapons`                  | List all weapons (paginated)         |
+| GET    | `/weapons/{weaponId}`       | Get details of a specific weapon     |
+| GET    | `/matrices`                 | List all matrices (paginated)        |
+| GET    | `/matrices/{matrixId}`      | Get details of a specific matrix     |
+| GET    | `/banners`                  | List all active banners (paginated)  |
 
 > Endpoints that list multiple records (e.g., `/simulacra`, `/weapons`, `/matrices`) support pagination.
 
 For the complete list of available routes, check out the interactive API documentation:
 
 - **Local environment**: http://localhost:8000/docs
-- **Production environment**: https://tof-api.ftae5p.easypanel.host/docs *(replace with your actual production URL when available)*
+- **Production environment**: https://tof-api.ftae5p.easypanel.host/docs _(replace with your actual production URL when available)_
 
 ## 🗄️ Databases
 
@@ -85,11 +86,12 @@ For detailed code structure, refer to the [source files](https://github.com/biel
 
 ## 🌍 Localization Support
 
-The translation files are extracted directly from the game *Tower of Fantasy* and stored in the `src/locales/` directory. Each language has its own folder, and the translation data is saved in JSON files (e.g., `src/locales/en/Game.json` for English).
+The translation files are extracted directly from the game _Tower of Fantasy_ and stored in the `src/locales/` directory. Each language has its own folder, and the translation data is saved in JSON files (e.g., `src/locales/en/Game.json` for English).
 
 These files are automatically updated when new data or localization changes are introduced in the game.
 
 Example of available translation files:
+
 - `src/locales/en/Game.json` – English translations for game-related data.
 - `src/locales/pt/Game.json` – Portuguese translations for game-related data.
 - `src/locales/de/Game.json` – German translations for game-related data.
@@ -126,10 +128,23 @@ src/
 │       └── Game.json
 ```
 
-## 📄 License
+## 🛡️ License
 
-This project is licensed under the MIT License.
+**All Rights Reserved.**
+
+This project is protected under the "All Rights Reserved" license. You may not copy, modify, distribute, or use any part of this repository or its contents for commercial or public purposes without explicit written permission from the author.
+
+### ⚠️ Disclaimer
+
+This project uses data extracted from the game _Tower of Fantasy_. All game-related data, names, assets, and translations remain the intellectual property of their respective owners — **Hotta Studio**, **Level Infinite**, and **Perfect World Games**.
+
+This project is **not affiliated with, endorsed, or sponsored by** Hotta Studio, Level Infinite, or Perfect World Games.  
+No copyright infringement is intended.
+
+The API and its associated tools are provided **for educational and informational purposes only**, and no game files or proprietary content are distributed directly.
+
+Use at your own risk.
 
 ---
 
-*Made with ❤️ by [biellSilva](https://github.com/biellSilva)*
+_Made with ❤️ by [biellSilva](https://github.com/biellSilva)_
