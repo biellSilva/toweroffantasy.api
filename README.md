@@ -75,7 +75,7 @@ For the complete list of available routes, check out the interactive API documen
 
 The project follows a simple structure, where:
 
-- `app/`: Contains the main API logic (routers, models, schemas, services).
+- `src/`: Contains the main API logic (routers, models, schemas, services).
 - `prisma/`: Prisma schema and database migrations.
 - `pyproject.toml`: Python dependencies management with PDM.
 - `README.md`: Project documentation.
