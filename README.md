@@ -77,10 +77,54 @@ The project follows a simple structure, where:
 
 - `src/`: Contains the main API logic (routers, models, schemas, services).
 - `prisma/`: Prisma schema and database migrations.
+- `src/locales/`: Contains language-specific translation files. Each language has its own folder, and the translation data is stored in JSON files (e.g., `src/locales/en/Game.json` for English).
 - `pyproject.toml`: Python dependencies management with PDM.
 - `README.md`: Project documentation.
 
 For detailed code structure, refer to the [source files](https://github.com/biellSilva/toweroffantasy.api).
+
+## 🌍 Localization Support
+
+The translation files are extracted directly from the game *Tower of Fantasy* and stored in the `src/locales/` directory. Each language has its own folder, and the translation data is saved in JSON files (e.g., `src/locales/en/Game.json` for English).
+
+These files are automatically updated when new data or localization changes are introduced in the game.
+
+Example of available translation files:
+- `src/locales/en/Game.json` – English translations for game-related data.
+- `src/locales/pt/Game.json` – Portuguese translations for game-related data.
+- `src/locales/de/Game.json` – German translations for game-related data.
+
+### How Translations Are Managed
+
+1. **Data Extraction**: The translation files are pulled from the game's files using a custom CLI tool designed for scraping and extracting the localization data. This ensures that the translations are always up-to-date with the latest changes in the game.
+2. **File Structure**: Each language has its own directory inside `src/locales/`, and each translation is stored in a separate JSON file (e.g., `Game.json`).
+3. **Adding New Languages**: To add a new language, you would need to extract the translations for that language from the game, create a new folder in `src/locales/`, and place the corresponding JSON file inside it.
+
+### Fallback Mechanism
+
+If a string is not found in the translation file for the requested language, the API follows a fallback mechanism:
+
+1. **Preferred Language**: If the requested language is not available, the system first looks for the translation in **English** (en).
+2. **Fallback to Chinese**: If the string is not found in English, it will then fall back to **Chinese** (zh-CN).
+3. **Order of Fallbacks**: The order of fallback languages is:
+   - `lang` -> English (`en`) -> Chinese (`zh-CN`).
+
+This ensures that even if the translation is missing in a specific language, the system will always try to serve a reasonable fallback value.
+
+By default, the API will serve the data in the language specified in the request header (e.g., `Accept-Language`), and it will fall back to English and then Chinese if the requested language or string is not available.
+
+### Example of the Folder Structure:
+
+```
+src/
+├── locales/
+│   ├── en/
+│   │   └── Game.json
+│   ├── pt/
+│   │   └── Game.json
+│   └── zh-CN/
+│       └── Game.json
+```
 
 ## 📄 License
 
