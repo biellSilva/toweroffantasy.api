@@ -1,10 +1,12 @@
 from typing import TYPE_CHECKING
 
+from src._types import DislikedGiftValue
 from src.exceptions.not_found import SimulacrumNotFoundError
 from src.modules._paginator import Pagination
 from src.modules._utils import quality_to_int
 
 if TYPE_CHECKING:
+    from src._types import DislikedGiftValue, LikedGiftValue
     from src.modules.gifts.model import Gift
     from src.modules.gifts.repository import GiftsRepository
     from src.modules.simulacra.dtos import GetSimulacra, GetSimulacrum
@@ -50,7 +52,11 @@ class ImitationService:
 
         region_flags = {"Genet", "Vera", "Asshai", "Jiuyu"}
 
-        qualities = {"COMMON": (5, 2), "RARE": (10, 4), "EPIC": (20, 8)}
+        qualities: dict[str, tuple[LikedGiftValue, DislikedGiftValue]] = {
+            "COMMON": (5, 2),
+            "RARE": (10, 4),
+            "EPIC": (20, 8),
+        }
 
         result_gifts: list[Gift] = []
 

@@ -14,7 +14,7 @@ from pydantic_core import core_schema
 
 from src._settings import config
 
-__all__ = ("AssetPath", "LangsEnum", "Translate")
+__all__ = ("AssetPath", "DislikedGiftValue", "LangsEnum", "LikedGiftValue", "Translate")
 
 
 class LangsEnum(StrEnum):
@@ -54,6 +54,9 @@ ObjectIdType = Annotated[
     Field(validation_alias=AliasChoices("_id", "object_id")),
     BeforeValidator(lambda x: str(x)),
 ]
+
+LikedGiftValue = int
+DislikedGiftValue = int
 
 
 class Translate(str):
