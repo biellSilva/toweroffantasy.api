@@ -2,6 +2,7 @@ from pydantic import computed_field
 
 from src._types import AssetPath, Translate, TranslateWithValues
 from src.common.base_model import ModelBase
+from src.modules.banners.dtos import Banner
 
 
 class _SuitAssets(ModelBase):
@@ -67,6 +68,7 @@ class Suit(ModelBase):
     imitation_id: str | None = None
     weapon_id: str | None = None
     banners_count: int = 0
+    banners: list[Banner]
 
     @computed_field
     @property
