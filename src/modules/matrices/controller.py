@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Query
 
 from src.modules._paginator import Pagination
 from src.modules.matrices.dtos import ExposeSuit, GetMatrices, GetMatrix
@@ -15,11 +15,11 @@ SERVICE = MatriceService(MatriceRepository())
 
 @router.get("", response_model=Pagination[ExposeSuit])
 async def get_all_matrice(
-    params: Annotated[GetMatrices, Depends()],
+    params: Annotated[GetMatrices, Query()],
 ) -> Pagination[Suit]:
     return await SERVICE.get_all(params=params)
 
 
 @router.get("/{matrix_id}")
-async def get_matrice(params: Annotated[GetMatrix, Depends()]) -> Suit:
+async def get_matrice(params: Annotated[GetMatrix, Query()]) -> Suit:
     return await SERVICE.get(params)

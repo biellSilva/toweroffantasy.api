@@ -1,7 +1,7 @@
 from typing import Annotated
 
 from fastapi import Path
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from src.common.dtos import BaseSearchAllDto, BaseSearchDto
 
@@ -13,11 +13,11 @@ class GetMatrix(BaseSearchDto):
 class GetMatrices(BaseSearchAllDto):
     include_ids: Annotated[
         list[str] | None,
-        Path(description="Matrix id should be one of"),
+        Field(description="Matrix id should be one of"),
     ] = None
     exclude_ids: Annotated[
         list[str] | None,
-        Path(description="Matrix id should not be one of"),
+        Field(description="Matrix id should not be one of"),
     ] = None
 
 
