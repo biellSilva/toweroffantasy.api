@@ -37,6 +37,9 @@ async def main() -> None:
         mongo_collection = mongo_db.get_collection(collection)
 
         for data in _data.values():
+            if collection == "matrices":
+                data["id"] = str(data["id"]).replace("S", "s", 1)
+
             await mongo_collection.find_one_and_update(
                 filter={"id": data["id"]},
                 update={"$set": data},
