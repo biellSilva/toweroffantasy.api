@@ -25,5 +25,5 @@ class VersionResponse(BaseModel):
     Version response model.
     """
 
-    game_version: str = get_version()
-    api_version: str = config.GAME_VERSION
+    game_version: str = config.GAME_VERSION
+    api_version: str = get_version()
