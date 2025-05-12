@@ -26,4 +26,4 @@ class VersionResponse(BaseModel):
     """
 
     game_version: str = config.GAME_VERSION
-    api_version: str = get_version()
+    api_version: str = f"v{get_version()}"
