@@ -1,32 +1,29 @@
-from typing import Literal
-
 from fastapi import APIRouter
 
-from src import __version__ as api_version
-from src._settings import config
+from src.modules.health.dtos import HealthCheckResponse, PingResponse, VersionResponse
 
 router = APIRouter()
 
 
 @router.get("/health")
-async def health_check() -> dict[Literal["status"], Literal["ok"]]:
+async def health_check() -> HealthCheckResponse:
     """
     Health check endpoint.
     """
-    return {"status": "ok"}
+    return HealthCheckResponse()
 
 
 @router.get("/ping")
-async def ping() -> dict[Literal["status"], Literal["pong"]]:
+async def ping() -> PingResponse:
     """
     Ping endpoint.
     """
-    return {"status": "pong"}
+    return PingResponse()
 
 
 @router.get("/version")
-async def version() -> dict[Literal["gameVersion", "apiVersion"], str]:
+async def version() -> VersionResponse:
     """
     Version endpoint.
     """
-    return {"gameVersion": config.GAME_VERSION, "apiVersion": api_version}
+    return VersionResponse()
