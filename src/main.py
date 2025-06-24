@@ -44,3 +44,13 @@ def add_middlewares(app: FastAPI) -> None:
         allow_headers=["*"],
         allow_credentials=True,
     )
+
+
+def setup_logging(app: FastAPI) -> None:
+    """
+    Setup logging for the app.
+    """
+
+    from src._logging import setup_logfire
+
+    setup_logfire(app)

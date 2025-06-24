@@ -29,6 +29,9 @@ class _BaseSettings(BaseSettings):
 
     CACHE_EXPIRE: int = 60 * 60
 
+    DISCORD_CLIENT_ID: str
+    DISCORD_CLIENT_SECRET: str
+
     ASSETS_PREFIX: str = "https://raw.githubusercontent.com/biellSilva/toweroffantasy.images/refs/heads/main"
 
     EMAIL_MIN_LENGTH: int = 4
@@ -46,6 +49,8 @@ class _BaseSettings(BaseSettings):
     USERNAME_MAX_LENGTH: int = 32
     USERNAME_SPECIAL_CHARS: str = "_."
     USERNAME_REGEX: str = r"^[a-zA-Z0-9_\.]{4,32}$"
+
+    LOGFIRE_TOKEN: str
 
     @property
     def last_restart(self) -> datetime:

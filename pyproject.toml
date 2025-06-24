@@ -18,6 +18,7 @@ dependencies = [
     "prisma>=0.15.0",
     "cachetools>=5.5.2",
     "motor[srv]>=3.7.0",
+    "logfire[fastapi,psycopg,pymongo,system-metrics]>=3.16.0",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
@@ -28,11 +29,12 @@ license = { file = "LICENSE" }
 distribution = false
 
 [tool.pdm.scripts]
-start = { cmd = "uvicorn src.main:create_app --factory --host 0.0.0.0 --port 8000", env_file = ".env" }
-dev = { composite = ["setup-docker", "setup-dev"] }
+start = { cmd = "uvicorn src.main:create_app --factory --host 0.0.0.0 --port 8000" }
+dev = { composite = ["setup-docker", "setup-dev"], env_file.override = ".env" }
+
 
 setup-docker = { cmd = "docker compose up -d" }
-setup-dev = { cmd = "uvicorn src.main:create_app --factory --reload --reload-dir src", env_file = ".env" }
+setup-dev = { cmd = "uvicorn src.main:create_app --factory --reload --reload-dir src" }
 
 migrate = { cmd = "prisma migrate dev", env_file = ".env" }
 generate = { cmd = "prisma generate", env_file = ".env" }
