@@ -43,3 +43,10 @@ def filter_simulacra(params: "GetSimulacra") -> dict[str, Any]:  # noqa: PLR0912
             filters["rarity"] = {"$nin": params.exclude_rarities}
 
     return filters
+
+
+def remove_cv_from_voice_actors(value: str) -> str:
+    """Remove CV from voice actors string."""
+    if not value:
+        return value
+    return value.split("CV:")[-1].strip() if "CV: " in value else value.strip()

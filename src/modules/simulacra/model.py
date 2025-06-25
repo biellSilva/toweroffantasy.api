@@ -1,11 +1,12 @@
 from typing import Annotated
 
-from pydantic import AliasChoices, Field
+from pydantic import AfterValidator, AliasChoices, Field
 
 from src._types import AssetPath, Translate, TranslateWithValues
 from src.common.base_model import ModelBase
 from src.common.model import BackgroundColor
 from src.modules.banners.dtos import Banner
+from src.modules.simulacra._utils import remove_cv_from_voice_actors
 
 
 class _FashionAssets(ModelBase):
@@ -31,11 +32,11 @@ class _SimulacrumGift(ModelBase):
 
 
 class _SimulacrumVoiceActors(ModelBase):
-    chinese: str | None
-    japanese: str | None
-    english: str | None
-    korean: str | None
-    portuguese: str | None
+    chinese: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
+    japanese: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
+    english: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
+    korean: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
+    portuguese: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
 
 
 class _ImitationExtras(ModelBase):
