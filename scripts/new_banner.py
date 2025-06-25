@@ -158,7 +158,7 @@ async def main() -> None:
     ]
 
     await mongo_db.get_collection("banners").insert_many(
-        [banner.model_dump() for banner in banners],
+        [banner.model_dump(mode="json") for banner in banners],
         ordered=False,
     )
 
