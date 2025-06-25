@@ -11,6 +11,9 @@ def setup_logfire(app: "FastAPI") -> None:
     Setup logfire for logging.
     """
 
+    if not config.LOGFIRE_TOKEN:
+        return
+
     import logfire
 
     logfire.configure(

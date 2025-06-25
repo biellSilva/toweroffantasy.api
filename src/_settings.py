@@ -50,7 +50,7 @@ class _BaseSettings(BaseSettings):
     USERNAME_SPECIAL_CHARS: str = "_."
     USERNAME_REGEX: str = r"^[a-zA-Z0-9_\.]{4,32}$"
 
-    LOGFIRE_TOKEN: str
+    LOGFIRE_TOKEN: str | None = None
 
     @property
     def last_restart(self) -> datetime:
