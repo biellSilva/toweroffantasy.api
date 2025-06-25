@@ -22,6 +22,11 @@ async def get_banners(
     return await SERVICE.get_banners(params)
 
 
+@router.get("/current")
+async def get_current_banners() -> list[Banner]:
+    return await SERVICE.get_current_banners()
+
+
 @router.post(
     "",
     responses=generate_docs(InvalidRoleError, auth=True),
