@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from pydantic import Field
+from pydantic import AliasChoices, Field
 
 from src._types import (
     AssetPath,
@@ -156,4 +156,10 @@ class Weapon(WeaponSimple):
         list[RecommendedMatrice],
         Field(default_factory=list),
     ]
-    sensuality: Annotated[list[Sensuality], Field(default_factory=list)]
+    synesthesia: Annotated[
+        list[Sensuality],
+        Field(
+            default_factory=list,
+            validation_alias=AliasChoices("sensuality", "synesthesia"),
+        ),
+    ]
