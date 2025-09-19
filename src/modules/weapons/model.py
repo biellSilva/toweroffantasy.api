@@ -112,6 +112,14 @@ class MultiElement(ModelBase):
     passives: list[TranslateSplitBreakLine]
 
 
+class Sensuality(ModelBase):
+    desc: Translate
+    values: list[float]
+    need_items: list[NeedItem]
+    gold_cost: int
+    required_star: int
+
+
 class WeaponSimple(ModelBase):
     id: str
     name: Translate
@@ -148,3 +156,4 @@ class Weapon(WeaponSimple):
         list[RecommendedMatrice],
         Field(default_factory=list),
     ]
+    sensuality: Annotated[list[Sensuality], Field(default_factory=list)]
