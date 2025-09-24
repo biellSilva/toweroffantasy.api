@@ -1,6 +1,0 @@
-model Preset {
-  id      Int    @id @default(autoincrement())
-  name    String
-  user_id Int
-  user    User   @relation(fields: [user_id], references: [id])
-}
