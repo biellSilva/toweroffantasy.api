@@ -32,11 +32,11 @@ class _SimulacrumGift(ModelBase):
 
 
 class _SimulacrumVoiceActors(ModelBase):
-    chinese: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
-    japanese: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
-    english: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
-    korean: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
-    portuguese: Annotated[str, AfterValidator(remove_cv_from_voice_actors)] | None
+    chinese: Annotated[str | None, AfterValidator(remove_cv_from_voice_actors)]
+    japanese: Annotated[str | None, AfterValidator(remove_cv_from_voice_actors)]
+    english: Annotated[str | None, AfterValidator(remove_cv_from_voice_actors)]
+    korean: Annotated[str | None, AfterValidator(remove_cv_from_voice_actors)]
+    portuguese: Annotated[str | None, AfterValidator(remove_cv_from_voice_actors)]
 
 
 class _ImitationExtras(ModelBase):
